@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+.git/
+.DS_Store
+results_crow_batch_*/
+*.docx
+*.xlsx
+*.pptx
+*.sql
+CLAUDE.md
+README.md
+process_crow_batch.sh
+install.sh

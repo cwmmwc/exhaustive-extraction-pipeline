@@ -86,11 +86,14 @@ ollama pull llama3.1:70b   # Best quality (requires 64GB RAM)
 
 ### Database
 
+**Local development:**
 ```bash
 createdb crow_historical_docs
 ```
 
 The pipeline creates all tables automatically on first run.
+
+**Production:** Cloud SQL PostgreSQL (`crow_historical_docs` on the `allotment-db` instance in `lunar-mercury-397321`). Shared with the [Crow Nation Digital Archive](https://github.com/cwmmwc/crow-nation-digital-archive) site.
 
 ### Running Extraction
 
@@ -105,6 +108,15 @@ python3 poc_pipeline_chunked_v2.py --input /path/to/pdfs --output results/
 ollama serve  # in a separate terminal
 python3 poc_pipeline_v2_local.py --input /path/to/pdfs --output results/
 ```
+
+### Cloud Run Deployment
+
+The Streamlit analysis interface is deployed on Google Cloud Run at `https://extraction-pipeline-996830241007.us-east1.run.app`. Auto-deploys on push to `main` via Cloud Build.
+
+- **Database**: Cloud SQL via `DATABASE_URL` env var
+- **PDF source**: `gs://crow-archive-pdfs/` (shared with the archive site)
+- **API key**: Stored in Secret Manager (`anthropic-api-key`), injected at runtime
+- **Memory**: 1 GiB (Streamlit + Anthropic API calls)
 
 ## Database Schema
 
