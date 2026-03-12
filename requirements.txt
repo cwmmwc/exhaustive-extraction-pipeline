@@ -1,0 +1,6 @@
+pymupdf
+psycopg2-binary
+anthropic
+streamlit
+gunicorn==23.0.0
+google-cloud-storage

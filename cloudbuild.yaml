@@ -1,0 +1,23 @@
+steps:
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'extraction-pipeline'
+      - '--source'
+      - '.'
+      - '--region'
+      - 'us-east1'
+      - '--allow-unauthenticated'
+      - '--memory'
+      - '1Gi'
+      - '--add-cloudsql-instances'
+      - 'lunar-mercury-397321:us-east1:allotment-db'
+      - '--set-env-vars'
+      - 'DATABASE_URL=host=/cloudsql/lunar-mercury-397321:us-east1:allotment-db dbname=crow_historical_docs user=appuser password=allotment-app-2026,GCS_BUCKET=crow-archive-pdfs'
+      - '--update-secrets'
+      - 'ANTHROPIC_API_KEY=anthropic-api-key:latest'
+timeout: '1200s'
+options:
+  logging: CLOUD_LOGGING_ONLY

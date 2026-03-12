@@ -39,7 +39,12 @@ st.set_page_config(
 # DATABASE
 # ─────────────────────────────────────────────────
 
+DATABASE_URL = os.environ.get("DATABASE_URL")
+
+
 def get_available_databases() -> List[str]:
+    if DATABASE_URL:
+        return ["crow_historical_docs"]
     try:
         conn = psycopg2.connect("postgresql://localhost/postgres")
         conn.autocommit = True
@@ -59,6 +64,8 @@ def get_available_databases() -> List[str]:
 
 
 def get_db_connection(db_name: str):
+    if DATABASE_URL:
+        return psycopg2.connect(DATABASE_URL)
     return psycopg2.connect(
         dbname=db_name,
         user=os.environ.get("USER", "cwm6W"),
