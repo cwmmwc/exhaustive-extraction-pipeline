@@ -1079,7 +1079,95 @@ def build_hybrid_context(question: str, discovery_evidence: Dict,
 
 
 # ─────────────────────────────────────────────────
-# AI ANALYSIS — three modes
+# CORPUS SYNTHESIS — all document summaries
+# ─────────────────────────────────────────────────
+
+def get_all_summaries(db_name: str) -> List[Dict]:
+    """Get all documents that have summaries."""
+    conn = get_db_connection(db_name)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    cur.execute("""
+        SELECT d.id, d.file_name, d.display_title, d.collection, d.summary,
+               d.page_count, d.summary_date
+        FROM documents d
+        WHERE d.summary IS NOT NULL
+        ORDER BY d.collection, d.file_name
+    """)
+    results = [dict(row) for row in cur.fetchall()]
+    cur.close()
+    conn.close()
+    return results
+
+
+def build_corpus_context(summaries: List[Dict]) -> str:
+    """Build context block with all document summaries for corpus-wide synthesis."""
+    lines = []
+    current_collection = None
+    for i, doc in enumerate(summaries):
+        collection = doc.get('collection') or 'Unknown'
+        if collection != current_collection:
+            current_collection = collection
+            lines.append(f"\n--- Collection: {collection} ---\n")
+        name = doc.get('display_title') or doc.get('file_name', '')
+        doc_date = extract_doc_date(doc.get('file_name', ''))
+        date_label = f" ({doc_date})" if doc_date else ""
+        lines.append(f"[Doc {i+1}] {name}{date_label}")
+        lines.append(doc['summary'])
+        lines.append("")
+    return "\n".join(lines)
+
+
+def analyze_corpus(question: str, summaries: List[Dict], db_stats: Dict,
+                   model: str = "claude-opus-4-6") -> str:
+    """Mode 4: Corpus-wide synthesis using all document summaries."""
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        return "Error: ANTHROPIC_API_KEY not set."
+
+    client = anthropic.Anthropic(api_key=api_key)
+    corpus_context = build_corpus_context(summaries)
+
+    # Count collections
+    collections = set(d.get('collection', 'Unknown') for d in summaries)
+
+    prompt = f"""You are a historian analyzing a complete archival collection about Native American land dispossession, federal Indian policy, and Bureau of Indian Affairs records.
+
+You have analytical summaries of ALL {len(summaries)} documents in this collection, spanning {len(collections)} archival collections. Each summary captures the document type, key parties, specific actions, legal mechanisms, and evidentiary value. This is the ENTIRE corpus — you are seeing everything, not a sample.
+
+DATABASE SCOPE: {db_stats.get('documents', 0)} documents, {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} transactions, {db_stats.get('relationships', 0)} relationships.
+
+RESEARCH QUESTION: {question}
+
+{corpus_context}
+
+SYNTHESIS GUIDELINES:
+1. Identify PATTERNS across documents: recurring actors, repeated legal mechanisms, systematic processes that appear across multiple documents and decades.
+2. Construct TIMELINES: trace how specific actions (allotment, fee patents, land sales, legislative efforts) played out over time.
+3. Map NETWORKS: which actors appear together across documents? Who were the key facilitators, opponents, and victims?
+4. Trace MECHANISMS: how exactly did land pass from Native ownership to non-Indian ownership? What legal, administrative, and extralegal mechanisms do the documents reveal?
+5. QUANTIFY where possible: total acreages, dollar amounts, numbers of allotments affected across the corpus.
+6. Identify GAPS: what topics, time periods, or actors are poorly represented?
+7. Cite specific documents by [Doc N] reference when making claims.
+8. Distinguish between what the documents collectively PROVE and what they SUGGEST.
+9. This is corpus-wide synthesis — prioritize patterns and systemic analysis over individual document summaries.
+
+Begin your corpus-wide synthesis:"""
+
+    try:
+        response = client.messages.create(
+            model=model,
+            max_tokens=16000,
+            temperature=0.3,
+            messages=[{"role": "user", "content": prompt}]
+        )
+        return response.content[0].text
+    except Exception as e:
+        import traceback
+        return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
+
+
+# ─────────────────────────────────────────────────
+# AI ANALYSIS — Discovery, Deep Read, Hybrid
 # ─────────────────────────────────────────────────
 
 def analyze_discovery(question: str, evidence: Dict, db_stats: Dict, model: str = "claude-opus-4-6") -> str:
@@ -1315,9 +1403,10 @@ mode = st.radio(
         "\U0001f50d **Discovery** — Search everything, find cross-collection connections",
         "\U0001f4d6 **Deep Read** — Select a document, send full text to AI",
         "\U0001f50d\u2192\U0001f4d6 **Discovery \u2192 Deep Read** — Find top documents, then read them deeply",
+        "\U0001f3db\ufe0f **Corpus Synthesis** — Analyze ALL documents for corpus-wide patterns",
     ],
     index=0,
-    help="Discovery = breadth (v3). Deep Read = depth (like DevonThink). Hybrid = both."
+    help="Discovery = breadth. Deep Read = depth. Hybrid = both. Corpus = everything."
 )
 
 mode_key = mode.split("**")[1].split("**")[0].strip() if "**" in mode else "Discovery"
@@ -1775,9 +1864,78 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
             st.warning("No documents found matching your query.")
 
 
+# ═════════════════════════════════════════════════
+# MODE 4: CORPUS SYNTHESIS
+# ═════════════════════════════════════════════════
+elif mode_key == "Corpus Synthesis":
+    st.markdown(
+        "Send **all** document summaries to the AI for corpus-wide pattern analysis. "
+        "No context window limit — the AI sees every document in the collection."
+    )
+
+    # Check summary availability
+    summaries = get_all_summaries(selected_db)
+    total_docs = stats.get('documents', 0)
+    summarized = len(summaries)
+
+    col_a, col_b = st.columns(2)
+    with col_a:
+        st.metric("Documents with summaries", f"{summarized:,}")
+    with col_b:
+        st.metric("Total documents", f"{total_docs:,}")
+
+    if summarized < total_docs:
+        unsummarized = total_docs - summarized
+        st.warning(
+            f"{unsummarized} documents lack summaries. "
+            f"Run `python3 enrich_summaries.py` to generate them."
+        )
+
+    if summarized == 0:
+        st.error("No document summaries available. Run `python3 enrich_summaries.py` first.")
+    else:
+        est_words = sum(len((s.get('summary') or '').split()) for s in summaries)
+        est_tokens = int(est_words * 1.33)
+        st.caption(f"~{est_words:,} words / ~{est_tokens:,} tokens in summaries")
+
+        question = st.text_area(
+            "Research question:",
+            placeholder="e.g., What were the primary mechanisms of Crow land dispossession and who were the key actors?",
+            height=100,
+            key="corpus_question"
+        )
+
+        if st.button("\U0001f3db\ufe0f Synthesize Across Entire Corpus", type="primary"):
+            if not question:
+                st.warning("Please enter a research question.")
+            else:
+                with st.expander(f"Document summaries sent to AI ({summarized})", expanded=False):
+                    for i, s in enumerate(summaries):
+                        name = s.get('display_title') or s.get('file_name', '')
+                        st.markdown(f"**[Doc {i+1}]** {name}")
+                        st.caption(s.get('summary', '')[:300] + "...")
+                        if (i + 1) % 50 == 0:
+                            st.markdown("---")
+
+                st.markdown("---")
+                st.subheader("\U0001f3db\ufe0f AI Corpus-Wide Synthesis")
+                with st.spinner(
+                    f"AI is analyzing summaries of all {summarized} documents..."
+                ):
+                    analysis = analyze_corpus(question, summaries, stats)
+                st.markdown(analysis)
+
+                st.markdown("---")
+                st.caption(
+                    f"\U0001f3db\ufe0f Corpus Synthesis: AI analyzed summaries of all "
+                    f"{summarized} documents (~{est_tokens:,} tokens). "
+                    f"For deep reading of specific documents, use Deep Read or Hybrid mode."
+                )
+
+
 # Footer
 st.markdown("---")
 st.caption(
-    f"v4 \u2014 Three modes: Discovery \u2022 Deep Read \u2022 Hybrid | "
+    f"v4 \u2014 Four modes: Discovery \u2022 Deep Read \u2022 Hybrid \u2022 Corpus Synthesis | "
     f"Database: {selected_db if 'selected_db' in dir() else 'not connected'}"
 )

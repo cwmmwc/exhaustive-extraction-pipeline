@@ -22,7 +22,8 @@ Instead of using Retrieval-Augmented Generation (RAG) to search for "relevant" d
 |------|-------------|
 | `poc_pipeline_chunked_v2.py` | v2 extraction pipeline using Anthropic API (10 entity types) |
 | `poc_pipeline_v2_local.py` | v2 extraction pipeline using Ollama (for HPC deployment, zero API cost) |
-| `ai_analysis_interface_v4.py` | Streamlit query interface with three analysis modes |
+| `ai_analysis_interface_v4.py` | Streamlit query interface with four analysis modes |
+| `enrich_summaries.py` | Generate per-document analytical summaries for corpus-wide synthesis |
 | `process_crow_batch.sh` | Batch staging helper script |
 | `dedup_entities_phase1.py` | Entity deduplication: case normalization + title stripping |
 | `schema.sql` | PostgreSQL database schema |
@@ -55,17 +56,31 @@ Takes a directory of PDFs and produces structured database records:
 
 ### Analysis Interface (ai_analysis_interface_v4.py)
 
-Streamlit web interface with three modes:
+Streamlit web interface with four modes:
 
 - **Discovery** — Search the entity database across all documents. Best for broad research questions spanning multiple archival collections.
 - **Deep Read** — Send a complete document to the AI for close analysis. Replicates single-document depth of DevonThink AI.
 - **Discovery → Deep Read** — Run Discovery to find relevant documents, select which ones to deep-read, then send full texts plus cross-collection entity data to the AI. Produces the richest analysis.
+- **Corpus Synthesis** — Send analytical summaries of ALL documents to the AI for corpus-wide pattern analysis. No context window limit — the AI sees every document in the collection. Requires summaries to be generated first (see below).
 
 ```bash
 streamlit run ai_analysis_interface_v4.py
 ```
 
 Requires: PostgreSQL with extracted data, Anthropic API key.
+
+### Document Summary Enrichment (enrich_summaries.py)
+
+Generates a 200-350 word analytical summary of each document using Claude Opus. Summaries capture document type, key parties, dates, specific claims/actions, legal mechanisms, financial details, and evidentiary value. Stored in the `summary` column of the documents table.
+
+```bash
+export ANTHROPIC_API_KEY="your-key"
+python3 enrich_summaries.py                    # summarize all unsummarized docs
+python3 enrich_summaries.py --limit 5          # test on 5 documents first
+python3 enrich_summaries.py --force            # re-summarize all documents
+```
+
+**Why summaries?** 345 summaries × ~300 words ≈ 100K tokens — fits in a single Claude call. 345 full documents × ~50K words each = impossible in any context window. Summaries are the bridge between exhaustive extraction and corpus-wide reasoning.
 
 ## Setup
 
