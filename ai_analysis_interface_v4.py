@@ -786,8 +786,28 @@ def truncate_text_to_tokens(text: str, max_tokens: int) -> Tuple[str, bool]:
 # EVIDENCE CONTEXT BUILDERS
 # ─────────────────────────────────────────────────
 
+def extract_doc_date(file_name: str) -> str:
+    """
+    Extract an approximate date from a filename.
+
+    Many archival filenames encode dates:
+      "1972 Dillon v. Antler Land Co.pdf" → "c. 1972"
+      "PrettyOnTop_Jun18_1947.pdf" → "c. 1947"
+      "1929-35 Crow SANSAR.pdf" → "c. 1929-35"
+      "Survey of Cond part 33 Montana.pdf" → "" (no date)
+    """
+    if not file_name:
+        return ""
+    # Match 4-digit year at start or after common separators
+    # Also match year ranges like 1929-35 or 1958-75
+    m = re.search(r'\b(1[89]\d{2}(?:\s*[-–]\s*\d{2,4})?)\b', file_name)
+    if m:
+        return f"c. {m.group(1)}"
+    return ""
+
+
 def build_discovery_context(question: str, evidence: Dict) -> str:
-    """Build evidence block for Discovery mode (same as v3)."""
+    """Build evidence block for Discovery mode."""
     sections = []
 
     # Full-text passages (most important)
@@ -796,7 +816,9 @@ def build_discovery_context(question: str, evidence: Dict) -> str:
         lines = []
         total_passages = sum(p['passage_count'] for p in passages)
         for doc in passages:
-            lines.append(f"\n  === {doc['file_name']} (collection: {doc.get('collection', 'n/a')}) ===")
+            doc_date = extract_doc_date(doc['file_name'])
+            date_label = f", date: {doc_date}" if doc_date else ""
+            lines.append(f"\n  === {doc['file_name']} (collection: {doc.get('collection', 'n/a')}{date_label}) ===")
             for i, passage in enumerate(doc['passages']):
                 if len(passage) > 800:
                     passage = passage[:800] + "..."
@@ -872,8 +894,10 @@ def build_discovery_context(question: str, evidence: Dict) -> str:
     if docs:
         lines = []
         for d in docs[:25]:
-            lines.append(f"  - {d['file_name']} (collection: {d.get('collection', 'n/a')}, "
-                         f"{d.get('entity_count', 0)} entities, pipeline: {d.get('pipeline_version', 'n/a')})")
+            doc_date = extract_doc_date(d['file_name'])
+            date_label = f", date: {doc_date}" if doc_date else ""
+            lines.append(f"  - {d['file_name']} (collection: {d.get('collection', 'n/a')}{date_label}, "
+                         f"{d.get('entity_count', 0)} entities)")
         sections.append(f"SOURCE DOCUMENTS ({len(docs)} matching):\n" + "\n".join(lines))
 
     return "\n\n".join(sections)
@@ -971,8 +995,10 @@ def build_hybrid_context(question: str, discovery_evidence: Dict,
         trunc_note = " [TRUNCATED]" if was_truncated else ""
         est_pages = max(1, len(full_text) // 3000)
 
+        doc_date = extract_doc_date(doc['file_name'])
+        date_label = f", date: {doc_date}" if doc_date else ""
         doc_section = f"=== FULL DOCUMENT {i+1}: {doc['file_name']} (~{est_pages} pages{trunc_note}) ===\n"
-        doc_section += f"Collection: {doc.get('collection', 'n/a')}\n\n"
+        doc_section += f"Collection: {doc.get('collection', 'n/a')}{date_label}\n\n"
         doc_section += text
 
         # Add this document's extracted data
@@ -1073,6 +1099,7 @@ IMPORTANT CAVEATS:
 - The text passages come from OCR'd historical documents and may contain OCR errors.
 - Entity extraction is imperfect — names may be fragmented across variants.
 - If evidence seems thin for a well-documented topic, the gap may be in the search, not the archive.
+- DATING: Some documents include an approximate date (marked "c. YYYY" in the header). Use these dates when discussing what a document shows. Do NOT guess or infer dates for documents that lack a date marker. If a document has no date, say "undated" or cite only the filename. Never place undated evidence in a specific decade unless the document text itself contains an explicit date.
 
 RESEARCH QUESTION: {question}
 
@@ -1087,7 +1114,7 @@ ANALYSIS GUIDELINES:
 4. Where documents reveal specific mechanisms (how something was done, who authorized it, what legal basis was cited), describe those mechanisms in detail.
 5. Note where evidence is strong vs. where gaps suggest more may exist under different search terms.
 6. For financial transactions, trace the flow of money and land.
-7. Use precise historical terminology.
+7. Use precise historical terminology. When citing a source, include its date if known (e.g., "Survey of Cond part 33 Montana.pdf, c. 1930s").
 8. End with specific follow-up queries that would surface additional evidence from this database.
 
 Begin your analysis:"""
@@ -1114,9 +1141,12 @@ def analyze_deep_read(question: str, doc: Dict, db_stats: Dict, model: str = "cl
     client = anthropic.Anthropic(api_key=api_key)
     evidence_text = build_deep_read_context(doc)
 
+    doc_date = extract_doc_date(doc.get('file_name', ''))
+    date_note = f" Approximate document date from filename: {doc_date}." if doc_date else " No date could be determined from the filename — look for dates within the document text itself."
+
     prompt = f"""You are a historian conducting a deep reading of a single archival document from a collection about Native American land dispossession, federal Indian policy, and Bureau of Indian Affairs records.
 
-DATABASE CONTEXT: This document is part of a collection of {db_stats.get('documents', 0)} processed documents containing {db_stats.get('entities', 0)} entities.
+DATABASE CONTEXT: This document is part of a collection of {db_stats.get('documents', 0)} processed documents containing {db_stats.get('entities', 0)} entities.{date_note}
 
 You have been given the COMPLETE TEXT of this document, along with structured data (entities, events, transactions, relationships) that were previously extracted from it by AI. Your job is to read the full text carefully and provide deep analysis that goes beyond what automated extraction could capture.
 
@@ -1193,6 +1223,7 @@ IMPORTANT CAVEATS:
 - Texts are OCR'd and may contain errors.
 - Entity extraction is imperfect.
 - The full documents were selected as the most relevant by entity count and search term matching. Other relevant documents may exist.
+- DATING: Some documents include an approximate date (marked "c. YYYY" in headers). Use these dates when discussing what a document shows. Do NOT guess dates for undated documents — say "undated" or cite only the filename. Never place undated evidence in a specific decade unless the document text itself contains an explicit date.
 
 RESEARCH QUESTION: {question}
 
@@ -1204,7 +1235,7 @@ ANALYSIS GUIDELINES:
 3. Organize by theme or chronology, not by document. Weave evidence from multiple sources into a coherent narrative.
 4. Trace specific mechanisms: legal authorities, administrative procedures, financial flows, and chains of responsibility.
 5. Where the full documents and the cross-collection data tell different or complementary stories, note what each adds.
-6. Identify what these documents prove, what they suggest, and what remains uncertain.
+6. Identify what these documents prove, what they suggest, and what remains uncertain. When citing a source, include its date if known.
 7. End with specific follow-up queries for this database.
 
 Begin your analysis:"""
