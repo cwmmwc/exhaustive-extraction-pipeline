@@ -1082,7 +1082,7 @@ def build_hybrid_context(question: str, discovery_evidence: Dict,
 # AI ANALYSIS — three modes
 # ─────────────────────────────────────────────────
 
-def analyze_discovery(question: str, evidence: Dict, db_stats: Dict, model: str = "claude-sonnet-4-20250514") -> str:
+def analyze_discovery(question: str, evidence: Dict, db_stats: Dict, model: str = "claude-opus-4-6") -> str:
     """Mode 1: Discovery analysis (same as v3)."""
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
@@ -1141,7 +1141,7 @@ Begin your analysis:"""
         return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
 
 
-def analyze_deep_read(question: str, doc: Dict, db_stats: Dict, model: str = "claude-sonnet-4-20250514") -> str:
+def analyze_deep_read(question: str, doc: Dict, db_stats: Dict, model: str = "claude-opus-4-6") -> str:
     """Mode 2: Deep Read — send full document text to AI."""
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
@@ -1189,7 +1189,7 @@ Begin your deep reading:"""
 
 
 def analyze_hybrid(question: str, discovery_evidence: Dict,
-                    deep_docs: List[Dict], db_stats: Dict, model: str = "claude-sonnet-4-20250514") -> str:
+                    deep_docs: List[Dict], db_stats: Dict, model: str = "claude-opus-4-6") -> str:
     """Mode 3: Discovery → Deep Read hybrid."""
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
@@ -1299,17 +1299,10 @@ with st.sidebar:
         for etype, count in stats.get('entity_types', {}).items():
             st.text(f"  {etype}: {count:,}")
 
-    st.markdown("---")
-    st.markdown("**Settings:**")
-    ai_model = st.selectbox(
-        "AI Model:",
-        ["claude-sonnet-4-20250514", "claude-opus-4-6"],
-        index=0,
-        help="Sonnet: faster, cheaper (~$0.10/query). Opus: deeper analysis (~$1/query for large docs)."
-    )
-    max_passage_docs = st.slider("Max docs for passage retrieval:", 5, 30, 15)
-    passages_per_doc = st.slider("Passages per document:", 1, 5, 3)
-    hybrid_doc_count = st.slider("Docs for Deep Read (Mode 3):", 1, 5, 3)
+    ai_model = "claude-opus-4-6"
+    max_passage_docs = 30
+    passages_per_doc = 5
+    hybrid_doc_count = 5
 
 
 # ─────────────────────────────────────────────────
