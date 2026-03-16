@@ -1018,7 +1018,8 @@ Begin your analysis:"""
         )
         return response.content[0].text
     except Exception as e:
-        return f"Error during analysis: {str(e)}"
+        import traceback
+        return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
 
 
 def analyze_deep_read(question: str, doc: Dict, db_stats: Dict, model: str = "claude-sonnet-4-20250514") -> str:
@@ -1061,7 +1062,8 @@ Begin your deep reading:"""
         )
         return response.content[0].text
     except Exception as e:
-        return f"Error during analysis: {str(e)}"
+        import traceback
+        return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
 
 
 def analyze_hybrid(question: str, discovery_evidence: Dict,
@@ -1133,7 +1135,8 @@ Begin your analysis:"""
         )
         return response.content[0].text
     except Exception as e:
-        return f"Error during analysis: {str(e)}"
+        import traceback
+        return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
 
 
 # ─────────────────────────────────────────────────
