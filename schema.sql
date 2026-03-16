@@ -6,6 +6,7 @@
 CREATE TABLE IF NOT EXISTS documents (
     id SERIAL PRIMARY KEY,
     file_name TEXT NOT NULL,
+    display_title TEXT,
     file_path TEXT UNIQUE,
     page_count INTEGER,
     file_size BIGINT,

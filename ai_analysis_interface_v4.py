@@ -126,6 +126,7 @@ def search_entities(db_name: str, query: str, limit: int = 200) -> List[Dict]:
         SELECT e.id, e.name, e.type, e.context, e.acres, e.land_type,
                COUNT(DISTINCT m.document_id) as doc_count,
                ARRAY_AGG(DISTINCT d.file_name) as source_files,
+               ARRAY_AGG(DISTINCT COALESCE(d.display_title, d.file_name)) as source_display_names,
                CASE
                  WHEN e.type = 'person' AND ({name_conditions}) THEN 1000 + COUNT(DISTINCT m.document_id)
                  WHEN ({name_conditions}) THEN 500 + COUNT(DISTINCT m.document_id)
@@ -159,7 +160,7 @@ def search_events(db_name: str, query: str, limit: int = 100) -> List[Dict]:
     for t in terms:
         params.extend([f"%{t}%"] * 3)
     cur.execute(f"""
-        SELECT e.type, e.date, e.location, e.description, e.metadata, d.file_name
+        SELECT e.type, e.date, e.location, e.description, e.metadata, d.file_name, d.display_title
         FROM events e
         JOIN documents d ON e.document_id = d.id
         WHERE {conditions}
@@ -187,7 +188,7 @@ def search_financial_transactions(db_name: str, query: str, limit: int = 50) -> 
     try:
         cur.execute(f"""
             SELECT ft.amount, ft.type, ft.payer, ft.payee, ft.for_what,
-                   ft.date, ft.context, d.file_name
+                   ft.date, ft.context, d.file_name, d.display_title
             FROM financial_transactions ft
             JOIN documents d ON ft.document_id = d.id
             WHERE {conditions}
@@ -216,7 +217,7 @@ def search_relationships(db_name: str, query: str, limit: int = 100) -> List[Dic
         params.extend([f"%{t}%"] * 4)
     try:
         cur.execute(f"""
-            SELECT r.type, r.subject, r.object, r.context, d.file_name
+            SELECT r.type, r.subject, r.object, r.context, d.file_name, d.display_title
             FROM relationships r
             JOIN documents d ON r.document_id = d.id
             WHERE {conditions}
@@ -331,7 +332,7 @@ def search_full_text_passages(db_name: str, query: str,
     for tsquery_fn in ['websearch_to_tsquery', 'plainto_tsquery']:
         try:
             cur.execute(f"""
-                SELECT d.id, d.file_name, d.collection, d.full_text,
+                SELECT d.id, d.file_name, d.display_title, d.collection, d.full_text,
                        d.page_count, d.pipeline_version,
                        ts_rank_cd(to_tsvector('english', full_text),
                                   {tsquery_fn}('english', %s), 32) as rank,
@@ -354,7 +355,7 @@ def search_full_text_passages(db_name: str, query: str,
         any_conditions = " OR ".join(["d.full_text ILIKE %s"] * len(terms))
         params = [f"%{t}%" for t in terms]
         cur.execute(f"""
-            SELECT d.id, d.file_name, d.collection, d.full_text,
+            SELECT d.id, d.file_name, d.display_title, d.collection, d.full_text,
                    d.page_count, d.pipeline_version,
                    0.0 as rank,
                    (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count
@@ -380,6 +381,7 @@ def search_full_text_passages(db_name: str, query: str,
         if passages:
             results.append({
                 'file_name': doc['file_name'],
+                'display_title': doc.get('display_title'),
                 'collection': doc.get('collection', ''),
                 'page_count': doc.get('page_count'),
                 'pipeline_version': doc.get('pipeline_version', ''),
@@ -405,7 +407,7 @@ def search_documents_metadata(db_name: str, query: str, limit: int = 30) -> List
 
     try:
         cur.execute(f"""
-            SELECT d.file_name, d.collection, d.page_count, d.pipeline_version,
+            SELECT d.file_name, d.display_title, d.collection, d.page_count, d.pipeline_version,
                    (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count,
                    COALESCE(ts_rank_cd(to_tsvector('english', full_text),
                             websearch_to_tsquery('english', %s), 32), 0) as rank
@@ -425,7 +427,7 @@ def search_documents_metadata(db_name: str, query: str, limit: int = 30) -> List
         for t in terms:
             params.extend([f"%{t}%", f"%{t}%"])
         cur.execute(f"""
-            SELECT d.file_name, d.collection, d.page_count, d.pipeline_version,
+            SELECT d.file_name, d.display_title, d.collection, d.page_count, d.pipeline_version,
                    (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count,
                    0.0 as rank
             FROM documents d
@@ -477,7 +479,7 @@ def rank_documents_for_deep_read(db_name: str, query: str,
     content_query = " ".join(content_terms)
     try:
         cur.execute("""
-            SELECT d.id, d.file_name, d.collection, d.page_count, d.pipeline_version,
+            SELECT d.id, d.file_name, d.display_title, d.collection, d.page_count, d.pipeline_version,
                    d.full_text,
                    LENGTH(d.full_text) as text_length,
                    ts_rank_cd(to_tsvector('english', full_text),
@@ -495,7 +497,7 @@ def rank_documents_for_deep_read(db_name: str, query: str,
         any_conditions = " OR ".join(["d.full_text ILIKE %s"] * len(content_terms))
         params = [f"%{t}%" for t in content_terms]
         cur.execute(f"""
-            SELECT d.id, d.file_name, d.collection, d.page_count, d.pipeline_version,
+            SELECT d.id, d.file_name, d.display_title, d.collection, d.page_count, d.pipeline_version,
                    d.full_text,
                    LENGTH(d.full_text) as text_length,
                    0.0 as fts_rank,
@@ -622,7 +624,7 @@ def list_documents(db_name: str, search: str = "") -> List[Dict]:
         fname_params = [f"%{t}%" for t in terms]
         try:
             cur.execute(f"""
-                SELECT d.id, d.file_name, d.collection, d.page_count,
+                SELECT d.id, d.file_name, d.display_title, d.collection, d.page_count,
                        d.pipeline_version,
                        LENGTH(d.full_text) as text_length,
                        (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count,
@@ -643,7 +645,7 @@ def list_documents(db_name: str, search: str = "") -> List[Dict]:
             for t in terms:
                 params.extend([f"%{t}%", f"%{t}%"])
             cur.execute(f"""
-                SELECT d.id, d.file_name, d.collection, d.page_count,
+                SELECT d.id, d.file_name, d.display_title, d.collection, d.page_count,
                        d.pipeline_version,
                        LENGTH(d.full_text) as text_length,
                        (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count,
@@ -656,7 +658,7 @@ def list_documents(db_name: str, search: str = "") -> List[Dict]:
             """, params)
     else:
         cur.execute("""
-            SELECT d.id, d.file_name, d.collection, d.page_count,
+            SELECT d.id, d.file_name, d.display_title, d.collection, d.page_count,
                    d.pipeline_version,
                    LENGTH(d.full_text) as text_length,
                    (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count,
@@ -678,7 +680,7 @@ def get_document_full(db_name: str, doc_id: int) -> Optional[Dict]:
 
     # Get document
     cur.execute("""
-        SELECT d.id, d.file_name, d.file_path, d.collection,
+        SELECT d.id, d.file_name, d.display_title, d.file_path, d.collection,
                d.page_count, d.pipeline_version, d.full_text
         FROM documents d WHERE d.id = %s
     """, [doc_id])
@@ -806,6 +808,13 @@ def extract_doc_date(file_name: str) -> str:
     return ""
 
 
+def doc_label(d) -> str:
+    """Return display_title if available, otherwise file_name."""
+    if isinstance(d, dict):
+        return d.get('display_title') or d.get('file_name', '')
+    return str(d)
+
+
 def build_discovery_context(question: str, evidence: Dict) -> str:
     """Build evidence block for Discovery mode."""
     sections = []
@@ -818,7 +827,7 @@ def build_discovery_context(question: str, evidence: Dict) -> str:
         for doc in passages:
             doc_date = extract_doc_date(doc['file_name'])
             date_label = f", date: {doc_date}" if doc_date else ""
-            lines.append(f"\n  === {doc['file_name']} (collection: {doc.get('collection', 'n/a')}{date_label}) ===")
+            lines.append(f"\n  === {doc_label(doc)} (collection: {doc.get('collection', 'n/a')}{date_label}) ===")
             for i, passage in enumerate(doc['passages']):
                 if len(passage) > 800:
                     passage = passage[:800] + "..."
@@ -841,7 +850,7 @@ def build_discovery_context(question: str, evidence: Dict) -> str:
         for etype, ents in sorted(by_type.items()):
             lines.append(f"\n  [{etype.upper()}] ({len(ents)} found)")
             for e in ents[:25]:
-                sources = ", ".join(e.get('source_files', [])[:3]) if e.get('source_files') else "unknown"
+                sources = ", ".join(e.get('source_display_names', e.get('source_files', []))[:3]) if e.get('source_files') else "unknown"
                 ctx = (e.get('context') or '')[:200]
                 extras = ""
                 if e.get('acres'):
@@ -858,7 +867,7 @@ def build_discovery_context(question: str, evidence: Dict) -> str:
         lines = []
         for ev in events[:40]:
             lines.append(f"  - [{ev.get('date', 'n/d')}] {ev.get('type', '')}: {ev.get('description', '')[:200]}")
-            lines.append(f"    Location: {ev.get('location', 'n/a')} | Source: {ev.get('file_name', '')}")
+            lines.append(f"    Location: {ev.get('location', 'n/a')} | Source: {doc_label(ev)}")
         sections.append(f"EVENTS ({len(events)} total):\n" + "\n".join(lines))
 
     # Financial transactions
@@ -867,7 +876,7 @@ def build_discovery_context(question: str, evidence: Dict) -> str:
         lines = []
         for ft in transactions[:30]:
             lines.append(f"  - [{ft.get('date', 'n/d')}] {ft.get('type', '')}: {ft.get('payer', '?')} \u2192 {ft.get('payee', '?')}, Amount: {ft.get('amount', '?')}")
-            lines.append(f"    For: {ft.get('for_what', 'n/a')} | Context: {(ft.get('context') or '')[:150]} | Source: {ft.get('file_name', '')}")
+            lines.append(f"    For: {ft.get('for_what', 'n/a')} | Context: {(ft.get('context') or '')[:150]} | Source: {doc_label(ft)}")
         sections.append(f"FINANCIAL TRANSACTIONS ({len(transactions)} total):\n" + "\n".join(lines))
 
     # Relationships
@@ -876,7 +885,7 @@ def build_discovery_context(question: str, evidence: Dict) -> str:
         lines = []
         for r in relationships[:40]:
             lines.append(f"  - {r.get('subject', '?')} \u2014[{r.get('type', '?')}]\u2192 {r.get('object', '?')}")
-            lines.append(f"    Context: {(r.get('context') or '')[:150]} | Source: {r.get('file_name', '')}")
+            lines.append(f"    Context: {(r.get('context') or '')[:150]} | Source: {doc_label(r)}")
         sections.append(f"RELATIONSHIPS ({len(relationships)} total):\n" + "\n".join(lines))
 
     # Entity networks
@@ -896,7 +905,7 @@ def build_discovery_context(question: str, evidence: Dict) -> str:
         for d in docs[:25]:
             doc_date = extract_doc_date(d['file_name'])
             date_label = f", date: {doc_date}" if doc_date else ""
-            lines.append(f"  - {d['file_name']} (collection: {d.get('collection', 'n/a')}{date_label}, "
+            lines.append(f"  - {doc_label(d)} (collection: {d.get('collection', 'n/a')}{date_label}, "
                          f"{d.get('entity_count', 0)} entities)")
         sections.append(f"SOURCE DOCUMENTS ({len(docs)} matching):\n" + "\n".join(lines))
 
@@ -909,7 +918,7 @@ def build_deep_read_context(doc: Dict) -> str:
 
     # Document metadata
     sections.append(
-        f"DOCUMENT: {doc['file_name']}\n"
+        f"DOCUMENT: {doc_label(doc)}\n"
         f"Collection: {doc.get('collection', 'n/a')}\n"
         f"Pages: {doc.get('page_count', 'n/a')}\n"
         f"Pipeline: {doc.get('pipeline_version', 'n/a')}"
@@ -997,7 +1006,7 @@ def build_hybrid_context(question: str, discovery_evidence: Dict,
 
         doc_date = extract_doc_date(doc['file_name'])
         date_label = f", date: {doc_date}" if doc_date else ""
-        doc_section = f"=== FULL DOCUMENT {i+1}: {doc['file_name']} (~{est_pages} pages{trunc_note}) ===\n"
+        doc_section = f"=== FULL DOCUMENT {i+1}: {doc_label(doc)} (~{est_pages} pages{trunc_note}) ===\n"
         doc_section += f"Collection: {doc.get('collection', 'n/a')}{date_label}\n\n"
         doc_section += text
 
@@ -1008,7 +1017,7 @@ def build_hybrid_context(question: str, discovery_evidence: Dict,
         relationships = doc.get('relationships', [])
 
         if entities or events or transactions or relationships:
-            doc_section += f"\n\n--- Extracted data for {doc['file_name']} ---"
+            doc_section += f"\n\n--- Extracted data for {doc_label(doc)} ---"
             if entities:
                 ent_summary = ", ".join([f"{e['name']} ({e['type']})" for e in entities[:30]])
                 doc_section += f"\nEntities ({len(entities)}): {ent_summary}"
@@ -1044,7 +1053,7 @@ def build_hybrid_context(question: str, discovery_evidence: Dict,
     if other_transactions:
         lines = []
         for ft in other_transactions[:20]:
-            lines.append(f"  - [{ft.get('date', 'n/d')}] {ft.get('payer', '?')} \u2192 {ft.get('payee', '?')}: {ft.get('amount', '?')} | {ft.get('file_name', '')}")
+            lines.append(f"  - [{ft.get('date', 'n/d')}] {ft.get('payer', '?')} \u2192 {ft.get('payee', '?')}: {ft.get('amount', '?')} | {doc_label(ft)}")
         sections.append(f"ADDITIONAL TRANSACTIONS FROM OTHER DOCUMENTS ({len(other_transactions)}):\n" + "\n".join(lines))
 
     # Additional relationships from other documents
@@ -1053,7 +1062,7 @@ def build_hybrid_context(question: str, discovery_evidence: Dict,
     if other_relationships:
         lines = []
         for r in other_relationships[:20]:
-            lines.append(f"  - {r.get('subject', '?')} \u2014[{r.get('type', '')}]\u2192 {r.get('object', '?')} | {r.get('file_name', '')}")
+            lines.append(f"  - {r.get('subject', '?')} \u2014[{r.get('type', '')}]\u2192 {r.get('object', '?')} | {doc_label(r)}")
         sections.append(f"ADDITIONAL RELATIONSHIPS FROM OTHER DOCUMENTS ({len(other_relationships)}):\n" + "\n".join(lines))
 
     # Networks
@@ -1206,7 +1215,7 @@ def analyze_hybrid(question: str, discovery_evidence: Dict,
         safe_chars = int(170000 * 3.2)
         evidence_text = evidence_text[:safe_chars] + "\n\n[... EVIDENCE TRUNCATED TO FIT CONTEXT WINDOW ...]"
 
-    doc_names = [d['file_name'] for d in deep_docs]
+    doc_names = [doc_label(d) for d in deep_docs]
     total_other = (len(discovery_evidence.get('entities', [])) +
                    len(discovery_evidence.get('financial_transactions', [])) +
                    len(discovery_evidence.get('relationships', [])))
@@ -1395,7 +1404,7 @@ if mode_key == "Discovery":
                 with tabs[0]:
                     if evidence['passages']:
                         for doc in evidence['passages']:
-                            st.markdown(f"### \U0001f4c4 {doc['file_name']}")
+                            st.markdown(f"### \U0001f4c4 {doc_label(doc)}")
                             st.caption(f"Collection: {doc.get('collection', 'n/a')} | "
                                        f"Pipeline: {doc.get('pipeline_version', 'n/a')}")
                             for i, passage in enumerate(doc['passages']):
@@ -1408,7 +1417,7 @@ if mode_key == "Discovery":
 
                 with tabs[1]:
                     for e in evidence['entities'][:50]:
-                        sources = ", ".join(e.get('source_files', [])[:3]) if e.get('source_files') else ""
+                        sources = ", ".join(e.get('source_display_names', e.get('source_files', []))[:3]) if e.get('source_files') else ""
                         st.markdown(f"**{e['name']}** ({e['type']}) \u2014 {e.get('doc_count', 0)} docs"
                                     f" {'\u2b50' if e.get('relevance_score', 0) > 500 else ''}")
                         if e.get('context'):
@@ -1420,21 +1429,21 @@ if mode_key == "Discovery":
                 with tabs[2]:
                     for ev in evidence['events'][:30]:
                         st.markdown(f"**[{ev.get('date', 'n/d')}]** {ev.get('type', '')} \u2014 {ev.get('description', '')[:200]}")
-                        st.caption(f"\U0001f4c4 {ev.get('file_name', '')}")
+                        st.caption(f"\U0001f4c4 {doc_label(ev)}")
 
                 with tabs[3]:
                     for ft in evidence['financial_transactions'][:20]:
                         st.markdown(f"**{ft.get('payer', '?')}** \u2192 **{ft.get('payee', '?')}**: {ft.get('amount', '?')}")
                         st.caption(f"{ft.get('for_what', '')} [{ft.get('date', 'n/d')}] | "
                                    f"Context: {(ft.get('context') or '')[:150]}")
-                        st.caption(f"\U0001f4c4 {ft.get('file_name', '')}")
+                        st.caption(f"\U0001f4c4 {doc_label(ft)}")
 
                 with tabs[4]:
                     for r in evidence['relationships'][:30]:
                         st.markdown(f"**{r.get('subject', '?')}** \u2014[{r.get('type', '')}]\u2192 **{r.get('object', '?')}**")
                         if r.get('context'):
                             st.caption(r['context'][:200])
-                        st.caption(f"\U0001f4c4 {r.get('file_name', '')}")
+                        st.caption(f"\U0001f4c4 {doc_label(r)}")
 
                 with tabs[5]:
                     for person, connections in evidence.get('networks', {}).items():
@@ -1480,7 +1489,7 @@ elif mode_key == "Deep Read":
             est_pages = max(1, text_len // 3000) if text_len else 0
             has_text = "\u2705" if d.get('has_text') else "\u274c"
             doc_options.append(
-                f"{has_text} {d['file_name']} "
+                f"{has_text} {doc_label(d)} "
                 f"({d.get('entity_count', 0)} entities, ~{est_pages} pages)"
             )
 
@@ -1519,7 +1528,7 @@ elif mode_key == "Deep Read":
 
             if st.button("\U0001f4d6 Deep Read", type="primary"):
                 if not question:
-                    question = f"Provide a comprehensive analysis of this document: {selected_doc_info['file_name']}"
+                    question = f"Provide a comprehensive analysis of this document: {doc_label(selected_doc_info)}"
 
                 with st.spinner(f"Loading full document..."):
                     doc = get_document_full(selected_db, selected_doc_info['id'])
@@ -1530,7 +1539,7 @@ elif mode_key == "Deep Read":
                     # Show document stats
                     full_text = doc.get('full_text', '')
                     actual_tokens = estimate_tokens(full_text)
-                    st.info(f"Loaded: {doc['file_name']} | "
+                    st.info(f"Loaded: {doc_label(doc)} | "
                             f"{len(doc.get('entities', []))} entities, "
                             f"{len(doc.get('events', []))} events, "
                             f"{len(doc.get('transactions', []))} transactions, "
@@ -1551,7 +1560,7 @@ elif mode_key == "Deep Read":
 
                     st.markdown("---")
                     st.caption(
-                        f"\u26a0\ufe0f Deep Read: AI analyzed the full text of {doc['file_name']} "
+                        f"\u26a0\ufe0f Deep Read: AI analyzed the full text of {doc_label(doc)} "
                         f"(~{actual_tokens:,} tokens). For cross-collection analysis, "
                         f"try Discovery or Hybrid mode."
                     )
@@ -1651,7 +1660,7 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
             with tabs[0]:
                 if evidence['passages']:
                     for doc in evidence['passages']:
-                        st.markdown(f"### {doc['file_name']}")
+                        st.markdown(f"### {doc_label(doc)}")
                         for i, passage in enumerate(doc['passages']):
                             st.text_area(f"hp_{doc['file_name']}_{i}", passage[:800],
                                          height=120, label_visibility="collapsed", disabled=True)
@@ -1676,7 +1685,7 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
             # Build selection options with metadata
             doc_options = []
             for rd in ranked_docs:
-                label = (f"{rd['file_name']}  "
+                label = (f"{doc_label(rd)}  "
                         f"(score: {rd['score']:.1f}, "
                         f"hits: {rd.get('term_hits', 0)}, "
                         f"~{rd['est_tokens']:,} tok, "
@@ -1735,7 +1744,7 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
                             tokens = estimate_tokens(d.get('full_text', ''))
                             total_tokens += tokens
                             doc_info_lines.append(
-                                f"  \U0001f4c4 **{d['file_name']}** — ~{tokens:,} tokens, "
+                                f"  \U0001f4c4 **{doc_label(d)}** — ~{tokens:,} tokens, "
                                 f"{len(d.get('entities', []))} entities, "
                                 f"{len(d.get('transactions', []))} transactions"
                             )
@@ -1759,7 +1768,7 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
 
                     st.markdown("---")
                     deep_doc_names = ", ".join(
-                        [d['file_name'] for d in deep_docs]) if deep_docs else "none"
+                        [doc_label(d) for d in deep_docs]) if deep_docs else "none"
                     st.caption(
                         f"\u26a0\ufe0f Hybrid mode: Deep-read {len(deep_docs)} documents "
                         f"({deep_doc_names}) "
