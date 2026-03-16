@@ -808,6 +808,11 @@ def extract_doc_date(file_name: str) -> str:
     return ""
 
 
+def escape_dollars(text: str) -> str:
+    """Escape $ signs so Streamlit markdown doesn't render them as LaTeX."""
+    return text.replace("$", "\\$")
+
+
 def doc_label(d) -> str:
     """Return display_title if available, otherwise file_name."""
     if isinstance(d, dict):
@@ -1540,7 +1545,7 @@ if mode_key == "Discovery":
                 st.subheader("\U0001f4d6 AI Analysis (Discovery Mode)")
                 with st.spinner("Analyzing evidence..."):
                     analysis = analyze_discovery(question, evidence, stats, model=ai_model)
-                st.markdown(analysis)
+                st.markdown(escape_dollars(analysis))
 
                 st.markdown("---")
                 st.caption(
@@ -1638,7 +1643,7 @@ elif mode_key == "Deep Read":
                     st.subheader("\U0001f4d6 AI Deep Reading")
                     with st.spinner("AI is reading the full document..."):
                         analysis = analyze_deep_read(question, doc, stats, model=ai_model)
-                    st.markdown(analysis)
+                    st.markdown(escape_dollars(analysis))
 
                     st.markdown("---")
                     st.caption(
@@ -1846,7 +1851,7 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
                             analysis = analyze_hybrid(
                                 discovery_question, evidence, deep_docs, stats, model=ai_model)
 
-                    st.markdown(analysis)
+                    st.markdown(escape_dollars(analysis))
 
                     st.markdown("---")
                     deep_doc_names = ", ".join(
@@ -1923,7 +1928,7 @@ elif mode_key == "Corpus Synthesis":
                     f"AI is analyzing summaries of all {summarized} documents..."
                 ):
                     analysis = analyze_corpus(question, summaries, stats)
-                st.markdown(analysis)
+                st.markdown(escape_dollars(analysis))
 
                 st.markdown("---")
                 st.caption(
