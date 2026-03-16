@@ -24,6 +24,7 @@ Instead of using Retrieval-Augmented Generation (RAG) to search for "relevant" d
 | `poc_pipeline_v2_local.py` | v2 extraction pipeline using Ollama (for HPC deployment, zero API cost) |
 | `ai_analysis_interface_v4.py` | Streamlit query interface with three analysis modes |
 | `process_crow_batch.sh` | Batch staging helper script |
+| `dedup_entities_phase1.py` | Entity deduplication: case normalization + title stripping |
 | `schema.sql` | PostgreSQL database schema |
 
 ## The Pipeline
@@ -128,6 +129,26 @@ Six tables in PostgreSQL:
 - **events** — Dated historical events with location and description
 - **financial_transactions** — Dollar amounts with payer, payee, purpose, date
 - **relationships** — Structured triples (subject → type → object)
+
+## Entity Deduplication
+
+The extraction pipeline produces duplicate entities when the same name appears in different cases or with varying title prefixes across documents. Deduplication is run in phases after extraction.
+
+**Phase 1** (`dedup_entities_phase1.py`) — Safe, mechanical merges:
+- Case normalization: "FRANK YARLOTT" → "Frank Yarlott"
+- Title stripping: "Mr. FRANK YARLOTT", "Senator Murray" → base name
+- Picks the most-referenced variant as the canonical display name
+- Reassigns all mentions; consolidates when both variants appear in the same document
+- Writes a JSON audit log of every merge
+
+```bash
+python3 dedup_entities_phase1.py              # dry run
+python3 dedup_entities_phase1.py --execute    # perform merges
+```
+
+**Phase 2** (planned) — Fuzzy matching for OCR variants ("Yarlotte" → "Yarlott"), abbreviations ("Chas." → "Charles"), with human review.
+
+**Phase 3** (planned) — AI-assisted resolution for ambiguous cases (surname-only entities like "Murray" that may refer to multiple people).
 
 ## Architecture Document
 
