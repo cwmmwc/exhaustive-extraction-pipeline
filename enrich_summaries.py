@@ -53,7 +53,7 @@ SUMMARY_PROMPT = """You are analyzing a historical document from an archival col
 Document: {file_name}
 Collection: {collection}
 
-Write a dense analytical summary of this document in 150-250 words. No headers or bullet points — write in plain prose paragraphs. Cover: document type and purpose; author, recipient, date; specific claims, actions, or decisions (names, amounts, acreages); legal mechanisms invoked (statutes, policies, administrative procedures); and what it proves about land dispossession.
+Begin with a date line in this exact format: "DATE RANGE: [earliest year]–[latest year]" (or "DATE RANGE: undated" if no dates are discernible). Then write a dense analytical summary in 150-250 words. No headers or bullet points — write in plain prose paragraphs. Cover: document type and purpose; author, recipient, date; specific claims, actions, or decisions (names, amounts, acreages); legal mechanisms invoked (statutes, policies, administrative procedures); and what it proves about land dispossession.
 
 Prioritize specifics over generalities. Include dollar amounts, acreages, allotment numbers, and legal citations when present. If the OCR is poor or the document fragmentary, note that briefly.
 
