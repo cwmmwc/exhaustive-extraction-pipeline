@@ -310,7 +310,14 @@ def extract_passages(full_text: str, search_terms: List[str],
 def search_full_text_passages(db_name: str, query: str,
                                max_docs: int = 15,
                                max_passages_per_doc: int = 3) -> List[Dict]:
-    """Search document full text and extract relevant passages."""
+    """
+    Search document full text using PostgreSQL full-text search (GIN index).
+
+    Uses websearch_to_tsquery for natural query parsing and ts_rank_cd
+    (cover density) for relevance ranking. Falls back to plainto_tsquery
+    if websearch syntax fails. Passage extraction is done in Python for
+    better context blocks.
+    """
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
@@ -318,28 +325,38 @@ def search_full_text_passages(db_name: str, query: str,
     if not terms:
         terms = [query.strip()]
 
-    all_conditions = " AND ".join(["d.full_text ILIKE %s"] * len(terms))
-    any_conditions = " OR ".join(["d.full_text ILIKE %s"] * len(terms))
-    params = [f"%{t}%" for t in terms]
+    # Try websearch_to_tsquery first (handles natural language queries),
+    # fall back to plainto_tsquery (simpler, more forgiving)
+    docs = []
+    for tsquery_fn in ['websearch_to_tsquery', 'plainto_tsquery']:
+        try:
+            cur.execute(f"""
+                SELECT d.id, d.file_name, d.collection, d.full_text,
+                       d.page_count, d.pipeline_version,
+                       ts_rank_cd(to_tsvector('english', full_text),
+                                  {tsquery_fn}('english', %s), 32) as rank,
+                       (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count
+                FROM documents d
+                WHERE d.full_text IS NOT NULL
+                  AND to_tsvector('english', full_text) @@ {tsquery_fn}('english', %s)
+                ORDER BY rank DESC
+                LIMIT %s
+            """, [query, query, max_docs])
+            docs = [dict(row) for row in cur.fetchall()]
+            if docs:
+                break
+        except Exception:
+            conn.rollback()
+            continue
 
-    cur.execute(f"""
-        SELECT d.id, d.file_name, d.collection, d.full_text,
-               d.page_count, d.pipeline_version,
-               (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count
-        FROM documents d
-        WHERE d.full_text IS NOT NULL AND d.full_text != ''
-          AND ({all_conditions})
-        ORDER BY entity_count DESC
-        LIMIT %s
-    """, params + [max_docs])
-
-    docs = [dict(row) for row in cur.fetchall()]
-
-    if len(docs) < 3:
-        existing_ids = {d['id'] for d in docs}
+    # Final fallback: ILIKE for queries that FTS can't parse
+    if not docs:
+        any_conditions = " OR ".join(["d.full_text ILIKE %s"] * len(terms))
+        params = [f"%{t}%" for t in terms]
         cur.execute(f"""
             SELECT d.id, d.file_name, d.collection, d.full_text,
                    d.page_count, d.pipeline_version,
+                   0.0 as rank,
                    (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count
             FROM documents d
             WHERE d.full_text IS NOT NULL AND d.full_text != ''
@@ -347,12 +364,7 @@ def search_full_text_passages(db_name: str, query: str,
             ORDER BY entity_count DESC
             LIMIT %s
         """, params + [max_docs])
-        for row in cur.fetchall():
-            d = dict(row)
-            if d['id'] not in existing_ids:
-                docs.append(d)
-                if len(docs) >= max_docs:
-                    break
+        docs = [dict(row) for row in cur.fetchall()]
 
     cur.close()
     conn.close()
@@ -371,6 +383,7 @@ def search_full_text_passages(db_name: str, query: str,
                 'collection': doc.get('collection', ''),
                 'page_count': doc.get('page_count'),
                 'pipeline_version': doc.get('pipeline_version', ''),
+                'rank': round(doc.get('rank', 0), 6),
                 'passages': passages,
                 'passage_count': len(passages),
             })
@@ -379,24 +392,48 @@ def search_full_text_passages(db_name: str, query: str,
 
 
 def search_documents_metadata(db_name: str, query: str, limit: int = 30) -> List[Dict]:
-    """Search documents and return metadata (no full text)."""
+    """Search documents by full text (FTS) and filename, return metadata only."""
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
     if not terms:
         terms = [query.strip()]
-    conditions = " OR ".join(["d.full_text ILIKE %s OR d.file_name ILIKE %s"] * len(terms))
-    params = []
-    for t in terms:
-        params.extend([f"%{t}%", f"%{t}%"])
-    cur.execute(f"""
-        SELECT d.file_name, d.collection, d.page_count, d.pipeline_version,
-               (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count
-        FROM documents d
-        WHERE {conditions}
-        ORDER BY entity_count DESC
-        LIMIT %s
-    """, params + [limit])
+
+    # Combine FTS on full_text with ILIKE on file_name
+    fname_conditions = " OR ".join(["d.file_name ILIKE %s"] * len(terms))
+    fname_params = [f"%{t}%" for t in terms]
+
+    try:
+        cur.execute(f"""
+            SELECT d.file_name, d.collection, d.page_count, d.pipeline_version,
+                   (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count,
+                   COALESCE(ts_rank_cd(to_tsvector('english', full_text),
+                            websearch_to_tsquery('english', %s), 32), 0) as rank
+            FROM documents d
+            WHERE (d.full_text IS NOT NULL
+                   AND to_tsvector('english', full_text) @@ websearch_to_tsquery('english', %s))
+               OR ({fname_conditions})
+            ORDER BY rank DESC, entity_count DESC
+            LIMIT %s
+        """, [query, query] + fname_params + [limit])
+    except Exception:
+        conn.rollback()
+        # Fallback to ILIKE
+        all_conditions = " OR ".join(
+            ["d.full_text ILIKE %s OR d.file_name ILIKE %s"] * len(terms))
+        params = []
+        for t in terms:
+            params.extend([f"%{t}%", f"%{t}%"])
+        cur.execute(f"""
+            SELECT d.file_name, d.collection, d.page_count, d.pipeline_version,
+                   (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count,
+                   0.0 as rank
+            FROM documents d
+            WHERE {all_conditions}
+            ORDER BY entity_count DESC
+            LIMIT %s
+        """, params + [limit])
+
     results = [dict(row) for row in cur.fetchall()]
     cur.close()
     conn.close()
@@ -435,22 +472,40 @@ def rank_documents_for_deep_read(db_name: str, query: str,
     if not content_terms:
         content_terms = terms  # fallback to original if everything was filtered
 
-    # Find documents containing search terms — fetch MORE candidates (50 not 20)
-    # and don't pre-sort by entity count (that biases toward huge finding aids)
-    any_conditions = " OR ".join(["d.full_text ILIKE %s"] * len(content_terms))
-    params = [f"%{t}%" for t in content_terms]
-
-    cur.execute(f"""
-        SELECT d.id, d.file_name, d.collection, d.page_count, d.pipeline_version,
-               d.full_text,
-               LENGTH(d.full_text) as text_length,
-               (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count,
-               (SELECT COUNT(*) FROM financial_transactions ft WHERE ft.document_id = d.id) as transaction_count,
-               (SELECT COUNT(*) FROM relationships r WHERE r.document_id = d.id) as relationship_count
-        FROM documents d
-        WHERE d.full_text IS NOT NULL AND d.full_text != ''
-          AND ({any_conditions})
-    """, params)
+    # Find documents containing search terms using FTS (GIN index).
+    # Fetch all matching candidates — scoring happens in Python below.
+    content_query = " ".join(content_terms)
+    try:
+        cur.execute("""
+            SELECT d.id, d.file_name, d.collection, d.page_count, d.pipeline_version,
+                   d.full_text,
+                   LENGTH(d.full_text) as text_length,
+                   ts_rank_cd(to_tsvector('english', full_text),
+                              websearch_to_tsquery('english', %s), 32) as fts_rank,
+                   (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count,
+                   (SELECT COUNT(*) FROM financial_transactions ft WHERE ft.document_id = d.id) as transaction_count,
+                   (SELECT COUNT(*) FROM relationships r WHERE r.document_id = d.id) as relationship_count
+            FROM documents d
+            WHERE d.full_text IS NOT NULL
+              AND to_tsvector('english', full_text) @@ websearch_to_tsquery('english', %s)
+        """, [content_query, content_query])
+    except Exception:
+        conn.rollback()
+        # Fallback to ILIKE if FTS fails
+        any_conditions = " OR ".join(["d.full_text ILIKE %s"] * len(content_terms))
+        params = [f"%{t}%" for t in content_terms]
+        cur.execute(f"""
+            SELECT d.id, d.file_name, d.collection, d.page_count, d.pipeline_version,
+                   d.full_text,
+                   LENGTH(d.full_text) as text_length,
+                   0.0 as fts_rank,
+                   (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count,
+                   (SELECT COUNT(*) FROM financial_transactions ft WHERE ft.document_id = d.id) as transaction_count,
+                   (SELECT COUNT(*) FROM relationships r WHERE r.document_id = d.id) as relationship_count
+            FROM documents d
+            WHERE d.full_text IS NOT NULL AND d.full_text != ''
+              AND ({any_conditions})
+        """, params)
 
     candidates = [dict(row) for row in cur.fetchall()]
     cur.close()
@@ -528,10 +583,16 @@ def rank_documents_for_deep_read(db_name: str, query: str,
         else:
             size_factor = 0.3   # heavy truncation — most content lost
 
+        # ── FTS RANK: PostgreSQL full-text search relevance ──
+        # Cover density rank from the database, scaled to be comparable
+        # with our other signals (typically 0-1, scaled by 10).
+        fts_score = doc.get('fts_rank', 0) * 10
+
         # ── FINAL SCORE ──
-        # Combines density (focus), volume (coverage), richness, and filename match.
-        # Size factor applied to prefer documents worth deep reading.
-        score = (term_density + term_volume + richness_density + fname_bonus) * size_factor
+        # Combines FTS rank, density (focus), volume (coverage), richness,
+        # and filename match. Size factor applied to prefer documents worth
+        # deep reading.
+        score = (fts_score + term_density + term_volume + richness_density + fname_bonus) * size_factor
 
         doc['score'] = score
         doc['est_tokens'] = est_tokens
@@ -556,21 +617,43 @@ def list_documents(db_name: str, search: str = "") -> List[Dict]:
         terms = [t.strip() for t in search.split() if len(t.strip()) > 2]
         if not terms:
             terms = [search.strip()]
-        conditions = " OR ".join(["d.file_name ILIKE %s OR d.full_text ILIKE %s"] * len(terms))
-        params = []
-        for t in terms:
-            params.extend([f"%{t}%", f"%{t}%"])
-        cur.execute(f"""
-            SELECT d.id, d.file_name, d.collection, d.page_count,
-                   d.pipeline_version,
-                   LENGTH(d.full_text) as text_length,
-                   (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count,
-                   (d.full_text IS NOT NULL AND d.full_text != '') as has_text
-            FROM documents d
-            WHERE {conditions}
-            ORDER BY entity_count DESC
-            LIMIT 100
-        """, params)
+        # FTS on full_text + ILIKE on file_name
+        fname_conditions = " OR ".join(["d.file_name ILIKE %s"] * len(terms))
+        fname_params = [f"%{t}%" for t in terms]
+        try:
+            cur.execute(f"""
+                SELECT d.id, d.file_name, d.collection, d.page_count,
+                       d.pipeline_version,
+                       LENGTH(d.full_text) as text_length,
+                       (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count,
+                       (d.full_text IS NOT NULL AND d.full_text != '') as has_text,
+                       COALESCE(ts_rank_cd(to_tsvector('english', full_text),
+                                websearch_to_tsquery('english', %s), 32), 0) as rank
+                FROM documents d
+                WHERE (d.full_text IS NOT NULL
+                       AND to_tsvector('english', full_text) @@ websearch_to_tsquery('english', %s))
+                   OR ({fname_conditions})
+                ORDER BY rank DESC, entity_count DESC
+                LIMIT 100
+            """, [search, search] + fname_params)
+        except Exception:
+            conn.rollback()
+            conditions = " OR ".join(["d.file_name ILIKE %s OR d.full_text ILIKE %s"] * len(terms))
+            params = []
+            for t in terms:
+                params.extend([f"%{t}%", f"%{t}%"])
+            cur.execute(f"""
+                SELECT d.id, d.file_name, d.collection, d.page_count,
+                       d.pipeline_version,
+                       LENGTH(d.full_text) as text_length,
+                       (SELECT COUNT(*) FROM mentions m WHERE m.document_id = d.id) as entity_count,
+                       (d.full_text IS NOT NULL AND d.full_text != '') as has_text,
+                       0.0 as rank
+                FROM documents d
+                WHERE {conditions}
+                ORDER BY entity_count DESC
+                LIMIT 100
+            """, params)
     else:
         cur.execute("""
             SELECT d.id, d.file_name, d.collection, d.page_count,
