@@ -13,24 +13,26 @@ Instead of using Retrieval-Augmented Generation (RAG) to search for "relevant" d
 - **345 documents processed** across 9 batches (Crow Nation archival materials)
 - **15,000+ entities**, **600+ financial transactions**, **1,200+ relationships**, **1,200+ events** extracted
 - v2 extraction validated with 10 entity types
-- Three-mode analysis interface tested and producing publishable historical analysis
+- v3 extraction pipeline built with 3 additional structured types (fee patents, correspondence, legislative actions)
+- Four-mode analysis interface tested and producing publishable historical analysis
 - Ready for full-corpus deployment on UVA Rivanna/Afton HPC
 
 ## Repository Contents
 
 | File | Description |
 |------|-------------|
+| `poc_pipeline_chunked_v3.py` | **v3 extraction pipeline** using Anthropic API (10 entity types + fee patents, correspondence, legislative actions) |
 | `poc_pipeline_chunked_v2.py` | v2 extraction pipeline using Anthropic API (10 entity types) |
 | `poc_pipeline_v2_local.py` | v2 extraction pipeline using Ollama (for HPC deployment, zero API cost) |
 | `ai_analysis_interface_v4.py` | Streamlit query interface with four analysis modes |
 | `enrich_summaries.py` | Generate per-document analytical summaries for corpus-wide synthesis |
 | `process_crow_batch.sh` | Batch staging helper script |
 | `dedup_entities_phase1.py` | Entity deduplication: case normalization + title stripping |
-| `schema.sql` | PostgreSQL database schema |
+| `schema.sql` | PostgreSQL database schema (v3) |
 
 ## The Pipeline
 
-### Extraction (poc_pipeline_chunked_v2.py / poc_pipeline_v2_local.py)
+### Extraction (poc_pipeline_chunked_v3.py)
 
 Takes a directory of PDFs and produces structured database records:
 
@@ -39,20 +41,31 @@ Takes a directory of PDFs and produces structured database records:
 3. **LLM extraction** — Each chunk sent to LLM with structured prompt returning JSON
 4. **Database storage** — Parsed into PostgreSQL with deduplication
 
-### Entity Types (v2)
+### Entity Types (v2) + Structured Types (v3)
 
-| Type | Example |
-|------|---------|
-| person | Harold Stanton, Paul Fickinger, Guy Bulltail |
-| organization | Bureau of Indian Affairs, Campbell Farming Corporation |
-| location | Crow Reservation, Big Horn County |
-| land_parcel | Allotment 2237, Section 12 T1S R32E |
-| legal_case | Dillon v. Antler Land Co. of Wyola |
-| legislation | Crow Act 1920, H.R. 5477 |
-| acreage_holding | Homer Scott: 90,000 acres |
-| financial_transaction | $32,691.20 oil lease bonus payment |
-| relationship | Stanton represented Crow Tribe as tribal attorney |
-| date_event | March 18, 1940 — House passed H.R. 5477 |
+| Type | Example | Version |
+|------|---------|---------|
+| person | Harold Stanton, Paul Fickinger, Guy Bulltail | v2 |
+| organization | Bureau of Indian Affairs, Campbell Farming Corporation | v2 |
+| location | Crow Reservation, Big Horn County | v2 |
+| land_parcel | Allotment 2237, Section 12 T1S R32E | v2 |
+| legal_case | Dillon v. Antler Land Co. of Wyola | v2 |
+| legislation | Crow Act 1920, H.R. 5477 | v2 |
+| acreage_holding | Homer Scott: 90,000 acres | v2 |
+| financial_transaction | $32,691.20 oil lease bonus payment | v2 |
+| relationship | Stanton represented Crow Tribe as tribal attorney | v2 |
+| date_event | March 18, 1940 — House passed H.R. 5477 | v2 |
+| **fee_patent** | George Peters, Allotment 1292, 840 acres, sold to Stanton | **v3** |
+| **correspondence** | Murray to BIA Commissioner, 1947-06-15, re: Peters fee patent | **v3** |
+| **legislative_action** | S. 1385 introduced by Murray, 1947-06, enacted as Private Law 68 | **v3** |
+
+### v3 Extraction Types — Why These Matter
+
+**Fee patents** are the atomic unit of land dispossession. The v2 pipeline scattered fee patent data across `person`, `land_parcel`, `financial_transaction`, and `relationship` entities — forcing the AI to reassemble it at query time. The v3 `fee_patent` type links allottee, allotment number, acreage, patent date, trust-to-fee mechanism (private bill, administrative action), subsequent buyer, sale price, facilitating attorney, and any mortgage into a single record. This enables direct SQL queries like "total acreage patented by decade" or "which attorneys appeared in the most fee patent chains."
+
+**Correspondence** captures the bureaucratic network: sender, recipient, titles/positions, date, subject, action requested, and outcome. Designed to link with Pipeline B (1.4M BIA index cards from the National Archives) via sender/recipient/date matching. This is the cross-corpus integration layer described in the HAVI Level I proposal.
+
+**Legislative actions** track bills through their lifecycle: introduced, reported, amended, passed, vetoed, enacted — with sponsors, vote counts, and committee assignments. The v2 `legislation` entity captured bill names but not their trajectories. The Murray synthesis (which reconstructed 5 major bills across 30+ documents from summaries alone) demonstrated how much analytical leverage structured legislative data provides.
 
 ### Analysis Interface (ai_analysis_interface_v4.py)
 
@@ -78,9 +91,13 @@ export ANTHROPIC_API_KEY="your-key"
 python3 enrich_summaries.py                    # summarize all unsummarized docs
 python3 enrich_summaries.py --limit 5          # test on 5 documents first
 python3 enrich_summaries.py --force            # re-summarize all documents
+python3 enrich_summaries.py --batch            # use Batch API (50% cost savings)
+python3 enrich_summaries.py --batch --force    # re-summarize all via Batch API
 ```
 
 **Why summaries?** 345 summaries × ~300 words ≈ 100K tokens — fits in a single Claude call. 345 full documents × ~50K words each = impossible in any context window. Summaries are the bridge between exhaustive extraction and corpus-wide reasoning.
+
+**Batch API:** The `--batch` flag submits all requests via the Anthropic Message Batches API, which processes them asynchronously at 50% of standard pricing ($2.50/MTok input, $12.50/MTok output for Opus). Batches typically complete within an hour. Use this for any bulk run — it saves ~$23 per full-corpus enrichment pass.
 
 ## Setup
 
@@ -113,7 +130,14 @@ The pipeline creates all tables automatically on first run.
 
 ### Running Extraction
 
-**With Anthropic API:**
+**v3 pipeline (recommended):**
+```bash
+export ANTHROPIC_API_KEY="your-key"
+python3 poc_pipeline_chunked_v3.py --input /path/to/pdfs --output results_v3/
+python3 poc_pipeline_chunked_v3.py --input /path/to/pdfs --output results_v3/ --model claude-opus-4-6
+```
+
+**v2 pipeline (Anthropic API):**
 ```bash
 export ANTHROPIC_API_KEY="your-key"
 python3 poc_pipeline_chunked_v2.py --input /path/to/pdfs --output results/
@@ -136,14 +160,17 @@ The Streamlit analysis interface is deployed on Google Cloud Run at `https://ext
 
 ## Database Schema
 
-Six tables in PostgreSQL:
+Nine tables in PostgreSQL (v3):
 
-- **documents** — One row per PDF (full text, metadata, archival provenance)
+- **documents** — One row per PDF (full text, metadata, summary, archival provenance)
 - **entities** — Unique entities with type, context, acres, land_type
 - **mentions** — Junction table linking entities to source documents
 - **events** — Dated historical events with location and description
 - **financial_transactions** — Dollar amounts with payer, payee, purpose, date
 - **relationships** — Structured triples (subject → type → object)
+- **fee_patents** *(v3)* — Allottee, allotment, acreage, patent date, buyer, attorney, mortgage — the atomic unit of dispossession
+- **correspondence** *(v3)* — Sender, recipient, titles, date, subject, action requested, outcome — bureaucratic network reconstruction
+- **legislative_actions** *(v3)* — Bill number, sponsor, action type, date, vote count, committee, outcome — bill lifecycle tracking
 
 ## Entity Deduplication
 

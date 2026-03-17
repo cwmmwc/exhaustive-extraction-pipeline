@@ -1105,10 +1105,14 @@ def get_all_summaries(db_name: str) -> List[Dict]:
 
 
 def build_corpus_context(summaries: List[Dict]) -> str:
-    """Build context block with all document summaries for corpus-wide synthesis."""
+    """Build context block with all document summaries for corpus-wide synthesis.
+
+    Uses actual database IDs as [Doc N] references so citations can be linked
+    to the archive website at /documents/N.
+    """
     lines = []
     current_collection = None
-    for i, doc in enumerate(summaries):
+    for doc in summaries:
         collection = doc.get('collection') or 'Unknown'
         if collection != current_collection:
             current_collection = collection
@@ -1116,10 +1120,103 @@ def build_corpus_context(summaries: List[Dict]) -> str:
         name = doc.get('display_title') or doc.get('file_name', '')
         doc_date = extract_doc_date(doc.get('file_name', ''))
         date_label = f" ({doc_date})" if doc_date else ""
-        lines.append(f"[Doc {i+1}] {name}{date_label}")
+        lines.append(f"[Doc {doc['id']}] {name}{date_label}")
         lines.append(doc['summary'])
         lines.append("")
     return "\n".join(lines)
+
+
+# Archive website base URL for document links
+ARCHIVE_BASE_URL = "https://crow-archive-5xbriosdia-ue.a.run.app"
+
+
+def build_citation_index(summaries: List[Dict]) -> Dict[int, Dict]:
+    """Build a mapping from document ID to metadata for citation generation."""
+    return {doc['id']: doc for doc in summaries}
+
+
+def _expand_doc_references(ref_text: str) -> List[int]:
+    """Parse a Doc reference string into individual document IDs.
+
+    Handles:
+      "42"           → [42]
+      "42, 55"       → [42, 55]
+      "213–225"      → [213, 214, ..., 225]
+      "32–39, 42, 52–53" → [32, 33, ..., 39, 42, 52, 53]
+    """
+    ids = []
+    # Split on commas first
+    for part in re.split(r'\s*,\s*', ref_text):
+        part = part.strip()
+        # Check for range (em-dash, en-dash, or hyphen between numbers)
+        range_match = re.match(r'(\d+)\s*[–—-]\s*(\d+)$', part)
+        if range_match:
+            start = int(range_match.group(1))
+            end = int(range_match.group(2))
+            # If end is shorter (e.g., 52–53 or 213–25), infer full number
+            if end < start:
+                prefix = str(start)[:len(str(start)) - len(str(end))]
+                end = int(prefix + str(end))
+            ids.extend(range(start, end + 1))
+        else:
+            num_match = re.match(r'(\d+)$', part)
+            if num_match:
+                ids.append(int(num_match.group(1)))
+    return ids
+
+
+def linkify_citations(text: str, citation_index: Dict[int, Dict]) -> str:
+    """Convert [Doc N] references in AI output to clickable links with tooltips.
+
+    Handles single refs [Doc 42], comma lists [Doc 42, 55], ranges [Doc 213–225],
+    and mixed [Doc 32–39, 42, 52–53]. Appends a Sources Cited appendix at the bottom.
+    """
+    cited_ids = []
+
+    def _make_link(doc_id: int) -> str:
+        """Create a markdown link for a single document ID."""
+        doc = citation_index.get(doc_id)
+        if doc:
+            if doc_id not in cited_ids:
+                cited_ids.append(doc_id)
+            name = doc.get('display_title') or doc.get('file_name', '')
+            url = f"{ARCHIVE_BASE_URL}/documents/{doc_id}"
+            return f"[Doc {doc_id}]({url} \"{name}\")"
+        return f"[Doc {doc_id}]"
+
+    def replace_doc_group(match):
+        """Replace any [Doc ...] pattern — single, list, range, or mixed."""
+        inner = match.group(1)  # everything after "Doc "
+        doc_ids = _expand_doc_references(inner)
+        if not doc_ids:
+            return match.group(0)
+        return ", ".join(_make_link(did) for did in doc_ids)
+
+    # Match [Doc <anything that looks like numbers, commas, dashes>]
+    # but NOT already-linked patterns (negative lookahead for opening paren)
+    linked = re.sub(
+        r'\[Doc\s+([\d\s,–—-]+)\](?!\()',
+        replace_doc_group,
+        text
+    )
+
+    # Build citation appendix
+    if cited_ids:
+        linked += "\n\n---\n\n### Sources Cited\n\n"
+        for doc_id in cited_ids:
+            doc = citation_index.get(doc_id)
+            if doc:
+                name = doc.get('display_title') or doc.get('file_name', '')
+                collection = doc.get('collection') or ''
+                doc_date = extract_doc_date(doc.get('file_name', ''))
+                date_str = f", {doc_date}" if doc_date else ""
+                url = f"{ARCHIVE_BASE_URL}/documents/{doc_id}"
+                linked += f"- **[Doc {doc_id}]({url})** — {name}"
+                if collection:
+                    linked += f" (*{collection}*{date_str})"
+                linked += "\n"
+
+    return linked
 
 
 def analyze_corpus(question: str, summaries: List[Dict], db_stats: Dict,
@@ -1146,15 +1243,21 @@ RESEARCH QUESTION: {question}
 {corpus_context}
 
 SYNTHESIS GUIDELINES:
-1. Identify PATTERNS across documents: recurring actors, repeated legal mechanisms, systematic processes that appear across multiple documents and decades.
-2. Construct TIMELINES: trace how specific actions (allotment, fee patents, land sales, legislative efforts) played out over time.
-3. Map NETWORKS: which actors appear together across documents? Who were the key facilitators, opponents, and victims?
-4. Trace MECHANISMS: how exactly did land pass from Native ownership to non-Indian ownership? What legal, administrative, and extralegal mechanisms do the documents reveal?
-5. QUANTIFY where possible: total acreages, dollar amounts, numbers of allotments affected across the corpus.
-6. Identify GAPS: what topics, time periods, or actors are poorly represented?
-7. Cite specific documents by [Doc N] reference when making claims.
-8. Distinguish between what the documents collectively PROVE and what they SUGGEST.
-9. This is corpus-wide synthesis — prioritize patterns and systemic analysis over individual document summaries.
+
+1. SURFACE PATTERNS across documents. Identify recurring actors, repeated legal mechanisms, and systematic processes that appear across multiple documents and decades. This is corpus-wide synthesis — prioritize cross-document patterns over summarizing individual documents.
+
+2. GROUND EVERYTHING IN EVIDENCE. Every claim must be supported by specific documentary evidence: names, allotment numbers, acreages, dollar amounts, bill numbers, dates, vote counts, patent numbers, legal descriptions. Do not make assertions without citing the specific details from the documents that support them.
+
+3. SHOW CONNECTIONS. Trace which actors appear together across documents. Identify sequences of events that recur. Show how specific mechanisms (fee patenting, private bills, administrative trust-to-fee conversion) operated across time and place, citing the specific cases that demonstrate each pattern.
+
+4. QUANTIFY WHERE POSSIBLE. Aggregate total acreages, dollar amounts, numbers of transactions, vote tallies, and other numerical evidence across the corpus. When exact totals aren't possible, provide ranges or lower bounds based on what the documents contain.
+
+5. Cite specific documents by their [Doc N] reference (where N is the document ID number shown in the summaries above). Use the exact ID numbers. When multiple documents support a claim, list them: [Doc 42, 55, 103]. Every substantive claim needs at least one citation.
+
+6. CONCLUDE WITH THREE SECTIONS:
+   - **What the Documents Prove**: claims fully supported by the documentary evidence, with citations.
+   - **What the Documents Suggest**: plausible interpretations that the evidence points toward but does not definitively establish.
+   - **Gaps in the Record**: what topics, time periods, actors, or questions are poorly represented or unanswerable from this corpus.
 
 Begin your corpus-wide synthesis:"""
 
@@ -1915,12 +2018,11 @@ elif mode_key == "Corpus Synthesis":
                 st.warning("Please enter a research question.")
             else:
                 with st.expander(f"Document summaries sent to AI ({summarized})", expanded=False):
-                    for i, s in enumerate(summaries):
+                    for s in summaries:
                         name = s.get('display_title') or s.get('file_name', '')
-                        st.markdown(f"**[Doc {i+1}]** {name}")
+                        doc_url = f"{ARCHIVE_BASE_URL}/documents/{s['id']}"
+                        st.markdown(f"**[Doc {s['id']}]({doc_url})** {name}")
                         st.caption(s.get('summary', '')[:300] + "...")
-                        if (i + 1) % 50 == 0:
-                            st.markdown("---")
 
                 st.markdown("---")
                 st.subheader("\U0001f3db\ufe0f AI Corpus-Wide Synthesis")
@@ -1928,12 +2030,17 @@ elif mode_key == "Corpus Synthesis":
                     f"AI is analyzing summaries of all {summarized} documents..."
                 ):
                     analysis = analyze_corpus(question, summaries, stats)
-                st.markdown(escape_dollars(analysis))
+
+                # Convert [Doc N] references to clickable links with citations
+                citation_index = build_citation_index(summaries)
+                linked_analysis = linkify_citations(escape_dollars(analysis), citation_index)
+                st.markdown(linked_analysis, unsafe_allow_html=False)
 
                 st.markdown("---")
                 st.caption(
                     f"\U0001f3db\ufe0f Corpus Synthesis: AI analyzed summaries of all "
                     f"{summarized} documents (~{est_tokens:,} tokens). "
+                    f"Document citations link to the Crow Nation Digital Archive. "
                     f"For deep reading of specific documents, use Deep Read or Hybrid mode."
                 )
 
