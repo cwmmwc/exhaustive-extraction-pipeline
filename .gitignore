@@ -1,3 +1,4 @@
 .DS_Store
 venv/
+__pycache__/
 dedup_phase1_log_*.json
