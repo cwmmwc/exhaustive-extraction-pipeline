@@ -84,7 +84,8 @@ def get_db_stats(db_name: str) -> Dict:
         stats['entities'] = cur.fetchone()[0]
         cur.execute("SELECT COUNT(*) FROM events")
         stats['events'] = cur.fetchone()[0]
-        for table in ['financial_transactions', 'relationships']:
+        for table in ['financial_transactions', 'relationships',
+                      'fee_patents', 'correspondence', 'legislative_actions']:
             try:
                 cur.execute(f"SELECT COUNT(*) FROM {table}")
                 stats[table] = cur.fetchone()[0]
@@ -222,6 +223,105 @@ def search_relationships(db_name: str, query: str, limit: int = 100) -> List[Dic
             JOIN documents d ON r.document_id = d.id
             WHERE {conditions}
             ORDER BY r.subject, r.type
+            LIMIT %s
+        """, params + [limit])
+        results = [dict(row) for row in cur.fetchall()]
+    except Exception:
+        results = []
+    cur.close()
+    conn.close()
+    return results
+
+
+def search_fee_patents(db_name: str, query: str, limit: int = 50) -> List[Dict]:
+    conn = get_db_connection(db_name)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
+    if not terms:
+        terms = [query.strip()]
+    conditions = " OR ".join(
+        ["fp.allottee ILIKE %s OR fp.allotment_number ILIKE %s OR fp.subsequent_buyer ILIKE %s "
+         "OR fp.attorney ILIKE %s OR fp.trust_to_fee_mechanism ILIKE %s OR fp.context ILIKE %s"] * len(terms)
+    )
+    params = []
+    for t in terms:
+        params.extend([f"%{t}%"] * 6)
+    try:
+        cur.execute(f"""
+            SELECT fp.allottee, fp.allotment_number, fp.acreage, fp.land_description,
+                   fp.patent_date, fp.patent_number, fp.trust_to_fee_mechanism,
+                   fp.subsequent_buyer, fp.sale_price, fp.sale_date,
+                   fp.attorney, fp.mortgage_amount, fp.mortgage_holder, fp.context,
+                   d.file_name, d.display_title
+            FROM fee_patents fp
+            JOIN documents d ON fp.document_id = d.id
+            WHERE {conditions}
+            ORDER BY fp.patent_date ASC NULLS LAST
+            LIMIT %s
+        """, params + [limit])
+        results = [dict(row) for row in cur.fetchall()]
+    except Exception:
+        results = []
+    cur.close()
+    conn.close()
+    return results
+
+
+def search_correspondence(db_name: str, query: str, limit: int = 50) -> List[Dict]:
+    conn = get_db_connection(db_name)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
+    if not terms:
+        terms = [query.strip()]
+    conditions = " OR ".join(
+        ["c.sender ILIKE %s OR c.recipient ILIKE %s OR c.sender_title ILIKE %s "
+         "OR c.recipient_title ILIKE %s OR c.subject ILIKE %s OR c.context ILIKE %s"] * len(terms)
+    )
+    params = []
+    for t in terms:
+        params.extend([f"%{t}%"] * 6)
+    try:
+        cur.execute(f"""
+            SELECT c.sender, c.sender_title, c.recipient, c.recipient_title,
+                   c.date, c.subject, c.action_requested, c.outcome, c.context,
+                   d.file_name, d.display_title
+            FROM correspondence c
+            JOIN documents d ON c.document_id = d.id
+            WHERE {conditions}
+            ORDER BY c.date ASC NULLS LAST
+            LIMIT %s
+        """, params + [limit])
+        results = [dict(row) for row in cur.fetchall()]
+    except Exception:
+        results = []
+    cur.close()
+    conn.close()
+    return results
+
+
+def search_legislative_actions(db_name: str, query: str, limit: int = 50) -> List[Dict]:
+    conn = get_db_connection(db_name)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
+    if not terms:
+        terms = [query.strip()]
+    conditions = " OR ".join(
+        ["la.bill_number ILIKE %s OR la.bill_title ILIKE %s OR la.sponsor ILIKE %s "
+         "OR la.action_type ILIKE %s OR la.outcome ILIKE %s OR la.context ILIKE %s"] * len(terms)
+    )
+    params = []
+    for t in terms:
+        params.extend([f"%{t}%"] * 6)
+    try:
+        cur.execute(f"""
+            SELECT la.bill_number, la.bill_title, la.sponsor, la.co_sponsors,
+                   la.action_type, la.action_date, la.vote_count, la.committee,
+                   la.outcome, la.context,
+                   d.file_name, d.display_title
+            FROM legislative_actions la
+            JOIN documents d ON la.document_id = d.id
+            WHERE {conditions}
+            ORDER BY la.action_date ASC NULLS LAST
             LIMIT %s
         """, params + [limit])
         results = [dict(row) for row in cur.fetchall()]
@@ -893,6 +993,75 @@ def build_discovery_context(question: str, evidence: Dict) -> str:
             lines.append(f"    Context: {(r.get('context') or '')[:150]} | Source: {doc_label(r)}")
         sections.append(f"RELATIONSHIPS ({len(relationships)} total):\n" + "\n".join(lines))
 
+    # Fee patents (v3)
+    fee_patents = evidence.get('fee_patents', [])
+    if fee_patents:
+        lines = []
+        for fp in fee_patents[:30]:
+            parts = [f"Allottee: {fp.get('allottee', '?')}"]
+            if fp.get('allotment_number'):
+                parts.append(f"Allotment: {fp['allotment_number']}")
+            if fp.get('acreage'):
+                parts.append(f"Acreage: {fp['acreage']}")
+            if fp.get('patent_date'):
+                parts.append(f"Patent date: {fp['patent_date']}")
+            if fp.get('trust_to_fee_mechanism'):
+                parts.append(f"Mechanism: {fp['trust_to_fee_mechanism']}")
+            if fp.get('subsequent_buyer'):
+                parts.append(f"Sold to: {fp['subsequent_buyer']}")
+            if fp.get('sale_price'):
+                parts.append(f"Sale price: {fp['sale_price']}")
+            if fp.get('attorney'):
+                parts.append(f"Attorney: {fp['attorney']}")
+            if fp.get('mortgage_amount'):
+                parts.append(f"Mortgage: {fp['mortgage_amount']} to {fp.get('mortgage_holder', '?')}")
+            lines.append(f"  - {' | '.join(parts)}")
+            lines.append(f"    Source: {doc_label(fp)}")
+        sections.append(f"FEE PATENTS ({len(fee_patents)} total — the atomic unit of land dispossession):\n" + "\n".join(lines))
+
+    # Correspondence (v3)
+    correspondence = evidence.get('correspondence', [])
+    if correspondence:
+        lines = []
+        for c in correspondence[:30]:
+            sender = c.get('sender', '?')
+            s_title = f" ({c['sender_title']})" if c.get('sender_title') else ""
+            recipient = c.get('recipient', '?')
+            r_title = f" ({c['recipient_title']})" if c.get('recipient_title') else ""
+            date = c.get('date', 'n/d')
+            lines.append(f"  - [{date}] {sender}{s_title} \u2192 {recipient}{r_title}")
+            if c.get('subject'):
+                lines.append(f"    Subject: {c['subject'][:200]}")
+            if c.get('action_requested'):
+                lines.append(f"    Action requested: {c['action_requested'][:200]}")
+            if c.get('outcome'):
+                lines.append(f"    Outcome: {c['outcome'][:200]}")
+            lines.append(f"    Source: {doc_label(c)}")
+        sections.append(f"CORRESPONDENCE ({len(correspondence)} total — bureaucratic network):\n" + "\n".join(lines))
+
+    # Legislative actions (v3)
+    legislative = evidence.get('legislative_actions', [])
+    if legislative:
+        lines = []
+        for la in legislative[:30]:
+            bill = la.get('bill_number', '?')
+            action = la.get('action_type', '?')
+            date = la.get('action_date', 'n/d')
+            parts = [f"[{date}] {bill}: {action}"]
+            if la.get('bill_title'):
+                parts.append(f"Title: {la['bill_title']}")
+            if la.get('sponsor'):
+                parts.append(f"Sponsor: {la['sponsor']}")
+            if la.get('vote_count'):
+                parts.append(f"Vote: {la['vote_count']}")
+            if la.get('committee'):
+                parts.append(f"Committee: {la['committee']}")
+            if la.get('outcome'):
+                parts.append(f"Outcome: {la['outcome']}")
+            lines.append(f"  - {' | '.join(parts)}")
+            lines.append(f"    Source: {doc_label(la)}")
+        sections.append(f"LEGISLATIVE ACTIONS ({len(legislative)} total — bill lifecycle tracking):\n" + "\n".join(lines))
+
     # Entity networks
     networks = evidence.get('networks', {})
     if networks:
@@ -1292,7 +1461,7 @@ def analyze_corpus(question: str, summaries: List[Dict], db_stats: Dict,
 
 You have analytical summaries of ALL {len(summaries)} documents in this collection, spanning {len(collections)} archival collections. Each summary captures the document type, key parties, specific actions, legal mechanisms, and evidentiary value. This is the ENTIRE corpus — you are seeing everything, not a sample.
 
-DATABASE SCOPE: {db_stats.get('documents', 0)} documents, {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} transactions, {db_stats.get('relationships', 0)} relationships.
+DATABASE SCOPE: {db_stats.get('documents', 0)} documents, {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} transactions, {db_stats.get('relationships', 0)} relationships, {db_stats.get('fee_patents', 0)} fee patents, {db_stats.get('correspondence', 0)} correspondence records, {db_stats.get('legislative_actions', 0)} legislative actions.
 
 RESEARCH QUESTION: {question}
 
@@ -1344,17 +1513,28 @@ def analyze_discovery(question: str, evidence: Dict, db_stats: Dict, model: str 
     evidence_text = build_discovery_context(question, evidence)
 
     total_structured = (len(evidence.get('entities', [])) + len(evidence.get('events', [])) +
-                        len(evidence.get('financial_transactions', [])) + len(evidence.get('relationships', [])))
+                        len(evidence.get('financial_transactions', [])) + len(evidence.get('relationships', [])) +
+                        len(evidence.get('fee_patents', [])) + len(evidence.get('correspondence', [])) +
+                        len(evidence.get('legislative_actions', [])))
     total_passages = sum(p['passage_count'] for p in evidence.get('passages', []))
     passage_docs = len(evidence.get('passages', []))
 
+    v3_scope = ""
+    if db_stats.get('fee_patents', 0) or db_stats.get('correspondence', 0) or db_stats.get('legislative_actions', 0):
+        v3_scope = (f" Additionally: {db_stats.get('fee_patents', 0)} fee patents, "
+                    f"{db_stats.get('correspondence', 0)} correspondence records, "
+                    f"{db_stats.get('legislative_actions', 0)} legislative actions.")
+
     prompt = f"""You are a historian analyzing evidence from an archival database about Native American land dispossession, federal Indian policy, and Bureau of Indian Affairs records.
 
-DATABASE SCOPE: {db_stats.get('documents', 0)} documents processed, containing {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} financial transactions, and {db_stats.get('relationships', 0)} relationships. {db_stats.get('docs_with_text', 0)} documents have full text available.
+DATABASE SCOPE: {db_stats.get('documents', 0)} documents processed, containing {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} financial transactions, and {db_stats.get('relationships', 0)} relationships. {db_stats.get('docs_with_text', 0)} documents have full text available.{v3_scope}
 
-YOU HAVE TWO TYPES OF EVIDENCE:
+YOU HAVE MULTIPLE TYPES OF EVIDENCE:
 1. DOCUMENT TEXT PASSAGES: Actual excerpts from the source documents. These are your PRIMARY evidence — quote and cite them directly.
 2. EXTRACTED ENTITIES/EVENTS/TRANSACTIONS/RELATIONSHIPS: Structured data extracted by AI from the documents. Use these to identify patterns, networks, and connections.
+3. FEE PATENTS: Structured records of the atomic unit of land dispossession — allottee, allotment, acreage, patent mechanism, subsequent buyer, attorney, mortgage. Use these to trace specific chains of land loss.
+4. CORRESPONDENCE: Bureaucratic network records — sender, recipient, titles, date, subject, action requested, outcome. Use these to reconstruct decision-making chains.
+5. LEGISLATIVE ACTIONS: Bill lifecycle records — bill number, sponsor, action type, date, vote count, committee, outcome. Use these to trace how legislation moved through Congress.
 
 IMPORTANT CAVEATS:
 - The text passages come from OCR'd historical documents and may contain OCR errors.
@@ -1474,11 +1654,11 @@ def analyze_hybrid(question: str, discovery_evidence: Dict,
 
     prompt = f"""You are a historian conducting comprehensive research using an archival database about Native American land dispossession, federal Indian policy, and Bureau of Indian Affairs records.
 
-DATABASE SCOPE: {db_stats.get('documents', 0)} documents processed, containing {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} financial transactions, and {db_stats.get('relationships', 0)} relationships.
+DATABASE SCOPE: {db_stats.get('documents', 0)} documents processed, containing {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} financial transactions, {db_stats.get('relationships', 0)} relationships, {db_stats.get('fee_patents', 0)} fee patents, {db_stats.get('correspondence', 0)} correspondence records, {db_stats.get('legislative_actions', 0)} legislative actions.
 
 YOU HAVE TWO LEVELS OF EVIDENCE:
 1. FULL DOCUMENT TEXTS: The complete text of {num_docs} top-ranked documents: {', '.join(doc_names)}. Read these deeply — quote them, trace their arguments, identify mechanisms.
-2. CROSS-COLLECTION DATA: Entities, transactions, and relationships from additional documents beyond those {num_docs}. Use these to identify patterns and connections the full texts alone wouldn't reveal.
+2. CROSS-COLLECTION DATA: Entities, transactions, relationships, fee patents, correspondence, and legislative actions from additional documents beyond those {num_docs}. Use these to identify patterns and connections the full texts alone wouldn't reveal.
 
 IMPORTANT CAVEATS:
 - Texts are OCR'd and may contain errors.
@@ -1541,11 +1721,17 @@ with st.sidebar:
         with col_a:
             st.metric("Entities", f"{stats['entities']:,}")
             st.metric("Events", f"{stats['events']:,}")
+            st.metric("Fee Patents", f"{stats.get('fee_patents', 0):,}")
         with col_b:
             st.metric("Transactions", f"{stats['financial_transactions']:,}")
             st.metric("Relationships", f"{stats['relationships']:,}")
+            st.metric("Correspondence", f"{stats.get('correspondence', 0):,}")
 
-        st.metric("Docs with full text", f"{stats.get('docs_with_text', 0):,}")
+        col_c, col_d = st.columns(2)
+        with col_c:
+            st.metric("Legislative Actions", f"{stats.get('legislative_actions', 0):,}")
+        with col_d:
+            st.metric("Docs with text", f"{stats.get('docs_with_text', 0):,}")
 
         st.markdown("---")
         st.markdown("**Entity types:**")
@@ -1607,6 +1793,9 @@ if mode_key == "Discovery":
                     'events': search_events(selected_db, question),
                     'financial_transactions': search_financial_transactions(selected_db, question),
                     'relationships': search_relationships(selected_db, question),
+                    'fee_patents': search_fee_patents(selected_db, question),
+                    'correspondence': search_correspondence(selected_db, question),
+                    'legislative_actions': search_legislative_actions(selected_db, question),
                 }
 
             with st.spinner("Layer 2: Retrieving full-text passages..."):
@@ -1637,6 +1826,9 @@ if mode_key == "Discovery":
                 'Events': len(evidence['events']),
                 'Transactions': len(evidence['financial_transactions']),
                 'Relationships': len(evidence['relationships']),
+                'Fee Patents': len(evidence.get('fee_patents', [])),
+                'Correspondence': len(evidence.get('correspondence', [])),
+                'Legislative Actions': len(evidence.get('legislative_actions', [])),
                 'Text Passages': passage_count,
                 'Documents': len(evidence['documents']),
             }
@@ -1646,7 +1838,9 @@ if mode_key == "Discovery":
             # Evidence browser
             with st.expander("\U0001f50e Browse Raw Evidence", expanded=False):
                 tabs = st.tabs(["\U0001f4c4 Passages", "\U0001f3f7\ufe0f Entities", "\U0001f4c5 Events",
-                               "\U0001f4b0 Transactions", "\U0001f517 Relationships", "\U0001f578\ufe0f Networks"])
+                               "\U0001f4b0 Transactions", "\U0001f517 Relationships",
+                               "\U0001f4dc Fee Patents", "\U0001f4e8 Correspondence",
+                               "\U0001f3db\ufe0f Legislation", "\U0001f578\ufe0f Networks"])
 
                 with tabs[0]:
                     if evidence['passages']:
@@ -1693,6 +1887,84 @@ if mode_key == "Discovery":
                         st.caption(f"\U0001f4c4 {doc_label(r)}")
 
                 with tabs[5]:
+                    if evidence.get('fee_patents'):
+                        for fp in evidence['fee_patents'][:30]:
+                            allottee = fp.get('allottee', '?')
+                            allotment = fp.get('allotment_number', '')
+                            acreage = fp.get('acreage', '')
+                            header = f"**{allottee}**"
+                            if allotment:
+                                header += f" — Allotment {allotment}"
+                            if acreage:
+                                header += f" ({acreage} acres)"
+                            st.markdown(header)
+                            details = []
+                            if fp.get('patent_date'):
+                                details.append(f"Patent: {fp['patent_date']}")
+                            if fp.get('trust_to_fee_mechanism'):
+                                details.append(f"Mechanism: {fp['trust_to_fee_mechanism']}")
+                            if fp.get('subsequent_buyer'):
+                                details.append(f"Sold to: {fp['subsequent_buyer']}")
+                            if fp.get('sale_price'):
+                                details.append(f"Price: {fp['sale_price']}")
+                            if fp.get('attorney'):
+                                details.append(f"Attorney: {fp['attorney']}")
+                            if fp.get('mortgage_amount'):
+                                details.append(f"Mortgage: {fp['mortgage_amount']} ({fp.get('mortgage_holder', '?')})")
+                            if details:
+                                st.caption(" | ".join(details))
+                            st.caption(f"\U0001f4c4 {doc_label(fp)}")
+                            st.markdown("---")
+                    else:
+                        st.info("No fee patents found.")
+
+                with tabs[6]:
+                    if evidence.get('correspondence'):
+                        for c in evidence['correspondence'][:30]:
+                            sender = c.get('sender', '?')
+                            recipient = c.get('recipient', '?')
+                            date = c.get('date', 'n/d')
+                            st.markdown(f"**{sender}** \u2192 **{recipient}** [{date}]")
+                            if c.get('sender_title') or c.get('recipient_title'):
+                                titles = f"{c.get('sender_title', '')} \u2192 {c.get('recipient_title', '')}"
+                                st.caption(titles)
+                            if c.get('subject'):
+                                st.caption(f"Re: {c['subject'][:200]}")
+                            if c.get('action_requested'):
+                                st.caption(f"Action: {c['action_requested'][:200]}")
+                            if c.get('outcome'):
+                                st.caption(f"Outcome: {c['outcome'][:200]}")
+                            st.caption(f"\U0001f4c4 {doc_label(c)}")
+                            st.markdown("---")
+                    else:
+                        st.info("No correspondence found.")
+
+                with tabs[7]:
+                    if evidence.get('legislative_actions'):
+                        for la in evidence['legislative_actions'][:30]:
+                            bill = la.get('bill_number', '?')
+                            action = la.get('action_type', '?')
+                            date = la.get('action_date', 'n/d')
+                            st.markdown(f"**{bill}** — {action} [{date}]")
+                            if la.get('bill_title'):
+                                st.caption(la['bill_title'])
+                            details = []
+                            if la.get('sponsor'):
+                                details.append(f"Sponsor: {la['sponsor']}")
+                            if la.get('vote_count'):
+                                details.append(f"Vote: {la['vote_count']}")
+                            if la.get('committee'):
+                                details.append(f"Committee: {la['committee']}")
+                            if la.get('outcome'):
+                                details.append(f"Outcome: {la['outcome']}")
+                            if details:
+                                st.caption(" | ".join(details))
+                            st.caption(f"\U0001f4c4 {doc_label(la)}")
+                            st.markdown("---")
+                    else:
+                        st.info("No legislative actions found.")
+
+                with tabs[8]:
                     for person, connections in evidence.get('networks', {}).items():
                         st.markdown(f"**Network: {person}**")
                         for c in connections[:15]:
@@ -1849,6 +2121,9 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
                     'events': search_events(selected_db, question),
                     'financial_transactions': search_financial_transactions(selected_db, question),
                     'relationships': search_relationships(selected_db, question),
+                    'fee_patents': search_fee_patents(selected_db, question),
+                    'correspondence': search_correspondence(selected_db, question),
+                    'legislative_actions': search_legislative_actions(selected_db, question),
                 }
 
             with st.spinner("Retrieving full-text passages..."):
