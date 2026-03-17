@@ -614,6 +614,61 @@ class DatabaseManagerV3:
             cur.execute("SELECT id FROM documents WHERE file_path = %s", (file_path,))
             return cur.fetchone() is not None
 
+    def find_existing_doc(self, file_name: str) -> Optional[int]:
+        """Find an existing document by file_name (for --force re-extraction)."""
+        with self.conn.cursor() as cur:
+            cur.execute("SELECT id FROM documents WHERE file_name = %s", (file_name,))
+            row = cur.fetchone()
+            return row[0] if row else None
+
+    def clear_extracted_data(self, doc_id: int):
+        """Remove all extracted data for a document, preserving the doc row, summary, and display_title."""
+        with self.conn.cursor() as cur:
+            # Delete mentions first (references entities)
+            cur.execute("DELETE FROM mentions WHERE document_id = %s", (doc_id,))
+            # Delete document-level extracted data
+            cur.execute("DELETE FROM events WHERE document_id = %s", (doc_id,))
+            cur.execute("DELETE FROM financial_transactions WHERE document_id = %s", (doc_id,))
+            cur.execute("DELETE FROM relationships WHERE document_id = %s", (doc_id,))
+            cur.execute("DELETE FROM fee_patents WHERE document_id = %s", (doc_id,))
+            cur.execute("DELETE FROM correspondence WHERE document_id = %s", (doc_id,))
+            cur.execute("DELETE FROM legislative_actions WHERE document_id = %s", (doc_id,))
+            self.conn.commit()
+            logger.info(f"  -> Cleared existing extracted data for doc_id={doc_id}")
+
+    def update_document_for_reextraction(self, doc_id: int, text: str, metadata: Dict,
+                                          collection_metadata: Dict, model_name: str):
+        """Update an existing document row for v3 re-extraction (preserves summary, display_title)."""
+        with self.conn.cursor() as cur:
+            cur.execute("""
+                UPDATE documents SET
+                    file_path = %s,
+                    page_count = %s,
+                    file_size = %s,
+                    full_text = %s,
+                    collection = %s,
+                    subcollection = %s,
+                    location = %s,
+                    extracted_dates = %s,
+                    extraction_model = %s,
+                    pipeline_version = 'v3',
+                    processed_date = CURRENT_TIMESTAMP
+                WHERE id = %s
+            """, (
+                metadata['file_path'],
+                metadata.get('page_count'),
+                metadata.get('file_size'),
+                text,
+                collection_metadata.get('collection'),
+                collection_metadata.get('subcollection'),
+                collection_metadata.get('location'),
+                str(metadata.get('extracted_dates', [])),
+                model_name,
+                doc_id,
+            ))
+            self.conn.commit()
+        return doc_id
+
     def insert_document(self, text: str, metadata: Dict,
                         collection_metadata: Dict, model_name: str = DEFAULT_MODEL) -> int:
         with self.conn.cursor() as cur:
@@ -835,6 +890,8 @@ Example:
     parser.add_argument('--output', required=True, help='Output directory for results')
     parser.add_argument('--db', default='crow_historical_docs', help='PostgreSQL database name')
     parser.add_argument('--model', default=DEFAULT_MODEL, help=f'Model to use (default: {DEFAULT_MODEL})')
+    parser.add_argument('--force', action='store_true',
+                        help='Re-extract documents already in the database (matches by file_name, preserves doc IDs/summaries)')
     args = parser.parse_args()
 
     input_path = Path(args.input)
@@ -848,6 +905,8 @@ Example:
     logger.info(f"Input:    {input_path}")
     logger.info(f"Database: {args.db}")
     logger.info(f"Model:    {args.model}")
+    if args.force:
+        logger.info(f"Mode:     FORCE RE-EXTRACTION (preserving doc IDs and summaries)")
 
     doc_processor = DocumentProcessor()
     extractor = EntityExtractorV3(model=args.model)
@@ -869,7 +928,8 @@ Example:
         logger.info(f"[{i}/{len(pdf_files)}] {pdf_path.name}")
 
         try:
-            if db_manager.is_processed(str(pdf_path.absolute())):
+            # Check if already processed
+            if not args.force and db_manager.is_processed(str(pdf_path.absolute())):
                 logger.info("  -> Already processed, skipping")
                 results['skipped'] += 1
                 continue
@@ -881,7 +941,19 @@ Example:
                 continue
 
             collection_metadata = doc_processor.extract_collection_metadata(pdf_path, input_path)
-            doc_id = db_manager.insert_document(text, metadata, collection_metadata, args.model)
+
+            # In force mode, reuse existing doc row (preserves ID, summary, display_title)
+            doc_id = None
+            if args.force:
+                doc_id = db_manager.find_existing_doc(metadata['file_name'])
+                if doc_id:
+                    db_manager.clear_extracted_data(doc_id)
+                    db_manager.update_document_for_reextraction(
+                        doc_id, text, metadata, collection_metadata, args.model
+                    )
+
+            if doc_id is None:
+                doc_id = db_manager.insert_document(text, metadata, collection_metadata, args.model)
 
             extraction = extractor.extract_all(
                 text, {**metadata, **collection_metadata}

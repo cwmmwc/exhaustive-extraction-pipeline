@@ -1135,6 +1135,62 @@ def build_citation_index(summaries: List[Dict]) -> Dict[int, Dict]:
     return {doc['id']: doc for doc in summaries}
 
 
+def build_filename_index(db_name: str) -> Dict[str, Dict]:
+    """Build a mapping from file_name to {id, display_title, file_name} for all documents."""
+    conn = get_connection(db_name)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    cur.execute("SELECT id, file_name, display_title FROM documents")
+    rows = cur.fetchall()
+    cur.close()
+    conn.close()
+    index = {}
+    for row in rows:
+        index[row['file_name']] = dict(row)
+        # Also index without .pdf extension
+        base = row['file_name']
+        if base.lower().endswith('.pdf'):
+            index[base[:-4]] = dict(row)
+    return index
+
+
+def linkify_filename_citations(text: str, filename_index: Dict[str, Dict]) -> str:
+    """Convert filename references in AI output to clickable archive links.
+
+    Matches patterns like (filename.pdf) or (filename.pdf, date) that the AI
+    uses in Discovery, Deep Read, and Hybrid modes.
+    """
+    if not filename_index:
+        return text
+
+    # Sort by length (longest first) to avoid partial matches
+    filenames = sorted(filename_index.keys(), key=len, reverse=True)
+    cited_ids: List[int] = []
+
+    for fname in filenames:
+        escaped = re.escape(fname)
+        # Match: ( [optional *] filename [optional *] [optional , date...] )
+        pattern = r'\((\*?)' + escaped + r'(\*?)((?:,\s*[^)]*)?)\)'
+
+        def make_replacer(fn: str):
+            def replacer(match):
+                star1 = match.group(1)
+                star2 = match.group(2)
+                after = match.group(3)
+                doc = filename_index.get(fn)
+                if doc:
+                    doc_id = doc['id']
+                    if doc_id not in cited_ids:
+                        cited_ids.append(doc_id)
+                    url = f"{ARCHIVE_BASE_URL}/documents/{doc_id}"
+                    return f"({star1}[{fn}]({url}){star2}{after})"
+                return match.group(0)
+            return replacer
+
+        text = re.sub(pattern, make_replacer(fname), text)
+
+    return text
+
+
 def _expand_doc_references(ref_text: str) -> List[int]:
     """Parse a Doc reference string into individual document IDs.
 
@@ -1475,6 +1531,7 @@ with st.sidebar:
     )
 
     stats = get_db_stats(selected_db)
+    filename_index = build_filename_index(selected_db)
 
     if stats.get('error'):
         st.error(f"Connection error: {stats['error']}")
@@ -1648,7 +1705,7 @@ if mode_key == "Discovery":
                 st.subheader("\U0001f4d6 AI Analysis (Discovery Mode)")
                 with st.spinner("Analyzing evidence..."):
                     analysis = analyze_discovery(question, evidence, stats, model=ai_model)
-                st.markdown(escape_dollars(analysis))
+                st.markdown(linkify_filename_citations(escape_dollars(analysis), filename_index))
 
                 st.markdown("---")
                 st.caption(
@@ -1746,7 +1803,7 @@ elif mode_key == "Deep Read":
                     st.subheader("\U0001f4d6 AI Deep Reading")
                     with st.spinner("AI is reading the full document..."):
                         analysis = analyze_deep_read(question, doc, stats, model=ai_model)
-                    st.markdown(escape_dollars(analysis))
+                    st.markdown(linkify_filename_citations(escape_dollars(analysis), filename_index))
 
                     st.markdown("---")
                     st.caption(
@@ -1954,7 +2011,7 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
                             analysis = analyze_hybrid(
                                 discovery_question, evidence, deep_docs, stats, model=ai_model)
 
-                    st.markdown(escape_dollars(analysis))
+                    st.markdown(linkify_filename_citations(escape_dollars(analysis), filename_index))
 
                     st.markdown("---")
                     deep_doc_names = ", ".join(
