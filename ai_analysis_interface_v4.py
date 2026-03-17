@@ -1137,7 +1137,7 @@ def build_citation_index(summaries: List[Dict]) -> Dict[int, Dict]:
 
 def build_filename_index(db_name: str) -> Dict[str, Dict]:
     """Build a mapping from file_name to {id, display_title, file_name} for all documents."""
-    conn = get_connection(db_name)
+    conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     cur.execute("SELECT id, file_name, display_title FROM documents")
     rows = cur.fetchall()
