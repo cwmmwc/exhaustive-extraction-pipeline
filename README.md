@@ -28,6 +28,8 @@ Instead of using Retrieval-Augmented Generation (RAG) to search for "relevant" d
 | `enrich_summaries.py` | Generate per-document analytical summaries for corpus-wide synthesis (supports Batch API) |
 | `process_crow_batch.sh` | Batch staging helper script |
 | `dedup_entities_phase1.py` | Entity deduplication: case normalization + title stripping |
+| `compare_claude_vs_local_models.py` | Claude vs. open-source model comparison (Ollama + vLLM backends) |
+| `generate_display_titles.py` | AI-generated archival display titles for all documents |
 | `schema.sql` | PostgreSQL database schema (v3) |
 
 ## The Pipeline
@@ -255,13 +257,83 @@ The research corpus is a DevonThink 4 database containing:
 - Court records, tribal collections, personal papers
 - 1,252 researcher annotations, 340 topical tags
 
-## HPC Deployment (Planned)
+## Model Comparison: Claude vs. Open Source
 
-The `poc_pipeline_v2_local.py` script is designed for deployment on UVA Rivanna/Afton:
+`compare_claude_vs_local_models.py` runs the same extraction or synthesis task through Claude and open-source models, saving outputs side by side for human evaluation.
 
-- Ollama with Llama 3.1 70B on A100 80GB GPUs
-- SLURM job arrays processing ~100 documents per job
-- Zero API cost after model download
+**Supported models:**
+- Claude Opus (synthesis) / Claude Sonnet (extraction)
+- Gemma 3 27B (`google/gemma-3-27b-it`) — 1x A100
+- Qwen 2.5 72B (`Qwen/Qwen2.5-72B-Instruct`) — 2x A100 80GB
+- Llama 3.3 70B (`meta-llama/Llama-3.3-70B-Instruct`) — 2x A100 80GB
+
+### Running on UVA Rivanna/Afton (HPC)
+
+**One-time setup:**
+```bash
+git clone https://github.com/cwmmwc/exhaustive-extraction-pipeline.git
+cd exhaustive-extraction-pipeline
+bash hpc/setup_vllm.sh
+```
+
+Edit your allocation group in `hpc/run_comparison.slurm` and `hpc/run_all_models.sh` (replace `<your_allocation>`).
+
+Set your HuggingFace token (needed for gated models like Llama and Gemma):
+```bash
+export HF_TOKEN=hf_your_token_here
+```
+
+**Run all three models:**
+```bash
+# Extraction mode (default)
+bash hpc/run_all_models.sh
+
+# Synthesis mode
+MODE=synthesis bash hpc/run_all_models.sh
+```
+
+Monitor with `squeue -u $USER`. Results appear in `comparisons/`.
+
+**Run a single model:**
+```bash
+sbatch --export=MODEL=google/gemma-3-27b-it hpc/run_comparison.slurm
+sbatch --export=MODEL=Qwen/Qwen2.5-72B-Instruct hpc/run_comparison.slurm
+```
+
+### Comparing with Claude (locally)
+
+After the Rivanna jobs finish, copy results back and run Claude against the same data:
+
+```bash
+# Copy results from Rivanna
+scp -r rivanna:~/exhaustive-extraction-pipeline/comparisons/ ./comparisons/
+
+# Run Claude on the same documents (uses corpus_context.json for identical inputs)
+python3 compare_claude_vs_local_models.py --claude-only --mode extraction --context-file corpus_context.json
+python3 compare_claude_vs_local_models.py --claude-only --mode synthesis --context-file corpus_context.json
+```
+
+If `corpus_context.json` needs refreshing (e.g., after adding documents):
+```bash
+python3 compare_claude_vs_local_models.py --dump-context
+```
+
+### Running locally with Ollama
+
+```bash
+ollama pull gemma3:27b
+ollama serve  # in a separate terminal
+python3 compare_claude_vs_local_models.py --local-models gemma3:27b --mode extraction
+```
+
+### HPC Files
+
+| File | Description |
+|------|-------------|
+| `hpc/setup_vllm.sh` | One-time setup: pull vLLM container, create virtualenv |
+| `hpc/run_comparison.slurm` | SLURM job: launch vLLM + run comparison for one model |
+| `hpc/run_all_models.sh` | Submit jobs for all three models in parallel |
+| `corpus_context.json` | Pre-dumped corpus data (no DB needed on cluster) |
 
 ## Contact
 
