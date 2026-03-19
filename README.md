@@ -10,22 +10,22 @@ Instead of using Retrieval-Augmented Generation (RAG) to search for "relevant" d
 
 ## Current Status
 
-- **345 documents processed** across 9 batches (Crow Nation archival materials)
-- **15,000+ entities**, **600+ financial transactions**, **1,200+ relationships**, **1,200+ events** extracted
-- v2 extraction validated with 10 entity types
-- v3 extraction pipeline built with 3 additional structured types (fee patents, correspondence, legislative actions)
-- Four-mode analysis interface tested and producing publishable historical analysis
+- **386 documents processed** across 9 batches (Crow Nation archival materials) with v3 pipeline
+- **43,000+ entities**, **6,800+ financial transactions**, **8,700+ relationships**, **7,900+ events** extracted
+- **959 fee patents**, **5,057 correspondence records**, **2,432 legislative actions** (v3 structured types)
+- Four-mode analysis interface with citation linking to the [Crow Nation Digital Archive](https://github.com/cwmmwc/crow-nation-digital-archive)
+- Production deployment on Google Cloud Run with auto-deploy on push to `main`
 - Ready for full-corpus deployment on UVA Rivanna/Afton HPC
 
 ## Repository Contents
 
 | File | Description |
 |------|-------------|
-| `poc_pipeline_chunked_v3.py` | **v3 extraction pipeline** using Anthropic API (10 entity types + fee patents, correspondence, legislative actions) |
+| `poc_pipeline_chunked_v3.py` | **v3 extraction pipeline** — 10 entity types + fee patents, correspondence, legislative actions. Supports `--force` for re-extraction preserving doc IDs and summaries |
 | `poc_pipeline_chunked_v2.py` | v2 extraction pipeline using Anthropic API (10 entity types) |
 | `poc_pipeline_v2_local.py` | v2 extraction pipeline using Ollama (for HPC deployment, zero API cost) |
-| `ai_analysis_interface_v4.py` | Streamlit query interface with four analysis modes |
-| `enrich_summaries.py` | Generate per-document analytical summaries for corpus-wide synthesis |
+| `ai_analysis_interface_v4.py` | Streamlit query interface with four analysis modes, citation linking, v3 data support |
+| `enrich_summaries.py` | Generate per-document analytical summaries for corpus-wide synthesis (supports Batch API) |
 | `process_crow_batch.sh` | Batch staging helper script |
 | `dedup_entities_phase1.py` | Entity deduplication: case normalization + title stripping |
 | `schema.sql` | PostgreSQL database schema (v3) |
@@ -71,10 +71,14 @@ Takes a directory of PDFs and produces structured database records:
 
 Streamlit web interface with four modes:
 
-- **Discovery** — Search the entity database across all documents. Best for broad research questions spanning multiple archival collections.
+- **Discovery** — Search the entity database across all documents, including v3 structured types (fee patents, correspondence, legislative actions). Evidence browser with tabs for each data type. Best for broad research questions spanning multiple archival collections.
 - **Deep Read** — Send a complete document to the AI for close analysis. Replicates single-document depth of DevonThink AI.
 - **Discovery → Deep Read** — Run Discovery to find relevant documents, select which ones to deep-read, then send full texts plus cross-collection entity data to the AI. Produces the richest analysis.
 - **Corpus Synthesis** — Send analytical summaries of ALL documents to the AI for corpus-wide pattern analysis. No context window limit — the AI sees every document in the collection. Requires summaries to be generated first (see below).
+
+**Citation linking:** All modes convert document references in AI output to clickable links to the [Crow Nation Digital Archive](https://github.com/cwmmwc/crow-nation-digital-archive). Corpus Synthesis links `[Doc N]` references (including ranges like `[Doc 213–225]`); Discovery, Deep Read, and Hybrid link filename citations. A Sources Cited appendix is appended to corpus synthesis output.
+
+**Corpus Synthesis prompt:** Instructs the AI to surface cross-document patterns, ground every claim in specific evidence (names, allotment numbers, acreages, dollar amounts, bill numbers, dates), show connections across time and place, quantify where possible, and conclude with three sections: What the Documents Prove, What the Documents Suggest, and Gaps in the Record.
 
 ```bash
 streamlit run ai_analysis_interface_v4.py
@@ -95,9 +99,9 @@ python3 enrich_summaries.py --batch            # use Batch API (50% cost savings
 python3 enrich_summaries.py --batch --force    # re-summarize all via Batch API
 ```
 
-**Why summaries?** 345 summaries × ~300 words ≈ 100K tokens — fits in a single Claude call. 345 full documents × ~50K words each = impossible in any context window. Summaries are the bridge between exhaustive extraction and corpus-wide reasoning.
+**Why summaries?** 386 summaries x ~300 words = ~100K tokens — fits in a single Claude call. 386 full documents x ~50K words each = impossible in any context window. Summaries are the bridge between exhaustive extraction and corpus-wide reasoning.
 
-**Batch API:** The `--batch` flag submits all requests via the Anthropic Message Batches API, which processes them asynchronously at 50% of standard pricing ($2.50/MTok input, $12.50/MTok output for Opus). Batches typically complete within an hour. Use this for any bulk run — it saves ~$23 per full-corpus enrichment pass.
+**Batch API:** The `--batch` flag submits all requests via the Anthropic Message Batches API, which processes them asynchronously at 50% of standard pricing ($2.50/MTok input, $12.50/MTok output for Opus). Batches typically complete within an hour.
 
 ## Setup
 
@@ -134,7 +138,12 @@ The pipeline creates all tables automatically on first run.
 ```bash
 export ANTHROPIC_API_KEY="your-key"
 python3 poc_pipeline_chunked_v3.py --input /path/to/pdfs --output results_v3/
-python3 poc_pipeline_chunked_v3.py --input /path/to/pdfs --output results_v3/ --model claude-opus-4-6
+python3 poc_pipeline_chunked_v3.py --input /path/to/pdfs --output results_v3/ --model claude-sonnet-4-6
+```
+
+**Re-extract existing documents** (preserves doc IDs, summaries, and display_titles):
+```bash
+python3 poc_pipeline_chunked_v3.py --input /path/to/pdfs --output results_v3/ --force
 ```
 
 **v2 pipeline (Anthropic API):**
@@ -151,12 +160,39 @@ python3 poc_pipeline_v2_local.py --input /path/to/pdfs --output results/
 
 ### Cloud Run Deployment
 
-The Streamlit analysis interface is deployed on Google Cloud Run at `https://extraction-pipeline-996830241007.us-east1.run.app`. Auto-deploys on push to `main` via Cloud Build.
+The Streamlit analysis interface is deployed on Google Cloud Run at `https://extraction-pipeline-996830241007.us-east1.run.app`.
+
+**Auto-deploy:** Pushes to `main` trigger a Cloud Build that deploys to Cloud Run automatically via the `deploy-extraction-pipeline` trigger.
 
 - **Database**: Cloud SQL via `DATABASE_URL` env var
 - **PDF source**: `gs://crow-archive-pdfs/` (shared with the archive site)
 - **API key**: Stored in Secret Manager (`anthropic-api-key`), injected at runtime
 - **Memory**: 1 GiB (Streamlit + Anthropic API calls)
+- **Build config**: `cloudbuild.yaml` + `Dockerfile`
+
+### Deploying v3 Data to Cloud SQL
+
+After running v3 extraction locally, push the data to Cloud SQL:
+
+```bash
+# Start Cloud SQL proxy
+cloud-sql-proxy lunar-mercury-397321:us-east1:allotment-db --port=5433
+
+# Create v3 tables on Cloud SQL (if first time)
+pg_dump -d crow_historical_docs --table=fee_patents --table=correspondence --table=legislative_actions --schema-only --no-owner | \
+  psql "host=localhost port=5433 dbname=crow_historical_docs user=appuser password=YOUR_PASSWORD"
+
+# Export from local, import to Cloud SQL
+psql -d crow_historical_docs -c "\copy fee_patents TO '/tmp/fee_patents.csv' WITH CSV HEADER"
+psql -d crow_historical_docs -c "\copy correspondence TO '/tmp/correspondence.csv' WITH CSV HEADER"
+psql -d crow_historical_docs -c "\copy legislative_actions TO '/tmp/legislative_actions.csv' WITH CSV HEADER"
+
+psql "host=localhost port=5433 ..." -c "\copy fee_patents FROM '/tmp/fee_patents.csv' WITH CSV HEADER"
+psql "host=localhost port=5433 ..." -c "\copy correspondence FROM '/tmp/correspondence.csv' WITH CSV HEADER"
+psql "host=localhost port=5433 ..." -c "\copy legislative_actions FROM '/tmp/legislative_actions.csv' WITH CSV HEADER"
+```
+
+Note: Filter out document IDs that don't exist in Cloud SQL if the local database contains test documents.
 
 ## Database Schema
 
@@ -171,6 +207,19 @@ Nine tables in PostgreSQL (v3):
 - **fee_patents** *(v3)* — Allottee, allotment, acreage, patent date, buyer, attorney, mortgage — the atomic unit of dispossession
 - **correspondence** *(v3)* — Sender, recipient, titles, date, subject, action requested, outcome — bureaucratic network reconstruction
 - **legislative_actions** *(v3)* — Bill number, sponsor, action type, date, vote count, committee, outcome — bill lifecycle tracking
+
+### Extraction Counts (Crow Corpus, v3)
+
+| Table | Records |
+|-------|---------|
+| Documents | 386 |
+| Entities | 43,458 |
+| Events | 7,992 |
+| Financial Transactions | 6,853 |
+| Relationships | 8,766 |
+| Fee Patents | 959 |
+| Correspondence | 5,057 |
+| Legislative Actions | 2,432 |
 
 ## Entity Deduplication
 
@@ -212,7 +261,6 @@ The `poc_pipeline_v2_local.py` script is designed for deployment on UVA Rivanna/
 
 - Ollama with Llama 3.1 70B on A100 80GB GPUs
 - SLURM job arrays processing ~100 documents per job
-- Estimated 60–100 GPU-hours for full corpus (3–5 days wall-clock)
 - Zero API cost after model download
 
 ## Contact
