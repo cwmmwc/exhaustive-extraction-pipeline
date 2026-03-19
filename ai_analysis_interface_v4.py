@@ -1720,27 +1720,32 @@ with st.sidebar:
     if stats.get('error'):
         st.error(f"Connection error: {stats['error']}")
     else:
-        st.metric("Documents", f"{stats['documents']:,}")
+        st.markdown("**Extracted from the archive:**")
+        st.metric("Documents", f"{stats['documents']:,}",
+                   help="Historical PDFs processed by the extraction pipeline")
         col_a, col_b = st.columns(2)
         with col_a:
-            st.metric("Entities", f"{stats['entities']:,}")
-            st.metric("Events", f"{stats['events']:,}")
-            st.metric("Fee Patents", f"{stats.get('fee_patents', 0):,}")
+            st.metric("Entities", f"{stats['entities']:,}",
+                       help="Named people, organizations, places, land parcels, legal cases, and legislation identified across all documents")
+            st.metric("Events", f"{stats['events']:,}",
+                       help="Dated historical events: hearings, votes, land sales, inspections, meetings")
+            st.metric("Fee Patents", f"{stats.get('fee_patents', 0):,}",
+                       help="Records of trust-to-fee land conversions — the primary mechanism of land dispossession")
         with col_b:
-            st.metric("Transactions", f"{stats['financial_transactions']:,}")
-            st.metric("Relationships", f"{stats['relationships']:,}")
-            st.metric("Correspondence", f"{stats.get('correspondence', 0):,}")
+            st.metric("Transactions", f"{stats['financial_transactions']:,}",
+                       help="Financial records: land sales, lease payments, attorney fees, oil royalties")
+            st.metric("Relationships", f"{stats['relationships']:,}",
+                       help="Connections between people and organizations — who represented, reported to, or bought from whom")
+            st.metric("Correspondence", f"{stats.get('correspondence', 0):,}",
+                       help="Letters between officials, tribal members, attorneys, and Congress — the bureaucratic network")
 
         col_c, col_d = st.columns(2)
         with col_c:
-            st.metric("Legislative Actions", f"{stats.get('legislative_actions', 0):,}")
+            st.metric("Legislative Actions", f"{stats.get('legislative_actions', 0):,}",
+                       help="Bills tracked through Congress: introduced, amended, passed, vetoed, enacted")
         with col_d:
-            st.metric("Docs with text", f"{stats.get('docs_with_text', 0):,}")
-
-        st.markdown("---")
-        st.markdown("**Entity types:**")
-        for etype, count in stats.get('entity_types', {}).items():
-            st.text(f"  {etype}: {count:,}")
+            st.metric("Docs with text", f"{stats.get('docs_with_text', 0):,}",
+                       help="Documents with extractable text (some scanned PDFs lack OCR)")
 
     ai_model = "claude-opus-4-6"
     max_passage_docs = 30
