@@ -1296,7 +1296,7 @@ def build_corpus_context(summaries: List[Dict]) -> str:
 
 
 # Archive website base URL for document links
-ARCHIVE_BASE_URL = "https://crow-archive-5xbriosdia-ue.a.run.app"
+ARCHIVE_BASE_URL = "https://crow-archive-996830241007.us-east1.run.app"
 
 
 def build_citation_index(summaries: List[Dict]) -> Dict[int, Dict]:
@@ -1699,7 +1699,11 @@ Begin your analysis:"""
 # ─────────────────────────────────────────────────
 
 st.title("\U0001f4dc Historical Document Analysis v4")
-st.markdown("*Three modes: Discovery \u2022 Deep Read \u2022 Discovery \u2192 Deep Read*")
+st.markdown(
+    "*Four modes: Discovery \u2022 Deep Read \u2022 Discovery \u2192 Deep Read \u2022 Corpus Synthesis* "
+    "&nbsp;&nbsp;|&nbsp;&nbsp;"
+    f"[About this tool]({ARCHIVE_BASE_URL}/about)"
+)
 
 # Sidebar
 with st.sidebar:
@@ -1737,56 +1741,6 @@ with st.sidebar:
         st.markdown("**Entity types:**")
         for etype, count in stats.get('entity_types', {}).items():
             st.text(f"  {etype}: {count:,}")
-
-    st.markdown("---")
-    with st.expander("About this tool"):
-        st.markdown("""
-**What this does**
-
-Every document in this archive has been read by an AI that extracts structured
-information — people, organizations, places, land parcels, legal cases, financial
-transactions, and relationships — into a searchable database. Instead of keyword
-search, you can trace a person across 30 years of documents, aggregate financial
-transactions, or discover that the same dispossession pattern recurs across
-different tribes and decades.
-
-**What gets extracted**
-
-The pipeline identifies ten types of information:
-
-- **People** — tribal members, federal officials, attorneys, ranchers, senators
-- **Organizations** — BIA, tribal councils, ranching corporations, committees
-- **Locations** — reservations, counties, communities
-- **Land parcels** — allotments, sections, townships, ranges
-- **Legal cases** — court cases determining land rights
-- **Legislation** — bills, acts, and laws
-- **Financial transactions** — dollar amounts with payer, payee, and purpose
-- **Land holdings** — acreage figures tied to people or entities
-- **Relationships** — who represented, reported to, or bought from whom
-- **Events** — dated actions forming a timeline across the record
-
-**Specialized record types**
-
-Three types are extracted as dedicated structured records:
-
-- **Fee patents** — the legal mechanism through which most Crow land passed out of
-  tribal hands. Links allottee, allotment, acreage, patent date, buyer, attorney,
-  and mortgage into a single record.
-- **Correspondence** — the bureaucratic network: sender, recipient, date, subject,
-  action requested, and outcome.
-- **Legislative actions** — bills tracked through their lifecycle: introduced,
-  amended, passed, vetoed, enacted — with sponsors, votes, and committees.
-
-**Analysis modes**
-
-- **Discovery** searches the extracted database across all documents
-- **Deep Read** sends a full document to the AI for close analysis
-- **Discovery → Deep Read** combines breadth and depth
-- **Corpus Synthesis** sends summaries of ALL documents to the AI for
-  corpus-wide pattern analysis
-
-Built by Christian McMillen, Department of History, University of Virginia.
-""")
 
     ai_model = "claude-opus-4-6"
     max_passage_docs = 30
