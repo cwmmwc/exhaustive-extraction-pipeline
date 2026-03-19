@@ -1406,7 +1406,7 @@ def linkify_citations(text: str, citation_index: Dict[int, Dict]) -> str:
                 cited_ids.append(doc_id)
             name = doc.get('display_title') or doc.get('file_name', '')
             url = f"{ARCHIVE_BASE_URL}/documents/{doc_id}"
-            return f"[Doc {doc_id}]({url} \"{name}\")"
+            return f"[Doc {doc_id}, {name}]({url})"
         return f"[Doc {doc_id}]"
 
     def replace_doc_group(match):
