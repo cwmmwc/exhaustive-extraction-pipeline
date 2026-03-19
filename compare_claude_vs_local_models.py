@@ -6,40 +6,38 @@ Two modes:
   1. SYNTHESIS — Compare corpus-wide analysis quality (default)
   2. EXTRACTION — Compare structured entity extraction from document chunks
 
-Runs the same task through Claude (API) and one or more local models
-(via Ollama) and saves all outputs side by side for human evaluation.
+Two backends for local models:
+  - ollama: Ollama API at localhost:11434 (default, for local machines)
+  - vllm:   vLLM OpenAI-compatible API (for HPC clusters like UVA Rivanna)
 
 Requirements:
-  - Anthropic API key (ANTHROPIC_API_KEY env var)
-  - Ollama running locally (ollama serve) with models pulled
-  - PostgreSQL with crow_historical_docs database
+  - Anthropic API key (ANTHROPIC_API_KEY env var) unless --local-only
+  - Local model server (Ollama or vLLM) running
+  - PostgreSQL or a pre-dumped context file (--context-file)
 
 Usage:
-    # List available Ollama models
-    python3 compare_claude_vs_local_models.py --list-models
-
-    # Compare all three local models against Claude for synthesis
+    # ─── Local machine with Ollama ───
     python3 compare_claude_vs_local_models.py --local-models llama3.3:70b qwen2.5:72b gemma3:27b
+    python3 compare_claude_vs_local_models.py --mode extraction --local-models gemma3:27b
 
-    # Compare for extraction (uses sample document chunks)
-    python3 compare_claude_vs_local_models.py --mode extraction --local-models llama3.3:70b qwen2.5:72b gemma3:27b
+    # ─── Dump context for HPC (no DB needed on cluster) ───
+    python3 compare_claude_vs_local_models.py --dump-context
+    # → creates corpus_context.json, copy to HPC
 
-    # Single model comparison
-    python3 compare_claude_vs_local_models.py --local-models qwen2.5:72b
+    # ─── On HPC with vLLM ───
+    python3 compare_claude_vs_local_models.py --backend vllm --vllm-url http://localhost:8000 \
+        --context-file corpus_context.json --local-only \
+        --local-models meta-llama/Llama-3.3-70B-Instruct
 
-    # Custom synthesis question
+    # ─── Other options ───
+    python3 compare_claude_vs_local_models.py --list-models
     python3 compare_claude_vs_local_models.py --question "Tell me about fee patents"
-
-    # Skip Claude (only run local models)
-    python3 compare_claude_vs_local_models.py --local-only --local-models llama3.3:70b qwen2.5:72b
-
-    # Skip local (only run Claude)
     python3 compare_claude_vs_local_models.py --claude-only
+    python3 compare_claude_vs_local_models.py --local-only --local-models qwen2.5:72b
 
 Output:
     Creates a timestamped directory under comparisons/ with:
-      - question_N_claude.md
-      - question_N_<model>.md  (one per local model)
+      - question_N_claude.md / question_N_<model>.md
       - summary.md  (side-by-side stats for all models)
 """
 
@@ -140,6 +138,48 @@ def get_extraction_samples(n: int = 3) -> List[Dict]:
     cur.close()
     conn.close()
     return [dict(r) for r in rows]
+
+
+# ─────────────────────────────────────────────────
+# Context dump/load (for HPC without DB access)
+# ─────────────────────────────────────────────────
+
+CONTEXT_FILE = "corpus_context.json"
+
+
+def dump_context():
+    """Dump summaries, stats, and extraction samples to a JSON file
+    so the comparison can run on HPC without database access."""
+    print("Dumping corpus context to JSON...")
+    summaries = get_all_summaries()
+    db_stats = get_db_stats()
+    samples = get_extraction_samples(n=5)
+
+    context = {
+        "summaries": summaries,
+        "db_stats": db_stats,
+        "extraction_samples": samples,
+        "dumped_at": datetime.now().isoformat(),
+        "doc_count": len(summaries),
+    }
+    with open(CONTEXT_FILE, "w") as f:
+        json.dump(context, f, indent=2, default=str)
+
+    size_mb = os.path.getsize(CONTEXT_FILE) / (1024 * 1024)
+    print(f"Saved {CONTEXT_FILE} ({size_mb:.1f} MB)")
+    print(f"  {len(summaries)} summaries, {len(samples)} extraction samples")
+    print(f"\nCopy this file to your HPC cluster, then run:")
+    print(f"  python3 compare_claude_vs_local_models.py --context-file {CONTEXT_FILE} "
+          f"--backend vllm --local-only --local-models <model>")
+
+
+def load_context(path: str) -> Dict:
+    """Load pre-dumped context from JSON."""
+    with open(path) as f:
+        context = json.load(f)
+    print(f"Loaded context from {path} ({context.get('doc_count', '?')} docs, "
+          f"dumped {context.get('dumped_at', 'unknown')})")
+    return context
 
 
 # ─────────────────────────────────────────────────
@@ -310,6 +350,50 @@ def run_ollama(prompt: str, model: str = "llama3.3:70b",
         return {"error": str(e), "text": "", "time": time.time() - start}
 
 
+def run_vllm(prompt: str, model: str, max_tokens: int = 16000,
+             base_url: str = "http://localhost:8000") -> Dict:
+    """Run a prompt through vLLM's OpenAI-compatible API."""
+    import urllib.request
+    import urllib.error
+
+    start = time.time()
+    try:
+        data = json.dumps({
+            "model": model,
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": max_tokens,
+            "temperature": 0.3,
+        }).encode()
+
+        req = urllib.request.Request(
+            f"{base_url}/v1/chat/completions",
+            data=data,
+            headers={"Content-Type": "application/json"},
+        )
+
+        with urllib.request.urlopen(req, timeout=3600) as resp:
+            result = json.loads(resp.read().decode())
+
+        elapsed = time.time() - start
+        choice = result["choices"][0]
+        usage = result.get("usage", {})
+        return {
+            "text": choice["message"]["content"],
+            "time": elapsed,
+            "model": model,
+            "input_tokens": usage.get("prompt_tokens", 0),
+            "output_tokens": usage.get("completion_tokens", 0),
+        }
+    except urllib.error.URLError as e:
+        return {
+            "error": f"Cannot connect to vLLM at {base_url}. "
+                     f"Is the server running? ({e})",
+            "text": "", "time": time.time() - start
+        }
+    except Exception as e:
+        return {"error": str(e), "text": "", "time": time.time() - start}
+
+
 def list_ollama_models() -> List[str]:
     try:
         result = subprocess.run(
@@ -388,6 +472,15 @@ def analyze_extraction_output(result: Dict) -> Dict:
 # Synthesis comparison
 # ─────────────────────────────────────────────────
 
+def run_local_model(prompt: str, model: str, backend: str = "ollama",
+                    max_tokens: int = 16000, vllm_url: str = "http://localhost:8000") -> Dict:
+    """Dispatch to the appropriate local model backend."""
+    if backend == "vllm":
+        return run_vllm(prompt, model=model, max_tokens=max_tokens, base_url=vllm_url)
+    else:
+        return run_ollama(prompt, model=model, max_tokens=max_tokens)
+
+
 def run_synthesis_comparison(
     questions: List[str],
     summaries: List[Dict],
@@ -396,6 +489,8 @@ def run_synthesis_comparison(
     claude_model: str = "claude-opus-4-6",
     run_claude_flag: bool = True,
     run_local_flag: bool = True,
+    backend: str = "ollama",
+    vllm_url: str = "http://localhost:8000",
 ) -> Path:
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     model_label = "_".join(m.replace(":", "-").replace("/", "-") for m in local_models)
@@ -432,7 +527,8 @@ def run_synthesis_comparison(
                 output = run_claude(prompt, model=model)
             else:
                 print(f"  (This may take a while with ~{int(prompt_tokens):,} tokens of context)")
-                output = run_ollama(prompt, model=model)
+                output = run_local_model(prompt, model=model, backend=backend,
+                                         vllm_url=vllm_url)
 
             if output.get("error"):
                 print(f"  ERROR: {output['error']}")
@@ -554,14 +650,19 @@ def run_extraction_comparison(
     n_samples: int = 3,
     run_claude_flag: bool = True,
     run_local_flag: bool = True,
+    backend: str = "ollama",
+    vllm_url: str = "http://localhost:8000",
+    preloaded_samples: Optional[List[Dict]] = None,
 ) -> Path:
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     model_label = "_".join(m.replace(":", "-").replace("/", "-") for m in local_models)
     out_dir = Path("comparisons") / f"extraction_{timestamp}_{model_label}"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    print(f"Loading {n_samples} sample document chunks...")
-    samples = get_extraction_samples(n_samples)
+    samples = preloaded_samples or []
+    if not samples:
+        print(f"Loading {n_samples} sample document chunks...")
+        samples = get_extraction_samples(n_samples)
     if not samples:
         print("ERROR: No documents with text found.")
         sys.exit(1)
@@ -592,7 +693,8 @@ def run_extraction_comparison(
             if kind == "claude":
                 output = run_claude(prompt, model=model, max_tokens=8000)
             else:
-                output = run_ollama(prompt, model=model, max_tokens=8000)
+                output = run_local_model(prompt, model=model, backend=backend,
+                                         max_tokens=8000, vllm_url=vllm_url)
 
             if output.get("error"):
                 print(f"  ERROR: {output['error']}")
@@ -738,20 +840,35 @@ def main():
                         help="Only run local models (skip Claude)")
     parser.add_argument("--list-models", action="store_true",
                         help="List available Ollama models and exit")
+    parser.add_argument("--backend", choices=["ollama", "vllm"], default="ollama",
+                        help="Local model backend (default: ollama)")
+    parser.add_argument("--vllm-url", default="http://localhost:8000",
+                        help="vLLM server URL (default: http://localhost:8000)")
+    parser.add_argument("--context-file", type=str, default=None,
+                        help="Load corpus context from JSON file (no DB needed)")
+    parser.add_argument("--dump-context", action="store_true",
+                        help="Dump corpus context to JSON and exit (for HPC use)")
     args = parser.parse_args()
 
+    if args.dump_context:
+        dump_context()
+        return
+
     if args.list_models:
-        models = list_ollama_models()
-        if models:
-            print("Available Ollama models:")
-            for m in models:
-                print(f"  {m}")
+        if args.backend == "vllm":
+            print(f"vLLM backend — check {args.vllm_url}/v1/models for loaded models")
         else:
-            print("No Ollama models found. Install with: ollama pull <model>")
-            print("\nRecommended models for comparison:")
-            print("  ollama pull llama3.3:70b    # ~40GB, needs 48GB+ RAM")
-            print("  ollama pull qwen2.5:72b     # ~40GB, needs 48GB+ RAM")
-            print("  ollama pull gemma3:27b      # ~16GB, needs 24GB+ RAM")
+            models = list_ollama_models()
+            if models:
+                print("Available Ollama models:")
+                for m in models:
+                    print(f"  {m}")
+            else:
+                print("No Ollama models found. Install with: ollama pull <model>")
+                print("\nRecommended models for comparison:")
+                print("  ollama pull llama3.3:70b    # ~40GB, needs 48GB+ RAM")
+                print("  ollama pull qwen2.5:72b     # ~40GB, needs 48GB+ RAM")
+                print("  ollama pull gemma3:27b      # ~16GB, needs 24GB+ RAM")
         return
 
     # Set default Claude model based on mode
@@ -762,7 +879,8 @@ def main():
     run_claude_flag = not args.local_only
     run_local_flag = not args.claude_only
 
-    if run_local_flag and not args.claude_only:
+    # Validate Ollama models (skip for vLLM — model name is just passed through)
+    if run_local_flag and not args.claude_only and args.backend == "ollama":
         available = list_ollama_models()
         missing = [m for m in args.local_models if m not in available]
         if missing and available:
@@ -780,15 +898,24 @@ def main():
                 else:
                     sys.exit(1)
 
-    if args.mode == "synthesis":
-        print("Loading document summaries...")
-        summaries = get_all_summaries()
-        if not summaries:
-            print("ERROR: No document summaries found. Run enrich_summaries.py first.")
-            sys.exit(1)
-        print(f"  {len(summaries)} documents with summaries")
+    # Load context from file or database
+    context = None
+    if args.context_file:
+        context = load_context(args.context_file)
 
-        db_stats = get_db_stats()
+    if args.mode == "synthesis":
+        if context:
+            summaries = context["summaries"]
+            db_stats = context["db_stats"]
+        else:
+            print("Loading document summaries...")
+            summaries = get_all_summaries()
+            if not summaries:
+                print("ERROR: No document summaries found. Run enrich_summaries.py first.")
+                sys.exit(1)
+            db_stats = get_db_stats()
+
+        print(f"  {len(summaries)} documents with summaries")
         print(f"  {db_stats.get('entities', 0)} entities, "
               f"{db_stats.get('fee_patents', 0)} fee patents, "
               f"{db_stats.get('correspondence', 0)} correspondence")
@@ -803,15 +930,21 @@ def main():
             claude_model=args.claude_model,
             run_claude_flag=run_claude_flag,
             run_local_flag=run_local_flag,
+            backend=args.backend,
+            vllm_url=args.vllm_url,
         )
 
     elif args.mode == "extraction":
+        preloaded = context.get("extraction_samples") if context else None
         run_extraction_comparison(
             local_models=args.local_models,
             claude_model=args.claude_model,
             n_samples=args.n_samples,
             run_claude_flag=run_claude_flag,
             run_local_flag=run_local_flag,
+            backend=args.backend,
+            vllm_url=args.vllm_url,
+            preloaded_samples=preloaded,
         )
 
 
