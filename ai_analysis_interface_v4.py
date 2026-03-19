@@ -1417,12 +1417,24 @@ def linkify_citations(text: str, citation_index: Dict[int, Dict]) -> str:
             return match.group(0)
         return ", ".join(_make_link(did) for did in doc_ids)
 
-    # Match [Doc <anything that looks like numbers, commas, dashes>]
+    # Match [Doc N] or [Doc N, title text] or [Doc N, N, N]
     # but NOT already-linked patterns (negative lookahead for opening paren)
+    # First pass: handle [Doc N, title] format (number followed by non-numeric text)
+    def replace_doc_with_title(match):
+        doc_id = int(match.group(1))
+        return _make_link(doc_id)
+
+    linked = re.sub(
+        r'\[Doc\s+(\d+),\s*[^]\d][^]]*\](?!\()',
+        replace_doc_with_title,
+        text
+    )
+
+    # Second pass: handle [Doc N], [Doc N, N], [Doc N-N] (number-only references)
     linked = re.sub(
         r'\[Doc\s+([\d\s,–—-]+)\](?!\()',
         replace_doc_group,
-        text
+        linked
     )
 
     # Build citation appendix
@@ -1477,7 +1489,7 @@ SYNTHESIS GUIDELINES:
 
 4. QUANTIFY WHERE POSSIBLE. Aggregate total acreages, dollar amounts, numbers of transactions, vote tallies, and other numerical evidence across the corpus. When exact totals aren't possible, provide ranges or lower bounds based on what the documents contain.
 
-5. Cite specific documents by their [Doc N] reference (where N is the document ID number shown in the summaries above). Use the exact ID numbers. When multiple documents support a claim, list them: [Doc 42, 55, 103]. Every substantive claim needs at least one citation.
+5. Cite specific documents using their title and [Doc N] reference, like: [Doc 42, 1919 CCF 62648-19-013 Crow delegates]. Use the exact ID numbers from the summaries above. When multiple documents support a claim, list them: [Doc 42, 55, 103]. Every substantive claim needs at least one citation.
 
 6. CONCLUDE WITH THREE SECTIONS:
    - **What the Documents Prove**: claims fully supported by the documentary evidence, with citations.
