@@ -26,6 +26,7 @@ import psycopg2.extras
 import anthropic
 import os
 import re
+import json
 import math
 from typing import List, Dict, Optional, Tuple
 
@@ -1712,7 +1713,7 @@ Begin your analysis:"""
 
 st.title("\U0001f4dc Historical Document Analysis v4")
 st.markdown(
-    "*Four modes: Discovery \u2022 Deep Read \u2022 Discovery \u2192 Deep Read \u2022 Corpus Synthesis* "
+    "*Five modes: Discovery \u2022 Deep Read \u2022 Discovery \u2192 Deep Read \u2022 Corpus Synthesis \u2022 Process Document* "
     "&nbsp;&nbsp;|&nbsp;&nbsp;"
     f"[About this tool]({ARCHIVE_BASE_URL}/about)"
 )
@@ -1776,9 +1777,10 @@ mode = st.radio(
         "\U0001f4d6 **Deep Read** — Select a document, send full text to AI",
         "\U0001f50d\u2192\U0001f4d6 **Discovery \u2192 Deep Read** — Find top documents, then read them deeply",
         "\U0001f3db\ufe0f **Corpus Synthesis** — Analyze ALL documents for corpus-wide patterns",
+        "\U0001f4e4 **Process Document** — Upload a PDF and run the full extraction pipeline",
     ],
     index=0,
-    help="Discovery = breadth. Deep Read = depth. Hybrid = both. Corpus = everything."
+    help="Discovery = breadth. Deep Read = depth. Hybrid = both. Corpus = everything. Process = add new documents."
 )
 
 mode_key = mode.split("**")[1].split("**")[0].strip() if "**" in mode else "Discovery"
@@ -2398,9 +2400,391 @@ elif mode_key == "Corpus Synthesis":
                 )
 
 
+# ═════════════════════════════════════════════════
+# MODE 5: PROCESS DOCUMENT
+# ═════════════════════════════════════════════════
+elif mode_key == "Process Document":
+    st.markdown(
+        "Upload an OCR'd PDF to run the full extraction pipeline: "
+        "text extraction, entity/event/relationship extraction, summary generation, "
+        "title generation, and GCS upload."
+    )
+    st.warning(
+        "The PDF must already be OCR'd (e.g., via ABBY FineReader). "
+        "Scanned images without OCR will produce no results."
+    )
+
+    uploaded_file = st.file_uploader("Upload PDF", type=["pdf"])
+
+    col_coll, col_sub = st.columns(2)
+    with col_coll:
+        collection = st.text_input(
+            "Collection name",
+            value="",
+            placeholder="e.g., CROW_BATCH_10",
+            help="Archival collection this document belongs to"
+        )
+    with col_sub:
+        subcollection = st.text_input(
+            "Subcollection (optional)",
+            value="",
+            placeholder="e.g., Series 1",
+        )
+
+    upload_to_gcs = st.checkbox("Upload PDF to Google Cloud Storage", value=True,
+                                 help="Makes the PDF available on the archive website")
+
+    if uploaded_file and st.button("\U0001f680 Process Document", type="primary"):
+        import fitz  # PyMuPDF
+        import tempfile
+        import io
+
+        status = st.status("Processing document...", expanded=True)
+
+        try:
+            # ── Step 1: Extract text ──
+            status.update(label="Step 1/6: Extracting text from PDF...")
+            pdf_bytes = uploaded_file.read()
+            doc = fitz.open(stream=pdf_bytes, filetype="pdf")
+            full_text = ""
+            for page_num, page in enumerate(doc, start=1):
+                text = page.get_text()
+                full_text += f"\n--- Page {page_num} ---\n{text}"
+            page_count = len(doc)
+            doc.close()
+
+            word_count = len(full_text.split())
+            st.write(f"Extracted {word_count:,} words from {page_count} pages")
+
+            if word_count < 50:
+                st.error("Very little text extracted. Is this PDF OCR'd?")
+                st.stop()
+
+            # ── Step 2: Insert document into database ──
+            status.update(label="Step 2/6: Saving document to database...")
+            conn = get_db_connection(selected_db)
+            cur = conn.cursor()
+            cur.execute("""
+                INSERT INTO documents
+                (file_name, file_path, page_count, file_size, full_text,
+                 collection, subcollection, extraction_model, pipeline_version)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                RETURNING id
+            """, (
+                uploaded_file.name,
+                f"uploaded/{uploaded_file.name}",
+                page_count,
+                len(pdf_bytes),
+                full_text,
+                collection or None,
+                subcollection or None,
+                "claude-sonnet-4-6",
+                "v3",
+            ))
+            doc_id = cur.fetchone()[0]
+            conn.commit()
+            st.write(f"Document saved as **Doc {doc_id}**")
+
+            # ── Step 3: Chunked extraction ──
+            status.update(label="Step 3/6: Running AI extraction (this takes a while)...")
+            client = anthropic.Anthropic(
+                api_key=os.environ.get("ANTHROPIC_API_KEY")
+            )
+
+            # Chunk the text
+            chunk_size = 40000
+            overlap = 5000
+            chunks = []
+            start = 0
+            while start < len(full_text):
+                end = min(start + chunk_size, len(full_text))
+                chunks.append(full_text[start:end])
+                if end >= len(full_text):
+                    break
+                start = end - overlap
+
+            st.write(f"Processing {len(chunks)} chunk(s)...")
+            progress = st.progress(0)
+
+            extraction_prompt_template = """You are analyzing a historical document about Native American land dispossession, the Crow Act of 1920, and federal Indian policy.
+
+This is chunk {chunk_num} of {total_chunks} from document: {file_name}
+
+Extract ALL of the following from this text. Return ONLY valid JSON, no markdown, no explanation.
+
+{{
+  "entities": [
+    {{"type": "person|organization|location|land_parcel|legal_case|legislation|acreage_holding", "name": "...", "context": "...", "acres": "...", "land_type": "..."}}
+  ],
+  "financial_transactions": [
+    {{"amount": "...", "type": "sale|lease|payment|fee|other", "payer": "...", "payee": "...", "for_what": "...", "date": "...", "context": "..."}}
+  ],
+  "relationships": [
+    {{"type": "...", "subject": "...", "object": "...", "context": "..."}}
+  ],
+  "events": [
+    {{"type": "...", "date": "...", "location": "...", "description": "...", "entities_involved": ["..."]}}
+  ],
+  "fee_patents": [
+    {{"allottee": "...", "allotment_number": "...", "acreage": "...", "patent_date": "...", "trust_to_fee_mechanism": "...", "subsequent_buyer": "...", "sale_price": "...", "attorney": "...", "context": "..."}}
+  ],
+  "correspondence": [
+    {{"sender": "...", "sender_title": "...", "recipient": "...", "recipient_title": "...", "date": "...", "subject": "...", "action_requested": "...", "outcome": "...", "context": "..."}}
+  ],
+  "legislative_actions": [
+    {{"bill_number": "...", "sponsor": "...", "action_type": "introduced|reported|amended|passed|vetoed|enacted", "action_date": "...", "vote_count": "...", "committee": "...", "outcome": "...", "context": "..."}}
+  ]
+}}
+
+Extract EVERY person, organization, location, legal case, legislation, financial transaction, relationship, event, fee patent, correspondence record, and legislative action. Be thorough.
+
+Document chunk:
+{chunk_text}"""
+
+            all_chunk_results = []
+            for i, chunk in enumerate(chunks):
+                try:
+                    response = client.messages.create(
+                        model="claude-sonnet-4-6",
+                        max_tokens=16000,
+                        messages=[{"role": "user", "content":
+                            extraction_prompt_template.format(
+                                chunk_num=i+1,
+                                total_chunks=len(chunks),
+                                file_name=uploaded_file.name,
+                                chunk_text=chunk,
+                            )
+                        }]
+                    )
+                    response_text = response.content[0].text.strip()
+                    if response_text.startswith("```"):
+                        response_text = re.sub(r'^```(?:json)?\n', '', response_text)
+                        response_text = re.sub(r'\n```$', '', response_text)
+                    result = json.loads(response_text)
+                    all_chunk_results.append(result)
+                except Exception as e:
+                    st.warning(f"Chunk {i+1} extraction error: {e}")
+                    all_chunk_results.append({
+                        "entities": [], "financial_transactions": [],
+                        "relationships": [], "events": [],
+                        "fee_patents": [], "correspondence": [], "legislative_actions": []
+                    })
+                progress.progress((i + 1) / len(chunks))
+
+            # Merge results across chunks
+            merged = {
+                "entities": [], "financial_transactions": [],
+                "relationships": [], "events": [],
+                "fee_patents": [], "correspondence": [], "legislative_actions": []
+            }
+            seen_entities = set()
+            for cr in all_chunk_results:
+                for ent in cr.get("entities", []):
+                    key = (ent.get("name", "").lower(), ent.get("type", ""))
+                    if key not in seen_entities:
+                        seen_entities.add(key)
+                        merged["entities"].append(ent)
+                for key in ["financial_transactions", "relationships", "events",
+                            "fee_patents", "correspondence", "legislative_actions"]:
+                    merged[key].extend(cr.get(key, []))
+
+            # ── Step 4: Store extraction results ──
+            status.update(label="Step 4/6: Saving extracted data...")
+
+            # Entities
+            for ent in merged["entities"]:
+                cur.execute("""
+                    INSERT INTO entities (name, type, context, acres, land_type)
+                    VALUES (%s, %s, %s, %s, %s)
+                    ON CONFLICT (name, type) DO UPDATE SET context = EXCLUDED.context
+                    RETURNING id
+                """, (ent.get("name"), ent.get("type"), ent.get("context"),
+                      ent.get("acres"), ent.get("land_type")))
+                entity_id = cur.fetchone()[0]
+                cur.execute("""
+                    INSERT INTO mentions (entity_id, document_id, context)
+                    VALUES (%s, %s, %s)
+                    ON CONFLICT (entity_id, document_id) DO NOTHING
+                """, (entity_id, doc_id, ent.get("context")))
+
+            # Events
+            for ev in merged["events"]:
+                cur.execute("""
+                    INSERT INTO events (document_id, type, date, location, description, metadata)
+                    VALUES (%s, %s, %s, %s, %s, %s)
+                """, (doc_id, ev.get("type"), ev.get("date"), ev.get("location"),
+                      ev.get("description"),
+                      json.dumps({"entities_involved": ev.get("entities_involved", [])})))
+
+            # Financial transactions
+            for ft in merged["financial_transactions"]:
+                cur.execute("""
+                    INSERT INTO financial_transactions
+                    (document_id, amount, type, payer, payee, for_what, date, context)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                """, (doc_id, ft.get("amount"), ft.get("type"), ft.get("payer"),
+                      ft.get("payee"), ft.get("for_what"), ft.get("date"), ft.get("context")))
+
+            # Relationships
+            for rel in merged["relationships"]:
+                cur.execute("""
+                    INSERT INTO relationships (document_id, type, subject, object, context)
+                    VALUES (%s, %s, %s, %s, %s)
+                """, (doc_id, rel.get("type"), rel.get("subject"),
+                      rel.get("object"), rel.get("context")))
+
+            # Fee patents
+            for fp in merged["fee_patents"]:
+                cur.execute("""
+                    INSERT INTO fee_patents
+                    (document_id, allottee, allotment_number, acreage, patent_date,
+                     trust_to_fee_mechanism, subsequent_buyer, sale_price, attorney, context)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                """, (doc_id, fp.get("allottee"), fp.get("allotment_number"),
+                      fp.get("acreage"), fp.get("patent_date"),
+                      fp.get("trust_to_fee_mechanism"), fp.get("subsequent_buyer"),
+                      fp.get("sale_price"), fp.get("attorney"), fp.get("context")))
+
+            # Correspondence
+            for corr in merged["correspondence"]:
+                cur.execute("""
+                    INSERT INTO correspondence
+                    (document_id, sender, sender_title, recipient, recipient_title,
+                     date, subject, action_requested, outcome, context)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                """, (doc_id, corr.get("sender"), corr.get("sender_title"),
+                      corr.get("recipient"), corr.get("recipient_title"),
+                      corr.get("date"), corr.get("subject"),
+                      corr.get("action_requested"), corr.get("outcome"),
+                      corr.get("context")))
+
+            # Legislative actions
+            for la in merged["legislative_actions"]:
+                cur.execute("""
+                    INSERT INTO legislative_actions
+                    (document_id, bill_number, sponsor, action_type, action_date,
+                     vote_count, committee, outcome, context)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                """, (doc_id, la.get("bill_number"), la.get("sponsor"),
+                      la.get("action_type"), la.get("action_date"),
+                      la.get("vote_count"), la.get("committee"),
+                      la.get("outcome"), la.get("context")))
+
+            conn.commit()
+
+            st.write(
+                f"Extracted: {len(merged['entities'])} entities, "
+                f"{len(merged['events'])} events, "
+                f"{len(merged['financial_transactions'])} transactions, "
+                f"{len(merged['relationships'])} relationships, "
+                f"{len(merged['fee_patents'])} fee patents, "
+                f"{len(merged['correspondence'])} correspondence, "
+                f"{len(merged['legislative_actions'])} legislative actions"
+            )
+
+            # ── Step 5: Generate summary and title ──
+            status.update(label="Step 5/6: Generating summary and display title...")
+
+            # Summary
+            summary_text = full_text[:int(180000 * 3.2)]  # Truncate to fit context
+            summary_prompt = f"""You are analyzing a historical document from an archival collection about Native American land dispossession, the Crow Reservation, federal Indian policy, and Bureau of Indian Affairs records.
+
+Document: {uploaded_file.name}
+Collection: {collection or 'Unknown'}
+
+Begin with a date line in this exact format: "DATE RANGE: [earliest year]-[latest year]" (or "DATE RANGE: undated" if no dates are discernible). Then write a dense analytical summary in 150-250 words. No headers or bullet points - write in plain prose paragraphs. Cover: document type and purpose; author, recipient, date; specific claims, actions, or decisions (names, amounts, acreages); legal mechanisms invoked (statutes, policies, administrative procedures); and what it proves about land dispossession.
+
+Full text:
+{summary_text}"""
+
+            try:
+                summary_response = client.messages.create(
+                    model="claude-opus-4-6",
+                    max_tokens=1000,
+                    temperature=0.2,
+                    messages=[{"role": "user", "content": summary_prompt}]
+                )
+                summary = summary_response.content[0].text.strip()
+
+                cur.execute(
+                    "UPDATE documents SET summary = %s, summary_date = CURRENT_TIMESTAMP WHERE id = %s",
+                    (summary, doc_id)
+                )
+                conn.commit()
+                st.write("Summary generated")
+            except Exception as e:
+                summary = None
+                st.warning(f"Summary generation failed: {e}")
+
+            # Display title
+            if summary:
+                title_prompt = f"""Generate a short, clear display title for this historical archival document about the Crow Nation.
+
+Rules:
+- Include the year or date range at the START: "1920: House Hearings on..."
+- The date should reflect when the document was CREATED, not the full historical span referenced
+- Be concise but descriptive, like a library catalog entry
+- Do NOT include ".pdf" or file classification numbers unless they add meaning
+
+Document file name: {uploaded_file.name}
+Summary: {summary}
+
+Return ONLY the title, nothing else."""
+
+                try:
+                    title_response = client.messages.create(
+                        model="claude-sonnet-4-6",
+                        max_tokens=200,
+                        temperature=0.2,
+                        messages=[{"role": "user", "content": title_prompt}]
+                    )
+                    display_title = title_response.content[0].text.strip().strip('"')
+                    cur.execute(
+                        "UPDATE documents SET display_title = %s WHERE id = %s",
+                        (display_title, doc_id)
+                    )
+                    conn.commit()
+                    st.write(f"Title: **{display_title}**")
+                except Exception as e:
+                    st.warning(f"Title generation failed: {e}")
+
+            # ── Step 6: Upload to GCS ──
+            if upload_to_gcs:
+                status.update(label="Step 6/6: Uploading PDF to Google Cloud Storage...")
+                try:
+                    from google.cloud import storage as gcs
+                    gcs_client = gcs.Client()
+                    bucket = gcs_client.bucket("crow-archive-pdfs")
+                    blob = bucket.blob(uploaded_file.name)
+                    blob.upload_from_string(pdf_bytes, content_type="application/pdf")
+                    st.write(f"Uploaded to `gs://crow-archive-pdfs/{uploaded_file.name}`")
+                except Exception as e:
+                    st.warning(f"GCS upload failed: {e}")
+            else:
+                st.info("Skipped GCS upload")
+
+            cur.close()
+            conn.close()
+
+            status.update(label="Processing complete!", state="complete")
+
+            # Show results summary
+            st.success(
+                f"Document **{uploaded_file.name}** processed as "
+                f"**[Doc {doc_id}]({ARCHIVE_BASE_URL}/documents/{doc_id})**. "
+                f"It is now searchable in Discovery and Corpus Synthesis modes."
+            )
+
+        except Exception as e:
+            status.update(label="Processing failed", state="error")
+            st.error(f"Error: {e}")
+            import traceback
+            st.code(traceback.format_exc())
+
+
 # Footer
 st.markdown("---")
 st.caption(
-    f"v4 \u2014 Four modes: Discovery \u2022 Deep Read \u2022 Hybrid \u2022 Corpus Synthesis | "
+    f"v4 \u2014 Five modes: Discovery \u2022 Deep Read \u2022 Hybrid \u2022 Corpus Synthesis \u2022 Process Document | "
     f"Database: {selected_db if 'selected_db' in dir() else 'not connected'}"
 )
