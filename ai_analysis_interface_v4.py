@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AI Analysis Interface v4 — Three Analysis Modes
+AI Analysis Interface v4 — Five Analysis Modes
 
 WHAT'S NEW OVER v3:
   MODE 1 — DISCOVERY: Search everything, find cross-collection connections.
@@ -31,10 +31,196 @@ import math
 from typing import List, Dict, Optional, Tuple
 
 st.set_page_config(
-    page_title="Historical Document Analysis v4",
-    page_icon="\U0001f4dc",
+    page_title="Historical Document Analysis",
+    page_icon="\U0001f3db\ufe0f",
     layout="wide"
 )
+
+# ─────────────────────────────────────────────────
+# CUSTOM STYLING
+# ─────────────────────────────────────────────────
+
+st.markdown("""
+<style>
+/* ── Color palette: warm archival tones ── */
+:root {
+    --parchment: #faf6f0;
+    --ink: #2c2418;
+    --sepia: #8b7355;
+    --accent: #6b4c3b;
+    --accent-light: #d4c4b0;
+    --highlight: #e8ddd0;
+    --border: #d5cec4;
+    --success-bg: #e8f0e4;
+    --info-bg: #eae4f0;
+}
+
+/* ── Main container ── */
+.main .block-container {
+    padding-top: 2rem;
+    max-width: 1100px;
+}
+
+/* ── Header area ── */
+.app-header {
+    border-bottom: 2px solid var(--accent-light);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+.app-header h1 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: var(--ink);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    letter-spacing: -0.02em;
+}
+.app-header .subtitle {
+    color: var(--sepia);
+    font-size: 0.95rem;
+    margin-top: 0;
+}
+
+/* ── Mode selector (horizontal radio) ── */
+div[data-testid="stRadio"] > div {
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+div[data-testid="stRadio"] > div > label {
+    background: var(--parchment);
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-size: 0.9rem;
+}
+div[data-testid="stRadio"] > div > label:hover {
+    border-color: var(--accent);
+    background: var(--highlight);
+}
+div[data-testid="stRadio"] > div > label[data-checked="true"],
+div[data-testid="stRadio"] > div > label:has(input:checked) {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+/* ── Mode description box ── */
+.mode-desc {
+    background: var(--parchment);
+    border-left: 3px solid var(--accent);
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0 1.5rem 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.92rem;
+    color: var(--ink);
+}
+
+/* ── Sidebar styling ── */
+section[data-testid="stSidebar"] {
+    background: var(--parchment);
+}
+section[data-testid="stSidebar"] .block-container {
+    padding-top: 1.5rem;
+}
+.sidebar-section {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.8rem;
+}
+.sidebar-section h4 {
+    color: var(--accent);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+}
+.stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+}
+.stat-item {
+    text-align: center;
+    padding: 0.4rem;
+}
+.stat-item .stat-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.2;
+}
+.stat-item .stat-label {
+    font-size: 0.72rem;
+    color: var(--sepia);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* ── Section headers ── */
+.section-header {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: var(--ink);
+    border-bottom: 1px solid var(--accent-light);
+    padding-bottom: 0.4rem;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+}
+
+/* ── Evidence cards ── */
+.stExpander {
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+}
+
+/* ── Footer ── */
+.app-footer {
+    border-top: 1px solid var(--border);
+    padding-top: 0.8rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--sepia);
+    font-size: 0.82rem;
+}
+.app-footer a {
+    color: var(--accent);
+}
+
+/* ── Better button styling ── */
+.stButton > button[kind="primary"] {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+.stButton > button[kind="primary"]:hover {
+    background-color: var(--ink);
+    border-color: var(--ink);
+}
+
+/* ── Tabs ── */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 0;
+}
+.stTabs [data-baseweb="tab"] {
+    font-size: 0.85rem;
+}
+
+/* ── Clean up metric display ── */
+[data-testid="stMetric"] {
+    background: var(--parchment);
+    border-radius: 6px;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid var(--border);
+}
+[data-testid="stMetricValue"] {
+    font-size: 1.4rem;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # ─────────────────────────────────────────────────
 # DATABASE
@@ -1756,20 +1942,30 @@ Begin your analysis:"""
 # STREAMLIT UI
 # ─────────────────────────────────────────────────
 
-st.title("\U0001f4dc Historical Document Analysis v4")
-st.markdown(
-    "*Five modes: Discovery \u2022 Deep Read \u2022 Discovery \u2192 Deep Read \u2022 Corpus Synthesis \u2022 Process Document* "
-    "&nbsp;&nbsp;|&nbsp;&nbsp;"
-    f"[About this tool]({ARCHIVE_BASE_URL}/about)"
-)
+st.markdown(f"""
+<div class="app-header">
+    <h1>\U0001f3db\ufe0f Historical Document Analysis</h1>
+    <p class="subtitle">
+        AI-powered research across historical archival collections
+        &nbsp;\u2022&nbsp;
+        <a href="{ARCHIVE_BASE_URL}/about" target="_blank">About this tool</a>
+    </p>
+</div>
+""", unsafe_allow_html=True)
 
 # Sidebar
 with st.sidebar:
-    st.header("Database")
     available_dbs = get_available_databases()
+    db_labels = {
+        "crow_historical_docs": "Crow Nation Archive",
+        "full_corpus_docs": "Full Research Corpus",
+        "historical_docs": "Historical Documents",
+    }
     selected_db = st.selectbox(
-        "Select database:", available_dbs,
-        index=available_dbs.index("crow_historical_docs") if "crow_historical_docs" in available_dbs else 0
+        "Archive collection:",
+        available_dbs,
+        index=available_dbs.index("crow_historical_docs") if "crow_historical_docs" in available_dbs else 0,
+        format_func=lambda d: db_labels.get(d, d),
     )
 
     stats = get_db_stats(selected_db)
@@ -1778,32 +1974,52 @@ with st.sidebar:
     if stats.get('error'):
         st.error(f"Connection error: {stats['error']}")
     else:
-        st.markdown("**Extracted from the archive:**")
-        st.metric("Documents", f"{stats['documents']:,}",
-                   help="Historical PDFs processed by the extraction pipeline")
-        col_a, col_b = st.columns(2)
-        with col_a:
-            st.metric("Entities", f"{stats['entities']:,}",
-                       help="Named people, organizations, places, land parcels, legal cases, and legislation identified across all documents")
-            st.metric("Events", f"{stats['events']:,}",
-                       help="Dated historical events: hearings, votes, land sales, inspections, meetings")
-            st.metric("Fee Patents", f"{stats.get('fee_patents', 0):,}",
-                       help="Records of trust-to-fee land conversions — the primary mechanism of land dispossession")
-        with col_b:
-            st.metric("Transactions", f"{stats['financial_transactions']:,}",
-                       help="Financial records: land sales, lease payments, attorney fees, oil royalties")
-            st.metric("Relationships", f"{stats['relationships']:,}",
-                       help="Connections between people and organizations — who represented, reported to, or bought from whom")
-            st.metric("Correspondence", f"{stats.get('correspondence', 0):,}",
-                       help="Letters between officials, tribal members, attorneys, and Congress — the bureaucratic network")
+        st.markdown(f"""
+        <div class="sidebar-section">
+            <h4>Corpus</h4>
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <div class="stat-value">{stats['documents']:,}</div>
+                    <div class="stat-label">Documents</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">{stats['entities']:,}</div>
+                    <div class="stat-label">Entities</div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-section">
+            <h4>Extracted Data</h4>
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <div class="stat-value">{stats['events']:,}</div>
+                    <div class="stat-label">Events</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">{stats['financial_transactions']:,}</div>
+                    <div class="stat-label">Transactions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">{stats['relationships']:,}</div>
+                    <div class="stat-label">Relationships</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">{stats.get('fee_patents', 0):,}</div>
+                    <div class="stat-label">Fee Patents</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">{stats.get('correspondence', 0):,}</div>
+                    <div class="stat-label">Correspondence</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">{stats.get('legislative_actions', 0):,}</div>
+                    <div class="stat-label">Legislation</div>
+                </div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
 
-        col_c, col_d = st.columns(2)
-        with col_c:
-            st.metric("Legislative Actions", f"{stats.get('legislative_actions', 0):,}",
-                       help="Bills tracked through Congress: introduced, amended, passed, vetoed, enacted")
-        with col_d:
-            st.metric("Docs with text", f"{stats.get('docs_with_text', 0):,}",
-                       help="Documents with extractable text (some scanned PDFs lack OCR)")
+        st.caption(f"{stats.get('docs_with_text', 0):,} documents with extractable text")
 
     ai_model = "claude-opus-4-6"
     max_passage_docs = 30
@@ -1815,24 +2031,40 @@ with st.sidebar:
 # MODE SELECTION
 # ─────────────────────────────────────────────────
 
-mode = st.radio(
+MODE_OPTIONS = [
+    "Discovery",
+    "Deep Read",
+    "Discovery \u2192 Deep Read",
+    "Corpus Synthesis",
+    "Process Document",
+]
+
+MODE_DESCRIPTIONS = {
+    "Discovery": "Search the extracted database for people, places, events, financial transactions, "
+                 "and connections across all documents. Uses **Search Only** (free, no AI) or "
+                 "**Search & Analyze** (AI synthesizes the database results into a narrative).",
+    "Deep Read": "Send a single document's **complete text** to the AI for close, detailed analysis. "
+                 "The AI reads the entire document\u2014not fragments\u2014like a research assistant reading over your shoulder.",
+    "Discovery \u2192 Deep Read": "Run Discovery first to find relevant documents, then select which ones "
+                 "to deep-read. The AI gets **full texts** of your chosen documents plus cross-collection "
+                 "entity data\u2014combining breadth and depth.",
+    "Corpus Synthesis": "Send summaries of **every** document to the AI for corpus-wide pattern analysis. "
+                 "No context window limit. Ask follow-up questions to drill deeper without re-running the synthesis.",
+    "Process Document": "Upload an OCR'd PDF to run the full extraction pipeline: text extraction, "
+                 "entity/event/relationship extraction, summary generation, and title generation.",
+}
+
+mode_key = st.radio(
     "Analysis Mode:",
-    [
-        "\U0001f50d **Discovery** — Search the extracted database for people, places, events, and connections across all documents",
-        "\U0001f4d6 **Deep Read** — Send a single document's full text to the AI for close, detailed analysis",
-        "\U0001f50d\u2192\U0001f4d6 **Discovery \u2192 Deep Read** — Search first, then send the most relevant documents' full texts to the AI together",
-        "\U0001f3db\ufe0f **Corpus Synthesis** — Send summaries of ALL documents to the AI for corpus-wide pattern analysis and follow-up questions",
-        "\U0001f4e4 **Process Document** — Upload an OCR'd PDF to extract entities, generate a summary, and add it to the database",
-    ],
+    MODE_OPTIONS,
     index=0,
-    help="Discovery searches the database. Deep Read sends full text to AI. "
-         "Hybrid combines both. Corpus Synthesis sees every document at once. "
-         "Process Document adds new PDFs to the archive."
+    horizontal=True,
 )
 
-mode_key = mode.split("**")[1].split("**")[0].strip() if "**" in mode else "Discovery"
-
-st.markdown("---")
+st.markdown(
+    f'<div class="mode-desc">{MODE_DESCRIPTIONS[mode_key]}</div>',
+    unsafe_allow_html=True,
+)
 
 
 # ═════════════════════════════════════════════════
@@ -2044,7 +2276,7 @@ if mode_key == "Discovery":
             # AI Analysis
             if run_analysis:
                 st.markdown("---")
-                st.subheader("\U0001f4d6 AI Analysis (Discovery Mode)")
+                st.markdown('<h3 class="section-header">AI Analysis</h3>', unsafe_allow_html=True)
                 with st.spinner("Analyzing evidence..."):
                     analysis = analyze_discovery(question, evidence, stats, model=ai_model)
                 st.markdown(linkify_filename_citations(escape_dollars(analysis), filename_index))
@@ -2062,7 +2294,7 @@ if mode_key == "Discovery":
 # MODE 2: DEEP READ
 # ═════════════════════════════════════════════════
 elif mode_key == "Deep Read":
-    st.markdown("Select a document to send its **complete text** to the AI for deep analysis.")
+    # Deep Read mode UI
 
     # Document search/filter
     doc_filter = st.text_input("Filter documents:", placeholder="Type to search by filename or content...")
@@ -2142,7 +2374,7 @@ elif mode_key == "Deep Read":
                             st.caption(f"Showing first 5,000 of {len(full_text):,} characters")
 
                     st.markdown("---")
-                    st.subheader("\U0001f4d6 AI Deep Reading")
+                    st.markdown('<h3 class="section-header">AI Deep Reading</h3>', unsafe_allow_html=True)
                     with st.spinner("AI is reading the full document..."):
                         analysis = analyze_deep_read(question, doc, stats, model=ai_model)
                     st.markdown(linkify_filename_citations(escape_dollars(analysis), filename_index))
@@ -2159,11 +2391,7 @@ elif mode_key == "Deep Read":
 # MODE 3: DISCOVERY → DEEP READ (with document picker)
 # ═════════════════════════════════════════════════
 elif "Deep Read" in mode_key and "Discovery" in mode_key:
-    st.markdown(
-        "**Step 1:** Run Discovery to find relevant documents. "
-        "**Step 2:** Pick which documents to deep-read. "
-        "**Step 3:** AI reads full texts + cross-collection data."
-    )
+    # Hybrid mode UI
 
     question = st.text_area(
         "Research question:",
@@ -2269,7 +2497,7 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
 
         # ── STEP 2: Document picker ──
         st.markdown("---")
-        st.subheader("Step 2: Select documents for Deep Read")
+        st.markdown('<h3 class="section-header">Step 2: Select Documents for Deep Read</h3>', unsafe_allow_html=True)
         st.markdown("The AI-ranked suggestions are pre-selected. "
                     "**Add or remove documents** based on what Discovery found.")
 
@@ -2348,7 +2576,7 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
                         )
 
                         st.markdown("---")
-                        st.subheader("\U0001f4d6 AI Analysis (Discovery + Deep Read)")
+                        st.markdown('<h3 class="section-header">AI Analysis \u2014 Discovery + Deep Read</h3>', unsafe_allow_html=True)
                         with st.spinner(
                             f"AI is reading {len(deep_docs)} full documents "
                             f"+ cross-collection data..."
@@ -2378,10 +2606,7 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
 # MODE 4: CORPUS SYNTHESIS
 # ═════════════════════════════════════════════════
 elif mode_key == "Corpus Synthesis":
-    st.markdown(
-        "Send **all** document summaries to the AI for corpus-wide pattern analysis. "
-        "No context window limit — the AI sees every document in the collection."
-    )
+    # Corpus Synthesis mode UI
 
     # Check summary availability
     summaries = get_all_summaries(selected_db)
@@ -2438,7 +2663,7 @@ elif mode_key == "Corpus Synthesis":
                         st.caption(s.get('summary', '')[:300] + "...")
 
                 st.markdown("---")
-                st.subheader("\U0001f3db\ufe0f AI Corpus-Wide Synthesis")
+                st.markdown('<h3 class="section-header">Corpus-Wide Synthesis</h3>', unsafe_allow_html=True)
                 with st.spinner(
                     f"AI is analyzing summaries of all {summarized} documents..."
                 ):
@@ -2515,13 +2740,8 @@ elif mode_key == "Corpus Synthesis":
 # MODE 5: PROCESS DOCUMENT
 # ═════════════════════════════════════════════════
 elif mode_key == "Process Document":
-    st.markdown(
-        "Upload an OCR'd PDF to run the full extraction pipeline: "
-        "text extraction, entity/event/relationship extraction, summary generation, "
-        "title generation, and GCS upload."
-    )
-    st.warning(
-        "The PDF must already be OCR'd (e.g., via ABBY FineReader). "
+    st.info(
+        "The PDF must already be OCR'd (e.g., via ABBYY FineReader). "
         "Scanned images without OCR will produce no results."
     )
 
@@ -2894,8 +3114,11 @@ Return ONLY the title, nothing else."""
 
 
 # Footer
-st.markdown("---")
-st.caption(
-    f"v4 \u2014 Five modes: Discovery \u2022 Deep Read \u2022 Hybrid \u2022 Corpus Synthesis \u2022 Process Document | "
-    f"Database: {selected_db if 'selected_db' in dir() else 'not connected'}"
-)
+db_display = db_labels.get(selected_db, selected_db) if 'selected_db' in dir() else 'not connected'
+st.markdown(f"""
+<div class="app-footer">
+    Historical Document Analysis &nbsp;\u2022&nbsp;
+    <a href="{ARCHIVE_BASE_URL}" target="_blank">Crow Nation Digital Archive</a> &nbsp;\u2022&nbsp;
+    {db_display}
+</div>
+""", unsafe_allow_html=True)
