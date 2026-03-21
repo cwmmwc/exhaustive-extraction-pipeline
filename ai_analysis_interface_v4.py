@@ -2419,7 +2419,7 @@ elif mode_key == "Corpus Synthesis":
         if "corpus_conversation" not in st.session_state:
             st.session_state.corpus_conversation = []  # list of {"role": ..., "content": ...}
             st.session_state.corpus_displays = []      # list of rendered markdown strings
-            st.session_state.corpus_question = ""
+            st.session_state.corpus_initial_q = ""
 
         if st.button("\U0001f3db\ufe0f Synthesize Across Entire Corpus", type="primary"):
             if not question:
@@ -2428,7 +2428,7 @@ elif mode_key == "Corpus Synthesis":
                 # Clear previous conversation on new primary query
                 st.session_state.corpus_conversation = []
                 st.session_state.corpus_displays = []
-                st.session_state.corpus_question = question
+                st.session_state.corpus_initial_q = question
 
                 with st.expander(f"Document summaries sent to AI ({summarized})", expanded=False):
                     for s in summaries:
