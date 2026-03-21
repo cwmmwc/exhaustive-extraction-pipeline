@@ -1962,7 +1962,7 @@ with st.sidebar:
         "historical_docs": "Historical Documents",
     }
     selected_db = st.selectbox(
-        "Archive collection:",
+        "Collection:",
         available_dbs,
         index=available_dbs.index("crow_historical_docs") if "crow_historical_docs" in available_dbs else 0,
         format_func=lambda d: db_labels.get(d, d),
@@ -2041,14 +2041,14 @@ MODE_OPTIONS = [
 
 MODE_DESCRIPTIONS = {
     "Discovery": "Search the extracted database for people, places, events, financial transactions, "
-                 "and connections across all documents. Uses **Search Only** (free, no AI) or "
-                 "**Search & Analyze** (AI synthesizes the database results into a narrative).",
-    "Deep Read": "Send a single document's **complete text** to the AI for close, detailed analysis. "
+                 "and connections across all documents. Uses <strong>Search Only</strong> (free, no AI) or "
+                 "<strong>Search &amp; Analyze</strong> (AI synthesizes the database results into a narrative).",
+    "Deep Read": "Send a single document's <strong>complete text</strong> to the AI for close, detailed analysis. "
                  "The AI reads the entire document\u2014not fragments\u2014like a research assistant reading over your shoulder.",
     "Discovery \u2192 Deep Read": "Run Discovery first to find relevant documents, then select which ones "
-                 "to deep-read. The AI gets **full texts** of your chosen documents plus cross-collection "
+                 "to deep-read. The AI gets <strong>full texts</strong> of your chosen documents plus cross-collection "
                  "entity data\u2014combining breadth and depth.",
-    "Corpus Synthesis": "Send summaries of **every** document to the AI for corpus-wide pattern analysis. "
+    "Corpus Synthesis": "Send summaries of <strong>every</strong> document to the AI for corpus-wide pattern analysis. "
                  "No context window limit. Ask follow-up questions to drill deeper without re-running the synthesis.",
     "Process Document": "Upload an OCR'd PDF to run the full extraction pipeline: text extraction, "
                  "entity/event/relationship extraction, summary generation, and title generation.",
