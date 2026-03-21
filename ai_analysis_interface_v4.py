@@ -1818,14 +1818,16 @@ with st.sidebar:
 mode = st.radio(
     "Analysis Mode:",
     [
-        "\U0001f50d **Discovery** — Search everything, find cross-collection connections",
-        "\U0001f4d6 **Deep Read** — Select a document, send full text to AI",
-        "\U0001f50d\u2192\U0001f4d6 **Discovery \u2192 Deep Read** — Find top documents, then read them deeply",
-        "\U0001f3db\ufe0f **Corpus Synthesis** — Analyze ALL documents for corpus-wide patterns",
-        "\U0001f4e4 **Process Document** — Upload a PDF and run the full extraction pipeline",
+        "\U0001f50d **Discovery** — Search the extracted database for people, places, events, and connections across all documents",
+        "\U0001f4d6 **Deep Read** — Send a single document's full text to the AI for close, detailed analysis",
+        "\U0001f50d\u2192\U0001f4d6 **Discovery \u2192 Deep Read** — Search first, then send the most relevant documents' full texts to the AI together",
+        "\U0001f3db\ufe0f **Corpus Synthesis** — Send summaries of ALL documents to the AI for corpus-wide pattern analysis and follow-up questions",
+        "\U0001f4e4 **Process Document** — Upload an OCR'd PDF to extract entities, generate a summary, and add it to the database",
     ],
     index=0,
-    help="Discovery = breadth. Deep Read = depth. Hybrid = both. Corpus = everything. Process = add new documents."
+    help="Discovery searches the database. Deep Read sends full text to AI. "
+         "Hybrid combines both. Corpus Synthesis sees every document at once. "
+         "Process Document adds new PDFs to the archive."
 )
 
 mode_key = mode.split("**")[1].split("**")[0].strip() if "**" in mode else "Discovery"
