@@ -52,8 +52,9 @@ def get_available_databases() -> List[str]:
         cur = conn.cursor()
         cur.execute("""
             SELECT datname FROM pg_database
-            WHERE datname IN ('crow_historical_docs', 'historical_docs')
+            WHERE datname IN ('crow_historical_docs', 'historical_docs', 'full_corpus_docs')
                OR datname LIKE '%_historical_%'
+               OR datname LIKE '%_corpus_%'
             ORDER BY datname
         """)
         dbs = [row[0] for row in cur.fetchall()]
@@ -1309,7 +1310,11 @@ def build_filename_index(db_name: str) -> Dict[str, Dict]:
     """Build a mapping from file_name to {id, display_title, file_name} for all documents."""
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
-    cur.execute("SELECT id, file_name, display_title FROM documents")
+    try:
+        cur.execute("SELECT id, file_name, display_title FROM documents")
+    except Exception:
+        conn.rollback()
+        cur.execute("SELECT id, file_name, file_name as display_title FROM documents")
     rows = cur.fetchall()
     cur.close()
     conn.close()
@@ -1455,6 +1460,46 @@ def linkify_citations(text: str, citation_index: Dict[int, Dict]) -> str:
                 linked += "\n"
 
     return linked
+
+
+def analyze_corpus_followup(followup: str, conversation: List[Dict],
+                            summaries: List[Dict], db_stats: Dict,
+                            model: str = "claude-opus-4-6") -> str:
+    """Follow-up question in a corpus synthesis conversation."""
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        return "Error: ANTHROPIC_API_KEY not set."
+
+    client = anthropic.Anthropic(api_key=api_key)
+    corpus_context = build_corpus_context(summaries)
+    collections = set(d.get('collection', 'Unknown') for d in summaries)
+
+    system_prompt = f"""You are a historian analyzing a complete archival collection about Native American land dispossession, federal Indian policy, and Bureau of Indian Affairs records.
+
+You have analytical summaries of ALL {len(summaries)} documents in this collection, spanning {len(collections)} archival collections.
+
+DATABASE SCOPE: {db_stats.get('documents', 0)} documents, {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} transactions, {db_stats.get('relationships', 0)} relationships, {db_stats.get('fee_patents', 0)} fee patents, {db_stats.get('correspondence', 0)} correspondence records, {db_stats.get('legislative_actions', 0)} legislative actions.
+
+DOCUMENT SUMMARIES:
+{corpus_context}
+
+Continue your analysis. Ground every claim in specific documentary evidence with [Doc N] citations. Be thorough and specific — names, dates, acreages, dollar amounts."""
+
+    # Build messages: prior conversation + new follow-up
+    messages = list(conversation) + [{"role": "user", "content": followup}]
+
+    try:
+        response = client.messages.create(
+            model=model,
+            max_tokens=16000,
+            temperature=0.3,
+            system=system_prompt,
+            messages=messages,
+        )
+        return response.content[0].text
+    except Exception as e:
+        import traceback
+        return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
 
 
 def analyze_corpus(question: str, summaries: List[Dict], db_stats: Dict,
@@ -2368,10 +2413,21 @@ elif mode_key == "Corpus Synthesis":
             key="corpus_question"
         )
 
+        # Initialize conversation state
+        if "corpus_conversation" not in st.session_state:
+            st.session_state.corpus_conversation = []  # list of {"role": ..., "content": ...}
+            st.session_state.corpus_displays = []      # list of rendered markdown strings
+            st.session_state.corpus_question = ""
+
         if st.button("\U0001f3db\ufe0f Synthesize Across Entire Corpus", type="primary"):
             if not question:
                 st.warning("Please enter a research question.")
             else:
+                # Clear previous conversation on new primary query
+                st.session_state.corpus_conversation = []
+                st.session_state.corpus_displays = []
+                st.session_state.corpus_question = question
+
                 with st.expander(f"Document summaries sent to AI ({summarized})", expanded=False):
                     for s in summaries:
                         name = s.get('display_title') or s.get('file_name', '')
@@ -2386,18 +2442,71 @@ elif mode_key == "Corpus Synthesis":
                 ):
                     analysis = analyze_corpus(question, summaries, stats)
 
-                # Convert [Doc N] references to clickable links with citations
+                # Store in conversation
+                st.session_state.corpus_conversation = [
+                    {"role": "user", "content": question},
+                    {"role": "assistant", "content": analysis},
+                ]
+
                 citation_index = build_citation_index(summaries)
                 linked_analysis = linkify_citations(escape_dollars(analysis), citation_index)
-                st.markdown(linked_analysis, unsafe_allow_html=False)
+                st.session_state.corpus_displays = [
+                    {"label": question, "content": linked_analysis}
+                ]
 
-                st.markdown("---")
-                st.caption(
-                    f"\U0001f3db\ufe0f Corpus Synthesis: AI analyzed summaries of all "
-                    f"{summarized} documents (~{est_tokens:,} tokens). "
-                    f"Document citations link to the Crow Nation Digital Archive. "
-                    f"For deep reading of specific documents, use Deep Read or Hybrid mode."
-                )
+        # Display conversation history
+        if st.session_state.corpus_displays:
+            citation_index = build_citation_index(summaries)
+
+            for i, entry in enumerate(st.session_state.corpus_displays):
+                if i > 0:
+                    st.markdown("---")
+                    st.markdown(f"**Follow-up:** {entry['label']}")
+                st.markdown(entry["content"], unsafe_allow_html=False)
+
+            st.markdown("---")
+            st.caption(
+                f"\U0001f3db\ufe0f Corpus Synthesis: AI analyzed summaries of all "
+                f"{summarized} documents (~{est_tokens:,} tokens). "
+                f"Document citations link to the Crow Nation Digital Archive. "
+                f"For deep reading of specific documents, use Deep Read or Hybrid mode."
+            )
+
+            # Follow-up input
+            st.markdown("---")
+            followup = st.text_input(
+                "Ask a follow-up question:",
+                placeholder="e.g., Tell me more about the Nez Perce paradox",
+                key=f"followup_{len(st.session_state.corpus_displays)}"
+            )
+
+            if st.button("\U0001f504 Ask Follow-up", type="secondary"):
+                if not followup:
+                    st.warning("Please enter a follow-up question.")
+                else:
+                    with st.spinner("AI is analyzing your follow-up..."):
+                        followup_response = analyze_corpus_followup(
+                            followup,
+                            st.session_state.corpus_conversation,
+                            summaries, stats
+                        )
+
+                    # Append to conversation
+                    st.session_state.corpus_conversation.append(
+                        {"role": "user", "content": followup}
+                    )
+                    st.session_state.corpus_conversation.append(
+                        {"role": "assistant", "content": followup_response}
+                    )
+
+                    linked_followup = linkify_citations(
+                        escape_dollars(followup_response), citation_index
+                    )
+                    st.session_state.corpus_displays.append(
+                        {"label": followup, "content": linked_followup}
+                    )
+
+                    st.rerun()
 
 
 # ═════════════════════════════════════════════════
