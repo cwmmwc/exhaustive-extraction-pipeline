@@ -662,7 +662,7 @@ class DatabaseManagerV3:
                 collection_metadata.get('collection'),
                 collection_metadata.get('subcollection'),
                 collection_metadata.get('location'),
-                str(metadata.get('extracted_dates', [])),
+                metadata.get('extracted_dates', []),
                 model_name,
                 doc_id,
             ))
@@ -688,7 +688,7 @@ class DatabaseManagerV3:
                 collection_metadata.get('collection'),
                 collection_metadata.get('subcollection'),
                 collection_metadata.get('location'),
-                str(metadata.get('extracted_dates', [])),
+                metadata.get('extracted_dates', []),
                 model_name,
                 'v3'
             ))
