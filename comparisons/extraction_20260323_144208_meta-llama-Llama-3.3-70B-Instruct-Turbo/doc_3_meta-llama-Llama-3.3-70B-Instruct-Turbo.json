@@ -1,0 +1,77 @@
+```json
+{
+  "entities": [
+    {"name": "Francis Geisdorfe", "type": "person", "context": "patent, allotment"},
+    {"name": "Frederick Geisdorff, Jr.", "type": "person", "context": "allottee, deceased"},
+    {"name": "Emily J. Geisdorff", "type": "person", "context": "widow of Frederick Geisdorff, Jr."},
+    {"name": "Thomas R. Powers", "type": "person", "context": "purchaser of allotment"},
+    {"name": "Calvin Coolidge", "type": "person", "context": "President of the United States"},
+    {"name": "Woodrow Wilson", "type": "person", "context": "President of the United States"},
+    {"name": "C.H. Asbury", "type": "person", "context": "Superintendent of Crow Agency"},
+    {"name": "Albert H. Kneale", "type": "person", "context": "Superintendent of Uintah and Ouray Agency"},
+    {"name": "Crow Tribe", "type": "organization", "context": "Indian tribe"},
+    {"name": "United States", "type": "organization", "context": "government"},
+    {"name": "General Land Office", "type": "organization", "context": "government agency"},
+    {"name": "Office of Indian Affairs", "type": "organization", "context": "government agency"},
+    {"name": "Crow Agency", "type": "location", "context": "Indian reservation"},
+    {"name": "Montana", "type": "location", "context": "state"},
+    {"name": "Uintah and Ouray Agency", "type": "location", "context": "Indian reservation"},
+    {"name": "Utah", "type": "location", "context": "state"},
+    {"name": "Wyola, Montana", "type": "location", "context": "town"},
+    {"name": "Fort Duchesne, Utah", "type": "location", "context": "town"},
+    {"name": "Randlett, Utah", "type": "location", "context": "town"},
+    {"name": "Washington, D.C.", "type": "location", "context": "city"},
+    {"name": "Crow Reservation", "type": "location", "context": "Indian reservation"},
+    {"name": "Section 19, Township 9 South, Range 34 East, Montana Meridian", "type": "land_parcel", "context": "allotment location"},
+    {"name": "Section 2, Township 1 South, Range 34 East, Montana Meridian", "type": "land_parcel", "context": "allotment location"},
+    {"name": "Case of Frederick Geisdorff, Crow Allottee #2336", "type": "legal_case", "context": "court case"},
+    {"name": "Act of June 4, 1920", "type": "legislation", "context": "law"},
+    {"name": "Act of April 11, 1882", "type": "legislation", "context": "law"},
+    {"name": "Act of February 8, 1887", "type": "legislation", "context": "law"},
+    {"name": "Treaty of 1968", "type": "legislation", "context": "treaty"},
+    {"name": "Patent Number 227584", "type": "legislation", "context": "patent"},
+    {"name": "Patent Number 719146", "type": "legislation", "context": "patent"},
+    {"name": "Allotment Number 2336", "type": "legislation", "context": "allotment"},
+    {"name": "159.67 acres", "type": "acreage_holding", "context": "allotment size"}
+  ],
+  "events": [
+    {"type": "allotment", "date": "1907", "location": "Crow Reservation", "description": "Frederick Geisdorff, Jr. was allotted land"},
+    {"type": "death", "date": "November 27, 1918", "location": "Randlett, Utah", "description": "Frederick Geisdorff, Jr. died"},
+    {"type": "sale", "date": "November 5, 1918", "location": "Crow Agency", "description": "Thomas R. Powers purchased allotment"},
+    {"type": "hearing", "date": "August 29, 1919", "location": "Crow Agency", "description": "hearing to determine heirs of Frederick Geisdorff, Jr."},
+    {"type": "patent issuance", "date": "November 14, 1919", "location": "General Land Office", "description": "patent issued to Thomas R. Powers"},
+    {"type": "letter", "date": "December 3, 1918", "location": "Crow Agency", "description": "Superintendent Asbury wrote to Thomas R. Powers"},
+    {"type": "letter", "date": "March 24, 1919", "location": "Crow Agency", "description": "Superintendent Asbury wrote to Commissioner of Indian Affairs"},
+    {"type": "report", "date": "April 27, 1919", "location": "Crow Agency", "description": "report on heirship and recommendations for estate of Frederick Geisdorff, Jr."},
+    {"type": "determination of heirs", "date": "April 27, 1920", "location": "Crow Agency", "description": "heirs of Frederick Geisdorff, Jr. were determined"},
+    {"type": "payment", "date": "April 27, 1920", "location": "Crow Agency", "description": "payment made to heirs of Frederick Geisdorff, Jr."}
+  ],
+  "financial_transactions": [
+    {"type": "sale", "amount": "$1500", "payer": "Thomas R. Powers", "payee": "Frederick Geisdorff, Jr.", "date": "November 5, 1918", "description": "purchase of allotment"},
+    {"type": "payment", "amount": "$1350", "payer": "Thomas R. Powers", "payee": "Frederick Geisdorff, Jr.", "date": "November 2, 1918", "description": "balance of purchase price"},
+    {"type": "payment", "amount": "$150", "payer": "Thomas R. Powers", "payee": "Frederick Geisdorff, Jr.", "date": "November 2, 1918", "description": "advertising fee"},
+    {"type": "payment", "amount": "$1317.26", "payer": "Crow Agency", "payee": "Emily J. Geisdorff", "date": "April 27, 1920", "description": "payment to heir"},
+    {"type": "payment", "amount": "$188.90", "payer": "Crow Agency", "payee": "Emily Lucile Geisdorff", "date": "April 27, 1920", "description": "payment to heir"}
+  ],
+  "relationships": [
+    {"subject": "Frederick Geisdorff, Jr.", "type": "married to", "object": "Emily J. Geisdorff", "context": "spouse"},
+    {"subject": "Frederick Geisdorff, Jr.", "type": "father of", "object": "Emily Lucile Geisdorff", "context": "child"},
+    {"subject": "Thomas R. Powers", "type": "purchaser of", "object": "Frederick Geisdorff, Jr.'s allotment", "context": "buyer"},
+    {"subject": "C.H. Asbury", "type": "Superintendent of", "object": "Crow Agency", "context": "administrator"},
+    {"subject": "Albert H. Kneale", "type": "Superintendent of", "object": "Uintah and Ouray Agency", "context": "administrator"}
+  ],
+  "fee_patents": [
+    {"allottee_name": "Frederick Geisdorff, Jr.", "allotment_number": "2336", "acreage": "159.67", "patent_date": "December 2, 1907", "patent_number": "227584", "mechanism": "administrative", "buyer": "Thomas R. Powers", "sale_price": "$1500", "attorney": "None", "mortgage": "None"}
+  ],
+  "correspondence": [
+    {"sender": "C.H. Asbury", "sender_title": "Superintendent", "recipient": "Thomas R. Powers", "recipient_title": "Purchaser", "date": "November 5, 1918", "subject": "purchase of allotment", "action_requested": "payment", "outcome": "payment received"},
+    {"sender": "C.H. Asbury", "sender_title": "Superintendent", "recipient": "Commissioner of Indian Affairs", "recipient_title": "Commissioner", "date": "March 24, 1919", "subject": "report on heirship", "action_requested": "approval", "outcome": "approved"},
+    {"sender": "Commissioner of Indian Affairs", "sender_title": "Commissioner", "recipient": "C.H. Asbury", "recipient_title": "Superintendent", "date": "April 26, 1919", "subject": "response to report", "action_requested": "none", "outcome": "none"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "None", "sponsor": "None", "action_type": "enacted", "date": "June 4, 1920", "vote_count": "None", "committee": "None", "outcome": "law enacted"},
+    {"bill_number": "None", "sponsor": "None", "action_type": "enacted", "date": "April 11, 1882", "vote_count": "None", "committee": "None", "outcome": "law enacted"},
+    {"bill_number": "None", "sponsor": "None", "action_type": "enacted", "date": "February 8, 1887", "vote_count": "None", "committee": "None", "outcome": "law enacted"}
+  ]
+}
+```

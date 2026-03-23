@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {"name": "John Woodenlegs", "type": "person", "context": "Chairman of the Northern Cheyenne Indian Tribe"},
+    {"name": "Northern Cheyenne Indian Tribe", "type": "organization", "context": "Tribe located in Montana"},
+    {"name": "Lame Deer", "type": "location", "context": "Location of the Northern Cheyenne Indian Tribe"},
+    {"name": "Montana", "type": "location", "context": "State where the Northern Cheyenne Indian Tribe is located"},
+    {"name": "Busby", "type": "location", "context": "Location of a school on the Northern Cheyenne Indian Reservation"},
+    {"name": "Frank Church", "type": "person", "context": "Chairman of the Indian Affairs Subcommittee"},
+    {"name": "James E. Murray", "type": "person", "context": "Senator from Montana"},
+    {"name": "Mike Mansfield", "type": "person", "context": "Senator from Montana"},
+    {"name": "H. Rex Lee", "type": "person", "context": "Acting Commissioner of the Bureau of Indian Affairs"},
+    {"name": "Roger Ernst", "type": "person", "context": "Assistant Secretary of the Interior"},
+    {"name": "Bryan Stevens", "type": "person", "context": " Rancher who wrote to Senator Mansfield about land sales on reservations"},
+    {"name": "D. V. Adams", "type": "person", "context": "Chairman of the Education Committee of the Northern Cheyenne Tribe"},
+    {"name": "Glenn L. Emmons", "type": "person", "context": "Commissioner of the Bureau of Indian Affairs"},
+    {"name": "Edward Whiteman", "type": "person", "context": "President of the Affiliated Tribes of Northwest Indians"},
+    {"name": "William Denny", "type": "person", "context": "Secretary of the Rocky Boy's Agency"},
+    {"name": "William Morsette", "type": "person", "context": "Chairman of the Rocky Boy's Agency"},
+    {"name": "Fred A. Seaton", "type": "person", "context": "Secretary of the Interior"},
+    {"name": "United States Senate", "type": "organization", "context": "Legislative body"},
+    {"name": "Bureau of Indian Affairs", "type": "organization", "context": "Agency responsible for Indian affairs"},
+    {"name": "Department of the Interior", "type": "organization", "context": "Department responsible for Indian affairs"},
+    {"name": "Northern Cheyenne Reservation", "type": "land_parcel", "context": "Reservation where the Northern Cheyenne Tribe is located"},
+    {"name": "Rocky Boy's Agency", "type": "land_parcel", "context": "Reservation where the Chippewa Cree Tribe is located"},
+    {"name": "S. 3546", "type": "legislation", "context": "Bill to increase the Indian revolving credit loan fund"},
+    {"name": "H. R. 1150", "type": "legislation", "context": "Bill related to heirship land problem in Minnesota"},
+    {"name": "Indian Revolving Credit Loan Fund", "type": "acreage_holding", "context": "Fund for loans to Indian tribes"}
+  ],
+  "events": [
+    {"type": "letter", "date": "1960-06-08", "location": "Washington, D.C.", "description": "Senator Mansfield wrote to John Woodenlegs about school facilities at Busby"},
+    {"type": "meeting", "date": "1960-05-09", "location": "Billings, Montana", "description": "Meeting to discuss construction program for Busby School"},
+    {"type": "letter", "date": "1960-05-16", "location": "Busby, Montana", "description": "D. V. Adams wrote to Senator Mansfield about school facilities"},
+    {"type": "letter", "date": "1960-02-10", "location": "Washington, D.C.", "description": "Senator Mansfield wrote to Secretary of the Interior about land sales on reservations"},
+    {"type": "letter", "date": "1960-02-23", "location": "Washington, D.C.", "description": "Senator Mansfield wrote to Glenn L. Emmons about land development program for Northern Cheyenne Tribe"},
+    {"type": "letter", "date": "1960-02-17", "location": "Lame Deer, Montana", "description": "John Woodenlegs wrote to Senator Mansfield about land development program"},
+    {"type": "telegram", "date": "1960-02-10", "location": "Washington, D.C.", "description": "Senator Mansfield sent telegram to Edward Whiteman about land purchase program"}
+  ],
+  "financial_transactions": [
+    {"type": "appropriation", "amount": "$40,000", "payer": "Congress", "payee": "Northern Cheyenne Tribe", "date": "1960", "description": "Funds for rehabilitation of Northern Cheyenne school facilities"},
+    {"type": "loan", "amount": "$50,000", "payer": "Bureau of Indian Affairs", "payee": "Northern Cheyenne Tribe", "date": "1959-07-02", "description": "Land enterprise loan"},
+    {"type": "loan", "amount": "$550,000", "payer": "Bureau of Indian Affairs", "payee": "Northern Cheyenne Tribe", "date": "1960", "description": "Proposed loan for land development program"}
+  ],
+  "relationships": [
+    {"subject": "John Woodenlegs", "type": "represented", "object": "Northern Cheyenne Tribe", "context": "Chairman of the Tribe"},
+    {"subject": "Mike Mansfield", "type": "represented", "object": "State of Montana", "context": "Senator from Montana"},
+    {"subject": "James E. Murray", "type": "represented", "object": "State of Montana", "context": "Senator from Montana"},
+    {"subject": "Frank Church", "type": "chaired", "object": "Indian Affairs Subcommittee", "context": "Chairman of the Subcommittee"}
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {"sender": "Mike Mansfield", "sender_title": "Senator", "recipient": "John Woodenlegs", "recipient_title": "Chairman, Northern Cheyenne Indian Tribe", "date": "1960-06-08", "subject": "School facilities at Busby", "action_requested": "None", "outcome": "None"},
+    {"sender": "D. V. Adams", "sender_title": "Chairman, Education Committee", "recipient": "Mike Mansfield", "recipient_title": "Senator", "date": "1960-05-16", "subject": "School facilities at Busby", "action_requested": "Support for funding", "outcome": "None"},
+    {"sender": "H. Rex Lee", "sender_title": "Acting Commissioner, Bureau of Indian Affairs", "recipient": "Mike Mansfield", "recipient_title": "Senator", "date": "1960-06-03", "subject": "Status of planning for Busby School", "action_requested": "None", "outcome": "None"},
+    {"sender": "Roger Ernst", "sender_title": "Assistant Secretary of the Interior", "recipient": "Mike Mansfield", "recipient_title": "Senator", "date": "1960-04-20", "subject": "Land development program for Northern Cheyenne Tribe", "action_requested": "None", "outcome": "None"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "S. 3546", "sponsor": "Mike Mansfield and James E. Murray", "action_type": "introduced", "date": "1960", "vote_count": "None", "committee": "Indian Affairs Subcommittee", "outcome": "Pending"},
+    {"bill_number": "H. R. 1150", "sponsor": "None", "action_type": "reported", "date": "1960", "vote_count": "None", "committee": "House Interior Committee", "outcome": "Before House Rules Committee"}
+  ]
+}

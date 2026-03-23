@@ -1,0 +1,47 @@
+{
+  "entities": [
+    {"name": "United States", "type": "organization", "context": "government"},
+    {"name": "Department of the Interior", "type": "organization", "context": "government agency"},
+    {"name": "Bureau of Indian Affairs", "type": "organization", "context": "government agency"},
+    {"name": "Billings Area Office", "type": "location", "context": "office location"},
+    {"name": "Pine Ridge Reservation", "type": "location", "context": "Indian reservation"},
+    {"name": "Rosebud Reservation", "type": "location", "context": "Indian reservation"},
+    {"name": "Cheyenne River Reservation", "type": "location", "context": "Indian reservation"},
+    {"name": "Winnebago Reservation", "type": "location", "context": "Indian reservation"},
+    {"name": "H. M. Critchfield", "type": "person", "context": "Chief, Branch of Realty"},
+    {"name": "Rex Corey", "type": "person", "context": "Agency Soil Scientist"},
+    {"name": "Bill Smith", "type": "person", "context": "Soil Scientist"},
+    {"name": "Fran", "type": "person", "context": "recipient of memo"},
+    {"name": "Dro Ko S. Engel", "type": "person", "context": "Land Operations Officer"},
+    {"name": "Mr. Freiberg", "type": "person", "context": "Soil Conservationist"},
+    {"name": "Mr. Boyd", "type": "person", "context": "Soil Conservationist"},
+    {"name": "Mr. Turner", "type": "person", "context": "Range Conservationist"},
+    {"name": "Mr. Hagen", "type": "person", "context": "Soil Conservationist"},
+    {"name": "Mr. Bergman", "type": "person", "context": "Soils Trainee"}
+  ],
+  "events": [
+    {"type": "issuance of patents in fee", "date": "1955-11-22", "location": "Washington D.C.", "description": "policy statement on fee patent policy"},
+    {"type": "Land Operations Conference", "date": "1955-06-13", "location": "Sioux City, Iowa", "description": "conference on land operations"},
+    {"type": "amendment to 25 CFR 71.27", "date": "1955-08-10", "location": "Washington D.C.", "description": "amendment to regulation regarding submarginal lands"}
+  ],
+  "financial_transactions": [
+    {"type": "payment", "amount": "unknown", "payer": "lessee", "payee": "Bureau of Indian Affairs", "date": "unknown", "description": "irrigation assessments"},
+    {"type": "deposit", "amount": "unknown", "payer": "unknown", "payee": "Treasury", "date": "1955-11-23", "description": "funds from submarginal lands"}
+  ],
+  "relationships": [
+    {"subject": "Bureau of Indian Affairs", "type": "represented", "object": "Indian tribes", "context": "trust responsibility"},
+    {"subject": "Indian", "type": "related_to", "object": "tribe", "context": "membership"},
+    {"subject": "lessee", "type": "employed_by", "object": "Bureau of Indian Affairs", "context": "leasing arrangement"}
+  ],
+  "fee_patents": [
+    {"allottee_name": "unknown", "allotment_number": "unknown", "acreage": "unknown", "patent_date": "unknown", "patent_number": "unknown", "mechanism": "private_bill", "buyer": "unknown", "sale_price": "unknown", "attorney": "unknown", "mortgage": "unknown"}
+  ],
+  "correspondence": [
+    {"sender": "H. M. Critchfield", "sender_title": "Chief, Branch of Realty", "recipient": "Area Directors", "recipient_title": "Area Directors", "date": "1954-12-13", "subject": "issuance of patents in fee", "action_requested": "compliance with requirements", "outcome": "unknown"},
+    {"sender": "Office of the Area Director", "sender_title": "Area Director", "recipient": "All Superintendents and Officers in Charge", "recipient_title": "Superintendents and Officers in Charge", "date": "1955-11-29", "subject": "disposition of revenue from submarginal lands", "action_requested": "deposit funds in Treasury", "outcome": "unknown"},
+    {"sender": "Office of the Area Director", "sender_title": "Area Director", "recipient": "Superintendent, No. Cheyenne", "recipient_title": "Superintendent", "date": "1955-11-7", "subject": "fee patent policy", "action_requested": "information", "outcome": "unknown"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "unknown", "sponsor": "unknown", "action_type": "amendment", "date": "1955-08-10", "vote_count": "unknown", "committee": "unknown", "outcome": "enacted"}
+  ]
+}

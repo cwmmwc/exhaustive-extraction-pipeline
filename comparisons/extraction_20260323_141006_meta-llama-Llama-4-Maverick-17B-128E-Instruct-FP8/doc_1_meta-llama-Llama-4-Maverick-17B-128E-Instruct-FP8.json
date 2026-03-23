@@ -1,0 +1,50 @@
+```
+{
+  "entities": [
+    {"name": "George Peters", "type": "person", "context": "Crow Indian allottee"},
+    {"name": "James E. Murray", "type": "person", "context": "US Senator"},
+    {"name": "Joseph C. O'Mahoney", "type": "person", "context": "US Senator and Chairman of the Committee on Interior and Insular Affairs"},
+    {"name": "Oscar Chapman", "type": "person", "context": "Under Secretary of the Interior"},
+    {"name": "Wyola, Montana", "type": "location", "context": "George Peters' address"},
+    {"name": "Crow Indian Reservation", "type": "location", "context": "location of George Peters' allotment"},
+    {"name": "Montana", "type": "location", "context": "state where Crow Indian Reservation is located"},
+    {"name": "United States Senate", "type": "organization", "context": "legislative body"},
+    {"name": "Committee on Interior and Insular Affairs", "type": "organization", "context": "committee that reviewed S. 716"},
+    {"name": "Department of the Interior", "type": "organization", "context": "executive department that reviewed S. 716"},
+    {"name": "S. 716", "type": "legislation", "context": "bill authorizing the issuance of a patent in fee to George Peters"},
+    {"name": "George Peters' allotment", "type": "land_parcel", "context": "land allotted to George Peters on the Crow Indian Reservation"},
+    {"name": "Section 20, Township 4 South, Range 37 East", "type": "land_parcel", "context": "part of George Peters' allotment"},
+    {"name": "Section 29, Township 4 South, Range 37 East", "type": "land_parcel", "context": "part of George Peters' allotment"}
+  ],
+  "events": [
+    {"type": "bill_introduced", "date": "January 31, 1949", "location": "US Senate", "description": "S. 716 introduced by Senator James E. Murray"},
+    {"type": "bill_amended", "date": "May 4, 1949", "location": "US House of Representatives", "description": "S. 716 amended to permit the Secretary of the Interior to sell George Peters' land under existing regulations"},
+    {"type": "bill_passed", "date": "April 11, 1949", "location": "US Senate", "description": "S. 716 passed the Senate"},
+    {"type": "bill_reported_favorably", "date": "May 4, 1949", "location": "US House of Representatives", "description": "S. 716 reported favorably out of the House Committee on Public Lands"},
+    {"type": "bill_passed", "date": "May 17, 1949", "location": "US House of Representatives", "description": "S. 716 passed the House"},
+    {"type": "bill_signed_into_law", "date": "after May 18, 1949", "location": "White House", "description": "S. 716 signed into law"}
+  ],
+  "financial_transactions": [],
+  "relationships": [
+    {"subject": "George Peters", "type": "represented_by", "object": "James E. Murray", "context": "Murray introduced S. 716 on behalf of Peters"},
+    {"subject": "George Peters", "type": "allottee_of", "object": "Crow Indian Reservation", "context": "Peters was allotted land on the Crow Indian Reservation"},
+    {"subject": "James E. Murray", "type": "sponsor_of", "object": "S. 716", "context": "Murray sponsored S. 716"}
+  ],
+  "fee_patents": [
+    {"allottee_name": "George Peters", "allotment_number": "2292", "acreage": "840 acres", "patent_date": "not specified", "patent_number": "not specified", "mechanism": "private_bill", "buyer": "not specified", "sale_price": "not specified", "attorney": "not specified", "mortgage": "not specified"}
+  ],
+  "correspondence": [
+    {"sender": "James E. Murray", "sender_title": "US Senator", "recipient": "George Peters", "recipient_title": "Crow Indian allottee", "date": "January 26, 1949", "subject": "Introduction of S. 716", "action_requested": "none", "outcome": "none"},
+    {"sender": "Joseph C. O'Mahoney", "sender_title": "US Senator and Chairman of the Committee on Interior and Insular Affairs", "recipient": "James E. Murray", "recipient_title": "US Senator", "date": "March 10, 1949", "subject": "Department of the Interior report on S. 716", "action_requested": "amendment of S. 716", "outcome": "S. 716 amended"},
+    {"sender": "Oscar Chapman", "sender_title": "Under Secretary of the Interior", "recipient": "Joseph C. O'Mahoney", "recipient_title": "US Senator and Chairman of the Committee on Interior and Insular Affairs", "date": "March 9, 1949", "subject": "Department of the Interior report on S. 716", "action_requested": "amendment of S. 716", "outcome": "S. 716 amended"},
+    {"sender": "James E. Murray", "sender_title": "US Senator", "recipient": "George Peters", "recipient_title": "Crow Indian allottee", "date": "May 9, 1949", "subject": "Status of S. 716", "action_requested": "none", "outcome": "none"},
+    {"sender": "Jones", "sender_title": "not specified", "recipient": "George Peters", "recipient_title": "Crow Indian allottee", "date": "May 18, 1949", "subject": "Passage of S. 716", "action_requested": "none", "outcome": "none"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "introduced", "date": "January 31, 1949", "vote_count": "not specified", "committee": "Committee on Interior and Insular Affairs", "outcome": "referred to committee"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "amended", "date": "May 4, 1949", "vote_count": "not specified", "committee": "Committee on Public Lands", "outcome": "reported favorably"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "passed", "date": "April 11, 1949", "vote_count": "not specified", "committee": "none", "outcome": "passed Senate"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "passed", "date": "May 17, 1949", "vote_count": "not specified", "committee": "none", "outcome": "passed House"}
+  ]
+}
+```

@@ -1,0 +1,65 @@
+```json
+{
+  "entities": [
+    {"name": "Francis Geisdorff", "type": "person", "context": "Indian allottee"},
+    {"name": "Frederick Geisdorff, Jr.", "type": "person", "context": "Indian allottee #2336"},
+    {"name": "Frederick Geisdorff", "type": "person", "context": "father of Frederick Geisdorff, Jr."},
+    {"name": "Emily J. Geisdorff", "type": "person", "context": "widow of Frederick Geisdorff, Jr."},
+    {"name": "Emily Lucile Geisdorff", "type": "person", "context": "daughter of Frederick Geisdorff, Jr."},
+    {"name": "Thomas R. Powers", "type": "person", "context": "purchaser of land"},
+    {"name": "C.H. Asbury", "type": "person", "context": "Crow Agency Superintendent"},
+    {"name": "Albert H. Kneale", "type": "person", "context": "Uintah and Ouray Agency Superintendent"},
+    {"name": "Calvin Coolidge", "type": "person", "context": "President of the United States"},
+    {"name": "Woodrow Wilson", "type": "person", "context": "President of the United States"},
+    {"name": "Crow Tribe", "type": "organization", "context": "Indian tribe"},
+    {"name": "United States Government", "type": "organization", "context": "government"},
+    {"name": "General Land Office", "type": "organization", "context": "government agency"},
+    {"name": "Office of Indian Affairs", "type": "organization", "context": "government agency"},
+    {"name": "Uintah and Ouray Agency", "type": "organization", "context": "Indian agency"},
+    {"name": "Crow Agency", "type": "organization", "context": "Indian agency"},
+    {"name": "Montana", "type": "location", "context": "state"},
+    {"name": "Utah", "type": "location", "context": "state"},
+    {"name": "Randlett", "type": "location", "context": "town in Utah"},
+    {"name": "Fort Duchesne", "type": "location", "context": "town in Utah"},
+    {"name": "Wyola", "type": "location", "context": "town in Montana"},
+    {"name": "Crow Reservation", "type": "land_parcel", "context": "Indian reservation"},
+    {"name": "Section 19, T. 9 S., R. 34 E., Montana Meridian", "type": "land_parcel", "context": "allotment land"},
+    {"name": "Allotment #2336", "type": "land_parcel", "context": "Frederick Geisdorff, Jr.'s allotment"}
+  ],
+  "events": [
+    {"type": "allotment", "date": "1907-12-02", "location": "Crow Reservation", "description": "Frederick Geisdorff, Jr. allotted land"},
+    {"type": "sale", "date": "1918-09-18", "location": "Crow Agency", "description": "Frederick Geisdorff, Jr.'s land offered for sale"},
+    {"type": "death", "date": "1918-11-27", "location": "Randlett, Utah", "description": "Frederick Geisdorff, Jr. died"},
+    {"type": "heirship determination", "date": "1919-08-29", "location": "Crow Agency", "description": "Heirs of Frederick Geisdorff, Jr. determined"},
+    {"type": "patent issuance", "date": "1919-11-14", "location": "General Land Office", "description": "Fee patent issued to Thomas R. Powers"}
+  ],
+  "financial_transactions": [
+    {"type": "sale", "amount": "$1500", "payer": "Thomas R. Powers", "payee": "Frederick Geisdorff, Jr.", "date": "1918-11-05", "description": "Sale of allotment land"},
+    {"type": "payment", "amount": "$1350", "payer": "Thomas R. Powers", "payee": "Crow Agency", "date": "1918-11-02", "description": "Balance of purchase price"},
+    {"type": "payment", "amount": "$150", "payer": "Thomas R. Powers", "payee": "Crow Agency", "date": "1918-09-18", "description": "Deposit on purchase price"},
+    {"type": "fee", "amount": "$2", "payer": "Thomas R. Powers", "payee": "Crow Agency", "date": "1918-11-02", "description": "Advertising fee"},
+    {"type": "distribution", "amount": "$1317.26", "payer": "Crow Agency", "payee": "Emily J. Geisdorff", "date": "1920-04-27", "description": "Proceeds of sale distributed to heirs"}
+  ],
+  "relationships": [
+    {"subject": "Frederick Geisdorff, Jr.", "type": "represented_by", "object": "Albert H. Kneale", "context": "Superintendent Kneale assisted Geisdorff in land sale"},
+    {"subject": "Frederick Geisdorff, Jr.", "type": "employed_by", "object": "Uintah and Ouray Agency", "context": "Geisdorff lived under jurisdiction of Uintah and Ouray Agency"},
+    {"subject": "Thomas R. Powers", "type": "bought_from", "object": "Frederick Geisdorff, Jr.", "context": "Powers purchased land from Geisdorff"},
+    {"subject": "Emily J. Geisdorff", "type": "related_to", "object": "Frederick Geisdorff, Jr.", "context": "Widow of Frederick Geisdorff, Jr."},
+    {"subject": "Emily Lucile Geisdorff", "type": "related_to", "object": "Frederick Geisdorff, Jr.", "context": "Daughter of Frederick Geisdorff, Jr."}
+  ],
+  "fee_patents": [
+    {"allottee_name": "Frederick Geisdorff, Jr.", "allotment_number": "2336", "acreage": "159.67", "patent_date": "1919-11-14", "patent_number": "719146", "mechanism": "administrative", "buyer": "Thomas R. Powers", "sale_price": "$1500", "attorney": "none", "mortgage": "none"}
+  ],
+  "correspondence": [
+    {"sender": "C.H. Asbury", "sender_title": "Superintendent", "recipient": "Frederick Geisdorff, Jr.", "recipient_title": "allottee", "date": "1918-11-05", "subject": "sale of allotment", "action_requested": "submit birthdate and relatives' names", "outcome": "none"},
+    {"sender": "C.H. Asbury", "sender_title": "Superintendent", "recipient": "Thomas R. Powers", "recipient_title": "purchaser", "date": "1918-10-24", "subject": "sale of allotment", "action_requested": "remit balance of purchase price", "outcome": "none"},
+    {"sender": "Albert H. Kneale", "sender_title": "Superintendent", "recipient": "C.H. Asbury", "recipient_title": "Superintendent", "date": "1918-12-10", "subject": "death of Frederick Geisdorff, Jr.", "action_requested": "none", "outcome": "none"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "none", "sponsor": "none", "action_type": "enacted", "date": "1920-06-04", "vote_count": "none", "committee": "none", "outcome": "Act of June 4, 1920 (41 Stat., 751)"},
+    {"bill_number": "none", "sponsor": "none", "action_type": "enacted", "date": "1882-04-11", "vote_count": "none", "committee": "none", "outcome": "Act of April 11, 1882 (22 Stat. L. 42)"},
+    {"bill_number": "none", "sponsor": "none", "action_type": "enacted", "date": "1887-02-08", "vote_count": "none", "committee": "none", "outcome": "Act of February 8, 1887 (24 Stat. L. 388)"},
+    {"bill_number": "none", "sponsor": "none", "action_type": "enacted", "date": "1916-05-18", "vote_count": "none", "committee": "none", "outcome": "Act of May 18, 1916 (39 Stat. 123)"}
+  ]
+}
+```

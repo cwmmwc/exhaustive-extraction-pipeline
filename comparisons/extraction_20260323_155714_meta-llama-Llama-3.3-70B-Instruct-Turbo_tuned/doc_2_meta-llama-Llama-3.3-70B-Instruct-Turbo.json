@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {"name": "James E. Murray", "type": "person", "context": "United States Senator"},
+    {"name": "George Peters", "type": "person", "context": "Crow Indian, allottee of land on the Crow Indian Reservation"},
+    {"name": "Joseph C. O'Mahoney", "type": "person", "context": "Chairman, Senate Committee on Interior and Insular Affairs"},
+    {"name": "Oscar L. Chapman", "type": "person", "context": "Undersecretary of the Interior"},
+    {"name": "Crow Indian Reservation", "type": "location", "context": "Montana, location of George Peters' allotment"},
+    {"name": "United States Senate", "type": "organization", "context": "Legislative body that considered S. 716"},
+    {"name": "Department of the Interior", "type": "organization", "context": "Government agency that recommended amendments to S. 716"},
+    {"name": "Committee on Interior and Insular Affairs", "type": "organization", "context": "Senate committee that considered S. 716"},
+    {"name": "Committee on Public Lands", "type": "organization", "context": "House committee that considered S. 716"},
+    {"name": "Western Union", "type": "organization", "context": "Telegraph company that sent messages about S. 716"},
+    {"name": "Wyola, Montana", "type": "location", "context": "George Peters' residence"},
+    {"name": "George Redfield", "type": "person", "context": "Crow Indian who was interested in buying George Peters' land"}
+  ],
+  "events": [
+    {"type": "bill introduction", "date": "1949-01-31", "location": "United States Senate", "description": "S. 716 was introduced by Senator James E. Murray to authorize the issuance of a patent in fee to George Peters"},
+    {"type": "committee consideration", "date": "1949-03-09", "location": "Senate Committee on Interior and Insular Affairs", "description": "The committee considered S. 716 and recommended amendments"},
+    {"type": "bill passage", "date": "1949-04-11", "location": "United States Senate", "description": "S. 716 passed the Senate, authorizing the Secretary of the Interior to sell George Peters' land to a Crow Indian under existing regulations"},
+    {"type": "committee consideration", "date": "1949-05-04", "location": "House Committee on Public Lands", "description": "The committee considered S. 716 and reported it favorably without amendment"},
+    {"type": "bill clearance", "date": "1949-05-18", "location": "United States House of Representatives", "description": "S. 716 was cleared for the President's signature"}
+  ],
+  "financial_transactions": [
+    {"type": "sale", "amount": "unknown", "payer": "unknown", "payee": "George Peters", "date": "unknown", "description": "Sale of George Peters' land to a Crow Indian under existing regulations"}
+  ],
+  "relationships": [
+    {"subject": "James E. Murray", "type": "introduced legislation for", "object": "George Peters", "context": "Murray introduced S. 716 to authorize the issuance of a patent in fee to George Peters"},
+    {"subject": "George Peters", "type": "intended to sell to", "object": "George Redfield", "context": "Peters indicated his desire to sell his land to Redfield, another Crow Indian, in 1921"},
+    {"subject": "Joseph C. O'Mahoney", "type": "chaired committee that considered", "object": "S. 716", "context": "O'Mahoney was the chairman of the Senate Committee on Interior and Insular Affairs that considered S. 716"},
+    {"subject": "Oscar L. Chapman", "type": "recommended amendments to", "object": "S. 716", "context": "Chapman, as Undersecretary of the Interior, recommended amendments to S. 716 to permit the sale of George Peters' land under existing regulations"}
+  ],
+  "fee_patents": [
+    {"allottee_name": "George Peters", "allotment_number": "2292", "acreage": "840", "patent_date": "unknown", "patent_number": "unknown", "mechanism": "administrative", "buyer": "unknown", "sale_price": "unknown", "attorney": "unknown", "mortgage": "unknown"}
+  ],
+  "correspondence": [
+    {"sender": "Oscar L. Chapman", "sender_title": "Undersecretary of the Interior", "recipient": "Joseph C. O'Mahoney", "recipient_title": "Chairman, Senate Committee on Interior and Insular Affairs", "date": "1949-03-09", "subject": "Report on S. 716 authorizing patent in fee to George Peters, Crow Indian", "action_requested": "Recommendation to enact bill if amended to allow sale to a Crow Indian under existing regulations rather than issue patent in fee", "outcome": "Report forwarded to Senator Murray on March 10; bill subsequently amended as suggested"},
+    {"sender": "James E. Murray", "sender_title": "United States Senator", "recipient": "George Peters", "recipient_title": "Crow Indian allottee", "date": "1949-01-26", "subject": "Introduction of S. 716 to authorize patent in fee", "action_requested": "Support for the bill", "outcome": "Peters was informed of the bill's introduction and expressed his desire for its passage"},
+    {"sender": "Joseph C. O'Mahoney", "sender_title": "Chairman, Senate Committee on Interior and Insular Affairs", "recipient": "James E. Murray", "recipient_title": "United States Senator", "date": "1949-03-10", "subject": "Report on S. 716 and recommended amendments", "action_requested": "Consideration of the committee's report and recommended amendments", "outcome": "Murray was informed of the committee's report and the bill was subsequently amended"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "introduced", "date": "1949-01-31", "vote_count": "unknown", "committee": "Senate Committee on Interior and Insular Affairs", "outcome": "Bill was introduced and referred to committee"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "reported", "date": "1949-03-09", "vote_count": "unknown", "committee": "Senate Committee on Interior and Insular Affairs", "outcome": "Committee reported the bill with recommended amendments"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "passed", "date": "1949-04-11", "vote_count": "unknown", "committee": "United States Senate", "outcome": "Bill passed the Senate"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "cleared for signature", "date": "1949-05-18", "vote_count": "unknown", "committee": "United States House of Representatives", "outcome": "Bill was cleared for the President's signature"}
+  ]
+}

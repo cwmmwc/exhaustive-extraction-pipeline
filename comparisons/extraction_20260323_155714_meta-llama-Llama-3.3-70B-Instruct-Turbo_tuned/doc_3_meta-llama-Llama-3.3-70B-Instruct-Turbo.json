@@ -1,0 +1,384 @@
+```json
+{
+  "entities": [
+    {
+      "name": "Francis Geisdorff",
+      "type": "person",
+      "context": "Allottee"
+    },
+    {
+      "name": "Thomas R. Powers",
+      "type": "person",
+      "context": "Purchaser of land"
+    },
+    {
+      "name": "Frederick Geisdorff Jr.",
+      "type": "person",
+      "context": "Deceased allottee"
+    },
+    {
+      "name": "Emily J. Geisdorff",
+      "type": "person",
+      "context": "Widow of Frederick Geisdorff Jr."
+    },
+    {
+      "name": "Emily Lucile Geisdorff",
+      "type": "person",
+      "context": "Daughter of Frederick Geisdorff Jr."
+    },
+    {
+      "name": "C. H. Asbury",
+      "type": "person",
+      "context": "Superintendent of Crow Agency"
+    },
+    {
+      "name": "Calvin Coolidge",
+      "type": "person",
+      "context": "President of the United States"
+    },
+    {
+      "name": "Woodrow Wilson",
+      "type": "person",
+      "context": "President of the United States"
+    },
+    {
+      "name": "Thomas A. Powers",
+      "type": "person",
+      "context": "Purchaser of land"
+    },
+    {
+      "name": "John McPhaul",
+      "type": "person",
+      "context": "Acting Assistant Commissioner of the General Land Office"
+    },
+    {
+      "name": "Crow Agency",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "General Land Office",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Office of Indian Affairs",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "United States Indian Service",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Uintah and Ouray Agency",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Crow Tribe",
+      "type": "organization",
+      "context": "Native American tribe"
+    },
+    {
+      "name": "Montana",
+      "type": "location",
+      "context": "State"
+    },
+    {
+      "name": "Utah",
+      "type": "location",
+      "context": "State"
+    },
+    {
+      "name": "Randlett",
+      "type": "location",
+      "context": "City in Utah"
+    },
+    {
+      "name": "Wyola",
+      "type": "location",
+      "context": "City in Montana"
+    },
+    {
+      "name": "Fort Duchesne",
+      "type": "location",
+      "context": "City in Utah"
+    },
+    {
+      "name": "Washington D.C.",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Billings",
+      "type": "location",
+      "context": "City in Montana"
+    },
+    {
+      "name": "Merchants National Bank",
+      "type": "organization",
+      "context": "Bank"
+    },
+    {
+      "name": "Sheridan Banking Company",
+      "type": "organization",
+      "context": "Bank"
+    },
+    {
+      "name": "Allotment No. 2336",
+      "type": "land_parcel",
+      "context": "Land allotment"
+    },
+    {
+      "name": "Allotment No. 2356",
+      "type": "land_parcel",
+      "context": "Land allotment"
+    },
+    {
+      "name": "Section 19, Township 9 South, Range 34 East",
+      "type": "land_parcel",
+      "context": "Land description"
+    },
+    {
+      "name": "Lot 2, Section 19, Township 9 South, Range 34 East",
+      "type": "land_parcel",
+      "context": "Land description"
+    },
+    {
+      "name": "SE of NW and Lot 2, Sec. 19, T. 9 S. R. 34 E.",
+      "type": "land_parcel",
+      "context": "Land description"
+    },
+    {
+      "name": "S. 716",
+      "type": "legislation",
+      "context": "Bill"
+    },
+    {
+      "name": "Act of June 4, 1920",
+      "type": "legislation",
+      "context": "Law"
+    },
+    {
+      "name": "Act of April 11, 1882",
+      "type": "legislation",
+      "context": "Law"
+    },
+    {
+      "name": "Act of February 8, 1887",
+      "type": "legislation",
+      "context": "Law"
+    },
+    {
+      "name": "Treaty of 1968",
+      "type": "legislation",
+      "context": "Treaty"
+    }
+  ],
+  "events": [
+    {
+      "type": "death",
+      "date": "1918-11-27",
+      "location": "Randlett, Utah",
+      "description": "Frederick Geisdorff Jr. died of influenza"
+    },
+    {
+      "type": "sale",
+      "date": "1918-11-05",
+      "location": "Crow Agency, Montana",
+      "description": "Sale of Frederick Geisdorff Jr.'s allotment to Thomas R. Powers"
+    },
+    {
+      "type": "hearing",
+      "date": "1919-08-29",
+      "location": "Crow Agency, Montana",
+      "description": "Hearing to determine heirs of Frederick Geisdorff Jr."
+    },
+    {
+      "type": "patent issuance",
+      "date": "1919-11-14",
+      "location": "General Land Office, Washington D.C.",
+      "description": "Patent No. 719146 issued to Thomas R. Powers"
+    },
+    {
+      "type": "payment",
+      "date": "1920-04-27",
+      "location": "Crow Agency, Montana",
+      "description": "Payment of $1317.26 to Emily J. Geisdorff and $188.90 to Emily Lucile Geisdorff"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$1500",
+      "payer": "Thomas R. Powers",
+      "payee": "Frederick Geisdorff Jr.",
+      "date": "1918-11-05",
+      "description": "Sale of Frederick Geisdorff Jr.'s allotment"
+    },
+    {
+      "type": "payment",
+      "amount": "$1350",
+      "payer": "Thomas R. Powers",
+      "payee": "Crow Agency",
+      "date": "1918-11-02",
+      "description": "Payment for purchase of allotment"
+    },
+    {
+      "type": "payment",
+      "amount": "$150",
+      "payer": "Thomas R. Powers",
+      "payee": "Crow Agency",
+      "date": "1918-11-02",
+      "description": "Payment for advertising fee"
+    },
+    {
+      "type": "payment",
+      "amount": "$1317.26",
+      "payer": "Crow Agency",
+      "payee": "Emily J. Geisdorff",
+      "date": "1920-04-27",
+      "description": "Payment to Emily J. Geisdorff"
+    },
+    {
+      "type": "payment",
+      "amount": "$188.90",
+      "payer": "Crow Agency",
+      "payee": "Emily Lucile Geisdorff",
+      "date": "1920-04-27",
+      "description": "Payment to Emily Lucile Geisdorff"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Frederick Geisdorff Jr.",
+      "type": "married_to",
+      "object": "Emily J. Geisdorff",
+      "context": "Spouse"
+    },
+    {
+      "subject": "Frederick Geisdorff Jr.",
+      "type": "father_of",
+      "object": "Emily Lucile Geisdorff",
+      "context": "Parent"
+    },
+    {
+      "subject": "Thomas R. Powers",
+      "type": "purchaser_of",
+      "object": "Frederick Geisdorff Jr.'s allotment",
+      "context": "Land transaction"
+    },
+    {
+      "subject": "C. H. Asbury",
+      "type": "superintendent_of",
+      "object": "Crow Agency",
+      "context": "Employment"
+    },
+    {
+      "subject": "Calvin Coolidge",
+      "type": "president_of",
+      "object": "United States",
+      "context": "Government position"
+    },
+    {
+      "subject": "Woodrow Wilson",
+      "type": "president_of",
+      "object": "United States",
+      "context": "Government position"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Frederick Geisdorff Jr.",
+      "allotment_number": "2336",
+      "acreage": "159.67",
+      "patent_date": "1907-12-02",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "Thomas R. Powers",
+      "sale_price": "$1500",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "Francis Geisdorff",
+      "allotment_number": "unknown",
+      "acreage": "648.04",
+      "patent_date": "1923-12-14",
+      "patent_number": "227584",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "Frederick Geisdorff Jr.",
+      "allotment_number": "2336",
+      "acreage": "159.67",
+      "patent_date": "1919-11-14",
+      "patent_number": "719146",
+      "mechanism": "administrative",
+      "buyer": "Thomas R. Powers",
+      "sale_price": "$1500",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "C. H. Asbury",
+      "sender_title": "Superintendent of Crow Agency",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "1919-03-24",
+      "subject": "Report on heirship and recommendations to the estate of Frederick Geisdorff Jr.",
+      "action_requested": "Approval to complete sale to Thomas R. Powers and distribute proceeds to heirs",
+      "outcome": "Sale approved; heirs paid April 27, 1920"
+    },
+    {
+      "sender": "C. H. Asbury",
+      "sender_title": "Superintendent of Crow Agency",
+      "recipient": "Mrs. Emily J. Geisdorff",
+      "recipient_title": "Widow of Frederick Geisdorff Jr.",
+      "date": "1919-03-11",
+      "subject": "Response to inquiry about sale of allotment",
+      "action_requested": "Determination of heirs and distribution of proceeds",
+      "outcome": "Heirs determined; proceeds distributed April 27, 1920"
+    },
+    {
+      "sender": "C. H. Asbury",
+      "sender_title": "Superintendent of Crow Agency",
+      "recipient": "Thomas R. Powers",
+      "recipient_title": "Purchaser of allotment",
+      "date": "1918-12-05",
+      "subject": "Notification of sale approval",
+      "action_requested": "Payment of balance due on purchase price",
+      "outcome": "Payment received; sale completed"
+    },
+    {
+      "sender": "C. H. Asbury",
+      "sender_title": "Superintendent of Crow Agency",
+      "recipient": "Mrs. Emily J. Geisdorff",
+      "recipient_title": "Widow of Frederick Geisdorff Jr.",
+      "date": "1919-05-27",
+      "subject": "Notification of sale completion",
+      "action_requested": "Acknowledgement of payment",
+      "outcome": "Payment acknowledged; sale completed"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "S. 716",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "unknown"
+    }
+  ]
+}
+```

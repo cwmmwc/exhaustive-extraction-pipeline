@@ -1,0 +1,82 @@
+```
+{
+  "entities": [
+    {"name": "James E. Murray", "type": "person", "context": "United States Senator"},
+    {"name": "George Peters", "type": "person", "context": "Crow Indian, landowner"},
+    {"name": "Crow Indian Reservation", "type": "location", "context": "Montana, Indian reservation"},
+    {"name": "University of Montana", "type": "organization", "context": "Mansfield Library, archives"},
+    {"name": "United States Senate", "type": "organization", "context": "81st Congress"},
+    {"name": "House of Representatives", "type": "organization", "context": "United States Congress"},
+    {"name": "Committee on Interior and Insular Affairs", "type": "organization", "context": "United States Senate"},
+    {"name": "Committee on Public Lands", "type": "organization", "context": "House of Representatives"},
+    {"name": "Department of the Interior", "type": "organization", "context": "United States government"},
+    {"name": "Western Union", "type": "organization", "context": "Telegraph company"},
+    {"name": "Wyola, Montana", "type": "location", "context": "City, postal address"},
+    {"name": "Montana", "type": "location", "context": "State"},
+    {"name": "Washington, D.C.", "type": "location", "context": "City, United States capital"},
+    {"name": "Hugh Butler", "type": "person", "context": "United States Senator, Nebraska"},
+    {"name": "Eugene D. Millikin", "type": "person", "context": "United States Senator, Colorado"},
+    {"name": "Guy Cordon", "type": "person", "context": "United States Senator, Oregon"},
+    {"name": "Zales N. Ecton", "type": "person", "context": "United States Senator, Montana"},
+    {"name": "George W. Malone", "type": "person", "context": "United States Senator, Nevada"},
+    {"name": "Arthur V. Watkins", "type": "person", "context": "United States Senator, Utah"},
+    {"name": "Estes Kefauver", "type": "person", "context": "United States Senator, Tennessee"},
+    {"name": "Carl A. Hatch", "type": "person", "context": "United States Senator, New Mexico"},
+    {"name": "Bert H. Miller", "type": "person", "context": "United States Senator, Idaho"},
+    {"name": "Robert S. Kerr", "type": "person", "context": "United States Senator, Oklahoma"},
+    {"name": "Oscar L. Chapman", "type": "person", "context": "Undersecretary of the Interior"},
+    {"name": "Joseph C. O'Mahoney", "type": "person", "context": "United States Senator, Wyoming, chairman of Committee on Interior and Insular Affairs"},
+    {"name": "Mahoney", "type": "person", "context": "Chairman, possibly Joseph C. O'Mahoney"},
+    {"name": "Jones", "type": "person", "context": "Possibly a senator or representative"},
+    {"name": "Murray", "type": "person", "context": "Possibly James E. Murray"},
+    {"name": "Section 29", "type": "land_parcel", "context": "Land description"},
+    {"name": "Section 20", "type": "land_parcel", "context": "Land description"},
+    {"name": "Township 4 south, range 37 east", "type": "land_parcel", "context": "Land description"},
+    {"name": "Montana principal meridian", "type": "location", "context": "Geographic reference point"},
+    {"name": "S. 716", "type": "legislation", "context": "Bill number"},
+    {"name": "Act of June 1, 1920", "type": "legislation", "context": "Statute"},
+    {"name": "Crow Tribe", "type": "organization", "context": "Indian tribe"}
+  ],
+  "events": [
+    {"type": "bill introduction", "date": "1949-01-31", "location": "United States Senate", "description": "Introduction of S. 716"},
+    {"type": "committee referral", "date": "1949-01-31", "location": "United States Senate", "description": "Referral of S. 716 to Committee on Interior and Insular Affairs"},
+    {"type": "committee report", "date": "1949-05-04", "location": "House of Representatives", "description": "Report on S. 716 by Committee on Public Lands"},
+    {"type": "bill passage", "date": "1949-04-11", "location": "United States Senate", "description": "Passage of S. 716 in the Senate"},
+    {"type": "bill consideration", "date": "1949-05-18", "location": "House of Representatives", "description": "Consideration of S. 716 in the House"},
+    {"type": "presidential signature", "date": "1949-05-18", "location": "White House", "description": "Signature of S. 716 by the President"},
+    {"type": "letter writing", "date": "1949-01-26", "location": "Washington, D.C.", "description": "Letter from James E. Murray to George Peters"},
+    {"type": "letter writing", "date": "1949-05-09", "location": "Washington, D.C.", "description": "Letter from James E. Murray to George Peters"},
+    {"type": "telegraph sending", "date": "1949-05-18", "location": "Washington, D.C.", "description": "Telegram from James E. Murray to George Peters"},
+    {"type": "committee meeting", "date": "1949-03-10", "location": "United States Senate", "description": "Meeting of Committee on Interior and Insular Affairs"},
+    {"type": "report submission", "date": "1949-03-09", "location": "Department of the Interior", "description": "Submission of report on S. 716 to Committee on Interior and Insular Affairs"}
+  ],
+  "financial_transactions": [
+    {"type": "land sale", "amount": "unknown", "payer": "unknown", "payee": "George Peters", "date": "unknown", "description": "Sale of land to a Crow Indian"},
+    {"type": "patent fee", "amount": "unknown", "payer": "George Peters", "payee": "United States government", "date": "unknown", "description": "Fee for patent in fee"}
+  ],
+  "relationships": [
+    {"subject": "James E. Murray", "type": "represented", "object": "George Peters", "context": "Senator representing constituent"},
+    {"subject": "George Peters", "type": "sold_to", "object": "Crow Indian", "context": "Land sale"},
+    {"subject": "Department of the Interior", "type": "employed_by", "object": "Oscar L. Chapman", "context": "Undersecretary of the Interior"},
+    {"subject": "Committee on Interior and Insular Affairs", "type": "chaired_by", "object": "Joseph C. O'Mahoney", "context": "Chairman of committee"},
+    {"subject": "S. 716", "type": "sponsored_by", "object": "James E. Murray", "context": "Bill sponsor"},
+    {"subject": "George Peters", "type": "related_to", "object": "Crow Tribe", "context": "Tribe membership"}
+  ],
+  "fee_patents": [
+    {"allottee_name": "George Peters", "allotment_number": "2292", "acreage": "840", "patent_date": "unknown", "patent_number": "unknown", "mechanism": "private bill", "buyer": "unknown", "sale_price": "unknown", "attorney": "unknown", "mortgage": "unknown"}
+  ],
+  "correspondence": [
+    {"sender": "James E. Murray", "sender_title": "United States Senator", "recipient": "George Peters", "recipient_title": "landowner", "date": "1949-01-26", "subject": "Introduction of S. 716", "action_requested": "none", "outcome": "none"},
+    {"sender": "James E. Murray", "sender_title": "United States Senator", "recipient": "George Peters", "recipient_title": "landowner", "date": "1949-05-09", "subject": "Update on S. 716", "action_requested": "none", "outcome": "none"},
+    {"sender": "James E. Murray", "sender_title": "United States Senator", "recipient": "George Peters", "recipient_title": "landowner", "date": "1949-05-18", "subject": "Passage of S. 716", "action_requested": "none", "outcome": "none"},
+    {"sender": "Joseph C. O'Mahoney", "sender_title": "Chairman, Committee on Interior and Insular Affairs", "recipient": "James E. Murray", "recipient_title": "United States Senator", "date": "1949-03-10", "subject": "Report on S. 716", "action_requested": "consideration of amendments", "outcome": "none"},
+    {"sender": "Oscar L. Chapman", "sender_title": "Undersecretary of the Interior", "recipient": "Joseph C. O'Mahoney", "recipient_title": "Chairman, Committee on Interior and Insular Affairs", "date": "1949-03-09", "subject": "Report on S. 716", "action_requested": "consideration of amendments", "outcome": "none"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "introduced", "date": "1949-01-31", "vote_count": "unknown", "committee": "Committee on Interior and Insular Affairs", "outcome": "passed"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "reported", "date": "1949-05-04", "vote_count": "unknown", "committee": "Committee on Public Lands", "outcome": "favorable report"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "passed", "date": "1949-04-11", "vote_count": "unknown", "committee": "United States Senate", "outcome": "passed"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "enacted", "date": "unknown", "vote_count": "unknown", "committee": "unknown", "outcome": "unknown"}
+  ]
+}
+```

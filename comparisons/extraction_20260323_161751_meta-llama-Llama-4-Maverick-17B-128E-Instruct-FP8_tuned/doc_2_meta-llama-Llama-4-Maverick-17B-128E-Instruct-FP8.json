@@ -1,0 +1,48 @@
+```json
+{
+  "entities": [
+    {"name": "George Peters", "type": "person", "context": "Crow Indian allottee"},
+    {"name": "James E. Murray", "type": "person", "context": "U.S. Senator from Montana"},
+    {"name": "Joseph C. O'Mahoney", "type": "person", "context": "Chairman, Senate Committee on Interior and Insular Affairs"},
+    {"name": "Oscar L. Chapman", "type": "person", "context": "Undersecretary of the Interior"},
+    {"name": "George Redfield", "type": "person", "context": "Crow Indian, intended buyer of George Peters' land"},
+    {"name": "United States Senate", "type": "organization", "context": "U.S. legislative body"},
+    {"name": "Department of the Interior", "type": "organization", "context": "U.S. government department"},
+    {"name": "Crow Indian Reservation", "type": "location", "context": "Reservation in Montana"},
+    {"name": "Wyola, Montana", "type": "location", "context": "Town in Montana"},
+    {"name": "Montana", "type": "location", "context": "State in the United States"},
+    {"name": "S. 716", "type": "legislation", "context": "Bill authorizing sale of George Peters' land"},
+    {"name": "Allotment No. 2292", "type": "land_parcel", "context": "George Peters' allotment on Crow Indian Reservation"}
+  ],
+  "events": [
+    {"type": "bill_introduction", "date": "1949-01-31", "location": "United States Senate", "description": "S. 716 introduced by Senator James E. Murray"},
+    {"type": "bill_passage", "date": "1949-04-11", "location": "United States Senate", "description": "S. 716 passed the Senate"},
+    {"type": "bill_report", "date": "1949-03-09", "location": "Department of the Interior", "description": "Report on S. 716 submitted to Senate Committee on Interior and Insular Affairs"},
+    {"type": "bill_amendment", "date": "1949-03-10", "location": "Senate Committee on Interior and Insular Affairs", "description": "S. 716 amended to allow sale under existing regulations"},
+    {"type": "bill_enactment", "date": "1949-05-18", "location": "White House", "description": "S. 716 cleared for President's signature"}
+  ],
+  "financial_transactions": [],
+  "relationships": [
+    {"subject": "George Peters", "type": "represented_by", "object": "James E. Murray", "context": "Murray introduced S. 716 on Peters' behalf"},
+    {"subject": "George Peters", "type": "intended_to_sell_to", "object": "George Redfield", "context": "Peters indicated desire to sell land to Redfield in 1921"},
+    {"subject": "James E. Murray", "type": "introduced_legislation_for", "object": "George Peters", "context": "Murray introduced S. 716 to authorize sale of Peters' land"}
+  ],
+  "fee_patents": [
+    {"allottee_name": "George Peters", "allotment_number": "2292", "acreage": "840", "patent_date": "unknown", "patent_number": "unknown", "mechanism": "legislative", "buyer": "unknown", "sale_price": "unknown", "attorney": "unknown", "mortgage": "unknown"}
+  ],
+  "correspondence": [
+    {"sender": "Oscar L. Chapman", "sender_title": "Undersecretary of the Interior", "recipient": "Joseph C. O'Mahoney", "recipient_title": "Chairman, Senate Committee on Interior and Insular Affairs", "date": "1949-03-09", "subject": "Report on S. 716", "action_requested": "Amendment to S. 716 to allow sale under existing regulations", "outcome": "Bill amended as suggested"},
+    {"sender": "James E. Murray", "sender_title": "U.S. Senator", "recipient": "George Peters", "recipient_title": "Crow Indian allottee", "date": "1949-05-09", "subject": "Update on S. 716", "action_requested": "None", "outcome": "Peters informed of bill's progress"},
+    {"sender": "Joseph C. O'Mahoney", "sender_title": "Chairman, Senate Committee on Interior and Insular Affairs", "recipient": "James E. Murray", "recipient_title": "U.S. Senator", "date": "1949-03-10", "subject": "Report on S. 716", "action_requested": "Advice on amendments", "outcome": "Murray informed of Department's recommendations"},
+    {"sender": "James E. Murray", "sender_title": "U.S. Senator", "recipient": "George Peters", "recipient_title": "Crow Indian allottee", "date": "1949-01-26", "subject": "Introduction of new bill", "action_requested": "None", "outcome": "Peters informed of bill introduction"},
+    {"sender": "Western Union", "sender_title": "Telegraph company", "recipient": "George Peters", "recipient_title": "Crow Indian allottee", "date": "1949-05-18", "subject": "Passage of S. 716", "action_requested": "None", "outcome": "Peters informed of bill's passage"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "introduced", "date": "1949-01-31", "vote_count": "unknown", "committee": "Senate Committee on Interior and Insular Affairs", "outcome": "Referred to committee"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "reported", "date": "1949-03-09", "vote_count": "unknown", "committee": "Senate Committee on Interior and Insular Affairs", "outcome": "Reported favorably with amendments"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "amended", "date": "1949-03-10", "vote_count": "unknown", "committee": "Senate Committee on Interior and Insular Affairs", "outcome": "Amended to allow sale under existing regulations"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "passed", "date": "1949-04-11", "vote_count": "unknown", "committee": "United States Senate", "outcome": "Passed Senate"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "enacted", "date": "1949-05-18", "vote_count": "unknown", "committee": "unknown", "outcome": "Cleared for President's signature"}
+  ]
+}
+```

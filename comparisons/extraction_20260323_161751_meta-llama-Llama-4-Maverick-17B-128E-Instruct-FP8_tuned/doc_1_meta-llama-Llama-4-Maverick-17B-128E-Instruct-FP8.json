@@ -1,0 +1,41 @@
+{
+  "entities": [
+    {"name": "United States Department of the Interior", "type": "organization", "context": "Federal agency responsible for managing Indian affairs"},
+    {"name": "Bureau of Indian Affairs", "type": "organization", "context": "Division of the Department of the Interior handling Indian affairs"},
+    {"name": "Billings Area Office", "type": "organization", "context": "Regional office of the Bureau of Indian Affairs"},
+    {"name": "Aberdeen Area", "type": "location", "context": "Region within the Bureau of Indian Affairs covering parts of North Dakota, South Dakota, and Nebraska"},
+    {"name": "Pine Ridge Reservation", "type": "location", "context": "Indian reservation in South Dakota"},
+    {"name": "Rosebud Reservation", "type": "location", "context": "Indian reservation in South Dakota"},
+    {"name": "Crow Creek Reservation", "type": "location", "context": "Indian reservation in South Dakota"},
+    {"name": "Lower Brule Reservation", "type": "location", "context": "Indian reservation in South Dakota"},
+    {"name": "Cheyenne River Reservation", "type": "location", "context": "Indian reservation in South Dakota"},
+    {"name": "Winnebago Reservation", "type": "location", "context": "Indian reservation in Nebraska"},
+    {"name": "H. M. Critchfield", "type": "person", "context": "Chief, Branch of Realty, Bureau of Indian Affairs"},
+    {"name": "Odro Ko S. Engel", "type": "person", "context": "Land Operations Officer, Turtle Mountain"},
+    {"name": "Rex Corey", "type": "person", "context": "Agency Soil Scientist at Standing Rock"},
+    {"name": "Bill Smith", "type": "person", "context": "Soil Scientist on leave for educational purposes"}
+  ],
+  "events": [
+    {"type": "policy_change", "date": "1955-08-10", "location": "United States", "description": "Change in regulations regarding deposit of fees from grazing privileges on submarginal lands"},
+    {"type": "conference", "date": "1955-06-13", "location": "Sioux City, Iowa", "description": "Land Operations Conference held in the Aberdeen Area"},
+    {"type": "memorandum", "date": "1954-12-13", "location": "Washington D.C.", "description": "Memorandum from Chief, Branch of Realty, regarding requirements for issuing patents in fee"},
+    {"type": "memorandum", "date": "1955-11-22", "location": "Washington D.C.", "description": "Memorandum regarding fee patent policy"},
+    {"type": "memorandum", "date": "1955-11-29", "location": "Billings, Montana", "description": "Memorandum regarding disposition of revenue from submarginal lands"}
+  ],
+  "financial_transactions": [],
+  "relationships": [
+    {"subject": "H. M. Critchfield", "type": "employed_by", "object": "Bureau of Indian Affairs", "context": "Chief, Branch of Realty"},
+    {"subject": "Odro Ko S. Engel", "type": "employed_by", "object": "Turtle Mountain Agency", "context": "Land Operations Officer"},
+    {"subject": "Rex Corey", "type": "employed_by", "object": "Standing Rock Agency", "context": "Agency Soil Scientist"},
+    {"subject": "Bill Smith", "type": "employed_by", "object": "Rosebud Agency", "context": "Soil Scientist on leave for educational purposes"}
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {"sender": "H. M. Critchfield", "sender_title": "Chief, Branch of Realty", "recipient": "Area Directors", "recipient_title": "Area Directors", "date": "1954-12-13", "subject": "Request for issuance of patents in fee", "action_requested": "Specify applicable laws and approval dates for easements or rights of way in requests for patent issuance", "outcome": "Requests for patent issuance to include necessary information"},
+    {"sender": "Office of the Area Director", "sender_title": "Area Director", "recipient": "All Superintendents and Officers in Charge", "recipient_title": "Superintendents and Officers in Charge", "date": "1956-01-04", "subject": "Issuance of patents and deeds subject to collection of unpaid irrigation assessments", "action_requested": "Ensure payment of accrued charges or contract obligations when selling restricted land", "outcome": "Procedures outlined to ensure compliance with requirements"},
+    {"sender": "Office of the Area Director", "sender_title": "Area Director", "recipient": "Superintendent, No. Cheyenne", "recipient_title": "Superintendent", "date": "1955-11-07", "subject": "Fee patent policy", "action_requested": "Review and comment on fee patent policy set forth in memorandum", "outcome": "Policy reviewed and implemented"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "unknown", "sponsor": "unknown", "action_type": "amendment", "date": "1955-08-10", "vote_count": "unknown", "committee": "unknown", "outcome": "Amendment to 25 CFR 71.27 regarding deposit of fees from grazing privileges on submarginal lands"}
+  ]
+}

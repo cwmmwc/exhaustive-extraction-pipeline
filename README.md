@@ -283,14 +283,177 @@ The research corpus is a DevonThink 4 database containing:
 
 ## Model Comparison: Claude vs. Open Source
 
-`compare_claude_vs_local_models.py` runs the same extraction or synthesis task through Claude and open-source models, saving outputs side by side for human evaluation.
+`compare_claude_vs_local_models.py` runs the same extraction or synthesis task through Claude and open-source models, saving outputs side by side for human evaluation. Full benchmark results from March 2026 testing are below.
 
 **Supported models:**
 - Claude Opus (synthesis) / Claude Sonnet (extraction)
 - Llama 4 Maverick / Scout (latest — preferred for new comparisons)
-- Llama 3.3 70B (`meta-llama/Llama-3.3-70B-Instruct`) — 2x A100 80GB
+- Llama 3.3 70B (`meta-llama/Llama-3.3-70B-Instruct`) — 2x A100 80GB or 128GB MacBook
 - Qwen 2.5 72B (`Qwen/Qwen2.5-72B-Instruct`) — 2x A100 80GB
 - Gemma 3 27B (`google/gemma-3-27b-it`) — 1x A100
+
+### Benchmark Results (March 2026)
+
+Conducted 2026-03-23 via Together AI hosted API. All open-source models ran on Together's infrastructure; Claude ran via Anthropic's API. The comparison script (`--doc-ids`) ensures identical inputs across all models.
+
+#### Extraction Benchmark
+
+Three documents were used across all models, chosen for variety (bureaucratic records, legislative correspondence, multi-decade litigation):
+
+| Doc ID | Title | Chunk Size | Type |
+|--------|-------|-----------|------|
+| 695 | 1952–1956: BIA Billings Area Office Administrative Records | 40,000 chars | Bureaucratic/administrative |
+| 798 | 1949: Murray Papers — Senate Bill S-716, Fee Patent for George Peters | ~30,000 chars | Legislative/correspondence |
+| 811 | 1907–1979: Illegal Patent and Dispossession of Crow Allotment No. 2336 | 40,000 chars | Litigation/multi-decade |
+
+**Aggregate results across all three documents:**
+
+| Model | JSON Valid | Total Items | Entities | Events | Financial | Relationships | Fee Patents | Correspondence | Legislative |
+|-------|-----------|-------------|----------|--------|-----------|--------------|-------------|----------------|------------|
+| **Claude Sonnet** | **3/3** | **327** | 132 | 66 | 16 | 60 | 5 | 35 | 13 |
+| **Llama 3.3 70B** | **3/3** | **171** | 93 | 28 | 10 | 19 | 3 | 10 | 8 |
+| **Llama 4 Maverick** | 2/3 | **80** | 38 | 11 | 6 | 9 | 2 | 8 | 6 |
+| **Llama 4 Scout** | 0/3 | **0** | — | — | — | — | — | — | — |
+
+**Per-document detail:**
+
+| Model | Doc 695 (BIA Admin) | Doc 798 (Fee Patent) | Doc 811 (Litigation) |
+|-------|-------------------|---------------------|---------------------|
+| Claude Sonnet | 98–106 items | 74–86 items | 128–135 items |
+| Llama 3.3 70B | 48 items | 64 items | 59 items |
+| Llama 4 Maverick | 0 (invalid JSON) | 34 items | 46 items |
+| Llama 4 Scout | 0 (invalid JSON) | 0 (invalid JSON) | 0 (invalid JSON) |
+
+Claude Sonnet shows slight variation across runs because extraction is non-deterministic (temperature 0.3).
+
+#### Extraction Quality: Side-by-Side Examples
+
+**Doc 798 (George Peters Fee Patent)** — the closest competition, where Llama 3.3 70B extracted 64 items vs Claude's 74.
+
+*Entity identification:* Llama 3.3 70B found 35 entities vs Claude's 38 — nearly equal. Both identified George Peters, Senator Murray, the key committees, Oscar Chapman, and all 10 Senate committee members by name. Llama 3.3 also found the exact land descriptions (Section 29, Township 4 south, Range 37 east) and the archival provenance (University of Montana). This is genuinely competitive entity extraction.
+
+*Where Claude pulled ahead — correspondence chains:* Both models found 5 correspondence records, but Claude populated every field (sender title, recipient address, specific subject lines, action requested, outcome). Llama 3.3 left `action_requested` and `outcome` as "none" on most entries:
+
+```
+# Claude's correspondence record:
+{"sender": "Oscar L. Chapman", "sender_title": "Undersecretary of the Interior",
+ "recipient": "Joseph C. O'Mahoney", "recipient_title": "Chairman, Senate Committee on Interior and Insular Affairs",
+ "date": "1949-03-09",
+ "subject": "Report on S. 716 authorizing patent in fee to George Peters, Crow Indian",
+ "action_requested": "Recommendation to enact bill if amended to allow sale to a Crow Indian under existing regulations",
+ "outcome": "Report forwarded to Senator Murray by O'Mahoney on March 10, 1949; bill subsequently amended"}
+
+# Llama 3.3's same record:
+{"sender": "Oscar L. Chapman", "sender_title": "Undersecretary of the Interior",
+ "recipient": "Joseph C. O'Mahoney", "recipient_title": "Chairman, Committee on Interior and Insular Affairs",
+ "date": "1949-03-09",
+ "subject": "Report on S. 716",
+ "action_requested": "consideration of amendments",
+ "outcome": "none"}
+```
+
+Claude reconstructed the chain of action (Chapman recommended → O'Mahoney forwarded → Murray agreed → bill amended). Llama 3.3 captured the individual letters but not the causal sequence.
+
+*Where Claude pulled ahead — relationships:* Claude extracted 12 relationships vs Llama 3.3's 6. Claude captured "George Peters intended_to_sell_to George Redfield" (a 1921 prior sale indication) and "James E. Murray MSS held_at Mansfield Library, University of Montana" — contextual connections that Llama 3.3 missed entirely.
+
+**Doc 811 (Illegal Patent Dispossession)** — the widest gap.
+
+Claude extracted 128 items vs Llama 3.3's 59. The biggest differences:
+
+| Category | Claude | Llama 3.3 |
+|----------|--------|-----------|
+| Events | 31 | 10 |
+| Correspondence | 21 | 3 |
+| Relationships | 17 | 5 |
+| Financial transactions | 10 | 5 |
+
+Llama 3.3 found the core transaction (Thomas R. Powers purchased allotment 2336 for $1,500) and correctly identified the key parties, family relationships (Emily J. Geisdorff as widow, Emily Lucile as minor daughter), and dollar amounts ($1,500, $1,350, $150). But Claude traced the full bureaucratic chain: 21 pieces of correspondence between Superintendent Asbury, the Commissioner of Indian Affairs, Superintendent Kneale at Uintah and Ouray Agency, and the General Land Office — reconstructing how the illegal patent was processed step by step over 14 months.
+
+**Doc 695 (BIA Administrative Records)** — OCR challenges.
+
+Llama 3.3 extracted 48 items vs Claude's 98. Both struggled with OCR artifacts in this document. Llama 3.3 reproduced the OCR error "Relnhol t lirust" verbatim as an entity name; Claude resolved it to "Reinholdt Hurst" and identified his role as Acting Area Director. Claude also found Rex Carey (agency soil scientist transferred to Pine Ridge), Bill Smith (on educational leave), and specific legislation (Act of March 7, 1928, 45 Stat. 210) that Llama 3.3 missed.
+
+#### Synthesis Benchmark
+
+Synthesis used the full corpus (368 documents, ~147,264 tokens per prompt) with three research questions. Only Maverick was tested for synthesis; Scout and 3.3 70B were not tested in synthesis mode. Claude Opus was the baseline.
+
+| Metric | Claude Opus | Maverick |
+|--------|------------|----------|
+| **Q1 (Harlow Pease): Words** | 2,826 | 708 |
+| **Q1: Document citations** | 23 | 2 |
+| **Q1: Specific dates** | 19 | 1 |
+| **Q1: Acreage mentions** | 21 | 1 |
+| **Q2 (Fee patent mechanisms): Words** | 4,024 | 846 |
+| **Q2: Document citations** | 72 | 17 |
+| **Q2: Dollar amounts** | 18 | 0 |
+| **Q2: Specific dates** | 24 | 0 |
+| **Q3 (Land dispossession): Words** | 4,508 | 857 |
+| **Q3: Document citations** | 80 | 13 |
+| **Q3: Dollar amounts** | 97 | 2 |
+| **Q3: Acreage mentions** | 71 | 4 |
+| **Q3: Specific dates** | 13 | 0 |
+
+The synthesis gap is wider than extraction. On Question 3 — which explicitly asked to quantify land dispossession using specific acreages, dollar amounts, and transaction counts — Claude cited 97 dollar amounts and 71 acreage mentions from 80 documents. Maverick cited 2 dollar amounts and 4 acreage mentions from 13 documents.
+
+On Question 1, Claude reconstructed Harlow Pease's 35-year biography from documentary fragments across 23 sources, tracing the Pease family's connections to Crow allottees and the multi-decade failure to enforce Section 2 acreage limitations. Maverick produced a 708-word "Step 1... Step 2... Step 3..." chain-of-thought summary with 2 document citations that correctly identified Pease as a Field Solicitor but could not reconstruct the narrative.
+
+Maverick followed the requested three-part conclusion structure (Prove/Suggest/Gaps) on all three questions — demonstrating prompt compliance. But the content was generic. Where Claude identified specific missing records by file number, Maverick cited "OCR quality issues" and "gaps exist."
+
+**Bottom line:** Maverick recognizes what a document is about. Claude tells you what the document says.
+
+### Model Rankings for This Pipeline
+
+1. **Claude (Opus for synthesis, Sonnet for extraction)** — dramatically superior on both tasks. 100% JSON reliability, 2–3x more items extracted, qualitatively richer output with specific names, dates, amounts, and archival references. The only model that can do corpus-wide synthesis at scale.
+
+2. **Llama 3.3 70B** — the best open-source option. 100% JSON reliability, roughly 50% of Claude's extraction depth. Competitive on entity identification (near-parity on Doc 798). Weak on correspondence chains, relationship mapping, and events. Could serve as a first-pass extractor if cost were a concern. **Runs locally on a 128GB Apple Silicon MacBook via Ollama.** See "Tuning Llama 3.3 70B" below.
+
+3. **Llama 4 Maverick (17B × 128 experts)** — disappointing. 67% JSON reliability, ~25% of Claude's extraction depth. Slower than 3.3 70B despite MoE efficiency. Hallucination issues: fabricated "Jones E. Murray" (instead of James), invented a "bill signed into law" event not in the source. Not recommended.
+
+4. **Llama 4 Scout (17B × 16 experts)** — failed completely on extraction (0/3 valid JSON, 0.2s responses). The model either refused or errored on all 40K-character inputs. Not viable.
+
+### Tuning Llama 3.3 70B for Better Extraction
+
+Llama 3.3 70B shows genuine promise — it found 64 of Claude's 74 items on Doc 798, with near-parity on entities and legislative actions. The gaps are systematic and potentially addressable:
+
+**1. Few-shot examples in the extraction prompt.** The biggest gap is correspondence field population — Llama 3.3 leaves `action_requested` and `outcome` as "none" even when the data is in the document. Adding 2–3 worked examples of fully-populated correspondence and fee_patent records to the system prompt would likely improve field completion. Claude doesn't need few-shot examples because it infers field semantics from the schema alone; smaller models benefit from seeing what "good" output looks like.
+
+**2. Structured output enforcement.** Llama 3.3 sometimes wraps its JSON in markdown code fences (\`\`\`json ... \`\`\`). The comparison script already strips these, but using a constrained decoding library like [Outlines](https://github.com/dottxt-ai/outlines) or Together AI's [JSON mode](https://docs.together.ai/docs/json-mode) would guarantee valid JSON and enforce the exact schema, eliminating the "not specified" placeholder fields.
+
+**3. Two-pass extraction.** Run a first pass for entities and events (where Llama 3.3 is near-parity), then a second pass focused specifically on correspondence chains and relationships (where the gap is widest). The second pass can include the first-pass entities as context, helping the model connect senders/recipients to already-identified people.
+
+**4. Quantized vs. full-precision.** The Together AI benchmark used Instruct-Turbo (likely INT8 quantized). Running the full FP16 model locally via Ollama on a 128GB MacBook (~40GB at Q4, ~70GB at Q8) may improve extraction quality, particularly for OCR-degraded text where quantization noise compounds recognition errors.
+
+**5. Fine-tuning on extraction output.** Claude's extraction output for 386 documents already exists in the database. This is a ready-made fine-tuning dataset: (document_text, structured_json) pairs. Fine-tuning Llama 3.3 70B on even 50–100 of these examples — particularly the correspondence and fee_patent records — could substantially close the gap. Tools: [Unsloth](https://github.com/unslothai/unsloth) for efficient LoRA fine-tuning, or Together AI's fine-tuning API.
+
+**6. Temperature and sampling.** Current extraction runs use temperature 0.3. For structured extraction (not creative text), dropping to 0.1 or 0.0 may reduce hallucinations like the fabricated names seen in Maverick. Worth testing with Llama 3.3 as well.
+
+**Practical recommendation:** Start with options 1 (few-shot examples) and 2 (JSON mode), as these require no model training and can be tested in an afternoon. If the gap narrows to ~80% of Claude's output, Llama 3.3 becomes viable as a cost-free first-pass extractor for high-volume batch processing, with Claude reserved for high-value documents and all synthesis work.
+
+### Cost Context
+
+All open-source model testing via Together AI cost approximately $0.15 total across all runs. Claude API costs for the same extraction work are significantly higher (roughly $0.50–$1.00 per document at Sonnet pricing) but produce 2–3x more structured data per document. For synthesis, Claude Opus costs ~$3–5 per question (147K token input) but produces output that no open-source model can match.
+
+### Raw Benchmark Data
+
+All raw outputs (JSON extractions, synthesis markdown, summary tables) are stored in `comparisons/`:
+
+| Run | Directory |
+|-----|-----------|
+| Synthesis: Claude Opus vs Maverick | `synthesis_20260323_132103_meta-llama-Llama-4-Maverick-17B-128E-Instruct-FP8/` |
+| Synthesis: Maverick only (re-run) | `synthesis_20260323_133836_meta-llama-Llama-4-Maverick-17B-128E-Instruct-FP8/` |
+| Extraction: Maverick (fixed docs) | `extraction_20260323_142938_meta-llama-Llama-4-Maverick-17B-128E-Instruct-FP8/` |
+| Extraction: Scout (fixed docs) | `extraction_20260323_143734_meta-llama-Llama-4-Scout-17B-16E-Instruct/` |
+| Extraction: Llama 3.3 70B (fixed docs) | `extraction_20260323_144208_meta-llama-Llama-3.3-70B-Instruct-Turbo/` |
+| Comprehensive summary | `MODEL_COMPARISON_SUMMARY.md` |
+
+To reproduce the extraction benchmark:
+
+```bash
+export TOGETHER_API_KEY=your_key
+python3 compare_claude_vs_local_models.py --provider together --local-models llama4-maverick --mode extraction --doc-ids 798 811 695
+python3 compare_claude_vs_local_models.py --provider together --local-models llama4-scout --mode extraction --doc-ids 798 811 695
+python3 compare_claude_vs_local_models.py --provider together --local-models llama3.3-70b --mode extraction --doc-ids 798 811 695
+```
 
 ### Running on UVA Rivanna/Afton (HPC)
 

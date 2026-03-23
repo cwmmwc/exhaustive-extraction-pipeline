@@ -1,0 +1,79 @@
+```json
+{
+  "entities": [
+    {"name": "Crow Tribe", "type": "organization", "context": "Native American tribe"},
+    {"name": "United States Department of the Interior", "type": "organization", "context": "federal government agency"},
+    {"name": "Bureau of Indian Affairs", "type": "organization", "context": "federal government agency"},
+    {"name": "Crow Indian Reservation", "type": "location", "context": "Native American reservation"},
+    {"name": "Montana", "type": "location", "context": "state"},
+    {"name": "Wyoming", "type": "location", "context": "state"},
+    {"name": "Homer Scott", "type": "person", "context": "Section 2 violator"},
+    {"name": "Richard Whitesell", "type": "person", "context": "Area Director of the Bureau of Indian Affairs"},
+    {"name": "Robert J. Swan", "type": "person", "context": "affiant"},
+    {"name": "Charles Cervantes", "type": "person", "context": "attorney for the Crow Tribe"},
+    {"name": "Harold Stanton", "type": "person", "context": "tribal attorney"},
+    {"name": "Dan Rosenfelt", "type": "person", "context": "solicitor at the DOI"},
+    {"name": "Sylvia Hambor", "type": "person", "context": "counsel in land litigation"},
+    {"name": "Thornton W. Field", "type": "person", "context": "BIA official"},
+    {"name": "Farley's Inc.", "type": "organization", "context": "Section 2 violator"},
+    {"name": "Fraser, Robert B. Jr.", "type": "person", "context": "Section 2 violator"},
+    {"name": "Fraser Land & Lvstk Co.", "type": "organization", "context": "Section 2 violator"},
+    {"name": "Küatrski, Ray & Claire", "type": "person", "context": "Section 2 violator"},
+    {"name": "Comier Bros. Inc.", "type": "organization", "context": "Section 2 violator"},
+    {"name": "Northwestern Mortgage", "type": "organization", "context": "Section 2 violator"},
+    {"name": "Boyd, Phillip Lee & Donna Jean", "type": "person", "context": "Section 2 violator"},
+    {"name": "Brown, Murray J.", "type": "person", "context": "Section 2 violator"},
+    {"name": "Burnham, Rulon Rex Sr. & Charles W.", "type": "person", "context": "Section 2 violator"},
+    {"name": "Consolidation Coal Co.", "type": "organization", "context": "Section 2 violator"},
+    {"name": "Crawford, William R. & Madge", "type": "person", "context": "Section 2 violator"},
+    {"name": "Denius Cattle Company", "type": "organization", "context": "Section 2 violator"},
+    {"name": "ESP, Henry Lee & Donna", "type": "person", "context": "Section 2 violator"},
+    {"name": "Graham, W.J.B. & William S.", "type": "person", "context": "Section 2 violator"},
+    {"name": "Hammond, George J. & Joanette", "type": "person", "context": "Section 2 violator"},
+    {"name": "Little Horn Land & Investment Co.", "type": "organization", "context": "Section 2 violator"},
+    {"name": "Pryor Land Co.", "type": "organization", "context": "Section 2 violator"},
+    {"name": "Schaak, Adolph & Lawrence", "type": "person", "context": "Section 2 violator"},
+    {"name": "Torske, James E.", "type": "person", "context": "Section 2 violator"},
+    {"name": "Tritschler, Mary L.", "type": "person", "context": "Section 2 violator"},
+    {"name": "Vale Creek Ranch", "type": "organization", "context": "Section 2 violator"},
+    {"name": "Campbell Farming Corp.", "type": "organization", "context": "Section 2 violator"},
+    {"name": "Brooks Ranch", "type": "organization", "context": "Section 2 violator"},
+    {"name": "Young, LaRue", "type": "person", "context": "Section 2 violator"},
+    {"name": "Westwood, Florence E.", "type": "person", "context": "Section 2 violator"},
+    {"name": "Fort Laramie", "type": "location", "context": "site of treaty signing"},
+    {"name": "Treaty of Fort Laramie", "type": "legislation", "context": "treaty between the US and the Crow Tribe"},
+    {"name": "Crow Allotment Act of 1920", "type": "legislation", "context": "federal law governing Crow Indian Reservation land"},
+    {"name": "Section 2", "type": "legislation", "context": "provision of the Crow Allotment Act of 1920 restricting land ownership"}
+  ],
+  "events": [
+    {"type": "audit", "date": "1985-08-02", "location": "Washington, D.C.", "description": "Audit report on purchases of Crow Indian Reservation lands"},
+    {"type": "legislative action", "date": "1920-06-04", "location": "Washington, D.C.", "description": "Passage of the Crow Allotment Act"},
+    {"type": "land sale", "date": "1946-1955", "location": "Crow Indian Reservation", "description": "BIA supervised sales of reservation land without adhering to Section 2 limitations"},
+    {"type": "lawsuit", "date": "1976", "location": "Montana", "description": "First test case against Section 2 violators"},
+    {"type": "lawsuit", "date": "1987", "location": "District of Columbia", "description": "Crow Tribe lawsuit against the US government and others"},
+    {"type": "meeting", "date": "1986-11-12", "location": "Crow Agency, MT", "description": "Meeting between BIA officials and Crow tribal officials to discuss Section 2 enforcement"}
+  ],
+  "financial_transactions": [
+    {"type": "land sale", "amount": "111,315 acres", "payer": "various", "payee": "various", "date": "1946-1955", "description": "BIA supervised sales of reservation land"},
+    {"type": "payment", "amount": "$1.5 million", "payer": "unknown", "payee": "Harold Stanton and Dan Rosenfelt", "date": "unknown", "description": "Crow Tribal funds drawn down by Stanton and Rosenfelt"}
+  ],
+  "relationships": [
+    {"subject": "Homer Scott", "type": "represented_by", "object": "attorney", "context": "Section 2 violator represented by attorney"},
+    {"subject": "Crow Tribe", "type": "employed_by", "object": "Harold Stanton", "context": "tribal attorney"},
+    {"subject": "BIA", "type": "supervised_by", "object": "Department of the Interior", "context": "agency oversight"},
+    {"subject": "Richard Whitesell", "type": "employed_by", "object": "BIA", "context": "Area Director"}
+  ],
+  "fee_patents": [
+    {"allottee_name": "unknown", "allotment_number": "unknown", "acreage": "various", "patent_date": "various", "patent_number": "unknown", "mechanism": "private bill", "buyer": "various", "sale_price": "unknown", "attorney": "unknown", "mortgage": "unknown"}
+  ],
+  "correspondence": [
+    {"sender": "Assistant Inspector General for Auditing", "sender_title": "official", "recipient": "Assistant Secretary for Indian Affairs", "recipient_title": "official", "date": "1986-05-07", "subject": "Audit report on purchases of Crow Indian Reservation lands", "action_requested": "response to report", "outcome": "unknown"},
+    {"sender": "Crow Tribal officials", "sender_title": "officials", "recipient": "BIA officials", "recipient_title": "officials", "date": "1986-11-12", "subject": "Section 2 enforcement", "action_requested": "pursue test case", "outcome": "unknown"},
+    {"sender": "Charles Cervantes", "sender_title": "attorney", "recipient": "Court", "recipient_title": "judge", "date": "1989-12-21", "subject": "Plaintiff's opposition to Defendants' Motion to Dismiss", "action_requested": "deny motion or grant leave to amend", "outcome": "unknown"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "unknown", "sponsor": "unknown", "action_type": "introduced", "date": "1957", "vote_count": "unknown", "committee": "unknown", "outcome": "did not become law"},
+    {"bill_number": "S.1757", "sponsor": "unknown", "action_type": "introduced", "date": "unknown", "vote_count": "unknown", "committee": "House Committee on Interior and Insular Affairs", "outcome": "did not become law"}
+  ]
+}
+```

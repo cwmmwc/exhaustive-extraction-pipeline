@@ -133,19 +133,29 @@ def get_all_summaries() -> List[Dict]:
     return [dict(r) for r in rows]
 
 
-def get_extraction_samples(n: int = 3) -> List[Dict]:
-    """Get sample document chunks for extraction comparison."""
+def get_extraction_samples(n: int = 3, doc_ids: Optional[List[int]] = None) -> List[Dict]:
+    """Get sample document chunks for extraction comparison.
+    If doc_ids is provided, fetch those specific documents (for reproducible comparisons).
+    Otherwise, pick n random documents."""
     conn = get_db_connection()
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
-    # Pick documents with varied content — a hearing, a correspondence file, a fee patent doc
-    cur.execute("""
-        SELECT id, file_name, display_title,
-               SUBSTRING(full_text FROM 1 FOR 40000) as chunk
-        FROM documents
-        WHERE LENGTH(full_text) > 5000
-        ORDER BY random()
-        LIMIT %s
-    """, [n])
+    if doc_ids:
+        cur.execute("""
+            SELECT id, file_name, display_title,
+                   SUBSTRING(full_text FROM 1 FOR 40000) as chunk
+            FROM documents
+            WHERE id = ANY(%s)
+            ORDER BY id
+        """, [doc_ids])
+    else:
+        cur.execute("""
+            SELECT id, file_name, display_title,
+                   SUBSTRING(full_text FROM 1 FOR 40000) as chunk
+            FROM documents
+            WHERE LENGTH(full_text) > 5000
+            ORDER BY random()
+            LIMIT %s
+        """, [n])
     rows = cur.fetchall()
     cur.close()
     conn.close()
@@ -247,12 +257,12 @@ SYNTHESIS GUIDELINES:
 Begin your corpus-wide synthesis:"""
 
 
-def build_extraction_prompt(chunk: str) -> str:
-    """Build the v3 extraction prompt for a document chunk."""
-    return f"""Extract ALL structured information from this historical document text.
-Return a single JSON object with these keys:
+def build_extraction_prompt(chunk: str, few_shot: bool = False) -> str:
+    """Build the v3 extraction prompt for a document chunk.
+    If few_shot=True, includes worked examples of fully-populated records
+    to improve extraction quality on smaller models."""
 
-{{
+    schema = """{{
   "entities": [
     {{"name": "...", "type": "person|organization|location|land_parcel|legal_case|legislation|acreage_holding", "context": "brief description"}}
   ],
@@ -274,14 +284,167 @@ Return a single JSON object with these keys:
   "legislative_actions": [
     {{"bill_number": "...", "sponsor": "...", "action_type": "introduced|reported|amended|passed|vetoed|enacted", "date": "...", "vote_count": "...", "committee": "...", "outcome": "..."}}
   ]
-}}
+}}"""
 
+    few_shot_section = ""
+    if few_shot:
+        few_shot_section = """
+Here are examples of CORRECTLY extracted records. Follow this level of detail for every record:
+
+EXAMPLE — fee_patents (populate ALL fields from the document; use "unknown" only if truly absent):
+{{"allottee_name": "Frederick Geisdorff Jr.", "allotment_number": "2336", "acreage": "159.67", "patent_date": "1919-11-14", "patent_number": "719146", "mechanism": "administrative", "buyer": "Thomas R. Powers", "sale_price": "$1,500", "attorney": "unknown", "mortgage": "unknown"}}
+
+EXAMPLE — correspondence (always fill action_requested and outcome — describe the actual request and what happened):
+{{"sender": "Oscar L. Chapman", "sender_title": "Undersecretary of the Interior", "recipient": "Joseph C. O'Mahoney", "recipient_title": "Chairman, Senate Committee on Interior and Insular Affairs", "date": "1949-03-09", "subject": "Report on S. 716 authorizing patent in fee to George Peters, Crow Indian", "action_requested": "Recommendation to enact bill if amended to allow sale to a Crow Indian under existing regulations rather than issue patent in fee", "outcome": "Report forwarded to Senator Murray on March 10; bill subsequently amended as suggested"}}
+
+{{"sender": "C. H. Asbury", "sender_title": "Superintendent, Crow Agency", "recipient": "Commissioner of Indian Affairs", "recipient_title": "Commissioner", "date": "1919-03-24", "subject": "Report on heirship and sale of allotment of deceased Frederick Geisdorff Jr.", "action_requested": "Approval to complete sale to Thomas R. Powers and distribute proceeds to heirs", "outcome": "Sale approved; heirs paid April 27, 1920"}}
+
+EXAMPLE — relationships (capture specific roles, family ties, and transactional connections):
+{{"subject": "George Peters", "type": "intended_to_sell_to", "object": "George Redfield", "context": "Peters indicated desire to sell land to Redfield, another Crow Indian, in 1921"}}
+{{"subject": "Frederick Geisdorff Jr.", "type": "married_to", "object": "Emily J. Geisdorff", "context": "Spouse; she was heir to his estate after his death in 1918"}}
+{{"subject": "James E. Murray", "type": "introduced_legislation_for", "object": "George Peters", "context": "Murray introduced S. 716 to authorize patent in fee / sale of Peters' land"}}
+
+EXAMPLE — events (include the consequence or significance, not just the bare fact):
+{{"type": "bill_passage", "date": "1949-04-11", "location": "United States Senate", "description": "S. 716 passed the Senate, authorizing the Secretary of the Interior to sell George Peters' 840-acre Crow allotment to a Crow Indian under existing regulations"}}
+{{"type": "death", "date": "1918-11-27", "location": "Randlett, Utah", "description": "Frederick Geisdorff Jr., Crow allottee #2336, died of influenza aged about 20, leaving widow Emily J. and infant daughter Emily Lucile as heirs"}}
+
+IMPORTANT:
+- For correspondence: ALWAYS describe what was specifically requested and what actually resulted. Never leave action_requested or outcome as "none" or "not specified" if the document describes the letter's purpose or consequence.
+- For fee_patents: Fill in patent_number, patent_date, mechanism, buyer, and sale_price from the document. Only use "unknown" for fields genuinely not mentioned.
+- For relationships: Go beyond basic employment — capture family ties, land transactions, political representation, and adversarial relationships.
+- For events: Include dates in YYYY-MM-DD format when available. Describe significance, not just occurrence.
+- Resolve OCR errors in names when possible (e.g., "Jas." = "James", "Chas." = "Charles", "Wm." = "William").
+"""
+
+    return f"""Extract ALL structured information from this historical document text.
+Return a single JSON object with these keys:
+
+{schema}
+{few_shot_section}
 Extract EVERY entity, event, transaction, relationship, fee patent, correspondence record, and legislative action mentioned. Be thorough — missing data is worse than extra data.
 
 DOCUMENT TEXT:
 {chunk}
 
 Return ONLY valid JSON, no markdown fencing, no commentary:"""
+
+
+# JSON schema for Together AI response_format enforcement
+EXTRACTION_JSON_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "entities": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {"type": "string"},
+                    "type": {"type": "string"},
+                    "context": {"type": "string"}
+                },
+                "required": ["name", "type", "context"]
+            }
+        },
+        "events": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {"type": "string"},
+                    "date": {"type": "string"},
+                    "location": {"type": "string"},
+                    "description": {"type": "string"}
+                },
+                "required": ["type", "date", "location", "description"]
+            }
+        },
+        "financial_transactions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {"type": "string"},
+                    "amount": {"type": "string"},
+                    "payer": {"type": "string"},
+                    "payee": {"type": "string"},
+                    "date": {"type": "string"},
+                    "description": {"type": "string"}
+                },
+                "required": ["type", "amount", "payer", "payee", "date", "description"]
+            }
+        },
+        "relationships": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "subject": {"type": "string"},
+                    "type": {"type": "string"},
+                    "object": {"type": "string"},
+                    "context": {"type": "string"}
+                },
+                "required": ["subject", "type", "object", "context"]
+            }
+        },
+        "fee_patents": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "allottee_name": {"type": "string"},
+                    "allotment_number": {"type": "string"},
+                    "acreage": {"type": "string"},
+                    "patent_date": {"type": "string"},
+                    "patent_number": {"type": "string"},
+                    "mechanism": {"type": "string"},
+                    "buyer": {"type": "string"},
+                    "sale_price": {"type": "string"},
+                    "attorney": {"type": "string"},
+                    "mortgage": {"type": "string"}
+                },
+                "required": ["allottee_name", "allotment_number", "acreage", "patent_date",
+                             "patent_number", "mechanism", "buyer", "sale_price", "attorney", "mortgage"]
+            }
+        },
+        "correspondence": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "sender": {"type": "string"},
+                    "sender_title": {"type": "string"},
+                    "recipient": {"type": "string"},
+                    "recipient_title": {"type": "string"},
+                    "date": {"type": "string"},
+                    "subject": {"type": "string"},
+                    "action_requested": {"type": "string"},
+                    "outcome": {"type": "string"}
+                },
+                "required": ["sender", "sender_title", "recipient", "recipient_title",
+                             "date", "subject", "action_requested", "outcome"]
+            }
+        },
+        "legislative_actions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "bill_number": {"type": "string"},
+                    "sponsor": {"type": "string"},
+                    "action_type": {"type": "string"},
+                    "date": {"type": "string"},
+                    "vote_count": {"type": "string"},
+                    "committee": {"type": "string"},
+                    "outcome": {"type": "string"}
+                },
+                "required": ["bill_number", "sponsor", "action_type", "date",
+                             "vote_count", "committee", "outcome"]
+            }
+        }
+    },
+    "required": ["entities", "events", "financial_transactions", "relationships",
+                 "fee_patents", "correspondence", "legislative_actions"]
+}
 
 
 # ─────────────────────────────────────────────────
@@ -398,19 +561,30 @@ HOSTED_PROVIDERS = {
 
 def run_vllm(prompt: str, model: str, max_tokens: int = 16000,
              base_url: str = "http://localhost:8000",
-             api_key: Optional[str] = None) -> Dict:
-    """Run a prompt through an OpenAI-compatible API (vLLM, Together, Fireworks, Groq)."""
+             api_key: Optional[str] = None,
+             json_schema: Optional[Dict] = None) -> Dict:
+    """Run a prompt through an OpenAI-compatible API (vLLM, Together, Fireworks, Groq).
+    If json_schema is provided, enables structured output enforcement."""
     import urllib.request
     import urllib.error
 
     start = time.time()
     try:
-        data = json.dumps({
+        request_body = {
             "model": model,
             "messages": [{"role": "user", "content": prompt}],
             "max_tokens": max_tokens,
             "temperature": 0.3,
-        }).encode()
+        }
+        if json_schema:
+            request_body["response_format"] = {
+                "type": "json_schema",
+                "json_schema": {
+                    "name": "extraction_output",
+                    "schema": json_schema,
+                },
+            }
+        data = json.dumps(request_body).encode()
 
         headers = {
             "Content-Type": "application/json",
@@ -527,11 +701,13 @@ def analyze_extraction_output(result: Dict) -> Dict:
 
 def run_local_model(prompt: str, model: str, backend: str = "ollama",
                     max_tokens: int = 16000, vllm_url: str = "http://localhost:8000",
-                    api_key: Optional[str] = None) -> Dict:
+                    api_key: Optional[str] = None,
+                    json_schema: Optional[Dict] = None) -> Dict:
     """Dispatch to the appropriate local model backend."""
     if backend in ("vllm", "together", "fireworks", "groq"):
         return run_vllm(prompt, model=model, max_tokens=max_tokens,
-                        base_url=vllm_url, api_key=api_key)
+                        base_url=vllm_url, api_key=api_key,
+                        json_schema=json_schema)
     else:
         return run_ollama(prompt, model=model, max_tokens=max_tokens)
 
@@ -710,16 +886,24 @@ def run_extraction_comparison(
     vllm_url: str = "http://localhost:8000",
     api_key: Optional[str] = None,
     preloaded_samples: Optional[List[Dict]] = None,
+    doc_ids: Optional[List[int]] = None,
+    tuned: bool = False,
+    json_schema: bool = False,
 ) -> Path:
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     model_label = "_".join(m.replace(":", "-").replace("/", "-") for m in local_models)
-    out_dir = Path("comparisons") / f"extraction_{timestamp}_{model_label}"
+    tuned_suffix = "_tuned" if tuned else ""
+    out_dir = Path("comparisons") / f"extraction_{timestamp}_{model_label}{tuned_suffix}"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     samples = preloaded_samples or []
     if not samples:
-        print(f"Loading {n_samples} sample document chunks...")
-        samples = get_extraction_samples(n_samples)
+        if doc_ids:
+            print(f"Loading {len(doc_ids)} specified documents (IDs: {doc_ids})...")
+            samples = get_extraction_samples(doc_ids=doc_ids)
+        else:
+            print(f"Loading {n_samples} random document chunks...")
+            samples = get_extraction_samples(n_samples)
     if not samples:
         print("ERROR: No documents with text found.")
         sys.exit(1)
@@ -741,18 +925,28 @@ def run_extraction_comparison(
         print(f"  Chunk: {len(chunk):,} chars")
         print(f"{'='*60}")
 
-        prompt = build_extraction_prompt(chunk)
+        # Claude always gets the base prompt; local models get few-shot + JSON schema when --tuned
+        prompt_base = build_extraction_prompt(chunk, few_shot=False)
+        prompt_tuned = build_extraction_prompt(chunk, few_shot=True) if tuned else prompt_base
         result = {"document": doc_name, "doc_id": sample["id"], "outputs": {}}
 
         for kind, model in all_models:
             safe_name = model.replace(":", "-").replace("/", "-")
             print(f"\nRunning {model}...")
             if kind == "claude":
-                output = run_claude(prompt, model=model, max_tokens=8000)
+                output = run_claude(prompt_base, model=model, max_tokens=16000)
             else:
-                output = run_local_model(prompt, model=model, backend=backend,
-                                         max_tokens=8000, vllm_url=vllm_url,
-                                         api_key=api_key)
+                use_schema = EXTRACTION_JSON_SCHEMA if json_schema else None
+                if tuned and json_schema:
+                    print(f"  (tuned mode: few-shot examples + JSON schema enforcement)")
+                elif tuned:
+                    print(f"  (tuned mode: few-shot examples)")
+                elif json_schema:
+                    print(f"  (JSON schema enforcement only)")
+                output = run_local_model(prompt_tuned, model=model, backend=backend,
+                                         max_tokens=16000, vllm_url=vllm_url,
+                                         api_key=api_key,
+                                         json_schema=use_schema)
 
             if output.get("error"):
                 print(f"  ERROR: {output['error']}")
@@ -892,6 +1086,14 @@ def main():
                         help="Run a single custom question (synthesis mode only)")
     parser.add_argument("--n-samples", type=int, default=3,
                         help="Number of document samples (extraction mode only)")
+    parser.add_argument("--doc-ids", type=int, nargs="+", default=None,
+                        help="Specific document IDs for extraction (for reproducible comparisons)")
+    parser.add_argument("--tuned", action="store_true",
+                        help="Use few-shot examples for local models "
+                             "(extraction mode only). Improves field quality on smaller models.")
+    parser.add_argument("--json-schema", action="store_true",
+                        help="Enforce JSON schema via response_format on hosted providers "
+                             "(extraction mode only). Guarantees valid JSON but may reduce output volume.")
     parser.add_argument("--claude-only", action="store_true",
                         help="Only run Claude (skip local models)")
     parser.add_argument("--local-only", action="store_true",
@@ -1052,6 +1254,9 @@ def main():
             vllm_url=args.vllm_url,
             api_key=api_key,
             preloaded_samples=preloaded,
+            doc_ids=args.doc_ids,
+            tuned=args.tuned,
+            json_schema=args.json_schema,
         )
 
 
