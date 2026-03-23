@@ -1,0 +1,59 @@
+```json
+{
+  "entities": [
+    {"name": "Rex Lee", "type": "person", "context": "Associate Commissioner of Indian Affairs"},
+    {"name": "Lewis Sigler", "type": "person", "context": "Solicitor's Office, Department of Interior"},
+    {"name": "James A. Haley", "type": "person", "context": "Chairman of the Subcommittee"},
+    {"name": "Dawson", "type": "person", "context": "Congressman"},
+    {"name": "Mrs. Green", "type": "person", "context": "Congresswoman"},
+    {"name": "Metcalf", "type": "person", "context": "Congressman from Montana"},
+    {"name": "Tom Burke", "type": "person", "context": "Attorney for landowners"},
+    {"name": "Robert Yellowtail", "type": "person", "context": "Member of Crow Delegation"},
+    {"name": "Crow Tribe", "type": "organization", "context": "Native American tribe"},
+    {"name": "United States", "type": "organization", "context": "Government"},
+    {"name": "Department of Interior", "type": "organization", "context": "Government department"},
+    {"name": "House of Representatives", "type": "organization", "context": "Legislative body"},
+    {"name": "Senate", "type": "organization", "context": "Legislative body"},
+    {"name": "Committee on Interior and Insular Affairs", "type": "organization", "context": "Congressional committee"},
+    {"name": "Crow Indian Reservation", "type": "location", "context": "Reservation in Montana"},
+    {"name": "Montana", "type": "location", "context": "State"},
+    {"name": "Washington D.C.", "type": "location", "context": "Capital city"},
+    {"name": "Billings", "type": "location", "context": "City in Montana"},
+    {"name": "S. 3698", "type": "legislation", "context": "Bill to amend Act of June 4, 1920"},
+    {"name": "H.R. 11036", "type": "legislation", "context": "Companion bill to S. 3698"},
+    {"name": "Act of June 4, 1920", "type": "legislation", "context": "Original Act providing for allotment of Crow Tribe lands"},
+    {"name": "Act of June 8, 1940", "type": "legislation", "context": "Amendment to Act of June 4, 1920"},
+    {"name": "Act of July 25, 1868", "type": "legislation", "context": "Act ratifying treaty creating Crow Indian Reservation"},
+    {"name": "Act of April 11, 1882", "type": "legislation", "context": "Act ratifying treaty of June 12, 1880"},
+    {"name": "Act of May 8, 1906", "type": "legislation", "context": "Act authorizing Secretary of Interior to remove restrictions on alienation"}
+  ],
+  "events": [
+    {"type": "hearing", "date": "1956-07-13", "location": "Washington D.C.", "description": "Subcommittee hearing on H.R. 11036"},
+    {"type": "treaty signing", "date": "1868-05-07", "location": "Crow Indian Reservation", "description": "Treaty creating Crow Indian Reservation"},
+    {"type": "treaty signing", "date": "1880-06-12", "location": "Crow Indian Reservation", "description": "Treaty ceding land to United States"},
+    {"type": "legislation passed", "date": "1920-06-04", "location": "Washington D.C.", "description": "Act providing for allotment of Crow Tribe lands"},
+    {"type": "legislation passed", "date": "1940-06-08", "location": "Washington D.C.", "description": "Amendment to Act of June 4, 1920"},
+    {"type": "resolution passed", "date": "1956-04-14", "location": "Crow Agency, Montana", "description": "Crow Tribal Council resolution requesting legislation to repeal Section 2 of Act of June 4, 1920"}
+  ],
+  "financial_transactions": [],
+  "relationships": [
+    {"subject": "Rex Lee", "type": "accompanied_by", "object": "Lewis Sigler", "context": "Hearing on H.R. 11036"},
+    {"subject": "Metcalf", "type": "introduced_bill", "object": "H.R. 11036", "context": "Congressman from Montana"},
+    {"subject": "Crow Tribe", "type": "ceded_land_to", "object": "United States", "context": "Treaty of May 7, 1868"},
+    {"subject": "United States", "type": "agreed_to_survey_and_divide_land", "object": "Crow Tribe", "context": "Treaty of June 12, 1880"},
+    {"subject": "Tom Burke", "type": "represented", "object": "landowners", "context": "Memorandum on S. 3698"}
+  ],
+  "fee_patents": [
+    {"allottee_name": "", "allotment_number": "", "acreage": "", "patent_date": "", "patent_number": "", "mechanism": "", "buyer": "", "sale_price": "", "attorney": "", "mortgage": ""}
+  ],
+  "correspondence": [
+    {"sender": "Tom Burke", "sender_title": "Attorney", "recipient": "", "recipient_title": "", "date": "", "subject": "S. 3698", "action_requested": "", "outcome": ""}
+  ],
+  "legislative_actions": [
+    {"bill_number": "S. 3698", "sponsor": "", "action_type": "introduced", "date": "1956-06-01", "vote_count": "", "committee": "Committee on Interior and Insular Affairs", "outcome": ""},
+    {"bill_number": "H.R. 11036", "sponsor": "Metcalf", "action_type": "introduced", "date": "1956-05-07", "vote_count": "", "committee": "Committee on Interior and Insular Affairs", "outcome": ""},
+    {"bill_number": "S. 3698", "sponsor": "", "action_type": "reported", "date": "", "vote_count": "", "committee": "Committee on Interior and Insular Affairs", "outcome": "favorably reported with amendments"},
+    {"bill_number": "Act of June 4, 1920", "sponsor": "", "action_type": "enacted", "date": "1920-06-04", "vote_count": "", "committee": "", "outcome": ""}
+  ]
+}
+```

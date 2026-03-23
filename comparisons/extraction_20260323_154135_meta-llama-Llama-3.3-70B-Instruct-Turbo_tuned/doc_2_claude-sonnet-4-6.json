@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {"name": "George Peters", "type": "person", "context": "Crow Indian allottee from Wyola, Montana, owner of 840 acres on Crow Indian Reservation, allotment no. 2292"},
+    {"name": "James E. Murray", "type": "person", "context": "United States Senator who introduced S. 716 on January 31, 1949"},
+    {"name": "Joseph C. O'Mahoney", "type": "person", "context": "Chairman of the Senate Committee on Interior and Insular Affairs"},
+    {"name": "Oscar L. Chapman", "type": "person", "context": "Undersecretary of the Interior who signed the Department's report on S. 716"},
+    {"name": "Morris", "type": "person", "context": "Member who submitted the report from the Committee on Public Lands in the House of Representatives"},
+    {"name": "George Redfield", "type": "person", "context": "Another Crow Indian to whom George Peters indicated desire to sell his land in 1921"},
+    {"name": "W. P. Marshall", "type": "person", "context": "President of Western Union"},
+    {"name": "Mills Astin", "type": "person", "context": "Chief Clerk of the Senate Committee on Interior and Insular Affairs"},
+    {"name": "Senate Committee on Interior and Insular Affairs", "type": "organization", "context": "Senate committee that reviewed and amended S. 716"},
+    {"name": "Committee on Public Lands", "type": "organization", "context": "House committee that reviewed S. 716 and reported it favorably"},
+    {"name": "Department of the Interior", "type": "organization", "context": "Federal department that recommended enactment of S. 716 with amendments"},
+    {"name": "Office of the Secretary, Department of the Interior", "type": "organization", "context": "Office that issued the report on S. 716 dated March 9, 1949"},
+    {"name": "Western Union", "type": "organization", "context": "Telegraph company used to send message to George Peters about S. 716 passing the House"},
+    {"name": "University of Montana", "type": "organization", "context": "Repository of the James E. Murray MSS archives, Mansfield Library"},
+    {"name": "Mansfield Library", "type": "organization", "context": "Library at University of Montana holding Collection No. 91, James E. Murray MSS"},
+    {"name": "Crow Indian Reservation", "type": "location", "context": "Location of George Peters' allotted land in Montana"},
+    {"name": "Wyola, Montana", "type": "location", "context": "Residence of George Peters"},
+    {"name": "Washington, D.C.", "type": "location", "context": "Location of United States Senate and Department of the Interior"},
+    {"name": "North half of the north half of section 29, township 4 south, range 37 east, Montana principal meridian", "type": "land_parcel", "context": "Part of George Peters' allotted land on Crow Indian Reservation"},
+    {"name": "North half of the north half of the south half of the north half of section 29, township 4 south, range 37 east, Montana principal meridian", "type": "land_parcel", "context": "Part of George Peters' allotted land on Crow Indian Reservation"},
+    {"name": "All of section 20, township 4 south, range 37 east, Montana principal meridian", "type": "land_parcel", "context": "Part of George Peters' allotted land on Crow Indian Reservation"},
+    {"name": "S. 716", "type": "legislation", "context": "Bill introduced by Senator Murray to authorize issuance of patent in fee or sale of George Peters' land"},
+    {"name": "Act of June 1, 1920 (41 Stat. 751)", "type": "legislation", "context": "Act requiring Crow Indians to retain one-half of their homestead lands or 320 acres"},
+    {"name": "840 acres", "type": "acreage_holding", "context": "Total acreage of George Peters' land on Crow Indian Reservation"},
+    {"name": "Allotment No. 2292", "type": "land_parcel", "context": "George Peters' Crow Indian allotment number"},
+    {"name": "Hugh Butler", "type": "person", "context": "Senator from Nebraska, member of Senate Committee on Interior and Insular Affairs"},
+    {"name": "Eugene D. Millikin", "type": "person", "context": "Senator from Colorado, member of Senate Committee on Interior and Insular Affairs"},
+    {"name": "Guy Cordon", "type": "person", "context": "Senator from Oregon, member of Senate Committee on Interior and Insular Affairs"},
+    {"name": "Zales N. Ecton", "type": "person", "context": "Senator from Montana, member of Senate Committee on Interior and Insular Affairs"},
+    {"name": "George W. Malone", "type": "person", "context": "Senator from Nevada, member of Senate Committee on Interior and Insular Affairs"},
+    {"name": "Arthur V. Watkins", "type": "person", "context": "Senator from Utah, member of Senate Committee on Interior and Insular Affairs"},
+    {"name": "Ernest W. McFarland", "type": "person", "context": "Senator from Arizona, member of Senate Committee on Interior and Insular Affairs"},
+    {"name": "Clinton P. Anderson", "type": "person", "context": "Senator from New Mexico, member of Senate Committee on Interior and Insular Affairs"},
+    {"name": "Bert H. Miller", "type": "person", "context": "Senator from Idaho, member of Senate Committee on Interior and Insular Affairs"},
+    {"name": "Robert S. Kerr", "type": "person", "context": "Senator from Oklahoma, member of Senate Committee on Interior and Insular Affairs"},
+    {"name": "Secretary of the Interior", "type": "person", "context": "Official authorized and directed by S. 716 to issue patent in fee or sell George Peters' land"},
+    {"name": "Jones E. Murray", "type": "person", "context": "Sender of Western Union telegram to George Peters, likely James E. Murray USS (United States Senator)"}
+  ],
+  "events": [
+    {"type": "bill_introduction", "date": "1949-01-31", "location": "United States Senate", "description": "Senator Murray introduced S. 716 to authorize issuance of patent in fee to George Peters; bill read twice and referred to Committee on Interior and Insular Affairs"},
+    {"type": "letter_sent", "date": "1949-01-26", "location": "Washington, D.C.", "description": "Senator Murray wrote to George Peters advising he had prepared and was introducing a new bill to authorize issuance of patent in fee, in reply to Peters' letter of January 20th"},
+    {"type": "department_report", "date": "1949-03-09", "location": "Washington, D.C.", "description": "Department of the Interior (Oscar L. Chapman, Undersecretary) issued report on S. 716, recommending enactment with amendments to allow sale to a Crow Indian rather than issuance of patent in fee"},
+    {"type": "committee_correspondence", "date": "1949-03-10", "location": "Washington, D.C.", "description": "Joseph C. O'Mahoney, Chairman of Senate Committee on Interior and Insular Affairs, wrote to Senator Murray attaching Department of Interior report and asking if amendments were agreeable"},
+    {"type": "senate_passage", "date": "1949-04-11", "location": "United States Senate", "description": "S. 716 passed the Senate"},
+    {"type": "house_committee_report", "date": "1949-05-04", "location": "House of Representatives", "description": "Committee on Public Lands reported S. 716 favorably without amendment and recommended the bill do pass; committed to Committee of the Whole House and ordered to be printed as Report No. 508"},
+    {"type": "letter_sent", "date": "1949-05-09", "location": "Washington, D.C.", "description": "Senator Murray wrote to George Peters advising that S. 716 passed the Senate on April 11th and had been reported favorably out of the House Committee on Public Lands; enclosed copy of House report"},
+    {"type": "house_passage", "date": "1949-05-17", "location": "House of Representatives", "description": "S. 716 passed the House and was cleared for President's signature"},
+    {"type": "telegram_sent", "date": "1949-05-18", "location": "Washington, D.C.", "description": "Telegram sent to George Peters at Wyola, Montana, advising that S. 716 passed the House and was cleared for President's signature"},
+    {"type": "bill_amendment", "date": "1949-01-01", "location": "United States Senate", "description": "Senate Committee on Interior and Insular Affairs amended S. 716 at suggestion of Department of the Interior to permit Secretary to sell land under existing regulations rather than issue patent in fee"},
+    {"type": "desire_to_sell_expressed", "date": "1921-01-01", "location": "Crow Indian Reservation, Montana", "description": "George Peters indicated his desire to sell his land to George Redfield, another Crow Indian"},
+    {"type": "bill_introduced_80th_congress", "date": "1947-01-01", "location": "United States Senate", "description": "A similar bill was introduced in the 80th Congress to authorize the Secretary of the Interior to issue a patent in fee to George Peters for 840 acres on the Crow Reservation"}
+  ],
+  "financial_transactions": [
+    {"type": "sale", "amount": "not specified", "payer": "George Redfield (Crow Indian)", "payee": "George Peters", "date": "proposed", "description": "Proposed sale of George Peters' 840-acre allotment on Crow Indian Reservation to another Crow Indian, authorized under S. 716 as amended"}
+  ],
+  "relationships": [
+    {"subject": "James E. Murray", "type": "represented", "object": "George Peters", "context": "Senator Murray introduced S. 716 on behalf of George Peters to authorize patent in fee or sale of his land"},
+    {"subject": "George Peters", "type": "owns", "object": "840 acres on Crow Indian Reservation", "context": "George Peters is the Crow Indian allottee of 840 acres on the Crow Indian Reservation, allotment no. 2292"},
+    {"subject": "Joseph C. O'Mahoney", "type": "chairs", "object": "Senate Committee on Interior and Insular Affairs", "context": "O'Mahoney signed letter as Chairman of the committee"},
+    {"subject": "Oscar L. Chapman", "type": "employed_by", "object": "Department of the Interior", "context": "Chapman served as Undersecretary of the Interior and signed the department's report on S. 716"},
+    {"subject": "George Peters", "type": "related_to", "object": "Crow Indian Tribe", "context": "George Peters is identified as a Crow Indian allottee"},
+    {"subject": "George Redfield", "type": "related_to", "object": "Crow Indian Tribe", "context": "George Redfield is identified as another Crow Indian, proposed buyer of Peters' land"},
+    {"subject": "George Peters", "type": "sold_to", "object": "George Redfield", "context": "Peters indicated desire to sell land to Redfield in 1921; S. 716 as amended would authorize this sale"},
+    {"subject": "Senate Committee on Interior and Insular Affairs", "type": "amended", "object": "S. 716", "context": "Committee amended bill at suggestion of Department of Interior to allow sale rather than patent in fee"},
+    {"subject": "Committee on Public Lands", "type": "reported", "object": "S. 716", "context": "House Committee on Public Lands reported S. 716 favorably without amendment"},
+    {"subject": "Department of the Interior", "type": "recommended", "object": "S. 716", "context": "Department recommended enactment of S. 716 with amendments"},
+    {"subject": "Mills Astin", "type": "employed_by", "object": "Senate Committee on Interior and Insular Affairs", "context": "Mills Astin served as Chief Clerk of the committee"},
+    {"subject": "Morris", "type": "submitted_report", "object": "Committee on Public Lands", "context": "Morris submitted the House report on S. 716 from the Committee on Public Lands"}
+  ],
+  "fee_patents": [
+    {"allottee_name": "George Peters", "allotment_number": "2292", "acreage": "840", "patent_date": "pending legislation", "patent_number": "not specified", "mechanism": "private_bill", "buyer": "George Redfield (Crow Indian)", "sale_price": "not specified", "attorney": "not specified", "mortgage": "not specified"}
+  ],
+  "correspondence": [
+    {"sender": "James E. Murray", "sender_title": "United States Senator", "recipient": "George Peters", "recipient_title": "Crow Indian allottee", "date": "1949-01-26", "subject": "Introduction of new bill S. 716 to authorize patent in fee", "action_requested": "None; informational", "outcome": "Bill introduced January 31, 1949"},
+    {"sender": "Joseph C. O'Mahoney", "sender_title": "Chairman, Senate Committee on Interior and Insular Affairs", "recipient": "James E. Murray", "recipient_title": "United States Senator", "date": "1949-03-10", "subject": "Department of Interior report on S. 716 and proposed amendments", "action_requested": "Senator Murray to advise whether amendments are agreeable", "outcome": "Bill amended as suggested by Department of Interior"},
+    {"sender": "Oscar L. Chapman", "sender_title": "Undersecretary of the Interior", "recipient": "Joseph C. O'Mahoney", "recipient_title": "Chairman, Senate Committee on Interior and Insular Affairs", "date": "1949-03-09", "subject": "Report on S. 716, recommending amendment to allow sale to Crow Indian rather than patent in fee", "action_requested": "Amend S. 716 to authorize Secretary to sell land to a Crow Indian under existing regulations rather than issue patent in fee", "outcome": "Senate committee amended bill accordingly"},
+    {"sender": "James E. Murray", "sender_title": "United States Senator", "recipient": "George Peters", "recipient_title": "Crow Indian allottee", "date": "1949-05-09", "subject": "S. 716 passed Senate and reported favorably by House Committee on Public Lands", "action_requested": "None; informational with enclosed House report", "outcome": "Bill subsequently passed House on May 17, 1949"},
+    {"sender": "Jones E. Murray (James E. Murray)", "sender_title": "United States Senator", "recipient": "George Peters", "recipient_title": "Crow Indian allottee", "date": "1949-05-18", "subject": "S. 716 passed House and cleared for President's signature", "action_requested": "None; informational telegram", "outcome": "Bill sent to President for signature"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "introduced", "date": "1949-01-31", "vote_count": "not specified", "committee": "Senate Committee on Interior and Insular Affairs", "outcome": "Read twice and referred to Committee on Interior and Insular Affairs"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "amended", "date": "1949-03-01", "vote_count": "not specified", "committee": "Senate Committee on Interior and Insular Affairs", "outcome": "Bill amended to authorize Secretary to sell land under existing regulations rather than issue patent in fee, at suggestion of Department of Interior"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "passed", "date": "1949-04-11", "vote_count": "not specified", "committee": "United States Senate", "outcome": "Passed the Senate"},
+    {"bill_number": "S. 716", "sponsor": "not specified", "action_type": "reported", "date": "1949-05-04", "vote_count": "not specified", "committee": "Committee on Public Lands (House)", "outcome": "Reported favorably without amendment as Report No. 508; committed to Committee of the Whole House and ordered to be printed"},
+    {"bill_number": "S. 716", "sponsor": "not specified", "action_type": "passed", "date": "1949-05-17", "vote_count": "not specified", "committee": "House of Representatives", "outcome": "Passed the House and cleared for President's signature"}
+  ]
+}

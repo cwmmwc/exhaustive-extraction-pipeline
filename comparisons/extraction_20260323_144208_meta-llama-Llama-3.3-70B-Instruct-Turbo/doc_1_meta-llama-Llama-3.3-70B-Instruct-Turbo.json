@@ -1,0 +1,66 @@
+```json
+{
+  "entities": [
+    {"name": "United States Department of the Interior", "type": "organization", "context": "government agency"},
+    {"name": "Bureau of Indian Affairs", "type": "organization", "context": "government agency"},
+    {"name": "Billings Area Office", "type": "location", "context": "office location"},
+    {"name": "Montana", "type": "location", "context": "state"},
+    {"name": "H. M. Critchfield", "type": "person", "context": "Chief, Branch of Realty"},
+    {"name": "Relnhol t lirust", "type": "person", "context": "Director"},
+    {"name": "Aberdeen Area", "type": "location", "context": "office location"},
+    {"name": "Sioux City, Iowa", "type": "location", "context": "city"},
+    {"name": "Pine Ridge Reservation", "type": "location", "context": "reservation"},
+    {"name": "Rosebud Reservation", "type": "location", "context": "reservation"},
+    {"name": "Cow Creek Reservation", "type": "location", "context": "reservation"},
+    {"name": "Lower Brule Reservation", "type": "location", "context": "reservation"},
+    {"name": "Winnebago Reservation", "type": "location", "context": "reservation"},
+    {"name": "Cheyenne River Reservation", "type": "location", "context": "reservation"},
+    {"name": "Standing Rock Agency", "type": "organization", "context": "agency"},
+    {"name": "Fort Belknap Agency", "type": "organization", "context": "agency"},
+    {"name": "Rex Engel", "type": "person", "context": "Land Operations Officer"},
+    {"name": "Mr. Freiberg", "type": "person", "context": "Soil Conservationist"},
+    {"name": "Mr. Boyd", "type": "person", "context": "Soil Conservationist"},
+    {"name": "Mr. Turner", "type": "person", "context": "Range Conservationist"},
+    {"name": "Mr. Hagen", "type": "person", "context": "Soil Conservationist"},
+    {"name": "Mr. Begman", "type": "person", "context": "Soil Scientist"},
+    {"name": "Shannon County", "type": "location", "context": "county"},
+    {"name": "Soil Conservation Service", "type": "organization", "context": "government agency"},
+    {"name": "T.C.B.I.A.", "type": "organization", "context": "government agency"},
+    {"name": "State College", "type": "organization", "context": "educational institution"}
+  ],
+  "events": [
+    {"type": "memorandum", "date": "1954-12-13", "location": "Washington 25, D. C.", "description": "Memorandum regarding issuance of patents in fee"},
+    {"type": "memorandum", "date": "1955-01-06", "location": "Billings, Montana", "description": "Memorandum regarding issuance of patents in fee"},
+    {"type": "memorandum", "date": "1955-11-22", "location": "Billings, Montana", "description": "Memorandum regarding fee patent policy"},
+    {"type": "memorandum", "date": "1955-11-29", "location": "Billings, Montana", "description": "Memorandum regarding disposition of revenue from submarginal lands"},
+    {"type": "committee report", "date": "1955-06-14", "location": "Sioux City, Iowa", "description": "Committee report on land operations conference"},
+    {"type": "legislation", "date": "1955-08-10", "location": "Washington 25, D. C.", "description": "Amendment to 25 CFR 71.27"},
+    {"type": "meeting", "date": "1955-06-14", "location": "Sioux City, Iowa", "description": "Land operations conference"}
+  ],
+  "financial_transactions": [
+    {"type": "sale", "amount": "not specified", "payer": "not specified", "payee": "not specified", "date": "not specified", "description": "Sale of land"},
+    {"type": "lease", "amount": "not specified", "payer": "not specified", "payee": "not specified", "date": "not specified", "description": "Lease of land"},
+    {"type": "payment", "amount": "not specified", "payer": "not specified", "payee": "not specified", "date": "not specified", "description": "Payment for irrigation assessments"}
+  ],
+  "relationships": [
+    {"subject": "H. M. Critchfield", "type": "employed_by", "object": "Bureau of Indian Affairs", "context": "Chief, Branch of Realty"},
+    {"subject": "Relnhol t lirust", "type": "employed_by", "object": "Bureau of Indian Affairs", "context": "Director"},
+    {"subject": "Rex Engel", "type": "employed_by", "object": "Standing Rock Agency", "context": "Land Operations Officer"},
+    {"subject": "Mr. Freiberg", "type": "employed_by", "object": "Fort Belknap Agency", "context": "Soil Conservationist"},
+    {"subject": "Mr. Boyd", "type": "employed_by", "object": "Fort Belknap Agency", "context": "Soil Conservationist"},
+    {"subject": "Mr. Turner", "type": "employed_by", "object": "Cheyenne River Agency", "context": "Range Conservationist"},
+    {"subject": "Mr. Hagen", "type": "employed_by", "object": "Standing Rock Agency", "context": "Soil Conservationist"},
+    {"subject": "Mr. Begman", "type": "employed_by", "object": "Standing Rock Agency", "context": "Soil Scientist"}
+  ],
+  "fee_patents": [
+    {"allottee_name": "not specified", "allotment_number": "not specified", "acreage": "not specified", "patent_date": "not specified", "patent_number": "not specified", "mechanism": "private_bill", "buyer": "not specified", "sale_price": "not specified", "attorney": "not specified", "mortgage": "not specified"}
+  ],
+  "correspondence": [
+    {"sender": "H. M. Critchfield", "sender_title": "Chief, Branch of Realty", "recipient": "Area Directors", "recipient_title": "Area Directors", "date": "1954-12-13", "subject": "Issuance of patents in fee", "action_requested": "not specified", "outcome": "not specified"},
+    {"sender": "Relnhol t lirust", "sender_title": "Director", "recipient": "Superintendents", "recipient_title": "Superintendents", "date": "1955-01-06", "subject": "Issuance of patents in fee", "action_requested": "not specified", "outcome": "not specified"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "not specified", "sponsor": "not specified", "action_type": "amendment", "date": "1955-08-10", "vote_count": "not specified", "committee": "not specified", "outcome": "not specified"}
+  ]
+}
+```

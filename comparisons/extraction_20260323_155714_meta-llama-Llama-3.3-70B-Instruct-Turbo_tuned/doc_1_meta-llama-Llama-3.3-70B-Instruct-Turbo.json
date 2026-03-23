@@ -1,0 +1,77 @@
+```json
+{
+  "entities": [
+    {"name": "Bureau of Indian Affairs", "type": "organization", "context": "Department of the Interior"},
+    {"name": "Department of the Interior", "type": "organization", "context": "US government"},
+    {"name": "Billings Area Office", "type": "location", "context": "Bureau of Indian Affairs office"},
+    {"name": "Aberdeen Area", "type": "location", "context": "Bureau of Indian Affairs area"},
+    {"name": "Pine Ridge Reservation", "type": "location", "context": "Indian reservation"},
+    {"name": "Rosebud Reservation", "type": "location", "context": "Indian reservation"},
+    {"name": "Crow Creek Reservation", "type": "location", "context": "Indian reservation"},
+    {"name": "Lower Brule Reservation", "type": "location", "context": "Indian reservation"},
+    {"name": "Winnebago Reservation", "type": "location", "context": "Indian reservation"},
+    {"name": "Cheyenne River Reservation", "type": "location", "context": "Indian reservation"},
+    {"name": "Standing Rock Agency", "type": "location", "context": "Bureau of Indian Affairs agency"},
+    {"name": "Fort Belknap Agency", "type": "location", "context": "Bureau of Indian Affairs agency"},
+    {"name": "Shannon County", "type": "location", "context": "County in South Dakota"},
+    {"name": "South Dakota", "type": "location", "context": "State"},
+    {"name": "North Dakota", "type": "location", "context": "State"},
+    {"name": "Nebraska", "type": "location", "context": "State"},
+    {"name": "Sioux City", "type": "location", "context": "City in Iowa"},
+    {"name": "Iowa", "type": "location", "context": "State"},
+    {"name": "Washington", "type": "location", "context": "City, capital of the US"},
+    {"name": "Montana", "type": "location", "context": "State"},
+    {"name": "Randlett", "type": "location", "context": "City in Utah"},
+    {"name": "Utah", "type": "location", "context": "State"},
+    {"name": "H. M. Critchfield", "type": "person", "context": "Chief, Branch of Realty, Bureau of Indian Affairs"},
+    {"name": "Rex Engel", "type": "person", "context": "Land Operations Officer, Turtle Mountain"},
+    {"name": "Mr. Freiberg", "type": "person", "context": "Soil Conservationist, Pine Ridge Agency"},
+    {"name": "Mr. Boyd", "type": "person", "context": "Soil Conservationist, Fort Belknap Agency"},
+    {"name": "Mr. Turner", "type": "person", "context": "Range Conservationist, Cheyenne River Agency"},
+    {"name": "Mr. Hagen", "type": "person", "context": "Soil Conservationist, Standing Rock Agency"},
+    {"name": "Mr. Begman", "type": "person", "context": "Soil Scientist, Standing Rock Agency"},
+    {"name": "Rex Cmey", "type": "person", "context": "Agency Soil Scientist, Standing Rock"},
+    {"name": "Bill Smith", "type": "person", "context": "Soil Scientist, Rosebud"},
+    {"name": "George Peters", "type": "person", "context": "Crow Indian"},
+    {"name": "Frederick Geisdorff Jr.", "type": "person", "context": "Crow allottee #2336"},
+    {"name": "Emily J. Geisdorff", "type": "person", "context": "Spouse of Frederick Geisdorff Jr."},
+    {"name": "Emily Lucile Geisdorff", "type": "person", "context": "Daughter of Frederick Geisdorff Jr."},
+    {"name": "Thomas R. Powers", "type": "person", "context": "Buyer of Frederick Geisdorff Jr.'s allotment"},
+    {"name": "Oscar L. Chapman", "type": "person", "context": "Undersecretary of the Interior"},
+    {"name": "Joseph C. O'Mahoney", "type": "person", "context": "Chairman, Senate Committee on Interior and Insular Affairs"},
+    {"name": "James E. Murray", "type": "person", "context": "Senator"},
+    {"name": "C. H. Asbury", "type": "person", "context": "Superintendent, Crow Agency"},
+    {"name": "Commissioner of Indian Affairs", "type": "person", "context": "Title of a government official"}
+  ],
+  "events": [
+    {"type": "death", "date": "1918-11-27", "location": "Randlett, Utah", "description": "Frederick Geisdorff Jr., Crow allottee #2336, died of influenza aged about 20, leaving widow Emily J. and infant daughter Emily Lucile as heirs"},
+    {"type": "sale", "date": "1919-03-24", "location": "Crow Agency", "description": "Sale of Frederick Geisdorff Jr.'s allotment to Thomas R. Powers"},
+    {"type": "legislative action", "date": "1928-03-07", "location": "US Congress", "description": "Passage of the 45 Stat. 210, creating a first lien against irrigable lands on all Indian irrigation projects where construction, operation, and maintenance costs remain unpaid"},
+    {"type": "amendment", "date": "1955-08-10", "location": "US Congress", "description": "Amendment to 25 CFR 71.27, deleting reference to the deposit of fees and requiring that funds be deposited in the Treasury to the credit of the appropriate miscellaneous receipt account"},
+    {"type": "committee report", "date": "1955-06-13", "location": "Aberdeen Area", "description": "Committee report on Land Operations Conference, discussing the need for a proper reporting system and the importance of conservation practices"},
+    {"type": "memorandum", "date": "1955-11-29", "location": "Aberdeen Area", "description": "Memorandum on disposition of revenue from submarginal lands, discussing the need to deposit funds in the Treasury and the importance of conservation practices"}
+  ],
+  "financial_transactions": [
+    {"type": "sale", "amount": "$1,500", "payer": "Thomas R. Powers", "payee": "Frederick Geisdorff Jr.'s heirs", "date": "1919-03-24", "description": "Sale of Frederick Geisdorff Jr.'s allotment to Thomas R. Powers"},
+    {"type": "payment", "amount": "unknown", "payer": "unknown", "payee": "US Treasury", "date": "1955-08-10", "description": "Deposit of funds from submarginal lands into the Treasury"}
+  ],
+  "relationships": [
+    {"subject": "Frederick Geisdorff Jr.", "type": "married_to", "object": "Emily J. Geisdorff", "context": "Spouse"},
+    {"subject": "Frederick Geisdorff Jr.", "type": "father_of", "object": "Emily Lucile Geisdorff", "context": "Daughter"},
+    {"subject": "Thomas R. Powers", "type": "bought_from", "object": "Frederick Geisdorff Jr.'s heirs", "context": "Sale of allotment"},
+    {"subject": "George Peters", "type": "intended_to_sell_to", "object": "George Redfield", "context": "Peters indicated desire to sell land to Redfield, another Crow Indian, in 1921"},
+    {"subject": "James E. Murray", "type": "introduced_legislation_for", "object": "George Peters", "context": "Murray introduced S. 716 to authorize patent in fee/sale of Peters' land"}
+  ],
+  "fee_patents": [
+    {"allottee_name": "Frederick Geisdorff Jr.", "allotment_number": "2336", "acreage": "unknown", "patent_date": "unknown", "patent_number": "unknown", "mechanism": "unknown", "buyer": "Thomas R. Powers", "sale_price": "$1,500", "attorney": "unknown", "mortgage": "unknown"}
+  ],
+  "correspondence": [
+    {"sender": "Oscar L. Chapman", "sender_title": "Undersecretary of the Interior", "recipient": "Joseph C. O'Mahoney", "recipient_title": "Chairman, Senate Committee on Interior and Insular Affairs", "date": "1949-03-09", "subject": "Report on S. 716 authorizing patent in fee to George Peters, Crow Indian", "action_requested": "Recommendation to enact bill if amended to allow sale to a Crow Indian under existing regulations rather than issue patent in fee", "outcome": "Report forwarded to Senator Murray on March 10; bill subsequently amended as suggested"},
+    {"sender": "C. H. Asbury", "sender_title": "Superintendent, Crow Agency", "recipient": "Commissioner of Indian Affairs", "recipient_title": "Commissioner", "date": "1919-03-24", "subject": "Report on heirship and sale of allotment of deceased Frederick Geisdorff Jr.", "action_requested": "Approval to complete sale to Thomas R. Powers and distribute proceeds to heirs", "outcome": "Sale approved; heirs paid April 27, 1920"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "introduced", "date": "unknown", "vote_count": "unknown", "committee": "Senate Committee on Interior and Insular Affairs", "outcome": "Bill amended and passed"},
+    {"bill_number": "45 Stat. 210", "sponsor": "unknown", "action_type": "enacted", "date": "1928-03-07", "vote_count": "unknown", "committee": "unknown", "outcome": "Created a first lien against irrigable lands on all Indian irrigation projects where construction, operation, and maintenance costs remain unpaid"}
+  ]
+}
+```

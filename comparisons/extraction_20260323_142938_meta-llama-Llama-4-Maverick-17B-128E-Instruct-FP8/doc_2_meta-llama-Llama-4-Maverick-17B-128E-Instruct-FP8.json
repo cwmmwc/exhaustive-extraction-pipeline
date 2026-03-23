@@ -1,0 +1,51 @@
+```
+{
+  "entities": [
+    {"name": "George Peters", "type": "person", "context": "Crow Indian allottee"},
+    {"name": "James E. Murray", "type": "person", "context": "US Senator"},
+    {"name": "Joseph C. O'Mahoney", "type": "person", "context": "US Senator and Chairman of the Committee on Interior and Insular Affairs"},
+    {"name": "Oscar L. Chapman", "type": "person", "context": "Under Secretary of the Interior"},
+    {"name": "Wyola, Montana", "type": "location", "context": "George Peters' address"},
+    {"name": "Crow Indian Reservation", "type": "location", "context": "location of George Peters' allotment"},
+    {"name": "Montana", "type": "location", "context": "state where Crow Indian Reservation is located"},
+    {"name": "United States Senate", "type": "organization", "context": "legislative body"},
+    {"name": "Committee on Interior and Insular Affairs", "type": "organization", "context": "committee that reviewed S. 716"},
+    {"name": "Department of the Interior", "type": "organization", "context": "executive department that reviewed S. 716"},
+    {"name": "S. 716", "type": "legislation", "context": "bill authorizing the Secretary of the Interior to sell George Peters' land"},
+    {"name": "George Peters' allotment", "type": "land_parcel", "context": "land allotted to George Peters on the Crow Indian Reservation"},
+    {"name": "Allotment No. 2292", "type": "land_parcel", "context": "George Peters' allotment number"}
+  ],
+  "events": [
+    {"type": "bill_introduced", "date": "1949-01-31", "location": "US Senate", "description": "S. 716 introduced by Senator James E. Murray"},
+    {"type": "bill_amended", "date": "1949", "location": "US Senate", "description": "S. 716 amended to permit the Secretary of the Interior to sell George Peters' land under existing regulations"},
+    {"type": "bill_passed", "date": "1949-04-11", "location": "US Senate", "description": "S. 716 passed the US Senate"},
+    {"type": "bill_reported_favorably", "date": "1949-05-04", "location": "US House of Representatives", "description": "S. 716 reported favorably by the House Committee on Public Lands"},
+    {"type": "bill_passed", "date": "1949-05-17", "location": "US House of Representatives", "description": "S. 716 passed the US House of Representatives"},
+    {"type": "bill_signed_into_law", "date": "after 1949-05-17", "location": "White House", "description": "S. 716 signed into law"}
+  ],
+  "financial_transactions": [],
+  "relationships": [
+    {"subject": "George Peters", "type": "represented_by", "object": "James E. Murray", "context": "Murray introduced S. 716 on Peters' behalf"},
+    {"subject": "George Peters", "type": "allottee_of", "object": "Crow Indian Reservation", "context": "Peters was allotted land on the Crow Indian Reservation"},
+    {"subject": "James E. Murray", "type": "sponsor_of", "object": "S. 716", "context": "Murray sponsored S. 716"},
+    {"subject": "Joseph C. O'Mahoney", "type": "chairman_of", "object": "Committee on Interior and Insular Affairs", "context": "O'Mahoney chaired the committee that reviewed S. 716"}
+  ],
+  "fee_patents": [
+    {"allottee_name": "George Peters", "allotment_number": "2292", "acreage": "840 acres", "patent_date": "not specified", "patent_number": "not specified", "mechanism": "legislation", "buyer": "not specified", "sale_price": "not specified", "attorney": "not specified", "mortgage": "not specified"}
+  ],
+  "correspondence": [
+    {"sender": "James E. Murray", "sender_title": "US Senator", "recipient": "George Peters", "recipient_title": "Crow Indian allottee", "date": "not specified", "subject": "S. 716", "action_requested": "not specified", "outcome": "not specified"},
+    {"sender": "Joseph C. O'Mahoney", "sender_title": "US Senator and Chairman of the Committee on Interior and Insular Affairs", "recipient": "James E. Murray", "recipient_title": "US Senator", "date": "1949-03-10", "subject": "S. 716", "action_requested": "review and comment", "outcome": "Murray agreed to amendments"},
+    {"sender": "Oscar L. Chapman", "sender_title": "Under Secretary of the Interior", "recipient": "Joseph C. O'Mahoney", "recipient_title": "US Senator and Chairman of the Committee on Interior and Insular Affairs", "date": "1949-03-09", "subject": "S. 716", "action_requested": "review and comment", "outcome": "Department of the Interior recommended amendments"},
+    {"sender": "Unknown", "sender_title": "Unknown", "recipient": "George Peters", "recipient_title": "Crow Indian allottee", "date": "1949-05-09", "subject": "S. 716", "action_requested": "not specified", "outcome": "notified Peters that S. 716 had passed the Senate"},
+    {"sender": "Jones E. Murray", "sender_title": "US Senator", "recipient": "George Peters", "recipient_title": "Crow Indian allottee", "date": "1949-05-18", "subject": "S. 716", "action_requested": "not specified", "outcome": "notified Peters that S. 716 had passed the House"}
+  ],
+  "legislative_actions": [
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "introduced", "date": "1949-01-31", "vote_count": "not specified", "committee": "Committee on Interior and Insular Affairs", "outcome": "referred to committee"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "amended", "date": "1949", "vote_count": "not specified", "committee": "Committee on Interior and Insular Affairs", "outcome": "amended to permit the Secretary of the Interior to sell George Peters' land under existing regulations"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "passed", "date": "1949-04-11", "vote_count": "not specified", "committee": "US Senate", "outcome": "passed the Senate"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "reported_favorably", "date": "1949-05-04", "vote_count": "not specified", "committee": "House Committee on Public Lands", "outcome": "reported favorably"},
+    {"bill_number": "S. 716", "sponsor": "James E. Murray", "action_type": "passed", "date": "1949-05-17", "vote_count": "not specified", "committee": "US House of Representatives", "outcome": "passed the House"}
+  ]
+}
+```
