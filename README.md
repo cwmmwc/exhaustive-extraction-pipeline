@@ -11,10 +11,13 @@ Instead of using Retrieval-Augmented Generation (RAG) to search for "relevant" d
 ## Current Status
 
 - **386 documents processed** across 9 batches (Crow Nation archival materials) with v3 pipeline
-- **43,000+ entities**, **6,800+ financial transactions**, **8,700+ relationships**, **7,900+ events** extracted
-- **959 fee patents**, **5,057 correspondence records**, **2,432 legislative actions** (v3 structured types)
-- Four-mode analysis interface with citation linking to the [Crow Nation Digital Archive](https://github.com/cwmmwc/crow-nation-digital-archive)
+- **180 Kiowa documents re-extracted** through v3 pipeline (historical_docs database), producing 598 fee patents, 1,355 correspondence records, 439 legislative actions
+- **43,000+ entities**, **6,800+ financial transactions**, **8,700+ relationships**, **7,900+ events** extracted (Crow corpus)
+- **959 fee patents**, **5,057 correspondence records**, **2,432 legislative actions** (v3 structured types, Crow corpus)
+- Five-mode analysis interface with citation linking to the [Crow Nation Digital Archive](https://github.com/cwmmwc/crow-nation-digital-archive) and DEVONthink 4 (`x-devonthink-item://` URLs for local collections)
+- HTML export with preserved document links in all analysis modes
 - Production deployment on Google Cloud Run with auto-deploy on push to `main`
+- Multi-database support: `crow_historical_docs` (Crow), `historical_docs` (Kiowa/KCA), `full_corpus_docs` (planned)
 - Ready for full-corpus deployment on UVA Rivanna/Afton HPC
 
 ## Repository Contents
@@ -30,7 +33,9 @@ Instead of using Retrieval-Augmented Generation (RAG) to search for "relevant" d
 | `dedup_entities_phase1.py` | Entity deduplication: case normalization + title stripping |
 | `compare_claude_vs_local_models.py` | Claude vs. open-source model comparison (Ollama + vLLM backends) |
 | `generate_display_titles.py` | AI-generated archival display titles for all documents |
+| `devonthink_uuids.json` | DEVONthink 4 UUID mapping for local document linking (Kiowa/KCA) |
 | `schema.sql` | PostgreSQL database schema (v3) |
+| `comparisons/` | Baseline and comparison outputs (v2 vs v3 extraction, model comparisons) |
 
 ## The Pipeline
 
@@ -78,7 +83,9 @@ Streamlit web interface with four modes:
 - **Discovery → Deep Read** — Run Discovery to find relevant documents, select which ones to deep-read, then send full texts plus cross-collection entity data to the AI. Produces the richest analysis.
 - **Corpus Synthesis** — Send analytical summaries of ALL documents to the AI for corpus-wide pattern analysis. No context window limit — the AI sees every document in the collection. Requires summaries to be generated first (see below).
 
-**Citation linking:** All modes convert document references in AI output to clickable links to the [Crow Nation Digital Archive](https://github.com/cwmmwc/crow-nation-digital-archive). Corpus Synthesis links `[Doc N]` references (including ranges like `[Doc 213–225]`); Discovery, Deep Read, and Hybrid link filename citations. A Sources Cited appendix is appended to corpus synthesis output.
+**Citation linking:** All modes convert document references in AI output to clickable links. For the Crow corpus, links go to the [Crow Nation Digital Archive](https://github.com/cwmmwc/crow-nation-digital-archive). For collections without an archive website (e.g., Historical Documents), links use DEVONthink's `x-devonthink-item://` URL scheme to open source documents directly in DEVONthink 4. The UUID mapping is stored in `devonthink_uuids.json` and loaded automatically per database. Corpus Synthesis links `[Doc N]` references (including ranges like `[Doc 213–225]`); Discovery, Deep Read, and Hybrid link filename citations. A Sources Cited appendix is appended to corpus synthesis output.
+
+**Save/download:** All analysis modes include a download button that saves the AI output as a Markdown file.
 
 **Corpus Synthesis prompt:** Instructs the AI to surface cross-document patterns, ground every claim in specific evidence (names, allotment numbers, acreages, dollar amounts, bill numbers, dates), show connections across time and place, quantify where possible, and conclude with three sections: What the Documents Prove, What the Documents Suggest, and Gaps in the Record.
 
@@ -110,7 +117,7 @@ python3 enrich_summaries.py --batch --force    # re-summarize all via Batch API
 ### Requirements
 
 ```bash
-pip install pymupdf psycopg2-binary anthropic streamlit
+pip install pymupdf psycopg2-binary anthropic streamlit markdown
 ```
 
 For local/HPC extraction (no API key needed):
@@ -141,11 +148,13 @@ The pipeline creates all tables automatically on first run.
 export ANTHROPIC_API_KEY="your-key"
 python3 poc_pipeline_chunked_v3.py --input /path/to/pdfs --output results_v3/
 python3 poc_pipeline_chunked_v3.py --input /path/to/pdfs --output results_v3/ --model claude-sonnet-4-6
+python3 poc_pipeline_chunked_v3.py --input /path/to/pdfs --output results_v3/ --db historical_docs
 ```
 
 **Re-extract existing documents** (preserves doc IDs, summaries, and display_titles):
 ```bash
 python3 poc_pipeline_chunked_v3.py --input /path/to/pdfs --output results_v3/ --force
+python3 poc_pipeline_chunked_v3.py --input corpora/KIOWA --output results_v3/ --db historical_docs --force --model claude-sonnet-4-6
 ```
 
 **v2 pipeline (Anthropic API):**
@@ -210,7 +219,9 @@ Nine tables in PostgreSQL (v3):
 - **correspondence** *(v3)* — Sender, recipient, titles, date, subject, action requested, outcome — bureaucratic network reconstruction
 - **legislative_actions** *(v3)* — Bill number, sponsor, action type, date, vote count, committee, outcome — bill lifecycle tracking
 
-### Extraction Counts (Crow Corpus, v3)
+### Extraction Counts
+
+**Crow Corpus** (`crow_historical_docs`, v3):
 
 | Table | Records |
 |-------|---------|
@@ -222,6 +233,19 @@ Nine tables in PostgreSQL (v3):
 | Fee Patents | 959 |
 | Correspondence | 5,057 |
 | Legislative Actions | 2,432 |
+
+**Kiowa/KCA Corpus** (`historical_docs`, v3 re-extraction):
+
+| Table | Records |
+|-------|---------|
+| Documents | 256 (180 Kiowa + 76 other) |
+| Entities | 14,300 |
+| Events | 2,627 |
+| Financial Transactions | 4,207 |
+| Relationships | 3,164 |
+| Fee Patents | 598 |
+| Correspondence | 1,355 |
+| Legislative Actions | 439 |
 
 ## Entity Deduplication
 
@@ -263,9 +287,10 @@ The research corpus is a DevonThink 4 database containing:
 
 **Supported models:**
 - Claude Opus (synthesis) / Claude Sonnet (extraction)
-- Gemma 3 27B (`google/gemma-3-27b-it`) — 1x A100
-- Qwen 2.5 72B (`Qwen/Qwen2.5-72B-Instruct`) — 2x A100 80GB
+- Llama 4 Maverick / Scout (latest — preferred for new comparisons)
 - Llama 3.3 70B (`meta-llama/Llama-3.3-70B-Instruct`) — 2x A100 80GB
+- Qwen 2.5 72B (`Qwen/Qwen2.5-72B-Instruct`) — 2x A100 80GB
+- Gemma 3 27B (`google/gemma-3-27b-it`) — 1x A100
 
 ### Running on UVA Rivanna/Afton (HPC)
 
@@ -320,10 +345,13 @@ python3 compare_claude_vs_local_models.py --dump-context
 
 ### Running locally with Ollama
 
+Works well on Apple Silicon with sufficient unified memory. A MacBook Pro with 128GB RAM can run 70B models comfortably (Q4: ~40GB, Q8: ~70GB).
+
 ```bash
-ollama pull gemma3:27b
-ollama serve  # in a separate terminal
-python3 compare_claude_vs_local_models.py --local-models gemma3:27b --mode extraction
+ollama pull llama3.3:70b    # Best quality (requires 64GB+ RAM)
+ollama pull gemma3:27b      # Faster, lower RAM (requires 32GB+)
+ollama serve                # in a separate terminal
+python3 compare_claude_vs_local_models.py --local-models llama3.3:70b --mode extraction
 ```
 
 ### HPC Files

@@ -28,6 +28,7 @@ import os
 import re
 import json
 import math
+import markdown
 from typing import List, Dict, Optional, Tuple
 
 st.set_page_config(
@@ -1483,8 +1484,32 @@ def build_corpus_context(summaries: List[Dict]) -> str:
     return "\n".join(lines)
 
 
-# Archive website base URL for document links
-ARCHIVE_BASE_URL = "https://crow-archive-996830241007.us-east1.run.app"
+# Archive website base URLs for document links (per database)
+ARCHIVE_URLS = {
+    "crow_historical_docs": "https://crow-archive-996830241007.us-east1.run.app",
+}
+# Default for the Crow site (used in header link)
+ARCHIVE_BASE_URL = ARCHIVE_URLS["crow_historical_docs"]
+
+# DEVONthink UUID mappings for databases without archive websites
+# Maps database name → path to JSON file mapping filename → UUID
+DEVONTHINK_UUID_FILES = {
+    "historical_docs": os.path.join(os.path.dirname(__file__), "devonthink_uuids.json"),
+}
+
+@st.cache_data
+def load_devonthink_uuids(db_name: str) -> Dict[str, str]:
+    """Load DEVONthink filename→UUID mapping for a database."""
+    path = DEVONTHINK_UUID_FILES.get(db_name)
+    if path and os.path.exists(path):
+        with open(path) as f:
+            return json.load(f)
+    return {}
+
+
+def get_archive_url(db_name: str) -> Optional[str]:
+    """Return the archive website URL for a database, or None if no archive site exists."""
+    return ARCHIVE_URLS.get(db_name)
 
 
 def build_citation_index(summaries: List[Dict]) -> Dict[int, Dict]:
@@ -1514,13 +1539,45 @@ def build_filename_index(db_name: str) -> Dict[str, Dict]:
     return index
 
 
-def linkify_filename_citations(text: str, filename_index: Dict[str, Dict]) -> str:
-    """Convert filename references in AI output to clickable archive links.
+def markdown_to_html(md_text: str, title: str = "Analysis") -> str:
+    """Convert markdown text to a styled HTML document with working links."""
+    body = markdown.markdown(md_text, extensions=['tables', 'fenced_code'])
+    return f"""<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title>{title}</title>
+<style>
+  body {{ font-family: Georgia, 'Times New Roman', serif; max-width: 900px;
+         margin: 2rem auto; padding: 0 1.5rem; color: #2c2418; line-height: 1.7; }}
+  h1, h2, h3 {{ font-weight: 600; }}
+  h1 {{ font-size: 1.8rem; border-bottom: 2px solid #d4c4b0; padding-bottom: 0.5rem; }}
+  h2 {{ font-size: 1.4rem; margin-top: 2rem; }}
+  h3 {{ font-size: 1.15rem; margin-top: 1.5rem; }}
+  a {{ color: #6b4c3b; }}
+  table {{ border-collapse: collapse; width: 100%; margin: 1rem 0; }}
+  th, td {{ border: 1px solid #d5cec4; padding: 0.4rem 0.8rem; text-align: left; }}
+  th {{ background: #f0ebe4; }}
+  blockquote {{ border-left: 3px solid #d4c4b0; margin-left: 0; padding-left: 1rem;
+                color: #5a4a3a; font-style: italic; }}
+  hr {{ border: none; border-top: 1px solid #d5cec4; margin: 2rem 0; }}
+  code {{ background: #f0ebe4; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.9em; }}
+</style>
+</head><body>
+{body}
+</body></html>"""
+
+
+def linkify_filename_citations(text: str, filename_index: Dict[str, Dict],
+                                archive_url: Optional[str] = None,
+                                devonthink_uuids: Optional[Dict[str, str]] = None) -> str:
+    """Convert filename references in AI output to clickable links.
 
     Matches patterns like (filename.pdf) or (filename.pdf, date) that the AI
     uses in Discovery, Deep Read, and Hybrid modes.
+    Links to archive_url if provided, or DEVONthink via x-devonthink-item:// if
+    devonthink_uuids provided. If neither, references are left as-is.
     """
-    if not filename_index:
+    if not filename_index or (not archive_url and not devonthink_uuids):
         return text
 
     # Sort by length (longest first) to avoid partial matches
@@ -1542,8 +1599,18 @@ def linkify_filename_citations(text: str, filename_index: Dict[str, Dict]) -> st
                     doc_id = doc['id']
                     if doc_id not in cited_ids:
                         cited_ids.append(doc_id)
-                    url = f"{ARCHIVE_BASE_URL}/documents/{doc_id}"
-                    return f"({star1}[{fn}]({url}){star2}{after})"
+                    # Determine link URL
+                    url = None
+                    if archive_url:
+                        url = f"{archive_url}/documents/{doc_id}"
+                    elif devonthink_uuids:
+                        # Try filename with .pdf, then without
+                        lookup = fn if fn.endswith('.pdf') else fn + '.pdf'
+                        uuid = devonthink_uuids.get(lookup) or devonthink_uuids.get(fn)
+                        if uuid:
+                            url = f"x-devonthink-item://{uuid}"
+                    if url:
+                        return f"({star1}[{fn}]({url}){star2}{after})"
                 return match.group(0)
             return replacer
 
@@ -1582,13 +1649,28 @@ def _expand_doc_references(ref_text: str) -> List[int]:
     return ids
 
 
-def linkify_citations(text: str, citation_index: Dict[int, Dict]) -> str:
+def linkify_citations(text: str, citation_index: Dict[int, Dict],
+                       archive_url: Optional[str] = None,
+                       devonthink_uuids: Optional[Dict[str, str]] = None) -> str:
     """Convert [Doc N] references in AI output to clickable links with tooltips.
 
     Handles single refs [Doc 42], comma lists [Doc 42, 55], ranges [Doc 213–225],
     and mixed [Doc 32–39, 42, 52–53]. Appends a Sources Cited appendix at the bottom.
+    Links to archive_url, or DEVONthink via x-devonthink-item://, or plain text.
     """
     cited_ids = []
+
+    def _doc_url(doc_id: int, file_name: str) -> Optional[str]:
+        """Get the appropriate URL for a document."""
+        if archive_url:
+            return f"{archive_url}/documents/{doc_id}"
+        if devonthink_uuids:
+            uuid = devonthink_uuids.get(file_name)
+            if not uuid and not file_name.endswith('.pdf'):
+                uuid = devonthink_uuids.get(file_name + '.pdf')
+            if uuid:
+                return f"x-devonthink-item://{uuid}"
+        return None
 
     def _make_link(doc_id: int) -> str:
         """Create a markdown link for a single document ID."""
@@ -1597,8 +1679,11 @@ def linkify_citations(text: str, citation_index: Dict[int, Dict]) -> str:
             if doc_id not in cited_ids:
                 cited_ids.append(doc_id)
             name = doc.get('display_title') or doc.get('file_name', '')
-            url = f"{ARCHIVE_BASE_URL}/documents/{doc_id}"
-            return f"[Doc {doc_id}, {name}]({url})"
+            file_name = doc.get('file_name', '')
+            url = _doc_url(doc_id, file_name)
+            if url:
+                return f"[Doc {doc_id}, {name}]({url})"
+            return f"**Doc {doc_id}**, {name}"
         return f"[Doc {doc_id}]"
 
     def replace_doc_group(match):
@@ -1636,11 +1721,15 @@ def linkify_citations(text: str, citation_index: Dict[int, Dict]) -> str:
             doc = citation_index.get(doc_id)
             if doc:
                 name = doc.get('display_title') or doc.get('file_name', '')
+                file_name = doc.get('file_name', '')
                 collection = doc.get('collection') or ''
-                doc_date = extract_doc_date(doc.get('file_name', ''))
+                doc_date = extract_doc_date(file_name)
                 date_str = f", {doc_date}" if doc_date else ""
-                url = f"{ARCHIVE_BASE_URL}/documents/{doc_id}"
-                linked += f"- **[Doc {doc_id}]({url})** — {name}"
+                url = _doc_url(doc_id, file_name)
+                if url:
+                    linked += f"- **[Doc {doc_id}]({url})** — {name}"
+                else:
+                    linked += f"- **Doc {doc_id}** — {name}"
                 if collection:
                     linked += f" (*{collection}*{date_str})"
                 linked += "\n"
@@ -1970,6 +2059,8 @@ with st.sidebar:
 
     stats = get_db_stats(selected_db)
     filename_index = build_filename_index(selected_db)
+    archive_url = get_archive_url(selected_db)
+    dt_uuids = load_devonthink_uuids(selected_db) if not archive_url else {}
 
     if stats.get('error'):
         st.error(f"Connection error: {stats['error']}")
@@ -2279,7 +2370,15 @@ if mode_key == "Discovery":
                 st.markdown('<h3 class="section-header">AI Analysis</h3>', unsafe_allow_html=True)
                 with st.spinner("Analyzing evidence..."):
                     analysis = analyze_discovery(question, evidence, stats, model=ai_model)
-                st.markdown(linkify_filename_citations(escape_dollars(analysis), filename_index))
+                linked_analysis = linkify_filename_citations(escape_dollars(analysis), filename_index, archive_url=archive_url, devonthink_uuids=dt_uuids)
+                st.markdown(linked_analysis)
+
+                st.download_button(
+                    "\u2b07 Save Analysis",
+                    data=markdown_to_html(linked_analysis, "Discovery Analysis"),
+                    file_name="discovery_analysis.html",
+                    mime="text/html",
+                )
 
                 st.markdown("---")
                 st.caption(
@@ -2377,7 +2476,15 @@ elif mode_key == "Deep Read":
                     st.markdown('<h3 class="section-header">AI Deep Reading</h3>', unsafe_allow_html=True)
                     with st.spinner("AI is reading the full document..."):
                         analysis = analyze_deep_read(question, doc, stats, model=ai_model)
-                    st.markdown(linkify_filename_citations(escape_dollars(analysis), filename_index))
+                    linked_analysis = linkify_filename_citations(escape_dollars(analysis), filename_index, archive_url=archive_url, devonthink_uuids=dt_uuids)
+                    st.markdown(linked_analysis)
+
+                    st.download_button(
+                        "\u2b07 Save Analysis",
+                        data=markdown_to_html(linked_analysis, f"Deep Read — {doc.get('file_name', 'analysis')}"),
+                        file_name=f"deep_read_{doc.get('file_name', 'analysis')}.html",
+                        mime="text/html",
+                    )
 
                     st.markdown("---")
                     st.caption(
@@ -2584,7 +2691,15 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
                             analysis = analyze_hybrid(
                                 discovery_question, evidence, deep_docs, stats, model=ai_model)
 
-                    st.markdown(linkify_filename_citations(escape_dollars(analysis), filename_index))
+                    linked_analysis = linkify_filename_citations(escape_dollars(analysis), filename_index, archive_url=archive_url, devonthink_uuids=dt_uuids)
+                    st.markdown(linked_analysis)
+
+                    st.download_button(
+                        "\u2b07 Save Analysis",
+                        data=markdown_to_html(linked_analysis, "Discovery + Deep Read Analysis"),
+                        file_name="hybrid_analysis.html",
+                        mime="text/html",
+                    )
 
                     st.markdown("---")
                     deep_doc_names = ", ".join(
@@ -2676,7 +2791,7 @@ elif mode_key == "Corpus Synthesis":
                 ]
 
                 citation_index = build_citation_index(summaries)
-                linked_analysis = linkify_citations(escape_dollars(analysis), citation_index)
+                linked_analysis = linkify_citations(escape_dollars(analysis), citation_index, archive_url=archive_url, devonthink_uuids=dt_uuids)
                 st.session_state.corpus_displays = [
                     {"label": question, "content": linked_analysis}
                 ]
@@ -2691,11 +2806,29 @@ elif mode_key == "Corpus Synthesis":
                     st.markdown(f"**Follow-up:** {entry['label']}")
                 st.markdown(entry["content"], unsafe_allow_html=False)
 
+            # Build full conversation text for download
+            full_text_parts = []
+            for entry in st.session_state.corpus_displays:
+                full_text_parts.append(f"## {entry['label']}\n\n{entry['content']}\n")
+            full_synthesis = "\n---\n\n".join(full_text_parts)
+
+            st.download_button(
+                "\u2b07 Save Synthesis",
+                data=markdown_to_html(full_synthesis, "Corpus Synthesis"),
+                file_name="corpus_synthesis.html",
+                mime="text/html",
+            )
+
             st.markdown("---")
+            link_note = (
+                "Document citations link to the archive. "
+                if archive_url else
+                "Document citations are not linked (no archive site for this collection). "
+            )
             st.caption(
                 f"\U0001f3db\ufe0f Corpus Synthesis: AI analyzed summaries of all "
                 f"{summarized} documents (~{est_tokens:,} tokens). "
-                f"Document citations link to the Crow Nation Digital Archive. "
+                f"{link_note}"
                 f"For deep reading of specific documents, use Deep Read or Hybrid mode."
             )
 
@@ -2727,7 +2860,8 @@ elif mode_key == "Corpus Synthesis":
                     )
 
                     linked_followup = linkify_citations(
-                        escape_dollars(followup_response), citation_index
+                        escape_dollars(followup_response), citation_index,
+                        archive_url=archive_url, devonthink_uuids=dt_uuids
                     )
                     st.session_state.corpus_displays.append(
                         {"label": followup, "content": linked_followup}
