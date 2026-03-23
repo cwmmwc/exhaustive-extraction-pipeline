@@ -412,7 +412,10 @@ def run_vllm(prompt: str, model: str, max_tokens: int = 16000,
             "temperature": 0.3,
         }).encode()
 
-        headers = {"Content-Type": "application/json"}
+        headers = {
+            "Content-Type": "application/json",
+            "User-Agent": "extraction-pipeline/1.0",
+        }
         if api_key:
             headers["Authorization"] = f"Bearer {api_key}"
 
