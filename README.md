@@ -31,7 +31,7 @@ Instead of using Retrieval-Augmented Generation (RAG) to search for "relevant" d
 | `enrich_summaries.py` | Generate per-document analytical summaries for corpus-wide synthesis (supports Batch API) |
 | `process_crow_batch.sh` | Batch staging helper script |
 | `dedup_entities_phase1.py` | Entity deduplication: case normalization + title stripping |
-| `compare_claude_vs_local_models.py` | Claude vs. open-source model comparison (Ollama + vLLM backends) |
+| `compare_claude_vs_local_models.py` | Claude vs. open-source model comparison (Ollama, vLLM, Together AI, Fireworks, Groq) |
 | `generate_display_titles.py` | AI-generated archival display titles for all documents |
 | `devonthink_uuids.json` | DEVONthink 4 UUID mapping for local document linking (Kiowa/KCA) |
 | `schema.sql` | PostgreSQL database schema (v3) |
@@ -85,7 +85,7 @@ Streamlit web interface with four modes:
 
 **Citation linking:** All modes convert document references in AI output to clickable links. For the Crow corpus, links go to the [Crow Nation Digital Archive](https://github.com/cwmmwc/crow-nation-digital-archive). For collections without an archive website (e.g., Historical Documents), links use DEVONthink's `x-devonthink-item://` URL scheme to open source documents directly in DEVONthink 4. The UUID mapping is stored in `devonthink_uuids.json` and loaded automatically per database. Corpus Synthesis links `[Doc N]` references (including ranges like `[Doc 213–225]`); Discovery, Deep Read, and Hybrid link filename citations. A Sources Cited appendix is appended to corpus synthesis output.
 
-**Save/download:** All analysis modes include a download button that saves the AI output as a Markdown file.
+**Save/download:** All analysis modes include a download button that saves the AI output as a styled HTML file with preserved document links (archive URLs or DEVONthink links).
 
 **Corpus Synthesis prompt:** Instructs the AI to surface cross-document patterns, ground every claim in specific evidence (names, allotment numbers, acreages, dollar amounts, bill numbers, dates), show connections across time and place, quantify where possible, and conclude with three sections: What the Documents Prove, What the Documents Suggest, and Gaps in the Record.
 
@@ -342,6 +342,46 @@ If `corpus_context.json` needs refreshing (e.g., after adding documents):
 ```bash
 python3 compare_claude_vs_local_models.py --dump-context
 ```
+
+### Testing via Hosted API (no local hardware needed)
+
+The comparison script supports hosted API providers that serve open-source models. This lets you evaluate Llama 4, Qwen, and Gemma without any local GPU or HPC access.
+
+**Supported providers:**
+
+| Provider | Env var | Notable models |
+|----------|---------|----------------|
+| Together AI | `TOGETHER_API_KEY` | Llama 4 Maverick, Llama 4 Scout, Qwen 2.5 72B |
+| Fireworks AI | `FIREWORKS_API_KEY` | Llama 3.3 70B, Qwen 2.5 72B |
+| Groq | `GROQ_API_KEY` | Llama 3.3 70B |
+
+```bash
+# List available models for a provider
+python3 compare_claude_vs_local_models.py --provider together --list-models
+
+# Run Llama 4 Maverick vs Claude Opus (synthesis)
+export TOGETHER_API_KEY=your_key
+python3 compare_claude_vs_local_models.py --provider together \
+    --local-models llama4-maverick
+
+# Run Llama 4 Scout vs Claude Sonnet (extraction)
+python3 compare_claude_vs_local_models.py --provider together \
+    --local-models llama4-scout --mode extraction
+
+# Compare multiple models at once
+python3 compare_claude_vs_local_models.py --provider together \
+    --local-models llama4-maverick llama4-scout qwen2.5-72b
+
+# Skip Claude, just test the open-source model
+python3 compare_claude_vs_local_models.py --provider together \
+    --local-models llama4-maverick --local-only
+
+# Use a different database
+python3 compare_claude_vs_local_models.py --provider together \
+    --local-models llama4-maverick --context-file corpus_context.json
+```
+
+Use short model names (e.g., `llama4-maverick`) — the script maps them to the provider's full model IDs automatically. You can also pass the full model ID directly.
 
 ### Running locally with Ollama
 

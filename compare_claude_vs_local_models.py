@@ -6,16 +6,27 @@ Two modes:
   1. SYNTHESIS — Compare corpus-wide analysis quality (default)
   2. EXTRACTION — Compare structured entity extraction from document chunks
 
-Two backends for local models:
-  - ollama: Ollama API at localhost:11434 (default, for local machines)
-  - vllm:   vLLM OpenAI-compatible API (for HPC clusters like UVA Rivanna)
+Backends for open-source models:
+  - ollama:    Ollama API at localhost:11434 (default, for local machines)
+  - vllm:      vLLM OpenAI-compatible API (for HPC clusters like UVA Rivanna)
+  - together:  Together AI hosted API (https://api.together.xyz)
+  - fireworks: Fireworks AI hosted API (https://api.fireworks.ai)
+  - groq:      Groq hosted API (https://api.groq.com)
 
 Requirements:
   - Anthropic API key (ANTHROPIC_API_KEY env var) unless --local-only
-  - Local model server (Ollama or vLLM) running
+  - For local: Ollama or vLLM server running
+  - For hosted: provider API key (env var or --api-key flag)
   - PostgreSQL or a pre-dumped context file (--context-file)
 
 Usage:
+    # ─── Hosted API (no local hardware needed) ───
+    export TOGETHER_API_KEY=your_key
+    python3 compare_claude_vs_local_models.py --provider together \
+        --local-models llama4-maverick llama4-scout
+    python3 compare_claude_vs_local_models.py --provider together \
+        --local-models llama4-maverick --mode extraction
+
     # ─── Local machine with Ollama ───
     python3 compare_claude_vs_local_models.py --local-models llama3.3:70b qwen2.5:72b gemma3:27b
     python3 compare_claude_vs_local_models.py --mode extraction --local-models gemma3:27b
@@ -31,6 +42,7 @@ Usage:
 
     # ─── Other options ───
     python3 compare_claude_vs_local_models.py --list-models
+    python3 compare_claude_vs_local_models.py --provider together --list-models
     python3 compare_claude_vs_local_models.py --question "Tell me about fee patents"
     python3 compare_claude_vs_local_models.py --claude-only
     python3 compare_claude_vs_local_models.py --local-only --local-models qwen2.5:72b
@@ -350,9 +362,44 @@ def run_ollama(prompt: str, model: str = "llama3.3:70b",
         return {"error": str(e), "text": "", "time": time.time() - start}
 
 
+# ─────────────────────────────────────────────────
+# Hosted API providers (OpenAI-compatible endpoints)
+# ─────────────────────────────────────────────────
+
+HOSTED_PROVIDERS = {
+    "together": {
+        "url": "https://api.together.xyz",
+        "env_key": "TOGETHER_API_KEY",
+        "models": {
+            "llama4-maverick": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+            "llama4-scout": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+            "llama3.3-70b": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+            "qwen2.5-72b": "Qwen/Qwen2.5-72B-Instruct-Turbo",
+            "gemma3-27b": "google/gemma-2-27b-it",
+        },
+    },
+    "fireworks": {
+        "url": "https://api.fireworks.ai/inference",
+        "env_key": "FIREWORKS_API_KEY",
+        "models": {
+            "llama3.3-70b": "accounts/fireworks/models/llama-v3p3-70b-instruct",
+            "qwen2.5-72b": "accounts/fireworks/models/qwen2p5-72b-instruct",
+        },
+    },
+    "groq": {
+        "url": "https://api.groq.com/openai",
+        "env_key": "GROQ_API_KEY",
+        "models": {
+            "llama3.3-70b": "llama-3.3-70b-versatile",
+        },
+    },
+}
+
+
 def run_vllm(prompt: str, model: str, max_tokens: int = 16000,
-             base_url: str = "http://localhost:8000") -> Dict:
-    """Run a prompt through vLLM's OpenAI-compatible API."""
+             base_url: str = "http://localhost:8000",
+             api_key: Optional[str] = None) -> Dict:
+    """Run a prompt through an OpenAI-compatible API (vLLM, Together, Fireworks, Groq)."""
     import urllib.request
     import urllib.error
 
@@ -365,10 +412,14 @@ def run_vllm(prompt: str, model: str, max_tokens: int = 16000,
             "temperature": 0.3,
         }).encode()
 
+        headers = {"Content-Type": "application/json"}
+        if api_key:
+            headers["Authorization"] = f"Bearer {api_key}"
+
         req = urllib.request.Request(
             f"{base_url}/v1/chat/completions",
             data=data,
-            headers={"Content-Type": "application/json"},
+            headers=headers,
         )
 
         with urllib.request.urlopen(req, timeout=3600) as resp:
@@ -386,8 +437,7 @@ def run_vllm(prompt: str, model: str, max_tokens: int = 16000,
         }
     except urllib.error.URLError as e:
         return {
-            "error": f"Cannot connect to vLLM at {base_url}. "
-                     f"Is the server running? ({e})",
+            "error": f"Cannot connect to API at {base_url}. ({e})",
             "text": "", "time": time.time() - start
         }
     except Exception as e:
@@ -473,10 +523,12 @@ def analyze_extraction_output(result: Dict) -> Dict:
 # ─────────────────────────────────────────────────
 
 def run_local_model(prompt: str, model: str, backend: str = "ollama",
-                    max_tokens: int = 16000, vllm_url: str = "http://localhost:8000") -> Dict:
+                    max_tokens: int = 16000, vllm_url: str = "http://localhost:8000",
+                    api_key: Optional[str] = None) -> Dict:
     """Dispatch to the appropriate local model backend."""
-    if backend == "vllm":
-        return run_vllm(prompt, model=model, max_tokens=max_tokens, base_url=vllm_url)
+    if backend in ("vllm", "together", "fireworks", "groq"):
+        return run_vllm(prompt, model=model, max_tokens=max_tokens,
+                        base_url=vllm_url, api_key=api_key)
     else:
         return run_ollama(prompt, model=model, max_tokens=max_tokens)
 
@@ -491,6 +543,7 @@ def run_synthesis_comparison(
     run_local_flag: bool = True,
     backend: str = "ollama",
     vllm_url: str = "http://localhost:8000",
+    api_key: Optional[str] = None,
 ) -> Path:
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     model_label = "_".join(m.replace(":", "-").replace("/", "-") for m in local_models)
@@ -528,7 +581,7 @@ def run_synthesis_comparison(
             else:
                 print(f"  (This may take a while with ~{int(prompt_tokens):,} tokens of context)")
                 output = run_local_model(prompt, model=model, backend=backend,
-                                         vllm_url=vllm_url)
+                                         vllm_url=vllm_url, api_key=api_key)
 
             if output.get("error"):
                 print(f"  ERROR: {output['error']}")
@@ -652,6 +705,7 @@ def run_extraction_comparison(
     run_local_flag: bool = True,
     backend: str = "ollama",
     vllm_url: str = "http://localhost:8000",
+    api_key: Optional[str] = None,
     preloaded_samples: Optional[List[Dict]] = None,
 ) -> Path:
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -694,7 +748,8 @@ def run_extraction_comparison(
                 output = run_claude(prompt, model=model, max_tokens=8000)
             else:
                 output = run_local_model(prompt, model=model, backend=backend,
-                                         max_tokens=8000, vllm_url=vllm_url)
+                                         max_tokens=8000, vllm_url=vllm_url,
+                                         api_key=api_key)
 
             if output.get("error"):
                 print(f"  ERROR: {output['error']}")
@@ -841,9 +896,17 @@ def main():
     parser.add_argument("--list-models", action="store_true",
                         help="List available Ollama models and exit")
     parser.add_argument("--backend", choices=["ollama", "vllm"], default="ollama",
-                        help="Local model backend (default: ollama)")
+                        help="Local model backend (default: ollama). "
+                             "Ignored when --provider is set.")
     parser.add_argument("--vllm-url", default="http://localhost:8000",
                         help="vLLM server URL (default: http://localhost:8000)")
+    parser.add_argument("--provider", choices=["ollama", "vllm", "together", "fireworks", "groq"],
+                        default=None,
+                        help="Model provider. Sets backend and URL automatically. "
+                             "For hosted providers (together, fireworks, groq), "
+                             "use short model names like llama4-maverick.")
+    parser.add_argument("--api-key", default=None,
+                        help="API key for hosted providers (overrides env var)")
     parser.add_argument("--context-file", type=str, default=None,
                         help="Load corpus context from JSON file (no DB needed)")
     parser.add_argument("--dump-context", action="store_true",
@@ -854,8 +917,43 @@ def main():
         dump_context()
         return
 
+    # ─── Resolve hosted provider settings ───
+    api_key = args.api_key
+    if args.provider and args.provider in HOSTED_PROVIDERS:
+        provider_cfg = HOSTED_PROVIDERS[args.provider]
+        args.backend = args.provider  # e.g. "together" — run_local_model routes to run_vllm
+        args.vllm_url = provider_cfg["url"]
+        if not api_key:
+            api_key = os.environ.get(provider_cfg["env_key"])
+        # Resolve short model names → full model IDs
+        resolved_models = []
+        for m in args.local_models:
+            if m in provider_cfg["models"]:
+                resolved_models.append(provider_cfg["models"][m])
+            else:
+                resolved_models.append(m)  # assume full model ID was given
+        args.local_models = resolved_models
+        # API key required for actual runs (not --list-models)
+        if not api_key and not args.list_models:
+            print(f"ERROR: No API key for {args.provider}. "
+                  f"Set {provider_cfg['env_key']} or use --api-key.")
+            sys.exit(1)
+        if not args.list_models:
+            print(f"Using {args.provider} API ({args.vllm_url})")
+            print(f"  Models: {', '.join(args.local_models)}")
+    elif args.provider == "vllm":
+        args.backend = "vllm"
+    elif args.provider == "ollama":
+        args.backend = "ollama"
+
     if args.list_models:
-        if args.backend == "vllm":
+        if args.provider and args.provider in HOSTED_PROVIDERS:
+            provider_cfg = HOSTED_PROVIDERS[args.provider]
+            print(f"Available models on {args.provider}:")
+            for short, full in provider_cfg["models"].items():
+                print(f"  {short:20s} → {full}")
+            print(f"\nUsage: --provider {args.provider} --local-models {list(provider_cfg['models'].keys())[0]}")
+        elif args.backend == "vllm":
             print(f"vLLM backend — check {args.vllm_url}/v1/models for loaded models")
         else:
             models = list_ollama_models()
@@ -869,6 +967,10 @@ def main():
                 print("  ollama pull llama3.3:70b    # ~40GB, needs 48GB+ RAM")
                 print("  ollama pull qwen2.5:72b     # ~40GB, needs 48GB+ RAM")
                 print("  ollama pull gemma3:27b      # ~16GB, needs 24GB+ RAM")
+            print("\nHosted providers (no local hardware needed):")
+            for pname, pcfg in HOSTED_PROVIDERS.items():
+                models_str = ", ".join(pcfg["models"].keys())
+                print(f"  --provider {pname:10s} models: {models_str}")
         return
 
     # Set default Claude model based on mode
@@ -932,6 +1034,7 @@ def main():
             run_local_flag=run_local_flag,
             backend=args.backend,
             vllm_url=args.vllm_url,
+            api_key=api_key,
         )
 
     elif args.mode == "extraction":
@@ -944,6 +1047,7 @@ def main():
             run_local_flag=run_local_flag,
             backend=args.backend,
             vllm_url=args.vllm_url,
+            api_key=api_key,
             preloaded_samples=preloaded,
         )
 
