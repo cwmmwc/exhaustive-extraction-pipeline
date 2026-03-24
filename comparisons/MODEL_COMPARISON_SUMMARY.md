@@ -35,12 +35,16 @@ Three documents were used across all extraction tests (pinned via `--doc-ids 798
 
 ### Aggregate Extraction Results
 
-| Model | JSON Valid | Total Items | Entities | Events | Financial | Relationships | Fee Patents | Correspondence | Legislative |
-|-------|-----------|-------------|----------|--------|-----------|--------------|-------------|----------------|------------|
-| **Claude Sonnet** | 3/3 | **327** | 132 | 66 | 16 | 60 | 5 | 35 | 13 |
-| **Llama 3.3 70B** | 3/3 | **171** | 93 | 28 | 10 | 19 | 3 | 10 | 8 |
-| **Llama 4 Maverick** | 2/3 | **80** | 38 | 11 | 6 | 9 | 2 | 8 | 6 |
-| **Llama 4 Scout** | 0/3 | **0** | — | — | — | — | — | — | — |
+| Model | JSON Valid | Total Items | % of Claude | Entities | Events | Financial | Relationships | Fee Patents | Correspondence | Legislative |
+|-------|-----------|-------------|-------------|----------|--------|-----------|--------------|-------------|----------------|------------|
+| **Claude Sonnet** | 3/3 | **321** | 100% | 134 | 62 | 15 | 55 | 5 | 35 | 15 |
+| **Llama 3.3 70B (untuned)** | 3/3 | **148** | 46% | 88 | 16 | 8 | 15 | 5 | 9 | 7 |
+| **Llama 3.3 70B (few-shot)** | 3/3 | **148** | 46% | — | — | — | — | — | — | — |
+| **Llama 3.3 70B (fine-tuned)** | 3/3 | **122** | **38%** | 69 | 18 | 7 | 10 | 4 | 8 | 6 |
+| **Llama 4 Maverick** | 2/3 | **80** | 25% | 38 | 11 | 6 | 9 | 2 | 8 | 6 |
+| **Llama 4 Scout** | 0/3 | **0** | 0% | — | — | — | — | — | — | — |
+
+**Note:** Claude Sonnet totals vary slightly between runs due to non-deterministic output. The fine-tuned model row represents `cwm6w_eacd/Llama-3.3-70B-Instruct-Reference-extraction-v1-a3211159`, trained on 109 examples from both Crow and Kiowa corpora.
 
 ### Per-Document Breakdown
 
@@ -90,6 +94,33 @@ Side-by-side comparison on the same document reveals qualitative differences bey
 
 **Llama 3.3 70B** was the strongest open-source performer on Doc 798, extracting 64 items vs Claude's 74 — the closest any model came. Entity counts were nearly equal (35 vs 38). The gap was widest in relationships (6 vs 12) and events (11 vs 12).
 
+### Deep-Dive: 1921 Board of Indian Commissioners Report (CCF 56074-21-312 GS)
+
+A 221-page document containing Board of Indian Commissioners correspondence and field agent reports on the condition of patent-in-fee Indians across Pawnee, Ponca, Otoe, Kaw, and Tonkawa reservations. This is a document the PI knows well and which Claude's full extraction (all 13 chunks) produced 1,369 items that powered significant analytical findings, including the discovery of what we term the "Nez Perce paradox." Testing on the first 40K-character chunk only:
+
+| Category | Claude Sonnet | Llama 3.3 70B | Llama % of Claude |
+|----------|-------------|---------------|-------------------|
+| Entities | 173 | 142 | 82% |
+| Events | 18 | 17 | 94% |
+| Financial transactions | 10 | 10 | 100% |
+| Relationships | 34 | 20 | 59% |
+| Fee patents | **83** | **8** | **10%** |
+| Correspondence | 7 | 10 | 143% |
+| Legislative actions | 1 | 6 | 600% |
+| **Total** | **326** | **213** | **65%** |
+
+This is Llama's **best overall result** (65% of Claude), and the category-level breakdown reveals where the gap actually lives:
+
+**Near parity (80%+):** Entities, events, financial transactions. Llama correctly identified the Board of Indian Commissioners members, agency superintendents, field farmers, and key events. Both models found the same financial transactions.
+
+**Llama found more:** Correspondence (10 vs 7) and legislative actions (6 vs 1). Llama correctly identified individual letters from each field agent (DeVare, Crim, Thompson, Long, Mitchell, Furry, Collins, Clendening) as separate correspondence records, while Claude grouped some of these.
+
+**The devastating gap — fee patents (8 vs 83):** This document contains dozens of individual allottee case histories — named people, their allotment status, what happened after they received fee patents (lost land, retained land, circumstances). Claude extracted 83 of these as structured fee_patent records with allottee names, acreage details, and outcomes. Llama found only 8, and those 8 had "Unknown" for allotment numbers, acreage, and mechanism. This is the core data that makes the document historically valuable.
+
+**Quality difference in context fields:** Claude included geographic specifics ("Philadelphia, PA," "Mohonk Lake, N.Y.," "Princeton, N.J.") from the letterhead. Llama captured the same people but with generic context ("Member of Board of Indian Commissioners"). Claude's richer context enables better entity resolution across documents.
+
+**Bottom line:** Llama 3.3 70B is competent at identifying *who is in the document* and *what correspondence occurred*. It fails at extracting the repetitive structured records — individual allottee case histories, fee patent details, specific acreages and outcomes — that constitute the historical evidence. For this corpus, that structured data is the entire point.
+
 ---
 
 ## 2. Synthesis Comparison
@@ -130,13 +161,52 @@ The synthesis gap is wider than extraction. Maverick can recognize what a docume
 
 ---
 
-## 3. Conclusions
+## 3. Fine-Tuning Experiment
+
+We fine-tuned Llama 3.3 70B on 109 training examples (Claude's extraction output as ground truth) using Together AI's LoRA fine-tuning API.
+
+### Training Details
+
+| Parameter | Value |
+|-----------|-------|
+| Base model | meta-llama/Llama-3.3-70B-Instruct-Reference |
+| Training method | LoRA (rank 64, alpha 128) |
+| Training examples | 109 (24 Crow + 85 Kiowa) |
+| Epochs | 3 |
+| Training time | 55 minutes |
+| Training cost | $12.89 |
+| Truncated examples | 10 (9.17%) at 24,576 token limit |
+
+### Result: Negative
+
+The fine-tuned model extracted **fewer** items than the untuned base model on all three test documents except doc 798:
+
+| Document | Claude | Untuned | Fine-tuned | Fine-tuned % of Claude |
+|----------|--------|---------|------------|----------------------|
+| 695 | 106 | 59 | 38 | 36% |
+| 798 | 78 | 30 | 43 | 55% |
+| 811 | 137 | 59 | 41 | 30% |
+| **Total** | **321** | **148** | **122** | **38%** |
+
+### Why It Didn't Work
+
+1. **Training data imbalance:** 59% of training examples had empty v3 fields (correspondence, fee_patents, legislative_actions), teaching the model that sparse output is correct.
+2. **Truncation:** 10% of the richest examples were cut at Together AI's 24K token sequence limit.
+3. **Fundamental capability gap:** Claude's extraction advantage comes from deep comprehension of long, OCR-degraded documents — not from knowing a specific output format. A LoRA adapter cannot bridge that gap with 109 examples.
+
+### Infrastructure Finding
+
+Fine-tuned models on Together AI require **dedicated endpoints** at $0.532/min ($31.92/hr). There is no serverless inference for custom fine-tunes. This eliminates the cost advantage over Claude, which was the primary motivation for fine-tuning.
+
+---
+
+## 4. Conclusions
 
 ### Model Ranking for This Pipeline
 
-1. **Claude (Opus for synthesis, Sonnet for extraction)** — dramatically superior on both tasks. 100% JSON reliability, 2–3× more items extracted, qualitatively richer output with specific names, dates, amounts, and archival references.
+1. **Claude (Opus for synthesis, Sonnet for extraction)** — dramatically superior on both tasks. 100% JSON reliability, 2–3× more items extracted, qualitatively richer output with specific names, dates, amounts, and archival references. Fine-tuning open-source alternatives did not close the gap.
 
-2. **Llama 3.3 70B** — the best open-source option. 100% JSON reliability, roughly 50% of Claude's extraction depth. Competitive on entity identification but weak on relationships, correspondence chains, and events. Could potentially serve as a first-pass extractor if cost were a concern. **This is the model most likely to be useful running locally on a 128GB MacBook.**
+2. **Llama 3.3 70B (untuned)** — the best open-source option at 46% of Claude's volume. 100% JSON reliability. Competitive on entity identification but weak on relationships, correspondence chains, and events. Fine-tuning this model made it worse, not better.
 
 3. **Llama 4 Maverick** — disappointing given its size. 67% JSON reliability, ~25% of Claude's extraction depth. Slower than 3.3 70B despite MoE efficiency. Hallucination issues (fabricated names, invented events). Not recommended.
 
@@ -144,13 +214,21 @@ The synthesis gap is wider than extraction. Maverick can recognize what a docume
 
 ### Should You Run Models Locally?
 
-**For extraction:** Llama 3.3 70B on a 128GB MacBook via Ollama would give you ~50% of Claude Sonnet's extraction depth at zero marginal API cost. Whether that tradeoff is worth it depends on volume: if you're processing hundreds of documents, running locally saves money but loses significant detail. A hybrid approach — local 3.3 70B for first-pass extraction, Claude Sonnet for high-value documents — could be practical.
+**For extraction:** Not recommended. The best open-source result (Llama 3.3 70B untuned, 46% of Claude) loses more than half the structured data. Fine-tuning did not improve this — it made it worse. The cost of Claude ($0.50–1.00/doc) is justified by the 2–3× data quality improvement.
 
-**For synthesis:** No open-source model tested came close to Claude Opus. The synthesis task requires holding 147K tokens of context and cross-referencing specific details across dozens of documents. This is where Claude's advantage is most pronounced and where local models are not a viable substitute.
+**For synthesis:** No. No open-source model tested came close to Claude Opus. The synthesis task requires holding 147K tokens of context and cross-referencing specific details across dozens of documents. This is where Claude's advantage is most pronounced and where local models are not a viable substitute.
 
-### Cost Context
+### Cost Summary
 
-All open-source model testing via Together AI cost approximately $0.15 total. Claude API costs for equivalent work are significantly higher but produce significantly better results.
+| Experiment | Cost |
+|-----------|------|
+| Open-source inference testing (Llama 3.3, Maverick, Scout) | ~$0.25 |
+| Fine-tuning job (LoRA, 3 epochs, 109 examples) | $12.89 |
+| Together AI credits for dedicated endpoint tier | $50.00 |
+| Dedicated endpoint runtime (~15 min) | ~$8.00 |
+| **Total open-source experimentation** | **~$71** |
+
+Claude API costs for equivalent extraction are significantly higher per document ($0.50–1.00) but produce 2–3× more structured data. For a full corpus of 5,000 documents, Claude extraction would cost $2,500–5,000 — but with dramatically better results than any open-source alternative tested.
 
 ---
 
@@ -163,6 +241,10 @@ All open-source model testing via Together AI cost approximately $0.15 total. Cl
 | Extraction: Maverick (fixed docs) | `comparisons/extraction_20260323_142938_meta-llama-Llama-4-Maverick-17B-128E-Instruct-FP8/` |
 | Extraction: Scout (fixed docs) | `comparisons/extraction_20260323_143734_meta-llama-Llama-4-Scout-17B-16E-Instruct/` |
 | Extraction: Llama 3.3 70B (fixed docs) | `comparisons/extraction_20260323_144208_meta-llama-Llama-3.3-70B-Instruct-Turbo/` |
+| Extraction: Llama 3.3 70B few-shot | `comparisons/extraction_20260323_155714_meta-llama-Llama-3.3-70B-Instruct-Turbo_tuned/` |
+| Extraction: Maverick few-shot | `comparisons/extraction_20260323_161751_meta-llama-Llama-4-Maverick-17B-128E-Instruct-FP8_tuned/` |
+| Extraction: Llama 3.3 70B **fine-tuned** | `comparisons/extraction_20260323_182629_cwm6w_eacd-Llama-3.3-70B-Instruct-Reference-extraction-v1-a3211159-eb529166/` |
+| Extraction: CCF 56074 deep-dive (Claude vs Llama 3.3) | `comparisons/single_20260324_091852_1921 CCF 56074-21-312 GS/` (Claude) + `comparisons/single_20260324_093343_1921 CCF 56074-21-312 GS/` (Llama) |
 
 ### Reproducibility
 
@@ -177,4 +259,4 @@ python3 compare_claude_vs_local_models.py --provider together --local-models lla
 
 ---
 
-*Comparison conducted 2026-03-23. Model performance may change with future releases, fine-tuning, or prompt optimization.*
+*Comparison and fine-tuning experiment conducted 2026-03-23. Model performance may change with future releases or prompt optimization. Fine-tuning was tested and did not improve results — see Section 3.*

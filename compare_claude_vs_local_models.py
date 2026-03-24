@@ -612,6 +612,16 @@ def run_vllm(prompt: str, model: str, max_tokens: int = 16000,
             "input_tokens": usage.get("prompt_tokens", 0),
             "output_tokens": usage.get("completion_tokens", 0),
         }
+    except urllib.error.HTTPError as e:
+        body = ""
+        try:
+            body = e.read().decode()
+        except Exception:
+            pass
+        return {
+            "error": f"HTTP {e.code} from {base_url}: {body or e}",
+            "text": "", "time": time.time() - start
+        }
     except urllib.error.URLError as e:
         return {
             "error": f"Cannot connect to API at {base_url}. ({e})",

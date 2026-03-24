@@ -1,19 +1,71 @@
 # Fine-Tuning Llama 3.3 70B for Historical Document Extraction
 
-## Goal
+## What is fine-tuning?
 
-Train a LoRA adapter on Llama 3.3 70B using Claude's extraction output as training data, targeting 80% of Claude Sonnet's extraction quality at zero marginal API cost.
+Fine-tuning means taking an existing open-source language model and training it further on a specific task, using examples of correct output as the answer key. In our case, we take Llama 3.3 70B (a general-purpose model) and train it on 109 examples of (historical document text, structured extraction JSON) pairs, where Claude's existing extractions serve as the ground truth. The goal is to teach the model what thorough structured extraction looks like — how to populate correspondence fields, identify fee patent details, and capture relationships — so it can produce similar output at a fraction of the API cost.
 
-## Current State (March 2026 benchmarks)
+**What fine-tuning IS:** Teaching the model extraction *format* — the pattern of exhaustive, well-structured JSON output with all fields populated.
 
-| Model | Total Items (3 docs) | % of Claude | JSON Valid | Per-record quality |
-|-------|---------------------|-------------|------------|-------------------|
-| Claude Sonnet | ~310 | 100% | 3/3 | Excellent |
-| Llama 3.3 70B (untuned) | 171 | 55% | 3/3 | Weak on correspondence fields |
-| Llama 3.3 70B (few-shot) | 148 | 48% | 3/3 | Good field quality, low volume |
-| Llama 4 Maverick (few-shot) | 101 | 32% | 3/3 | Moderate |
+**What fine-tuning is NOT:** Teaching the model about Crow history or giving it analytical capability. The synthesis benchmarks showed that open-source models fail at corpus-wide analysis not because they lack domain knowledge, but because they can't do the analytical work of assembling evidence into arguments. That's a fundamental capability gap that fine-tuning won't address. This experiment is strictly about the structured extraction task.
 
-Few-shot prompting improved per-record quality (correspondence fields now populated, relationships captured) but did not close the volume gap. The biggest deficits are in **correspondence chains** (4 vs 20 on Doc 811) and **events** (5 vs 33). Fine-tuning should teach the model to be both thorough AND precise.
+## Status: Experiment Complete — Negative Result
+
+The fine-tuned model **did not meet the 75% threshold**. It extracted 38% of Claude's volume — worse than the untuned base model (48%). This is a clear negative result, but a valuable one: it demonstrates that naive fine-tuning on extraction examples does not teach a smaller model to be more thorough. The result is consistent with the hypothesis that Claude's extraction advantage comes from deeper comprehension of document structure, not from knowing a specific output format.
+
+**Success criterion:** 75%+ of Claude on test documents 798, 811, 695. **Actual result:** 38%.
+
+## Results (March 23, 2026)
+
+| Model | Doc 695 | Doc 798 | Doc 811 | Total | % of Claude | JSON Valid |
+|-------|---------|---------|---------|-------|-------------|------------|
+| Claude Sonnet | 106 | 78 | 137 | **321** | 100% | 3/3 |
+| Llama 3.3 70B (untuned) | 59 | 30 | 59 | **148** | 46% | 3/3 |
+| Llama 3.3 70B (few-shot) | — | — | — | **148** | 46% | 3/3 |
+| **Llama 3.3 70B (fine-tuned)** | **38** | **43** | **41** | **122** | **38%** | **3/3** |
+| Llama 4 Maverick (few-shot) | 27 | 31 | 43 | **101** | 31% | 3/3 |
+
+### Key findings
+
+1. **Fine-tuning reduced extraction volume by 18%** compared to the untuned base model (122 vs 148 items). The only document where it improved was doc 798 (43 vs 30), but docs 695 and 811 both dropped significantly (38 vs 59, 41 vs 59).
+
+2. **Correspondence and events remained the biggest gaps.** On doc 811, the fine-tuned model found 3 correspondence records vs Claude's 22 and 7 events vs Claude's 34. Fine-tuning did not teach the model to find more items — it may have taught it to find fewer.
+
+3. **Training data imbalance was likely a factor.** 59% of training examples had empty v3 fields (correspondence, fee_patents, legislative_actions), teaching the model that "correct output = sparse v3 fields." Additionally, 10 of the richest training examples (9.17%) were truncated at Together AI's 24,576-token sequence limit.
+
+4. **Inference cost is prohibitive.** Fine-tuned models on Together AI require dedicated endpoints ($0.532/min = $31.92/hr). This eliminates the cost advantage over Claude, which was the primary motivation for fine-tuning.
+
+5. **The positive:** Valid JSON 3/3, fast inference (18–22s vs 53–140s for Claude), no hallucinations observed. The model works; it just doesn't extract enough.
+
+### What we spent
+
+| Item | Cost |
+|------|------|
+| Together AI inference testing (all benchmarks) | ~$0.25 |
+| Fine-tuning job (3 epochs, 109 examples, LoRA rank 64) | $12.89 |
+| Together AI credits for dedicated endpoint tier | $50.00 |
+| Dedicated endpoint runtime (~15 min at $0.532/min) | ~$8.00 |
+| **Total** | **~$71** |
+
+### Why it didn't work
+
+The fine-tuning experiment tested whether teaching a model the *format* of thorough extraction would make it *perform* thorough extraction. The answer is no. The gap between Claude and Llama 3.3 is not about output format — it's about the model's ability to comprehend long, OCR-degraded historical documents and identify every entity, event, relationship, and correspondence record within them. That's a capability difference rooted in model scale and training, not something a LoRA adapter can bridge with 109 examples.
+
+This is consistent with what Claude Chat predicted: "The model gets better at populating fields it finds, but still doesn't find the same number of things Claude finds."
+
+### Possible next steps (not recommended unless pursuing as research)
+
+If someone wanted to continue this line of investigation:
+
+1. **Crow-only training set (24 examples, 91% v3-rich)** — removes the imbalance problem. Cost: ~$5 to fine-tune.
+2. **Increase sequence length** — the 24K token limit truncated 10% of examples. A platform with longer context training might help.
+3. **Larger training set** — 109 examples is small. Literature suggests 500+ for task-specific fine-tuning, but we're limited by the number of documents with non-oversized completions.
+4. **Different base model** — Llama 3.3 70B may simply be too small. A 405B model fine-tune would be more expensive but might have more headroom.
+
+None of these are recommended given the dedicated endpoint cost problem, which makes the fine-tuned model more expensive to run than Claude for any practical workload.
+
+## Original Goal
+
+Train a LoRA adapter on Llama 3.3 70B using Claude's extraction output as training data, targeting 75–80% of Claude Sonnet's extraction quality at low marginal cost.
 
 ## Training Data
 
@@ -201,6 +253,25 @@ def split_data(pairs, val_ratio=0.1):
 - **Cap document text at 40,000 chars** — matches our extraction chunk size
 - **Verify JSON validity** of all training completions before upload
 - **Review 10–20 random examples manually** to ensure Claude's extractions are accurate (they become ground truth)
+
+### Known Issue: Training Data Imbalance
+
+The combined training set (109 examples) has a significant imbalance in v3 types (correspondence, fee_patents, legislative_actions):
+
+| Subset | Examples | v3-rich | v3-empty | Correspondence | Fee Patents | Legislative Actions |
+|--------|----------|---------|----------|----------------|-------------|-------------------|
+| Crow train | 24 | 22 (91%) | 2 (8%) | 123 | 29 | 41 |
+| Kiowa train | 85 | 22 (25%) | 63 (74%) | 200 | 37 | 22 |
+| **Combined** | **109** | **44 (40%)** | **65 (59%)** | **323** | **66** | **63** |
+
+59% of training examples have empty v3 fields. The model sees "correct output = empty correspondence/fee_patents/legislative_actions" more often than populated ones. This works against the primary goal — teaching the model to find and populate v3 types. The Kiowa documents are mostly affidavits and short records that genuinely don't contain correspondence chains or legislative actions, while the test documents (798, 811, 695) are all Crow bureaucratic records rich in v3 types.
+
+**Run 1 (submitted):** Combined 109 examples as-is — establishes baseline.
+
+**If results underwhelm, try in order:**
+1. **Crow-only (24 examples)** — 91% v3-rich, structurally matches test documents
+2. **v3-filtered combined (44 examples)** — only examples with at least one v3 type populated
+3. **Crow 3x-duplicated + v3-filtered Kiowa** — rebalances toward rich examples while keeping Kiowa diversity
 
 ## Fine-Tuning Options
 

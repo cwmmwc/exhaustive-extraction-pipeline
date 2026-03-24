@@ -423,15 +423,27 @@ Llama 3.3 70B shows genuine promise — it found 64 of Claude's 74 items on Doc 
 
 **4. Quantized vs. full-precision.** The Together AI benchmark used Instruct-Turbo (likely INT8 quantized). Running the full FP16 model locally via Ollama on a 128GB MacBook (~40GB at Q4, ~70GB at Q8) may improve extraction quality, particularly for OCR-degraded text where quantization noise compounds recognition errors.
 
-**5. Fine-tuning on extraction output.** Claude's extraction output for 386 documents already exists in the database. This is a ready-made fine-tuning dataset: (document_text, structured_json) pairs. Fine-tuning Llama 3.3 70B on even 50–100 of these examples — particularly the correspondence and fee_patent records — could substantially close the gap. Tools: [Unsloth](https://github.com/unslothai/unsloth) for efficient LoRA fine-tuning, or Together AI's fine-tuning API.
+**5. Fine-tuning on extraction output (tested — negative result).** We fine-tuned Llama 3.3 70B on 109 training examples (Claude's extraction output as ground truth) using Together AI's LoRA fine-tuning API ($12.89, 55 minutes). The fine-tuned model **performed worse than the untuned base model**: 122 total items across 3 test documents (38% of Claude) vs 148 items untuned (46% of Claude). Fine-tuning actually reduced extraction volume by 18%.
+
+Two factors likely contributed: (1) training data imbalance — 59% of examples had empty v3 fields (correspondence, fee_patents, legislative_actions), teaching the model that sparse output is correct; (2) 10% of the richest examples were truncated at Together AI's 24K token limit. But the deeper issue is that Claude's extraction advantage comes from comprehension of long, OCR-degraded documents, not from knowing a specific output format. A LoRA adapter cannot bridge that capability gap.
+
+Additionally, fine-tuned models on Together AI require **dedicated endpoints** ($0.532/min = $31.92/hr), eliminating the cost advantage over Claude. Total experiment cost: ~$71 (including $50 in platform credits for endpoint access). See `FINE_TUNING_PLAN.md` for the full write-up, training data analysis, and detailed results.
 
 **6. Temperature and sampling.** Current extraction runs use temperature 0.3. For structured extraction (not creative text), dropping to 0.1 or 0.0 may reduce hallucinations like the fabricated names seen in Maverick. Worth testing with Llama 3.3 as well.
 
-**Practical recommendation:** Start with options 1 (few-shot examples) and 2 (JSON mode), as these require no model training and can be tested in an afternoon. If the gap narrows to ~80% of Claude's output, Llama 3.3 becomes viable as a cost-free first-pass extractor for high-volume batch processing, with Claude reserved for high-value documents and all synthesis work.
+**Practical recommendation:** Use Claude for all extraction and synthesis work. Open-source models cannot match Claude's extraction thoroughness (best result: 48% of Claude's volume), and fine-tuning did not close the gap — it widened it. The cost difference ($0.50–1.00/doc for Claude vs near-free for open-source) does not justify 50–60% data loss. For a corpus of 5,000 documents, Claude extraction would cost $2,500–5,000 but produce 2–3x more structured data per document than any open-source alternative tested.
 
 ### Cost Context
 
-All open-source model testing via Together AI cost approximately $0.15 total across all runs. Claude API costs for the same extraction work are significantly higher (roughly $0.50–$1.00 per document at Sonnet pricing) but produce 2–3x more structured data per document. For synthesis, Claude Opus costs ~$3–5 per question (147K token input) but produces output that no open-source model can match.
+| Experiment | Cost |
+|-----------|------|
+| Open-source model inference testing (Llama 3.3, Maverick, Scout) | ~$0.25 |
+| Fine-tuning job (LoRA, 3 epochs, 109 examples) | $12.89 |
+| Together AI credits for dedicated endpoint tier | $50.00 |
+| Dedicated endpoint runtime (~15 min) | ~$8.00 |
+| **Total open-source experimentation** | **~$71** |
+
+Claude API costs for the same extraction work are significantly higher (roughly $0.50–$1.00 per document at Sonnet pricing) but produce 2–3x more structured data per document. For synthesis, Claude Opus costs ~$3–5 per question (147K token input) but produces output that no open-source model can match.
 
 ### Raw Benchmark Data
 
@@ -444,6 +456,9 @@ All raw outputs (JSON extractions, synthesis markdown, summary tables) are store
 | Extraction: Maverick (fixed docs) | `extraction_20260323_142938_meta-llama-Llama-4-Maverick-17B-128E-Instruct-FP8/` |
 | Extraction: Scout (fixed docs) | `extraction_20260323_143734_meta-llama-Llama-4-Scout-17B-16E-Instruct/` |
 | Extraction: Llama 3.3 70B (fixed docs) | `extraction_20260323_144208_meta-llama-Llama-3.3-70B-Instruct-Turbo/` |
+| Extraction: Llama 3.3 70B few-shot | `extraction_20260323_155714_meta-llama-Llama-3.3-70B-Instruct-Turbo_tuned/` |
+| Extraction: Maverick few-shot | `extraction_20260323_161751_meta-llama-Llama-4-Maverick-17B-128E-Instruct-FP8_tuned/` |
+| Extraction: Llama 3.3 70B **fine-tuned** | `extraction_20260323_182629_cwm6w_eacd-Llama-3.3-70B-Instruct-Reference-extraction-v1-a3211159-eb529166/` |
 | Comprehensive summary | `MODEL_COMPARISON_SUMMARY.md` |
 
 To reproduce the extraction benchmark:
