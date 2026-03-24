@@ -1,0 +1,1278 @@
+{
+  "entities": [
+    {
+      "name": "E. B. MERITT",
+      "type": "person",
+      "context": "Asst. Commissioner of Indian Office"
+    },
+    {
+      "name": "GEORGE VAUX, JR.",
+      "type": "person",
+      "context": "Chairman of Board of Indian Commissioners"
+    },
+    {
+      "name": "MALCOLM MCDOWELL",
+      "type": "person",
+      "context": "Secretary of Board of Indian Commissioners"
+    },
+    {
+      "name": "WILLIAM H. KETCHAM",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners"
+    },
+    {
+      "name": "DANIEL SMILEY",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners"
+    },
+    {
+      "name": "HUGH L. SCOTT",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners"
+    },
+    {
+      "name": "ALFRED E. SMITH",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners"
+    },
+    {
+      "name": "MERRILL E. GATES",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners"
+    },
+    {
+      "name": "WARREN K. MOOREHEAD",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners"
+    },
+    {
+      "name": "SAMUEL A. ELIOT",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners"
+    },
+    {
+      "name": "FRANK KNOX",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners"
+    },
+    {
+      "name": "J. C. Hart",
+      "type": "person",
+      "context": "Superintendent of Pawnee Indian Agency"
+    },
+    {
+      "name": "John E. DeVare",
+      "type": "person",
+      "context": "Farmer at Ponca Sub-agency"
+    },
+    {
+      "name": "Arthur J. Crim",
+      "type": "person",
+      "context": "Farmer at Tonkawa Sub-agency"
+    },
+    {
+      "name": "Charles B. Thompson",
+      "type": "person",
+      "context": "Farmer at Otoe Sub-agency"
+    },
+    {
+      "name": "F. W. Long",
+      "type": "person",
+      "context": "Farmer at Pawnee Agency"
+    },
+    {
+      "name": "Wm. 0. Mitchell",
+      "type": "person",
+      "context": "Farmer at Eagle City, Oklahoma"
+    },
+    {
+      "name": "H. F. Furry",
+      "type": "person",
+      "context": "Farmer at Pawnee Agency"
+    },
+    {
+      "name": "A. B. Collins",
+      "type": "person",
+      "context": "Farmer at Cushing, Oklahoma"
+    },
+    {
+      "name": "John V. Clendening",
+      "type": "person",
+      "context": "Clerk in Charge at law Sub-agency"
+    },
+    {
+      "name": "Albert Primeaux",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Amarbe LaDue",
+      "type": "person",
+      "context": "Husband of Indian who received patent-in-fee"
+    },
+    {
+      "name": "George Primeaux",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Frank Eagle",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Dick Gayton",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Ben Told",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Mike Roy",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "George Smith",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Maggie LaDue",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Forrest Chouteau",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Henry Wy-e-nah-she",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "James Wy-e-nah-she",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Theodore Sumner",
+      "type": "person",
+      "context": "Husband of Indian who received patent-in-fee"
+    },
+    {
+      "name": "Robert Sands",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Peter Taylor",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Ralph Pepper",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Abby Conn",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Leece Johnson",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Leona Taylor",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Oliver Thompson",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Behesa Burnett",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Anastus Clavier",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "William Cooper",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Nelson Cooper",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Ed. Cooper",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Margaret Cooper Penrose",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Galan Clavier",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Andoxie Thomas",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Rosanna Cooper",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "David Fronkier",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Gen.W.E.Hardy",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Lee C. Hardy",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "W.F.S.Hardy",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Anna Hardy",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Malinda Harris",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Warren Harris",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Lulu James",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Frank James",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Myrtle E.James",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Harris O'Connor",
+      "type": "person",
+      "context": "Husband of Indian who received patent-in-fee"
+    },
+    {
+      "name": "Benjamin Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Edward Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Murphy Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Susie Lessart",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Weso Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Warren Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Louisa Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Webb Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Elnora P.Clavier",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Keenan Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Julia Pappan LeClair",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Achan Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Laura P. Randall",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Wm.Louis Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Mitchell Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Murphy Pappan, Jr.",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Charley Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Rosa Burnett",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Lida Spurgeon",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Irwin Thompson",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Andrew Thompson",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Lindsay Thompson",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Nelson Thompson",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Dadie Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Josephine Thompson",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Hugh Thompson",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Charles Thompson",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Mode Pappan",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Mary P. Howland",
+      "type": "person",
+      "context": "Indian who received patent-in-fee"
+    },
+    {
+      "name": "Indian Office",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Pawnee Indian Agency",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Ponca Sub-agency",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Tonkawa Sub-agency",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Otoe Sub-agency",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "law Sub-agency",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Kaw Sub-agency",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Pawnee Agency",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Cantonment Indian Agency",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Shawnee Indian Agency",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Oklahoma",
+      "type": "location",
+      "context": "State"
+    },
+    {
+      "name": "Pawnee",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Tonkawa",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Ponca City",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Eagle City",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Cushing",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Newkirk",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Earlsboro",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Thiteagle",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Washunga",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Hardy",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Arkansas City",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Tulsa",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Princeton",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Andover",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Boston",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Manchester",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Philadelphia",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Mohonk Lake",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Washington, D.C.",
+      "type": "location",
+      "context": "City"
+    },
+    {
+      "name": "Pawnee Indian Reservation",
+      "type": "land_parcel",
+      "context": "Indian reservation"
+    },
+    {
+      "name": "Ponca Indian Reservation",
+      "type": "land_parcel",
+      "context": "Indian reservation"
+    },
+    {
+      "name": "Otoe Indian Reservation",
+      "type": "land_parcel",
+      "context": "Indian reservation"
+    },
+    {
+      "name": "Tonkawa Indian Reservation",
+      "type": "land_parcel",
+      "context": "Indian reservation"
+    },
+    {
+      "name": "Kaw Indian Reservation",
+      "type": "land_parcel",
+      "context": "Indian reservation"
+    },
+    {
+      "name": "Five Civilized Tribes",
+      "type": "organization",
+      "context": "Indian tribes"
+    },
+    {
+      "name": "Sioux",
+      "type": "organization",
+      "context": "Indian tribe"
+    },
+    {
+      "name": "Kiowas",
+      "type": "organization",
+      "context": "Indian tribe"
+    },
+    {
+      "name": "Arapaho",
+      "type": "organization",
+      "context": "Indian tribe"
+    },
+    {
+      "name": "Eastern Cherokee",
+      "type": "organization",
+      "context": "Indian tribe"
+    },
+    {
+      "name": "Puyallup Consolidated",
+      "type": "organization",
+      "context": "Indian tribe"
+    },
+    {
+      "name": "Oneidas of Wisconsin",
+      "type": "organization",
+      "context": "Indian tribe"
+    },
+    {
+      "name": "Cheyenne River Reservation",
+      "type": "land_parcel",
+      "context": "Indian reservation"
+    },
+    {
+      "name": "North Carolina",
+      "type": "location",
+      "context": "State"
+    },
+    {
+      "name": "Court of Appeals",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Gypsy Oil Company",
+      "type": "organization",
+      "context": "Company"
+    },
+    {
+      "name": "Santa Fe Depot",
+      "type": "location",
+      "context": "Train station"
+    },
+    {
+      "name": "Mails and Files Division",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Interior Building",
+      "type": "location",
+      "context": "Government building"
+    },
+    {
+      "name": "Indian Service",
+      "type": "organization",
+      "context": "Government agency"
+    },
+    {
+      "name": "Kaw Treaty",
+      "type": "legislation",
+      "context": "Treaty between US government and Kaw tribe"
+    }
+  ],
+  "events": [
+    {
+      "type": "letter",
+      "date": "May 6, 1931",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners sends letter to Commissioner of Indian Affairs"
+    },
+    {
+      "type": "report",
+      "date": "May 7, 1921",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners submits report on releasing Indians from Government supervision"
+    },
+    {
+      "type": "patent-in-fee",
+      "date": "1930",
+      "location": "Pawnee Indian Agency",
+      "description": "Albert Primeaux receives patent-in-fee for his land"
+    },
+    {
+      "type": "patent-in-fee",
+      "date": "1930",
+      "location": "Pawnee Indian Agency",
+      "description": "George Primeaux receives patent-in-fee for his land"
+    },
+    {
+      "type": "patent-in-fee",
+      "date": "1930",
+      "location": "Pawnee Indian Agency",
+      "description": "Frank Eagle receives patent-in-fee for his land"
+    },
+    {
+      "type": "patent-in-fee",
+      "date": "1930",
+      "location": "Pawnee Indian Agency",
+      "description": "Dick Gayton receives patent-in-fee for his land"
+    },
+    {
+      "type": "patent-in-fee",
+      "date": "1930",
+      "location": "Pawnee Indian Agency",
+      "description": "Ben Told receives patent-in-fee for his land"
+    },
+    {
+      "type": "patent-in-fee",
+      "date": "1930",
+      "location": "Pawnee Indian Agency",
+      "description": "Mike Roy receives patent-in-fee for his land"
+    },
+    {
+      "type": "patent-in-fee",
+      "date": "1930",
+      "location": "Pawnee Indian Agency",
+      "description": "George Smith receives patent-in-fee for his land"
+    },
+    {
+      "type": "patent-in-fee",
+      "date": "1930",
+      "location": "Pawnee Indian Agency",
+      "description": "Maggie LaDue receives patent-in-fee for her land"
+    },
+    {
+      "type": "health survey",
+      "date": "1921",
+      "location": "Ponca City",
+      "description": "Health survey conducted at Ponca City"
+    },
+    {
+      "type": "legislative action",
+      "date": "1893-4",
+      "location": "Washington, D.C.",
+      "description": "Kaw Treaty signed between US government and Kaw tribe"
+    },
+    {
+      "type": "legislative action",
+      "date": "1894",
+      "location": "Washington, D.C.",
+      "description": "Kiowas treaty signed between US government and Kiowas tribe"
+    },
+    {
+      "type": "legislative action",
+      "date": "1895",
+      "location": "Washington, D.C.",
+      "description": "Arapaho treaty signed between US government and Arapaho tribe"
+    },
+    {
+      "type": "legislative action",
+      "date": "1896-7",
+      "location": "Washington, D.C.",
+      "description": "Eastern Cherokee treaty signed between US government and Eastern Cherokee tribe"
+    },
+    {
+      "type": "legislative action",
+      "date": "1898-9",
+      "location": "Washington, D.C.",
+      "description": "Puyallup Consolidated treaty signed between US government and Puyallup Consolidated tribe"
+    },
+    {
+      "type": "legislative action",
+      "date": "1900-1919",
+      "location": "Washington, D.C.",
+      "description": "Oneidas of Wisconsin treaty signed between US government and Oneidas of Wisconsin tribe"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$600",
+      "payer": "Albert Primeaux",
+      "payee": "Unknown",
+      "date": "1930",
+      "description": "Albert Primeaux sells his land"
+    },
+    {
+      "type": "sale",
+      "amount": "$3000.00",
+      "payer": "George Primeaux",
+      "payee": "Unknown",
+      "date": "1930",
+      "description": "George Primeaux sells his land"
+    },
+    {
+      "type": "sale",
+      "amount": "Unknown",
+      "payer": "Frank Eagle",
+      "payee": "Unknown",
+      "date": "1930",
+      "description": "Frank Eagle sells his land"
+    },
+    {
+      "type": "sale",
+      "amount": "Unknown",
+      "payer": "Dick Gayton",
+      "payee": "Unknown",
+      "date": "1930",
+      "description": "Dick Gayton sells his land"
+    },
+    {
+      "type": "sale",
+      "amount": "Unknown",
+      "payer": "Ben Told",
+      "payee": "Unknown",
+      "date": "1930",
+      "description": "Ben Told sells his land"
+    },
+    {
+      "type": "sale",
+      "amount": "Unknown",
+      "payer": "Mike Roy",
+      "payee": "Unknown",
+      "date": "1930",
+      "description": "Mike Roy sells his land"
+    },
+    {
+      "type": "sale",
+      "amount": "Unknown",
+      "payer": "George Smith",
+      "payee": "Unknown",
+      "date": "1930",
+      "description": "George Smith sells his land"
+    },
+    {
+      "type": "sale",
+      "amount": "Unknown",
+      "payer": "Maggie LaDue",
+      "payee": "Unknown",
+      "date": "1930",
+      "description": "Maggie LaDue sells her land"
+    },
+    {
+      "type": "lease",
+      "amount": "Unknown",
+      "payer": "Pawnee Indians",
+      "payee": "Unknown",
+      "date": "1930",
+      "description": "Pawnee Indians lease their land"
+    },
+    {
+      "type": "payment",
+      "amount": "$100.00",
+      "payer": "US Government",
+      "payee": "Old dependent Indians",
+      "date": "1930",
+      "description": "US Government pays old dependent Indians"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "E. B. MERITT",
+      "type": "employed_by",
+      "object": "Indian Office",
+      "context": "Asst. Commissioner"
+    },
+    {
+      "subject": "GEORGE VAUX, JR.",
+      "type": "employed_by",
+      "object": "Board of Indian Commissioners",
+      "context": "Chairman"
+    },
+    {
+      "subject": "MALCOLM MCDOWELL",
+      "type": "employed_by",
+      "object": "Board of Indian Commissioners",
+      "context": "Secretary"
+    },
+    {
+      "subject": "J. C. Hart",
+      "type": "employed_by",
+      "object": "Pawnee Indian Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "John E. DeVare",
+      "type": "employed_by",
+      "object": "Ponca Sub-agency",
+      "context": "Farmer"
+    },
+    {
+      "subject": "Arthur J. Crim",
+      "type": "employed_by",
+      "object": "Tonkawa Sub-agency",
+      "context": "Farmer"
+    },
+    {
+      "subject": "Charles B. Thompson",
+      "type": "employed_by",
+      "object": "Otoe Sub-agency",
+      "context": "Farmer"
+    },
+    {
+      "subject": "F. W. Long",
+      "type": "employed_by",
+      "object": "Pawnee Agency",
+      "context": "Farmer"
+    },
+    {
+      "subject": "Wm. 0. Mitchell",
+      "type": "employed_by",
+      "object": "Eagle City, Oklahoma",
+      "context": "Farmer"
+    },
+    {
+      "subject": "H. F. Furry",
+      "type": "employed_by",
+      "object": "Pawnee Agency",
+      "context": "Farmer"
+    },
+    {
+      "subject": "A. B. Collins",
+      "type": "employed_by",
+      "object": "Cushing, Oklahoma",
+      "context": "Farmer"
+    },
+    {
+      "subject": "John V. Clendening",
+      "type": "employed_by",
+      "object": "law Sub-agency",
+      "context": "Clerk in Charge"
+    },
+    {
+      "subject": "Albert Primeaux",
+      "type": "related_to",
+      "object": "Pawnee Indian Agency",
+      "context": "Received patent-in-fee for his land"
+    },
+    {
+      "subject": "George Primeaux",
+      "type": "related_to",
+      "object": "Pawnee Indian Agency",
+      "context": "Received patent-in-fee for his land"
+    },
+    {
+      "subject": "Frank Eagle",
+      "type": "related_to",
+      "object": "Pawnee Indian Agency",
+      "context": "Received patent-in-fee for his land"
+    },
+    {
+      "subject": "Dick Gayton",
+      "type": "related_to",
+      "object": "Pawnee Indian Agency",
+      "context": "Received patent-in-fee for his land"
+    },
+    {
+      "subject": "Ben Told",
+      "type": "related_to",
+      "object": "Pawnee Indian Agency",
+      "context": "Received patent-in-fee for his land"
+    },
+    {
+      "subject": "Mike Roy",
+      "type": "related_to",
+      "object": "Pawnee Indian Agency",
+      "context": "Received patent-in-fee for his land"
+    },
+    {
+      "subject": "George Smith",
+      "type": "related_to",
+      "object": "Pawnee Indian Agency",
+      "context": "Received patent-in-fee for his land"
+    },
+    {
+      "subject": "Maggie LaDue",
+      "type": "related_to",
+      "object": "Pawnee Indian Agency",
+      "context": "Received patent-in-fee for her land"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Albert Primeaux",
+      "allotment_number": "Unknown",
+      "acreage": "Unknown",
+      "patent_date": "1930",
+      "patent_number": "Unknown",
+      "mechanism": "Unknown",
+      "buyer": "Unknown",
+      "sale_price": "$600",
+      "attorney": "Unknown",
+      "mortgage": "Unknown"
+    },
+    {
+      "allottee_name": "George Primeaux",
+      "allotment_number": "Unknown",
+      "acreage": "Unknown",
+      "patent_date": "1930",
+      "patent_number": "Unknown",
+      "mechanism": "Unknown",
+      "buyer": "Unknown",
+      "sale_price": "$3000.00",
+      "attorney": "Unknown",
+      "mortgage": "Unknown"
+    },
+    {
+      "allottee_name": "Frank Eagle",
+      "allotment_number": "Unknown",
+      "acreage": "Unknown",
+      "patent_date": "1930",
+      "patent_number": "Unknown",
+      "mechanism": "Unknown",
+      "buyer": "Unknown",
+      "sale_price": "Unknown",
+      "attorney": "Unknown",
+      "mortgage": "Unknown"
+    },
+    {
+      "allottee_name": "Dick Gayton",
+      "allotment_number": "Unknown",
+      "acreage": "Unknown",
+      "patent_date": "1930",
+      "patent_number": "Unknown",
+      "mechanism": "Unknown",
+      "buyer": "Unknown",
+      "sale_price": "Unknown",
+      "attorney": "Unknown",
+      "mortgage": "Unknown"
+    },
+    {
+      "allottee_name": "Ben Told",
+      "allotment_number": "Unknown",
+      "acreage": "Unknown",
+      "patent_date": "1930",
+      "patent_number": "Unknown",
+      "mechanism": "Unknown",
+      "buyer": "Unknown",
+      "sale_price": "Unknown",
+      "attorney": "Unknown",
+      "mortgage": "Unknown"
+    },
+    {
+      "allottee_name": "Mike Roy",
+      "allotment_number": "Unknown",
+      "acreage": "Unknown",
+      "patent_date": "1930",
+      "patent_number": "Unknown",
+      "mechanism": "Unknown",
+      "buyer": "Unknown",
+      "sale_price": "Unknown",
+      "attorney": "Unknown",
+      "mortgage": "Unknown"
+    },
+    {
+      "allottee_name": "George Smith",
+      "allotment_number": "Unknown",
+      "acreage": "Unknown",
+      "patent_date": "1930",
+      "patent_number": "Unknown",
+      "mechanism": "Unknown",
+      "buyer": "Unknown",
+      "sale_price": "Unknown",
+      "attorney": "Unknown",
+      "mortgage": "Unknown"
+    },
+    {
+      "allottee_name": "Maggie LaDue",
+      "allotment_number": "Unknown",
+      "acreage": "Unknown",
+      "patent_date": "1930",
+      "patent_number": "Unknown",
+      "mechanism": "Unknown",
+      "buyer": "Unknown",
+      "sale_price": "Unknown",
+      "attorney": "Unknown",
+      "mortgage": "Unknown"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "GEORGE VAUX, JR.",
+      "sender_title": "Chairman of Board of Indian Commissioners",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "May 6, 1931",
+      "subject": "Releasing Indians from Government supervision",
+      "action_requested": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "J. C. Hart",
+      "sender_title": "Superintendent of Pawnee Indian Agency",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "May 7, 1921",
+      "subject": "Releasing Indians from Government supervision",
+      "action_requested": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "John E. DeVare",
+      "sender_title": "Farmer at Ponca Sub-agency",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "Unknown",
+      "subject": "Report on Indians who have received patent-in-fee",
+      "action_requested": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "Arthur J. Crim",
+      "sender_title": "Farmer at Tonkawa Sub-agency",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "Unknown",
+      "subject": "Report on Indians who have received patent-in-fee",
+      "action_requested": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "Charles B. Thompson",
+      "sender_title": "Farmer at Otoe Sub-agency",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "Unknown",
+      "subject": "Report on Indians who have received patent-in-fee",
+      "action_requested": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "F. W. Long",
+      "sender_title": "Farmer at Pawnee Agency",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "Unknown",
+      "subject": "Report on Indians who have received patent-in-fee",
+      "action_requested": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "Wm. 0. Mitchell",
+      "sender_title": "Farmer at Eagle City, Oklahoma",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "Unknown",
+      "subject": "Report on Indians who have received patent-in-fee",
+      "action_requested": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "H. F. Furry",
+      "sender_title": "Farmer at Pawnee Agency",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "Unknown",
+      "subject": "Report on Indians who have received patent-in-fee",
+      "action_requested": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "A. B. Collins",
+      "sender_title": "Farmer at Cushing, Oklahoma",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "Unknown",
+      "subject": "Report on Indians who have received patent-in-fee",
+      "action_requested": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "John V. Clendening",
+      "sender_title": "Clerk in Charge at law Sub-agency",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "Unknown",
+      "subject": "Report on Indians who have received patent-in-fee",
+      "action_requested": "Unknown",
+      "outcome": "Unknown"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Unknown",
+      "sponsor": "Unknown",
+      "action_type": "introduced",
+      "date": "1893-4",
+      "vote_count": "Unknown",
+      "committee": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "bill_number": "Unknown",
+      "sponsor": "Unknown",
+      "action_type": "reported",
+      "date": "1894",
+      "vote_count": "Unknown",
+      "committee": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "bill_number": "Unknown",
+      "sponsor": "Unknown",
+      "action_type": "amended",
+      "date": "1895",
+      "vote_count": "Unknown",
+      "committee": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "bill_number": "Unknown",
+      "sponsor": "Unknown",
+      "action_type": "passed",
+      "date": "1896-7",
+      "vote_count": "Unknown",
+      "committee": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "bill_number": "Unknown",
+      "sponsor": "Unknown",
+      "action_type": "vetoed",
+      "date": "1898-9",
+      "vote_count": "Unknown",
+      "committee": "Unknown",
+      "outcome": "Unknown"
+    },
+    {
+      "bill_number": "Unknown",
+      "sponsor": "Unknown",
+      "action_type": "enacted",
+      "date": "1900-1919",
+      "vote_count": "Unknown",
+      "committee": "Unknown",
+      "outcome": "Unknown"
+    }
+  ]
+}
