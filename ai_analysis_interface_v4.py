@@ -28,6 +28,86 @@ import os
 import re
 import json
 import math
+
+# ─────────────────────────────────────────────────
+# UNIFIED LLM CALL — routes to Anthropic or Together AI
+# ─────────────────────────────────────────────────
+
+ANALYSIS_MODELS = {
+    "Claude Opus 4.6": {"id": "claude-opus-4-6", "provider": "anthropic"},
+    "Claude Sonnet 4.6": {"id": "claude-sonnet-4-6", "provider": "anthropic"},
+    "Kimi K2.5 (Moonshot AI)": {"id": "moonshotai/Kimi-K2.5", "provider": "together"},
+}
+
+
+def call_llm(model: str, prompt: str, max_tokens: int = 8000, temperature: float = 0.3,
+             system: str = None, messages: list = None) -> str:
+    """Unified LLM call that routes to the correct provider based on model name."""
+
+    # Determine provider
+    provider = "anthropic"
+    for info in ANALYSIS_MODELS.values():
+        if info["id"] == model:
+            provider = info["provider"]
+            break
+
+    if provider == "together":
+        return _call_together(model, prompt, max_tokens, temperature, system, messages)
+    else:
+        return _call_anthropic(model, prompt, max_tokens, temperature, system, messages)
+
+
+def _call_anthropic(model: str, prompt: str, max_tokens: int, temperature: float,
+                    system: str = None, messages: list = None) -> str:
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        return "Error: ANTHROPIC_API_KEY not set."
+    client = anthropic.Anthropic(api_key=api_key)
+    kwargs = dict(model=model, max_tokens=max_tokens, temperature=temperature)
+    if system:
+        kwargs["system"] = system
+    if messages:
+        kwargs["messages"] = messages
+    else:
+        kwargs["messages"] = [{"role": "user", "content": prompt}]
+    try:
+        response = client.messages.create(**kwargs)
+        return response.content[0].text
+    except Exception as e:
+        import traceback
+        return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
+
+
+def _call_together(model: str, prompt: str, max_tokens: int, temperature: float,
+                   system: str = None, messages: list = None) -> str:
+    api_key = os.environ.get("TOGETHER_API_KEY")
+    if not api_key:
+        return "Error: TOGETHER_API_KEY not set. Export it in your terminal before running the app."
+    try:
+        from together import Together
+    except ImportError:
+        return "Error: `together` package not installed. Run: pip install together"
+    client = Together(api_key=api_key, timeout=600.0)
+    if messages:
+        msgs = list(messages)
+        if system:
+            msgs.insert(0, {"role": "system", "content": system})
+    else:
+        msgs = []
+        if system:
+            msgs.append({"role": "system", "content": system})
+        msgs.append({"role": "user", "content": prompt})
+    try:
+        response = client.chat.completions.create(
+            model=model,
+            messages=msgs,
+            max_tokens=max_tokens,
+            temperature=temperature,
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        import traceback
+        return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
 import markdown
 from typing import List, Dict, Optional, Tuple
 
@@ -1741,11 +1821,6 @@ def analyze_corpus_followup(followup: str, conversation: List[Dict],
                             summaries: List[Dict], db_stats: Dict,
                             model: str = "claude-opus-4-6") -> str:
     """Follow-up question in a corpus synthesis conversation."""
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        return "Error: ANTHROPIC_API_KEY not set."
-
-    client = anthropic.Anthropic(api_key=api_key)
     corpus_context = build_corpus_context(summaries)
     collections = set(d.get('collection', 'Unknown') for d in summaries)
 
@@ -1763,28 +1838,13 @@ Continue your analysis. Ground every claim in specific documentary evidence with
     # Build messages: prior conversation + new follow-up
     messages = list(conversation) + [{"role": "user", "content": followup}]
 
-    try:
-        response = client.messages.create(
-            model=model,
-            max_tokens=16000,
-            temperature=0.3,
-            system=system_prompt,
-            messages=messages,
-        )
-        return response.content[0].text
-    except Exception as e:
-        import traceback
-        return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
+    return call_llm(model=model, prompt=followup, max_tokens=16000, temperature=0.3,
+                    system=system_prompt, messages=messages)
 
 
 def analyze_corpus(question: str, summaries: List[Dict], db_stats: Dict,
                    model: str = "claude-opus-4-6") -> str:
     """Mode 4: Corpus-wide synthesis using all document summaries."""
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        return "Error: ANTHROPIC_API_KEY not set."
-
-    client = anthropic.Anthropic(api_key=api_key)
     corpus_context = build_corpus_context(summaries)
 
     # Count collections
@@ -1819,17 +1879,7 @@ SYNTHESIS GUIDELINES:
 
 Begin your corpus-wide synthesis:"""
 
-    try:
-        response = client.messages.create(
-            model=model,
-            max_tokens=16000,
-            temperature=0.3,
-            messages=[{"role": "user", "content": prompt}]
-        )
-        return response.content[0].text
-    except Exception as e:
-        import traceback
-        return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
+    return call_llm(model=model, prompt=prompt, max_tokens=16000, temperature=0.3)
 
 
 # ─────────────────────────────────────────────────
@@ -1838,11 +1888,6 @@ Begin your corpus-wide synthesis:"""
 
 def analyze_discovery(question: str, evidence: Dict, db_stats: Dict, model: str = "claude-opus-4-6") -> str:
     """Mode 1: Discovery analysis (same as v3)."""
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        return "Error: ANTHROPIC_API_KEY not set."
-
-    client = anthropic.Anthropic(api_key=api_key)
     evidence_text = build_discovery_context(question, evidence)
 
     total_structured = (len(evidence.get('entities', [])) + len(evidence.get('events', [])) +
@@ -1893,26 +1938,11 @@ ANALYSIS GUIDELINES:
 
 Begin your analysis:"""
 
-    try:
-        response = client.messages.create(
-            model=model,
-            max_tokens=8000,
-            temperature=0.3,
-            messages=[{"role": "user", "content": prompt}]
-        )
-        return response.content[0].text
-    except Exception as e:
-        import traceback
-        return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
+    return call_llm(model=model, prompt=prompt, max_tokens=8000, temperature=0.3)
 
 
 def analyze_deep_read(question: str, doc: Dict, db_stats: Dict, model: str = "claude-opus-4-6") -> str:
     """Mode 2: Deep Read — send full document text to AI."""
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        return "Error: ANTHROPIC_API_KEY not set."
-
-    client = anthropic.Anthropic(api_key=api_key)
     evidence_text = build_deep_read_context(doc)
 
     doc_date = extract_doc_date(doc.get('file_name', ''))
@@ -1940,27 +1970,12 @@ DEEP READING GUIDELINES:
 
 Begin your deep reading:"""
 
-    try:
-        response = client.messages.create(
-            model=model,
-            max_tokens=8000,
-            temperature=0.3,
-            messages=[{"role": "user", "content": prompt}]
-        )
-        return response.content[0].text
-    except Exception as e:
-        import traceback
-        return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
+    return call_llm(model=model, prompt=prompt, max_tokens=8000, temperature=0.3)
 
 
 def analyze_hybrid(question: str, discovery_evidence: Dict,
                     deep_docs: List[Dict], db_stats: Dict, model: str = "claude-opus-4-6") -> str:
     """Mode 3: Discovery → Deep Read hybrid."""
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        return "Error: ANTHROPIC_API_KEY not set."
-
-    client = anthropic.Anthropic(api_key=api_key)
 
     # Calculate token budget per doc based on how many we're sending
     # Sonnet limit: 200K tokens. Reserve 10K for system prompt, 8K for response,
@@ -2014,17 +2029,7 @@ ANALYSIS GUIDELINES:
 
 Begin your analysis:"""
 
-    try:
-        response = client.messages.create(
-            model=model,
-            max_tokens=8000,
-            temperature=0.3,
-            messages=[{"role": "user", "content": prompt}]
-        )
-        return response.content[0].text
-    except Exception as e:
-        import traceback
-        return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
+    return call_llm(model=model, prompt=prompt, max_tokens=8000, temperature=0.3)
 
 
 # ─────────────────────────────────────────────────
@@ -2112,7 +2117,20 @@ with st.sidebar:
 
         st.caption(f"{stats.get('docs_with_text', 0):,} documents with extractable text")
 
-    ai_model = "claude-opus-4-6"
+    # Analysis model selector
+    model_names = list(ANALYSIS_MODELS.keys())
+    with st.sidebar:
+        st.markdown("---")
+        st.markdown("**Analysis Model**")
+        selected_model_name = st.selectbox(
+            "Model for AI analysis:",
+            model_names,
+            index=0,
+            help="Choose which model performs the analysis (Deep Read, Discovery, Corpus Synthesis). "
+                 "Kimi K2.5 requires TOGETHER_API_KEY.",
+            label_visibility="collapsed",
+        )
+    ai_model = ANALYSIS_MODELS[selected_model_name]["id"]
     max_passage_docs = 30
     passages_per_doc = 5
     hybrid_doc_count = 5

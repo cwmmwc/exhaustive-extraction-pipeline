@@ -1,0 +1,991 @@
+{
+  "entities": [
+    {
+      "name": "George Vaux, Jr.",
+      "type": "person",
+      "context": "Chairman, Board of Indian Commissioners, Philadelphia, PA"
+    },
+    {
+      "name": "Malcolm McDowell",
+      "type": "person",
+      "context": "Secretary, Board of Indian Commissioners, Washington, D.C."
+    },
+    {
+      "name": "William H. Ketcham",
+      "type": "person",
+      "context": "Board of Indian Commissioners member, Washington, D.C."
+    },
+    {
+      "name": "Daniel Smiley",
+      "type": "person",
+      "context": "Board of Indian Commissioners member, Morenci Lake, N.Y."
+    },
+    {
+      "name": "Hugh L. Scott",
+      "type": "person",
+      "context": "Board of Indian Commissioners member, Princeton, N.J."
+    },
+    {
+      "name": "Alfred E. Smith",
+      "type": "person",
+      "context": "Board of Indian Commissioners member, New York, N.Y."
+    },
+    {
+      "name": "Merrill E. Gates",
+      "type": "person",
+      "context": "Board of Indian Commissioners member, Washington, D.C."
+    },
+    {
+      "name": "Warren K. Moorehead",
+      "type": "person",
+      "context": "Board of Indian Commissioners member, Andover, Mass."
+    },
+    {
+      "name": "Samuel A. Eliot",
+      "type": "person",
+      "context": "Board of Indian Commissioners member, Boston, Mass."
+    },
+    {
+      "name": "Frank Knox",
+      "type": "person",
+      "context": "Board of Indian Commissioners member, Manchester, N.H."
+    },
+    {
+      "name": "Charles H. Burke",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs, Washington, D.C."
+    },
+    {
+      "name": "C. H. Asbury",
+      "type": "person",
+      "context": "Superintendent, Crow Reservation, Montana"
+    },
+    {
+      "name": "Reginald Pearce",
+      "type": "person",
+      "context": "Farmer, Crow Reservation, Wyola, Montana"
+    },
+    {
+      "name": "S. P. Cope",
+      "type": "person",
+      "context": "Farmer, Crow Reservation, Lodge Grass, Montana"
+    },
+    {
+      "name": "Mrs. Bridget C. Keough",
+      "type": "person",
+      "context": "Field Matron, Crow Reservation, St. Xavier, Montana"
+    },
+    {
+      "name": "W. A. Petzoldt",
+      "type": "person",
+      "context": "Baptist Missionary, Crow Reservation, Lodge Grass, Montana"
+    },
+    {
+      "name": "Father Taelman",
+      "type": "person",
+      "context": "Missionary who worked among the Indians, report not received"
+    },
+    {
+      "name": "Eldon Lowe",
+      "type": "person",
+      "context": "Field Clerk, United States Indian Service, Five Civilized Tribes, Tulsa, Oklahoma"
+    },
+    {
+      "name": "B. F. McCurtain",
+      "type": "person",
+      "context": "Field Clerk, United States Indian Service, Five Civilized Tribes, Durant, Oklahoma (Choctaw and Chickasaw Indians)"
+    },
+    {
+      "name": "Chas. W. Edmister",
+      "type": "person",
+      "context": "Farmer, United States Indian Service, Shawnee Agency, Oklahoma"
+    },
+    {
+      "name": "Joseph Cooper",
+      "type": "person",
+      "context": "Crow Indian, obtained fee patent several years prior, sold land, living in tents"
+    },
+    {
+      "name": "Mrs. Mary Humphrey",
+      "type": "person",
+      "context": "Crow Indian who benefited from fee patent"
+    },
+    {
+      "name": "Henry Reid",
+      "type": "person",
+      "context": "Crow Indian, sold land after receiving patent, purchased automobile"
+    },
+    {
+      "name": "Thomas A LaForge",
+      "type": "person",
+      "context": "Crow Indian with patent, had not sold land"
+    },
+    {
+      "name": "Ralph Saco",
+      "type": "person",
+      "context": "Crow Indian, sold patented land, purchased automobile, lost both"
+    },
+    {
+      "name": "Ben Gardner",
+      "type": "person",
+      "context": "Crow Indian, sold land near oil well, purchased Ford, lives on wife's land"
+    },
+    {
+      "name": "Mrs. Mary Takes The Gun",
+      "type": "person",
+      "context": "Uneducated part-Indian Crow, married to good worker, did not sell land"
+    },
+    {
+      "name": "Mrs. Amy Scott",
+      "type": "person",
+      "context": "Crow Indian, owned cattle ranch, became citizen, secured mortgage, lost all at sheriff's sale"
+    },
+    {
+      "name": "Mrs. Olive R. Venne",
+      "type": "person",
+      "context": "Crow married to Chippewa, mortgaged home, bought automobile and truck, lost at sheriff's sale"
+    },
+    {
+      "name": "Richard Wallace",
+      "type": "person",
+      "context": "Progressive Crow Indian, expressed belief in Government control, does not want patent"
+    },
+    {
+      "name": "Mack Johnson",
+      "type": "person",
+      "context": "Kickapoo Indian, Shawnee Agency, given patent to 40 acres"
+    },
+    {
+      "name": "James B. Kitch",
+      "type": "person",
+      "context": "Superintendent, Fort Peck Indian Reservation, Montana (formerly Standing Rock)"
+    },
+    {
+      "name": "John W. Welsh",
+      "type": "person",
+      "context": "Superintendent, Standing Rock Reservation, North Dakota"
+    },
+    {
+      "name": "Henry Le Beau",
+      "type": "person",
+      "context": "Superintendent, Cheyenne River Reservation, South Dakota"
+    },
+    {
+      "name": "James H. McGregor",
+      "type": "person",
+      "context": "Superintendent, Pine Ridge Reservation, South Dakota"
+    },
+    {
+      "name": "H.M. Tidwell",
+      "type": "person",
+      "context": "Superintendent, Pine Ridge Reservation, South Dakota"
+    },
+    {
+      "name": "E. H. Hutchison",
+      "type": "person",
+      "context": "Superintendent, Shoshone Reservation, Wyoming"
+    },
+    {
+      "name": "L. S. Bonnin",
+      "type": "person",
+      "context": "Superintendent, Cheyenne & Arapahoe Agency, Oklahoma"
+    },
+    {
+      "name": "E. B. Pomeroy",
+      "type": "person",
+      "context": "Farmer, Wanblee, South Dakota"
+    },
+    {
+      "name": "Judson Shook",
+      "type": "person",
+      "context": "Farmer, Manderson, South Dakota"
+    },
+    {
+      "name": "J.W.C. Killer",
+      "type": "person",
+      "context": "Farmer, Oglala, South Dakota"
+    },
+    {
+      "name": "B. E. Brigance",
+      "type": "person",
+      "context": "Farmer, Pine Ridge, South Dakota"
+    },
+    {
+      "name": "L.J. Roebuck",
+      "type": "person",
+      "context": "Farmer, Kyle, South Dakota"
+    },
+    {
+      "name": "Ben Irving",
+      "type": "person",
+      "context": "Farmer, Whitehorse, South Dakota"
+    },
+    {
+      "name": "James B. Whitehorse, Jr.",
+      "type": "person",
+      "context": "Farmer, Promise/Porcupine, South Dakota"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Federal department overseeing Indian Affairs"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Advisory board within Department of the Interior"
+    },
+    {
+      "name": "Office of Indian Affairs",
+      "type": "organization",
+      "context": "Administrative office for Indian Affairs, Washington, D.C."
+    },
+    {
+      "name": "United States Indian Service",
+      "type": "organization",
+      "context": "Agency employing field clerks and farmers"
+    },
+    {
+      "name": "Five Civilized Tribes",
+      "type": "organization",
+      "context": "Tribal group in Oklahoma including Cherokee, Creek, Choctaw, Chickasaw"
+    },
+    {
+      "name": "Crow Reservation",
+      "type": "location",
+      "context": "Indian reservation in Montana"
+    },
+    {
+      "name": "Standing Rock Reservation",
+      "type": "location",
+      "context": "Indian reservation in North Dakota/South Dakota"
+    },
+    {
+      "name": "Fort Peck Reservation",
+      "type": "location",
+      "context": "Indian reservation in Montana"
+    },
+    {
+      "name": "Cheyenne River Reservation",
+      "type": "location",
+      "context": "Indian reservation in South Dakota"
+    },
+    {
+      "name": "Pine Ridge Reservation",
+      "type": "location",
+      "context": "Indian reservation in South Dakota"
+    },
+    {
+      "name": "Shoshone Reservation",
+      "type": "location",
+      "context": "Indian reservation in Wyoming"
+    },
+    {
+      "name": "Cheyenne & Arapahoe Agency",
+      "type": "location",
+      "context": "Indian agency in Oklahoma"
+    },
+    {
+      "name": "Shawnee Agency",
+      "type": "location",
+      "context": "Indian agency in Oklahoma"
+    },
+    {
+      "name": "Wyola, Montana",
+      "type": "location",
+      "context": "Location on Crow Reservation"
+    },
+    {
+      "name": "Lodge Grass, Montana",
+      "type": "location",
+      "context": "Location on Crow Reservation"
+    },
+    {
+      "name": "St. Xavier, Montana",
+      "type": "location",
+      "context": "Location on Crow Reservation"
+    },
+    {
+      "name": "Tulsa, Oklahoma",
+      "type": "location",
+      "context": "Location of Five Civilized Tribes field office"
+    },
+    {
+      "name": "Durant, Oklahoma",
+      "type": "location",
+      "context": "Location of Five Civilized Tribes field office"
+    },
+    {
+      "name": "Wanblee, South Dakota",
+      "type": "location",
+      "context": "Location on Pine Ridge Reservation"
+    },
+    {
+      "name": "Manderson, South Dakota",
+      "type": "location",
+      "context": "Location on Pine Ridge Reservation"
+    },
+    {
+      "name": "Oglala, South Dakota",
+      "type": "location",
+      "context": "Location on Pine Ridge Reservation"
+    },
+    {
+      "name": "Kyle, South Dakota",
+      "type": "location",
+      "context": "Location on Pine Ridge Reservation"
+    },
+    {
+      "name": "Whitehorse, South Dakota",
+      "type": "location",
+      "context": "Location"
+    },
+    {
+      "name": "Promise, South Dakota",
+      "type": "location",
+      "context": "Location"
+    },
+    {
+      "name": "Porcupine, South Dakota",
+      "type": "location",
+      "context": "Location"
+    },
+    {
+      "name": "Crow Allotment Act",
+      "type": "legislation",
+      "context": "Recently passed by Congress as of 1921, Section 13 provides for inalienable homestead"
+    },
+    {
+      "name": "Enabling Act of 1905",
+      "type": "legislation",
+      "context": "Provided for allotments at Standing Rock"
+    },
+    {
+      "name": "Amendatory Act",
+      "type": "legislation",
+      "context": "1908-1909 amendments regarding allotment of wives' lands"
+    },
+    {
+      "name": "Treaties with Five Civilized Tribes",
+      "type": "legislation",
+      "context": "Provide for automatic removal of restrictions in 1931"
+    }
+  ],
+  "events": [
+    {
+      "type": "circular_letter",
+      "date": "1921-03-31",
+      "location": "Washington, D.C.",
+      "description": "Commissioner of Indian Affairs sent circular letter to superintendents regarding patents-in-fee"
+    },
+    {
+      "type": "letter",
+      "date": "1921-06-15",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners wrote to Commissioner enclosing replies regarding patent-in-fee Indians"
+    },
+    {
+      "type": "bulletin_publication",
+      "date": "1921-06-13",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners Bulletin No. 147 published regarding releasing Indians from Government supervision"
+    },
+    {
+      "type": "report_compilation",
+      "date": "1921",
+      "location": "Crow Reservation, Montana",
+      "description": "Superintendent Asbury compiled statistics on 301 Indians regarding disposition of property of 140 patent-in-fee Indians"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1915",
+      "location": "Standing Rock Reservation",
+      "description": "Approximately 600 patents-in-fee issued beginning prior to 1915 to mixed-bloods and educated Indians"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1916-1920",
+      "location": "Standing Rock Reservation",
+      "description": "Competency Commission issued patents to mixed-blood element, returned soldiers, and successful industrial workers"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1919",
+      "location": "Shawnee Agency, Oklahoma",
+      "description": "Mack Johnson given patent to 40 acres of bottom land"
+    },
+    {
+      "type": "death",
+      "date": "1921",
+      "location": "Mexico",
+      "description": "Unnamed Indian (Kickapoo or similar) died in Mexico after selling patented land and squandering money, leaving destitute family"
+    },
+    {
+      "type": "letter",
+      "date": "1921-10-03",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners wrote to Commissioner Charles H. Burke enclosing remaining field letters on patents-in-fee"
+    },
+    {
+      "type": "bulletin_publication",
+      "date": "1921-10-01",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners Bulletin No. 152 published with remaining field letters"
+    },
+    {
+      "type": "land_sale",
+      "date": "1921",
+      "location": "Crow Reservation",
+      "description": "84 of 140 patent-in-fee Indians (60%) sold all of their land"
+    },
+    {
+      "name": "mortgage_record",
+      "date": "1921",
+      "location": "Crow Reservation",
+      "description": "10 of 54 land-holding patent-in-fee Indians reported as having mortgages"
+    },
+    {
+      "type": "sheriff_sale",
+      "date": "1921",
+      "location": "Crow Reservation",
+      "description": "Mrs. Amy Scott lost mortgaged cattle and ranch at sheriff's sale"
+    },
+    {
+      "type": "sheriff_sale",
+      "date": "1921",
+      "location": "Crow Reservation",
+      "description": "Mrs. Olive R. Venne's automobile, truck and engine sold at sheriff's sale after mortgage"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Joseph Cooper",
+      "payee": "unknown buyer",
+      "date": "pre-1921",
+      "description": "Joseph Cooper sold land after receiving fee patent several years prior"
+    },
+    {
+      "type": "sale",
+      "amount": "proceeds used for automobile",
+      "payer": "Henry Reid",
+      "payee": "unknown",
+      "date": "post-patent",
+      "description": "Henry Reid sold patented land and purchased automobile"
+    },
+    {
+      "type": "sale",
+      "amount": "proceeds used for high priced automobile",
+      "payer": "Ralph Saco",
+      "payee": "unknown",
+      "date": "post-patent",
+      "description": "Ralph Saco sold patented land, later traded automobile for second hand Ford to satisfy garage repair charges"
+    },
+    {
+      "type": "sale",
+      "amount": "sufficient to buy Ford and little over",
+      "payer": "Ben Gardner",
+      "payee": "unknown",
+      "date": "post-patent",
+      "description": "Ben Gardner sold land near oil well"
+    },
+    {
+      "type": "mortgage",
+      "amount": "unknown",
+      "payer": "Mrs. Amy Scott",
+      "payee": "lender",
+      "date": "post-citizenship",
+      "description": "Mrs. Amy Scott secured mortgage on cattle ranch to buy cattle, later mortgaged cattle"
+    },
+    {
+      "type": "mortgage",
+      "amount": "unknown",
+      "payer": "Mrs. Olive R. Venne",
+      "payee": "lender",
+      "date": "post-citizenship",
+      "description": "Mrs. Olive R. Venne mortgaged home to buy automobile, motor truck, and engine"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Mrs. Olive R. Venne",
+      "payee": "sheriff",
+      "date": "post-mortgage",
+      "description": "Mortgaged items sold at loss to satisfy debts"
+    },
+    {
+      "type": "valuation",
+      "amount": "$3000-$4000",
+      "payer": null,
+      "payee": null,
+      "date": "1919",
+      "description": "40 acres of bottom land patented to Mack Johnson valued at $3000-$4000"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "unnamed Indian (Kickapoo)",
+      "payee": "unknown",
+      "date": "pre-1921",
+      "description": "Sold patented land, spent money, died in Mexico"
+    },
+    {
+      "type": "mortgage",
+      "amount": "unknown",
+      "payer": "Two unnamed Indians (Crow)",
+      "payee": "lender",
+      "date": "post-patent",
+      "description": "Two Indians who died mortgaged places after receiving patents"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "C. H. Asbury",
+      "type": "employed_by",
+      "object": "Office of Indian Affairs",
+      "context": "Superintendent of Crow Reservation"
+    },
+    {
+      "subject": "Reginald Pearce",
+      "type": "employed_by",
+      "object": "C. H. Asbury",
+      "context": "Farmer under Superintendent at Wyola"
+    },
+    {
+      "subject": "S. P. Cope",
+      "type": "employed_by",
+      "object": "C. H. Asbury",
+      "context": "Farmer under Superintendent at Lodge Grass"
+    },
+    {
+      "subject": "Mrs. Bridget C. Keough",
+      "type": "employed_by",
+      "object": "C. H. Asbury",
+      "context": "Field Matron under Superintendent at St. Xavier"
+    },
+    {
+      "subject": "W. A. Petzoldt",
+      "type": "employed_by",
+      "object": "Baptist Mission",
+      "context": "Missionary on Crow Reservation"
+    },
+    {
+      "subject": "Eldon Lowe",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Field Clerk for Five Civilized Tribes in Tulsa"
+    },
+    {
+      "subject": "B. F. McCurtain",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Field Clerk for Five Civilized Tribes in Durant"
+    },
+    {
+      "subject": "Chas. W. Edmister",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Farmer at Shawnee Agency"
+    },
+    {
+      "subject": "E. B. Pomeroy",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Farmer at Wanblee"
+    },
+    {
+      "subject": "Judson Shook",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Farmer at Manderson"
+    },
+    {
+      "subject": "J.W.C. Killer",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Farmer at Oglala"
+    },
+    {
+      "subject": "B. E. Brigance",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Farmer at Pine Ridge"
+    },
+    {
+      "subject": "L.J. Roebuck",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Farmer at Kyle"
+    },
+    {
+      "subject": "Ben Irving",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Farmer at Whitehorse"
+    },
+    {
+      "subject": "James B. Whitehorse, Jr.",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Farmer at Promise/Porcupine"
+    },
+    {
+      "subject": "Ben Gardner",
+      "type": "related_to",
+      "object": "wife",
+      "context": "Lives on wife's land after selling his own"
+    },
+    {
+      "subject": "Henry Reid",
+      "type": "related_to",
+      "object": "wife",
+      "context": "Home is on wife's land after selling his own"
+    },
+    {
+      "subject": "Mrs. Olive R. Venne",
+      "type": "related_to",
+      "object": "Chippewa husband",
+      "context": "Crow woman married to Chippewa"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Mack Johnson",
+      "allotment_number": null,
+      "acreage": "40 acres",
+      "patent_date": "1919",
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": null,
+      "sale_price": null,
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Joseph Cooper",
+      "allotment_number": null,
+      "acreage": null,
+      "patent_date": "several years prior to 1921",
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "proceeds for living expenses",
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Henry Reid",
+      "allotment_number": null,
+      "acreage": null,
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "automobile",
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Ralph Saco",
+      "allotment_number": null,
+      "acreage": null,
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "high priced automobile",
+      "attorney": null,
+      "mortgage": "held for repair charges at garage"
+    },
+    {
+      "allottee_name": "Ben Gardner",
+      "allotment_number": null,
+      "acreage": null,
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "Ford automobile plus little over",
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Mrs. Amy Scott",
+      "allotment_number": null,
+      "acreage": "cattle ranch",
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "citizenship_grant",
+      "buyer": "sheriff",
+      "sale_price": "lost at sheriff's sale",
+      "attorney": null,
+      "mortgage": "mortgage on home and cattle"
+    },
+    {
+      "allottee_name": "Mrs. Olive R. Venne",
+      "allotment_number": null,
+      "acreage": "home",
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "citizenship_grant",
+      "buyer": "sheriff",
+      "sale_price": "sold at loss",
+      "attorney": null,
+      "mortgage": "home mortgaged to buy automobile, truck, engine"
+    },
+    {
+      "allottee_name": "Thomas A LaForge",
+      "allotment_number": null,
+      "acreage": null,
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": null,
+      "sale_price": null,
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Mrs. Mary Takes The Gun",
+      "allotment_number": null,
+      "acreage": null,
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "citizenship_grant",
+      "buyer": null,
+      "sale_price": null,
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Richard Wallace",
+      "allotment_number": null,
+      "acreage": null,
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "refused",
+      "buyer": null,
+      "sale_price": null,
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Group of 600 Indians",
+      "allotment_number": null,
+      "acreage": "various",
+      "patent_date": "1915-1920",
+      "patent_number": null,
+      "mechanism": "competency_commission",
+      "buyer": null,
+      "sale_price": null,
+      "attorney": null,
+      "mortgage": "many mortgages and sales recorded"
+    },
+    {
+      "allottee_name": "Group of 140 Crow Indians",
+      "allotment_number": null,
+      "acreage": "various",
+      "patent_date": "various",
+      "patent_number": null,
+      "mechanism": "various",
+      "buyer": null,
+      "sale_price": "60% sold all land",
+      "attorney": null,
+      "mortgage": "10 of 54 holders had mortgages"
+    },
+    {
+      "allottee_name": "Group of 100 Indians (Five Civilized Tribes)",
+      "allotment_number": null,
+      "acreage": "various",
+      "patent_date": "pre-1921",
+      "patent_number": null,
+      "mechanism": "competency_commission",
+      "buyer": null,
+      "sale_price": null,
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Group of 25 Indians (Five Civilized Tribes)",
+      "allotment_number": null,
+      "acreage": "various",
+      "patent_date": "pre-1921",
+      "patent_number": null,
+      "mechanism": "departmental_process",
+      "buyer": null,
+      "sale_price": null,
+      "attorney": null,
+      "mortgage": null
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board of Indian Commissioners",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "1921-06-15",
+      "subject": "Replies regarding condition of patent-in-fee Indians",
+      "action_requested": "Review of enclosed letters",
+      "outcome": "Enclosures provided"
+    },
+    {
+      "sender": "Commissioner of Indian Affairs",
+      "sender_title": "Commissioner",
+      "recipient": "Superintendents",
+      "recipient_title": "Superintendents",
+      "date": "1921-03-31",
+      "subject": "Circular regarding patents-in-fee",
+      "action_requested": "Report on condition of fee patent Indians",
+      "outcome": "Reports requested from field"
+    },
+    {
+      "sender": "C. H. Asbury",
+      "sender_title": "Superintendent",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "1921",
+      "subject": "Report on fee patent Indians at Crow Reservation",
+      "action_requested": "Consideration of enclosed letters",
+      "outcome": "Enclosed letters from Pearce, Keough, Petzoldt, Cope"
+    },
+    {
+      "sender": "Reginald Pearce",
+      "sender_title": "Farmer",
+      "recipient": "C. H. Asbury",
+      "recipient_title": "Superintendent",
+      "date": "1921",
+      "subject": "Condition of fee patent Indians",
+      "action_requested": "Thorough examination before release",
+      "outcome": "Letter forwarded to Commissioner"
+    },
+    {
+      "sender": "S. P. Cope",
+      "sender_title": "Farmer",
+      "recipient": "C. H. Asbury",
+      "recipient_title": "Superintendent",
+      "date": "1921",
+      "subject": "Policy on granting fee patents",
+      "action_requested": "Individual examination, retain 40 acres homestead",
+      "outcome": "Letter forwarded to Commissioner"
+    },
+    {
+      "sender": "Mrs. Bridget C. Keough",
+      "sender_title": "Field Matron",
+      "recipient": "C. H. Asbury",
+      "recipient_title": "Superintendent",
+      "date": "1921",
+      "subject": "Observations on fee patent Indians",
+      "action_requested": "Case by case determination",
+      "outcome": "Letter forwarded to Commissioner"
+    },
+    {
+      "sender": "W. A. Petzoldt",
+      "sender_title": "Baptist Missionary",
+      "recipient": "C. H. Asbury",
+      "recipient_title": "Superintendent",
+      "date": "1921",
+      "subject": "Effects of releasing Indians from supervision",
+      "action_requested": "Grant citizenship to capable Indians",
+      "outcome": "Letter forwarded to Commissioner"
+    },
+    {
+      "sender": "Eldon Lowe",
+      "sender_title": "Field Clerk",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Competency commissions and fee patents",
+      "action_requested": "Acknowledgment of communication of April 2, 1921",
+      "outcome": "Data provided on released Indians"
+    },
+    {
+      "sender": "B. F. McCurtain",
+      "sender_title": "Field Clerk",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Removal of restrictions on Five Civilized Tribes",
+      "action_requested": "Review of handling of Indian affairs",
+      "outcome": "Report on 60% selling or mortgaging property"
+    },
+    {
+      "sender": "Chas. W. Edmister",
+      "sender_title": "Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Patents and restrictions removal",
+      "action_requested": "Protection for incompetent Indians",
+      "outcome": "Suggested law allowing sale of all but 40 acres"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board of Indian Commissioners",
+      "recipient": "Charles H. Burke",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "1921-10-03",
+      "subject": "Remaining field letters on patents-in-fee",
+      "action_requested": "Review of 87 replies from field",
+      "outcome": "Enclosures provided"
+    },
+    {
+      "sender": "James B. Kitch",
+      "sender_title": "Superintendent",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "1921",
+      "subject": "Patents-in-fee at Standing Rock",
+      "action_requested": "Information on 600 patents issued",
+      "outcome": "Report provided"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Crow Allotment Act",
+      "sponsor": "Congress",
+      "action_type": "enacted",
+      "date": "1921",
+      "vote_count": null,
+      "committee": null,
+      "outcome": "Passed, Section 13 provides homestead inalienable"
+    },
+    {
+      "bill_number": "Enabling Act",
+      "sponsor": "Congress",
+      "action_type": "enacted",
+      "date": "1905",
+      "vote_count": null,
+      "committee": null,
+      "outcome": "Provided for original allotments at Standing Rock"
+    },
+    {
+      "bill_number": "Amendatory Act",
+      "sponsor": "Congress",
+      "action_type": "enacted",
+      "date": "1908-1909",
+      "vote_count": null,
+      "committee": null,
+      "outcome": "Provided for allotment of wives' lands"
+    },
+    {
+      "bill_number": "Act regarding surplus allotments",
+      "sponsor": "Congress",
+      "action_type": "enacted",
+      "date": "pre-1921",
+      "vote_count": null,
+      "committee": null,
+      "outcome": "Removed restrictions on surplus allotments for Five Civilized Tribes"
+    },
+    {
+      "bill_number": "Treaties with Five Civilized Tribes",
+      "sponsor": "United States Government",
+      "action_type": "enacted",
+      "date": "1931",
+      "vote_count": null,
+      "committee": null,
+      "outcome": "Automatic removal of restrictions on all land of restricted Indians"
+    }
+  ]
+}

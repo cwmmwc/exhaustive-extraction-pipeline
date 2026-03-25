@@ -1,0 +1,992 @@
+{
+  "entities": [
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Federal oversight body investigating fee patent policy"
+    },
+    {
+      "name": "Office of Indian Affairs",
+      "type": "organization",
+      "context": "Recipient of correspondence regarding fee patent policy"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Parent department of Office of Indian Affairs"
+    },
+    {
+      "name": "Standing Rock Reservation",
+      "type": "location",
+      "context": "Reservation where approximately 600 fee patents were issued"
+    },
+    {
+      "name": "Yakima Reservation",
+      "type": "location",
+      "context": "Reservation in Washington with fee patent recipients"
+    },
+    {
+      "name": "Flathead Reservation",
+      "type": "location",
+      "context": "Reservation in Montana with 1004+ fee patent recipients"
+    },
+    {
+      "name": "Fort Hall Reservation",
+      "type": "location",
+      "context": "Reservation in Idaho"
+    },
+    {
+      "name": "Fort Peck Reservation",
+      "type": "location",
+      "context": "Reservation in Montana with agency at Poplar"
+    },
+    {
+      "name": "Sisseton Agency",
+      "type": "organization",
+      "context": "Agency in South Dakota"
+    },
+    {
+      "name": "Potawatomi Agency",
+      "type": "organization",
+      "context": "Agency in Kansas"
+    },
+    {
+      "name": "Seger Agency",
+      "type": "organization",
+      "context": "Agency in Oklahoma"
+    },
+    {
+      "name": "Cantonment Agency",
+      "type": "organization",
+      "context": "Agency in Oklahoma"
+    },
+    {
+      "name": "Poplar, Montana",
+      "type": "location",
+      "context": "Location of Fort Peck Agency"
+    },
+    {
+      "name": "White Swan, Washington",
+      "type": "location",
+      "context": "Location on Yakima Reservation"
+    },
+    {
+      "name": "Toppenish, Washington",
+      "type": "location",
+      "context": "Location on Yakima Reservation"
+    },
+    {
+      "name": "Wapato, Washington",
+      "type": "location",
+      "context": "Location on Yakima Reservation"
+    },
+    {
+      "name": "Hot Springs, Montana",
+      "type": "location",
+      "context": "Location near Flathead Reservation"
+    },
+    {
+      "name": "Arlee, Montana",
+      "type": "location",
+      "context": "Location on Flathead Reservation"
+    },
+    {
+      "name": "Polson, Montana",
+      "type": "location",
+      "context": "Location on Flathead Reservation"
+    },
+    {
+      "name": "Ronan, Montana",
+      "type": "location",
+      "context": "Location on Flathead Reservation"
+    },
+    {
+      "name": "Dixon, Montana",
+      "type": "location",
+      "context": "Location on Flathead Reservation"
+    },
+    {
+      "name": "Pablo, Montana",
+      "type": "location",
+      "context": "Location on Flathead Reservation"
+    },
+    {
+      "name": "St. Ignatius District",
+      "type": "location",
+      "context": "District within Flathead Reservation"
+    },
+    {
+      "name": "George Vaux Jr.",
+      "type": "person",
+      "context": "Chairman, Board of Indian Commissioners"
+    },
+    {
+      "name": "Malcolm McDowell",
+      "type": "person",
+      "context": "Secretary, Board of Indian Commissioners"
+    },
+    {
+      "name": "William H. Ketcham",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners"
+    },
+    {
+      "name": "Daniel Smiley",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners"
+    },
+    {
+      "name": "Hugh L. Scott",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners"
+    },
+    {
+      "name": "Alfred E. Smith",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners"
+    },
+    {
+      "name": "Merrill E. Gates",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners"
+    },
+    {
+      "name": "Warren K. Moorehead",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners"
+    },
+    {
+      "name": "Samuel A. Eliot",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners"
+    },
+    {
+      "name": "Frank Knox",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners"
+    },
+    {
+      "name": "Don McCarr",
+      "type": "person",
+      "context": "Superintendent, Yakima Indian Agency"
+    },
+    {
+      "name": "George F. Smith",
+      "type": "person",
+      "context": "Farmer, Yakima Reservation"
+    },
+    {
+      "name": "W. O. Smith",
+      "type": "person",
+      "context": "Farmer, Yakima Reservation"
+    },
+    {
+      "name": "Corrie Hiatt",
+      "type": "person",
+      "context": "Farmer, Hot Springs, Montana"
+    },
+    {
+      "name": "Chas. E. Coe",
+      "type": "person",
+      "context": "Superintendent, Flathead Reservation"
+    },
+    {
+      "name": "William Donner",
+      "type": "person",
+      "context": "Superintendent, Fort Hall Reservation"
+    },
+    {
+      "name": "J. L. Suffecool",
+      "type": "person",
+      "context": "Superintendent, Sisseton Agency"
+    },
+    {
+      "name": "A. R. Snyder",
+      "type": "person",
+      "context": "Superintendent, Potawatomi Agency"
+    },
+    {
+      "name": "Fred E. Perkins",
+      "type": "person",
+      "context": "Superintendent, Seger Agency"
+    },
+    {
+      "name": "Chas. T. Coggeshall",
+      "type": "person",
+      "context": "Superintendent, Cantonment Agency"
+    },
+    {
+      "name": "M. Badgly",
+      "type": "person",
+      "context": "Lease Clerk"
+    },
+    {
+      "name": "H. Flower",
+      "type": "person",
+      "context": "Forest Guard"
+    },
+    {
+      "name": "Oscar H. Boileau",
+      "type": "person",
+      "context": "Farmer, Yakima Reservation"
+    },
+    {
+      "name": "D. D. Wolfinger",
+      "type": "person",
+      "context": "Farmer, Flathead Reservation"
+    },
+    {
+      "name": "Brown",
+      "type": "person",
+      "context": "Farmer, Ronan, Montana"
+    },
+    {
+      "name": "William Cree",
+      "type": "person",
+      "context": "Indian allottee who retained land"
+    },
+    {
+      "name": "James Olney",
+      "type": "person",
+      "context": "Indian allottee who retained land"
+    },
+    {
+      "name": "Oscar Olney",
+      "type": "person",
+      "context": "Indian allottee who retained land"
+    },
+    {
+      "name": "Hayes Purns",
+      "type": "person",
+      "context": "Indian allottee who retained land"
+    },
+    {
+      "name": "Alex Arquette",
+      "type": "person",
+      "context": "Indian allottee who sold land and spent money foolishly"
+    },
+    {
+      "name": "O. C. Olney",
+      "type": "person",
+      "context": "Indian allottee who sold land and spent money foolishly"
+    },
+    {
+      "name": "Simon Goudy",
+      "type": "person",
+      "context": "Indian allottee who sold land and spent money foolishly"
+    },
+    {
+      "name": "William Fiander",
+      "type": "person",
+      "context": "Indian allottee who sold land and spent money foolishly"
+    },
+    {
+      "name": "David Enias",
+      "type": "person",
+      "context": "Indian allottee who sold land and spent money foolishly"
+    },
+    {
+      "name": "Ira Taswicht",
+      "type": "person",
+      "context": "Indian allottee who sold land and spent money foolishly"
+    },
+    {
+      "name": "Lester Pearne",
+      "type": "person",
+      "context": "Indian allottee who sold land and spent money foolishly"
+    },
+    {
+      "name": "Frank McLeod",
+      "type": "person",
+      "context": "Indian allottee who sold land, spent money, now destitute"
+    },
+    {
+      "name": "Alex McLeod",
+      "type": "person",
+      "context": "Indian allottee who sold land and spent money"
+    },
+    {
+      "name": "Louis Clairmont Jr.",
+      "type": "person",
+      "context": "Indian allottee who sold land and spent money"
+    },
+    {
+      "name": "Gilbert Burland",
+      "type": "person",
+      "context": "Indian allottee who sold land and spent money"
+    },
+    {
+      "name": "Mary Duplessis",
+      "type": "person",
+      "context": "Indian allottee operating lady's furnishing store"
+    },
+    {
+      "name": "Duncan Campbell",
+      "type": "person",
+      "context": "Indian allottee operating feed barn and pool hall"
+    },
+    {
+      "name": "Sam Pierre",
+      "type": "person",
+      "context": "Indian allottee farming and stock raising"
+    },
+    {
+      "name": "Harry Burland",
+      "type": "person",
+      "context": "Indian allottee working as garage man"
+    },
+    {
+      "name": "Mose Delaware",
+      "type": "person",
+      "context": "Indian allottee farming and clerking"
+    },
+    {
+      "name": "Edna Hull",
+      "type": "person",
+      "context": "Indian allottee working as nurse in hospital"
+    },
+    {
+      "name": "Joseph Antiste",
+      "type": "person",
+      "context": "Indian allottee who sold allotment and was broke in less than one month"
+    },
+    {
+      "name": "Joseph Gardipe",
+      "type": "person",
+      "context": "Indian allottee who sold allotment and spent money, now broke"
+    },
+    {
+      "name": "Louison Ashley",
+      "type": "person",
+      "context": "Indian allottee who sold allotment, bought saw mill and separator, failed"
+    },
+    {
+      "name": "Fred Paricole",
+      "type": "person",
+      "context": "Indian allottee who sold allotment but employed in laundry"
+    },
+    {
+      "name": "Victor Dupuis",
+      "type": "person",
+      "context": "Indian allottee farming allotment and doing well"
+    },
+    {
+      "name": "Caville",
+      "type": "person",
+      "context": "Indian allottee farming allotment and doing well"
+    },
+    {
+      "name": "Joseph R.",
+      "type": "person",
+      "context": "Indian allottee who sold allotment for $3000 and spent money"
+    }
+  ],
+  "events": [
+    {
+      "type": "issuance_of_fee_patents",
+      "date": "1910-1931",
+      "location": "Flathead Reservation",
+      "description": "Issuance of 1004 fee patents to original allottees and 31 to heirs"
+    },
+    {
+      "type": "issuance_of_fee_patents",
+      "date": "prior_to_1915",
+      "location": "Standing Rock Reservation",
+      "description": "Initial issuance of fee patents to Indians beginning prior to 1915"
+    },
+    {
+      "type": "issuance_of_fee_patents",
+      "date": "1916",
+      "location": "Standing Rock Reservation",
+      "description": "Subsequent issuance of fee patents largely to mixed blood element"
+    },
+    {
+      "type": "sale_of_land",
+      "date": "1917-1930",
+      "location": "Various",
+      "description": "Multiple sales of patented lands by Indians to white buyers"
+    },
+    {
+      "type": "mortgage_of_land",
+      "date": "1917-1930",
+      "location": "Various",
+      "description": "Multiple mortgages placed on patented lands by Indians"
+    },
+    {
+      "type": "purchase_of_automobiles",
+      "date": "1920s",
+      "location": "Various",
+      "description": "Indians purchasing automobiles with proceeds from land sales"
+    },
+    {
+      "type": "relocation_to_towns",
+      "date": "1920s",
+      "location": "Various",
+      "description": "Indians moving to towns after securing patents"
+    },
+    {
+      "type": "allotment",
+      "date": "1905",
+      "location": "Standing Rock Reservation",
+      "description": "Original allotments to heads of families under Enabling Act of 1905"
+    },
+    {
+      "type": "allotment",
+      "date": "1908-1909",
+      "location": "Standing Rock Reservation",
+      "description": "Allotments to children born after original allotments"
+    },
+    {
+      "type": "allotment",
+      "date": "1905-1910",
+      "location": "Standing Rock Reservation",
+      "description": "Allotments to wives of heads of families under Amendatory Acts"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$3000",
+      "payer": "Unknown buyer",
+      "payee": "Joseph R.",
+      "date": "1920s",
+      "description": "Sale of allotment by Joseph R."
+    },
+    {
+      "type": "sale",
+      "amount": "various",
+      "payer": "White buyers",
+      "payee": "Various Indians",
+      "date": "1917-1930",
+      "description": "Sales of patented lands, often for less than appraised value"
+    },
+    {
+      "type": "mortgage",
+      "amount": "various sums",
+      "payer": "Banks/Lenders",
+      "payee": "Various Indians",
+      "date": "1917-1930",
+      "description": "Mortgages on patented lands, often increased multiple times"
+    },
+    {
+      "type": "lease",
+      "amount": "rental payments",
+      "payer": "White tenants",
+      "payee": "Indian allottees",
+      "date": "ongoing",
+      "description": "Leasing of restricted and patented lands"
+    },
+    {
+      "type": "payment",
+      "amount": "tribal payments",
+      "payer": "Government",
+      "payee": "Indian families",
+      "date": "periodic",
+      "description": "Tribal payments received by Indians"
+    },
+    {
+      "type": "purchase",
+      "amount": "various",
+      "payer": "Indians",
+      "payee": "Auto dealers",
+      "date": "1920s",
+      "description": "Purchase of automobiles by Indians"
+    },
+    {
+      "type": "purchase",
+      "amount": "various",
+      "payer": "Indians",
+      "payee": "Equipment dealers",
+      "date": "1920s",
+      "description": "Purchase of saw mills, separators, engines, cattle, implements"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "George Vaux Jr.",
+      "type": "employed_by",
+      "object": "Board of Indian Commissioners",
+      "context": "Chairman"
+    },
+    {
+      "subject": "Malcolm McDowell",
+      "type": "employed_by",
+      "object": "Board of Indian Commissioners",
+      "context": "Secretary"
+    },
+    {
+      "subject": "Don McCarr",
+      "type": "employed_by",
+      "object": "Yakima Indian Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "Chas. E. Coe",
+      "type": "employed_by",
+      "object": "Flathead Reservation",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "William Donner",
+      "type": "employed_by",
+      "object": "Fort Hall Reservation",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "J. L. Suffecool",
+      "type": "employed_by",
+      "object": "Sisseton Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "A. R. Snyder",
+      "type": "employed_by",
+      "object": "Potawatomi Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "Fred E. Perkins",
+      "type": "employed_by",
+      "object": "Seger Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "Chas. T. Coggeshall",
+      "type": "employed_by",
+      "object": "Cantonment Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "George F. Smith",
+      "type": "employed_by",
+      "object": "Yakima Reservation",
+      "context": "Farmer"
+    },
+    {
+      "subject": "W. O. Smith",
+      "type": "employed_by",
+      "object": "Yakima Reservation",
+      "context": "Farmer"
+    },
+    {
+      "subject": "Corrie Hiatt",
+      "type": "employed_by",
+      "object": "Hot Springs, Montana",
+      "context": "Farmer"
+    },
+    {
+      "subject": "Oscar H. Boileau",
+      "type": "employed_by",
+      "object": "Yakima Reservation",
+      "context": "Farmer"
+    },
+    {
+      "subject": "D. D. Wolfinger",
+      "type": "employed_by",
+      "object": "Flathead Reservation",
+      "context": "Farmer"
+    },
+    {
+      "subject": "Brown",
+      "type": "employed_by",
+      "object": "Flathead Reservation",
+      "context": "Farmer at Ronan"
+    },
+    {
+      "subject": "Various Indians",
+      "type": "sold_to",
+      "object": "White speculators/buyers",
+      "context": "Sale of patented lands"
+    },
+    {
+      "subject": "Indians",
+      "type": "represented_by",
+      "object": "Unscrupulous white men/attorneys",
+      "context": "Inducement to sell lands and handle affairs"
+    },
+    {
+      "subject": "Frank McLeod",
+      "type": "related_to",
+      "object": "Alex McLeod",
+      "context": "Family members who both sold allotments"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "William Cree",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "retained",
+      "sale_price": "retained",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "James Olney",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "retained",
+      "sale_price": "retained",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Oscar Olney",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "retained",
+      "sale_price": "retained",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Hayes Purns",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "retained",
+      "sale_price": "retained",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Alex Arquette",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent foolishly",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "O. C. Olney",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent foolishly",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Simon Goudy",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent foolishly",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "William Fiander",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent foolishly",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "David Enias",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent foolishly",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Ira Taswicht",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent foolishly",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Lester Pearne",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent foolishly",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Frank McLeod",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Alex McLeod",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Louis Clairmont Jr.",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Gilbert Burland",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Joseph Antiste",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Joseph Gardipe",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Louison Ashley",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Fred Paricole",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "spent",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Joseph R.",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "$3000",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "General Flathead Allottees",
+      "allotment_number": "various",
+      "acreage": "40-160 acres",
+      "patent_date": "1910-1931",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "various",
+      "attorney": "various",
+      "mortgage": "widespread"
+    },
+    {
+      "allottee_name": "Standing Rock Allottees",
+      "allotment_number": "various",
+      "acreage": "160-640 acres",
+      "patent_date": "prior_to_1915-1930",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "various",
+      "attorney": "various",
+      "mortgage": "common"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board of Indian Commissioners",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "1921-07-05",
+      "subject": "Replies to circular letter regarding fee patents",
+      "action_requested": "Information on fee patent outcomes",
+      "outcome": "Transmittal of replies from field officers"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board of Indian Commissioners",
+      "recipient": "Field Officers",
+      "recipient_title": "Superintendents and Farmers",
+      "date": "1921-03-31",
+      "subject": "Circular letter requesting information on fee patent policy",
+      "action_requested": "Report on status of Indians who received patents-in-fee",
+      "outcome": "Collection of replies from multiple agencies"
+    },
+    {
+      "sender": "Don McCarr",
+      "sender_title": "Superintendent, Yakima Indian Agency",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board of Indian Commissioners",
+      "date": "1921",
+      "subject": "Reply to circular letter on fee patents",
+      "action_requested": "N/A - response",
+      "outcome": "Submitted report on Yakima fee patent recipients"
+    },
+    {
+      "sender": "George F. Smith",
+      "sender_title": "Farmer, Yakima Reservation",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board of Indian Commissioners",
+      "date": "1921",
+      "subject": "Reply to circular letter on fee patents",
+      "action_requested": "N/A - response",
+      "outcome": "Submitted observations on fee patent policy"
+    },
+    {
+      "sender": "W. O. Smith",
+      "sender_title": "Farmer, Yakima Reservation",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board of Indian Commissioners",
+      "date": "1921",
+      "subject": "Reply to circular letter on fee patents",
+      "action_requested": "N/A - response",
+      "outcome": "Submitted observations on fee patent policy"
+    },
+    {
+      "sender": "Oscar H. Boileau",
+      "sender_title": "Farmer, Yakima Reservation",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board of Indian Commissioners",
+      "date": "1921",
+      "subject": "Reply to circular letter on fee patents",
+      "action_requested": "N/A - response",
+      "outcome": "Submitted observations on fee patent policy"
+    },
+    {
+      "sender": "Chas. E. Coe",
+      "sender_title": "Superintendent, Flathead Reservation",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board of Indian Commissioners",
+      "date": "1921",
+      "subject": "Reply to circular letter on fee patents",
+      "action_requested": "N/A - response",
+      "outcome": "Submitted report on Flathead fee patent recipients"
+    },
+    {
+      "sender": "D. D. Wolfinger",
+      "sender_title": "Farmer, Flathead Reservation",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board of Indian Commissioners",
+      "date": "1921",
+      "subject": "Reply to circular letter on fee patents",
+      "action_requested": "N/A - response",
+      "outcome": "Submitted observations on fee patent policy"
+    },
+    {
+      "sender": "Brown",
+      "sender_title": "Farmer, Flathead Reservation",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board of Indian Commissioners",
+      "date": "1921",
+      "subject": "Reply to circular letter on fee patents",
+      "action_requested": "N/A - response",
+      "outcome": "Submitted observations on fee patent policy"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Enabling Act of 1905",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1905",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Provided for original allotments to heads of families on Standing Rock Reservation"
+    },
+    {
+      "bill_number": "Amendatory Act",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1905-1910",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Extended allotment rights to wives of heads of families (320 acres) and children (50-70 acres)"
+    }
+  ]
+}

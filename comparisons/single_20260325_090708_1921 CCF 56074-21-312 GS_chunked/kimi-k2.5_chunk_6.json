@@ -1,0 +1,740 @@
+{
+  "entities": [
+    {
+      "name": "James B. Kitoh",
+      "type": "person",
+      "context": "Superintendent of Fort Peck Indian Reservation, formerly at Standing Rock Reservation for six years"
+    },
+    {
+      "name": "James H. McGregor",
+      "type": "person",
+      "context": "Superintendent of Cheyenne River Agency"
+    },
+    {
+      "name": "Henry LeBeau",
+      "type": "person",
+      "context": "Farmer at Cheyenne River Agency, Whitehorse, South Dakota"
+    },
+    {
+      "name": "John W. Welsh, Jr.",
+      "type": "person",
+      "context": "Correspondent regarding fee patent policy"
+    },
+    {
+      "name": "H. M. Tidwell",
+      "type": "person",
+      "context": "Superintendent of Pine Ridge Indian Agency"
+    },
+    {
+      "name": "Elmer B. Pomeroy",
+      "type": "person",
+      "context": "Farmer at Pine Ridge Reservation, Eagle Nest District, Wanblee, South Dakota"
+    },
+    {
+      "name": "Judson Shook",
+      "type": "person",
+      "context": "Farmer at Pine Ridge Indian Reservation, Anderson, South Dakota"
+    },
+    {
+      "name": "J. W. C. Killer",
+      "type": "person",
+      "context": "Farmer at Pine Ridge Reservation, Oglala, South Dakota"
+    },
+    {
+      "name": "B. E. Brigance",
+      "type": "person",
+      "context": "Farmer at Pine Ridge Indian Reservation, Wakpamni District"
+    },
+    {
+      "name": "Ben Irving",
+      "type": "person",
+      "context": "Farmer at Pine Ridge Indian Reservation, Porcupine, South Dakota"
+    },
+    {
+      "name": "Leon J. Roebuck",
+      "type": "person",
+      "context": "Reporter at Pine Ridge Indian Reservation, Kyle, South Dakota"
+    },
+    {
+      "name": "E. H. Hutchison",
+      "type": "person",
+      "context": "Superintendent of Shoshone Indian Reservation, Fort Washakie, Wyoming"
+    },
+    {
+      "name": "Leroy Cuny",
+      "type": "person",
+      "context": "39-year-old Indian at Pine Ridge who retained land, raised cattle, and prospered"
+    },
+    {
+      "name": "William Twiss",
+      "type": "person",
+      "context": "58-year-old Indian at Pine Ridge who sold land and had nothing to show for it"
+    },
+    {
+      "name": "Competency Commission",
+      "type": "organization",
+      "context": "Commission responsible for issuing patents-in-fee to competent Indians in 1916 and 1918"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Issued circular letter dated March 21, 1921 regarding fee patent policy"
+    },
+    {
+      "name": "Indian Office",
+      "type": "organization",
+      "context": "Federal office administering Indian affairs and patent policies"
+    },
+    {
+      "name": "Department",
+      "type": "organization",
+      "context": "Federal Department setting policy for Indian affairs"
+    },
+    {
+      "name": "County authorities",
+      "type": "organization",
+      "context": "Local authorities making tax assessments on ceded reservation lands"
+    },
+    {
+      "name": "Standing Rock Reservation",
+      "type": "location",
+      "context": "Reservation in North Dakota where patents were issued in 1916 along Cannonball and Grand Rivers"
+    },
+    {
+      "name": "Fort Peck Indian Reservation",
+      "type": "location",
+      "context": "Reservation in Montana where Kitoh was transferred"
+    },
+    {
+      "name": "Cheyenne River Agency",
+      "type": "location",
+      "context": "Agency in South Dakota including Whitehorse and Promise"
+    },
+    {
+      "name": "Pine Ridge Indian Agency",
+      "type": "location",
+      "context": "Agency in South Dakota where 711 patents issued in 1918-1919"
+    },
+    {
+      "name": "Shoshone Indian Reservation",
+      "type": "location",
+      "context": "Reservation in Wyoming with 303 patents issued 1907-1930"
+    },
+    {
+      "name": "Whitehouse District",
+      "type": "location",
+      "context": "District within Cheyenne River Agency with 57 citizen Indians"
+    },
+    {
+      "name": "Eagle Nest District",
+      "type": "location",
+      "context": "District within Pine Ridge Reservation at Wanblee"
+    },
+    {
+      "name": "Wakpamni District",
+      "type": "location",
+      "context": "District within Pine Ridge Reservation"
+    },
+    {
+      "name": "Cannonball River",
+      "type": "location",
+      "context": "River on Standing Rock Reservation where Indians located"
+    },
+    {
+      "name": "Grand River",
+      "type": "location",
+      "context": "River on Standing Rock Reservation"
+    },
+    {
+      "name": "Missouri River",
+      "type": "location",
+      "context": "River bordering Standing Rock Reservation entire length"
+    },
+    {
+      "name": "Enabling Act of 1905",
+      "type": "legislation",
+      "context": "Act under which returned soldiers were issued patents-in-fee"
+    },
+    {
+      "name": "Amendatory Act",
+      "type": "legislation",
+      "context": "Act allowing allotment of wives of heads of families (320 acres) and children in 1908-1909"
+    },
+    {
+      "name": "Declaration of Policy 1919",
+      "type": "legislation",
+      "context": "Policy under which patents were issued 1919-1930"
+    },
+    {
+      "name": "160-acre allotment",
+      "type": "acreage_holding",
+      "context": "Allotment size for unmarried Indians"
+    },
+    {
+      "name": "320-acre allotment",
+      "type": "acreage_holding",
+      "context": "Allotment size for wives of heads of families under Amendatory Act"
+    },
+    {
+      "name": "640-acre allotment",
+      "type": "acreage_holding",
+      "context": "Allotment size for heads of families originally allotted as grazing lands"
+    },
+    {
+      "name": "80-acre allotment",
+      "type": "acreage_holding",
+      "context": "Average size of irrigable agricultural lands under fee patents at Shoshone Reservation"
+    }
+  ],
+  "events": [
+    {
+      "type": "patent_issuance",
+      "date": "1916",
+      "location": "Standing Rock Reservation",
+      "description": "Patents issued to patentees, largely mixed-blood element, many disposed of land through mortgages"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1918-04",
+      "location": "Pine Ridge Reservation",
+      "description": "341 patents-in-fee issued to persons with less than one-half Indian blood"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1919-09",
+      "location": "Pine Ridge Reservation",
+      "description": "370 patents-in-fee issued to Indians of half or less Indian blood"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1907",
+      "location": "Shoshone Indian Reservation",
+      "description": "68 patents-in-fee issued by individual application"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1909",
+      "location": "Shoshone Indian Reservation",
+      "description": "33 patents-in-fee issued by individual application"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1910",
+      "location": "Shoshone Indian Reservation",
+      "description": "57 patents-in-fee issued by individual application"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1911",
+      "location": "Shoshone Indian Reservation",
+      "description": "17 patents-in-fee issued by individual application"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1912",
+      "location": "Shoshone Indian Reservation",
+      "description": "6 patents-in-fee issued by individual application"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1913",
+      "location": "Shoshone Indian Reservation",
+      "description": "3 patents-in-fee issued by individual application"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1914",
+      "location": "Shoshone Indian Reservation",
+      "description": "90 patents-in-fee issued by individual application"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1915",
+      "location": "Shoshone Indian Reservation",
+      "description": "12 patents-in-fee issued by individual application"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1916",
+      "location": "Shoshone Indian Reservation",
+      "description": "65 patents-in-fee issued by Competency Commission"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1917",
+      "location": "Shoshone Indian Reservation",
+      "description": "1 patent-in-fee issued"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1918",
+      "location": "Shoshone Indian Reservation",
+      "description": "9 patents-in-fee issued by Competency Commission"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1919-1930",
+      "location": "Shoshone Indian Reservation",
+      "description": "Patents issued under Declaration of Policy 1919"
+    },
+    {
+      "type": "allotment",
+      "date": "1908",
+      "location": "Standing Rock Reservation",
+      "description": "Children allotted land 50-70 miles from parents' homes along water courses"
+    },
+    {
+      "type": "allotment",
+      "date": "1909",
+      "location": "Standing Rock Reservation",
+      "description": "Children allotted land 50-70 miles from parents' homes"
+    },
+    {
+      "type": "transfer",
+      "date": "1921-03-21",
+      "location": "Fort Peck Reservation",
+      "description": "James B. Kitoh transferred to Fort Peck Reservation from Standing Rock after six years"
+    },
+    {
+      "type": "cattle_purchase",
+      "date": "1921",
+      "location": "Southwest",
+      "description": "Special detail to purchase cattle for Indians in the southwest prior to transfer"
+    },
+    {
+      "type": "tax_assessment",
+      "date": "1916-1930",
+      "location": "Cheyenne River Agency",
+      "description": "County authorities assessed ceded lands as farm lands despite being grazing lands, causing high taxes"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Various buyers",
+      "payee": "Indian patentees",
+      "date": "1916-1930",
+      "description": "Sale of patented lands by Indians; 90% at Shoshone, 45 of 57 at Whitehouse District, many at Standing Rock and Pine Ridge"
+    },
+    {
+      "type": "mortgage",
+      "amount": "half to two-thirds of land value",
+      "payer": "Indian patentees",
+      "payee": "Bankers and land speculators",
+      "date": "1916-1930",
+      "description": "Mortgages placed on patented lands, interest and principal ate up resources leading to foreclosure"
+    },
+    {
+      "type": "lease",
+      "amount": "unknown",
+      "payer": "Lessees",
+      "payee": "Indian patentees",
+      "date": "1916-1930",
+      "description": "Leasing of patented lands by Indians who preferred not to farm, though farming would yield greater returns"
+    },
+    {
+      "type": "tax_payment",
+      "amount": "high",
+      "payer": "Indian patentees",
+      "payee": "County authorities",
+      "date": "1916-1930",
+      "description": "Tax payments on ceded portions assessed as farm lands rather than grazing lands"
+    },
+    {
+      "type": "purchase",
+      "amount": "unknown",
+      "payer": "Indian patentees",
+      "payee": "Various sellers",
+      "date": "1916-1930",
+      "description": "Purchase of cattle, implements, and home improvements by some Indians using sale proceeds wisely"
+    },
+    {
+      "type": "purchase",
+      "amount": "unknown",
+      "payer": "Indian patentees",
+      "payee": "Various sellers",
+      "date": "1916-1930",
+      "description": "Purchase of automobiles and expenditures on riotous living by others who sold lands"
+    },
+    {
+      "type": "sale",
+      "amount": "twenty to thirty dollars per acre",
+      "payer": "Buyers",
+      "payee": "Young Indian patentees",
+      "date": "1920s",
+      "description": "Sales of valuable agricultural land by young men and women who had no use for land far from homes"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "James B. Kitoh",
+      "type": "employed_by",
+      "object": "Fort Peck Indian Reservation",
+      "context": "Transferred to Fort Peck as Superintendent"
+    },
+    {
+      "subject": "James B. Kitoh",
+      "type": "employed_by",
+      "object": "Standing Rock Reservation",
+      "context": "Served as Superintendent for six years prior to transfer"
+    },
+    {
+      "subject": "James H. McGregor",
+      "type": "employed_by",
+      "object": "Cheyenne River Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "Henry LeBeau",
+      "type": "employed_by",
+      "object": "Cheyenne River Agency",
+      "context": "Farmer at Whitehorse"
+    },
+    {
+      "subject": "H. M. Tidwell",
+      "type": "employed_by",
+      "object": "Pine Ridge Indian Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "Elmer B. Pomeroy",
+      "type": "employed_by",
+      "object": "Pine Ridge Reservation",
+      "context": "Farmer at Eagle Nest District"
+    },
+    {
+      "subject": "Judson Shook",
+      "type": "employed_by",
+      "object": "Pine Ridge Reservation",
+      "context": "Farmer"
+    },
+    {
+      "subject": "J. W. C. Killer",
+      "type": "employed_by",
+      "object": "Pine Ridge Reservation",
+      "context": "Farmer at Oglala"
+    },
+    {
+      "subject": "B. E. Brigance",
+      "type": "employed_by",
+      "object": "Pine Ridge Reservation",
+      "context": "Farmer at Wakpamni District"
+    },
+    {
+      "subject": "Ben Irving",
+      "type": "employed_by",
+      "object": "Pine Ridge Reservation",
+      "context": "Farmer at Porcupine"
+    },
+    {
+      "subject": "Leon J. Roebuck",
+      "type": "located_at",
+      "object": "Pine Ridge Reservation",
+      "context": "At Kyle, South Dakota"
+    },
+    {
+      "subject": "E. H. Hutchison",
+      "type": "employed_by",
+      "object": "Shoshone Indian Reservation",
+      "context": "Superintendent at Fort Washakie, Wyoming"
+    },
+    {
+      "subject": "Mixed-blood women",
+      "type": "married_to",
+      "object": "White men",
+      "context": "Many mixed-blood Indian women married to white men immediately disposed of their lands"
+    },
+    {
+      "subject": "Children of heads of families",
+      "type": "allotted_to",
+      "object": "Standing Rock Reservation",
+      "context": "Allotted land 50-70 miles from parents' homes in 1908-1909, forced to take allotments inland from water courses"
+    },
+    {
+      "subject": "Wives of heads of families",
+      "type": "allotted_to",
+      "object": "Standing Rock Reservation",
+      "context": "Allotted 320 acres under Amendatory Act, often not adjoining husbands' allotments"
+    },
+    {
+      "subject": "Returned soldiers",
+      "type": "received",
+      "object": "Patents-in-fee",
+      "context": "Issued patents under Enabling Act of 1905, many retained lands and did well"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Various",
+      "allotment_number": "multiple",
+      "acreage": "160",
+      "patent_date": "1907-1930",
+      "patent_number": "unknown",
+      "mechanism": "individual_application",
+      "buyer": "various",
+      "sale_price": "various",
+      "attorney": "unknown",
+      "mortgage": "many placed mortgages"
+    },
+    {
+      "allottee_name": "Various",
+      "allotment_number": "multiple",
+      "acreage": "320",
+      "patent_date": "1907-1930",
+      "patent_number": "unknown",
+      "mechanism": "individual_application",
+      "buyer": "various",
+      "sale_price": "various",
+      "attorney": "unknown",
+      "mortgage": "various"
+    },
+    {
+      "allottee_name": "Various",
+      "allotment_number": "multiple",
+      "acreage": "640",
+      "patent_date": "1907-1930",
+      "patent_number": "unknown",
+      "mechanism": "individual_application",
+      "buyer": "various",
+      "sale_price": "various",
+      "attorney": "unknown",
+      "mortgage": "various"
+    },
+    {
+      "allottee_name": "341 persons",
+      "allotment_number": "multiple",
+      "acreage": "various",
+      "patent_date": "1918-04",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "N/A",
+      "sale_price": "N/A",
+      "attorney": "unknown",
+      "mortgage": "N/A",
+      "context": "Less than one-half Indian blood at Pine Ridge"
+    },
+    {
+      "allottee_name": "370 Indians",
+      "allotment_number": "multiple",
+      "acreage": "various",
+      "patent_date": "1919-09",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "N/A",
+      "sale_price": "N/A",
+      "attorney": "unknown",
+      "mortgage": "N/A",
+      "context": "Half or less Indian blood at Pine Ridge"
+    },
+    {
+      "allottee_name": "Returned soldiers",
+      "allotment_number": "multiple",
+      "acreage": "various",
+      "patent_date": "1905",
+      "patent_number": "unknown",
+      "mechanism": "private_bill",
+      "buyer": "N/A",
+      "sale_price": "N/A",
+      "attorney": "unknown",
+      "mortgage": "N/A",
+      "context": "Under Enabling Act of 1905"
+    },
+    {
+      "allottee_name": "Various",
+      "allotment_number": "303 total",
+      "acreage": "80 average",
+      "patent_date": "1907-1930",
+      "patent_number": "unknown",
+      "mechanism": "individual_application",
+      "buyer": "various",
+      "sale_price": "various",
+      "attorney": "unknown",
+      "mortgage": "90% sold or mortgaged",
+      "context": "Shoshone Reservation irrigable agricultural lands; blood groups included Full-blood, Three-fourths, Five-eighths, One-half, Three-eighths, One-fourth, Five-sixteenths, One-eighth"
+    },
+    {
+      "allottee_name": "Various",
+      "allotment_number": "65",
+      "acreage": "various",
+      "patent_date": "1916",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "various",
+      "sale_price": "various",
+      "attorney": "unknown",
+      "mortgage": "various",
+      "context": "Standing Rock Reservation, largely mixed-blood element"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Commissioners",
+      "recipient": "Various Superintendents",
+      "recipient_title": "Superintendents",
+      "date": "1921-03-21",
+      "subject": "Fee patent policy and circular letter requesting information",
+      "action_requested": "Report on fee patent Indians and policy recommendations",
+      "outcome": "Multiple responses received from various agencies"
+    },
+    {
+      "sender": "James B. Kitoh",
+      "sender_title": "Superintendent",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioners",
+      "date": "1921",
+      "subject": "Response to circular letter regarding Standing Rock and Fort Peck",
+      "action_requested": "N/A",
+      "outcome": "Provided information on patentees at Standing Rock, noted transfer to Fort Peck"
+    },
+    {
+      "sender": "James H. McGregor",
+      "sender_title": "Superintendent",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioners",
+      "date": "1921",
+      "subject": "Report on fee patent policy at Cheyenne River",
+      "action_requested": "N/A",
+      "outcome": "Recommended continued policy with individual merit consideration, not class distinction"
+    },
+    {
+      "sender": "Henry LeBeau",
+      "sender_title": "Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioners",
+      "date": "1921",
+      "subject": "Response regarding fee patent Indians",
+      "action_requested": "N/A",
+      "outcome": "Reported 45 of 57 citizen Indians in Whitehouse District sold lands, 12 holding"
+    },
+    {
+      "sender": "John W. Welsh, Jr.",
+      "sender_title": "unknown",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioners",
+      "date": "1921",
+      "subject": "Response regarding fee patent policy",
+      "action_requested": "N/A",
+      "outcome": "Criticized rapid release, recommended individual examination and holding 20-40 acres"
+    },
+    {
+      "sender": "H. M. Tidwell",
+      "sender_title": "Superintendent",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioners",
+      "date": "1921-03-31",
+      "subject": "Response to letter of March 31st regarding fee patents",
+      "action_requested": "N/A",
+      "outcome": "Reported on Pine Ridge patentees, opposed indiscriminate policy, noted 10% in debt and 15% with mortgages"
+    },
+    {
+      "sender": "Elmer B. Pomeroy",
+      "sender_title": "Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioners",
+      "date": "1921",
+      "subject": "Report on fee patent Indians at Pine Ridge",
+      "action_requested": "N/A",
+      "outcome": "Recommended holding 160 acres in trust, selling surplus under supervision"
+    },
+    {
+      "sender": "Judson Shook",
+      "sender_title": "Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioners",
+      "date": "1921",
+      "subject": "Report on fee patent policy",
+      "action_requested": "N/A",
+      "outcome": "Recommended withholding patents due to low land prices not equal to appraised valuation"
+    },
+    {
+      "sender": "J. W. C. Killer",
+      "sender_title": "Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioners",
+      "date": "1921",
+      "subject": "Report on fee patent Indians",
+      "action_requested": "N/A",
+      "outcome": "Recommended individual examination, cited Leroy Cuny and William Twiss as examples"
+    },
+    {
+      "sender": "B. E. Brigance",
+      "sender_title": "Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioners",
+      "date": "1921",
+      "subject": "Report on fee patent policy",
+      "action_requested": "N/A",
+      "outcome": "Recommended releasing young educated Indians, holding lands for old and afflicted"
+    },
+    {
+      "sender": "Ben Irving",
+      "sender_title": "Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioners",
+      "date": "1921",
+      "subject": "Report on fee patent Indians",
+      "action_requested": "N/A",
+      "outcome": "Recommended individual examination based on character of land and Indian"
+    },
+    {
+      "sender": "Leon J. Roebuck",
+      "sender_title": "unknown",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioners",
+      "date": "1921",
+      "subject": "Report on fee patent policy",
+      "action_requested": "N/A",
+      "outcome": "Recommended individual examination by superintendent and farmers"
+    },
+    {
+      "sender": "E. H. Hutchison",
+      "sender_title": "Superintendent",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioners",
+      "date": "1921",
+      "subject": "Report on 303 patents at Shoshone Reservation",
+      "action_requested": "N/A",
+      "outcome": "Reported 90% sold or mortgaged, recommended holding 160 acres as not adapted for farming"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Enabling Act of 1905",
+      "sponsor": "Congress",
+      "action_type": "enacted",
+      "date": "1905",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Allowed returned soldiers to receive patents-in-fee and became homes for Indians"
+    },
+    {
+      "bill_number": "Amendatory Act",
+      "sponsor": "Congress",
+      "action_type": "enacted",
+      "date": "1908-1909",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Allowed allotment of children in 1908-1909 and wives of heads of families (320 acres)"
+    },
+    {
+      "bill_number": "Declaration of Policy 1919",
+      "sponsor": "Department of Interior",
+      "action_type": "enacted",
+      "date": "1919",
+      "vote_count": "N/A",
+      "committee": "N/A",
+      "outcome": "Established policy for issuing patents 1919-1930"
+    },
+    {
+      "bill_number": "Twenty-five year holding period with ten year extension",
+      "sponsor": "Government",
+      "action_type": "enacted",
+      "date": "allotment era",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Original restriction period before patent issuance, extendable by ten years if not competent"
+    }
+  ]
+}

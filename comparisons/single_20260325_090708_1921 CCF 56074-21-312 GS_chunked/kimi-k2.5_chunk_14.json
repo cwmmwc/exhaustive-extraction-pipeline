@@ -1,0 +1,1016 @@
+{
+  "entities": [
+    {
+      "name": "Frank McLeod",
+      "type": "person",
+      "context": "Allottee who sold land, moved to town, invested in automobiles, became penniless"
+    },
+    {
+      "name": "Alex McLeod",
+      "type": "person",
+      "context": "Allottee who sold land, moved to town, invested in automobiles, became penniless"
+    },
+    {
+      "name": "Louis Clairmont, Jr.",
+      "type": "person",
+      "context": "Allottee depending on tribal payments for support"
+    },
+    {
+      "name": "Gilbert Burland",
+      "type": "person",
+      "context": "Allottee depending on tribal payments for support"
+    },
+    {
+      "name": "Mary Duplessis",
+      "type": "person",
+      "context": "Allottee operating lady's furnishing store successfully"
+    },
+    {
+      "name": "Duncan Campbell",
+      "type": "person",
+      "context": "Allottee operating feed barn and pool hall successfully"
+    },
+    {
+      "name": "Sam Pierre",
+      "type": "person",
+      "context": "Allottee engaged in farming and stock raising successfully"
+    },
+    {
+      "name": "Harry Burland",
+      "type": "person",
+      "context": "Allottee working as garage man successfully"
+    },
+    {
+      "name": "Mose Delaware",
+      "type": "person",
+      "context": "Allottee farming and clerking in store successfully"
+    },
+    {
+      "name": "Edna Hull",
+      "type": "person",
+      "context": "Allottee working as nurse in hospital successfully"
+    },
+    {
+      "name": "Joseph Antiste",
+      "type": "person",
+      "context": "Allottee who sold allotment and became destitute within one month of receiving patent"
+    },
+    {
+      "name": "Joseph Gardipie",
+      "type": "person",
+      "context": "Allottee who sold allotment, spent money, and became broke"
+    },
+    {
+      "name": "Louison Ashley",
+      "type": "person",
+      "context": "Allottee who sold allotment, bought saw mill and separator, failed, and became broke"
+    },
+    {
+      "name": "Fred Paricole",
+      "type": "person",
+      "context": "Allottee who sold allotment but obtained employment in laundry"
+    },
+    {
+      "name": "Joseph",
+      "type": "person",
+      "context": "Allottee who sold allotment for $3000.00, spent in revelry, living off mother and wife's allotment rent"
+    },
+    {
+      "name": "Peter Gangras",
+      "type": "person",
+      "context": "Allottee who sold allotment, went broke, and became logger"
+    },
+    {
+      "name": "David Ashley",
+      "type": "person",
+      "context": "Allottee farming his allotment successfully in Pablo, Montana"
+    },
+    {
+      "name": "Victor Dupuis",
+      "type": "person",
+      "context": "Allottee farming allotment, owns threshing machine, well improved place in Pablo, Montana"
+    },
+    {
+      "name": "Caville Dupuis",
+      "type": "person",
+      "context": "Allottee farming allotment, owns threshing machine operated by sons, in Polson, Montana"
+    },
+    {
+      "name": "Corrie Hiatt",
+      "type": "person",
+      "context": "Farmer at Flathead Reservation, Arlee, Montana, responding to Board of Indian Commissioners inquiry"
+    },
+    {
+      "name": "Donner",
+      "type": "person",
+      "context": "Superintendent of Fort Hall Reservation, Fort Hall, Idaho"
+    },
+    {
+      "name": "Pete Lamoose",
+      "type": "person",
+      "context": "Allottee who sold or mortgaged land (exception at Fort Hall)"
+    },
+    {
+      "name": "J. L. Suffecool",
+      "type": "person",
+      "context": "Superintendent of Sisseton Agency, Sisseton, South Dakota"
+    },
+    {
+      "name": "Alex Renville",
+      "type": "person",
+      "context": "Allottee of Peever, South Dakota who secured patent, sold land, bought other land, successful farmer"
+    },
+    {
+      "name": "Arthur Greycloud",
+      "type": "person",
+      "context": "Successful allottee farmer"
+    },
+    {
+      "name": "Joe Thompson",
+      "type": "person",
+      "context": "Successful allottee farmer"
+    },
+    {
+      "name": "George Cloutier",
+      "type": "person",
+      "context": "Successful allottee farmer at Veblen, South Dakota"
+    },
+    {
+      "name": "George Marlow",
+      "type": "person",
+      "context": "Successful allottee farmer at Veblen, South Dakota"
+    },
+    {
+      "name": "Louis LaBelle",
+      "type": "person",
+      "context": "Successful allottee farmer at Veblen, South Dakota"
+    },
+    {
+      "name": "Joseph Flute",
+      "type": "person",
+      "context": "Allottee who squandered money, arrested, in jail"
+    },
+    {
+      "name": "Taylor Flute",
+      "type": "person",
+      "context": "Allottee who squandered money, arrested, fined"
+    },
+    {
+      "name": "Smiley Williams",
+      "type": "person",
+      "context": "Allottee who squandered money on fast living"
+    },
+    {
+      "name": "Stephen LaBelle",
+      "type": "person",
+      "context": "Allottee who squandered money on fast living"
+    },
+    {
+      "name": "Elizabeth Hopkins",
+      "type": "person",
+      "context": "Allottee who squandered money on fast living"
+    },
+    {
+      "name": "Smiley Finley",
+      "type": "person",
+      "context": "Allottee who squandered money on fast living"
+    },
+    {
+      "name": "Edward Williams",
+      "type": "person",
+      "context": "Allottee who squandered money on fast living"
+    },
+    {
+      "name": "A. R. Snyder",
+      "type": "person",
+      "context": "Superintendent of Potawatomi Agency, Mayetta, Kansas"
+    },
+    {
+      "name": "Fred E. Perkins",
+      "type": "person",
+      "context": "Superintendent of Seger Indian Agency, Colony, Oklahoma"
+    },
+    {
+      "name": "Charles T. Coggeshall",
+      "type": "person",
+      "context": "Superintendent of Cantonment Indian Agency, Canton, Oklahoma"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Federal body inquiring about patent-in-fee Indians and competency"
+    },
+    {
+      "name": "Flathead Reservation",
+      "type": "location",
+      "context": "Reservation in Montana where Corrie Hiatt was farmer"
+    },
+    {
+      "name": "Fort Hall Reservation",
+      "type": "location",
+      "context": "Reservation in Idaho under Superintendent Donner"
+    },
+    {
+      "name": "Sisseton Agency",
+      "type": "organization",
+      "context": "Indian Agency in Sisseton, South Dakota"
+    },
+    {
+      "name": "Potawatomi Agency",
+      "type": "organization",
+      "context": "Indian Agency in Mayetta, Kansas"
+    },
+    {
+      "name": "Seger Indian Agency",
+      "type": "organization",
+      "context": "Indian Agency in Colony, Oklahoma"
+    },
+    {
+      "name": "Cantonment Indian Agency",
+      "type": "organization",
+      "context": "Indian Agency in Canton, Oklahoma"
+    },
+    {
+      "name": "Bureau of Indian Affairs",
+      "type": "organization",
+      "context": "Federal agency employing superintendents"
+    },
+    {
+      "name": "Polson, Montana",
+      "type": "location",
+      "context": "Town where several allottees resided"
+    },
+    {
+      "name": "Pablo, Montana",
+      "type": "location",
+      "context": "Town where Ashley and Dupuis allottees resided"
+    },
+    {
+      "name": "Arlee, Montana",
+      "type": "location",
+      "context": "Location of Flathead Reservation correspondent"
+    },
+    {
+      "name": "Fort Hall, Idaho",
+      "type": "location",
+      "context": "Location of Fort Hall Reservation"
+    },
+    {
+      "name": "Sisseton, South Dakota",
+      "type": "location",
+      "context": "Location of Sisseton Agency"
+    },
+    {
+      "name": "Peever, South Dakota",
+      "type": "location",
+      "context": "Home of successful allottee Alex Renville"
+    },
+    {
+      "name": "Veblen, South Dakota",
+      "type": "location",
+      "context": "Location where several successful allottees resided"
+    },
+    {
+      "name": "Mayetta, Kansas",
+      "type": "location",
+      "context": "Location of Potawatomi Agency"
+    },
+    {
+      "name": "Colony, Oklahoma",
+      "type": "location",
+      "context": "Location of Seger Indian Agency"
+    },
+    {
+      "name": "Anadarko, Oklahoma",
+      "type": "location",
+      "context": "Town where one allottee purchased home after land sale"
+    },
+    {
+      "name": "Canton, Oklahoma",
+      "type": "location",
+      "context": "Location of Cantonment Indian Agency"
+    },
+    {
+      "name": "Pocatello",
+      "type": "location",
+      "context": "City near Fort Hall Reservation where Indians lived"
+    }
+  ],
+  "events": [
+    {
+      "type": "fee_patent_issued",
+      "date": "1908",
+      "location": "Flathead Reservation, Montana",
+      "description": "One patent delivered"
+    },
+    {
+      "type": "fee_patent_issued",
+      "date": "1909",
+      "location": "Flathead Reservation, Montana",
+      "description": "Three patents delivered"
+    },
+    {
+      "type": "fee_patent_issued",
+      "date": "1910",
+      "location": "Flathead Reservation, Montana",
+      "description": "One patent delivered"
+    },
+    {
+      "type": "fee_patent_issued",
+      "date": "1913",
+      "location": "Flathead Reservation, Montana",
+      "description": "Eight patents delivered"
+    },
+    {
+      "type": "fee_patent_issued",
+      "date": "1913",
+      "location": "Flathead Reservation, Montana",
+      "description": "One patent delivered"
+    },
+    {
+      "type": "fee_patent_issued",
+      "date": "1915",
+      "location": "Flathead Reservation, Montana",
+      "description": "Three patents delivered"
+    },
+    {
+      "type": "fee_patent_issued",
+      "date": "1916",
+      "location": "Flathead Reservation, Montana",
+      "description": "One patent delivered"
+    },
+    {
+      "type": "fee_patent_issued",
+      "date": "1917",
+      "location": "Flathead Reservation, Montana",
+      "description": "Three patents delivered"
+    },
+    {
+      "type": "fee_patent_issued",
+      "date": "1918",
+      "location": "Flathead Reservation, Montana",
+      "description": "One patent delivered"
+    },
+    {
+      "type": "fee_patent_issued",
+      "date": "1918",
+      "location": "Potawatomi Agency, Kansas",
+      "description": "43 original allottees given patents by competency board"
+    },
+    {
+      "type": "fee_patent_issued",
+      "date": "1919",
+      "location": "Flathead Reservation, Montana",
+      "description": "Five patents delivered"
+    },
+    {
+      "type": "fee_patent_issued",
+      "date": "1930",
+      "location": "Flathead Reservation, Montana",
+      "description": "37 patents delivered"
+    },
+    {
+      "type": "land_sale",
+      "date": "unspecified",
+      "location": "Polson, Montana",
+      "description": "Frank McLeod and Alex McLeod sold allotments after receiving patents, moved to town, invested in automobiles, became penniless"
+    },
+    {
+      "type": "land_sale",
+      "date": "unspecified",
+      "location": "Polson, Montana",
+      "description": "Joseph Antiste sold allotment, became broke within one month of receiving patent-in-fee, now destitute"
+    },
+    {
+      "type": "land_sale",
+      "date": "unspecified",
+      "location": "Polson, Montana",
+      "description": "Joseph Gardipie sold allotment, spent money, now broke and doing nothing"
+    },
+    {
+      "type": "business_failure",
+      "date": "unspecified",
+      "location": "Polson, Montana",
+      "description": "Louison Ashley sold allotment, bought saw mill and failed, bought separator and failed, sold engine, now broke"
+    },
+    {
+      "type": "land_sale",
+      "date": "unspecified",
+      "location": "Polson, Montana",
+      "description": "Fred Paricole sold allotment and spent money but obtained laundry work situation"
+    },
+    {
+      "type": "land_sale",
+      "date": "unspecified",
+      "location": "Polson, Montana",
+      "description": "Joseph sold allotment for $3000.00, spent in revelry, living off mother and wife's allotment rent"
+    },
+    {
+      "type": "land_sale",
+      "date": "unspecified",
+      "location": "Polson, Montana",
+      "description": "Peter Gangras sold allotment, went broke, working as logger"
+    },
+    {
+      "type": "land_retention",
+      "date": "unspecified",
+      "location": "Pablo, Montana",
+      "description": "David Ashley farming allotment successfully"
+    },
+    {
+      "type": "land_retention",
+      "date": "unspecified",
+      "location": "Pablo, Montana",
+      "description": "Victor Dupuis farming allotment, owns threshing machine, well improved place"
+    },
+    {
+      "type": "land_retention",
+      "date": "unspecified",
+      "location": "Polson, Montana",
+      "description": "Caville Dupuis farming allotment, owns threshing machine operated by sons"
+    },
+    {
+      "type": "land_sale",
+      "date": "unspecified",
+      "location": "Fort Hall Reservation, Idaho",
+      "description": "Pete Lamoose sold or mortgaged land (exception at Fort Hall)"
+    },
+    {
+      "type": "land_sale",
+      "date": "unspecified",
+      "location": "Peever, South Dakota",
+      "description": "Alex Renville sold land after receiving patent, bought other land, successful farmer"
+    },
+    {
+      "type": "financial_squandering",
+      "date": "unspecified",
+      "location": "Sisseton Agency, South Dakota",
+      "description": "Joseph Flute, Taylor Flute, Smiley Williams, Stephen LaBelle, Elizabeth Hopkins, Smiley Finley, Edward Williams squandered land proceeds on fast living, some arrested or jailed"
+    },
+    {
+      "type": "competency_examination",
+      "date": "1917",
+      "location": "Seger Indian Agency, Oklahoma",
+      "description": "Competency commission examined large number of allottees"
+    },
+    {
+      "type": "land_sale",
+      "date": "1920-06-10 onwards",
+      "location": "Seger Indian Agency, Oklahoma",
+      "description": "Female allottee received patent, immediately sold remaining 80 acres for $6000, purchased home in Anadarko"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$3000.00",
+      "payer": "Unknown buyer",
+      "payee": "Joseph",
+      "date": "unspecified",
+      "description": "Sale of allotment by Joseph, proceeds spent in revelry"
+    },
+    {
+      "type": "sale",
+      "amount": "$6000",
+      "payer": "Unknown buyer",
+      "payee": "Unnamed female allottee",
+      "date": "1920",
+      "description": "Sale of remaining 80 acres of allotment after patent issuance"
+    },
+    {
+      "type": "purchase",
+      "amount": "unspecified",
+      "payer": "Unnamed female allottee",
+      "payee": "Seller in Anadarko",
+      "date": "1920",
+      "description": "Purchase of home in Anadarko with land sale proceeds"
+    },
+    {
+      "type": "purchase",
+      "amount": "unspecified",
+      "payer": "Frank McLeod and Alex McLeod",
+      "payee": "Automobile dealers",
+      "date": "unspecified",
+      "description": "Investment in automobiles after receiving patents"
+    },
+    {
+      "type": "purchase",
+      "amount": "unspecified",
+      "payer": "Louison Ashley",
+      "payee": "Saw mill seller",
+      "date": "unspecified",
+      "description": "Purchase of saw mill with allotment sale proceeds"
+    },
+    {
+      "type": "purchase",
+      "amount": "unspecified",
+      "payer": "Louison Ashley",
+      "payee": "Separator seller",
+      "date": "unspecified",
+      "description": "Purchase of separator with proceeds"
+    },
+    {
+      "type": "sale",
+      "amount": "unspecified",
+      "payer": "Unknown buyer",
+      "payee": "Louison Ashley",
+      "date": "unspecified",
+      "description": "Sale of engine from mill"
+    },
+    {
+      "type": "mortgage",
+      "amount": "up to land value",
+      "payer": "Various allottees",
+      "payee": "Lenders",
+      "date": "unspecified",
+      "description": "Approximately 20 percent of patentees at Fort Hall have mortgages on land, some in foreclosure"
+    },
+    {
+      "type": "sale",
+      "amount": "one-third of market value",
+      "payer": "White buyers",
+      "payee": "Indian allottees",
+      "date": "unspecified",
+      "description": "Nominal price sales by Indians at Potawatomi Agency"
+    },
+    {
+      "type": "expenditure",
+      "amount": "unspecified",
+      "payer": "Various allottees",
+      "payee": "Various merchants",
+      "date": "unspecified",
+      "description": "Proceeds spent on automobiles, subsistence, clothing, teams, wagons, harness, small homes"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Corrie Hiatt",
+      "type": "employed_by",
+      "object": "Flathead Reservation",
+      "context": "Farmer responding for the reservation"
+    },
+    {
+      "subject": "Donner",
+      "type": "employed_by",
+      "object": "Fort Hall Reservation",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "J. L. Suffecool",
+      "type": "employed_by",
+      "object": "Sisseton Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "A. R. Snyder",
+      "type": "employed_by",
+      "object": "Potawatomi Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "Fred E. Perkins",
+      "type": "employed_by",
+      "object": "Seger Indian Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "Charles T. Coggeshall",
+      "type": "employed_by",
+      "object": "Cantonment Indian Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "Joseph",
+      "type": "related_to",
+      "object": "Mother",
+      "context": "Living off bounty of his mother after selling allotment"
+    },
+    {
+      "subject": "Joseph",
+      "type": "related_to",
+      "object": "Wife",
+      "context": "Living off rent from wife's allotment"
+    },
+    {
+      "subject": "Caville Dupuis",
+      "type": "related_to",
+      "object": "Sons",
+      "context": "Sons operate his threshing machine"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Frank McLeod",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "unspecified",
+      "sale_price": "unspecified",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Alex McLeod",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "unspecified",
+      "sale_price": "unspecified",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Joseph Antiste",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "unspecified",
+      "sale_price": "unspecified",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Joseph Gardipie",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "unspecified",
+      "sale_price": "unspecified",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Louison Ashley",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "unspecified",
+      "sale_price": "unspecified",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Fred Paricole",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "unspecified",
+      "sale_price": "unspecified",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Joseph",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "unspecified",
+      "sale_price": "$3000.00",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Peter Gangras",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "unspecified",
+      "sale_price": "unspecified",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "David Ashley",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "retained",
+      "sale_price": "retained",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Victor Dupuis",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "retained",
+      "sale_price": "retained",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Caville Dupuis",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "retained",
+      "sale_price": "retained",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Pete Lamoose",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "sold or mortgaged",
+      "sale_price": "unspecified",
+      "attorney": "unspecified",
+      "mortgage": "mortgaged"
+    },
+    {
+      "allottee_name": "Alex Renville",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "sold then bought other land",
+      "sale_price": "unspecified",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Joseph Flute",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "squandered",
+      "sale_price": "squandered",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Taylor Flute",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "squandered",
+      "sale_price": "squandered",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Smiley Williams",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "squandered",
+      "sale_price": "squandered",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Stephen LaBelle",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "squandered",
+      "sale_price": "squandered",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Elizabeth Hopkins",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "squandered",
+      "sale_price": "squandered",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Smiley Finley",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "squandered",
+      "sale_price": "squandered",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Edward Williams",
+      "allotment_number": "unspecified",
+      "acreage": "unspecified",
+      "patent_date": "unspecified",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "squandered",
+      "sale_price": "squandered",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "43 Potawatomi original allottees",
+      "allotment_number": "various",
+      "acreage": "various",
+      "patent_date": "1918",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "various",
+      "attorney": "unspecified",
+      "mortgage": "various"
+    },
+    {
+      "allottee_name": "Approximately 100 Potawatomi original allottees",
+      "allotment_number": "various",
+      "acreage": "various",
+      "patent_date": "prior to 1914",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "various",
+      "attorney": "unspecified",
+      "mortgage": "various"
+    },
+    {
+      "allottee_name": "12 Potawatomi original allottees",
+      "allotment_number": "various",
+      "acreage": "various",
+      "patent_date": "1914-1918",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "various",
+      "attorney": "unspecified",
+      "mortgage": "various"
+    },
+    {
+      "allottee_name": "31-32 Potawatomi allottees",
+      "allotment_number": "various",
+      "acreage": "various",
+      "patent_date": "since 1918",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "various",
+      "attorney": "unspecified",
+      "mortgage": "various"
+    },
+    {
+      "allottee_name": "Unnamed female allottee",
+      "allotment_number": "unspecified",
+      "acreage": "80 acres",
+      "patent_date": "1920",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "unspecified",
+      "sale_price": "$6000",
+      "attorney": "unspecified",
+      "mortgage": "none"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "Corrie Hiatt",
+      "recipient_title": "Farmer, Flathead Reservation",
+      "date": "unspecified",
+      "subject": "Patent-in-fee Indians, requesting names and addresses",
+      "action_requested": "Provide names and addresses of patentees",
+      "outcome": "Response provided with list and conditions"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "Donner",
+      "recipient_title": "Superintendent, Fort Hall Reservation",
+      "date": "March 21",
+      "subject": "Releasing Indians from Government control",
+      "action_requested": "Report on competency and patents",
+      "outcome": "Response provided"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "Donner",
+      "recipient_title": "Superintendent, Fort Hall Reservation",
+      "date": "March 30",
+      "subject": "Releasing Indians from Government control",
+      "action_requested": "Report on competency and patents",
+      "outcome": "Response provided"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "Donner",
+      "recipient_title": "Superintendent, Fort Hall Reservation",
+      "date": "June 10",
+      "subject": "Releasing Indians from Government control",
+      "action_requested": "Report on competency and patents",
+      "outcome": "Response provided"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "J. L. Suffecool",
+      "recipient_title": "Superintendent, Sisseton Agency",
+      "date": "March 30",
+      "subject": "Issuance of patents-in-fee to Indians",
+      "action_requested": "Report on patent outcomes",
+      "outcome": "Response provided with policy recommendations"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "J. L. Suffecool",
+      "recipient_title": "Superintendent, Sisseton Agency",
+      "date": "June 10",
+      "subject": "Issuance of patents-in-fee to Indians",
+      "action_requested": "Report on patent outcomes",
+      "outcome": "Response provided"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "A. R. Snyder",
+      "recipient_title": "Superintendent, Potawatomi Agency",
+      "date": "March 21",
+      "subject": "Granting of patents-in-fee to Indians",
+      "action_requested": "Survey of patentees",
+      "outcome": "Response provided with statistics"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "A. R. Snyder",
+      "recipient_title": "Superintendent, Potawatomi Agency",
+      "date": "June 10",
+      "subject": "Granting of patents-in-fee to Indians",
+      "action_requested": "Survey of patentees",
+      "outcome": "Response provided"
+    },
+    {
+      "sender": "A. R. Snyder",
+      "sender_title": "Superintendent",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "January 29, 1918",
+      "subject": "Removal of restrictions on lands and funds",
+      "action_requested": "Policy consideration",
+      "outcome": "Referenced in 1921 response"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "Fred E. Perkins",
+      "recipient_title": "Superintendent, Seger Indian Agency",
+      "date": "March 30",
+      "subject": "Patent-in-fee Indians",
+      "action_requested": "Report on outcomes",
+      "outcome": "Response provided"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "Fred E. Perkins",
+      "recipient_title": "Superintendent, Seger Indian Agency",
+      "date": "June 10",
+      "subject": "Patent-in-fee Indians",
+      "action_requested": "Report on outcomes",
+      "outcome": "Response provided"
+    }
+  ],
+  "legislative_actions": []
+}

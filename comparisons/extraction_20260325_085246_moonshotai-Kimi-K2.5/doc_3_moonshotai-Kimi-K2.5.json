@@ -1,0 +1,299 @@
+```json
+{
+  "entities": [
+    {"name": "Francis Geisdorff", "type": "person", "context": "Crow allottee allotted under Act of June 4, 1920, patent issued December 21, 1923"},
+    {"name": "Frederick Geisdorff, Jr.", "type": "person", "context": "Crow allottee No. 2336, allotted 159.67 acres in 1907, died November 27, 1918 of influenza, age 20"},
+    {"name": "Frederick Geisdorff, Sr.", "type": "person", "context": "Father of Frederick Geisdorff, Jr., received leasing papers August 2, 1918"},
+    {"name": "Emily J. Geisdorff", "type": "person", "context": "Widow of Frederick Geisdorff, Jr., lived at Randlett, Utah, received $1,317.26 from sale proceeds"},
+    {"name": "Emily M. Geisdorff", "type": "person", "context": "Widow of Frederick Geisdorff, Jr. (alternate spelling)"},
+    {"name": "Emily F. Geisdorff", "type": "person", "context": "Widow of Frederick Geisdorff, Jr. (alternate initial)"},
+    {"name": "Emily Lucile Geisdorff", "type": "person", "context": "Minor daughter of Frederick Geisdorff, Jr., born May 23, 1918, received $188.90 from sale proceeds"},
+    {"name": "Thomas R. Powers", "type": "person", "context": "Purchaser of Allotment No. 2336, bid $1,500, lived at Wyola, Montana"},
+    {"name": "C.H. Asbury", "type": "person", "context": "Superintendent, Crow Agency, Montana, handled land sale proceedings"},
+    {"name": "Albert H. Kneale", "type": "person", "context": "Superintendent, Uintah and Ouray Agency, Fort Duchesne, Utah, assisted with heirship determination"},
+    {"name": "Calvin Coolidge", "type": "person", "context": "President of the United States, signed patent for Francis Geisdorff December 21, 1923"},
+    {"name": "Woodrow Wilson", "type": "person", "context": "President of the United States, signed Fee Patent No. 719146 November 14, 1919"},
+    {"name": "John McPhaul", "type": "person", "context": "Acting Assistant Commissioner, General Land Office, approved fee patent issuance October 13, 1919"},
+    {"name": "Commissioner of Indian Affairs", "type": "organization", "context": "Office in Washington, D.C., approved land sale proceedings"},
+    {"name": "Secretary of the Interior", "type": "organization", "context": "Office overseeing heirship determination"},
+    {"name": "Crow Tribe of Indians", "type": "organization", "context": "Tribe to whom land should have reverted upon allottee's death according to Treaty of 1868"},
+    {"name": "Crow Reservation", "type": "location", "context": "Location of Allotment No. 2336 in Montana"},
+    {"name": "Fort Duchesne, Utah", "type": "location", "context": "Location of Uintah and Ouray Agency, where Frederick Geisdorff, Jr. lived"},
+    {"name": "Randlett, Utah", "type": "location", "context": "Residence of Frederick Geisdorff, Jr. and family"},
+    {"name": "Wyola, Montana", "type": "location", "context": "Residence of Thomas R. Powers"},
+    {"name": "Hartman, Wyoming", "type": "location", "context": "Address of Thomas R. Powers (alternate)"},
+    {"name": "Billings, Montana", "type": "location", "context": "Location of Merchants National Bank and U.S. Land Office"},
+    {"name": "Sheridan Banking Company", "type": "organization", "context": "Bank on which checks from Thomas R. Powers were drawn"},
+    {"name": "Merchants National Bank of Billings", "type": "organization", "context": "Bank holding $7.98 from lease money for the estate"},
+    {"name": "General Land Office", "type": "organization", "context": "Office issuing patents, located in Washington and Billings, Montana"},
+    {"name": "Office of Indian Affairs", "type": "organization", "context": "Office in Washington, D.C. handling land sales"},
+    {"name": "Department of the Interior", "type": "organization", "context": "Federal department overseeing Indian affairs"},
+    {"name": "Uintah and Ouray Agency", "type": "organization", "context": "Indian agency at Fort Duchesne, Utah"},
+    {"name": "Crow Agency", "type": "organization", "context": "Indian agency in Montana handling the Geisdorff case"},
+    {"name": "Allotment No. 2336", "type": "land_parcel", "context": "159.67 acres allotted to Frederick Geisdorff, Jr.: SE 1/4 of NE 1/4, SE 1/4 of NW 1/4, and Lot 2, Sec. 19, T. 9 S., R. 34 E., Montana Meridian"},
+    {"name": "Francis Geisdorff Allotment", "type": "land_parcel", "context": "648.04 acres: Lots 9-12, Sec. 2; N 1/2 of SW 1/4; N 1/2 of SE 1/4; N 1/2 of S 1/2 of SE 1/4, Sec. 11, T. 1 S., R. 34 E."},
+    {"name": "Crow Land Sale No. 991", "type": "legal_case", "context": "Sale case number for Frederick Geisdorff, Jr. allotment"},
+    {"name": "Treaty of 1868", "type": "legislation", "context": "Treaty establishing Crow Tribe property rights"},
+    {"name": "Act of April 11, 1882", "type": "legislation", "context": "22 Stat. L. 42, under which Frederick Geisdorff, Jr. was allotted"},
+    {"name": "Act of February 8, 1887", "type": "legislation", "context": "24 Stat. L. 388 (Dawes Act), under which trust patent was issued"},
+    {"name": "Act of May 18, 1916", "type": "legislation", "context": "39 Stat. 123, referenced regarding water rights reservation"},
+    {"name": "Act of June 4, 1920", "type": "legislation", "context": "41 Stat., 751, under which Francis Geisdorff was allotted"}
+  ],
+  "events": [
+    {"type": "allotment", "date": "1907-12-02", "location": "Crow Reservation, Montana", "description": "Frederick Geisdorff, Jr. allotted 159.67 acres as Allotment No. 2336 under Act of April 11, 1882"},
+    {"type": "trust_patent_issued", "date": "1907-12-02", "location": "Crow Reservation, Montana", "description": "Trust patent issued to Frederick Geisdorff, Jr. under Act of February 8, 1887, 25-year trust period"},
+    {"type": "petition_received", "date": "1918-06-14", "location": "Crow Agency, Montana", "description": "Petition for Sale of Land received from Frederick Geisdorff, Jr."},
+    {"type": "sale_acceptance_sent", "date": "1918-10-04", "location": "Crow Agency, Montana", "description": "Acceptance of sale sent to Frederick Geisdorff, Jr. for signature"},
+    {"type": "sale_acceptance_signed", "date": "1918-10-18", "location": "Randlett, Utah", "description": "Frederick Geisdorff, Jr. signed and returned acceptance form"},
+    {"type": "bid_acceptance_notification", "date": "1918-10-24", "location": "Crow Agency, Montana", "description": "Thomas R. Powers notified of acceptance of his bid of $1,500 for 159.67 acres under Crow Land Sale No. 991"},
+    {"type": "payment_received", "date": "1918-11-05", "location": "Crow Agency, Montana", "description": "Checks for balance of purchase price received from Thomas R. Powers and acknowledged"},
+    {"type": "death", "date": "1918-11-27", "location": "Fort Duchesne, Utah", "description": "Frederick Geisdorff, Jr. died of influenza, age 20, survived by wife and infant daughter"},
+    {"type": "death_notification", "date": "1918-12-10", "location": "Fort Duchesne, Utah", "description": "Superintendent Kneale notified Crow Agency of Frederick Geisdorff, Jr.'s death"},
+    {"type": "heirship_hearing", "date": "1919-08-29", "location": "Crow Agency, Montana", "description": "Hearing held to determine heirs of Frederick Geisdorff, Jr."},
+    {"type": "fee_patent_issued", "date": "1919-11-14", "location": "Washington, D.C.", "description": "Fee Patent No. 719146 issued to Thomas R. Powers for Allotment No. 2336"},
+    {"type": "patent_receipt", "date": "1919-12-19", "location": "Crow Agency, Montana", "description": "Receipt for Fee Patent No. 719146 signed by Superintendent C.H. Asbury"},
+    {"type": "heirship_determination", "date": "1920-04-27", "location": "Crow Agency, Montana", "description": "Heirs determined: Emily J. Geisdorff (widow) and Emily Lucile Geisdorff (daughter)"},
+    {"type": "patent_issued", "date": "1923-12-21", "location": "Washington, D.C.", "description": "Patent issued to Francis Geisdorff for 648.04 acres under Act of June 4, 1920"}
+  ],
+  "financial_transactions": [
+    {"type": "sale", "amount": "$1,500.00", "payer": "Thomas R. Powers", "payee": "Estate of Frederick Geisdorff, Jr.", "date": "1918-11-05", "description": "Purchase price for Allotment No. 2336 (159.67 acres) at $9.39 per acre, Crow Land Sale No. 991"},
+    {"type": "payment", "amount": "$150.00", "payer": "Thomas R. Powers", "payee": "Crow Agency", "date": "1918-10-24", "description": "10% deposit submitted with bid"},
+    {"type": "payment", "amount": "$1,350.00", "payer": "Thomas R. Powers", "payee": "Crow Agency", "date": "1918-11-05", "description": "Balance of purchase price paid via check on Sheridan Banking Company"},
+    {"type": "fee", "amount": "$2.00", "payer": "Thomas R. Powers", "payee": "Crow Agency", "date": "1918-11-05", "description": "Advertising fee for land sale over $1,000 and under $2,000"},
+    {"type": "fee", "amount": "$15.00", "payer": "Estate of Frederick Geisdorff, Jr.", "payee": "Indian Office", "date": "1920-04-27", "description": "Heirship fee deducted from estate funds authorized by Indian Office"},
+    {"type": "payment", "amount": "$1,317.26", "payer": "Crow Agency", "payee": "Emily J. Geisdorff", "date": "1920-04-27", "description": "One half plus dower interest from sale proceeds (Check 10613)"},
+    {"type": "payment", "amount": "$188.90", "payer": "Crow Agency", "payee": "Emily Lucile Geisdorff (minor)", "date": "1920-04-27", "description": "Balance of estate proceeds held to credit of minor daughter"},
+    {"type": "deposit", "amount": "$7.98", "payer": "Lease income", "payee": "Merchants National Bank of Billings", "date": "pre-1919", "description": "Lease money deposited to credit of Frederick Geisdorff, Jr. estate"}
+  ],
+  "relationships": [
+    {"subject": "Frederick Geisdorff, Jr.", "type": "related_to", "object": "Emily J. Geisdorff", "context": "Husband and wife"},
+    {"subject": "Frederick Geisdorff, Jr.", "type": "related_to", "object": "Emily Lucile Geisdorff", "context": "Father and daughter"},
+    {"subject": "Frederick Geisdorff, Jr.", "type": "related_to", "object": "Frederick Geisdorff, Sr.", "context": "Son and father"},
+    {"subject": "Emily J. Geisdorff", "type": "related_to", "object": "Emily Lucile Geisdorff", "context": "Mother and daughter"},
+    {"subject": "Frederick Geisdorff, Jr.", "type": "represented_by", "object": "C.H. Asbury", "context": "Superintendent Crow Agency handled allotment affairs"},
+    {"subject": "Frederick Geisdorff, Jr.", "type": "represented_by", "object": "Albert H. Kneale", "context": "Superintendent Uintah and Ouray Agency assisted for Utah jurisdiction"},
+    {"subject": "Thomas R. Powers", "type": "bought_from", "object": "Estate of Frederick Geisdorff, Jr.", "context": "Purchased Allotment No. 2336 for $1,500"},
+    {"subject": "C.H. Asbury", "type": "employed_by", "object": "Office of Indian Affairs", "context": "Superintendent at Crow Agency"},
+    {"subject": "Albert H. Kneale", "type": "employed_by", "object": "Office of Indian Affairs", "context": "Superintendent at Uintah and Ouray Agency"},
+    {"subject": "Francis Geisdorff", "type": "represented_by", "object": "Calvin Coolidge", "context": "President signed patent as grantor representative"}
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Frederick Geisdorff, Jr.",
+      "allotment_number": "2336",
+      "acreage": "159.67 acres",
+      "patent_date": "1907-12-02",
+      "patent_number": "Trust Patent",
+      "mechanism": "administrative",
+      "buyer": null,
+      "sale_price": null,
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Frederick Geisdorff, Jr.",
+      "allotment_number": "2336",
+      "acreage": "159.67 acres",
+      "patent_date": "1919-11-14",
+      "patent_number": "719146",
+      "mechanism": "administrative",
+      "buyer": "Thomas R. Powers",
+      "sale_price": "$1,500.00",
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Francis Geisdorff",
+      "allotment_number": null,
+      "acreage": "648.04 acres",
+      "patent_date": "1923-12-21",
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": null,
+      "sale_price": null,
+      "attorney": null,
+      "mortgage": null
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "C.H. Asbury",
+      "sender_title": "Superintendent, Crow Agency",
+      "recipient": "Frederick Geisdorff, Jr.",
+      "recipient_title": "Allottee",
+      "date": "1918-11-05",
+      "subject": "Request for birth date and relatives for sale approval",
+      "action_requested": "Submit date of birth and names/addresses of all relatives",
+      "outcome": "No reply received from allottee"
+    },
+    {
+      "sender": "C.H. Asbury",
+      "sender_title": "Superintendent, Crow Agency",
+      "recipient": "Thomas R. Powers",
+      "recipient_title": "Bidder",
+      "date": "1918-10-24",
+      "subject": "Notification of bid acceptance for Crow Land Sale No. 991",
+      "action_requested": "Remit balance due within 30 days plus advertising fee, sign affidavit of vendee",
+      "outcome": "Compliance received November 5, 1918"
+    },
+    {
+      "sender": "C.H. Asbury",
+      "sender_title": "Superintendent, Crow Agency",
+      "recipient": "Thomas R. Powers",
+      "recipient_title": "Purchaser",
+      "date": "1918-11-05",
+      "subject": "Acknowledgment of receipt of checks for land purchase",
+      "action_requested": "None - receipt acknowledged",
+      "outcome": "Checks for $1,350 and $150 received, report made to Indian Bureau"
+    },
+    {
+      "sender": "Albert H. Kneale",
+      "sender_title": "Superintendent, Uintah and Ouray Agency",
+      "recipient": "C.H. Asbury",
+      "recipient_title": "Superintendent, Crow Agency",
+      "date": "1918-12-10",
+      "subject": "Notification of death of Frederick Geisdorff, Jr.",
+      "action_requested": "None - informational",
+      "outcome": "Death confirmed, estate proceedings initiated"
+    },
+    {
+      "sender": "Emily J. Geisdorff",
+      "sender_title": "Widow",
+      "recipient": "C.H. Asbury",
+      "recipient_title": "Superintendent, Crow Agency",
+      "date": "1919-03-01",
+      "subject": "Inquiry regarding payment of deceased husband's note",
+      "action_requested": "Financial assistance",
+      "outcome": "Denied - no funds available, heirship hearing to be advertised"
+    },
+    {
+      "sender": "C.H. Asbury",
+      "sender_title": "Superintendent, Crow Agency",
+      "recipient": "Emily J. Geisdorff",
+      "recipient_title": "Widow",
+      "date": "1919-03-11",
+      "subject": "Response regarding financial assistance and sale status",
+      "action_requested": "Wait for heirship determination",
+      "outcome": "Sale uncertain due to minority, heirship hearing to be held"
+    },
+    {
+      "sender": "C.H. Asbury",
+      "sender_title": "Superintendent, Crow Agency",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "1919-03-24",
+      "subject": "Report on sale of Allotment No. 2336 and death of allottee",
+      "action_requested": "Instructions on how to proceed with sale to heirs",
+      "outcome": "Instructions received April 26, 1919"
+    },
+    {
+      "sender": "Commissioner of Indian Affairs",
+      "sender_title": "Chief Clerk",
+      "recipient": "C.H. Asbury",
+      "recipient_title": "Superintendent, Crow Agency",
+      "date": "1919-04-26",
+      "subject": "Instructions regarding Geisdorff land sale",
+      "action_requested": "Prepare and forward sale papers if heirs want sale to proceed, otherwise reject bid",
+      "outcome": "Sale proceeded with widow's acceptance"
+    },
+    {
+      "sender": "C.H. Asbury",
+      "sender_title": "Superintendent, Crow Agency",
+      "recipient": "Emily M. Geisdorff",
+      "recipient_title": "Widow",
+      "date": "1919-03-27",
+      "subject": "Inquiry regarding completion of pending sale",
+      "action_requested": "Indicate whether to complete sale or reject bid",
+      "outcome": "Authority to proceed sent May 27, 1919"
+    },
+    {
+      "sender": "C.H. Asbury",
+      "sender_title": "Superintendent, Crow Agency",
+      "recipient": "Emily F. Geisdorff",
+      "recipient_title": "Widow",
+      "date": "1919-05-27",
+      "subject": "Enclosing authority to complete sale to Thomas R. Powers",
+      "action_requested": "Sign and return authority if sale desired",
+      "outcome": "Sale completed, patent issued"
+    },
+    {
+      "sender": "C.H. Asbury",
+      "sender_title": "Superintendent, Crow Agency",
+      "recipient": "Thomas R. Powers",
+      "recipient_title": "Purchaser",
+      "date": "1918-12-05",
+      "subject": "Potential cancellation of sale due to allottee's minority",
+      "action_requested": "Option to cancel and return payment upon request",
+      "outcome": "Sale not cancelled, proceeded with heirship process"
+    },
+    {
+      "sender": "C.H. Asbury",
+      "sender_title": "Superintendent, Crow Agency",
+      "recipient": "Thomas R. Powers",
+      "recipient_title": "Purchaser",
+      "date": "1919-10-17",
+      "subject": "Delay in issuance of title",
+      "action_requested": "Patience pending heirship determination",
+      "outcome": "Fee patent issued November 14, 1919"
+    },
+    {
+      "sender": "C.H. Asbury",
+      "sender_title": "Superintendent, Crow Agency",
+      "recipient": "Emily J. Geisdorff",
+      "recipient_title": "Widow",
+      "date": "1920-04-27",
+      "subject": "Distribution of sale proceeds to heirs",
+      "action_requested": "None - notification of check enclosed",
+      "outcome": "Check 10613 for $1,317.26 sent to widow, $188.90 to daughter's credit"
+    },
+    {
+      "sender": "John McPhaul",
+      "sender_title": "Acting Assistant Commissioner, General Land Office",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "1919-10-13",
+      "subject": "Approval of fee patent issuance",
+      "action_requested": "Issue patent in fee to purchaser",
+      "outcome": "Fee Patent No. 719146 issued November 14, 1919"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Act of April 11, 1882",
+      "sponsor": null,
+      "action_type": "enacted",
+      "date": "1882-04-11",
+      "vote_count": null,
+      "committee": null,
+      "outcome": "22 Stat. L. 42 - Authorized allotment of land to Frederick Geisdorff, Jr."
+    },
+    {
+      "bill_number": "Act of February 8, 1887",
+      "sponsor": null,
+      "action_type": "enacted",
+      "date": "1887-02-08",
+      "vote_count": null,
+      "committee": null,
+      "outcome": "24 Stat. L. 388 (Dawes Act) - Authorized trust patent with 25-year trust period"
+    },
+    {
+      "bill_number": "Act of May 18, 1916",
+      "sponsor": null,
+      "action_type": "enacted",
+      "date": "1916-05-18",
+      "vote_count": null,
+      "committee": null,
+      "outcome": "39 Stat. 123 - Referenced regarding water rights reservation in patents"
+    },
+    {
+      "bill_number": "Act of June 4, 1920",
+      "sponsor": null,
+      "action_type": "enacted",
+      "date": "1920-06-04",
+      "vote_count": null,
+      "committee": null,
+      "outcome": "41 Stat., 751 - Authorized allotment to Francis Geisdorff"
+    }
+  ]
+}
+```
