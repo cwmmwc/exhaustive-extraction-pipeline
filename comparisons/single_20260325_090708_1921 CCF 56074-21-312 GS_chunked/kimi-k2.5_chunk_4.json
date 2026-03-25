@@ -1,0 +1,592 @@
+{
+  "entities": [
+    {
+      "name": "J. Re Phillips",
+      "type": "person",
+      "context": "Field Clerk, Okmulgee, Oklahoma, Five Civilized Tribes"
+    },
+    {
+      "name": "H. A. Archerd",
+      "type": "person",
+      "context": "Field Clerk, Holdenville, Oklahoma, Five Civilized Tribes"
+    },
+    {
+      "name": "S. A. Mills",
+      "type": "person",
+      "context": "Field Clerk, Ardmore, Oklahoma, Five Civilized Tribes"
+    },
+    {
+      "name": "Gabe E. Parker",
+      "type": "person",
+      "context": "Superintendent for the Five Civilized Tribes"
+    },
+    {
+      "name": "Wm. E. Johnson",
+      "type": "person",
+      "context": "Enforcement officer, Five Civilized Tribes"
+    },
+    {
+      "name": "J. Blair Shoenfelt",
+      "type": "person",
+      "context": "Supervisor of Indian policemen, Five Civilized Tribes"
+    },
+    {
+      "name": "C. H. Asbury",
+      "type": "person",
+      "context": "Superintendent, Crow Reservation, Montana"
+    },
+    {
+      "name": "Regnald Pearce",
+      "type": "person",
+      "context": "Farmer, Wyola, Crow Reservation, Montana"
+    },
+    {
+      "name": "S. P. Cope",
+      "type": "person",
+      "context": "Farmer, Lodge Grass, Crow Reservation, Montana"
+    },
+    {
+      "name": "Mrs. B. C. Keough",
+      "type": "person",
+      "context": "Field Matron, St. Xavier, Crow Reservation, Montana"
+    },
+    {
+      "name": "W. A. Petzoldt",
+      "type": "person",
+      "context": "Baptist Missionary, Crow Reservation, Montana"
+    },
+    {
+      "name": "Eldon Lowe",
+      "type": "person",
+      "context": "Field Clerk, Five Civilised Tribes, Tulsa, Oklahoma"
+    },
+    {
+      "name": "B. F. McCurtain",
+      "type": "person",
+      "context": "Field Clerk, Five Civilised Tribes, Purant, Oklahoma"
+    },
+    {
+      "name": "C. Edmister",
+      "type": "person",
+      "context": "Farmer, Shawnee Agency, Oklahoma"
+    },
+    {
+      "name": "George Vaux Jr.",
+      "type": "person",
+      "context": "Chairman, Board of Indian Commissioners"
+    },
+    {
+      "name": "Malcolm McDowell",
+      "type": "person",
+      "context": "Secretary, Board of Indian Commissioners"
+    },
+    {
+      "name": "William S. Ketcham",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Washington D.C."
+    },
+    {
+      "name": "Daniel Smiley",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Morenci, Arizona"
+    },
+    {
+      "name": "Hugh L. Scott",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Princeton, N.J."
+    },
+    {
+      "name": "Alfred E. Smith",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, New York"
+    },
+    {
+      "name": "Merrill E. Gates",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Washington D.C."
+    },
+    {
+      "name": "Warren K. Moorehead",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Andover, Mass."
+    },
+    {
+      "name": "Samuel A. Eliot",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Boston, Mass."
+    },
+    {
+      "name": "Frank Knox",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Manchester, N.H."
+    },
+    {
+      "name": "Father Taelman",
+      "type": "person",
+      "context": "Missionary working among Indians, Crow Reservation"
+    },
+    {
+      "name": "Five Civilized Tribes",
+      "type": "organization",
+      "context": "Cherokee, Chickasaw, Choctaw, Creek, and Seminole Nations"
+    },
+    {
+      "name": "Creek Nation",
+      "type": "organization",
+      "context": "Formerly autonomous territory, part of Five Civilized Tribes"
+    },
+    {
+      "name": "Chickasaw tribe",
+      "type": "organization",
+      "context": "Native American tribe, part of Five Civilized Tribes"
+    },
+    {
+      "name": "Choctaws",
+      "type": "organization",
+      "context": "Native American tribe, part of Five Civilized Tribes"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Federal department overseeing Indian Affairs"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Advisory board to Department of the Interior"
+    },
+    {
+      "name": "Office of Indian Affairs",
+      "type": "organization",
+      "context": "Bureau within Department of the Interior"
+    },
+    {
+      "name": "Crow Reservation",
+      "type": "location",
+      "context": "Indian reservation in Montana"
+    },
+    {
+      "name": "Shawnee Agency",
+      "type": "organization",
+      "context": "Federal agency in Oklahoma"
+    },
+    {
+      "name": "Okmulgee",
+      "type": "location",
+      "context": "City in Oklahoma, location of field clerk office"
+    },
+    {
+      "name": "Holdenville",
+      "type": "location",
+      "context": "City in Oklahoma, location of field clerk office"
+    },
+    {
+      "name": "Ardmore",
+      "type": "location",
+      "context": "City in Oklahoma, location of field clerk office"
+    },
+    {
+      "name": "Muskogee",
+      "type": "location",
+      "context": "City in Oklahoma, location of Superintendent office"
+    },
+    {
+      "name": "Tulsa",
+      "type": "location",
+      "context": "City in Oklahoma, location of field clerk office"
+    },
+    {
+      "name": "Purant",
+      "type": "location",
+      "context": "Location in Oklahoma (likely Porum or similar), field clerk station"
+    },
+    {
+      "name": "Wyola",
+      "type": "location",
+      "context": "Location on Crow Reservation, Montana"
+    },
+    {
+      "name": "Lodge Grass",
+      "type": "location",
+      "context": "Location on Crow Reservation, Montana"
+    },
+    {
+      "name": "St. Xavier",
+      "type": "location",
+      "context": "Location on Crow Reservation, Montana"
+    },
+    {
+      "name": "Crow Agency",
+      "type": "location",
+      "context": "Agency headquarters on Crow Reservation, Montana"
+    },
+    {
+      "name": "Washington, D.C.",
+      "type": "location",
+      "context": "Federal capital, location of Board of Indian Commissioners"
+    },
+    {
+      "name": "Act of May 27, 1908",
+      "type": "legislation",
+      "context": "Congressional act regarding Five Civilized Tribes land restrictions"
+    },
+    {
+      "name": "40-acre homestead",
+      "type": "acreage_holding",
+      "context": "Proposed inalienable land reserve for Indian allottees"
+    },
+    {
+      "name": "Competency Commission",
+      "type": "organization",
+      "context": "Board responsible for removing restrictions from Indians"
+    },
+    {
+      "name": "County Court",
+      "type": "organization",
+      "context": "Local court approving sales of inherited lands"
+    },
+    {
+      "name": "United States Probate Attorneys",
+      "type": "organization",
+      "context": "Federal attorneys supervising guardians of Indian minors"
+    },
+    {
+      "name": "Probate Court",
+      "type": "organization",
+      "context": "Court appointing guardians for Indian children and approving land sales"
+    }
+  ],
+  "events": [
+    {
+      "type": "allotment",
+      "date": "pre-1908",
+      "location": "Creek Nation, Five Civilized Tribes Territory",
+      "description": "Allotment of land in severalty to Indians prior to Congressional act of 1908"
+    },
+    {
+      "type": "legislation_enacted",
+      "date": "1908-05-27",
+      "location": "Washington, D.C.",
+      "description": "Congressional act of May 27, 1908 found Indians facing new conditions without commercial experience"
+    },
+    {
+      "type": "war_contribution",
+      "date": "1914-1918",
+      "location": "Five Civilized Tribes Territory",
+      "description": "Members of Five Civilized Tribes contributed financially and with their lives during World War I"
+    },
+    {
+      "type": "restriction_removal",
+      "date": "1918-1919",
+      "location": "Five Civilized Tribes Territory",
+      "description": "Competency Commission arbitrarily removed restrictions from Indians two or three years prior to 1921"
+    },
+    {
+      "type": "land_sale",
+      "date": "1908-1921",
+      "location": "Five Civilized Tribes Territory",
+      "description": "Widespread sale of lands by Indians, often for fifty percent or less of real value"
+    },
+    {
+      "type": "tax_sale",
+      "date": "1918-1921",
+      "location": "Five Civilized Tribes Territory",
+      "description": "Issuance of tax deeds on land due to unpaid taxes after restrictions removed and land became taxable"
+    },
+    {
+      "type": "inheritance_sale",
+      "date": "1908-1921",
+      "location": "Five Civilized Tribes Territory",
+      "description": "Sale of inherited lands from deceased allottees through probate court approval, often below value"
+    },
+    {
+      "type": "correspondence_circulation",
+      "date": "1921-03-31",
+      "location": "Washington, D.C.",
+      "description": "Commissioner of Indian Affairs sent circular letter to superintendents regarding releasing Indians from supervision"
+    },
+    {
+      "type": "correspondence",
+      "date": "1921-06-15",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners sent letter to Commissioner enclosing field reports"
+    },
+    {
+      "type": "report_compilation",
+      "date": "1921",
+      "location": "Crow Agency, Montana",
+      "description": "Superintendent Asbury compiled information from farmers and field matrons regarding patent-in-fee Indians"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "below_real_value",
+      "payer": "various_buyers",
+      "payee": "Indian_allottees",
+      "date": "1908-1921",
+      "description": "Sale of allotted lands by Indians, often for less than fifty percent of value"
+    },
+    {
+      "type": "sale",
+      "amount": "below_real_value",
+      "payer": "various_buyers",
+      "payee": "heirs_of_deceased_allottees",
+      "date": "1908-1921",
+      "description": "Sale of inherited lands through probate court, often far below real value"
+    },
+    {
+      "type": "lease",
+      "amount": "fraction_of_rental_value",
+      "payer": "lessees",
+      "payee": "restricted_indian_allottees",
+      "date": "1908-1921",
+      "description": "Leasing of surplus land for agricultural purposes for five years, cash in advance, often at inadequate rental rates"
+    },
+    {
+      "type": "loan",
+      "amount": "exceeding_purchase_price",
+      "payer": "loan_companies",
+      "payee": "purchasers_of_indian_land",
+      "date": "1918-1921",
+      "description": "Loans secured by purchasers on land exceeding purchase price, leading to encumbrance"
+    },
+    {
+      "type": "payment",
+      "amount": "unspecified",
+      "payer": "Indian_buyers",
+      "payee": "merchants",
+      "date": "pre-1908",
+      "description": "Payment for goods using stock sales, Indians noted as honest in meeting obligations"
+    },
+    {
+      "type": "fee",
+      "amount": "penalties",
+      "payer": "Indian_landowners",
+      "payee": "county_government",
+      "date": "1918-1921",
+      "description": "Tax penalties accrued on land after restrictions removed and taxes left unpaid"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "J. Re Phillips",
+      "type": "employed_by",
+      "object": "Gabe E. Parker",
+      "context": "Served as field clerk under Superintendent of Five Civilized Tribes since 1916"
+    },
+    {
+      "subject": "J. Re Phillips",
+      "type": "employed_by",
+      "object": "J. Blair Shoenfelt",
+      "context": "Served as Indian policeman"
+    },
+    {
+      "subject": "J. Re Phillips",
+      "type": "employed_by",
+      "object": "Wm. E. Johnson",
+      "context": "Served as enforcement officer"
+    },
+    {
+      "subject": "Indian_children",
+      "type": "represented_by",
+      "object": "guardians",
+      "context": "Guardians appointed by probate court for children unable to read or write English"
+    },
+    {
+      "subject": "guardians",
+      "type": "supervised_by",
+      "object": "United States Probate Attorneys",
+      "context": "Federal supervision of guardians for restricted Indian minors"
+    },
+    {
+      "subject": "Indians",
+      "type": "represented_by",
+      "object": "Board of Indian Commissioners",
+      "context": "Indians as wards of the Government under Board supervision"
+    },
+    {
+      "subject": "C. H. Asbury",
+      "type": "employed_by",
+      "object": "Office of Indian Affairs",
+      "context": "Superintendent of Crow Reservation"
+    },
+    {
+      "subject": "Regnald Pearce",
+      "type": "employed_by",
+      "object": "Office of Indian Affairs",
+      "context": "Farmer at Wyola, Crow Reservation"
+    },
+    {
+      "subject": "S. P. Cope",
+      "type": "employed_by",
+      "object": "Office of Indian Affairs",
+      "context": "Farmer at Lodge Grass, Crow Reservation"
+    },
+    {
+      "subject": "Mrs. B. C. Keough",
+      "type": "employed_by",
+      "object": "Office of Indian Affairs",
+      "context": "Field Matron at St. Xavier, Crow Reservation"
+    },
+    {
+      "subject": "W. A. Petzoldt",
+      "type": "related_to",
+      "object": "Crow Reservation",
+      "context": "Baptist missionary working on reservation for many years"
+    },
+    {
+      "subject": "Father Taelman",
+      "type": "related_to",
+      "object": "Crow Reservation",
+      "context": "Missionary working among Indians for long time"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "various_restricted_indians",
+      "allotment_number": "unspecified",
+      "acreage": "40_acres_reserved",
+      "patent_date": "1918-1919",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "below_value",
+      "attorney": "probate_attorneys",
+      "mortgage": "frequently_encumbered"
+    },
+    {
+      "allottee_name": "deceased_allottees_heirs",
+      "allotment_number": "inherited_lands",
+      "acreage": "various",
+      "patent_date": "1908-1921",
+      "patent_number": "unspecified",
+      "mechanism": "administrative",
+      "buyer": "speculators",
+      "sale_price": "far_below_value",
+      "attorney": "probate_attorneys",
+      "mortgage": "none_specified"
+    },
+    {
+      "allottee_name": "competent_indians",
+      "allotment_number": "unspecified",
+      "acreage": "full_allotment_less_40_acres",
+      "patent_date": "proposed",
+      "patent_number": "unspecified",
+      "mechanism": "application",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "none",
+      "mortgage": "restricted"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "George Vaux Jr., Chairman; Malcolm McDowell, Secretary",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "1921-06-15",
+      "subject": "Releasing Indians from Government Supervision",
+      "action_requested": "Review enclosed field reports regarding patent-in-fee Indians",
+      "outcome": "Enclosed eight letters from field staff"
+    },
+    {
+      "sender": "Commissioner of Indian Affairs",
+      "sender_title": "Commissioner",
+      "recipient": "Superintendents",
+      "recipient_title": "Various Superintendents",
+      "date": "1921-03-31",
+      "subject": "Releasing Indians from Government Supervision",
+      "action_requested": "Provide tabular statement and views on releasing Indians from supervision",
+      "outcome": "Circular distributed to field staff"
+    },
+    {
+      "sender": "C. H. Asbury",
+      "sender_title": "Superintendent, Crow Reservation",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "1921",
+      "subject": "Releasing Indians from Government Supervision",
+      "action_requested": "Consider enclosed letters from farmers and matrons",
+      "outcome": "Enclosed letters from Pearce, Cope, Keough, and Petzoldt"
+    },
+    {
+      "sender": "J. Re Phillips",
+      "sender_title": "Field Clerk, Okmulgee",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Views on releasing Indians from supervision",
+      "action_requested": "Consider merit system for restriction removal",
+      "outcome": "Report submitted"
+    },
+    {
+      "sender": "H. A. Archerd",
+      "sender_title": "Field Clerk, Holdenville",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921-05-02",
+      "subject": "Removal of restrictions and winding up Indian affairs",
+      "action_requested": "Enact legislation for Secretary approval of conveyances and appraisal of inherited lands",
+      "outcome": "Report submitted with recommendations"
+    },
+    {
+      "sender": "S. A. Mills",
+      "sender_title": "Field Clerk, Ardmore",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Removal of restrictions",
+      "action_requested": "Reserve one-fourth of homestead allotments inalienable during lifetime",
+      "outcome": "Report submitted advocating merit system"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Act of May 27, 1908",
+      "sponsor": "Congress",
+      "action_type": "enacted",
+      "date": "1908-05-27",
+      "vote_count": "unspecified",
+      "committee": "unspecified",
+      "outcome": "Enacted into law, affecting Five Civilized Tribes land restrictions"
+    },
+    {
+      "bill_number": "unspecified",
+      "sponsor": "Field Clerk H. A. Archerd (proposed)",
+      "action_type": "introduced",
+      "date": "1921",
+      "vote_count": "none",
+      "committee": "Congress",
+      "outcome": "Proposed legislation to require Secretary of Interior approval for conveyance of deceased allottees' lands to heirs"
+    },
+    {
+      "bill_number": "unspecified",
+      "sponsor": "Field Clerk H. A. Archerd (proposed)",
+      "action_type": "introduced",
+      "date": "1921",
+      "vote_count": "none",
+      "committee": "Congress",
+      "outcome": "Proposed legislation for appraisal and advertisement of inherited lands similar to allotted lands"
+    },
+    {
+      "bill_number": "unspecified",
+      "sponsor": "Field Clerk J. Re Phillips (proposed)",
+      "action_type": "introduced",
+      "date": "1921",
+      "vote_count": "none",
+      "committee": "Congress",
+      "outcome": "Proposed legislation requiring lease contracts be made under supervision of field clerk or Department officer"
+    },
+    {
+      "bill_number": "unspecified",
+      "sponsor": "Various field clerks (proposed)",
+      "action_type": "introduced",
+      "date": "1921",
+      "vote_count": "none",
+      "committee": "Congress",
+      "outcome": "Proposed legislation to compel school attendance for Indian children under guardianship"
+    }
+  ]
+}

@@ -1,0 +1,1391 @@
+{
+  "entities": [
+    {
+      "name": "Walter McLaughlin",
+      "type": "person",
+      "context": "Temporary Farmer, Ardmore, Oklahoma, correspondent on Indian affairs"
+    },
+    {
+      "name": "C.M. Brandt",
+      "type": "person",
+      "context": "Farmer, Poteau, Oklahoma, correspondent on restrictions removal"
+    },
+    {
+      "name": "George Vaux Jr.",
+      "type": "person",
+      "context": "Chairman, Board of Indian Commissioners"
+    },
+    {
+      "name": "Malcolm McDowell",
+      "type": "person",
+      "context": "Secretary, Board of Indian Commissioners"
+    },
+    {
+      "name": "Merrill E. Gates",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Washington, D.C."
+    },
+    {
+      "name": "Warren K. Moorehead",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Andover, MA"
+    },
+    {
+      "name": "Samuel A. Eliot",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Boston, MA"
+    },
+    {
+      "name": "Frank Knox",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Manchester, NH"
+    },
+    {
+      "name": "William P. Ketcham",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Washington, D.C."
+    },
+    {
+      "name": "Daniel Smiley",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Mohonk Lake, NY"
+    },
+    {
+      "name": "John L. Scott",
+      "type": "person",
+      "context": "Member, Board of Indian Commissioners, Princeton, NJ"
+    },
+    {
+      "name": "O.C. Upchurch",
+      "type": "person",
+      "context": "Superintendent, Colville Indian Reservation, Nespelem, Washington"
+    },
+    {
+      "name": "W.A. Talbert",
+      "type": "person",
+      "context": "Agency Farmer, Colville Indian Reservation, Omak, Washington"
+    },
+    {
+      "name": "G.D. Robinson",
+      "type": "person",
+      "context": "Agency Farmer, Colville Indian Reservation, Inchelium, Washington"
+    },
+    {
+      "name": "W.N. Hughes",
+      "type": "person",
+      "context": "Agency Farmer, Colville Indian Reservation, Nespelem, Washington"
+    },
+    {
+      "name": "Burton F. Roth",
+      "type": "person",
+      "context": "Agency Farmer, Fort Peck Agency, Poplar, Montana"
+    },
+    {
+      "name": "Alvin Warrior",
+      "type": "person",
+      "context": "Farmer, Box Elder Sub-agency, Brockton, Montana, Fort Peck Reservation"
+    },
+    {
+      "name": "J.D. Kephart",
+      "type": "person",
+      "context": "Farmer, Rosebud Indian Reservation, Norris, South Dakota"
+    },
+    {
+      "name": "Robert Emery",
+      "type": "person",
+      "context": "Farmer, Rosebud Indian Reservation, Little White River, South Dakota"
+    },
+    {
+      "name": "W.L. Gardner",
+      "type": "person",
+      "context": "Farmer, Rosebud Indian Reservation, Wososo, South Dakota"
+    },
+    {
+      "name": "F.C. Rogers",
+      "type": "person",
+      "context": "Farmer, Rosebud Indian Reservation, Rosebud, South Dakota"
+    },
+    {
+      "name": "L.W. Shotwell",
+      "type": "person",
+      "context": "Farmer, Rosebud Indian Reservation, Hamill, South Dakota"
+    },
+    {
+      "name": "James R. Holsolaw",
+      "type": "person",
+      "context": "Farmer, Rosebud Indian Reservation, Okreek, South Dakota"
+    },
+    {
+      "name": "J.A. Rennick",
+      "type": "person",
+      "context": "Farmer, Rosebud Indian Reservation, Herrick, South Dakota"
+    },
+    {
+      "name": "Arthur Best",
+      "type": "person",
+      "context": "Correspondent regarding fee patent policy"
+    },
+    {
+      "name": "Mary Crook",
+      "type": "person",
+      "context": "Allottee, quarter-blood Indian, refused fee patent"
+    },
+    {
+      "name": "Matilda Kruger",
+      "type": "person",
+      "context": "Allottee, sister of Mary Crook, refused fee patent"
+    },
+    {
+      "name": "John Gengro",
+      "type": "person",
+      "context": "Allottee being sued for debt, refused fee patent"
+    },
+    {
+      "name": "Theodore Bourgeau",
+      "type": "person",
+      "context": "Mixed-blood allottee, retained original allotment, purchased additional land"
+    },
+    {
+      "name": "Victor Dupuie",
+      "type": "person",
+      "context": "Mixed-blood allottee, illiterate but considered good businessman"
+    },
+    {
+      "name": "Barney Richard",
+      "type": "person",
+      "context": "Mixed-blood allottee, extensive farmer"
+    },
+    {
+      "name": "Willie Ferguson",
+      "type": "person",
+      "context": "Mixed-blood allottee, mortgaged his and wife's allotment"
+    },
+    {
+      "name": "Marcelle Lafleur",
+      "type": "person",
+      "context": "Mixed-blood allottee, sold and dissipated original allotment"
+    },
+    {
+      "name": "Peter Noyes",
+      "type": "person",
+      "context": "Mixed-blood allottee, retained original allotment and acquired other property"
+    },
+    {
+      "name": "Henry Stensgar",
+      "type": "person",
+      "context": "Mixed-blood allottee, received patent-in-fee, mortgaged land"
+    },
+    {
+      "name": "Nancy Moore",
+      "type": "person",
+      "context": "Mixed-blood allottee, retained original allotment, purchased additional land"
+    },
+    {
+      "name": "Joseph Noel",
+      "type": "person",
+      "context": "Full-blood allottee, sold original allotment and dissipated proceeds"
+    },
+    {
+      "name": "Joseph Mullen",
+      "type": "person",
+      "context": "Full-blood allottee, sold original allotment but improved other land"
+    },
+    {
+      "name": "D.L. Skeels",
+      "type": "person",
+      "context": "Mixed-blood allottee, retained original allotment and purchased other land"
+    },
+    {
+      "name": "Charley Bob",
+      "type": "person",
+      "context": "Allottee farming father's and mother's allotments, heavily in debt"
+    },
+    {
+      "name": "Ross Hilleary",
+      "type": "person",
+      "context": "Allottee who sold allotment, now living on reservation"
+    },
+    {
+      "name": "Tom Andrews",
+      "type": "person",
+      "context": "Allottee who traded acres for Ford car"
+    },
+    {
+      "name": "Sam Freidlander",
+      "type": "person",
+      "context": "Allottee who sold allotment to brother's wife"
+    },
+    {
+      "name": "William Friedlander",
+      "type": "person",
+      "context": "Allottee with 100 acres under cultivation, purchased from brother"
+    },
+    {
+      "name": "Paul Smitakin",
+      "type": "person",
+      "context": "Young allottee with small herd of cattle"
+    },
+    {
+      "name": "Charley Hilburn",
+      "type": "person",
+      "context": "Allottee who traded allotment for King Eight car"
+    },
+    {
+      "name": "Hiram Runnels",
+      "type": "person",
+      "context": "Allottee who sold north half three years ago, living on child's allotment"
+    },
+    {
+      "name": "Joe Arcasa",
+      "type": "person",
+      "context": "Allottee, one of the Arcasa boys, sold grazing land"
+    },
+    {
+      "name": "Alex Arcasa",
+      "type": "person",
+      "context": "Allottee, one of the Arcasa boys, sold grazing land"
+    },
+    {
+      "name": "Bill Condon",
+      "type": "person",
+      "context": "Allottee, thoroughly competent, leases allotment"
+    },
+    {
+      "name": "Dan Condon",
+      "type": "person",
+      "context": "Allottee who sold allotment for about $2,000"
+    },
+    {
+      "name": "John Whitelaw",
+      "type": "person",
+      "context": "Allottee, one of Whitelaw brothers, improved allotment"
+    },
+    {
+      "name": "Pete Whitelaw",
+      "type": "person",
+      "context": "Allottee, one of Whitelaw brothers, sold portion of allotment"
+    },
+    {
+      "name": "George Whitelaw",
+      "type": "person",
+      "context": "Allottee, one of Whitelaw brothers, improved allotment"
+    },
+    {
+      "name": "Mose Pakatas",
+      "type": "person",
+      "context": "Allottee who sold allotment for $10,000"
+    },
+    {
+      "name": "Philip Pakatas",
+      "type": "person",
+      "context": "Allottee who sold allotment for $10,000"
+    },
+    {
+      "name": "William Manning",
+      "type": "person",
+      "context": "Patent-in-fee Indian, Medicine Lake, Montana, retains land and cattle"
+    },
+    {
+      "name": "David Manning",
+      "type": "person",
+      "context": "Patent-in-fee Indian, Culbertson, Montana, brother of William"
+    },
+    {
+      "name": "Francis Murray",
+      "type": "person",
+      "context": "Patent-in-fee Indian, Homestead, Montana, retains property"
+    },
+    {
+      "name": "Alfred Murray",
+      "type": "person",
+      "context": "Patent-in-fee Indian, Homestead, Montana, retains property"
+    },
+    {
+      "name": "Charles Seeds",
+      "type": "person",
+      "context": "Patent-in-fee Indian, Poplar, Montana, accumulated property"
+    },
+    {
+      "name": "Joe Alvarez",
+      "type": "person",
+      "context": "Patent-in-fee Indian, Poplar, Montana, dissipated allotment"
+    },
+    {
+      "name": "Daniel Courchene",
+      "type": "person",
+      "context": "Patent-in-fee Indian, Culbertson, Montana, businessman"
+    },
+    {
+      "name": "Fred Bauer",
+      "type": "person",
+      "context": "Patent-in-fee Indian, Culbertson, Montana, retains land and stock"
+    },
+    {
+      "name": "Traffle Sears",
+      "type": "person",
+      "context": "Patent-in-fee Indian who received patent some years ago"
+    },
+    {
+      "name": "John Anderson",
+      "type": "person",
+      "context": "Patent-in-fee Indian, Brookton, Montana, sold all land and cattle"
+    },
+    {
+      "name": "John Bruguior",
+      "type": "person",
+      "context": "Patent-in-fee Indian, Medicine Lake, Montana, addicted to drink"
+    },
+    {
+      "name": "William Boyd",
+      "type": "person",
+      "context": "Patent-in-fee Indian, Wolf Point, Montana, sold whole allotment"
+    },
+    {
+      "name": "Levi Clark",
+      "type": "person",
+      "context": "Ranch owner employing Alex Arcasa"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Federal department overseeing Indian Affairs"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Advisory board to Department of the Interior"
+    },
+    {
+      "name": "Office of Indian Affairs",
+      "type": "organization",
+      "context": "Office within Department of the Interior"
+    },
+    {
+      "name": "Indian Office",
+      "type": "organization",
+      "context": "Field force supervising Indian reservations"
+    },
+    {
+      "name": "United States Dry Squad",
+      "type": "organization",
+      "context": "Federal enforcement unit mentioned by Hiram Runnels"
+    },
+    {
+      "name": "Five Civilized Tribes",
+      "type": "organization",
+      "context": "Tribal entity mentioned in correspondence"
+    },
+    {
+      "name": "Choctaw Indians",
+      "type": "organization",
+      "context": "Tribal entity mentioned in correspondence"
+    },
+    {
+      "name": "Chickasaw Indians",
+      "type": "organization",
+      "context": "Tribal entity mentioned in correspondence"
+    },
+    {
+      "name": "Colville Indian Reservation",
+      "type": "location",
+      "context": "Indian Reservation in Washington State"
+    },
+    {
+      "name": "Fort Peck Indian Reservation",
+      "type": "location",
+      "context": "Indian Reservation in Montana"
+    },
+    {
+      "name": "Rosebud Indian Reservation",
+      "type": "location",
+      "context": "Indian Reservation in South Dakota"
+    },
+    {
+      "name": "Ardmore, Oklahoma",
+      "type": "location",
+      "context": "Location of correspondent Walter McLaughlin"
+    },
+    {
+      "name": "Poteau, Oklahoma",
+      "type": "location",
+      "context": "Location of correspondent C.M. Brandt"
+    },
+    {
+      "name": "Nespelem, Washington",
+      "type": "location",
+      "context": "Agency location on Colville Reservation"
+    },
+    {
+      "name": "Omak, Washington",
+      "type": "location",
+      "context": "Location on Colville Reservation"
+    },
+    {
+      "name": "Inchelium, Washington",
+      "type": "location",
+      "context": "Location on Colville Reservation"
+    },
+    {
+      "name": "Monse, Washington",
+      "type": "location",
+      "context": "Location near Omak"
+    },
+    {
+      "name": "Malaga, Washington",
+      "type": "location",
+      "context": "Location near Omak"
+    },
+    {
+      "name": "Poplar, Montana",
+      "type": "location",
+      "context": "Agency location on Fort Peck Reservation"
+    },
+    {
+      "name": "Brookton, Montana",
+      "type": "location",
+      "context": "Location on Fort Peck Reservation"
+    },
+    {
+      "name": "Wolf Point, Montana",
+      "type": "location",
+      "context": "Location on Fort Peck Reservation"
+    },
+    {
+      "name": "Box Elder, Montana",
+      "type": "location",
+      "context": "Sub-agency location"
+    },
+    {
+      "name": "Culbertson, Montana",
+      "type": "location",
+      "context": "Town near Fort Peck Reservation"
+    },
+    {
+      "name": "Homestead, Montana",
+      "type": "location",
+      "context": "Town near Fort Peck Reservation"
+    },
+    {
+      "name": "Medicine Lake, Montana",
+      "type": "location",
+      "context": "Town near Fort Peck Reservation"
+    },
+    {
+      "name": "Norris, South Dakota",
+      "type": "location",
+      "context": "Location on Rosebud Reservation"
+    },
+    {
+      "name": "Little White River, South Dakota",
+      "type": "location",
+      "context": "Location on Rosebud Reservation"
+    },
+    {
+      "name": "Wososo, South Dakota",
+      "type": "location",
+      "context": "Location on Rosebud Reservation"
+    },
+    {
+      "name": "Hamill, South Dakota",
+      "type": "location",
+      "context": "Location on Rosebud Reservation"
+    },
+    {
+      "name": "Okreek, South Dakota",
+      "type": "location",
+      "context": "Location on Rosebud Reservation"
+    },
+    {
+      "name": "Herrick, South Dakota",
+      "type": "location",
+      "context": "Location on Rosebud Reservation"
+    },
+    {
+      "name": "McGinnis Lake",
+      "type": "location",
+      "context": "Lake bordering land sold by Ross Hilleary"
+    },
+    {
+      "name": "Weston, Oregon",
+      "type": "location",
+      "context": "Home of Traffle Sears' wife"
+    }
+  ],
+  "events": [
+    {
+      "type": "drought",
+      "date": "1917-1921",
+      "location": "Colville Indian Reservation, Washington",
+      "description": "Extreme drought lasting four years preventing agricultural success"
+    },
+    {
+      "type": "drought",
+      "date": "1917-1921",
+      "location": "Fort Peck Indian Reservation, Montana",
+      "description": "Severe weather conditions lasting four years preventing financial success"
+    },
+    {
+      "type": "issuance_of_fee_patent",
+      "date": "1921",
+      "location": "Various reservations",
+      "description": "General policy of issuing patents-in-fee to Indians deemed competent"
+    },
+    {
+      "type": "removal_of_restrictions",
+      "date": "1921",
+      "location": "Five Civilized Tribes territory",
+      "description": "Policy consideration regarding removal of restrictions from Indian land"
+    },
+    {
+      "type": "competency_commission_visit",
+      "date": "prior to 1921",
+      "location": "Colville Indian Reservation",
+      "description": "Visit by competency commission to evaluate Indians for fee patents"
+    },
+    {
+      "type": "crop_failure",
+      "date": "1920-1921",
+      "location": "Various reservations",
+      "description": "Crop failures affecting both Indian and white farmers"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$2,500.00",
+      "payer": "Sam Freidlander's brother's wife",
+      "payee": "Sam Freidlander",
+      "date": "prior to 1921",
+      "description": "Sale of Sam Freidlander's allotment to his brother's wife"
+    },
+    {
+      "type": "sale",
+      "amount": "$2,000.00",
+      "payer": "Unknown buyer",
+      "payee": "Dan Condon",
+      "date": "1920",
+      "description": "Sale of Dan Condon's allotment"
+    },
+    {
+      "type": "sale",
+      "amount": "$10,000.00",
+      "payer": "Unknown buyer",
+      "payee": "Mose Pakatas",
+      "date": "prior to 1921",
+      "description": "Sale of Mose Pakatas allotment"
+    },
+    {
+      "type": "sale",
+      "amount": "$10,000.00",
+      "payer": "Unknown buyer",
+      "payee": "Philip Pakatas",
+      "date": "prior to 1921",
+      "description": "Sale of Philip Pakatas allotment"
+    },
+    {
+      "type": "trade",
+      "amount": "acres of allotment for Ford car",
+      "payer": "Tom Andrews",
+      "payee": "Unknown",
+      "date": "prior to 1921",
+      "description": "Trade of portion of Tom Andrews allotment for Ford automobile"
+    },
+    {
+      "type": "trade",
+      "amount": "allotment for King Eight car",
+      "payer": "Charley Hilburn",
+      "payee": "Unknown",
+      "date": "prior to 1921",
+      "description": "Trade of Charley Hilburn's allotment for King Eight automobile"
+    },
+    {
+      "type": "mortgage",
+      "amount": "unknown",
+      "payer": "Willie Ferguson",
+      "payee": "Unknown lender",
+      "date": "prior to 1921",
+      "description": "Mortgage of Willie Ferguson's and his wife's allotments for farming equipment"
+    },
+    {
+      "type": "mortgage",
+      "amount": "unknown",
+      "payer": "Henry Stensgar",
+      "payee": "Unknown lender",
+      "date": "prior to 1921",
+      "description": "Mortgage of Henry Stensgar's land after receiving patent-in-fee"
+    },
+    {
+      "type": "debt",
+      "amount": "unknown",
+      "payer": "John Gengro",
+      "payee": "Unknown creditor",
+      "date": "prior to 1921",
+      "description": "Debt for which John Gengro was being sued, preventing him from wanting fee patent"
+    },
+    {
+      "type": "debt",
+      "amount": "$644.88",
+      "payer": "Paul Smitakin",
+      "payee": "United States Government",
+      "date": "1921",
+      "description": "Reimbursable debt for seed, lumber and machinery under government policy"
+    },
+    {
+      "type": "purchase",
+      "amount": "unknown",
+      "payer": "William Friedlander",
+      "payee": "Sam Freidlander",
+      "date": "prior to 1921",
+      "description": "Purchase of 100 acres from brother Sam Freidlander"
+    },
+    {
+      "type": "mortgage",
+      "amount": "unknown",
+      "payer": "Various Indians",
+      "payee": "Unknown lenders",
+      "date": "1917-1921",
+      "description": "Mortgages of land by patent-in-fee Indians for automobiles and farming equipment"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Matilda Kruger",
+      "type": "related_to",
+      "object": "Mary Crook",
+      "context": "Sisters who both refused fee patents"
+    },
+    {
+      "subject": "Sam Freidlander",
+      "type": "related_to",
+      "object": "William Friedlander",
+      "context": "Brothers; William purchased land from Sam"
+    },
+    {
+      "subject": "Sam Freidlander",
+      "type": "related_to",
+      "object": "Herman Freidlander",
+      "context": "Brothers; Sam living with Herman after selling allotment"
+    },
+    {
+      "subject": "Joe Arcasa",
+      "type": "related_to",
+      "object": "Alex Arcasa",
+      "context": "Brothers (Arcasa boys) who sold grazing land allotments"
+    },
+    {
+      "subject": "John Whitelaw",
+      "type": "related_to",
+      "object": "Pete Whitelaw",
+      "context": "Brothers among Whitelaw brothers"
+    },
+    {
+      "subject": "John Whitelaw",
+      "type": "related_to",
+      "object": "George Whitelaw",
+      "context": "Brothers among Whitelaw brothers"
+    },
+    {
+      "subject": "Pete Whitelaw",
+      "type": "related_to",
+      "object": "George Whitelaw",
+      "context": "Brothers among Whitelaw brothers"
+    },
+    {
+      "subject": "Mose Pakatas",
+      "type": "related_to",
+      "object": "Philip Pakatas",
+      "context": "Brothers (Pakatas boys) who sold allotments"
+    },
+    {
+      "subject": "William Manning",
+      "type": "related_to",
+      "object": "David Manning",
+      "context": "Brothers, both patent-in-fee Indians"
+    },
+    {
+      "subject": "Francis Murray",
+      "type": "related_to",
+      "object": "Alfred Murray",
+      "context": "Brothers, both patent-in-fee Indians"
+    },
+    {
+      "subject": "W.A. Talbert",
+      "type": "employed_by",
+      "object": "Office of Indian Affairs",
+      "context": "Agency Farmer at Colville Reservation"
+    },
+    {
+      "subject": "G.D. Robinson",
+      "type": "employed_by",
+      "object": "Office of Indian Affairs",
+      "context": "Agency Farmer at Colville Reservation"
+    },
+    {
+      "subject": "W.N. Hughes",
+      "type": "employed_by",
+      "object": "Office of Indian Affairs",
+      "context": "Agency Farmer at Colville Reservation"
+    },
+    {
+      "subject": "Burton F. Roth",
+      "type": "employed_by",
+      "object": "Office of Indian Affairs",
+      "context": "Agency Farmer at Fort Peck Agency"
+    },
+    {
+      "subject": "Alvin Warrior",
+      "type": "employed_by",
+      "object": "Office of Indian Affairs",
+      "context": "Farmer at Box Elder Sub-agency"
+    },
+    {
+      "subject": "O.C. Upchurch",
+      "type": "employed_by",
+      "object": "Office of Indian Affairs",
+      "context": "Superintendent of Colville Indian Reservation"
+    },
+    {
+      "subject": "Alex Arcasa",
+      "type": "employed_by",
+      "object": "Levi Clark",
+      "context": "Employed on Levi Clark's ranch"
+    },
+    {
+      "subject": "Hiram Runnels",
+      "type": "represented",
+      "object": "United States Dry Squad",
+      "context": "Awaiting appointment to U.S. Dry Squad"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Mary Crook",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "refused",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Matilda Kruger",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "refused",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "John Gengro",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "refused",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "under lawsuit for debt"
+    },
+    {
+      "allottee_name": "Theodore Bourgeau",
+      "allotment_number": "original",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Victor Dupuie",
+      "allotment_number": "original",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Barney Richard",
+      "allotment_number": "original",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Willie Ferguson",
+      "allotment_number": "original and wife's",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "mortgaged",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "mortgaged for automobiles"
+    },
+    {
+      "allottee_name": "Marcelle Lafleur",
+      "allotment_number": "original",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Peter Noyes",
+      "allotment_number": "original",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Henry Stensgar",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "mortgaged",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "mortgaged, no effort to redeem"
+    },
+    {
+      "allottee_name": "Nancy Moore",
+      "allotment_number": "original",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Joseph Noel",
+      "allotment_number": "original",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Joseph Mullen",
+      "allotment_number": "original",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "D.L. Skeels",
+      "allotment_number": "original",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Charley Bob",
+      "allotment_number": "father's and mother's",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained but in debt",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "heavy debt"
+    },
+    {
+      "allottee_name": "Ross Hilleary",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Tom Andrews",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "traded for Ford",
+      "sale_price": "Ford car",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Sam Freidlander",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "brother's wife",
+      "sale_price": "$2,500.00",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "William Friedlander",
+      "allotment_number": "unknown",
+      "acreage": "100 under cultivation",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Paul Smitakin",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Charley Hilburn",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "traded for King Eight",
+      "sale_price": "King Eight car",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Hiram Runnels",
+      "allotment_number": "north half",
+      "acreage": "unknown",
+      "patent_date": "1918",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Joe Arcasa",
+      "allotment_number": "unknown",
+      "acreage": "grazing land",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Alex Arcasa",
+      "allotment_number": "unknown",
+      "acreage": "grazing land",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Bill Condon",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Dan Condon",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold",
+      "sale_price": "$2,000",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "John Whitelaw",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Pete Whitelaw",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold portion",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "George Whitelaw",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Mose Pakatas",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold",
+      "sale_price": "$10,000",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Philip Pakatas",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold",
+      "sale_price": "$10,000",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "William Manning",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "David Manning",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Francis Murray",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Alfred Murray",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Charles Seeds",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Joe Alvarez",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "dissipated",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Daniel Courchene",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Fred Bauer",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "retained",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Traffle Sears",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "some years ago",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold recently",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "John Anderson",
+      "allotment_number": "all land",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "John Bruguior",
+      "allotment_number": "all land",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "dissipated",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "William Boyd",
+      "allotment_number": "whole allotment",
+      "acreage": "unknown",
+      "patent_date": "prior to 1921",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "sold",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Malcolm McDowell",
+      "sender_title": "Secretary, Board of Indian Commissioners",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "1931-05-13",
+      "subject": "Batch of replies regarding condition of patent-in-fee Indians",
+      "action_requested": "none",
+      "outcome": "enclosed replies forwarded"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "Superintendent and Farmers",
+      "recipient_title": "Field Service Officers",
+      "date": "1921-05-16",
+      "subject": "Releasing Indians from Government Supervision",
+      "action_requested": "Reports on condition of patent-in-fee Indians",
+      "outcome": "Bulletin No. 143 issued"
+    },
+    {
+      "sender": "W.A. Talbert",
+      "sender_title": "Agency Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Response to inquiry regarding patent-in-fee policy",
+      "action_requested": "none",
+      "outcome": "Report submitted"
+    },
+    {
+      "sender": "O.C. Upchurch",
+      "sender_title": "Superintendent",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Response to March 28th circular regarding patent-in-fee policy",
+      "action_requested": "none",
+      "outcome": "Report submitted with conclusions on policy"
+    },
+    {
+      "sender": "Arthur Best",
+      "sender_title": "Correspondent",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Condition of patent-in-fee Indians in district",
+      "action_requested": "none",
+      "outcome": "Report of 90 fee patents reviewed"
+    },
+    {
+      "sender": "G.D. Robinson",
+      "sender_title": "Agency Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Response to March 28th letter regarding benefits of patents-in-fee",
+      "action_requested": "none",
+      "outcome": "List of successful and unsuccessful cases submitted"
+    },
+    {
+      "sender": "W.N. Hughes",
+      "sender_title": "Agency Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Report on seventeen Indians in Nespelem district",
+      "action_requested": "none",
+      "outcome": "Detailed case reports submitted"
+    },
+    {
+      "sender": "Burton F. Roth",
+      "sender_title": "Agency Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Response to circular letter regarding patent-in-fee Indians",
+      "action_requested": "none",
+      "outcome": "Policy recommendations submitted"
+    },
+    {
+      "sender": "Alvin Warrior",
+      "sender_title": "Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Information on conditions of patent-in-fee Indians",
+      "action_requested": "none",
+      "outcome": "List of successful and failed cases submitted"
+    },
+    {
+      "sender": "Walter McLaughlin",
+      "sender_title": "Temporary Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Reply regarding removal of restrictions",
+      "action_requested": "none",
+      "outcome": "Opinion submitted"
+    },
+    {
+      "sender": "C.M. Brandt",
+      "sender_title": "Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1921",
+      "subject": "Reply regarding removal of restrictions",
+      "action_requested": "none",
+      "outcome": "Opinion submitted"
+    }
+  ],
+  "legislative_actions": []
+}

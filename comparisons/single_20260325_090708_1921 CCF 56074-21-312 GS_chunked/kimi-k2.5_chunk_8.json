@@ -1,0 +1,506 @@
+{
+  "entities": [
+    {
+      "name": "John A. Buntin",
+      "type": "person",
+      "context": "Superintendent, Rosebud Indian Agency"
+    },
+    {
+      "name": "Henry J. McQuis",
+      "type": "person",
+      "context": "Superintendent, Turtle Mountain Indian Agency"
+    },
+    {
+      "name": "Lon S. Tolliver",
+      "type": "person",
+      "context": "Agency Farmer, Turtle Mountain Agency"
+    },
+    {
+      "name": "P. J. Everest",
+      "type": "person",
+      "context": "Superintendent, LaPointe Indian Agency"
+    },
+    {
+      "name": "Oscar H. Lipps",
+      "type": "person",
+      "context": "Superintendent, Nez Perce Indian Agency"
+    },
+    {
+      "name": "E. D. Mossman",
+      "type": "person",
+      "context": "Superintendent, Fort Peck Indian Agency"
+    },
+    {
+      "name": "H. D. Lawshe",
+      "type": "person",
+      "context": "Board of Indian Commissioners"
+    },
+    {
+      "name": "Mr. McDowell",
+      "type": "person",
+      "context": "Board of Indian Commissioners (correspondent to Mossman)"
+    },
+    {
+      "name": "John B. Belgarde",
+      "type": "person",
+      "context": "Belcourt, N.D., not doing much for support"
+    },
+    {
+      "name": "Alex Gourneau",
+      "type": "person",
+      "context": "Belcourt, N.D., not doing much for support"
+    },
+    {
+      "name": "Peter Belgrade",
+      "type": "person",
+      "context": "Belcourt, N.D., Laborer"
+    },
+    {
+      "name": "John R. Wilkie",
+      "type": "person",
+      "context": "Belcourt, N.D., Farming and successful"
+    },
+    {
+      "name": "Robert Azure",
+      "type": "person",
+      "context": "Bisbee, N.D., Employee of Railway Company"
+    },
+    {
+      "name": "Alex Brien",
+      "type": "person",
+      "context": "Belcourt, N.D., Farming"
+    },
+    {
+      "name": "Claud Azure",
+      "type": "person",
+      "context": "Belcourt, N.D., Farming"
+    },
+    {
+      "name": "Rosebud Indian Agency",
+      "type": "organization",
+      "context": "South Dakota"
+    },
+    {
+      "name": "Turtle Mountain Indian Agency",
+      "type": "organization",
+      "context": "North Dakota"
+    },
+    {
+      "name": "LaPointe Indian Agency",
+      "type": "organization",
+      "context": "Wisconsin"
+    },
+    {
+      "name": "Nez Perce Indian Agency",
+      "type": "organization",
+      "context": "Idaho"
+    },
+    {
+      "name": "Fort Peck Indian Agency",
+      "type": "organization",
+      "context": "Montana"
+    },
+    {
+      "name": "Coeur d'Alene Indian Agency",
+      "type": "organization",
+      "context": "Idaho"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Washington, D.C."
+    },
+    {
+      "name": "Department",
+      "type": "organization",
+      "context": "Department of the Interior/Indian Affairs"
+    },
+    {
+      "name": "Rosebud, South Dakota",
+      "type": "location",
+      "context": "Location of Rosebud Indian Agency"
+    },
+    {
+      "name": "Belcourt, North Dakota",
+      "type": "location",
+      "context": "Location of Turtle Mountain Indian Agency"
+    },
+    {
+      "name": "Ashland, Wisconsin",
+      "type": "location",
+      "context": "Location of LaPointe Indian Agency"
+    },
+    {
+      "name": "Lapwai, Idaho",
+      "type": "location",
+      "context": "Location of Nez Perce Indian Agency"
+    },
+    {
+      "name": "Poplar, Montana",
+      "type": "location",
+      "context": "Location of Fort Peck Indian Agency"
+    },
+    {
+      "name": "Bisbee, North Dakota",
+      "type": "location",
+      "context": "Location of Robert Azure"
+    },
+    {
+      "name": "Dunseith",
+      "type": "location",
+      "context": "Nearby Turtle Mountain Reservation"
+    },
+    {
+      "name": "Bad River Reservation",
+      "type": "location",
+      "context": "Wisconsin, under LaPointe jurisdiction"
+    },
+    {
+      "name": "Fort Belknap reservation",
+      "type": "location",
+      "context": "Montana, mentioned as contrast"
+    },
+    {
+      "name": "Turtle Mountain Reservation",
+      "type": "location",
+      "context": "North Dakota, consists of two townships"
+    },
+    {
+      "name": "Rocky Boy Indians",
+      "type": "organization",
+      "context": "Tribe in Montana, wandered for 60 years"
+    },
+    {
+      "name": "Declaration of Policy of 1917",
+      "type": "legislation",
+      "context": "Policy regarding Indian citizenship and land patents"
+    },
+    {
+      "name": "Law on arbitrary issuance to half-blood Indians",
+      "type": "legislation",
+      "context": "Law regarding patents-in-fee to Indians of one-half degree of Indian blood or less"
+    }
+  ],
+  "events": [
+    {
+      "type": "patent_issuance",
+      "date": "1917-1931",
+      "location": "United States",
+      "description": "Over 17,000 patents-in-fee issued to Indians since 1917"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1921-1931",
+      "location": "Rosebud Indian Agency",
+      "description": "Approximately 600 patents-in-fee issued to Rosebud Sioux out of population of 5,500"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1910-1931",
+      "location": "Turtle Mountain Indian Agency",
+      "description": "1,393 fee patents issued covering 185,918.76 acres"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1913-1931",
+      "location": "LaPointe Indian Agency",
+      "description": "373 certificates of competency issued covering 399 original allotments and 74 heirship allotments"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1910-1931",
+      "location": "Nez Perce Indian Agency",
+      "description": "Approximately 500 fee patents issued to Nez Perces"
+    },
+    {
+      "type": "reservation_establishment",
+      "date": "1921-1931",
+      "location": "Montana",
+      "description": "Rocky Boy Indians placed on reservation after 60 years of freedom following petition by 1,000 people"
+    },
+    {
+      "type": "land_sale",
+      "date": "1910-1931",
+      "location": "Rosebud Indian Agency",
+      "description": "Approximately 90% of patent-in-fee Indians sold their land immediately"
+    },
+    {
+      "type": "land_sale",
+      "date": "1910-1931",
+      "location": "Turtle Mountain Indian Agency",
+      "description": "Approximately 95% of fee patent Indians sold their land"
+    },
+    {
+      "type": "land_sale",
+      "date": "1913-1931",
+      "location": "LaPointe Indian Agency",
+      "description": "Approximately 98% of 373 competency certificate holders sold their land"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$1,000 - $16,000",
+      "payer": "Various buyers",
+      "payee": "Rosebud Indian allottees",
+      "date": "1917-1931",
+      "description": "Sale of 160-acre allotments, average $4,000 per quarter section"
+    },
+    {
+      "type": "mortgage",
+      "amount": "unknown",
+      "payer": "Rosebud Indian allottees",
+      "payee": "Various mortgage holders",
+      "date": "1917-1931",
+      "description": "Nine out of ten patent-in-fee Indians mortgaged or sold land"
+    },
+    {
+      "type": "payment",
+      "amount": "unknown",
+      "payer": "Rosebud Indian allottees",
+      "payee": "Automobile dealers",
+      "date": "1917-1931",
+      "description": "Proceeds from land sales used to purchase automobiles"
+    },
+    {
+      "type": "sale",
+      "amount": "$300 - $1,500",
+      "payer": "Various buyers",
+      "payee": "LaPointe Indian allottees",
+      "date": "1913-1931",
+      "description": "Sale of 80-acre tracts, mostly under $500"
+    },
+    {
+      "type": "mortgage",
+      "amount": "$13,000",
+      "payer": "White farm owner",
+      "payee": "Nez Perce full-blood woman",
+      "date": "1931",
+      "description": "Mortgage on 480 acres of good farm land held by Nez Perce woman"
+    },
+    {
+      "type": "mortgage",
+      "amount": "$1,000",
+      "payer": "White orchard owner",
+      "payee": "Nez Perce full-blood woman",
+      "date": "1931",
+      "description": "Mortgage on improved orchard tract held by Nez Perce woman"
+    },
+    {
+      "type": "mortgage",
+      "amount": "various",
+      "payer": "White farmers",
+      "payee": "Nez Perce Indians",
+      "date": "1931",
+      "description": "Several Nez Perces hold first farm mortgages on white men's farms"
+    },
+    {
+      "type": "sale",
+      "amount": "various",
+      "payer": "Various buyers",
+      "payee": "Nez Perce Indians",
+      "date": "1930",
+      "description": "Approximately 300 fee patent owners sold or mortgaged land"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "John A. Buntin",
+      "type": "employed_by",
+      "object": "Rosebud Indian Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "Henry J. McQuis",
+      "type": "employed_by",
+      "object": "Turtle Mountain Indian Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "Lon S. Tolliver",
+      "type": "employed_by",
+      "object": "Turtle Mountain Indian Agency",
+      "context": "Agency Farmer"
+    },
+    {
+      "subject": "P. J. Everest",
+      "type": "employed_by",
+      "object": "LaPointe Indian Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "Oscar H. Lipps",
+      "type": "employed_by",
+      "object": "Nez Perce Indian Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "E. D. Mossman",
+      "type": "employed_by",
+      "object": "Fort Peck Indian Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "H. D. Lawshe",
+      "type": "employed_by",
+      "object": "Board of Indian Commissioners",
+      "context": "Commissioner"
+    },
+    {
+      "subject": "Rosebud Indian allottees",
+      "type": "sold_to",
+      "object": "Various buyers",
+      "context": "90% sold land after receiving patents"
+    },
+    {
+      "subject": "Turtle Mountain Indian allottees",
+      "type": "sold_to",
+      "object": "Various buyers",
+      "context": "95% sold land after receiving patents"
+    },
+    {
+      "subject": "LaPointe Indian allottees",
+      "type": "sold_to",
+      "object": "Various buyers",
+      "context": "98% sold land after receiving competency certificates"
+    },
+    {
+      "subject": "Nez Perce Indians",
+      "type": "hold_mortgages_on",
+      "object": "White men's farms",
+      "context": "Several full-blood Nez Perces hold mortgages on white-owned properties"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Rosebud Sioux Indians (aggregate)",
+      "allotment_number": "various",
+      "acreage": "160 acres (85% of cases)",
+      "patent_date": "1917-1931",
+      "patent_number": "approximately 600",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "$1,000 - $16,000 (avg $4,000)",
+      "attorney": "not specified",
+      "mortgage": "90% mortgaged or sold"
+    },
+    {
+      "allottee_name": "Turtle Mountain Indians (aggregate)",
+      "allotment_number": "various",
+      "acreage": "185,918.76 acres total (80 or 160 acre tracts)",
+      "patent_date": "1910-1931",
+      "patent_number": "1,393",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "slumped values",
+      "attorney": "not specified",
+      "mortgage": "95% sold or mortgaged"
+    },
+    {
+      "allottee_name": "LaPointe/Bad River Indians (aggregate)",
+      "allotment_number": "399 original, 74 heirship",
+      "acreage": "80 acres (standard allotment)",
+      "patent_date": "1913-1931",
+      "patent_number": "373 certificates",
+      "mechanism": "application",
+      "buyer": "various",
+      "sale_price": "$300 - $1,500",
+      "attorney": "not specified",
+      "mortgage": "98% alienated"
+    },
+    {
+      "allottee_name": "Nez Perce Indians (aggregate)",
+      "allotment_number": "various",
+      "acreage": "various including 480 acre tracts",
+      "patent_date": "1910-1931",
+      "patent_number": "500",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "various",
+      "attorney": "not specified",
+      "mortgage": "many mortgaged to purchase automobiles"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "John A. Buntin",
+      "sender_title": "Superintendent",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioner",
+      "date": "1931-03-31",
+      "subject": "Policy on issuing patents-in-fee to Indians",
+      "action_requested": "Opinion on policy for issuing patents-in-fee",
+      "outcome": "Report submitted recommending individual case scrutiny"
+    },
+    {
+      "sender": "Henry J. McQuis",
+      "sender_title": "Superintendent",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioner",
+      "date": "1931-03-31",
+      "subject": "Effect of policy granting patents-in-fee",
+      "action_requested": "Report on past effects and future policy",
+      "outcome": "Report submitted recommending slower issuance and retention of trust land"
+    },
+    {
+      "sender": "Lon S. Tolliver",
+      "sender_title": "Agency Farmer",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioner",
+      "date": "1931-03-31",
+      "subject": "Releasing Indians from Government supervision",
+      "action_requested": "Reply to letter of March 35th (31st), 1931",
+      "outcome": "Report submitted recommending merit system and holding half of allotment in trust"
+    },
+    {
+      "sender": "P. J. Everest",
+      "sender_title": "Superintendent",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioner",
+      "date": "1921-03-31",
+      "subject": "Fee title to Indians covering restricted reservation property",
+      "action_requested": "Information on patent-in-fee effects",
+      "outcome": "Report submitted with specific examples of successful and unsuccessful allottees"
+    },
+    {
+      "sender": "Oscar H. Lipps",
+      "sender_title": "Superintendent",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Commissioner",
+      "date": "1931-03-21",
+      "subject": "Effect of issuing patents in fee to Indians",
+      "action_requested": "Information on effect of patents-in-fee",
+      "outcome": "Report submitted noting prima facie competent sell first and squander proceeds"
+    },
+    {
+      "sender": "E. D. Mossman",
+      "sender_title": "Superintendent",
+      "recipient": "Mr. McDowell",
+      "recipient_title": "Board of Indian Commissioners",
+      "date": "1931",
+      "subject": "Effect of granting patents-in-fee to Indians",
+      "action_requested": "Reply to circular letter",
+      "outcome": "Report submitted recommending individual merit decisions"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "unknown",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1917",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Declaration of Policy establishing approach to Indian citizenship and land patents"
+    },
+    {
+      "bill_number": "unknown",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Law enacted regarding arbitrary issuance of patents-in-fee to Indians of one-half degree of Indian blood or less"
+    }
+  ]
+}

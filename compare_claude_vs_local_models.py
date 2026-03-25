@@ -539,6 +539,7 @@ HOSTED_PROVIDERS = {
             "llama3.3-70b": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
             "qwen2.5-72b": "Qwen/Qwen2.5-72B-Instruct-Turbo",
             "gemma3-27b": "google/gemma-2-27b-it",
+            "kimi-k2.5": "moonshotai/Kimi-K2.5",
         },
     },
     "fireworks": {

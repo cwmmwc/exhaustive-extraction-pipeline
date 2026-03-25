@@ -1,0 +1,3337 @@
+{
+  "entities": [
+    {
+      "name": "E. B. Meritt",
+      "type": "person",
+      "context": "Asst. Commissioner, Indian Office"
+    },
+    {
+      "name": "George Vaux, Jr.",
+      "type": "person",
+      "context": "Chairman, Board of Indian Commissioners, Philadelphia, Pa."
+    },
+    {
+      "name": "Malcolm McDowell",
+      "type": "person",
+      "context": "Secretary, Board of Indian Commissioners, Washington, D.C."
+    },
+    {
+      "name": "William H. Ketcham",
+      "type": "person",
+      "context": "Board of Indian Commissioners, Washington, D.C."
+    },
+    {
+      "name": "Daniel Smiley",
+      "type": "person",
+      "context": "Board of Indian Commissioners, Mohonk Lake, N.Y."
+    },
+    {
+      "name": "Hugh L. Scott",
+      "type": "person",
+      "context": "Board of Indian Commissioners, Princeton, N.J."
+    },
+    {
+      "name": "Alfred E. Smith",
+      "type": "person",
+      "context": "Board of Indian Commissioners, New York, N.Y."
+    },
+    {
+      "name": "Merrill E. Gates",
+      "type": "person",
+      "context": "Board of Indian Commissioners, Washington, D.C."
+    },
+    {
+      "name": "Warren K. Moorehead",
+      "type": "person",
+      "context": "Board of Indian Commissioners, Andover, Mass."
+    },
+    {
+      "name": "Samuel A. Eliot",
+      "type": "person",
+      "context": "Board of Indian Commissioners, Boston, Mass."
+    },
+    {
+      "name": "Frank Knox",
+      "type": "person",
+      "context": "Board of Indian Commissioners, Manchester, N.H."
+    },
+    {
+      "name": "J. C. Hart",
+      "type": "person",
+      "context": "Superintendent, Pawnee Indian Agency, Pawnee, Oklahoma"
+    },
+    {
+      "name": "John E. DeVare",
+      "type": "person",
+      "context": "Farmer, Ponca Sub-agency, Pawnee Agency"
+    },
+    {
+      "name": "Arthur J. Crim",
+      "type": "person",
+      "context": "Farmer, Tonkawa Sub-agency, Pawnee Agency"
+    },
+    {
+      "name": "Charles B. Thompson",
+      "type": "person",
+      "context": "Farmer, Otoe Sub-agency"
+    },
+    {
+      "name": "F. W. Long",
+      "type": "person",
+      "context": "Farmer, Pawnee Agency"
+    },
+    {
+      "name": "John V. Clendening",
+      "type": "person",
+      "context": "Clerk in Charge, Kaw Sub-agency, Pawnee Agency (34 years in Service)"
+    },
+    {
+      "name": "Wm. O. Mitchell",
+      "type": "person",
+      "context": "Farmer, Eagle City, Oklahoma"
+    },
+    {
+      "name": "H. F. Furry",
+      "type": "person",
+      "context": "Farmer, Pawnee Agency"
+    },
+    {
+      "name": "A. B. Collins",
+      "type": "person",
+      "context": "Farmer, Cushing, Oklahoma"
+    },
+    {
+      "name": "Albert Primeaux",
+      "type": "person",
+      "context": "Pawnee Indian who sold all land except 80 acres for about $600"
+    },
+    {
+      "name": "Maggie LaDue",
+      "type": "person",
+      "context": "nee Mitchell, sold land for $3000.00, married to Amarbe LaDue"
+    },
+    {
+      "name": "Amarbe LaDue",
+      "type": "person",
+      "context": "Otoe Indian, husband of Maggie LaDue, mortgaged land"
+    },
+    {
+      "name": "George Primeaux",
+      "type": "person",
+      "context": "Pawnee Indian, deeded all land to children but keeps life use, doing well"
+    },
+    {
+      "name": "Mike Roy",
+      "type": "person",
+      "context": "Kaw Indian, probably smartest Indian, land mortgaged for $6000 or $6500, leased for five years"
+    },
+    {
+      "name": "George Smith",
+      "type": "person",
+      "context": "Indian with all land patented"
+    },
+    {
+      "name": "Frank Eagle",
+      "type": "person",
+      "context": "Indian, all patented, all gone"
+    },
+    {
+      "name": "Dick Gayton",
+      "type": "person",
+      "context": "Indian, all patented and sold, boose fighter, now on the rocks"
+    },
+    {
+      "name": "Ben Told",
+      "type": "person",
+      "context": "Indian, wife has 120 acres still held in trust worth probably $12,000"
+    },
+    {
+      "name": "Lona Ciserneos",
+      "type": "person",
+      "context": "Tonkawa Indian, only one accumulating property, married to hard-working Mexican husband"
+    },
+    {
+      "name": "Robert Tah",
+      "type": "person",
+      "context": "Tonkawa Indian, Apache, Oklahoma, received fee patent within last three years"
+    },
+    {
+      "name": "Railroad Cisco",
+      "type": "person",
+      "context": "Tonkawa Indian, Apache, Oklahoma, received fee patent within last three years"
+    },
+    {
+      "name": "David Williams",
+      "type": "person",
+      "context": "Tonkawa Indian, Apache, Oklahoma, received fee patent within last three years"
+    },
+    {
+      "name": "Et Tayiah",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 30, land sold, husband and money gone"
+    },
+    {
+      "name": "Helen Jones Burnett",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 46, land sold, funds gone, living off friends"
+    },
+    {
+      "name": "Harry Stubbs",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 47, land sold, money spent, has 160 inherited"
+    },
+    {
+      "name": "Claude McCauley",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 31, land sold, money spent, lives with Osage"
+    },
+    {
+      "name": "Barclay Delano",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 36, land sold, money spent, Red Cross and neighbors"
+    },
+    {
+      "name": "Forrest Chouteau",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 45, land sold, money gone, good family and home"
+    },
+    {
+      "name": "Henry Wy-e-nah-she",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 31, land sold"
+    },
+    {
+      "name": "James Wy-e-nah-she",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 36, land sold, money gone"
+    },
+    {
+      "name": "Theodore Sumner",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 26, land sold, wife has house and lots, strong and able to work"
+    },
+    {
+      "name": "Robert Sands",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 45, land sold, money spent, nothing left"
+    },
+    {
+      "name": "Peter Taylor",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 37, land sold, money spent, has some inheritance"
+    },
+    {
+      "name": "Ralph Pepper",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 27, land has mortgage, husband not work, has inheritance"
+    },
+    {
+      "name": "Abby Conn",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 22, land sold, funds spent, some inheritance left, incompetent"
+    },
+    {
+      "name": "Behesa Burnett",
+      "type": "person",
+      "context": "Kaw Indian (Myrtle Burnett), 4/4 blood, age 37, land sold, Indian broke, has little inheritance"
+    },
+    {
+      "name": "Leece Johnson",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 49, land sold, money spent, not working regularly, lives at Hominy, Okla"
+    },
+    {
+      "name": "Leona Taylor Wy-e-nah-she",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 29, land sold, money spent long ago, living from rental of minor son's allotment"
+    },
+    {
+      "name": "Oliver Thompson",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 26, left 934 acres of land besides town home, funds for whiskey, wasted balance"
+    },
+    {
+      "name": "George Chouteau",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 29, land sold, money spent, lived from rental of wife's land, buried by relatives"
+    },
+    {
+      "name": "Walter Ke-kah-bah",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 26, land sold, money spent"
+    },
+    {
+      "name": "Talbott Farnsworth",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 61, 80 acres sold, 30 deeded to child, ablebodied"
+    },
+    {
+      "name": "Joseph Bellmard",
+      "type": "person",
+      "context": "Kaw Indian, 1/8 blood, age 30, land sold, has good house in Washunga, lives from rental of son's land and pension"
+    },
+    {
+      "name": "Ida B. Wifenbarger",
+      "type": "person",
+      "context": "Kaw Indian, 1/8 blood, age 36, has all 400 acres of land, good white husband buying more land every year"
+    },
+    {
+      "name": "Leonard Bellmard, Jr.",
+      "type": "person",
+      "context": "Kaw Indian, 1/8 blood, age 29, estate gone"
+    },
+    {
+      "name": "Im. Bellmard",
+      "type": "person",
+      "context": "Kaw Indian, 1/8 blood, age 36, land sold, nothing to show, lives from rental of minor children"
+    },
+    {
+      "name": "Edward Mehojah",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 30, better if land had remained restricted, not strong but works hard"
+    },
+    {
+      "name": "Joseph Bellmard, Jr.",
+      "type": "person",
+      "context": "Kaw Indian, 1/8 blood, age 29, land sold, money gone, steady worker"
+    },
+    {
+      "name": "Moses Bellmard",
+      "type": "person",
+      "context": "Kaw Indian, 1/8 blood, age 24, land sold, auto salesman, 1st Lieut. in war in France"
+    },
+    {
+      "name": "Viola Bellmard Pappa",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 67, had better kept hers"
+    },
+    {
+      "name": "William Cooper",
+      "type": "person",
+      "context": "Kaw Indian, 3/16 blood, age 41, has some land left, white husband, doing well"
+    },
+    {
+      "name": "Nelson Cooper",
+      "type": "person",
+      "context": "Kaw Indian, 1/16 blood, age 34, land sold, money gone, alleged gambler in Panama"
+    },
+    {
+      "name": "Ed. Cooper",
+      "type": "person",
+      "context": "Kaw Indian, 1/16 blood, age 39, land sold, money spent, strong and capable"
+    },
+    {
+      "name": "Margaret Cooper Penrose",
+      "type": "person",
+      "context": "Kaw Indian, 1/16 blood, age 37, land sold, husband works part time"
+    },
+    {
+      "name": "Benjamin Fronkier",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 75, land sold, has good home in Washunga town, lives from inheritance of deceased first wife"
+    },
+    {
+      "name": "David Fronkier",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 48, estate gone, buried by relatives"
+    },
+    {
+      "name": "Gen. W.E. Hardy",
+      "type": "person",
+      "context": "Kaw Indian, 1/8 blood, dead, white man married into tribe and adopted"
+    },
+    {
+      "name": "Lee C. Hardy",
+      "type": "person",
+      "context": "Kaw Indian, 1/8 blood, age 46, land sold, working in oil fields as engineer"
+    },
+    {
+      "name": "W.F.S. Hardy",
+      "type": "person",
+      "context": "Kaw Indian, 1/8 blood, age 43, has home on his land, farms, good family"
+    },
+    {
+      "name": "Anna Hardy",
+      "type": "person",
+      "context": "Kaw Indian, 1/8 blood, age 48, land sold, money gone"
+    },
+    {
+      "name": "Malinda Harris",
+      "type": "person",
+      "context": "Kaw Indian, 1/16 blood, age 36, land sold, nothing left, good woman but not strong"
+    },
+    {
+      "name": "Warren Harris",
+      "type": "person",
+      "context": "Kaw Indian, 1/16 blood, age 34, land sold, broke, capable and strong"
+    },
+    {
+      "name": "Lulu James",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, dead, willed allotment to four minor sisters"
+    },
+    {
+      "name": "Frank James",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 31, mortgaged, will soon be gone"
+    },
+    {
+      "name": "D. We Hardy",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, dead"
+    },
+    {
+      "name": "G.M.C. Hardy",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, dead"
+    },
+    {
+      "name": "Myrtle E. James",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 29, has homestead left, good husband"
+    },
+    {
+      "name": "Harris O'Connor",
+      "type": "person",
+      "context": "Kaw Indian, has her land, married good white man, doing well, Arkansas City, Kan"
+    },
+    {
+      "name": "Andoxie Thomas",
+      "type": "person",
+      "context": "Kaw Indian, Newkirk, Okla"
+    },
+    {
+      "name": "Rosanna Cooper",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 24, has her land, built new buildings, doing well"
+    },
+    {
+      "name": "Galan Clavier",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 23, has her land, built new buildings, doing well"
+    },
+    {
+      "name": "Benjamin Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 1/2 blood, age 41, land sold, money spent, farms some on son's land"
+    },
+    {
+      "name": "Edward Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 1/2 blood, age 39, land sold, money gone, lives from rental of minor son's land"
+    },
+    {
+      "name": "Murphy Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 1/2 blood, age 32, land sold, money gone, lives from rental of minor children's land, ten children"
+    },
+    {
+      "name": "Susie Lessart",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 44, land sold, money spent, husband works part time, running rooming house in Newkirk"
+    },
+    {
+      "name": "Weso Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 47, land sold, money gone, lives with relatives"
+    },
+    {
+      "name": "Warren Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 35, land sold, money gone, lives principally by rental of minor daughter's homestead"
+    },
+    {
+      "name": "Louisa Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 41, inheritance sold, nothing left, husband works part time"
+    },
+    {
+      "name": "Webb Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 41, land sold, money spent, farming rented land, works well"
+    },
+    {
+      "name": "Elnora P. Clavier",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 41, land sold, money spent, paralyzed on one side"
+    },
+    {
+      "name": "Keenan Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 31, land sold, funds gone"
+    },
+    {
+      "name": "Julia Pappan LeClair",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 29, land sold, money gone, white husband at Santa Fe Depot"
+    },
+    {
+      "name": "Achan Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 37, land sold, money spent, was soldier in France, good position with Gypsy Oil Company"
+    },
+    {
+      "name": "Laura P. Randall",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 35, land given as surplus 340 acres sold, 160 homestead deeded to white wife"
+    },
+    {
+      "name": "Wm. Louis Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 84, land sold, funds blown in, old and feeble"
+    },
+    {
+      "name": "Mitchell Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 81, land sold, money gone, making good as teamster"
+    },
+    {
+      "name": "Charley Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 3/4 blood, age 33, land sold, money spent, teaming part time"
+    },
+    {
+      "name": "Dadie Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 35, got certificate, bought house and deeded to Dadie"
+    },
+    {
+      "name": "Rosa Burnett",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 29, has homestead and part of surplus, white husband deputy sheriff"
+    },
+    {
+      "name": "Lida Spurgeon",
+      "type": "person",
+      "context": "Kaw Indian, 4/4 blood, age 57, dead, land sold, money gone, heirs poor"
+    },
+    {
+      "name": "Irwin Thompson",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 30, land sold, money spent, left family, county commissioners help with food"
+    },
+    {
+      "name": "Andrew Thompson",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 29, land sold, funds spent, works sometimes, in jail for running still"
+    },
+    {
+      "name": "Lindsay Thompson",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 26, land sold, funds spent, fair worker"
+    },
+    {
+      "name": "Nelson Thompson",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 35, land sold, funds all spent except deeded minor child house and lot"
+    },
+    {
+      "name": "Josephine Thompson",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 33, land sold, money spent, husband left, married Theodore Sumner"
+    },
+    {
+      "name": "Mary P. Howland",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 37, land sold, funds spent except house in Newkirk"
+    },
+    {
+      "name": "Hugh Thompson",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 33, land sold, money all spent, seldom works"
+    },
+    {
+      "name": "Charles Thompson",
+      "type": "person",
+      "context": "Kaw Indian, 1/3 blood, age 37, land sold, money gone"
+    },
+    {
+      "name": "Mode Pappan",
+      "type": "person",
+      "context": "Kaw Indian, 1/4 blood, age 30, land sold, funds spent except house in Newkirk, poor physically and financially"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Federal oversight body for Indian Affairs"
+    },
+    {
+      "name": "Office of Indian Affairs",
+      "type": "organization",
+      "context": "Department of the Interior, Washington, D.C."
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Federal department"
+    },
+    {
+      "name": "Mails and Files Division",
+      "type": "organization",
+      "context": "Indian Office division"
+    },
+    {
+      "name": "Pawnee Indian Agency",
+      "type": "organization",
+      "context": "Indian Agency in Oklahoma"
+    },
+    {
+      "name": "Cantonment Indian Agency",
+      "type": "organization",
+      "context": "Indian Agency in Oklahoma"
+    },
+    {
+      "name": "Shawnee Indian Agency",
+      "type": "organization",
+      "context": "Indian Agency in Oklahoma"
+    },
+    {
+      "name": "Ponca Sub-agency",
+      "type": "organization",
+      "context": "Sub-agency under Pawnee Agency"
+    },
+    {
+      "name": "Tonkawa Sub-agency",
+      "type": "organization",
+      "context": "Sub-agency under Pawnee Agency"
+    },
+    {
+      "name": "Otoe Sub-agency",
+      "type": "organization",
+      "context": "Sub-agency under Pawnee Agency"
+    },
+    {
+      "name": "Kaw Sub-agency",
+      "type": "organization",
+      "context": "Sub-agency under Pawnee Agency"
+    },
+    {
+      "name": "Pawnee Tribe",
+      "type": "organization",
+      "context": "Tribe with 820 allotments, 112,701 acres"
+    },
+    {
+      "name": "Ponca Tribe",
+      "type": "organization",
+      "context": "Tribe with 782 allotments, 100,745 acres"
+    },
+    {
+      "name": "Otoe Tribe",
+      "type": "organization",
+      "context": "Tribe with 514 allotments, 128,251 acres"
+    },
+    {
+      "name": "Kaw Tribe",
+      "type": "organization",
+      "context": "Tribe with 347 allotments, 99,644 acres"
+    },
+    {
+      "name": "Tonkawa Tribe",
+      "type": "organization",
+      "context": "Tribe with 73 allotments, 11,466 acres"
+    },
+    {
+      "name": "Sioux Tribe",
+      "type": "organization",
+      "context": "Tribe mentioned in South Dakota context"
+    },
+    {
+      "name": "Kiowa Tribe",
+      "type": "organization",
+      "context": "Tribe mentioned"
+    },
+    {
+      "name": "Arapaho Tribe",
+      "type": "organization",
+      "context": "Tribe mentioned"
+    },
+    {
+      "name": "Eastern Cherokee",
+      "type": "organization",
+      "context": "Tribe mentioned"
+    },
+    {
+      "name": "Puyallup Consolidated",
+      "type": "organization",
+      "context": "Tribal entity mentioned"
+    },
+    {
+      "name": "Oneidas of Wisconsin",
+      "type": "organization",
+      "context": "Tribe mentioned"
+    },
+    {
+      "name": "Osage Tribe",
+      "type": "organization",
+      "context": "Tribe mentioned in context of Indians living with them"
+    },
+    {
+      "name": "Cheyenne River Reservation",
+      "type": "location",
+      "context": "Reservation in South Dakota"
+    },
+    {
+      "name": "Washington, D.C.",
+      "type": "location",
+      "context": "Location of Board of Indian Commissioners and Interior Department"
+    },
+    {
+      "name": "Pawnee, Oklahoma",
+      "type": "location",
+      "context": "Location of Pawnee Agency"
+    },
+    {
+      "name": "Whiteagle, Oklahoma",
+      "type": "location",
+      "context": "Location where Indians can be reached"
+    },
+    {
+      "name": "Pawhuska, Oklahoma",
+      "type": "location",
+      "context": "Location mentioned for Kaw Indians"
+    },
+    {
+      "name": "Newkirk, Oklahoma",
+      "type": "location",
+      "context": "Location mentioned for Kaw Indians"
+    },
+    {
+      "name": "Hardy, Oklahoma",
+      "type": "location",
+      "context": "Location mentioned for Kaw Indians"
+    },
+    {
+      "name": "Hominy, Oklahoma",
+      "type": "location",
+      "context": "Location mentioned"
+    },
+    {
+      "name": "Washunga",
+      "type": "location",
+      "context": "Location mentioned"
+    },
+    {
+      "name": "Arkansas City, Kansas",
+      "type": "location",
+      "context": "Location mentioned"
+    },
+    {
+      "name": "Earlsboro, Oklahoma",
+      "type": "location",
+      "context": "Location mentioned"
+    },
+    {
+      "name": "Tulsa, Oklahoma",
+      "type": "location",
+      "context": "Location mentioned (3102 East 3rd Street, 2103 East 3rd Street)"
+    },
+    {
+      "name": "Apache, Oklahoma",
+      "type": "location",
+      "context": "Location of Tonkawa Indians"
+    },
+    {
+      "name": "Eagle City, Oklahoma",
+      "type": "location",
+      "context": "Location mentioned"
+    },
+    {
+      "name": "Cushing, Oklahoma",
+      "type": "location",
+      "context": "Location mentioned"
+    },
+    {
+      "name": "Princeton, N.J.",
+      "type": "location",
+      "context": "Location of Hugh L. Scott"
+    },
+    {
+      "name": "New York, N.Y.",
+      "type": "location",
+      "context": "Location of Alfred E. Smith"
+    },
+    {
+      "name": "Mohonk Lake, N.Y.",
+      "type": "location",
+      "context": "Location of Daniel Smiley"
+    },
+    {
+      "name": "Boston, Mass.",
+      "type": "location",
+      "context": "Location of Samuel A. Eliot"
+    },
+    {
+      "name": "Manchester, N.H.",
+      "type": "location",
+      "context": "Location of Frank Knox"
+    },
+    {
+      "name": "Andover, Mass.",
+      "type": "location",
+      "context": "Location of Warren K. Moorehead"
+    },
+    {
+      "name": "Philadelphia, Pa.",
+      "type": "location",
+      "context": "Location of George Vaux, Jr."
+    },
+    {
+      "name": "South Dakota",
+      "type": "location",
+      "context": "Location of Sioux and Cheyenne River Reservation"
+    },
+    {
+      "name": "Wisconsin",
+      "type": "location",
+      "context": "Location of Oneidas"
+    },
+    {
+      "name": "North Carolina",
+      "type": "location",
+      "context": "Location of Court of Appeals cases mentioned"
+    },
+    {
+      "name": "Pawnee Allotments",
+      "type": "acreage_holding",
+      "context": "820 allotments, 112,701 acres (or 113,701)"
+    },
+    {
+      "name": "Ponca Allotments",
+      "type": "acreage_holding",
+      "context": "782 allotments, 100,745 acres"
+    },
+    {
+      "name": "Otoe Allotments",
+      "type": "acreage_holding",
+      "context": "514 allotments, 128,251 acres (or 138,351)"
+    },
+    {
+      "name": "Kaw Allotments",
+      "type": "acreage_holding",
+      "context": "347 allotments, 99,644 acres"
+    },
+    {
+      "name": "Tonkawa Allotments",
+      "type": "acreage_holding",
+      "context": "73 allotments, 11,466 acres"
+    },
+    {
+      "name": "Kaw Treaty",
+      "type": "legislation",
+      "context": "Treaty specifying application in writing for certificates"
+    }
+  ],
+  "events": [
+    {
+      "type": "issuance_of_fee_patent",
+      "date": "1921-05-07",
+      "location": "Washington, D.C.",
+      "description": "Bulletin No. 142 issued by Board of Indian Commissioners regarding releasing Indians from Government Supervision"
+    },
+    {
+      "type": "report_submission",
+      "date": "1931-05-06",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners sends batch of replies to Commissioner of Indian Affairs regarding condition of patent-in-fee Indians"
+    },
+    {
+      "type": "field_report",
+      "date": "1930-06-30",
+      "location": "Pawnee Agency, Oklahoma",
+      "description": "Report giving record of original allotments for five tribes"
+    },
+    {
+      "type": "appointment",
+      "date": "1919-07",
+      "location": "Pawnee Agency, Oklahoma",
+      "description": "J. C. Hart came to Pawnee Agency"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "Albert Primeaux sold all land except 80 acres for about $600"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "Maggie LaDue sold land for $3000.00"
+    },
+    {
+      "type": "mortgage",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "Mike Roy mortgaged land for $6000.00 or $6500.00 and leased for five years"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "George Primeaux deeded all land to children but keeps life use"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "Frank Eagle received patent, all land gone"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "Dick Gayton received patent and sold all land"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "Robert Tah received fee patent within last three years"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "Railroad Cisco received fee patent within last three years"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "David Williams received fee patent within last three years"
+    },
+    {
+      "type": "certificate_of_competency",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Et Tayiah given certificate of competency, land sold"
+    },
+    {
+      "type": "certificate_of_competency",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Helen Jones Burnett given certificate of competency, land sold"
+    },
+    {
+      "type": "certificate_of_competency",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Harry Stubbs given certificate of competency"
+    },
+    {
+      "type": "certificate_of_competency",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Claude McCauley given certificate of competency"
+    },
+    {
+      "type": "certificate_of_competency",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Barclay Delano given certificate of competency"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Forrest Chouteau land sold after certificate"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Henry Wy-e-nah-she land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "James Wy-e-nah-she land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Theodore Sumner land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Robert Sands land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Peter Taylor land sold"
+    },
+    {
+      "type": "mortgage",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Ralph Pepper land has mortgage"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Abby Conn land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Behesa Burnett land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Leece Johnson land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Leona Taylor Wy-e-nah-she land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "George Chouteau land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Walter Ke-kah-bah land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Talbott Farnsworth 80 acres sold, 30 deeded to child"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Joseph Bellmard land sold"
+    },
+    {
+      "type": "certificate_of_competency",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Ida B. Wifenbarger has all 400 acres (implied competent)"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Leonard Bellmard, Jr. estate gone"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Im. Bellmard land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Edward Mehojah land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Joseph Bellmard, Jr. land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Moses Bellmard land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Viola Bellmard Pappa land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Nelson Cooper land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Ed. Cooper land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Margaret Cooper Penrose land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Benjamin Fronkier land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "David Fronkier estate gone"
+    },
+    {
+      "type": "death",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Gen. W.E. Hardy died"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Lee C. Hardy land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Anna Hardy land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Malinda Harris land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Warren Harris land sold"
+    },
+    {
+      "type": "death",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Lulu James died, willed allotment to sisters"
+    },
+    {
+      "type": "mortgage",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Frank James mortgaged"
+    },
+    {
+      "type": "death",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "D. We Hardy died"
+    },
+    {
+      "type": "death",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "G.M.C. Hardy died"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Benjamin Pappan land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Edward Pappan land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Murphy Pappan land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Susie Lessart land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Weso Pappan land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Warren Pappan land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Louisa Pappan inheritance sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Webb Pappan land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Elnora P. Clavier land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Keenan Pappan land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Julia Pappan LeClair land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Achan Pappan land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Laura P. Randall 340 acres surplus sold, 160 homestead deeded to white wife"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Wm. Louis Pappan land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Mitchell Pappan land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Charley Pappan land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Dadie Pappan land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Lida Spurgeon land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Irwin Thompson land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Andrew Thompson land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Lindsay Thompson land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Nelson Thompson land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Josephine Thompson land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Mary P. Howland land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Hugh Thompson land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Charles Thompson land sold"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Kaw Sub-agency, Oklahoma",
+      "description": "Mode Pappan land sold"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$600",
+      "payer": "Albert Primeaux",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Sale of all land except 80 acres"
+    },
+    {
+      "type": "sale",
+      "amount": "$3000.00",
+      "payer": "Maggie LaDue",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Sale of land"
+    },
+    {
+      "type": "mortgage",
+      "amount": "$6000.00 or $6500.00",
+      "payer": "Mike Roy",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Mortgage of land, also leased for five years"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Frank Eagle",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "All land sold after patent"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Dick Gayton",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "All land sold after patent, had oil money"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Et Tayiah",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold after certificate of competency"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Helen Jones Burnett",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold after certificate of competency"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Harry Stubbs",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Claude McCauley",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Barclay Delano",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Forrest Chouteau",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Henry Wy-e-nah-she",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "James Wy-e-nah-she",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Theodore Sumner",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Robert Sands",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Peter Taylor",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "mortgage",
+      "amount": "unknown",
+      "payer": "Ralph Pepper",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land mortgaged"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Abby Conn",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Behesa Burnett",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Leece Johnson",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Leona Taylor Wy-e-nah-she",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "George Chouteau",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Walter Ke-kah-bah",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Talbott Farnsworth",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "80 acres sold"
+    },
+    {
+      "type": "gift",
+      "amount": "30 acres",
+      "payer": "Talbott Farnsworth",
+      "payee": "his child",
+      "date": "partial",
+      "description": "30 acres deeded to child"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Joseph Bellmard",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Leonard Bellmard, Jr.",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Estate gone"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Im. Bellmard",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Edward Mehojah",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Joseph Bellmard, Jr.",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Moses Bellmard",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Viola Bellmard Pappa",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Nelson Cooper",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Ed. Cooper",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Margaret Cooper Penrose",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Benjamin Fronkier",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "David Fronkier",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Estate gone"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Lee C. Hardy",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Anna Hardy",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Malinda Harris",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Warren Harris",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "mortgage",
+      "amount": "unknown",
+      "payer": "Frank James",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land mortgaged"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Benjamin Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Edward Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Murphy Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Susie Lessart",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Weso Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Warren Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Louisa Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Inheritance sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Webb Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Elnora P. Clavier",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Keenan Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Julia Pappan LeClair",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Achan Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Laura P. Randall",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "340 acres surplus sold"
+    },
+    {
+      "type": "gift",
+      "amount": "160 acres",
+      "payer": "Laura P. Randall",
+      "payee": "his white wife",
+      "date": "partial",
+      "description": "Homestead deeded to white wife"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Wm. Louis Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Mitchell Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Charley Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Dadie Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Lida Spurgeon",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Irwin Thompson",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Andrew Thompson",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Lindsay Thompson",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Nelson Thompson",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Josephine Thompson",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Mary P. Howland",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Hugh Thompson",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Charles Thompson",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Mode Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Land sold"
+    },
+    {
+      "type": "lease",
+      "amount": "unknown",
+      "payer": "Mike Roy",
+      "payee": "unknown",
+      "date": "five years",
+      "description": "Land leased for five years"
+    },
+    {
+      "type": "lease",
+      "amount": "unknown",
+      "payer": "Leona Taylor Wy-e-nah-she",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Living from rental of minor son's allotment"
+    },
+    {
+      "type": "lease",
+      "amount": "unknown",
+      "payer": "George Chouteau",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Lived from rental of wife's land"
+    },
+    {
+      "type": "lease",
+      "amount": "unknown",
+      "payer": "Joseph Bellmard",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Lives from rental of son's land"
+    },
+    {
+      "type": "lease",
+      "amount": "unknown",
+      "payer": "Im. Bellmard",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Lives from rental of minor children"
+    },
+    {
+      "type": "lease",
+      "amount": "unknown",
+      "payer": "Benjamin Fronkier",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Lives from inheritance of deceased first wife"
+    },
+    {
+      "type": "lease",
+      "amount": "unknown",
+      "payer": "Edward Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Lives from rental of minor son's land"
+    },
+    {
+      "type": "lease",
+      "amount": "unknown",
+      "payer": "Murphy Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Lives from rental of minor children's land"
+    },
+    {
+      "type": "lease",
+      "amount": "unknown",
+      "payer": "Warren Pappan",
+      "payee": "unknown",
+      "date": "partial",
+      "description": "Lives principally by rental of minor daughter's homestead"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "John E. DeVare",
+      "type": "employed_by",
+      "object": "Ponca Sub-agency",
+      "context": "Farmer at Ponca Sub-agency"
+    },
+    {
+      "subject": "Arthur J. Crim",
+      "type": "employed_by",
+      "object": "Tonkawa Sub-agency",
+      "context": "Farmer at Tonkawa Sub-agency"
+    },
+    {
+      "subject": "Charles B. Thompson",
+      "type": "employed_by",
+      "object": "Otoe Sub-agency",
+      "context": "Farmer at Otoe Sub-agency"
+    },
+    {
+      "subject": "F. W. Long",
+      "type": "employed_by",
+      "object": "Pawnee Agency",
+      "context": "Farmer at Pawnee Agency"
+    },
+    {
+      "subject": "John V. Clendening",
+      "type": "employed_by",
+      "object": "Kaw Sub-agency",
+      "context": "Clerk in Charge, Kaw Sub-agency"
+    },
+    {
+      "subject": "Wm. O. Mitchell",
+      "type": "employed_by",
+      "object": "Indian Service",
+      "context": "Farmer at Eagle City, Oklahoma"
+    },
+    {
+      "subject": "H. F. Furry",
+      "type": "employed_by",
+      "object": "Pawnee Agency",
+      "context": "Farmer at Pawnee Agency"
+    },
+    {
+      "subject": "A. B. Collins",
+      "type": "employed_by",
+      "object": "Shawnee Indian Agency",
+      "context": "Farmer at Cushing, Oklahoma"
+    },
+    {
+      "subject": "J. C. Hart",
+      "type": "employed_by",
+      "object": "Pawnee Indian Agency",
+      "context": "Superintendent"
+    },
+    {
+      "subject": "Maggie LaDue",
+      "type": "married_to",
+      "object": "Amarbe LaDue",
+      "context": "Husband is Otoe Indian"
+    },
+    {
+      "subject": "George Primeaux",
+      "type": "parent_of",
+      "object": "his children",
+      "context": "Deeded land to children but keeps life use"
+    },
+    {
+      "subject": "Ben Told",
+      "type": "married_to",
+      "object": "wife (unnamed)",
+      "context": "Wife has 120 acres in trust"
+    },
+    {
+      "subject": "Theodore Sumner",
+      "type": "married_to",
+      "object": "wife (unnamed)",
+      "context": "Wife has house and lots in her name"
+    },
+    {
+      "subject": "Ralph Pepper",
+      "type": "married_to",
+      "object": "husband (unnamed)",
+      "context": "Husband does not work"
+    },
+    {
+      "subject": "Ida B. Wifenbarger",
+      "type": "married_to",
+      "object": "white husband",
+      "context": "Good white husband who is buying more land"
+    },
+    {
+      "subject": "Viola Bellmard Pappa",
+      "type": "married_to",
+      "object": "Pappa",
+      "context": "Married name Pappa"
+    },
+    {
+      "subject": "William Cooper",
+      "type": "married_to",
+      "object": "white husband",
+      "context": "Has white husband who farms her place"
+    },
+    {
+      "subject": "Margaret Cooper Penrose",
+      "type": "married_to",
+      "object": "Penrose",
+      "context": "Married name Penrose"
+    },
+    {
+      "subject": "David Fronkier",
+      "type": "married_to",
+      "object": "white woman",
+      "context": "White man married into tribe and adopted"
+    },
+    {
+      "subject": "Myrtle E. James",
+      "type": "married_to",
+      "object": "good husband",
+      "context": "Has good husband"
+    },
+    {
+      "subject": "Harris O'Connor",
+      "type": "married_to",
+      "object": "good white man",
+      "context": "Married good white man"
+    },
+    {
+      "subject": "Rosanna Cooper",
+      "type": "married_to",
+      "object": "husband",
+      "context": "Have nice home and are doing well"
+    },
+    {
+      "subject": "Galan Clavier",
+      "type": "married_to",
+      "object": "husband",
+      "context": "Have nice home and are doing well"
+    },
+    {
+      "subject": "Rosa Burnett",
+      "type": "married_to",
+      "object": "white husband",
+      "context": "White husband is deputy sheriff"
+    },
+    {
+      "subject": "Julia Pappan LeClair",
+      "type": "married_to",
+      "object": "mixed-blood husband",
+      "context": "Husband has regular job at Santa Fe Depot"
+    },
+    {
+      "subject": "Laura P. Randall",
+      "type": "married_to",
+      "object": "white wife",
+      "context": "160 homestead deeded to his white wife"
+    },
+    {
+      "subject": "Josephine Thompson",
+      "type": "married_to",
+      "object": "Theodore Sumner",
+      "context": "Married again to Theodore Sumner after first husband left"
+    },
+    {
+      "subject": "Lona Ciserneos",
+      "type": "married_to",
+      "object": "Mexican husband",
+      "context": "Hard-working economical Mexican husband"
+    },
+    {
+      "subject": "Talbott Farnsworth",
+      "type": "parent_of",
+      "object": "his child",
+      "context": "30 acres deeded to his child"
+    },
+    {
+      "subject": "Joseph Bellmard",
+      "type": "parent_of",
+      "object": "son",
+      "context": "Lives from rental of son's land"
+    },
+    {
+      "subject": "Edward Pappan",
+      "type": "parent_of",
+      "object": "minor son",
+      "context": "Lives from rental of minor son's land"
+    },
+    {
+      "subject": "Murphy Pappan",
+      "type": "parent_of",
+      "object": "minor children",
+      "context": "Lives from rental of minor children's land, ten children"
+    },
+    {
+      "subject": "Benjamin Pappan",
+      "type": "parent_of",
+      "object": "son",
+      "context": "Farms some on son's land"
+    },
+    {
+      "subject": "Warren Pappan",
+      "type": "parent_of",
+      "object": "minor daughter",
+      "context": "Lives by rental of minor daughter's homestead"
+    },
+    {
+      "subject": "Nelson Thompson",
+      "type": "parent_of",
+      "object": "minor child",
+      "context": "Deeded minor child a house and lot"
+    },
+    {
+      "subject": "Leona Taylor Wy-e-nah-she",
+      "type": "parent_of",
+      "object": "minor son",
+      "context": "Living from rental of minor son's allotment"
+    },
+    {
+      "subject": "Lulu James",
+      "type": "sister_of",
+      "object": "four minor sisters",
+      "context": "Willed allotment to four minor sisters"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Albert Primeaux",
+      "allotment_number": "unknown",
+      "acreage": "all except 80 acres",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "unknown",
+      "sale_price": "$600",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Maggie LaDue",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "unknown",
+      "sale_price": "$3000.00",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "George Primeaux",
+      "allotment_number": "unknown",
+      "acreage": "all",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "his children",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Mike Roy",
+      "allotment_number": "unknown",
+      "acreage": "all",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "$6000.00 or $6500.00"
+    },
+    {
+      "allottee_name": "George Smith",
+      "allotment_number": "unknown",
+      "acreage": "all",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Frank Eagle",
+      "allotment_number": "unknown",
+      "acreage": "all",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Dick Gayton",
+      "allotment_number": "unknown",
+      "acreage": "all",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Robert Tah",
+      "allotment_number": "unknown",
+      "acreage": "all lands belonging to him",
+      "patent_date": "within last three years",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Railroad Cisco",
+      "allotment_number": "unknown",
+      "acreage": "all lands belonging to him",
+      "patent_date": "within last three years",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "David Williams",
+      "allotment_number": "unknown",
+      "acreage": "all lands belonging to him",
+      "patent_date": "within last three years",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Et Tayiah",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Helen Jones Burnett",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Harry Stubbs",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Claude McCauley",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Barclay Delano",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Forrest Chouteau",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Henry Wy-e-nah-she",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "James Wy-e-nah-she",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Theodore Sumner",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Robert Sands",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Peter Taylor",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Ralph Pepper",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "yes"
+    },
+    {
+      "allottee_name": "Abby Conn",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Behesa Burnett",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Leece Johnson",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Leona Taylor Wy-e-nah-she",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Oliver Thompson",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "George Chouteau",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Walter Ke-kah-bah",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Talbott Farnsworth",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Joseph Bellmard",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Ida B. Wifenbarger",
+      "allotment_number": "unknown",
+      "acreage": "400 acres",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Leonard Bellmard, Jr.",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Im. Bellmard",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Edward Mehojah",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Joseph Bellmard, Jr.",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Moses Bellmard",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Viola Bellmard Pappa",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "William Cooper",
+      "allotment_number": "unknown",
+      "acreage": "some land left",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Nelson Cooper",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Ed. Cooper",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Margaret Cooper Penrose",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Benjamin Fronkier",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "David Fronkier",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Gen. W.E. Hardy",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Lee C. Hardy",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "W.F.S. Hardy",
+      "allotment_number": "unknown",
+      "acreage": "homestead",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Anna Hardy",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Malinda Harris",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Warren Harris",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Lulu James",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Frank James",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "yes"
+    },
+    {
+      "allottee_name": "D. We Hardy",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "G.M.C. Hardy",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Myrtle E. James",
+      "allotment_number": "unknown",
+      "acreage": "homestead",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Harris O'Connor",
+      "allotment_number": "unknown",
+      "acreage": "her land",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Andoxie Thomas",
+      "allotment_number": "unknown",
+      "acreage": "homestead",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Rosanna Cooper",
+      "allotment_number": "unknown",
+      "acreage": "homestead",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Galan Clavier",
+      "allotment_number": "unknown",
+      "acreage": "homestead",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Benjamin Pappan",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Edward Pappan",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Murphy Pappan",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Susie Lessart",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Weso Pappan",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Warren Pappan",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Louisa Pappan",
+      "allotment_number": "unknown",
+      "acreage": "inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Webb Pappan",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Elnora P. Clavier",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Keenan Pappan",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Julia Pappan LeClair",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Achan Pappan",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Laura P. Randall",
+      "allotment_number": "unknown",
+      "acreage": "340 acres surplus",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Wm. Louis Pappan",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Mitchell Pappan",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Charley Pappan",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Dadie Pappan",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Rosa Burnett",
+      "allotment_number": "unknown",
+      "acreage": "homestead and part of surplus",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "none",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Lida Spurgeon",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Irwin Thompson",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Andrew Thompson",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Lindsay Thompson",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Nelson Thompson",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Josephine Thompson",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Mary P. Howland",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Hugh Thompson",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Charles Thompson",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    },
+    {
+      "allottee_name": "Mode Pappan",
+      "allotment_number": "unknown",
+      "acreage": "homestead and inheritance",
+      "patent_date": "partial",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "none"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Malcolm McDowell",
+      "sender_title": "Secretary, Board of Indian Commissioners",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "1931-05-06",
+      "subject": "Batch of replies regarding condition of patent-in-fee Indians",
+      "action_requested": "none",
+      "outcome": "transmitted"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board of Indian Commissioners",
+      "recipient": "Field Service Officers",
+      "recipient_title": "Superintendents and Farmers",
+      "date": "1921-05-07",
+      "subject": "Releasing Indians from Government Supervision - Bulletin No. 142",
+      "action_requested": "Reports on condition of Indians released from supervision",
+      "outcome": "reports submitted"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board of Indian Commissioners",
+      "recipient": "J. C. Hart",
+      "recipient_title": "Superintendent, Pawnee Agency",
+      "date": "1921-03-21",
+      "subject": "Effect upon Indians released from Government control",
+      "action_requested": "Submit reports from farmers",
+      "outcome": "reports submitted"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board of Indian Commissioners",
+      "recipient": "J. C. Hart",
+      "recipient_title": "Superintendent, Pawnee Agency",
+      "date": "1921-03-31",
+      "subject": "Effect upon Indians released from Government control",
+      "action_requested": "Submit reports from farmers",
+      "outcome": "reports submitted"
+    },
+    {
+      "sender": "J. C. Hart",
+      "sender_title": "Superintendent, Pawnee Indian Agency",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board of Indian Commissioners",
+      "date": "partial",
+      "subject": "Reply to March 21 letter regarding effect of releasing Indians from control",
+      "action_requested": "none",
+      "outcome": "submitted reports from five agency farmers"
+    },
+    {
+      "sender": "J. C. Hart",
+      "sender_title": "Superintendent, Pawnee Indian Agency",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board of Indian Commissioners",
+      "date": "partial",
+      "subject": "Reply to March 31 letter regarding effect of releasing Indians from control",
+      "action_requested": "none",
+      "outcome": "submitted reports from five agency farmers"
+    },
+    {
+      "sender": "John E. DeVare",
+      "sender_title": "Farmer, Ponca Sub-agency",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board of Indian Commissioners",
+      "date": "partial",
+      "subject": "Condition of fee patent Indians on Ponca Reservation",
+      "action_requested": "none",
+      "outcome": "reported poor record of patent-in-fee Indians"
+    },
+    {
+      "sender": "John V. Clendening",
+      "sender_title": "Clerk in Charge, Kaw Sub-agency",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board of Indian Commissioners",
+      "date": "partial",
+      "subject": "Indians who have had restrictions removed from their lands",
+      "action_requested": "none",
+      "outcome": "submitted list of Kaw Indians with certificates of competency"
+    },
+    {
+      "sender": "Arthur J. Crim",
+      "sender_title": "Farmer, Tonkawa Sub-agency",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board of Indian Commissioners",
+      "date": "partial",
+      "subject": "Reply to letter to Indian Service farmers regarding fee patents",
+      "action_requested": "none",
+      "outcome": "reported only one Indian accumulating property (Lona Ciserneos)"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Bulletin No. 142",
+      "sponsor": "Board of Indian Commissioners",
+      "action_type": "enacted",
+      "date": "1921-05-07",
+      "vote_count": "unknown",
+      "committee": "Board of Indian Commissioners",
+      "outcome": "Issued requesting information on releasing Indians from Government Supervision"
+    },
+    {
+      "bill_number": "Kaw Treaty",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "partial",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Specifies that Kaw Indians shall make applications for certificates in writing"
+    },
+    {
+      "bill_number": "Private Bill",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "partial",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Mechanism mentioned for granting fee patents through Congressional action"
+    }
+  ]
+}

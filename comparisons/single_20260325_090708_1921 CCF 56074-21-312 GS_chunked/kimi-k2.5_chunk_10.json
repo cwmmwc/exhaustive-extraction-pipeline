@@ -1,0 +1,799 @@
+{
+  "entities": [
+    {
+      "name": "Mollie Johnson",
+      "type": "person",
+      "context": "One-quarter blood Creek allottee, Roll No. 9130, defrauded of 160-acre allotment in Hughes County"
+    },
+    {
+      "name": "Daniel Johnson",
+      "type": "person",
+      "context": "One-quarter blood Creek allottee, Roll No. 9131, defrauded of land"
+    },
+    {
+      "name": "Adeline Grayson",
+      "type": "person",
+      "context": "One-half blood Creek allottee, deluded into transferring allotment without adequate consideration"
+    },
+    {
+      "name": "Caney Arbor",
+      "type": "person",
+      "context": "One-quarter blood Creek allottee, Roll No. 9613, executed deeds at instigation of grafters, died destitute"
+    },
+    {
+      "name": "Henderson Arbor",
+      "type": "person",
+      "context": "One-quarter blood Creek allottee, Roll No. 9613, defrauded of land, now in destitute circumstances"
+    },
+    {
+      "name": "Talof Harjo",
+      "type": "person",
+      "context": "One-half blood Creek allottee, Roll No. 7501, defrauded of land"
+    },
+    {
+      "name": "Lizzie Sewell",
+      "type": "person",
+      "context": "Three-quarter blood Creek allottee, Roll No. 7529, induced to part with land for $800 less than value"
+    },
+    {
+      "name": "Tilda Sunday",
+      "type": "person",
+      "context": "One-half blood Creek allottee, defrauded of land, loss $900"
+    },
+    {
+      "name": "Jemima Harjo",
+      "type": "person",
+      "context": "One-half blood Creek allottee, induced to sign deed receiving $400 when land worth $1,400"
+    },
+    {
+      "name": "Felix Canard",
+      "type": "person",
+      "context": "Full-blood Creek who has not disposed of land after being turned loose"
+    },
+    {
+      "name": "Roley Canard",
+      "type": "person",
+      "context": "Full-blood Creek who has not disposed of land after being turned loose"
+    },
+    {
+      "name": "William Buck",
+      "type": "person",
+      "context": "Full-blood Creek who has not disposed of land after being turned loose"
+    },
+    {
+      "name": "John Smith",
+      "type": "person",
+      "context": "Full-blood Creek who has not disposed of land after being turned loose"
+    },
+    {
+      "name": "Jackson Wolf",
+      "type": "person",
+      "context": "Full-blood Seminole, declared competent with wife Milla Wolf, unable to speak/read/write English, land taken by grafters"
+    },
+    {
+      "name": "Milla Wolf",
+      "type": "person",
+      "context": "Full-blood Seminole, wife of Jackson Wolf, declared competent, land taken by grafters"
+    },
+    {
+      "name": "Abijah Colbert",
+      "type": "person",
+      "context": "Chickasaw allottee, Roll No. 961, turned loose by competency commission with brother Richard Floyd Colbert"
+    },
+    {
+      "name": "Richard Floyd Colbert",
+      "type": "person",
+      "context": "Chickasaw allottee, Roll No. 960, turned loose by competency commission, purchased garage with $20,000 mortgage"
+    },
+    {
+      "name": "Dean H. Shannon",
+      "type": "person",
+      "context": "Field Clerk, Sallisaw, Oklahoma, employed by U.S. Government"
+    },
+    {
+      "name": "A. B. Keith",
+      "type": "person",
+      "context": "U.S. Field Clerk, Muskogee, Oklahoma"
+    },
+    {
+      "name": "Homer Polk",
+      "type": "person",
+      "context": "Field Clerk, Stilwell, Oklahoma"
+    },
+    {
+      "name": "G. R. Clements",
+      "type": "person",
+      "context": "Field Clerk, McAlester, Oklahoma"
+    },
+    {
+      "name": "D. Brauninger",
+      "type": "person",
+      "context": "Farmer, Eufaula, Oklahoma, employed since 1913 at various agencies"
+    },
+    {
+      "name": "A. R. Gayle",
+      "type": "person",
+      "context": "Farmer, Atoka, Oklahoma"
+    },
+    {
+      "name": "Walter McLaughlin",
+      "type": "person",
+      "context": "Temporary Farmer, Ardmore, Oklahoma"
+    },
+    {
+      "name": "C. M. Brandt",
+      "type": "person",
+      "context": "Farmer, Poteau, Oklahoma"
+    },
+    {
+      "name": "Five Civilized Tribes",
+      "type": "organization",
+      "context": "Collective term for Cherokee, Choctaw, Chickasaw, Creek, and Seminole Nations"
+    },
+    {
+      "name": "Cherokee Nation",
+      "type": "organization",
+      "context": "One of the Five Civilized Tribes, citizens to become unrestricted in 1931 by Act of Congress"
+    },
+    {
+      "name": "Creek Nation",
+      "type": "organization",
+      "context": "Tribe to which Johnson, Arbor, Harjo, Grayson, Sewell, Sunday, and Canard families belong"
+    },
+    {
+      "name": "Seminole Nation",
+      "type": "organization",
+      "context": "Tribe with mixed-blood allotments in Seminole County"
+    },
+    {
+      "name": "Chickasaw Nation",
+      "type": "organization",
+      "context": "Tribe to which Colbert brothers belong"
+    },
+    {
+      "name": "Choctaw Nation",
+      "type": "organization",
+      "context": "One of the Five Civilized Tribes mentioned in reports"
+    },
+    {
+      "name": "United States Government",
+      "type": "organization",
+      "context": "Federal authority overseeing Indian affairs and restriction removals"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Federal department with authority over Indian Office and restriction removals"
+    },
+    {
+      "name": "Secretary of the Interior",
+      "type": "organization",
+      "context": "Authority granting blanket orders for removal of restrictions on half-blood Indians"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Entity requesting first-hand information concerning Indians in April 1921 correspondence"
+    },
+    {
+      "name": "Competency Commission",
+      "type": "organization",
+      "context": "Body authorized in Fall 1918 to recommend unconditional removal of restrictions"
+    },
+    {
+      "name": "Murry Agricultural School",
+      "type": "organization",
+      "context": "School attended by Colbert brothers before Oklahoma A&M"
+    },
+    {
+      "name": "Oklahoma Agricultural and Mechanical College",
+      "type": "organization",
+      "context": "Institution attended by Colbert brothers"
+    },
+    {
+      "name": "Cantonment Agency",
+      "type": "organization",
+      "context": "Agency where D. Brauninger worked three years with Cheyenne and Arapahoes"
+    },
+    {
+      "name": "Kiowa Agency",
+      "type": "organization",
+      "context": "Agency where D. Brauninger worked three years with Kiowas, Comanches, and Apaches"
+    },
+    {
+      "name": "Union Agency",
+      "type": "organization",
+      "context": "Agency at Muskogee where D. Brauninger worked 13 months with Cherokees, Choctaws, and Creeks"
+    },
+    {
+      "name": "Hughes County",
+      "type": "location",
+      "context": "Oklahoma county with 1,600 mixed-blood allotments, 75% defrauded"
+    },
+    {
+      "name": "Seminole County",
+      "type": "location",
+      "context": "Oklahoma county with 630 mixed-blood allotments, 90% defrauded"
+    },
+    {
+      "name": "Sallisaw, Oklahoma",
+      "type": "location",
+      "context": "Location of Dean H. Shannon's field office"
+    },
+    {
+      "name": "Muskogee, Oklahoma",
+      "type": "location",
+      "context": "Location of A. B. Keith's field office and Union Agency"
+    },
+    {
+      "name": "Stilwell, Oklahoma",
+      "type": "location",
+      "context": "Location of Homer Polk's field office"
+    },
+    {
+      "name": "McAlester, Oklahoma",
+      "type": "location",
+      "context": "Location of G. R. Clements' field office"
+    },
+    {
+      "name": "Eufaula, Oklahoma",
+      "type": "location",
+      "context": "Location of D. Brauninger's assignment"
+    },
+    {
+      "name": "Atoka, Oklahoma",
+      "type": "location",
+      "context": "Location of A. R. Gayle's assignment"
+    },
+    {
+      "name": "Ardmore, Oklahoma",
+      "type": "location",
+      "context": "Location of Walter McLaughlin's assignment"
+    },
+    {
+      "name": "Poteau, Oklahoma",
+      "type": "location",
+      "context": "Location of C. M. Brandt's assignment"
+    },
+    {
+      "name": "Indian Territory",
+      "type": "location",
+      "context": "Former territory where Indians settled before Oklahoma statehood"
+    },
+    {
+      "name": "Oklahoma",
+      "type": "location",
+      "context": "State admitted to Union where Five Civilized Tribes reside"
+    },
+    {
+      "name": "Navajo Reservation",
+      "type": "location",
+      "context": "Reservation in New Mexico and Arizona mentioned as contrast"
+    },
+    {
+      "name": "New Mexico",
+      "type": "location",
+      "context": "State containing Navajo Reservation"
+    },
+    {
+      "name": "Arizona",
+      "type": "location",
+      "context": "State containing Navajo Reservation"
+    },
+    {
+      "name": "Act of Congress of May 27, 1908",
+      "type": "legislation",
+      "context": "Removed restrictions on mixed blood Indians of the Five Civilized Tribes"
+    },
+    {
+      "name": "Act of Congress regarding Cherokee Nation 1931",
+      "type": "legislation",
+      "context": "Provides that all citizens of Cherokee Nation become unrestricted in 1931"
+    },
+    {
+      "name": "Allotment Roll No. 9130",
+      "type": "land_parcel",
+      "context": "160-acre allotment of Mollie Johnson, appraised value $1,040"
+    },
+    {
+      "name": "Allotment Roll No. 9131",
+      "type": "land_parcel",
+      "context": "Allotment of Daniel Johnson"
+    },
+    {
+      "name": "Allotment Roll No. 9613",
+      "type": "land_parcel",
+      "context": "Allotment shared by Caney Arbor and Henderson Arbor"
+    },
+    {
+      "name": "Allotment Roll No. 7501",
+      "type": "land_parcel",
+      "context": "Allotment of Talof Harjo"
+    },
+    {
+      "name": "Allotment Roll No. 7529",
+      "type": "land_parcel",
+      "context": "Allotment of Lizzie Sewell"
+    },
+    {
+      "name": "Chickasaw Roll No. 961",
+      "type": "land_parcel",
+      "context": "Allotment of Abijah Colbert"
+    },
+    {
+      "name": "Chickasaw Roll No. 960",
+      "type": "land_parcel",
+      "context": "Allotment of Richard Floyd Colbert"
+    }
+  ],
+  "events": [
+    {
+      "type": "legislative_enactment",
+      "date": "1908-05-27",
+      "location": "Washington, D.C.",
+      "description": "Act of Congress removed restrictions on mixed blood Indians of the Five Civilized Tribes"
+    },
+    {
+      "type": "statehood",
+      "date": "1907",
+      "location": "Oklahoma",
+      "description": "Oklahoma admitted into the Union as a state"
+    },
+    {
+      "type": "commission_authorization",
+      "date": "1918-09",
+      "location": "Muskogee District, Oklahoma",
+      "description": "Competency commission authorized for work in district comprising Muskogee, McIntosh, and Haskell Counties"
+    },
+    {
+      "type": "restriction_removal",
+      "date": "1918-1921",
+      "location": "Oklahoma",
+      "description": "Approximately 200 Indians granted unconditional removal of restrictions by competency commission"
+    },
+    {
+      "type": "restriction_removal",
+      "date": "1918-1921",
+      "location": "Oklahoma",
+      "description": "Approximately 125 half-blood Indians granted unconditional removal of restrictions by blanket order of Secretary of the Interior"
+    },
+    {
+      "type": "fraud",
+      "date": null,
+      "location": "Hughes County, Oklahoma",
+      "description": "Mollie Johnson executed deeds conveying 160-acre allotment to various parties without fair consideration, loss $750"
+    },
+    {
+      "type": "fraud",
+      "date": null,
+      "location": "Hughes County, Oklahoma",
+      "description": "Daniel Johnson prevailed upon to deed away land for practically nothing, loss $900"
+    },
+    {
+      "type": "fraud",
+      "date": null,
+      "location": "Hughes County, Oklahoma",
+      "description": "Caney Arbor executed various deeds at instigation of grafters, loss $900, died destitute"
+    },
+    {
+      "type": "fraud",
+      "date": null,
+      "location": "Hughes County, Oklahoma",
+      "description": "Henderson Arbor defrauded of land, now in destitute circumstances, loss $750"
+    },
+    {
+      "name": "fraud",
+      "date": null,
+      "location": "Hughes County, Oklahoma",
+      "description": "Lizzie Sewell induced to part with land for $800 less than adequate consideration"
+    },
+    {
+      "type": "fraud",
+      "date": null,
+      "location": "Hughes County, Oklahoma",
+      "description": "Tilda Sunday defrauded of land, loss $900"
+    },
+    {
+      "type": "fraud",
+      "date": null,
+      "location": "Hughes County, Oklahoma",
+      "description": "Jemima Harjo induced to sign deed receiving $400 when land worth $1,400, loss $1,000"
+    },
+    {
+      "type": "restriction_removal",
+      "date": null,
+      "location": "Oklahoma",
+      "description": "Jackson Wolf and Milla Wolf declared competent and turned loose by commission despite inability to speak, read, or write English; grafters soon obtained their land"
+    },
+    {
+      "type": "restriction_removal",
+      "date": null,
+      "location": "Oklahoma",
+      "description": "Abijah Colbert and Richard Floyd Colbert turned loose by commission, subsequently disposed of allotments and purchased garage with $20,000 mortgage"
+    },
+    {
+      "type": "restriction_removal",
+      "date": "1931",
+      "location": "Cherokee Nation, Oklahoma",
+      "description": "All citizens of Cherokee Nation become unrestricted by Act of Congress"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$750 (loss)",
+      "payer": "Mollie Johnson",
+      "payee": "Various parties",
+      "date": null,
+      "description": "Sale of 160-acre allotment (Roll No. 9130) for unfair consideration, appraised value $1,040"
+    },
+    {
+      "type": "sale",
+      "amount": "$900 (loss)",
+      "payer": "Daniel Johnson",
+      "payee": "Unknown buyers",
+      "date": null,
+      "description": "Sale of allotment (Roll No. 9131) for practically nothing"
+    },
+    {
+      "type": "sale",
+      "amount": "$900 (loss)",
+      "payer": "Caney Arbor",
+      "payee": "Grafters",
+      "date": null,
+      "description": "Sale of allotment (Roll No. 9613) at instigation of grafters"
+    },
+    {
+      "type": "sale",
+      "amount": "$750 (loss)",
+      "payer": "Henderson Arbor",
+      "payee": "Unknown buyers",
+      "date": null,
+      "description": "Defrauded of allotment (Roll No. 9613)"
+    },
+    {
+      "type": "sale",
+      "amount": "$800 less than value",
+      "payer": "Lizzie Sewell",
+      "payee": "Unknown buyers",
+      "date": null,
+      "description": "Sale of allotment (Roll No. 7529) for inadequate consideration"
+    },
+    {
+      "type": "sale",
+      "amount": "$900 (loss)",
+      "payer": "Tilda Sunday",
+      "payee": "Unknown buyers",
+      "date": null,
+      "description": "Defrauded of allotment"
+    },
+    {
+      "type": "sale",
+      "amount": "$400 received (worth $1,400)",
+      "payer": "Jemima Harjo",
+      "payee": "Unknown buyers",
+      "date": null,
+      "description": "Sale of allotment for $400 when land worth $1,400, loss $1,000"
+    },
+    {
+      "type": "purchase",
+      "amount": "$20,000 mortgage",
+      "payer": "Abijah Colbert and Richard Floyd Colbert",
+      "payee": "Garage seller",
+      "date": null,
+      "description": "Purchase of garage assuming $20,000 mortgage after disposing of allotments"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Dean H. Shannon",
+      "type": "employed_by",
+      "object": "United States Government",
+      "context": "Field Clerk at Sallisaw, Oklahoma"
+    },
+    {
+      "subject": "A. B. Keith",
+      "type": "employed_by",
+      "object": "United States Government",
+      "context": "U.S. Field Clerk at Muskogee, Oklahoma"
+    },
+    {
+      "subject": "Homer Polk",
+      "type": "employed_by",
+      "object": "United States Government",
+      "context": "Field Clerk at Stilwell, Oklahoma"
+    },
+    {
+      "subject": "G. R. Clements",
+      "type": "employed_by",
+      "object": "United States Government",
+      "context": "Field Clerk at McAlester, Oklahoma"
+    },
+    {
+      "subject": "D. Brauninger",
+      "type": "employed_by",
+      "object": "United States Government",
+      "context": "Farmer assigned to Eufaula, previously at Cantonment and Kiowa Agencies"
+    },
+    {
+      "subject": "A. R. Gayle",
+      "type": "employed_by",
+      "object": "United States Government",
+      "context": "Farmer at Atoka, Oklahoma"
+    },
+    {
+      "subject": "Walter McLaughlin",
+      "type": "employed_by",
+      "object": "United States Government",
+      "context": "Temporary Farmer at Ardmore, Oklahoma"
+    },
+    {
+      "subject": "C. M. Brandt",
+      "type": "employed_by",
+      "object": "United States Government",
+      "context": "Farmer at Poteau, Oklahoma"
+    },
+    {
+      "subject": "Caney Arbor",
+      "type": "related_to",
+      "object": "Henderson Arbor",
+      "context": "Same Roll No. 9613, likely family members"
+    },
+    {
+      "subject": "Abijah Colbert",
+      "type": "related_to",
+      "object": "Richard Floyd Colbert",
+      "context": "Brothers, both Chickasaw allottees"
+    },
+    {
+      "subject": "Jackson Wolf",
+      "type": "related_to",
+      "object": "Milla Wolf",
+      "context": "Husband and wife, both full-blood Seminoles"
+    },
+    {
+      "subject": "Mollie Johnson",
+      "type": "sold_to",
+      "object": "Various parties",
+      "context": "Conveyed lands without fair consideration"
+    },
+    {
+      "subject": "Daniel Johnson",
+      "type": "sold_to",
+      "object": "Unknown buyers",
+      "context": "Deeded away land for practically nothing"
+    },
+    {
+      "subject": "Caney Arbor",
+      "type": "sold_to",
+      "object": "Grafters",
+      "context": "Executed deeds at instigation of grafters"
+    },
+    {
+      "subject": "Henderson Arbor",
+      "type": "sold_to",
+      "object": "Unknown buyers",
+      "context": "Defrauded of land"
+    },
+    {
+      "subject": "Lizzie Sewell",
+      "type": "sold_to",
+      "object": "Unknown buyers",
+      "context": "Parted with land for inadequate consideration"
+    },
+    {
+      "subject": "Tilda Sunday",
+      "type": "sold_to",
+      "object": "Unknown buyers",
+      "context": "Defrauded of land"
+    },
+    {
+      "subject": "Jemima Harjo",
+      "type": "sold_to",
+      "object": "Unknown buyers",
+      "context": "Induced to sign deed for fraction of value"
+    },
+    {
+      "subject": "Abijah Colbert",
+      "type": "sold_to",
+      "object": "Unknown buyers",
+      "context": "Disposed of allotment after being turned loose"
+    },
+    {
+      "subject": "Richard Floyd Colbert",
+      "type": "sold_to",
+      "object": "Unknown buyers",
+      "context": "Disposed of allotment after being turned loose"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Mollie Johnson",
+      "allotment_number": "Roll No. 9130",
+      "acreage": "160 acres",
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": "Various parties",
+      "sale_price": "Unfair consideration (loss $750)",
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Daniel Johnson",
+      "allotment_number": "Roll No. 9131",
+      "acreage": null,
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": "Unknown",
+      "sale_price": "Practically nothing (loss $900)",
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Caney Arbor",
+      "allotment_number": "Roll No. 9613",
+      "acreage": null,
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": "Grafters",
+      "sale_price": "Unfair consideration (loss $900)",
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Henderson Arbor",
+      "allotment_number": "Roll No. 9613",
+      "acreage": null,
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": "Unknown",
+      "sale_price": "Defrauded (loss $750)",
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Talof Harjo",
+      "allotment_number": "Roll No. 7501",
+      "acreage": null,
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": "Unknown",
+      "sale_price": "Defrauded",
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Lizzie Sewell",
+      "allotment_number": "Roll No. 7529",
+      "acreage": null,
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": "Unknown",
+      "sale_price": "$800 less than value",
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Abijah Colbert",
+      "allotment_number": "Chickasaw Roll No. 961",
+      "acreage": null,
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "private_bill",
+      "buyer": "Unknown",
+      "sale_price": "Proceeds used for garage purchase",
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "Richard Floyd Colbert",
+      "allotment_number": "Chickasaw Roll No. 960",
+      "acreage": null,
+      "patent_date": null,
+      "patent_number": null,
+      "mechanism": "private_bill",
+      "buyer": "Unknown",
+      "sale_price": "Proceeds used for garage purchase",
+      "attorney": null,
+      "mortgage": "$20,000 mortgage on garage"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": null,
+      "recipient": "Dean H. Shannon",
+      "recipient_title": "Field Clerk",
+      "date": "1921-04-02",
+      "subject": "Request for data concerning unconditional removal of restrictions",
+      "action_requested": "Provide data and opinions on removal of restrictions",
+      "outcome": "Shannon provided detailed report on 60 regular channel removals, 105 competency commission cases, and 100 Departmental order cases"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": null,
+      "recipient": "A. B. Keith",
+      "recipient_title": "U.S. Field Clerk",
+      "date": "1921-04-02",
+      "subject": "Request for data concerning unconditional removal of restrictions",
+      "action_requested": "Provide information on Indian affairs",
+      "outcome": "Keith provided report on conditions in Muskogee district"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": null,
+      "recipient": "Homer Polk",
+      "recipient_title": "Field Clerk",
+      "date": "1921-04-02",
+      "subject": "Request for data concerning unconditional removal of restrictions",
+      "action_requested": "Provide information on removal of restrictions",
+      "outcome": "Polk provided report on 200 Indians granted removal by commission and 125 by blanket order since Fall 1918"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": null,
+      "recipient": "G. R. Clements",
+      "recipient_title": "Field Clerk",
+      "date": "1921-04-02",
+      "subject": "Request for information on handling Indian problem",
+      "action_requested": "Provide memorandum on different ways of handling Indian problem",
+      "outcome": "Clements provided recommendations on surplus land sales and home improvements"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": null,
+      "recipient": "D. Brauninger",
+      "recipient_title": "Farmer",
+      "date": "1921-04-03",
+      "subject": "Inquiry on removal of restrictions",
+      "action_requested": "Reply to inquiry of April 3 regarding removal of restrictions",
+      "outcome": "Brauninger provided retrospective analysis and recommendation for individual case handling"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": null,
+      "recipient": "Walter McLaughlin",
+      "recipient_title": "Temporary Farmer",
+      "date": "1921-04-02",
+      "subject": "Present condition among restricted Indians",
+      "action_requested": "Provide opinion on ability of Indians to operate own affairs",
+      "outcome": "McLaughlin reported 80% wasted property and recommended against wholesale removal"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": null,
+      "recipient": "Walter McLaughlin",
+      "recipient_title": "Temporary Farmer",
+      "date": "1921-04-05",
+      "subject": "Removal of restrictions",
+      "action_requested": "Follow-up inquiry",
+      "outcome": "Additional report on conditions"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": null,
+      "sponsor": null,
+      "action_type": "enacted",
+      "date": "1908-05-27",
+      "vote_count": null,
+      "committee": null,
+      "outcome": "Removed restrictions on mixed blood Indians of the Five Civilized Tribes"
+    },
+    {
+      "bill_number": null,
+      "sponsor": null,
+      "action_type": "enacted",
+      "date": null,
+      "vote_count": null,
+      "committee": null,
+      "outcome": "Provided that all citizens of Cherokee Nation become unrestricted in 1931"
+    }
+  ]
+}

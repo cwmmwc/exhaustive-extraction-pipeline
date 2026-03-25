@@ -1,0 +1,266 @@
+{
+  "entities": [
+    {
+      "name": "Fred E. Perkins",
+      "type": "person",
+      "context": "Superintendent of Seger Indian Agency"
+    },
+    {
+      "name": "Charles T. Coggeshall",
+      "type": "person",
+      "context": "Superintendent of Cantonment Indian Agency since June 10, 1920"
+    },
+    {
+      "name": "McClain Badgly",
+      "type": "person",
+      "context": "Lease Clerk at Cantonment Indian Agency, previously agency farmer for three years"
+    },
+    {
+      "name": "Seger Indian Agency",
+      "type": "organization",
+      "context": "Indian agency located in Colony, Oklahoma"
+    },
+    {
+      "name": "Cantonment Indian Agency",
+      "type": "organization",
+      "context": "Indian agency located in Canton, Oklahoma"
+    },
+    {
+      "name": "Department",
+      "type": "organization",
+      "context": "Department of the Interior/Bureau of Indian Affairs"
+    },
+    {
+      "name": "Competency Commission",
+      "type": "organization",
+      "context": "Commission examining Indian competency for fee patents"
+    },
+    {
+      "name": "Cheyenne Indians",
+      "type": "organization",
+      "context": "Tribe under jurisdiction of Cantonment Indian Agency"
+    },
+    {
+      "name": "Arapaho Indians",
+      "type": "organization",
+      "context": "Tribe under jurisdiction of Cantonment Indian Agency"
+    },
+    {
+      "name": "Colony, Oklahoma",
+      "type": "location",
+      "context": "Location of Seger Indian Agency"
+    },
+    {
+      "name": "Canton, Oklahoma",
+      "type": "location",
+      "context": "Location of Cantonment Indian Agency"
+    },
+    {
+      "name": "Anadarko",
+      "type": "location",
+      "context": "Town where unnamed allottee purchased home"
+    },
+    {
+      "name": "Unnamed female allottee",
+      "type": "person",
+      "context": "Allottee who received fee patent for remaining portion of allotment and sold it"
+    },
+    {
+      "name": "Unnamed buyer",
+      "type": "person",
+      "context": "Purchaser of 80-acre allotment from unnamed female allottee"
+    },
+    {
+      "name": "Heirs",
+      "type": "organization",
+      "context": "Executors and heirs of deceased allottees with estates under supervision"
+    }
+  ],
+  "events": [
+    {
+      "type": "competency_examination",
+      "date": "1917-04",
+      "location": "Seger Indian Agency jurisdiction",
+      "description": "Competency commission examined large number of Indians with exceedingly disastrous results"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1920-06",
+      "location": "Cantonment Indian Agency",
+      "description": "Female allottee given patent to remaining portion of her allotment (approximately 80 acres)"
+    },
+    {
+      "type": "land_sale",
+      "date": "1920-06",
+      "location": "Cantonment Indian Agency jurisdiction",
+      "description": "Immediate sale of 80-acre allotment for $6,000 following patent receipt"
+    },
+    {
+      "type": "home_purchase",
+      "date": "1920-06",
+      "location": "Anadarko, Oklahoma",
+      "description": "Unnamed allottee purchased home in Anadarko with land sale proceeds"
+    },
+    {
+      "type": "mass_land_disposal",
+      "date": "1917-1920",
+      "location": "Oklahoma",
+      "description": "Approximately 220 Indians disposed of land immediately upon receipt of fee patents at ridiculously low prices"
+    },
+    {
+      "type": "funds_deposit",
+      "date": null,
+      "location": "Cantonment Indian Agency",
+      "description": "Unnamed allottee voluntarily deposited $1500 with agency office held to her credit"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$6,000",
+      "payer": "Unnamed buyer",
+      "payee": "Unnamed female allottee",
+      "date": "1920",
+      "description": "Sale of remaining allotment acreage (approximately 80 acres) at approximate actual worth"
+    },
+    {
+      "type": "deposit",
+      "amount": "$1,500",
+      "payer": "Unnamed allottee",
+      "payee": "Cantonment Indian Agency",
+      "date": null,
+      "description": "Voluntary deposit held to allottee's credit"
+    },
+    {
+      "type": "sale",
+      "amount": "Ridiculously low prices",
+      "payer": "Various buyers",
+      "payee": "220 Indian allottees",
+      "date": "1917-1920",
+      "description": "Immediate sale of land upon fee patent receipt with contracts existing prior to patent issuance"
+    },
+    {
+      "type": "payment",
+      "amount": "Lease rentals",
+      "payer": "Lessees",
+      "payee": "Indian allottees",
+      "date": "ongoing",
+      "description": "Rental payments for leased allotment lands"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Fred E. Perkins",
+      "type": "employed_by",
+      "object": "Seger Indian Agency",
+      "context": "Serves as Superintendent"
+    },
+    {
+      "subject": "Charles T. Coggeshall",
+      "type": "employed_by",
+      "object": "Cantonment Indian Agency",
+      "context": "Serves as Superintendent since June 10, 1920"
+    },
+    {
+      "subject": "McClain Badgly",
+      "type": "employed_by",
+      "object": "Cantonment Indian Agency",
+      "context": "Serves as Lease Clerk"
+    },
+    {
+      "subject": "McClain Badgly",
+      "type": "employed_as",
+      "object": "Cantonment Indian Agency",
+      "context": "Previously served as agency farmer for three years"
+    },
+    {
+      "subject": "Unnamed female allottee",
+      "type": "sold_to",
+      "object": "Unnamed buyer",
+      "context": "Sale of 80-acre allotment for $6,000"
+    },
+    {
+      "subject": "Department",
+      "type": "concurred_with",
+      "object": "Charles T. Coggeshall",
+      "context": "Concurred with recommendation to issue fee patent to female allottee"
+    },
+    {
+      "subject": "Heirs",
+      "type": "related_to",
+      "object": "Deceased allottees",
+      "context": "Executing estates of deceased patent holders"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Unnamed female allottee",
+      "allotment_number": null,
+      "acreage": "80 acres",
+      "patent_date": "1920",
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": "Unnamed buyer",
+      "sale_price": "$6,000",
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "220 Indian allottees",
+      "allotment_number": null,
+      "acreage": "various",
+      "patent_date": "1917-1920",
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": "Various buyers",
+      "sale_price": "Ridiculously low prices",
+      "attorney": null,
+      "mortgage": null
+    },
+    {
+      "allottee_name": "25 Indian allottees",
+      "allotment_number": null,
+      "acreage": "original allotments",
+      "patent_date": "prior to 1917",
+      "patent_number": null,
+      "mechanism": "administrative",
+      "buyer": null,
+      "sale_price": null,
+      "attorney": null,
+      "mortgage": null
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Fred E. Perkins",
+      "sender_title": "Supt.",
+      "recipient": "Department/Commissioner of Indian Affairs",
+      "recipient_title": null,
+      "date": "1917-04",
+      "subject": "Status of fee patent Indians and competency commission examinations",
+      "action_requested": "Report on conditions of patent holders",
+      "outcome": "Information provided regarding 220 land sales and 25 retained allotments"
+    },
+    {
+      "sender": "Charles T. Coggeshall",
+      "sender_title": "Supt.",
+      "recipient": "Department",
+      "recipient_title": null,
+      "date": "1920",
+      "subject": "Patent issuance policy and specific allotment case",
+      "action_requested": "Oppose wholesale patent issuance; consider each case on merits regardless of blood quantum",
+      "outcome": "Recommendation concurred; one patent issued direct to female allottee"
+    },
+    {
+      "sender": "McClain Badgly",
+      "sender_title": "Lease Clerk",
+      "recipient": "Agency/Department",
+      "recipient_title": null,
+      "date": null,
+      "subject": "Conditions of Cheyenne and Arapaho Indians and need for legislative action",
+      "action_requested": "Legislative action to force able-bodied Indians to work their lands",
+      "outcome": null
+    }
+  ],
+  "legislative_actions": []
+}

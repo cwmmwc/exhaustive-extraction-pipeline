@@ -8,6 +8,7 @@ Usage:
     python3 extract_single_pdf.py path/to/document.pdf --together-model llama3.3-70b
     python3 extract_single_pdf.py path/to/document.pdf --claude-only
     python3 extract_single_pdf.py path/to/document.pdf --together-only --together-model llama3.3-70b
+    python3 extract_single_pdf.py path/to/document.pdf --together-model kimi-k2.5 --together-only --chunked
 """
 
 import argparse
@@ -24,6 +25,7 @@ TOGETHER_MODELS = {
     "llama4-maverick": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
     "llama4-scout": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
     "qwen2.5-72b": "Qwen/Qwen2.5-72B-Instruct-Turbo",
+    "kimi-k2.5": "moonshotai/Kimi-K2.5",
 }
 
 
@@ -38,6 +40,40 @@ def extract_text(pdf_path: str, max_chars: int = 40000) -> str:
             text = text[:max_chars]
             break
     return text
+
+
+def extract_full_text(pdf_path: str) -> str:
+    """Extract all text from PDF with no limit."""
+    doc = fitz.open(pdf_path)
+    text = ""
+    for page in doc:
+        text += f"--- Page {page.number + 1} ---\n"
+        text += page.get_text() + "\n"
+    return text
+
+
+def chunk_text(text: str, chunk_size: int = 40000, overlap: int = 5000) -> list:
+    """Split text into overlapping chunks."""
+    chunks = []
+    start = 0
+    while start < len(text):
+        end = start + chunk_size
+        chunk = text[start:end]
+        chunks.append(chunk)
+        start = end - overlap
+    return chunks
+
+
+def merge_extractions(extractions: list) -> dict:
+    """Merge multiple chunk extractions into one, concatenating all arrays."""
+    merged = {}
+    for ext in extractions:
+        for key, val in ext.items():
+            if isinstance(val, list):
+                if key not in merged:
+                    merged[key] = []
+                merged[key].extend(val)
+    return merged
 
 
 def build_prompt(chunk: str) -> str:
@@ -115,7 +151,7 @@ def run_together(prompt: str, model: str, api_key: str) -> dict:
         response = client.chat.completions.create(
             model=model,
             messages=[{"role": "user", "content": prompt}],
-            max_tokens=16000,
+            max_tokens=32000,
             temperature=0.3,
         )
         elapsed = time.time() - start
@@ -170,6 +206,8 @@ def main():
                         help="Only run Together AI model")
     parser.add_argument("--output", default=None,
                         help="Output directory (default: auto-generated)")
+    parser.add_argument("--chunked", action="store_true",
+                        help="Process full document in 40K-char chunks with 5K overlap")
     args = parser.parse_args()
 
     if not os.path.exists(args.pdf):
@@ -178,36 +216,71 @@ def main():
 
     # Extract text
     print(f"Extracting text from {os.path.basename(args.pdf)}...")
-    text = extract_text(args.pdf, args.max_chars)
-    print(f"  {len(text):,} chars extracted")
-
-    prompt = build_prompt(text)
+    if args.chunked:
+        full_text = extract_full_text(args.pdf)
+        chunks = chunk_text(full_text)
+        print(f"  {len(full_text):,} chars extracted, split into {len(chunks)} chunks")
+    else:
+        text = extract_text(args.pdf, args.max_chars)
+        chunks = [text]
+        print(f"  {len(text):,} chars extracted")
 
     # Set up output directory
     timestamp = time.strftime("%Y%m%d_%H%M%S")
     basename = os.path.splitext(os.path.basename(args.pdf))[0]
-    output_dir = args.output or f"comparisons/single_{timestamp}_{basename}"
+    suffix = "_chunked" if args.chunked else ""
+    output_dir = args.output or f"comparisons/single_{timestamp}_{basename}{suffix}"
     os.makedirs(output_dir, exist_ok=True)
 
     results = {}
 
+    def run_model_on_chunks(model_name, run_fn, chunks):
+        """Run a model on all chunks and merge results."""
+        all_extractions = []
+        total_time = 0
+        for i, chunk in enumerate(chunks):
+            if len(chunks) > 1:
+                print(f"  Chunk {i+1}/{len(chunks)} ({len(chunk):,} chars)...", end=" ", flush=True)
+            prompt = build_prompt(chunk)
+            result = run_fn(prompt)
+            if "error" in result:
+                print(f"ERROR: {result['error']}")
+                return None, result
+            total_time += result["time"]
+            extraction = parse_json(result["text"])
+            if extraction:
+                item_count = sum(len(v) for v in extraction.values() if isinstance(v, list))
+                if len(chunks) > 1:
+                    print(f"Done in {result['time']:.1f}s, {item_count} items")
+                all_extractions.append(extraction)
+                # Save per-chunk output
+                safe = model_name.replace("/", "-")
+                with open(os.path.join(output_dir, f"{safe}_chunk_{i+1}.json"), "w") as f:
+                    json.dump(extraction, f, indent=2)
+            else:
+                if len(chunks) > 1:
+                    print(f"INVALID JSON (chunk {i+1})")
+                safe = model_name.replace("/", "-")
+                with open(os.path.join(output_dir, f"{safe}_chunk_{i+1}_raw.txt"), "w") as f:
+                    f.write(result["text"])
+        if not all_extractions:
+            return None, {"error": "no valid extractions", "time": total_time}
+        merged = merge_extractions(all_extractions)
+        return merged, {"time": total_time, "chunks_ok": len(all_extractions), "chunks_total": len(chunks)}
+
     # Run Claude
     if not args.together_only:
-        print("\nRunning Claude Sonnet...")
-        result = run_claude(prompt)
-        print(f"  Done in {result['time']:.1f}s")
-        extraction = parse_json(result["text"])
-        if extraction:
-            counts = count_items(extraction)
-            print(f"  Valid JSON: {counts['total']} items extracted")
+        print(f"\nRunning Claude Sonnet ({len(chunks)} chunk{'s' if len(chunks) > 1 else ''})...")
+        merged, info = run_model_on_chunks("claude", lambda p: run_claude(p), chunks)
+        if merged:
+            counts = count_items(merged)
+            print(f"  Total: {counts['total']} items in {info['time']:.1f}s")
             with open(os.path.join(output_dir, "claude.json"), "w") as f:
-                json.dump(extraction, f, indent=2)
-            results["claude"] = {"counts": counts, "time": result["time"]}
+                json.dump(merged, f, indent=2)
+            results["claude"] = {"counts": counts, "time": info["time"]}
         else:
-            print(f"  INVALID JSON")
-            with open(os.path.join(output_dir, "claude_raw.txt"), "w") as f:
-                f.write(result["text"])
-            results["claude"] = {"error": "invalid JSON", "time": result["time"]}
+            print(f"  FAILED: {info.get('error', 'unknown')}")
+            results["claude"] = {"error": info.get("error", "unknown"), "time": info.get("time", 0)}
 
     # Run Together AI model
     if not args.claude_only and args.together_model:
@@ -216,32 +289,29 @@ def main():
         if not api_key:
             print("\nTOGETHER_API_KEY not set, skipping Together AI model")
         else:
-            print(f"\nRunning {args.together_model} ({model_id})...")
-            result = run_together(prompt, model_id, api_key)
-            if "error" in result:
-                print(f"  ERROR: {result['error']}")
-                results[args.together_model] = {"error": result["error"]}
+            print(f"\nRunning {args.together_model} ({model_id}, {len(chunks)} chunk{'s' if len(chunks) > 1 else ''})...")
+            merged, info = run_model_on_chunks(
+                args.together_model,
+                lambda p: run_together(p, model_id, api_key),
+                chunks,
+            )
+            if merged:
+                counts = count_items(merged)
+                print(f"  Total: {counts['total']} items in {info['time']:.1f}s")
+                safe_name = args.together_model.replace("/", "-")
+                with open(os.path.join(output_dir, f"{safe_name}.json"), "w") as f:
+                    json.dump(merged, f, indent=2)
+                results[args.together_model] = {"counts": counts, "time": info["time"]}
             else:
-                print(f"  Done in {result['time']:.1f}s")
-                extraction = parse_json(result["text"])
-                if extraction:
-                    counts = count_items(extraction)
-                    print(f"  Valid JSON: {counts['total']} items extracted")
-                    safe_name = args.together_model.replace("/", "-")
-                    with open(os.path.join(output_dir, f"{safe_name}.json"), "w") as f:
-                        json.dump(extraction, f, indent=2)
-                    results[args.together_model] = {"counts": counts, "time": result["time"]}
-                else:
-                    print(f"  INVALID JSON")
-                    safe_name = args.together_model.replace("/", "-")
-                    with open(os.path.join(output_dir, f"{safe_name}_raw.txt"), "w") as f:
-                        f.write(result["text"])
-                    results[args.together_model] = {"error": "invalid JSON", "time": result["time"]}
+                print(f"  FAILED: {info.get('error', 'unknown')}")
+                results[args.together_model] = {"error": info.get("error", "unknown")}
 
     # Print summary
     print(f"\n{'='*60}")
     print(f"Results for: {os.path.basename(args.pdf)}")
-    print(f"Text chunk: {len(text):,} chars")
+    total_chars = len(full_text) if args.chunked else len(chunks[0])
+    chunk_info = f" ({len(chunks)} chunks)" if args.chunked else ""
+    print(f"Text: {total_chars:,} chars{chunk_info}")
     print(f"{'='*60}")
 
     categories = ["entities", "events", "financial_transactions", "relationships",
