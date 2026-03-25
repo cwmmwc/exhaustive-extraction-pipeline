@@ -181,15 +181,21 @@ The mechanism field is a genuine Kimi advantage. Kimi correctly uses "applicatio
 
 Kimi K2.5 is the first open-source model to match and exceed Claude on fee patent extraction — the category that constitutes the historical evidence in this corpus. It finds 59% more allottees than Claude, with no hallucinated names, and correctly distinguishes between dispossession mechanisms. Its per-record fields are sparser, and it over-extracts in events and financial transactions (creating empty records that duplicate fee patent data). But for building a comprehensive roster of every individual affected by fee-patent-driven land dispossession in this document, Kimi produces a more complete record than Claude.
 
-#### Analysis Pipeline Comparison: Kimi Extraction → Opus Analysis vs. Claude Extraction → Opus Analysis
+#### Analysis Pipeline Comparison: The Full Four-Way Matrix
 
-Both extractions were loaded into the `full_corpus_docs` database (Claude as Doc 2, Kimi as Doc 5) and run through the Streamlit Deep Read analysis mode, which sends the full document text plus all extracted data to Claude Opus 4.6 for interpretive analysis. The research question was identical: "Tell me about the Kiowa experience with fee patents." This tests whether extraction breadth (Kimi) or extraction depth (Claude) produces better analytical output when the same reasoning model interprets the results.
+The Streamlit analysis interface now supports choosing between Claude Opus 4.6, Claude Sonnet 4.6, and Kimi K2.5 as the reasoning/analysis model, enabling a full pipeline comparison. All four combinations of {Claude extraction, Kimi extraction} × {Claude Opus analysis, Kimi K2.5 analysis} have been tested on the same document (CCF 56074-21-312 GS, 221 pages) with the same research question ("Tell me about the Kiowa experience with fee patents") using the Deep Read analysis mode.
 
 **Analysis files:**
 - Claude extraction → Opus analysis: `~/Desktop/Claude extracted. deep_read_1921 CCF 56074-21-312 GS.pdf.html`
-- Kimi extraction → Opus analysis: `~/Desktop/Kimi. deep_read_1921 CCF 56074-21-312 GS.pdf.html`
+- Kimi extraction → Opus analysis: `~/Desktop/Opus ANALYSIS of KEMI extractiondeep_read_1921 CCF 56074-21-312 GS.pdf.html`
+- Kimi extraction → Kimi analysis: `~/Desktop/Kimi ANALYSIS of Kimi EXTRACTION. deep_read_1921 CCF 56074-21-312 GS.pdf.html`
+- Claude extraction → Kimi analysis: Not yet tested.
 
-**What was identical across both analyses:**
+##### Part A: Same Analysis Model (Opus), Different Extraction — Does Extraction Breadth Matter?
+
+Both extractions were loaded into the `full_corpus_docs` database (Claude as Doc 2, Kimi as Doc 5) and run through the Streamlit Deep Read analysis mode with Claude Opus 4.6 as the reasoning model. This isolates the effect of extraction breadth on analytical output.
+
+**What was identical across both Opus analyses:**
 
 Both analyses identify the same core evidence and reach the same historical conclusions:
 - V. Stinchecum's testimony as the central Kiowa source (one success in six years; 60-patent breakdown: 20 mortgaged, 16 sold, 24 nominally clear)
@@ -202,7 +208,7 @@ Both analyses identify the same core evidence and reach the same historical conc
 
 The analytical conclusions are essentially the same — this is the same reasoning model (Opus) reading the same document text. The differences are at the margins, roughly 10–15% of total output.
 
-**Where the Kimi-fed analysis differed:**
+**Where the Kimi-fed Opus analysis differed from the Claude-fed Opus analysis:**
 
 1. **More structured mechanistic framing.** The Kimi-fed analysis organizes Kiowa evidence into a six-stage "Mechanism of Kiowa Land Loss" section (Leasing Economy → Competency Commission / Declaration of Policy → Pre-Arranged Sales → Immediate Alienation → Dependency on Relatives → Inherited Land as Final Resource). The Claude-fed analysis presents the same evidence organized by witness/source rather than by mechanism. The mechanistic framing is arguably more useful for building a historical argument.
 
@@ -214,13 +220,89 @@ The analytical conclusions are essentially the same — this is the same reasoni
 
 5. **No unique content in the Claude-fed version.** Everything in the Claude-fed analysis also appears in the Kimi-fed analysis. The reverse is not true — the Kimi-fed analysis contains material absent from the Claude version (the six-stage mechanism, the broader comparative table, the Charger testimony, the conclusion).
 
-**What this means for the pipeline:**
+**Part A conclusion:** Extraction breadth feeds analysis breadth. When Opus has more extracted data points to work with, it builds more comprehensive structural arguments and surfaces evidence that narrower extraction leaves buried. The differences are not dramatic — both analyses are excellent — but they consistently favor the broader extraction.
 
-Extraction breadth feeds analysis breadth. When Opus has more extracted data points to work with (more entities, more fee patents, more geographic coverage), it builds slightly more comprehensive structural arguments and surfaces evidence that narrower extraction leaves buried. The differences are not dramatic — both analyses are excellent — but they consistently favor the broader extraction.
+##### Part B: Same Extraction (Kimi), Different Analysis Model — Does the Reasoning Model Matter?
 
-This has practical implications for the recommended architecture (Section 5). Running Kimi for broad extraction doesn't just find more allottees for the database; it also produces better analytical output when that data is fed to the reasoning model. The optimal pipeline is: **Kimi extraction (breadth) → Claude Opus analysis (depth)**, combining the strengths of both models at different stages.
+Both analyses work from the same Kimi K2.5 extraction (Doc 5 in `full_corpus_docs`, 268 unique allottees, 2,008 total extracted items). One is analyzed by Claude Opus 4.6, the other by Kimi K2.5 itself. This isolates the effect of the reasoning model on analytical output.
 
-As of 2026-03-25, the Streamlit analysis interface (`ai_analysis_interface_v4.py`) includes a model selector that allows choosing Kimi K2.5 as the reasoning/analysis model as well, enabling a full four-way comparison: {Claude extraction, Kimi extraction} × {Claude analysis, Kimi analysis}. Kimi-as-analyst has not yet been formally tested.
+**The headline finding: Kimi K2.5 as analyst is surprisingly competitive.** Both analyses are strong. They identify the same core evidence and reach the same conclusions. A historian could work productively from either one. Kimi-as-analyst delivers roughly 80–85% of Opus's analytical value. But the missing 15–20% is precisely the interpretive framing that turns evidence into historical argument.
+
+**Where Opus is the stronger analyst:**
+
+1. **Analytical layering — telling you *why* a passage matters.** Opus doesn't just present evidence — it frames its historical significance. When it quotes Edmister's comparison of Indian allotments to the Russian Revolution ("its great importance is shown by the condition of Russia to day, where it has been ignored"), Opus frames this as "a government farmer in 1921 identifying the fundamental cultural incompatibility between communal land tenure and individual fee simple ownership... with a sophistication that anticipates later anthropological analysis." Kimi quotes the same passage but presents it as evidence of a "systemic critique" without doing the historiographical framing work. For a historian building an argument, that framing — connecting a 1921 field report to broader intellectual traditions — is what transforms a quotation into evidence.
+
+2. **Naming and developing structural concepts.** Opus identifies three distinct structural mechanisms that made land loss inevitable *regardless of individual competency*, each developed as a named analytical concept:
+   - **Geographic dislocation of allotments:** Children allotted in 1908-1909 received land 50-70 miles from their parents' homes because adjacent water-course lands were already taken. These children "have never seen or traversed their original allotments." Opus frames this as proof that "the allotment system itself created the conditions for land loss."
+   - **Inheritance fragmentation:** As allottees died and their lands were divided among heirs, individual holdings became increasingly scattered and economically unviable. Opus quotes Kitoh: "We have many cases of Indians who although they may own several allotments by inheritance it would be almost an impossible task by trade or purchase to fence this land in one contiguous area."
+   - **The leasing trap:** The system designed to make Indians into farmers instead created a class of rentiers who had no practical experience with money management when they suddenly received large lump sums from land sales. Opus frames this as "a paradox: the system designed to make Indians into farmers instead created a class of rentiers."
+
+   Kimi covers the allotment geography point adequately but does not develop the inheritance fragmentation or leasing trap as distinct analytical concepts. This matters because naming a mechanism makes it citable and arguable — a historian can write "the leasing trap described in the 1921 BIC reports" in a way they cannot if the concept is buried in a general narrative.
+
+3. **Obscure but historically significant details that Kimi misses entirely:**
+   - **The "reimbursable fund" alternative:** Edmister proposed a government-backed loan system that would have provided capital access without requiring land alienation — "if the Government is the only one who can safely collect from the Indians, and at the same time keep their property in tact, then they ought to extend him credit in this way." Opus identifies this as "a road not taken in Indian policy" and frames it as a specific policy alternative that was available but not adopted. Kimi does not mention it.
+   - **Petzoldt the Baptist missionary's philosophical observation:** "I believe that the Indian has a perfect right to be a prodigal son if he so chooses — certainly he should be permitted to learn from bitter experience and not be kept out of the school of 'hard knocks.'" Opus includes this as a "Voices of Dissent and Complexity" section, noting Petzoldt's observation that some Crows "refused citizenship as they preferred to escape paying taxes and it was nice to have the Indian office help them out when they got in trouble" — revealing "the rational calculation behind what officials often dismissed as Indian backwardness." Kimi does not surface Petzoldt at all.
+   - **The tax trap as a distinct mechanism of dispossession:** Once land was patented, it became taxable. Multiple reports describe Indians unable to pay taxes on land they had never farmed, leading to tax sales. Opus identifies this as a separate channel of land loss, quoting LeBeau at Cheyenne River: "the county authorities at once began making assessments on all the Indians on the ceded portions, and valued their lands as farm lands. Hence taxes were high, overlooking the fact that these lands were allotted as grazing lands." And Archerd at Holdenville: "having had no experience with taxes they are left unpaid, penalties accrue and, in a great number of cases, tax deeds are issued on the land." Kimi does not identify the tax trap as a distinct mechanism.
+   - **The loan company speculative bubble:** At Holdenville, Archerd reported that "purchasers were able to secure a loan from loan companies on the land even in excess of the purchase price paid for it." Opus flags this as evidence of a speculative land bubble — the land's value to white buyers exceeded what Indians received, suggesting an organized market in underpriced Indian land. Kimi does not mention this.
+   - **The Five Civilized Tribes fraud calculations:** Opus provides Youngblood's detailed accounting: in Hughes County alone, 1,200 mixed-blood Indians (75% of 1,600) were defrauded of 70% of their allotment values, totaling $873,600 in losses; in Seminole County, 567 mixed-bloods lost $544,320; combined $1,417,920 in just two counties. Opus also lists Youngblood's nine specific fraud cases by name (Mollie Johnson, Caney Arbor, Jemima Harjo, etc.). Kimi includes the dollar figures and some of the names but presents them less prominently.
+
+4. **The "What the AI Extraction Missed" section is deeper and more analytical.** Both analyses identify what the extraction missed, but Opus develops each point more fully. Opus's section includes:
+   - The emotional and moral register (Brauninger's "it makes me feel sad," Edmister's account of Mack Johnson's death — "He said further that he felt the agent, who recommended him for a patent, was much more to blame for 'putting him out of business' than he was himself" — a passage revealing that "Indians themselves held the government responsible")
+   - The systemic critique (Edmister's private property analysis)
+   - The gender dimension (Hutchison at Shoshone on women's patents, plus specific cases)
+   - The tax trap (as above)
+   - The Rocky Boy comparison (see below)
+
+   Kimi's "What the AI Extraction Missed" section covers similar ground but with less analytical development. It identifies the moral register, gender dimension, and competency paradox but does not develop the tax trap, the private property critique, or the Rocky Boy comparison.
+
+5. **The Rocky Boy natural experiment.** Opus identifies Superintendent Mossman's comparison as a devastating natural experiment: the Rocky Boy Indians had been "free" for sixty years — exactly the condition that fee patent advocates claimed would benefit Indians — and "had come to such a point of degradation and poverty that the people of the State petitioned the Government to provide a reservation for these people to take care of them." Opus frames this as directly contradicting the argument that removing government supervision would lead to Indian self-sufficiency. Kimi includes the Rocky Boy passage but presents it as one item among many rather than highlighting its unique evidentiary power as a natural experiment.
+
+**Where Kimi is the stronger analyst (or equal):**
+
+1. **Tabular presentation of quantitative evidence.** Kimi's comparative table of land loss across reservations is better formatted than Opus's — 16 rows with clean columns for Reservation/Agency, Patents Issued, % Sold/Mortgaged, and Source. Opus presents the same data as a bulleted list with 15 entries. For quick reference and citation, Kimi's table is more immediately useful. Kimi also includes specific patent counts that Opus omits (Turtle Mountain: 1,393 patents; Flathead: 1,004; Pine Ridge: 711).
+
+2. **The Kaw Sub-Agency individual case studies.** Kimi highlights Clerk Clendening's individual Kaw entries as a distinct section with specific names and outcomes: Margaret Tayiah ("Land sold, money spent, lives with Osage"), Helen Jones Burnett ("Land sold. Husband and money both gone"), Claude McCauley ("Land sold, money gone. Has 160 inherited"), Harry Stubbs ("Land sold. Funds gone. Living off his friends"), Barclay Delano ("Land sold, money gone. Red Cross and neighbors aid for him"). Kimi notes the pattern: "Of approximately 65 individuals listed, the vast majority show 'Land sold. Money spent/gone.'" Opus does not feature these individual Kaw cases as prominently.
+
+3. **The homestead proposal as cross-respondent consensus.** Kimi collects the 40-acre homestead recommendation from *multiple* respondents and presents them side by side: Stinchecum at Kiowa ("forty acres... could not be sold or otherwise encumbered"), Charger the Sioux ("Where an Indian has an established home forty acres should be held in trust"), Mills at Chickasaw ("reserve, or continue restricted, forty acres of average land from which death alone would remove the restrictions"), Archerd at Creek/Seminole ("each Indian should be compelled to retain forty acres of his best land for homestead"). Kimi then presents Hutchison's counter-argument: "reservation of 10, 20, or 40 acres for a home would appear to leave the Indian in a state of part bond and part free, and his independent status is indefinitely postponed." This synthesis — showing the near-universal recommendation alongside its strongest objection — is more useful than Opus's treatment, which covers Stinchecum's version in detail but does not systematically collect the cross-respondent consensus.
+
+4. **Specific research leads Opus misses.** Kimi identifies two research leads that Opus does not:
+   - The Nez Perce woman holding $14,000 in mortgages on white men's farms — "a counter-narrative of Indian financial sophistication that deserves further investigation." This is a specific, actionable lead that inverts the dominant narrative of Indian economic failure.
+   - The "Indian Rights" organizations mentioned by Cope at Crow — "identifying which organizations were advocating for blanket removal of restrictions and their relationship to land speculation interests." This points toward a specific archival investigation of the political actors behind the fee patent policy.
+
+5. **The "Silences and Omissions" section is more systematic.** Kimi identifies five distinct silences organized as a numbered list: (1) the voice of white buyers (never included), (2) tax revenue implications (how much did states and counties gain?), (3) the oil factor (mineral wealth mentioned only in passing), (4) legal remedies (fraud documented but no prosecutions discussed), (5) the competency commission's actual methods (what questions were asked, how long hearings lasted). Opus identifies silences throughout the analysis but does not consolidate them as a standalone section, making them harder to use as a research checklist.
+
+6. **The Dadie Pappan case as gendered dispossession.** Kimi cites a specific case that illustrates the gender dynamic with devastating clarity: "Dadie Pappan — Land sold. When money was spent, husband left. Married again, husband Theodore Sumner, got certificate, bought house, and deeded to Dadie. Rest spent." This shows the cycle of gendered land loss — land sold by husband, husband leaves, new husband acquires new assets, cycle repeats — in a single biographical sentence. Opus discusses the gender dimension in general terms but does not surface this particular case.
+
+**Summary: What Each Analysis Model Does Best**
+
+| Dimension | Opus Advantage | Kimi Advantage |
+|-----------|---------------|----------------|
+| Interpretive framing ("why it matters") | Strong — connects evidence to broader historiographical traditions | Weaker — presents evidence without framing significance |
+| Naming structural concepts | Strong — geographic dislocation, inheritance fragmentation, leasing trap as citable analytical concepts | Weaker — covers some points but doesn't name them as distinct mechanisms |
+| Obscure but significant details | Finds more — reimbursable fund, Petzoldt, tax trap, loan bubble, Rocky Boy natural experiment | Misses several that Opus catches |
+| Tabular data presentation | Bullet-point lists | Better — clean tables with specific patent counts |
+| Individual case studies | Less prominent | Better — Kaw allottees as named cases, Dadie Pappan |
+| Cross-respondent synthesis | Covers key witnesses individually | Better on homestead proposal — collects 5 respondents + counter-argument |
+| Research leads | 7 solid leads | 10 leads, including 2 Opus misses (Nez Perce woman, "Indian Rights" orgs) |
+| Silences/omissions as checklist | Scattered through analysis | Better organized — 5-item numbered list |
+| Overall analytical depth | Deeper — layered interpretation builds an argument | Shallower but wider — more evidence, less argument |
+
+##### Part C: The Four-Way Matrix
+
+| | Claude Opus Analysis | Kimi K2.5 Analysis |
+|---|---|---|
+| **Claude Extraction** (169 allottees) | Baseline. Deep analysis but narrower source base. Strongest on Kiowa-specific framing. 11-jurisdiction comparative table. | Not yet tested. |
+| **Kimi Extraction** (268 allottees) | **Best overall result.** Widest source base + deepest analytical framing. 17-jurisdiction table, six-stage dispossession mechanism, Samuel Charger prominently featured, structural concepts named and developed, obscure details surfaced (tax trap, reimbursable fund, Rocky Boy experiment, loan bubble). The Edmister passage on private property and the Russian Revolution is framed within broader intellectual history. | Good — roughly 80–85% of Opus's analytical value. Competitive on evidence presentation and tabular organization. Better on Kaw individual cases, homestead cross-respondent synthesis, and systematic silences checklist. Catches details Opus misses (Nez Perce woman, "Indian Rights" orgs, Dadie Pappan). Weaker on interpretive framing — tells you *what the document says* but not *why it matters*. |
+
+##### Part D: Implications for the Pipeline
+
+**The optimal pipeline is confirmed: Kimi extraction → Claude Opus analysis.** This combination produces the widest evidence base (Kimi's 268 allottees vs Claude's 169) interpreted with the deepest analytical framing (Opus's named structural concepts, historiographical connections, and "why it matters" interpretation). Neither model alone achieves what the combination produces.
+
+**Kimi-as-analyst is a viable budget option.** If cost is a constraint, Kimi extraction → Kimi analysis produces a workable result. You lose the interpretive framing, some structural concepts, and several historically significant details. But you retain all core evidence, good tabular organization, and in some areas (Kaw case studies, homestead synthesis, research leads) the output is actually stronger than Opus's. For a first pass or triage, this is sufficient. For publication-quality historical analysis, Opus is worth the cost.
+
+**The analysis gap is narrower than the extraction gap on narrative documents.** Kimi-as-analyst achieves ~80-85% of Opus's analytical value, while Kimi-as-extractor achieves only 58-66% of Claude's extraction on legislative correspondence (Doc 798) and multi-decade litigation (Doc 811). This suggests that Kimi's reasoning capabilities are closer to Claude's than its extraction capabilities on certain document types — the extraction task may be bottlenecked by attention/context management rather than raw analytical ability.
+
+**The Streamlit interface supports all combinations.** As of 2026-03-25, `ai_analysis_interface_v4.py` includes a model selector (Claude Opus, Claude Sonnet, Kimi K2.5) that routes analysis calls through a unified `call_llm()` function to either the Anthropic API or Together AI. Users can select any extraction (by choosing the document in the database) and any analysis model (via the sidebar dropdown) to test any combination.
 
 ---
 
@@ -455,4 +537,4 @@ python3 extract_single_pdf.py "document.pdf" --together-model kimi-k2.5 --togeth
 
 ---
 
-*Comparison and fine-tuning experiment conducted 2026-03-23. Recognition vs. comprehension analysis added 2026-03-24. Kimi K2.5 testing added 2026-03-25 — significantly changes the open-source extraction picture, particularly for fee patent identification. Analysis pipeline comparison (Kimi extraction → Opus analysis vs. Claude extraction → Opus analysis) added 2026-03-25. Model performance may change with future releases or prompt optimization. Fine-tuning was tested and did not improve results — see Section 3. For practical deployment recommendations, see Sections 4 and 5.*
+*Comparison and fine-tuning experiment conducted 2026-03-23. Recognition vs. comprehension analysis added 2026-03-24. Kimi K2.5 testing added 2026-03-25 — significantly changes the open-source extraction picture, particularly for fee patent identification. Full four-way analysis pipeline comparison ({Claude, Kimi} extraction × {Opus, Kimi} analysis) added 2026-03-25. Model performance may change with future releases or prompt optimization. Fine-tuning was tested and did not improve results — see Section 3. For practical deployment recommendations, see Sections 4 and 5.*
