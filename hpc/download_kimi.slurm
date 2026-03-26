@@ -10,7 +10,7 @@
 #SBATCH -o /project/LawData/kimi-extraction/logs/download_%j.out
 #SBATCH -e /project/LawData/kimi-extraction/logs/download_%j.err
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --mail-user=$USER@virginia.edu
+#SBATCH --mail-user=cwm6w@virginia.edu
 
 # ─────────────────────────────────────────────────────────
 # Download Kimi K2.5 model and build fresh vLLM container.
