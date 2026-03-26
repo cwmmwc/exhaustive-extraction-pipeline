@@ -40,9 +40,7 @@ VLLM_PORT=8000
 NUM_GPUS=8
 
 # Container — use the shared one, or your own if you built a newer version
-VLLM_SIF="/project/LawData/models/container/vllm_0.14.1-cu130.sif"
-# If you need a newer container for Kimi support, uncomment:
-# VLLM_SIF="/scratch/$USER/containers/vllm_kimi.sif"
+VLLM_SIF="/scratch/$USER/containers/vllm_kimi.sif"
 
 module purge
 module load apptainer
