@@ -10,7 +10,7 @@
 #SBATCH -o /project/LawData/kimi-extraction/logs/qwen_download_%j.out
 #SBATCH -e /project/LawData/kimi-extraction/logs/qwen_download_%j.err
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --mail-user=$USER@virginia.edu
+#SBATCH --mail-user=cwm6w@virginia.edu
 
 # Download Qwen 2.5 72B for benchmarking (~140GB, ~30 min)
 

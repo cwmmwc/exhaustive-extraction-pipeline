@@ -12,7 +12,7 @@
 #SBATCH -o /project/LawData/kimi-extraction/logs/server_%j.out
 #SBATCH -e /project/LawData/kimi-extraction/logs/server_%j.err
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --mail-user=$USER@virginia.edu
+#SBATCH --mail-user=cwm6w@virginia.edu
 
 # ─────────────────────────────────────────────────────────
 # Kimi K2.5 vLLM Server

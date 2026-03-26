@@ -10,7 +10,7 @@
 #SBATCH -o /project/LawData/kimi-extraction/logs/extract_%j.out
 #SBATCH -e /project/LawData/kimi-extraction/logs/extract_%j.err
 #SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=$USER@virginia.edu
+#SBATCH --mail-user=cwm6w@virginia.edu
 
 # ─────────────────────────────────────────────────────────
 # Kimi K2.5 Extraction Worker
