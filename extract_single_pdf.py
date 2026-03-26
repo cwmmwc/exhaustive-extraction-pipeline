@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Extract structured data from a single PDF using Claude and/or a Together AI model.
+Extract structured data from a single PDF using Claude, Together AI, or a vLLM server.
 Useful for testing extraction on documents not yet in the database.
 
 Usage:
@@ -9,6 +9,9 @@ Usage:
     python3 extract_single_pdf.py path/to/document.pdf --claude-only
     python3 extract_single_pdf.py path/to/document.pdf --together-only --together-model llama3.3-70b
     python3 extract_single_pdf.py path/to/document.pdf --together-model kimi-k2.5 --together-only --chunked
+
+    # vLLM server (e.g., on HPC):
+    python3 extract_single_pdf.py path/to/document.pdf --vllm-url http://hostname:8000 --vllm-model kimi-k2.5 --chunked
 """
 
 import argparse
@@ -166,6 +169,41 @@ def run_together(prompt: str, model: str, api_key: str) -> dict:
         return {"error": str(e), "text": "", "time": time.time() - start}
 
 
+def run_vllm(prompt: str, model: str, base_url: str) -> dict:
+    """Run extraction via a vLLM OpenAI-compatible server (e.g., on HPC)."""
+    import urllib.request
+    import urllib.error
+
+    start = time.time()
+    payload = json.dumps({
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "max_tokens": 32000,
+        "temperature": 0.3,
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        f"{base_url}/v1/chat/completions",
+        data=payload,
+        headers={"Content-Type": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=600) as resp:
+            data = json.loads(resp.read().decode())
+        elapsed = time.time() - start
+        return {
+            "text": data["choices"][0]["message"]["content"],
+            "time": elapsed,
+            "model": model,
+            "input_tokens": data.get("usage", {}).get("prompt_tokens", 0),
+            "output_tokens": data.get("usage", {}).get("completion_tokens", 0),
+        }
+    except urllib.error.HTTPError as e:
+        body = e.read().decode() if e.fp else ""
+        return {"error": f"HTTP {e.code}: {body[:500]}", "text": "", "time": time.time() - start}
+    except Exception as e:
+        return {"error": str(e), "text": "", "time": time.time() - start}
+
+
 def parse_json(text: str) -> dict:
     """Try to parse JSON from model output, stripping markdown fences if needed."""
     text = text.strip()
@@ -208,6 +246,10 @@ def main():
                         help="Output directory (default: auto-generated)")
     parser.add_argument("--chunked", action="store_true",
                         help="Process full document in 40K-char chunks with 5K overlap")
+    parser.add_argument("--vllm-url", default=None,
+                        help="vLLM server URL (e.g., http://hostname:8000)")
+    parser.add_argument("--vllm-model", default=None,
+                        help="Model name served by vLLM (shortname or as shown in /v1/models)")
     args = parser.parse_args()
 
     if not os.path.exists(args.pdf):
@@ -268,8 +310,9 @@ def main():
         merged = merge_extractions(all_extractions)
         return merged, {"time": total_time, "chunks_ok": len(all_extractions), "chunks_total": len(chunks)}
 
-    # Run Claude
-    if not args.together_only:
+    # Run Claude (skip if using together-only or vllm-only)
+    vllm_only = args.vllm_url and args.vllm_model and not args.together_model
+    if not args.together_only and not vllm_only:
         print(f"\nRunning Claude Sonnet ({len(chunks)} chunk{'s' if len(chunks) > 1 else ''})...")
         merged, info = run_model_on_chunks("claude", lambda p: run_claude(p), chunks)
         if merged:
@@ -305,6 +348,27 @@ def main():
             else:
                 print(f"  FAILED: {info.get('error', 'unknown')}")
                 results[args.together_model] = {"error": info.get("error", "unknown")}
+
+    # Run vLLM model
+    if args.vllm_url and args.vllm_model:
+        model_id = TOGETHER_MODELS.get(args.vllm_model, args.vllm_model)
+        display_name = args.vllm_model
+        print(f"\nRunning {display_name} via vLLM at {args.vllm_url} ({len(chunks)} chunk{'s' if len(chunks) > 1 else ''})...")
+        merged, info = run_model_on_chunks(
+            display_name,
+            lambda p: run_vllm(p, model_id, args.vllm_url),
+            chunks,
+        )
+        if merged:
+            counts = count_items(merged)
+            print(f"  Total: {counts['total']} items in {info['time']:.1f}s")
+            safe_name = display_name.replace("/", "-")
+            with open(os.path.join(output_dir, f"{safe_name}.json"), "w") as f:
+                json.dump(merged, f, indent=2)
+            results[display_name] = {"counts": counts, "time": info["time"]}
+        else:
+            print(f"  FAILED: {info.get('error', 'unknown')}")
+            results[display_name] = {"error": info.get("error", "unknown")}
 
     # Print summary
     print(f"\n{'='*60}")

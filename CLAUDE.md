@@ -27,13 +27,15 @@ AI-powered structured extraction from 4,925 historical PDFs (139M words) documen
 The v3 prompt extracts: entities, events, financial_transactions, relationships, fee_patents, correspondence, legislative_actions. Fee patents are the atomic unit of land dispossession — linking allottee, allotment, acreage, patent date, mechanism, buyer, attorney, mortgage.
 
 ## Model Comparison Results (March 2026)
-- Claude Sonnet: baseline, 100% of items
-- Llama 3.3 70B: best open-source at 46% of Claude overall, but near-parity on entities/events/financial (80-100%), catastrophic on fee patents (10%)
-- Fine-tuning Llama 3.3 70B: negative result (38%, worse than untuned)
-- Llama 4 Maverick: 25%, hallucination issues
+- Claude Sonnet: baseline, 100% of items. Irreplaceable for narrative-heavy documents (legislative correspondence, litigation) and corpus-wide synthesis
+- Kimi K2.5 (Moonshot AI, open-source): best open-source model at 73% of Claude overall. **105–159% of Claude on fee patents** — found 268 allottees vs Claude's 169 on the 221-page CCF 56074. No hallucinations, correctly distinguishes dispossession mechanisms. Weaker on legislative correspondence (58%) and long causal chains
+- Llama 3.3 70B: 46% of Claude overall, largely superseded by Kimi K2.5
+- Llama 4 Maverick: 25%, hallucination issues (fabricated names, invented events)
 - Llama 4 Scout: 0%, complete failure
+- Fine-tuning Llama 3.3 70B: negative result (38%, worse than untuned)
 - Gemma 3 12B: excellent on bounded template extraction (NARA index cards)
-- Key finding: open-source good at **recognition** (entities, dates, labeled fields), bad at **comprehension** (fee patent narratives, relationships, synthesis)
+- Optimal pipeline: **Kimi extraction → Claude Opus analysis** (widest evidence base + deepest analytical framing)
+- Key finding: the recognition vs. comprehension gap is model-specific (Llama), not an inherent open-source limitation — Kimi proved open-source can match Claude on fee patent comprehension
 
 ## Environment
 - Python venv at `./venv` — activate with `source venv/bin/activate`
