@@ -503,6 +503,40 @@ sbatch --export=MODEL=google/gemma-3-27b-it hpc/run_comparison.slurm
 sbatch --export=MODEL=Qwen/Qwen2.5-72B-Instruct hpc/run_comparison.slurm
 ```
 
+#### Kimi K2.5 on HPC
+
+Kimi K2.5 is the best open-source extraction model (73% of Claude overall, 105–159% on fee patents). It's a 1T-parameter MoE model requiring 8x A100 80GB GPUs.
+
+**One-time setup:**
+```bash
+bash hpc/setup_kimi.sh
+```
+
+This creates the project directory at `/project/LawData/kimi-extraction/`, downloads the model (~549GB), and sets up dependencies.
+
+**Run extraction:**
+```bash
+# Stage PDFs
+cp /path/to/your/pdfs/*.pdf /project/LawData/kimi-extraction/pdfs/
+
+# Start the vLLM server (8x A100 80GB, runs up to 3 days)
+sbatch hpc/start_kimi_server.slurm
+
+# Submit extraction worker (CPU node, reads server address automatically)
+sbatch --export=PDF=ALL hpc/run_kimi_extraction.slurm
+
+# Or extract a single document first to test:
+sbatch --export=PDF="1921 CCF 56074-21-312 GS.pdf" hpc/run_kimi_extraction.slurm
+```
+
+The worker has skip-on-exists logic — if a job dies mid-run, resubmit and it picks up where it left off. Results go to `/project/LawData/kimi-extraction/outputs/`.
+
+**Monitor:**
+```bash
+squeue -u $USER
+tail -f /project/LawData/kimi-extraction/logs/server_*.out
+```
+
 ### Comparing with Claude (locally)
 
 After the Rivanna jobs finish, copy results back and run Claude against the same data:
@@ -529,7 +563,7 @@ The comparison script supports hosted API providers that serve open-source model
 
 | Provider | Env var | Notable models |
 |----------|---------|----------------|
-| Together AI | `TOGETHER_API_KEY` | Llama 4 Maverick, Llama 4 Scout, Qwen 2.5 72B |
+| Together AI | `TOGETHER_API_KEY` | Kimi K2.5, Llama 4 Maverick, Llama 3.3 70B, Qwen 2.5 72B |
 | Fireworks AI | `FIREWORKS_API_KEY` | Llama 3.3 70B, Qwen 2.5 72B |
 | Groq | `GROQ_API_KEY` | Llama 3.3 70B |
 
@@ -577,6 +611,9 @@ python3 compare_claude_vs_local_models.py --local-models llama3.3:70b --mode ext
 | File | Description |
 |------|-------------|
 | `hpc/setup_vllm.sh` | One-time setup: pull vLLM container, create virtualenv |
+| `hpc/setup_kimi.sh` | One-time setup: download Kimi K2.5 model, create project directories |
+| `hpc/start_kimi_server.slurm` | SLURM job: start Kimi K2.5 vLLM server on 8x A100 80GB |
+| `hpc/run_kimi_extraction.slurm` | SLURM job: extraction worker (CPU node) that calls the Kimi server |
 | `hpc/run_comparison.slurm` | SLURM job: launch vLLM + run comparison for one model |
 | `hpc/run_all_models.sh` | Submit jobs for all three models in parallel |
 | `corpus_context.json` | Pre-dumped corpus data (no DB needed on cluster) |
