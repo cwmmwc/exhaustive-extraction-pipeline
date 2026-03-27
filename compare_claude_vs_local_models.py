@@ -53,9 +53,6 @@ Output:
       - summary.md  (side-by-side stats for all models)
 """
 
-import anthropic
-import psycopg2
-import psycopg2.extras
 import os
 import sys
 import json
@@ -96,6 +93,7 @@ DB_NAME = "crow_historical_docs"
 
 
 def get_db_connection():
+    import psycopg2
     db_url = os.environ.get("DATABASE_URL")
     if db_url:
         return psycopg2.connect(db_url)
@@ -119,6 +117,7 @@ def get_db_stats() -> Dict:
 
 
 def get_all_summaries() -> List[Dict]:
+    import psycopg2.extras
     conn = get_db_connection()
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     cur.execute("""
@@ -137,6 +136,7 @@ def get_extraction_samples(n: int = 3, doc_ids: Optional[List[int]] = None) -> L
     """Get sample document chunks for extraction comparison.
     If doc_ids is provided, fetch those specific documents (for reproducible comparisons).
     Otherwise, pick n random documents."""
+    import psycopg2.extras
     conn = get_db_connection()
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     if doc_ids:
@@ -457,6 +457,7 @@ def run_claude(prompt: str, model: str = "claude-opus-4-6",
     if not api_key:
         return {"error": "ANTHROPIC_API_KEY not set", "text": "", "time": 0}
 
+    import anthropic
     client = anthropic.Anthropic(api_key=api_key)
     start = time.time()
     try:
