@@ -79,8 +79,15 @@ def merge_extractions(extractions: list) -> dict:
     return merged
 
 
-def build_prompt(chunk: str) -> str:
-    """Build the v3 extraction prompt."""
+def build_prompt(chunk: str, version: str = "v4") -> str:
+    """Build the extraction prompt. v4 adds testimony, taxes, and mortgages."""
+    if version == "v3":
+        return _build_prompt_v3(chunk)
+    return _build_prompt_v4(chunk)
+
+
+def _build_prompt_v3(chunk: str) -> str:
+    """Build the v3 extraction prompt (original 7 types)."""
     return f"""Extract ALL structured information from this historical document text.
 Return a single JSON object with these keys:
 
@@ -109,6 +116,52 @@ Return a single JSON object with these keys:
 }}
 
 Extract EVERY entity, event, transaction, relationship, fee patent, correspondence record, and legislative action mentioned. Be thorough — missing data is worse than extra data.
+
+DOCUMENT TEXT:
+{chunk}
+
+Return ONLY valid JSON, no markdown fencing, no commentary:"""
+
+
+def _build_prompt_v4(chunk: str) -> str:
+    """Build the v4 extraction prompt (10 types: v3 + testimony, taxes, mortgages)."""
+    return f"""Extract ALL structured information from this historical document text.
+Return a single JSON object with these keys:
+
+{{
+  "entities": [
+    {{"name": "...", "type": "person|organization|location|land_parcel|legal_case|legislation|acreage_holding", "context": "brief description"}}
+  ],
+  "events": [
+    {{"type": "...", "date": "YYYY-MM-DD or partial", "location": "...", "description": "..."}}
+  ],
+  "financial_transactions": [
+    {{"type": "sale|lease|payment|fee|other", "amount": "...", "payer": "...", "payee": "...", "date": "...", "description": "..."}}
+  ],
+  "relationships": [
+    {{"subject": "...", "type": "represented|employed_by|sold_to|bought_from|related_to|...", "object": "...", "context": "..."}}
+  ],
+  "fee_patents": [
+    {{"allottee_name": "...", "allotment_number": "...", "acreage": "...", "patent_date": "...", "patent_number": "...", "mechanism": "private_bill|administrative|application|certificate_of_competency", "buyer": "...", "sale_price": "...", "attorney": "...", "mortgage": "..."}}
+  ],
+  "correspondence": [
+    {{"sender": "...", "sender_title": "...", "recipient": "...", "recipient_title": "...", "date": "...", "subject": "...", "action_requested": "...", "outcome": "..."}}
+  ],
+  "legislative_actions": [
+    {{"bill_number": "...", "sponsor": "...", "action_type": "introduced|reported|amended|passed|vetoed|enacted", "date": "...", "vote_count": "...", "committee": "...", "outcome": "..."}}
+  ],
+  "testimony": [
+    {{"witness": "...", "witness_title": "...", "hearing": "...", "committee": "...", "location": "...", "date": "...", "subject": "...", "key_claims": "summary of what the witness stated or alleged", "questioner": "name of committee member or counsel asking questions, if identifiable"}}
+  ],
+  "taxes": [
+    {{"taxpayer": "...", "land_description": "...", "tax_type": "property|county|state|delinquent|other", "amount": "...", "year": "...", "status": "paid|delinquent|tax_sale|tax_deed|exempt|other", "county": "...", "context": "..."}}
+  ],
+  "mortgages": [
+    {{"borrower": "...", "lender": "...", "amount": "...", "land_description": "...", "acreage": "...", "date": "...", "interest_rate": "...", "status": "active|foreclosed|paid|default|other", "context": "..."}}
+  ]
+}}
+
+Extract EVERY entity, event, transaction, relationship, fee patent, correspondence record, legislative action, testimony, tax record, and mortgage mentioned. Be thorough — missing data is worse than extra data. For testimony, extract each distinct witness's statements as a separate record. For taxes and mortgages, extract every specific instance mentioned — these are key mechanisms of land dispossession.
 
 DOCUMENT TEXT:
 {chunk}
@@ -250,6 +303,8 @@ def main():
                         help="vLLM server URL (e.g., http://hostname:8000)")
     parser.add_argument("--vllm-model", default=None,
                         help="Model name served by vLLM (shortname or as shown in /v1/models)")
+    parser.add_argument("--v3", action="store_true",
+                        help="Use v3 prompt (7 types). Default is v4 (10 types: +testimony, taxes, mortgages)")
     args = parser.parse_args()
 
     if not os.path.exists(args.pdf):
@@ -283,7 +338,7 @@ def main():
         for i, chunk in enumerate(chunks):
             if len(chunks) > 1:
                 print(f"  Chunk {i+1}/{len(chunks)} ({len(chunk):,} chars)...", end=" ", flush=True)
-            prompt = build_prompt(chunk)
+            prompt = build_prompt(chunk, version="v3" if args.v3 else "v4")
             result = run_fn(prompt)
             if "error" in result:
                 print(f"ERROR: {result['error']}")
@@ -379,7 +434,8 @@ def main():
     print(f"{'='*60}")
 
     categories = ["entities", "events", "financial_transactions", "relationships",
-                   "fee_patents", "correspondence", "legislative_actions", "total"]
+                   "fee_patents", "correspondence", "legislative_actions",
+                   "testimony", "taxes", "mortgages", "total"]
 
     header = f"{'Category':<30}"
     for model_name in results:
