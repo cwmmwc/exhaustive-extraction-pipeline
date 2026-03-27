@@ -113,7 +113,7 @@ python3 compare_claude_vs_local_models.py \
     --vllm-url "$VLLM_URL" \
     --context-file "${PROJECT_DIR}/corpus_context.json" \
     --local-only \
-    --local-models "Qwen/Qwen2.5-72B-Instruct" \
+    --local-models "qwen2.5-72b" \
     --mode extraction \
     --doc-ids 798 811 695
 
