@@ -23,8 +23,12 @@ AI-powered structured extraction from 4,925 historical PDFs (139M words) documen
 - `historical_docs` — Kiowa/KCA corpus (256 docs, 180 re-extracted through v3)
 - `full_corpus_docs` — Full corpus (planned)
 
-## v3 Extraction Schema
-The v3 prompt extracts: entities, events, financial_transactions, relationships, fee_patents, correspondence, legislative_actions. Fee patents are the atomic unit of land dispossession — linking allottee, allotment, acreage, patent date, mechanism, buyer, attorney, mortgage.
+## Extraction Schema
+- **v4 (current default)**: 10 types — entities, events, financial_transactions, relationships, fee_patents, correspondence, legislative_actions, testimony, taxes, mortgages
+- **v3**: 7 types — entities, events, financial_transactions, relationships, fee_patents, correspondence, legislative_actions (use `--v3` flag)
+- Fee patents are the atomic unit of land dispossession — linking allottee, allotment, acreage, patent date, mechanism, buyer, attorney, mortgage
+- Testimony captures congressional hearing witnesses and their key claims
+- Taxes and mortgages capture two additional mechanisms of dispossession that were previously scattered across other categories
 
 ## Model Comparison Results (March 2026)
 - Claude Sonnet: baseline, 100% of items. Irreplaceable for narrative-heavy documents (legislative correspondence, litigation) and corpus-wide synthesis

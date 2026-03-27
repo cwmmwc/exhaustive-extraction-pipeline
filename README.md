@@ -48,31 +48,55 @@ Takes a directory of PDFs and produces structured database records:
 3. **LLM extraction** — Each chunk sent to LLM with structured prompt returning JSON
 4. **Database storage** — Parsed into PostgreSQL with deduplication
 
-### Entity Types (v2) + Structured Types (v3)
+### Extraction Types
 
-| Type | Example | Version |
-|------|---------|---------|
-| person | Harold Stanton, Paul Fickinger, Guy Bulltail | v2 |
-| organization | Bureau of Indian Affairs, Campbell Farming Corporation | v2 |
-| location | Crow Reservation, Big Horn County | v2 |
-| land_parcel | Allotment 2237, Section 12 T1S R32E | v2 |
-| legal_case | Dillon v. Antler Land Co. of Wyola | v2 |
-| legislation | Crow Act 1920, H.R. 5477 | v2 |
-| acreage_holding | Homer Scott: 90,000 acres | v2 |
-| financial_transaction | $32,691.20 oil lease bonus payment | v2 |
-| relationship | Stanton represented Crow Tribe as tribal attorney | v2 |
-| date_event | March 18, 1940 — House passed H.R. 5477 | v2 |
-| **fee_patent** | George Peters, Allotment 1292, 840 acres, sold to Stanton | **v3** |
-| **correspondence** | Murray to BIA Commissioner, 1947-06-15, re: Peters fee patent | **v3** |
-| **legislative_action** | S. 1385 introduced by Murray, 1947-06, enacted as Private Law 68 | **v3** |
+The pipeline extracts 10 types of structured information from each document. The v4 prompt (current default) extracts all 10; the v3 prompt extracts the first 7.
 
-### v3 Extraction Types — Why These Matter
+#### Entities
 
-**Fee patents** are the atomic unit of land dispossession. The v2 pipeline scattered fee patent data across `person`, `land_parcel`, `financial_transaction`, and `relationship` entities — forcing the AI to reassemble it at query time. The v3 `fee_patent` type links allottee, allotment number, acreage, patent date, trust-to-fee mechanism (private bill, administrative action), subsequent buyer, sale price, facilitating attorney, and any mortgage into a single record. This enables direct SQL queries like "total acreage patented by decade" or "which attorneys appeared in the most fee patent chains."
+Entities are named things — the full cast of characters, places, and instruments in the documents. Each entity has a name, a type, and a context field that briefly describes who or what it is and why it matters.
+
+| Entity Type | What It Captures | Example |
+|-------------|-----------------|---------|
+| **person** | Named individuals — allottees, officials, attorneys, witnesses, family members | V. Stinchecum, Superintendent of Kiowa Agency |
+| **organization** | Agencies, companies, tribes, committees, courts | Bureau of Indian Affairs, Campbell Farming Corporation |
+| **location** | Places — reservations, towns, counties, states, specific sites | Crow Reservation, Anadarko, Oklahoma |
+| **land_parcel** | Specific described land — section/township/range, allotment numbers | Allotment 2237, Section 12 T1S R32E |
+| **legal_case** | Named lawsuits, court actions | Dillon v. Antler Land Co. of Wyola |
+| **legislation** | Named bills, acts, treaties, executive orders | Crow Act of 1920, S-716 |
+| **acreage_holding** | Land ownership with quantities | Homer Scott: 90,000 acres |
+
+Entities are the broadest category by design — they catch everything that has a name. The other 9 types capture *what happened* with structured fields. Entities capture *who and what was involved*. You need both: an entity tells you George Peters exists; a fee_patent record tells you his land was patented, sold, and to whom.
+
+#### Structured Record Types
+
+These capture specific kinds of historical evidence as structured records with defined fields. Each record type was designed to answer particular research questions directly via database queries.
+
+| Type | Key Fields | Example | Version |
+|------|-----------|---------|---------|
+| **events** | type, date, location, description | March 18, 1940 — House passed H.R. 5477 | v2 |
+| **financial_transactions** | type, amount, payer, payee, date | $32,691.20 oil lease bonus payment, BIA to Crow Tribe | v2 |
+| **relationships** | subject, type, object, context | Stanton represented Crow Tribe as tribal attorney | v2 |
+| **fee_patents** | allottee, allotment_number, acreage, patent_date, mechanism, buyer, sale_price, attorney, mortgage | George Peters, Allotment 1292, 840 acres, sold to Stanton | v3 |
+| **correspondence** | sender, sender_title, recipient, recipient_title, date, subject, action_requested, outcome | Murray to BIA Commissioner, 1947-06-15, re: Peters fee patent | v3 |
+| **legislative_actions** | bill_number, sponsor, action_type, date, vote_count, committee, outcome | S. 1385 introduced by Murray, 1947-06, enacted as Private Law 68 | v3 |
+| **testimony** | witness, witness_title, hearing, committee, location, date, subject, key_claims, questioner | Stinchecum testified at Anadarko, 1930: only 1 of 60 fee patent recipients retained their land | v4 |
+| **taxes** | taxpayer, land_description, tax_type, amount, year, status, county | Delinquent property tax, Hughes County, 1921, tax deed issued | v4 |
+| **mortgages** | borrower, lender, amount, land_description, acreage, date, interest_rate, status | Ben Told, mortgage $6,500, land leased for five years, active | v4 |
+
+### Why These Types Matter
+
+**Fee patents** are the atomic unit of land dispossession. The v2 pipeline scattered fee patent data across `person`, `land_parcel`, `financial_transaction`, and `relationship` entities — forcing the AI to reassemble it at query time. The v3 `fee_patent` type links allottee, allotment number, acreage, patent date, trust-to-fee mechanism (private bill, administrative action, application, certificate of competency), subsequent buyer, sale price, facilitating attorney, and any mortgage into a single record. This enables direct SQL queries like "total acreage patented by decade" or "which attorneys appeared in the most fee patent chains."
 
 **Correspondence** captures the bureaucratic network: sender, recipient, titles/positions, date, subject, action requested, and outcome. Designed to link with Pipeline B (1.4M BIA index cards from the National Archives) via sender/recipient/date matching. This is the cross-corpus integration layer described in the HAVI Level I proposal.
 
 **Legislative actions** track bills through their lifecycle: introduced, reported, amended, passed, vetoed, enacted — with sponsors, vote counts, and committee assignments. The v2 `legislation` entity captured bill names but not their trajectories. The Murray synthesis (which reconstructed 5 major bills across 30+ documents from summaries alone) demonstrated how much analytical leverage structured legislative data provides.
+
+**Testimony** (v4) captures sworn statements from congressional hearings — the witness, their title, the hearing context, and a summary of their key claims. The Survey of Conditions hearings (1927-1934) contain hundreds of witnesses testifying about the effects of fee patents across Indian country. Without a structured testimony type, these statements were lost inside generic entity and event records.
+
+**Taxes** (v4) capture the tax trap as a mechanism of dispossession. Once land was patented, it became taxable. Many allottees could not pay property taxes on land they had never farmed, leading to tax sales and tax deeds. The structured record captures taxpayer, tax type, amount, year, delinquency status, and county — enabling systematic analysis of tax-driven land loss.
+
+**Mortgages** (v4) capture another dispossession mechanism. Allottees frequently mortgaged land immediately after receiving fee patents, often at unfavorable terms. The structured record captures borrower, lender, amount, interest rate, and outcome (foreclosed, paid, default). In the existing extractions, mortgage data appeared 126 times but was scattered across entities, events, financial transactions, and fee patent records with no structured home.
 
 ### Analysis Interface (ai_analysis_interface_v4.py)
 
