@@ -178,7 +178,7 @@ def run_vllm(prompt: str, model: str, base_url: str) -> dict:
     payload = json.dumps({
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
-        "max_tokens": 32000,
+        "max_tokens": 8192,
         "temperature": 0.3,
     }).encode("utf-8")
     req = urllib.request.Request(

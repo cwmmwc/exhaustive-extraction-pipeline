@@ -73,7 +73,7 @@ apptainer exec --nv \
         --tensor-parallel-size "$NUM_GPUS" \
         --trust-remote-code \
         --dtype auto \
-        --max-model-len 16384 \
+        --max-model-len 32768 \
         --gpu-memory-utilization 0.95 \
         --host 0.0.0.0 \
         --port "$VLLM_PORT" \
