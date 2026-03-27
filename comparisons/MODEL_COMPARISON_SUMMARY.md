@@ -1,6 +1,6 @@
 # Model Comparison Summary
 
-**Date:** 2026-03-23 (updated 2026-03-25 with Kimi K2.5 results)
+**Date:** 2026-03-23 (updated 2026-03-25 with Kimi K2.5 results, 2026-03-27 with Qwen 2.5 72B HPC benchmark)
 **Purpose:** Evaluate whether open-source models can replace Claude for structured extraction and corpus-wide synthesis in a historical document analysis pipeline.
 
 ## Models Tested
@@ -44,9 +44,10 @@ Three documents were used across all extraction tests (pinned via `--doc-ids 798
 | **Llama 3.3 70B (few-shot)** | 3/3 | **148** | 46% | — | — | — | — | — | — | — |
 | **Llama 3.3 70B (fine-tuned)** | 3/3 | **122** | **38%** | 69 | 18 | 7 | 10 | 4 | 8 | 6 |
 | **Llama 4 Maverick** | 2/3 | **80** | 25% | 38 | 11 | 6 | 9 | 2 | 8 | 6 |
+| **Qwen 2.5 72B** | 3/5* | **114*** | 35%* | 49 | — | — | — | 0 | 16 | — |
 | **Llama 4 Scout** | 0/3 | **0** | 0% | — | — | — | — | — | — | — |
 
-**Note:** Claude Sonnet totals vary slightly between runs due to non-deterministic output. The fine-tuned model row represents `cwm6w_eacd/Llama-3.3-70B-Instruct-Reference-extraction-v1-a3211159`, trained on 109 examples from both Crow and Kiowa corpora. Kimi K2.5 (Moonshot AI) tested 2026-03-25.
+**Note:** Claude Sonnet totals vary slightly between runs due to non-deterministic output. The fine-tuned model row represents `cwm6w_eacd/Llama-3.3-70B-Instruct-Reference-extraction-v1-a3211159`, trained on 109 examples from both Crow and Kiowa corpora. Kimi K2.5 (Moonshot AI) tested 2026-03-25. Qwen 2.5 72B tested 2026-03-27 on UVA HPC (2x A100 80GB via vLLM). *Qwen's 3-doc results are partial: 1 doc hit the context length ceiling (32K tokens), 1 produced invalid JSON after 14 min. Only 3 of 5 docs produced valid output, with 0 fee patents on any document.
 
 ### Per-Document Breakdown
 
@@ -138,20 +139,22 @@ A 221-page document containing Board of Indian Commissioners correspondence and 
 
 Claude's full extraction of this document (13 chunks via the v3 pipeline) is stored in the `full_corpus_docs` database. Kimi K2.5 was run on the full document (15 chunks, 500,812 characters) via `extract_single_pdf.py --chunked`. This enables a direct comparison of total extraction across the entire 221-page document.
 
-| Category | Claude (13 chunks, from DB) | Kimi K2.5 (15 chunks, raw) | Kimi (deduped est.) | Kimi % of Claude |
-|----------|---------------------------|---------------------------|-------------------|-----------------|
-| Entities | 655 | 1,000 | ~754 | 115% |
-| Events | 136 | 193 | ~183 | 135%* |
-| Financial transactions | 77 | 135 | ~126 | 164%* |
-| Relationships | 251 | 228 | ~223 | 89% |
-| Fee patents | **169** | **293** | **~268** | **159%** |
-| Correspondence | 79 | 119 | ~116 | 147% |
-| Legislative actions | 2 | 40 | ~40 | 2000%* |
-| **Total** | **1,369** | **2,008** | **~1,710** | **125%** |
+| Category | Claude (13 chunks) | Kimi K2.5 (15 chunks, deduped est.) | Qwen 2.5 72B (15 chunks, 12 valid) | Kimi % of Claude | Qwen % of Claude |
+|----------|---------------------------|-------------------|-------------------------------------|-----------------|-----------------|
+| Entities | 655 | ~754 | 435 | 115% | 66% |
+| Events | 136 | ~183* | 58 | 135%* | 43% |
+| Financial transactions | 77 | ~126* | 38 | 164%* | 49% |
+| Relationships | 251 | ~223 | 134 | 89% | 53% |
+| Fee patents | **169** | **~268** | **26** | **159%** | **15%** |
+| Correspondence | 79 | ~116 | 35 | 147% | 44% |
+| Legislative actions | 2 | ~40* | 11 | 2000%* | 550%* |
+| **Total** | **1,369** | **~1,710** | **737** | **125%** | **54%** |
 
-*Events, financial transactions, and legislative actions are likely inflated by the same over-extraction pattern observed in the single-chunk analysis. The true unique counts after quality filtering would be lower.
+*Kimi's events, financial transactions, and legislative actions are likely inflated by the same over-extraction pattern observed in the single-chunk analysis. The true unique counts after quality filtering would be lower.
 
-**Duplication analysis:** The 15 chunks use 5,000-character overlap, which causes entity re-extraction (24.6% entity duplication rate — Board members re-extracted from the masthead in every chunk) but minimal duplication of structured records. Fee patents: 268 unique allottee names out of 293 records. Correspondence: ~3 near-duplicates. Relationships: 5 exact duplicates.
+**Qwen 2.5 72B** was tested 2026-03-27 on UVA HPC (2x A100 80GB via vLLM 0.18.0, `--tensor-parallel-size 2`, `--max-model-len 32768`). 12 of 15 chunks produced valid JSON (80% reliability vs 100% for Claude and Kimi). Processing time: 2,884 seconds (~48 minutes) for the full document at ~19.6 tokens/sec generation throughput. Qwen's overall extraction (54% of Claude) is similar to Llama 3.3 70B (46%), but the fee patent result is the key finding: **26 fee patents vs Claude's 169 and Kimi's 268.** Like Llama, Qwen cannot comprehend that a sequence of narrative sentences about an individual allottee constitutes a fee patent case history. This confirms that Kimi's fee patent capability is exceptional among open-source models, not merely typical of the parameter class.
+
+**Duplication analysis:** The 15 chunks use 5,000-character overlap, which causes entity re-extraction (24.6% entity duplication rate — Board members re-extracted from the masthead in every chunk) but minimal duplication of structured records. Fee patents: 268 unique allottee names out of 293 records (Kimi). Correspondence: ~3 near-duplicates. Relationships: 5 exact duplicates.
 
 #### The Allottee Count: 268 vs 169
 
@@ -450,13 +453,15 @@ The revised insight: the distinction is not simply recognition vs. comprehension
 
 2. **Kimi K2.5 (Moonshot AI)** — a breakthrough result among open-source models. 73% of Claude on the 3-document benchmark, but **105–159% of Claude on fee patent extraction** depending on the document. On the 221-page CCF 56074 report, Kimi found 268 unique allottees vs Claude's 169 — 99 additional named individuals whose dispossession is documented in the historical record. 100% JSON reliability. Correctly distinguishes between dispossession mechanisms (application vs certificate of competency). Weakest on legislative correspondence (58% of Claude on Doc 798) and long causal chains. Over-extracts in events and financial transactions (creates empty duplicate records). Per-record fields are sparser than Claude's when the source text provides detail. Best suited for record-heavy documents where maximizing the allottee roster matters most.
 
-3. **Llama 3.3 70B (untuned)** — 46% of Claude overall, 100% JSON reliability. Competitive on entity identification and discrete events, but catastrophic on fee patents (10% of Claude on CCF 56074). The gap between Llama and Kimi on fee patents (8 vs 87 on the same chunk) demonstrates that the fee patent problem is model-specific, not inherent to open-source models. Still useful for entity cataloging and fast document triage. Fine-tuning made it worse, not better.
+3. **Qwen 2.5 72B** — 54% of Claude on CCF 56074 (full document), 80% JSON reliability (12/15 chunks valid). Tested 2026-03-27 on UVA HPC (2x A100 80GB). Overall extraction volume is slightly better than Llama 3.3 70B, but the fee patent result is decisive: **26 fee patents vs Claude's 169 and Kimi's 268 — just 15% of Claude.** This was the model recommended as a potential alternative to Kimi at half the GPU cost (2x vs 8x A100). It is not. The fee patent gap confirms that Kimi's ability to comprehend allottee case histories is exceptional among open-source models and cannot be replicated by a similarly-sized dense model. Qwen's only advantage over Llama is slightly higher overall extraction volume; on the task that matters most for this research, both are equally poor.
 
-4. **Gemma 3 12B (local)** — strong on bounded template extraction (NARA index cards). Not tested on long-document extraction but well-suited for structured archival materials with predictable fields. Runs locally on consumer hardware.
+4. **Llama 3.3 70B (untuned)** — 46% of Claude overall, 100% JSON reliability. Competitive on entity identification and discrete events, but catastrophic on fee patents (10% of Claude on CCF 56074). The gap between Llama and Kimi on fee patents (8 vs 87 on the same chunk) demonstrates that the fee patent problem is model-specific, not inherent to open-source models. Still useful for entity cataloging and fast document triage. Fine-tuning made it worse, not better.
 
-5. **Llama 4 Maverick** — disappointing given its size. 67% JSON reliability, ~25% of Claude's extraction depth. Slower than 3.3 70B despite MoE efficiency. Hallucination issues (fabricated names, invented events). Not recommended.
+5. **Gemma 3 12B (local)** — strong on bounded template extraction (NARA index cards). Not tested on long-document extraction but well-suited for structured archival materials with predictable fields. Runs locally on consumer hardware.
 
-6. **Llama 4 Scout** — completely failed extraction (0/3 valid JSON, 0.2s responses indicating the model refused or errored on all inputs). Not viable for this task.
+6. **Llama 4 Maverick** — disappointing given its size. 67% JSON reliability, ~25% of Claude's extraction depth. Slower than 3.3 70B despite MoE efficiency. Hallucination issues (fabricated names, invented events). Not recommended.
+
+7. **Llama 4 Scout** — completely failed extraction (0/3 valid JSON, 0.2s responses indicating the model refused or errored on all inputs). Not viable for this task.
 
 ### Recommended Architecture
 
@@ -494,7 +499,8 @@ The evidence now supports a **complementary approach** where Claude and Kimi K2.
 | Together AI credits for dedicated endpoint tier | $50.00 |
 | Dedicated endpoint runtime (~15 min) | ~$8.00 |
 | Kimi K2.5 testing (3-doc benchmark + CCF 56074 full extraction) | ~$2.00 |
-| **Total open-source experimentation** | **~$73** |
+| Qwen 2.5 72B testing (UVA HPC, 2x A100, 71 min) | $0 (HPC allocation) |
+| **Total open-source experimentation** | **~$73** + HPC time |
 
 With Kimi K2.5's results, the cost calculus has shifted. A hybrid Kimi + Claude strategy could process the full 5,000-document corpus with Kimi handling broad extraction (at dramatically lower cost per document than Claude) and Claude targeted at the ~500–1,000 narrative-heavy documents where it has a clear advantage. Running Kimi on UVA HPC would eliminate the API cost entirely for the broad extraction pass.
 
@@ -516,6 +522,8 @@ With Kimi K2.5's results, the cost calculus has shifted. A hybrid Kimi + Claude 
 | Extraction: Kimi K2.5 (3-doc benchmark) | `comparisons/extraction_20260325_085246_moonshotai-Kimi-K2.5/` |
 | Extraction: Kimi K2.5 CCF 56074 single chunk | `comparisons/single_20260325_083929_1921 CCF 56074-21-312 GS/` |
 | Extraction: Kimi K2.5 CCF 56074 **full document** (15 chunks) | `comparisons/single_20260325_090708_1921 CCF 56074-21-312 GS_chunked/` |
+| Extraction: Qwen 2.5 72B (3-doc benchmark, HPC) | `comparisons/extraction_20260327_113609_qwen2.5-72b/` (on HPC) |
+| Extraction: Qwen 2.5 72B CCF 56074 **full document** (HPC) | `/project/LawData/kimi-extraction/outputs/qwen_benchmark_ccf56074/` (on HPC) |
 
 ### Reproducibility
 
@@ -537,4 +545,4 @@ python3 extract_single_pdf.py "document.pdf" --together-model kimi-k2.5 --togeth
 
 ---
 
-*Comparison and fine-tuning experiment conducted 2026-03-23. Recognition vs. comprehension analysis added 2026-03-24. Kimi K2.5 testing added 2026-03-25 — significantly changes the open-source extraction picture, particularly for fee patent identification. Full four-way analysis pipeline comparison ({Claude, Kimi} extraction × {Opus, Kimi} analysis) added 2026-03-25. Model performance may change with future releases or prompt optimization. Fine-tuning was tested and did not improve results — see Section 3. For practical deployment recommendations, see Sections 4 and 5.*
+*Comparison and fine-tuning experiment conducted 2026-03-23. Recognition vs. comprehension analysis added 2026-03-24. Kimi K2.5 testing added 2026-03-25 — significantly changes the open-source extraction picture, particularly for fee patent identification. Full four-way analysis pipeline comparison ({Claude, Kimi} extraction × {Opus, Kimi} analysis) added 2026-03-25. Qwen 2.5 72B benchmark added 2026-03-27 (UVA HPC, 2x A100 80GB) — confirms Kimi's fee patent capability is exceptional among open-source models; Qwen at half the GPU cost is not a viable alternative for fee patent extraction. Model performance may change with future releases or prompt optimization. Fine-tuning was tested and did not improve results — see Section 3. For practical deployment recommendations, see Sections 4 and 5.*

@@ -29,13 +29,14 @@ The v3 prompt extracts: entities, events, financial_transactions, relationships,
 ## Model Comparison Results (March 2026)
 - Claude Sonnet: baseline, 100% of items. Irreplaceable for narrative-heavy documents (legislative correspondence, litigation) and corpus-wide synthesis
 - Kimi K2.5 (Moonshot AI, open-source): best open-source model at 73% of Claude overall. **105–159% of Claude on fee patents** — found 268 allottees vs Claude's 169 on the 221-page CCF 56074. No hallucinations, correctly distinguishes dispossession mechanisms. Weaker on legislative correspondence (58%) and long causal chains
+- Qwen 2.5 72B: 54% of Claude overall but only 15% on fee patents (26 vs 169). Not a viable alternative to Kimi despite needing only 2x A100 vs 8x
 - Llama 3.3 70B: 46% of Claude overall, largely superseded by Kimi K2.5
 - Llama 4 Maverick: 25%, hallucination issues (fabricated names, invented events)
 - Llama 4 Scout: 0%, complete failure
 - Fine-tuning Llama 3.3 70B: negative result (38%, worse than untuned)
 - Gemma 3 12B: excellent on bounded template extraction (NARA index cards)
 - Optimal pipeline: **Kimi extraction → Claude Opus analysis** (widest evidence base + deepest analytical framing)
-- Key finding: the recognition vs. comprehension gap is model-specific (Llama), not an inherent open-source limitation — Kimi proved open-source can match Claude on fee patent comprehension
+- Key finding: fee patent comprehension is Kimi-specific, not a general capability of 70B+ models — both Qwen 72B and Llama 70B fail catastrophically on fee patents while Kimi exceeds Claude
 
 ## Environment
 - Python venv at `./venv` — activate with `source venv/bin/activate`
