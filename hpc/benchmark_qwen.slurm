@@ -7,7 +7,7 @@
 #SBATCH --gres=gpu:a100:2
 #SBATCH --constraint=a100_80gb
 #SBATCH --partition=gpu
-#SBATCH --mem=128G
+#SBATCH --mem=256G
 #SBATCH -J "qwen-benchmark"
 #SBATCH -o /project/LawData/kimi-extraction/logs/qwen_bench_%j.out
 #SBATCH -e /project/LawData/kimi-extraction/logs/qwen_bench_%j.err
