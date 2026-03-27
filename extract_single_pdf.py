@@ -351,7 +351,7 @@ def main():
 
     # Run vLLM model
     if args.vllm_url and args.vllm_model:
-        model_id = TOGETHER_MODELS.get(args.vllm_model, args.vllm_model)
+        model_id = args.vllm_model  # Use the served model name directly, not Together AI mapping
         display_name = args.vllm_model
         print(f"\nRunning {display_name} via vLLM at {args.vllm_url} ({len(chunks)} chunk{'s' if len(chunks) > 1 else ''})...")
         merged, info = run_model_on_chunks(
