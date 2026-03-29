@@ -138,10 +138,19 @@ python3 enrich_summaries.py --batch --force    # re-summarize all via Batch API
 
 ## Setup
 
+### Virtual Environment
+
+**Always activate the project venv before running any script.** This machine has Python 3.13 and 3.14 installed; packages are only in the venv.
+
+```bash
+cd /Users/cwm6W/projects/exhaustive-extraction-pipeline
+source venv/bin/activate
+```
+
 ### Requirements
 
 ```bash
-pip install pymupdf psycopg2-binary anthropic streamlit markdown
+pip install pymupdf psycopg2-binary anthropic streamlit markdown together
 ```
 
 For local/HPC extraction (no API key needed):
