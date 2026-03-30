@@ -319,9 +319,10 @@ def get_available_databases() -> List[str]:
         cur = conn.cursor()
         cur.execute("""
             SELECT datname FROM pg_database
-            WHERE datname IN ('crow_historical_docs', 'historical_docs', 'full_corpus_docs')
+            WHERE datname IN ('crow_historical_docs', 'historical_docs', 'full_corpus_docs', 'survey_of_conditions')
                OR datname LIKE '%_historical_%'
                OR datname LIKE '%_corpus_%'
+               OR datname LIKE 'survey_%'
             ORDER BY datname
         """)
         dbs = [row[0] for row in cur.fetchall()]
@@ -354,7 +355,8 @@ def get_db_stats(db_name: str) -> Dict:
         cur.execute("SELECT COUNT(*) FROM events")
         stats['events'] = cur.fetchone()[0]
         for table in ['financial_transactions', 'relationships',
-                      'fee_patents', 'correspondence', 'legislative_actions']:
+                      'fee_patents', 'correspondence', 'legislative_actions',
+                      'testimony', 'taxes', 'mortgages']:
             try:
                 cur.execute(f"SELECT COUNT(*) FROM {table}")
                 stats[table] = cur.fetchone()[0]
@@ -591,6 +593,102 @@ def search_legislative_actions(db_name: str, query: str, limit: int = 50) -> Lis
             JOIN documents d ON la.document_id = d.id
             WHERE {conditions}
             ORDER BY la.action_date ASC NULLS LAST
+            LIMIT %s
+        """, params + [limit])
+        results = [dict(row) for row in cur.fetchall()]
+    except Exception:
+        results = []
+    cur.close()
+    conn.close()
+    return results
+
+
+def search_testimony(db_name: str, query: str, limit: int = 50) -> List[Dict]:
+    conn = get_db_connection(db_name)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
+    if not terms:
+        terms = [query.strip()]
+    conditions = " OR ".join(
+        ["t.witness ILIKE %s OR t.witness_title ILIKE %s OR t.subject ILIKE %s "
+         "OR t.key_claims ILIKE %s OR t.committee ILIKE %s OR t.location ILIKE %s"] * len(terms)
+    )
+    params = []
+    for t in terms:
+        params.extend([f"%{t}%"] * 6)
+    try:
+        cur.execute(f"""
+            SELECT t.witness, t.witness_title, t.hearing, t.committee,
+                   t.location, t.date, t.subject, t.key_claims, t.questioner,
+                   d.file_name, d.display_title
+            FROM testimony t
+            JOIN documents d ON t.document_id = d.id
+            WHERE {conditions}
+            ORDER BY t.date ASC NULLS LAST
+            LIMIT %s
+        """, params + [limit])
+        results = [dict(row) for row in cur.fetchall()]
+    except Exception:
+        results = []
+    cur.close()
+    conn.close()
+    return results
+
+
+def search_taxes(db_name: str, query: str, limit: int = 50) -> List[Dict]:
+    conn = get_db_connection(db_name)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
+    if not terms:
+        terms = [query.strip()]
+    conditions = " OR ".join(
+        ["tx.taxpayer ILIKE %s OR tx.land_description ILIKE %s OR tx.tax_type ILIKE %s "
+         "OR tx.county ILIKE %s OR tx.status ILIKE %s OR tx.context ILIKE %s"] * len(terms)
+    )
+    params = []
+    for t in terms:
+        params.extend([f"%{t}%"] * 6)
+    try:
+        cur.execute(f"""
+            SELECT tx.taxpayer, tx.land_description, tx.tax_type, tx.amount,
+                   tx.year, tx.status, tx.county, tx.context,
+                   d.file_name, d.display_title
+            FROM taxes tx
+            JOIN documents d ON tx.document_id = d.id
+            WHERE {conditions}
+            ORDER BY tx.year ASC NULLS LAST
+            LIMIT %s
+        """, params + [limit])
+        results = [dict(row) for row in cur.fetchall()]
+    except Exception:
+        results = []
+    cur.close()
+    conn.close()
+    return results
+
+
+def search_mortgages(db_name: str, query: str, limit: int = 50) -> List[Dict]:
+    conn = get_db_connection(db_name)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
+    if not terms:
+        terms = [query.strip()]
+    conditions = " OR ".join(
+        ["m.borrower ILIKE %s OR m.lender ILIKE %s OR m.land_description ILIKE %s "
+         "OR m.status ILIKE %s OR m.context ILIKE %s OR m.amount ILIKE %s"] * len(terms)
+    )
+    params = []
+    for t in terms:
+        params.extend([f"%{t}%"] * 6)
+    try:
+        cur.execute(f"""
+            SELECT m.borrower, m.lender, m.amount, m.land_description,
+                   m.acreage, m.date, m.interest_rate, m.status, m.context,
+                   d.file_name, d.display_title
+            FROM mortgages m
+            JOIN documents d ON m.document_id = d.id
+            WHERE {conditions}
+            ORDER BY m.date ASC NULLS LAST
             LIMIT %s
         """, params + [limit])
         results = [dict(row) for row in cur.fetchall()]
@@ -1828,7 +1926,7 @@ def analyze_corpus_followup(followup: str, conversation: List[Dict],
 
 You have analytical summaries of ALL {len(summaries)} documents in this collection, spanning {len(collections)} archival collections.
 
-DATABASE SCOPE: {db_stats.get('documents', 0)} documents, {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} transactions, {db_stats.get('relationships', 0)} relationships, {db_stats.get('fee_patents', 0)} fee patents, {db_stats.get('correspondence', 0)} correspondence records, {db_stats.get('legislative_actions', 0)} legislative actions.
+DATABASE SCOPE: {db_stats.get('documents', 0)} documents, {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} transactions, {db_stats.get('relationships', 0)} relationships, {db_stats.get('fee_patents', 0)} fee patents, {db_stats.get('correspondence', 0)} correspondence records, {db_stats.get('legislative_actions', 0)} legislative actions, {db_stats.get('testimony', 0)} testimony records, {db_stats.get('taxes', 0)} tax records, {db_stats.get('mortgages', 0)} mortgages.
 
 DOCUMENT SUMMARIES:
 {corpus_context}
@@ -1854,7 +1952,7 @@ def analyze_corpus(question: str, summaries: List[Dict], db_stats: Dict,
 
 You have analytical summaries of ALL {len(summaries)} documents in this collection, spanning {len(collections)} archival collections. Each summary captures the document type, key parties, specific actions, legal mechanisms, and evidentiary value. This is the ENTIRE corpus — you are seeing everything, not a sample.
 
-DATABASE SCOPE: {db_stats.get('documents', 0)} documents, {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} transactions, {db_stats.get('relationships', 0)} relationships, {db_stats.get('fee_patents', 0)} fee patents, {db_stats.get('correspondence', 0)} correspondence records, {db_stats.get('legislative_actions', 0)} legislative actions.
+DATABASE SCOPE: {db_stats.get('documents', 0)} documents, {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} transactions, {db_stats.get('relationships', 0)} relationships, {db_stats.get('fee_patents', 0)} fee patents, {db_stats.get('correspondence', 0)} correspondence records, {db_stats.get('legislative_actions', 0)} legislative actions, {db_stats.get('testimony', 0)} testimony records, {db_stats.get('taxes', 0)} tax records, {db_stats.get('mortgages', 0)} mortgages.
 
 RESEARCH QUESTION: {question}
 
@@ -1898,10 +1996,21 @@ def analyze_discovery(question: str, evidence: Dict, db_stats: Dict, model: str 
     passage_docs = len(evidence.get('passages', []))
 
     v3_scope = ""
-    if db_stats.get('fee_patents', 0) or db_stats.get('correspondence', 0) or db_stats.get('legislative_actions', 0):
-        v3_scope = (f" Additionally: {db_stats.get('fee_patents', 0)} fee patents, "
-                    f"{db_stats.get('correspondence', 0)} correspondence records, "
-                    f"{db_stats.get('legislative_actions', 0)} legislative actions.")
+    structured_parts = []
+    if db_stats.get('fee_patents', 0):
+        structured_parts.append(f"{db_stats.get('fee_patents', 0)} fee patents")
+    if db_stats.get('correspondence', 0):
+        structured_parts.append(f"{db_stats.get('correspondence', 0)} correspondence records")
+    if db_stats.get('legislative_actions', 0):
+        structured_parts.append(f"{db_stats.get('legislative_actions', 0)} legislative actions")
+    if db_stats.get('testimony', 0):
+        structured_parts.append(f"{db_stats.get('testimony', 0)} testimony records")
+    if db_stats.get('taxes', 0):
+        structured_parts.append(f"{db_stats.get('taxes', 0)} tax records")
+    if db_stats.get('mortgages', 0):
+        structured_parts.append(f"{db_stats.get('mortgages', 0)} mortgages")
+    if structured_parts:
+        v3_scope = " Additionally: " + ", ".join(structured_parts) + "."
 
     prompt = f"""You are a historian analyzing evidence from an archival database about Native American land dispossession, federal Indian policy, and Bureau of Indian Affairs records.
 
@@ -1912,6 +2021,9 @@ YOU HAVE MULTIPLE TYPES OF EVIDENCE:
 2. EXTRACTED ENTITIES/EVENTS/TRANSACTIONS/RELATIONSHIPS: Structured data extracted by AI from the documents. Use these to identify patterns, networks, and connections.
 3. FEE PATENTS: Structured records of the atomic unit of land dispossession — allottee, allotment, acreage, patent mechanism, subsequent buyer, attorney, mortgage. Use these to trace specific chains of land loss.
 4. CORRESPONDENCE: Bureaucratic network records — sender, recipient, titles, date, subject, action requested, outcome. Use these to reconstruct decision-making chains.
+5. TESTIMONY: Sworn statements from congressional hearings — witness, title, hearing, committee, location, date, key claims. Use these to identify what officials and Indian witnesses stated under oath.
+6. TAXES: Property tax records as a mechanism of dispossession — taxpayer, tax type, amount, year, status (delinquent/tax_sale/tax_deed), county. Use these to trace tax-driven land loss.
+7. MORTGAGES: Land mortgages as a mechanism of dispossession — borrower, lender, amount, acreage, interest rate, status (foreclosed/default). Use these to trace mortgage-driven land loss.
 5. LEGISLATIVE ACTIONS: Bill lifecycle records — bill number, sponsor, action type, date, vote count, committee, outcome. Use these to trace how legislation moved through Congress.
 
 IMPORTANT CAVEATS:
@@ -2111,6 +2223,18 @@ with st.sidebar:
                     <div class="stat-value">{stats.get('legislative_actions', 0):,}</div>
                     <div class="stat-label">Legislation</div>
                 </div>
+                <div class="stat-item">
+                    <div class="stat-value">{stats.get('testimony', 0):,}</div>
+                    <div class="stat-label">Testimony</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">{stats.get('taxes', 0):,}</div>
+                    <div class="stat-label">Taxes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">{stats.get('mortgages', 0):,}</div>
+                    <div class="stat-label">Mortgages</div>
+                </div>
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -2207,6 +2331,9 @@ if mode_key == "Discovery":
                     'fee_patents': search_fee_patents(selected_db, question),
                     'correspondence': search_correspondence(selected_db, question),
                     'legislative_actions': search_legislative_actions(selected_db, question),
+                    'testimony': search_testimony(selected_db, question),
+                    'taxes': search_taxes(selected_db, question),
+                    'mortgages': search_mortgages(selected_db, question),
                 }
 
             with st.spinner("Layer 2: Retrieving full-text passages..."):
@@ -2547,6 +2674,9 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
                     'fee_patents': search_fee_patents(selected_db, question),
                     'correspondence': search_correspondence(selected_db, question),
                     'legislative_actions': search_legislative_actions(selected_db, question),
+                    'testimony': search_testimony(selected_db, question),
+                    'taxes': search_taxes(selected_db, question),
+                    'mortgages': search_mortgages(selected_db, question),
                 }
 
             with st.spinner("Retrieving full-text passages..."):
