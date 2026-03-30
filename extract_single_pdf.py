@@ -332,17 +332,28 @@ def main():
     results = {}
 
     def run_model_on_chunks(model_name, run_fn, chunks):
-        """Run a model on all chunks and merge results."""
+        """Run a model on all chunks and merge results. Continues on error."""
         all_extractions = []
         total_time = 0
+        failed_chunks = []
         for i, chunk in enumerate(chunks):
             if len(chunks) > 1:
                 print(f"  Chunk {i+1}/{len(chunks)} ({len(chunk):,} chars)...", end=" ", flush=True)
             prompt = build_prompt(chunk, version="v3" if args.v3 else "v4")
-            result = run_fn(prompt)
+            try:
+                result = run_fn(prompt)
+            except Exception as e:
+                print(f"EXCEPTION: {e}")
+                failed_chunks.append(i + 1)
+                continue
             if "error" in result:
-                print(f"ERROR: {result['error']}")
-                return None, result
+                # Truncate long error messages (e.g., HTML from Cloudflare)
+                err_msg = result["error"]
+                if len(err_msg) > 200:
+                    err_msg = err_msg[:200] + "..."
+                print(f"ERROR: {err_msg}")
+                failed_chunks.append(i + 1)
+                continue
             total_time += result["time"]
             extraction = parse_json(result["text"])
             if extraction:
@@ -360,10 +371,15 @@ def main():
                 safe = model_name.replace("/", "-")
                 with open(os.path.join(output_dir, f"{safe}_chunk_{i+1}_raw.txt"), "w") as f:
                     f.write(result["text"])
+                failed_chunks.append(i + 1)
         if not all_extractions:
             return None, {"error": "no valid extractions", "time": total_time}
         merged = merge_extractions(all_extractions)
-        return merged, {"time": total_time, "chunks_ok": len(all_extractions), "chunks_total": len(chunks)}
+        info = {"time": total_time, "chunks_ok": len(all_extractions), "chunks_total": len(chunks)}
+        if failed_chunks:
+            info["failed_chunks"] = failed_chunks
+            print(f"  WARNING: {len(failed_chunks)} chunks failed ({failed_chunks}), merged {len(all_extractions)}/{len(chunks)} chunks")
+        return merged, info
 
     # Run Claude (skip if using together-only or vllm-only)
     vllm_only = args.vllm_url and args.vllm_model and not args.together_model
