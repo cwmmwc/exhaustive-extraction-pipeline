@@ -107,6 +107,41 @@ Streamlit web interface with four modes:
 - **Discovery → Deep Read** — Run Discovery to find relevant documents, select which ones to deep-read, then send full texts plus cross-collection entity data to the AI. Produces the richest analysis.
 - **Corpus Synthesis** — Send analytical summaries of ALL documents to the AI for corpus-wide pattern analysis. No context window limit — the AI sees every document in the collection. Requires summaries to be generated first (see below).
 
+### Verification and Source Checking
+
+The pipeline produces analysis that is grounded in specific evidence — named witnesses, dollar amounts, acreages, dates — but every number passes through two AI layers before reaching the researcher: extraction (Kimi or Claude reading the PDF) and synthesis (Claude Opus assembling extracted data into an argument). Neither layer is infallible. Verification is essential for any claim that will appear in published work.
+
+**The verification chain:**
+
+A claim like "99% of Oneida allottees were placed on tax rolls" traces back through:
+
+1. **Visualization or synthesis** — cites "Doc 13" as the source
+2. **Document summary** — the Opus-generated summary mentions Oneida tax rolls
+3. **Testimony record in database** — a structured record with witness "William Skenandore," subject "Oneida fee patents," and key_claims containing the 2,700/21 figures
+4. **Per-chunk extraction JSON** — the specific chunk file where Kimi extracted this testimony
+5. **The original PDF** — the actual page of congressional testimony where Skenandore spoke
+
+Steps 1-4 are queryable in the database and the extraction output files. Step 5 requires going to the source document. The goal is to make every step clickable — from synthesis to PDF — so verification takes seconds, not hours.
+
+**What can go wrong at each layer:**
+
+- **Extraction errors** — The AI misreads an OCR-degraded number ($18,455 vs $18,445), attributes testimony to the wrong witness, or conflates two separate statements into one record. OCR quality varies widely across the corpus.
+- **Synthesis errors** — Claude correctly has access to the extracted data but draws an incorrect inference, miscalculates a percentage, or presents a claim as proven when the evidence only suggests it.
+- **Category confusion** — Kimi sometimes creates duplicate records across categories (e.g., the same land sale appears as both a fee_patent and a financial_transaction). This can inflate counts if not deduplicated.
+- **Truncation gaps** — Documents exceeding ~180K tokens are truncated for summary generation. Evidence from later pages may be absent from the summary even if it was captured in the extraction.
+
+**How to verify:**
+
+- **Spot-check the highest-stakes claims.** Any number that would appear in a publication — especially acreages, dollar amounts, and percentages — should be traced back to the source PDF.
+- **Query the database directly.** Use SQL or the Discovery mode to find the specific testimony, fee patent, or tax record underlying a claim. The structured records include the document they came from.
+- **Compare extraction models.** Running the same document through both Kimi and Claude and comparing the outputs reveals what each model missed or added. Discrepancies flag areas for manual review.
+- **Check the per-chunk JSON files.** Each chunk's extraction is saved separately in the output directory. If a claim seems wrong, find the chunk file and read the raw extraction alongside the corresponding section of the PDF.
+- **Use the "Gaps in the Record" section.** The Corpus Synthesis prompt instructs Claude to identify what the evidence does NOT prove. This section is often the most important for a historian — it tells you where to be cautious.
+
+**The fundamental limitation:**
+
+This pipeline does not replace reading the documents. It replaces the impossible task of reading 5,000 documents and holding them all in memory simultaneously. The extraction and synthesis make the corpus navigable and queryable. But any specific claim derived from AI analysis should be verified against the source before it enters published historical argument. The pipeline is a research tool, not a substitute for the historian's judgment.
+
 **Citation linking:** All modes convert document references in AI output to clickable links. For the Crow corpus, links go to the [Crow Nation Digital Archive](https://github.com/cwmmwc/crow-nation-digital-archive). For collections without an archive website (e.g., Historical Documents), links use DEVONthink's `x-devonthink-item://` URL scheme to open source documents directly in DEVONthink 4. The UUID mapping is stored in `devonthink_uuids.json` and loaded automatically per database. Corpus Synthesis links `[Doc N]` references (including ranges like `[Doc 213–225]`); Discovery, Deep Read, and Hybrid link filename citations. A Sources Cited appendix is appended to corpus synthesis output.
 
 **Save/download:** All analysis modes include a download button that saves the AI output as a styled HTML file with preserved document links (archive URLs or DEVONthink links).
