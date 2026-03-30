@@ -218,8 +218,14 @@ def run_together(prompt: str, model: str, api_key: str) -> dict:
             "input_tokens": getattr(response.usage, "prompt_tokens", 0),
             "output_tokens": getattr(response.usage, "completion_tokens", 0),
         }
-    except Exception as e:
-        return {"error": str(e), "text": "", "time": time.time() - start}
+    except KeyboardInterrupt:
+        raise  # Let Ctrl+C propagate
+    except BaseException as e:
+        # Catch everything including httpx errors, SDK internal errors, etc.
+        err_msg = str(e)
+        if len(err_msg) > 200:
+            err_msg = err_msg[:200] + "..."
+        return {"error": f"Error code: {type(e).__name__} - {err_msg}", "text": "", "time": time.time() - start}
 
 
 def run_vllm(prompt: str, model: str, base_url: str) -> dict:
