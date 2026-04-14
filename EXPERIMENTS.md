@@ -167,25 +167,19 @@ The JSON parser choked on the first `data:` prefix, threw an exception, and the 
 
 ---
 
-## Phase 7: The Schema Confusion (April 2026)
-
-**The problem:** During the Sonnet vs. Kimi comparison for Survey Part 33, Claude Code (the AI assistant building the pipeline) made incorrect claims about which extraction schema was being used. This muddied the comparison — we couldn't tell whether differences in extraction counts reflected genuine model capability differences or just different schemas extracting different field sets. When the assistant that built the code is also the one analyzing the results, its mistakes compound: a wrong claim about the schema feeds into a wrong interpretation of the data, which feeds into a wrong recommendation about which model to use.
-
-**Lesson:** When your AI assistant is also building your data pipeline, it can introduce errors into its own analysis of that pipeline. The assistant's claims about what the code does need to be verified against what the code actually does. Trust but verify applies to AI tooling as much as to any other source. In a traditional software project, the developer and the analyst are different people, which provides a natural check. When one AI agent fills both roles, you lose that check unless you actively provide it.
-
----
-
-## Phase 8: The Deep Read Truncation Discovery (April 13)
+## Phase 7: The Deep Read Pipeline Gap (April 13)
 
 **The problem:** The Streamlit app's Deep Read mode sends the full document text plus extraction data to the analysis model (Claude Opus). For Survey Part 33 (~180K tokens), the text was truncated to ~150K tokens to fit the context window. This meant Opus couldn't see ~17% of the document.
 
 **The compounding problem:** This truncation should have made the extraction data *more* important — it covers the full document via chunk-by-chunk processing. But the Deep Read mode only sent 4 of 10 extraction types to the analysis model: entities, events, transactions, and relationships. It did not send testimony (130 Sonnet items / 50 Kimi items), correspondence (106/52), legislative actions (92/43), fee patents (5/0), taxes, or mortgages. These records sat in the database, invisible to the analysis model.
 
-**What this meant for our Kimi vs. Sonnet comparison:** We ran a head-to-head comparison of Kimi and Sonnet extractions with the same analysis model (Opus). The comparison was supposed to test whether Sonnet's richer extraction produces better analyses. But Opus couldn't see most of Sonnet's extra data — the testimony, correspondence, and legislative actions that accounted for the bulk of Sonnet's advantage. We were comparing two extractions through a filter that threw away the differences.
+**How we found it:** We set up a head-to-head comparison of Kimi and Sonnet extractions on the same document (Survey Part 33), using the same analysis model (Opus) and the same question. The idea was to test whether Sonnet's richer extraction (2,859 items vs. Kimi's 1,583) actually produces better research answers. The initial results showed Sonnet was somewhat better — but not dramatically, despite having nearly twice the data. That seemed wrong, which led us to check what data was actually reaching Opus. The answer: only the 4 original extraction types. The testimony, correspondence, and legislative actions that accounted for the bulk of Sonnet's advantage were sitting in the database, never sent to the analysis model.
 
-**The fix:** Added all 10 extraction types to both `get_document_full()` and `build_deep_read_context()`. After the fix, re-running the same query ("tell me about the 18 unratified treaties") with the Kimi extraction produced a noticeably richer analysis — because Opus could now see Kimi's 50 testimony records and 43 legislative actions.
+**The reveal:** After fixing the code to send all 10 types, we re-ran the same query ("tell me about the 18 unratified treaties") with the *Kimi* extraction. The result was dramatically better — Opus now surfaced the Kahn bill, the enrollment rolls, the lost testimony problem, and the population decline narrative, all from Kimi's 50 testimony records and 43 legislative actions that had previously been invisible. Most of what we'd attributed to Sonnet's superior extraction was actually just Opus reading the full text more carefully with more context.
 
 **The key finding:** The biggest improvement came not from switching extraction models but from fixing the pipeline to use data it already had. The code fix mattered more than the extraction model difference.
+
+**The meta-lesson:** Claude Code built this pipeline and then analyzed the results of a comparison run on this pipeline. It initially presented the Sonnet-vs-Kimi gap as a model quality finding, when the real problem was in its own code. When the assistant that writes the code is also the one interpreting the results, its blind spots compound. In a traditional software project, the developer and the analyst are different people, which provides a natural check. When one AI agent fills both roles, you lose that check unless you actively provide it.
 
 ---
 
