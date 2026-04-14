@@ -256,5 +256,106 @@ CREATE INDEX IF NOT EXISTS idx_mortgages_lender   ON mortgages(lender);
 CREATE INDEX IF NOT EXISTS idx_mortgages_status   ON mortgages(status);
 CREATE INDEX IF NOT EXISTS idx_mortgages_date     ON mortgages(date);
 
+-- Document tables: structured tabular data extracted via vision mode
+-- Stores tables from scanned documents (land transaction schedules, financial ledgers, etc.)
+CREATE TABLE IF NOT EXISTS document_tables (
+    id SERIAL PRIMARY KEY,
+    document_id INTEGER REFERENCES documents(id) ON DELETE CASCADE,
+    title TEXT,
+    columns JSONB,  -- array of column names
+    row_data JSONB, -- array of row objects
+    row_count INTEGER,
+    source_pages TEXT, -- e.g., "64-70"
+    context TEXT,
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_doc_tables_document ON document_tables(document_id);
+CREATE INDEX IF NOT EXISTS idx_doc_tables_title    ON document_tables(title);
+
+-- Individual table rows flattened for querying
+-- Each row from each table gets its own record for SQL-friendly access
+CREATE TABLE IF NOT EXISTS table_rows (
+    id SERIAL PRIMARY KEY,
+    document_id INTEGER REFERENCES documents(id) ON DELETE CASCADE,
+    table_id INTEGER REFERENCES document_tables(id) ON DELETE CASCADE,
+    table_title TEXT,
+    row_data JSONB,  -- the full row as key-value pairs
+    -- Common columns extracted for direct querying:
+    area_or_tribe TEXT,
+    acreage TEXT,
+    cost TEXT,
+    date TEXT,
+    project_or_purpose TEXT,
+    citation TEXT,
+    remarks TEXT,
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_table_rows_document ON table_rows(document_id);
+CREATE INDEX IF NOT EXISTS idx_table_rows_table    ON table_rows(table_id);
+CREATE INDEX IF NOT EXISTS idx_table_rows_tribe    ON table_rows(area_or_tribe);
+CREATE INDEX IF NOT EXISTS idx_table_rows_data     ON table_rows USING gin(row_data);
+
+-- ============================================================
+-- INDEX CARD TABLES (DOJ Record Slips, NARA RG 60)
+-- ============================================================
+
+-- Record slips: one row per index card
+-- Each card documents a piece of correspondence about a legal case
+CREATE TABLE IF NOT EXISTS record_slips (
+    id SERIAL PRIMARY KEY,
+    document_id INTEGER REFERENCES documents(id) ON DELETE CASCADE,
+    file_number TEXT NOT NULL,        -- DOJ file number (e.g., 90-2-5-49)
+    jurisdiction TEXT,                 -- District/state (e.g., Montana, N. Oklahoma)
+    date TEXT,                         -- Date of correspondence (YYYY-MM-DD)
+    correspondent TEXT,                -- Who the letter is to/from
+    correspondent_role TEXT,           -- outgoing/incoming
+    case_name TEXT,                    -- Legal case (e.g., U.S. v. Bennett County, et al)
+    case_number TEXT,                  -- Court case number if given
+    named_individual TEXT,             -- Person referenced (allottee, attorney, official, etc.)
+    allottee_number TEXT,              -- Allotment number if given
+    tribe_or_reservation TEXT,         -- Tribe or reservation referenced
+    subject TEXT,                      -- Description of the action/content
+    action_type TEXT,                  -- filing|acknowledgment|enclosure|request|ruling|settlement|appeal|other
+    enclosures TEXT,                   -- What was enclosed
+    routing_division TEXT,             -- Division that processed (e.g., Lands)
+    routing_date TEXT,                 -- Date routed
+    clerk_initials TEXT,               -- Processing clerk initials
+    processed_date TEXT,               -- Date processed
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_record_slips_document    ON record_slips(document_id);
+CREATE INDEX IF NOT EXISTS idx_record_slips_file_number ON record_slips(file_number);
+CREATE INDEX IF NOT EXISTS idx_record_slips_case_name   ON record_slips(case_name);
+CREATE INDEX IF NOT EXISTS idx_record_slips_individual  ON record_slips(named_individual);
+CREATE INDEX IF NOT EXISTS idx_record_slips_tribe       ON record_slips(tribe_or_reservation);
+CREATE INDEX IF NOT EXISTS idx_record_slips_date        ON record_slips(date);
+CREATE INDEX IF NOT EXISTS idx_record_slips_jurisdiction ON record_slips(jurisdiction);
+
+-- Legal cases: one row per unique case referenced in the cards
+-- File number is the unique identifier; case names vary and need dedup
+CREATE TABLE IF NOT EXISTS legal_cases (
+    id SERIAL PRIMARY KEY,
+    document_id INTEGER REFERENCES documents(id) ON DELETE CASCADE,
+    case_name TEXT NOT NULL,           -- Canonical case name
+    file_number TEXT,                  -- DOJ file number (unique per case)
+    jurisdiction TEXT,                 -- District/state
+    case_type TEXT,                    -- tax_recovery|quiet_title|allotment|termination|other
+    named_individual TEXT,             -- Primary person referenced
+    allottee_number TEXT,
+    tribe_or_reservation TEXT,
+    county TEXT,                       -- County defendant (for tax cases)
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_legal_cases_document    ON legal_cases(document_id);
+CREATE INDEX IF NOT EXISTS idx_legal_cases_file_number ON legal_cases(file_number);
+CREATE INDEX IF NOT EXISTS idx_legal_cases_case_name   ON legal_cases(case_name);
+CREATE INDEX IF NOT EXISTS idx_legal_cases_individual  ON legal_cases(named_individual);
+CREATE INDEX IF NOT EXISTS idx_legal_cases_tribe       ON legal_cases(tribe_or_reservation);
+CREATE INDEX IF NOT EXISTS idx_legal_cases_county      ON legal_cases(county);
+
 -- v4 schema upgrade helper (run on existing v3 databases to add new tables)
 -- Just run this entire file — CREATE TABLE IF NOT EXISTS is safe on existing tables.

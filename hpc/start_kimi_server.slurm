@@ -5,8 +5,8 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=32
 #SBATCH --gres=gpu:a100:8
-#SBATCH --constraint=a100_80gb
 #SBATCH --partition=gpu
+#SBATCH --nodelist=udc-an34-[1,7,13,19,25,31],udc-an36-[1,7,19,25,31],udc-an37-[7,13,19,25,31]
 #SBATCH --mem=500G
 #SBATCH -J "kimi-k2.5-server"
 #SBATCH -o /project/LawData/kimi-extraction/logs/server_%j.out

@@ -66,8 +66,14 @@ def load_one_document(json_path, db_name, force=False):
     # Convert back from safe name: underscores to original chars
     file_name = doc_dir.replace("__", "; ").replace("_", " ") + ".pdf"
 
-    # Check if already loaded
-    cur.execute("SELECT id FROM documents WHERE file_path = %s", (json_path,))
+    # Check if already loaded.
+    # Skip key is file_name (NOT file_path): two extraction directories of
+    # the same volume — e.g. one from Together AI and one from HPC Kimi —
+    # have different json_path values but decode to the same canonical
+    # file_name. Skipping on file_path lets the second one re-insert as a
+    # duplicate row, which then has to be cleaned up by dedup_survey.py.
+    # Skip on file_name so that won't happen.
+    cur.execute("SELECT id FROM documents WHERE file_name = %s", (file_name,))
     existing = cur.fetchone()
     if existing and not force:
         cur.close()
@@ -239,10 +245,17 @@ def main():
     create_database(args.db)
     apply_schema(args.db, SCHEMA_FILE)
 
-    # Find all completed extractions
-    json_files = sorted(glob.glob(os.path.join(args.dir, "*/kimi-k2.5.json")))
+    # Find all completed extractions. Accept both naming conventions:
+    #   kimi-k2.5.json   — used by older HPC vLLM runs and the canonical Mac filename
+    #   Kimi K2.5.json   — used by RC GenAI extractions (model name has a space)
+    # Also filter out 0-byte marker files we created earlier to skip already-done volumes.
+    candidates = (
+        glob.glob(os.path.join(args.dir, "*/kimi-k2.5.json"))
+        + glob.glob(os.path.join(args.dir, "*/Kimi K2.5.json"))
+    )
+    json_files = sorted(p for p in candidates if os.path.getsize(p) > 0)
     if not json_files:
-        print(f"No extraction files found in {args.dir}/*/kimi-k2.5.json")
+        print(f"No extraction files found in {args.dir}/*/(kimi-k2.5.json | Kimi K2.5.json)")
         sys.exit(1)
 
     print(f"\nLoading {len(json_files)} documents into {args.db}...")
@@ -281,6 +294,16 @@ def main():
         grand_total += v
     print(f"  {'TOTAL':<25} {grand_total:>8}")
     print(f"\nDatabase: {args.db}")
+
+    # Auto-generate summaries for newly loaded documents
+    if loaded > 0:
+        print(f"\nGenerating summaries for {loaded} document(s)...")
+        result = subprocess.run(
+            ["python3", "enrich_summaries.py",
+             "--db", args.db, "--from-extraction", "--model", "sonnet"],
+            capture_output=False)
+        if result.returncode != 0:
+            print("Warning: summary generation had errors (summaries can be generated later)")
 
 
 if __name__ == "__main__":
