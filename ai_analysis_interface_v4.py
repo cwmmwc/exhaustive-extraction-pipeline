@@ -30,13 +30,13 @@ import json
 import math
 
 # ─────────────────────────────────────────────────
-# UNIFIED LLM CALL — routes to Anthropic or Together AI
+# UNIFIED LLM CALL — routes to Anthropic, UVA RC GenAI, or Together AI
 # ─────────────────────────────────────────────────
 
 ANALYSIS_MODELS = {
     "Claude Opus 4.6": {"id": "claude-opus-4-6", "provider": "anthropic"},
     "Claude Sonnet 4.6": {"id": "claude-sonnet-4-6", "provider": "anthropic"},
-    "Kimi K2.5 (Moonshot AI)": {"id": "moonshotai/Kimi-K2.5", "provider": "together"},
+    "Kimi K2.5 (UVA RC GenAI)": {"id": "Kimi K2.5", "provider": "uvarc"},
 }
 
 
@@ -51,7 +51,9 @@ def call_llm(model: str, prompt: str, max_tokens: int = 8000, temperature: float
             provider = info["provider"]
             break
 
-    if provider == "together":
+    if provider == "uvarc":
+        return _call_uvarc(model, prompt, max_tokens, temperature, system, messages)
+    elif provider == "together":
         return _call_together(model, prompt, max_tokens, temperature, system, messages)
     else:
         return _call_anthropic(model, prompt, max_tokens, temperature, system, messages)
@@ -76,6 +78,95 @@ def _call_anthropic(model: str, prompt: str, max_tokens: int, temperature: float
     except Exception as e:
         import traceback
         return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()}\n```"
+
+
+def _call_uvarc(model: str, prompt: str, max_tokens: int, temperature: float,
+                system: str = None, messages: list = None) -> str:
+    """Call UVA Research Computing's Open WebUI gateway (Kimi K2.5).
+    Returns SSE-streamed responses with separate `content` and `reasoning` fields.
+    Falls back to the reasoning field when content is empty (Kimi sometimes
+    routes the final answer through reasoning instead of content).
+    Note: Kimi K2.5 here advertises max_model_len=32768, so a long Discovery
+    prompt + 16K max_tokens may exceed the context window.
+    """
+    import urllib.request
+    import urllib.error
+
+    api_key = os.environ.get("UVARC_GenAI_API")
+    if not api_key:
+        return "Error: UVARC_GenAI_API not set. Export your UVA RC GenAI key in the terminal before running the app."
+
+    # Build the messages list
+    if messages:
+        msgs = list(messages)
+        if system:
+            msgs.insert(0, {"role": "system", "content": system})
+    else:
+        msgs = []
+        if system:
+            msgs.append({"role": "system", "content": system})
+        msgs.append({"role": "user", "content": prompt})
+
+    payload = json.dumps({
+        "model": model,
+        "messages": msgs,
+        "max_tokens": max_tokens,
+        "temperature": temperature,
+    }).encode("utf-8")
+
+    url = "https://open-webui.rc.virginia.edu/api/chat/completions"
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {api_key}",
+    }
+    req = urllib.request.Request(url, data=payload, headers=headers)
+
+    try:
+        with urllib.request.urlopen(req, timeout=600) as resp:
+            raw = resp.read().decode()
+    except urllib.error.HTTPError as e:
+        body = e.read().decode() if e.fp else ""
+        return f"Error during analysis (HTTP {e.code}): {body[:1000]}"
+    except Exception as e:
+        import traceback
+        return f"Error during analysis: {type(e).__name__}: {str(e)}\n\n```\n{traceback.format_exc()[:1500]}\n```"
+
+    # Try plain JSON first
+    try:
+        data = json.loads(raw)
+        content = data["choices"][0]["message"]["content"]
+        if content:
+            return content
+    except (json.JSONDecodeError, KeyError, TypeError, IndexError):
+        pass
+
+    # Parse SSE streaming response (RC GenAI returns this format)
+    if raw.startswith("data: "):
+        content = ""
+        reasoning = ""
+        for line in raw.split("\n"):
+            line = line.strip()
+            if not line.startswith("data: "):
+                continue
+            data_str = line[6:]
+            if data_str == "[DONE]":
+                break
+            try:
+                chunk = json.loads(data_str)
+                delta = chunk["choices"][0].get("delta", {})
+                if delta.get("content"):
+                    content += delta["content"]
+                if delta.get("reasoning"):
+                    reasoning += delta["reasoning"]
+            except (json.JSONDecodeError, KeyError, IndexError):
+                continue
+        # Prefer content; fall back to reasoning if Kimi routed the answer there
+        if content:
+            return content
+        if reasoning:
+            return reasoning
+
+    return f"Error: Could not parse response from UVA RC GenAI. First 500 chars of raw response:\n\n{raw[:500]}"
 
 
 def _call_together(model: str, prompt: str, max_tokens: int, temperature: float,
@@ -319,10 +410,12 @@ def get_available_databases() -> List[str]:
         cur = conn.cursor()
         cur.execute("""
             SELECT datname FROM pg_database
-            WHERE datname IN ('crow_historical_docs', 'historical_docs', 'full_corpus_docs', 'survey_of_conditions')
+            WHERE datname IN ('crow_historical_docs', 'historical_docs', 'full_corpus_docs', 'survey_of_conditions', 'index_cards', 'unified_index_cards')
                OR datname LIKE '%_historical_%'
                OR datname LIKE '%_corpus_%'
                OR datname LIKE 'survey_%'
+               OR datname LIKE 'index_%'
+               OR datname LIKE 'unified_%'
             ORDER BY datname
         """)
         dbs = [row[0] for row in cur.fetchall()]
@@ -343,6 +436,14 @@ def get_db_connection(db_name: str):
     )
 
 
+# The unified merged DOJ index card database has different table names
+# (`slips`, `cases`, `persons`, etc.) than the older `index_cards` database
+# (`record_slips`, `legal_cases`, `persons`). The search functions detect this
+# constant and route to schema-specific query branches with column aliases
+# that keep the result-dict shape consistent across both schemas.
+UNIFIED_INDEX_CARDS_DB = "unified_index_cards"
+
+
 def get_db_stats(db_name: str) -> Dict:
     try:
         conn = get_db_connection(db_name)
@@ -350,23 +451,64 @@ def get_db_stats(db_name: str) -> Dict:
         stats = {}
         cur.execute("SELECT COUNT(*) FROM documents")
         stats['documents'] = cur.fetchone()[0]
-        cur.execute("SELECT COUNT(*) FROM entities")
-        stats['entities'] = cur.fetchone()[0]
-        cur.execute("SELECT COUNT(*) FROM events")
-        stats['events'] = cur.fetchone()[0]
+        # The unified index cards database has no `entities` or `events`
+        # tables — it's a slip-centric schema. Default those counts to 0.
+        try:
+            cur.execute("SELECT COUNT(*) FROM entities")
+            stats['entities'] = cur.fetchone()[0]
+        except Exception:
+            conn.rollback()
+            stats['entities'] = 0
+        try:
+            cur.execute("SELECT COUNT(*) FROM events")
+            stats['events'] = cur.fetchone()[0]
+        except Exception:
+            conn.rollback()
+            stats['events'] = 0
         for table in ['financial_transactions', 'relationships',
                       'fee_patents', 'correspondence', 'legislative_actions',
-                      'testimony', 'taxes', 'mortgages']:
+                      'testimony', 'taxes', 'mortgages',
+                      'record_slips', 'legal_cases']:
             try:
                 cur.execute(f"SELECT COUNT(*) FROM {table}")
                 stats[table] = cur.fetchone()[0]
             except Exception:
                 conn.rollback()
                 stats[table] = 0
-        cur.execute("SELECT type, COUNT(*) FROM entities GROUP BY type ORDER BY COUNT(*) DESC")
-        stats['entity_types'] = {row[0]: row[1] for row in cur.fetchall()}
-        cur.execute("SELECT COUNT(*) FROM documents WHERE full_text IS NOT NULL AND full_text != ''")
-        stats['docs_with_text'] = cur.fetchone()[0]
+        # For the unified DOJ index cards database, expose the slips and
+        # cases counts under the legacy `record_slips` / `legal_cases` keys
+        # so the existing prompt logic (which builds the evidence-type list
+        # from these keys) just works without per-database special-casing.
+        if db_name == UNIFIED_INDEX_CARDS_DB:
+            try:
+                cur.execute("SELECT COUNT(*) FROM slips")
+                stats['record_slips'] = cur.fetchone()[0]
+            except Exception:
+                conn.rollback()
+            try:
+                cur.execute("SELECT COUNT(*) FROM cases")
+                stats['legal_cases'] = cur.fetchone()[0]
+            except Exception:
+                conn.rollback()
+            try:
+                cur.execute("SELECT COUNT(*) FROM persons")
+                # Map persons count into entities so the prompt scope line
+                # surfaces it (the unified DB has persons, not entities).
+                stats['entities'] = cur.fetchone()[0]
+            except Exception:
+                conn.rollback()
+        try:
+            cur.execute("SELECT type, COUNT(*) FROM entities GROUP BY type ORDER BY COUNT(*) DESC")
+            stats['entity_types'] = {row[0]: row[1] for row in cur.fetchall()}
+        except Exception:
+            conn.rollback()
+            stats['entity_types'] = {}
+        try:
+            cur.execute("SELECT COUNT(*) FROM documents WHERE full_text IS NOT NULL AND full_text != ''")
+            stats['docs_with_text'] = cur.fetchone()[0]
+        except Exception:
+            conn.rollback()
+            stats['docs_with_text'] = 0
         cur.close()
         conn.close()
         return stats
@@ -382,6 +524,8 @@ def get_db_stats(db_name: str) -> Dict:
 
 def search_entities(db_name: str, query: str, limit: int = 200) -> List[Dict]:
     """Search entities by name and context, with relevance boosting."""
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return []
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
@@ -420,6 +564,8 @@ def search_entities(db_name: str, query: str, limit: int = 200) -> List[Dict]:
 
 
 def search_events(db_name: str, query: str, limit: int = 100) -> List[Dict]:
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return []
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
@@ -446,6 +592,8 @@ def search_events(db_name: str, query: str, limit: int = 100) -> List[Dict]:
 
 
 def search_financial_transactions(db_name: str, query: str, limit: int = 50) -> List[Dict]:
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return []
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
@@ -476,6 +624,8 @@ def search_financial_transactions(db_name: str, query: str, limit: int = 50) -> 
 
 
 def search_relationships(db_name: str, query: str, limit: int = 100) -> List[Dict]:
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return []
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
@@ -505,6 +655,8 @@ def search_relationships(db_name: str, query: str, limit: int = 100) -> List[Dic
 
 
 def search_fee_patents(db_name: str, query: str, limit: int = 50) -> List[Dict]:
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return []
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
@@ -539,6 +691,8 @@ def search_fee_patents(db_name: str, query: str, limit: int = 50) -> List[Dict]:
 
 
 def search_correspondence(db_name: str, query: str, limit: int = 50) -> List[Dict]:
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return []
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
@@ -571,6 +725,8 @@ def search_correspondence(db_name: str, query: str, limit: int = 50) -> List[Dic
 
 
 def search_legislative_actions(db_name: str, query: str, limit: int = 50) -> List[Dict]:
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return []
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
@@ -604,6 +760,8 @@ def search_legislative_actions(db_name: str, query: str, limit: int = 50) -> Lis
 
 
 def search_testimony(db_name: str, query: str, limit: int = 50) -> List[Dict]:
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return []
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
@@ -636,6 +794,8 @@ def search_testimony(db_name: str, query: str, limit: int = 50) -> List[Dict]:
 
 
 def search_taxes(db_name: str, query: str, limit: int = 50) -> List[Dict]:
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return []
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
@@ -668,6 +828,8 @@ def search_taxes(db_name: str, query: str, limit: int = 50) -> List[Dict]:
 
 
 def search_mortgages(db_name: str, query: str, limit: int = 50) -> List[Dict]:
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return []
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
@@ -693,6 +855,529 @@ def search_mortgages(db_name: str, query: str, limit: int = 50) -> List[Dict]:
         """, params + [limit])
         results = [dict(row) for row in cur.fetchall()]
     except Exception:
+        results = []
+    cur.close()
+    conn.close()
+    return results
+
+
+def _build_or_tsquery(query: str) -> Optional[str]:
+    """Convert a free-form natural-language question into a PostgreSQL tsquery
+    string with OR semantics, after stripping command/stop words.
+    Returns None if the cleaned query has no usable terms.
+    Example: 'trace U.S. v. Pennington County' -> 'pennington | county'
+    """
+    import re
+    # Stop words / command words that shouldn't be search terms
+    STOP = {
+        'a', 'an', 'and', 'or', 'the', 'of', 'in', 'on', 'at', 'to', 'for',
+        'with', 'by', 'from', 'is', 'are', 'was', 'were', 'be', 'been',
+        'this', 'that', 'these', 'those', 'it', 'as', 'but', 'not',
+        'me', 'you', 'us', 'we', 'i', 'my', 'your',
+        'tell', 'show', 'find', 'list', 'give', 'trace', 'describe',
+        'explain', 'discuss', 'about', 'all', 'any', 'some', 'what',
+        'which', 'who', 'whom', 'whose', 'where', 'when', 'why', 'how',
+        'do', 'did', 'does', 'have', 'has', 'had',
+        'v', 'vs', 'vs.', 'us', 'u.s', 'u.s.',
+    }
+    # Tokenize: keep words and hyphenated/dotted file numbers
+    tokens = re.findall(r"[A-Za-z0-9][A-Za-z0-9\-\._']*", query)
+    cleaned = []
+    for tok in tokens:
+        low = tok.lower().rstrip('.')
+        if low in STOP:
+            continue
+        if len(low) < 2:
+            continue
+        # Escape any tsquery metacharacters
+        safe = re.sub(r"[&|!():*<>]", "", tok)
+        if safe:
+            cleaned.append(safe)
+    if not cleaned:
+        return None
+    # Join with OR for permissive matching
+    return " | ".join(cleaned)
+
+
+# --- Unified DOJ index cards helpers ---------------------------------------
+# The unified_index_cards database has a different schema than the legacy
+# index_cards database: tables are `slips` and `cases` (not `record_slips`
+# and `legal_cases`), and slip column names differ (`allottee_name` instead
+# of `named_individual`, `case_number` is absent on slips, etc.). These
+# helpers query the unified schema and SELECT-alias the columns so the
+# returned dicts have the SAME keys as the legacy search functions, letting
+# the rest of the app stay schema-agnostic.
+
+# Common slip-row projection for the unified schema. Columns absent in the
+# unified slips table (jurisdiction, routing_division, routing_date,
+# clerk_initials) are selected as NULL so the result-dict shape is stable.
+_UNIFIED_SLIP_SELECT = """
+    s.id,
+    s.file_number,
+    s.jurisdiction,
+    s.date,
+    s.correspondent,
+    s.correspondent_role,
+    s.case_name,
+    s.case_number,
+    s.allottee_name             AS named_individual,
+    s.allottee_number,
+    s.tribe_or_reservation,
+    s.subject,
+    s.action_type,
+    s.routing_division,
+    s.routing_date,
+    s.clerk_initials,
+    d.source_pdf                AS file_name,
+    d.source_pdf                AS display_title,
+    s.extraction_source
+"""
+
+
+def _search_unified_slips(query: str, limit: int) -> List[Dict]:
+    conn = get_db_connection(UNIFIED_INDEX_CARDS_DB)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    results = []
+    or_query = _build_or_tsquery(query)
+    if or_query:
+        try:
+            cur.execute(f"""
+                SELECT {_UNIFIED_SLIP_SELECT},
+                       ts_rank(s.search_vector, to_tsquery('english', %s)) AS rank
+                FROM slips s
+                JOIN documents d ON s.document_id = d.id
+                WHERE s.search_vector @@ to_tsquery('english', %s)
+                ORDER BY rank DESC, s.date ASC NULLS LAST
+                LIMIT %s
+            """, [or_query, or_query, limit])
+            results = [dict(row) for row in cur.fetchall()]
+        except Exception:
+            conn.rollback()
+            results = []
+
+    if not results:
+        terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
+        if not terms:
+            terms = [query.strip()]
+        field_block = ("s.subject ILIKE %s OR s.case_name ILIKE %s OR s.case_number ILIKE %s "
+                       "OR s.allottee_name ILIKE %s OR s.correspondent ILIKE %s "
+                       "OR s.correspondent_role ILIKE %s "
+                       "OR s.file_number ILIKE %s OR s.action_type ILIKE %s "
+                       "OR s.tribe_or_reservation ILIKE %s")
+        n_fields = 9
+        conditions = " OR ".join([f"({field_block})"] * len(terms))
+        params = []
+        for t in terms:
+            params.extend([f"%{t}%"] * n_fields)
+        try:
+            cur.execute(f"""
+                SELECT {_UNIFIED_SLIP_SELECT}
+                FROM slips s
+                JOIN documents d ON s.document_id = d.id
+                WHERE {conditions}
+                ORDER BY s.date ASC NULLS LAST
+                LIMIT %s
+            """, params + [limit])
+            results = [dict(row) for row in cur.fetchall()]
+        except Exception:
+            conn.rollback()
+            results = []
+
+    cur.close()
+    conn.close()
+    return results
+
+
+def _search_unified_cases(query: str, limit: int) -> List[Dict]:
+    conn = get_db_connection(UNIFIED_INDEX_CARDS_DB)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    results = []
+    or_query = _build_or_tsquery(query)
+    if or_query:
+        try:
+            cur.execute("""
+                SELECT c.file_number AS id,
+                       c.canonical_case_name AS case_name,
+                       c.file_number,
+                       c.jurisdiction,
+                       c.case_type,
+                       c.named_individual,
+                       NULL::text AS allottee_number,
+                       c.tribe_or_reservation,
+                       c.county,
+                       NULL::text AS file_name,
+                       NULL::text AS display_title,
+                       (c.sonnet_slip_count + c.qwen_slip_count) AS slip_count,
+                       c.cases_at_file_number,
+                       c.distinct_persons_count,
+                       c.case_name_variants,
+                       ts_rank(c.search_vector, to_tsquery('english', %s)) AS rank
+                FROM cases c
+                WHERE c.search_vector @@ to_tsquery('english', %s)
+                ORDER BY rank DESC, slip_count DESC NULLS LAST
+                LIMIT %s
+            """, [or_query, or_query, limit])
+            results = [dict(row) for row in cur.fetchall()]
+        except Exception:
+            conn.rollback()
+            results = []
+
+    if not results:
+        terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
+        if not terms:
+            terms = [query.strip()]
+        field_block = ("c.canonical_case_name ILIKE %s OR c.file_number ILIKE %s")
+        n_fields = 2
+        conditions = " OR ".join([f"({field_block})"] * len(terms))
+        params = []
+        for t in terms:
+            params.extend([f"%{t}%"] * n_fields)
+        try:
+            cur.execute(f"""
+                SELECT c.file_number AS id,
+                       c.canonical_case_name AS case_name,
+                       c.file_number,
+                       c.jurisdiction,
+                       c.case_type,
+                       c.named_individual,
+                       NULL::text AS allottee_number,
+                       c.tribe_or_reservation,
+                       c.county,
+                       NULL::text AS file_name,
+                       NULL::text AS display_title,
+                       (c.sonnet_slip_count + c.qwen_slip_count) AS slip_count,
+                       c.cases_at_file_number,
+                       c.distinct_persons_count,
+                       c.case_name_variants
+                FROM cases c
+                WHERE {conditions}
+                ORDER BY (c.sonnet_slip_count + c.qwen_slip_count) DESC NULLS LAST
+                LIMIT %s
+            """, params + [limit])
+            results = [dict(row) for row in cur.fetchall()]
+        except Exception:
+            conn.rollback()
+            results = []
+
+    cur.close()
+    conn.close()
+    return results
+
+
+def _search_unified_documents_metadata(query: str, limit: int) -> List[Dict]:
+    """Document-level search for the unified DOJ index cards DB.
+    Ranks documents by how many of their slips match the query (FTS), so a
+    document with many matching slips floats to the top. The unified
+    `documents` table has no full_text and no display_title — we surface
+    `source_pdf` as both file_name and display_title.
+    """
+    conn = get_db_connection(UNIFIED_INDEX_CARDS_DB)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    results = []
+    or_query = _build_or_tsquery(query)
+    if or_query:
+        try:
+            cur.execute("""
+                SELECT d.source_pdf       AS file_name,
+                       d.source_pdf       AS display_title,
+                       d.subcollection    AS collection,
+                       d.num_pages        AS page_count,
+                       'unified'          AS pipeline_version,
+                       COUNT(s.id)        AS entity_count,
+                       0.0                AS rank
+                FROM documents d
+                LEFT JOIN slips s
+                    ON s.document_id = d.id
+                   AND s.search_vector @@ to_tsquery('english', %s)
+                GROUP BY d.id, d.source_pdf, d.subcollection, d.num_pages
+                HAVING COUNT(s.id) > 0
+                ORDER BY entity_count DESC
+                LIMIT %s
+            """, [or_query, limit])
+            results = [dict(row) for row in cur.fetchall()]
+        except Exception:
+            conn.rollback()
+            results = []
+
+    if not results:
+        terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
+        if not terms:
+            terms = [query.strip()]
+        ilike_block = ("s.subject ILIKE %s OR s.case_name ILIKE %s "
+                       "OR s.allottee_name ILIKE %s OR s.file_number ILIKE %s "
+                       "OR s.action_type ILIKE %s OR d.source_pdf ILIKE %s")
+        n_fields = 6
+        conditions = " OR ".join([f"({ilike_block})"] * len(terms))
+        params = []
+        for t in terms:
+            params.extend([f"%{t}%"] * n_fields)
+        try:
+            cur.execute(f"""
+                SELECT d.source_pdf       AS file_name,
+                       d.source_pdf       AS display_title,
+                       d.subcollection    AS collection,
+                       d.num_pages        AS page_count,
+                       'unified'          AS pipeline_version,
+                       COUNT(s.id)        AS entity_count,
+                       0.0                AS rank
+                FROM documents d
+                LEFT JOIN slips s ON s.document_id = d.id
+                WHERE {conditions}
+                GROUP BY d.id, d.source_pdf, d.subcollection, d.num_pages
+                HAVING COUNT(s.id) > 0
+                ORDER BY entity_count DESC
+                LIMIT %s
+            """, params + [limit])
+            results = [dict(row) for row in cur.fetchall()]
+        except Exception:
+            conn.rollback()
+            results = []
+
+    cur.close()
+    conn.close()
+    return results
+
+
+def _fetch_unified_slips_by_file_numbers(file_numbers: List[str],
+                                          max_per_file: int) -> List[Dict]:
+    if not file_numbers:
+        return []
+    conn = get_db_connection(UNIFIED_INDEX_CARDS_DB)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    placeholders = ",".join(["%s"] * len(file_numbers))
+    try:
+        cur.execute(f"""
+            WITH ranked AS (
+                SELECT {_UNIFIED_SLIP_SELECT},
+                       ROW_NUMBER() OVER (
+                           PARTITION BY s.file_number
+                           ORDER BY s.date NULLS LAST, s.id
+                       ) AS rn
+                FROM slips s
+                JOIN documents d ON s.document_id = d.id
+                WHERE s.file_number IN ({placeholders})
+            )
+            SELECT * FROM ranked WHERE rn <= %s
+            ORDER BY file_number, date NULLS LAST, id
+        """, list(file_numbers) + [max_per_file])
+        results = [dict(row) for row in cur.fetchall()]
+        for r in results:
+            r.pop("rn", None)
+    except Exception:
+        conn.rollback()
+        results = []
+    cur.close()
+    conn.close()
+    return results
+
+
+def search_record_slips(db_name: str, query: str, limit: int = 500) -> List[Dict]:
+    """Search DOJ record slips. Prefers PostgreSQL full-text search via the
+    search_vector column (added by migrate_fts_record_slips.sql); falls back
+    to ILIKE for databases that haven't been migrated.
+    Uses OR-based tsquery with stopword filtering so natural-language questions
+    like 'trace U.S. v. Pennington County' actually find the cases instead of
+    requiring every word to appear in a single slip.
+    """
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return _search_unified_slips(query, limit)
+    conn = get_db_connection(db_name)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    results = []
+    or_query = _build_or_tsquery(query)
+
+    # Phase 1: try full-text search (preferred)
+    if or_query:
+        try:
+            cur.execute("""
+                SELECT rs.id, rs.file_number, rs.jurisdiction, rs.date,
+                       rs.correspondent, rs.correspondent_role, rs.case_name,
+                       rs.case_number, rs.named_individual, rs.allottee_number,
+                       rs.tribe_or_reservation, rs.subject, rs.action_type,
+                       rs.routing_division, rs.routing_date, rs.clerk_initials,
+                       d.file_name, d.display_title,
+                       ts_rank(rs.search_vector, to_tsquery('english', %s)) AS rank
+                FROM record_slips rs
+                JOIN documents d ON rs.document_id = d.id
+                WHERE rs.search_vector @@ to_tsquery('english', %s)
+                ORDER BY rank DESC, rs.date ASC NULLS LAST
+                LIMIT %s
+            """, [or_query, or_query, limit])
+            results = [dict(row) for row in cur.fetchall()]
+        except Exception:
+            conn.rollback()
+            results = []
+
+    # Fallback: ILIKE (when FTS column is missing or returned nothing)
+    if not results:
+        terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
+        if not terms:
+            terms = [query.strip()]
+        field_block = ("rs.subject ILIKE %s OR rs.case_name ILIKE %s OR rs.case_number ILIKE %s "
+                       "OR rs.named_individual ILIKE %s OR rs.correspondent ILIKE %s "
+                       "OR rs.correspondent_role ILIKE %s OR rs.jurisdiction ILIKE %s "
+                       "OR rs.file_number ILIKE %s OR rs.action_type ILIKE %s "
+                       "OR rs.tribe_or_reservation ILIKE %s OR rs.routing_division ILIKE %s")
+        n_fields = 11
+        conditions = " OR ".join([f"({field_block})"] * len(terms))
+        params = []
+        for t in terms:
+            params.extend([f"%{t}%"] * n_fields)
+        try:
+            cur.execute(f"""
+                SELECT rs.id, rs.file_number, rs.jurisdiction, rs.date,
+                       rs.correspondent, rs.correspondent_role, rs.case_name,
+                       rs.case_number, rs.named_individual, rs.allottee_number,
+                       rs.tribe_or_reservation, rs.subject, rs.action_type,
+                       rs.routing_division, rs.routing_date, rs.clerk_initials,
+                       d.file_name, d.display_title
+                FROM record_slips rs
+                JOIN documents d ON rs.document_id = d.id
+                WHERE {conditions}
+                ORDER BY rs.date ASC NULLS LAST
+                LIMIT %s
+            """, params + [limit])
+            results = [dict(row) for row in cur.fetchall()]
+        except Exception:
+            conn.rollback()
+            results = []
+
+    cur.close()
+    conn.close()
+    return results
+
+
+def search_legal_cases(db_name: str, query: str, limit: int = 500) -> List[Dict]:
+    """Search DOJ legal cases. Prefers FTS via search_vector with OR-based
+    tsquery + stopword filtering, falls back to ILIKE.
+    """
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return _search_unified_cases(query, limit)
+    conn = get_db_connection(db_name)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    results = []
+    or_query = _build_or_tsquery(query)
+
+    # Phase 1: full-text search (preferred). The slip_count column counts ALL
+    # slips sharing the file_number. The cases_at_file_number column counts
+    # how many distinct legal_cases share that file_number — when it's > 1
+    # the file is a master classification (e.g. 90-2-01 has 174 cases under
+    # one file_number) and slip_count is corpus-level, not case-level.
+    if or_query:
+        try:
+            cur.execute("""
+                SELECT lc.id, lc.case_name, lc.file_number, lc.jurisdiction,
+                       lc.case_type, lc.named_individual, lc.allottee_number,
+                       lc.tribe_or_reservation, lc.county,
+                       d.file_name, d.display_title,
+                       COUNT(DISTINCT rs.id) AS slip_count,
+                       (SELECT COUNT(*) FROM legal_cases lc2
+                        WHERE lc2.file_number = lc.file_number) AS cases_at_file_number,
+                       ts_rank(lc.search_vector, to_tsquery('english', %s)) AS rank
+                FROM legal_cases lc
+                JOIN documents d ON lc.document_id = d.id
+                LEFT JOIN record_slips rs
+                    ON rs.file_number = lc.file_number
+                WHERE lc.search_vector @@ to_tsquery('english', %s)
+                GROUP BY lc.id, lc.case_name, lc.file_number, lc.jurisdiction,
+                         lc.case_type, lc.named_individual, lc.allottee_number,
+                         lc.tribe_or_reservation, lc.county,
+                         d.file_name, d.display_title, lc.search_vector
+                ORDER BY rank DESC, slip_count DESC NULLS LAST
+                LIMIT %s
+            """, [or_query, or_query, limit])
+            results = [dict(row) for row in cur.fetchall()]
+        except Exception:
+            conn.rollback()
+            results = []
+
+    if not results:
+        # Fallback: ILIKE
+        terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
+        if not terms:
+            terms = [query.strip()]
+        field_block = ("lc.case_name ILIKE %s OR lc.file_number ILIKE %s "
+                       "OR lc.jurisdiction ILIKE %s OR lc.case_type ILIKE %s "
+                       "OR lc.named_individual ILIKE %s OR lc.county ILIKE %s "
+                       "OR lc.tribe_or_reservation ILIKE %s")
+        n_fields = 7
+        conditions = " OR ".join([f"({field_block})"] * len(terms))
+        params = []
+        for t in terms:
+            params.extend([f"%{t}%"] * n_fields)
+        try:
+            cur.execute(f"""
+                SELECT lc.id, lc.case_name, lc.file_number, lc.jurisdiction,
+                       lc.case_type, lc.named_individual, lc.allottee_number,
+                       lc.tribe_or_reservation, lc.county,
+                       d.file_name, d.display_title,
+                       COUNT(DISTINCT rs.id) AS slip_count,
+                       (SELECT COUNT(*) FROM legal_cases lc2
+                        WHERE lc2.file_number = lc.file_number) AS cases_at_file_number
+                FROM legal_cases lc
+                JOIN documents d ON lc.document_id = d.id
+                LEFT JOIN record_slips rs
+                    ON rs.file_number = lc.file_number
+                WHERE {conditions}
+                GROUP BY lc.id, lc.case_name, lc.file_number, lc.jurisdiction,
+                         lc.case_type, lc.named_individual, lc.allottee_number,
+                         lc.tribe_or_reservation, lc.county,
+                         d.file_name, d.display_title
+                ORDER BY slip_count DESC NULLS LAST
+                LIMIT %s
+            """, params + [limit])
+            results = [dict(row) for row in cur.fetchall()]
+        except Exception:
+            conn.rollback()
+            results = []
+
+    cur.close()
+    conn.close()
+    return results
+
+
+def fetch_slips_by_file_numbers(db_name: str, file_numbers: List[str],
+                                 max_per_file: int = 30) -> List[Dict]:
+    """Phase 2 of the case-trace pattern.
+    Given a list of DOJ file_numbers (from Phase 1 keyword search),
+    pull EVERY slip with those file_numbers, capped at max_per_file each.
+    This gives the synthesis the full case chronology even when the
+    Phase 1 keyword only matched one slip in a long case.
+    """
+    if not file_numbers:
+        return []
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return _fetch_unified_slips_by_file_numbers(file_numbers, max_per_file)
+    conn = get_db_connection(db_name)
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+    # Use ROW_NUMBER to cap rows per file_number, ordered by slip date
+    placeholders = ",".join(["%s"] * len(file_numbers))
+    try:
+        cur.execute(f"""
+            WITH ranked AS (
+                SELECT rs.id, rs.file_number, rs.jurisdiction, rs.date,
+                       rs.correspondent, rs.correspondent_role, rs.case_name,
+                       rs.case_number, rs.named_individual, rs.allottee_number,
+                       rs.tribe_or_reservation, rs.subject, rs.action_type,
+                       rs.routing_division, rs.routing_date, rs.clerk_initials,
+                       d.file_name, d.display_title,
+                       ROW_NUMBER() OVER (
+                           PARTITION BY rs.file_number
+                           ORDER BY rs.date NULLS LAST, rs.id
+                       ) AS rn
+                FROM record_slips rs
+                JOIN documents d ON rs.document_id = d.id
+                WHERE rs.file_number IN ({placeholders})
+            )
+            SELECT * FROM ranked WHERE rn <= %s
+            ORDER BY file_number, date NULLS LAST, id
+        """, list(file_numbers) + [max_per_file])
+        results = [dict(row) for row in cur.fetchall()]
+        # Drop the rn column from each result for cleanliness
+        for r in results:
+            r.pop("rn", None)
+    except Exception:
+        conn.rollback()
         results = []
     cur.close()
     conn.close()
@@ -786,6 +1471,8 @@ def search_full_text_passages(db_name: str, query: str,
     if websearch syntax fails. Passage extraction is done in Python for
     better context blocks.
     """
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return []
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
@@ -862,6 +1549,8 @@ def search_full_text_passages(db_name: str, query: str,
 
 def search_documents_metadata(db_name: str, query: str, limit: int = 30) -> List[Dict]:
     """Search documents by full text (FTS) and filename, return metadata only."""
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        return _search_unified_documents_metadata(query, limit)
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     terms = [t.strip() for t in query.split() if len(t.strip()) > 2]
@@ -917,6 +1606,11 @@ def rank_documents_for_deep_read(db_name: str, query: str,
     penalized by document size.
     Filters out finding aids and other low-value reference documents.
     """
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        # Hybrid mode is not meaningful for the slip-centric unified DB —
+        # there is no full document text to "deep-read." Discovery and
+        # Corpus Synthesis modes work fine; Hybrid simply yields no docs.
+        return []
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
@@ -1200,6 +1894,82 @@ def get_document_full(db_name: str, doc_id: int) -> Optional[Dict]:
         conn.rollback()
         doc['relationships'] = []
 
+    # Get fee patents
+    try:
+        cur.execute("""
+            SELECT allottee, allotment_number, acreage, land_description,
+                   patent_date, trust_to_fee_mechanism, subsequent_buyer,
+                   sale_price, sale_date, attorney, mortgage_amount, context
+            FROM fee_patents WHERE document_id = %s
+            ORDER BY allottee
+        """, [doc_id])
+        doc['fee_patents'] = [dict(row) for row in cur.fetchall()]
+    except Exception:
+        conn.rollback()
+        doc['fee_patents'] = []
+
+    # Get correspondence
+    try:
+        cur.execute("""
+            SELECT sender, recipient, date, subject, summary
+            FROM correspondence WHERE document_id = %s
+            ORDER BY date ASC NULLS LAST
+        """, [doc_id])
+        doc['correspondence'] = [dict(row) for row in cur.fetchall()]
+    except Exception:
+        conn.rollback()
+        doc['correspondence'] = []
+
+    # Get legislative actions
+    try:
+        cur.execute("""
+            SELECT bill_number, bill_title, action_type, action_date,
+                   committee, outcome, context
+            FROM legislative_actions WHERE document_id = %s
+            ORDER BY action_date ASC NULLS LAST
+        """, [doc_id])
+        doc['legislative_actions'] = [dict(row) for row in cur.fetchall()]
+    except Exception:
+        conn.rollback()
+        doc['legislative_actions'] = []
+
+    # Get testimony
+    try:
+        cur.execute("""
+            SELECT witness, witness_title, location, date, subject,
+                   key_claims, questioner, context
+            FROM testimony WHERE document_id = %s
+            ORDER BY date ASC NULLS LAST
+        """, [doc_id])
+        doc['testimony'] = [dict(row) for row in cur.fetchall()]
+    except Exception:
+        conn.rollback()
+        doc['testimony'] = []
+
+    # Get taxes
+    try:
+        cur.execute("""
+            SELECT taxpayer, tax_type, amount, date, jurisdiction, description
+            FROM taxes WHERE document_id = %s
+            ORDER BY date ASC NULLS LAST
+        """, [doc_id])
+        doc['taxes'] = [dict(row) for row in cur.fetchall()]
+    except Exception:
+        conn.rollback()
+        doc['taxes'] = []
+
+    # Get mortgages
+    try:
+        cur.execute("""
+            SELECT mortgagor, mortgagee, amount, date, property, description
+            FROM mortgages WHERE document_id = %s
+            ORDER BY date ASC NULLS LAST
+        """, [doc_id])
+        doc['mortgages'] = [dict(row) for row in cur.fetchall()]
+    except Exception:
+        conn.rollback()
+        doc['mortgages'] = []
+
     cur.close()
     conn.close()
     return doc
@@ -1322,7 +2092,9 @@ def build_discovery_context(question: str, evidence: Dict) -> str:
         for etype, ents in sorted(by_type.items()):
             lines.append(f"\n  [{etype.upper()}] ({len(ents)} found)")
             for e in ents[:25]:
-                sources = ", ".join(e.get('source_display_names', e.get('source_files', []))[:3]) if e.get('source_files') else "unknown"
+                src_list = e.get('source_display_names') or e.get('source_files') or []
+                src_list = [s for s in src_list if s]
+                sources = ", ".join(src_list[:3]) if src_list else "unknown"
                 ctx = (e.get('context') or '')[:200]
                 extras = ""
                 if e.get('acres'):
@@ -1429,6 +2201,128 @@ def build_discovery_context(question: str, evidence: Dict) -> str:
             lines.append(f"    Source: {doc_label(la)}")
         sections.append(f"LEGISLATIVE ACTIONS ({len(legislative)} total — bill lifecycle tracking):\n" + "\n".join(lines))
 
+    # Taxes (v4) — property/income/assessment taxes as a dispossession mechanism
+    taxes = evidence.get('taxes', [])
+    if taxes:
+        lines = []
+        for tx in taxes[:50]:
+            parts = [f"Taxpayer: {tx.get('taxpayer') or '?'}"]
+            if tx.get('tax_type'):
+                parts.append(f"Type: {tx['tax_type']}")
+            if tx.get('amount'):
+                parts.append(f"Amount: {tx['amount']}")
+            if tx.get('year'):
+                parts.append(f"Year: {tx['year']}")
+            if tx.get('county'):
+                parts.append(f"County: {tx['county']}")
+            if tx.get('status'):
+                parts.append(f"Status: {tx['status']}")
+            if tx.get('land_description'):
+                parts.append(f"Land: {tx['land_description'][:100]}")
+            lines.append(f"  - {' | '.join(parts)}")
+            if tx.get('context'):
+                lines.append(f"    Context: {tx['context'][:200]}")
+            lines.append(f"    Source: {doc_label(tx)}")
+        sections.append(f"TAXES ({len(taxes)} total — taxation as a dispossession mechanism):\n" + "\n".join(lines))
+
+    # Mortgages (v4) — mortgages as a dispossession mechanism
+    mortgages = evidence.get('mortgages', [])
+    if mortgages:
+        lines = []
+        for m in mortgages[:50]:
+            parts = [f"Borrower: {m.get('borrower') or '?'}"]
+            if m.get('lender'):
+                parts.append(f"Lender: {m['lender']}")
+            if m.get('amount'):
+                parts.append(f"Amount: {m['amount']}")
+            if m.get('acreage'):
+                parts.append(f"Acreage: {m['acreage']}")
+            if m.get('date'):
+                parts.append(f"Date: {m['date']}")
+            if m.get('interest_rate'):
+                parts.append(f"Interest: {m['interest_rate']}")
+            if m.get('status'):
+                parts.append(f"Status: {m['status']}")
+            if m.get('land_description'):
+                parts.append(f"Land: {m['land_description'][:100]}")
+            lines.append(f"  - {' | '.join(parts)}")
+            if m.get('context'):
+                lines.append(f"    Context: {m['context'][:200]}")
+            lines.append(f"    Source: {doc_label(m)}")
+        sections.append(f"MORTGAGES ({len(mortgages)} total — mortgage-driven dispossession):\n" + "\n".join(lines))
+
+    # Record slips (DOJ index card schema) — actual slip-level evidence
+    record_slips = evidence.get('record_slips', [])
+    if record_slips:
+        lines = []
+        for rs in record_slips[:80]:
+            parts = []
+            if rs.get('file_number'):
+                parts.append(f"File: {rs['file_number']}")
+            if rs.get('date'):
+                parts.append(f"Date: {rs['date']}")
+            if rs.get('jurisdiction'):
+                parts.append(f"Jurisdiction: {rs['jurisdiction']}")
+            if rs.get('correspondent'):
+                role = f" ({rs['correspondent_role']})" if rs.get('correspondent_role') else ""
+                parts.append(f"From/To: {rs['correspondent']}{role}")
+            if rs.get('case_name'):
+                parts.append(f"Case: {rs['case_name'][:120]}")
+            if rs.get('named_individual'):
+                parts.append(f"Person: {rs['named_individual']}")
+            if rs.get('tribe_or_reservation'):
+                parts.append(f"Tribe: {rs['tribe_or_reservation']}")
+            if rs.get('action_type'):
+                parts.append(f"Action: {rs['action_type']}")
+            lines.append(f"  - {' | '.join(parts)}")
+            if rs.get('subject'):
+                lines.append(f"    Subject: {rs['subject'][:300]}")
+            lines.append(f"    Source: {doc_label(rs)}")
+        sections.append(
+            f"RECORD SLIPS ({len(record_slips)} matching — DOJ correspondence index cards. "
+            f"Each slip is one piece of correspondence about a legal case. The file_number is the unique case identifier across slips):\n"
+            + "\n".join(lines)
+        )
+
+    # Legal cases (DOJ index card schema) — case-level aggregation
+    legal_cases = evidence.get('legal_cases', [])
+    if legal_cases:
+        lines = []
+        for lc in legal_cases[:60]:
+            parts = []
+            if lc.get('file_number'):
+                parts.append(f"File: {lc['file_number']}")
+            if lc.get('case_name'):
+                parts.append(f"Case: {lc['case_name'][:140]}")
+            if lc.get('jurisdiction'):
+                parts.append(f"Jurisdiction: {lc['jurisdiction']}")
+            if lc.get('county'):
+                parts.append(f"County: {lc['county']}")
+            if lc.get('named_individual'):
+                parts.append(f"Person: {lc['named_individual']}")
+            if lc.get('tribe_or_reservation'):
+                parts.append(f"Tribe: {lc['tribe_or_reservation']}")
+            if lc.get('case_type'):
+                parts.append(f"Type: {lc['case_type']}")
+            if lc.get('slip_count'):
+                parts.append(f"Slips: {lc['slip_count']}")
+            cafn = lc.get('cases_at_file_number') or 0
+            if cafn and cafn > 1:
+                parts.append(f"⚠ {cafn} cases share this file_number (master classification)")
+            lines.append(f"  - {' | '.join(parts)}")
+            lines.append(f"    Source: {doc_label(lc)}")
+        sections.append(
+            f"LEGAL CASES ({len(legal_cases)} matching — case-level records.\n"
+            f"  • slip_count = number of record_slips sharing the file_number.\n"
+            f"  • cases_at_file_number = number of distinct legal_cases sharing the file_number.\n"
+            f"  • IMPORTANT INTERPRETATION RULE: When cases_at_file_number > 1, the file_number is a\n"
+            f"    master/catch-all classification (e.g. 90-2-01 has 174 different bills filed under it).\n"
+            f"    In that case slip_count is corpus-level, NOT case-level — do NOT attribute the slip\n"
+            f"    count to the single case named here. When cases_at_file_number = 1, the file_number\n"
+            f"    is unique to this case and slip_count is the case's actual chronology length.):\n"
+            + "\n".join(lines)
+        )
+
     # Entity networks
     networks = evidence.get('networks', {})
     if networks:
@@ -1525,6 +2419,74 @@ def build_deep_read_context(doc: Dict) -> str:
                 lines.append(f"    {r['context'][:150]}")
         sections.append(f"AI-EXTRACTED RELATIONSHIPS ({len(relationships)}):\n" + "\n".join(lines))
 
+    # Fee patents
+    fee_patents = doc.get('fee_patents', [])
+    if fee_patents:
+        lines = []
+        for fp in fee_patents:
+            parts = [f"Allottee: {fp.get('allottee', '?')}"]
+            if fp.get('allotment_number'): parts.append(f"Allot#: {fp['allotment_number']}")
+            if fp.get('acreage'): parts.append(f"Acres: {fp['acreage']}")
+            if fp.get('patent_date'): parts.append(f"Date: {fp['patent_date']}")
+            if fp.get('trust_to_fee_mechanism'): parts.append(f"Mechanism: {fp['trust_to_fee_mechanism']}")
+            if fp.get('subsequent_buyer'): parts.append(f"Buyer: {fp['subsequent_buyer']}")
+            if fp.get('sale_price'): parts.append(f"Price: {fp['sale_price']}")
+            lines.append(f"  - {' | '.join(parts)}")
+            if fp.get('context'):
+                lines.append(f"    {fp['context'][:150]}")
+        sections.append(f"AI-EXTRACTED FEE PATENTS ({len(fee_patents)}):\n" + "\n".join(lines))
+
+    # Correspondence
+    correspondence = doc.get('correspondence', [])
+    if correspondence:
+        lines = []
+        for c in correspondence:
+            lines.append(f"  - [{c.get('date', 'n/d')}] {c.get('sender', '?')} → {c.get('recipient', '?')}: {c.get('subject', '')[:150]}")
+        sections.append(f"AI-EXTRACTED CORRESPONDENCE ({len(correspondence)}):\n" + "\n".join(lines))
+
+    # Legislative actions
+    legislative_actions = doc.get('legislative_actions', [])
+    if legislative_actions:
+        lines = []
+        for la in legislative_actions:
+            parts = []
+            if la.get('bill_number'): parts.append(la['bill_number'])
+            if la.get('action_type'): parts.append(la['action_type'])
+            if la.get('action_date'): parts.append(la['action_date'])
+            desc = la.get('bill_title') or la.get('context') or ''
+            lines.append(f"  - {' | '.join(parts)}: {desc[:200]}")
+        sections.append(f"AI-EXTRACTED LEGISLATIVE ACTIONS ({len(legislative_actions)}):\n" + "\n".join(lines))
+
+    # Testimony
+    testimony = doc.get('testimony', [])
+    if testimony:
+        lines = []
+        for t in testimony:
+            witness = t.get('witness', '?')
+            title = f" ({t['witness_title']})" if t.get('witness_title') else ""
+            subject = t.get('subject', '')[:200]
+            claims = t.get('key_claims', '')[:200] if t.get('key_claims') else ''
+            lines.append(f"  - {witness}{title}: {subject}")
+            if claims:
+                lines.append(f"    Key claims: {claims}")
+        sections.append(f"AI-EXTRACTED TESTIMONY ({len(testimony)}):\n" + "\n".join(lines))
+
+    # Taxes
+    taxes = doc.get('taxes', [])
+    if taxes:
+        lines = []
+        for tx in taxes:
+            lines.append(f"  - {tx.get('taxpayer', '?')} | {tx.get('tax_type', '?')} | {tx.get('amount', '?')} | {tx.get('jurisdiction', '?')}: {tx.get('description', '')[:150]}")
+        sections.append(f"AI-EXTRACTED TAX RECORDS ({len(taxes)}):\n" + "\n".join(lines))
+
+    # Mortgages
+    mortgages = doc.get('mortgages', [])
+    if mortgages:
+        lines = []
+        for m in mortgages:
+            lines.append(f"  - {m.get('mortgagor', '?')} → {m.get('mortgagee', '?')} | {m.get('amount', '?')} | {m.get('property', '')[:100]}: {m.get('description', '')[:100]}")
+        sections.append(f"AI-EXTRACTED MORTGAGES ({len(mortgages)}):\n" + "\n".join(lines))
+
     return "\n\n".join(sections)
 
 
@@ -1584,7 +2546,8 @@ def build_hybrid_context(question: str, discovery_evidence: Dict,
     if other_entities:
         lines = []
         for e in other_entities[:40]:
-            sources = ", ".join(e.get('source_files', [])[:3]) if e.get('source_files') else "?"
+            src_list = [s for s in (e.get('source_files') or []) if s]
+            sources = ", ".join(src_list[:3]) if src_list else "?"
             lines.append(f"  - {e['name']} ({e['type']}): {(e.get('context') or '')[:120]} | Sources: {sources}")
         sections.append(f"ADDITIONAL ENTITIES FROM OTHER DOCUMENTS ({len(other_entities)}):\n" + "\n".join(lines))
 
@@ -1606,6 +2569,72 @@ def build_hybrid_context(question: str, discovery_evidence: Dict,
             lines.append(f"  - {r.get('subject', '?')} \u2014[{r.get('type', '')}]\u2192 {r.get('object', '?')} | {doc_label(r)}")
         sections.append(f"ADDITIONAL RELATIONSHIPS FROM OTHER DOCUMENTS ({len(other_relationships)}):\n" + "\n".join(lines))
 
+    # Additional taxes from other documents (v4)
+    other_taxes = [tx for tx in discovery_evidence.get('taxes', [])
+                   if tx.get('file_name') not in deep_doc_names]
+    if other_taxes:
+        lines = []
+        for tx in other_taxes[:30]:
+            parts = [f"Taxpayer: {tx.get('taxpayer') or '?'}"]
+            if tx.get('tax_type'): parts.append(f"Type: {tx['tax_type']}")
+            if tx.get('amount'): parts.append(f"Amount: {tx['amount']}")
+            if tx.get('year'): parts.append(f"Year: {tx['year']}")
+            if tx.get('county'): parts.append(f"County: {tx['county']}")
+            if tx.get('status'): parts.append(f"Status: {tx['status']}")
+            lines.append(f"  - {' | '.join(parts)} | {doc_label(tx)}")
+        sections.append(f"ADDITIONAL TAX RECORDS FROM OTHER DOCUMENTS ({len(other_taxes)}):\n" + "\n".join(lines))
+
+    # Additional mortgages from other documents (v4)
+    other_mortgages = [m for m in discovery_evidence.get('mortgages', [])
+                       if m.get('file_name') not in deep_doc_names]
+    if other_mortgages:
+        lines = []
+        for m in other_mortgages[:30]:
+            parts = [f"Borrower: {m.get('borrower') or '?'}"]
+            if m.get('lender'): parts.append(f"Lender: {m['lender']}")
+            if m.get('amount'): parts.append(f"Amount: {m['amount']}")
+            if m.get('date'): parts.append(f"Date: {m['date']}")
+            if m.get('status'): parts.append(f"Status: {m['status']}")
+            if m.get('acreage'): parts.append(f"Acreage: {m['acreage']}")
+            lines.append(f"  - {' | '.join(parts)} | {doc_label(m)}")
+        sections.append(f"ADDITIONAL MORTGAGE RECORDS FROM OTHER DOCUMENTS ({len(other_mortgages)}):\n" + "\n".join(lines))
+
+    # Additional record slips (DOJ schema)
+    other_slips = [rs for rs in discovery_evidence.get('record_slips', [])
+                   if rs.get('file_name') not in deep_doc_names]
+    if other_slips:
+        lines = []
+        for rs in other_slips[:50]:
+            parts = []
+            if rs.get('file_number'): parts.append(f"File: {rs['file_number']}")
+            if rs.get('date'): parts.append(f"Date: {rs['date']}")
+            if rs.get('jurisdiction'): parts.append(f"Jurisdiction: {rs['jurisdiction']}")
+            if rs.get('correspondent'): parts.append(f"From/To: {rs['correspondent']}")
+            if rs.get('case_name'): parts.append(f"Case: {rs['case_name'][:100]}")
+            lines.append(f"  - {' | '.join(parts)}")
+            if rs.get('subject'):
+                lines.append(f"    Subject: {rs['subject'][:200]}")
+            lines.append(f"    Source: {doc_label(rs)}")
+        sections.append(f"ADDITIONAL DOJ RECORD SLIPS FROM OTHER DOCUMENTS ({len(other_slips)}):\n" + "\n".join(lines))
+
+    # Additional legal cases (DOJ schema)
+    other_cases = [lc for lc in discovery_evidence.get('legal_cases', [])
+                   if lc.get('file_name') not in deep_doc_names]
+    if other_cases:
+        lines = []
+        for lc in other_cases[:30]:
+            parts = []
+            if lc.get('file_number'): parts.append(f"File: {lc['file_number']}")
+            if lc.get('case_name'): parts.append(f"Case: {lc['case_name'][:120]}")
+            if lc.get('jurisdiction'): parts.append(f"Jurisdiction: {lc['jurisdiction']}")
+            if lc.get('county'): parts.append(f"County: {lc['county']}")
+            if lc.get('slip_count'): parts.append(f"Slips: {lc['slip_count']}")
+            cafn = lc.get('cases_at_file_number') or 0
+            if cafn and cafn > 1:
+                parts.append(f"⚠ {cafn} cases share file (master classification — slip_count is corpus-level)")
+            lines.append(f"  - {' | '.join(parts)} | {doc_label(lc)}")
+        sections.append(f"ADDITIONAL DOJ LEGAL CASES FROM OTHER DOCUMENTS ({len(other_cases)}):\n" + "\n".join(lines))
+
     # Networks
     networks = discovery_evidence.get('networks', {})
     if networks:
@@ -1625,6 +2654,10 @@ def build_hybrid_context(question: str, discovery_evidence: Dict,
 
 def get_all_summaries(db_name: str) -> List[Dict]:
     """Get all documents that have summaries."""
+    if db_name == UNIFIED_INDEX_CARDS_DB:
+        # The unified DOJ index cards database is slip-centric and has no
+        # document-level summaries — Corpus Synthesis mode is not applicable.
+        return []
     conn = get_db_connection(db_name)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     cur.execute("""
@@ -1703,7 +2736,12 @@ def build_filename_index(db_name: str) -> Dict[str, Dict]:
         cur.execute("SELECT id, file_name, display_title FROM documents")
     except Exception:
         conn.rollback()
-        cur.execute("SELECT id, file_name, file_name as display_title FROM documents")
+        try:
+            cur.execute("SELECT id, file_name, file_name as display_title FROM documents")
+        except Exception:
+            # Unified DOJ index cards schema uses `source_pdf` instead of `file_name`.
+            conn.rollback()
+            cur.execute("SELECT id, source_pdf AS file_name, source_pdf AS display_title FROM documents")
     rows = cur.fetchall()
     cur.close()
     conn.close()
@@ -1954,6 +2992,13 @@ You have analytical summaries of ALL {len(summaries)} documents in this collecti
 
 DATABASE SCOPE: {db_stats.get('documents', 0)} documents, {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} transactions, {db_stats.get('relationships', 0)} relationships, {db_stats.get('fee_patents', 0)} fee patents, {db_stats.get('correspondence', 0)} correspondence records, {db_stats.get('legislative_actions', 0)} legislative actions, {db_stats.get('testimony', 0)} testimony records, {db_stats.get('taxes', 0)} tax records, {db_stats.get('mortgages', 0)} mortgages.
 
+IMPORTANT CAVEATS:
+- **The summaries are AI compressions, not verbatim text.** Each summary distills a much longer document into ~200–350 words. When you reference content from a summary, frame it explicitly: "the [Doc N] summary records that…" or "according to the [Doc N] summary…". Do NOT present summary text as if it were a direct quotation from the underlying document. The phrasing in the summary is the AI's compression, not the original witness's words.
+- **REPORT ONLY WHAT IS IN THE SUMMARIES BELOW.** Do not introduce historical context, statutory background, or policy analysis from outside the corpus (e.g. the Burke Act, Curtis Act, Dawes Act, Cato Sells competency commissions, Meriam Report) unless that material appears in one of the summaries below. If the corpus is silent on a topic, say so explicitly. The user is a historian who already knows the secondary literature; your job is to surface what is in THIS corpus, not to summarize what is already known.
+- **EVERY claim must cite a specific [Doc N].** When you mention a person, case, transaction, mechanism, or pattern, cite the [Doc N] reference(s) it came from. If you cannot cite a doc, do not make the claim.
+- **Do not pad short evidence with speculation.** If only a handful of summaries mention a topic, write a focused analysis of those few. Do not extrapolate to "patterns" from sparse evidence.
+- **DATING:** Only use dates that appear in the summaries themselves or in the document filenames. Do not infer or guess dates. If a document is undated, say so.
+
 RESEARCH QUESTION: {question}
 
 {corpus_context}
@@ -1962,18 +3007,18 @@ SYNTHESIS GUIDELINES:
 
 1. SURFACE PATTERNS across documents. Identify recurring actors, repeated legal mechanisms, and systematic processes that appear across multiple documents and decades. This is corpus-wide synthesis — prioritize cross-document patterns over summarizing individual documents.
 
-2. GROUND EVERYTHING IN EVIDENCE. Every claim must be supported by specific documentary evidence: names, allotment numbers, acreages, dollar amounts, bill numbers, dates, vote counts, patent numbers, legal descriptions. Do not make assertions without citing the specific details from the documents that support them.
+2. GROUND EVERYTHING IN EVIDENCE FROM THE SUMMARIES. Every claim must be supported by specific documentary evidence visible in the summaries: names, allotment numbers, acreages, dollar amounts, bill numbers, dates, vote counts, patent numbers, legal descriptions. Do not make assertions without citing the specific summaries that contain those details. When the summary says "X occurred" you can report that, but mark it as a summary attribution, not a direct quotation from the underlying testimony.
 
-3. SHOW CONNECTIONS. Trace which actors appear together across documents. Identify sequences of events that recur. Show how specific mechanisms (fee patenting, private bills, administrative trust-to-fee conversion) operated across time and place, citing the specific cases that demonstrate each pattern.
+3. SHOW CONNECTIONS. Trace which actors appear together across documents. Identify sequences of events that recur. Show how specific mechanisms (fee patenting, private bills, administrative trust-to-fee conversion, taxation, mortgages) operated across time and place, citing the specific cases that demonstrate each pattern.
 
-4. QUANTIFY WHERE POSSIBLE. Aggregate total acreages, dollar amounts, numbers of transactions, vote tallies, and other numerical evidence across the corpus. When exact totals aren't possible, provide ranges or lower bounds based on what the documents contain.
+4. QUANTIFY WHERE POSSIBLE. Aggregate total acreages, dollar amounts, numbers of transactions, vote tallies, and other numerical evidence across the corpus. When exact totals aren't possible, provide ranges or lower bounds based on what the documents contain. Distinguish between "the summaries report a total of $X" and "across the cited cases, the documented amounts add up to at least $X."
 
 5. Cite specific documents using their title and [Doc N] reference, like: [Doc 42, 1919 CCF 62648-19-013 Crow delegates]. Use the exact ID numbers from the summaries above. When multiple documents support a claim, list them: [Doc 42, 55, 103]. Every substantive claim needs at least one citation.
 
 6. CONCLUDE WITH THREE SECTIONS:
    - **What the Documents Prove**: claims fully supported by the documentary evidence, with citations.
-   - **What the Documents Suggest**: plausible interpretations that the evidence points toward but does not definitively establish.
-   - **Gaps in the Record**: what topics, time periods, actors, or questions are poorly represented or unanswerable from this corpus.
+   - **What the Documents Suggest**: plausible interpretations that the evidence points toward but does not definitively establish. Mark these as inferences, not facts.
+   - **What This Corpus Does Not Tell You**: a SPECIFIC list of categories of evidence absent from the summaries — case outcomes, dollar figures, follow-up correspondence, named individuals, particular dates, the text of statutes, the views of particular officials, post-1932 developments, etc. Be specific: "the corpus does not include the final decree in U.S. v. X County" is more useful than "outcomes are not documented." This section is required and should be substantive — it is methodology, not weakness, and it tells the historian which gaps to fill from other sources. Also note explicitly when a topic is poorly served by the SUMMARY MODE specifically (i.e. when the summaries compress out detail that is probably in the underlying documents but isn't visible here).
 
 Begin your corpus-wide synthesis:"""
 
@@ -1991,7 +3036,10 @@ def analyze_discovery(question: str, evidence: Dict, db_stats: Dict, model: str 
     total_structured = (len(evidence.get('entities', [])) + len(evidence.get('events', [])) +
                         len(evidence.get('financial_transactions', [])) + len(evidence.get('relationships', [])) +
                         len(evidence.get('fee_patents', [])) + len(evidence.get('correspondence', [])) +
-                        len(evidence.get('legislative_actions', [])))
+                        len(evidence.get('legislative_actions', [])) +
+                        len(evidence.get('taxes', [])) + len(evidence.get('mortgages', [])) +
+                        len(evidence.get('testimony', [])) +
+                        len(evidence.get('record_slips', [])) + len(evidence.get('legal_cases', [])))
     total_passages = sum(p['passage_count'] for p in evidence.get('passages', []))
     passage_docs = len(evidence.get('passages', []))
 
@@ -2009,28 +3057,68 @@ def analyze_discovery(question: str, evidence: Dict, db_stats: Dict, model: str 
         structured_parts.append(f"{db_stats.get('taxes', 0)} tax records")
     if db_stats.get('mortgages', 0):
         structured_parts.append(f"{db_stats.get('mortgages', 0)} mortgages")
+    if db_stats.get('record_slips', 0):
+        structured_parts.append(f"{db_stats.get('record_slips', 0)} DOJ record slips")
+    if db_stats.get('legal_cases', 0):
+        structured_parts.append(f"{db_stats.get('legal_cases', 0)} DOJ legal cases")
     if structured_parts:
         v3_scope = " Additionally: " + ", ".join(structured_parts) + "."
+
+    # Build the evidence-type list dynamically based on what THIS database
+    # actually contains. Skip categories with zero records so the prompt
+    # doesn't promise data that doesn't exist (e.g. testimony in DOJ index
+    # cards, or fee_patents in subject-index collections).
+    evidence_lines = [
+        "1. DOCUMENT TEXT PASSAGES: Actual excerpts from the source documents. These are your PRIMARY evidence — quote and cite them directly.",
+        "2. EXTRACTED ENTITIES/EVENTS/TRANSACTIONS/RELATIONSHIPS: Structured data extracted by AI from the documents. Use these to identify patterns, networks, and connections.",
+    ]
+    n = 3
+    if db_stats.get('fee_patents', 0):
+        evidence_lines.append(f"{n}. FEE PATENTS: Structured records of the atomic unit of land dispossession — allottee, allotment, acreage, patent mechanism, subsequent buyer, attorney, mortgage. Use these to trace specific chains of land loss.")
+        n += 1
+    if db_stats.get('correspondence', 0):
+        evidence_lines.append(f"{n}. CORRESPONDENCE: Bureaucratic network records — sender, recipient, titles, date, subject, action requested, outcome. Use these to reconstruct decision-making chains.")
+        n += 1
+    if db_stats.get('legislative_actions', 0):
+        evidence_lines.append(f"{n}. LEGISLATIVE ACTIONS: Bill lifecycle records — bill number, sponsor, action type, date, vote count, committee, outcome. Use these to trace how legislation moved through Congress.")
+        n += 1
+    if db_stats.get('testimony', 0):
+        evidence_lines.append(f"{n}. TESTIMONY: Sworn statements from congressional hearings — witness, title, hearing, committee, location, date, key claims. Use these to identify what officials and Indian witnesses stated under oath.")
+        n += 1
+    if db_stats.get('taxes', 0):
+        evidence_lines.append(f"{n}. TAXES: Property tax records as a mechanism of dispossession — taxpayer, tax type, amount, year, status (delinquent/tax_sale/tax_deed), county. Use these to trace tax-driven land loss.")
+        n += 1
+    if db_stats.get('mortgages', 0):
+        evidence_lines.append(f"{n}. MORTGAGES: Land mortgages as a mechanism of dispossession — borrower, lender, amount, acreage, interest rate, status (foreclosed/default). Use these to trace mortgage-driven land loss.")
+        n += 1
+    # For collections that are primarily index cards / record slips (DOJ RG 60),
+    # tell the model what record_slips and legal_cases are. We detect this
+    # by the presence of a record_slips count in db_stats.
+    if db_stats.get('record_slips', 0):
+        evidence_lines.append(f"{n}. RECORD SLIPS: DOJ correspondence index cards — file_number, date, jurisdiction, correspondent, case_name, named_individual, tribe_or_reservation, subject, action_type, routing. Each slip = one piece of correspondence about a legal case. The file_number is the unique case identifier across slips. THIS IS THE PRIMARY EVIDENCE for the DOJ index cards collection — quote slip subjects directly and cite their file_numbers. The slips you see below were retrieved in two phases: first by keyword match against any field, then by an automatic expansion that pulled EVERY slip belonging to the file_numbers that surfaced in the first phase. So for cases that show up in your evidence, you have something close to the complete chronology — use it to trace cases over time.")
+        n += 1
+    if db_stats.get('legal_cases', 0):
+        evidence_lines.append(f"{n}. LEGAL CASES: case-level aggregation — case_name, file_number, jurisdiction, county, named_individual, tribe, case_type. Two count columns let you read each case correctly: slip_count = number of record_slips sharing this file_number, and cases_at_file_number = number of distinct legal_cases sharing this file_number. WHEN cases_at_file_number = 1, the file_number is unique to this case and slip_count is its actual chronology length. WHEN cases_at_file_number > 1, the file_number is a master/catch-all classification (e.g. 90-2-01 = 174 different bills filed under one Indian-legislation master file) and slip_count is corpus-level — DO NOT attribute the slip count to the single case named in that row. Master classifications are themselves research-valuable; flag them explicitly when they appear, and do not double-count their slips toward any individual case.")
+        n += 1
+    evidence_block = "\n".join(evidence_lines)
 
     prompt = f"""You are a historian analyzing evidence from an archival database about Native American land dispossession, federal Indian policy, and Bureau of Indian Affairs records.
 
 DATABASE SCOPE: {db_stats.get('documents', 0)} documents processed, containing {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} financial transactions, and {db_stats.get('relationships', 0)} relationships. {db_stats.get('docs_with_text', 0)} documents have full text available.{v3_scope}
 
-YOU HAVE MULTIPLE TYPES OF EVIDENCE:
-1. DOCUMENT TEXT PASSAGES: Actual excerpts from the source documents. These are your PRIMARY evidence — quote and cite them directly.
-2. EXTRACTED ENTITIES/EVENTS/TRANSACTIONS/RELATIONSHIPS: Structured data extracted by AI from the documents. Use these to identify patterns, networks, and connections.
-3. FEE PATENTS: Structured records of the atomic unit of land dispossession — allottee, allotment, acreage, patent mechanism, subsequent buyer, attorney, mortgage. Use these to trace specific chains of land loss.
-4. CORRESPONDENCE: Bureaucratic network records — sender, recipient, titles, date, subject, action requested, outcome. Use these to reconstruct decision-making chains.
-5. TESTIMONY: Sworn statements from congressional hearings — witness, title, hearing, committee, location, date, key claims. Use these to identify what officials and Indian witnesses stated under oath.
-6. TAXES: Property tax records as a mechanism of dispossession — taxpayer, tax type, amount, year, status (delinquent/tax_sale/tax_deed), county. Use these to trace tax-driven land loss.
-7. MORTGAGES: Land mortgages as a mechanism of dispossession — borrower, lender, amount, acreage, interest rate, status (foreclosed/default). Use these to trace mortgage-driven land loss.
-5. LEGISLATIVE ACTIONS: Bill lifecycle records — bill number, sponsor, action type, date, vote count, committee, outcome. Use these to trace how legislation moved through Congress.
+YOU HAVE MULTIPLE TYPES OF EVIDENCE (only the types listed below are present in this database — do not infer or invent other categories):
+{evidence_block}
 
 IMPORTANT CAVEATS:
 - The text passages come from OCR'd historical documents and may contain OCR errors.
 - Entity extraction is imperfect — names may be fragmented across variants.
 - If evidence seems thin for a well-documented topic, the gap may be in the search, not the archive.
 - DATING: Some documents include an approximate date (marked "c. YYYY" in the header). Use these dates when discussing what a document shows. Do NOT guess or infer dates for documents that lack a date marker. If a document has no date, say "undated" or cite only the filename. Never place undated evidence in a specific decade unless the document text itself contains an explicit date.
+- REPORT ONLY WHAT IS IN THE EVIDENCE BELOW. Do not introduce historical context, statutory background, or policy analysis from outside the database (e.g. the Burke Act, Curtis Act, Dawes Act, Cato Sells competency commissions) unless that material appears in the evidence below. If the database is silent on a topic, say so explicitly rather than filling the gap with general knowledge. The user is a historian who already knows the secondary literature; your job is to surface what is in THIS archive, not to summarize what is already known.
+- EVERY claim must cite a specific source. When you mention a person, case, transaction, tax record, mortgage, or document, cite the source filename it came from. If you cannot cite a source, do not make the claim.
+- Do not pad short evidence with speculation. If only 5 records were returned, write a short, focused analysis of those 5. Do not extrapolate to "patterns" from a handful of records.
+- TEXT PASSAGE DISCIPLINE: When you use a quotation from a document text passage, present it as a markdown block quote (lines starting with "> ") with the source filename in the attribution immediately after the quote. Do not paraphrase a passage as if it were your own framing; either quote it or summarize it explicitly as "the [filename] hearing records that…".
+- DISTINGUISH EVIDENCE TYPES IN YOUR PROSE: Make it visible to the reader which kind of evidence each claim rests on. Use clear signal phrases: "the document text states…" (a primary text quote), "the AI extraction recorded a [type] entry showing…" (an extracted entity/event/transaction/etc. — i.e. an AI summary of some passage), and "across N records the data shows…" (an aggregate count). Never blur a database aggregate with a direct quotation, and never present an extracted entity as if it were a verbatim quote.
 
 RESEARCH QUESTION: {question}
 
@@ -2039,18 +3127,19 @@ EVIDENCE SUMMARY: {total_structured} structured items + {total_passages} text pa
 {evidence_text}
 
 ANALYSIS GUIDELINES:
-1. Lead with what the documents actually say. Quote specific passages and cite source documents by filename.
-2. Use the structured entity/relationship data to identify patterns and networks that span multiple documents.
+1. Lead with what the documents actually say. Quote specific passages as block quotes and cite source documents by filename.
+2. Use the structured entity/relationship data to identify patterns and networks that span multiple documents — but label it as extracted/aggregated data, not as direct quotation.
 3. Organize thematically or chronologically, not by evidence type.
 4. Where documents reveal specific mechanisms (how something was done, who authorized it, what legal basis was cited), describe those mechanisms in detail.
 5. Note where evidence is strong vs. where gaps suggest more may exist under different search terms.
 6. For financial transactions, trace the flow of money and land.
 7. Use precise historical terminology. When citing a source, include its date if known (e.g., "Survey of Cond part 33 Montana.pdf, c. 1930s").
-8. End with specific follow-up queries that would surface additional evidence from this database.
+8. **MANDATORY closing section.** End every analysis with a section titled exactly **"What this archive does not tell you"** that names specific categories of evidence absent from the returned data — e.g. case outcomes, dollar amounts, follow-up correspondence, named individuals, dates of specific events, the text of statutes, the views of particular officials. This section is required even when the rest of the analysis is rich. Be specific: "the data does not include the final decree in U.S. v. X County" is more useful than "outcomes are not documented." This is methodology, not weakness — it tells the historian which gaps to fill from other sources.
+9. After the mandatory closing section, you may include a short list of suggested follow-up queries that would surface additional evidence from this database.
 
 Begin your analysis:"""
 
-    return call_llm(model=model, prompt=prompt, max_tokens=8000, temperature=0.3)
+    return call_llm(model=model, prompt=prompt, max_tokens=16000, temperature=0.3)
 
 
 def analyze_deep_read(question: str, doc: Dict, db_stats: Dict, model: str = "claude-opus-4-6") -> str:
@@ -2082,7 +3171,7 @@ DEEP READING GUIDELINES:
 
 Begin your deep reading:"""
 
-    return call_llm(model=model, prompt=prompt, max_tokens=8000, temperature=0.3)
+    return call_llm(model=model, prompt=prompt, max_tokens=16000, temperature=0.3)
 
 
 def analyze_hybrid(question: str, discovery_evidence: Dict,
@@ -2112,36 +3201,83 @@ def analyze_hybrid(question: str, discovery_evidence: Dict,
                    len(discovery_evidence.get('financial_transactions', [])) +
                    len(discovery_evidence.get('relationships', [])))
 
+    # Build database scope dynamically — only mention categories the
+    # current database actually contains.
+    scope_parts = [
+        f"{db_stats.get('documents', 0)} documents",
+        f"{db_stats.get('entities', 0)} entities",
+    ]
+    if db_stats.get('events', 0):
+        scope_parts.append(f"{db_stats['events']} events")
+    if db_stats.get('financial_transactions', 0):
+        scope_parts.append(f"{db_stats['financial_transactions']} financial transactions")
+    if db_stats.get('relationships', 0):
+        scope_parts.append(f"{db_stats['relationships']} relationships")
+    if db_stats.get('fee_patents', 0):
+        scope_parts.append(f"{db_stats['fee_patents']} fee patents")
+    if db_stats.get('correspondence', 0):
+        scope_parts.append(f"{db_stats['correspondence']} correspondence records")
+    if db_stats.get('legislative_actions', 0):
+        scope_parts.append(f"{db_stats['legislative_actions']} legislative actions")
+    if db_stats.get('testimony', 0):
+        scope_parts.append(f"{db_stats['testimony']} testimony records")
+    if db_stats.get('taxes', 0):
+        scope_parts.append(f"{db_stats['taxes']} tax records")
+    if db_stats.get('mortgages', 0):
+        scope_parts.append(f"{db_stats['mortgages']} mortgages")
+    if db_stats.get('record_slips', 0):
+        scope_parts.append(f"{db_stats['record_slips']} DOJ record slips")
+    if db_stats.get('legal_cases', 0):
+        scope_parts.append(f"{db_stats['legal_cases']} DOJ legal cases")
+    db_scope_line = "DATABASE SCOPE: " + ", ".join(scope_parts) + "."
+
+    # Cross-collection evidence types — only those non-empty in this database
+    cross_types = ["entities", "transactions", "relationships"]
+    if db_stats.get('fee_patents', 0): cross_types.append("fee patents")
+    if db_stats.get('correspondence', 0): cross_types.append("correspondence")
+    if db_stats.get('legislative_actions', 0): cross_types.append("legislative actions")
+    if db_stats.get('testimony', 0): cross_types.append("testimony")
+    if db_stats.get('taxes', 0): cross_types.append("**tax records**")
+    if db_stats.get('mortgages', 0): cross_types.append("**mortgages**")
+    if db_stats.get('record_slips', 0): cross_types.append("**DOJ record slips**")
+    if db_stats.get('legal_cases', 0): cross_types.append("**DOJ legal cases**")
+    cross_line = ", ".join(cross_types[:-1]) + ", and " + cross_types[-1] if len(cross_types) > 1 else cross_types[0]
+
     prompt = f"""You are a historian conducting comprehensive research using an archival database about Native American land dispossession, federal Indian policy, and Bureau of Indian Affairs records.
 
-DATABASE SCOPE: {db_stats.get('documents', 0)} documents processed, containing {db_stats.get('entities', 0)} entities, {db_stats.get('events', 0)} events, {db_stats.get('financial_transactions', 0)} financial transactions, {db_stats.get('relationships', 0)} relationships, {db_stats.get('fee_patents', 0)} fee patents, {db_stats.get('correspondence', 0)} correspondence records, {db_stats.get('legislative_actions', 0)} legislative actions.
+{db_scope_line}
 
-YOU HAVE TWO LEVELS OF EVIDENCE:
+YOU HAVE TWO LEVELS OF EVIDENCE (only the types listed below are present in this database — do not infer or invent other categories):
 1. FULL DOCUMENT TEXTS: The complete text of {num_docs} top-ranked documents: {', '.join(doc_names)}. Read these deeply — quote them, trace their arguments, identify mechanisms.
-2. CROSS-COLLECTION DATA: Entities, transactions, relationships, fee patents, correspondence, and legislative actions from additional documents beyond those {num_docs}. Use these to identify patterns and connections the full texts alone wouldn't reveal.
+2. CROSS-COLLECTION DATA: {cross_line} from additional documents beyond those {num_docs}. Use these to identify patterns and connections the full texts alone wouldn't reveal.
 
 IMPORTANT CAVEATS:
 - Texts are OCR'd and may contain errors.
 - Entity extraction is imperfect.
 - The full documents were selected as the most relevant by entity count and search term matching. Other relevant documents may exist.
 - DATING: Some documents include an approximate date (marked "c. YYYY" in headers). Use these dates when discussing what a document shows. Do NOT guess dates for undated documents — say "undated" or cite only the filename. Never place undated evidence in a specific decade unless the document text itself contains an explicit date.
+- REPORT ONLY WHAT IS IN THE EVIDENCE BELOW. Do not introduce historical context, statutory background, or policy analysis from outside the database (e.g. the Burke Act, Curtis Act, Dawes Act, Cato Sells competency commissions) unless that material appears in the evidence. If the database is silent on a topic, say so explicitly. The user is a historian who already knows the secondary literature.
+- EVERY claim must cite a specific source filename. If you cannot cite a source, do not make the claim.
+- TEXT PASSAGE DISCIPLINE: When you use a quotation from a document text passage, present it as a markdown block quote (lines starting with "> ") with the source filename in the attribution immediately after the quote. Do not paraphrase a passage as if it were your own framing; either quote it or summarize it explicitly as "the [filename] hearing records that…".
+- DISTINGUISH EVIDENCE TYPES IN YOUR PROSE: Make it visible to the reader which kind of evidence each claim rests on. Use clear signal phrases: "the document text states…" (a primary text quote), "the AI extraction recorded a [type] entry showing…" (an extracted entity/event/transaction/etc. — i.e. an AI summary of some passage), and "across N records the data shows…" (an aggregate count). Never blur a database aggregate with a direct quotation, and never present an extracted entity as if it were a verbatim quote.
 
 RESEARCH QUESTION: {question}
 
 {evidence_text}
 
 ANALYSIS GUIDELINES:
-1. Start with the full documents. Read them carefully and build your analysis from their actual content. Quote specific language.
-2. Layer in the cross-collection data to show how the full documents connect to the broader archival record.
+1. Start with the full documents. Read them carefully and build your analysis from their actual content. Quote specific language as block quotes with the source filename in the attribution.
+2. Layer in the cross-collection data to show how the full documents connect to the broader archival record — but label it as extracted/aggregated data, not as direct quotation.
 3. Organize by theme or chronology, not by document. Weave evidence from multiple sources into a coherent narrative.
 4. Trace specific mechanisms: legal authorities, administrative procedures, financial flows, and chains of responsibility.
 5. Where the full documents and the cross-collection data tell different or complementary stories, note what each adds.
 6. Identify what these documents prove, what they suggest, and what remains uncertain. When citing a source, include its date if known.
-7. End with specific follow-up queries for this database.
+7. **MANDATORY closing section.** End every analysis with a section titled exactly **"What this archive does not tell you"** that names specific categories of evidence absent from the returned data — case outcomes, dollar amounts, follow-up correspondence, named individuals, dates of specific events, the text of statutes, the views of particular officials. This section is required even when the rest of the analysis is rich. Be specific: "the data does not include the final decree in U.S. v. X County" is more useful than "outcomes are not documented." This is methodology, not weakness.
+8. After the mandatory closing section, you may include a short list of follow-up queries for this database.
 
 Begin your analysis:"""
 
-    return call_llm(model=model, prompt=prompt, max_tokens=8000, temperature=0.3)
+    return call_llm(model=model, prompt=prompt, max_tokens=16000, temperature=0.3)
 
 
 # ─────────────────────────────────────────────────
@@ -2166,6 +3302,9 @@ with st.sidebar:
         "crow_historical_docs": "Crow Nation Archive",
         "full_corpus_docs": "Full Research Corpus",
         "historical_docs": "Historical Documents",
+        "survey_of_conditions": "Survey of Conditions",
+        "index_cards": "DOJ Index Cards (RG 60)",
+        "unified_index_cards": "DOJ Index Cards (Unified Sonnet+Qwen)",
     }
     selected_db = st.selectbox(
         "Collection:",
@@ -2251,7 +3390,7 @@ with st.sidebar:
             model_names,
             index=0,
             help="Choose which model performs the analysis (Deep Read, Discovery, Corpus Synthesis). "
-                 "Kimi K2.5 requires TOGETHER_API_KEY.",
+                 "Claude Opus/Sonnet requires ANTHROPIC_API_KEY. Kimi K2.5 (UVA RC GenAI) requires UVARC_GenAI_API.",
             label_visibility="collapsed",
         )
     ai_model = ANALYSIS_MODELS[selected_model_name]["id"]
@@ -2273,16 +3412,31 @@ MODE_OPTIONS = [
 ]
 
 MODE_DESCRIPTIONS = {
-    "Discovery": "Search the extracted database for people, places, events, financial transactions, "
-                 "and connections across all documents. Uses <strong>Search Only</strong> (free, no AI) or "
+    "Discovery": "<strong>What it sees:</strong> The actual extraction database — every entity, fee patent, "
+                 "financial transaction, testimony, and correspondence record across all documents. "
+                 "<strong>Best for:</strong> Completeness questions — \"list all fee patent allottees,\" "
+                 "\"which attorneys appeared most often,\" \"total acreage sold by reservation.\" "
+                 "A query about the Kaw allottees returns all 268 extracted names, not a summary of a few. "
+                 "Uses <strong>Search Only</strong> (free, no AI) or "
                  "<strong>Search &amp; Analyze</strong> (AI synthesizes the database results into a narrative).",
-    "Deep Read": "Send a single document's <strong>complete text</strong> to the AI for close, detailed analysis. "
-                 "The AI reads the entire document\u2014not fragments\u2014like a research assistant reading over your shoulder.",
-    "Discovery \u2192 Deep Read": "Run Discovery first to find relevant documents, then select which ones "
-                 "to deep-read. The AI gets <strong>full texts</strong> of your chosen documents plus cross-collection "
-                 "entity data\u2014combining breadth and depth.",
-    "Corpus Synthesis": "Send summaries of <strong>every</strong> document to the AI for corpus-wide pattern analysis. "
-                 "No context window limit. Ask follow-up questions to drill deeper without re-running the synthesis.",
+    "Deep Read": "<strong>What it sees:</strong> The complete text of one document — every word, every page. "
+                 "<strong>Best for:</strong> Questions requiring the original language and full context — "
+                 "\"what did the field agent actually say about Barclay Delano?\" "
+                 "\"how did Clendening describe the fee patent system?\" "
+                 "The AI reads the entire document, not fragments or summaries, so it can quote directly "
+                 "and catch nuances that extraction might have missed.",
+    "Discovery \u2192 Deep Read": "<strong>What it sees:</strong> Database search results across all documents + "
+                 "full text of the documents you select. <strong>Best for:</strong> Questions requiring both "
+                 "breadth and depth — \"find all documents mentioning the Bellmard family, then analyze what "
+                 "happened to them.\" The most powerful mode: the AI sees structured data for completeness "
+                 "and original text for language and context.",
+    "Corpus Synthesis": "<strong>What it sees:</strong> A 200–350 word summary of <strong>every</strong> "
+                 "document in the corpus, all at once. <strong>Best for:</strong> Patterns, trends, and arguments "
+                 "that span the entire corpus — \"what mechanisms drove dispossession across reservations?\" "
+                 "\"how did field officers view the fee patent policy?\" This is the only mode that sees the "
+                 "whole corpus simultaneously, but it sees summaries, not raw data. It excels at structural "
+                 "arguments but should not be used for completeness questions (\"list every person who...\") "
+                 "because summaries compress hundreds of names into a few examples.",
     "Process Document": "Upload an OCR'd PDF to run the full extraction pipeline: text extraction, "
                  "entity/event/relationship extraction, summary generation, and title generation.",
 }
@@ -2304,6 +3458,17 @@ st.markdown(
 # MODE 1: DISCOVERY
 # ═════════════════════════════════════════════════
 if mode_key == "Discovery":
+    # Session state for persisting results across Streamlit reruns
+    # (so clicking the download button doesn't erase the analysis)
+    if 'discovery_evidence' not in st.session_state:
+        st.session_state.discovery_evidence = None
+    if 'discovery_analysis' not in st.session_state:
+        st.session_state.discovery_analysis = None
+    if 'discovery_question' not in st.session_state:
+        st.session_state.discovery_question = None
+    if 'discovery_search_only' not in st.session_state:
+        st.session_state.discovery_search_only = False
+
     question = st.text_area(
         "Research question:",
         placeholder="e.g., Tell me about Crow fee patents and James Murray",
@@ -2312,16 +3477,19 @@ if mode_key == "Discovery":
 
     col1, col2 = st.columns([1, 1])
     with col1:
-        run_analysis = st.button("\U0001f50d Search & Analyze", type="primary")
+        run_analysis = st.button("\U0001f50d Search & Analyze", type="primary",
+                                  help="Search the database, then send results to the AI for narrative analysis. Uses API credits.")
     with col2:
-        search_only = st.button("\U0001f4cb Search Only (no AI)")
+        search_only = st.button("\U0001f4cb Search Only (no AI)",
+                                 help="Search the database and display raw results — every matching record. Free, no API call. Best for browsing data and completeness questions.")
+    st.caption("**Search & Analyze**: finds matching records, then the AI writes a narrative synthesis. "
+               "**Search Only**: shows you the raw database results directly — every name, every amount, no compression.")
 
+    # ── Computation block: runs only on button click, stores to session_state ──
     if run_analysis or search_only:
         if not question:
             st.warning("Please enter a research question.")
         else:
-            st.markdown("---")
-
             with st.spinner("Layer 1: Searching entity database..."):
                 evidence = {
                     'entities': search_entities(selected_db, question),
@@ -2334,6 +3502,8 @@ if mode_key == "Discovery":
                     'testimony': search_testimony(selected_db, question),
                     'taxes': search_taxes(selected_db, question),
                     'mortgages': search_mortgages(selected_db, question),
+                    'record_slips': search_record_slips(selected_db, question),
+                    'legal_cases': search_legal_cases(selected_db, question),
                 }
 
             with st.spinner("Layer 2: Retrieving full-text passages..."):
@@ -2357,181 +3527,358 @@ if mode_key == "Discovery":
                 else:
                     evidence['networks'] = {}
 
-            # Summary
-            passage_count = sum(p['passage_count'] for p in evidence.get('passages', []))
-            counts = {
-                'Entities': len(evidence['entities']),
-                'Events': len(evidence['events']),
-                'Transactions': len(evidence['financial_transactions']),
-                'Relationships': len(evidence['relationships']),
-                'Fee Patents': len(evidence.get('fee_patents', [])),
-                'Correspondence': len(evidence.get('correspondence', [])),
-                'Legislative Actions': len(evidence.get('legislative_actions', [])),
-                'Text Passages': passage_count,
-                'Documents': len(evidence['documents']),
-            }
-            count_str = " | ".join([f"**{k}:** {v}" for k, v in counts.items() if v > 0])
-            st.success(f"Evidence found: {count_str}")
+            # Phase 2: case-trace expansion
+            phase1_slips = evidence.get('record_slips', [])
+            phase1_cases = evidence.get('legal_cases', [])
+            if phase1_slips or phase1_cases:
+                with st.spinner("Phase 2: Expanding to full case chronologies..."):
+                    from collections import Counter
+                    file_freq = Counter()
+                    for rs in phase1_slips:
+                        if rs.get('file_number'):
+                            file_freq[rs['file_number']] += 1
+                    for lc in phase1_cases:
+                        if lc.get('file_number'):
+                            file_freq[lc['file_number']] += max(1, lc.get('slip_count') or 0)
+                    top_files = [fn for fn, _ in file_freq.most_common(20)]
+                    if top_files:
+                        expanded = fetch_slips_by_file_numbers(
+                            selected_db, top_files, max_per_file=30)
+                        seen_ids = {rs.get('id') for rs in phase1_slips if rs.get('id') is not None}
+                        for rs in expanded:
+                            if rs.get('id') not in seen_ids:
+                                phase1_slips.append(rs)
+                                seen_ids.add(rs.get('id'))
+                        evidence['record_slips'] = phase1_slips
+                        evidence['phase2_file_numbers'] = top_files
 
-            # Evidence browser
-            with st.expander("\U0001f50e Browse Raw Evidence", expanded=False):
-                tabs = st.tabs(["\U0001f4c4 Passages", "\U0001f3f7\ufe0f Entities", "\U0001f4c5 Events",
-                               "\U0001f4b0 Transactions", "\U0001f517 Relationships",
-                               "\U0001f4dc Fee Patents", "\U0001f4e8 Correspondence",
-                               "\U0001f3db\ufe0f Legislation", "\U0001f578\ufe0f Networks"])
-
-                with tabs[0]:
-                    if evidence['passages']:
-                        for doc in evidence['passages']:
-                            st.markdown(f"### \U0001f4c4 {doc_label(doc)}")
-                            st.caption(f"Collection: {doc.get('collection', 'n/a')} | "
-                                       f"Pipeline: {doc.get('pipeline_version', 'n/a')}")
-                            for i, passage in enumerate(doc['passages']):
-                                st.markdown(f"**Passage {i+1}:**")
-                                st.text_area(f"p_{doc['file_name']}_{i}", passage[:1000],
-                                             height=150, label_visibility="collapsed", disabled=True)
-                            st.markdown("---")
-                    else:
-                        st.info("No full-text passages found.")
-
-                with tabs[1]:
-                    for e in evidence['entities'][:50]:
-                        sources = ", ".join(e.get('source_display_names', e.get('source_files', []))[:3]) if e.get('source_files') else ""
-                        st.markdown(f"**{e['name']}** ({e['type']}) \u2014 {e.get('doc_count', 0)} docs"
-                                    f" {'\u2b50' if e.get('relevance_score', 0) > 500 else ''}")
-                        if e.get('context'):
-                            st.caption(e['context'][:300])
-                        if sources:
-                            st.caption(f"\U0001f4c4 {sources}")
-                        st.markdown("---")
-
-                with tabs[2]:
-                    for ev in evidence['events'][:30]:
-                        st.markdown(f"**[{ev.get('date', 'n/d')}]** {ev.get('type', '')} \u2014 {ev.get('description', '')[:200]}")
-                        st.caption(f"\U0001f4c4 {doc_label(ev)}")
-
-                with tabs[3]:
-                    for ft in evidence['financial_transactions'][:20]:
-                        st.markdown(f"**{ft.get('payer', '?')}** \u2192 **{ft.get('payee', '?')}**: {ft.get('amount', '?')}")
-                        st.caption(f"{ft.get('for_what', '')} [{ft.get('date', 'n/d')}] | "
-                                   f"Context: {(ft.get('context') or '')[:150]}")
-                        st.caption(f"\U0001f4c4 {doc_label(ft)}")
-
-                with tabs[4]:
-                    for r in evidence['relationships'][:30]:
-                        st.markdown(f"**{r.get('subject', '?')}** \u2014[{r.get('type', '')}]\u2192 **{r.get('object', '?')}**")
-                        if r.get('context'):
-                            st.caption(r['context'][:200])
-                        st.caption(f"\U0001f4c4 {doc_label(r)}")
-
-                with tabs[5]:
-                    if evidence.get('fee_patents'):
-                        for fp in evidence['fee_patents'][:30]:
-                            allottee = fp.get('allottee', '?')
-                            allotment = fp.get('allotment_number', '')
-                            acreage = fp.get('acreage', '')
-                            header = f"**{allottee}**"
-                            if allotment:
-                                header += f" — Allotment {allotment}"
-                            if acreage:
-                                header += f" ({acreage} acres)"
-                            st.markdown(header)
-                            details = []
-                            if fp.get('patent_date'):
-                                details.append(f"Patent: {fp['patent_date']}")
-                            if fp.get('trust_to_fee_mechanism'):
-                                details.append(f"Mechanism: {fp['trust_to_fee_mechanism']}")
-                            if fp.get('subsequent_buyer'):
-                                details.append(f"Sold to: {fp['subsequent_buyer']}")
-                            if fp.get('sale_price'):
-                                details.append(f"Price: {fp['sale_price']}")
-                            if fp.get('attorney'):
-                                details.append(f"Attorney: {fp['attorney']}")
-                            if fp.get('mortgage_amount'):
-                                details.append(f"Mortgage: {fp['mortgage_amount']} ({fp.get('mortgage_holder', '?')})")
-                            if details:
-                                st.caption(" | ".join(details))
-                            st.caption(f"\U0001f4c4 {doc_label(fp)}")
-                            st.markdown("---")
-                    else:
-                        st.info("No fee patents found.")
-
-                with tabs[6]:
-                    if evidence.get('correspondence'):
-                        for c in evidence['correspondence'][:30]:
-                            sender = c.get('sender', '?')
-                            recipient = c.get('recipient', '?')
-                            date = c.get('date', 'n/d')
-                            st.markdown(f"**{sender}** \u2192 **{recipient}** [{date}]")
-                            if c.get('sender_title') or c.get('recipient_title'):
-                                titles = f"{c.get('sender_title', '')} \u2192 {c.get('recipient_title', '')}"
-                                st.caption(titles)
-                            if c.get('subject'):
-                                st.caption(f"Re: {c['subject'][:200]}")
-                            if c.get('action_requested'):
-                                st.caption(f"Action: {c['action_requested'][:200]}")
-                            if c.get('outcome'):
-                                st.caption(f"Outcome: {c['outcome'][:200]}")
-                            st.caption(f"\U0001f4c4 {doc_label(c)}")
-                            st.markdown("---")
-                    else:
-                        st.info("No correspondence found.")
-
-                with tabs[7]:
-                    if evidence.get('legislative_actions'):
-                        for la in evidence['legislative_actions'][:30]:
-                            bill = la.get('bill_number', '?')
-                            action = la.get('action_type', '?')
-                            date = la.get('action_date', 'n/d')
-                            st.markdown(f"**{bill}** — {action} [{date}]")
-                            if la.get('bill_title'):
-                                st.caption(la['bill_title'])
-                            details = []
-                            if la.get('sponsor'):
-                                details.append(f"Sponsor: {la['sponsor']}")
-                            if la.get('vote_count'):
-                                details.append(f"Vote: {la['vote_count']}")
-                            if la.get('committee'):
-                                details.append(f"Committee: {la['committee']}")
-                            if la.get('outcome'):
-                                details.append(f"Outcome: {la['outcome']}")
-                            if details:
-                                st.caption(" | ".join(details))
-                            st.caption(f"\U0001f4c4 {doc_label(la)}")
-                            st.markdown("---")
-                    else:
-                        st.info("No legislative actions found.")
-
-                with tabs[8]:
-                    for person, connections in evidence.get('networks', {}).items():
-                        st.markdown(f"**Network: {person}**")
-                        for c in connections[:15]:
-                            st.text(f"  \u2194 {c['name']} ({c['type']}) \u2014 {c['shared_docs']} shared docs")
-                        st.markdown("---")
-
-            # AI Analysis
+            # AI Analysis (only for Search & Analyze, not Search Only)
+            linked_analysis = None
             if run_analysis:
-                st.markdown("---")
-                st.markdown('<h3 class="section-header">AI Analysis</h3>', unsafe_allow_html=True)
                 with st.spinner("Analyzing evidence..."):
                     analysis = analyze_discovery(question, evidence, stats, model=ai_model)
                 linked_analysis = linkify_filename_citations(escape_dollars(analysis), filename_index, archive_url=archive_url, devonthink_uuids=dt_uuids)
-                st.markdown(linked_analysis)
 
-                st.download_button(
-                    "\u2b07 Save Analysis",
-                    data=markdown_to_html(linked_analysis, "Discovery Analysis"),
-                    file_name="discovery_analysis.html",
-                    mime="text/html",
-                )
+            # Store results in session state and rerun so display block picks them up
+            st.session_state.discovery_evidence = evidence
+            st.session_state.discovery_analysis = linked_analysis
+            st.session_state.discovery_question = question
+            st.session_state.discovery_search_only = search_only
+            st.rerun()
 
-                st.markdown("---")
-                st.caption(
-                    "\u26a0\ufe0f Discovery mode: full-text passages + extracted entities. "
-                    "For deeper analysis of specific documents, try Deep Read mode. "
-                    f"({passage_count} passages from {len(evidence.get('passages', []))} docs "
-                    f"+ {len(evidence['entities'])} entities)"
-                )
+    # ── Display block: renders from session_state (persists across reruns) ──
+    if st.session_state.discovery_evidence is not None:
+        evidence = st.session_state.discovery_evidence
+        discovery_question = st.session_state.discovery_question
+        linked_analysis = st.session_state.discovery_analysis
+
+        st.markdown("---")
+
+        # Summary
+        passage_count = sum(p['passage_count'] for p in evidence.get('passages', []))
+        counts = {
+            'Entities': len(evidence['entities']),
+            'Events': len(evidence['events']),
+            'Transactions': len(evidence['financial_transactions']),
+            'Relationships': len(evidence['relationships']),
+            'Fee Patents': len(evidence.get('fee_patents', [])),
+            'Correspondence': len(evidence.get('correspondence', [])),
+            'Legislative Actions': len(evidence.get('legislative_actions', [])),
+            'Testimony': len(evidence.get('testimony', [])),
+            'Taxes': len(evidence.get('taxes', [])),
+            'Mortgages': len(evidence.get('mortgages', [])),
+            'Record Slips': len(evidence.get('record_slips', [])),
+            'Legal Cases': len(evidence.get('legal_cases', [])),
+            'Text Passages': passage_count,
+            'Documents': len(evidence['documents']),
+        }
+        count_str = " | ".join([f"**{k}:** {v}" for k, v in counts.items() if v > 0])
+        st.success(f"Evidence found: {count_str}")
+
+        # Evidence browser
+        with st.expander("\U0001f50e Browse Raw Evidence", expanded=False):
+            tabs = st.tabs(["\U0001f4c4 Passages", "\U0001f3f7\ufe0f Entities", "\U0001f4c5 Events",
+                           "\U0001f4b0 Transactions", "\U0001f517 Relationships",
+                           "\U0001f4dc Fee Patents", "\U0001f4e8 Correspondence",
+                           "\U0001f3db\ufe0f Legislation", "\U0001f4b5 Taxes", "\U0001f3e6 Mortgages",
+                           "\U0001f5c2\ufe0f Record Slips", "\u2696\ufe0f Legal Cases",
+                           "\U0001f578\ufe0f Networks"])
+
+            with tabs[0]:
+                if evidence['passages']:
+                    for d_idx, doc in enumerate(evidence['passages']):
+                        st.markdown(f"### \U0001f4c4 {doc_label(doc)}")
+                        st.caption(f"Collection: {doc.get('collection', 'n/a')} | "
+                                   f"Pipeline: {doc.get('pipeline_version', 'n/a')}")
+                        for i, passage in enumerate(doc['passages']):
+                            st.markdown(f"**Passage {i+1}:**")
+                            st.text_area(
+                                "passage",
+                                passage[:1000],
+                                key=f"p_disco_{d_idx}_{i}_{hash(passage)}",
+                                height=150,
+                                label_visibility="collapsed",
+                                disabled=True,
+                            )
+                        st.markdown("---")
+                else:
+                    st.info("No full-text passages found.")
+
+            with tabs[1]:
+                for e in evidence['entities'][:50]:
+                    src_list = e.get('source_display_names') or e.get('source_files') or []
+                    src_list = [s for s in src_list if s]
+                    sources = ", ".join(src_list[:3])
+                    st.markdown(f"**{e['name']}** ({e['type']}) \u2014 {e.get('doc_count', 0)} docs"
+                                f" {'\u2b50' if e.get('relevance_score', 0) > 500 else ''}")
+                    if e.get('context'):
+                        st.caption(e['context'][:300])
+                    if sources:
+                        st.caption(f"\U0001f4c4 {sources}")
+                    st.markdown("---")
+
+            with tabs[2]:
+                for ev in evidence['events'][:30]:
+                    st.markdown(f"**[{ev.get('date', 'n/d')}]** {ev.get('type', '')} \u2014 {ev.get('description', '')[:200]}")
+                    st.caption(f"\U0001f4c4 {doc_label(ev)}")
+
+            with tabs[3]:
+                for ft in evidence['financial_transactions'][:20]:
+                    st.markdown(f"**{ft.get('payer', '?')}** \u2192 **{ft.get('payee', '?')}**: {ft.get('amount', '?')}")
+                    st.caption(f"{ft.get('for_what', '')} [{ft.get('date', 'n/d')}] | "
+                               f"Context: {(ft.get('context') or '')[:150]}")
+                    st.caption(f"\U0001f4c4 {doc_label(ft)}")
+
+            with tabs[4]:
+                for r in evidence['relationships'][:30]:
+                    st.markdown(f"**{r.get('subject', '?')}** \u2014[{r.get('type', '')}]\u2192 **{r.get('object', '?')}**")
+                    if r.get('context'):
+                        st.caption(r['context'][:200])
+                    st.caption(f"\U0001f4c4 {doc_label(r)}")
+
+            with tabs[5]:
+                if evidence.get('fee_patents'):
+                    for fp in evidence['fee_patents'][:30]:
+                        allottee = fp.get('allottee', '?')
+                        allotment = fp.get('allotment_number', '')
+                        acreage = fp.get('acreage', '')
+                        header = f"**{allottee}**"
+                        if allotment:
+                            header += f" — Allotment {allotment}"
+                        if acreage:
+                            header += f" ({acreage} acres)"
+                        st.markdown(header)
+                        details = []
+                        if fp.get('patent_date'):
+                            details.append(f"Patent: {fp['patent_date']}")
+                        if fp.get('trust_to_fee_mechanism'):
+                            details.append(f"Mechanism: {fp['trust_to_fee_mechanism']}")
+                        if fp.get('subsequent_buyer'):
+                            details.append(f"Sold to: {fp['subsequent_buyer']}")
+                        if fp.get('sale_price'):
+                            details.append(f"Price: {fp['sale_price']}")
+                        if fp.get('attorney'):
+                            details.append(f"Attorney: {fp['attorney']}")
+                        if fp.get('mortgage_amount'):
+                            details.append(f"Mortgage: {fp['mortgage_amount']} ({fp.get('mortgage_holder', '?')})")
+                        if details:
+                            st.caption(" | ".join(details))
+                        st.caption(f"\U0001f4c4 {doc_label(fp)}")
+                        st.markdown("---")
+                else:
+                    st.info("No fee patents found.")
+
+            with tabs[6]:
+                if evidence.get('correspondence'):
+                    for c in evidence['correspondence'][:30]:
+                        sender = c.get('sender', '?')
+                        recipient = c.get('recipient', '?')
+                        date = c.get('date', 'n/d')
+                        st.markdown(f"**{sender}** \u2192 **{recipient}** [{date}]")
+                        if c.get('sender_title') or c.get('recipient_title'):
+                            titles = f"{c.get('sender_title', '')} \u2192 {c.get('recipient_title', '')}"
+                            st.caption(titles)
+                        if c.get('subject'):
+                            st.caption(f"Re: {c['subject'][:200]}")
+                        if c.get('action_requested'):
+                            st.caption(f"Action: {c['action_requested'][:200]}")
+                        if c.get('outcome'):
+                            st.caption(f"Outcome: {c['outcome'][:200]}")
+                        st.caption(f"\U0001f4c4 {doc_label(c)}")
+                        st.markdown("---")
+                else:
+                    st.info("No correspondence found.")
+
+            with tabs[7]:
+                if evidence.get('legislative_actions'):
+                    for la in evidence['legislative_actions'][:30]:
+                        bill = la.get('bill_number', '?')
+                        action = la.get('action_type', '?')
+                        date = la.get('action_date', 'n/d')
+                        st.markdown(f"**{bill}** — {action} [{date}]")
+                        if la.get('bill_title'):
+                            st.caption(la['bill_title'])
+                        details = []
+                        if la.get('sponsor'):
+                            details.append(f"Sponsor: {la['sponsor']}")
+                        if la.get('vote_count'):
+                            details.append(f"Vote: {la['vote_count']}")
+                        if la.get('committee'):
+                            details.append(f"Committee: {la['committee']}")
+                        if la.get('outcome'):
+                            details.append(f"Outcome: {la['outcome']}")
+                        if details:
+                            st.caption(" | ".join(details))
+                        st.caption(f"\U0001f4c4 {doc_label(la)}")
+                        st.markdown("---")
+                else:
+                    st.info("No legislative actions found.")
+
+            with tabs[8]:
+                if evidence.get('taxes'):
+                    for tx in evidence['taxes'][:50]:
+                        taxpayer = tx.get('taxpayer') or '?'
+                        tax_type = tx.get('tax_type') or '?'
+                        year = tx.get('year') or 'n/d'
+                        st.markdown(f"**{taxpayer}** — {tax_type} [{year}]")
+                        details = []
+                        if tx.get('amount'):
+                            details.append(f"Amount: {tx['amount']}")
+                        if tx.get('county'):
+                            details.append(f"County: {tx['county']}")
+                        if tx.get('status'):
+                            details.append(f"Status: {tx['status']}")
+                        if details:
+                            st.caption(" | ".join(details))
+                        if tx.get('land_description'):
+                            st.caption(f"Land: {tx['land_description'][:200]}")
+                        if tx.get('context'):
+                            st.caption(tx['context'][:300])
+                        st.caption(f"\U0001f4c4 {doc_label(tx)}")
+                        st.markdown("---")
+                else:
+                    st.info("No tax records found.")
+
+            with tabs[9]:
+                if evidence.get('mortgages'):
+                    for m in evidence['mortgages'][:50]:
+                        borrower = m.get('borrower') or '?'
+                        lender = m.get('lender') or '?'
+                        date = m.get('date') or 'n/d'
+                        st.markdown(f"**{borrower}** \u2192 **{lender}** [{date}]")
+                        details = []
+                        if m.get('amount'):
+                            details.append(f"Amount: {m['amount']}")
+                        if m.get('acreage'):
+                            details.append(f"Acreage: {m['acreage']}")
+                        if m.get('interest_rate'):
+                            details.append(f"Interest: {m['interest_rate']}")
+                        if m.get('status'):
+                            details.append(f"Status: {m['status']}")
+                        if details:
+                            st.caption(" | ".join(details))
+                        if m.get('land_description'):
+                            st.caption(f"Land: {m['land_description'][:200]}")
+                        if m.get('context'):
+                            st.caption(m['context'][:300])
+                        st.caption(f"\U0001f4c4 {doc_label(m)}")
+                        st.markdown("---")
+                else:
+                    st.info("No mortgages found.")
+
+            with tabs[10]:
+                if evidence.get('record_slips'):
+                    for rs in evidence['record_slips'][:80]:
+                        file_num = rs.get('file_number') or '?'
+                        date = rs.get('date') or 'n/d'
+                        jurisdiction = rs.get('jurisdiction') or ''
+                        header = f"**{file_num}** [{date}]"
+                        if jurisdiction:
+                            header += f" — {jurisdiction}"
+                        st.markdown(header)
+                        if rs.get('case_name'):
+                            st.markdown(f"*Case:* {rs['case_name']}")
+                        if rs.get('correspondent'):
+                            role = f" ({rs['correspondent_role']})" if rs.get('correspondent_role') else ""
+                            st.caption(f"From/To: {rs['correspondent']}{role}")
+                        if rs.get('subject'):
+                            st.caption(f"Subject: {rs['subject']}")
+                        details = []
+                        if rs.get('named_individual'):
+                            details.append(f"Person: {rs['named_individual']}")
+                        if rs.get('tribe_or_reservation'):
+                            details.append(f"Tribe: {rs['tribe_or_reservation']}")
+                        if rs.get('action_type'):
+                            details.append(f"Action: {rs['action_type']}")
+                        if rs.get('routing_division'):
+                            details.append(f"Routing: {rs['routing_division']}")
+                        if details:
+                            st.caption(" | ".join(details))
+                        st.caption(f"\U0001f4c4 {doc_label(rs)}")
+                        st.markdown("---")
+                else:
+                    st.info("No record slips found.")
+
+            with tabs[11]:
+                if evidence.get('legal_cases'):
+                    for lc in evidence['legal_cases'][:60]:
+                        file_num = lc.get('file_number') or '?'
+                        case_name = lc.get('case_name') or '?'
+                        st.markdown(f"**{file_num}** — {case_name}")
+                        details = []
+                        if lc.get('jurisdiction'):
+                            details.append(f"Jurisdiction: {lc['jurisdiction']}")
+                        if lc.get('county'):
+                            details.append(f"County: {lc['county']}")
+                        if lc.get('case_type'):
+                            details.append(f"Type: {lc['case_type']}")
+                        if lc.get('named_individual'):
+                            details.append(f"Person: {lc['named_individual']}")
+                        if lc.get('tribe_or_reservation'):
+                            details.append(f"Tribe: {lc['tribe_or_reservation']}")
+                        if lc.get('slip_count'):
+                            details.append(f"**Slips: {lc['slip_count']}**")
+                        if details:
+                            st.caption(" | ".join(details))
+                        cafn = lc.get('cases_at_file_number') or 0
+                        if cafn and cafn > 1:
+                            st.warning(
+                                f"\u26a0 Master classification: {cafn} distinct cases share "
+                                f"file_number {file_num}. The slip_count above counts ALL slips "
+                                f"under the file_number, not just this case."
+                            )
+                        st.caption(f"\U0001f4c4 {doc_label(lc)}")
+                        st.markdown("---")
+                else:
+                    st.info("No legal cases found.")
+
+            with tabs[12]:
+                for person, connections in evidence.get('networks', {}).items():
+                    st.markdown(f"**Network: {person}**")
+                    for c in connections[:15]:
+                        st.text(f"  \u2194 {c['name']} ({c['type']}) \u2014 {c['shared_docs']} shared docs")
+                    st.markdown("---")
+
+        # AI Analysis (from session state)
+        if linked_analysis:
+            st.markdown("---")
+            st.markdown('<h3 class="section-header">AI Analysis</h3>', unsafe_allow_html=True)
+            st.markdown(linked_analysis)
+
+            st.download_button(
+                "\u2b07 Save Analysis",
+                data=markdown_to_html(linked_analysis, "Discovery Analysis"),
+                file_name="discovery_analysis.html",
+                mime="text/html",
+            )
+
+            st.markdown("---")
+            st.caption(
+                "\u26a0\ufe0f Discovery mode: full-text passages + extracted entities. "
+                "For deeper analysis of specific documents, try Deep Read mode. "
+                f"({passage_count} passages from {len(evidence.get('passages', []))} docs "
+                f"+ {len(evidence['entities'])} entities)"
+            )
 
 
 # ═════════════════════════════════════════════════
@@ -2552,10 +3899,17 @@ elif mode_key == "Deep Read":
         for d in docs:
             text_len = d.get('text_length') or 0
             est_pages = max(1, text_len // 3000) if text_len else 0
-            has_text = "\u2705" if d.get('has_text') else "\u274c"
+            is_vision = (d.get('pipeline_version') or '').startswith('v4-vision')
+            if d.get('has_text'):
+                icon = "\u2705"
+            elif is_vision:
+                icon = "\U0001f441\ufe0f"  # eye icon for vision-extracted
+            else:
+                icon = "\u274c"
+            pages_label = "vision-extracted" if is_vision and not text_len else f"~{est_pages} pages"
             doc_options.append(
-                f"{has_text} {doc_label(d)} "
-                f"({d.get('entity_count', 0)} entities, ~{est_pages} pages)"
+                f"{icon} {doc_label(d)} "
+                f"({d.get('entity_count', 0)} entities, {pages_label})"
             )
 
         selected_idx = st.selectbox(
@@ -2583,7 +3937,13 @@ elif mode_key == "Deep Read":
                        f"It will be truncated to fit the AI context window (~150K tokens).")
 
         if not selected_doc_info.get('has_text'):
-            st.error("This document has no extracted text. Deep Read requires full text.")
+            is_vision_doc = (selected_doc_info.get('pipeline_version') or '').startswith('v4-vision')
+            if is_vision_doc:
+                st.info("This document was extracted via vision mode (page images → Claude). "
+                        "Deep Read requires full text and is not available. "
+                        "Use **Discovery** to query its extracted data, or **Corpus Synthesis** to include it in corpus-wide analysis.")
+            else:
+                st.error("This document has no extracted text. Deep Read requires full text.")
         else:
             question = st.text_area(
                 "Research question (or leave blank for general analysis):",
@@ -2604,11 +3964,19 @@ elif mode_key == "Deep Read":
                     # Show document stats
                     full_text = doc.get('full_text', '')
                     actual_tokens = estimate_tokens(full_text)
+                    extra_counts = []
+                    for key, label in [('fee_patents', 'fee patents'), ('correspondence', 'correspondence'),
+                                       ('legislative_actions', 'legislative'), ('testimony', 'testimony'),
+                                       ('taxes', 'taxes'), ('mortgages', 'mortgages')]:
+                        c = len(doc.get(key, []))
+                        if c > 0:
+                            extra_counts.append(f"{c} {label}")
+                    extra_str = ", " + ", ".join(extra_counts) if extra_counts else ""
                     st.info(f"Loaded: {doc_label(doc)} | "
                             f"{len(doc.get('entities', []))} entities, "
                             f"{len(doc.get('events', []))} events, "
                             f"{len(doc.get('transactions', []))} transactions, "
-                            f"{len(doc.get('relationships', []))} relationships | "
+                            f"{len(doc.get('relationships', []))} relationships{extra_str} | "
                             f"~{actual_tokens:,} tokens of text")
 
                     with st.expander("Preview document text", expanded=False):
@@ -2677,6 +4045,8 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
                     'testimony': search_testimony(selected_db, question),
                     'taxes': search_taxes(selected_db, question),
                     'mortgages': search_mortgages(selected_db, question),
+                    'record_slips': search_record_slips(selected_db, question),
+                    'legal_cases': search_legal_cases(selected_db, question),
                 }
 
             with st.spinner("Retrieving full-text passages..."):
@@ -2700,6 +4070,31 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
                 else:
                     evidence['networks'] = {}
 
+            # Phase 2: case-trace expansion (same logic as Discovery mode).
+            phase1_slips = evidence.get('record_slips', [])
+            phase1_cases = evidence.get('legal_cases', [])
+            if phase1_slips or phase1_cases:
+                with st.spinner("Phase 2: Expanding to full case chronologies..."):
+                    from collections import Counter
+                    file_freq = Counter()
+                    for rs in phase1_slips:
+                        if rs.get('file_number'):
+                            file_freq[rs['file_number']] += 1
+                    for lc in phase1_cases:
+                        if lc.get('file_number'):
+                            file_freq[lc['file_number']] += max(1, lc.get('slip_count') or 0)
+                    top_files = [fn for fn, _ in file_freq.most_common(20)]
+                    if top_files:
+                        expanded = fetch_slips_by_file_numbers(
+                            selected_db, top_files, max_per_file=30)
+                        seen_ids = {rs.get('id') for rs in phase1_slips if rs.get('id') is not None}
+                        for rs in expanded:
+                            if rs.get('id') not in seen_ids:
+                                phase1_slips.append(rs)
+                                seen_ids.add(rs.get('id'))
+                        evidence['record_slips'] = phase1_slips
+                        evidence['phase2_file_numbers'] = top_files
+
             with st.spinner("Ranking documents for deep reading..."):
                 ranked_docs = rank_documents_for_deep_read(selected_db, question)
 
@@ -2722,6 +4117,14 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
             'Events': len(evidence['events']),
             'Transactions': len(evidence['financial_transactions']),
             'Relationships': len(evidence['relationships']),
+            'Fee Patents': len(evidence.get('fee_patents', [])),
+            'Correspondence': len(evidence.get('correspondence', [])),
+            'Legislative Actions': len(evidence.get('legislative_actions', [])),
+            'Testimony': len(evidence.get('testimony', [])),
+            'Taxes': len(evidence.get('taxes', [])),
+            'Mortgages': len(evidence.get('mortgages', [])),
+            'Record Slips': len(evidence.get('record_slips', [])),
+            'Legal Cases': len(evidence.get('legal_cases', [])),
             'Text Passages': passage_count,
             'Documents': len(evidence['documents']),
         }
@@ -2731,14 +4134,22 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
         # Evidence browser
         with st.expander("\U0001f50e Browse Discovery Evidence", expanded=False):
             tabs = st.tabs(["\U0001f4c4 Passages", "\U0001f3f7\ufe0f Entities",
-                           "\U0001f4b0 Transactions", "\U0001f517 Relationships"])
+                           "\U0001f4b0 Transactions", "\U0001f517 Relationships",
+                           "\U0001f4b5 Taxes", "\U0001f3e6 Mortgages",
+                           "\U0001f5c2\ufe0f Record Slips", "\u2696\ufe0f Legal Cases"])
             with tabs[0]:
                 if evidence['passages']:
-                    for doc in evidence['passages']:
+                    for d_idx, doc in enumerate(evidence['passages']):
                         st.markdown(f"### {doc_label(doc)}")
                         for i, passage in enumerate(doc['passages']):
-                            st.text_area(f"hp_{doc['file_name']}_{i}", passage[:800],
-                                         height=120, label_visibility="collapsed", disabled=True)
+                            st.text_area(
+                                "passage",
+                                passage[:800],
+                                key=f"hp_hybrid_{d_idx}_{i}_{hash(passage)}",
+                                height=120,
+                                label_visibility="collapsed",
+                                disabled=True,
+                            )
                         st.markdown("---")
             with tabs[1]:
                 for e in evidence['entities'][:30]:
@@ -2749,6 +4160,59 @@ elif "Deep Read" in mode_key and "Discovery" in mode_key:
             with tabs[3]:
                 for r in evidence['relationships'][:15]:
                     st.markdown(f"**{r.get('subject', '?')}** \u2014[{r.get('type', '')}]\u2192 **{r.get('object', '?')}**")
+            with tabs[4]:
+                if evidence.get('taxes'):
+                    for tx in evidence['taxes'][:30]:
+                        st.markdown(f"**{tx.get('taxpayer') or '?'}** — {tx.get('tax_type') or '?'} [{tx.get('year') or 'n/d'}]")
+                        details = []
+                        if tx.get('amount'): details.append(f"Amount: {tx['amount']}")
+                        if tx.get('county'): details.append(f"County: {tx['county']}")
+                        if tx.get('status'): details.append(f"Status: {tx['status']}")
+                        if details:
+                            st.caption(" | ".join(details))
+                        st.caption(f"\U0001f4c4 {doc_label(tx)}")
+                else:
+                    st.info("No tax records found.")
+            with tabs[5]:
+                if evidence.get('mortgages'):
+                    for m in evidence['mortgages'][:30]:
+                        st.markdown(f"**{m.get('borrower') or '?'}** \u2192 **{m.get('lender') or '?'}** [{m.get('date') or 'n/d'}]")
+                        details = []
+                        if m.get('amount'): details.append(f"Amount: {m['amount']}")
+                        if m.get('acreage'): details.append(f"Acreage: {m['acreage']}")
+                        if m.get('status'): details.append(f"Status: {m['status']}")
+                        if details:
+                            st.caption(" | ".join(details))
+                        st.caption(f"\U0001f4c4 {doc_label(m)}")
+                else:
+                    st.info("No mortgages found.")
+            with tabs[6]:
+                if evidence.get('record_slips'):
+                    for rs in evidence['record_slips'][:50]:
+                        st.markdown(f"**{rs.get('file_number') or '?'}** [{rs.get('date') or 'n/d'}] — {rs.get('jurisdiction') or ''}")
+                        if rs.get('case_name'):
+                            st.caption(f"Case: {rs['case_name']}")
+                        if rs.get('subject'):
+                            st.caption(f"Subject: {rs['subject'][:300]}")
+                        st.caption(f"\U0001f4c4 {doc_label(rs)}")
+                else:
+                    st.info("No record slips found.")
+            with tabs[7]:
+                if evidence.get('legal_cases'):
+                    for lc in evidence['legal_cases'][:30]:
+                        slip_info = f" — **{lc['slip_count']} slips**" if lc.get('slip_count') else ""
+                        st.markdown(f"**{lc.get('file_number') or '?'}** {lc.get('case_name') or '?'}{slip_info}")
+                        details = []
+                        if lc.get('jurisdiction'): details.append(lc['jurisdiction'])
+                        if lc.get('county'): details.append(f"County: {lc['county']}")
+                        if details:
+                            st.caption(" | ".join(details))
+                        cafn = lc.get('cases_at_file_number') or 0
+                        if cafn and cafn > 1:
+                            st.caption(f"\u26a0 Master file: {cafn} distinct cases share this file_number")
+                        st.caption(f"\U0001f4c4 {doc_label(lc)}")
+                else:
+                    st.info("No legal cases found.")
 
         # ── STEP 2: Document picker ──
         st.markdown("---")
