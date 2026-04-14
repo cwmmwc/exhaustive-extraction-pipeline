@@ -99,7 +99,11 @@ UVA HPC has A100 80GB GPUs, but the SLURM partition `gpu-a100-80gb` had zero nod
 
 ### The salloc-vs-sbatch mistake
 
-[TODO: Christian to fill in details — an interactive salloc session produced results that weren't captured when the session ended, vs. sbatch which writes to persistent output files. Results were lost because the extraction ran in an interactive session and wasn't saved.]
+The AI assistant (Claude Code) set up HPC extractions to run through interactive SSH sessions — meaning the extraction depended on my laptop staying open, connected to the university network, and awake. Close the laptop, lose WiFi, or let the screen sleep, and the job dies mid-extraction with no saved results. This happened more than once before we caught the pattern.
+
+The fix was obvious in hindsight: submit the work as a `sbatch` job — a batch submission that runs independently on HPC, writes output to persistent files, and doesn't care whether your laptop is on or off. That's the entire point of a batch scheduler. But Claude Code defaulted to the interactive approach because it could see the output in real time, which made debugging easier for *it*. The convenience of the AI assistant drove an infrastructure choice that was wrong for the researcher.
+
+**Lesson:** When an AI assistant sets up infrastructure, its incentives aren't aligned with yours. It prefers interactive sessions because it can see what's happening. You need batch jobs because you have a life outside the terminal. Check how things are wired, not just whether they work.
 
 ### The Qwen OOM cascade
 
@@ -165,11 +169,9 @@ The JSON parser choked on the first `data:` prefix, threw an exception, and the 
 
 ## Phase 7: The Schema Confusion (April 2026)
 
-**The problem:** During the Sonnet vs. Kimi comparison for Survey Part 33, Claude Code (the AI assistant building the pipeline) incorrectly claimed that the Sonnet extraction used the general-purpose schema when it actually used the v4 Survey-specific schema. This led to a period of confusion about why extraction counts differed — we were attributing differences to model capability when some of the difference was schema-related.
+**The problem:** During the Sonnet vs. Kimi comparison for Survey Part 33, Claude Code (the AI assistant building the pipeline) made incorrect claims about which extraction schema was being used. This muddied the comparison — we couldn't tell whether differences in extraction counts reflected genuine model capability differences or just different schemas extracting different field sets. When the assistant that built the code is also the one analyzing the results, its mistakes compound: a wrong claim about the schema feeds into a wrong interpretation of the data, which feeds into a wrong recommendation about which model to use.
 
-[TODO: Christian to fill in specifics — which fields were affected, how the confusion was discovered, and how it affected the comparison conclusions.]
-
-**Lesson:** When your AI assistant is also building your data pipeline, it can introduce errors into its own analysis of that pipeline. The assistant's claims about what the code does need to be verified against what the code actually does. Trust but verify applies to AI tooling as much as to any other source.
+**Lesson:** When your AI assistant is also building your data pipeline, it can introduce errors into its own analysis of that pipeline. The assistant's claims about what the code does need to be verified against what the code actually does. Trust but verify applies to AI tooling as much as to any other source. In a traditional software project, the developer and the analyst are different people, which provides a natural check. When one AI agent fills both roles, you lose that check unless you actively provide it.
 
 ---
 
