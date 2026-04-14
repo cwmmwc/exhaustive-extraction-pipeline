@@ -3,3 +3,10 @@ venv/
 __pycache__/
 dedup_phase1_log_*.json
 corpora/
+
+# Source PDFs and extraction outputs — large binary files, not for git
+survey_pdfs/
+survey_of_conditions_extractions/
+vision_index_cards_full/
+qwen_vl_index_cards_full/
+RG 60 index cards/

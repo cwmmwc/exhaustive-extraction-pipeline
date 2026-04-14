@@ -4,7 +4,9 @@
 AI-powered structured extraction from 4,925 historical PDFs (139M words) documenting federal Native American land dispossession, 1880–1990. Built by Christian McMillen, historian at UVA.
 
 ## Architecture
-- **Extraction**: PyMuPDF text → 40K-char chunks with 5K overlap → Claude Sonnet → structured JSON → PostgreSQL
+- **Text extraction**: PyMuPDF text → 40K-char chunks with 5K overlap → Kimi K2.5 → structured JSON → PostgreSQL
+- **Vision extraction**: PDF pages rendered as images → Claude Sonnet vision → structured JSON (for tables, ledgers, index cards)
+- **Index card extraction**: `--index-cards` flag with custom DOJ record slip prompt → record_slips, legal_cases, persons
 - **Synthesis**: Per-document summaries → Claude Opus for corpus-wide analysis
 - **Interface**: Streamlit app with Discovery, Deep Read, Hybrid, and Corpus Synthesis modes
 - **Deployment**: Google Cloud Run (auto-deploy on push to main), Cloud SQL PostgreSQL
@@ -12,13 +14,22 @@ AI-powered structured extraction from 4,925 historical PDFs (139M words) documen
 ## Key Files
 - `poc_pipeline_chunked_v3.py` — Main extraction pipeline (v3: entities + fee_patents, correspondence, legislative_actions)
 - `ai_analysis_interface_v4.py` — Streamlit query interface
-- `enrich_summaries.py` — Per-document summary generation (supports Batch API)
-- `extract_single_pdf.py` — Standalone single-PDF extraction (Claude and/or Together AI)
+- `enrich_summaries.py` — Per-document summary generation (supports Batch API, `--from-extraction` for extraction-based summaries, `--model kimi` for cheap summaries)
+- `extract_single_pdf.py` — Standalone single-PDF extraction (Claude, Together AI, vLLM, `--uvarc` for RC GenAI, `--vision` for tables, `--index-cards` for DOJ record slips)
+- `load_vision_extractions.py` — Load vision-mode extractions (tables + standard types) into PostgreSQL
+- `retry_failed_chunks.py` — Retry failed/truncated chunks and complete interrupted extractions
+- `run_survey_extraction.sh` — Batch extraction of all Survey of Conditions PDFs via Together AI
+- `load_survey_extractions.py` — Load Survey extraction JSONs into PostgreSQL
+- `load_survey_fulltext.py` — Load PDF full text into survey database (needed for full-text summary mode)
 - `compare_claude_vs_local_models.py` — Model benchmarking (Ollama, vLLM, Together AI, Fireworks, Groq)
 - `schema.sql` — PostgreSQL v3 schema
+- `schema_v4.sql` — PostgreSQL v4 schema (adds testimony, taxes, mortgages, document_tables, table_rows)
 - `comparisons/MODEL_COMPARISON_SUMMARY.md` — Comprehensive model comparison results
+- `hpc/` — SLURM scripts for running Kimi K2.5 on UVA HPC (vLLM server + extraction workers)
+- `KIMI_K25_RESULTS.md` — One-page summary of Kimi K2.5 findings for sharing
 
 ## Databases
+- `survey_of_conditions` — Survey of Conditions hearings (26 of 48 volumes loaded, 158K items, 2,487 fee patents). Extracted by Kimi K2.5. Active campaign.
 - `crow_historical_docs` — Crow Nation corpus (386 docs, 43K entities, 959 fee patents)
 - `historical_docs` — Kiowa/KCA corpus (256 docs, 180 re-extracted through v3)
 - `full_corpus_docs` — Full corpus (planned)
@@ -39,8 +50,18 @@ AI-powered structured extraction from 4,925 historical PDFs (139M words) documen
 - Llama 4 Scout: 0%, complete failure
 - Fine-tuning Llama 3.3 70B: negative result (38%, worse than untuned)
 - Gemma 3 12B: excellent on bounded template extraction (NARA index cards)
+- Claude Sonnet vision: excellent on tabular documents (Taylor Report: 75 tables, 686 rows from 119 pages) and on DOJ index cards. Full 87-PDF Sonnet `--vision --index-cards` run already exists at `vision_index_cards_full/` (80 PDFs with merged JSON).
+- Qwen2.5-VL-72B: tested on HPC (4x A100 80GB, Loren's container `vllm_0.14.1-cu130.sif`, `--tensor-parallel-size 4`). Full corpus run launched 2026-04-10 against the running Qwen-VL vLLM server — duplicate of existing Sonnet data, kept for corpus-scale Sonnet-vs-Qwen comparison. Initial 2-PDF apples-to-apples (66 dense pages, 744 slips): ties Sonnet on slips, **+90% on cases** (per-mention vs deduped), **−70% on persons** (principals only vs all named individuals). Likely a deduplication-strategy difference, not a comprehension gap. See `comparisons/MODEL_COMPARISON_SUMMARY.md` §8 for the full breakdown.
 - Optimal pipeline: **Kimi extraction → Claude Opus analysis** (widest evidence base + deepest analytical framing)
 - Key finding: fee patent comprehension is Kimi-specific, not a general capability of 70B+ models — both Qwen 72B and Llama 70B fail catastrophically on fee patents while Kimi exceeds Claude
+
+## Index Card Extraction (RG 60)
+- 87 PDFs, ~2,400 pages of DOJ record slips from NARA RG 60
+- Custom `--index-cards` prompt extracts: record_slips, legal_cases, persons
+- Each card = one piece of correspondence about a legal case (tax recovery, quiet title, allotment disputes)
+- File number (e.g., 90-2-5-49) is the unique case identifier — case names vary across cards and need post-extraction dedup
+- Source files at `RG 60 index cards/` (exported from DEVONthink)
+- Tracks the DOJ's involvement in Indian land tax cases: which counties, which allottees, what outcomes
 
 ## Environment
 - Python venv at `./venv` — activate with `source venv/bin/activate`

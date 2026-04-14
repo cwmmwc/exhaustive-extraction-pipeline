@@ -1,6 +1,6 @@
 # Model Comparison Summary
 
-**Date:** 2026-03-23 (updated 2026-03-25 with Kimi K2.5 results, 2026-03-27 with Qwen 2.5 72B HPC benchmark)
+**Date:** 2026-03-23 (updated 2026-03-25 with Kimi K2.5 results, 2026-03-27 with Qwen 2.5 72B HPC benchmark, 2026-03-31 with Survey of Conditions production results, 2026-04-01 with corpus-wide synthesis comparison, 2026-04-13 with Sonnet vs Kimi hearing transcript comparison)
 **Purpose:** Evaluate whether open-source models can replace Claude for structured extraction and corpus-wide synthesis in a historical document analysis pipeline.
 
 ## Models Tested
@@ -417,7 +417,7 @@ Despite Kimi's fee patent success, the recognition–comprehension distinction s
 
 **Multi-decade litigation (Doc 811: Geisdorff).** Kimi extracted 90 items vs Claude's 137. The correspondence chain (14 vs 23) and event timeline (14 vs 34) spanning 72 years are the gap. Each court filing, administrative decision, and land transfer is a separate event embedded in legal prose. Claude traces the full bureaucratic sequence; Kimi captures roughly two-thirds of it.
 
-**Corpus-wide synthesis.** Not tested for Kimi, but Maverick's synthesis (Section 2) demonstrated the pattern: open-source models can identify what a document is *about* but cannot tell you what it *says*. Cross-document analysis requires holding 147K+ tokens of context and connecting specific details across dozens of sources.
+**Corpus-wide synthesis.** Tested 2026-04-01 on the 26-volume Survey of Conditions corpus (Section 6). Kimi produces competent corpus-wide synthesis at approximately 90–95% of Opus quality — a significant improvement over the earlier single-document gap. Both models cite the same evidence and reach the same conclusions; Opus leads on analytical framing and naming structural concepts. The earlier assumption (based on Maverick's poor synthesis performance) that open-source models cannot perform corpus-wide synthesis does not hold for Kimi at this evidence scale. Cost: Kimi synthesis was effectively free vs. $0.34 for Opus.
 
 ### Revised Understanding: What Each Model Does Best
 
@@ -480,7 +480,8 @@ The evidence now supports a **complementary approach** where Claude and Kimi K2.
 | **Broad extraction** | Kimi K2.5 | Full corpus — maximize person/record coverage | API or HPC |
 | **Deep extraction** | Claude Sonnet | Narrative-heavy documents — relationships, causal chains, field enrichment | ~$0.50–1.00/doc |
 | **Index cards** | Gemma 3 12B | NARA index card parsing | Free (local) |
-| **Synthesis** | Claude Opus | Corpus-wide research questions | ~$3–5/question |
+| **Synthesis (exploratory)** | Kimi K2.5 | Iterative corpus-wide queries, draft synthesis | ~free |
+| **Synthesis (final)** | Claude Opus | Polished corpus-wide analysis with deepest framing | ~$0.34/question |
 
 ### Should You Run Models Locally?
 
@@ -506,7 +507,103 @@ With Kimi K2.5's results, the cost calculus has shifted. A hybrid Kimi + Claude 
 
 ---
 
-## 6. Raw Data Locations
+## 5a. Sonnet vs Kimi on Hearing Testimony: Survey Part 33 (April 2026)
+
+The original benchmarks (Section 1) used three Crow Reservation documents — BIA administrative records, legislative correspondence, and multi-decade litigation. None were congressional hearing transcripts, which is the document type comprising the entire Survey of Conditions corpus. This test fills that gap.
+
+**Document:** Survey of Conditions Part 33 — San Diego & San Francisco, CA (June–July 1934). 205 pages, 722,044 characters, 21 chunks at 40K/5K overlap. Kimi extraction via RC GenAI (existing production run); Sonnet extraction via Anthropic API (new, same chunking parameters).
+
+### Results (raw pre-dedup counts)
+
+| Category | Kimi K2.5 | Claude Sonnet | Kimi % of Sonnet |
+|----------|----------:|--------------:|:----------------:|
+| entities | 1,022 | 1,376 | 74% |
+| events | 156 | 398 | 39% |
+| financial_transactions | 90 | 297 | 30% |
+| relationships | 163 | 455 | 36% |
+| fee_patents | 5 | 0 | — (Kimi wins) |
+| correspondence | 52 | 106 | 49% |
+| legislative_actions | 43 | 92 | 47% |
+| testimony | 50 | 130 | 38% |
+| taxes | 2 | 2 | 100% |
+| mortgages | 0 | 3 | — |
+| **total** | **1,583** | **2,859** | **55%** |
+
+### How This Fits the Existing Pattern
+
+| Document type | Kimi % of Claude | Source |
+|---------------|:----------------:|--------|
+| Fee patent records (CCF 56074) | 125–159% | Section 1 |
+| BIA administrative (Doc 695) | ~99% | Section 1 |
+| Legislative correspondence (Doc 798) | ~70% | Section 1 |
+| Multi-decade litigation (Doc 811) | ~66% | Section 1 |
+| **Congressional hearing testimony (Part 33)** | **55%** | **This test** |
+
+The 55% result extends the recognition–comprehension spectrum (Section 4). Hearing transcripts are the most narrative-dense document type in the corpus — multi-party dialogue, implicit relationships, scattered financial references within testimony. This is exactly where the comprehension gap predicted Kimi would be weakest, and it is.
+
+### Qualitative Differences
+
+- **Testimony:** Sonnet found 94 unique witnesses vs Kimi's 41 (31 overlap). Sonnet creates per-topic testimony entries; Kimi creates one entry per witness covering their whole appearance.
+- **Events:** Sonnet identifies discrete actions within testimony (delegation trips, tribal votes, agency decisions) that Kimi misses. Unlike the Crow benchmark, Kimi does NOT over-extract here — its 156 events are genuine.
+- **Financial transactions:** The widest gap (3.3x). Hearing testimony references many small transactions that Sonnet extracts individually.
+- **Fee patents:** Kimi found 5 that Sonnet missed entirely — brief references to fee patent issuance within witness testimony. Consistent with Kimi's demonstrated superiority on fee patent recognition.
+- **Entities:** Closest category at 74%. Both capture core witnesses and officials; Sonnet picks up more minor figures.
+
+### Implications for the Survey Corpus
+
+The Survey of Conditions is 41 volumes of congressional hearing testimony — the document type where Sonnet's advantage over Kimi is largest. For research questions requiring **comprehensive extraction** (every financial transaction, every witness relationship), selective Sonnet re-extraction of high-priority volumes would add significant value. For questions about **major testimony, policy actions, and fee patents**, the existing Kimi extraction is sufficient and superior on fee patents.
+
+Full comparison details at `comparisons/SONNET_VS_KIMI_PART33.md`. Sonnet extraction data at `comparisons/sonnet_vs_kimi_part33/`.
+
+---
+
+## 6. Production Deployment: Survey of Conditions (March 2026)
+
+The model comparison findings were validated at scale by extracting the *Survey of Conditions of the Indians in the United States* (1927–1943), a 48-volume, 26,272-page, 15.4-million-word series of Senate subcommittee hearings documenting conditions across Indian country.
+
+### Results (41 of 41 published parts — COMPLETE as of 2026-04-13; snapshot below from 26 volumes as of 2026-03-31)
+
+| Type | Count |
+|------|------:|
+| Entities | 81,681 |
+| Financial transactions | 21,926 |
+| Events | 18,400 |
+| Relationships | 17,483 |
+| Testimony | 5,492 |
+| Correspondence | 4,933 |
+| Legislative actions | 3,366 |
+| Fee patents | 2,487 |
+| Taxes | 1,880 |
+| Mortgages | 703 |
+| **Total** | **158,351** |
+
+**Model:** Kimi K2.5 via Together AI ($0.50/$2.80 per M tokens input/output), v4 schema (10 extraction types).
+
+**Cost:** ~$55 for 26 volumes (~1,260 chunks), including retries for failed chunks.
+
+**Infrastructure challenges:** Together AI's Kimi endpoint proved unreliable at scale — intermittent 500 errors, Cloudflare 403s, and truncated responses (max_tokens cutoff). A custom retry script (`retry_failed_chunks.py`) was built to handle three cases: (1) re-sending failed chunks, (2) completing interrupted extractions, and (3) repairing truncated JSON responses by closing open structures. The JSON repair alone rescued 12 chunks (~6,500 items) without any API calls.
+
+**HPC alternative:** The remaining 23 volumes (~1,230 chunks) are queued for extraction on UVA HPC (LawData allocation, 8x A100 80GB, vLLM). Estimated completion: under 24 hours vs. 3–5 days on Together AI. UVA Research Computing also launched RC GenAI (Kimi K2.5 on 8x H200 GPUs, free API access) on 2026-03-30, which may provide the most convenient path for future extraction work.
+
+**Key validation:** Kimi K2.5's fee patent comprehension held up at production scale. The Oklahoma volumes (Choctaw/Chickasaw, Durant, Anadarko) alone yielded 1,464 fee patents from 147- and 141-chunk documents — the kind of dense, record-heavy extraction where Kimi consistently outperforms Claude.
+
+### Corpus-Wide Synthesis: Opus vs. Kimi (2026-04-01)
+
+The synthesis gap between Opus and Kimi was tested directly on the Survey of Conditions corpus. Both models were given the same question ("tell me about the effects of fee patents on american indian land") with identical extraction-based summaries from all 26 volumes (158,351 Kimi-extracted items). This is the first corpus-wide synthesis comparison — the earlier four-way matrix (Section 1) tested only single-document analysis.
+
+**Finding:** Kimi's corpus-wide synthesis is approximately 90–95% of Opus, a substantial improvement over the 80–85% gap observed on the single benchmark document. Both models produced comprehensive, cited, 8,000+ word syntheses covering the same evidence: competency commissions, the dispossession cycle (mortgage → tax → foreclosure), irrigation liens, guardianship abuse, geographic scope, aggregate quantification, and conclusions with prove/suggest/gaps sections. Both cited the same key witnesses (Meritt's 99% admission, Collier's statistics, Hamilton on Blackfeet, Starr's forced patent). Kimi's closing prose was arguably stronger than Opus's.
+
+**Where Opus still leads:** naming structural concepts as citable frameworks ("four-step dispossession cycle," "structurally engineered process"), tighter integration of the 1924 Citizenship Act into the dispossession system, and a slightly sharper "What the Documents Suggest" section on the question of deliberate design versus policy failure. Opus organizes evidence into analytical arguments; Kimi organizes it more as a comprehensive catalog.
+
+**Why the gap narrowed:** Extraction breadth feeds analysis quality. With 158,351 structured items from Kimi's extraction — 2,487 fee patents, 5,492 testimony records, 81,681 entities — both models had sufficient evidence to build comprehensive arguments. The earlier single-document comparison gave each model far less to work with, amplifying differences in analytical depth. At corpus scale, the evidence does much of the argumentative work.
+
+**Cost comparison:** Opus synthesis cost $0.34 for all 26 volumes. Kimi synthesis cost effectively nothing (no measurable change in Together AI account balance — the 26 summaries fit in a single small prompt). For a researcher running multiple synthesis queries to explore different questions, Kimi's near-zero cost enables iterative exploration that would be expensive with Opus.
+
+**Revised recommendation:** The earlier untested assumption that Kimi "cannot perform corpus-wide synthesis" is incorrect. Kimi produces competent corpus-wide synthesis that covers the same evidence and reaches the same conclusions as Opus, with differences at the margins of analytical framing rather than evidence coverage. The optimal workflow may be: use Kimi for iterative exploration and draft synthesis (free/near-free), then run the final synthesis question through Opus for the deepest analytical framing ($0.34 per query). This replaces the earlier recommendation that Opus was the only viable synthesis option.
+
+---
+
+## 7. Raw Data Locations
 
 | Run | Directory |
 |-----|-----------|
@@ -542,6 +639,85 @@ To run Kimi K2.5 on a full document in chunked mode:
 ```bash
 python3 extract_single_pdf.py "document.pdf" --together-model kimi-k2.5 --together-only --chunked
 ```
+
+---
+
+---
+
+## 7. Infrastructure Speed Comparison (April 2026)
+
+Throughput measured on production extraction of Survey of Conditions volumes (40,000-character chunks, v4 prompt with 10 extraction types, Kimi K2.5).
+
+| Infrastructure | GPU | Speed per chunk | Cost | Notes |
+|---------------|-----|----------------|------|-------|
+| UVA RC GenAI (H200) — light load | H200 | ~75s | Free | Shared service. Best performance when few other users. |
+| UVA RC GenAI (H200) — busy | H200 | ~130s | Free | Shared service under load. |
+| Together AI (Kimi K2.5) | Unknown | ~150-300s | ~$0.27/M tokens | Hosted API. Occasional 500 errors and Cloudflare blocks. |
+| UVA HPC vLLM (8x A100 80GB) | A100 80GB | Not benchmarked | Free (allocation) | Never completed a production run due to GPU partition routing bug (April 2026). A100 80GB nodes existed but SLURM routed jobs to an empty partition. |
+| Claude Sonnet (vision mode) | N/A | ~7-50s/page | ~$0.04/page | Anthropic API. Used for tabular documents and index cards, not text extraction. |
+
+**Key findings:**
+- RC GenAI H200s are the fastest available option and are free. Even under shared load (~130s/chunk), they outperform Together AI's hosted Kimi.
+- RC GenAI required a streaming (SSE) response parser fix in April 2026 — the service switched from standard JSON to Server-Sent Events format, which caused 99% failure rates until the client code was updated.
+- HPC A100 80GB nodes were never successfully used for production extraction. The SLURM partition `gpu-a100-80gb` had zero nodes assigned, causing jobs to queue indefinitely. The nodes existed on the general `gpu` partition but the routing constraint sent jobs to the empty partition. This was not diagnosed until days of failed attempts.
+- Together AI is reliable but costs money and is not faster than RC GenAI.
+- For the full 5,000-document corpus (~17,500 chunks), estimated extraction time: ~25 days on RC GenAI at current rates.
+
+*Infrastructure comparison added 2026-04-08. Speeds are approximate and vary with server load, prompt length, and output length.*
+
+## 8. Vision Model Comparison: Index Card Extraction (April 2026)
+
+Tested on the same 20 pages of 1935 DOJ record slips (NARA RG 60, Entry A1 96C, Box 487, 90-2-5) with the same `--index-cards` prompt for all three models.
+
+| Model | Record Slips | Legal Cases | Persons | Failed Pages | Time | Cost (full 87-PDF run) |
+|-------|-------------|-------------|---------|-------------|------|----------------------|
+| Claude Sonnet 4.6 (vision) | **28** | 20 | **15** | 0/20 | 213s (11s/page) | ~$130 estimated |
+| Qwen2.5-VL-72B (HPC, 4x A100) | **28** | **24** | 8 | 0/20 | 202s (10s/page) | Free (HPC GPU hours) |
+| Kimi K2.5 (vision via RC GenAI) | 12 | 11 | 7 | 9/20 (45%) | 813s (41s/page) | Free |
+
+**Findings:**
+
+- **Slips: tied at 28.** Sonnet and Qwen-VL extract identical record slip counts and produce structurally similar JSON (file_number, jurisdiction, date, correspondent, case_name, routing, clerk_initials). The original "28 slips" figure for Sonnet that appeared in earlier docs turned out to be approximately correct, though it was never grounded in a saved JSON file at the time it was first written.
+- **Cases: Qwen-VL +20% (24 vs 20).** Qwen-VL actually beats Sonnet on legal case extraction.
+- **Persons: Sonnet +88% (15 vs 8).** This is the real and only meaningful gap. Sonnet finds nearly twice as many named persons. Qwen-VL also has some person-deduplication weakness (e.g., "Ralph Hughes" listed twice). Sonnet extracts more secondary mentions (assistants, treasurers, allottees named in subject lines) while Qwen-VL focuses on case principals.
+- **Speed: identical.** ~10s/page for both Sonnet and Qwen-VL.
+- **Reliability: both 100% on the test pages.** Only Kimi vision fails.
+
+**Decision for the 87-PDF index card collection:** A full Sonnet `--vision --index-cards` run on the entire 87-PDF collection had already been completed earlier (output at `vision_index_cards_full/`, 80 PDFs with merged JSON), so the Qwen-VL HPC run launched 2026-04-10 against the running Qwen-VL vLLM server is duplicate work — kept running for the value of a corpus-scale Sonnet-vs-Qwen comparison and because the HPC GPU hours are free.
+
+### Scale validation: 2-PDF apples-to-apples (66 dense pages from Box 487 and Box 576, both 90-2-11)
+
+The 20-page test PDF was a sparse 90-2-5 box (1.4 slips/page). The first two PDFs Qwen-VL completed in the full run are dense 90-2-11 boxes (~11 slips/page). At scale, the picture is more nuanced than the test suggested:
+
+| Metric | PDF 1 (32p) Sonnet | PDF 1 Qwen-VL | PDF 2 (34p) Sonnet | PDF 2 Qwen-VL | **Combined Sonnet** | **Combined Qwen-VL** | **Δ** |
+|---|---|---|---|---|---|---|---|
+| Record slips | 377 | 371 | 386 | 373 | 763 | 744 | tied (Sonnet +2.5%) |
+| Legal cases | 128 | 250 | 147 | 273 | 275 | **523** | **Qwen +90%** |
+| Persons | 216 | 120 | 246 | 152 | **462** | 272 | **Sonnet +70%** |
+| Failed pages | — | 0 | — | 0 | — | 0 | — |
+
+**Likely explanation — deduplication strategy:** The two models appear to dedupe differently and in opposite directions.
+
+- **Cases:** Qwen-VL appears to extract every case *mention* as a separate `legal_case` entry. If "U.S. v. Hughes" appears on 30 slips, Qwen creates roughly 30 case entries; Sonnet consolidates to one. The Qwen output is closer to a per-mention audit trail; the Sonnet output is closer to a unique-case index.
+- **Persons:** Sonnet captures every named individual including secondary mentions (assistant U.S. attorneys, county treasurers, judges, clerks named in routing or subject lines). Qwen-VL focuses on case principals and skips most secondary mentions.
+
+Both behaviors are defensible. They produce different downstream affordances:
+
+| Research question | Use |
+|---|---|
+| Slip-level extraction (file numbers, dates, jurisdictions, routing) | Either — equivalent |
+| Unique case count, case index | Sonnet (or post-process Qwen to dedupe by file_number + case_name) |
+| Per-mention audit trail (every appearance of every case across slips) | Qwen-VL |
+| Named-person networks, people-as-search-targets, prosopography | Sonnet |
+| Allottee identification (when in case caption) | Either |
+
+A larger comparison across the rest of the Qwen-VL run is planned once it completes (or hits walltime). The dedup hypothesis can then be tested directly by counting unique case_names in the Qwen output.
+
+**Why Kimi vision fails:** Kimi K2.5 on RC GenAI returns responses in SSE streaming format with separate `reasoning` and `content` fields. For vision requests, Kimi puts all its analysis into the reasoning field (narrative description of what it sees on the card) and produces no structured JSON in the content field. This happens on ~45% of pages, consistently timing out at ~51 seconds. The pages that succeed produce only 1 slip each. Kimi's strength is text-based comprehension of narrative documents, not vision extraction.
+
+**RC GenAI model availability:** As of April 2026, RC GenAI only serves Kimi K2.5. Qwen2.5-VL-72B must be run on HPC via vLLM with Loren's container `vllm_0.14.1-cu130.sif` and `--tensor-parallel-size 4` on 4x A100 80GB.
+
+*Vision comparison added 2026-04-09. Corrected 2026-04-10 after a true apples-to-apples Sonnet `--index-cards` rerun. Test JSONs at `comparisons/sonnet_index_cards_test/vision_merged.json` and on HPC at `/project/LawData/kimi-extraction/outputs/qwen_vl_index_cards_test.json`.*
 
 ---
 
