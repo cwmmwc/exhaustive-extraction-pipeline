@@ -1,0 +1,67 @@
+{
+  "document_id": "pine_ridge_vol3_questionnaire_001",
+  "type": "questionnaire",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "124",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Julia Bissonette",
+    "Tribe/Reservation": "Pine Ridge (Oglala Sioux)",
+    "Post Office Address": "Dawes County, Nebraska",
+    "Allotment number": "7313",
+    "Cancelled": "Don't know",
+    "Refused/Protested": "not stated explicitly (Q3 'No' answers the filing-for-record portion of the compound question, not protest status)",
+    "Recorded patent": "Not filed for record in the County",
+    "Sold/Mortgaged": "It has been sold; not mortgaged",
+    "Buyer": "Phillip Points; $400.00 and ten head of ponies, in settlement of an old debt. Per source: 'Phillip Points, purchaser, turned out 10 ponies at my place in 1918. I have never seen them.' Effectively $400 cash plus undelivered ponies.",
+    "Tax burden forced sale/Mortgage": "Not by me",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Fall of 1918 (exact date not remembered)",
+    "Gender": "Female",
+    "Age": "54",
+    "Occupation/Income": "Supported by son. Husband contributes according to his ability but is in poor health. No support from government, state, or county.",
+    "Literate/Illiterate": "Signed her own name (handwritten signature visible on source)",
+    "NOTES": "Mental condition good; physical condition poor; in poor condition financially. Three sons dependent: ages 18, 16, 13. Doesn't think she was defrauded but does not think she received enough for the land — '$400.00 and ten head of ponies' was 'all I could get for it at the time.' Phillip Points (purchaser) turned out 10 ponies at her place in 1918, but she 'never seen them' — effectively the realized value was $400 cash. Document subscribed and sworn 26 November 1928 in Dawes County, Nebraska, before notary public (handwritten signature partially legible — appears to read 'Alvin S Fisher' or similar); commission expires 1/2/30. | IDENTITY RECOVERY 2026-04-27: Sonnet text-extraction captured the printed body of this questionnaire but failed to recover handwritten identifying information. Source review of validation_samples/julia_bissonette/page-1.png confirmed: (a) handwritten allotment number 'No 7313' in top right margin; (b) handwritten signature 'Julia Bissonette' at bottom right of signature line. Both fields recovered manually; record patched in place. | EXTERNAL CROSS-REFERENCES: BLM patent accession 625067 confirms allot 7313 at Pine Ridge. RA spreadsheet row 101 (Replies_to_Circular_2464.xlsx) corroborates all field values. James Whalen (allot 318, vol1_affidavit_022) is identified as her brother in his own affidavit, where he gifted her half of his allotment as 'gift for love and affection.' Brother Hobart Bissonette Jr. (allot 7309, vol3_affidavit_096) sold to the same buyer (Phillip Points). Two additional Bissonettes appear in the RA spreadsheet for Pine Ridge but await location in the extraction corpus: Joseph Bissonette (allot 3094) and Fred Bissonette (allot 1021). | CATEGORY NOTE: This record is one of ~36 candidates in the corpus where handwritten identifying information failed text-mode extraction. A vision-pass recovery campaign is planned to address the remainder. Document remains physically located on source page 124 of Pine Ridge Vol 3.",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2556,
+    "output_tokens": 390
+  },
+  "elapsed": 5.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-27",
+      "type": "identity_recovery",
+      "method": "manual_source_review",
+      "fields_recovered": [
+        "Name",
+        "Tribe/Reservation",
+        "Post Office Address",
+        "Allotment number",
+        "Gender",
+        "Literate/Illiterate"
+      ],
+      "fields_corrected": [
+        "Cancelled",
+        "Refused/Protested",
+        "Recorded patent",
+        "Sold/Mortgaged",
+        "Buyer",
+        "Tax burden forced sale/Mortgage",
+        "Fee Patent Date",
+        "Occupation/Income",
+        "NOTES"
+      ],
+      "source_image": "validation_samples/julia_bissonette/page-1.png",
+      "external_refs": {
+        "BLM_accession": "625067",
+        "RA_spreadsheet_row": "101",
+        "related_records": [
+          "pine_ridge_vol1_affidavit_022",
+          "pine_ridge_vol3_affidavit_096"
+        ]
+      }
+    }
+  ]
+}
