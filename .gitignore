@@ -1,12 +1,21 @@
-.DS_Store
-venv/
+*.log
+.Rhistory
 __pycache__/
-dedup_phase1_log_*.json
-corpora/
-
-# Source PDFs and extraction outputs — large binary files, not for git
-survey_pdfs/
-survey_of_conditions_extractions/
-vision_index_cards_full/
-qwen_vl_index_cards_full/
-RG 60 index cards/
+*.pyc
+.DS_Store
+.vscode/
+.idea/
+1921 CCF 56074-21-312 GS.pdf
+pine_ridge_vol1_split/
+pine_ridge_vol1_split_v2/
+pine_ridge_vol1_split_v3/
+pine_ridge_vol1_split_v4/
+pine_ridge_vol1_split_v5/
+pine_ridge_vol1_split_v6/
+pine_ridge_vol1_split_v7/
+dedup_phase2_applied_*.json
+dedup_phase2_review_*.json
+comparisons/extraction_2026*/
+comparisons/single_2026*/
+results_v3/
+results_v3_reextract/
