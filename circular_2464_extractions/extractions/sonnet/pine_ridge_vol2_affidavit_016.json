@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_016",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "22",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lucinda Bettelyoun",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Martin, So. Dak.",
+    "Allotment number": "2184",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want a patent in fee to her land but accepted it for the reason that she was told that if she did not take it, the land would be sold to pay the taxes",
+    "Recorded patent": "does not remember of having the patent recorded",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Mr. Cherry of Martin, S.D. / Merriman, Nebr. for $1000.00; sold to Vic. Allen of Merriman, Nebr. for $2500.00 and got an additional $1500.00",
+    "Tax burden forced sale/Mortgage": "could not pay taxes and knew she would lose it if she did not sell; could not pay the mortgage so she sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "30 years old",
+    "Occupation/Income": "supported by her husband",
+    "NOTES": "mentally competent and in fair health but has absolutely nothing; has five children; has received no aid from the State, County or Government; land was not sold for debts or taxes; does not think she received all the land was worth but states she was not defrauded and made a fair and square deal; transaction done in 1919; document references 2204/2444; sworn July 5, 1929, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2362,
+    "output_tokens": 459
+  },
+  "elapsed": 21.5
+}

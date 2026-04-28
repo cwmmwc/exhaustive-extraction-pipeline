@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_questionnaire_007",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "48-49",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Cleveland Fallis",
+    "Tribe/Reservation": "Big Bend District",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "Patent has not been cancelled.",
+    "Refused/Protested": "Didtn't protest as he thought that he had to take the patent.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Thomas McDonne of Ft Pierre S.D.; purchaser assumed the mortgage of $1,000.00 and paying me $350.00 in cash and $450.00 worth of stock",
+    "Tax burden forced sale/Mortgage": "Land wasn't sold for debt or taxes.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "45",
+    "Occupation/Income": "Has supported himself by farming, lobor, selling stock, breaking horses",
+    "NOTES": "Indian police came to allottee's place and told him there was a Fee Patent at the Agency office. Went to office where Major Glaffin was present; instructed to shoot and arrow, take hold of plow handle, given a pocket book, the patent, and a Citizen button. Land mortgaged for $1,000.00 to Presho State Bank at Presho S.D.; $120.00 commission and 10% interest taken out of the $1,000.00. Land then sold for $1,800.00 total. Received fair price, not sold to pay up debt. Has received no support from Gov't excepting medical treatment for his eyes; no aid from State or County. Wife and 5 children dependent on him. Mental condition: Good; Physical condition: Fair; Financial condition: Poor. It seems that $120.00 was a large commission to charge on a $1,000.00 loan besides the interest \u2014 Presho State Bank made the loan. Prepared by Ged H. Boesi, Gov't Farmer, Big Bend District. Document dated December 11th, 1928.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2827,
+    "output_tokens": 551
+  },
+  "elapsed": 9.7
+}

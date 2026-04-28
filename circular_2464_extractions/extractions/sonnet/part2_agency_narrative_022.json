@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_agency_narrative_022",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "43",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Sophia Dyer",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. Dak.",
+    "Allotment number": "499",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "recorded June 11, 1924 by Ernest Haessler",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Fannie Haessler, formerly Fannie Dyer, devisee of Sophia Dyer, conveyed the land to Ernest Haessler, her husband, for $1.00, natural love and affection",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "May 10, 1920",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 749612 issued in favor of Fannie Dyer as devisee; northeast quarter of section 9, township 39, range 28; but there is no receipt of record; on June 9, 1924 Fannie Haessler (formerly Fannie Dyer), devisee of Sophia Dyer, conveyed the land to Ernest Haessler, her husband; Ernest Haessler recorded the patent June 11, 1924",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2080,
+    "output_tokens": 407
+  },
+  "elapsed": 4.6
+}

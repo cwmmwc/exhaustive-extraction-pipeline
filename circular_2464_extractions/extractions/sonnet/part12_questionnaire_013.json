@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_013",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "30-31",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Poor Horse",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "308",
+    "Cancelled": "No",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Yes, filed for record at Perry, Noble Co. Okla., by Allottee",
+    "Sold/Mortgaged": "Still owns all of the land",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "No sale; 40 acres mortgaged for $500.00; date of redemption expired",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Aug. 6, 1918",
+    "Gender": "Male",
+    "Age": "38",
+    "Occupation/Income": "By farming own land. No contributions, income approximately $476.00 per year from inherited lands.",
+    "NOTES": "Patent receipted: yes. Patent number/file reference: 61391. Has wife and four children dependent upon him for support. No funds. Good health. No contributions from Government or State or County. No sale for debt or taxes. Both parties mentioned are of Ponca City, Okla. Notarized November 20, 1928, in Kay County, State of Oklahoma. Commission expires Aug. 3rd 1951.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2559,
+    "output_tokens": 373
+  },
+  "elapsed": 8.1
+}

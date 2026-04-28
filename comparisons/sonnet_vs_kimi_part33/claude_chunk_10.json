@@ -1,0 +1,831 @@
+{
+  "entities": [
+    {
+      "name": "Sherman Institute",
+      "type": "organization",
+      "context": "Federal Indian school at Riverside, California, attended by Indians from multiple states"
+    },
+    {
+      "name": "Riverside, California",
+      "type": "location",
+      "context": "Location of Sherman Institute"
+    },
+    {
+      "name": "Governor of California",
+      "type": "person",
+      "context": "Approved the California legislature act on May 18, 1927 authorizing the attorney general to bring suit for Indians"
+    },
+    {
+      "name": "Dan Williams",
+      "type": "person",
+      "context": "Member of the California legislature who presented the act for the Indians of California"
+    },
+    {
+      "name": "Indians of California, Inc.",
+      "type": "organization",
+      "context": "Organization that initiated and sponsored the Court of Claims jurisdictional act; incorporated August 26, 1914"
+    },
+    {
+      "name": "Indian Board of Cooperation",
+      "type": "organization",
+      "context": "California corporation organized ~1910, incorporated 1914, managing body for Indian auxiliaries with 11 directors majority of whom are Indians"
+    },
+    {
+      "name": "Court of Claims",
+      "type": "organization",
+      "context": "Federal court with special jurisdiction to hear California Indian claims against the United States"
+    },
+    {
+      "name": "Attorney General of California",
+      "type": "person",
+      "context": "Authorized to bring suit on behalf of the California Indians under the 1928 act"
+    },
+    {
+      "name": "U. S. Webb",
+      "type": "person",
+      "context": "Attorney General of California who filed the California Indians suit in the Court of Claims"
+    },
+    {
+      "name": "J. W. Henderson",
+      "type": "person",
+      "context": "Attorney for the Indians of California, recognized as friend of the court February 8, 1930, petitioned to be attorney of record"
+    },
+    {
+      "name": "J. B. Pemberton",
+      "type": "person",
+      "context": "Attorney for the Indians of California, present at September 25, 1928 conference"
+    },
+    {
+      "name": "J. E. Pemberton",
+      "type": "person",
+      "context": "Attorney for the Indians of California, recognized as friend of the court February 8, 1930"
+    },
+    {
+      "name": "James M. Hanley",
+      "type": "person",
+      "context": "Attorney for the Indians of California, recognized as friend of the court February 8, 1930"
+    },
+    {
+      "name": "Peter Williams",
+      "type": "person",
+      "context": "Delegate of the Indian Board of Cooperation, resides in Requa, Del Norte County, member of Requa Indian Auxiliary and board of directors"
+    },
+    {
+      "name": "W. G. Walker",
+      "type": "person",
+      "context": "Delegate of the Indian Board of Cooperation, resides in Fresno County, member of Friant Indian Auxiliary and board of directors"
+    },
+    {
+      "name": "Ethan Anderson",
+      "type": "person",
+      "context": "Indian plaintiff in voting rights test case against Shafter Matthews, county clerk of Lake County"
+    },
+    {
+      "name": "Shafter Matthews",
+      "type": "person",
+      "context": "County clerk of Lake County, California, defendant in Indian voting rights case"
+    },
+    {
+      "name": "Lake County",
+      "type": "location",
+      "context": "California county where voting rights case against Indians was litigated"
+    },
+    {
+      "name": "Steve Super",
+      "type": "person",
+      "context": "Named plaintiff in US Supreme Court case regarding Indian land rights and Federal Power Commission"
+    },
+    {
+      "name": "Benjamin H. Wilder",
+      "type": "person",
+      "context": "Named plaintiff in US Supreme Court case regarding Indian land rights and Federal Power Commission"
+    },
+    {
+      "name": "John R. Weeks",
+      "type": "person",
+      "context": "Member of the Federal Power Commission, named defendant in Supreme Court case"
+    },
+    {
+      "name": "Henry C. Wallace",
+      "type": "person",
+      "context": "Member of the Federal Power Commission and Secretary of Agriculture, named defendant in Supreme Court case"
+    },
+    {
+      "name": "Hubert Work",
+      "type": "person",
+      "context": "Member of the Federal Power Commission, named defendant in Supreme Court case"
+    },
+    {
+      "name": "Federal Power Commission",
+      "type": "organization",
+      "context": "Federal agency named as defendant in Supreme Court case involving Indian lands"
+    },
+    {
+      "name": "Congressman John E. Baker",
+      "type": "person",
+      "context": "Introduced jurisdictional bill for California Indians in 1920 on behalf of Indian Board of Cooperation executive representative"
+    },
+    {
+      "name": "Senator James Phelan",
+      "type": "person",
+      "context": "Championed California Indian jurisdictional bill in the Senate"
+    },
+    {
+      "name": "Congressman Clarence F. Lea",
+      "type": "person",
+      "context": "Championed California Indian cause in the House after death of John E. Baker"
+    },
+    {
+      "name": "Senator Hiram W. Johnson",
+      "type": "person",
+      "context": "Championed California Indian jurisdictional bill in the Senate until enacted into law"
+    },
+    {
+      "name": "Franklin K. Lane",
+      "type": "person",
+      "context": "Secretary of the Interior who advised congressional committees favorably regarding California Indian jurisdictional bill"
+    },
+    {
+      "name": "Albert B. Fall",
+      "type": "person",
+      "context": "Secretary of the Interior who opposed the California Indian jurisdictional bill, preferring gratuities over court settlement"
+    },
+    {
+      "name": "Congresswoman Kahn",
+      "type": "person",
+      "context": "Introduced counter-proposal bill to appropriate $49,500,000 outright for California Indians"
+    },
+    {
+      "name": "Commissioner of Indian Affairs",
+      "type": "person",
+      "context": "Initiated counter-proposal to the California Indian jurisdictional bill; also referenced regarding attorney contract approval"
+    },
+    {
+      "name": "California Indians",
+      "type": "organization",
+      "context": "Plaintiffs in Court of Claims case No. K-344 against the United States"
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "context": "State whose Indians are the subject of the Court of Claims suit and organizational activities"
+    },
+    {
+      "name": "Washington, D.C.",
+      "type": "location",
+      "context": "Location where Indian delegates presented affidavits and met with federal officials"
+    },
+    {
+      "name": "Requa",
+      "type": "location",
+      "context": "Residence of Peter Williams, in Del Norte County, California"
+    },
+    {
+      "name": "Del Norte County",
+      "type": "location",
+      "context": "California county where Peter Williams resides"
+    },
+    {
+      "name": "Fresno County",
+      "type": "location",
+      "context": "California county where W. G. Walker resides"
+    },
+    {
+      "name": "Friant Indian Auxiliary",
+      "type": "organization",
+      "context": "Indian auxiliary of which W. G. Walker is a member, Fresno County"
+    },
+    {
+      "name": "Requa Indian Auxiliary",
+      "type": "organization",
+      "context": "Indian auxiliary of which Peter Williams is a member, Del Norte County"
+    },
+    {
+      "name": "Accounting Department",
+      "type": "organization",
+      "context": "Government department responsible for preparing the accounting for the California Indians case"
+    },
+    {
+      "name": "Department of Justice",
+      "type": "organization",
+      "context": "Advised the office of the attorney general of California on February 4, 1930 regarding filing of accounting report"
+    },
+    {
+      "name": "Secretary of the Interior",
+      "type": "person",
+      "context": "Referenced in connection with accounting report preparation and jurisdictional bill support"
+    },
+    {
+      "name": "Supreme Court of California",
+      "type": "organization",
+      "context": "Court that ruled in favor of Indian voting rights and public school access cases"
+    },
+    {
+      "name": "United States Supreme Court",
+      "type": "organization",
+      "context": "Court that heard the Steve Super and Benjamin H. Wilder case regarding Indian lands"
+    },
+    {
+      "name": "Indians of California v. The United States, No. K-344",
+      "type": "legal_case",
+      "context": "Court of Claims case filed by attorney general of California on behalf of California Indians"
+    },
+    {
+      "name": "Choctaw and Chickasaw Indians v. U.S., 75 Court of Claims 494",
+      "type": "legal_case",
+      "context": "Cited precedent for strict construction of special jurisdictional acts"
+    },
+    {
+      "name": "Martinez case, 195 U.S. 469",
+      "type": "legal_case",
+      "context": "US Supreme Court case cited regarding amendment of petitions after statutory period expires"
+    },
+    {
+      "name": "Barrow et al. v. U.S., 30 Ct. Cls. 54",
+      "type": "legal_case",
+      "context": "Court of Claims case cited regarding limitation on amendment of claims"
+    },
+    {
+      "name": "Schwerol v. U.S., 31 Ct. Cls. 192",
+      "type": "legal_case",
+      "context": "Court of Claims case cited regarding jurisdictional limitations on amendments"
+    },
+    {
+      "name": "Martin v. U.S., 46 Ct. Cls. 199",
+      "type": "legal_case",
+      "context": "Court of Claims case cited as basis for sustaining defendant's plea and dismissing petition"
+    },
+    {
+      "name": "Miller v. McIntyre, 6 Pet. 61",
+      "type": "legal_case",
+      "context": "Cited regarding impermissibility of bringing new party defendant by amendment after statute of limitations"
+    },
+    {
+      "name": "Sicard v. Davis, 6 Pet. 125",
+      "type": "legal_case",
+      "context": "Cited regarding impermissibility of bringing new party defendant by amendment after statute of limitations"
+    },
+    {
+      "name": "Kendall v. U.S., 14 Ct. Cls. 122",
+      "type": "legal_case",
+      "context": "Cited for principle that statutory prescription bars demand so court interposes it whether or not pleaded"
+    },
+    {
+      "name": "Hill Case, 8 Ct. Cls. 361",
+      "type": "legal_case",
+      "context": "Cited regarding intervention after jurisdictional period has expired"
+    },
+    {
+      "name": "Kidd's Case, 8 Ct. Cls. 259",
+      "type": "legal_case",
+      "context": "Cited regarding finality of claims preferred within prescribed time"
+    },
+    {
+      "name": "Eastern band of Cherokee Indians v. the Cherokee Indians West and the United States, 19 Ct. Cls. 35",
+      "type": "legal_case",
+      "context": "Cited for requirement of strict compliance when Congress specifies suit period and verification requirements"
+    },
+    {
+      "name": "Indian Depredation Act, March 3, 1891",
+      "type": "legislation",
+      "context": "Act requiring petition to be filed within jurisdictional period; cited in California Indians case analysis"
+    },
+    {
+      "name": "Act of May 18, 1928",
+      "type": "legislation",
+      "context": "Congressional act conferring jurisdiction upon Court of Claims to hear California Indian claims; required suit within 3 years"
+    },
+    {
+      "name": "Act of May 18, 1927",
+      "type": "legislation",
+      "context": "California legislature act authorizing attorney general to bring suit for Indians of California"
+    },
+    {
+      "name": "Act of June 7, 1924, 47 Stat. 537",
+      "type": "legislation",
+      "context": "Cited regarding strict construction of special jurisdictional acts for Court of Claims"
+    },
+    {
+      "name": "Act of March 2, 1895",
+      "type": "legislation",
+      "context": "Referenced regarding jurisdictional requirements for Indian claims in Court of Claims"
+    },
+    {
+      "name": "Congresswoman Kahn bill",
+      "type": "legislation",
+      "context": "Bill introduced by Congresswoman Kahn at behest of Commissioner of Indian Affairs to appropriate $49,500,000 for California Indians"
+    },
+    {
+      "name": "Indian Depredation Act, 2 Stat. 851",
+      "type": "legislation",
+      "context": "Cited as requiring petition to be filed within jurisdictional period"
+    }
+  ],
+  "events": [
+    {
+      "type": "legislative_enactment",
+      "date": "1927-05-18",
+      "location": "California",
+      "description": "Governor of California approved act by legislature authorizing attorney general to bring suit for Indians of California, contingent on congressional authority. Presented by Dan Williams, sponsored by Indians of California."
+    },
+    {
+      "type": "legislative_enactment",
+      "date": "1928-05-18",
+      "location": "United States",
+      "description": "President approved act conferring jurisdiction on Court of Claims to hear California Indian claims based on 18 unratified treaties of 1851-52. Initiated and sponsored by Indians of California, Inc."
+    },
+    {
+      "type": "convention",
+      "date": "1928-09-25",
+      "location": "California",
+      "description": "Indian delegates representing auxiliaries of Indians of California, Inc. concluded a week's convention; 22 persons met with attorney general of California in his office with attorneys and organization representatives."
+    },
+    {
+      "type": "court_filing",
+      "date": "1929-08-12",
+      "location": "Court of Claims, Washington D.C.",
+      "description": "Attorney general of California filed action in Court of Claims on behalf of the Indians (Case No. K-344). Filed 15 months after passage of enabling act."
+    },
+    {
+      "type": "court_recognition",
+      "date": "1930-02-08",
+      "location": "Court of Claims",
+      "description": "Court of Claims recognized J. W. Henderson, J. E. Pemberton, and James M. Hanley as friends of the court in case of Indians of California against United States."
+    },
+    {
+      "type": "correspondence",
+      "date": "1930-02-04",
+      "location": "Washington D.C.",
+      "description": "Department of Justice advised office of attorney general of California that accounting report, together with report of Secretary of Interior, would be filed after plaintiffs signified they had closed their evidence."
+    },
+    {
+      "type": "court_scheduling",
+      "date": "1931-11",
+      "location": "Court of Claims",
+      "description": "Attorney general of California learned case had been placed on calendar for showing as to why it should not be prosecuted more vigorously; court threatened order to show cause why case should not be dismissed for want of prosecution."
+    },
+    {
+      "type": "court_hearing",
+      "date": "1931-12-07",
+      "location": "Court of Claims",
+      "description": "Calling of the California Indians case by Court of Claims; attorney general of California was not present; friends of the court advised court of ongoing conferences and pending amendments."
+    },
+    {
+      "type": "court_filing",
+      "date": "1931-12-21",
+      "location": "Court of Claims",
+      "description": "Friends of the court filed action for J. W. Henderson to be recognized as attorney of record, and filed proposed amendments to attorney general's original petition with clerk of the court."
+    },
+    {
+      "type": "court_hearing",
+      "date": "1932-03-14",
+      "location": "Court of Claims",
+      "description": "Friends of the court presented arguments for recognition as attorneys of record; amended petition containing all previously proposed amendments filed by Attorney General Webb."
+    },
+    {
+      "type": "court_decision",
+      "date": "1932-03-21",
+      "location": "Court of Claims",
+      "description": "Court of Claims held it was without authority to recognize anyone other than attorney general as attorney of record due to special act of Congress naming attorney general. Court authorized attorney general to file amended petition."
+    },
+    {
+      "type": "amended_petition_filed",
+      "date": "1932-03-14",
+      "location": "Court of Claims",
+      "description": "Amended petition filed in Indians of California v. United States No. K-344, including all Indians of California as defined by the act."
+    },
+    {
+      "type": "accounting_advancement",
+      "date": "1932-02",
+      "location": "Washington D.C.",
+      "description": "Accounting Department found method to advance California Indians case from November 1932 to February 1932; estimated preparation would not take a full year due to specific appropriations involved."
+    },
+    {
+      "type": "correspondence",
+      "date": "1932-11-23",
+      "location": "Washington D.C.",
+      "description": "Secretary of Interior wrote to U.S. Webb stating accounting matter was taken up February 13, 1932 and would be furnished about August 1933."
+    },
+    {
+      "type": "correspondence",
+      "date": "1933-06-29",
+      "location": "California",
+      "description": "U.S. Webb wrote letter to official of State of California regarding progress of government accounting in California Indians case, referencing November 23, 1932 Secretary of Interior letter."
+    },
+    {
+      "type": "notification_of_case_inactivity",
+      "date": "1933-04",
+      "location": "Washington D.C.",
+      "description": "Friends of the court advised by Washington associates that since March 21, 1932 court decision there is no court record of correspondence or evidence of procedure in the California Indians case."
+    },
+    {
+      "type": "organization_founding",
+      "date": "1910",
+      "location": "California",
+      "description": "Indians of California, Inc. (Indian Board of Cooperation) began its work, initially officered entirely by prominent white citizens."
+    },
+    {
+      "type": "organization_incorporation",
+      "date": "1914-08-26",
+      "location": "California",
+      "description": "Indians of California, Inc. (Indian Board of Cooperation) was incorporated under laws of the State of California."
+    },
+    {
+      "type": "legal_case_initiation",
+      "date": "1920",
+      "location": "United States Congress",
+      "description": "Jurisdictional bill for California Indians introduced by Congressman John E. Baker in 1920 and Senator James Phelan, initiated by executive representative of Indian Board of Cooperation."
+    },
+    {
+      "type": "voting_rights_case",
+      "date": "",
+      "location": "California Supreme Court",
+      "description": "Case of Ethan Anderson v. Shafter Matthews, county clerk of Lake County; court held Indians are natural-born citizens entitled to vote and all privileges accorded to other persons."
+    },
+    {
+      "type": "education_rights_case",
+      "date": "",
+      "location": "California Supreme Court",
+      "description": "Case challenging constitutionality of state law excluding Indians from public schools; court held law unconstitutional and Indians had right to attend public schools."
+    },
+    {
+      "type": "supreme_court_case",
+      "date": "",
+      "location": "United States Supreme Court",
+      "description": "Steve Super and Benjamin H. Wilder v. John R. Weeks, Henry C. Wallace, Hubert Work, Federal Power Commission, and Henry C. Wallace as Secretary of Agriculture; court held Indians should look to Congress for redress for wrongful appropriation of lands."
+    },
+    {
+      "type": "legislative_failure",
+      "date": "",
+      "location": "United States Congress",
+      "description": "Jurisdictional bill passed unanimously by Senate but failed to be reached in House due to calendar congestion before adjournment."
+    },
+    {
+      "type": "legislative_failure",
+      "date": "",
+      "location": "United States Congress",
+      "description": "Nine Indians and other persons from California sought favorable consideration of reintroduced bill but opposed by Secretary of Interior Albert B. Fall."
+    },
+    {
+      "type": "legislative_failure",
+      "date": "",
+      "location": "United States Congress",
+      "description": "Court of Claims bill approved and passed by both Houses but received pocket veto."
+    },
+    {
+      "type": "legislative_conflict",
+      "date": "",
+      "location": "United States Congress",
+      "description": "Congresswoman Kahn introduced counter-proposal bill at behest of Commissioner of Indian Affairs to appropriate $49,500,000 outright for California Indians, creating conflicting proposals."
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "fee",
+      "amount": "$20,000 retainer",
+      "payer": "Indians of California",
+      "payee": "J. W. Henderson, J. E. Pemberton, James M. Hanley",
+      "date": "",
+      "description": "Retainer paid to attorneys representing Indians of California in Court of Claims case; described as less than $1 each for the Indians of California"
+    },
+    {
+      "type": "other",
+      "amount": "$49,500,000",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "",
+      "description": "Proposed outright congressional appropriation in counter-proposal bill introduced by Congresswoman Kahn at behest of Commissioner of Indian Affairs; never enacted"
+    },
+    {
+      "type": "other",
+      "amount": "hundreds of thousands of dollars (estimated)",
+      "payer": "Indians of California (loss)",
+      "payee": "",
+      "date": "",
+      "description": "Estimated loss to Indians in interest on judgment deferred due to attorney general's undue delay in filing petition"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "J. W. Henderson",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney for California Indians in Court of Claims case, recognized as friend of court February 8, 1930"
+    },
+    {
+      "subject": "J. E. Pemberton",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney for California Indians in Court of Claims case, recognized as friend of court February 8, 1930"
+    },
+    {
+      "subject": "James M. Hanley",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney for California Indians in Court of Claims case, recognized as friend of court February 8, 1930"
+    },
+    {
+      "subject": "U. S. Webb",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney general of California, official attorney of record in Court of Claims case No. K-344"
+    },
+    {
+      "subject": "Dan Williams",
+      "type": "related_to",
+      "object": "Indians of California",
+      "context": "Member of California legislature who presented the act authorizing suit on behalf of Indians"
+    },
+    {
+      "subject": "Peter Williams",
+      "type": "employed_by",
+      "object": "Indian Board of Cooperation",
+      "context": "Member of board of directors and delegate; member of Requa Indian Auxiliary"
+    },
+    {
+      "subject": "W. G. Walker",
+      "type": "employed_by",
+      "object": "Indian Board of Cooperation",
+      "context": "Member of board of directors and delegate; member of Friant Indian Auxiliary, Fresno County"
+    },
+    {
+      "subject": "Indian Board of Cooperation",
+      "type": "related_to",
+      "object": "Indians of California, Inc.",
+      "context": "Same organization; name changed to Indians of California, Inc. per California law"
+    },
+    {
+      "subject": "Congressman John E. Baker",
+      "type": "related_to",
+      "object": "Indians of California",
+      "context": "Introduced jurisdictional bill for California Indians in 1920 at request of Indian Board of Cooperation executive representative"
+    },
+    {
+      "subject": "Senator James Phelan",
+      "type": "related_to",
+      "object": "Indians of California",
+      "context": "Championed California Indian jurisdictional bill in Senate"
+    },
+    {
+      "subject": "Congressman Clarence F. Lea",
+      "type": "related_to",
+      "object": "Indians of California",
+      "context": "Championed California Indian cause in House after death of John E. Baker"
+    },
+    {
+      "subject": "Senator Hiram W. Johnson",
+      "type": "related_to",
+      "object": "Indians of California",
+      "context": "Championed California Indian jurisdictional bill in Senate until enacted into law"
+    },
+    {
+      "subject": "Franklin K. Lane",
+      "type": "related_to",
+      "object": "California Indian jurisdictional bill",
+      "context": "Secretary of Interior who advised Congress favorably on jurisdictional bill"
+    },
+    {
+      "subject": "Albert B. Fall",
+      "type": "related_to",
+      "object": "California Indian jurisdictional bill",
+      "context": "Secretary of Interior who opposed jurisdictional bill, preferring gratuities; contended court might award more than Congress would want to pay"
+    },
+    {
+      "subject": "Ethan Anderson",
+      "type": "related_to",
+      "object": "Shafter Matthews",
+      "context": "Plaintiff and defendant in California Supreme Court voting rights case"
+    },
+    {
+      "subject": "Indians of California, Inc.",
+      "type": "related_to",
+      "object": "Indian Board of Cooperation",
+      "context": "Name changed to Indians of California, Inc. per California law; same organization"
+    },
+    {
+      "subject": "Commissioner of Indian Affairs",
+      "type": "related_to",
+      "object": "Congresswoman Kahn bill",
+      "context": "Initiated counter-proposal bill through Congresswoman Kahn to appropriate $49,500,000 for California Indians"
+    },
+    {
+      "subject": "Steve Super",
+      "type": "related_to",
+      "object": "Benjamin H. Wilder",
+      "context": "Co-plaintiffs in US Supreme Court case against Federal Power Commission members"
+    },
+    {
+      "subject": "U.S. Webb",
+      "type": "related_to",
+      "object": "J. W. Henderson",
+      "context": "Attorney general stated on September 25, 1928 he had known Henderson for many years and Indians had chosen wisely"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "Department of Justice",
+      "sender_title": "",
+      "recipient": "Office of Attorney General of California",
+      "recipient_title": "",
+      "date": "1930-02-04",
+      "subject": "Filing of accounting report in California Indians case",
+      "action_requested": "Notification that accounting report together with Secretary of Interior report would be filed after plaintiffs signified they had closed their evidence",
+      "outcome": "Established procedure for filing government accounting in case"
+    },
+    {
+      "sender": "Secretary of the Interior",
+      "sender_title": "Secretary of the Interior",
+      "recipient": "U. S. Webb",
+      "recipient_title": "Attorney General of California",
+      "date": "1932-11-23",
+      "subject": "Progress of accounting for California Indians case",
+      "action_requested": "Informational update that accounting matter taken up February 13, 1932 and would be furnished about August 1933",
+      "outcome": "Webb acknowledged he knew nothing and did nothing for more than 7 months after receiving this letter"
+    },
+    {
+      "sender": "U. S. Webb",
+      "sender_title": "Attorney General of California",
+      "recipient": "Official of State of California",
+      "recipient_title": "",
+      "date": "1933-06-29",
+      "subject": "Government's side of California Indians case and accounting progress",
+      "action_requested": "Reference to Secretary of Interior letter of November 23, 1932 regarding accounting status",
+      "outcome": "Revealed Webb had no information about case for over 7 months"
+    },
+    {
+      "sender": "Friends of the Court",
+      "sender_title": "Attorneys for Indians of California",
+      "recipient": "U. S. Webb",
+      "recipient_title": "Attorney General of California",
+      "date": "1931-12",
+      "subject": "Urging filing of amendments to original petition in California Indians case",
+      "action_requested": "By letter, telegram, and personal conferences endeavored to get Webb to file amendments within 2 weeks after December 7, 1931 court calling",
+      "outcome": "Webb failed to file amendments; friends of the court filed action for Henderson to be recognized as attorney of record on December 21, 1931"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "",
+      "sponsor": "Dan Williams (presented)",
+      "action_type": "enacted",
+      "date": "1927-05-18",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "California legislature act approved by Governor authorizing attorney general to bring suit for Indians of California if Congress gave authority"
+    },
+    {
+      "bill_number": "",
+      "sponsor": "Indians of California, Inc. (initiated); Congressman John E. Baker and Senator James Phelan (introduced)",
+      "action_type": "introduced",
+      "date": "1920",
+      "vote_count": "",
+      "committee": "House and Senate Committees on Indian Affairs",
+      "outcome": "Passed unanimously by Senate; failed to be reached in House due to calendar congestion before adjournment"
+    },
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "introduced",
+      "date": "",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Reintroduced at next Congress; opposed by Secretary Albert B. Fall; nine Indians and others from California sought consideration in vain"
+    },
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "passed",
+      "date": "",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Approved and passed by both Houses but received pocket veto"
+    },
+    {
+      "bill_number": "",
+      "sponsor": "Congresswoman Kahn (counter-proposal, initiated by Commissioner of Indian Affairs)",
+      "action_type": "introduced",
+      "date": "",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Conflicting proposals caused another Congress to pass without enacting relief for California Indians; counter-proposal eventually abandoned"
+    },
+    {
+      "bill_number": "",
+      "sponsor": "Congressman Clarence F. Lea (House); Senator Hiram W. Johnson (Senate)",
+      "action_type": "enacted",
+      "date": "1928-05-18",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Court of Claims Act approved by President May 18, 1928; conferred jurisdiction on Court of Claims to hear California Indian claims based on 18 unratified treaties of 1851-52"
+    },
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "introduced",
+      "date": "1920",
+      "vote_count": "",
+      "committee": "House and Senate Committees on Indian Affairs",
+      "outcome": "Secretary of Interior Franklin K. Lane recommended favorable consideration; passed Senate unanimously; did not pass House"
+    },
+    {
+      "bill_number": "Indian Depredation Act",
+      "sponsor": "",
+      "action_type": "enacted",
+      "date": "1891-03-03",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Enacted; requires petition to be filed within jurisdictional period; cited in California Indians case analysis (2 Stat. 851)"
+    },
+    {
+      "bill_number": "Act of June 7, 1924, 47 Stat. 537",
+      "sponsor": "",
+      "action_type": "enacted",
+      "date": "1924-06-07",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Enacted; cited regarding strict construction of special jurisdictional acts for Court of Claims"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "U. S. Webb",
+      "witness_title": "Attorney General of California",
+      "hearing": "Conference with Indian delegates",
+      "committee": "",
+      "location": "Office of Attorney General of California",
+      "date": "1928-09-25",
+      "subject": "Role of attorneys in California Indians case",
+      "key_claims": "Webb stated he was not familiar with the work involved and not prepared to choose attorneys; expected to employ an attorney to do hard labor; recommended against making chosen attorney a deputy; wanted attorneys to remain in private capacity working with their clients; stated he had known Henderson, Pemberton, and Hanley for many years and congratulated Indians on their choice.",
+      "questioner": "Indian delegates including 20 representatives, J. W. Henderson, J. B. Pemberton, James M. Hanley"
+    },
+    {
+      "witness": "U. S. Webb",
+      "witness_title": "Attorney General of California",
+      "hearing": "Court of Claims hearing on attorney of record",
+      "committee": "",
+      "location": "Court of Claims",
+      "date": "1932-03-14",
+      "subject": "Authority of attorney general versus private attorneys in California Indians case",
+      "key_claims": "Webb argued authority under which he proceeded was unusual; found nothing more applicable in cases and authorities than cases cited by counsel; felt it would be worthless to submit cases at all. Court authorized him to offer amendments; amended petition included all amendments previously proposed by friends of the court, including all Indians of California as claimants.",
+      "questioner": "Court of Claims"
+    },
+    {
+      "witness": "U. S. Webb",
+      "witness_title": "Attorney General of California",
+      "hearing": "Conference with friends of the court regarding amendments",
+      "committee": "",
+      "location": "Office of Attorney General of California",
+      "date": "1931-11",
+      "subject": "Proposed amendments to original petition, particularly inclusion of all Indians of California as claimants",
+      "key_claims": "Webb declared he did not agree with amendment including all Indians of California 'at all, at all, at all'; stated there was nothing in the law or hearings to justify such assumption; opined act only authorized suit on behalf of Indians who negotiated treaties and their descendants. Friends of the court showed by hearings and the act itself that Webb's interpretation was in error; Webb did not admit or deny validity at conclusion.",
+      "questioner": "Friends of the court (J. W. Henderson, J. E. Pemberton, James M. Hanley)"
+    },
+    {
+      "witness": "Peter Williams",
+      "witness_title": "Delegate, Indian Board of Cooperation; member of Requa Indian Auxiliary and board of directors",
+      "hearing": "Affidavit in Court of Claims",
+      "committee": "",
+      "location": "Washington D.C.",
+      "date": "",
+      "subject": "Representation of California Indians in Court of Claims case; desire for private attorneys; criticism of Attorney General Webb",
+      "key_claims": "Indians of California are organized into more than 100 auxiliaries; Indians desire to be represented by Henderson, Pemberton, and Hanley; attorney general took 15 months to file original petition which was inadequate; Webb failed to make amendments for over 2 years after errors were pointed out; retainer of $20,000 is less than $1 each for Indians of California; Indians never desired Webb to act for them; Indians are citizens of California and United States and have right to make own contracts.",
+      "questioner": ""
+    },
+    {
+      "witness": "W. G. Walker",
+      "witness_title": "Delegate, Indian Board of Cooperation; member of Friant Indian Auxiliary and board of directors",
+      "hearing": "Affidavit in Court of Claims",
+      "committee": "",
+      "location": "Washington D.C.",
+      "date": "",
+      "subject": "Representation of California Indians in Court of Claims case; desire for private attorneys; criticism of Attorney General Webb",
+      "key_claims": "Same as Peter Williams affidavit; co-deponent; Indians desire Henderson, Pemberton, and Hanley as attorneys; Webb's petition was inadequate and he delayed amendments for over 2 years; undue delay cost Indians hundreds of thousands of dollars in lost interest; Indians lost confidence in Webb.",
+      "questioner": ""
+    },
+    {
+      "witness": "Accounting Department representative",
+      "witness_title": "Representative of Government Accounting Department",
+      "hearing": "Conference with friends of the court",
+      "committee": "",
+      "location": "Washington D.C.",
+      "date": "1932-02",
+      "subject": "Progress of government accounting for California Indians case",
+      "key_claims": "Accounting Department was not responsible for long delay; during 15 months between May 18, 1928 and August 12, 1929, 13 other Indian cases were filed giving them preference; found method to advance California Indians case from November 1932 to February 1932; would not take a full year to prepare accounting as only specific appropriations involved.",
+      "questioner": "Friends of the court"
+    },
+    {
+      "witness": "Franklin K. Lane",
+      "witness_title": "Secretary of the Interior",
+      "hearing": "Congressional committee hearing on jurisdictional bill",
+      "committee": "House and Senate Committees on Indian Affairs",
+      "location": "United States Congress",
+      "date": "1920",
+      "subject": "Proposed jurisdictional act for California Indians",
+      "key_claims": "Indians of California have prima facie meritorious claim against the United States; the bill properly protects interests of Indians and Government; recommended favorable consideration by committees.",
+      "questioner": ""
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

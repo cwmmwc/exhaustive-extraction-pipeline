@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_030",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "40",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Nettie Richard",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Hisle, South Dakota",
+    "Allotment number": "2534",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want this patent, for she did not want to pay taxes; but that the Indian Agency told her that, if she did not take the patent, and pay her taxes, it would be assessed just the same, and later sold for taxes, so she accepted the patent in fee",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold; in 1920, she mortgaged two quarters of land, to Charlie Boles, of Martin, South Dakota, for $1000.00 in trade; that, about a year later, she paid this mortgage off, and, after paying off the mortgage, she sold three quarters of land to Jack Stock, of Cody, Nebraska, for $3000.00 cash",
+    "Buyer": "Mortgaged to Charlie Boles, of Martin, South Dakota, for $1000.00 in trade; sold to Jack Stock, of Cody, Nebraska, for $3000.00 cash",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "53 years old",
+    "Occupation/Income": "her husband, who has very poor health, ranches for his living, that being his only income",
+    "NOTES": "480 acre allotment, described as W of SE, Sec. 11, T. 39N. R. 36W., of the 6th P.M., in South Dakota; she considers that she received a very poor price for her land; mentally competent; very poor health, having been operated on several times; mother of six minor children, two have fair health and four have poor health; has never received any help from the County, State nor the United States Government; never sold any of her land for any debts made prior to receiving the patent in fee; subscribed and sworn before notary April 23, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2384,
+    "output_tokens": 582
+  },
+  "elapsed": 6.1
+}

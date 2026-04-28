@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_017",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "40",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Grover Cleveland Scissons",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Yes, signed a mortgage on the land; mortgage has been foreclosed",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "36",
+    "Occupation/Income": "By working out",
+    "NOTES": "Father received the patent and looked after the land; allottee has never seen the patent and does not know anything about its delivery; allottee states he has never received any money out of this land since he got the patent, nor ever, as his father used it before the patent was issued; child died; allottee is making no effort to redeem the land; states 'I should like to have this place back if there is any way that may be done'; subscribed and sworn before Jas. W. Gross, Notary Public, commission expires 4-28-32, on May 1, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2260,
+    "output_tokens": 367
+  },
+  "elapsed": 6.9
+}

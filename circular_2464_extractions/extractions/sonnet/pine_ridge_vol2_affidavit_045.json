@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_045",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "62",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jule Lamb",
+    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Post Office Address": "Scenic, So. Dako",
+    "Allotment number": "2570",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want it, and did not take it for some time but that he was told that if he did not take it and pay the taxes that he would lose the land, that it would be sold to pay them",
+    "Recorded patent": "he did not have the patent recorded and does not know who did",
+    "Sold/Mortgaged": "he thinks that he holds it yet",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "he was told that if he did not take it and pay the taxes that he would lose the land, that it would be sold to pay them",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "33 years old",
+    "Occupation/Income": "support is made by common labor and working on farms and ranches",
+    "NOTES": "Deponent is a widower with two small children dependent on him for support and pays people for keeping them; bought a bunch of cattle on which he lost about $3000.00 on account of the drop in price; does not think his land was included in the mortgage on his cattle; has not received any aid from the Government, State or County since his patent was issued; document sworn November 20, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2252,
+    "output_tokens": 420
+  },
+  "elapsed": 6.2
+}

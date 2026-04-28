@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_questionnaire_015",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "42",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charles Moore",
+    "Tribe/Reservation": "Rosebud Agency",
+    "Post Office Address": "not stated",
+    "Allotment number": "1491",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Yes I told him that I dont want it at this time as I can not take care of a patent. He did not say anything then but in about a month he sent for me and gave me the patent.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold; my wife now owns one quarter and my daughter the other. I sold it through the Rosebud Agency Office.",
+    "Buyer": "C. W. Owen (records show sale to C. W. Owen, but Moore states it was a fraud and they got the land back)",
+    "Tax burden forced sale/Mortgage": "I mortgaged one quarter and later mortgaged both of them to take care of the first mortgage.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "68",
+    "Occupation/Income": "We live on the proceeds of trust funds.",
+    "NOTES": "Patent delivered from the Farmer's office at Okreek; Moore states he did not sign a receipt for the patent. Records show Moore and his wife sold land to C. W. Owen, but Moore states it was a fraud and they got the land back. Mortgaged to Weaver. Paid off mortgages. Wife now owns one quarter and daughter owns the other. Has been supporting about 10 dependents; still seven. Not in good health. Subscribed and sworn before J. S. W. Cross, commission expires 4-28-32, on May 7, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2335,
+    "output_tokens": 469
+  },
+  "elapsed": 9.1
+}

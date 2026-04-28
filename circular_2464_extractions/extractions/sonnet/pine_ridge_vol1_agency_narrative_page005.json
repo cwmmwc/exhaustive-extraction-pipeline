@@ -1,0 +1,29 @@
+{
+  "document_id": "pine_ridge_vol1_agency_narrative_page005",
+  "type": "agency_narrative",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "005",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "not stated",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "we have no record as to whether the Indians protested on accepting them, and as they were delivered from nine to ten years ago, no one can remember each specific case, but it is remembered that at the time of delivery most of the Indians accepted then and there was little protest, but there was some",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "if they did not accept the patent and pay the taxes that the land would be sold to satisfy them",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Cover letter dated December 18, 1923, from Pine Ridge Agency, Pine Ridge, So. Dak., signed by E. W. Jermark, Superintendent, to the Commissioner of Indian Affairs. Written in compliance with Circular No. 2464 and letter of December 4, 1928. Eleven affidavits enclosed regarding forced patents. Patents were delivered by mailing a receipt to the Indian with a letter; if the receipt was not signed and returned within a reasonable time, the Indian was notified that the issuance had been reported to the State Tax Commission. References U.S. vs. County of Benewah and U.S. vs. County of Kootenai (Circuit Court of Appeals, 9th Circuit). Records at the County Seat were taken only to the time the Indian relinquished title; a clerk could average about ten to twelve patents per day after becoming familiar with records in the office of the Register of Deeds.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {},
+  "elapsed": 0
+}

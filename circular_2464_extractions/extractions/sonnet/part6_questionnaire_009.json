@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_009",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "22",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Elise Cohoe",
+    "Tribe/Reservation": "Uncompahgre",
+    "Post Office Address": "not stated",
+    "Allotment number": "302",
+    "Cancelled": "Patent was canceled as allottee refused to accept same.",
+    "Refused/Protested": "Not accepted.",
+    "Recorded patent": "Not delivered or receipted for.",
+    "Sold/Mortgaged": "Land not sold or mortgaged.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Paid tax assessments for two years have not been refunded but Uintah County has promised to take the matter under consideration at the next meeting of the tax board.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "August 12, 1920",
+    "Gender": "Female",
+    "Age": "36",
+    "Occupation/Income": "She and her husband, Pawwinnee, have a nice herd of sheep which nets them around $3000.00 per annum, and they are self-supporting.",
+    "NOTES": "Elise Cohoe is in excellent condition physically and mentally being much above the average in the latter. They receive no assistance of the Government except advice in transacting business connected with the sheep. Children as follows: Ruth Cohoe, 18 years; Karl Ignacio 13 years; Mary P. 12 years; Alfred C., 10 years; Hazel, 9 years; Nancy, 7 years; and Bernice, 5 years. Land description: Sw/4 SN/4, Sec. 25, T. 3 S., R. 1 N., 40 ac. Document dated August 27, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2372,
+    "output_tokens": 467
+  },
+  "elapsed": 7.7
+}

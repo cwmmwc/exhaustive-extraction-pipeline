@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_024",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "32",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "George Colhoff",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Scenic, South Dakota",
+    "Allotment number": "387",
+    "Cancelled": "not stated",
+    "Refused/Protested": "on the south quarter, he took what is called a forced patent, being told by the Indian Agency that it would have to be taxed at any rate, so he, also, accepted the patent to the allotment on his south quarter",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged his 320 acres for about $3000. using some of this money for taxes, and some for chattels; that he finally lost the allotment, on account of prices in cattle dropping and some of his cattle died",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "using some of this money for taxes; finally lost the allotment, on account of prices in cattle dropping and some of his cattle died",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1911 (north quarter); south quarter date not stated",
+    "Gender": "Male",
+    "Age": "44 years old",
+    "Occupation/Income": "chief income is from farming his wife's allotment and laboring for other people",
+    "NOTES": "Has a wife and six minor children to support; health of wife and children is not very good, the children all being bothered with heart trouble; applied for patent to allotment on his north quarter and got it in 1911; south quarter was a forced patent; has never received any help from the County or United States Government; affidavit sworn November 13, 1928; document references two allotments (north quarter and south quarter, totaling 320 acres)",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2253,
+    "output_tokens": 473
+  },
+  "elapsed": 14.3
+}

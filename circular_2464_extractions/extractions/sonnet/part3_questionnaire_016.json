@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_questionnaire_016",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "44",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Wright",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "1504",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I told the Farmer that I did not want the patent when I found out that it had been issued and ask him to send it back. He said the next time I saw him that he had sent it back but it would necessary for me to take it now as it had been xek2 returned. I took it then.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, No I sold it.",
+    "Buyer": "William M. Kunde; sold one quarter for $7000 (shared with wife's quarter, so $3500 for his quarter); traded other quarter to E. V. Youngquist for some land; sold exchanged land for $1100 in cash",
+    "Tax burden forced sale/Mortgage": "I could not work and had to live and the taxes were high, so I had to sell.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1917",
+    "Gender": "Male",
+    "Age": "68",
+    "Occupation/Income": "not stated",
+    "NOTES": "Patent delivered at the Farmer's office in Okreek. Does not remember signing a receipt. Wife's quarter and his quarter sold together for $7000; only $4500 received out of $7000, making approximately $2250 for his share; holds a second mortgage on the place for the remainder. Traded second quarter to E. V. Youngquist for land, then sold that exchanged land for $1100 cash. Depended on his Farmer (agency farmer) for guidance. States he was not capable of handling a patent but felt forced to take it. Hopes to get the matter straightened out. Dependents: himself and wife. Notarized before Jas. W. Cross, Notary Public, commission expires 4-28-3_, on the 7th day of May 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2539,
+    "output_tokens": 538
+  },
+  "elapsed": 8.8
+}

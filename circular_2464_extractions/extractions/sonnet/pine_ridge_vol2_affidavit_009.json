@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_009",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "13-15",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Peter Condelario",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Martin, South Dakota",
+    "Allotment number": "2100",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 320 acre allotment, on account of not wishing to pay the taxes; but that he was advised by the Indian Agency that it was necessary for him to accept it, and he did so",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged the place to The State Bank of Interior, South Dakota, for $1600.00; that he was unable to keep up the payments on this mortgage, and, in 1924, the bank foreclosed",
+    "Buyer": "The State Bank of Interior, South Dakota (foreclosed in 1924)",
+    "Tax burden forced sale/Mortgage": "taxes got behind from 1919 until 1923, when he mortgaged the place to The State Bank of Interior, South Dakota, for $1600.00; that he was unable to keep up the payments on this mortgage, and, in 1924, the bank foreclosed",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "49 years old",
+    "Occupation/Income": "income is derived entirely from following the carpentry trade",
+    "NOTES": "mentally competent, health not very good; has a wife and five minor children to support; wife's health is very poor, and has been for ten years; children all have good health; has never received any help from the County or the Government; allotment was 320 acres; document number 1755; sworn November 19, 1928, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2235,
+    "output_tokens": 477
+  },
+  "elapsed": 6.5
+}

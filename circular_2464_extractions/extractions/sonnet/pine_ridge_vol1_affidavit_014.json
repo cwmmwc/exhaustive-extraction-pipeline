@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_014",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "21",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Frank Bird Necklace",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "he has asked the Secretary of the Interior to cancel his patent, but he has not heard anything in regard to the matter",
+    "Refused/Protested": "did not want his patent to his allotment, because he did not want to pay the taxes; but he took the patent on being advised to do so by the people at the Indian Agency",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "he has never sold or mortgaged any part of his allotment at all; but he has not paid any taxes",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "he has not paid any taxes; hence the taxes on this land are still hanging over it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "52 years old",
+    "Occupation/Income": "his income is small\u2014the only source being what he raises in the way of small crops on this allotment",
+    "NOTES": "mentally competent; health is poor, being bothered with his heart, this of twenty years standing; has a wife and three children\u2014two children being self-supporting\u2014and he supports wife and minor child; health of his wife is exceedingly poor, having rheumatism and tuberculosis; health of the minor child is good; has never received any aid from the County or Government; document number 279; sworn November 10, 1928; County of Shannon",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2280,
+    "output_tokens": 445
+  },
+  "elapsed": 6.2
+}

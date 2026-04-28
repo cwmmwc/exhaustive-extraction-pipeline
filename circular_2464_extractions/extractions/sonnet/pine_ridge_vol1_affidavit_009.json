@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_009",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "14-15",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lillian A. Lawyer",
+    "Tribe/Reservation": "Pine Ridge Reservation, South Dakota",
+    "Post Office Address": "Nez Perce, Idaho",
+    "Allotment number": "208",
+    "Cancelled": "this patent was never canceled",
+    "Refused/Protested": "a fee patent covering her entire allotment containing 320 acres was issued in her name without her consent or application; that it was not her intention ever to ask the Government to issue patent in fee for the same as she had her home on the same",
+    "Recorded patent": "fee patent was duly recorded at Hot Springs, South Dakota",
+    "Sold/Mortgaged": "the land covered by the said patent was sold for $3250.00 during the year 1919 to Harry Evans; that this land was never mortgaged",
+    "Buyer": "Harry Evans for $3250.00 in 1919",
+    "Tax burden forced sale/Mortgage": "she could not keep the land and pay out for taxes when there was no income derived therefrom; the reason the land was sold was because she could not profitably look after the payment of taxes and keep off Indians from the use of the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "sometime during the years of 1918 or 1919",
+    "Gender": "Female",
+    "Age": "48 years old",
+    "Occupation/Income": "working for the Government as Seamstress; husband also employed in Government service",
+    "NOTES": "Resident of Nez Perce County, Idaho for the past 22 years; allotment contained 320 acres; patent mailed to her and she signed receipts and returned them to the Agency office; affiant believes consideration was fair value for the land; sold not on account of settlement of old debt or taxes or any other encumbrances; amount paid for taxes have never been refunded; mental and physical condition are normal; financial status is good; Government, County and State have never contributed anything towards her support; has three children dependent upon her; husband assists in support of minor children; owing to husband's employment in Idaho she was forced to leave Pine Ridge; had constructed three room frame house, barn for five head of horses and one cow, well drilled and fenced entire allotment at a total cost of $905.00; would be glad to repurchase land at same rate provided improvements were in same condition; had Government retained allotment in trust she would still be the owner; affidavit sworn December 4, 1928 before notary Starr J. Maxwell",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2781,
+    "output_tokens": 650
+  },
+  "elapsed": 10.9
+}

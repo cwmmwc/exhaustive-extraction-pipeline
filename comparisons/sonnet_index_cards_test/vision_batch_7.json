@@ -1,0 +1,61 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "N. Oklahoma",
+      "date": "1935-04-04",
+      "correspondent": "US Attorney (Asst)",
+      "correspondent_role": "outgoing",
+      "case_name": "US v. Ralph Hughes, et al",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Forwarded copies of motion of complainant in above case. Enclose copies of order.",
+      "action_type": "enclosure",
+      "enclosures": "copies of motion of complainant; copies of order",
+      "routing_division": "Lands Div.",
+      "routing_date": "1935-04-08",
+      "clerk_initials": "rmh",
+      "processed_date": "1935-04-08"
+    },
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Interior",
+      "date": "1935-05-10",
+      "correspondent": "Asst. Secy.",
+      "correspondent_role": "incoming",
+      "case_name": "US v. Ralph Hughes, et al",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Acknowledging letter of March 23 and April 5 in regard to final decree in case of US v. Ralph Hughes et al.",
+      "action_type": "acknowledgment",
+      "enclosures": "",
+      "routing_division": "Lands Div.",
+      "routing_date": "1935-05-10",
+      "clerk_initials": "rmh",
+      "processed_date": "1935-05-10"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "US v. Ralph Hughes, et al",
+      "file_number": "90-2-5-10",
+      "jurisdiction": "N. Oklahoma",
+      "case_type": "other",
+      "allottee_name": "",
+      "tribe_or_reservation": "",
+      "county": ""
+    }
+  ],
+  "persons": [
+    {
+      "name": "Ralph Hughes",
+      "role": "defendant",
+      "tribe": "",
+      "allottee_number": ""
+    }
+  ]
+}

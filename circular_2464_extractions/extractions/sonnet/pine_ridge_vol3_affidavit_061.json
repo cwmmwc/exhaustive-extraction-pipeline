@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_061",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "86",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Lamont",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "5141",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee to his 160 acre allotment, when it was issued, September 29, 1919, for he did not want to pay the taxes; that the Indian Agency advised him that, if he did not accept it, and pay the taxes, that the land would be assessed for taxes, for which it would finally be sold, so he took the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1920, he sold his allotment to Spurgeon Wadell, of Martin, South Dakota, for $1100.00 in cash, and about 12 or 14 head of steers, valued at $42.00 each, making him around $1600.00 for his land",
+    "Buyer": "Spurgeon Wadell, of Martin, South Dakota, for $1100.00 in cash and about 12 or 14 head of steers valued at $42.00 each, making around $1600.00 total",
+    "Tax burden forced sale/Mortgage": "did not sell his land for debts incurred prior to the receipt of the his patent in fee",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Male",
+    "Age": "29 years old",
+    "Occupation/Income": "farms his wife's allotment, and works for other farmers, for his living, and that this is his only source of income",
+    "NOTES": "mentally competent, has fair health; has a wife and six children to support, all of whom have good health; has never received any aid from the County, State nor the United States Government; allotment was 160 acres; document sworn December 22, 1928, in Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2311,
+    "output_tokens": 538
+  },
+  "elapsed": 5.1
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_036",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "47",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Elizabeth Dixon",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Batesland, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 640 acre allotment when she got it, but she got a letter from the Superintendent of the Pine Ridge Agency, stating that her patent had been reported to the Tax Collector, and she would have taxes to pay in any event; so she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged 320 acres of her allotment, to Joe Skinner, of Gordon, Nebraska, for $1000.00, and since that time she has just kept the interest paid up on this loan",
+    "Buyer": "Joe Skinner, of Gordon, Nebraska, for $1000.00",
+    "Tax burden forced sale/Mortgage": "in 1923, the taxes being entirely behind, she mortgaged 320 acres of her allotment; some of the money she borrowed in 1923 went for taxes on her husband's estate; the taxes on this 320, situated in Bennett County, is away behind again",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "56 years old",
+    "Occupation/Income": "her only income is the lease money she receives from her allotment",
+    "NOTES": "mentally competent; not in possession of very good health, being bothered with rheumatism especially; has one minor child to support, and that this child is bothered with heart trouble; husband has been dead since 1920; never received any help from the County or the Government; document No. 406; sworn November 19, 1928; 320 acres mortgaged situated in Bennett County",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2305,
+    "output_tokens": 502
+  },
+  "elapsed": 6.6
+}

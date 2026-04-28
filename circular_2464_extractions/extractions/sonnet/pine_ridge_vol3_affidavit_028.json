@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_028",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "32",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alice Brown",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Chadron, Nebraska",
+    "Allotment number": "4447",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not desire it, because she did not want to pay taxes on it; that she was informed that it was necessary for her to accept it, and pay the taxes, and she accepted same",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged the half section to pay the taxes on this land, to McKinley and Allen, of Sioux Falls, South Dakota, through their agent, for the sum of $600.00, and, in 1924, these men foreclosed on her land",
+    "Buyer": "McKinley and Allen, of Sioux Falls, South Dakota, through their agent, for the sum of $600.00; foreclosed in 1924",
+    "Tax burden forced sale/Mortgage": "in 1919, the taxes being behind, she mortgaged the half section to pay the taxes on this land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "57 years old",
+    "Occupation/Income": "her husband's only source of income is the money he get from leasing the childrens' land",
+    "NOTES": "Allotment covers the W\u00bd of Sec. 53, T. 37N. R. 36W., 6th P.M., in South Dakota; health is poor, suffering from rheumatism and gall stone troubles; husband's sight is failing; they have three minor children to support; in 1918, her four boys joined the United States Army, two serving overseas, one of these got killed in France, and the other two served in the United States; has never received any help from the County or the United States Government; affidavit subscribed and sworn November 16, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2329,
+    "output_tokens": 531
+  },
+  "elapsed": 8.3
+}

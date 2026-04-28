@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_001",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "2-3",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Walker",
+    "Tribe/Reservation": "Big Bend District",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "No",
+    "Refused/Protested": "There was no protest made by Walker",
+    "Recorded patent": "Walker never had patent recorded, ( lookup record in Brule Co)",
+    "Sold/Mortgaged": "Land was sold",
+    "Buyer": "land was bought by J.Q.Anderson; Walker claims that he received $4700.00 for the half section that he paid $1500.00 on old debt and received $3200.00 in cash",
+    "Tax burden forced sale/Mortgage": "Land was sold outright by Indian; some of the money was applied on an old debt, the debt was an old one that had run 4 years before the Indian had been told that he was to be given a patent",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "68",
+    "Occupation/Income": "has supported himself by raising a small garden, working at odd jobs for the Gov't at farm station, and blacksmithing when he is able, has received some rations, that is his wife in winter",
+    "NOTES": "Mental condition good, physical condition poor, financial condition poor; wife is dependent upon him; Still taxed; patent was delivered to Walker by Major McGlaughin; Walker was Indian police at time and received letter from Sup't Marble through Mr O'Shea farmer of the big bend district; at time this land was sold land of similar character was selling from $30. to 75. an acre; land was on the Missouri River bottom, 6 miles from the town of Chamberlain; document dated January 11th, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2854,
+    "output_tokens": 482
+  },
+  "elapsed": 6.9
+}

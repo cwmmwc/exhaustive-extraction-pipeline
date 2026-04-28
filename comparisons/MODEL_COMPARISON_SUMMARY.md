@@ -1,6 +1,6 @@
 # Model Comparison Summary
 
-**Date:** 2026-03-23 (updated 2026-03-25 with Kimi K2.5 results, 2026-03-27 with Qwen 2.5 72B HPC benchmark, 2026-03-31 with Survey of Conditions production results, 2026-04-01 with corpus-wide synthesis comparison, 2026-04-13 with Sonnet vs Kimi hearing transcript comparison)
+**Date:** 2026-03-23 (updated 2026-03-25 with Kimi K2.5 results, 2026-03-27 with Qwen 2.5 72B HPC benchmark, 2026-03-31 with Survey of Conditions production results, 2026-04-01 with corpus-wide synthesis comparison, 2026-04-13 with Sonnet vs Kimi hearing transcript comparison, 2026-04-15 with v4 three-way extraction comparison and v3-vs-v4 prompt degradation finding)
 **Purpose:** Evaluate whether open-source models can replace Claude for structured extraction and corpus-wide synthesis in a historical document analysis pipeline.
 
 ## Models Tested
@@ -718,6 +718,646 @@ A larger comparison across the rest of the Qwen-VL run is planned once it comple
 **RC GenAI model availability:** As of April 2026, RC GenAI only serves Kimi K2.5. Qwen2.5-VL-72B must be run on HPC via vLLM with Loren's container `vllm_0.14.1-cu130.sif` and `--tensor-parallel-size 4` on 4x A100 80GB.
 
 *Vision comparison added 2026-04-09. Corrected 2026-04-10 after a true apples-to-apples Sonnet `--index-cards` rerun. Test JSONs at `comparisons/sonnet_index_cards_test/vision_merged.json` and on HPC at `/project/LawData/kimi-extraction/outputs/qwen_vl_index_cards_test.json`.*
+
+---
+
+---
+
+## 9. v4 Three-Way Extraction: Kimi vs Sonnet vs Opus on CCF 56074
+
+**Date:** 2026-04-15
+**Document:** 1921 CCF 56074-21-312 GS (221 pages, Board of Indian Commissioners report)
+**Schema:** v4 (10 types: entities, events, financial_transactions, relationships, fee_patents, correspondence, legislative_actions, testimony, taxes, mortgages)
+**Chunking:** 40K chars, 5K overlap, 15 chunks
+
+### v4 Extraction Results
+
+| Category | Kimi K2.5 | Sonnet | Opus |
+|----------|----------:|-------:|-----:|
+| entities | 584 | 1,075 | 998 |
+| events | 102 | 274 | 191 |
+| financial_transactions | 58 | 181 | 89 |
+| relationships | 82 | 343 | 258 |
+| fee_patents | 67 | **368** | 316 |
+| correspondence | 24 | 133 | 123 |
+| legislative_actions | 11 | 37 | 26 |
+| testimony | 11 | 107 | 105 |
+| taxes | 6 | 23 | 20 |
+| mortgages | 5 | 64 | 54 |
+| **TOTAL** | **950** | **2,605** | **2,180** |
+
+Sonnet leads on every category. Opus is second on every category. Kimi is a distant third at 36% of Sonnet overall.
+
+### Critical Finding: v4 Prompt Degrades Kimi's Performance
+
+The March v3 benchmark found Kimi K2.5 **exceeded Claude on fee patents** (268 vs 169). This was the headline result that shaped the optimal pipeline recommendation (Kimi extraction → Claude analysis). The v4 comparison reverses this finding entirely:
+
+| | Kimi v3 (March) | Kimi v4 (April) | Sonnet v4 | Opus v4 |
+|---|---:|---:|---:|---:|
+| **fee_patents** | **293** | 67 | **368** | 316 |
+| entities | 1,000 | 584 | 1,075 | 998 |
+| events | 193 | 102 | 274 | 191 |
+| financial_transactions | 135 | 58 | 181 | 89 |
+| relationships | 228 | 82 | 343 | 258 |
+| correspondence | 119 | 24 | 133 | 123 |
+| legislative_actions | 40 | 11 | 37 | 26 |
+| **TOTAL (v3 cats only)** | **2,008** | **928** | **2,231** | **2,010** |
+
+Kimi's total output dropped from 2,008 items (v3) to 950 items (v4) on the **same document** — a 53% decline. Every category declined, not just fee patents.
+
+### Probable Cause: Prompt Length
+
+The v4 prompt adds three JSON categories (testimony, taxes, mortgages) plus extra instruction text ("For testimony, extract each distinct witness's statements as a separate record. For taxes and mortgages, extract every specific instance mentioned — these are key mechanisms of land dispossession."). This makes the v4 prompt ~40% longer than v3.
+
+Claude Sonnet and Opus handle the longer prompt without difficulty — their v4 totals exceed what would be expected from v3. But Kimi K2.5 appears to lose effective context for document content as the prompt grows. The extra categories are mostly empty for this document type (only 22 testimony+taxes+mortgages items), so Kimi is paying a context cost for categories that don't apply.
+
+### Implications for the Survey Corpus
+
+The entire Survey of Conditions corpus (26 volumes, 158,351 records, 2,487 fee patents) was extracted with Kimi v4. If the v4 prompt is degrading Kimi's output by ~50%, those numbers may be significantly lower than what v3 would have produced.
+
+However, the Survey documents are congressional hearings — exactly the document type where the v4 categories (testimony, taxes, mortgages) should contain real content. The CCF 56074 is a BIA administrative report where those categories are mostly empty. The v4 degradation may be less severe on documents where the extra categories actually match the content.
+
+### Confirmed: v3 vs v4 on Survey Part 33
+
+Direct comparison on the same hearing transcript (Part 33, San Diego/San Francisco 1934, 205 pages):
+
+| Category | Kimi v3 | Kimi v4 | Change |
+|----------|--------:|--------:|-------:|
+| entities | 989 | 1,263 | +28% |
+| events | 182 | 192 | +5% |
+| financial_transactions | 88 | 116 | +32% |
+| relationships | 170 | 163 | −4% |
+| fee_patents | 12 | 0 | −100% |
+| correspondence | 44 | 41 | −7% |
+| legislative_actions | 28 | 32 | +14% |
+| testimony | — | 37 | (new) |
+| taxes | — | 0 | (new) |
+| mortgages | — | 0 | (new) |
+| **TOTAL** | **1,513** | **1,844** | **+22%** |
+
+**On hearing testimony, v4 helps Kimi.** Total items increase 22%. The v3 categories are mostly stable or improved; v4 adds 37 testimony records. Fee patents drop from 12 to 0, but a hearing transcript should have 0 fee patents — v4's result is arguably more accurate.
+
+### The Pattern: v4 Impact Depends on Document Type
+
+| Document | Type | Kimi v3 | Kimi v4 | Change |
+|----------|------|--------:|--------:|-------:|
+| CCF 56074 | BIA admin report | 2,008 | 950 | **−53%** |
+| Survey Part 33 | Hearing testimony | 1,513 | 1,844 | **+22%** |
+
+The v4 prompt degrades Kimi on documents where the extra categories (testimony, taxes, mortgages) don't apply — the longer prompt wastes context on empty buckets. On documents where those categories match the content, v4 actually improves Kimi's output.
+
+**Implication for the corpus:** Most of the 4,990 PDFs are BIA administrative records, litigation files, and correspondence — not hearing testimony. For these documents, Kimi v3 will likely outperform Kimi v4. A full KCA corpus v3 extraction is in progress (HPC job 11704958) to confirm this at scale.
+
+**Test in progress:** Kimi v3 vs v4 on Survey Part 33 (San Diego/San Francisco 1934, 205 pages). HPC job 11693605 submitted 2026-04-15. This will establish whether the degradation holds on hearing testimony or is specific to document types where the v4 categories are sparse.
+
+### Revised Model Rankings (v4 schema)
+
+| Model | Total Items | % of Sonnet | Fee Patents | Notes |
+|-------|----------:|:-----------:|------------:|-------|
+| **Claude Sonnet** | **2,605** | **100%** | **368** | Best on v4 across all categories |
+| Claude Opus | 2,180 | 84% | 316 | Strong second; ~4x cost of Sonnet |
+| Kimi K2.5 | 950 | 36% | 67 | Dramatic decline from v3 (was 73%) |
+
+The March recommendation — **Kimi extraction → Claude Opus analysis** — may need revision. If Kimi v3 significantly outperforms Kimi v4, the optimal pipeline may be Kimi v3 for the 7 base categories + a separate targeted pass for testimony/taxes/mortgages. Alternatively, Sonnet may now be the preferred extraction model for all document types at v4.
+
+*v4 comparison results at `comparisons/ccf_56074_sonnet_v4/claude.json`, `comparisons/ccf_56074_opus_v4/claude.json`, and `survey_of_conditions_extractions/1921 CCF 56074-21-312 GS/kimi-k2.5.json`. Kimi v3 baseline from `comparisons/single_20260325_090708_1921 CCF 56074-21-312 GS_chunked/kimi-k2.5.json`.*
+
+---
+
+## 10. Full KCA Corpus: Kimi v3 vs v4 Side-by-Side (179 Documents)
+
+**Date:** 2026-04-16
+**Corpus:** KCA/Kiowa collection — 179 PDFs including BIA administrative records, litigation files, newspaper clippings, congressional records, forced fee patent affidavits, and one 851-page Survey of Conditions volume (1930 Survey of Cond OK)
+**Method:** Fresh extraction of all 179 PDFs through Kimi K2.5 via RC GenAI, once with v3 prompt (7 types) and once with v4 prompt (10 types). Clean output directories, same PDFs (including newly OCR'd affidavits), same model.
+**HPC Jobs:** 11705143 (v3), 11705144 (v4)
+
+### Corpus-Wide Totals
+
+| Category | v3 | v4 | Diff | v4/v3 |
+|----------|---:|---:|-----:|------:|
+| entities | 18,635 | 17,041 | −1,594 | 91% |
+| events | 3,577 | 3,225 | −352 | 90% |
+| financial_transactions | 2,453 | 2,341 | −112 | 95% |
+| relationships | 3,092 | 2,783 | −309 | 90% |
+| fee_patents | 358 | 452 | **+94** | **126%** |
+| correspondence | 591 | 528 | −63 | 89% |
+| legislative_actions | 363 | 321 | −42 | 88% |
+| testimony | 0 | 352 | +352 | (new) |
+| taxes | 0 | 212 | +212 | (new) |
+| mortgages | 0 | 116 | +116 | (new) |
+| **TOTAL** | **29,069** | **27,376** | **−1,693** | **94%** |
+
+v4 produces 6% fewer total items. The v4-only categories (testimony, taxes, mortgages) add 680 new structured records, but the original 7 categories lose 2,373 items. However, fee patents — the most analytically important category — increase 26% with v4.
+
+### Breakdown: Survey Volume vs Everything Else
+
+**1930 Survey of Conditions OK (851 pages, 79 chunks)**
+
+| Category | v3 | v4 | Diff |
+|----------|---:|---:|-----:|
+| entities | 5,026 | 4,258 | −768 |
+| events | 712 | 637 | −75 |
+| financial_transactions | 633 | 657 | +24 |
+| relationships | 665 | 599 | −66 |
+| fee_patents | 91 | 113 | **+22** |
+| correspondence | 175 | 119 | −56 |
+| legislative_actions | 93 | 76 | −17 |
+| testimony | 0 | 113 | +113 |
+| taxes | 0 | 27 | +27 |
+| mortgages | 0 | 13 | +13 |
+| **TOTAL** | **7,395** | **6,612** | **−783 (−11%)** |
+
+Surprising: v4 loses 11% even on a Survey volume — the opposite of the Part 33 result (+22%). The difference may be document length: this volume is 851 pages (79 chunks) vs Part 33's 205 pages (21 chunks). Longer documents may suffer more from the v4 prompt's context cost because the prompt overhead accumulates across more chunks.
+
+**All other documents (175 docs)**
+
+| Category | v3 | v4 | Diff | v4/v3 |
+|----------|---:|---:|-----:|------:|
+| entities | 13,609 | 12,783 | −826 | 94% |
+| events | 2,865 | 2,588 | −277 | 90% |
+| financial_transactions | 1,820 | 1,684 | −136 | 93% |
+| relationships | 2,427 | 2,184 | −243 | 90% |
+| fee_patents | 267 | 339 | **+72** | **127%** |
+| correspondence | 416 | 409 | −7 | 98% |
+| legislative_actions | 270 | 245 | −25 | 91% |
+| testimony | 0 | 239 | +239 | (new) |
+| taxes | 0 | 185 | +185 | (new) |
+| mortgages | 0 | 103 | +103 | (new) |
+| **TOTAL** | **21,674** | **20,764** | **−910 (−4%)** |
+
+### Per-Document Variation
+
+The v4/v3 ratio varies widely by document. Some documents see v4 extract 2–10x more items (particularly newspaper articles and legislative records where the v4 categories provide better guidance). Others see v4 extract as little as 7% of v3's output.
+
+**Documents where v4 is much worse (non-Survey):**
+
+| v4/v3 | v3 items | v4 items | Document |
+|------:|--------:|---------:|----------|
+| 7% | 120 | 8 | 1936 Tushkahomman the Red Warrior |
+| 20% | 45 | 9 | Emma Belle Wyatt Kiowa 305 |
+| 25% | 60 | 15 | 1925 CCF 31486-25-312 Kiowa Neda protest |
+| 30% | 10 | 3 | 1941 Hunt old age asst IRA |
+
+**Documents where v4 is much better:**
+
+| v4/v3 | v3 items | v4 items | Document |
+|------:|--------:|---------:|----------|
+| 1020% | 10 | 102 | 1912 big article on changes at KCA |
+| 333% | 27 | 90 | 1938 RG 233 Kiowa claims bill |
+| 228% | 36 | 82 | 1901 Kiowa opening (Guthrie Daily Leader) |
+| 206% | 17 | 35 | Kiowa files checked out 15335 |
+
+### Qualitative Analysis: What v3 Captures That v4 Doesn't (and Vice Versa)
+
+The aggregate numbers show v3 producing more total items. But "more items" is not the same as "more useful items." A detailed examination of specific documents reveals what each version actually extracts and what the research implications are.
+
+**Case study: Mattie Sturm, Caddo Allottee #40 (forced fee patent affidavit, 2 pages)**
+
+This is a sworn deposition from February 23, 1929, in which Mattie Sturm, a 52-year-old Caddo woman, describes how she received a fee patent she did not request, mortgaged her allotment for $6,000, and eventually sold it for $15,000 in a trade for a lot and house in Anadarko.
+
+**v3 entities (19 items):**
+- Mattie Sturm (person) — "Allottee of No. 40 Caddo, age 52, gave sworn statement regarding land sale and patent"
+- John Brown (person) — "Purchaser of Mattie Sturm's allotment in 1927, from Chickasha, Oklahoma"
+- Commerce Trust Company (organization) — "Mortgage holder, located in Kansas City, lent $6000 in 1920"
+- Husband of Mattie Sturm (person) — "Unnamed, recorded patent at courthouse, earns income for family support"
+- Superintendent (person) — "Referred to as 'Supt.', advised Mattie Sturm to record patent at courthouse"
+- Agent (person) — "Government agent who issued patent to Mattie Sturm"
+- Notary Public (person) — "Administered oath, commission expires May 17, 1932"
+- Unmarried children (person) — "Two unnamed children depending on Mattie Sturm"
+- Married daughter (person) — "Has three children, depends on Mattie Sturm"
+- Father of Mattie Sturm (person) — "Depends on Mattie Sturm for support"
+- Other heirs to mother's allotment (person) — "Unnamed heirs from whom Mattie Sturm bought out interests"
+- State of Oklahoma, County of Caddo, Chickasha, Anadarko, Kansas City (locations)
+- Allotment No. 40 Caddo, Mother's allotment (land parcels)
+- Bureau of Indian Affairs office (organization)
+
+**v4 entities (10 items):**
+- Mattie Sturm, John Brown, Commerce Trust Company, Notary Public (persons/orgs)
+- State of Oklahoma, County of Caddo, Anadarko, Chickasha, Kansas City (locations)
+- Allotment No. 40 Caddo (land parcel)
+
+**What v3 captures that v4 doesn't:** 9 additional entity mentions — the unnamed husband, the superintendent, the BIA agent, the married daughter with three children, the unmarried children, the father, and the other heirs. These are contextual references that flesh out the family picture and the institutional actors involved in the patenting process. They are real people and real relationships that existed in 1929.
+
+**What v4 captures that v3 cannot:**
+
+*A testimony record:*
+- **Witness:** Mattie Sturm
+- **Title:** Allottee
+- **Date:** 1929-02-23
+- **Location:** Caddo County, Oklahoma
+- **Key claims:** "Did not request patent but was told she had to take it; regrets accepting patent; sold land to purchase other heirs' interests in mother's allotment; received $15,000 equivalent in trade for land; buyer assumed $6000 mortgage; not cheated but would not have taken patent if she had known she could object; supports father, two unmarried children, married daughter and three grandchildren; never received financial aid; patent never canceled; back taxes never refunded"
+
+This is the historiographically significant content — Mattie Sturm's own words about the mechanism of dispossession — captured as a single structured, searchable record. In v3, this information is scattered across entity context strings. In v4, a query for "allottees who testified they did not request their patent" would return Mattie Sturm as a direct hit.
+
+*A mortgage record:*
+- **Borrower:** Mattie Sturm
+- **Lender:** Commerce Trust Company of Kansas City
+- **Amount:** $6,000
+- **Land:** All of Allotment No. 40 Caddo
+- **Date:** 1920
+- **Status:** paid
+- **Context:** "10-year mortgage assumed by buyer John Brown in 1927; as of 1929, 4 years remained on original term"
+
+In v3, this mortgage appears only as a text field inside the fee patent record: "$6000.00 to Commerce Trust Company of Kansas City, 1920, 10-year term." In v4, each field is independently searchable — you can query all mortgages by Commerce Trust Company, all mortgages over $5,000, all mortgages assumed by buyers.
+
+*Two tax records:*
+- Delinquent back taxes never refunded after land sale
+- Property tax exemption status on trust land
+
+These tax records are invisible in v3. The information exists in the full text but has no structured representation.
+
+### The Fee Patent Exception
+
+Fee patents increase 26% with v4 across the corpus (358 → 452). This is the opposite of the CCF 56074 result (where fee patents crashed from 293 to 67 between v3 and v4). The difference is document type:
+
+- **CCF 56074** is a 221-page BIA administrative report with dense allotment tables — the kind of document where Kimi's v3 extraction excelled. The v4 prompt's extra categories and instructions appear to interfere with Kimi's ability to parse these tables.
+- **KCA documents** are shorter, more focused — individual case files, affidavits, litigation records. On these documents, the v4 prompt's explicit mention of fee patents as a category ("mechanism: private_bill|administrative|application|certificate_of_competency") may actually help Kimi identify fee patents that v3 missed. The v4 prompt adds `certificate_of_competency` as a mechanism option that v3 doesn't have, which may account for some of the increase.
+
+This finding complicates the narrative further: v4 is worse for Kimi overall, but better for the single most important category on the most common document type in the corpus.
+
+### Practical Impact on the Streamlit Analysis Interface
+
+The v3-vs-v4 choice has different implications depending on which analysis mode the researcher uses:
+
+**Deep Read mode (single document, full text + extraction data → Opus):** Minimal impact. Opus reads the full text regardless. The extraction data is supplementary context. Whether mortgages appear in a dedicated `mortgages` section or in a fee_patent context string, Opus will find and use the information. The Deep Read fix (sending all 10 extraction types to Opus) matters more than v3 vs v4.
+
+**Discovery mode (cross-document keyword search → structured results):** Significant impact. Discovery uses `search_mortgages()`, `search_testimony()`, `search_taxes()` to find records across documents. With v3, these tables are empty. A query about mortgages returns zero structured hits and falls back on keyword matches in entity context strings. With v4, you get direct hits: "Mattie Sturm, $6,000, Commerce Trust Company, Allotment No. 40 Caddo, status: paid."
+
+**Corpus Synthesis mode (summaries across all documents → Opus):** No impact. This mode uses document summaries, not raw extraction data. If the summaries mention mortgages (and the Opus summaries generated from extraction data do), v3 vs v4 doesn't matter.
+
+### Summary: The v3-vs-v4 Tradeoff
+
+v3 produces more items (29,069 vs 27,376, +6%). v4 produces more analytically actionable items for the specific research question — how Native Americans lost their land through fee patents, mortgages, taxes, and coerced testimony.
+
+The 1,693 "lost" items in v4 are predominantly secondary entity mentions (unnamed family members, institutional references, contextual locations). The 680 "gained" items in v4 are structured records of the mechanisms of dispossession — mortgages with borrower/lender/amount, tax records with status/county, testimony with key claims searchable by content.
+
+For a historian studying land dispossession, a searchable mortgage record with borrower, lender, and amount is more valuable than three additional entity mentions for unnamed family members. The v4 records are analytically actionable; the v3 entities are contextual.
+
+**However, the ideal would be both.** A v5 prompt that preserves v3's entity density while adding v4's structured categories for testimony, taxes, and mortgages would capture the full picture without the tradeoff. This is the next direction for prompt development.
+
+*Full extraction results at `kca_reextraction/fresh_v3/` and `kca_reextraction/fresh_v4/`. HPC jobs 11705143 (v3) and 11705144 (v4), both completed 2026-04-16.*
+
+---
+
+## 11. Prompt Engineering: v5 and the Path to Optimal Extraction
+
+**Date:** 2026-04-16 (experiment in progress)
+
+### The Problem
+
+Sections 9 and 10 established that the v3 and v4 prompts each have strengths the other lacks:
+
+- **v3** produces denser extraction (29,069 vs 27,376 items on 179 KCA docs), particularly in entities (+9%), events (+10%), and relationships (+10%). It captures secondary actors — unnamed family members, institutional references, contextual locations — that provide the social fabric around each case.
+
+- **v4** produces structured records for the specific mechanisms of land dispossession: testimony (352 records), taxes (212), mortgages (116). These don't exist in v3 at all. v4 also finds 26% more fee patents, possibly because it adds `certificate_of_competency` as a mechanism option that v3 lacks.
+
+Neither version is strictly better. The tradeoff is between extraction density (v3) and analytical specificity for the research question (v4).
+
+### Three Approaches Under Consideration
+
+**Approach A: Slim prompt (v5)**
+
+Keep all 10 categories from v4 but reduce the prompt overhead that appears to degrade Kimi's performance. The v4 prompt is ~40% longer than v3 due to:
+1. Three additional JSON template blocks for testimony, taxes, mortgages (~450 chars)
+2. Two extra instruction sentences (~180 chars): "For testimony, extract each distinct witness's statements as a separate record. For taxes and mortgages, extract every specific instance mentioned — these are key mechanisms of land dispossession."
+
+The v5 prompt removes the extra instruction text entirely and trims the testimony/taxes/mortgages templates to their essential fields:
+
+- v4 testimony: witness, witness_title, hearing, committee, location, date, subject, key_claims, questioner (9 fields)
+- v5 testimony: witness, date, subject, key_claims (4 fields)
+- v4 taxes: taxpayer, land_description, tax_type, amount, year, status, county, context (8 fields)
+- v5 taxes: taxpayer, amount, tax_type, status, context (5 fields)
+- v4 mortgages: borrower, lender, amount, land_description, acreage, date, interest_rate, status, context (9 fields)
+- v5 mortgages: borrower, lender, amount, date, status, context (6 fields)
+
+The hypothesis: if the degradation is caused by prompt length consuming Kimi's effective context, a shorter prompt with the same categories should recover most of v3's density while retaining v4's structured types.
+
+**v5 test in progress:** HPC job submitted 2026-04-16, running all 179 KCA docs. Results will be compared against v3 and v4 on the same corpus.
+
+**Approach B: Two-pass extraction**
+
+Run v3 first (proven density), then a targeted second pass that asks only for testimony, taxes, and mortgages from the same chunks. The second-pass prompt would be very short — just three JSON templates and a single instruction. Merge the results.
+
+Advantages:
+- v3 pass is proven to produce maximum entity density
+- Second pass prompt is tiny (~300 chars of template), well within Kimi's comfort zone
+- Each pass is independently verifiable
+- No risk of degrading the v3 categories
+
+Disadvantages:
+- Doubles walltime (though cost is $0 on RC GenAI)
+- Requires a merge step to combine results
+- Two JSON files per document to manage
+
+This approach treats the problem as a matter of specialization rather than optimization. Instead of asking Kimi to do 10 things at once (and doing each one slightly worse), ask it to do 7 things well, then 3 things well.
+
+**Approach C: v3 + certificate_of_competency (v3+)**
+
+The simplest possible change: add `certificate_of_competency` to v3's fee_patents mechanism list. One word added to the prompt.
+
+The v4 fee patent increase (+26% on KCA) may be primarily driven by this single mechanism option rather than by the v4 prompt structure. Many KCA documents describe forced fee patenting through competency commissions — a process that v3's mechanism list (`private_bill|administrative|application`) doesn't explicitly name. Adding it to v3 might close most of the fee patent gap while preserving v3's density advantage on everything else.
+
+This wouldn't add testimony, taxes, or mortgages. But if the two-pass approach (B) is ultimately the best path, v3+ would be the ideal first pass — maximum entity density plus the full fee patent mechanism list.
+
+### Expected Decision Tree
+
+```
+If v5 recovers v3's density (≥95% of v3 items) AND keeps v4's new types:
+  → v5 is the answer. Use it for everything.
+
+If v5 partially recovers (85-95% of v3) but still loses significant entities:
+  → Two-pass (B) is better. v3 first pass, targeted second pass.
+  → Test v3+ as the first pass to get the fee patent mechanism benefit.
+
+If v5 doesn't recover (< 85% of v3):
+  → The categories themselves are the problem, not just prompt length.
+  → Two-pass (B) is the only viable approach.
+```
+
+### What We're Measuring
+
+The v5 run will produce a third column for every document in the KCA corpus. For each document, we compare:
+
+1. **Entity density**: Does v5 match v3? (Target: ≥95% of v3's entity count)
+2. **Fee patents**: Does v5 match v4? (Target: ≥90% of v4's count, i.e., the certificate_of_competency benefit)
+3. **New categories**: Does v5 produce testimony/taxes/mortgages? (Target: ≥80% of v4's counts in these categories)
+4. **Survey volume**: Does v5 handle the 851-page Survey doc as well as v3? (v4 lost 11% here)
+
+If v5 hits all four targets, it's the optimal single-pass prompt. If it misses on entity density but hits the new categories, two-pass with v3+ is the answer.
+
+### Toward v6: The Two-Pass Architecture
+
+Regardless of the v5 results, the two-pass approach deserves implementation because it solves a broader problem. The corpus is heterogeneous: BIA administrative records, litigation files, newspaper clippings, hearing transcripts, individual affidavits, and 1,000-page statistical reports. No single prompt is optimal for all of these.
+
+A two-pass architecture would:
+1. **First pass (v3+ or v5):** Extract the core 7 categories with maximum density. This is the proven extraction that produces entities, events, relationships, fee patents, correspondence, and legislative actions.
+2. **Second pass (targeted):** Extract only testimony, taxes, and mortgages. Short prompt, focused task. Can be run on all documents or selectively on documents where these categories are expected (hearing transcripts, tax litigation files).
+
+The merge step is straightforward: combine the JSON outputs, deduplicating any items that appear in both passes (e.g., a financial_transaction in pass 1 that is also a tax record in pass 2).
+
+This architecture also opens the door to future targeted passes — for example, a dedicated "allotment affidavit" pass with a prompt tuned specifically for the forced fee patent sworn statements, extracting the specific questions and answers from the affidavit form.
+
+### v5 Results: The Three-Way Comparison (175 Documents)
+
+**Date:** 2026-04-16
+**HPC Job:** 11725989 (v5), completed alongside 11705143 (v3) and 11705144 (v4)
+**Corpus:** 175 KCA/Kiowa documents present in all three extraction runs
+
+#### Corpus-Wide Totals
+
+| Category | v3 | v4 | v5 | v5/v3 | v5/v4 |
+|----------|---:|---:|---:|------:|------:|
+| entities | 18,591 | 17,005 | **18,297** | 98% | 108% |
+| events | 3,563 | 3,217 | **3,876** | **109%** | 120% |
+| financial_transactions | 2,443 | 2,330 | **2,575** | **105%** | 111% |
+| relationships | 3,082 | 2,773 | **3,009** | 98% | 109% |
+| fee_patents | 353 | 447 | **439** | **124%** | 98% |
+| correspondence | 591 | 519 | 540 | 91% | 104% |
+| legislative_actions | 363 | 320 | 350 | 96% | 109% |
+| testimony | 0 | 350 | **375** | — | **107%** |
+| taxes | 0 | 212 | 197 | — | 93% |
+| mortgages | 0 | 116 | **118** | — | 102% |
+| **TOTAL** | **28,986** | **27,294** | **29,776** | **103%** | **109%** |
+
+#### Against the Decision Tree
+
+The decision tree predicted: "If v5 recovers v3's density (≥95% of v3 items) AND keeps v4's new types → v5 is the answer."
+
+Measuring against the four targets:
+
+1. **Entity density**: v5 = 18,297 entities, v3 = 18,591. That's **98% of v3**. Target was ≥95%. **PASS.**
+
+2. **Fee patents**: v5 = 439, v4 = 447. That's **98% of v4**. Target was ≥90%. **PASS.** Moreover, v5 = 124% of v3's 353, confirming the `certificate_of_competency` mechanism benefit carries over from v4.
+
+3. **New categories**: 
+   - Testimony: v5 = 375, v4 = 350. **107% of v4. PASS.** (Target was ≥80%.)
+   - Taxes: v5 = 197, v4 = 212. **93% of v4. PASS.**
+   - Mortgages: v5 = 118, v4 = 116. **102% of v4. PASS.**
+
+4. **Overall total**: v5 = 29,776, v3 = 28,986. **v5 exceeds v3 by 3%.** This was not predicted — the expectation was that v5 would recover v3's density, not exceed it. The extra 790 items come from the v4-only categories (testimony: 375, taxes: 197, mortgages: 118 = 690) plus gains in events (+313 over v3), financial_transactions (+132), and fee_patents (+86).
+
+**All four targets met. v5 is the production prompt.**
+
+#### Why v5 Works: The Prompt Length Hypothesis Confirmed
+
+The v4 prompt was ~40% longer than v3 due to three additional JSON template blocks and two extra instruction sentences. The v5 prompt keeps all 10 JSON categories but:
+
+- **Trimmed testimony from 9 fields to 4**: witness, date, subject, key_claims (dropped witness_title, hearing, committee, location, questioner)
+- **Trimmed taxes from 8 fields to 5**: taxpayer, amount, tax_type, status, context (dropped land_description, year, county)
+- **Trimmed mortgages from 9 fields to 6**: borrower, lender, amount, date, status, context (dropped land_description, acreage, interest_rate)
+- **Removed the extra instruction sentences**: "For testimony, extract each distinct witness's statements as a separate record. For taxes and mortgages, extract every specific instance mentioned — these are key mechanisms of land dispossession." Gone.
+
+The result: v5's prompt is ~15% longer than v3 (vs v4's ~40% longer). This smaller overhead stays within Kimi's effective context capacity, allowing the model to devote more attention to the actual document content.
+
+The trimmed fields in testimony, taxes, and mortgages are not lost — they can be populated by the analysis layer (Deep Read mode, which has the full text) rather than requiring the extraction prompt to capture them. The extraction captures the fact that a testimony, tax, or mortgage record exists and its core content; the analysis layer fills in context-dependent details when needed.
+
+#### Per-Category Analysis
+
+**Entities (v5 = 98% of v3, 108% of v4):** v5 nearly matches v3's entity density while substantially exceeding v4. The slim prompt gives Kimi enough context to find the secondary actors — unnamed family members, institutional references, contextual locations — that v4 was missing. The 2% gap vs v3 (294 entities) is negligible given that v5 adds 690 items in categories v3 doesn't have.
+
+**Events (v5 = 109% of v3, 120% of v4):** v5 finds *more* events than v3. This is unexpected. One hypothesis is that v5's explicit mention of all 10 categories helps Kimi recognize events that v3's 7-category framing caused it to overlook. Another possibility is normal extraction variance on a single corpus run. This should be confirmed across additional corpora before treating it as a systematic v5 advantage.
+
+**Financial transactions (v5 = 105% of v3, 111% of v4):** Similar pattern — v5 exceeds v3, which may reflect the same category-priming effect or may be noise. Marked as a hypothesis pending replication.
+
+**Relationships (v5 = 98% of v3, 109% of v4):** Nearly identical to the entity pattern — v5 recovers v3's relationship density while substantially exceeding v4.
+
+**Fee patents (v5 = 124% of v3, 98% of v4):** v5 preserves v4's fee patent advantage (the `certificate_of_competency` mechanism) while exceeding v3 by 24%. This confirms the Section 10 finding that the fee patent increase was driven by the mechanism option, not by v4's prompt structure. v5 gets the same benefit with less overhead.
+
+**Correspondence (v5 = 91% of v3, 104% of v4):** The one category where v5 underperforms v3 by a meaningful margin (-51 records, -9%). This may be because v3's shorter prompt allocates more of Kimi's attention to the correspondence category, which requires identifying sender/recipient/date/subject structures. The gap is small in absolute terms.
+
+**Legislative actions (v5 = 96% of v3, 109% of v4):** v5 is slightly below v3 but well above v4. The -13 record gap (-4%) is within normal extraction variance.
+
+**Testimony (v5 = 107% of v4):** v5 finds more testimony records than v4 despite having fewer template fields. The 4-field template (witness, date, subject, key_claims) appears to be sufficient — and may actually help Kimi by reducing the cognitive load of populating 9 fields per record.
+
+**Taxes (v5 = 93% of v4):** v5 finds slightly fewer tax records than v4 (-15 records). The gap is small and may reflect the loss of the `county` field from the template — without an explicit county field, Kimi may be slightly less likely to identify county-level tax records.
+
+**Mortgages (v5 = 102% of v4):** Essentially identical. The 6-field template captures the same information as v4's 9-field version.
+
+#### The Two-Pass Question
+
+The decision tree's first branch applies: v5 recovers v3's density and keeps v4's new types. The two-pass architecture (Approach B) is no longer necessary for the general case.
+
+However, the two-pass approach may still have value for specific document types:
+
+- **Hearing transcripts with dense testimony:** On the 851-page Survey of Conditions volume, the per-chunk comparison would tell us whether v5's 4-field testimony template captures the same detail as v4's 9-field version. For a Congressional hearing where testimony is the primary content, the missing fields (committee, location, questioner) might matter.
+
+- **Tax litigation files:** For documents centered on tax disputes (like the DOJ index card cases), a targeted second pass with a tax-specific prompt could extract county, year, and assessment details that v5's slim template omits.
+
+- **Affidavit-specific extraction:** The Circular 2464 affidavits have a structured question-and-answer format that a specialized prompt could exploit. This isn't a v3/v4/v5 question — it's a document-type-specific prompt.
+
+For production extraction of the heterogeneous corpus, v5 is the single-pass answer. For research-critical document subsets where specific fields matter, a targeted second pass remains an option. The cost of the second pass is zero on RC GenAI, and the infrastructure for running it already exists.
+
+#### Revised Pipeline Recommendation
+
+The optimal extraction pipeline is now:
+
+| Layer | Model | Prompt | Task |
+|-------|-------|--------|------|
+| **Extraction** | Kimi K2.5 via RC GenAI | **v5** | All documents. 10 types, slim template. |
+| **Extraction (vision)** | Claude Sonnet | v4 vision | Tables, index cards, scanned forms |
+| **Summaries** | Claude Opus | from-extraction | Per-document analytical summaries |
+| **Analysis** | Claude Opus | — | Deep Read, Discovery, Corpus Synthesis |
+
+v5 replaces v4 as the default extraction prompt. v3 is retired. The `--v5` flag should become the default (no flag needed).
+
+*Three-way comparison completed 2026-04-16. Full extraction results at `kca_reextraction/fresh_v3/`, `kca_reextraction/fresh_v4/`, and `kca_reextraction/fresh_v5/`. HPC jobs 11705143 (v3), 11705144 (v4), 11725989 (v5).*
+
+---
+
+## 12. Human vs AI: Circular 2464 Affidavits
+
+**Date of final measurement:** 2026-04-18
+
+### The Test
+
+Compare AI extraction of Circular 2464 affidavits against a hand-transcribed reference. In 1928–1929, the Bureau of Indian Affairs collected sworn affidavits from allottees at Pine Ridge, Rosebud, the Kiowa-Comanche-Apache Agency, and other agencies, asking about their fee patents — when issued, whether they consented, whether they sold or mortgaged the land, to whom, for how much, and whether taxes forced the sale. A research assistant transcribed 528 of these affidavits into a structured spreadsheet with 18 columns. This section measures how well AI extraction reproduces that transcription.
+
+### Ground Truth and Its Limits
+
+The spreadsheet is a partial human transcription — complete for some subset of affidavits, ongoing for others. Recall is measured against the transcribed subset, not against the full affidavit record. The spreadsheet itself contains occasional errors:
+
+- "Bejmain Janis Jr." (Pine Ridge Volume 1, allotment 711): first name typo
+- "Louis Mousseau" vs the PDF's "Louis Mosseau" (Volume 1, allotment 1859/1856): spelling variant
+- Allotment number discrepancies on Emma Stirk (Vol 2: spreadsheet 2665 vs PDF 2606), Susie Keester (Vol 2: 2723 vs 2718), Rosa Ruff (Vol 3: 7302 vs 7309)
+
+What is being measured is AI-vs-human agreement on the transcribed subset, not AI-vs-document correspondence.
+
+### Verified Denominators
+
+Per-volume denominators established by cross-referencing spreadsheet allotment numbers against "No." markers in each volume's PDF text:
+
+| Volume | Pages | Verified allottees |
+|--------|------:|-------------------:|
+| Pine Ridge Volume 1 | 148 | 96 |
+| Pine Ridge Volume 2 | 153 | 100 |
+| Pine Ridge Volume 3 | 131 | 84 |
+| **Combined Pine Ridge** | **432** | **280** |
+
+The 89-allottee gap between the 280 verified and the 369 spreadsheet entries labeled Pine Ridge reflects cross-agency depositions (Pine Ridge allottees deposed elsewhere — Lillian Lawyer at Nez Perce, Frank Carlow at Crow Agency, Louis Hawkins at Greenwood) and spreadsheet entries whose affidavits are not in the three Pine Ridge volumes.
+
+### Pine Ridge Volume 1: Head-to-Head
+
+All models run at 10K-character chunks against 96 verified allottees. Matcher: v2 (suffix normalization, fuzzy last-name with exact first-name). Measurement: `compare_affidavit_extractions.py`, audited at `AUDIT_compare_affidavit_extractions.md`.
+
+| Model | Prompt | Raw | Unique | Match/96 | Recall | Allot% | Allot Accuracy | Cons% | Out% |
+|-------|--------|----:|-------:|---------:|-------:|-------:|---------------:|------:|-----:|
+| Human (RA) | — | — | 96 | 96 | 100% | ~100% | — | ~100% | ~95% |
+| Sonnet 4.6 v2 | affidavit | 161 | 133 | 87 | 91% | 95% | 85/87 (98%) | 100% | 94% |
+| Opus 4.6 | affidavit | 150 | 130 | 87 | 91% | 96% | 82/82 (100%) | 100% | 97% |
+| Kimi K2.5 | affidavit | 93 | 80 | 56 | 58% | 17% | 8/8 (100%) | 93% | 93% |
+| Kimi K2.5 | targeted v2 | 70 | 69 | 50 | 52% | 100% | 49/50 (98%) | 100% | 100% |
+
+**Findings:**
+
+The human transcription remains the quality ceiling. Sonnet and Opus are indistinguishable from each other at these resolutions. Kimi with the original affidavit prompt matches fewer allottees than Sonnet and captures allotment numbers on only 17% of records. Kimi with a targeted prompt (structured to prioritize allotment-number identification and tolerate a single-pass extraction rather than stepwise reasoning) achieves allotment capture parity with Sonnet (100% vs 95%) and matches Sonnet on field completeness (100% consent and outcome vs 100% / 94%). The targeted prompt closes the per-record quality gap. It does not close the recall gap — Kimi finds 52% of allottees against Sonnet's 91%. The recall difference is not a prompt engineering problem; it is a difference in how many distinct deponents each model identifies per chunk at 10K context.
+
+### Pine Ridge Volumes 2 and 3: Sonnet and Opus
+
+Same methodology extended to Volumes 2 and 3.
+
+| Volume | Denom | Sonnet matched | Sonnet recall | Opus matched | Opus recall |
+|--------|------:|---------------:|--------------:|-------------:|------------:|
+| Volume 1 | 96 | 87 | 91% | 87 | 91% |
+| Volume 2 | 100 | 93 | 93% | 94 | 94% |
+| Volume 3 | 84 | 81 | 96% | 78 | 93% |
+| **Combined** | **280** | **261** | **93%** | **259** | **92%** |
+
+Allotment accuracy 95–98% across all three volumes for both models. Consent and outcome completeness 95–100%.
+
+### Kimi Chunking Experiment
+
+To test whether Kimi's recall reflects a chunk-size limitation rather than a capability limitation, extraction was rerun on Volume 1 with page-level (~2K) chunks. Smaller chunks increased recall from 58% to 90%, but allotment accuracy on captured records dropped from 100% to 42% — Kimi at small chunks began returning legal descriptions ("SW quarter of Section 22") and wrong-number values instead of correct allotment numbers. No Kimi configuration at either chunk size matches Sonnet on the combined recall-plus-accuracy measure.
+
+### Kimi Targeted Prompt Experiment
+
+A targeted prompt designed around Kimi's specific failure mode (allotment-number-to-deponent linking) was tested on Volume 1 at 10K chunks. The prompt structured extraction as a single pass prioritizing allotment-number identification, with explicit instructions to output JSON only and to treat phrases like "See answer to No. 4" as references rather than allotment numbers. Infrastructure stability on the RC GenAI Kimi endpoint required a retry wrapper: 9 of 25 chunks failed on first attempt (6 invalid JSON, 3 empty SSE). Retry resolved 8 of 9 on one or two attempts; the ninth succeeded on the third attempt.
+
+With retry, the targeted prompt produced 50 matches against 96 GT (52% recall) at 100% allotment capture, 98% allotment accuracy, and 100% consent and outcome completeness. Per-record quality matched or exceeded Sonnet. The recall gap persisted.
+
+### KCA: Different Archival Structure
+
+The KCA extraction ran separately, using Kimi with the generic KCA corpus prompt on 71 individual affidavit PDFs plus 178 additional KCA documents. 70 Kiowa-Comanche-Apache entries served as the reference.
+
+| Metric | Value |
+|--------|------:|
+| Reference (denominator) | 70 |
+| Unique matched | 64 |
+| Match rate | **91%** |
+| Total records across tables | 497 |
+
+The generic prompt distributes affidavit content across multiple record types (entities, fee_patents, testimony, mortgages, taxes, correspondence). Composite reconstruction produces case records equivalent to the spreadsheet's fields. Sample reconstructions for Lillian Marie Goombi (allotment 661) and Tsomah (allotment 2694) recover all spreadsheet fields plus cross-document context. The 6 unmatched Kiowa allottees are primarily matcher failures on compound entries and name variants, not extraction failures.
+
+### What Archive Structure Determines
+
+**One-document-per-file organization (KCA):** generic prompt at any reasonable chunk size produces research-grade output. Each affidavit is its own extraction unit.
+
+**Bundled multi-document volumes (Pine Ridge, presumably Rosebud and the Replies volumes):** Sonnet with the affidavit-specific prompt at 10K chunks handles the bundled PDFs directly. Kimi at the same configuration finds fewer allottees; a Kimi-specific prompt produces Sonnet-quality records but does not close the recall gap.
+
+### Page Classification: Two-Model Comparison
+
+The Replies volumes spot-sample audit revealed the corpus contains four interleaved document types — sworn affidavits, questionnaire responses, agency narratives, and tabular ledger entries — rather than the uniform affidavit corpus initially assumed. The redesigned extraction pipeline routes each document type to a matched extraction approach, which requires a page-level classifier to identify document type before extraction runs.
+
+**Classifier categories.**
+
+After collapsing first-page and continuation-page distinctions (boundary detection belongs to the downstream splitter, not the classifier), the working categories are: `affidavit_content`, `questionnaire_content`, `agency_narrative_content`, `ledger_entry_page`, `transmittal_letter`, `cover_sheet`, and `other`.
+
+**Two-model comparison on Pine Ridge Volume 1.**
+
+Both Sonnet 4.6 and Kimi K2.5 were run as classifiers on all 148 pages of Pine Ridge Volume 1 using the same classification prompt. Initial Kimi runs failed at 78% rate due to `max_tokens=500` being too small for Kimi's reasoning mode. After raising `max_tokens` to 8000 and adding a retry wrapper, both models produced complete classifications.
+
+Results after category collapse:
+
+| Metric | Value |
+|--------|-------|
+| Pages classified by each model | 148 |
+| Agreement on collapsed categories | 142/148 (95%) |
+| Confidence distribution — Sonnet | 94% high |
+| Confidence distribution — Kimi | 93% high |
+| Sonnet cost | $0.42 |
+| Kimi cost | Free (RC GenAI) |
+
+**Disagreement analysis.**
+
+Before category collapse, raw agreement was 73% with 34 of 40 disagreements being `affidavit` vs `affidavit_continuation` swaps. Both models confidently disagreed on whether specific pages were the start of an affidavit or a continuation page. This is not a model-quality issue — it reflects that page-level boundary classification is the wrong unit for the question. After collapsing first-page and continuation-page categories, agreement rose to 95%.
+
+The 6 remaining disagreements:
+
+- 2 pages: Sonnet `cover_sheet` vs Kimi `other` (pages 1–2, title pages with minimal content)
+- 2 pages: Sonnet `other` vs Kimi `ledger_entry_page` (pages 34, 88, handwritten pages with garbled OCR — both models low confidence)
+- 1 page: Sonnet `transmittal_letter` vs Kimi `other` (page 3)
+- 1 page: Sonnet `affidavit_content` vs Kimi `questionnaire_content` (page 135)
+
+All disagreements involve ambiguous or degraded-OCR pages. No disagreements on clearly typed affidavit, questionnaire, agency narrative, or ledger pages.
+
+**Configuration finding for RC GenAI Kimi K2.5.**
+
+Kimi K2.5 on RC GenAI uses a built-in reasoning mode that consumes substantial token budget before producing visible output. Tasks with short expected outputs but reasoning overhead require generous `max_tokens` settings — 500 produced 78% failure rate; 8000 produced near-100% completion. This is a usage requirement rather than a platform defect. Documented in `circular_2464_extractions/standalone/uvarc_kimi_configuration_finding.md`.
+
+**Production decision.**
+
+The classifier is validated for full-corpus classification. Kimi K2.5 on RC GenAI runs the production classification pass given equivalent accuracy to Sonnet, free compute, and consistency with the project's API-independence architecture. Sonnet remains available as a verification tool for spot-checks of disagreements or low-confidence classifications.
+
+**Methodological finding.**
+
+Boundary detection (where one document ends and the next begins) is a different problem from document-type classification (what kind of content is on this page). Conflating them in a single classifier produces avoidable disagreement and obscures the type-classification accuracy. The downstream splitter handles boundaries; the classifier identifies type. Separating these tasks improved measured agreement from 73% to 95%.
+
+### Production Recommendation
+
+For extraction across the full Circular 2464 corpus, Sonnet with the affidavit prompt at 10K chunks is the primary configuration. Expected performance against the transcribed reference: 91–96% recall, 95–98% allotment accuracy, 95–100% field completeness.
+
+The Kimi experiments establish that open-source extraction on this document type is possible at Sonnet-quality per-record but at lower recall. The recall gap may be addressable through alternative infrastructure (self-hosted Kimi on B200s, or different Kimi variants) or through different open models (Qwen 3, DeepSeek V3.5) not yet tested on this corpus. These remain open questions.
+
+### Measurement Infrastructure
+
+The comparison script is audited in `AUDIT_compare_affidavit_extractions.md`. Safeguards include:
+
+- Per-volume denominator assertion (96, 100, 84 for Pine Ridge Volumes 1–3)
+- v2 name matcher with suffix normalization and fuzzy last-name matching
+- Automated allotment accuracy check with format-variant normalization
+- Automated field-type diagnostic
+- Automated false-positive sample
+
+Five silent measurement bugs were found and corrected across this work. Details in `SECTION_12_CORRECTION_APPENDIX.md`.
 
 ---
 

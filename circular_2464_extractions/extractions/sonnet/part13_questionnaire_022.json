@@ -1,0 +1,32 @@
+{
+  "document_id": "part13_questionnaire_022",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "46-47",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Will Barker",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Okla.",
+    "Allotment number": "267",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes, filed for record in Pawnee County, Okla., by allottee",
+    "Sold/Mortgaged": "Mortgaged to G. E. Vandervoort, Sr. and Shap Thornton, for $2000 but both paid off when land sold; 80 acres sold to Jim Walker of Pawnee, for $2000 and 80 acres to Henry Collins, of Pawnee for $1500",
+    "Buyer": "80 acres sold to Jim Walker of Pawnee for $2000; 80 acres to Henry Collins of Pawnee for $1500, which was a fair price for the land",
+    "Tax burden forced sale/Mortgage": "The allottee feels that the mistake was made in issuing him a patent, which necessitated a sale of the land to pay off loans on the land, interest and taxes; Has any of the land been sold for debt or taxes? no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 6, 1917",
+    "Gender": "Male",
+    "Age": "42 years",
+    "Occupation/Income": "No income from any other source. Shares in Pawnee annuity.",
+    "NOTES": "Patent receipted yes; date and manner of delivery of patent Oct. 28, 1928; mortgage not foreclosed, date of redemption not expired; mortgage released when land sold; no other property or money accumulated; wife and five minor children dependent upon him; good health; document notarized December 3, 1928, State of Oklahoma, County of Pawnee; Notary commission expires Jan. 31, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2678,
+    "output_tokens": 520
+  },
+  "elapsed": 8.9
+}

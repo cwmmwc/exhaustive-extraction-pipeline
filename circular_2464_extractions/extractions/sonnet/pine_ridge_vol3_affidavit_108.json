@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_108",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "58",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Andrew Russell",
+    "Tribe/Reservation": "Washabaugh County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Wanblee, S.D.",
+    "Allotment number": "44628",
+    "Cancelled": "not stated",
+    "Refused/Protested": "when he received the receipt for his patent in fee that he did not want it and that he wrote to the Superintendent saying that I did not want the patent for his land but the Superintendent wrote back saying it did not make any difference what I did ,the patent would be in his office and that I would have to pay taxes on the land, so I sent 10 cents to the Superintendent to send the patent to me and it was sent to me as a registered letter",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold one-half section to Raymond Cozad, of Martin, S.D. for $2800.00 and he was to pay the back taxes",
+    "Buyer": "Raymond Cozad, of Martin, S.D. for $2800.00, with buyer to pay back taxes (amount unknown)",
+    "Tax burden forced sale/Mortgage": "he was unable to pay the taxes on the land and he sold one-half section",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "58 years old",
+    "Occupation/Income": "works around doing little work which makes it hard to support his family, on account of poor health",
+    "NOTES": "mentally competent and in poor health, which makes it impossible to do much work; has a wife and three small children; has not received any help from the Government, State or County since he was granted a patent in fee; does not think he received a fair price for the land; patent date not remembered; document signed December 13, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2366,
+    "output_tokens": 497
+  },
+  "elapsed": 6.7
+}

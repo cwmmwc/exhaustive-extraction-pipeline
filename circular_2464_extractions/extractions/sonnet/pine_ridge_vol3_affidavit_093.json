@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_093",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "119-120",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary W. Hume (formerly Mary W. Whitcomb)",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "2091 Hudson St., Denver, Colorado",
+    "Allotment number": "6984",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Patent was accepted by her with out protest, and was filer for record in Washaba County, or rather at Kadoka, Jackson County, which was annexed for judicial purposes, on or about August 1920 .by myself . and paid taxes on same until I sold the property.",
+    "Recorded patent": "filed for record in Washaba County, or rather at Kadoka, Jackson County, which was annexed for judicial purposes, on or about August 1920, by myself",
+    "Sold/Mortgaged": "sold the land to A.T.Dolliff, @ $10.00 per acre, which sale was made on or about January 30, 1920, and made of her own free will and pleasure",
+    "Buyer": "A.T. Dolliff, @ $10.00 per acre",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "May 26, 1914",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "being supported by her husband, Mr. E.P. Hume",
+    "NOTES": "Patent signed 'By the President, Woodrow Wilson, By M.P. LeRoy, Secretary'; patent delivered on or about July 20, 1918, by Henry M. Tidwell, superintendent; received government support in the form of Warrant No. 3577 in the amount of $515.27 dated Nov. 18, 1915, and also received $10.00 during Dec. 1928 or early Jan. 1929; no persons presently dependent on her; deponent states she has not been defrauded of her property; in good health in body and mind; document appears in duplicate; subscribed and sworn before Notary Public on March 26, 1929; received at Pine Ridge Agency April 10, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 3319,
+    "output_tokens": 577
+  },
+  "elapsed": 7.1
+}

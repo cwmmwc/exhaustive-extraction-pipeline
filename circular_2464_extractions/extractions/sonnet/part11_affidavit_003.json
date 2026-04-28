@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_affidavit_003",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "39",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Wickem Carpenter",
+    "Tribe/Reservation": "Crow Creek",
+    "Post Office Address": "not stated",
+    "Allotment number": "143",
+    "Cancelled": "There is not record of any cancellation on file at Agency office.",
+    "Refused/Protested": "I protested acceptance of the patent and finally the Superintendent of Crow Creek Agency sent the patent to me by mail.",
+    "Recorded patent": "I filed it in Brule County. Patent was mailed to me March 12, 1920 and was receipted for. Receipt was returned to the Indian Office by the Superintendent.",
+    "Sold/Mortgaged": "Land has not been sold. Land has not been mortgaged.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I do not now pay taxes on this land. No paid assessments have refunded to me.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 22, 1919",
+    "Gender": "Female",
+    "Age": "68 years of age",
+    "Occupation/Income": "Supported by husband.",
+    "NOTES": "Legal resident of the Crow Creek Reservation, State of South Dakota. Mental condition is good, physical condition is fair, financial condition is fair. No contributions from Government, State or County. Has no one dependent upon her for support. Has not been defrauded of her property. Document sworn before notary on the 7th day of [month unclear] 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2261,
+    "output_tokens": 410
+  },
+  "elapsed": 6.8
+}

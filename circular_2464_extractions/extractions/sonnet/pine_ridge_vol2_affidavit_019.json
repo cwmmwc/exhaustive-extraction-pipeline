@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_019",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "26",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Blanche Goings",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "2222",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 640 acre allotment, for she did not want to pay taxes on it; but the Indian Agency informed her that it would be reported to the tax collector, that she would have the taxes to pay, so she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "she got behind in taxes, and, about 1921, she borrowed money\u2014$245.00\u2014 of John Nelson, of Pine Ridge, South Dakota, paying the taxes with this money; that she repaid this loan, clearing the land; that later she sold the land to a Mr. Potts, of Gordon, Nebraska, for $7500.00, cash",
+    "Buyer": "Mr. Potts, of Gordon, Nebraska, for $7500.00, cash",
+    "Tax burden forced sale/Mortgage": "she got behind in taxes, and, about 1921, she borrowed money\u2014$245.00\u2014 of John Nelson, of Pine Ridge, South Dakota, paying the taxes with this money; she considers that this was a poor price for her land, and if it had not been for receiving the patent in fee, with the consequent taxes, she would not have sold her allotment",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "51 years old",
+    "Occupation/Income": "her only source of income is by doing house work and common labor for other people",
+    "NOTES": "mentally competent; health generally not good; has three children to support; health of her children is good; has never received any help from the County, State or the United States Government; allotment was 640 acres; document dated November 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2281,
+    "output_tokens": 519
+  },
+  "elapsed": 5.9
+}

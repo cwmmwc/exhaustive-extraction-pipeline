@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_questionnaire_003",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "10",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Zoe Utterback",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Belvidere",
+    "Allotment number": "2431",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I did not want the patent and knew nothing about it until it came to me. Did you make any protest about this patent? No.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "I sold it to my husband for a residence in Belvidere and $3000.00 in cash",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "some time ago ten years perhaps",
+    "Gender": "Female",
+    "Age": "about 69",
+    "Occupation/Income": "No one, my husband supports me",
+    "NOTES": "Received patent in Belvidere, I think by mail; figures she got about $4400.00 in all for the land; still has property in Belvidere and it is clear; husband still owns the land; no liens against the land; not in good health. Subscribed and sworn before Jas. W. Cross, Notary Public, commission expires 4-28-32, on June 4, 1929. Witness to mark: Zoe Utterback (signed with mark).",
+    "Literate/Illiterate": "Signed with her mark (X)",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2243,
+    "output_tokens": 397
+  },
+  "elapsed": 6.1
+}

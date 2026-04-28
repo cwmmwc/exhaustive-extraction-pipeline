@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_096",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "123",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Hobart Bissonette Jr.",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "not stated",
+    "Allotment number": "7309",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I did not want to take this patent as covering my allotment NO. 7309. I did not want to pay taxes on the land and at that time was not able to do so. I did not ask for this patent and the same was forced on me.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold the land to Philip Points for a little money and some horses",
+    "Buyer": "Philip Points; price included a little money and some horses; exact cash amount not stated",
+    "Tax burden forced sale/Mortgage": "I did not want to pay taxes on the land and at that time was not able to do so; Mr. Points wanted me to pay a years taxes which I did, the taxes amounted to $18.00",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "I am self supporting",
+    "NOTES": "Received a letter from the Indian office stating he had a patent covering his allotment; did not know anything about land deals at the time; part of the price was horses; has three children depending on him for support. Document sworn in Dawes County, Nebraska, March 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2218,
+    "output_tokens": 410
+  },
+  "elapsed": 5.0
+}

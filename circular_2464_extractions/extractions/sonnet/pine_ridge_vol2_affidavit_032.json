@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_032",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "42",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Robert Hill",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Harrington, South Dakota",
+    "Allotment number": "2456",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 320 acre allotment, for he did not want to pay taxes; but he was told that he would have to accept it, so he did so",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to the Durland Trust Company, of Norfolk, Nebraska, for $4000.00; sold to Clyde Childers, of Harrington, South Dakota, for $10,400.00, Mr. Childers assuming the mortgage of $5500.00 in favor of the Durland Trust Company, and also assumed the back taxes at that time amounting to $1200.00, receiving $700.00 in cash, and the balance amounting to $3200.00 in monthly payments of $85.00 per month",
+    "Tax burden forced sale/Mortgage": "he does not consider that he received a good price for his land, on account of being mortgaged he had to sell at a disadvantage; Childers assumed back taxes amounting to $1200.00",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "51 years old",
+    "Occupation/Income": "lives on a rented place and milks cows, also, this $85.00 per month helps comprise his income",
+    "NOTES": "Mortgaged land in 1922 for stock and improvements; sold in December 1927; has never received any aid from the County or Government; mentally competent, health not very good; has a wife and six children to support, all of whom have good health; document number 2456; sworn November 20, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2358,
+    "output_tokens": 534
+  },
+  "elapsed": 7.2
+}

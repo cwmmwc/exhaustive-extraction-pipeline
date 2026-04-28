@@ -1,0 +1,33 @@
+{
+  "document_id": "part13_questionnaire_013",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "29-30",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Moses",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Oklahoma",
+    "Allotment number": "515",
+    "Cancelled": "none",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "no",
+    "Sold/Mortgaged": "No mortgage on land but borrowed money from C. E. Vandervoort, Sr.",
+    "Buyer": "Land sold to Jasper Krow, for $3000.00 cash",
+    "Tax burden forced sale/Mortgage": "Has any of the land been sold for debt or taxes? no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 24, 1917",
+    "Gender": "Male",
+    "Age": "64 years",
+    "Occupation/Income": "Income from Heirship land, about $25 per year. Shares in Pawnee annuity.",
+    "NOTES": "Patent delivered 1918, Agency 4-18-18; receipted for yes; mortgage not foreclosed; no persons dependent upon the Indian for support; no property or funds accumulated; no contributions from any source except Pawnee annuity; allottee was not capable of making a good sale of his land \u2014 not acquainted with land buyers and only approached the one man who bought the land for $3000; document notarized November 26, 1928, State of Oklahoma, County of Pawnee; commission expires Jan. 31st, 1929; file no. 61391",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2662,
+    "output_tokens": 424
+  },
+  "elapsed": 7.7,
+  "retry_count": 1
+}

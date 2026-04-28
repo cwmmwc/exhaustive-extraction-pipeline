@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_020",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "24",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Brave Heart\u2014Nee Red Hair",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "4178",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 320 acre allotment, when she was advised that it was at the Indian Agency Office for her; but that she was advised that, if she did not accept it, it would be taxed, and finally be sold for taxes, so she took it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it, which was in 1919",
+    "Buyer": "John Scott, of the Gordon National Bank, Gordon, Nebraska, for $2500.00 cash",
+    "Tax burden forced sale/Mortgage": "she kept the taxes paid up on her allotment until she sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "50 years old",
+    "Occupation/Income": "both she and her husband work at common labor whenever they can get it; and that is the only source of income they have",
+    "NOTES": "mentally competent, has good health; has three children to support, one child has good health, the other two poor health; husband has poor health, most especially being bothered with his sight; she considers that she received a very poor price for her allotment; has never received any help from the County, State or the United States Government; affidavit subscribed and sworn to November 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2298,
+    "output_tokens": 440
+  },
+  "elapsed": 4.6
+}

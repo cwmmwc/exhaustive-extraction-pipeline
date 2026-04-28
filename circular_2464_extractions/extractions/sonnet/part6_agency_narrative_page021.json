@@ -1,0 +1,29 @@
+{
+  "document_id": "part6_agency_narrative_page021",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "021",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Eunice Terry",
+    "Tribe/Reservation": "Uintah & Ouray Agency",
+    "Post Office Address": "not stated",
+    "Allotment number": "752 U & W",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "prior to 1921",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Through a clerical error of the person drawing a warranty deed from Sarah L. Snyder to Asa L. Snyder, the land of Eunice Terry was included in said deed. Mr. Snyder was asked to execute a quit-claim deed in favor of Eunice Terry, and promised to do so, but has not done so to date. Instructions as to how to proceed are respectfully requested. Report signed by H.M. Tidwell, Superintendent, Fort Duchesne, Utah, August 27, 1929. Fee patents were issued without the allottees' applications therefore.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {},
+  "elapsed": 0
+}

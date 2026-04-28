@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_agency_narrative_015",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "29",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lizzie Golomb (Colomb)",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "22992",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded March 12, 1918, by the Security Bank",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Security Bank for $500 on March 12, 1918; again mortgaged to Security Bank, Winner, on April 24, 1918, for $600; both mortgages were released June 5, 1918; Lizzie and John Colomb conveyed the land by deed to Richard D. Gammon for a consideration of $16000, subject to mortgages, on May 1, 1919",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612786 issued; North half of Northeast quarter, North half of Northwest quarter, section 21, and South half of Southeast quarter and South half of Southwest quarter, section 16, township 98, north of range 77; receipt for the patent signed February 13, 1918 by the allottee; husband John Golomb/Colomb also party to mortgages and deed",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2137,
+    "output_tokens": 438
+  },
+  "elapsed": 6.5
+}

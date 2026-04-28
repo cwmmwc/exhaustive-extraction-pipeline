@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_025",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "79",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Courtis",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "VO",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document concerns William Courtis, Jr. (Dec'd), with William Courtis appearing as heir/witness. William Courtis, Jr. died Sep. 26, 1922 (as best readable). He received a fee patent for his allotment. Questionnaire asks whether he made application, mortgaged the land, sold it, whether heir still owns land, and whether he left any children. Responses are partially legible. Sworn before a Notary Public on the 9th day of [month] 1929. File reference: No. 50 William Courtis, Jr. Dec'd.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2228,
+    "output_tokens": 353
+  },
+  "elapsed": 6.3
+}

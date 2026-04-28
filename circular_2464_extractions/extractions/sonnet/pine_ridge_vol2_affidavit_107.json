@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_107",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "126",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Thelma Yeager",
+    "Tribe/Reservation": "Pine Ridge (Oglala)",
+    "Post Office Address": "Oglala, South Dakota",
+    "Allotment number": "3371",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 320 acre allotment when she got it, but that she was advised to take it by the Indian Agency, and she did so",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "got behind in her taxes, and, in 1924, it was sold by the County for the taxes, and pretty soon afterwards, they redeemed it by paying cash for those taxes",
+    "Buyer": "sold by the County for the taxes",
+    "Tax burden forced sale/Mortgage": "got behind in her taxes, and, in 1924, it was sold by the County for the taxes, and pretty soon afterwards, they redeemed it by paying cash for those taxes; at the present time, the only thing against it are the 1927-28 taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "31 years old",
+    "Occupation/Income": "supported by her husband, whose income is derived from farming",
+    "NOTES": "mentally competent, has good health; has four children who have good health; husband has good health; has never received any help from the County or Government; document subscribed and sworn November 19, 1928; allotment is 320 acres",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2224,
+    "output_tokens": 429
+  },
+  "elapsed": 5.5
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part10_questionnaire_017",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 10.pdf",
+  "source_pages": "55-57",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Laura Dean (deceased allottee); heirs are William J. Sweeney, Sr. (husband) and William J. Sweeney, Jr. (son)",
+    "Tribe/Reservation": "Citizen Pottawatomie (Shawnee Indian Agency)",
+    "Post Office Address": "1400 Steger Bldg, Chicago, Illinois",
+    "Allotment number": "845",
+    "Cancelled": "Patent was never issued to allottee or heirs as far as they are concerned and we have no information concerning the voiding of patent, if any.",
+    "Refused/Protested": "allottee was never advised of any contemplated issuance... no effort was made to deliver the patent and thus give the allottee the option on at least accepting or refusing it needs explaining. Delivery of patent was never made to allottee or heirs.",
+    "Recorded patent": "Patent was never delivered to allottee or heirs; patent was prepared and held by the superintendent of Shawnee Agency on the theory that he could not locate address of allottee",
+    "Sold/Mortgaged": "No portion of land was ever sold by the allottee or heirs; however land was sold for unpaid taxes having been assessed from years 1923 to 1925 or there abouts",
+    "Buyer": "Land sold for non-payment of taxes as assessed; purchasers were reimbursed with the amount of money they paid in their purchase; tax sale was subsequently cancelled",
+    "Tax burden forced sale/Mortgage": "land was sold for taxes; County Tax Commissioners removed the land from the taxable rolls and cancelled the taxes assessed; land after sale was cancelled, reverted back to the heirs of the original allottee",
+    "Trust Patent Date": "Trust period extended for ten years on November 24, 1916 by Presidential proclamation",
+    "Fee Patent Date": "October 30, 1919 (alleged date patent was made out; never delivered to allottee)",
+    "Gender": "Female (Laura Dean, deceased allottee)",
+    "Age": "not stated",
+    "Occupation/Income": "Mr. William J. Sweeney is employed as an Examiner, Senior accountant and auditor with the Interstate Commerce Commission, at a salary of $3,700.00 per annum",
+    "NOTES": "Original allottee Laura Dean married William J. Sweeney and had one son William J. Sweeney, Jr.; husband and son are still living but Laura Dean the allottee is deceased. Physical and mental condition of heirs is normal and financial condition is good. Land description: East 2 of Southwest Quarter of section 20 township 7 North of Range 1 east of Indian meridian. Questionnaire completed and sworn by William J. Sweeney, Sr. at Galveston, Texas, January 1929. No contribution of any kind has ever been made to Indian Citizen of the Pottawatomie \u2014 Laura Dean \u2014 by the Government, State or County. Son William J. Sweeney, Jr. is supported by his father. Allotment certificate No. 845 issued but no fee patent ever delivered.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 4329,
+    "output_tokens": 782
+  },
+  "elapsed": 13.1
+}

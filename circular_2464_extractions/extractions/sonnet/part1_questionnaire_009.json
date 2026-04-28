@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_009",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "20-21",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louise Anderson Ernst",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Accepted without protest, under instructions of E. R. Rusho, the purchaser, to whom the land was deeded under prior agreement.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Land was deeded to E. R. Rusho shortly after the delivery of patent.",
+    "Buyer": "Land sold to E. R. Rusho. No cash at time of making deed. 85 head of mules were turned over at time of deeding land. Was supposed to get $85.00 an acre for the land, payment to be on basis of $85.00 a head for 85 mules and balance to be paid in cash. Affiant delivered the deed before the mules were delivered. Afterwards the purchaser, Rusho, insisted the mules were to be taken at $125.00 per head. Later he paid $600.00 in cash, made in two payments, one of $100.00, and one of $500.00. Affiant kept the mules for a period of two years, and finally sold them for $30.00 per head.",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "August, 1921 (believed)",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "Affiant works when health will permit.",
+    "NOTES": "Affiant was living south of Carter, So. Dakota at time of patent delivery. Patent was delivered through Carter State Bank by E. R. Rusho. The agreement for the sale of this land was not made in writing. Affiant had had no business experience. Rusho handled the entire transaction including details with regard to securing patent. The only cash ever received on this transaction was the sum of $600.00. Two children, nine and four years of age, are dependent on affiant; relatives support the children. Affiant is in poor health. Document notarized May 31, 1929, in Douglas County, Nebraska; notary commission expires December 26th, 1934.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 3026,
+    "output_tokens": 600
+  },
+  "elapsed": 8.4
+}

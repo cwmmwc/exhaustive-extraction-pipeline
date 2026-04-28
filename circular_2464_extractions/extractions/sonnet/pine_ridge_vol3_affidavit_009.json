@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_009",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "13",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susan Valandry",
+    "Tribe/Reservation": "Shannon County (South Dakota)",
+    "Post Office Address": "Parmelee, South Dakota",
+    "Allotment number": "4017",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 320 acre allotment; but that she was told that it was necessary for her to take it, so she did",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold 80 acres of her allotment to A.S. White, of Kadoka, South Dakota, for $500.00; then turned the land over to him (the banker of Kadoka), it being 240 acres",
+    "Buyer": "80 acres sold to A.S. White of Kadoka, South Dakota for $500.00; 240 acres turned over to the banker of Kadoka, South Dakota",
+    "Tax burden forced sale/Mortgage": "got almost entirely behind with her taxes; then, in 1925, she sold 80 acres of her allotment to A.S. White, of Kadoka, South Dakota, for $500.00, then she paid up her taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "58 years old",
+    "Occupation/Income": "she and her four children are supported by her husband, Vetal Valandry; and her husband is a farmer",
+    "NOTES": "Mentally competent; health is not good, having suffered a paralytic stroke and was in the hospital over a year; has four minor children whose health is good; supported by husband Vetal Valandry, a farmer; son George Brown owed the bank at Kadoka and she went his security; son-in-law Frank Baumann urged her to put land in his name to protect herself; banker of Kadoka told her and her son George Brown that he intended to either have her land or her stock; she never received any help from the County or Government; document dated November 17, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2415,
+    "output_tokens": 554
+  },
+  "elapsed": 8.4
+}

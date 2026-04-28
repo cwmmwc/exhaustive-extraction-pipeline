@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_046",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "58",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Aggie Cottier, nee Janis",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Porcupine, South Dakota",
+    "Allotment number": "713",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 160 acre allotment at the time it was issued, as she did not want to pay taxes, but was informed by the Indian Agency that she would have to accept it, so she did",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1920, she sold her allotment to James Janis and Lucy Janis, his wife, for $1100.00; that, on September 10, 1920, James Janis and Lucy Janis, his wife, mortgaged the place to the New Castle Cattle Company, of Wyoming; and that James Janis and Lucy Janis, his wife, never paid deponent a cent; that, on July 21, 1922, Aggie Cottier pressed her claim, and regained her allotment, she holding a deed to that effect",
+    "Buyer": "James Janis and Lucy Janis, his wife, for $1100.00; subsequently mortgaged to the New Castle Cattle Company, of Wyoming; later claimed by Mr. I.H. Chase, of Rapid City, South Dakota, who purchased it when it was sold for taxes",
+    "Tax burden forced sale/Mortgage": "she lost it through bad deals and taxes accumulated on it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Female",
+    "Age": "35 years old",
+    "Occupation/Income": "her husband supports her and her family; his only income is what he makes by working at common labor",
+    "NOTES": "mentally competent; has good health; has nine children to support, all of whom have good health except one that has a bad throat; husband has good health; she has never received any help from the County, State or United States Government; allotment was 160 acres; document number 713; affidavit sworn November 24, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2422,
+    "output_tokens": 580
+  },
+  "elapsed": 7.9
+}

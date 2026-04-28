@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_043",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "55",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Benjamin Janis",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "709",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent to his 320 acre allotment at the time he received it; but was advised by the Indian Agency that, if he did not take charge of it, it would be assessed for taxes, for which it would finally be sold, so he accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1922, he deeded his allotment to his son, Raymond Janis, and, in 1927, the son lost it through delinquent taxes",
+    "Buyer": "Frank Read being the present owner; Read had promised to deed 160 acres of the 320 back to Benjamin Janis and keep 160 acres for his trouble and expense of paying these back taxes",
+    "Tax burden forced sale/Mortgage": "in 1927, the son lost it through delinquent taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "64 years old",
+    "Occupation/Income": "Captain of Police, at the Pine Ridge Agency, for the United States Government, which makes up the most of his income; also receives $40.00 pension money each month for having been an Indian Scout",
+    "NOTES": "mentally competent; health not so very good, having had two operations, one for appendicitis and one for the kidneys; wife died in 1927; has one child to support; deeded allotment (320 acres) to son Raymond Janis in 1922; son lost it through delinquent taxes in 1927; Read promised to deed 160 acres back to Benjamin Janis but nothing has been said by either party regarding this deal since it passed into the hands of Read; has never received any help from the County, State nor the United States Government outside of pension and police salary; document sworn December 6, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2342,
+    "output_tokens": 551
+  },
+  "elapsed": 6.8
+}

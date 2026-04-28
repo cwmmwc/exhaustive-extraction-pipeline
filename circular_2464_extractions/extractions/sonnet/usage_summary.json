@@ -1,0 +1,10 @@
+{
+  "new_extractions": 819,
+  "copied_from_validation": 0,
+  "failures": 0,
+  "failed_ids": [],
+  "total_input_tokens": 1901815,
+  "total_output_tokens": 369901,
+  "total_cost": 11.254,
+  "total_time_s": 5523.4
+}

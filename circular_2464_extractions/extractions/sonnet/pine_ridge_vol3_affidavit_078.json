@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_078",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "104",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Glenn",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Kyle, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee to his 160 acre allotment, when it was issued, in fact, he strongly protested against it, because he did not want the taxes to pay, besides that was the only land he ever held; but that he was forced to take it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold the place to Paul Michael, of Interior, South Dakota, for $1000.00, receiving $750.00 in cash, and Michael paid off the taxes, promising the deponent $150.00 more in cash; but he never paid this $150.00 in cash, on the contrary, he sold the deponent an old cow, worth about $30.00, taking it off of this $150.00",
+    "Buyer": "Paul Michael, of Interior, South Dakota, for $1000.00",
+    "Tax burden forced sale/Mortgage": "kept the taxes paid up until 1922, then got behind again from 1922 to 1925, when he sold the place",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "30 years old",
+    "Occupation/Income": "farms on rented land, and works occasionally for other farmers; and that this is the only income he has",
+    "NOTES": "mentally competent; health is good; has a wife and a child to support; family has good health; figures Michael owes him $120.00 yet; figures he got a very poor price for his farm all told; has never received any help from the County, State or United States Government; document numbered No. 58 46; sworn November 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2347,
+    "output_tokens": 516
+  },
+  "elapsed": 7.3
+}

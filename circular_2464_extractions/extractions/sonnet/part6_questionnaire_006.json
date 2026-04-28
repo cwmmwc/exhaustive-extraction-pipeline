@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_006",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "14",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Bridgeman",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "Farming and working at odd jobs.",
+    "NOTES": "Just my wife and I depend on him for support; not in good health; it was agreed by the purchaser that he was to get the fence on the east and south side of the land but he did not go for it; subscribed and sworn before Jas. W. Cross, Notary Public, commission expires 4-28-32, on June 6, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2042,
+    "output_tokens": 307
+  },
+  "elapsed": 4.2
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_questionnaire_018",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "48",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jesse Wright",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "1505",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, I sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "50",
+    "Occupation/Income": "Farming and labor",
+    "NOTES": "Got patent from the Farmers office at Okreek a long time ago but does not remember the date. Received $3600.00 and a stallion (total stated as $4000.00) for the land. Did not ask for the patent. Satisfied with the sale. Did not owe the man he sold the land anything. Has seven children, supports five of them. Notarized by Jas. W. Cross, Notary Public, commission expires 4-28-32, May 7, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2185,
+    "output_tokens": 336
+  },
+  "elapsed": 4.7
+}

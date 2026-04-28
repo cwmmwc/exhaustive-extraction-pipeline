@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_048",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "65",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Walter Bullard",
+    "Tribe/Reservation": "Shannon County, South Dakota (reservation not explicitly named)",
+    "Post Office Address": "Rapid City, So. Dak.",
+    "Allotment number": "2594",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not protest when his patent in fee was delivered to him, but signed the receipt and accepted it",
+    "Recorded patent": "his patent was filed in the Office of the Register of Deeds, but that he does not know who did it",
+    "Sold/Mortgaged": "land has not been sold; the land covered by his patent was mortgaged to Abraham Land & Loan Co Omaha, Nebr. for $3000.00 and to Hal Cole, Cody, Nebr. for $3000.00",
+    "Buyer": "Mortgaged to Abraham Land & Loan Co, Omaha, Nebr. for $3000.00 and to Hal Cole, Cody, Nebr. for $3000.00",
+    "Tax burden forced sale/Mortgage": "he used this money to educate his children, that he has not paid it back, but that the mortgages have not been foreclosed and that the interest and taxes have been kept up until last year, and that he still holds an equity in his land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "48 years old",
+    "Occupation/Income": "works for the Duhamel Hardware Co, Rapid City, So. Dak. for $125.00 per month",
+    "NOTES": "mentally competent and in just fair health; has a wife and three children, but two children are self supporting; all he owns is the equity in his land which he thinks is about $3000.00; has received no aid from the County, State or Government since his patent in fee was granted; affidavit sworn February 28, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2368,
+    "output_tokens": 530
+  },
+  "elapsed": 6.0
+}

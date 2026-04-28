@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_124",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "103",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jessie Allen Vierling",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Owensmouth, California",
+    "Allotment number": "1104",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee and accepted it under protest because she was told that if she did not accept it and keep the taxes paid up that the land would be sold to satisfy them",
+    "Recorded patent": "her husband had her patent recorded for her soon after she received it but she does not know the exact date of recording",
+    "Sold/Mortgaged": "sold her land; the land in question was not mortgaged",
+    "Buyer": "sold her land to Mrs. L. Carter for $4000.00",
+    "Tax burden forced sale/Mortgage": "could not raise the money to keep the taxes up, so she sold her land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "44 years old",
+    "Occupation/Income": "has to raise chickens and sell eggs for a living",
+    "NOTES": "mentally competent and in just fair health for her age; has four minor children dependent upon her for support; now has one acre of land and a home; was not actually defrauded of her land, but the money she actually got for it was of very little help as she received it in such small payments it was used up in living and derived no benefit from it; has had no training and has a hard time making a living; has received no aid from the Government, State or County since her patent in fee was issued; No part of the land was sold for debts or taxes; document sworn December 31, 1928; State of California, County of Los Angeles",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2447,
+    "output_tokens": 476
+  },
+  "elapsed": 5.3
+}

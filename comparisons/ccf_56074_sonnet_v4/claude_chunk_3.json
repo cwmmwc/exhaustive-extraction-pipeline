@@ -1,0 +1,730 @@
+{
+  "entities": [
+    {
+      "name": "Charles W. Edmister",
+      "type": "person",
+      "context": "Farmer, United States Indian Service, stationed at Shawnee, Oklahoma"
+    },
+    {
+      "name": "United States Indian Service",
+      "type": "organization",
+      "context": "Federal agency employing farmers and superintendents to oversee Indian affairs"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Washington D.C. body overseeing Indian affairs, sent bulletin with field clerk letters"
+    },
+    {
+      "name": "George Vaux Jr.",
+      "type": "person",
+      "context": "Chairman of the Board of Indian Commissioners, Philadelphia, PA"
+    },
+    {
+      "name": "Malcolm McDowell",
+      "type": "person",
+      "context": "Secretary of the Board of Indian Commissioners, Washington D.C."
+    },
+    {
+      "name": "William H. Ketcham",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Washington D.C."
+    },
+    {
+      "name": "Daniel Smiley",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Mohonk Lake, N.Y."
+    },
+    {
+      "name": "Isidore B. Dockweiler",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Los Angeles, CA"
+    },
+    {
+      "name": "Hugh L. Scott",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Princeton, N.J."
+    },
+    {
+      "name": "Merrill E. Gates",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Washington D.C."
+    },
+    {
+      "name": "Warren K. Moorehead",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Andover, MA"
+    },
+    {
+      "name": "Samuel A. Eliot",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Boston, MA"
+    },
+    {
+      "name": "Frank Knox",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Manchester, N.H."
+    },
+    {
+      "name": "Commissioner of Indian Affairs",
+      "type": "organization",
+      "context": "Office of Indian Affairs, Washington D.C., recipient of Board correspondence"
+    },
+    {
+      "name": "Office of Indian Affairs",
+      "type": "organization",
+      "context": "Washington D.C. federal office administering Indian policy"
+    },
+    {
+      "name": "Ross I. Daniel",
+      "type": "person",
+      "context": "Field Clerk, Tahlequah, Oklahoma, Five Civilized Tribes (Cherokee Indians)"
+    },
+    {
+      "name": "H.A. Archerd",
+      "type": "person",
+      "context": "Field Clerk, Holdenville, Five Civilized Tribes"
+    },
+    {
+      "name": "J.R. Phillips",
+      "type": "person",
+      "context": "Field Clerk, Okmulgee, Five Civilized Tribes"
+    },
+    {
+      "name": "S.A. Mills",
+      "type": "person",
+      "context": "Field Clerk, Ardmore, Five Civilized Tribes"
+    },
+    {
+      "name": "Samuel Charger",
+      "type": "person",
+      "context": "Sioux Indian, La Plant, South Dakota, referenced in context of patent issuance discussion"
+    },
+    {
+      "name": "Billy Hood",
+      "type": "person",
+      "context": "Also allotted as William Panther, Kaw or Absaroka Shawnee No. 351, allotted SW-1/4, subject of patent application discussion"
+    },
+    {
+      "name": "William Panther",
+      "type": "person",
+      "context": "Legal allotment name for Billy Hood, Kaw or Abs. Shawnee No. 351, SW-1/4"
+    },
+    {
+      "name": "Shawnee",
+      "type": "location",
+      "context": "Town in Oklahoma where Charles W. Edmister was stationed"
+    },
+    {
+      "name": "La Plant, South Dakota",
+      "type": "location",
+      "context": "Location associated with Samuel Charger"
+    },
+    {
+      "name": "Tahlequah",
+      "type": "location",
+      "context": "Oklahoma location of Ross I. Daniel's field office, Cherokee Indians"
+    },
+    {
+      "name": "Okmulgee",
+      "type": "location",
+      "context": "Oklahoma location of J.R. Phillips' field office"
+    },
+    {
+      "name": "Holdenville",
+      "type": "location",
+      "context": "Oklahoma location of H.A. Archerd's field office"
+    },
+    {
+      "name": "Ardmore",
+      "type": "location",
+      "context": "Oklahoma location of S.A. Mills' field office"
+    },
+    {
+      "name": "Five Civilized Tribes",
+      "type": "organization",
+      "context": "Group of Oklahoma tribes under restricted status, subject of field clerk reports"
+    },
+    {
+      "name": "Cherokee Indians",
+      "type": "organization",
+      "context": "Tribe associated with Tahlequah field office, Ross I. Daniel's jurisdiction"
+    },
+    {
+      "name": "American Legion",
+      "type": "organization",
+      "context": "Advocated that ex-Indian soldiers should be citizens"
+    },
+    {
+      "name": "Indian Bureau",
+      "type": "organization",
+      "context": "Federal bureau administering Indian affairs, some societies advocated its abolition"
+    },
+    {
+      "name": "Special Competency Commission",
+      "type": "organization",
+      "context": "Commission that declared Indians competent and recommended removal of restrictions"
+    },
+    {
+      "name": "Secretary of the Interior",
+      "type": "person",
+      "context": "Official who removed restrictions from allottees upon competency commission recommendation"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Federal department overseeing Indian Affairs"
+    },
+    {
+      "name": "William Panther allotment SW-1/4",
+      "type": "land_parcel",
+      "context": "Allotment of Billy Hood/William Panther, Kaw or Abs. Shawnee No. 351"
+    },
+    {
+      "name": "Declaration of Policy",
+      "type": "legislation",
+      "context": "Policy under which last sixty patents were issued, referenced by Edmister"
+    },
+    {
+      "name": "Act of Congress approved March 2, 1889",
+      "type": "legislation",
+      "context": "Act providing allotments to Indians, referenced as thirty-two years prior"
+    },
+    {
+      "name": "Loan and insurance agency",
+      "type": "organization",
+      "context": "Agency represented by gentleman who inquired about Billy Hood's patent"
+    },
+    {
+      "name": "Five Civilized Tribes reservation",
+      "type": "location",
+      "context": "Reservation with over 500 Indians released from government control"
+    },
+    {
+      "name": "Russia",
+      "type": "location",
+      "context": "Referenced as example of nation that ignored private property importance"
+    },
+    {
+      "name": "5130 Interior Building",
+      "type": "location",
+      "context": "Address of the Board of Indian Commissioners, Washington D.C."
+    }
+  ],
+  "events": [
+    {
+      "type": "patent issuance",
+      "date": "unknown",
+      "location": "unspecified reservation",
+      "description": "Last sixty patents issued as result of Declaration of Policy; twenty promptly mortgaged, sixteen tracts sold outright, twenty-four clear"
+    },
+    {
+      "type": "patent application inquiry",
+      "date": "unknown",
+      "location": "Shawnee, Oklahoma area",
+      "description": "Loan and insurance agency representative inquired about imminent patent issuance for an unnamed Indian and Billy Hood (William Panther)"
+    },
+    {
+      "type": "patent application",
+      "date": "unknown",
+      "location": "Shawnee, Oklahoma",
+      "description": "Billy Hood (William Panther, Kaw or Abs. Shawnee No. 351) applied for fee patent on SW-1/4 allotment"
+    },
+    {
+      "type": "patent turned down",
+      "date": "unknown",
+      "location": "Shawnee, Oklahoma",
+      "description": "First Indian's patent application turned down per Edmister's account"
+    },
+    {
+      "type": "loan negotiation attempt",
+      "date": "unknown",
+      "location": "Shawnee, Oklahoma area",
+      "description": "Loan and insurance agent attempted to negotiate a loan on Billy Hood's land in anticipation of patent issuance"
+    },
+    {
+      "type": "team repossession",
+      "date": "unknown",
+      "location": "Shawnee agency area",
+      "description": "A family had their team taken away after mortgaging it; reimbursable plan discussed"
+    },
+    {
+      "type": "correspondence sent",
+      "date": "1921-04-02",
+      "location": "Washington D.C.",
+      "description": "Letter sent to Field Division requesting views on advisability of granting patents-in-fee and releasing Indians from government supervision"
+    },
+    {
+      "type": "correspondence sent",
+      "date": "1921-05-20",
+      "location": "Washington D.C.",
+      "description": "Board of Indian Commissioners sent letters regarding patent-in-fee condition to Commissioner of Indian Affairs"
+    },
+    {
+      "type": "bulletin issued",
+      "date": "1931-05-30",
+      "location": "Washington D.C.",
+      "description": "Board of Indian Commissioners issued Bulletin No. 144 containing four letters from field clerks of Five Civilized Tribes"
+    },
+    {
+      "type": "council speech",
+      "date": "unknown",
+      "location": "unknown",
+      "description": "A chief admonished his people that they could not make a success without more training from the Government"
+    },
+    {
+      "type": "competency commission hearings",
+      "date": "unknown",
+      "location": "unknown",
+      "description": "Competency commission held hearings for large number of Indians; witness observed those who asked for patents were less qualified than those who did not"
+    },
+    {
+      "type": "allotment act",
+      "date": "1889-03-02",
+      "location": "United States",
+      "description": "Act of Congress approved March 2, 1889, provided allotments for Indians"
+    },
+    {
+      "type": "restrictions removal",
+      "date": "unknown",
+      "location": "Five Civilized Tribes, Oklahoma",
+      "description": "Secretary of Interior removed restrictions from allottees declared competent by Special Competency Commission"
+    },
+    {
+      "type": "mass patent release",
+      "date": "unknown",
+      "location": "Five Civilized Tribes reservation",
+      "description": "Over 500 Indians on reservation released from government control; very few made good, many sold lands and squandered money"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "unknown buyers",
+      "payee": "Indians (various)",
+      "date": "unknown",
+      "description": "Sixteen of last sixty patented tracts sold outright following patent issuance under Declaration of Policy"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "unknown buyers",
+      "payee": "Indians released from government control",
+      "date": "unknown",
+      "description": "More than half of land holdings of first generation since allotting sold off"
+    },
+    {
+      "type": "other",
+      "amount": "unknown",
+      "payer": "Indians (various)",
+      "payee": "unknown lenders",
+      "date": "unknown",
+      "description": "Twenty of last sixty patented tracts promptly mortgaged; only one mortgage released"
+    },
+    {
+      "type": "other",
+      "amount": "unknown",
+      "payer": "Billy Hood/William Panther",
+      "payee": "unknown lender",
+      "date": "unknown",
+      "description": "Loan and insurance agent attempted to negotiate a loan on Billy Hood's land prior to patent issuance"
+    },
+    {
+      "type": "other",
+      "amount": "unknown",
+      "payer": "Indian family",
+      "payee": "unknown creditor",
+      "date": "unknown",
+      "description": "Indian family mortgaged their team; team subsequently repossessed"
+    },
+    {
+      "type": "other",
+      "amount": "unknown",
+      "payer": "Indians",
+      "payee": "unknown",
+      "date": "unknown",
+      "description": "Several hundred patents granted at unspecified reservation; less than half dozen resulted in successful outcomes"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Charles W. Edmister",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Farmer stationed at Shawnee, Oklahoma"
+    },
+    {
+      "subject": "Ross I. Daniel",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Field Clerk, Tahlequah, Oklahoma, Five Civilized Tribes"
+    },
+    {
+      "subject": "H.A. Archerd",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Field Clerk, Holdenville"
+    },
+    {
+      "subject": "J.R. Phillips",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Field Clerk, Okmulgee"
+    },
+    {
+      "subject": "S.A. Mills",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Field Clerk, Ardmore"
+    },
+    {
+      "subject": "George Vaux Jr.",
+      "type": "related_to",
+      "object": "Board of Indian Commissioners",
+      "context": "Chairman"
+    },
+    {
+      "subject": "Malcolm McDowell",
+      "type": "related_to",
+      "object": "Board of Indian Commissioners",
+      "context": "Secretary"
+    },
+    {
+      "subject": "Board of Indian Commissioners",
+      "type": "related_to",
+      "object": "Commissioner of Indian Affairs",
+      "context": "Sent letters regarding patent-in-fee condition and field clerk responses"
+    },
+    {
+      "subject": "Special Competency Commission",
+      "type": "related_to",
+      "object": "Secretary of the Interior",
+      "context": "Commission recommendations led Secretary to remove restrictions from allottees"
+    },
+    {
+      "subject": "Billy Hood",
+      "type": "related_to",
+      "object": "William Panther",
+      "context": "Same person, known socially as Billy Hood, allotted as William Panther, Kaw or Abs. Shawnee No. 351"
+    },
+    {
+      "subject": "loan and insurance agency representative",
+      "type": "related_to",
+      "object": "Billy Hood",
+      "context": "Agent sought to negotiate loan on Hood's land in anticipation of patent, knew Hood personally"
+    },
+    {
+      "subject": "loan and insurance agency representative",
+      "type": "related_to",
+      "object": "Charles W. Edmister",
+      "context": "Well acquainted with Edmister, consulted him about patent prospects for Indians"
+    },
+    {
+      "subject": "Samuel Charger",
+      "type": "related_to",
+      "object": "Sioux tribe",
+      "context": "Sioux Indian from La Plant, South Dakota"
+    },
+    {
+      "subject": "American Legion",
+      "type": "related_to",
+      "object": "ex-Indian soldiers",
+      "context": "Advocated citizenship for all ex-Indian soldiers"
+    },
+    {
+      "subject": "Department of the Interior",
+      "type": "related_to",
+      "object": "Office of Indian Affairs",
+      "context": "Parent department overseeing Indian Affairs administration"
+    },
+    {
+      "subject": "Five Civilized Tribes",
+      "type": "related_to",
+      "object": "Secretary of the Interior",
+      "context": "Secretary authorized to prescribe rules for sale or leasing of allotments of members with more than one-half blood degree"
+    },
+    {
+      "subject": "Ross I. Daniel",
+      "type": "related_to",
+      "object": "Five Civilized Tribes",
+      "context": "Six to seven years experience working exclusively with Five Civilized Tribes restricted class"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Billy Hood / William Panther",
+      "allotment_number": "Kaw or Abs. Shawnee No. 351",
+      "acreage": "unknown",
+      "patent_date": "pending/not yet issued",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "unknown (loan/insurance agent seeking to negotiate loan)",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "loan negotiation attempted before patent issued"
+    },
+    {
+      "allottee_name": "various Indians (last sixty patents)",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "twenty of sixty promptly mortgaged; only one mortgage released; sixteen sold outright"
+    },
+    {
+      "allottee_name": "unnamed first Indian (patent turned down)",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "denied",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "several hundred Indians (unspecified reservation)",
+      "allotment_number": "unknown",
+      "acreage": "160 acres each allotted",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "unknown; less than half dozen successful outcomes"
+    },
+    {
+      "allottee_name": "over 500 Indians (Five Civilized Tribes reservation)",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "various",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "unknown; many sold lands and squandered money, some homeless"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Malcolm McDowell",
+      "sender_title": "Secretary, Board of Indian Commissioners",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "1921-05-20",
+      "subject": "Condition of patent-in-fee for Indians; replies to questionnaire letters",
+      "action_requested": "Transmitting additional replies regarding patent-in-fee condition",
+      "outcome": "unknown"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Federal Advisory Board",
+      "recipient": "Field Division",
+      "recipient_title": "Field Division",
+      "date": "1921-04-02",
+      "subject": "Request for views and suggestions on advisability of granting patents-in-fee and releasing Indians from government supervision",
+      "action_requested": "Field clerks to provide views and suggestions",
+      "outcome": "Four letters received from H.A. Archerd, Ross I. Daniel, J.R. Phillips, S.A. Mills"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Federal Advisory Board",
+      "recipient": "unknown",
+      "recipient_title": "unknown",
+      "date": "1931-05-30",
+      "subject": "Releasing Indians from Government Supervision - Bulletin No. 144",
+      "action_requested": "Distribution of four letters from field clerks among Five Civilized Tribes",
+      "outcome": "Bulletin No. 144 issued"
+    },
+    {
+      "sender": "Charles W. Edmister",
+      "sender_title": "Farmer, United States Indian Service",
+      "recipient": "unknown (Indian Service farmers questionnaire)",
+      "recipient_title": "unknown",
+      "date": "unknown",
+      "subject": "Views on issuance of patents-in-fee; experience at Shawnee agency",
+      "action_requested": "Providing opinion on patent issuance policy",
+      "outcome": "Detailed response provided including data on 60 patents"
+    },
+    {
+      "sender": "Ross I. Daniel",
+      "sender_title": "Acting Field Clerk, Tahlequah, Oklahoma",
+      "recipient": "unknown (Field Division request)",
+      "recipient_title": "unknown",
+      "date": "1921 (after April 2)",
+      "subject": "Advisability of granting patents-in-fee to Indians of Five Civilized Tribes",
+      "action_requested": "Providing views on patent and release policy",
+      "outcome": "Detailed response condemning indiscriminate patent issuance; provided statistics on outcomes"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "unknown",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1889-03-02",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Act of Congress approved March 2, 1889, provided allotments for Indians; referenced as thirty-two years prior to writing"
+    },
+    {
+      "bill_number": "unknown (private bill suggested)",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Proposed legislation to make forty acres of original allotment inalienable homestead during allottee's lifetime; nontaxable for given period; taxes chargeable to other property"
+    },
+    {
+      "bill_number": "unknown",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Act or treaty stipulations conferring authority on Secretary of Interior to prescribe rules for sale/leasing of allotments of Five Civilized Tribes members with more than one-half blood degree"
+    },
+    {
+      "bill_number": "Declaration of Policy",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Policy under which sixty patents were issued; resulted in significant land loss through mortgage and sale"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Charles W. Edmister",
+      "witness_title": "Farmer, United States Indian Service",
+      "hearing": "Patent-in-fee questionnaire response",
+      "committee": "Board of Indian Commissioners / Office of Indian Affairs",
+      "location": "Shawnee, Oklahoma",
+      "date": "unknown",
+      "subject": "Issuance of patents-in-fee; outcomes for Indian allottees",
+      "key_claims": "Of last sixty patents issued under Declaration of Policy, twenty promptly mortgaged (only one released), sixteen sold outright, twenty-four technically clear but expected to become encumbered. In six-plus years, only one Indian made success handling his own land, and that success could have been made under trust. Does not recall even one case of genuine success. Opposes easy issuance of patents. Advocates making forty acres of each allotment an inalienable homestead. Indians allotted 160 acres each. Knows of no Indian who has more land now than when allotted. Described loan agent inquiry about Billy Hood's patent and agent's attempt to negotiate loan in anticipation of patent. In about 99 out of 100 cases, patent is never asked for until applicant has studied out a plan to alienate it.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Ross I. Daniel",
+      "witness_title": "Acting Field Clerk, Tahlequah, Oklahoma (Five Civilized Tribes / Cherokee)",
+      "hearing": "Response to Field Division letter of April 2, 1921",
+      "committee": "Board of Indian Commissioners / Office of Indian Affairs",
+      "location": "Tahlequah, Oklahoma",
+      "date": "1921 (after April 2)",
+      "subject": "Advisability of granting patents-in-fee; outcomes for Five Civilized Tribes Indians",
+      "key_claims": "Indiscriminate policy of releasing every Indian of half or less blood degree without supervision is criminally unjust and disastrously impractical. Of those released through competency board, approximately 10% failed completely, 10% barely escape failure, 50% succeeding indifferently, 30% making decided success. Ten percent of those whose restrictions were removed by careful selection sold lands and misused proceeds; remaining 90% made good. Competent Indians rarely apply for removal of restrictions because restricted land is not subject to taxation and they value their homes. Full-blood Indians do not realise value of money. Success correlated with education. Impossible to apply hard and fast rule to all Indians alike. Has worked only with Five Civilized Tribes for six to seven years. Advocates competency board process over indiscriminate release.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "unnamed Indian author (reservation writer)",
+      "witness_title": "tribal member, unnamed reservation",
+      "hearing": "Patent-in-fee questionnaire / opinion submission",
+      "committee": "Board of Indian Commissioners / Office of Indian Affairs",
+      "location": "unnamed reservation",
+      "date": "unknown",
+      "subject": "Opposition to rapid release from federal control and indiscriminate citizenship granting",
+      "key_claims": "Over 500 Indians on reservation released from government control; very few made good, others sold lands and homes and squandered money, some homeless. Opposed to societies advocating abolition of Indian Bureau. Opposed to granting citizenship in bulk. Contends Department moving too fast in releasing Indians. Advocates competent Indians classifying reservation members in harmony with superintendent, with rigid examination of every Indian regardless of blood or educational status before release. Where Indian has established home, forty acres should be held in trust, nontaxable for given period. Majority of ex-Indian soldiers without lands and not independent citizens. Act of Congress March 2, 1889 provided allotments. American Legion says ex-Indian soldiers should be citizens.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "unnamed superintendent (multiple agency author)",
+      "witness_title": "Indian Superintendent, unnamed agency",
+      "hearing": "Patent-in-fee questionnaire response",
+      "committee": "Board of Indian Commissioners / Office of Indian Affairs",
+      "location": "unnamed agency",
+      "date": "unknown",
+      "subject": "Criteria for competency; outcomes of patent issuance; reimbursable agreements",
+      "key_claims": "Many different ideas of competency exist among superintendents: commercial success, likelihood of running through property, or education. Department has not provided clear guidance; superintendents believe Department desires rapid patent issuance but burden of responsibility falls on superintendent. Several hundred patents granted at reservation; does not believe half dozen of entire number resulted in Indians being as competent as average white man. First generation since allotting ran through more than half land holdings. If land held in trust, Indians have good prospect of becoming worthy citizens; if turned loose most would become parasites. Patents generally theoretically assume patentee has sufficient knowledge and business foresight. Reimbursable plan, if properly handled, would help Indians. Advocates more schooling, mission work, better superintendents. Competent Indian never makes application for removal of restrictions. At competency commission hearings, those who asked for patents were not nearly as qualified as those who did not.",
+      "questioner": "unknown"
+    }
+  ],
+  "taxes": [
+    {
+      "taxpayer": "Indians (allottees)",
+      "land_description": "original allotments under trust",
+      "tax_type": "property",
+      "amount": "exempt while under trust/restriction",
+      "year": "unknown",
+      "status": "exempt",
+      "county": "unknown",
+      "context": "Restricted lands not subject to taxation; one reason competent Indians do not apply for removal of restrictions is to avoid taxation"
+    },
+    {
+      "taxpayer": "Indians (allottees after patent)",
+      "land_description": "patented allotment land",
+      "tax_type": "property",
+      "amount": "unknown",
+      "year": "unknown",
+      "status": "other",
+      "county": "unknown",
+      "context": "Once patent issued, land becomes subject to taxation; proposed reform would make forty-acre homestead portion taxable only at end of trust period, but taxes chargeable to other property not the homestead land"
+    },
+    {
+      "taxpayer": "State (loss)",
+      "land_description": "trust land",
+      "tax_type": "state",
+      "amount": "unknown",
+      "year": "unknown",
+      "status": "exempt",
+      "county": "unknown",
+      "context": "Proposed that offset to loss of taxation to State from trust land would be to make land taxable at end of trust period but uncollectable from that property directly"
+    }
+  ],
+  "mortgages": [
+    {
+      "borrower": "Indians (various, twenty of sixty patentees)",
+      "lender": "unknown",
+      "amount": "unknown",
+      "land_description": "allotment land, various tracts",
+      "acreage": "unknown",
+      "date": "unknown (promptly after patent issuance)",
+      "interest_rate": "unknown",
+      "status": "active",
+      "context": "Twenty of last sixty patents issued under Declaration of Policy promptly mortgaged; only one mortgage released; sixteen tracts sold outright"
+    },
+    {
+      "borrower": "Billy Hood / William Panther",
+      "lender": "loan and insurance agency",
+      "amount": "unknown",
+      "land_description": "SW-1/4, Kaw or Abs. Shawnee No. 351 allotment",
+      "acreage": "unknown",
+      "date": "unknown (attempted before patent issued)",
+      "interest_rate": "unknown",
+      "status": "other",
+      "context": "Loan and insurance agent attempted to negotiate loan on Billy Hood's land before patent was issued; Edmister believed patent application was made with intent to alienate land"
+    },
+    {
+      "borrower": "Indian family (unnamed)",
+      "lender": "unknown",
+      "amount": "unknown",
+      "land_description": "unknown",
+      "acreage": "unknown",
+      "date": "unknown (recent to writing)",
+      "interest_rate": "unknown",
+      "status": "foreclosed",
+      "context": "Family mortgaged their team under reimbursable arrangement; team subsequently repossessed; reimbursable plan cited as having failed this family"
+    },
+    {
+      "borrower": "Indians (twenty-four technically clear tracts)",
+      "lender": "unknown",
+      "amount": "unknown",
+      "land_description": "allotment land, twenty-four tracts of last sixty patents",
+      "acreage": "unknown",
+      "date": "unknown",
+      "interest_rate": "unknown",
+      "status": "other",
+      "context": "Twenty-four of last sixty patented tracts appear clear but Edmister states authoritatively it is only a question of time before a goodly proportion will be encumbered"
+    }
+  ]
+}

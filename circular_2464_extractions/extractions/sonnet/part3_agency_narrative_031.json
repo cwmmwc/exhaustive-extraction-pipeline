@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_031",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "76",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Richard No.2",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "4693",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Pat. Recorded 4-28-20 by Martin Abstract Co, Martin, So. Dak.",
+    "Sold/Mortgaged": "Multiple parcels deeded/sold; NWa 36-37-36 subject to Sheriff's Deed",
+    "Buyer": "NE1 36-37-36 leased to Fud Ferris of Cody, Nebr. for $80.00; NWa 36-37-36 Sheriff's Deed to John J. Hess of Council Bluffs, Ia. on May 28, 1927; S\u00bd 36-37-36 deeded to Emery R. Rusho of Winner, So. Dak. for $1.00 and other considerations; W\u00bd 36-37-36 deeded to Raymond Cozad, Martin, So. Dak. for $1.00 and other valuable considerations; NWA 36-37-36 deeded to Homer B. Skeen of Cody, Nebr. for $500.00; NWA 36-37-36 Quit-claimed to James Richard No.3 by Homer B. Skeen & Marion E. Skeen for $1000",
+    "Tax burden forced sale/Mortgage": "NWa 36-37-36 subject to Sheriff's Deed to John J. Hess of Council Bluffs, Ia. on May 28, 1927",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sep. 29, 1919",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Receipt dated Jan. 15, 1920. Patent No. 4693. NE1 36-37-36 leased to Fud Ferris of Cody, Nebr. from 3-1-26 to 3-1-28 for $80.00 ($40.00 payable 3-1-26, balance 3-1-27); lessee to enclose tract with a 3 wire fence. S\u00bd 36-37-36 deeded to Emery R. Rusho of Winner, So. Dak. for $1.00 and other considerations by James Richard #2 and Eva Richard, his wife, on April 27, 1920, recorded Apr. 28, 1920; subsequently deeded to Fred B. Simpson, Cody, Nebr. for $6000.00 by Emery R. Rusho, a widower, on July 20, 1920, recorded July 27, 1920; then deeded to Walter Bell by Fred Simpson & Mollie B. Simpson for $1.00 and other valuable considerations on Feb. 9, 1921, recorded Mar. 11, 1921; then deeded back to Fred B. Simpson by Walter Bell & Elsie M. Bell for $1.00 and other valuable considerations on Mar. 20, 1925, recorded Mar. 21, 1925. W\u00bd 36-37-36 deeded to Raymond Cozad, Martin, So. Dak. for $1.00 and other valuable considerations by James Richard 2, Sep. 30, 1921, recorded Nov. 23, 1921. NWA 36-37-36 deeded to Homer B. Skeen of Cody, Nebr. for $500.00 by James Richard No.2 and Eva Richard, his wife, on May 26, 1922, recorded June 1, 1922; then Quit-claimed to James Richard No.3 by Homer B. Skeen & Marion E. Skeen for $1000 on June 3, 1922, recorded 2-16-23. Document taken from records at the County Seat. Wife named Eva Richard.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2577,
+    "output_tokens": 1048
+  },
+  "elapsed": 13.7
+}

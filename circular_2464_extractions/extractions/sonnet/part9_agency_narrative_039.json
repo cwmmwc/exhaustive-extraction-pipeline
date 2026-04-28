@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_039",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "67",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lucy Larvie",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S.D.",
+    "Allotment number": "3820",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded April 3, 1918, by James Kane",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Lucy Quick Bear formerly Lucy Larvie and John Quickbear, conveyed the land by deed to James Murphy and James Kane for $1.00 and other valuable consideration",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 21, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612468 issued; Northeast quarter section 28, township 100, north of range 76; No receipt is shown; conveyance dated March 30, 1918; allottee also known as Lucy Quick Bear after marriage to John Quickbear",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2072,
+    "output_tokens": 341
+  },
+  "elapsed": 6.4
+}

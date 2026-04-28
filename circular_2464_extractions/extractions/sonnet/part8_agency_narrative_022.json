@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_agency_narrative_022",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "39",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mabel Jones (Dewitt)",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S.D.",
+    "Allotment number": "2907",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded April 6, 1918, but the records do not show by whom",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Charles A. Burr for $3000 on April 29, 1918; conveyed by deed to Edward Hagel for $1400 subject to the foregoing mortgages on March 5, 1919",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612797 issued; East half of Northeast quarter and Northeast quarter of Southeast quarter, section 22, and Northwest quarter of Southwest quarter of section 23, township 96, north of range 72; receipt signed in February, 1918, by the allottee; deed to Edward Hagel executed by Mabel Dewitt, formerly Mabel Jones, and W. E. Dewitt",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2092,
+    "output_tokens": 403
+  },
+  "elapsed": 5.5
+}

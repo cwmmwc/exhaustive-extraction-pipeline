@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_questionnaire_009",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "55-56",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Edward Little Eagle",
+    "Tribe/Reservation": "Big Bend District",
+    "Post Office Address": "not stated",
+    "Allotment number": "A0L-",
+    "Cancelled": "Patent has not been cancelled.",
+    "Refused/Protested": "Patent was excepted with protest, Edward little Eagle claims that he was at Agency and went into office and Sup't using Chas McBride as interperter told him that there was a patent for him, he said that he had never made request for one and that he didn't want it, and McBride told him it was sent to him and that he should take it, which he did, and that he was told that he, wo- id have nothing more to do with the agency office, that he was turned loose, from the supervision of the Indian Department.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "land was sold by patentee, about 5 days after patent was issued",
+    "Buyer": "Land was sold for $1,000.00. cash. Was not sold for old dept. Was a fair price for the land as it was poor land.",
+    "Tax burden forced sale/Mortgage": "Land was not sold for debt or taxes.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "13th of Feb, 1920",
+    "Gender": "Male",
+    "Age": "64 year old",
+    "Occupation/Income": "Edwar Little Eagle makes a living by farming some, selling wood, hay, selling horses, working out, and revenues from land leasing.",
+    "NOTES": "Patent delivered at office. Has a wife and 2 daughters and 2 step daughters dependent on him for support. Mental condition Good. Physical condition Fair. Financial condition poor has no income excepting some lease moneys from heirship land each year. Government has not helped him with the exceptions of this winter, he has drawn ration once for the month of December on account of the drought this year, has not received any help from the State or County. Does not appear to have been defrauded of his land. Prepared by Geo H. Boesi Gov't Farmer Big Bend District. Document dated December 11th 1928.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2846,
+    "output_tokens": 565
+  },
+  "elapsed": 7.0
+}

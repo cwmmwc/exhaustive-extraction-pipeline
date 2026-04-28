@@ -1,0 +1,33 @@
+{
+  "document_id": "part11_questionnaire_012",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "64",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Joseph St John",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "Patent has not been cancelled.",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Land has not been sold.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Land has not been sold for taxes or debt.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "56 years old",
+    "Occupation/Income": "income comes from farming, stock raising, working some, raising poultry. has not received any help from the Gov't, State or County.",
+    "NOTES": "Document is page 2 of questionnaire; prepared by Geo H. [illegible], Government Farmer, [illegible] District; mental condition: Good; physical condition: Fair; financial condition: Poor; still has his land.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2298,
+    "output_tokens": 309
+  },
+  "elapsed": 5.0,
+  "retry_count": 1
+}

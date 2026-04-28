@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_090",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "115",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Zuzella Little Bear",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "1181",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her allotment, for she did not want to pay taxes, but she was told that it was necessary that she take it, so she did",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold her half section to Thadeus Slider, of Dewey, South Dakota, for $960.00",
+    "Buyer": "Thadeus Slider, of Dewey, South Dakota, for $960.00",
+    "Tax burden forced sale/Mortgage": "there were taxes against it, so it was claimed, and she sold it through fear of losing it, on this account",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "67 years old",
+    "Occupation/Income": "supported by her son, James Little Bear, who works at common labor",
+    "NOTES": "mentally incompetent; health is exceedingly poor, being blind, having stomach trouble and rheumatism; supported by son James Little Bear; never received any help from the County or Government; sold in 1924; document dated November 16, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2215,
+    "output_tokens": 393
+  },
+  "elapsed": 6.1
+}

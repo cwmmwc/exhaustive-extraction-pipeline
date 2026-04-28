@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_028",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "82",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Joseph Emery",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Burke, not stated (town of Burke)",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No, I thought there was no use.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Do you still have the land? Yes.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I have paid all the taxes except the year 1928 and I expect to pay them.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "41",
+    "Occupation/Income": "I work in a garage here in town",
+    "NOTES": "Supports himself and mother; not married; land is leased for 1/3 of the crop on the farm land and $125 for the remainder per year; patent was delivered at Burke by a Mr. Slaughter where it had been left by some Government officials; no mortgage or other lien on land; did not ask for patent; satisfied to have patent in fee for the present; document notarized by Jas. W. Cross, Notary Public, commission expires 4-28-32, on May 2, 1929; document page/number 979",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2264,
+    "output_tokens": 384
+  },
+  "elapsed": 5.7
+}

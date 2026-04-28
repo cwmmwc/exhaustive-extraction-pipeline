@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_025",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "44-45",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charles Deroin",
+    "Tribe/Reservation": "Otoe Agency",
+    "Post Office Address": "Ponca City, Okla.",
+    "Allotment number": "107",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "No",
+    "Sold/Mortgaged": "Land was sold to John Knox for $4000 but when deed signed to Knox, he gave allottee $10 applied bal. to debts",
+    "Buyer": "John Knox for $4000 (allottee received $10 at signing; balance applied to debts); Knox now residing in Calif.",
+    "Tax burden forced sale/Mortgage": "Has any of the land been sold for debt or taxes? no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sept. 1917",
+    "Gender": "Male",
+    "Age": "54 years",
+    "Occupation/Income": "$57.50 War Risk Insurance, received each month. Has small inherited interest. No contributions.",
+    "NOTES": "Good health, no property or money accumulated. Two minor children dependent upon allottee. Allottee feels he was defrauded of his land, as he did not owe anything like $4000 to John Knox. $4000 was stated as a good price for the land but allottee says he did not owe Mr. Knox the amount Knox claimed. Date of receipt: Nov. 1928. Questionnaire executed November 22, 1928 before notary in Kay County, Oklahoma. Commission expires Aug. 3rd (year not stated). Notary public, Ponca City, Okla.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2632,
+    "output_tokens": 448
+  },
+  "elapsed": 6.2
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_101",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "129",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Thomas Garcia",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Denby, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 160 acre allotment; but he was going into the Army, and the Indian Agency told him it would be necessary for him to take it, and he did so",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it to Corb. Morse, of Rapid City, South Dakota, for $250.00 cash, and four head of horses, valued at $100.00 apiece",
+    "Buyer": "Corb. Morse, of Rapid City, South Dakota, for $250.00 cash and four head of horses valued at $100.00 apiece",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "40 years old",
+    "Occupation/Income": "his only income is by doing farm labor",
+    "NOTES": "Sold in the fall of 1918. Mentally competent, has good health; is married, and wife's health is frail; has four minor children to support, but their health is good; has never received any help from the County or Government. Document number 7917. Sworn November 17, 1928.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2192,
+    "output_tokens": 421
+  },
+  "elapsed": 5.0
+}

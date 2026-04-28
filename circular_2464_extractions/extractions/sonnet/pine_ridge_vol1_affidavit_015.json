@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_015",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "22",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susie Garnett",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her allotment for the reason that she did not wish to pay taxes, but was advised by the Indian Agency that the patent would be forced upon her, and that she would have taxes to pay any way; so she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "never mortgaged her land; but that, in 1921, she sold 240 acres to Mr. Roy Thomas, of Brannan, South Dakota, receiving $3000.00 cash; that this left her 80 acres of her 320 acre allotment, which was finally taken for taxes; and that she now owns no land",
+    "Buyer": "Mr. Roy Thomas, of Brannan, South Dakota, for $3000.00 cash",
+    "Tax burden forced sale/Mortgage": "80 acres of her 320 acre allotment was finally taken for taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "48 years old",
+    "Occupation/Income": "supports herself by working at household duties for other people, whenever she can obtain work; and that her income is small for her needs",
+    "NOTES": "mentally competent; health is fairly good, except that she is bothered badly with rheumatism at times; unmarried; no one contributes to her support, nor she to no one else; has never received any aid from the County or United States Government; allotment was 320 acres; document number 286; County of Shannon, State of South Dakota; sworn November 14, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2284,
+    "output_tokens": 497
+  },
+  "elapsed": 5.0
+}

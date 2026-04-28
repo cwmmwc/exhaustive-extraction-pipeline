@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_006",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "10",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louisa Sanovia",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "1950",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee to her allotment, for the reason that she did not want to pay the taxes, but the Indian Agency told her that she would have to accept it, so she did",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1921, she sold her 320 acre allotment to J.L.Cozet, of Martin, South Dakota, for $5000.00, receiving $1000.00 in cash, and he has never paid anything since",
+    "Buyer": "J.L.Cozet, of Martin, South Dakota, for $5000.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "50 years old",
+    "Occupation/Income": "supported by her husband, who is a gardener and a little lease money she receives off of land formerly owned by her first husband, William Fire Thunder",
+    "NOTES": "mentally competent; health is poor, having heart trouble; has two minor children who have good health; has never received any help from the County or Government; first husband was William Fire Thunder; document sworn November 17, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2226,
+    "output_tokens": 417
+  },
+  "elapsed": 12.4
+}

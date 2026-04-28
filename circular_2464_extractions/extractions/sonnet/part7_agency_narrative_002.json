@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_agency_narrative_002",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "4",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Angeline Larvie Roberta",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2177",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "patent recorded by P. J. Navin on June 24, 1920",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgage by Angeline Roberts and James Roberts and Ray L. Briggs for $2600; Mortgage executed in favor of Jordan State Bank June 17, 1920 for $1000; Deed by Angeline and James Roberts dated March 6, 1923, conveyed the land to Ray L. and Margaret Briggs for $1600, subject to the mortgage which purchaser assumes and agrees to pay",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739659 issued; Southeast quarter section 9, township 40, north of range 33; receipt for patent signed by allottee April 5, 1920; Contract for deed dated August 25, 1920 between Angeline Larvie Roberts and James Roberts on deferred payments plan to be completed by November 1, 1921; Briggs assumes the mortgage for $1000",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2145,
+    "output_tokens": 435
+  },
+  "elapsed": 7.1
+}

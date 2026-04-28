@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_agency_narrative_001",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "2",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Stephen Murray",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2098",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Recorded November 22, 1923, by Doherty & Talbott",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgage executed by Murray for a consideration of $2600; conveyed land to Charles M. Ritts December 5, 1923, for $1321, due February 20, 1924, by Murray and wife",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612700 issued; North half of Section 26, township 42, north of range 33; patent receipted for by the allottee February 4, 1918; mortgage dated November 20, 1923, subject to the mortgage; deed by Murray and wife to Charles M. Ritts",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2042,
+    "output_tokens": 365
+  },
+  "elapsed": 6.6
+}

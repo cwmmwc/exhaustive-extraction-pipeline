@@ -1,0 +1,908 @@
+{
+  "entities": [
+    {
+      "name": "Mr. Gates",
+      "type": "person",
+      "context": "Individual conducting agronomic survey of Yuma Reservation, working with Commissioner Collier, paid per diem for expenses"
+    },
+    {
+      "name": "Senator Thomas",
+      "type": "person",
+      "context": "Committee member questioning witnesses during Senate hearing on Indian conditions"
+    },
+    {
+      "name": "The Chairman",
+      "type": "person",
+      "context": "Presiding officer of Senate Committee on Indian Affairs hearing"
+    },
+    {
+      "name": "Mr. Nejo",
+      "type": "person",
+      "context": "Mentioned as not a Yuma Indian, employed at Reclamation Service"
+    },
+    {
+      "name": "John Curran",
+      "type": "person",
+      "context": "Fort Yuma Reservation resident, farmer, member of Mission Indian Federation, testified before committee"
+    },
+    {
+      "name": "John Black",
+      "type": "person",
+      "context": "Chairman of the Yuma tribal council, recognized at Riverside meeting"
+    },
+    {
+      "name": "Mr. Jolley",
+      "type": "person",
+      "context": "Superintendent H. B. Jolley of Fort Yuma Indian Reservation, opened records to Mr. Gates"
+    },
+    {
+      "name": "H. B. Jolley",
+      "type": "person",
+      "context": "Superintendent of Fort Yuma Indian Reservation, subject of numerous complaints"
+    },
+    {
+      "name": "Mr. Gibson",
+      "type": "person",
+      "context": "Individual who had to return to El Centro, was in charge of Johnson-grass control"
+    },
+    {
+      "name": "Mr. Sims",
+      "type": "person",
+      "context": "Described as earnest young man driving over the reservation, well-liked by Indians"
+    },
+    {
+      "name": "Dr. Carlson",
+      "type": "person",
+      "context": "Had wife of Mr. Nejo cooking for him, transferred overnight to another position"
+    },
+    {
+      "name": "Mrs. Lewis",
+      "type": "person",
+      "context": "Mother of a woman with nervous breakdown hospitalized at Fort Yuma Hospital, caring for grandchildren"
+    },
+    {
+      "name": "Mrs. Lewis's daughter",
+      "type": "person",
+      "context": "Suffered nervous breakdown, hospitalized at Fort Yuma Hospital for 4 weeks, previously worked at lettuce packing in Yuma City"
+    },
+    {
+      "name": "A. H. Deering",
+      "type": "person",
+      "context": "Non-Indian rancher living on Yuma Reservation since 1929, graduate of Howard Medical College"
+    },
+    {
+      "name": "Dr. Stacy",
+      "type": "person",
+      "context": "Doctor who treated baby of Mr. and Mrs. Cervel after hospital could not help"
+    },
+    {
+      "name": "Mr. and Mrs. Cervel",
+      "type": "person",
+      "context": "Indian family whose baby was ill and treated by Dr. Stacy"
+    },
+    {
+      "name": "Magill",
+      "type": "person",
+      "context": "Policeman at Fort Yuma Reservation accused of selling meat intended for old Indians"
+    },
+    {
+      "name": "Sam Smith",
+      "type": "person",
+      "context": "Indian who reportedly bought meat from policeman Magill"
+    },
+    {
+      "name": "Anna Smith",
+      "type": "person",
+      "context": "Woman who allegedly lost land she had been holding for 4 years without receiving lease money"
+    },
+    {
+      "name": "Jefferson D. Miguel",
+      "type": "person",
+      "context": "Indian police chief at Fort Yuma Reservation, involved in removal of Cocopah Indians"
+    },
+    {
+      "name": "Charles Osborne",
+      "type": "person",
+      "context": "Indian police officer involved in removal of Cocopah Indians under Jolley's order"
+    },
+    {
+      "name": "Billy Poor",
+      "type": "person",
+      "context": "Individual who owned large land property including deceased lands, submitted statement to Senate Committee"
+    },
+    {
+      "name": "Romon Cocopah",
+      "type": "person",
+      "context": "Signatory of conference report from Yuma Indian Reservation"
+    },
+    {
+      "name": "S-Coosh Romon",
+      "type": "person",
+      "context": "Signatory of conference report from Yuma Indian Reservation"
+    },
+    {
+      "name": "Captain Mike Escalante",
+      "type": "person",
+      "context": "Committee member listed in Cocopah Tribe of Indians report"
+    },
+    {
+      "name": "Joe Manchado",
+      "type": "person",
+      "context": "Committee member listed in Cocopah Tribe of Indians report"
+    },
+    {
+      "name": "John E. Curran",
+      "type": "person",
+      "context": "Committee member listed in Cocopah Tribe of Indians report"
+    },
+    {
+      "name": "A. A. Chaleco",
+      "type": "person",
+      "context": "Committee member listed in Cocopah Tribe of Indians report"
+    },
+    {
+      "name": "John Ducan",
+      "type": "person",
+      "context": "Indian involved in accident on U.S. Highway 80, March 7, 1926"
+    },
+    {
+      "name": "William Penn",
+      "type": "person",
+      "context": "Indian whose team collided with car on U.S. Highway 80"
+    },
+    {
+      "name": "Condry Cooper",
+      "type": "person",
+      "context": "Indian injured in car collision on U.S. Highway 80"
+    },
+    {
+      "name": "Shekima",
+      "type": "person",
+      "context": "Wife of Condry Cooper, badly injured and crippled in car collision on Highway 80"
+    },
+    {
+      "name": "John Cash",
+      "type": "person",
+      "context": "Indian whose team collided with car on U.S. Highway 80, May 23, 1929, wagon upset"
+    },
+    {
+      "name": "Juan Largo",
+      "type": "person",
+      "context": "Old Indian injured by car on Peacho Road, died July 20, 1926"
+    },
+    {
+      "name": "Jose Emerson",
+      "type": "person",
+      "context": "Indian shot by white man named Reveese in 1926, case tried in Federal court in Los Angeles"
+    },
+    {
+      "name": "Reveese",
+      "type": "person",
+      "context": "White man who shot Jose Emerson in 1926, released on bail bond"
+    },
+    {
+      "name": "Clement Escalante",
+      "type": "person",
+      "context": "Indian killed by train, November 24, 1928"
+    },
+    {
+      "name": "Gas Townsent",
+      "type": "person",
+      "context": "Indian killed by train on Arizona side, March 7, 1930"
+    },
+    {
+      "name": "Henry Snow",
+      "type": "person",
+      "context": "Indian who died on railroad track, July 19, 1930"
+    },
+    {
+      "name": "Frank Moaut",
+      "type": "person",
+      "context": "Indian who died on railroad track, June 4, 1924"
+    },
+    {
+      "name": "Augustine Carello",
+      "type": "person",
+      "context": "Indian whose leg was cut by train on October 6, 1932, Southern Pacific Company"
+    },
+    {
+      "name": "Raymond Baker",
+      "type": "person",
+      "context": "Indian who died on railroad track, found by Indians and Indian policeman, October 13, 1933"
+    },
+    {
+      "name": "Homer Thomas",
+      "type": "person",
+      "context": "Indian death case, described as new and fresh, hearing held at funeral June 11"
+    },
+    {
+      "name": "William Whitman",
+      "type": "person",
+      "context": "Involved in X-ray examination of Homer Thomas's body"
+    },
+    {
+      "name": "Dr. John",
+      "type": "person",
+      "context": "Present at hearing at Homer Thomas's funeral"
+    },
+    {
+      "name": "Dr. Danielson",
+      "type": "person",
+      "context": "Doctor involved in examining Homer Thomas's body along with nurse"
+    },
+    {
+      "name": "Albert Miller",
+      "type": "person",
+      "context": "Federal agent from Department of Justice making investigation into Homer Thomas case, June 14, 1934"
+    },
+    {
+      "name": "John Doan",
+      "type": "person",
+      "context": "United States Commissioner of Yuma, Arizona, involved in Homer Thomas investigation"
+    },
+    {
+      "name": "Bert Underwood",
+      "type": "person",
+      "context": "County coroner who was not called in Raymond Baker case"
+    },
+    {
+      "name": "Loson L. Odle",
+      "type": "person",
+      "context": "Superintendent mentioned in connection with Frank Moaut death case"
+    },
+    {
+      "name": "Hodges",
+      "type": "person",
+      "context": "Party who allegedly bought gas from reservation police"
+    },
+    {
+      "name": "Ben Decours",
+      "type": "person",
+      "context": "Party who allegedly bought gas from reservation police"
+    },
+    {
+      "name": "Mr. Purl Williams",
+      "type": "person",
+      "context": "Individual present at hearing who requested to ask a question"
+    },
+    {
+      "name": "Commissioner Collier",
+      "type": "person",
+      "context": "Indian Commissioner, referred to as having a 'new deal' for Indians, Gates served on board of his defense society"
+    },
+    {
+      "name": "John Curran",
+      "type": "person",
+      "context": "Presented himself at federation with records of 271 Yuma Indians"
+    },
+    {
+      "name": "Yuma Reservation",
+      "type": "location",
+      "context": "Fort Yuma Indian Reservation in California, subject of Senate hearing"
+    },
+    {
+      "name": "Fort Yuma Reservation",
+      "type": "location",
+      "context": "Location of hearing, home of John Curran and other witnesses"
+    },
+    {
+      "name": "Fort Yuma Hospital",
+      "type": "location",
+      "context": "Sanitarium where Mrs. Lewis's daughter was hospitalized"
+    },
+    {
+      "name": "Fort Yuma Indian School Agency",
+      "type": "location",
+      "context": "Location where California Federation organization held night session June 18"
+    },
+    {
+      "name": "Winterhaven",
+      "type": "location",
+      "context": "Town near Yuma Indian Reservation in Imperial County, California, described as having five or more saloons"
+    },
+    {
+      "name": "Yuma City",
+      "type": "location",
+      "context": "City where Mrs. Lewis's daughter worked at lettuce packing"
+    },
+    {
+      "name": "Taos",
+      "type": "location",
+      "context": "Location Mr. Gates visited to study housing plans for Indians"
+    },
+    {
+      "name": "El Centro",
+      "type": "location",
+      "context": "Location Mr. Gibson returned to"
+    },
+    {
+      "name": "Riverside",
+      "type": "location",
+      "context": "Location of federation meeting where John Black was recognized as representing Yuma Indians"
+    },
+    {
+      "name": "Cocopah Reservation",
+      "type": "location",
+      "context": "Reservation near Mexican border, home of Cocopah Indians, described as unallotted"
+    },
+    {
+      "name": "Pima Reservation",
+      "type": "location",
+      "context": "Reservation where three of John Curran's children have land allotments"
+    },
+    {
+      "name": "Los Angeles",
+      "type": "location",
+      "context": "Location of Federal court where Jose Emerson shooting case was tried"
+    },
+    {
+      "name": "Yuma, Arizona",
+      "type": "location",
+      "context": "Location of United States Commissioner John Doan"
+    },
+    {
+      "name": "Mexico",
+      "type": "location",
+      "context": "Area where Mr. Gates did work on Indian antiquities and character"
+    },
+    {
+      "name": "Central America",
+      "type": "location",
+      "context": "Area where Mr. Gates did work on Indian antiquities and character"
+    },
+    {
+      "name": "U.S. Highway 80",
+      "type": "location",
+      "context": "Highway crossing Yuma Indian Reservation allotments, site of multiple accidents"
+    },
+    {
+      "name": "Peacho Road",
+      "type": "location",
+      "context": "Road where Juan Largo was injured by a car"
+    },
+    {
+      "name": "Imperial County",
+      "type": "location",
+      "context": "County in California where Winterhaven is located"
+    },
+    {
+      "name": "Mission Indian Federation",
+      "type": "organization",
+      "context": "Organization representing Indians on Fort Yuma and surrounding reservations, over 500 members claimed"
+    },
+    {
+      "name": "Senate Committee on Indian Affairs",
+      "type": "organization",
+      "context": "Congressional committee conducting survey of conditions of Indians in United States"
+    },
+    {
+      "name": "Yuma Tribal Council",
+      "type": "organization",
+      "context": "Tribal council recognized by Washington, subject of dispute over legitimacy of election"
+    },
+    {
+      "name": "Southern California organization",
+      "type": "organization",
+      "context": "Organization the Mission Federation faction had been under for 14 years"
+    },
+    {
+      "name": "Reclamation Service",
+      "type": "organization",
+      "context": "Federal agency where Mr. Nejo was employed"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Federal department referenced in connection with enforcement of liquor laws"
+    },
+    {
+      "name": "Department of Justice",
+      "type": "organization",
+      "context": "Federal department, Albert Miller was their agent investigating Homer Thomas case"
+    },
+    {
+      "name": "Southern Pacific Company",
+      "type": "organization",
+      "context": "Railroad company involved in multiple Indian deaths on tracks, no compensation settled"
+    },
+    {
+      "name": "Howard Medical College",
+      "type": "organization",
+      "context": "Medical school from which A. H. Deering graduated"
+    },
+    {
+      "name": "California Federation",
+      "type": "organization",
+      "context": "Federation organization that held night session on June 18, 1934 regarding Cocopah removal"
+    },
+    {
+      "name": "Cocopah Tribe of Indians",
+      "type": "organization",
+      "context": "Tribe subject to removal order by Superintendent Jolley"
+    },
+    {
+      "name": "Indian Bureau",
+      "type": "organization",
+      "context": "Federal bureau managing Indian affairs, referenced multiple times in complaints"
+    },
+    {
+      "name": "Wheeler-Howard bill",
+      "type": "legislation",
+      "context": "Proposed legislation for Indian self-government and organization, subject of vote and factional dispute"
+    },
+    {
+      "name": "Revised Statutes sections 2139 and 2140",
+      "type": "legislation",
+      "context": "Federal statutes prohibiting introduction of liquors into Indian country"
+    },
+    {
+      "name": "29 Stat. p. 08, c. 109",
+      "type": "legislation",
+      "context": "Federal statute prohibiting liquors in Indian country"
+    },
+    {
+      "name": "All-American Canal",
+      "type": "land_parcel",
+      "context": "Canal constructed in connection with Boulder Dam project, running across Yuma Indian Reservation land"
+    },
+    {
+      "name": "John Curran's 23 acres",
+      "type": "acreage_holding",
+      "context": "John Curran's irrigated land allotment of 23 acres on Fort Yuma Reservation where he farms alfalfa"
+    },
+    {
+      "name": "Anna Smith's land",
+      "type": "land_parcel",
+      "context": "Land held by Anna Smith for 4 years, allegedly lost with no lease money received"
+    },
+    {
+      "name": "United States v. Four Bottles Sour-Mash Whiskey, 90 F. 720",
+      "type": "legal_case",
+      "context": "Case cited regarding jurisdiction of state over Indian country liquor laws"
+    },
+    {
+      "name": "Jose Emerson shooting case",
+      "type": "legal_case",
+      "context": "Federal court case in Los Angeles regarding shooting of Jose Emerson by white man Reveese in 1926"
+    }
+  ],
+  "events": [
+    {
+      "type": "Senate hearing on Indian conditions",
+      "date": "1934",
+      "location": "Yuma Indian Reservation, California",
+      "description": "Senate Committee on Indian Affairs conducted survey of conditions of Indians, taking testimony from multiple witnesses"
+    },
+    {
+      "type": "Agronomic survey",
+      "date": "1934",
+      "location": "Yuma Indian Reservation",
+      "description": "Mr. Gates spent approximately 6 weeks conducting intensive agronomic survey including study of inheritance records, living representatives of original allottees, and leasing records"
+    },
+    {
+      "type": "Federation meeting",
+      "date": "1934-02",
+      "location": "Yuma Reservation area",
+      "description": "Tribal convention held, signed petition for Wheeler-Howard bill signed by 252 out of 341 adult Indians, representing 74 percent"
+    },
+    {
+      "type": "Federation meeting at Riverside",
+      "date": "1934",
+      "location": "Riverside",
+      "description": "Federation meeting where John Black was recognized as representing Yuma Indians and temporary organization formed"
+    },
+    {
+      "type": "Cocopah removal order",
+      "date": "1934-06-18",
+      "location": "Fort Yuma Indian Reservation",
+      "description": "Superintendent H. B. Jolley and Chief of Police Jefferson D. Miguel ordered removal of Cocopah Indians from Yuma Reservation citing public safety"
+    },
+    {
+      "type": "Federation night session",
+      "date": "1934-06-18",
+      "location": "Fort Yuma Indian School Agency",
+      "description": "California Federation organization held night session to discuss removal of Cocopah Indians, decided to meet with superintendent"
+    },
+    {
+      "type": "Federation meeting with superintendent",
+      "date": "1934-06-19",
+      "location": "Superintendent's office, Fort Yuma",
+      "description": "Federation officials met with Superintendent H. B. Jolley for approximately one and a half hours regarding Cocopah removal"
+    },
+    {
+      "type": "Constitution adoption meeting",
+      "date": "1934-02-28",
+      "location": "Fort Yuma schoolhouse",
+      "description": "Meeting held at schoolhouse to adopt constitution, but newspaper published adopted constitution before meeting concluded"
+    },
+    {
+      "type": "Cocopah killing",
+      "date": "1934",
+      "location": "Yuma Reservation",
+      "description": "Unofficial Cocopah policeman interfered with family quarrel between man and wife and killed the man, creating serious situation on reservation"
+    },
+    {
+      "type": "Conference report submitted",
+      "date": "1934-06-20",
+      "location": "Winterhaven, Imperial County, California",
+      "description": "Conference report from Yuma Indian Reservation submitted to Senate Committee on Indian Affairs regarding public safety and Cocopah removal"
+    },
+    {
+      "type": "Accident on Highway 80",
+      "date": "1926-03-07",
+      "location": "U.S. Highway 80, Yuma Indian Reservation",
+      "description": "John Ducan involved in accident on Highway 80 bridge, no compensation settled"
+    },
+    {
+      "type": "Accident on Highway 80",
+      "date": "1929-05-23",
+      "location": "U.S. Highway 80, Yuma Indian Reservation",
+      "description": "John Cash's team collided with car, wagon upset about 100 feet from road"
+    },
+    {
+      "type": "Death from highway accident",
+      "date": "1926-07-20",
+      "location": "Peacho Road, Yuma Indian Reservation",
+      "description": "Juan Largo injured by car on Peacho Road, died July 20, 1926, no compensation settled"
+    },
+    {
+      "type": "Shooting of Jose Emerson",
+      "date": "1926",
+      "location": "Yuma Indian Reservation",
+      "description": "Jose Emerson shot by white man named Reveese, case brought to Federal court in Los Angeles, Reveese released on bail bond"
+    },
+    {
+      "type": "Train death",
+      "date": "1928-11-24",
+      "location": "Yuma Indian Reservation railroad track",
+      "description": "Clement Escalante killed by train, no compensation settled"
+    },
+    {
+      "type": "Train death",
+      "date": "1930-03-07",
+      "location": "Arizona side railroad track",
+      "description": "Gas Townsent killed by train on Arizona side, no compensation settled"
+    },
+    {
+      "type": "Train death",
+      "date": "1930-07-19",
+      "location": "Railroad track",
+      "description": "Henry Snow died on railroad track, no compensation settled"
+    },
+    {
+      "type": "Train death",
+      "date": "1924-06-04",
+      "location": "Railroad track",
+      "description": "Frank Moaut died on track, Superintendent Loson L. Odle in charge, no compensation settled"
+    },
+    {
+      "type": "Train injury",
+      "date": "1932-10-06",
+      "location": "Railroad track, Southern Pacific Company",
+      "description": "Augustine Carello's leg cut by train, later died, no compensation settled"
+    },
+    {
+      "type": "Train death",
+      "date": "1933-10-13",
+      "location": "Railroad track",
+      "description": "Raymond Baker died on track, found by Indians and Indian policeman, county coroner Bert Underwood not called, no compensation settled"
+    },
+    {
+      "type": "Death investigation",
+      "date": "1934-06-11",
+      "location": "Funeral location",
+      "description": "Hearing held at funeral of Homer Thomas, X-ray examination performed by William Whitman, Dr. Danielson and nurse examined body"
+    },
+    {
+      "type": "Federal investigation",
+      "date": "1934-06-14",
+      "location": "Yuma area",
+      "description": "Federal agent Albert Miller from Department of Justice began investigation into Homer Thomas case with US Commissioner John Doan"
+    },
+    {
+      "type": "Johnson-grass control work",
+      "date": "1934",
+      "location": "Yuma Reservation",
+      "description": "Indian worker placed in charge of Johnson-grass control when Mr. Gibson returned to El Centro"
+    },
+    {
+      "type": "Baby illness and treatment",
+      "date": "1934",
+      "location": "Fort Yuma area",
+      "description": "Baby of Mr. and Mrs. Cervel denied further hospital service, taken to Dr. Stacy, recovered successfully"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "payment",
+      "amount": "25 cents",
+      "payer": "John Curran",
+      "payee": "Policeman Magill",
+      "date": "unknown",
+      "description": "Payment to policeman for meat intended for old Indians"
+    },
+    {
+      "type": "payment",
+      "amount": "50 cents",
+      "payer": "John Curran",
+      "payee": "Policeman Magill",
+      "date": "unknown",
+      "description": "Second payment to policeman for meat intended for old Indians"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Hodges",
+      "payee": "reservation police",
+      "date": "unknown",
+      "description": "Purchase of gas from reservation police"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Ben Decours",
+      "payee": "reservation police",
+      "date": "unknown",
+      "description": "Purchase of gas from reservation police"
+    },
+    {
+      "type": "fee",
+      "amount": "4.5 per diem",
+      "payer": "Government",
+      "payee": "Mr. Gates",
+      "date": "1934",
+      "description": "Per diem, living expenses, and traveling expenses paid to Mr. Gates for work at Yuma Reservation"
+    },
+    {
+      "type": "lease",
+      "amount": "unknown",
+      "payer": "lessees",
+      "payee": "individual Indian allottees",
+      "date": "ongoing",
+      "description": "Lease payments for Indian allotted lands placed to personal credit of individual allottees, not general funds"
+    },
+    {
+      "type": "other",
+      "amount": "unknown",
+      "payer": "unknown",
+      "payee": "Dr. Stacy",
+      "date": "1934",
+      "description": "Medical bills for treatment of Cervel baby, steps to pay not taken by family"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Mr. Gates",
+      "type": "employed_by",
+      "object": "Commissioner Collier",
+      "context": "Gates worked under Collier's direction, was sent to Yuma to study conditions"
+    },
+    {
+      "subject": "Mr. Gates",
+      "type": "related_to",
+      "object": "Commissioner Collier",
+      "context": "Gates was on board of directors of Collier's defense society"
+    },
+    {
+      "subject": "John Curran",
+      "type": "related_to",
+      "object": "Mission Indian Federation",
+      "context": "Curran is a member of the Mission Indian Federation, under southern California organization for 14 years"
+    },
+    {
+      "subject": "John Black",
+      "type": "related_to",
+      "object": "Yuma Tribal Council",
+      "context": "John Black is chairman of the Yuma tribal council, recognized at Riverside"
+    },
+    {
+      "subject": "H. B. Jolley",
+      "type": "employed_by",
+      "object": "Indian Bureau",
+      "context": "Jolley is Superintendent of Fort Yuma Indian Reservation"
+    },
+    {
+      "subject": "Jefferson D. Miguel",
+      "type": "employed_by",
+      "object": "Fort Yuma Indian Reservation",
+      "context": "Jefferson D. Miguel is Indian police chief under Superintendent Jolley"
+    },
+    {
+      "subject": "Charles Osborne",
+      "type": "employed_by",
+      "object": "Fort Yuma Indian Reservation",
+      "context": "Charles Osborne is Indian police officer under Superintendent Jolley"
+    },
+    {
+      "subject": "Mr. Nejo",
+      "type": "employed_by",
+      "object": "Reclamation Service",
+      "context": "Mr. Nejo is employed at the Reclamation Service"
+    },
+    {
+      "subject": "Mrs. Nejo",
+      "type": "related_to",
+      "object": "Dr. Carlson",
+      "context": "Mrs. Nejo had been cooking for Dr. Carlson before he was transferred"
+    },
+    {
+      "subject": "A. H. Deering",
+      "type": "related_to",
+      "object": "Yuma Reservation",
+      "context": "Deering settled on land he believed was Government land, now determined to be part of reservation"
+    },
+    {
+      "subject": "Mrs. Lewis",
+      "type": "related_to",
+      "object": "Mrs. Lewis's daughter",
+      "context": "Mrs. Lewis is mother of hospitalized woman, caring for her grandchildren"
+    },
+    {
+      "subject": "John Curran",
+      "type": "related_to",
+      "object": "John Curran's children",
+      "context": "Curran has four children, one allotted on Yuma Reservation, three on Pima Reservation"
+    },
+    {
+      "subject": "Mr. Gates",
+      "type": "represented",
+      "object": "Commissioner Collier",
+      "context": "Gates sent out by Commissioner with letter to open records at Fort Yuma"
+    },
+    {
+      "subject": "Magill",
+      "type": "employed_by",
+      "object": "Fort Yuma Indian Reservation",
+      "context": "Magill is a policeman at Fort Yuma Reservation, allegedly sold meat intended for old Indians"
+    },
+    {
+      "subject": "Mission Indian Federation",
+      "type": "related_to",
+      "object": "Yuma Tribal Council",
+      "context": "Two competing factions on reservation, federation opposes current tribal council"
+    },
+    {
+      "subject": "Albert Miller",
+      "type": "employed_by",
+      "object": "Department of Justice",
+      "context": "Albert Miller is Federal agent from Department of Justice investigating Homer Thomas case"
+    },
+    {
+      "subject": "John Doan",
+      "type": "related_to",
+      "object": "United States Commissioner",
+      "context": "John Doan is US Commissioner in Yuma, Arizona, involved in Homer Thomas investigation"
+    },
+    {
+      "subject": "Loson L. Odle",
+      "type": "employed_by",
+      "object": "Fort Yuma Indian Reservation",
+      "context": "Former superintendent during Frank Moaut death case"
+    },
+    {
+      "subject": "Southern Pacific Company",
+      "type": "related_to",
+      "object": "Indian deaths on tracks",
+      "context": "Multiple Indians died on Southern Pacific railroad tracks with no compensation settled"
+    },
+    {
+      "subject": "Reveese",
+      "type": "related_to",
+      "object": "Jose Emerson",
+      "context": "White man Reveese shot Indian Jose Emerson in 1926, released on bail bond"
+    },
+    {
+      "subject": "Dr. Stacy",
+      "type": "related_to",
+      "object": "Cervel baby",
+      "context": "Dr. Stacy treated the Cervel baby after hospital could not help, baby recovered"
+    },
+    {
+      "subject": "A. H. Deering",
+      "type": "related_to",
+      "object": "Howard Medical College",
+      "context": "Deering is a graduate of Howard Medical College though cannot acknowledge profession"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "Senate Committee on Indian Affairs recipients",
+      "sender_title": "unknown",
+      "recipient": "Senate Committee on Indian Affairs",
+      "recipient_title": "Congressional committee",
+      "date": "1934-06-20",
+      "subject": "Public safety and removal of Cocopah Indians, unwarranted acts of Superintendent H. B. Jolley",
+      "action_requested": "Committee to investigate liquor sales in Winterhaven, removal of Cocopahs, accidents with no compensation, and failure of superintendent to enforce laws",
+      "outcome": "Document submitted into record"
+    },
+    {
+      "sender": "Commissioner of Indian Affairs",
+      "sender_title": "Commissioner",
+      "recipient": "Yuma Reservation Indians",
+      "recipient_title": "Tribal members",
+      "date": "1934-02",
+      "subject": "Request for expression of opinion upon Wheeler-Howard bill",
+      "action_requested": "Indians asked to vote on whether to accept Wheeler-Howard bill provisions",
+      "outcome": "252 out of 341 adult Indians signed petition in favor, approximately 70 opposed"
+    },
+    {
+      "sender": "Commissioner of Indian Affairs",
+      "sender_title": "Commissioner",
+      "recipient": "Mr. Gates",
+      "recipient_title": "Survey agent",
+      "date": "1934",
+      "subject": "Authorization to access Fort Yuma records",
+      "action_requested": "Letter to Superintendent Jolley to open records to Gates",
+      "outcome": "Jolley opened all records to Gates"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Wheeler-Howard bill (original)",
+      "sponsor": "Wheeler and Howard",
+      "action_type": "introduced",
+      "date": "1934",
+      "vote_count": "252 for, 70 against among Yuma Reservation Indians",
+      "committee": "Senate Committee on Indian Affairs",
+      "outcome": "Original bill not passed, modified version under consideration"
+    },
+    {
+      "bill_number": "Wheeler-Howard bill (modified)",
+      "sponsor": "Wheeler and Howard",
+      "action_type": "amended",
+      "date": "1934",
+      "vote_count": "unknown",
+      "committee": "Senate Committee on Indian Affairs",
+      "outcome": "Pending, Indians to have opportunity to vote within next year on whether to come under provisions"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Mr. Gates",
+      "witness_title": "Survey agent, per diem worker for Commissioner Collier",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Yuma Indian Reservation, California",
+      "date": "1934",
+      "subject": "Agronomic survey of Yuma Reservation, Wheeler-Howard bill support, tribal council legitimacy, employment of Indians, Cocopah situation",
+      "key_claims": "Gates spent 6 weeks conducting agronomic survey including inheritance records and leasing records. Claims 252 of 341 adult Indians (74%) signed petition for Wheeler-Howard bill. States Mr. Nejo is not a Yuma Indian. Says all Indian labor is being employed on reservation. Defends Superintendent Jolley's resources as exceedingly limited. Praises Mr. Sims as well-liked by Indians. Reports Cocopah killing was serious situation requiring removal of Cocopahs for protection. States tribal council was legitimately formed by Indians themselves. Disputes Curran's claim of 400 signatures saying only 341 adults exist on reservation. Claims he got Commissioner out of bed in Washington to telephone about Cocopah killing.",
+      "questioner": "Senator Thomas, The Chairman"
+    },
+    {
+      "witness": "Mrs. Lewis",
+      "witness_title": "Mother of hospitalized Indian woman",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Yuma Indian Reservation, California",
+      "date": "1934",
+      "subject": "Daughter's illness and lack of proper help",
+      "key_claims": "Daughter suffered nervous breakdown and is in hospital for 4 weeks. Daughter was not being helped the right way. Daughter previously worked at lettuce packing in Yuma City after failing to find work at Indian school. Mrs. Lewis is caring for her daughter's children. Daughter currently in Fort Yuma Hospital sanitarium.",
+      "questioner": "The Chairman, Senator Thomas"
+    },
+    {
+      "witness": "John Curran",
+      "witness_title": "Fort Yuma Reservation farmer, Mission Indian Federation member",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Yuma Indian Reservation, California",
+      "date": "1934",
+      "subject": "Wheeler-Howard bill opposition, tribal council legitimacy, meat sales by policeman, lease money not received, All-American Canal, Cocopah removal",
+      "key_claims": "Has lived at Fort Yuma Reservation all his life, farms 23 acres of irrigated land raising alfalfa, has 4 children. Mission Indian Federation has over 500 members and has been organized for 14 years. Opposes Wheeler-Howard bill because wants state law governance. Current tribal council is illegitimate - president appoints council rather than people electing them. Constitution was published in Yuma Sentinel before adoption meeting was held. Policeman Magill sold meat intended for old Indians, Curran bought twice for 25 and 50 cents. Anna Smith lost land she held for 4 years and received no lease money. Wants to know if Indians will be compensated for All-American Canal crossing reservation. Petition with over 400 signatures to remove Superintendent Jolley pending in Washington. Cocopahs being improperly removed from reservation by Jolley.",
+      "questioner": "The Chairman, Senator Thomas"
+    },
+    {
+      "witness": "A. H. Deering",
+      "witness_title": "Non-Indian rancher, graduate of Howard Medical College",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Yuma Indian Reservation, California",
+      "date": "1934",
+      "subject": "Medical treatment of Cervel baby, gas and meat sales by police, discrimination against Deering",
+      "key_claims": "Has lived on Yuma Reservation since 1929, settled on what he thought was Government land now determined to be reservation land. Baby of Mr. and Mrs. Cervel recovered after being taken to Dr. Stacy. Corroborates meat sales allegations. Police also selling gas from reservation. Individuals Hodges and Ben Decours purchased gas from police. Claims he has been discriminated against by prosecution and rejection from Government lands while whites and others are not prosecuted. Cannot personally buy gas because they are too smart to sell to him.",
+      "questioner": "The Chairman, Senator Thomas"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

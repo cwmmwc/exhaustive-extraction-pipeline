@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_027",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "47",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Donalda Barker",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "3521",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded December 6, 1923 by E. O. Frescoln",
+    "Sold/Mortgaged": "Mortgaged",
+    "Buyer": "Donalda Barker and Paul W. Connealy mortgaged the land to P. B. Gordon for $4000",
+    "Tax burden forced sale/Mortgage": "the 1917 and prior taxes are paid but on March 2, 1928, taxes amounting to $108.50 had not been paid",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612791 issued; Northeast quarter section 11, township 97, north of range 74; receipt for the patent was signed by the allottee February 14, 1918; on December 4, 1923, Donalda Connealy formerly [Donalda Barker]; no liens or judgments recorded on that date",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2071,
+    "output_tokens": 392
+  },
+  "elapsed": 4.9
+}

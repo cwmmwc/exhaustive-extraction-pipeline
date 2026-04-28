@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_072",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "90",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Harvey",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Rockyford, So. Dak.",
+    "Allotment number": "272",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee for he could not pay the taxes and wanted the land to stay in trust, but that he took the patent on the recommendation of the Farmer, who told him that he would lose the land for taxes unless he took the patent and kept them paid",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "lost the cattle, land and all",
+    "Buyer": "Harry [illegible] for $336[illegible]",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes and wanted the land to stay in trust; took the patent on the recommendation of the Farmer, who told him that he would lose the land for taxes unless he took the patent and kept them paid; cattle did not sell for enough to pay for themselves, so he lost the cattle, land and all",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "39 years old",
+    "Occupation/Income": "farms what he can, does what common labor he can get and makes about $200.00 a year",
+    "NOTES": "mentally competent, in fair health; has a wife and two children depending on him for support; has nothing, no land, no home and nothing and that he lives on the allotment of his sister; has received no aid from the Government, State or County since his patent was issued; document sworn November 28, 1928, County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2251,
+    "output_tokens": 467
+  },
+  "elapsed": 6.5
+}

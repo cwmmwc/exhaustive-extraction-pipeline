@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_affidavit_003",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "37",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Julia Mengel formerly Julia Ramis Junior",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2309",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Not that I remember. While I did not protest the patent at the time of delivery, I really did not want it on account of the taxes and my inability to lease the land for any more than the taxes.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I deeded it to my husband as he is a banker and could better handle it.",
+    "Buyer": "Deeded to her husband (a banker); realized $3000.00 net",
+    "Tax burden forced sale/Mortgage": "taxes and my inability to lease the land for any more than the taxes; taxes for the years 1921 1922 1923 and 1924 amounted to $320.52 and were to the expense of about $325.00 for breaking and fencing which would have not been necessary had the patent not have been issued",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "some time in 1920",
+    "Gender": "Female",
+    "Age": "40",
+    "Occupation/Income": "My husband supports us.",
+    "NOTES": "Patent mailed to allottee; she did not go to the agency to receive it. Had land broken at expense, followed by crop failures; land did not bring enough to pay taxes and expenses. Requested refund of expenses incurred. Two children dependent; children sent to school at own expense without government assistance. Allottee felt issuance of patent was 'in a measure an injustice.' Subscribed and sworn before Jas. W. Cross, Notary Public (commission expires 4-28-32), on the 5th day of May 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2473,
+    "output_tokens": 498
+  },
+  "elapsed": 9.1
+}

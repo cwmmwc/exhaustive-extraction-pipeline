@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_affidavit_010",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "79",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Tay Sander",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Cron, Nebraska",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she did not want her patent but on the advice of the Superintendent of the Pine Ridge he having told her that if she did not take the Patent the taxes that the land would be sold to satisfy",
+    "Recorded patent": "did not have her patent recorded",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "told her that if she did not take the Patent the taxes that the land would be sold to satisfy",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is heavily damaged and partially illegible; deponent reference number appears to be 7202; document references South Dakota; deponent states she does not know who did record the patent",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2222,
+    "output_tokens": 323
+  },
+  "elapsed": 9.2
+}

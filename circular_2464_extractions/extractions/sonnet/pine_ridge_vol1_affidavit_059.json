@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_059",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "74",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Maggie M. Romero",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Manderson, So. Dak.",
+    "Allotment number": "871",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee but took it because she was told that if she did not, and pay the taxes that she would lose the land",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold half of her land",
+    "Buyer": "Sam Pelly for $800.00, Pelly living at Oelrichs, So. Dak.",
+    "Tax burden forced sale/Mortgage": "she was told that if she did not take the patent and pay the taxes that she would lose the land; has not paid the taxes on the rest",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "50 years old",
+    "Occupation/Income": "supported by her husband",
+    "NOTES": "mentally competent and in poor health, having heart trouble; all she has is her equity in her land, which she knows very little about; has 3 minor children depending on her for support; has received no aid from the Government, State or County since her patent was granted; document sworn November 30, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2227,
+    "output_tokens": 392
+  },
+  "elapsed": 4.9
+}

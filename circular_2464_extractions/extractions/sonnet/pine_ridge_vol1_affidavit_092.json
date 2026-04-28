@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_092",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "117",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Peter Shangreau",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "No. 120,5",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee to his 640 acre allotment when he got it, as he did not want to pay taxes on it, but was advised by the Indian Agency that he would have to accept it, and he did so",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged his land to Leedom, of Gordon, Nebraska; lost a half section of his land and his wife's land on this deal; the land was sold to a man by the name of Bratts, of Custer",
+    "Buyer": "Mortgaged to Leedom of Gordon, Nebraska; land ultimately sold to a man by the name of Bratts, of Custer",
+    "Tax burden forced sale/Mortgage": "he was behind in his taxes in 1922 on his allotment; that he mortgaged his land to Leedom, of Gordon, Nebraska",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "68 years old",
+    "Occupation/Income": "only income is a pension of $30.00 per month for services as an Indian Scout",
+    "NOTES": "mentally incompetent, health not very good, being bothered with stomach trouble and rheumatism; has a wife and a 19 year old boy, a grandson, to support; claims he was to get $2500.00 on one piece and $1200.00 on another piece, actually got but about $500.00, and never saw the money as it was evidently turned over to Gerber by Leedom to pay for the automobile; had a deal with Antoine Shangreau and L.D. Bailey whereby they were to take over 2 sections, farm it, pay off the mortgage, and give him $2000.00 \u2014 they did not make good; later employed E.W. Martin of Hot Springs, South Dakota, but he did not do anything for him; has never received any aid from the County, State or United States Government; affidavit sworn November 22, 1928, in Shannon County, South Dakota; allotment described as 640 acres",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2452,
+    "output_tokens": 626
+  },
+  "elapsed": 9.7
+}

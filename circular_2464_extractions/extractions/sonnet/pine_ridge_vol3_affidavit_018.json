@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_018",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "22",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Frank Rooks",
+    "Tribe/Reservation": "Washabaugh County, South Dakota (Sioux)",
+    "Post Office Address": "Belvidere, S.D.",
+    "Allotment number": "4097",
+    "Cancelled": "not stated",
+    "Refused/Protested": "He did not make application for a patent. The patent in fee came in a Registered letter and I did not know that it was till I had opened the letter and I did not want a patent in fee for my land.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "he has not been able to pay taxes on the land and does not know the amount of taxes due on the land and further, he could not pay the taxes as he thinks they would be high and his income has not been enough to pay taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "56 years old",
+    "Occupation/Income": "he farm a little on this land and milks four cows and sells the cream. He raised potatoes and some other crops and sells what he can spare",
+    "NOTES": "mentally competent, in good health; wife is not of the best health; has two children to care for; has received no aid from the Government, State or County since he was granted a patent in fee for his land; patent came through the mail in a Registered letter; document sworn November 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2297,
+    "output_tokens": 426
+  },
+  "elapsed": 6.2
+}

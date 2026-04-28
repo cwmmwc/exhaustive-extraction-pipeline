@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_019",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "35",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Albert Larvie",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "3434",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Nothing of record in Register of Deeds office",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "no taxes or liens as of February 8, 1929",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 21, 1917",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Allottee is deceased; records show that the allottee died before the patent was issued. Fee patent No. 612465. Southeast quarter of section 4, township 44, north of range 32. Document dated June 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 1986,
+    "output_tokens": 299
+  },
+  "elapsed": 4.0
+}

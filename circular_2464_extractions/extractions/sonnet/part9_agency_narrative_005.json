@@ -1,0 +1,33 @@
+{
+  "document_id": "part9_agency_narrative_005",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "10",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Scissons, Jr.",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S.D.",
+    "Allotment number": "3160",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded April 26, 1920, by the Bonesteel State Bank",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to J. P. Treweiler for $6000; in 1923, Scissons conveyed this and some other land to J. P. Treweiler for $1.00 and other valuable consideration, with right to redeem within one year",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739679 issued; South half of Northeast quarter, northeast quarter of northeast quarter section 32, and northwest quarter of northwest quarter section 33, township 97, range 69; receipt for patent signed by allottee April 3, 1920; mortgage executed July 21, 1920",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2082,
+    "output_tokens": 384
+  },
+  "elapsed": 4.4,
+  "retry_count": 1
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_067",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "85",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charles Jones",
+    "Tribe/Reservation": "Shannon County (not specified further)",
+    "Post Office Address": "Scenic, So. Dak.",
+    "Allotment number": "2696",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want it and protested against taking it, but that he was told he would lose the land if he did not take the patent and pay the taxes, he took it and signed a receipt",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged his land to the Security National Bank, Rapid City, So. Dak. for $6000.00; in 1924 they foreclosed the mortgage and I lost my land and home and everything",
+    "Buyer": "Security National Bank, Rapid City, So. Dak. (foreclosed mortgage in 1924)",
+    "Tax burden forced sale/Mortgage": "mortgaged to buy a bunch of cattle and to pay the taxes, this was in 1922; in 1924 they foreclosed the mortgage",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "57 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Has a wife and three small children depending on him for support; mentally competent but in poor health having stomach trouble and rheumatism and generally run down and unable to do much work; has no land and no home and has a very hard time getting along; document sworn November 2, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2234,
+    "output_tokens": 427
+  },
+  "elapsed": 5.6
+}

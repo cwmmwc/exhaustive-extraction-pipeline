@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_083",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "109",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jennie Hairy Bird",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "6104",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee to her allotment of 468 acres when it was issued September 29, 1919, as she did not wait to pay taxes; but that she was told that if she did not take the patent, and pay the taxes that she would lose the land through the assessment of taxes, so she took the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold 80 acres to William L. Jacobs for $400.00 in 1920; traded another 80 acres for an 80 acre tract of land with William L. Jacobs in 1922; made a deal with William L. Jacobs for the sale of a 68 acre tract for $500.00; the other 300 acres was mortgaged in 1923 to the State Bank of Chadron for $200.00; mortgage was not redeemed and land was foreclosed in 1924",
+    "Buyer": "William L. Jacobs, of Chadron, Nebraska (80 acres for $400.00 part cash and balance in trade; 80 acres by trade; 68 acres for $500.00, only $100.00 paid); State Bank of Chadron, Chadron, Nebraska (mortgage of $200.00, foreclosed 1924)",
+    "Tax burden forced sale/Mortgage": "taxes got behind for one year and she sold 80 acres; out of the $400.00 she paid her taxes on all her land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "52 years old",
+    "Occupation/Income": "husband supports her and the children by farming, they having no other income",
+    "NOTES": "mentally incompetent; poor health, having rheumatism and goiter; mother of three minor children who have good health; husband has good health; never received any help from the County, State nor the United States Government; she considers she was defrauded out of most of the proceeds; did not sell her land for any debts incurred prior to receiving her patent in fee; deponent signed with an X mark; subscribed and sworn before notary April 6, 1929; allotment of 468 acres total",
+    "Literate/Illiterate": "Illiterate \u2014 signed with an X mark",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2554,
+    "output_tokens": 666
+  },
+  "elapsed": 9.7
+}

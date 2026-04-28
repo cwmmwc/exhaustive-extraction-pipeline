@@ -1,0 +1,32 @@
+{
+  "document_id": "part13_questionnaire_017",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "37-38",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Blanche Bill (Matlock)",
+    "Tribe/Reservation": "Pawnee Reservation",
+    "Post Office Address": "Pawnee, Okla.",
+    "Allotment number": "505",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "no",
+    "Sold/Mortgaged": "Mortgaged to C. E. Vandervoort, Sr. for $5000.00; Land deeded to C. E. Vandervoort, Sr. for $5000",
+    "Buyer": "C. E. Vandervoort, Sr. for $5000",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Nov. 30, 1917",
+    "Gender": "Female",
+    "Age": "39 years, good health",
+    "Occupation/Income": "Shares in Pawnee annuity",
+    "NOTES": "Patent delivered Nov. 26, 1917, by mail; patent receipted for: yes; date of redemption expired: no; two minor children dependent upon her for support; it is the opinion of the Agency that the allottee should have received more money for her land; no evidence of fraud appears to have been practiced; document notarized November 28, 1928, County of Pawnee, State of Oklahoma; notary commission expires Jan. 31, 1929; no property or funds accumulated",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2731,
+    "output_tokens": 414
+  },
+  "elapsed": 6.3
+}

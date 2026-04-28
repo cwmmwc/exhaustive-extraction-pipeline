@@ -1,0 +1,33 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_037",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "46",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Arthur E. Skalander",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Martin, S. Dak.",
+    "Allotment number": "4500",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent for he knew he could not pay the taxes on it but was told that if he did not take it, the land would be taxed anyway and the land sold if they were not paid, so he took it, under protest",
+    "Recorded patent": "he received a letter from the Superintendent of the Pine Ridge reservation inclosing a receipt for the patent and asking him to sign and return it, stating that the patent would then be mailed to him",
+    "Sold/Mortgaged": "mortgaged the land to John H. Mithen of Omaha, Nebr. for $1200.00 and that he could not pay the loan or interest so it was increased to $1400.00, that he could not keep up the payments and the land was taken to satisfy the loan",
+    "Buyer": "John H. Mithen of Omaha, Nebr.; mortgage of $1200.00 increased to $1400.00; foreclosure July 18, 1927 and the redemption period has expired",
+    "Tax burden forced sale/Mortgage": "did not want the patent for he knew he could not pay the taxes on it but was told that if he did not take it, the land would be taxed anyway and the land sold if they were not paid",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "42 years old",
+    "Occupation/Income": "labor, his annual income being about $600.00",
+    "NOTES": "mentally competent, in fair health; has a wife and three children to support; has no land, no home or anything; was not actually defrauded of his land, made a fair and square deal but was not able to make the payments so he lost the land; land was not sold for any debt contracted before the patent was issued; does not consider that he received what the land was worth; has received no aid from the County, State or Government since the patent was issued; affidavit sworn June 14, 1929; County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2435,
+    "output_tokens": 600
+  },
+  "elapsed": 6.9,
+  "retry_count": 1
+}

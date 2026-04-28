@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_119",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "145",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louis Mousseau",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Kyle, South Dakota",
+    "Allotment number": "1856",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want same, as he did not want to pay taxes on it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged to Bank of Interior, of Interior, South Dakota, in the spring of 1920, for the sum of $900.00, as he wanted to make improvements on his place",
+    "Buyer": "Bank of Interior, of Interior, South Dakota, for $900.00",
+    "Tax burden forced sale/Mortgage": "did not want same, as he did not want to pay taxes on it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Male",
+    "Age": "63 years old",
+    "Occupation/Income": "farms a little, but his step son mostly supports him and his family",
+    "NOTES": "Allotment is the SW\u00bc of Sec. 20, T. 40N., R. 38W., of the 6th P.M., in South Dakota; received a forced patent; the status of this quarter of land, together with the rest of his allotment is in such a muddle that he cannot make an intelligent statement regarding it; did not sell his allotment for any debts incurred prior to receiving his patent in fee; mentally incompetent, has poor health; has a wife and one child to support, the wife having poor health too; has never received any help from the County, State nor the United States Government; document sworn April 6, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2255,
+    "output_tokens": 478
+  },
+  "elapsed": 7.9
+}

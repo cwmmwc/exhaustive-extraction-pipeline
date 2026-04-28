@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_015",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "35",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Albert Whipple",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Parmelee",
+    "Allotment number": "1260",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, I sold it.",
+    "Buyer": "$1500.00 in cash. Then I purchased it for $1760 and then traded it for some town property which was supposed to be clear of encumbrance but it developed that neither Clement Valandra nor E. R. Rusho with whom I made the trade owned the land but the Bank Of Crookston owned it and I got nothing out of it.",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "spring of 1918",
+    "Gender": "Male",
+    "Age": "39",
+    "Occupation/Income": "I have been working for the South Dakota for about 10 years, on the road.",
+    "NOTES": "Patent was mailed to allottee at Parmelee in the spring of 1918; did not sign a receipt for it. In the trade negotiations, Clement Valandra (described as a Rosebud Indian) promised that if allottee was not satisfied after one year he would return the original land or pay $2500.00; allottee stated he was not satisfied but Valandra said he could not raise the money and allottee got nothing out of it. Wife and four children depend on him for support. Document sworn June 25, 1929; notary commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2481,
+    "output_tokens": 455
+  },
+  "elapsed": 6.8
+}

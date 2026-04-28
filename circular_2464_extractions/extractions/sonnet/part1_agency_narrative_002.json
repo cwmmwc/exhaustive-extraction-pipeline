@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_agency_narrative_002",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "32",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Margaret Decory",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "33",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded on February 28, 1919 by C. L. Dice",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "John H. Bachelor for a consideration of $1200.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 28, 1917",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612675 issued; east half of section 30, township 38, range 29; receipt for patent signed by the allottee April 21, 1919; land conveyed by deed signed by Margaret and John Decory on April 11, 1919",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2016,
+    "output_tokens": 319
+  },
+  "elapsed": 5.6
+}

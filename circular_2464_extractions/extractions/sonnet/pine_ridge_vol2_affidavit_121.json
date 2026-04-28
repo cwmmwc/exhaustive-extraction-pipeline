@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_121",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "142",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jessie M. Craven",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Kadoka, South Dakota",
+    "Allotment number": "3809",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee and accepted it under protest, she having returned said patent in fee to the Indian Office at Pine Ridge Agency, Pine Ridge, South Dakota, and that all patents were returned again for a second time with the following statement: 'That the issuance of the patent has been reported to the tax collector and whether you take it or not, taxes will be charged against it and unless they are paid, eventually, the land will be sold to satisfy them'",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged same for the purpose of obtaining money to keep up taxes and pay to the Bank the money borrowed with interest, and for the purpose of assisting her children in keeping up the taxes on this land",
+    "Buyer": "Rural Credit Board of the State of South Dakota foreclosed said mortgage and will receive a deed to said land when the equity of redemption expires on March 6, 1930",
+    "Tax burden forced sale/Mortgage": "borrowed money from various Banks to pay taxes on said land and finally mortgaged same for the purpose of obtaining money to keep up taxes; was unable to pay the mortgage when the same became due and that said mortgage was recently foreclosed",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "sixty (60) years old",
+    "Occupation/Income": "self-supporting",
+    "NOTES": "Mentally competent, of fair health, married, receives no State or County aid, has no dependent on her for support. A greater part of the money procured from the loan was used for paying taxes and interest on prior loans; amount actually received after deducting taxes was not ten per cent of the value of said land. Mortgage to Rural Credit Board described as fair; equity of redemption expires March 6, 1930; affiant is unable to redeem said land. Affidavit subscribed and sworn before notary on the 11th day of April, in Jackson County, South Dakota.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2593,
+    "output_tokens": 579
+  },
+  "elapsed": 9.4
+}

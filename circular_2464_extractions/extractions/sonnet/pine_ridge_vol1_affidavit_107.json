@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_107",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "132",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Timothy Giago",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Kyle, So. Dak.",
+    "Allotment number": "1421",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee and did not realize what he was doing when he signed the receipt for it, but that he did sign the receipt and send it to the Office and received the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it to the Ruddy Land. Co. Gordon, Nebr, for $200.00",
+    "Buyer": "Ruddy Land. Co. Gordon, Nebr, for $200.00",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes on his land, and was about to lose it so he sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "33 years old",
+    "Occupation/Income": "does common labor for a living, averaging $40.00 per month",
+    "NOTES": "mentally competent, in fair health; has a wife and three children depending on him for support; has received no aid from the Government, State or County since he was granted a patent in fee; deponent states he does not think $200.00 was a fair price for the land but it was the best he could do; has no land, no home and nothing; document notarized November 28, 1928 in Shannon County, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2222,
+    "output_tokens": 429
+  },
+  "elapsed": 5.1
+}

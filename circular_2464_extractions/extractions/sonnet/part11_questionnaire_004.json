@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_questionnaire_004",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "16",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ellen Grinnell (Baker)",
+    "Tribe/Reservation": "Elbowoods, N. D. (Ft. Berthold)",
+    "Post Office Address": "not stated",
+    "Allotment number": "270a",
+    "Cancelled": "Request was made under date of October 5, 1928, for the cancellation of the fee patent (L-S 30017-28).",
+    "Refused/Protested": "No protest was made as she thought the land restricted property.",
+    "Recorded patent": "The patent was recorded with the County by notice from this district by the district tax assessor.",
+    "Sold/Mortgaged": "No part of the land has been sold or mortgaged.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Taxes have been assessed against the land since 1920. Not paid.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "October 28, 1919",
+    "Gender": "Female",
+    "Age": "forty years of age",
+    "Occupation/Income": "Her husband supports the family. He is employed in the Indian Service in the position of Stockman.",
+    "NOTES": "Fee patent No. 715287; Allottee No. 191, 1073, and 270a; Receipt of patent was never acknowledged by patentee; Patent mailed to Superintendent Ft. Berthold Nov. 14, 1919, no receipt in files of this office; Mrs. Baker is the mother of eight children, five of whom are allotted, not dependent on her for support; husband is Louis Baker, stockman in the Independence District; she has received fee patents for her other allotments; not defrauded of her property.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2280,
+    "output_tokens": 463
+  },
+  "elapsed": 6.0
+}

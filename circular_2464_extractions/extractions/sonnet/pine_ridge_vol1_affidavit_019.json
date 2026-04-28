@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_019",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "26",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Fannie Pilcher, nee Janis",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Diney Ridge, So. Dak.",
+    "Allotment number": "302",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her land\u2014160 acre allotment\u2014at the time she got it, but was advised by the Indian Agency that she would have to accept it, so she did",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged this land to A. Barker, of Gordon, Nebraska, for $22.00, later he gave her $15.00, and again, in 1927, he gave her $25.00; and that she has not paid any of this money back; that early in the spring of 1928 he took her allotment away from her, and sold it to somebody else",
+    "Buyer": "Mortgaged to A. Barker of Gordon, Nebraska for $22.00 (plus later payments of $15.00 and $25.00); Barker foreclosed in early spring 1928 and sold it to somebody else",
+    "Tax burden forced sale/Mortgage": "Mr. Barker claims that he paid the taxes on this allotment after the mortgage was once made",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "32 years old",
+    "Occupation/Income": "impossible for her to work; her mother supports her and her son",
+    "NOTES": "Health is not good generally; left arm is crippled for two years since an automobile accident, making it impossible to work; divorced woman with one minor child who has weak lungs; mother supports her and her son; she considers she received a very, very poor price for her land; has never received any help from the County or Government; sworn November 20, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2325,
+    "output_tokens": 529
+  },
+  "elapsed": 7.9
+}

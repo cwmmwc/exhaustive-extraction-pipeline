@@ -1,0 +1,1101 @@
+{
+  "entities": [
+    {
+      "name": "Indian Board of Cooperation",
+      "type": "organization",
+      "context": "California Indian advocacy organization organizing auxiliaries and pursuing Court of Claims legislation"
+    },
+    {
+      "name": "Indian Defense Association of Central and Northern California",
+      "type": "organization",
+      "context": "Organization that opposed Indian Board of Cooperation's fundraising from Indians"
+    },
+    {
+      "name": "F. G. Collett",
+      "type": "person",
+      "context": "Executive Representative of Indian Board of Cooperation, previously under indictment for using mails to defraud"
+    },
+    {
+      "name": "C. Hart Merriam",
+      "type": "person",
+      "context": "Advocate for California Indians, corresponded with Stephen Knight about legislation"
+    },
+    {
+      "name": "Stephen Knight",
+      "type": "person",
+      "context": "Recipient of correspondence, located in Ukiah, California"
+    },
+    {
+      "name": "James A. Frear",
+      "type": "person",
+      "context": "Congressman from Wisconsin, advocate for Indian rights, introduced counter-bill H.R. 9315"
+    },
+    {
+      "name": "Mrs. Kahn",
+      "type": "person",
+      "context": "Congresswoman who introduced H.R. 9497 at request of John Collier and C. Hart Merriam"
+    },
+    {
+      "name": "John Collier",
+      "type": "person",
+      "context": "National Executive Secretary of Indian Defense Association, collaborated on H.R. 9497"
+    },
+    {
+      "name": "Clarence F. Lea",
+      "type": "person",
+      "context": "Congressman from Santa Rosa, California, author of the Lea bill, former district attorney"
+    },
+    {
+      "name": "Everett Wilder",
+      "type": "person",
+      "context": "Individual seeking to organize California Indians, opposed by Indian Board of Cooperation"
+    },
+    {
+      "name": "J. W. Henderson",
+      "type": "person",
+      "context": "Attorney for California Indians, member of Court of Claims, signed fundraising communications for Indian Board of Cooperation"
+    },
+    {
+      "name": "J. E. Pemberton",
+      "type": "person",
+      "context": "Attorney for California Indians, member of Court of Claims"
+    },
+    {
+      "name": "James M. Hanley",
+      "type": "person",
+      "context": "Attorney for California Indians, member of Court of Claims"
+    },
+    {
+      "name": "U. S. Webb",
+      "type": "person",
+      "context": "Attorney General of California, wrote letter to Indian Board of Cooperation about Court of Claims suit"
+    },
+    {
+      "name": "Peter Williams",
+      "type": "person",
+      "context": "Attended meeting with Everett Wilder present, told story of train conductor and passenger"
+    },
+    {
+      "name": "Jack Williams",
+      "type": "person",
+      "context": "Attended big meeting referenced in January 1927 letter"
+    },
+    {
+      "name": "Sam Steel",
+      "type": "person",
+      "context": "Attended big meeting referenced in January 1927 letter"
+    },
+    {
+      "name": "Harry George",
+      "type": "person",
+      "context": "Attended big meeting referenced in January 1927 letter"
+    },
+    {
+      "name": "Sam Lopez",
+      "type": "person",
+      "context": "Came from Smith River to attend meeting despite heavy rain"
+    },
+    {
+      "name": "Fuller",
+      "type": "person",
+      "context": "Individual described as still standing by Collett"
+    },
+    {
+      "name": "Zenaida Merriam",
+      "type": "person",
+      "context": "Daughter of C. Hart Merriam, obtained copies of the new Lea bill"
+    },
+    {
+      "name": "George Wharton James",
+      "type": "person",
+      "context": "Doctor who along with F.G. Collett tried to reason with Everett Wilder about bylaws"
+    },
+    {
+      "name": "Mr. Gillis",
+      "type": "person",
+      "context": "Individual praised by a delegate for splendid work at San Francisco meeting"
+    },
+    {
+      "name": "C. R. Fisher",
+      "type": "person",
+      "context": "Secretary-Treasurer of Indian Board of Cooperation"
+    },
+    {
+      "name": "Rachie B. Barker",
+      "type": "person",
+      "context": "Correspondent sending letter to Stephen Knight alongside attorney general letter"
+    },
+    {
+      "name": "Representative Cramton",
+      "type": "person",
+      "context": "Member of House Appropriations Committee who placed Indian Board of Cooperation solicitation in Congressional Record"
+    },
+    {
+      "name": "Mr. Leavitt",
+      "type": "person",
+      "context": "Chairman of House Indian Affairs Committee"
+    },
+    {
+      "name": "Peter Williams",
+      "type": "person",
+      "context": "Delegate listed at Eighth Annual State Convention"
+    },
+    {
+      "name": "Mrs. Juline Yale",
+      "type": "person",
+      "context": "Delegate listed at Eighth Annual State Convention"
+    },
+    {
+      "name": "Theron Worth",
+      "type": "person",
+      "context": "Delegate listed at Eighth Annual State Convention"
+    },
+    {
+      "name": "W. G. Walker",
+      "type": "person",
+      "context": "Delegate listed at Eighth Annual State Convention"
+    },
+    {
+      "name": "Clyde Thompson",
+      "type": "person",
+      "context": "Delegate listed at Eighth Annual State Convention"
+    },
+    {
+      "name": "Bill Sherman",
+      "type": "person",
+      "context": "Delegate listed at Eighth Annual State Convention"
+    },
+    {
+      "name": "Busie Sorahan",
+      "type": "person",
+      "context": "Delegate listed at Eighth Annual State Convention"
+    },
+    {
+      "name": "John Somerville",
+      "type": "person",
+      "context": "Delegate listed at Eighth Annual State Convention"
+    },
+    {
+      "name": "Ethan Anderson",
+      "type": "person",
+      "context": "Delegate listed at Eighth Annual State Convention"
+    },
+    {
+      "name": "Harry Cornwell",
+      "type": "person",
+      "context": "Delegate listed at Eighth Annual State Convention"
+    },
+    {
+      "name": "Raymond Brown",
+      "type": "person",
+      "context": "Delegate listed at Eighth Annual State Convention"
+    },
+    {
+      "name": "O. R. Padilla",
+      "type": "person",
+      "context": "Delegate listed at Eighth Annual State Convention"
+    },
+    {
+      "name": "California Indians",
+      "type": "organization",
+      "context": "Indigenous peoples of California seeking just compensation for lands taken under unratified 1851-52 treaties"
+    },
+    {
+      "name": "Klamath Indians",
+      "type": "organization",
+      "context": "Oregon Indians referenced in Court of Claims document held by Collett"
+    },
+    {
+      "name": "Modoc Indians",
+      "type": "organization",
+      "context": "Oregon Indians referenced in Court of Claims document held by Collett"
+    },
+    {
+      "name": "Yabooskin Indians",
+      "type": "organization",
+      "context": "Oregon Indians referenced in Court of Claims document held by Collett"
+    },
+    {
+      "name": "Commonwealth Club of California",
+      "type": "organization",
+      "context": "Organization whose Indian affairs committee drafted bill H.R. 9497"
+    },
+    {
+      "name": "Indian Defense Association",
+      "type": "organization",
+      "context": "Organization that provided suggestions for H.R. 9497"
+    },
+    {
+      "name": "House Committee on Indian Affairs",
+      "type": "organization",
+      "context": "Congressional committee considering bills related to Indian reservation courts and California Indian claims"
+    },
+    {
+      "name": "House Appropriations Committee",
+      "type": "organization",
+      "context": "Congressional committee; Representative Cramton was a member"
+    },
+    {
+      "name": "Court of Claims",
+      "type": "legal_case",
+      "context": "Federal court in Washington D.C. where California Indians filed suit for $12,800,000"
+    },
+    {
+      "name": "California Court of Claims bill",
+      "type": "legislation",
+      "context": "Public Law No. 423, 70th Congress, approved May 18, 1928, authorizing suit by California Indians"
+    },
+    {
+      "name": "Raker bill",
+      "type": "legislation",
+      "context": "Bill for California Indians, reintroduced January 20, 1926 as H.R. 8030 with modifications by Collett and Congressman Lea"
+    },
+    {
+      "name": "H.R. 8030",
+      "type": "legislation",
+      "context": "Raker bill reintroduced January 20, 1926 with modifications"
+    },
+    {
+      "name": "H.R. 9497",
+      "type": "legislation",
+      "context": "Bill introduced by Mrs. Kahn at request of John Collier and C. Hart Merriam, embodying conclusions of Commonwealth Club Indian affairs committee"
+    },
+    {
+      "name": "H.R. 9315",
+      "type": "legislation",
+      "context": "Counter-bill introduced by James A. Frear to block Indian Office reservation courts bill"
+    },
+    {
+      "name": "Lea bill",
+      "type": "legislation",
+      "context": "Bill introduced by Congressman Clarence Lea on January 6, 1927, considered compromise between Raker bill and Kahn bill"
+    },
+    {
+      "name": "Indian Office reservation courts bill",
+      "type": "legislation",
+      "context": "Bill introduced by Commissioner of Indian Affairs to legalize reservation courts under superintendent/agent control"
+    },
+    {
+      "name": "Ukiah",
+      "type": "location",
+      "context": "Location of Stephen Knight and an Indian auxiliary"
+    },
+    {
+      "name": "San Francisco",
+      "type": "location",
+      "context": "Location of Indian Board of Cooperation headquarters and state conventions"
+    },
+    {
+      "name": "Washington D.C.",
+      "type": "location",
+      "context": "Location of federal courts and Congress where California Indian legislation was pursued"
+    },
+    {
+      "name": "Smith River",
+      "type": "location",
+      "context": "Location from which Sam Lopez traveled to attend meeting"
+    },
+    {
+      "name": "Wyoming",
+      "type": "location",
+      "context": "State from which Indian delegations came to Washington D.C. for hearings"
+    },
+    {
+      "name": "Montana",
+      "type": "location",
+      "context": "State from which Indian delegations came to Washington D.C. for hearings"
+    },
+    {
+      "name": "North Dakota",
+      "type": "location",
+      "context": "State from which Indian delegations came to Washington D.C. for hearings"
+    },
+    {
+      "name": "Santa Rosa",
+      "type": "location",
+      "context": "Location associated with Congressman Lea"
+    },
+    {
+      "name": "Wisconsin",
+      "type": "location",
+      "context": "State represented by Congressman James A. Frear"
+    },
+    {
+      "name": "Oregon",
+      "type": "location",
+      "context": "State of Klamath, Modoc, and Yabooskin Indians referenced in Court of Claims document"
+    },
+    {
+      "name": "Yreka Auxiliary",
+      "type": "organization",
+      "context": "Indian Board of Cooperation auxiliary in district 2, asked to raise $2,140"
+    },
+    {
+      "name": "Happy Camp Auxiliary",
+      "type": "organization",
+      "context": "Indian Board of Cooperation auxiliary in district 1, known for benefit dances"
+    },
+    {
+      "name": "3 City Hall Avenue San Francisco",
+      "type": "location",
+      "context": "Address of Indian Board of Cooperation auditorium and office"
+    },
+    {
+      "name": "Conreno",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Stewarts Point",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Orleans",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Tejon",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Some Bar",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Harris",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Tehama",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Geyserville",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Hamburg",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Lower Lake",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Sherwood and Long Isle",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Laytonville",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Red Bluff",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Clovis",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Colusa",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Cortina",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "El Portal",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Lewiston",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Hayfork",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Porterville",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Oroville",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Susanville",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Stonyford",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Bolo Valley",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Bridgeport",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "Lamoor",
+      "type": "location",
+      "context": "Auxiliary location listed in tabulation"
+    },
+    {
+      "name": "18 unratified treaties of 1851-52",
+      "type": "legislation",
+      "context": "Treaties signed by Federal commission and 400+ Indian chiefs, basis of California Indian land claims"
+    },
+    {
+      "name": "94,000,000 acres",
+      "type": "acreage_holding",
+      "context": "Land agreed to be sold by California Indians to Federal Government under 1851-52 treaties"
+    },
+    {
+      "name": "California Indian lands",
+      "type": "land_parcel",
+      "context": "Lands promised to be kept for Indians under 18 treaties, appraised at not less than $100,000,000 by State legislature in 1852"
+    },
+    {
+      "name": "Indian Arrow",
+      "type": "organization",
+      "context": "Publication sold by auxiliary officers for 15 cents each"
+    }
+  ],
+  "events": [
+    {
+      "type": "Conference of Indian auxiliary delegates",
+      "date": "1923-10",
+      "location": "San Francisco",
+      "description": "Annual conference where budget of $37,438.75 was decided for year ending September 30, 1924, including expenses for general work and test suit before Federal courts"
+    },
+    {
+      "type": "Hearings before House Committee on Indian Affairs",
+      "date": "1926-01",
+      "location": "Washington D.C.",
+      "description": "Important hearings attended by Indian delegations from Wyoming, Montana, North Dakota; John Collier and C. Hart Merriam testified against reservation courts bill"
+    },
+    {
+      "type": "Introduction of H.R. 8030 (Raker bill)",
+      "date": "1926-01-20",
+      "location": "Washington D.C.",
+      "description": "Raker bill reintroduced with modifications by Collett and Congressman Lea"
+    },
+    {
+      "type": "Introduction of H.R. 9497",
+      "date": "1926-01",
+      "location": "Washington D.C.",
+      "description": "Bill introduced by Mrs. Kahn at request of John Collier and C. Hart Merriam, embodying Commonwealth Club conclusions"
+    },
+    {
+      "type": "Meeting disrupted by Everett Wilder",
+      "date": "1926-11",
+      "location": "California",
+      "description": "Auxiliary meeting disrupted by Everett Wilder and associates, resulting in confusion and no constructive work; Peter Williams attended"
+    },
+    {
+      "type": "Board of Directors meeting to choose Indian delegates",
+      "date": "1926-12-01",
+      "location": "California",
+      "description": "Indian Board of Cooperation board planned to meet to choose Indian delegates to Washington D.C."
+    },
+    {
+      "type": "Introduction of Lea bill",
+      "date": "1927-01-06",
+      "location": "Washington D.C.",
+      "description": "New Lea bill introduced, considered compromise between Raker bill and Kahn bill"
+    },
+    {
+      "type": "Eighth Annual State Convention of Auxiliary Delegates",
+      "date": "1928",
+      "location": "California",
+      "description": "9-day conference of auxiliary delegates, also meeting with attorney general and Governor of California; delegates from various auxiliaries attended"
+    },
+    {
+      "type": "California Court of Claims bill signed into law",
+      "date": "1928-05-18",
+      "location": "Washington D.C.",
+      "description": "Public Law No. 423, 70th Congress approved, authorizing California Indians to file suit in Court of Claims"
+    },
+    {
+      "type": "Court of Claims suit filed",
+      "date": "1929-08-12",
+      "location": "Washington D.C.",
+      "description": "Suit for $12,800,000 filed by attorney general on behalf of California Indians"
+    },
+    {
+      "type": "Motion allowed by Court of Claims",
+      "date": "1930",
+      "location": "Washington D.C.",
+      "description": "Court of Claims allowed attorneys J.W. Henderson, J.E. Pemberton, and James M. Hanley to appear as friends of the court"
+    },
+    {
+      "type": "Annual State Convention postponed",
+      "date": "1929-10-21",
+      "location": "San Francisco auditorium, 3 City Hall Avenue",
+      "description": "Convention postponed one week due to insufficient funds; rescheduled to October 21, 1929 at 2 p.m."
+    },
+    {
+      "type": "Congressional Record discussion",
+      "date": "1928-12-11",
+      "location": "Washington D.C.",
+      "description": "Extended discussion on floor of House about Indian Board of Cooperation soliciting funds from Indians; Representatives Cramton, Lea, and Leavitt spoke"
+    },
+    {
+      "type": "Attorney General Webb letter to Indian Board of Cooperation",
+      "date": "1928-11-20",
+      "location": "California",
+      "description": "Attorney General Webb wrote letter stating no advantage or propriety in Indians paying private agencies for prosecution of Court of Claims suit"
+    },
+    {
+      "type": "Frederick O. Collett public statement",
+      "date": "1928-12-01",
+      "location": "California",
+      "description": "Collett published lengthy communication disputing statements by Indian Defense Association and attorney general"
+    },
+    {
+      "type": "Indian Defense Association press release",
+      "date": "1928-11-22",
+      "location": "San Francisco",
+      "description": "Organization furnished press with questions and answers from Attorney General Webb showing no advantage in Indians paying private agencies"
+    },
+    {
+      "type": "Indian Board of Cooperation circular letter",
+      "date": "1928-11-28",
+      "location": "San Francisco",
+      "description": "Circular to Indians urging money for Court of Claims suit, stating it was to Indians' advantage to accept least help possible from the State"
+    },
+    {
+      "type": "18 treaties signed",
+      "date": "1851",
+      "location": "California",
+      "description": "18 treaties signed by federally authorized commission and more than 400 Indian chiefs and headmen, promising lands and goods to California Indians"
+    },
+    {
+      "type": "California State legislature appraisal of Indian lands",
+      "date": "1852",
+      "location": "California",
+      "description": "State legislature appraised Indian treaty lands at not less than $100,000,000"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "fee",
+      "amount": "$37,438.75",
+      "payer": "Indian auxiliary members",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10",
+      "description": "Total budget decided at conference for year ending September 30, 1924, for general work and test suit"
+    },
+    {
+      "type": "payment",
+      "amount": "$21,839.23",
+      "payer": "Indian auxiliary members",
+      "payee": "Indian Board of Cooperation",
+      "date": "1924-05-31",
+      "description": "Amount that should have been received by May 31, 1924 per budget"
+    },
+    {
+      "type": "payment",
+      "amount": "$11,214.45",
+      "payer": "Indian auxiliary members",
+      "payee": "Indian Board of Cooperation",
+      "date": "1924-05-31",
+      "description": "Amount actually received by May 31, 1924, leaving shortfall of $10,621.78"
+    },
+    {
+      "type": "fee",
+      "amount": "$30 pledge / $36 total membership dues",
+      "payer": "Indian auxiliary members",
+      "payee": "Indian Board of Cooperation",
+      "date": "1924",
+      "description": "Life membership dues requested of all members; $30 pledge plus $1 annual dues"
+    },
+    {
+      "type": "fee",
+      "amount": "$5,000",
+      "payer": "Indian auxiliary members",
+      "payee": "Indian Board of Cooperation",
+      "date": "1930-03",
+      "description": "Amount needed within 30 days for legal fees and other costs of Court of Claims work"
+    },
+    {
+      "type": "fee",
+      "amount": "$2,140",
+      "payer": "Yreka Auxiliary members",
+      "payee": "Indian Board of Cooperation",
+      "date": "1928-10",
+      "description": "Share requested of Yreka Auxiliary for Court of Claims work"
+    },
+    {
+      "type": "fee",
+      "amount": "$30",
+      "payer": "Individual auxiliary",
+      "payee": "Indian Board of Cooperation",
+      "date": "1929-10",
+      "description": "Fixed amount each auxiliary asked to raise immediately for convention and urgent work expenses"
+    },
+    {
+      "type": "other",
+      "amount": "$11,000,000",
+      "payer": "United States Government",
+      "payee": "California Indians",
+      "date": "1929-08-12",
+      "description": "Amount asked by attorney general for lands to have been kept for Indians under treaties"
+    },
+    {
+      "type": "other",
+      "amount": "$1,800,000",
+      "payer": "United States Government",
+      "payee": "California Indians",
+      "date": "1929-08-12",
+      "description": "Amount asked by attorney general for goods and school privileges promised in treaties for 94 million acres; less than 2 cents per acre"
+    },
+    {
+      "type": "other",
+      "amount": "$12,800,000",
+      "payer": "United States Government",
+      "payee": "California Indians",
+      "date": "1929-08-12",
+      "description": "Total amount of suit filed August 12, 1929 by attorney general on behalf of California Indians"
+    },
+    {
+      "type": "fee",
+      "amount": "$36 membership dues",
+      "payer": "Indian members",
+      "payee": "Indian Board of Cooperation",
+      "date": "1928-09-22",
+      "description": "Total membership dues requested of all members to cover attorneys fees and expenses of suit"
+    },
+    {
+      "type": "payment",
+      "amount": "$15 per copy",
+      "payer": "Auxiliary members and friends",
+      "payee": "Indian Board of Cooperation via auxiliary",
+      "date": "1929-10",
+      "description": "Sale price of Indian Arrow publication, 15 cents each, credited to auxiliary quota"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "F. G. Collett",
+      "type": "employed_by",
+      "object": "Indian Board of Cooperation",
+      "context": "Executive Representative"
+    },
+    {
+      "subject": "C. R. Fisher",
+      "type": "employed_by",
+      "object": "Indian Board of Cooperation",
+      "context": "Secretary-Treasurer"
+    },
+    {
+      "subject": "J. W. Henderson",
+      "type": "employed_by",
+      "object": "California Indians / Indian Board of Cooperation",
+      "context": "Attorney appearing in Court of Claims for California Indians"
+    },
+    {
+      "subject": "J. E. Pemberton",
+      "type": "employed_by",
+      "object": "California Indians / Indian Board of Cooperation",
+      "context": "Attorney appearing in Court of Claims for California Indians"
+    },
+    {
+      "subject": "James M. Hanley",
+      "type": "employed_by",
+      "object": "California Indians / Indian Board of Cooperation",
+      "context": "Attorney appearing in Court of Claims for California Indians"
+    },
+    {
+      "subject": "John Collier",
+      "type": "employed_by",
+      "object": "Indian Defense Association of Central and Northern California",
+      "context": "National Executive Secretary"
+    },
+    {
+      "subject": "C. Hart Merriam",
+      "type": "related_to",
+      "object": "Indian Board of Cooperation",
+      "context": "Advocate who cooperated on legislation but was not an officer"
+    },
+    {
+      "subject": "C. Hart Merriam",
+      "type": "related_to",
+      "object": "John Collier",
+      "context": "Collaborated on drafting H.R. 9497 and presenting it to Mrs. Kahn"
+    },
+    {
+      "subject": "Mrs. Kahn",
+      "type": "represented",
+      "object": "California Indians",
+      "context": "Introduced H.R. 9497 at request of John Collier and C. Hart Merriam"
+    },
+    {
+      "subject": "Clarence F. Lea",
+      "type": "represented",
+      "object": "California Indians",
+      "context": "Author of Lea bill, former attorney and district attorney in California, longtime congressman"
+    },
+    {
+      "subject": "James A. Frear",
+      "type": "related_to",
+      "object": "California Indians",
+      "context": "Strongest advocate for Indian side in reservation courts bill debate, introduced counter-bill H.R. 9315"
+    },
+    {
+      "subject": "Everett Wilder",
+      "type": "related_to",
+      "object": "Indian Board of Cooperation",
+      "context": "Opponent seeking to redirect Indian organizing away from Court of Claims bill"
+    },
+    {
+      "subject": "U. S. Webb",
+      "type": "related_to",
+      "object": "California Indians",
+      "context": "Attorney General of California, maintained Court of Claims suit on behalf of Indians using state funds"
+    },
+    {
+      "subject": "F. G. Collett",
+      "type": "related_to",
+      "object": "Raker bill / H.R. 8030",
+      "context": "Collett helped modify the Raker bill along with Congressman Lea"
+    },
+    {
+      "subject": "Fuller",
+      "type": "related_to",
+      "object": "F. G. Collett",
+      "context": "Described as still standing by Collett"
+    },
+    {
+      "subject": "Sam Lopez",
+      "type": "related_to",
+      "object": "Smith River auxiliary",
+      "context": "Traveled from Smith River to attend meeting"
+    },
+    {
+      "subject": "Zenaida Merriam",
+      "type": "related_to",
+      "object": "C. Hart Merriam",
+      "context": "Daughter who obtained copies of new Lea bill"
+    },
+    {
+      "subject": "Representative Cramton",
+      "type": "related_to",
+      "object": "Indian Board of Cooperation",
+      "context": "Placed Indian Board of Cooperation solicitation letter in Congressional Record and criticized Collett"
+    },
+    {
+      "subject": "F. G. Collett",
+      "type": "related_to",
+      "object": "mail fraud indictment",
+      "context": "Was under indictment for using mails to defraud per Representative Cramton's statement"
+    },
+    {
+      "subject": "Indian Board of Cooperation",
+      "type": "related_to",
+      "object": "California Indians",
+      "context": "Organized Indians into auxiliaries and pursued Court of Claims legislation on their behalf for 8+ years since 1920"
+    },
+    {
+      "subject": "Indian Defense Association",
+      "type": "related_to",
+      "object": "Commonwealth Club of California",
+      "context": "Provided suggestions for draft of H.R. 9497 alongside Commonwealth Club lawyers"
+    },
+    {
+      "subject": "Rachie B. Barker",
+      "type": "employed_by",
+      "object": "Indian Defense Association",
+      "context": "Correspondent who sent attorney general letter to Stephen Knight"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "C. Hart Merriam",
+      "sender_title": "Advocate for California Indians",
+      "recipient": "Stephen Knight",
+      "recipient_title": "Member/officer, Ukiah auxiliary",
+      "date": "1926-01-20",
+      "subject": "Legislative developments in Washington D.C. regarding California Indian bills",
+      "action_requested": "Informing Knight of hearings, bills introduced, and Collett's activities",
+      "outcome": "Multiple bills described including H.R. 8030, H.R. 9315, H.R. 9497; copies of bills mailed separately"
+    },
+    {
+      "sender": "F. G. Collett",
+      "sender_title": "Executive Representative, Indian Board of Cooperation",
+      "recipient": "Officers and committeemen of auxiliaries",
+      "date": "1926-11-22",
+      "subject": "Warning against Everett Wilder's disruptive activities and reaffirming Court of Claims bill strategy",
+      "action_requested": "Ignore Wilder, pursue Court of Claims bill, hold Thanksgiving Day meetings, complete payment of $38 life-membership dues",
+      "outcome": "Board planned to meet December 1 to choose delegates to Washington D.C."
+    },
+    {
+      "sender": "C. Hart Merriam",
+      "sender_title": "Advocate for California Indians",
+      "recipient": "Stephen Knight",
+      "recipient_title": "Member/officer, Ukiah auxiliary",
+      "date": "1927-01-12",
+      "subject": "New Lea bill introduced January 6; update on attendees at big meeting",
+      "action_requested": "Sharing information about new Lea bill and attendees",
+      "outcome": "Copy of new Lea bill enclosed"
+    },
+    {
+      "sender": "Indian Board of Cooperation",
+      "sender_title": "",
+      "recipient": "Indians of California living outside of the State",
+      "recipient_title": "",
+      "date": "1928-09-22",
+      "subject": "Whether California Indians living outside state can share in Court of Claims suit",
+      "action_requested": "Urging outside-state Indians to join organization and pay membership dues of $36 to be included in settlement",
+      "outcome": "Board pledged to advocate for inclusion of all California Indians regardless of residence"
+    },
+    {
+      "sender": "Indian Board of Cooperation (F. G. Collett)",
+      "sender_title": "Executive Representative",
+      "recipient": "Auxiliary Officers and Members",
+      "date": "1928-10-03",
+      "subject": "Passage of California Court of Claims bill and need to raise money immediately for suit",
+      "action_requested": "Hold auxiliary meetings, house-to-house canvasses, benefit dances; raise share of needed funds; Yreka auxiliary asked for $2,140",
+      "outcome": "Eighth Annual State Convention delegates had conferred with attorney general and Governor of California"
+    },
+    {
+      "sender": "Indian Defense Association of Central and Northern California (John Collier)",
+      "sender_title": "National Executive Secretary",
+      "recipient": "Editor (mailed to 55 California papers)",
+      "date": "1928-12-21",
+      "subject": "Making public Attorney General Webb's November 20 letter to Indian Board of Cooperation",
+      "action_requested": "Wide publication of attorney general letter in public interest",
+      "outcome": "Letter released along with Congressional Record discussion of December 11, 1928"
+    },
+    {
+      "sender": "Indian Defense Association (John Collier)",
+      "sender_title": "Secretary",
+      "recipient": "Editor (mailed to 55 papers in California)",
+      "date": "1929-01-30",
+      "subject": "Letter from Congressman Clarence Lea about Court of Claims bill and fundraising",
+      "action_requested": "Requesting full publicity for Lea's letter",
+      "outcome": "Lea letter published clarifying that Indians need not contribute funds and all California Indians would share in judgment regardless of contributions"
+    },
+    {
+      "sender": "Clarence F. Lea",
+      "sender_title": "Congressman",
+      "recipient": "Indian Defense Association / public",
+      "date": "1929-01",
+      "subject": "Court of Claims bill and Indian fundraising",
+      "action_requested": "Clarifying that suit maintained by attorney general with state funds; Indians need not pay private agencies",
+      "outcome": "Published clarification that benefits not dependent on contributions"
+    },
+    {
+      "sender": "Indian Board of Cooperation (F. G. Collett)",
+      "sender_title": "Executive Representative",
+      "recipient": "Auxiliary Officers and Members",
+      "date": "1929-10-05",
+      "subject": "Annual State Convention postponement to October 21, 1929",
+      "action_requested": "Each auxiliary to raise $30; give benefit dances; make house-to-house canvasses; sell Indian Arrow for 15 cents each",
+      "outcome": "Convention postponed due to insufficient funds"
+    },
+    {
+      "sender": "Indian Board of Cooperation (F. G. Collett)",
+      "sender_title": "Executive Representative",
+      "recipient": "Auxiliary Officers and Members",
+      "date": "1930-03-05",
+      "subject": "Attorneys admitted to Court of Claims; need to raise $5,000 within 30 days",
+      "action_requested": "Hold meetings, give entertainments, house-to-house canvass; complete $36 dues; donations of $5+ from members; $10 from white friends",
+      "outcome": "Motion allowed by Court of Claims for Henderson, Pemberton, and Hanley to appear as friends of court"
+    },
+    {
+      "sender": "Indian Board of Cooperation (F. G. Collett)",
+      "sender_title": "Executive Representative",
+      "recipient": "Indians of California and their friends",
+      "date": "1930-07-15",
+      "subject": "Court of Claims attorneys authorized; need to meet attorney contract payments and expenses",
+      "action_requested": "Each auxiliary to raise its share of money needed",
+      "outcome": "Board believed raising money would result in larger award for Indians"
+    },
+    {
+      "sender": "U. S. Webb",
+      "sender_title": "Attorney General of California",
+      "recipient": "Indian Board of Cooperation",
+      "date": "1928-11-20",
+      "subject": "No advantage or propriety in Indians paying private agencies for prosecution of Court of Claims suit",
+      "action_requested": "Informing Indian Board of Cooperation that state funds cover suit expenses",
+      "outcome": "Letter made public by Indian Defense Association on December 21, 1928"
+    },
+    {
+      "sender": "Rachie B. Barker",
+      "sender_title": "Staff of Indian Defense Association",
+      "recipient": "Stephen Knight",
+      "recipient_title": "Member/officer, Ukiah auxiliary",
+      "date": "1928-12-21",
+      "subject": "Thanking Knight for supplying Collett letter; releasing attorney general letter",
+      "action_requested": "Acknowledgment and information sharing",
+      "outcome": "Letter and attorney general correspondence released to press same day"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "H.R. 9315",
+      "sponsor": "James A. Frear (Wisconsin)",
+      "action_type": "introduced",
+      "date": "1926-01",
+      "vote_count": "",
+      "committee": "House Committee on Indian Affairs",
+      "outcome": "Counter-bill to block Indian Office reservation courts bill; committee divided"
+    },
+    {
+      "bill_number": "H.R. 8030",
+      "sponsor": "Raker, modified by Collett and Congressman Lea",
+      "action_type": "introduced",
+      "date": "1926-01-20",
+      "vote_count": "",
+      "committee": "House Committee on Indian Affairs",
+      "outcome": "Reintroduction of Raker bill with modifications; described as better than no bill"
+    },
+    {
+      "bill_number": "H.R. 9497",
+      "sponsor": "Mrs. Kahn",
+      "action_type": "introduced",
+      "date": "1926-01",
+      "vote_count": "",
+      "committee": "House Committee on Indian Affairs",
+      "outcome": "Introduced at request of John Collier and C. Hart Merriam; drafted by Commonwealth Club lawyers with Indian Defense Association input; received adverse report from Secretary of Interior"
+    },
+    {
+      "bill_number": "Indian Office reservation courts bill",
+      "sponsor": "Commissioner of Indian Affairs",
+      "action_type": "introduced",
+      "date": "1926-01",
+      "vote_count": "",
+      "committee": "House Committee on Indian Affairs",
+      "outcome": "Strongly opposed by John Collier and C. Hart Merriam; committee divided"
+    },
+    {
+      "bill_number": "Lea bill (new)",
+      "sponsor": "Clarence F. Lea",
+      "action_type": "introduced",
+      "date": "1927-01-06",
+      "vote_count": "",
+      "committee": "House Committee on Indian Affairs",
+      "outcome": "Considered compromise between Raker bill and Kahn bill per Lea; Merriam did not see it that way"
+    },
+    {
+      "bill_number": "California Court of Claims bill / Public Law No. 423, 70th Congress",
+      "sponsor": "Clarence F. Lea",
+      "action_type": "enacted",
+      "date": "1928-05-18",
+      "vote_count": "",
+      "committee": "House Committee on Indian Affairs",
+      "outcome": "Passed into law; authorized California Indians to file suit in Court of Claims; Indian Board of Cooperation had no influence at hearings per Leavitt and Lea"
+    },
+    {
+      "bill_number": "Direct Appropriation bill",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Described as dead; opposed by Congressman Lea and Indian Board of Cooperation as inferior to Court of Claims approach"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "John Collier",
+      "witness_title": "National Executive Secretary, Indian Defense Association",
+      "hearing": "House Committee on Indian Affairs hearings",
+      "committee": "House Committee on Indian Affairs",
+      "location": "Washington D.C.",
+      "date": "1926-01",
+      "subject": "Opposition to Indian Office reservation courts bill; California Indian legislation",
+      "key_claims": "Strongly opposed passage of bill introduced by Commissioner of Indian Affairs to legalize reservation courts appointed by and under control of the superintendent or agent. Collaborated with C. Hart Merriam on H.R. 9497 as preferred alternative.",
+      "questioner": ""
+    },
+    {
+      "witness": "C. Hart Merriam",
+      "witness_title": "Advocate for California Indians",
+      "hearing": "House Committee on Indian Affairs hearings",
+      "committee": "House Committee on Indian Affairs",
+      "location": "Washington D.C.",
+      "date": "1926-01",
+      "subject": "Opposition to Indian Office reservation courts bill; California Indian legislation",
+      "key_claims": "Strongly opposed passage of bill introduced by Commissioner of Indian Affairs to legalize reservation courts. Advocated for H.R. 9497 as vastly better alternative, noting it would avoid delay likely from Court of Claims bill and place fund disposition in hands of joint government-Governor commission.",
+      "questioner": ""
+    },
+    {
+      "witness": "Mrs. Kahn",
+      "witness_title": "Congresswoman",
+      "hearing": "House Committee on Indian Affairs",
+      "committee": "House Committee on Indian Affairs",
+      "location": "Washington D.C.",
+      "date": "1926",
+      "subject": "H.R. 9497 and adverse report from Secretary of Interior",
+      "key_claims": "Stated that in face of adverse report rendered by Secretary of Interior on her bill, it would be absurd to take up committee time trying to induce them to report it favorably.",
+      "questioner": ""
+    },
+    {
+      "witness": "Clarence F. Lea",
+      "witness_title": "Congressman, California",
+      "hearing": "Congressional floor discussion",
+      "committee": "House",
+      "location": "Washington D.C.",
+      "date": "1928-12-11",
+      "subject": "Indian Board of Cooperation solicitation of funds and California Indian situation",
+      "key_claims": "Confirmed Cramton's statement of facts about Indian Board of Cooperation letter; stated he protested against publication and insisted on informing Indians they had been misinformed; stated efforts to secure direct appropriation were hopeless; stated that Indian Board of Cooperation was not represented at hearings on California Court of Claims bill; stated lack of cooperation by California Indians made difficult situation more difficult.",
+      "questioner": "Representative Cramton"
+    },
+    {
+      "witness": "Representative Cramton",
+      "witness_title": "Member, House Appropriations Committee",
+      "hearing": "Congressional floor discussion",
+      "committee": "House",
+      "location": "Washington D.C.",
+      "date": "1928-12-11",
+      "subject": "Indian Board of Cooperation solicitation of funds from Indians",
+      "key_claims": "Placed in record lengthy communication signed by J.W. Henderson for Indian Board of Cooperation appealing for moneys from Indians; stated communication dated June 1 asked for money to promote passage of Court of Claims bill although it had already become law; stated F.G. Collett was under indictment for using mails to defraud and a new indictment might well have followed the above attempt.",
+      "questioner": ""
+    },
+    {
+      "witness": "Mr. Leavitt",
+      "witness_title": "Chairman, House Indian Affairs Committee",
+      "hearing": "Congressional floor discussion",
+      "committee": "House",
+      "location": "Washington D.C.",
+      "date": "1928-12-11",
+      "subject": "Indian Board of Cooperation's role in passage of California Court of Claims bill",
+      "key_claims": "Stated that when Congressman Lea had his bill before the Committee on Indian Affairs, Collett and his organization had no influence whatever in the hearings and took no part in the passage of the bill.",
+      "questioner": ""
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

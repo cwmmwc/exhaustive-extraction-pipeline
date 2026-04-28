@@ -1,0 +1,33 @@
+{
+  "document_id": "part9_agency_narrative_026",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "46",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Paul Lamoureaux",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. D.",
+    "Allotment number": "3518",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "patent was recorded December 17, 1918 by Volz Abstract Company",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Paul Lamoureaux conveyed the land by deed to Lema Lamoureaux Colburn for $1.00 and other valuable consideration",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612818 issued; Northwest quarter section 17, township 98, north of range 76; receipt for the patent does not appear to have been signed; conveyance dated July 3, 1918",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2021,
+    "output_tokens": 331
+  },
+  "elapsed": 4.1,
+  "retry_count": 1
+}

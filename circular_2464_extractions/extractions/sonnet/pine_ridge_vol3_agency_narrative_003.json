@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_agency_narrative_003",
+  "type": "agency_narrative",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "50",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jennie Moeller",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "4529",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Pat. Recorded Apr. 5, 1920, by Martin Loan & Abstract Co, Martin, S.D.",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to H. E. Beebe, Ipswich, So. Dak. for $160.00 (recorded June 10, 1921); mortgaged to Bank of Ipswich, Ipswich, So. Dak. for $600.00 (recorded Apr. 5, 1920); mortgaged to Bank of Ipswich, Ipswich, So. Dak. for $90.00 (recorded Apr. 5, 1920); deeded to G. H. Cherry, Martin, So. Dak. for $2800.00 on July 3, 1922 (recorded Aug. 28, 1922)",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sep. 29, 1919",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Taken from the records at Martin, So. Dak. Receipt dated Jan. 15, 1920. Land described as SE\u00bc 29-37-36. Husband is Joseph H. Moeller. All mortgages and deed executed jointly by Jennie Moeller and Joseph H. Moeller, her husband.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2276,
+    "output_tokens": 489
+  },
+  "elapsed": 7.2
+}

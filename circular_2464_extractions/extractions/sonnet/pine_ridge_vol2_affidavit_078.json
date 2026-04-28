@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_078",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "97",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Emma A. Clifford, ne Martinez",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Conata, South Dakota",
+    "Allotment number": "2750",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she did not want this patent, as she did not want to pay taxes; but that the Indian Agency told her it would be assessed for taxes, even if she did not take the patent, and later sold for same, so she accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to the Bank of Scenic, Scenic, South Dakota, for $500.00; sold to Ward Ellis, of Scenic, South Dakota, Mr. Ellis taking over the mortgage, paying her $100.00 in cash besides, having promised her $75.00 in cash, which he never paid, and to, also, after the mortgage was paid off, he was to deed her back 160 acres of her allotment; but he never redeemed the mortgage, and lost it himself",
+    "Tax burden forced sale/Mortgage": "mortgaged her allotment to the Bank of Scenic, Scenic, South Dakota, for $500.00, to pay her taxes, and make improvements on her land, as well as her husband's land; that the crop that year was a total failure, and in 1924, she was forced to either sell her land, or have it foreclosed on",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "48 years old",
+    "Occupation/Income": "they work together as a family at milking cows, and raising chickens and sheep, on the land belonging to several of their children, which land is very poor, so much so that they have to buy hay; and that this ranching is their only income",
+    "NOTES": "Allotment described as lots 6, 7, 8, 10, 11, and 12, and SE\u00bc of NE\u00bc, E\u00bd of SE\u00bc, SW\u00bc of SE\u00bc, Sec. 36, T.56N., R.44W., of the 6th P.M., in South Dakota; 338.32 acres; mentally incompetent; health is poor, having very weak eyes; has eight minor children to support; husband has very poor health and is unable to work very hard; did not sell her place for any debts made prior to receiving the patent in fee; considers she received a very poor price for her land; has never received any help from the County or State governments; United States Government paid for an operation on her eyes in 1928; sworn April 22, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2605,
+    "output_tokens": 720
+  },
+  "elapsed": 10.0
+}

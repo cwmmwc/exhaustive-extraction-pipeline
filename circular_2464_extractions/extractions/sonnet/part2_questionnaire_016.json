@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_016",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "48-51",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "not stated",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is a heavily damaged/illegible questionnaire (Application for a Patent in Fee, Act of May 8, 1906, 34 Stat. 182). Most fields are unreadable due to document condition. Partial legible fragments include: value of land covered by application appears to be $3,0[4?]8; inherited land value fragment appears as $[2],8[00?]; some answers to questions 19-27 partially visible but largely illegible. Subscribed and sworn before a notary on the 12th day of [month illegible] 19[17?]. Form numbers 6-2543 and 8-2513 visible.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 3030,
+    "output_tokens": 366
+  },
+  "elapsed": 8.1
+}

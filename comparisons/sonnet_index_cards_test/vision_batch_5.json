@@ -1,0 +1,42 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Interior",
+      "date": "1935-03-23",
+      "correspondent": "Secy",
+      "correspondent_role": "incoming",
+      "case_name": "U.S. v. Ralph Hughes, County Treas., et al",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Re: U.S. v. Ralph Hughes, County Treas.-et al",
+      "action_type": "other",
+      "enclosures": "",
+      "routing_division": "",
+      "routing_date": "",
+      "clerk_initials": "MC",
+      "processed_date": "1935-03-23"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. v. Ralph Hughes, County Treas., et al",
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Interior",
+      "case_type": "other",
+      "allottee_name": "",
+      "tribe_or_reservation": "",
+      "county": ""
+    }
+  ],
+  "persons": [
+    {
+      "name": "Ralph Hughes",
+      "role": "defendant",
+      "tribe": "",
+      "allottee_number": ""
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_024",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "42-43",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Moses Haragarra",
+    "Tribe/Reservation": "Otoe Agency / Pawnee County, Oklahoma",
+    "Post Office Address": "Ponca City, Okla.",
+    "Allotment number": "5",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Was it filed for record? yes",
+    "Sold/Mortgaged": "All was mortgaged for $1000; also sold",
+    "Buyer": "O. R. Hell of Perry, Oklahoma, and C. E. Vandervoort, Jr. of Pawnee, Okla.; the allottee received approximately $3800 but the deeds called for $6000; purchasers withheld $2200 to adjust titles to land on account of taxes and the above mortgage, paid by purchaser",
+    "Tax burden forced sale/Mortgage": "Purchasers withheld $2200 to adjust titles to land on account of taxes and the above mortgage",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sept. 1917",
+    "Gender": "Male",
+    "Age": "48 years",
+    "Occupation/Income": "No income of any kind or contributions. No property or funds accumulated. Does not own a home.",
+    "NOTES": "Patent delivered at Otoe Agency with protest, when 1918; receipt signed by allottee; mortgage was for $1000; allottee received approximately $3800 but deeds called for $6000; purchasers withheld $2200; this allottee, if what he has stated is true, was defrauded of his land by purchasers O. R. Hell of Perry, Oklahoma, and C. E. Vandervoort, Jr. of Pawnee, Okla., by not receiving full consideration; wife and seven children dependent upon him; good health; questionnaire executed November 22, 1928; notarized Aug. 3rd, 1931, Kay County, State of Oklahoma. Buyer name corrected from 'Hall' to 'Hell' based on source page image review, 2026-04-21",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2626,
+    "output_tokens": 533
+  },
+  "elapsed": 8.4
+}

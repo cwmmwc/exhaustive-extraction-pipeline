@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_questionnaire_011",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "61-62",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Joseph St. John",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "547",
+    "Cancelled": "Not cancelled.",
+    "Refused/Protested": "he had never made any application for a patent and that he didn't want to take it. That if he did he would be required to pay taxes on the land. The Superintendent told him that he would have to pay taxes on the land and that he take the patent and that he was also cut loose from the supervision of the Government and was a citizen of the U. S.",
+    "Recorded patent": "Patent was recorded by Joseph St. John in Hughes Co., S. Dak. at Pierre, S. Dak. in the recorder office on the 27th day of March 1920, at 4 o'clock P. M. in volume 158 of Deeds on page 571.",
+    "Sold/Mortgaged": "Land has not been sold. Land was mortgaged for $100.00 to pay taxes on it in the year of 1925.",
+    "Buyer": "Mortgaged to the Farmers State Bank of Canning, S. Dak. for six months, interest at the rate of 10%.",
+    "Tax burden forced sale/Mortgage": "Land was mortgaged for $100.00 to pay taxes on it in the year of 1925.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 22, 1919",
+    "Gender": "Male",
+    "Age": "56 years old",
+    "Occupation/Income": "Joseph St. John's income comes from farming, stock raising, working some, raising poultry. Has not received any thing from the Government, State or County.",
+    "NOTES": "Patent Number 724983. Patent delivered to him by Superintendent of Agency at Office on March 6, 1920. Mortgage paid and released; Satisfaction of Mortgage shows in book 174 of Mtg page 650 on the 31st day of October 1925 at 9 A.M., Filed for record Dec. 9th 1925, 9 A.M. Book 175, Page 549. Wife and five children dependent on him. Mental condition: Good. Physical condition: Fair. Financial condition: Poor. Still has his land. Report signed by H. E. Wright, Supt. & S. D. A.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2841,
+    "output_tokens": 621
+  },
+  "elapsed": 7.0
+}

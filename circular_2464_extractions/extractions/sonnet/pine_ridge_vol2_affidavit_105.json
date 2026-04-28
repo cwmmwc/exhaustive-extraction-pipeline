@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_105",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "124",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ida Merdanian",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area implied)",
+    "Post Office Address": "Oelrichs, So. Dak.",
+    "Allotment number": "3256",
+    "Cancelled": "has made repeated efforts to have it cancelled",
+    "Refused/Protested": "did not want her patent, and has made repeated efforts to have it cancelled, but that she signed the receipt for she was told that the land would be taxed anyway, and sold for taxes if they were not paid",
+    "Recorded patent": "she had the patent recorded at Hot Springs, So. Dak.",
+    "Sold/Mortgaged": "has not sold or mortgaged any part of her land, but that she gave Shannon County a right of way for a highway across the land, for which she received $150.00",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "the land has not been sold for taxes for she has paid them, but that she is unable to do so any longer",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "48 years old",
+    "Occupation/Income": "dependent entirely on her husband for support",
+    "NOTES": "mentally competent and in good health; no one is dependent on her for support; has not received any aid from the Government, State or County since the patent was issued; document sworn October 31, 1928, in Shannon County, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2284,
+    "output_tokens": 418
+  },
+  "elapsed": 5.0
+}

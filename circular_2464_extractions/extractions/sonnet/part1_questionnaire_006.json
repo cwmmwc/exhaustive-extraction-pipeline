@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_006",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "14-15",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Sam Charbonneau",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "22171",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Without protest",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and traded",
+    "Buyer": "Mortgaged to D. A. Hancock for $1900.00; traded equity for a house and lot; traded the place for city property",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April, 1918",
+    "Gender": "Male",
+    "Age": "34",
+    "Occupation/Income": "Work in a sawmill; my daily wages",
+    "NOTES": "Patent was mailed to allottee in Valentine, Nebraska in April 1918. Did not apply for patent and did not sign a receipt for it. In 1918 was working for D. A. Hancock, who volunteered to get a loan on the land stating it made no difference if the patent had not been issued, charging $100.00 for getting the loan; patent came in a few weeks thereafter. Allottee was drafted for service in the World War, traded the place for city property; took the flu and was still sick when the Armistice was signed, and never completed paying for the city property. Mortgage was not foreclosed; traded equity for a house and lot. Wife and child dependent upon him. In good health. Document notarized July 9, 1929, State of Oregon, County of Lincoln, by G.B. McCluskey, Notary Public, commission expires August 21, 1931.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2661,
+    "output_tokens": 472
+  },
+  "elapsed": 7.1
+}

@@ -1,0 +1,35 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-24",
+      "jurisdiction": "Oklahoma",
+      "date": "1935-01-26",
+      "correspondent": "Croninger, A. G., Miami, Okla.",
+      "correspondent_role": "outgoing",
+      "case_name": "U.S. versus Tripp County",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Re: U.S. versus Tripp County not yet reported. Am mailing copy of memorandum decision.",
+      "action_type": "other",
+      "enclosures": "copy of memorandum decision",
+      "routing_division": "Misc.",
+      "routing_date": "1935-01-26",
+      "clerk_initials": "HWB-hf",
+      "processed_date": "1935-01-26"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. versus Tripp County",
+      "file_number": "90-2-5-24",
+      "jurisdiction": "Oklahoma",
+      "case_type": "other",
+      "allottee_name": "",
+      "tribe_or_reservation": "",
+      "county": "Tripp"
+    }
+  ],
+  "persons": []
+}

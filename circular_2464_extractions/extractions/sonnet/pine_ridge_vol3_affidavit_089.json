@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_089",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "115",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ellen Running Hawk, nee Jarvis",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her allotment, as she did not want to pay taxes, but that she was told that she would have to take it any way, and pay taxes, so she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "traded her allotment of 332.71 acres to L. W. Dodenorf, of White Clay, Nebraska, for merchandise, to be taken out of his store as she needed it, this agreement being for $2000.00 dollars worth",
+    "Buyer": "L. W. Dodenorf, of White Clay, Nebraska, for merchandise worth $2000.00; he said he would sell it when he could, and if he got more than $2000.00, he would pay her more; she was informed on good authority that he has never been able to sell it",
+    "Tax burden forced sale/Mortgage": "did not want to pay taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "42 years old",
+    "Occupation/Income": "supported by her husband, who farms for a living, besides some little lease money as an income",
+    "NOTES": "mentally competent; health is very poor, having lately gone through an operation for appendicitis; husband's health is not good, having heart trouble; has one minor child to support, the child having good health; has never received any help from the County or Government; document number 6502; notation *3290* appears in document",
+    "Literate/Illiterate": "Signed with an X mark",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2307,
+    "output_tokens": 485
+  },
+  "elapsed": 5.0
+}

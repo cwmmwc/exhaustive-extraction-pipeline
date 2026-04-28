@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_questionnaire_020",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "52",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susan Jane Wright Carter",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1510",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Not at the time but I asked the Farmer at Okreek why it was given me when I did not ask for it. This was after it had been mailed to me and I had taken it back to the Farmer. He said that he would send it back to Rosebud. later he told me that I would have to accept it as it had been issued so I took it and sold the land.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "mailed to me about 8 years ago",
+    "Gender": "Female",
+    "Age": "38",
+    "Occupation/Income": "I work in a hotel",
+    "NOTES": "Received $4200 and a Franklin automobile worth about $1200.00, plus $200 before the sale. Did not make an application for the patent. States she made a good sale as the purchaser had not seen the land and prairie dogs occupied a good portion of it. Formerly named Susan Jane Wright. Signed document as Susan Jane Wright Carter. Supports myself and one child. In good health but has poor teeth. Notarized by Jas. W. Cross, Notary Public, commission expires 4-28-32, on June 11, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2313,
+    "output_tokens": 441
+  },
+  "elapsed": 5.7
+}

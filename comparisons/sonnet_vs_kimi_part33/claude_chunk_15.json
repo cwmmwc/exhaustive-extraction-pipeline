@@ -1,0 +1,707 @@
+{
+  "entities": [
+    {
+      "name": "Attorney General Webb",
+      "type": "person",
+      "context": "Attorney General of California prosecuting Indian claims in Court of Claims"
+    },
+    {
+      "name": "The Chairman",
+      "type": "person",
+      "context": "Senate committee chairman conducting hearings on conditions of Indians in United States"
+    },
+    {
+      "name": "Senator Thomas",
+      "type": "person",
+      "context": "Senate committee member present at hearing"
+    },
+    {
+      "name": "Mr. Butler",
+      "type": "person",
+      "context": "Attorney representing approximately 3,000 Mission Indians of southern California"
+    },
+    {
+      "name": "Miss Alice Piper",
+      "type": "person",
+      "context": "Indian witness who appeared before committee to advocate for Indian right to own attorneys"
+    },
+    {
+      "name": "Thomas L. Sloan",
+      "type": "person",
+      "context": "Advocate for California Indians, raised issues about enrollment and petition coverage"
+    },
+    {
+      "name": "Ethan Anderson",
+      "type": "person",
+      "context": "Citizen of California and Indian advocate who spoke before committee"
+    },
+    {
+      "name": "Benjamin Wilder",
+      "type": "person",
+      "context": "Individual listed to speak but absent from hearing"
+    },
+    {
+      "name": "Mr. Collett",
+      "type": "person",
+      "context": "Individual associated with attorneys employed for California Indians, viewed negatively by Attorney General Webb"
+    },
+    {
+      "name": "Mr. Hanley",
+      "type": "person",
+      "context": "Attorney employed in California Indian claims case, described by Attorney General Webb as able and careful"
+    },
+    {
+      "name": "Mr. Pemberton",
+      "type": "person",
+      "context": "Attorney mentioned in connection with California Indian claims case"
+    },
+    {
+      "name": "J. W. Henderson",
+      "type": "person",
+      "context": "Attorney under contract with California Indians since 1928, testified before committee"
+    },
+    {
+      "name": "O. H. Lipps",
+      "type": "person",
+      "context": "Government official present at hearing, involved in enrollment of California Indians"
+    },
+    {
+      "name": "Judge Raker",
+      "type": "person",
+      "context": "Official who made the enrollment roll for California Indians"
+    },
+    {
+      "name": "Robinson",
+      "type": "person",
+      "context": "Individual in San Quentin penitentiary whose family was allegedly left off enrollment roll"
+    },
+    {
+      "name": "Commissioner of Indian Affairs",
+      "type": "organization",
+      "context": "Federal official who opposed amendment allowing Indians to select own attorneys, stated recovery amount predetermined at $6,000,000"
+    },
+    {
+      "name": "Secretary of the Interior",
+      "type": "organization",
+      "context": "Federal official who opposed Indian attorneys amendment"
+    },
+    {
+      "name": "Court of Claims",
+      "type": "organization",
+      "context": "Federal court where California Indian claims suit was pending"
+    },
+    {
+      "name": "California Indians",
+      "type": "organization",
+      "context": "Plaintiffs in Court of Claims suit regarding unratified treaties and land claims"
+    },
+    {
+      "name": "Mission Indians",
+      "type": "organization",
+      "context": "Southern California Indian group represented by Mr. Butler"
+    },
+    {
+      "name": "Blackfeet Indians",
+      "type": "organization",
+      "context": "Indian tribe that had a Court of Claims case resulting in a deficiency judgment against them"
+    },
+    {
+      "name": "Ute Indians",
+      "type": "organization",
+      "context": "Colorado and Utah tribe for whom Mr. Butler recovered $3.5 million in Court of Claims"
+    },
+    {
+      "name": "Indian Board of Cooperation",
+      "type": "organization",
+      "context": "Organization formed to help Indians secure their rights, involved in attorney contract"
+    },
+    {
+      "name": "State of California",
+      "type": "organization",
+      "context": "State whose attorney general was prosecuting Indian claims; legislature appropriated $15,000 for suit expenses"
+    },
+    {
+      "name": "Office of Indian Affairs",
+      "type": "organization",
+      "context": "Published magazine article in October 1933 discussing expected $6,000,000 judgment for California Indians"
+    },
+    {
+      "name": "California legislature",
+      "type": "organization",
+      "context": "Appropriated $15,000 for running expenses of California Indian claims suit"
+    },
+    {
+      "name": "Court of Claims case - California Indians",
+      "type": "legal_case",
+      "context": "Suit by California Indians for lands covered in 18 unratified treaties, pending in Court of Claims"
+    },
+    {
+      "name": "Court of Claims case - Blackfeet Indians",
+      "type": "legal_case",
+      "context": "Case resulting in deficiency judgment against Blackfeet Indians of approximately $500,000"
+    },
+    {
+      "name": "Court of Claims case - Ute Indians",
+      "type": "legal_case",
+      "context": "Case brought by Mr. Butler resulting in $3.5 million recovery for Ute Indians of Colorado and Utah"
+    },
+    {
+      "name": "H.R. 7095",
+      "type": "legislation",
+      "context": "Bill with Department report dated April 16, 1934 predetermining $6,000,000 recovery for California Indians"
+    },
+    {
+      "name": "Jurisdictional Act",
+      "type": "legislation",
+      "context": "Act of Congress authorizing California Indians to bring suit in Court of Claims through state attorney general"
+    },
+    {
+      "name": "18 unratified treaties",
+      "type": "legislation",
+      "context": "Treaties covering approximately 75,000,000 acres surrendered by California Indians, never ratified"
+    },
+    {
+      "name": "Oklahoma",
+      "type": "location",
+      "context": "State where Indians were relocated, later found to have oil"
+    },
+    {
+      "name": "San Diego",
+      "type": "location",
+      "context": "Location of prior hearing given to Mission Indians"
+    },
+    {
+      "name": "Washington",
+      "type": "location",
+      "context": "Location of Mr. Butler's office where Mission Indians representatives called in March"
+    },
+    {
+      "name": "San Quentin",
+      "type": "location",
+      "context": "Prison where Robinson, whose family was left off enrollment roll, was incarcerated"
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "context": "State of the Indian claims under review"
+    },
+    {
+      "name": "Colorado",
+      "type": "location",
+      "context": "Location of Ute Indian tribe"
+    },
+    {
+      "name": "Utah",
+      "type": "location",
+      "context": "Location of Ute Indian tribe"
+    },
+    {
+      "name": "Montana",
+      "type": "location",
+      "context": "Referenced by Chairman in comparison to California Indian suffering claims"
+    },
+    {
+      "name": "75,000,000 acres",
+      "type": "acreage_holding",
+      "context": "Land surrendered by California Indians under 18 unratified treaties"
+    },
+    {
+      "name": "California Indian treaty lands",
+      "type": "land_parcel",
+      "context": "Lands covered in 18 unratified treaties, value disputed, fixed at $1.25/acre under current act"
+    },
+    {
+      "name": "Blackfeet treaty lands",
+      "type": "land_parcel",
+      "context": "Lands subject to Blackfeet Court of Claims suit; claimed value was $6.5 million"
+    }
+  ],
+  "events": [
+    {
+      "type": "legislative_hearing",
+      "date": "1934",
+      "location": "California",
+      "description": "Senate subcommittee hearing on Survey of Conditions of Indians in United States, covering California Indian claims"
+    },
+    {
+      "type": "prior_hearing",
+      "date": "1934",
+      "location": "San Diego",
+      "description": "Prior committee hearing given to Mission Indians at San Diego where Chairman suggested attorney general and Indian attorneys cooperate"
+    },
+    {
+      "type": "suit_filed",
+      "date": "partial-1930s",
+      "location": "Court of Claims",
+      "description": "Attorney General Webb filed suit on behalf of California Indians in Court of Claims"
+    },
+    {
+      "type": "amended_petition_filed",
+      "date": "partial-1934",
+      "location": "Court of Claims",
+      "description": "Attorney General Webb filed amended petition including additional thousands of Indians previously omitted"
+    },
+    {
+      "type": "legislature_appropriation",
+      "date": "partial-1930s",
+      "location": "California",
+      "description": "California legislature appropriated $15,000 for running expenses of Indian claims suit; approximately $14,000 remained unspent"
+    },
+    {
+      "type": "magazine_article_published",
+      "date": "1933-10-15",
+      "location": "Washington D.C.",
+      "description": "Office of Indian Affairs published article stating California Indians would obtain judgment of probably $6,000,000 net"
+    },
+    {
+      "type": "Mission_Indians_visit_attorney",
+      "date": "1934-03",
+      "location": "Washington D.C.",
+      "description": "Representatives of Mission Indians of southern California called at Mr. Butler's Washington office to employ him as attorney"
+    },
+    {
+      "type": "Blackfeet_claims_judgment",
+      "date": "partial",
+      "location": "Court of Claims",
+      "description": "Court of Claims case for Blackfeet Indians resulted in deficiency judgment against Indians of approximately $500,000 after offsets"
+    },
+    {
+      "type": "Ute_Indians_recovery",
+      "date": "partial",
+      "location": "Court of Claims",
+      "description": "Mr. Butler recovered $3.5 million for Ute Indians of Colorado and Utah over opposition of Commissioner of Indian Affairs and Secretary of Interior"
+    },
+    {
+      "type": "enrollment_roll_completed",
+      "date": "partial",
+      "location": "California",
+      "description": "Judge Raker completed enrollment roll of California Indians; roll was approved by Secretary as provided in law; time for applications had elapsed"
+    },
+    {
+      "type": "Congress_extended_enrollment",
+      "date": "partial",
+      "location": "United States",
+      "description": "Congress extended enrollment period once for 2 years and again for 6 months for California Indians"
+    },
+    {
+      "type": "attorney_contract_signed",
+      "date": "1928-09",
+      "location": "California",
+      "description": "Henderson and other attorneys entered into contract with California Indians in September 1928"
+    },
+    {
+      "type": "Department_report_issued",
+      "date": "1934-04-16",
+      "location": "Washington D.C.",
+      "description": "Department issued report on bill H.R. 7095 predetermining probable judgment of $6,000,000 for California Indians after set-offs"
+    },
+    {
+      "type": "Commissioner_testimony_against_amendment",
+      "date": "partial-1934",
+      "location": "Congress",
+      "description": "Commissioner of Indian Affairs appeared before congressional committees opposing amendment allowing Indians their own attorneys, stating recovery was predetermined at $6,000,000"
+    },
+    {
+      "type": "Indian_removal_from_treaty_lands",
+      "date": "partial-1800s",
+      "location": "California",
+      "description": "Federal Government moved California Indians off productive lands under unratified treaties, never paying stipulated personal property or land compensation"
+    },
+    {
+      "type": "Blackfeet_claim_representation",
+      "date": "partial",
+      "location": "Court of Claims",
+      "description": "Blackfeet Indians were represented and suit filed for $6.5 million; after offsets deficiency judgment of $500,000 entered against them"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "payment",
+      "amount": "$15,000",
+      "payer": "California legislature",
+      "payee": "Attorney General Webb / California Indian claims suit",
+      "date": "partial-1930s",
+      "description": "Legislature appropriated $15,000 for running expenses of Indian claims suit; approximately $14,000 remained"
+    },
+    {
+      "type": "other",
+      "amount": "$14,000 remaining",
+      "payer": "California state",
+      "payee": "Indian claims suit expenses",
+      "date": "partial-1934",
+      "description": "Remaining balance of $15,000 legislative appropriation available for evidence-gathering"
+    },
+    {
+      "type": "other",
+      "amount": "$6,000,000 (estimated)",
+      "payer": "U.S. Government",
+      "payee": "California Indians",
+      "date": "partial-1934",
+      "description": "Estimated net judgment that California Indians would receive per Office of Indian Affairs and Department report; Indians feared this was predetermined compromise"
+    },
+    {
+      "type": "other",
+      "amount": "$150,000,000 (claimed)",
+      "payer": "U.S. Government",
+      "payee": "California Indians",
+      "date": "partial",
+      "description": "Fabulous sum Indians believed they were entitled to recover in the suit"
+    },
+    {
+      "type": "other",
+      "amount": "$3,500,000",
+      "payer": "U.S. Government",
+      "payee": "Ute Indians of Colorado and Utah",
+      "date": "partial",
+      "description": "Amount recovered by Mr. Butler for Ute Indians in Court of Claims case, largely by defeating government set-offs"
+    },
+    {
+      "type": "other",
+      "amount": "$500,000 (deficiency judgment)",
+      "payer": "Blackfeet Indians",
+      "payee": "U.S. Government",
+      "date": "partial",
+      "description": "Deficiency judgment entered against Blackfeet Indians after their $6.5 million suit resulted in net judgment against them due to offsets"
+    },
+    {
+      "type": "other",
+      "amount": "$6,500,000 (claimed)",
+      "payer": "U.S. Government",
+      "payee": "Blackfeet Indians",
+      "date": "partial",
+      "description": "Amount Blackfeet Indians were represented as entitled to recover; suit filed for this amount"
+    },
+    {
+      "type": "other",
+      "amount": "$1.25 per acre (statutory value)",
+      "payer": "U.S. Government",
+      "payee": "California Indians",
+      "date": "partial",
+      "description": "Value fixed by Congress for California Indian lands under the jurisdictional act; Butler argued this was too low"
+    },
+    {
+      "type": "other",
+      "amount": "4 percent interest",
+      "payer": "U.S. Treasury",
+      "payee": "California Indians",
+      "date": "partial",
+      "description": "Anderson stated judgment money deposited in Treasury would draw 4 percent interest; argued delays were costly"
+    },
+    {
+      "type": "fee",
+      "amount": "unspecified attorney fees",
+      "payer": "California Indians",
+      "payee": "Various attorneys including Henderson, Pemberton, Hanley",
+      "date": "1928 onward",
+      "description": "Attorneys under contract with Indians since September 1928 to represent them in Court of Claims case"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Attorney General Webb",
+      "type": "represents",
+      "object": "California Indians",
+      "context": "Appointed by act of Congress to prosecute California Indian claims in Court of Claims"
+    },
+    {
+      "subject": "Mr. Butler",
+      "type": "represents",
+      "object": "Mission Indians",
+      "context": "Attorney employed by Mission Indians of southern California since approximately March 1934"
+    },
+    {
+      "subject": "Mr. Butler",
+      "type": "represented",
+      "object": "Ute Indians",
+      "context": "Successfully recovered $3.5 million for Ute Indians of Colorado and Utah in Court of Claims"
+    },
+    {
+      "subject": "J. W. Henderson",
+      "type": "represents",
+      "object": "California Indians",
+      "context": "Attorney under contract with California Indians since September 1928"
+    },
+    {
+      "subject": "Mr. Hanley",
+      "type": "employed_by",
+      "object": "California Indian claims",
+      "context": "Attorney employed in case, described by Webb as able and careful; Webb counseled with him most frequently"
+    },
+    {
+      "subject": "Mr. Pemberton",
+      "type": "employed_by",
+      "object": "California Indian claims",
+      "context": "Attorney employed in case alongside Henderson and Hanley"
+    },
+    {
+      "subject": "Mr. Collett",
+      "type": "associated_with",
+      "object": "California Indian attorneys",
+      "context": "Attorneys felt unfortunate they had to associate with Mr. Collett; Webb stated it was unfortunate"
+    },
+    {
+      "subject": "Judge Raker",
+      "type": "created",
+      "object": "California Indian enrollment roll",
+      "context": "Made enrollment roll of California Indians with effort to include everyone"
+    },
+    {
+      "subject": "O. H. Lipps",
+      "type": "employed_by",
+      "object": "Office of Indian Affairs",
+      "context": "Government official present at hearing involved in enrollment matters"
+    },
+    {
+      "subject": "Commissioner of Indian Affairs",
+      "type": "opposed",
+      "object": "Amendment allowing Indians own attorneys",
+      "context": "Testified before congressional committees against amendment, stating recovery was predetermined"
+    },
+    {
+      "subject": "Secretary of the Interior",
+      "type": "opposed",
+      "object": "Ute Indians Court of Claims case",
+      "context": "Stated to congressional committees there was no necessity for Ute Indians to go to Court of Claims"
+    },
+    {
+      "subject": "Indian Board of Cooperation",
+      "type": "related_to",
+      "object": "California Indians",
+      "context": "Organization organized to help Indians secure their rights; involved in attorney contract of September 1928"
+    },
+    {
+      "subject": "Thomas L. Sloan",
+      "type": "advocates_for",
+      "object": "California Indians",
+      "context": "Raised issues about enrollment omissions and suggested Congress extend enrollment period 6 months"
+    },
+    {
+      "subject": "Robinson",
+      "type": "related_to",
+      "object": "California Indian enrollment",
+      "context": "Individual in San Quentin whose family was allegedly left off the enrollment roll"
+    },
+    {
+      "subject": "Attorney General Webb",
+      "type": "related_to",
+      "object": "Mr. Collett",
+      "context": "Webb felt it unfortunate that attorneys were compelled to associate with Mr. Collett"
+    },
+    {
+      "subject": "Attorney General Webb",
+      "type": "counseled_with",
+      "object": "Mr. Hanley",
+      "context": "Webb counseled with Hanley more frequently than other attorneys in the case"
+    },
+    {
+      "subject": "U.S. Federal Government",
+      "type": "removed",
+      "object": "California Indians",
+      "context": "Government moved Indians from productive lands under unratified treaties without payment"
+    },
+    {
+      "subject": "California Indians",
+      "type": "surrendered",
+      "object": "75,000,000 acres",
+      "context": "Voluntarily surrendered lands under 18 unratified treaties, moved to poorer lands without compensation"
+    },
+    {
+      "subject": "Mr. Butler",
+      "type": "opposes",
+      "object": "Attorney General Webb withdrawal",
+      "context": "Butler stated he does not want Webb to withdraw from case but wants Indian-selected attorneys to work alongside him"
+    },
+    {
+      "subject": "The Chairman",
+      "type": "represents",
+      "object": "Senate subcommittee",
+      "context": "Conducting hearing on Survey of Conditions of Indians in United States"
+    },
+    {
+      "subject": "Henderson",
+      "type": "known_to",
+      "object": "Attorney General Webb",
+      "context": "Henderson stated he had known Webb for 30 years and practiced law with him"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "Office of Indian Affairs",
+      "sender_title": "Federal Agency",
+      "recipient": "General public / Indians",
+      "recipient_title": "N/A",
+      "date": "1933-10-15",
+      "subject": "Expected judgment for California Indians",
+      "action_requested": "N/A - informational publication",
+      "outcome": "Published statement that California Indians would obtain judgment of probably $6,000,000 net; Mission Indians used this as evidence of predetermined compromise"
+    },
+    {
+      "sender": "Department of Indian Affairs",
+      "sender_title": "Federal Agency",
+      "recipient": "Congress",
+      "recipient_title": "Legislative body",
+      "date": "1934-04-16",
+      "subject": "Report on bill H.R. 7095 - California Indian claims",
+      "action_requested": "Report on probable judgment amount",
+      "outcome": "Stated probable net judgment after set-offs would be approximately $6,000,000"
+    },
+    {
+      "sender": "Robinson",
+      "sender_title": "Prisoner, San Quentin",
+      "recipient": "Thomas L. Sloan",
+      "recipient_title": "Indian advocate",
+      "date": "partial",
+      "subject": "Omission from California Indian enrollment roll",
+      "action_requested": "Assistance in being included on enrollment roll",
+      "outcome": "Sloan raised issue before committee; Lipps indicated time for enrollment applications had elapsed"
+    },
+    {
+      "sender": "California legislature",
+      "sender_title": "State legislature",
+      "recipient": "Attorney General Webb",
+      "recipient_title": "Attorney General of California",
+      "date": "partial-1930s",
+      "subject": "Appropriation for California Indian claims suit expenses",
+      "action_requested": "Appropriation of $15,000 for running expenses",
+      "outcome": "Appropriation made; approximately $14,000 remaining unspent"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "H.R. 7095",
+      "sponsor": "unknown",
+      "action_type": "reported",
+      "date": "1934-04-16",
+      "vote_count": "",
+      "committee": "unknown",
+      "outcome": "Department issued report predetermining probable $6,000,000 net judgment for California Indians"
+    },
+    {
+      "bill_number": "unknown - jurisdictional act",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "partial-1920s or 1930s",
+      "vote_count": "",
+      "committee": "unknown",
+      "outcome": "Enacted authorizing California Indians to bring suit in Court of Claims through attorney general of California; fixed land value at $1.25 per acre"
+    },
+    {
+      "bill_number": "unknown - amendment to jurisdictional act",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "partial-1934",
+      "vote_count": "",
+      "committee": "Senate Indian Affairs Committee",
+      "outcome": "Proposed to allow California Indians to be represented by attorneys of their own selection; Commissioner of Indian Affairs opposed; not yet passed"
+    },
+    {
+      "bill_number": "unknown - amendment to enabling act",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "partial-1934",
+      "vote_count": "",
+      "committee": "Senate Indian Affairs Committee",
+      "outcome": "Chairman stated committee would recommend passage at next session of Congress to protect filing deadline rights"
+    },
+    {
+      "bill_number": "unknown - Ute Indians jurisdictional act",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "partial",
+      "vote_count": "",
+      "committee": "unknown",
+      "outcome": "Eventually passed giving Butler jurisdiction to take Ute Indian claims to Court of Claims over opposition of Commissioner and Secretary of Interior"
+    },
+    {
+      "bill_number": "unknown - enrollment extension",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "partial",
+      "vote_count": "",
+      "committee": "unknown",
+      "outcome": "Congress extended California Indian enrollment period once for 2 years and again for 6 months; Sloan requested another 6-month extension"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Attorney General Webb",
+      "witness_title": "Attorney General of California",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "California",
+      "date": "1934",
+      "subject": "California Indian claims, status of Court of Claims suit, attorney selection, treaty lands",
+      "key_claims": "Webb stated he asked legislature for $15,000 appropriation for suit expenses and $14,000 remains. He regretted delays and representations made to Indians about fabulous sums. He has no objection to attorneys selected by Indians or court with safeguards, while eliminating state responsibility. He described California treaty Indians as having been moved from productive lands to poorer ones without receiving any payment or personal property stipulated in contracts. Federal agents moved them after representing unratified treaties were in force. Webb counseled freely with employed attorneys including Hanley, found all reputable and experienced. He felt it unfortunate attorneys were associated with Mr. Collett. He stated he does not know what government offsets will be but estimates situation will not be similar to Blackfeet case.",
+      "questioner": "The Chairman, Senator Thomas"
+    },
+    {
+      "witness": "Mr. Butler",
+      "witness_title": "Attorney for Mission Indians of Southern California",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "California",
+      "date": "1934",
+      "subject": "Jurisdictional act amendment, Indian attorney selection, acreage testimony, value of treaty benefits, set-offs",
+      "key_claims": "Butler stated he represents 3,000 Mission Indians not connected with other organizations heard that day. Mission Indians called at his Washington office in March 1934 fearing a predetermined consent judgment of $6,000,000. He pointed to October 15, 1933 Office of Indian Affairs publication and April 16, 1934 Department report on H.R. 7095 predetermining $6,000,000 net recovery. He argued jurisdictional act is not broad enough to do justice to Indians - does not confer jurisdiction to determine value of lands in 18 treaties, limits value to $1.25/acre. He successfully recovered $3.5 million for Ute Indians over Department opposition by killing set-offs. He argued Indians are entitled to attorneys of own selection, that amended petition should be filed asking court to authorize testimony on acreage, value of personal property, and propriety of government set-offs and book credits. He stated he does not want Webb to withdraw but wants to cooperate. He argued Court of Claims is a congressional not constitutional court and has never rendered judgments against government that were too large. California Indians rank much higher than average North American Indians. Money appropriated for Indians often went to somebody else.",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "Miss Alice Piper",
+      "witness_title": "Indian witness / California Indian",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "California",
+      "date": "1934",
+      "subject": "Indian right to select own attorneys",
+      "key_claims": "Stated that Indians should have their own attorneys; it would be fairer and they would feel better. Had prior experience with test case relevant to Indian rights.",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "Thomas L. Sloan",
+      "witness_title": "Indian advocate",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "California",
+      "date": "1934",
+      "subject": "Enrollment omissions, petition coverage gaps, extension of enrollment period",
+      "key_claims": "It took attorney general 46 months to ascertain who his clients were before filing amended petition including several thousand previously omitted Indians. Families still not included in current petition including families driven from lands into desert. Robinson, the only man from the reservation in San Quentin, and his family were left out. Suggested Congress extend enrollment time 6 more months. California Indians have suffered longer and more than any other Indians.",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "Ethan Anderson",
+      "witness_title": "Citizen of California / Indian",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "California",
+      "date": "1934",
+      "subject": "Right to employ own attorney, 3-year filing limit, financial losses from delay",
+      "key_claims": "As citizen of California entitled to full privileges of employing own attorney. Many Indians not satisfied with how case has been handled. Court of Claims act provided only 3 years for claims prosecution. If judgment money had been deposited in Treasury drawing 4 percent interest they would be far ahead; delays causing significant financial loss. Indians spent money employing attorneys and handling organization work.",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "O. H. Lipps",
+      "witness_title": "Government official, Office of Indian Affairs",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "California",
+      "date": "1934",
+      "subject": "Enrollment roll status, omitted families",
+      "key_claims": "Attorney general has nothing to do with making the enrollment roll. Judge Raker who made the roll made every effort to include everyone. Families are being found who were not reached and are being taken up, but time for accepting enrollment applications has elapsed. Final roll was completed and approved by Secretary as provided in law; no way applications may now be received.",
+      "questioner": "Thomas L. Sloan, The Chairman"
+    },
+    {
+      "witness": "J. W. Henderson",
+      "witness_title": "Attorney under contract with California Indians since 1928",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "California",
+      "date": "1934",
+      "subject": "Indian desire for own attorneys, set-offs, attorney contract",
+      "key_claims": "Has traveled the state meeting Indians in groups of 100 and 200 since appointed attorney. Consensus is almost unanimous - Indians want attorneys of their own choice. Compared situation to not wanting the opposing party to appoint your attorney. This feeling is not propaganda - Indians are intelligent and know what white people do with attorneys. Government took all this time to investigate set-offs so plaintiffs deserve reasonable time to independently investigate government set-off statements. Any citizen entitled to have an attorney in whom they have confidence and to change that opinion. If Indians desire to change attorneys under contract since 1928, he will facilitate that change. Known Webb for 30 years and practiced law with him. Indian Board of Cooperation had nothing to do with attorney contract; Indians themselves presented contract to Webb. Official statement furnished to committee that gross judgment and set-offs were predetermined should not have been accepted by attorney general as basis for petition for judgment. California Indians will never receive one-half or even one-third of what is due them unless proper testimony is taken.",
+      "questioner": "The Chairman"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

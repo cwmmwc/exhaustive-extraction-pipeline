@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_027",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "68",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alice Brown",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "4447",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Pat. recorded Jul. 18, 1919, by Home Abstract Co. Martin, So. Dak.",
+    "Sold/Mortgaged": "Mortgaged and sold at Sheriff's Sale",
+    "Buyer": "Sold at Sheriff's Sale on May 3, 1924 for $2003.85 to Lois C. Newkirk; Sheriff's Deed on Default of mortgage to Lois C. Newkirk on April 28, 1925, Recorded May 6, 1925",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Apr. 13, 1918",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Husband: Joseph Brown. On July 18, 1919, Alice Brown and Joseph Brown mortgaged w2 33-37-36 to Bennett County Bank, Martin, So. Dak. for $594.75, Recorded Jul. 21, 1919. On Jan. 15, 1920, mortgaged w2 33-37-36 to McKinney & Allen, Sioux Falls, So. Dak. for $1600.00, Recorded Feb. 9, 1920. On Apr. 12, 1920, McKinney & Allen assigned mortgage dated Jan. 15, 1920 to Lois C. Newkirk, Recorded Jan. 8, 1924. On Jul. 26, 1921, mortgaged w2 33-37-36 to Mary Volz and Charles Volz of Martin, So. Dak. for $7523.00, Recorded Jul. 28, 1921. On Feb. 17, 1920, Bennett County Bank, Martin, So. Dak. signed Satisfaction of Mortgage dated July 18, 1919, Recorded Feb. 17, 1920. Records taken from County Seat.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2354,
+    "output_tokens": 603
+  },
+  "elapsed": 8.2
+}

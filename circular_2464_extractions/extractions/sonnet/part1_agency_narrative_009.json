@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_agency_narrative_009",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "89",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Bell Bonser Harris",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. Dak.",
+    "Allotment number": "143",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded by R. E. Wang August 12, 1918",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "E. A. Heuer by Bell Bonser Harris by deed dated July 1, 1918, for a consideration of $3,000",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612684 issued; west half of section 16, township 38, range 29; receipt for patent signed by allottee on January 23, 1918",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2018,
+    "output_tokens": 322
+  },
+  "elapsed": 4.5
+}

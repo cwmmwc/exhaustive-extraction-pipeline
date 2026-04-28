@@ -1,0 +1,705 @@
+{
+  "entities": [
+    {
+      "name": "Rosebud Indian Agency",
+      "type": "organization",
+      "context": "Indian agency in South Dakota discussed in correspondence about fee patent policy"
+    },
+    {
+      "name": "John A. Buntin",
+      "type": "person",
+      "context": "Superintendent of Rosebud Indian Agency, Rosebud, South Dakota"
+    },
+    {
+      "name": "Rosebud Sioux",
+      "type": "organization",
+      "context": "Indian tribe at Rosebud Indian Agency in South Dakota"
+    },
+    {
+      "name": "Turtle Mountain Indian Agency",
+      "type": "organization",
+      "context": "Indian agency in Belcourt, North Dakota"
+    },
+    {
+      "name": "Henry J. McQuigg",
+      "type": "person",
+      "context": "Superintendent of Turtle Mountain Indian Agency, Belcourt, North Dakota"
+    },
+    {
+      "name": "Lon S. Tolliver",
+      "type": "person",
+      "context": "Agency Farmer at Turtle Mountain Agency, Belcourt, North Dakota"
+    },
+    {
+      "name": "LaPointe Indian Agency",
+      "type": "organization",
+      "context": "Indian agency in Ashland, Wisconsin"
+    },
+    {
+      "name": "P. J. Everest",
+      "type": "person",
+      "context": "Superintendent of LaPointe Indian Agency, Ashland, Wisconsin"
+    },
+    {
+      "name": "Bad River Reservation",
+      "type": "location",
+      "context": "Reservation under LaPointe Indian Agency where certificates of competency were issued"
+    },
+    {
+      "name": "Bad River Chippewa",
+      "type": "organization",
+      "context": "Chippewa Indians living on Bad River Reservation"
+    },
+    {
+      "name": "Nez Perce Indian Agency",
+      "type": "organization",
+      "context": "Indian agency at Lapwai, Idaho"
+    },
+    {
+      "name": "Oscar H. Lipps",
+      "type": "person",
+      "context": "Superintendent of Nez Perce Indian Agency, Lapwai, Idaho"
+    },
+    {
+      "name": "Nez Perces",
+      "type": "organization",
+      "context": "Indian tribe at Nez Perce Indian Agency in Idaho"
+    },
+    {
+      "name": "Fort Peck Indian Agency",
+      "type": "organization",
+      "context": "Indian agency at Poplar, Montana"
+    },
+    {
+      "name": "E. D. Mossman",
+      "type": "person",
+      "context": "Superintendent of Fort Peck Indian Agency, Poplar, Montana"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Federal board in Washington, D.C. that published bulletins on Indian policy"
+    },
+    {
+      "name": "H. D. Lawshe",
+      "type": "person",
+      "context": "Associated with Board of Indian Commissioners, Washington, D.C."
+    },
+    {
+      "name": "Belcourt",
+      "type": "location",
+      "context": "Town in North Dakota near Turtle Mountain Indian Reservation"
+    },
+    {
+      "name": "Dunseith",
+      "type": "location",
+      "context": "Town nearby Turtle Mountain Reservation in North Dakota"
+    },
+    {
+      "name": "Lapwai",
+      "type": "location",
+      "context": "Location of Nez Perce Indian Agency in Idaho"
+    },
+    {
+      "name": "Poplar",
+      "type": "location",
+      "context": "Location of Fort Peck Indian Agency in Montana"
+    },
+    {
+      "name": "Ashland",
+      "type": "location",
+      "context": "Location of LaPointe Indian Agency in Wisconsin"
+    },
+    {
+      "name": "Rosebud",
+      "type": "location",
+      "context": "Location of Rosebud Indian Agency in South Dakota"
+    },
+    {
+      "name": "John B. Belgarde",
+      "type": "person",
+      "context": "Patent-in-fee Indian from Belcourt, N.D., not doing much for support"
+    },
+    {
+      "name": "Alex Gourneau",
+      "type": "person",
+      "context": "Patent-in-fee Indian from Belcourt, N.D., not doing much for support"
+    },
+    {
+      "name": "Peter Belgrade",
+      "type": "person",
+      "context": "Patent-in-fee Indian from Belcourt, N.D., laborer"
+    },
+    {
+      "name": "John R. Wilkie",
+      "type": "person",
+      "context": "Patent-in-fee Indian from Belcourt, N.D., farming and is successful"
+    },
+    {
+      "name": "Robert Azure",
+      "type": "person",
+      "context": "Patent-in-fee Indian from Bisbee, N.D., employee of Railway Company"
+    },
+    {
+      "name": "Alex Brien",
+      "type": "person",
+      "context": "Patent-in-fee Indian from Belcourt, N.D., farming"
+    },
+    {
+      "name": "Claud Azure",
+      "type": "person",
+      "context": "Patent-in-fee Indian from Belcourt, N.D., farming"
+    },
+    {
+      "name": "Fort Belknap Reservation",
+      "type": "location",
+      "context": "Reservation in Montana where Indians hold land in common, noted for poverty"
+    },
+    {
+      "name": "Rocky Boy Indians",
+      "type": "organization",
+      "context": "Tribe in Montana that roamed for sixty years without reservation, became degraded"
+    },
+    {
+      "name": "Rocky Boy Reservation",
+      "type": "location",
+      "context": "Reservation established for Rocky Boy Indians after sixty years of freedom"
+    },
+    {
+      "name": "McDowell",
+      "type": "person",
+      "context": "Person who sent letter with circular concerning effect of granting patents-in-fee to Indians"
+    },
+    {
+      "name": "Coeur d'Alene Indian Agency",
+      "type": "organization",
+      "context": "Indian agency in Idaho mentioned in Board of Indian Commissioners bulletin"
+    },
+    {
+      "name": "Turtle Mountain Indian Reservation",
+      "type": "location",
+      "context": "Reservation in North Dakota consisting of only two townships, too small for 160-acre allotments"
+    },
+    {
+      "name": "Declaration of Policy of 1917",
+      "type": "legislation",
+      "context": "Policy principle referenced by Oscar Lipps as the only practicable approach to releasing Indians from supervision"
+    }
+  ],
+  "events": [
+    {
+      "type": "policy_inquiry",
+      "date": "1921-03-31",
+      "location": "Washington, D.C.",
+      "description": "Letter sent to agency superintendents requesting opinions on the policy of issuing patents-in-fee to Indians, noting more than 17,000 Indians received patents since 1917"
+    },
+    {
+      "type": "policy_inquiry",
+      "date": "1921-03-31",
+      "location": "Turtle Mountain Indian Agency",
+      "description": "Letter received at Turtle Mountain Agency regarding effect of patent-in-fee policy and proper future policy"
+    },
+    {
+      "type": "policy_inquiry",
+      "date": "1921-03-31",
+      "location": "LaPointe Indian Agency, Ashland, Wisconsin",
+      "description": "Letter received at LaPointe Agency regarding issuance of fee title to Indians covering restricted reservation property"
+    },
+    {
+      "type": "policy_inquiry",
+      "date": "1921-03-21",
+      "location": "Nez Perce Indian Agency, Lapwai, Idaho",
+      "description": "Letter received at Nez Perce Agency making inquiry as to the effect upon Indians of issuing patents in fee"
+    },
+    {
+      "type": "publication",
+      "date": "1921-04-30",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners published Bulletin No. 140 on releasing Indians from Government supervision, containing letters from three superintendents"
+    },
+    {
+      "type": "trust_period_end",
+      "date": "1921",
+      "location": "Nez Perce Indian Agency, Idaho",
+      "description": "Nez Perces saw the end of their 25-year trust period last year, with trust period extended ten years for most of the older Indians"
+    },
+    {
+      "type": "allotment",
+      "date": "",
+      "location": "Turtle Mountain Indian Reservation",
+      "description": "Reservation too small for 160-acre allotments; treaty provided for selection of allotments on public domain in western North Dakota and eastern Montana"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1910",
+      "location": "Turtle Mountain Indian Agency",
+      "description": "Beginning of fee patent issuance at Turtle Mountain, with tabulation showing patents from 1910 to 1921"
+    },
+    {
+      "type": "certificates_of_competency",
+      "date": "1913",
+      "location": "Bad River Reservation",
+      "description": "Beginning of issuance of certificates of competency to local Indians at LaPointe Agency/Bad River Reservation"
+    },
+    {
+      "type": "allotment",
+      "date": "",
+      "location": "Fort Peck Indian Agency",
+      "description": "Fort Peck Indians allotted approximately twelve years prior to the writing, with many now owning nothing"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$300 to $1500 per 80-acre tract",
+      "payer": "white buyers",
+      "payee": "Bad River Chippewa Indians",
+      "date": "",
+      "description": "Patented allotments on Bad River Reservation sold by Indians at prices ranging from $300 to $1500 for an 80-acre tract"
+    },
+    {
+      "type": "sale",
+      "amount": "$1000 to $16,000 per quarter section, average $4000",
+      "payer": "buyers",
+      "payee": "Rosebud Sioux Indians",
+      "date": "",
+      "description": "Land covered by patents-in-fee at Rosebud, 85% being 160 acres, valued from $1000 to $16,000 with average of $4000 per quarter"
+    },
+    {
+      "type": "other",
+      "amount": "$17,000",
+      "payer": "",
+      "payee": "",
+      "date": "",
+      "description": "One young Nez Perce man ran through $17,000 leaving him penniless"
+    },
+    {
+      "type": "other",
+      "amount": "$10,000 to $30,000",
+      "payer": "",
+      "payee": "various Indians",
+      "date": "",
+      "description": "Indians at LaPointe Agency who spent $10,000 or $30,000 and are now broke"
+    },
+    {
+      "type": "other",
+      "amount": "approximately $1,000,000",
+      "payer": "",
+      "payee": "aged and minor Indians at Bad River",
+      "date": "",
+      "description": "Aged and dependent Indians and minor children at Bad River have about one million dollars still to their credit in the Superintendent's trust funds"
+    },
+    {
+      "type": "other",
+      "amount": "up to $10,000 per individual, average around $1,000",
+      "payer": "Government trust funds",
+      "payee": "Bad River Indians",
+      "date": "",
+      "description": "Trust funds turned over to Indians with certificates of competency, few amounting to $10,000, about half averaging around $1,000"
+    },
+    {
+      "type": "sale",
+      "amount": "$13,000",
+      "payer": "",
+      "payee": "one Indian (implied)",
+      "date": "",
+      "description": "An Indian at LaPointe Agency formerly spent $13,000 in money derived from sale of timber on 80-acre tract"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "John A. Buntin",
+      "type": "employed_by",
+      "object": "Rosebud Indian Agency",
+      "context": "Superintendent of Rosebud Indian Agency"
+    },
+    {
+      "subject": "Henry J. McQuigg",
+      "type": "employed_by",
+      "object": "Turtle Mountain Indian Agency",
+      "context": "Superintendent of Turtle Mountain Indian Agency"
+    },
+    {
+      "subject": "Lon S. Tolliver",
+      "type": "employed_by",
+      "object": "Turtle Mountain Indian Agency",
+      "context": "Agency Farmer at Turtle Mountain Agency"
+    },
+    {
+      "subject": "P. J. Everest",
+      "type": "employed_by",
+      "object": "LaPointe Indian Agency",
+      "context": "Superintendent of LaPointe Indian Agency"
+    },
+    {
+      "subject": "Oscar H. Lipps",
+      "type": "employed_by",
+      "object": "Nez Perce Indian Agency",
+      "context": "Superintendent of Nez Perce Indian Agency"
+    },
+    {
+      "subject": "E. D. Mossman",
+      "type": "employed_by",
+      "object": "Fort Peck Indian Agency",
+      "context": "Superintendent of Fort Peck Indian Agency"
+    },
+    {
+      "subject": "Robert Azure",
+      "type": "employed_by",
+      "object": "Railway Company",
+      "context": "Patent-in-fee Indian employed by Railway Company in Bisbee, N.D."
+    },
+    {
+      "subject": "Nez Perce full-blood woman",
+      "type": "holds_mortgage_on",
+      "object": "white man's 480-acre farm",
+      "context": "Full-blood Nez Perce woman who does not read, write, or speak English holds a $13,000 mortgage on 480 acres of good farm land belonging to a white man"
+    },
+    {
+      "subject": "Nez Perce full-blood woman",
+      "type": "holds_mortgage_on",
+      "object": "white man's improved orchard tract",
+      "context": "Same woman holds a $1,000 mortgage on an improved orchard tract owned by another white man"
+    },
+    {
+      "subject": "E. D. Mossman",
+      "type": "related_to",
+      "object": "two Indian families",
+      "context": "Fort Peck superintendent states he has two Indian families of his own"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "",
+      "allotment_number": "",
+      "acreage": "160 acres (85% of cases)",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "$1000 to $16,000, average $4000",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "approximately 600 Rosebud Sioux",
+      "allotment_number": "",
+      "acreage": "160 acres typical",
+      "patent_date": "principally during past ten years (1911-1921)",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Turtle Mountain Indians (1,393 patents total)",
+      "allotment_number": "",
+      "acreage": "185,918.76 acres total",
+      "patent_date": "1910-1921",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Bad River Reservation Indians (399 original, 74 heirship)",
+      "allotment_number": "",
+      "acreage": "80 acres per allotment",
+      "patent_date": "1913-1921",
+      "patent_number": "",
+      "mechanism": "certificate_of_competency",
+      "buyer": "",
+      "sale_price": "$300 to $1500 per 80 acres",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Nez Perce Indians (approximately 500 total)",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "17,000+ Indians nationally",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "since 1917",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "",
+      "sender_title": "Office of Indian Affairs or Board of Indian Commissioners",
+      "recipient": "John A. Buntin",
+      "recipient_title": "Superintendent, Rosebud Indian Agency",
+      "date": "1921-03-31",
+      "subject": "Policy on issuing patents-in-fee to Indians; noting 17,000+ patents issued since 1917",
+      "action_requested": "Opinion on policy which should be pursued by the Government in issuing patents-in-fee",
+      "outcome": "Buntin submitted report recommending individual case-by-case evaluation, not rushing issuance"
+    },
+    {
+      "sender": "",
+      "sender_title": "Office of Indian Affairs or Board of Indian Commissioners",
+      "recipient": "Henry J. McQuigg",
+      "recipient_title": "Superintendent, Turtle Mountain Indian Agency",
+      "date": "1921-03-31",
+      "subject": "Effect of policy of granting patents-in-fee to Indians and proper future policy",
+      "action_requested": "Report on effect of patent-in-fee policy",
+      "outcome": "McQuigg responded that Government has been too hasty, recommended careful scrutiny based on character, experience, and intelligence"
+    },
+    {
+      "sender": "",
+      "sender_title": "",
+      "recipient": "Lon S. Tolliver",
+      "recipient_title": "Agency Farmer, Turtle Mountain Agency",
+      "date": "1921-03-25",
+      "subject": "Effect of granting patents-in-fee to Indians",
+      "action_requested": "Report on condition of patent-in-fee Indians",
+      "outcome": "Tolliver reported nearly all patent-in-fee Indians are in worse condition than when they became independent citizens"
+    },
+    {
+      "sender": "",
+      "sender_title": "Office of Indian Affairs or Board of Indian Commissioners",
+      "recipient": "P. J. Everest",
+      "recipient_title": "Superintendent, LaPointe Indian Agency",
+      "date": "1921-03-31",
+      "subject": "Issuance of fee title to Indians covering restricted reservation property",
+      "action_requested": "Report on effect of patent policy",
+      "outcome": "Everest reported on certificate of competency system at Bad River, recommended modified merit system"
+    },
+    {
+      "sender": "",
+      "sender_title": "Office of Indian Affairs or Board of Indian Commissioners",
+      "recipient": "Oscar H. Lipps",
+      "recipient_title": "Superintendent, Nez Perce Indian Agency",
+      "date": "1921-03-21",
+      "subject": "Effect upon Indians of issuing patents in fee for their land",
+      "action_requested": "Report on effect of fee patent policy",
+      "outcome": "Lipps reported about 500 patents issued, younger educated class selling and squandering while older uneducated class holding onto land"
+    },
+    {
+      "sender": "McDowell",
+      "sender_title": "",
+      "recipient": "E. D. Mossman",
+      "recipient_title": "Superintendent, Fort Peck Indian Agency",
+      "date": "",
+      "subject": "Effect of granting patents-in-fee to Indians",
+      "action_requested": "Report on fee patent effects",
+      "outcome": "Mossman reported Indians allotted only twelve years and unable to handle property as a class"
+    },
+    {
+      "sender": "H. D. Lawshe",
+      "sender_title": "Board of Indian Commissioners",
+      "recipient": "",
+      "recipient_title": "",
+      "date": "1921-04-30",
+      "subject": "Bulletin No. 140 - Releasing Indians from Government Supervision",
+      "action_requested": "",
+      "outcome": "Published letters from three superintendents (Nez Perce, Fort Peck, Coeur d'Alene)"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "enacted",
+      "date": "1917",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Declaration of Policy of 1917 referenced as establishing principle for releasing Indians from supervision"
+    },
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "enacted",
+      "date": "",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Law enacted relating to arbitrary issuance of patents-in-fee to Indians of one-half degree of Indian blood or less, which did not apply to Bad River Reservation due to restricted fee patents rather than trust patents"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "John A. Buntin",
+      "witness_title": "Superintendent, Rosebud Indian Agency",
+      "hearing": "",
+      "committee": "",
+      "location": "Rosebud, South Dakota",
+      "date": "1921",
+      "subject": "Policy on issuing patents-in-fee to Indians",
+      "key_claims": "Nine out of ten Indians who received patents sold their land and spent proceeds within one or two years. Nearly all bought cars after selling land. Not more than one in ten purchased teams, farm implements, or made improvements. About 600 out of 5,500 population received patents, principally in past ten years. 85% of patents covered 160 acres valued $1,000-$16,000, average $4,000. About 12-15 Indians still retain allotments. Recommended case-by-case evaluation irrespective of blood status or education. Warned against rushing process and cautioned about creating homeless paupers.",
+      "questioner": ""
+    },
+    {
+      "witness": "Henry J. McQuigg",
+      "witness_title": "Superintendent, Turtle Mountain Indian Agency",
+      "hearing": "",
+      "committee": "",
+      "location": "Belcourt, North Dakota",
+      "date": "1921",
+      "subject": "Effect of patent-in-fee policy on Turtle Mountain Indians",
+      "key_claims": "Government has gone too swiftly in issuance of patents-in-fee. 95% of Indians sold land as soon as they could, often at prices below real value or mortgaged it. Indians who mortgage land become discouraged, default on payments, and lose the land. Civilization should be reckoned in terms of generations. Recommended careful investigation of character and habits, with 20-40 acres held in trust for lifetime. Provided tabulation showing 1,393 patents covering 185,918.76 acres issued 1910-1921. About 3,500 Indians on reservation out of 3,400 enrolled. Allotments located in western North Dakota and eastern Montana because reservation only two townships.",
+      "questioner": ""
+    },
+    {
+      "witness": "Lon S. Tolliver",
+      "witness_title": "Agency Farmer, Turtle Mountain Agency",
+      "hearing": "",
+      "committee": "",
+      "location": "Belcourt, North Dakota",
+      "date": "1921",
+      "subject": "Condition of patent-in-fee Indians",
+      "key_claims": "Indians are being released from federal supervision too rapidly. Their inability to handle business in competition with experienced white men places them at great disadvantage. Nearly all patent-in-fee Indians known to him are in worse condition than when they became independent citizens. Taxes on Indian reservations are necessarily high, exceed land income, making Indians anxious to sell. Recommended modified merit system and holding at least half of valuable allotments in trust for lifetime as home site.",
+      "questioner": ""
+    },
+    {
+      "witness": "P. J. Everest",
+      "witness_title": "Superintendent, LaPointe Indian Agency",
+      "hearing": "",
+      "committee": "",
+      "location": "Ashland, Wisconsin",
+      "date": "1921",
+      "subject": "Certificates of competency and fee patents at Bad River Reservation",
+      "key_claims": "399 original allotments patented through certificates of competency since 1913, plus 74 heirship certificates, totaling 373 certificates. Rate increased from 4 in 1913 to 88 in 1920. Approximately 1,600 allotted Indians on reservation. 98% of those granted certificates sold their land. 80-acre allotments on former virgin forest land sold for $300-$1,500, most under $500. Trust funds also turned over averaging around $1,000. Indian is cheerful loser with no regrets. Modern educated Indians should be turned loose. Aged and dependent class and minors should be protected. About $1 million remains in trust for aged and minor Indians. About 150 Indians employed at lumber company sawmill operating 27 years on reservation.",
+      "questioner": ""
+    },
+    {
+      "witness": "Oscar H. Lipps",
+      "witness_title": "Superintendent, Nez Perce Indian Agency",
+      "hearing": "",
+      "committee": "",
+      "location": "Lapwai, Idaho",
+      "date": "1921",
+      "subject": "Effect of fee patents on Nez Perce Indians",
+      "key_claims": "About 500 fee patents issued to Nez Perces. Prima facie competent (young educated class) first to dispose of lands and squander proceeds. Older uneducated people holding onto lands, buying other lands, even purchasing at land sales in competition with white bidders. Several full-blood Nez Perces hold mortgages on white men's farms. One full-blood woman holds $13,000 mortgage on 480 acres and $1,000 mortgage on orchard tract. One young man spent $17,000. Of 300 fee patents issued last year, estimated 200 owners sold or mortgaged land. 1,400 Indians on reservation, not 50 earning all own living. Nez Perces never received government rations. Recommends superintendents submit lists rather than wholesale patent issuance. Paradox of incompetency of the competent and competency of the incompetent. Three-fourths of Indians are thrifty, sober, law-abiding. Trust period extended ten years for most older Indians. 30,000 acres under irrigation.",
+      "questioner": ""
+    },
+    {
+      "witness": "E. D. Mossman",
+      "witness_title": "Superintendent, Fort Peck Indian Agency",
+      "hearing": "",
+      "committee": "",
+      "location": "Poplar, Montana",
+      "date": "1921",
+      "subject": "Effect of granting patents-in-fee to Fort Peck Indians",
+      "key_claims": "Vital mistakes made in handling Indian question. Opposed to granting citizenship to Indians in bulk. Each reservation and individual case should be decided on own merit. Every family should maintain a homestead. Fort Peck Indians allotted only twelve years ago and large number now own nothing. Only way they can acquire real estate is through inheritance. Referenced Rocky Boy Indians who roamed Montana for sixty years without reservation, became degraded, state petitioned for reservation for them - illustrating that freedom alone does not lead to self-sufficiency. Referenced Fort Belknap reservation where Indians hold land in common and live in severe poverty despite splendid reservation.",
+      "questioner": ""
+    }
+  ],
+  "taxes": [
+    {
+      "taxpayer": "Patent-in-fee Indians generally",
+      "land_description": "Allotments on Indian reservations",
+      "tax_type": "property",
+      "amount": "",
+      "year": "",
+      "status": "delinquent",
+      "county": "",
+      "context": "Taxes on Indian Reservations are necessarily high, taxes on such lands as a rule far exceed its income, making Indians anxious to sell"
+    },
+    {
+      "taxpayer": "Indians who mortgage land",
+      "land_description": "Allotments under Turtle Mountain Agency",
+      "tax_type": "property",
+      "amount": "",
+      "year": "",
+      "status": "delinquent",
+      "county": "",
+      "context": "In no cases has Indian made sincere effort to repay the loan, and as a general rule not even the interest and the taxes are paid"
+    },
+    {
+      "taxpayer": "Nez Perce Indians who hold land",
+      "land_description": "Fee patent lands",
+      "tax_type": "property",
+      "amount": "",
+      "year": "",
+      "status": "paid",
+      "county": "",
+      "context": "Many of them still have their lands and are paying taxes on them"
+    }
+  ],
+  "mortgages": [
+    {
+      "borrower": "white man",
+      "lender": "Nez Perce full-blood woman",
+      "amount": "$13,000",
+      "land_description": "480 acres of good farm land",
+      "acreage": "480",
+      "date": "",
+      "interest_rate": "",
+      "status": "active",
+      "context": "Full-blood Nez Perce woman who does not read or write or speak English holds mortgage on white man's farm"
+    },
+    {
+      "borrower": "another white man",
+      "lender": "Nez Perce full-blood woman",
+      "amount": "$1,000",
+      "land_description": "improved orchard tract",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "active",
+      "context": "Same Nez Perce woman holds mortgage on improved orchard tract owned by another white man"
+    },
+    {
+      "borrower": "various Nez Perce Indians",
+      "lender": "",
+      "amount": "",
+      "land_description": "allotment lands",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "other",
+      "context": "Many of the younger class mortgage their lands but these mortgages are seldom recorded so no definite information available"
+    },
+    {
+      "borrower": "Turtle Mountain Indians",
+      "lender": "",
+      "amount": "",
+      "land_description": "allotment lands",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "default",
+      "context": "In no cases that I know of has the Indian made a sincere effort to repay the loan, and as a general rule not even the interest and the taxes are paid. About 5% of fee patent Indians still holding original allotments."
+    },
+    {
+      "borrower": "Rosebud Sioux Indians",
+      "lender": "",
+      "amount": "",
+      "land_description": "allotments",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "foreclosed",
+      "context": "Approximately 90% of Indians receiving patents-in-fee immediately sold or mortgaged allotments and sold when mortgage became due if not sooner"
+    },
+    {
+      "borrower": "Indians generally (Turtle Mountain context)",
+      "lender": "",
+      "amount": "",
+      "land_description": "allotment lands in western North Dakota and eastern Montana",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "default",
+      "context": "Once an Indian mortgages, chances are he will become discouraged, will default in making payments in full, and will finally lose the land"
+    }
+  ]
+}

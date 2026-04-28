@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_112",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "132",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Kiva Goings, nee Janis",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "3607",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee to her 152.09 acre allotment when it was issued, September 29, 1929, as she did not want to pay taxes; but that they told her at the Indian Agency, if she did not take, the land would be taxed just the same, and sold for taxes, so she accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1920, she sold her allotment to a Mr. Basinger, of Interior, South Dakota, for $1100.00 in cash, and received a house, valued at $1200.00, and three lots, valued at $75.00",
+    "Buyer": "Mr. Basinger, of Interior, South Dakota, for $1100.00 in cash plus a house valued at $1200.00 and three lots valued at $75.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1929",
+    "Gender": "Female",
+    "Age": "31 years old",
+    "Occupation/Income": "her husband works for the United States Government as painter, etc; and that this is their only income",
+    "NOTES": "mentally competent, has good health; husband has good health; two children to support, children have good health; she considers she received a good price for her allotment; did not sell allotment for any debts incurred prior to receiving the patent in fee; has never received any help from the County, State nor the United States Government; sworn March 9, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2318,
+    "output_tokens": 506
+  },
+  "elapsed": 8.6
+}

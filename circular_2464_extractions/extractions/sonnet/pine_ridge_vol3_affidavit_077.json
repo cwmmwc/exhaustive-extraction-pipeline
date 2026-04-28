@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_077",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "103",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Edison Glenn",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Kyle, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "he did not want this patent in fee, as he did not want to pay taxes; that he would not have applied for the patent",
+    "Recorded patent": "he received a notice from the Indian Agency Office, at Pine Ridge that his forced patent in fee was at the Agency, and that he should send in 10 cents to pay the registration of his patent by mail, which he did, and he received it, signing a receipt for same",
+    "Sold/Mortgaged": "in 1920, he sold his place to Charles Guptill, of Interior, South Dakota, for $1900.00\u2014$1500.00 cash, and a team of horses, valued at $400.00",
+    "Buyer": "Charles Guptill, of Interior, South Dakota, for $1900.00\u2014$1500.00 cash, and a team of horses, valued at $400.00",
+    "Tax burden forced sale/Mortgage": "he did not sell his place for any debts incurred prior to receiving the patent in fee",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1929",
+    "Gender": "Male",
+    "Age": "35 years old",
+    "Occupation/Income": "works at common labor; he, his wife, and children have land that they lease, which amounts to about $190.00 a year lease money; and that the work he does and their lease money constitutes their entire income",
+    "NOTES": "mentally competent, health is pretty good; has a wife and five children to support, the family all having good health; allotment described as NW1/4, Sec. 8, T. 40 N., R. 39W., of the 6th P.M., in South Dakota; 160 acre allotment; forced patent; considers he received a pretty good price for his land, received his own figure on it; has never received any help from the County, State nor the United States Government; document number No. 5845; sworn April 29, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2403,
+    "output_tokens": 584
+  },
+  "elapsed": 7.5
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_agency_narrative_008",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "17",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Benjamin Utterback",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2435",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The receipt for the patent was signed February 25, 1918, by the allottee. The patent was recorded July 10, 1918, by the Belvidere State Bank",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Benjamin Utterback and wife conveyed the land by deed to J. E. Utterback for $1.00 and other valuable consideration",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Allottee is deceased. Fee patent No. 612705 issued. Land described as Lot 1, section 1, Lot 1, section 2, and Southwest quarter of the Northwest quarter and Northeast quarter of the Southwest quarter, section 12, township 44, north of range 33. Conveyance dated March 30, 1918.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2051,
+    "output_tokens": 373
+  },
+  "elapsed": 6.1
+}

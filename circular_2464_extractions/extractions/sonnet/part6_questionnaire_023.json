@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_023",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "64",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Thomas Bridgeman",
+    "Tribe/Reservation": "Rosebud Agency",
+    "Post Office Address": "not stated",
+    "Allotment number": "1728",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Well I told several people in the dance hall about this time that those that are physically fit it might be all right but I am not in a condition to make my way.",
+    "Recorded patent": "I got it from the Rosebud Agency",
+    "Sold/Mortgaged": "No, I sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "57",
+    "Occupation/Income": "I farm some and we get some trust funds occasionally.",
+    "NOTES": "Thomas Bridgeman states he did not ask for this patent and that 'any doctor will tell you that in my condition I should not have received one.' He has been crippled for nearly 50 years and is in poor health. Sale price was approximately $1800 cash with no debts in the case. Subscribed and sworn before Jas. W. Cross, Notary Public, commission expires 4-28-32, on April 8, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2272,
+    "output_tokens": 377
+  },
+  "elapsed": 6.9
+}

@@ -1,0 +1,29 @@
+{
+  "document_id": "part12_questionnaire_012b",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "28-29",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "George King",
+    "Tribe/Reservation": "Otoe Agency",
+    "Post Office Address": "Ponca City, Okla.",
+    "Allotment number": "166",
+    "Cancelled": "No",
+    "Refused/Protested": "not stated (field blank on source)",
+    "Recorded patent": "Not by allottee",
+    "Sold/Mortgaged": "All sold",
+    "Buyer": "Miller Brothers of Marland, Oklahoma",
+    "Tax burden forced sale/Mortgage": "No money was received by allottee for this land. Has any land been sold for debt or taxes: No.",
+    "Trust Patent Date": "June 21, 1909",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "69",
+    "Occupation/Income": "Income from lease on 80 acres, $160 per annum. Has $300.00 with income of $160.00 per annum.",
+    "Literate/Illiterate": "Illiterate; signed with thumbprint (per source). Thumbprint is annotated 'His' and 'Mark' on source.",
+    "NOTES": "Poor health. Wife and one daughter are dependents. Appears to have been defrauded of his 40 acres by the Miller Brothers of Marland, Oklahoma. Allottee states he did not know a patent was to be issued, that it was his opinion the land was being sold by the Department, and that no money was paid him by the Miller Brothers. Patent not filed for record by allottee. Document executed November 20, 1928, before Lucy Little, Notary Public, County of Kay, State of Oklahoma; commission expires Aug. 3rd 1931. Witnesses: Leonard Big Goose and Peter C. Little (both of Ponca City, Okla.). BIA file reference: 61391; received Nov 24 1930. Marginalia on source page 1 reads 'no money' (likely later reviewer annotation). Split from bundled record part12_questionnaire_012 on 2026-04-27 based on source page review. Bundled record's claim 'signed with an X mark' was incorrect; source shows a thumbprint. Companion record: part12_questionnaire_012a (Lee Ely).",
+    "Document type": "questionnaire"
+  },
+  "usage": {},
+  "elapsed": 0
+}

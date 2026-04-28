@@ -1,0 +1,33 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_095",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "114",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary McGaag",
+    "Tribe/Reservation": "Shannon County (South Dakota)",
+    "Post Office Address": "Scenic, South Dakota",
+    "Allotment number": "2995",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent to her 320 acre allotment at the time it was issued, because she did not want to pay taxes; but the Indian Agency Office wrote her that her patent was on record, that she would have to pay taxes anyway, so she might just as well take it; that she refused for a long time, but finally accepted it",
+    "Recorded patent": "the Indian Agency Office wrote her that her patent was on record",
+    "Sold/Mortgaged": "deeding it to her daughter, Helena McGaaa, who was then 11 years old; and that she thus saved her land; and that the land is still in the name of said daughter; that the daughter, Helena McGaa, has traded this allotment, which is raw land, for a home, which is improved",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "she refused to mortgage her land along with her husband's; she has kept the taxes paid up all these years on this land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "44 years old",
+    "Occupation/Income": "just receiving a little lease money, and works at house work in homes",
+    "NOTES": "Husband had 640 acres of land and mortgaged all of his; husband died in 1925; deponent received a widow's benefit of about $449.00 in one payment from the United States Government upon husband's death; daughter Helena McGaaa (also spelled Helena McGaa) received the allotment by deed when she was 11 years old and has traded it for an improved home place, to receive deed upon reaching majority; deponent has three children \u2014 two with good health, one with poor health \u2014 all to support; mentally competent, health is good; document subscribed and sworn before a Notary Public on November 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2408,
+    "output_tokens": 555
+  },
+  "elapsed": 8.2,
+  "retry_count": 1
+}

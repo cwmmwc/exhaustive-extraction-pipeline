@@ -1,0 +1,35 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-21",
+      "jurisdiction": "Western Oklahoma",
+      "date": "1935-10-12",
+      "correspondent": "Assist. U.S. Atty.",
+      "correspondent_role": "outgoing",
+      "case_name": "U.S. v. Board of County Commissioners of Caddo Co., Okla.",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Acknowledging letter of Oct. 7, relative to journal entry of judgment; defendants will appeal this case to the Circuit Court of 10th Cir.",
+      "action_type": "appeal",
+      "enclosures": "",
+      "routing_division": "Lands",
+      "routing_date": "1935-10-14",
+      "clerk_initials": "JR",
+      "processed_date": "1935-10-14"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. v. Board of County Commissioners of Caddo Co., Okla.",
+      "file_number": "90-2-5-21",
+      "jurisdiction": "Western Oklahoma",
+      "case_type": "other",
+      "allottee_name": "",
+      "tribe_or_reservation": "",
+      "county": "Caddo"
+    }
+  ],
+  "persons": []
+}

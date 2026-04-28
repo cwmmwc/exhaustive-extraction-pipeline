@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_questionnaire_012",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "32-33",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "not stated",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is heavily damaged/illegible; partial figures visible including what appear to be monetary amounts (7600, 100); notary public commission expires 7/3-9; document signed before notary in State of Oklahoma, County of Oka[?], 1929; allottee signed document in notary's presence",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2417,
+    "output_tokens": 292
+  },
+  "elapsed": 6.5
+}

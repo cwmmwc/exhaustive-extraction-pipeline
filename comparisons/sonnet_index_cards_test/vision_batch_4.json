@@ -1,0 +1,35 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "N. Oklahoma",
+      "date": "1935-03-20",
+      "correspondent": "U.S. Atty.",
+      "correspondent_role": "incoming",
+      "case_name": "U.S. v. Ralph Hughes County Treas., et al",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Advises that they have been holding a term of Court at Vinita, Okla.",
+      "action_type": "acknowledgment",
+      "enclosures": "",
+      "routing_division": "Lands",
+      "routing_date": "1935-03-23",
+      "clerk_initials": "mc",
+      "processed_date": "1935-03-23"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. v. Ralph Hughes County Treas., et al",
+      "file_number": "90-2-5-10",
+      "jurisdiction": "N. Oklahoma",
+      "case_type": "tax_recovery",
+      "allottee_name": "",
+      "tribe_or_reservation": "",
+      "county": ""
+    }
+  ],
+  "persons": []
+}

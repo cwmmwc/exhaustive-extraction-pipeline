@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_005",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "15",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Sarah Douville",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2711",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I told the Superintendent that I did not want the patent at the time when the names were being sent to Washington for the issuance of patents. But he said that we were able to make a living and would be better off with our patents. I did not make a protest after the patent came as I though it no use.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "traded it to my son John Conoyer for his quarter that he got a patent to without asking for it; then sold that for $5000.00 the best I remember",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920, delivered by mail",
+    "Gender": "Female",
+    "Age": "74",
+    "Occupation/Income": "My husband and son farms and I do what I can.",
+    "NOTES": "Traded original allotment quarter to son John Conoyer in exchange for his quarter (which he also received a patent to without asking for it); subsequently sold that quarter for $5000.00. Not in good health lately. Has grown children; a grandchild stays with her as her mother is dead. States she did not ask for the patent and would like the land back; says she is too old to work and has some grandchildren to look after. Sworn before Jas. W. Cross, Notary Public, commission expires 4-28-32, on May 2, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2303,
+    "output_tokens": 462
+  },
+  "elapsed": 6.5
+}

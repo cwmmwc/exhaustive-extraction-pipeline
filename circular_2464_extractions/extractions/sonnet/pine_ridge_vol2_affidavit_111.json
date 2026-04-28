@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_111",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "131",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Martin Shangreau",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Conata, South Dakota",
+    "Allotment number": "3602",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 160 acre allotment, for the reason that he knew it would be hard to pay the taxes, but that he was told if he did not take the patent, and pay the taxes, he would lose the land, and he was advised to take the land by the Indian Agency, at Pine Ridge, and that he acted on this advice",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged it to Harry Wentz, of Rapid City, South Dakota, for $900.00; that he paid the payments on this mortgage until 1923, and then he fell down on it, and Wentz foreclosed on him in 1924",
+    "Buyer": "Harry Wentz, of Rapid City, South Dakota, foreclosed in 1924 for $900.00 mortgage",
+    "Tax burden forced sale/Mortgage": "kept taxes paid up on this land until 1921, when he mortgaged it; he knew it would be hard to pay the taxes; was told if he did not take the patent, and pay the taxes, he would lose the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "41 years old",
+    "Occupation/Income": "ranches for a living, which is his only income",
+    "NOTES": "mentally competent, has pretty good health; has a wife to support, she has good health; has six children to support, the children have good health; wife had never signed the mortgage; it was almost a total loss; has never received any help from the County, State or the United States Government; sworn November 26, 1928, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2302,
+    "output_tokens": 517
+  },
+  "elapsed": 6.4
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_agency_narrative_023",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "40",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ola Didier (Gilbert)",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. D.",
+    "Allotment number": "2914",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded October 13, 1918. The receipt for patent was signed by the allottee by Charles St. John.",
+    "Sold/Mortgaged": "Mortgaged",
+    "Buyer": "Ola and Frank Gilbert mortgaged the land to the Wewela State Bank for $1000, due February 4, 1921; on October 24, 1924, sheriff's certificate of sale was issued to the Wewela State Bank for $1000 on account of the mortgage; sheriff's deed to the Wewela State Bank was issued on December 13, 1928, showing total amount of $1726.49",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612714 issued; Northwest quarter section 34, township 95, north of range 75; receipt for patent signed April 18, 1918; mortgage executed February 4, 1920 by Ola and Frank Gilbert to Wewela State Bank for $1000 due February 4, 1921; sheriff's certificate of sale issued October 24, 1924; sheriff's deed issued December 13, 1928 for total amount of $1726.49",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2094,
+    "output_tokens": 474
+  },
+  "elapsed": 6.0
+}

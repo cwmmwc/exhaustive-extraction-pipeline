@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_012",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "19",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Samuel Allman",
+    "Tribe/Reservation": "Pine Ridge Sioux",
+    "Post Office Address": "Pine Ridge, So. Dak.",
+    "Allotment number": "213",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not apply for, he did not want to accept the patent because he could not keep up the taxes, but he was told that if he did not take it, taxes would be assessed against it and, eventually the land would be sold to satisfy them",
+    "Recorded patent": "does not think he had the patent recorded after he receipted for it",
+    "Sold/Mortgaged": "sold his land for less than he thought it was worth, but that was all he could get, as he tried several parties, but that he had to sell it for he could not keep up the taxes and it would have been sold to satisfy them; he had never mortgaged his land",
+    "Buyer": "H. J. Evans for $1200.00, cash, and none of it was to apply on any old account",
+    "Tax burden forced sale/Mortgage": "he had to sell it for he could not keep up the taxes and it would have been sold to satisfy them",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "43 years old",
+    "Occupation/Income": "farms what he can, does what labor he is able to do",
+    "NOTES": "has asthma slightly, and his left wrist was broken and he is unable to do any heavy work; always broke and owns no land; living on a tract of land owned by his mother; has a wife, eleven children, and his mother depending on him for support; the Government, State or County does not contribute to his support; document sworn October 29, 1928, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2348,
+    "output_tokens": 488
+  },
+  "elapsed": 6.7
+}

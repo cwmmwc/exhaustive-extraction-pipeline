@@ -1,0 +1,33 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_053",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "69",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louis Richard",
+    "Tribe/Reservation": "Shannon County (Pine Ridge area, South Dakota)",
+    "Post Office Address": "Tuthill, So. Dak.",
+    "Allotment number": "4743",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee and refused to take it for some time, but that he was told by the Farmer and the Superintendent that if he did not take the patent and pay the taxes that the land would be sold to pay them",
+    "Recorded patent": "had the patent recorded in Martin, So. Dak. in 1921",
+    "Sold/Mortgaged": "placed a Federal loan of $1000.00 on his land and that he is keeping up the interest and taxes on the loan",
+    "Buyer": "Federal loan of $1000.00",
+    "Tax burden forced sale/Mortgage": "was told by the Farmer and the Superintendent that if he did not take the patent and pay the taxes that the land would be sold to pay them",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "31 years old",
+    "Occupation/Income": "rents his land for 1/3 of the crop, which was $42.00 last year, does farm work and milks his cows for a living",
+    "NOTES": "mentally competent and in good health; has a wife and two children, one of the children is in poor health; has the equity in his land, ten head of horses and 29 head of cattle and owes $200.00 on them; affidavit sworn November 14, 1928, State of South Dakota, County of Shannon",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2241,
+    "output_tokens": 466
+  },
+  "elapsed": 5.8,
+  "retry_count": 1
+}

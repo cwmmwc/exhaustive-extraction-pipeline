@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_074",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "93",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Joseph Harvey",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "2724",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want a patent in fee and refused to accept it for some time, but finally accepted it on the advice of the Farmer, who told him that if he did not take the patent and pay the taxes that he would lose the land",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged the land to Harry Wintzy of Rapid City, So. Dak. for $600.00, that he could not pay the taxes, mortgage or interest so he lost the land by foreclosure",
+    "Buyer": "Mortgaged to Harry Wintzy of Rapid City, South Dakota for $600.00; lost by foreclosure",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes so he mortgaged the land; could not pay the taxes, mortgage or interest so he lost the land by foreclosure",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "30 years old",
+    "Occupation/Income": "makes his living by common labor",
+    "NOTES": "Mentally competent, in good health; has nothing, no home and no place to stay; helps to support his mother; has received no aid from the State, County or Government since his patent was issued. Subscribed and sworn before notary public on December 4, 1928, in Shannon County, South Dakota.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2198,
+    "output_tokens": 449
+  },
+  "elapsed": 5.7
+}

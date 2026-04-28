@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_024",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "65",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Reason Didier",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Yes, all of the taxes since 1924",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "38",
+    "Occupation/Income": "not stated",
+    "NOTES": "Patent was issued while allottee was in the War; he had no chance to make any answer to it as he did not know anything about it until it had been issued. He states the United States should make some kind of settlement for issuing the patent in fee before the end of the trust period. Mortgage and taxes due in August; expects to redeem mortgage and taxes. No one depends on him except himself. He does not live on the allotment but it joins the place he lives on and he uses it. Patent sent in spring of 1928. Document subscribed and sworn before notary May 9, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2293,
+    "output_tokens": 360
+  },
+  "elapsed": 6.0
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_001",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "5",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jesse Ellston (also known as Jasper Ellston, Jasper J. Ellston, Jay Ellston)",
+    "Tribe/Reservation": "Ponca",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Did you ask for that patent? No. Did you make any protest about the patent? No.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I lost it by mortgage.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "When was it foreclosed? Two or three years ago.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "some time in 1918",
+    "Gender": "Male",
+    "Age": "38",
+    "Occupation/Income": "Yes by farming.",
+    "NOTES": "Patent delivered by policeman from the Ponca station at the Bank of Herrick. Allottee states: 'I think they used poor judgment in giving me this patent as I did not care for it like I should.' Also known as Jasper Ellston, Jasper J. Ellston, and Jay Ellston. Has two children. Got a $1500 loan on the place. States no one took advantage of him to have him mortgage the place. Document number references: 245x 241. Notarized May 1, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2252,
+    "output_tokens": 424
+  },
+  "elapsed": 6.4
+}

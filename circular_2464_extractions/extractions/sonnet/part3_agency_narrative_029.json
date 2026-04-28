@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_029",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "72",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louis Deon",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "5001",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Pat. recorded Aug. 9, 1919, by Home Abstract Co, Martin, So. Dak.",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Deeded to C. C. Gates of Nelson, Nebr. by Louis Deon and Julis Deon, his wife, for $5000.00, on July 3, 1919. Recorded July 11, 1919.",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Apr. 13, 1918",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Receipt dated Jul. 1, 1918. Taken from the records at the County Seat. Land described as All of Section 16, T. 39-36. Wife's name: Julis Deon.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2011,
+    "output_tokens": 351
+  },
+  "elapsed": 4.6
+}

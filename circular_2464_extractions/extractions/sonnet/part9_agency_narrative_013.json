@@ -1,0 +1,33 @@
+{
+  "document_id": "part9_agency_narrative_013",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "23",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Arthur Parker",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S.D.",
+    "Allotment number": "3280",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded June 1, 1918",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged by Arthur Parker and wife September 19, 1918, to The Security State Bank, Winner, for $2500; on January 2, 1923, the land was again mortgaged to the State of South Dakota for $3500; on January 25, 1929, Arthur Parker deeded the land to his wife Martha for $1.00 and other valuable consideration, subject to the mortgage of $3500",
+    "Tax burden forced sale/Mortgage": "taxes for 1928 amounting to $145.00 had not been paid at the time the records were viewed; the 1927 and prior taxes are paid",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612781 issued; Southeast quarter section 6, township 98, range 76; receipt for patent signed by the allottee February 13, 1918; mortgage to The Security State Bank of Winner was released January 8, 1923; mortgage to State of South Dakota had been extended from January 1, 1928 to January 1, 1933; wife's name is Martha; document dated JUN 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2156,
+    "output_tokens": 470
+  },
+  "elapsed": 6.8,
+  "retry_count": 1
+}

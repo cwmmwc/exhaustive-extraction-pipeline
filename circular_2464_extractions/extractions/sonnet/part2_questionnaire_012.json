@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_012",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "35",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Benjamin Beauvais",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Mission, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No, but later I had it sent back to Washington when Mr. McGregor was Superintendent here. I think it was about 1924.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, I sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "there must have been about $200 tax still against the land; since I owed some taxes on the land I could not have the patent cancelled",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "48",
+    "Occupation/Income": "By farming and odd jobs",
+    "NOTES": "Received patent by mail at Mission, South Dakota; did not request patent; sent patent back to Washington circa 1924 when Mr. McGregor was Superintendent; told he could not have patent cancelled because he owed taxes on the land; sold land for $3200 with approximately $200 tax against it; purchaser paid cash with no debts settled at time of sale; has seven children; in good health; did not like the patent because it was sent without his asking for it; document number E-484; notarized April 15, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2302,
+    "output_tokens": 427
+  },
+  "elapsed": 6.7
+}

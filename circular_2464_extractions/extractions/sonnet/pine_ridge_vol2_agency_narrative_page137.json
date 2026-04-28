@@ -1,0 +1,29 @@
+{
+  "document_id": "pine_ridge_vol2_agency_narrative_page137",
+  "type": "agency_narrative",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "137",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rosa Bush",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Kyle, S.D.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "issued to you without your application or consent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is a letter from Superintendent E. W. Jermark to Mrs. Rosa Bush, dated October 20, 1926, requesting she come to the office to provide an affidavit before a Notary Public connected with the Indian Service regarding her forced patent. File reference: 5-1142.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {},
+  "elapsed": 0
+}

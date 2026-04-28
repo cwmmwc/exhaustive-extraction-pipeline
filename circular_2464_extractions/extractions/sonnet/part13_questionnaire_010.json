@@ -1,0 +1,33 @@
+{
+  "document_id": "part13_questionnaire_010",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "21-22",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Allen",
+    "Tribe/Reservation": "Pawnee County, Okla.",
+    "Post Office Address": "Pawnee, Okla.",
+    "Allotment number": "90",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes; receipted for: yes",
+    "Sold/Mortgaged": "Mortgaged for $200 then sold the land for $600",
+    "Buyer": "sold to settle debts and mortgage to C. E. Vandervoor, Sr.",
+    "Tax burden forced sale/Mortgage": "It was sold to settle debts and mortgage to C. E. Vandervoor, Sr.; The allottee feels that he was defrauded of his land, by demand for settlement of old debts.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 6, 1917",
+    "Gender": "Male",
+    "Age": "45 years",
+    "Occupation/Income": "Only income is Pawnee Annuity.",
+    "NOTES": "Date and manner of delivery of patent: 1-24-1918, by mail. No property or money accumulated. No inherited land. Wife and two children dependent upon him. Has any of the land been sold for debt or taxes: no. Mortgage not released or foreclosed. Witnesses both of Pawnee, Okla. Notary commission expires Jan. 31, 1929. Document dated November 26, 1928.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2624,
+    "output_tokens": 416
+  },
+  "elapsed": 7.9,
+  "retry_count": 1
+}

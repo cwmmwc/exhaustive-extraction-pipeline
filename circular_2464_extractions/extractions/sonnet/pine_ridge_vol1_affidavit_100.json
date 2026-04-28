@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_100",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "125",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Frank Weber",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Merriman, Nebraska",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "while he did not make application for the patent in fee to his 160 acre allotment when it was issued, April 13, 1918, he was perfectly willing to accept it when it was sent to him; and that he has never regretted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "in 1923, he jointly mortgaged his 160 acre allotment with his brother, Joseph, sister, Julia, and his mother, Emma Weber, latter having 632.16 acres, to the Federal Land Association, of Omaha Nebraska, for the sum of $7000.00; in 1927, he sold his allotment to his father, William Weber, who took over the responsibility of the mortgage against the land, and paying deponent the sum of $960.00 over and above the mortgage against it",
+    "Tax burden forced sale/Mortgage": "he has kept the taxes paid up on his allotment all these years; he did not sell his land for any debts made prior to receiving the patent in fee",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Male",
+    "Age": "37 years old",
+    "Occupation/Income": "he is a truckman, and that his trade is his only income",
+    "NOTES": "Document No. 1353; affidavit sworn April 5, 1929, in Shannon County, South Dakota; mortgage obtained to get money for his father to buy three sections of land, purchased in the name of the father, William Weber; deponent considers he received a good price for his allotment, it being in the sand hills; has never received any aid from the County, State nor the United States Government; married with wife and three children, all in good health; siblings Joseph (brother) and Julia (sister) and mother Emma Weber also involved in mortgage",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2472,
+    "output_tokens": 566
+  },
+  "elapsed": 7.6
+}

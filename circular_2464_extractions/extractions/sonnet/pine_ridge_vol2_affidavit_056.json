@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_056",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "74",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Peter Mesteth",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "2646",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee to his allotment of 160, at the time he got it, but was told that he would have to take it, so he accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "sold 1523 acres to L.D.Bailey, of Oelrichs, South Dakota, for $2600.00, $1800.00 in cash, and $800.00 in consideration on a car trade; in the same year he sold 72 acres to the United States Government for school purposes, receiving $120.00, cash",
+    "Tax burden forced sale/Mortgage": "in 1921, he being one year back in taxes, he sold 1523 acres to L.D.Bailey",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "38 years old",
+    "Occupation/Income": "employed by Holy Rosary Mission School, the year around, farming for them, and that is the only source of his income",
+    "NOTES": "has never received any help from the County or the Government; has a wife and two minor children to support; family has good health; affidavit dated November 17, 1928; document reference 302-763",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2262,
+    "output_tokens": 432
+  },
+  "elapsed": 6.9
+}

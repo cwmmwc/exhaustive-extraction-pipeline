@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_010",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "28",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Enoch W. Raymond, Jr.",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2500",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No. Were you satisfied with the sale? Yes at the time I was but I think the patent should not have been forced upon me.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged and then sold",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Nothing but the mortgage.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "June 1920",
+    "Gender": "Male",
+    "Age": "39",
+    "Occupation/Income": "Farming and labor",
+    "NOTES": "Eight dependents; patent sent to him by mail in June 1920; did not remember signing a receipt for the patent; received $4000.00 in cash for the land; document reference CLll 7/24,94044; notarized May 9, 1929 by Chas. W. Cross, Notary Public, commission expires 4-28-32; allotment also referenced as 2285",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2218,
+    "output_tokens": 353
+  },
+  "elapsed": 6.5
+}

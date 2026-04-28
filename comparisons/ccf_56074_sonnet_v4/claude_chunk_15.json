@@ -1,0 +1,343 @@
+{
+  "entities": [
+    {
+      "name": "Fred E. Perkins",
+      "type": "person",
+      "context": "Superintendent of Seger Indian Agency, Colony, Oklahoma"
+    },
+    {
+      "name": "Seger Indian Agency",
+      "type": "organization",
+      "context": "Indian agency located in Colony, Oklahoma"
+    },
+    {
+      "name": "Colony, Oklahoma",
+      "type": "location",
+      "context": "Location of Seger Indian Agency"
+    },
+    {
+      "name": "Charles T. Coggeshall",
+      "type": "person",
+      "context": "Superintendent of Cantonment Indian Agency, Canton, Oklahoma"
+    },
+    {
+      "name": "Cantonment Indian Agency",
+      "type": "organization",
+      "context": "Indian agency located in Canton, Oklahoma"
+    },
+    {
+      "name": "Canton, Oklahoma",
+      "type": "location",
+      "context": "Location of Cantonment Indian Agency"
+    },
+    {
+      "name": "McClain Badgly",
+      "type": "person",
+      "context": "Lease Clerk at Cantonment Indian Agency, Canton, Oklahoma"
+    },
+    {
+      "name": "Anadarko",
+      "type": "location",
+      "context": "Town in Oklahoma where an allottee purchased a home after selling her allotment"
+    },
+    {
+      "name": "Cheyenne Indians",
+      "type": "organization",
+      "context": "Native American group under Cantonment Agency supervision, referenced implicitly"
+    },
+    {
+      "name": "Arapaho Indians",
+      "type": "organization",
+      "context": "Native American group under Cantonment Agency, referenced by McClain Badgly"
+    },
+    {
+      "name": "unnamed female allottee",
+      "type": "person",
+      "context": "Allottee who received patent to remaining 80 acres, sold for $6,000, deposited $1,500 with office, purchased home in Anadarko"
+    },
+    {
+      "name": "competency commission",
+      "type": "organization",
+      "context": "Commission that examined large numbers of Indians for competency to receive fee patents"
+    },
+    {
+      "name": "The Department",
+      "type": "organization",
+      "context": "Federal department that concurred in recommendation to issue patent to female allottee"
+    },
+    {
+      "name": "Spring 1917",
+      "type": "land_parcel",
+      "context": "Time period referenced for fee patent Indians holding original allotments"
+    },
+    {
+      "name": "fee patent Indians",
+      "type": "acreage_holding",
+      "context": "Approximately 25 fee patent Indians holding original allotments and farming them at Seger Agency"
+    }
+  ],
+  "events": [
+    {
+      "type": "competency_commission_examination",
+      "date": "partial",
+      "location": "unknown",
+      "description": "Competency commission visited and examined a large number of Indians; result described as exceedingly disastrous for each and every Indian who received a patent"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1917-spring",
+      "location": "Seger Indian Agency, Colony, Oklahoma",
+      "description": "Approximately 25 fee patent Indians holding original allotments and farming them; out of total of approximately 220+ allotments, land has been disposed of, some at ridiculously low prices"
+    },
+    {
+      "type": "land_sale",
+      "date": "partial",
+      "location": "Anadarko, Oklahoma",
+      "description": "Female allottee sold remaining 80 acres of her allotment for $6,000, then purchased a home in Anadarko"
+    },
+    {
+      "type": "deposit_of_funds",
+      "date": "partial",
+      "location": "Cantonment Indian Agency",
+      "description": "Female allottee voluntarily deposited $1,500 with the agency office; funds held to her credit"
+    },
+    {
+      "type": "superintendent_tenure_begins",
+      "date": "1920-06-10",
+      "location": "jurisdiction of writer (likely Anadarko area)",
+      "description": "Writer states he has been in charge of the jurisdiction since June 10, 1920, and has recommended only one patent be issued direct during that time"
+    },
+    {
+      "type": "land_leasing",
+      "date": "partial",
+      "location": "Cantonment Indian Agency area",
+      "description": "Majority of Cheyenne and Arapaho Indians have their lands leased; live on rental income and interest; rarely cultivate allotments"
+    },
+    {
+      "type": "school_return",
+      "date": "partial",
+      "location": "reservation",
+      "description": "Indian returning from school full of ambition, but loses motivation within months and falls into traditional ways due to lack of incentives under current government system"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$6,000",
+      "payer": "unknown buyer",
+      "payee": "unnamed female allottee",
+      "date": "post-1920-06-10",
+      "description": "Sale of remaining 80 acres of allotment; described as approximately actual worth of land"
+    },
+    {
+      "type": "other",
+      "amount": "$1,500",
+      "payer": "unnamed female allottee",
+      "payee": "Cantonment Indian Agency office (held to her credit)",
+      "date": "partial",
+      "description": "Voluntary deposit by female allottee with agency office after sale of allotment"
+    },
+    {
+      "type": "sale",
+      "amount": "ridiculously low prices",
+      "payer": "unknown buyers",
+      "payee": "fee patent Indians",
+      "date": "partial",
+      "description": "Out of approximately 220+ total allotments, land disposed of, some at ridiculously low prices immediately upon receipt of patent; contracts to sell likely existing prior to patent issuance"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Fred E. Perkins",
+      "type": "employed_by",
+      "object": "Seger Indian Agency",
+      "context": "Superintendent of Seger Indian Agency, Colony, Oklahoma"
+    },
+    {
+      "subject": "Charles T. Coggeshall",
+      "type": "employed_by",
+      "object": "Cantonment Indian Agency",
+      "context": "Superintendent of Cantonment Indian Agency, Canton, Oklahoma"
+    },
+    {
+      "subject": "McClain Badgly",
+      "type": "employed_by",
+      "object": "Cantonment Indian Agency",
+      "context": "Lease Clerk at Cantonment Indian Agency; lived and worked among Cheyenne and Arapaho Indians for seven years (three as agency farmer, four as lease clerk)"
+    },
+    {
+      "subject": "unnamed female allottee",
+      "type": "related_to",
+      "object": "Cantonment Indian Agency",
+      "context": "Allottee under jurisdiction who received patent to 80 acres, sold land, deposited $1,500 with office"
+    },
+    {
+      "subject": "competency commission",
+      "type": "related_to",
+      "object": "fee patent Indians",
+      "context": "Commission examined large numbers of Indians to determine competency for fee patent issuance, with disastrous results for each Indian who received a patent"
+    },
+    {
+      "subject": "The Department",
+      "type": "related_to",
+      "object": "unnamed female allottee",
+      "context": "Concurred in superintendent's recommendation to issue patent to female allottee for remaining 80 acres"
+    },
+    {
+      "subject": "fee patent Indians",
+      "type": "related_to",
+      "object": "land buyers",
+      "context": "Indians disposed of their land immediately upon receipt of patent, often at ridiculously low prices, with contracts to sell likely existing prior to patent issuance"
+    },
+    {
+      "subject": "McClain Badgly",
+      "type": "related_to",
+      "object": "Cheyenne and Arapaho Indians",
+      "context": "Worked among them for seven years as agency farmer and lease clerk"
+    },
+    {
+      "subject": "restricted Indians",
+      "type": "related_to",
+      "object": "land",
+      "context": "Superintendent believes restricted Indians better off leasing land than working it, but even better to farm own land than lease"
+    },
+    {
+      "subject": "older Indians",
+      "type": "related_to",
+      "object": "younger Indians",
+      "context": "Older non-English speaking Indians need protection even from dealings with their own children and younger Indians"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "unnamed female allottee",
+      "allotment_number": "unknown",
+      "acreage": "80 acres (remaining portion of allotment)",
+      "patent_date": "post-1920-06-10",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "$6,000",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "approximately 25 fee patent Indians (Seger Agency)",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "circa 1917 spring",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "multiple Indians (total approximately 220+)",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "various buyers",
+      "sale_price": "ridiculously low prices",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "patent-in-fee Indians (Cantonment Agency)",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "proceeds used to improve other inherited land interests"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Fred E. Perkins",
+      "sender_title": "Superintendent, Seger Indian Agency",
+      "recipient": "unknown (likely Commissioner of Indian Affairs or investigator)",
+      "recipient_title": "unknown",
+      "date": "circa 1917 or later",
+      "subject": "Fee patent Indians at Seger Agency; land disposition; farming vs. leasing",
+      "action_requested": "unknown",
+      "outcome": "unknown"
+    },
+    {
+      "sender": "Charles T. Coggeshall",
+      "sender_title": "Superintendent, Cantonment Indian Agency",
+      "recipient": "unknown (likely Commissioner of Indian Affairs or investigator)",
+      "recipient_title": "unknown",
+      "date": "post-1920-06-10",
+      "subject": "Fee patents, land disposition, competency, leasing vs. farming at Cantonment Agency; case of female allottee selling 80 acres for $6,000",
+      "action_requested": "Opposition to wholesale fee patent issuance; recommendation each case considered on merits regardless of blood quantum",
+      "outcome": "unknown"
+    },
+    {
+      "sender": "McClain Badgly",
+      "sender_title": "Lease Clerk, Cantonment Indian Agency",
+      "recipient": "unknown (likely Commissioner of Indian Affairs or investigator)",
+      "recipient_title": "unknown",
+      "date": "unknown",
+      "subject": "Conditions of Cheyenne and Arapaho Indians under Cantonment Agency; leasing practices; patent-in-fee outcomes",
+      "action_requested": "unknown",
+      "outcome": "unknown"
+    }
+  ],
+  "legislative_actions": [],
+  "testimony": [
+    {
+      "witness": "Fred E. Perkins",
+      "witness_title": "Superintendent, Seger Indian Agency",
+      "hearing": "unknown investigation or survey",
+      "committee": "unknown",
+      "location": "Colony, Oklahoma",
+      "date": "circa 1917 or later",
+      "subject": "Conditions of fee patent Indians at Seger Agency; land disposition outcomes; leasing vs. farming debate",
+      "key_claims": "About 25 fee patent Indians holding original allotments and farming them at Seger Agency as of Spring 1917. Out of a total of approximately 220+ allotments, most land has been disposed of, some at ridiculously low prices. Indians disposed of land immediately upon receipt of patent, with contracts to sell likely existing prior to patent issuance. Believes restricted Indians better off leasing land than working it, but that farming own land is better than leasing. Attributes problems to Indians getting loans and mortgages on crops up to full value before harvest.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Charles T. Coggeshall",
+      "witness_title": "Superintendent, Cantonment Indian Agency",
+      "hearing": "unknown investigation or survey",
+      "committee": "unknown",
+      "location": "Canton, Oklahoma",
+      "date": "post-1920-06-10",
+      "subject": "Fee patent issuance and outcomes; competency standards; opposition to wholesale patents; specific case of female allottee",
+      "key_claims": "Has been in charge of jurisdiction since June 10, 1920, and recommended only one patent be issued direct in that time. Female allottee sold 80 acres for $6,000 (approximately actual value) and purchased home in Anadarko; deposited $1,500 with office. Opposed to issuing patents wholesale; each case should be considered on merits regardless of blood quantum. Fee patent Indians who disposed of allotments are without exception penniless and dependent on relatives or inherited interests. Competency commission examination results were exceedingly disastrous. Believes practice of issuing fee patents is pernicious. Opposed to turning over property to Indians of one-half or less blood without supervision. Believes Indians of any blood quantum who cannot conduct ordinary business should have restrictions maintained. States younger educated Indians, nine times out of ten, are interested only in having a good time. Older non-English speaking Indians need protection even in dealings with own children.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "McClain Badgly",
+      "witness_title": "Lease Clerk, Cantonment Indian Agency",
+      "hearing": "unknown investigation or survey",
+      "committee": "unknown",
+      "location": "Canton, Oklahoma",
+      "date": "unknown",
+      "subject": "Living and working conditions of Cheyenne and Arapaho Indians; leasing practices; patent-in-fee outcomes; Indian education and incentives",
+      "key_claims": "Has lived and worked among Cheyenne and Arapaho Indians for seven years (three as agency farmer, four as lease clerk). Majority of Indians have their lands leased as only income besides interests. Only a very few live on or cultivate portions of allotments; prefer to live in camps or villages. Lands cultivated are sown to forage crops requiring little labor. Very hard to get Indians to work when they have money to their credit. Condition attributed largely to custom of leasing lands instead of being taught or compelled to farm allotments. Not a single patent-in-fee Indian has retained possession of lands any length of time; most sold as soon as possible. Patent proceeds used to improve other inherited land interests. Believes if Indians reaching majority were given their inheritance unencumbered and made responsible for their own success, they would succeed. States returning school Indians lose ambition within months due to lack of incentives under government system. Indian receives better education and training than average white child; if given proper economic training is as competent as white brother. Blood quantum is not a fair test of competency; education is the only fair and equitable test. Without radical steps, Indians will become more helpless and beyond redemption. All able-bodied Indians better off when required to work.",
+      "questioner": "unknown"
+    }
+  ],
+  "taxes": [],
+  "mortgages": [
+    {
+      "borrower": "restricted Indians (general)",
+      "lender": "unknown lenders",
+      "amount": "full value of crops",
+      "land_description": "allotments under Seger Indian Agency jurisdiction",
+      "acreage": "unknown",
+      "date": "unknown",
+      "interest_rate": "unknown",
+      "status": "active",
+      "context": "Superintendent Perkins states that restricted Indians who farm their own land begin to get loans and have mortgages on crops to their full value when crops are ready to harvest; cited as reason leasing may be preferable despite lower returns"
+    }
+  ]
+}

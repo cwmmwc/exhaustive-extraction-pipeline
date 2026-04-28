@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_039",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "49",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Philip Marshall",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Lead, So. Dak.",
+    "Allotment number": "4527",
+    "Cancelled": "does not know if patent has been canceled",
+    "Refused/Protested": "accepted this patent with protest knowing that taxes would eventually take the land, and that it would have been much better if the patent had lain in trust",
+    "Recorded patent": "on the 18th day of August 1921 he had this patent recorded at Martin, South Dakota by Nita Cozad",
+    "Sold/Mortgaged": "sold this land in fair consideration in order to meet the second loan",
+    "Buyer": "Philip Marshall sold the land to Mr. Bert McAllister of Martin, South Dakota, who undertook to pay the second loan and more taxes amounting to about $1600.00, and that the balance from this sale was about $922.00 of which only $300.00 was paid to him and the balance due him was held by Mr. H. A. Tukey of Omaha, Nebraska, who had the first mortgage on Mr. McAllister's property",
+    "Tax burden forced sale/Mortgage": "the second loan was made in order to pay the first loan including the interest and taxes on land; sold this land in fair consideration in order to meet the second loan; does not know if tax assessments or tax sales have been canceled, or paid assessments refunded",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29th, 1919",
+    "Gender": "Male",
+    "Age": "45 years of age",
+    "Occupation/Income": "working for wages only",
+    "NOTES": "Patent was mailed like an ordinary letter in December 1919 and not receipted for; received two loans from the land covered by his patent; two loans were redeemed; has the second mortgage on Mr. McAllister, who was foreclosed by a sheriff's sale; states he has been defrauded of his land in the sale; Mr. Oliver Walcott of Valentine, Nebraska is looking after his interest but seems unable to do anything on account of the mortgages; Oliver Walcott of Valentine, Nebraska made the loans; four children depending on him for support; mentally and physically sound but very financially poor; state nor government does not help him; document sworn December 1928; notary commission expires April 20th 1930; County of Lawrence, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2638,
+    "output_tokens": 630
+  },
+  "elapsed": 7.4
+}

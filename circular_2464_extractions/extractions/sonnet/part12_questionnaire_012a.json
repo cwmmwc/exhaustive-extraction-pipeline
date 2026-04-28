@@ -1,0 +1,29 @@
+{
+  "document_id": "part12_questionnaire_012a",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "26-27",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lee Ely",
+    "Tribe/Reservation": "Otoe Agency",
+    "Post Office Address": "Ponca City, Okla.",
+    "Allotment number": "206",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Yes, filed for record by allottee in Noble County, Okla.",
+    "Sold/Mortgaged": "Mortgaged for $2000; mortgage foreclosed and redemption expired",
+    "Buyer": "Mortgage held by John Knox; also in settlement of old debts. John Knox is still living, making his home in California.",
+    "Tax burden forced sale/Mortgage": "Mortgage foreclosed and redemption expired. The price for which land was mortgaged was not the actual value of the land. Allottee says the land could have been sold for more than it was mortgaged, but he did not do so.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "48",
+    "Occupation/Income": "Income from inherited land, about $25.00 per year. No contributions from any source.",
+    "Literate/Illiterate": "Signed with written signature",
+    "NOTES": "Good health, no money accumulated. Wife is dependent upon him. Patent receipted for; accepted with protest. Document executed November 22, 1928, before Lucy Little, Notary Public, County of Kay, State of Oklahoma; commission expires Aug. 3rd 1931. Witnesses: Peter C. Little and Marion L. Tegnier (both of Ponca City, Okla.). BIA file reference: 61391; received Nov 24 1930. Marginalia on source page 1 reads 'M. fored. red. exb.' (likely later reviewer annotation). Split from bundled record part12_questionnaire_012 on 2026-04-27 based on source page review. Companion record: part12_questionnaire_012b (George King).",
+    "Document type": "questionnaire"
+  },
+  "usage": {},
+  "elapsed": 0
+}

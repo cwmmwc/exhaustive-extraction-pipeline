@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_093",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "112",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Stella Dora Bell\u2014nee Twiss",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "710 Main Street, Chadron, Nebraska",
+    "Allotment number": "2924",
+    "Cancelled": "she has requested the Indian Office, at Pine Ridge, to ask the Indian Office, of Washington, to cancel this patent in fee; that the request has been sent into Washington",
+    "Refused/Protested": "did not want her patent in fee to her 160 acre allotment, when it was issued, September 29, 1919, for she did not want to pay taxes on it; but she was informed by the Indian Agency, at Pine Ridge, that, if she did not take the patent and pay the taxes, it would be assessed for taxes at any rate, for which it would later be sold; so she accepted the patent to her allotment",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "it is still held in her own name\u2014i.e., Stella Dora Twiss, her maiden name",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "she has never paid any taxes on this allotment, although she has received tax bills",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "31 years old",
+    "Occupation/Income": "her husband drives a truck for an elevator company; and this constitutes his only source of income",
+    "NOTES": "mentally competent; has excellent health; husband has good health and supports her and their three minor children, who have good health; her father farms the allotment but she does not receive any lease money from him for the use of her farm; allotment is otherwise clear of all debt; has never received any help from the State, County nor the United States Government; allotment is 160 acres",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2366,
+    "output_tokens": 512
+  },
+  "elapsed": 7.1
+}

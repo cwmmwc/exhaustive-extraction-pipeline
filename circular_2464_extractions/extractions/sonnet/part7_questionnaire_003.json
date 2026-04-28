@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_003",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "9",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Joseph Larvie",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2180",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "There were no debts settled in the transaction",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1919",
+    "Gender": "Male",
+    "Age": "36",
+    "Occupation/Income": "Farming",
+    "NOTES": "Satisfied with the sale; cash deal; sold for $5600.00; has three children; did not ask for the patent; states 'This patent was issued me too soon and I should like to get the land back if there is any chance'; received patent from the farmer at Black Pipe; does not remember signing a receipt; subscribed and sworn June 4, 1929; notary commission expires 4-28-32",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2191,
+    "output_tokens": 317
+  },
+  "elapsed": 4.1
+}

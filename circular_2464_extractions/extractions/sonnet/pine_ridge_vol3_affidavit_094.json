@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_094",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "121",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Angelique Howe",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Martin, South Dakota",
+    "Allotment number": "7044",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 320 acre allotment when she got it, but was advised by the Indian Agency that she would have to take it, so she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged; the Howes' signed the mortgage papers in favor of the Bank, the Bank went broke, and Mr. Howe did not get any money from the Bank on this mortgage; and, the Bank was holding a note against him for some money he had borrowed to buy cattle, so that the Howes' lost all they had\u2014the home place, Mrs. Howe's allotment of 320 acres and the cattle\u2014to the Bank of Martin, South Dakota",
+    "Buyer": "Bank of Martin, South Dakota (foreclosed)",
+    "Tax burden forced sale/Mortgage": "they got behind in the payment on that, and the Bank of Martin, South Dakota, told Mr. Howe that they would loan him the money to finish paying for his home place, if he would secure it by the 320 acre allotment of his wife",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "42 years old",
+    "Occupation/Income": "family is supported by her husband, whose health is good, and who is a clerk in a store, at Martin, South Dakota, this being the only source of his income",
+    "NOTES": "Deponent has five minor children whose health is good; husband's health is good; husband purchased a half section home place, got behind on payments, mortgaged wife's 320-acre allotment to Bank of Martin to finish paying for home place, Bank went broke and husband received no money on the mortgage; Bank also held a note against husband for money borrowed to buy cattle; Howes lost home place, allotment, and cattle to Bank of Martin, South Dakota; deponent has never received any help from the County or Government; affidavit sworn November 19, 1928; document number No. 7044",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2365,
+    "output_tokens": 601
+  },
+  "elapsed": 7.6
+}

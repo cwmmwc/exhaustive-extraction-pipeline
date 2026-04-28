@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_affidavit_008",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "75",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Richard No.2",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Tuthill, South Dakota",
+    "Allotment number": "4693",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his allotment, on account of not wanting to pay taxes, but that he was told by the Indian Agency that he would have the taxes to pay at any rate, so he took it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "sold 320 acres for $4000.00 Cash to one Mr. Rusho, of Winner, South Dakota; sold James Cozet 160 acres, he promising to pay $800.00 for this purchase, but that Mr. Cozet has never paid one dollar on this purchase",
+    "Tax burden forced sale/Mortgage": "did not want his patent to his allotment, on account of not wanting to pay taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "41 years old",
+    "Occupation/Income": "what he receives from Mr. Tom Linn, who rents his allotment, and who also hires him as a laborer",
+    "NOTES": "mentally incompetent; health is good except he has rheumatism in the legs; has a wife and three minor children to support; wife is also bothered with rheumatism; children are well; had 640 acres in original allotment; sold 320 acres to Mr. Rusho of Winner, SD for $4000.00 cash; sold 160 acres to James Cozet for $800.00 promised but never paid; retains 160 acres with home on it, no debt or taxes against home quarter; has never received any help from the County or United States Government; County of Shannon, State of South Dakota; subscribed and sworn November 14, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2320,
+    "output_tokens": 533
+  },
+  "elapsed": 7.0
+}

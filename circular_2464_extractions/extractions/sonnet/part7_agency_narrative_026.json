@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_agency_narrative_026",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "57",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Thomas Wright",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2357",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded December 17, 1923, by the Farmer's State Bank, at Carter",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Wright and his wife mortgaged the land to the Farmers State Bank at Carter for $300 on September 5, 1923; Wright and his wife conveyed the land by deed to George Smith on January 23, 1924",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739708 issued; land described as South half of Southeast quarter, section 26, township 103, and Lots 9, 10, 11, 12, and 13, section 25, and Lots 0 and 9, north of range 77; receipt for patent signed by allottee April 2, 1920; wife joined in mortgage and deed conveyance",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2074,
+    "output_tokens": 389
+  },
+  "elapsed": 7.5
+}

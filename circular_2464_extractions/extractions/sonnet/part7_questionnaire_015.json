@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_015",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "41",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Philip Conoyer (deceased); Sarah Douville (heir/deponent)",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2317",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Not to the best of my knowledge",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, I sold it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Male (Philip Conoyer); Female (Sarah Douville)",
+    "Age": "Sarah Douville, age 74",
+    "Occupation/Income": "My husband and son farms and I do what I can",
+    "NOTES": "Philip Conoyer is deceased; he received the patent in 1920 and died the same year. Sarah Douville is his mother and heir. She sold the land for $6000.00 cash. She is keeping a grandchild whose mother is dead. Sarah Douville states her health is 'Not so good this year.' Notarized before Jas. W. Cross, Notary Public, May 2, 1929; commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2180,
+    "output_tokens": 376
+  },
+  "elapsed": 6.3
+}

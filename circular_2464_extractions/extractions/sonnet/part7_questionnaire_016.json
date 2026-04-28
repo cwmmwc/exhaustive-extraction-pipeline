@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_016",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "46",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Dillon (widow of William McClosky or Dillon, Dec'd)",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "I support them with trust funds and raise garden chickens and so forth",
+    "NOTES": "Document is fragmentary \u2014 only partial pages visible. Husband is William McClosky or Dillon, deceased. Has two surviving children; two girls died since husband's death. Obtained credit at a store in Colome (name unknown), husband would go get the things. States she is not in good health. States 'I think we did not get enough money for this land and want the Government to look into it and see if there is some way to help me.' Subscribed and sworn before notary public June 5, 1929; notary commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2107,
+    "output_tokens": 371
+  },
+  "elapsed": 6.4
+}

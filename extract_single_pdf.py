@@ -228,8 +228,13 @@ def extract_full_text(pdf_path: str) -> str:
     return text
 
 
-def chunk_text(text: str, chunk_size: int = 40000, overlap: int = 5000) -> list:
-    """Split text into overlapping chunks."""
+def chunk_text(text: str, chunk_size: int = 40000, overlap: int = None) -> list:
+    """Split text into overlapping chunks. Overlap defaults to 12.5% of chunk size."""
+    if overlap is None:
+        overlap = max(500, chunk_size // 8)
+    # Overlap must be less than chunk size to avoid infinite loops
+    if overlap >= chunk_size:
+        overlap = chunk_size // 4
     chunks = []
     start = 0
     while start < len(text):
@@ -252,10 +257,225 @@ def merge_extractions(extractions: list) -> dict:
     return merged
 
 
+def _build_prompt_affidavit(chunk: str) -> str:
+    """Build the affidavit extraction prompt for Circular 2464 and similar sworn depositions.
+
+    These documents contain multiple affidavits per chunk. Each affidavit is a sworn
+    statement by one allottee about their fee patent experience. The format varies:
+    - Pine Ridge (1928): narrative paragraphs starting with "Deponent further states..."
+    - Kiowa (1928-1929): numbered questions 1-13
+    Both contain the same core information: who, what allotment, whether they consented,
+    what happened to the land, who bought it, for how much, and what their circumstances are.
+
+    Extract ONE record per affidavit. Link all information about one person together.
+    """
+    return f"""This text contains sworn affidavits by Native American allottees about their fee patent experiences. Each affidavit is one person's testimony under oath.
+
+Extract ONE JSON record per affidavit. Each record should capture everything that person said.
+
+Return a JSON object with this key:
+
+{{
+  "affidavits": [
+    {{
+      "name": "full name of the deponent/allottee",
+      "age": "age at time of affidavit",
+      "gender": "male or female",
+      "post_office": "address given",
+      "allotment_number": "allotment number",
+      "acreage": "size of allotment in acres",
+      "trust_patent_date": "date trust patent was issued",
+      "fee_patent_date": "date fee patent was issued",
+      "consent": "did they want the patent? quote their words",
+      "how_patent_received": "how was the patent delivered or received",
+      "patent_recorded": "did they record the patent? where? who recorded it?",
+      "sold": "was the land sold? to whom? for how much?",
+      "mortgaged": "was the land mortgaged? to whom? for how much? terms?",
+      "tax_burden": "were taxes a factor? details",
+      "patent_cancelled": "was the patent cancelled? under what authority?",
+      "defrauded": "does the allottee believe they were defrauded?",
+      "dependents": "family members depending on the allottee",
+      "health": "health status of allottee and family",
+      "occupation": "source of income",
+      "government_aid": "any aid from county, state, or federal government?",
+      "notes": "any other significant details"
+    }}
+  ]
+}}
+
+IMPORTANT: Extract EVERY affidavit in this text as a separate record. Each deponent/allottee gets their own record. Do not merge multiple people into one record. Quote the allottee's own words for the consent field when possible.
+
+Look for these markers of a new affidavit:
+- "being first duly sworn" or "on oath deposes and says"
+- A new name followed by age and post office address
+- "Subscribed and sworn to before me"
+- Numbered markers like "No. 63" or "No. 214" — these ARE the allotment numbers. Use them as the allotment_number field.
+- If the text says "the number of his/her allotment is XXX", use that number.
+- If neither appears, look for the nearest "No. XXX" marker above or below the deponent's name.
+
+DOCUMENT TEXT:
+{chunk}
+
+Return ONLY valid JSON, no markdown fencing, no commentary:"""
+
+
+def _build_prompt_affidavit_targeted(chunk: str) -> str:
+    """Build the three-step targeted affidavit extraction prompt.
+
+    This prompt instructs the model to work in three explicit steps:
+    1. Find all allotment numbers and their positions
+    2. Find deponent names associated with each allotment
+    3. Extract detailed fields per affidavit
+
+    Designed to improve Kimi's allotment number capture by making the
+    identification step explicit rather than implicit.
+    """
+    return f"""You are extracting structured records from an archival document containing sworn affidavits given by Native American allottees about fee patents they received in the 1910s and 1920s. Each affidavit has a consistent structure that you will extract step by step.
+
+STEP 1: FIND ALLOTMENT NUMBERS
+Scan the entire text for every occurrence of "No. XXXX" where XXXX is a number. These are allotment numbers. List every one you find along with its position in the text (approximate character offset). Do not extract anything else yet. Example output for this step:
+- "No. 1859" at position 24
+- "No. 1860" at position 3201
+- "No. 1861" at position 6140
+
+If you find "No." followed by a number inside a phrase like "See answer to No. 4" or "referring to No. 7", note it but mark it as "reference only, not an allotment number."
+
+STEP 2: FIND DEPONENT NAMES
+For each allotment number from Step 1 (excluding reference-only ones), look at the text starting from that position and find the deponent. The deponent is the person introduced by one of these patterns:
+- "[Name], being first duly sworn"
+- "[Name] being first duly sworn"
+- "personally appeared [Name]" or "personally came [Name]"
+- For Q&A format: the deponent's name appears before "being first duly sworn" or in "Mr. [Name] being first duly sworn"
+
+For each allotment, record: allotment number, deponent name, starting character offset of their affidavit, ending character offset (where the next allotment begins or the text ends).
+
+STEP 3: EXTRACT FIELDS PER AFFIDAVIT
+For each (allotment number, deponent) pair from Step 2, extract the following fields from the text span between the offsets. Use only text that appears within that span:
+
+- allotment_number: from Step 1
+- deponent_name: from Step 2
+- age: the age stated in the affidavit ("is X years old")
+- post_office: the deponent's post office address
+- patent_date: the date the fee patent was issued (if stated)
+- acres: the allotment size in acres (if stated, usually 160, 320, or 640)
+- consent_language: what the deponent says about accepting the patent. Extract the actual quoted or near-quoted language about whether they wanted it, were advised to take it, protested it, etc. This is the most important field — capture it in the deponent's own words when possible.
+- outcome: what happened to the land. Sold to whom, for how much, mortgaged to whom, taxes paid or not, foreclosed, etc. Multiple sentences allowed.
+- family: who the deponent has to support (wife, children, other dependents).
+- health: mental and physical health as stated.
+- income_source: how the deponent earns a living.
+- government_aid: whether they received aid from county, state, or federal government.
+- notary_name: the notary public who witnessed the affidavit.
+- deposition_date: the date of the affidavit.
+
+If a field is not present in the span, leave it as null. Do not invent values. Do not fill in information from other affidavits.
+
+OUTPUT FORMAT:
+Return a JSON object with a single key "affidavits" whose value is an array of objects, one per (allotment, deponent) pair. Each object contains all the fields above.
+
+Example:
+{{
+  "affidavits": [
+    {{
+      "allotment_number": "1859",
+      "deponent_name": "Louis Mosseau",
+      "age": "34",
+      "post_office": "Allen, South Dakota",
+      "patent_date": "September 1919",
+      "acres": "160",
+      "consent_language": "did not want his patent in fee to his 160 acre allotment when it was issued, but he was informed by the Indian Agency that, if he did not accept the patent, it would be taxed, and finally sold for taxes, so he took it",
+      "outcome": "sold his place early in 1920 to William Losey of Allen, South Dakota, for $1600 cash; considers this was a poor price",
+      "family": "wife with poor health from appendicitis, four children",
+      "health": "34 years old, mentally competent, good health",
+      "income_source": "farms his wife's land and works for other farmers",
+      "government_aid": "never received any aid from County, State, or United States Government",
+      "notary_name": "Mark Marston",
+      "deposition_date": "December 11, 1928"
+    }}
+  ]
+}}
+
+Extract all affidavits in this chunk. Do not skip any. Do not summarize. If the chunk contains 5 affidavits, return 5 objects. If it contains 1, return 1.
+
+DOCUMENT TEXT:
+{chunk}
+
+Return ONLY valid JSON, no markdown fencing, no commentary:"""
+
+
+def _build_prompt_affidavit_targeted_v2(chunk: str) -> str:
+    """Single-pass targeted affidavit prompt with allotment-number priority.
+
+    Revision of the three-step prompt. The original triggered Kimi's reasoning
+    mode via RC GenAI, causing 6/7 chunks to time out with empty SSE responses.
+    This version preserves the allotment-number emphasis as a field-importance
+    directive rather than a procedural step, avoiding chain-of-thought triggers.
+    """
+    return f"""Respond with valid JSON only. Do not explain your reasoning. Do not describe your process. Do not output any text before or after the JSON object.
+
+You are extracting sworn affidavits from a historical document about Native American allottees and fee patents issued in the 1910s and 1920s.
+
+ALLOTMENT NUMBER IS THE MOST CRITICAL FIELD. Every affidavit in this text is associated with an allotment number marked as "No. XXXX" (e.g., "No. 18", "No. 85", "No. 1859"). Every extracted record MUST include the specific allotment number visible in the text. If you see "No." followed by a number inside a phrase like "See answer to No. 4" or "referring to No. 7", that is a cross-reference, not an allotment number — do not extract it as a separate record.
+
+For each affidavit, extract these fields:
+
+- allotment_number: the "No. XXXX" marker associated with this deponent (REQUIRED — do not leave blank)
+- deponent_name: full name of the person giving the affidavit
+- age: age stated ("is X years old")
+- post_office: deponent's post office address
+- patent_date: date the fee patent was issued, if stated
+- acres: allotment size in acres (usually 160, 320, or 640)
+- consent_language: what the deponent says about accepting the patent — capture the deponent's own words when possible. This is the most important descriptive field. Did they want it? Were they advised to take it? Did they protest?
+- outcome: what happened to the land — sold to whom, for how much, mortgaged, taxes, foreclosed. Multiple sentences allowed.
+- family: dependents (wife, children, others)
+- health: mental and physical health as stated
+- income_source: how the deponent earns a living
+- government_aid: any aid from county, state, or federal government
+- notary_name: the notary public who witnessed the affidavit
+- deposition_date: date of the affidavit
+
+If a field is not present, use null. Do not invent values. Do not use information from other affidavits.
+
+Return a JSON object with a single key "affidavits" containing an array of objects:
+
+{{
+  "affidavits": [
+    {{
+      "allotment_number": "1859",
+      "deponent_name": "Louis Mosseau",
+      "age": "34",
+      "post_office": "Allen, South Dakota",
+      "patent_date": "September 1919",
+      "acres": "160",
+      "consent_language": "did not want his patent in fee to his 160 acre allotment when it was issued, but he was informed by the Indian Agency that, if he did not accept the patent, it would be taxed, and finally sold for taxes, so he took it",
+      "outcome": "sold his place early in 1920 to William Losey of Allen, South Dakota, for $1600 cash; considers this was a poor price",
+      "family": "wife with poor health from appendicitis, four children",
+      "health": "34 years old, mentally competent, good health",
+      "income_source": "farms his wife's land and works for other farmers",
+      "government_aid": "never received any aid from County, State, or United States Government",
+      "notary_name": "Mark Marston",
+      "deposition_date": "December 11, 1928"
+    }}
+  ]
+}}
+
+Extract all affidavits in this chunk. Do not skip any. Do not summarize. If the chunk contains 5 affidavits, return 5 objects. If it contains 1, return 1.
+
+DOCUMENT TEXT:
+{chunk}"""
+
+
 def build_prompt(chunk: str, version: str = "v4") -> str:
-    """Build the extraction prompt. v4 adds testimony, taxes, and mortgages."""
+    """Build the extraction prompt. v3=7 types, v4=10 types (verbose), v5=10 types (slim)."""
     if version == "v3":
         return _build_prompt_v3(chunk)
+    elif version == "affidavit":
+        return _build_prompt_affidavit(chunk)
+    elif version == "affidavit-targeted":
+        return _build_prompt_affidavit_targeted(chunk)
+    elif version == "affidavit-targeted-v2":
+        return _build_prompt_affidavit_targeted_v2(chunk)
+    elif version == "v5":
+        return _build_prompt_v5(chunk)
     return _build_prompt_v4(chunk)
 
 
@@ -289,6 +509,59 @@ Return a single JSON object with these keys:
 }}
 
 Extract EVERY entity, event, transaction, relationship, fee patent, correspondence record, and legislative action mentioned. Be thorough — missing data is worse than extra data.
+
+DOCUMENT TEXT:
+{chunk}
+
+Return ONLY valid JSON, no markdown fencing, no commentary:"""
+
+
+def _build_prompt_v5(chunk: str) -> str:
+    """Build the v5 extraction prompt — all 10 types with minimal overhead.
+
+    v4 degraded Kimi's output by ~6% because the longer prompt (extra categories +
+    extra instruction text) consumed context that Kimi needed for document content.
+    v5 keeps all 10 categories but trims the testimony/taxes/mortgages templates
+    and removes the extra instruction sentences. Goal: v3's entity density + v4's
+    structured dispossession categories.
+    """
+    return f"""Extract ALL structured information from this historical document text.
+Return a single JSON object with these keys:
+
+{{
+  "entities": [
+    {{"name": "...", "type": "person|organization|location|land_parcel|legal_case|legislation|acreage_holding", "context": "brief description"}}
+  ],
+  "events": [
+    {{"type": "...", "date": "YYYY-MM-DD or partial", "location": "...", "description": "..."}}
+  ],
+  "financial_transactions": [
+    {{"type": "sale|lease|payment|fee|other", "amount": "...", "payer": "...", "payee": "...", "date": "...", "description": "..."}}
+  ],
+  "relationships": [
+    {{"subject": "...", "type": "represented|employed_by|sold_to|bought_from|related_to|...", "object": "...", "context": "..."}}
+  ],
+  "fee_patents": [
+    {{"allottee_name": "...", "allotment_number": "...", "acreage": "...", "patent_date": "...", "patent_number": "...", "mechanism": "private_bill|administrative|application|certificate_of_competency", "buyer": "...", "sale_price": "...", "attorney": "...", "mortgage": "..."}}
+  ],
+  "correspondence": [
+    {{"sender": "...", "sender_title": "...", "recipient": "...", "recipient_title": "...", "date": "...", "subject": "...", "action_requested": "...", "outcome": "..."}}
+  ],
+  "legislative_actions": [
+    {{"bill_number": "...", "sponsor": "...", "action_type": "introduced|reported|amended|passed|vetoed|enacted", "date": "...", "vote_count": "...", "committee": "...", "outcome": "..."}}
+  ],
+  "testimony": [
+    {{"witness": "...", "date": "...", "subject": "...", "key_claims": "..."}}
+  ],
+  "taxes": [
+    {{"taxpayer": "...", "amount": "...", "tax_type": "...", "status": "...", "context": "..."}}
+  ],
+  "mortgages": [
+    {{"borrower": "...", "lender": "...", "amount": "...", "date": "...", "status": "...", "context": "..."}}
+  ]
+}}
+
+Extract EVERY entity, event, transaction, relationship, fee patent, correspondence record, legislative action, testimony, tax record, and mortgage mentioned. Be thorough — missing data is worse than extra data.
 
 DOCUMENT TEXT:
 {chunk}
@@ -410,7 +683,7 @@ def run_vllm(prompt: str, model: str, base_url: str, api_key: str = None) -> dic
     payload = json.dumps({
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
-        "max_tokens": 8192,
+        "max_tokens": 16384,
         "temperature": 0.3,
     }).encode("utf-8")
     # Determine endpoint path: UVA RC GenAI uses /api/chat/completions,
@@ -564,6 +837,8 @@ def main():
                         help="Chunk size in chars for chunked extraction (default: 40000)")
     parser.add_argument("--together-model", default=None,
                         help="Together AI model (shortname or full ID)")
+    parser.add_argument("--claude-model", default="claude-sonnet-4-6",
+                        help="Claude model to use (default: claude-sonnet-4-6)")
     parser.add_argument("--claude-only", action="store_true",
                         help="Only run Claude")
     parser.add_argument("--together-only", action="store_true",
@@ -588,7 +863,17 @@ def main():
     parser.add_argument("--index-cards", action="store_true",
                         help="Use index card prompt (DOJ record slips). Implies --vision.")
     parser.add_argument("--v3", action="store_true",
-                        help="Use v3 prompt (7 types). Default is v4 (10 types: +testimony, taxes, mortgages)")
+                        help="Use v3 prompt (7 types)")
+    parser.add_argument("--v4", action="store_true",
+                        help="Use v4 prompt (10 types, verbose — more fields per category)")
+    parser.add_argument("--v5", action="store_true",
+                        help="Use v5 prompt (10 types, slim — default, optimal for Kimi)")
+    parser.add_argument("--affidavit", action="store_true",
+                        help="Use affidavit prompt (Circular 2464 and similar sworn depositions)")
+    parser.add_argument("--affidavit-targeted", action="store_true",
+                        help="Use three-step targeted affidavit prompt (explicit allotment number identification)")
+    parser.add_argument("--affidavit-targeted-v2", action="store_true",
+                        help="Use single-pass targeted affidavit prompt (allotment-number priority, no reasoning trigger)")
     args = parser.parse_args()
 
     # UVA RC GenAI shortcut: sets vllm-url and vllm-model automatically
@@ -727,7 +1012,8 @@ def main():
         for i, chunk in enumerate(chunks):
             if len(chunks) > 1:
                 print(f"  Chunk {i+1}/{len(chunks)} ({len(chunk):,} chars)...", end=" ", flush=True)
-            prompt = build_prompt(chunk, version="v3" if args.v3 else "v4")
+            version = "v3" if args.v3 else ("v4" if getattr(args, 'v4', False) else ("affidavit-targeted-v2" if getattr(args, 'affidavit_targeted_v2', False) else ("affidavit-targeted" if getattr(args, 'affidavit_targeted', False) else ("affidavit" if getattr(args, 'affidavit', False) else "v5"))))
+            prompt = build_prompt(chunk, version=version)
             try:
                 result = run_fn(prompt)
             except Exception as e:
@@ -772,8 +1058,10 @@ def main():
     # Run Claude (skip if using together-only or vllm-only)
     vllm_only = args.vllm_url and args.vllm_model and not args.together_model
     if not args.together_only and not vllm_only:
-        print(f"\nRunning Claude Sonnet ({len(chunks)} chunk{'s' if len(chunks) > 1 else ''})...")
-        merged, info = run_model_on_chunks("claude", lambda p: run_claude(p), chunks)
+        claude_model = args.claude_model
+        claude_label = claude_model.replace("claude-", "").replace("-4-6", "").title()
+        print(f"\nRunning Claude {claude_label} ({len(chunks)} chunk{'s' if len(chunks) > 1 else ''})...")
+        merged, info = run_model_on_chunks("claude", lambda p: run_claude(p, model=claude_model), chunks)
         if merged:
             counts = count_items(merged)
             print(f"  Total: {counts['total']} items in {info['time']:.1f}s")

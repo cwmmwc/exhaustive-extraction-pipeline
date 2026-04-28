@@ -1,0 +1,29 @@
+{
+  "document_id": "part6_agency_narrative_page057",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "057",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Raymond",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2282",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "The land has been sold to satisfy one of the mortgages.",
+    "Buyer": "Deed executed showing a consideration of $5500.00, bearing the date of August 19, 1920, to Chris Colombe",
+    "Tax burden forced sale/Mortgage": "The land has been sold to satisfy one of the mortgages.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "William Raymond is deceased. Affidavits of Enoch W. Raymond and Chris Colombe enclosed in response to Circular 2464, supplementing report made June 22nd. At least 4 attorneys were involved. Chris Colombe is a Rosebud Indian with no financial standing. Some evidence of fraud noted but case would require considerable time to pursue; heirs of Raymond unlikely to profit even if Colombe proven guilty. There are a number of instruments recorded in Tripp County records affecting this land and considerable litigation. Question as to whether Raymond was under the impression Colombe was acting as trustee for him at the time of conveyance; nothing in the record of the deed to show any nature of trust; apparently a regular deed was executed. On June 29, 1922, Raymond mortgaged the land to the First Nat'l Bank of Winner; again January 17, 1923, to Kenneth Clark. Colombe mortgaged the land May 19, 1922, and again in 1924 to another party. Letter signed by E. E. McKean, Superintendent, Rosebud, South Dakota, July 8, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {},
+  "elapsed": 0
+}

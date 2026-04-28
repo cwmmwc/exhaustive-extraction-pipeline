@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_027",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "83-84",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Elizabeth Prue Janis",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "1422",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged, then sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "some nine or ten years ago",
+    "Gender": "Female",
+    "Age": "40 years of age",
+    "Occupation/Income": "my husband and I support them",
+    "NOTES": "Patent received at Farmer's office at Okreek; did not sign a receipt for the patent; did not make application for fee patent; received $2400 in cash for the land; does not remember amount of mortgage; dissatisfied because she wanted more money for her land but could not get it; has seven children; subscribed and sworn before Jas. W. Cross, Notary Public, March 20, 1929, commission expires 4/28/32",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2256,
+    "output_tokens": 346
+  },
+  "elapsed": 5.1
+}

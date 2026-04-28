@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_questionnaire_003",
+  "type": "questionnaire",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "38",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Monroe Smith",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2321",
+    "Cancelled": "not stated",
+    "Refused/Protested": "This was not explained to me and I did not know I had to pay taxes on the land.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "This is not mortgaged. Not sold.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "No. There are back taxes on it now. Do not have enough money now to pay back taxes.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "32",
+    "Occupation/Income": "I have not had any support from State, Government or County",
+    "NOTES": "State of Nebraska, Box Butte County. Had an operation for tumor last July, not fully recovered. Mentally good. Physically fair. Land was leased to Lance Creek Livestock Co., for five years at 25\u00a2 per acre, to be paid twice a year. They paid for only two and one-half years. After lease expired they paid $12.00 lease money; B. G. Pinney of Crawford, Nebraska, and Albert Rochelle of Tuthill, South Dakota, were stockholders and at the head of this company. No persons dependent upon her for support. Subscribed and sworn to before me this 9th day of [March], 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2535,
+    "output_tokens": 417
+  },
+  "elapsed": 6.1
+}

@@ -1,0 +1,520 @@
+{
+  "entities": [
+    {
+      "name": "Mr. J. W. Henderson",
+      "type": "person",
+      "context": "Attorney representing California Indians in Court of Claims case, under contract since 1928, president of Indian Board of Cooperation, organized it in 1912"
+    },
+    {
+      "name": "Mr. J. E. Pemberton",
+      "type": "person",
+      "context": "Attorney co-representing California Indians alongside Henderson and Hanley"
+    },
+    {
+      "name": "James M. Hanley",
+      "type": "person",
+      "context": "Attorney practicing law in San Francisco since 1897, one of three attorneys representing California Indians under 1928 contract"
+    },
+    {
+      "name": "Senator Thomas",
+      "type": "person",
+      "context": "Committee member conducting hearings on conditions of Indians in United States, member of Indian Affairs Committee"
+    },
+    {
+      "name": "The Chairman",
+      "type": "person",
+      "context": "Chairman of Senate committee conducting hearings on conditions of Indians in United States"
+    },
+    {
+      "name": "Mr. Ainsworth",
+      "type": "person",
+      "context": "Me-wuk Indian from Sacramento, opposed to private attorneys representing California Indians"
+    },
+    {
+      "name": "Mr. William Walker",
+      "type": "person",
+      "context": "Delegate mentioned by Hanley as representative of Indian groups"
+    },
+    {
+      "name": "Attorney General Webb",
+      "type": "person",
+      "context": "California Attorney General designated by state and federal act to represent California Indians in Court of Claims case"
+    },
+    {
+      "name": "Mr. Collett",
+      "type": "person",
+      "context": "Individual with knowledge of California Indian history and jurisdictional act, source of conflict with Attorney General Webb"
+    },
+    {
+      "name": "Mr. Lipps",
+      "type": "person",
+      "context": "Person referenced by Chairman in connection with relief matters"
+    },
+    {
+      "name": "Mr. Anderson",
+      "type": "person",
+      "context": "Delegate mentioned by Hanley as attending annual Indian gatherings"
+    },
+    {
+      "name": "Esch, Kerr, Wooley, Taylor & Shipe",
+      "type": "organization",
+      "context": "Washington D.C. law firm engaged by Henderson, Hanley, and Pemberton as additional counsel, offices in Transportation Building"
+    },
+    {
+      "name": "Indian Board of Cooperation",
+      "type": "organization",
+      "context": "Organization organized in 1912 by Henderson to help Indians secure their rights, helped secure 15 schools for Indians"
+    },
+    {
+      "name": "California Indians",
+      "type": "organization",
+      "context": "Non-reservation Indians of California, approximately 17,000 claimed by attorneys, parties to Court of Claims case"
+    },
+    {
+      "name": "Court of Claims",
+      "type": "organization",
+      "context": "Federal court where California Indians' jurisdictional claim is being litigated"
+    },
+    {
+      "name": "Indian Affairs Committee",
+      "type": "organization",
+      "context": "Senate committee of which Senator Thomas is a member, conducting survey of conditions of Indians"
+    },
+    {
+      "name": "Indian Office",
+      "type": "organization",
+      "context": "Federal office responsible for approving attorney contracts for Indians and overseeing Indian affairs"
+    },
+    {
+      "name": "Me-wuk tribe",
+      "type": "organization",
+      "context": "Tribe to which Mr. Ainsworth belongs, scattered across California, not reservation Indians"
+    },
+    {
+      "name": "Transportation Building",
+      "type": "location",
+      "context": "Washington D.C. building where Esch, Kerr, Wooley, Taylor & Shipe offices are located"
+    },
+    {
+      "name": "San Francisco",
+      "type": "location",
+      "context": "City where Hanley practiced law since 1897 and where 1928 Indian convention was held"
+    },
+    {
+      "name": "Sacramento",
+      "type": "location",
+      "context": "Residence of Mr. Ainsworth"
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "context": "State where California Indians reside and where the legal case originates"
+    },
+    {
+      "name": "Plumas County",
+      "type": "location",
+      "context": "County visited by attorneys in travel across California for Indian case"
+    },
+    {
+      "name": "Eureka",
+      "type": "location",
+      "context": "Location visited by attorneys; Hanley attended meeting there with couple hundred Indians"
+    },
+    {
+      "name": "Butte County",
+      "type": "location",
+      "context": "County visited by Hanley in connection with Indian case"
+    },
+    {
+      "name": "Sonora County",
+      "type": "location",
+      "context": "County visited by Hanley in connection with Indian case"
+    },
+    {
+      "name": "Del Norte County",
+      "type": "location",
+      "context": "County visited by Hanley in connection with Indian case"
+    },
+    {
+      "name": "Fresno",
+      "type": "location",
+      "context": "Location visited by Hanley in connection with Indian case, where Mr. Walker was encountered"
+    },
+    {
+      "name": "Oklahoma",
+      "type": "location",
+      "context": "State where Senator Thomas introduced bill for Indian royalties from Red River sand bars"
+    },
+    {
+      "name": "Red River sand bars",
+      "type": "land_parcel",
+      "context": "Land in Oklahoma from which oil royalties were sought for Indians by Senator Thomas's bill"
+    },
+    {
+      "name": "California Indians Court of Claims case",
+      "type": "legal_case",
+      "context": "Court of Claims lawsuit filed by California Indians for compensation for lands and broken treaty promises"
+    },
+    {
+      "name": "Jurisdictional Act",
+      "type": "legislation",
+      "context": "Act authorizing California Indians to bring claims before Court of Claims, designated Attorney General to represent them"
+    },
+    {
+      "name": "Court of Claims bill",
+      "type": "legislation",
+      "context": "Bill passed allowing California Indians to go into Court of Claims, passed prior to 1928 convention"
+    },
+    {
+      "name": "California Indians attorney contract 1928",
+      "type": "legal_case",
+      "context": "Contract between California Indians and Henderson, Hanley, and Pemberton signed in 1928 for legal representation"
+    }
+  ],
+  "events": [
+    {
+      "type": "convention",
+      "date": "1928",
+      "location": "San Francisco",
+      "description": "Convention of California Indian delegates from 32 assembly and congressional districts met following passage of Court of Claims bill; selected Henderson, Hanley, and Pemberton as attorneys"
+    },
+    {
+      "type": "contract signing",
+      "date": "1928-09",
+      "location": "San Francisco",
+      "description": "Contract signed between California Indian delegates and attorneys Henderson, Hanley, and Pemberton for legal representation in Court of Claims case"
+    },
+    {
+      "type": "meeting",
+      "date": "1928",
+      "location": "Attorney General Webb's office",
+      "description": "24-26 Indian delegates along with attorneys Henderson, Hanley, and Pemberton visited Attorney General Webb; discussion taken down in shorthand; Webb made no appointment at that time"
+    },
+    {
+      "type": "organization founding",
+      "date": "1912",
+      "location": "California",
+      "description": "Henderson organized the Indian Board of Cooperation to help California Indians secure their rights"
+    },
+    {
+      "type": "legislative action",
+      "date": "unknown",
+      "location": "Washington D.C.",
+      "description": "Congress passed bill giving Oklahoma Indians royalties from Red River sand bars oil; royalties amounted to $1,600,000; attorneys paid 5 percent on quantum meruit basis after 4 years work"
+    },
+    {
+      "type": "hearing",
+      "date": "unknown",
+      "location": "San Francisco, California",
+      "description": "Senate committee hearing on survey of conditions of Indians in United States; afternoon session after 2:30 p.m. recess"
+    },
+    {
+      "type": "school establishment",
+      "date": "unknown",
+      "location": "California",
+      "description": "Henderson and Indian Board of Cooperation secured 15 schools for Indians; US Government appropriated half the amount and State government the other half"
+    },
+    {
+      "type": "petition filing",
+      "date": "unknown",
+      "location": "Court of Claims",
+      "description": "Attorney General Webb filed petition for California Indians in Court of Claims after delay; incorporated amendments suggested by Henderson, Hanley, and Pemberton"
+    },
+    {
+      "type": "legislative introduction",
+      "date": "unknown",
+      "location": "Washington D.C.",
+      "description": "Senator Thomas introduced bill in Congress to gain royalties from Red River sand bars for Oklahoma Indians"
+    },
+    {
+      "type": "treaty making",
+      "date": "approximately 1850",
+      "location": "California",
+      "description": "Treaties made with California Indians approximately 80 years prior to hearing; reservations marked"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "fee",
+      "amount": "2 percent on first $2,000,000",
+      "payer": "California Indians (from award)",
+      "payee": "Henderson, Hanley, and Pemberton",
+      "date": "contingent on award",
+      "description": "Attorney fee under 1928 contract for first $2,000,000 of Court of Claims award"
+    },
+    {
+      "type": "fee",
+      "amount": "3 percent on all above $2,000,000",
+      "payer": "California Indians (from award)",
+      "payee": "Henderson, Hanley, and Pemberton",
+      "date": "contingent on award",
+      "description": "Attorney fee under 1928 contract for amounts above $2,000,000 of Court of Claims award"
+    },
+    {
+      "type": "fee",
+      "amount": "$40,000 (hypothetical on $6,000,000 award)",
+      "payer": "California Indians",
+      "payee": "Henderson, Hanley, and Pemberton",
+      "date": "hypothetical",
+      "description": "2 percent on first $2,000,000 of hypothetical $6,000,000 award as calculated by Senator Thomas"
+    },
+    {
+      "type": "fee",
+      "amount": "$120,000 (hypothetical on $6,000,000 award)",
+      "payer": "California Indians",
+      "payee": "Henderson, Hanley, and Pemberton",
+      "date": "hypothetical",
+      "description": "3 percent on $4,000,000 above $2,000,000 threshold of hypothetical $6,000,000 award as calculated by Senator Thomas"
+    },
+    {
+      "type": "fee",
+      "amount": "$160,000 total (hypothetical on $6,000,000 award)",
+      "payer": "California Indians",
+      "payee": "Henderson, Hanley, and Pemberton",
+      "date": "hypothetical",
+      "description": "Total attorney fees on hypothetical $6,000,000 award as calculated by Senator Thomas"
+    },
+    {
+      "type": "fee",
+      "amount": "$280,000 total (hypothetical on $10,000,000 award)",
+      "payer": "California Indians",
+      "payee": "Henderson, Hanley, and Pemberton",
+      "date": "hypothetical",
+      "description": "Total attorney fees on hypothetical $10,000,000 award: $40,000 on first $2M plus $120,000 on $4M above threshold plus additional $120,000 on $4M above $6M as calculated by Senator Thomas"
+    },
+    {
+      "type": "fee",
+      "amount": "small amount, insufficient to cover expenses",
+      "payer": "California Indians",
+      "payee": "Henderson, Hanley, and Pemberton",
+      "date": "1928-hearing date",
+      "description": "Partial retainer fees paid to attorneys since 1928; dispensed by Henderson; did not cover expenses of travel throughout California"
+    },
+    {
+      "type": "fee",
+      "amount": "5 percent of $1,600,000 = $80,000",
+      "payer": "Oklahoma Indians",
+      "payee": "attorneys (unnamed)",
+      "date": "unknown",
+      "description": "Quantum meruit attorney fees paid on $1,600,000 Red River sand bar oil royalty award after 4 years work; cited by Senator Thomas as precedent"
+    },
+    {
+      "type": "other",
+      "amount": "$1,600,000",
+      "payer": "United States Government",
+      "payee": "Oklahoma Indians",
+      "date": "unknown",
+      "description": "Oil royalties from Red River sand bars awarded to Oklahoma Indians through Congressional bill introduced by Senator Thomas"
+    },
+    {
+      "type": "other",
+      "amount": "16 percent interest (hypothetical)",
+      "payer": "United States Government",
+      "payee": "California Indians",
+      "date": "hypothetical",
+      "description": "If California Indians award had been made 4 years earlier, 4 years of interest at 4 percent per year would have added 16 percent to award per act provisions"
+    },
+    {
+      "type": "other",
+      "amount": "half funding from US Government, half from State",
+      "payer": "US Government and California State Government",
+      "payee": "15 Indian schools",
+      "date": "unknown",
+      "description": "Government appropriations secured by Henderson and Indian Board of Cooperation for 15 schools for California Indians"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "J. W. Henderson",
+      "type": "represented",
+      "object": "California Indians",
+      "context": "Attorney under contract since 1928 representing California Indians in Court of Claims case"
+    },
+    {
+      "subject": "James M. Hanley",
+      "type": "represented",
+      "object": "California Indians",
+      "context": "Attorney under contract since 1928 representing California Indians in Court of Claims case"
+    },
+    {
+      "subject": "J. E. Pemberton",
+      "type": "represented",
+      "object": "California Indians",
+      "context": "Attorney under contract since 1928 representing California Indians in Court of Claims case"
+    },
+    {
+      "subject": "Attorney General Webb",
+      "type": "represented",
+      "object": "California Indians",
+      "context": "Designated by California act and act of Congress to represent California Indians in Court of Claims as attorney general, filed petition"
+    },
+    {
+      "subject": "Esch, Kerr, Wooley, Taylor & Shipe",
+      "type": "employed_by",
+      "object": "Henderson, Hanley, and Pemberton",
+      "context": "Washington D.C. firm engaged by the three attorneys as additional counsel on same proportional contract basis"
+    },
+    {
+      "subject": "J. W. Henderson",
+      "type": "related_to",
+      "object": "Indian Board of Cooperation",
+      "context": "President and founder of organization, organized it in 1912"
+    },
+    {
+      "subject": "Attorney General Webb",
+      "type": "related_to",
+      "object": "J. W. Henderson",
+      "context": "Known to Henderson for 30 years, practiced law together; Webb expressed confidence in Henderson but refused association due to Collett"
+    },
+    {
+      "subject": "Attorney General Webb",
+      "type": "related_to",
+      "object": "Mr. Collett",
+      "context": "Webb refused to be associated with attorneys connected to Collett due to prior dispute"
+    },
+    {
+      "subject": "Senator Thomas",
+      "type": "related_to",
+      "object": "Indian Affairs Committee",
+      "context": "Member of the Indian Affairs Committee conducting the survey hearing"
+    },
+    {
+      "subject": "Mr. Ainsworth",
+      "type": "related_to",
+      "object": "Me-wuk tribe",
+      "context": "Member of Me-wuk tribe, lives in Sacramento, not a reservation Indian"
+    },
+    {
+      "subject": "J. W. Henderson",
+      "type": "related_to",
+      "object": "James M. Hanley",
+      "context": "Hanley invited by Henderson to become one of the attorneys in 1928"
+    },
+    {
+      "subject": "Mr. Collett",
+      "type": "related_to",
+      "object": "California Indians history",
+      "context": "Thoroughly knowledgeable about whole history of California Indians and jurisdictional act"
+    },
+    {
+      "subject": "California Indians",
+      "type": "related_to",
+      "object": "Indian Board of Cooperation",
+      "context": "Organization organized to help California Indians secure their rights"
+    },
+    {
+      "subject": "Senator Thomas",
+      "type": "related_to",
+      "object": "Oklahoma Indians oil royalties bill",
+      "context": "Introduced bill in Congress to gain oil royalties from Red River sand bars for Oklahoma Indians"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "J. W. Henderson",
+      "sender_title": "Attorney for California Indians",
+      "recipient": "Attorney General Webb",
+      "recipient_title": "California Attorney General",
+      "date": "1928",
+      "subject": "Attorney contract and representation of California Indians",
+      "action_requested": "Acceptance of Henderson, Hanley, Pemberton as co-counsel with attorney general",
+      "outcome": "Webb made no appointment at that time; later refused association with attorneys connected to Collett"
+    },
+    {
+      "sender": "Henderson, Hanley, Pemberton",
+      "sender_title": "Attorneys for California Indians",
+      "recipient": "Attorney General Webb",
+      "recipient_title": "California Attorney General",
+      "date": "unknown",
+      "subject": "Amendments to petition in Court of Claims case",
+      "action_requested": "Filing of amendments to petition",
+      "outcome": "After long delay, Webb incorporated every amendment suggested by the attorneys"
+    },
+    {
+      "sender": "J. W. Henderson",
+      "sender_title": "Attorney and Congressman petitioner",
+      "recipient": "Congress",
+      "recipient_title": "Legislative body",
+      "date": "unknown",
+      "subject": "Extension of time for relief for cold and hungry Indians",
+      "action_requested": "Extension of time for Government representatives to enroll Indians in need",
+      "outcome": "Congress granted extension of time"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "unknown",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "prior to 1928",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Court of Claims bill passed, authorizing California Indians to bring claims before Court of Claims and designating California Attorney General as representative"
+    },
+    {
+      "bill_number": "unknown",
+      "sponsor": "Senator Thomas",
+      "action_type": "introduced",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Bill introduced to gain oil royalties from Red River sand bars for Oklahoma Indians; ultimately passed by Congress; royalties of $1,600,000 awarded"
+    },
+    {
+      "bill_number": "proposed amendment to Jurisdictional Act",
+      "sponsor": "Henderson, Hanley, Pemberton (suggested)",
+      "action_type": "introduced",
+      "date": "pending at time of hearing",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Pending; amendment considered necessary to cure jurisdictional defect; all parties agreed it should be done"
+    },
+    {
+      "bill_number": "California Jurisdictional Act",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Act designated California Attorney General to represent California Indians; provided for Court of Claims award to go into US Treasury; provided for 4 percent interest on awards; provided for just compensation"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "J. W. Henderson",
+      "witness_title": "Attorney for California Indians, President of Indian Board of Cooperation",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee (Indian Affairs)",
+      "location": "San Francisco, California",
+      "date": "unknown",
+      "subject": "Representation of California Indians in Court of Claims case, attorney contract, right of Indians to choose own attorneys",
+      "key_claims": "Henderson stated he has been under contract with California Indians since 1928; traveled all over California meeting Indians in groups of 100-200; Indians unanimously want attorneys of their own choice; Attorney General should not be the one to appoint the opposing party's attorney; Indians were literally robbed in early days; he organized Indian Board of Cooperation in 1912 and secured 15 schools; he did not solicit the case; suggested amendments to attorney general who eventually incorporated all of them; believes petition is sufficient without amendment to act; testimony should have been taken long ago; attorney general is wrong to refuse association with chosen attorneys simply due to conflict with Collett; Collett has invaluable knowledge that should be utilized; damages including loss of medical care and education should be calculated even if difficult",
+      "questioner": "The Chairman, Senator Thomas"
+    },
+    {
+      "witness": "James M. Hanley",
+      "witness_title": "Attorney, practicing law in San Francisco since 1897",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee (Indian Affairs)",
+      "location": "San Francisco, California",
+      "date": "unknown",
+      "subject": "Attorney contract with California Indians, representation of 17,000 Indians, Court of Claims case, attorney fees, jurisdictional amendment",
+      "key_claims": "Hanley was invited to join by Henderson in 1928; contract signed after 1928 convention of Indian delegates representing 32 districts; visited Attorney General Webb with 24-26 delegates and explained everything in shorthand; Webb made no appointment and delayed filing petition and amendments; hearing concerns two issues: neglect to file jurisdictional amendment and whether Indian-chosen attorneys should continue; contract provides 2 percent on first $2 million and 3 percent on all over that; attorneys have traveled extensively throughout California; engaged Washington D.C. firm Esch, Kerr, Wooley, Taylor & Shipe on same proportional basis; attended meetings in Eureka with couple hundred Indians; contract not submitted to or approved by Indian Office; willing to accept quantum meruit contract if necessary; spent four solid months personally on case plus travel; Henderson made four trips to Washington; damages for loss of promised doctors and nurses should be presented to court; the act provides for just compensation which includes all elements of damage",
+      "questioner": "Senator Thomas, The Chairman"
+    },
+    {
+      "witness": "Mr. Ainsworth",
+      "witness_title": "Me-wuk Indian, Sacramento",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee (Indian Affairs)",
+      "location": "San Francisco, California",
+      "date": "unknown",
+      "subject": "Opposition to private attorneys, accuracy of 17,000 Indian enrollment claim, sufficiency of Attorney General's representation",
+      "key_claims": "Attorneys claiming to represent 17,000 Indians are exaggerating; 5,000 would be an exaggeration; enrollment has been ongoing for 20 years and Indians signing up do not know what it means, told they will get money; should have a showdown requiring attorneys to show how many adult Indians (21 and over) belong to the organization; old Indians who could testify about treaties do not exist as treaties were made 80 years ago and any surviving Indians would have been too young; survey of reservations would be expensive and charged against the bill; no opposition to the bill so private attorneys are unnecessary and wasteful; every little group would get a local attorney who might pay group leaders for access; private attorneys merely delay the case and add expense; Attorney General and his staff are sufficient representation",
+      "questioner": "The Chairman, Senator Thomas"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

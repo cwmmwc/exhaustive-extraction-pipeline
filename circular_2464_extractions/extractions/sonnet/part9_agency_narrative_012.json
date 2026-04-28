@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_012",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "21",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Blacksmith, formerly Mary Prue",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "3214",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded May 8, 1920, by Jordan State Bank",
+    "Sold/Mortgaged": "Mortgaged and sold; Mary and her husband mortgaged the land to Olaf Nelson for $1500 on June 4, 1920; again on September 1, 1920, to John R. Martin for $450. Then on February 8, 1921, Mary and her husband, Gilbert Blacksmith conveyed the land by deed to Joseph Prue for $1.00 and other valuable consideration.",
+    "Buyer": "Mortgaged to Olaf Nelson for $1500; mortgaged to John R. Martin for $450; conveyed to Joseph Prue for $1.00 and other valuable consideration",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739692 issued; Southeast quarter section 13, township 98, range 79; receipt for patent was signed by the allottee April 3, 1920; husband is Gilbert Blacksmith; land conveyed to Joseph Prue",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2076,
+    "output_tokens": 437
+  },
+  "elapsed": 6.3
+}

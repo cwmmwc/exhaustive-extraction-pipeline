@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_009",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "25",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Viola Huggins Hayes",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2279",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I told the man that gave it to me that I did not want it but the answer was that it had been recorded and taxes were due.",
+    "Recorded patent": "it had been recorded (per statement made to allottee at time of delivery)",
+    "Sold/Mortgaged": "No, I sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I did not know the patent had been issued until I was notified from the county authorities that taxes were due; I should not have sold it had the patent not have been issued",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "47",
+    "Occupation/Income": "By my husband.",
+    "NOTES": "Patent delivered by banker in Gregory at the time of sale; sold land for $4500 in cash with no debts settled and no automobiles or other articles taken in payment; has two adopted children; health is fair; satisfied with the sale but states she would not have sold had the patent not been issued; did not ask for the patent; sworn before Cjas. W. Gross, Notary Public, commission expires 4-28-32, on May 2, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2411,
+    "output_tokens": 402
+  },
+  "elapsed": 6.6
+}

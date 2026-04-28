@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_018",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "33",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Peter Larvie",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "3433",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded August 19, 1920, by Richard Jones",
+    "Sold/Mortgaged": "mortgaged the land to Petters and Co. for $800; sheriff's deed was given for the land to August Gertenbaugh, assignee of Petters & Company",
+    "Buyer": "August Gertenbaugh, assignee of Petters & Company",
+    "Tax burden forced sale/Mortgage": "On May 10, 1924, the Sheriff foreclosed the mortgage",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Lot 1 and South half of Northeast quarter of section 4, and Southwest quarter of Northwest quarter section 3, township 44, north of range 32. Receipt for patent signed by the allottee April 3, 1920. On August 7, 1920, Peter Larvie mortgaged the land to Petters and Co. for $800. There is also a second mortgage for $231.46 to be paid in annual installments and completed by November 1, 1927. This mortgage is dated August [date not fully legible]. On May 10, 1924, the Sheriff foreclosed the mortgage and on May 11, 1925, sheriff's deed was given for the land to August Gertenbaugh, assignee of Petters & Company.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2096,
+    "output_tokens": 472
+  },
+  "elapsed": 7.8
+}

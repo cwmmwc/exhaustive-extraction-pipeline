@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_123",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "144-145",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Grace F. Herley",
+    "Tribe/Reservation": "Pine Ridge Agency, South Dakota",
+    "Post Office Address": "Pendleton, Umatilla County, Oregon",
+    "Allotment number": "3824",
+    "Cancelled": "The patent has not been cancelled that I have any knowledge of.",
+    "Refused/Protested": "I received and accepted the said patent without protest",
+    "Recorded patent": "It was recorded by my husband, or by an attorney representing us. It was, however, recorded with my knowledge and consent.",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "not stated; purchaser assumed and agreed to pay the first mortgage of about $1500.00; first mortgage was subsequently foreclosed and the land sold",
+    "Tax burden forced sale/Mortgage": "The first mortgage was subsequently foreclosed and the land sold, and our second mortgage was rendered valueless.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "approximately 44 years",
+    "Occupation/Income": "not dependent upon anyone except my husband and my own efforts for support",
+    "NOTES": "Land covered by the patent was mortgaged for $1500.00 and subsequently sold along with other lands owned by her husband and other parties; she and other parties took a second mortgage to secure the balance of payments; she did not make application to have the patent issued; patent came through the mail in regular course of mail, not receipted for; she considers the price received was a fair price; neither government, state nor county has contributed anything toward her support; physical condition is reasonably good; financial condition is not luxurious; affidavit sworn at Pendleton, Umatilla County, Oregon, November 24, 1928.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2556,
+    "output_tokens": 477
+  },
+  "elapsed": 7.6
+}

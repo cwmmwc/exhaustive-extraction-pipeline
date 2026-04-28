@@ -1,0 +1,894 @@
+{
+  "entities": [
+    {
+      "name": "Marion Butler",
+      "type": "person",
+      "context": "Author of letter arguing for Indians' right to private attorneys"
+    },
+    {
+      "name": "Burton K. Wheeler",
+      "type": "person",
+      "context": "Chairman, Senate Committee on Indian Affairs, recipient of correspondence"
+    },
+    {
+      "name": "F. G. Collett",
+      "type": "person",
+      "context": "Executive Representative of Indians of California, Inc.; initiated Jurisdictional Act"
+    },
+    {
+      "name": "John Collier",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs; accused of opposing Court of Claims bill and creating animosity among Indians"
+    },
+    {
+      "name": "Stephen Knight",
+      "type": "person",
+      "context": "Indian from Ukiah, CA, representing Indian Brotherhood; delegate for Indians of California in 1922"
+    },
+    {
+      "name": "Mr. Ainsworth",
+      "type": "person",
+      "context": "Indian witness described as a free lance, not long continuing activity with any Indian organization"
+    },
+    {
+      "name": "William Fuller",
+      "type": "person",
+      "context": "Delegate to Washington D.C. for Indians of California in 1922; became officer of Indian Brotherhood in 1926"
+    },
+    {
+      "name": "O. E. Miller",
+      "type": "person",
+      "context": "President and organizer of Rellimeo Film Syndicate; target of prosecution"
+    },
+    {
+      "name": "F. E. Miller",
+      "type": "person",
+      "context": "Treasurer and organizer of Rellimeo Film Syndicate; target of prosecution"
+    },
+    {
+      "name": "Judge Louderback",
+      "type": "person",
+      "context": "Federal judge in whose court the Rellimeo Film Syndicate case was to be tried; accused of taking unauthorized vacation"
+    },
+    {
+      "name": "Congressman Clarence F. Lea",
+      "type": "person",
+      "context": "Introduced Jurisdictional Act in final form on December 5, 1927"
+    },
+    {
+      "name": "Congressman John Raker",
+      "type": "person",
+      "context": "Presented original copy of Jurisdictional Act to Congress on March 23, 1920"
+    },
+    {
+      "name": "E. B. Merritt",
+      "type": "person",
+      "context": "Assistant Commissioner of Indian Affairs; acknowledged sponsors of the Jurisdictional bill"
+    },
+    {
+      "name": "Mr. Elkus",
+      "type": "person",
+      "context": "Witness before Senate Committee on Indian Affairs; testified on status of Court of Claims suit for California Indians"
+    },
+    {
+      "name": "Senator Thomas",
+      "type": "person",
+      "context": "Committee member questioning Mr. Elkus during hearing on California Indians"
+    },
+    {
+      "name": "Allan H. Gardner",
+      "type": "person",
+      "context": "California Indian, signatory of letter to Senator Wheeler; in contact with over 3,000 Indians"
+    },
+    {
+      "name": "Thomas Lago",
+      "type": "person",
+      "context": "Signatory of letter to Senator Wheeler regarding California Indian claims"
+    },
+    {
+      "name": "Stella Von Buflow",
+      "type": "person",
+      "context": "Signatory of letter to Senator Wheeler regarding California Indian claims"
+    },
+    {
+      "name": "Harry Carr",
+      "type": "person",
+      "context": "Writer for Los Angeles Times; wrote about Mission Indians' plight"
+    },
+    {
+      "name": "Congressman Dockweller",
+      "type": "person",
+      "context": "Recipient of letter from Attorney General of California admitting late amendments to petition"
+    },
+    {
+      "name": "Rev. Collett",
+      "type": "person",
+      "context": "Referenced by E. B. Merritt as co-sponsor of Jurisdictional Act legislation"
+    },
+    {
+      "name": "Mr. Tibbitts",
+      "type": "person",
+      "context": "Represented one of three Indian associations in California at time bill was passed; based in south"
+    },
+    {
+      "name": "Indians of California, Inc.",
+      "type": "organization",
+      "context": "Incorporated organization representing California Indians; incorporated 1914, originally organized 1910"
+    },
+    {
+      "name": "Indian Brotherhood",
+      "type": "organization",
+      "context": "Indian organization organized by John Collier with $250 to support Kahn bill; later ceased to function"
+    },
+    {
+      "name": "Indian Defense Association",
+      "type": "organization",
+      "context": "Organization associated with John Collier; opposed Indians of California, Inc."
+    },
+    {
+      "name": "Attorney General of California",
+      "type": "organization",
+      "context": "Named in Jurisdictional Act to represent California Indians in Court of Claims; alleged to have been derelict"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Federal department overseeing Indian Affairs"
+    },
+    {
+      "name": "Office of Indian Affairs",
+      "type": "organization",
+      "context": "Bureau within Department of the Interior managing Indian matters"
+    },
+    {
+      "name": "Court of Claims",
+      "type": "organization",
+      "context": "Federal court in which suit on behalf of California Indians was filed"
+    },
+    {
+      "name": "Department of Justice",
+      "type": "organization",
+      "context": "Allegedly used to prevent California Indians from having attorneys of their own choice"
+    },
+    {
+      "name": "General Accounting Office",
+      "type": "organization",
+      "context": "Accounting Department preparing report on counter claims in California Indians case"
+    },
+    {
+      "name": "Senate Committee on Indian Affairs",
+      "type": "organization",
+      "context": "Senate committee receiving correspondence and holding hearings on California Indian claims"
+    },
+    {
+      "name": "Rellimeo Film Syndicate",
+      "type": "organization",
+      "context": "Film syndicate whose affairs led to indictment involving F. G. Collett"
+    },
+    {
+      "name": "Superior Court of California",
+      "type": "organization",
+      "context": "Recognized Indians of California as citizens amenable to same laws"
+    },
+    {
+      "name": "Navajo Council",
+      "type": "organization",
+      "context": "Referenced as example of organized Indian group that can designate representatives"
+    },
+    {
+      "name": "All Pueblo Council",
+      "type": "organization",
+      "context": "Referenced as example of organized Indian group for legal representation purposes"
+    },
+    {
+      "name": "Blackfeet",
+      "type": "organization",
+      "context": "Referenced as example of organized Indian tribe group"
+    },
+    {
+      "name": "Mission Indians",
+      "type": "organization",
+      "context": "California Indians holding annual intertribal conference at Riverside"
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "context": "State where California Indians reside and where hearings were requested"
+    },
+    {
+      "name": "San Francisco",
+      "type": "location",
+      "context": "Location of hearing at St. Francis Hotel on July 2, 1934; also listed as hearing location"
+    },
+    {
+      "name": "Yuma",
+      "type": "location",
+      "context": "Requested location for Senate committee hearings on California Indians"
+    },
+    {
+      "name": "San Diego",
+      "type": "location",
+      "context": "Requested location for Senate committee hearings on California Indians"
+    },
+    {
+      "name": "Los Angeles",
+      "type": "location",
+      "context": "Requested location for Senate committee hearings; location of letter from Allan H. Gardner"
+    },
+    {
+      "name": "Washington, D.C.",
+      "type": "location",
+      "context": "Location of Congressional activity; delegates traveled here in 1922"
+    },
+    {
+      "name": "Riverside",
+      "type": "location",
+      "context": "Location of annual intertribal conference of Mission Indians"
+    },
+    {
+      "name": "Ukiah",
+      "type": "location",
+      "context": "Home of Stephen Knight, Indian representing Indian Brotherhood"
+    },
+    {
+      "name": "St. Francis Hotel",
+      "type": "location",
+      "context": "Location of subcommittee hearing in San Francisco on July 2, 1934"
+    },
+    {
+      "name": "S. 3572",
+      "type": "legislation",
+      "context": "Senate bill authorizing Indians of California to be represented by attorneys of their own choice"
+    },
+    {
+      "name": "H.R. 7095",
+      "type": "legislation",
+      "context": "House companion bill to S. 3572; authorizing California Indians to choose their own attorneys"
+    },
+    {
+      "name": "Jurisdictional Act (May 18, 1928)",
+      "type": "legislation",
+      "context": "Act authorizing Attorney General of California to bring suit in Court of Claims on behalf of California Indians; 45 Stat. 602"
+    },
+    {
+      "name": "Kahn bill",
+      "type": "legislation",
+      "context": "Counter-proposal to Court of Claims bill calling for appropriation of $49,500,000; created by John Collier"
+    },
+    {
+      "name": "Raker bill",
+      "type": "legislation",
+      "context": "Earlier version of jurisdictional bill introduced by Congressman Raker"
+    },
+    {
+      "name": "California Legislature Act (May 18, 1927)",
+      "type": "legislation",
+      "context": "State act authorizing attorney general of California to bring action for Indians if Congressional authority given"
+    },
+    {
+      "name": "Indians of California v. United States",
+      "type": "legal_case",
+      "context": "Court of Claims suit on behalf of California Indians for unfulfilled treaty claims"
+    },
+    {
+      "name": "Martinez case (195 U.S. 469)",
+      "type": "legal_case",
+      "context": "Supreme Court case declining to permit amendment after expiration of statutory period bringing in new tribe"
+    },
+    {
+      "name": "Barroo et al. v. United States (30 Ct. Cls. 54)",
+      "type": "legal_case",
+      "context": "Court of Claims case holding no greater quantity of claim than originally filed after statute of limitations"
+    },
+    {
+      "name": "Chippewa Indian Tribe of Minnesota jurisdictional act",
+      "type": "legislation",
+      "context": "Referenced by Secretary of Interior April 23, 1934 regarding jurisdiction doubts"
+    },
+    {
+      "name": "18 unratified treaties (1852)",
+      "type": "legal_case",
+      "context": "Treaties negotiated with California Indian tribes in 1852, signed by 400 chiefs, purposely lost in Senate archives"
+    },
+    {
+      "name": "California Indians land cession (1852)",
+      "type": "land_parcel",
+      "context": "Over 13,000,000 acres ceded by California Indians under unratified 1852 treaties; value estimated at $100,000,000+"
+    },
+    {
+      "name": "Roll No. 1",
+      "type": "acreage_holding",
+      "context": "Roll of 23,585 Indians residing in California on July 1, 1852 and descendants; closed May 16, 1933"
+    },
+    {
+      "name": "Roll No. 2",
+      "type": "acreage_holding",
+      "context": "Roll of 245 other Indians in California; approved May 16, 1933"
+    }
+  ],
+  "events": [
+    {
+      "type": "treaty_negotiation",
+      "date": "1852",
+      "location": "California",
+      "description": "Commission of three men from Washington negotiated 18 separate treaties with California Indian tribes, signed by 400 chiefs"
+    },
+    {
+      "type": "treaty_suppression",
+      "date": "1852",
+      "location": "United States Senate",
+      "description": "18 treaties with California Indians purposely lost in archives of U.S. Senate at demand of California state legislature"
+    },
+    {
+      "type": "organization_founding",
+      "date": "1910",
+      "location": "California",
+      "description": "Indians of California, Inc. originally organized as incorporated organization"
+    },
+    {
+      "type": "organization_incorporation",
+      "date": "1914",
+      "location": "California",
+      "description": "Indians of California, Inc. formally incorporated under laws of California"
+    },
+    {
+      "type": "congressional_hearing",
+      "date": "1920-03-23",
+      "location": "Washington, D.C.",
+      "description": "House of Representatives hearing on original Jurisdictional Act presented by Congressman John Raker; E. B. Merritt acknowledged co-sponsors"
+    },
+    {
+      "type": "legislative_hearing",
+      "date": "1920",
+      "location": "Washington, D.C.",
+      "description": "First hearing on jurisdictional act for Indians of California; John Collier not in evidence"
+    },
+    {
+      "type": "delegation_to_washington",
+      "date": "1922",
+      "location": "Washington, D.C.",
+      "description": "Nine California Indian delegates including Stephen Knight and William Fuller journeyed to Washington for approximately 4 months to secure passage of Court of Claims bill; at expense of Indians of California"
+    },
+    {
+      "type": "legislative_hearing",
+      "date": "1922",
+      "location": "Washington, D.C.",
+      "description": "Second hearing on jurisdictional act; John Collier not in evidence"
+    },
+    {
+      "type": "legislation_enactment",
+      "date": "1927-05-18",
+      "location": "California",
+      "description": "California Legislature enacted act authorizing attorney general to bring action for Indians if Congressional authority given"
+    },
+    {
+      "type": "bill_introduction",
+      "date": "1927-12-05",
+      "location": "Washington, D.C.",
+      "description": "Jurisdictional Act in final form introduced in Congress by Congressman Clarence F. Lea"
+    },
+    {
+      "type": "legislation_enactment",
+      "date": "1928-05-18",
+      "location": "Washington, D.C.",
+      "description": "Jurisdictional Act approved by Congress (45 Stat. 602), authorizing attorney general of California to bring suit in Court of Claims"
+    },
+    {
+      "type": "legislative_hearing",
+      "date": "1928",
+      "location": "Washington, D.C.",
+      "description": "Third hearing on jurisdictional act; attorney general of California appeared as matter of convenience"
+    },
+    {
+      "type": "legislative_hearing",
+      "date": "1928",
+      "location": "Washington, D.C.",
+      "description": "Fourth hearing on jurisdictional act"
+    },
+    {
+      "type": "john_collier_opposition",
+      "date": "1926",
+      "location": "Washington, D.C.",
+      "description": "John Collier first appeared in opposition to jurisdictional act and in favor of Kahn bill counter-proposal; gave Stephen Knight and associates $250 to organize Indian Brotherhood"
+    },
+    {
+      "type": "lawsuit_filing",
+      "date": "1929-08-12",
+      "location": "Court of Claims",
+      "description": "Attorney General of California filed suit in Court of Claims on behalf of California Indians; 15 months after Congressional authority"
+    },
+    {
+      "type": "lawsuit_filing_alternate_date",
+      "date": "1929-08-14",
+      "location": "Court of Claims",
+      "description": "John Collier's statement gives August 14, 1929 as date suit was filed by attorney general"
+    },
+    {
+      "type": "amended_petition_filing",
+      "date": "1932-03-14",
+      "location": "Court of Claims",
+      "description": "Attorney General of California filed amended petition; included new parties and new subject matter; 10 months after expiration of court jurisdiction for new matters"
+    },
+    {
+      "type": "jurisdiction_expiration",
+      "date": "1931-05-18",
+      "location": "Court of Claims",
+      "description": "Court's jurisdiction as to new parties and new subject matter expired; amendments filed 10 months after this date"
+    },
+    {
+      "type": "indian_rolls_approved",
+      "date": "1933-05-16",
+      "location": "Washington, D.C.",
+      "description": "Secretary of Interior approved two rolls of California Indians; Roll No. 1 contains 23,585 names; Roll No. 2 contains 245 names"
+    },
+    {
+      "type": "correspondence_issued",
+      "date": "1933-10-02",
+      "location": "Washington, D.C.",
+      "description": "John Collier issued statement to Indians in California regarding Court of Claims suit and warning against paying fees to outside organizations"
+    },
+    {
+      "type": "correspondence_transmitted",
+      "date": "1933-10-05",
+      "location": "Washington, D.C.",
+      "description": "John Collier sent statement to Senate Subcommittee on Indian Affairs for inclusion in record"
+    },
+    {
+      "type": "congressional_hearing",
+      "date": "1934-07-02",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "description": "Senate subcommittee hearing on California Indian matters; F. G. Collett authorized to make supplemental statement"
+    },
+    {
+      "type": "supplemental_statement_filed",
+      "date": "1934-09-29",
+      "location": "San Francisco, California",
+      "description": "F. G. Collett filed supplemental statement with Senate Committee on Indian Affairs including two memorandums"
+    },
+    {
+      "type": "intertribal_conference",
+      "date": "1934",
+      "location": "Riverside, California",
+      "description": "Mission Indians held annual intertribal conference"
+    },
+    {
+      "type": "letter_to_senator",
+      "date": "1934-05-24",
+      "location": "Los Angeles, California",
+      "description": "Allan H. Gardner, Thomas Lago, and Stella Von Bulow wrote to Senator Wheeler requesting support for H.R. 7095 and Senate companion bill"
+    },
+    {
+      "type": "criminal_indictment",
+      "date": "unknown",
+      "location": "California",
+      "description": "F. G. Collett and others indicted related to Rellimeo Film Syndicate mail fraud case; case ultimately dismissed"
+    },
+    {
+      "type": "case_dismissal",
+      "date": "unknown",
+      "location": "California",
+      "description": "Rellimeo Film Syndicate case against F. G. Collett dismissed; deputy district attorney dismissed for unprofessional conduct proposal"
+    },
+    {
+      "type": "secretary_interior_statement",
+      "date": "1934-04-23",
+      "location": "Washington, D.C.",
+      "description": "Secretary of Interior made statement regarding jurisdictional act for Chippewa Indian Tribe of Minnesota about jurisdiction doubts"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "payment",
+      "amount": "$250",
+      "payer": "John Collier",
+      "payee": "Stephen Knight and associates",
+      "date": "1926",
+      "description": "John Collier gave Stephen Knight and associates $250 to organize Indian Brotherhood to support passage of Kahn bill"
+    },
+    {
+      "type": "other",
+      "amount": "$49,500,000",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "1926",
+      "description": "Appropriation amount proposed in Kahn bill counter-proposal created by John Collier"
+    },
+    {
+      "type": "other",
+      "amount": "$6,000,000",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "unknown",
+      "description": "Proposed settlement amount that Commissioner sought and that John Collier advised Indians to accept"
+    },
+    {
+      "type": "other",
+      "amount": "$13,063,832",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "unknown",
+      "description": "Amount referenced as inadequate settlement figure for California Indians claims"
+    },
+    {
+      "type": "other",
+      "amount": "$49,000,000",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "unknown",
+      "description": "Amount Commissioner stated as possible recovery when seeking his appointment"
+    },
+    {
+      "type": "other",
+      "amount": "$100,000,000",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "1852",
+      "description": "Estimated minimum value of lands granted to Indians under 1852 treaties at time of suppression"
+    },
+    {
+      "type": "other",
+      "amount": "$1.25 per acre",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "unknown",
+      "description": "Value fixed by bill for land taken from California Indians for purposes of gross judgment calculation"
+    },
+    {
+      "type": "other",
+      "amount": "between $6,000,000 and $10,000,000",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "1928",
+      "description": "Contemplated recovery range at time Jurisdictional Act was being formulated"
+    },
+    {
+      "type": "other",
+      "amount": "less than $13,000,000",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "1929",
+      "description": "Amount Attorney General of California asked for in suit, per letter from Allan H. Gardner"
+    },
+    {
+      "type": "other",
+      "amount": "in excess of $10,000",
+      "payer": "Indians of California, Inc.",
+      "payee": "F. G. Collett",
+      "date": "1934",
+      "description": "Accumulated amount owed to F. G. Collett for expenses advanced and compensation over several years"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "F. G. Collett",
+      "type": "represented",
+      "object": "Indians of California, Inc.",
+      "context": "Executive Representative of the organization"
+    },
+    {
+      "subject": "Attorney General of California",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Named in Jurisdictional Act to bring suit on behalf of California Indians in Court of Claims"
+    },
+    {
+      "subject": "John Collier",
+      "type": "employed_by",
+      "object": "Department of the Interior / Office of Indian Affairs",
+      "context": "Commissioner of Indian Affairs"
+    },
+    {
+      "subject": "John Collier",
+      "type": "opposed",
+      "object": "Court of Claims bill",
+      "context": "Created Kahn bill as counter-proposal and organized Indian Brotherhood to oppose Court of Claims bill"
+    },
+    {
+      "subject": "John Collier",
+      "type": "founded",
+      "object": "Indian Defense Association",
+      "context": "Organization associated with John Collier that opposed Indians of California, Inc."
+    },
+    {
+      "subject": "Stephen Knight",
+      "type": "represented",
+      "object": "Indian Brotherhood",
+      "context": "Representing the Indian Brotherhood at Senate hearings"
+    },
+    {
+      "subject": "Stephen Knight",
+      "type": "related_to",
+      "object": "Indians of California, Inc.",
+      "context": "Was delegate for Indians of California in 1922 before switching to work for Kahn bill"
+    },
+    {
+      "subject": "William Fuller",
+      "type": "related_to",
+      "object": "Indians of California, Inc.",
+      "context": "Was delegate for Indians of California in 1922 before switching to Indian Brotherhood in 1926"
+    },
+    {
+      "subject": "Congressman Clarence F. Lea",
+      "type": "introduced",
+      "object": "Jurisdictional Act",
+      "context": "Introduced final form of Jurisdictional Act on December 5, 1927"
+    },
+    {
+      "subject": "Congressman John Raker",
+      "type": "introduced",
+      "object": "Original Jurisdictional Act",
+      "context": "Presented original copy of Jurisdictional Act to Congress March 23, 1920"
+    },
+    {
+      "subject": "E. B. Merritt",
+      "type": "supported",
+      "object": "Jurisdictional Act",
+      "context": "Assistant Commissioner acknowledged co-sponsors and submitted favorable report"
+    },
+    {
+      "subject": "Indians of California, Inc.",
+      "type": "initiated",
+      "object": "Jurisdictional Act",
+      "context": "F. G. Collett initiated and continuously labored for passage from 1920 to 1928"
+    },
+    {
+      "subject": "Attorney General of California",
+      "type": "related_to",
+      "object": "United States Government (defendant)",
+      "context": "Collett alleged AG was effectively the attorney chosen by the defendant rather than the plaintiffs"
+    },
+    {
+      "subject": "F. G. Collett",
+      "type": "related_to",
+      "object": "Rellimeo Film Syndicate",
+      "context": "Officer without compensation in distressed company; indicted but case dismissed"
+    },
+    {
+      "subject": "O. E. Miller",
+      "type": "related_to",
+      "object": "Rellimeo Film Syndicate",
+      "context": "President and organizer of the syndicate; target of prosecution"
+    },
+    {
+      "subject": "F. E. Miller",
+      "type": "related_to",
+      "object": "Rellimeo Film Syndicate",
+      "context": "Treasurer and organizer of the syndicate; target of prosecution"
+    },
+    {
+      "subject": "Judge Louderback",
+      "type": "related_to",
+      "object": "Rellimeo Film Syndicate case",
+      "context": "Federal judge assigned to the case; took unauthorized vacation; deputy DA proposed to use Collett affidavit to discipline him"
+    },
+    {
+      "subject": "Marion Butler",
+      "type": "related_to",
+      "object": "Indians of California",
+      "context": "Attorney or advocate writing on behalf of California Indians' right to private counsel"
+    },
+    {
+      "subject": "Mr. Elkus",
+      "type": "represented",
+      "object": "unnamed California Indian organization (possibly one of three associations)",
+      "context": "Testified before Senate committee; favored attorney general representing all California Indians collectively"
+    },
+    {
+      "subject": "Allan H. Gardner",
+      "type": "related_to",
+      "object": "Indians of California",
+      "context": "California Indian in contact with over 3,000 Indians in southern California; wrote to Senator Wheeler"
+    },
+    {
+      "subject": "Mission Fathers",
+      "type": "related_to",
+      "object": "California Indians",
+      "context": "Introduced Indians to new diet that caused deaths"
+    },
+    {
+      "subject": "Secretary of Interior",
+      "type": "approved",
+      "object": "California Indian Rolls",
+      "context": "Approved Roll No. 1 and Roll No. 2 on May 16, 1933"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "Marion Butler",
+      "sender_title": "unknown (attorney/advocate)",
+      "recipient": "unknown (implied Congressional committee or general audience)",
+      "date": "unknown",
+      "subject": "Commissioner's unfair treatment of California Indians in settlement negotiations; right to private attorneys",
+      "action_requested": "Allow Indians to have private attorneys; do not settle case for $6,000,000 or $13,063,832",
+      "outcome": "unknown"
+    },
+    {
+      "sender": "F. G. Collett / Indians of California, Inc.",
+      "sender_title": "Executive Representative",
+      "recipient": "Burton K. Wheeler, Chairman Senate Committee on Indian Affairs",
+      "date": "1934-06-18",
+      "subject": "Request for Senate Committee on Indian Affairs to hold hearings in California regarding amendments to Jurisdictional Act",
+      "action_requested": "Hold hearings in California at Yuma, San Diego, Los Angeles, and San Francisco; allow Indians to be represented by attorneys of their own selection",
+      "outcome": "unknown"
+    },
+    {
+      "sender": "F. G. Collett / Indians of California, Inc.",
+      "sender_title": "Executive Representative",
+      "recipient": "Committee on Indian Affairs, United States Senate",
+      "date": "1934-05-17",
+      "subject": "Explanation of opposition to S. 3572 and justification for its passage; submission of papers on nine subjects including errors in H.R. 7095 report, jurisdictional act background, attorney general's derelict conduct",
+      "action_requested": "Pass S. 3572 authorizing California Indians to be represented by attorneys of their own choice",
+      "outcome": "unknown"
+    },
+    {
+      "sender": "F. G. Collett / Indians of California, Inc.",
+      "sender_title": "Executive Representative",
+      "recipient": "Committee on Indian Affairs, United States Senate",
+      "date": "1934-09-29",
+      "subject": "Supplemental statement authorized at July 2, 1934 hearing; correction of erroneous testimony; background on Stephen Knight, William Fuller, Ainsworth, Indian Brotherhood, Kahn bill, Rellimeo Film Syndicate case; financial report of Indians of California, Inc.",
+      "action_requested": "Include two memorandums in hearing record; await certified audited financial statement by mid to late November",
+      "outcome": "unknown"
+    },
+    {
+      "sender": "John Collier",
+      "sender_title": "Commissioner of Indian Affairs",
+      "recipient": "Subcommittee, Committee on Indian Affairs, United States Senate",
+      "date": "1933-10-05",
+      "subject": "Transmittal of statement regarding Indians in California for inclusion in printed record",
+      "action_requested": "Include statement in record to be printed regarding California Indians",
+      "outcome": "unknown"
+    },
+    {
+      "sender": "John Collier",
+      "sender_title": "Commissioner of Indian Affairs",
+      "recipient": "Indians in California",
+      "date": "1933-10-02",
+      "subject": "Status of Court of Claims suit; warning against paying fees or dues to outside organizations; government protection of Indian interests without expense to Indians",
+      "action_requested": "Indians should not pay fees, dues, or contributions to outside organizations such as Indians of California, Inc.",
+      "outcome": "unknown"
+    },
+    {
+      "sender": "Allan H. Gardner, Thomas Lago, Stella Von Bulow",
+      "sender_title": "California Indians",
+      "recipient": "Hon. Burton K. Wheeler",
+      "date": "1934-05-24",
+      "subject": "Request for support of H.R. 7095 and Senate companion bill; complaint about attorney general's delay and inadequate claim amount; John Collier's changed position on private attorneys",
+      "action_requested": "Recommend H.R. 7095 or Senate bill for passage by present Congress",
+      "outcome": "unknown"
+    },
+    {
+      "sender": "Attorney General of California",
+      "sender_title": "Attorney General",
+      "recipient": "Congressman Dockweller",
+      "date": "unknown",
+      "subject": "Admission that amendments to petition in California Indians case were filed 10 months after expiration of 3-year period; admission that amendments attempted to include new parties and new subject matter",
+      "action_requested": "unknown",
+      "outcome": "unknown"
+    },
+    {
+      "sender": "Secretary of the Interior",
+      "sender_title": "Secretary",
+      "recipient": "unknown",
+      "date": "1934-04-23",
+      "subject": "Statement regarding jurisdictional act for Chippewa Indian Tribe of Minnesota; doubt about court jurisdiction should be removed by amendment",
+      "action_requested": "Amend jurisdictional act to remove doubt about jurisdiction",
+      "outcome": "unknown"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Jurisdictional Act (45 Stat. 602)",
+      "sponsor": "Congressman Clarence F. Lea (final form); originally Congressman John Raker",
+      "action_type": "enacted",
+      "date": "1928-05-18",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Enacted; authorized attorney general of California to bring suit in Court of Claims on behalf of California Indians without expense to Indians; authorized preparation of two rolls of California Indians; provided judgment proceeds held in Treasury at 4% interest for Indian benefit"
+    },
+    {
+      "bill_number": "Kahn bill",
+      "sponsor": "unknown (created by John Collier)",
+      "action_type": "introduced",
+      "date": "1926",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Failed to pass; proponents eventually abandoned it"
+    },
+    {
+      "bill_number": "S. 3572",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "1934",
+      "vote_count": "unknown",
+      "committee": "Senate Committee on Indian Affairs",
+      "outcome": "Pending; subject of hearings and correspondence in 1934"
+    },
+    {
+      "bill_number": "H.R. 7095",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "1934",
+      "vote_count": "unknown",
+      "committee": "House",
+      "outcome": "Pending; companion bill to S. 3572; report prepared by Commissioner on Indian Affairs contained alleged errors"
+    },
+    {
+      "bill_number": "Original Jurisdictional Act (House)",
+      "sponsor": "Congressman John Raker",
+      "action_type": "introduced",
+      "date": "1920-03-23",
+      "vote_count": "unknown",
+      "committee": "House Committee",
+      "outcome": "Basis for eventual Jurisdictional Act passed in 1928 after multiple hearings"
+    },
+    {
+      "bill_number": "California Legislature Act",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1927-05-18",
+      "vote_count": "unknown",
+      "committee": "California Legislature",
+      "outcome": "Enacted; authorized attorney general of California to bring action for Indians if Congressional authority given"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Mr. Elkus",
+      "witness_title": "unknown (likely attorney or California organization representative)",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "unknown",
+      "date": "1934",
+      "subject": "Status of Court of Claims suit for California Indians; opposition to private attorneys for California Indians; history of Jurisdictional Act",
+      "key_claims": "Suit is practically ready for hearing before Court of Claims; delays due to getting information from Government bureaus and taking turn among similar cases; recovery was contemplated at $6-10 million when bill was formulated; bill was purposely framed to have attorney general represent Indians to avoid competition among organizations and contingent fee claims; there is no controverted matter, mostly computation; land value was fixed at $1.25 per acre; per capita distribution is contrary to bill's intent; at time of bill passage there were three Indian associations in California (Collett's, Tibbitts', and Indian Defense Association); California itself has real interest in Indian rehabilitation; he was part of one of those organizations and did not want fight over attorneyship; no proposal for compromise of which he is aware",
+      "questioner": "Senator Thomas, The Chairman"
+    },
+    {
+      "witness": "F. G. Collett",
+      "witness_title": "Executive Representative, Indians of California, Inc.",
+      "hearing": "Subcommittee hearing at St. Francis Hotel",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "date": "1934-07-02",
+      "subject": "California Indian claims; conduct of attorney general; history of jurisdictional act; activities of John Collier; character of various witnesses",
+      "key_claims": "Stephen Knight was delegate for Indians of California in 1922 then switched to Indian Brotherhood and Kahn bill; John Collier gave Knight $250 to organize Indian Brotherhood; William Fuller also switched sides; F. G. Collett's indictment related to Rellimeo Film Syndicate had nothing to do with Indian affairs and was dismissed; attorney general has been damagingly derelict; attorney general filed suit 15 months late causing other cases to be filed ahead; attorney general's petition had multiple errors including failing to include many tribes; attorney general failed to amend petition for additional 2 years 7 months; amendments included new parties and new subject matter filed 10 months after jurisdiction expired; attorney general wrongfully relied on defendant to prepare plaintiff's case; Indians need private attorneys; Indians of California Inc. was regularly incorporated and recognized by California courts; financial reports will show Collett was without compensation for years and is owed over $10,000; Commissioner misled Congressional committees and sought predetermined settlement of $6 million",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Stephen Knight",
+      "witness_title": "Indian from Ukiah, California; representing Indian Brotherhood",
+      "hearing": "Subcommittee hearing at St. Francis Hotel",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "date": "1934-07-02",
+      "subject": "California Indian representation and claims",
+      "key_claims": "Provided erroneous information per F. G. Collett; opposed Indians of California Inc. position; background: was delegate for Indians of California in 1922, then persuaded to switch to Indian Brotherhood and Kahn bill with $250 from John Collier",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Mr. Ainsworth",
+      "witness_title": "Indian witness",
+      "hearing": "Subcommittee hearing at St. Francis Hotel",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "date": "1934-07-02",
+      "subject": "California Indian representation and claims",
+      "key_claims": "Described by Collett as a free lance not long continuing activity with any Indian organization; provided testimony at hearing",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Representative of Indians Defense Association",
+      "witness_title": "unknown",
+      "hearing": "Subcommittee hearing at St. Francis Hotel",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "date": "1934-07-02",
+      "subject": "Character of F. G. Collett",
+      "key_claims": "Attempted to lead committee to believe executive representative of Indians of California was indicted for misuse of mail and not vindicated; characterized by Collett as vicious misrepresentation",
+      "questioner": "unknown"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

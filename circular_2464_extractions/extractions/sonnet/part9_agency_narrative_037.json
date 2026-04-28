@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_037",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "64",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Peter Decorye",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "3583",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded August 31, 1920, by C. L. Dice",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Peter Decory conveyed the land by deed to W. H. Tackett for $2000",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739606 issued; Southeast quarter section 17, township 37, north of range 28; receipt for patent was signed by the allottee April 3, 1920; conveyance dated August 28, 1920",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2010,
+    "output_tokens": 320
+  },
+  "elapsed": 4.9
+}

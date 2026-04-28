@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_003",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "6-7",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Thomas Morgan",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Okla.",
+    "Allotment number": "278",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes",
+    "Sold/Mortgaged": "Mortgaged for $700 but allottee says he only received payments of about $20.00 each time. Land sold to satisfy mortgages.",
+    "Buyer": "Land was sold to settle indebtedness with C. E. Vandervoort, Sr.",
+    "Tax burden forced sale/Mortgage": "no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Nov. 30, 1917",
+    "Gender": "Male",
+    "Age": "58 years",
+    "Occupation/Income": "Rent income of $30 per year. Only annuity paid to the Pawnee Tribe.",
+    "NOTES": "Date and manner of delivery of patent 12-26-1917; receipted for yes; patent recorded in Pawnee County, Okla. by G.E. Vandervoort, Sr.; only wife dependent upon allottee for support; it appears that the allottee was defrauded of his land by C. E. Vandervoort, Sr., who is now dead; not very good physical/mental condition; no property and no money accumulated; document notarized November 26, 1928, Pawnee County, Oklahoma; commission expires Jan. 31, 1929; file reference 47022/20A",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2656,
+    "output_tokens": 443
+  },
+  "elapsed": 11.6
+}

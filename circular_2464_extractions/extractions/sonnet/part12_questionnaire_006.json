@@ -1,0 +1,33 @@
+{
+  "document_id": "part12_questionnaire_006",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "14-15",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Hiram Good Chief",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Okla.",
+    "Allotment number": "816",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "no",
+    "Sold/Mortgaged": "Sold to O. R. Spinning for $3000",
+    "Buyer": "O. R. Spinning; $3000 was a fair price at that time. Owed Mr. Spinning about $90.00",
+    "Tax burden forced sale/Mortgage": "no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Nov. 13, 1917",
+    "Gender": "Male",
+    "Age": "45 years",
+    "Occupation/Income": "No inherited land. Shares in Pawnee annuity.",
+    "NOTES": "Date and manner of delivery of patent: Dec. 5, 1917, Agency office. Patent receipted: yes. No property and no money accumulated. Fair health. Wife and three children dependent on him. It seems that the Competency Commission made a mistake in issuing this allottee a patent, as he sold the land for a small price. Present land is producing oil. Document notarized November 26, 1928, Pawnee County, Oklahoma.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2630,
+    "output_tokens": 383
+  },
+  "elapsed": 7.6,
+  "retry_count": 1
+}

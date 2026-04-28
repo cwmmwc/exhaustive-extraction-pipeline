@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_020",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "60",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Josephine Collins",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I told the farmer that I did not want it as I can not pay the tax and did not want it. He said it is already issued now and I took it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged and then sold it. But at the time I signed the mortgage I thought it was a deed.",
+    "Buyer": "W. H. Tackett; allottee states she was to get $7000.00 but is sure of only $3100.00; husband may have received additional amount unknown to her",
+    "Tax burden forced sale/Mortgage": "I sold the land soon after I got the patent so that I would not have to pay tax.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "66 years",
+    "Occupation/Income": "My husband looks after that.",
+    "NOTES": "Signed by thumb mark (X mark). Allottee states W. H. Tackett came to her house and took her first to Winner and then to Gregory, showed her money and said he would give her $7000.00 for her land; she later found the instrument she and her husband signed was a mortgage, not a deed, and tried to get the land back. Does not know when she signed the deed. Not satisfied with the sale; states she did not want the patent in the first place. No children. Subscribed and sworn before Jas. W. Cross, Notary Public, commission expires 4-28-32, on 26th day of April 1929. Document reference number 28622.",
+    "Literate/Illiterate": "I can neither read nor write; signed by thumb mark",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2423,
+    "output_tokens": 499
+  },
+  "elapsed": 7.2
+}

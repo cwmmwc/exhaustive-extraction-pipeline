@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_005",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "12-13",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "not stated",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is largely illegible; received stamp dated SEP 30 1929; questionnaire form referencing Rosebud Sioux allottee and fee patent; most answers are illegible or missing; notarized on what appears to be a date in 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2484,
+    "output_tokens": 281
+  },
+  "elapsed": 5.2
+}

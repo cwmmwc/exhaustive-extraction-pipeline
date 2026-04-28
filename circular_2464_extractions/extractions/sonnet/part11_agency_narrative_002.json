@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_agency_narrative_002",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "54",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Henry Jacobs",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Pat recorded for N/2. 19. Feb 13th 1920; filed for record vol 169 page 214",
+    "Sold/Mortgaged": "Mortgaged and sold; North half was sold, and the south is still held by Anderson of Pierre S.D.; S/2 of Sec 18-108-74 mortgaged to the Farmers State Bank of Canning S.D. for $2000.00 at 8% int., recorded in vol 150, page 959, Feb 20th 1920; N/2 of Section 19-108-74 mortgaged to Flora B. Anderson of Hughs County for $2000.00 with interest at 9%, filed for record in vol 164 page 195, June 18th 1920",
+    "Buyer": "N/2 foreclosed and sold by sheriff Oct 8th 1921 for $2201.85 (principal and int. $2145.00, att'y fees $25.00, printers fees $16.25, sheriff fees $10.60, recorders fees $5.00); S/2 foreclosed and sold at sheriff sale April 4th 1925 for $2813.46 (principal and interest $2658.61, att'y fees $25.00, publishers fees $13.00, sheriff fees $10.00, recorders fees $5.00, taxes paid by mortgagor $1101.25); Anderson of Pierre S.D. holds south half",
+    "Tax burden forced sale/Mortgage": "Taxes paid by Mortgagor $1101.25",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Jacobs wife never signed one mortgage of the half that was mortgaged to Summerville; records at the Court House at Pierre S.D., Hughes County; S/2 of Sec 18-108-74 and N/2 of Section 19-108-74, Township 108, Range 74; document prepared by Geo H. Boesi, Government farmer, Big Bend District",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2365,
+    "output_tokens": 647
+  },
+  "elapsed": 8.1
+}

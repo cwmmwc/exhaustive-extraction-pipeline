@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_070",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "88",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "George Harvey (allottee, deceased); affidavit given by Susie Keester, nee Harvey (daughter)",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Imlay, South Dakota",
+    "Allotment number": "2718",
+    "Cancelled": "not stated",
+    "Refused/Protested": "he did not want this patent in fee, as he did not want to pay taxes; but he was informed that, if he did not accept the patent, and pay the taxes, it would be taxed just the same, and later sold for same, so he took the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1920, he mortgaged 200 acres of this allotment to the Security & Savings Bank of Rapid City, South Dakota, for $800.00, they keeping $60.00 of this as commission for making the loan",
+    "Buyer": "Security & Savings Bank of Rapid City, South Dakota; mortgage of 200 acres for $800.00 ($60.00 kept as commission); at time of Mr. Harvey's death they still had hold of his land and were preparing to acquire the whole section",
+    "Tax burden forced sale/Mortgage": "her father never paid any taxes on this land; the reason for borrowing this money was to pay grazing lease and to buy seed; in 1925, her father went to the bank and asked them to accept the 200 acres for the mortgage and that he would sell another 160 acres of land to get money to pay taxes on the balance, but the banker refused",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female (deponent Susie Keester); Male (allottee George Harvey)",
+    "Age": "30 years old (deponent Susie Keester)",
+    "Occupation/Income": "not stated",
+    "NOTES": "Affidavit No. 2718; allottee George Harvey died July 11, 1928; allotment of 638.46 acres described as all the fractional section 10, T.41N., R.43W. and the NW1/4 of SW, Sec. 11, T.41N., R.43W., of the 6th P.M., in South Dakota; $80.00 interest has been paid on the mortgage; father did not make any will; his business was in bad shape, having been sick for years prior to death; father received a letter before his death ordering him to move off the land, which he refused to do; deponent has a brother who lives with his mother, farms his own land, and supports his mother; George Harvey never received any aid from the County, State, nor the United States Government; never sold land for debts incurred prior to receiving fee patent; affidavit sworn April 23, 1929 | Allotment number 2718 from source page 88 (No. 2718 visible on same page as affidavit). Prior auto-recovery incorrectly assigned 2707 from adjacent page 87.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2588,
+    "output_tokens": 736
+  },
+  "elapsed": 9.0
+}

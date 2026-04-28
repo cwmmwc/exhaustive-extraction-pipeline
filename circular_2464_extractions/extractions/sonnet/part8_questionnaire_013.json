@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_questionnaire_013",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "44",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louise Flood Bravebird",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2960",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Yes, I objected to it twice, but was told that I would have to pay taxes any way if I did not sell it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I did not mortgage the land but the Superintendent at that time, Mr. Covey, sold it for me.",
+    "Buyer": "Mr. Tackett; price was $2400 but allottee received $2000",
+    "Tax burden forced sale/Mortgage": "was told that I would have to pay taxes any way if I did not sell it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "spring of 1918",
+    "Gender": "Female",
+    "Age": "32",
+    "Occupation/Income": "My husband and I support them.",
+    "NOTES": "Patent received in the spring of 1918 at Rosebud. Original price of $2400 was to be paid in deferred payments, but allottee accepted $2000 in cash due to immediate need for money. Did not sign a receipt for the patent. Satisfied with the sale. No debts or other obligations settled between allottee and Mr. Tackett at time of purchase. Has four children. Allottee is not in good health; husband is in good health. Document subscribed and sworn before Notary Public on March 21, 1929; commission expires 4/28/32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2307,
+    "output_tokens": 444
+  },
+  "elapsed": 7.2
+}

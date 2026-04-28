@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_017",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "52",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "George Menard",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold the north quarter to Mr. Siegmund for $7000.00 and the other to George Moore for $7600.00",
+    "Buyer": "North quarter sold to Mr. Siegmund for $7000.00 plus six cows; other quarter sold to George Moore for $7600.00 plus three cows",
+    "Tax burden forced sale/Mortgage": "when the patent came on both quarters I had to sell both on account of taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "53",
+    "Occupation/Income": "Work at odd jobs",
+    "NOTES": "Asked for patent on one quarter only; patent was issued for the whole half section. It was his intention to get a patent only on the one quarter in order to sell it and improve the other quarter. Had there been a way known to him at the time to get the patent on one quarter cancelled and the land held in trust he should have been glad to done so. Has five dependents. Signed application before Mr. Cordry the farmer. Received patent from Rosebud agency. Notary: Jas. W. Gross, commission expires 4-28-32. Document dated June 6, 1929. Page/file reference: 548.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2415,
+    "output_tokens": 439
+  },
+  "elapsed": 5.8
+}

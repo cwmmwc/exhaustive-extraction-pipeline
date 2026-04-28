@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_012",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "30-31",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John B. DeCory",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I never asked for the patent on my land, but took same, altho went broke. I was very doubtful if I could keep up the taxes on same, which I found I could not do, so finally had to sell same",
+    "Recorded patent": "I asked a man by the name Wm. Schmidt who was working in the Rosebud Agency office at that time what I should do with the Patent, and in answer he said 'You might as well keep it as it has President Wilson's name signed to it' so I put Patent in my pocket and kept it.",
+    "Sold/Mortgaged": "Cash sale all in one payment which amount was $7000.00; Never Mortgaged.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I was very doubtful if I could keep up the taxes on same, which I found I could not do, so finally had to sell same",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1910",
+    "Gender": "Male",
+    "Age": "63 years of age",
+    "Occupation/Income": "I support them with my salary that I receive as a Minister",
+    "NOTES": "Patent was delivered by mail at Rosebud, S.D. in 1910; allottee never signed a receipt for it; never made application for the patent; $2000 of sale proceeds lost in the Mission State Bank of Mission, S.D.; wife and five children are dependents; document notarized June 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2622,
+    "output_tokens": 471
+  },
+  "elapsed": 7.4
+}

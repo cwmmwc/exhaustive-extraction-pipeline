@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_083",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "102-103",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charles Allen",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Martin, So. Dak.",
+    "Allotment number": "1103",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want it, and did not accept the patent for some time, but that he was told by the Farmer and the Superintendent that if he did not take the patent and keep up the taxes that the land would be sold to pay them",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged it to the State of South Dakota for $2000.00",
+    "Buyer": "Mortgaged to the State of South Dakota for $2000.00",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes on his land and that he had to mortgage it to pay them",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "47 years old",
+    "Occupation/Income": "runs a motion picture show in Martin, So. Dak. and that he is just making enough to live on",
+    "NOTES": "mentally competent in fair health; has one child depending on him for support; has received no aid from the Government, State or County since his patent was issued; is keeping up the payments and the taxes but it is a very hard job to make the payments; all he has is his equity in his allotment; affidavit sworn November 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2826,
+    "output_tokens": 853
+  },
+  "elapsed": 12.3
+}

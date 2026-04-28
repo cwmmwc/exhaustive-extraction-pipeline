@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_023",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "62-63",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "not stated",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "zuzc",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "not stated",
+    "Age": "30",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is heavily degraded and largely illegible; most answers to questions 3\u201313 are unreadable. Question 7 asks about protest status; answer appears to be a single illegible word transcribed as 'zuzc'. Question 8 references mortgage and possible foreclosure but text is illegible. Some partial numerical values visible near questions 4/5 (e.g., '00922', '3/00', '2.223 100') but context is too unclear to assign definitively. Notarized in 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2382,
+    "output_tokens": 341
+  },
+  "elapsed": 7.5
+}

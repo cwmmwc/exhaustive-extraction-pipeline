@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_questionnaire_002",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "4-5",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "not stated",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is largely illegible due to poor scan quality and handwritten text that cannot be reliably transcribed. Two overlapping questionnaire pages (Circular No. 2464 and Circular No. 3464) are present. Most answers are indecipherable. Some fragmentary text suggests land was sold for debts or taxes, a mortgage may have been involved, and the patent may have been cancelled, but specific details cannot be reliably extracted.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 3549,
+    "output_tokens": 312
+  },
+  "elapsed": 7.8
+}

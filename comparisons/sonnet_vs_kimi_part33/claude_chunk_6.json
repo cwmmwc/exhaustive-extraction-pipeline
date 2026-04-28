@@ -1,0 +1,813 @@
+{
+  "entities": [
+    {
+      "name": "J. Aaron Moore",
+      "type": "person",
+      "context": "Deputy Special Officer at Large, United States Indian Service; sent telegrams to Collier about Mesa Grande incident"
+    },
+    {
+      "name": "John Collier",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs, Washington D.C."
+    },
+    {
+      "name": "Purl Willis",
+      "type": "person",
+      "context": "Advocate for Mission Indians, associated with Indian Federation; accused by Moore of inciting Indians"
+    },
+    {
+      "name": "H. R. Prather",
+      "type": "person",
+      "context": "Resident of La Jolla, Calif.; associated with Mission Indian Federation; co-signed letters contesting Moore's accusations"
+    },
+    {
+      "name": "Adam Castillo",
+      "type": "person",
+      "context": "President of Mission Indian Federation"
+    },
+    {
+      "name": "John W. Dady",
+      "type": "person",
+      "context": "Local superintendent of the Indian Bureau, Riverside office"
+    },
+    {
+      "name": "George Ponchetti",
+      "type": "person",
+      "context": "Federation Indian at Mesa Grande fiesta who approached Moore in threatening manner"
+    },
+    {
+      "name": "Robert McGee",
+      "type": "person",
+      "context": "Deputy under Moore, regular Indian policeman present at fiesta"
+    },
+    {
+      "name": "John Morretti",
+      "type": "person",
+      "context": "Indian member of fiesta committee at Mesa Grande"
+    },
+    {
+      "name": "E. J. Geehan",
+      "type": "person",
+      "context": "Agent, U.S. Department of Justice Bureau of Investigation, Los Angeles; investigated Willis's activities"
+    },
+    {
+      "name": "Czerney Anderson",
+      "type": "person",
+      "context": "Surveyor involved in proposed resurvey of Los Coyotes Indian Reservation boundaries"
+    },
+    {
+      "name": "Nathan Margold",
+      "type": "person",
+      "context": "Solicitor of the Interior Department; recipient of Willis letter circa August 10, 1933"
+    },
+    {
+      "name": "Edgar Howard",
+      "type": "person",
+      "context": "Chairman, House Indian Committee, House of Representatives"
+    },
+    {
+      "name": "Collett",
+      "type": "person",
+      "context": "Referenced as source of legal advice for federation Indians; associated with Willis"
+    },
+    {
+      "name": "Dan Ames",
+      "type": "person",
+      "context": "Indian who visited Prather's home requesting he visit Sycuan reservation, March 1934"
+    },
+    {
+      "name": "Frank Wachano",
+      "type": "person",
+      "context": "Non-federation Indian on Sycuan Reservation who attempted to stop Prather from entering"
+    },
+    {
+      "name": "Robert Chutnicut",
+      "type": "person",
+      "context": "Spokesman for Los Coyotes Indian Reservation; active in boundary survey discussions"
+    },
+    {
+      "name": "Captain Nicholas Chaparosa",
+      "type": "person",
+      "context": "Captain of Los Coyotes Indian Reservation; meeting held at his home; allegedly seen with gun"
+    },
+    {
+      "name": "Manuel Chaparosa",
+      "type": "person",
+      "context": "Indian occupying lands at Los Coyotes near Hot Springs area"
+    },
+    {
+      "name": "Eugene Ness",
+      "type": "person",
+      "context": "Attorney of San Diego; present at Los Coyotes reservation conference September 23, 1934"
+    },
+    {
+      "name": "Winslow Couro",
+      "type": "person",
+      "context": "Spokesman of Santa Ysabel Indian Reservation; present at Los Coyotes conference"
+    },
+    {
+      "name": "E. C. Willis",
+      "type": "person",
+      "context": "Brother of Purl Willis; present at Los Coyotes conference September 23, 1934"
+    },
+    {
+      "name": "Harry W. Conradt",
+      "type": "person",
+      "context": "School department official, Mission Indian Agency, Riverside; attended Mesa Grande school meeting"
+    },
+    {
+      "name": "Mr. R. C. Block",
+      "type": "person",
+      "context": "Accompanied Conradt; address 357 Ray Street, San Diego"
+    },
+    {
+      "name": "Mrs. R. C. Block",
+      "type": "person",
+      "context": "Indian welfare chairman, California Federation of Women's Clubs"
+    },
+    {
+      "name": "Mrs. Frank Booth",
+      "type": "person",
+      "context": "Resident of La Jolla; accompanied Prathers to Mesa Grande fiesta; attested to facts in Prather's letter"
+    },
+    {
+      "name": "Marion S. Stough",
+      "type": "person",
+      "context": "Resident of 3523 Sidney Street, San Diego; accompanied Prathers to Mesa Grande fiesta"
+    },
+    {
+      "name": "Mrs. H. R. Prather",
+      "type": "person",
+      "context": "Wife of H. R. Prather; accompanied him to Sycuan reservation March 11, 1934"
+    },
+    {
+      "name": "Ruth G. Willis (Mrs. Purl)",
+      "type": "person",
+      "context": "Wife of Purl Willis; present at Sycuan reservation visit; address 4085 Georgia Street, San Diego"
+    },
+    {
+      "name": "Mrs. Purl Willis",
+      "type": "person",
+      "context": "Accompanied Prather to Sycuan Reservation March 11, 1934"
+    },
+    {
+      "name": "V. J. Lachusa",
+      "type": "person",
+      "context": "Spokesman for Mesa Grande Indians; signed statement defending Willis and Prather"
+    },
+    {
+      "name": "Gilbert Clelland",
+      "type": "person",
+      "context": "Committee member at Mesa Grande who signed statement defending Federation"
+    },
+    {
+      "name": "Glace Lachusa",
+      "type": "person",
+      "context": "Committee member at Mesa Grande who signed statement defending Federation"
+    },
+    {
+      "name": "Ramon Charie",
+      "type": "person",
+      "context": "Committee member at Mesa Grande who signed statement defending Federation"
+    },
+    {
+      "name": "Mr. La Chusa",
+      "type": "person",
+      "context": "Witness at Senate hearing; identified Nicholas Chaparosa; stated he was not federation police"
+    },
+    {
+      "name": "Vicente Albanes",
+      "type": "person",
+      "context": "Signatory on September 10, 1934 letter to Senate Indian Affairs Committee"
+    },
+    {
+      "name": "Winston Couro",
+      "type": "person",
+      "context": "Signatory on September 10, 1934 letter to Senate Indian Affairs Committee"
+    },
+    {
+      "name": "Mr. Rieger",
+      "type": "person",
+      "context": "Chief of E.C.W. under Dady; new employee at time; stated he saw Nicholas Chaparosa with gun in plain view"
+    },
+    {
+      "name": "Juan Leo",
+      "type": "person",
+      "context": "Indian at Mesa Grande; his sons overheard talk of 'war before fiesta was over'"
+    },
+    {
+      "name": "A. A. Grorud",
+      "type": "person",
+      "context": "Staff member of Senate committee; in possession of copy of Willis letter to Margold"
+    },
+    {
+      "name": "Ethlin Thurmond",
+      "type": "person",
+      "context": "Notary public, County of San Diego, California; notarized Prather and Booth statements May 5, 1934"
+    },
+    {
+      "name": "Captain Chaparosa",
+      "type": "person",
+      "context": "Home used as meeting location at Los Coyotes Reservation"
+    },
+    {
+      "name": "Mr. Majado",
+      "type": "person",
+      "context": "Spokesman for Soboba Indian Reservation; received copy of Anderson's survey report"
+    },
+    {
+      "name": "B. G. Prather",
+      "type": "person",
+      "context": "Co-signed attestation of Prather's letter; La Jolla, Calif."
+    },
+    {
+      "name": "Mission Indian Federation",
+      "type": "organization",
+      "context": "Indian advocacy organization with federation police; active in Mission Indian affairs"
+    },
+    {
+      "name": "United States Indian Service",
+      "type": "organization",
+      "context": "Federal agency employing Moore as Deputy Special Officer"
+    },
+    {
+      "name": "Senate Indian Affairs Committee",
+      "type": "organization",
+      "context": "Senate committee investigating conditions of Indians in United States"
+    },
+    {
+      "name": "House Indian Committee",
+      "type": "organization",
+      "context": "House of Representatives committee on Indian affairs; chaired by Edgar Howard"
+    },
+    {
+      "name": "Mission Indian Agency",
+      "type": "organization",
+      "context": "Bureau office at Riverside, California overseeing Mission Indians"
+    },
+    {
+      "name": "U.S. Department of Justice Bureau of Investigation",
+      "type": "organization",
+      "context": "Federal agency that investigated Willis's activities; Geehan was agent"
+    },
+    {
+      "name": "California Federation of Women's Clubs",
+      "type": "organization",
+      "context": "Organization with Indian welfare chairwoman Mrs. R. C. Block"
+    },
+    {
+      "name": "Mesa Grande Indian Reservation",
+      "type": "location",
+      "context": "Location of fiesta in August 1933 where confrontation with Moore occurred"
+    },
+    {
+      "name": "Los Coyotes Indian Reservation",
+      "type": "location",
+      "context": "Reservation near Warner Hot Springs, San Diego County; subject of boundary resurvey dispute"
+    },
+    {
+      "name": "Sycuan Indian Reservation",
+      "type": "location",
+      "context": "Small reservation in San Diego County; mostly Mission Federation Indians; Prather visited March 11, 1934"
+    },
+    {
+      "name": "Soboba Indian Reservation",
+      "type": "location",
+      "context": "Reservation surveyed by Anderson; near San Jacinto; survey over 100 pages"
+    },
+    {
+      "name": "Santa Ysabel Indian Reservation",
+      "type": "location",
+      "context": "Reservation whose spokesman Winslow Couro attended Los Coyotes conference"
+    },
+    {
+      "name": "Campo",
+      "type": "location",
+      "context": "Another reservation referenced; shooting incident in 1927; prior attempted arrests by officers"
+    },
+    {
+      "name": "San Diego, California",
+      "type": "location",
+      "context": "City where Moore returned to send wire to Collier; home of various parties"
+    },
+    {
+      "name": "La Jolla, California",
+      "type": "location",
+      "context": "Home of H. R. Prather; location from which letters were sent"
+    },
+    {
+      "name": "Riverside, California",
+      "type": "location",
+      "context": "Location of Mission Indian Agency office overseeing southern California reservations"
+    },
+    {
+      "name": "Warner Hot Springs",
+      "type": "location",
+      "context": "Area near Los Coyotes Indian Reservation"
+    },
+    {
+      "name": "Volcan Mountains",
+      "type": "location",
+      "context": "Area where surveyor Czerney Anderson stated he resided"
+    },
+    {
+      "name": "San Jacinto",
+      "type": "location",
+      "context": "Town near Soboba Indian Reservation; ranch lands claimed by Indians in survey"
+    },
+    {
+      "name": "Washington, D.C.",
+      "type": "location",
+      "context": "Location of Senate Indian Affairs Committee and Commissioner Collier's office"
+    },
+    {
+      "name": "Los Coyotes Reservation boundary dispute",
+      "type": "legal_case",
+      "context": "Dispute over resurvey of reservation lines and proposed land exchange near Hot Springs"
+    },
+    {
+      "name": "Sinone survey",
+      "type": "legal_case",
+      "context": "Old original survey claimed by Los Coyotes Indians as establishing their reservation boundaries"
+    },
+    {
+      "name": "E.C.W. program",
+      "type": "organization",
+      "context": "Emergency Conservation Work program; President Roosevelt's relief program; Rieger was chief under Dady"
+    }
+  ],
+  "events": [
+    {
+      "type": "confrontation",
+      "date": "1933-08-05",
+      "location": "Mesa Grande Indian Reservation",
+      "description": "Saturday night confrontation between Deputy Special Officer Moore and federation Indians at fiesta; Indians challenged Moore's authority, threatened violence, federation police asserted sole authority"
+    },
+    {
+      "type": "fiesta",
+      "date": "1933-08-04",
+      "location": "Mesa Grande Indian Reservation",
+      "description": "Mesa Grande Indian fiesta attended by approximately 200 Indians and 50 white people; described as peaceful by witnesses Prather, Booth, and Stough who left at 9 p.m."
+    },
+    {
+      "type": "school meeting",
+      "date": "1933-08-04",
+      "location": "Mesa Grande Indian Reservation",
+      "description": "Meeting held in old adobe building to discuss allowing Indian children to attend public school and close reservation school; Conradt attended and agreed to recommend Bureau assistance for enlarging public school"
+    },
+    {
+      "type": "telegram sent",
+      "date": "1933-08-06",
+      "location": "San Diego, California",
+      "description": "Moore sent wire to Commissioner Collier reporting alleged lawlessness at Mesa Grande fiesta and accusing Willis of inciting Indians"
+    },
+    {
+      "type": "telegram received",
+      "date": "1933-08-06",
+      "location": "Mesa Grande Indian Reservation",
+      "description": "Moore received answering wire from Collier backing Moore's authority; read to assembled Indians at Mesa Grande"
+    },
+    {
+      "type": "Sunday meeting",
+      "date": "1933-08-06",
+      "location": "Mesa Grande Indian Reservation",
+      "description": "Quiet and orderly meeting where Moore read Collier's telegram; Indian police covered four ringleaders; federation Indians struck dumb by Collier's support of government authority"
+    },
+    {
+      "type": "shooting incident",
+      "date": "1927",
+      "location": "Campo Indian Reservation",
+      "description": "Historical shooting incident at Campo reservation involving officers who had attempted to make arrests; referenced by Moore as precedent"
+    },
+    {
+      "type": "visit to Sycuan Reservation",
+      "date": "1934-03-11",
+      "location": "Sycuan Indian Reservation, San Diego County",
+      "description": "Prather, Mrs. Prather, Mrs. Purl Willis and her daughter visited Sycuan reservation; Prather was stopped by Indian Frank Wachano claiming orders from Riverside not to allow Prather on reservation"
+    },
+    {
+      "type": "request for visit",
+      "date": "1934-03-09",
+      "location": "La Jolla, California",
+      "description": "Two Indians including Dan Ames came to Prather's home requesting he visit Sycuan reservation to discuss controversial matters"
+    },
+    {
+      "type": "conference at Los Coyotes Reservation",
+      "date": "1934-04-22",
+      "location": "Los Coyotes Indian Reservation",
+      "description": "Meeting held under ramada at Captain Chaparosa's home; Anderson proposed volunteer survey of reservation lines; Indians agreed to accept offer; meeting lasted all afternoon with approximately 15-20 Indian men and women"
+    },
+    {
+      "type": "conference at Los Coyotes Reservation",
+      "date": "1934-09-23",
+      "location": "Los Coyotes Indian Reservation",
+      "description": "Follow-up conference called by Anderson at Captain Chaparosa's home; Anderson arrived late; Indians expressed disappointment with Anderson's work; dispute over proposed land exchange near Hot Springs; Anderson promised maps and report within 10 days"
+    },
+    {
+      "type": "letter to Margold",
+      "date": "1933-08-10",
+      "location": "San Diego, California",
+      "description": "Willis addressed letter to Nathan Margold, Solicitor of Interior Department, regarding Mesa Grande incident"
+    },
+    {
+      "type": "Department of Justice investigation",
+      "date": "1935-04-25",
+      "location": "Los Angeles, California",
+      "description": "E.J. Geehan of DOJ Bureau of Investigation investigated Willis's activities among Mission Indians; resulted in no charges being preferred against Willis"
+    },
+    {
+      "type": "letter from Geehan to Willis",
+      "date": "1935-04-25",
+      "location": "Los Angeles, California",
+      "description": "Geehan wrote to Willis confirming no charges were preferred as result of investigation; noted Willis had been invited to National Capital"
+    },
+    {
+      "type": "letter to Senate committee",
+      "date": "1934-09-10",
+      "location": "San Diego, California",
+      "description": "Castillo, Albanes, Couro, and Willis sent letter to Senate Indian Affairs Committee contesting Moore's account of Mesa Grande incident"
+    },
+    {
+      "type": "letter to House Indian Committee",
+      "date": "1934-05-03",
+      "location": "La Jolla, California",
+      "description": "H. R. Prather wrote to Congressman Edgar Howard contesting Moore's telegram to Collier about Mesa Grande fiesta"
+    },
+    {
+      "type": "notarization",
+      "date": "1934-05-05",
+      "location": "San Diego County, California",
+      "description": "Notary Ethlin Thurmond notarized Prather's letter and Mrs. Frank Booth's attestation"
+    },
+    {
+      "type": "statement on Los Coyotes resurvey",
+      "date": "1934-11-15",
+      "location": "Los Coyotes Indian Reservation area",
+      "description": "Statement by Castillo, Couro, and Willis certified facts about resurvey and exchange of land at Los Coyotes reservation"
+    },
+    {
+      "type": "hearings",
+      "date": "1934",
+      "location": "Washington, D.C.",
+      "description": "Senate Indian Affairs Committee special hearings on conditions of Indians; witnesses testified; committee invited additional written submissions"
+    },
+    {
+      "type": "Senate hearing testimony",
+      "date": "1934",
+      "location": "Unknown hearing location",
+      "description": "Chairman questioned Dady, Rieger, and La Chusa about armed Indians at Los Coyotes meeting; Rieger stated Nicholas Chaparosa had gun in plain view"
+    },
+    {
+      "type": "attempt to get Indians to sign land exchange paper",
+      "date": "1934-09-01",
+      "location": "Los Coyotes Indian Reservation",
+      "description": "Anderson visited reservation when people were working and tried to get Chutnicut to sign paper authorizing exchange of strip of Indian land near Hot Springs for land near Manuel Chaparosa's home; Chutnicut refused"
+    },
+    {
+      "type": "Soboba Indian Reservation survey",
+      "date": "1934",
+      "location": "Soboba Indian Reservation, near San Jacinto",
+      "description": "Anderson claimed to have made extensive survey over 100 pages with maps of Soboba Reservation for Dady and Indians; given to spokesman Majado; showed Indian lines took in valuable ranch property"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "other",
+      "amount": "15 cents",
+      "payer": "unknown",
+      "payee": "unknown",
+      "date": "1933-08-05",
+      "description": "Federation Indians claimed a badge like Moore's could be purchased for 15 cents, challenging the legitimacy of his authority"
+    },
+    {
+      "type": "other",
+      "amount": "none charged",
+      "payer": "N/A",
+      "payee": "Willis",
+      "date": "multiple years prior to 1934",
+      "description": "Willis stated to have provided services to Los Coyotes Indians voluntarily without charge over several years"
+    },
+    {
+      "type": "other",
+      "amount": "none charged",
+      "payer": "N/A",
+      "payee": "Anderson",
+      "date": "1934-04-22",
+      "description": "Anderson offered to survey Los Coyotes reservation lines for free if Indians would assist with brush cutting, rather than accept Dady's commission"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "J. Aaron Moore",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Deputy Special Officer at Large"
+    },
+    {
+      "subject": "John W. Dady",
+      "type": "employed_by",
+      "object": "Mission Indian Agency, Riverside",
+      "context": "Local superintendent of the Indian Bureau"
+    },
+    {
+      "subject": "Purl Willis",
+      "type": "represented",
+      "object": "Mission Indians",
+      "context": "Long-term advocate for Mission Indians without charge"
+    },
+    {
+      "subject": "Adam Castillo",
+      "type": "represented",
+      "object": "Mission Indian Federation",
+      "context": "President of Mission Indian Federation"
+    },
+    {
+      "subject": "Winslow Couro",
+      "type": "represented",
+      "object": "Santa Ysabel Indian Reservation",
+      "context": "Spokesman of the reservation"
+    },
+    {
+      "subject": "Robert Chutnicut",
+      "type": "represented",
+      "object": "Los Coyotes Indian Reservation",
+      "context": "Spokesman most active in boundary survey discussions"
+    },
+    {
+      "subject": "V. J. Lachusa",
+      "type": "represented",
+      "object": "Mesa Grande Indians",
+      "context": "Spokesman who signed statement defending Willis and Prather"
+    },
+    {
+      "subject": "E. J. Geehan",
+      "type": "employed_by",
+      "object": "U.S. Department of Justice Bureau of Investigation",
+      "context": "Agent who investigated Willis's activities; wrote letter of effective exoneration"
+    },
+    {
+      "subject": "Purl Willis",
+      "type": "accused_by",
+      "object": "J. Aaron Moore",
+      "context": "Moore alleged Willis incited Indians to resist government authority at Mesa Grande"
+    },
+    {
+      "subject": "H. R. Prather",
+      "type": "accused_by",
+      "object": "J. Aaron Moore",
+      "context": "Moore's telegram accused Prather along with Willis"
+    },
+    {
+      "subject": "Frank Wachano",
+      "type": "related_to",
+      "object": "Mission Indian Agency, Riverside",
+      "context": "Described as pet and stool pigeon of superintendent; non-federation Indian on Sycuan reservation"
+    },
+    {
+      "subject": "Mr. Rieger",
+      "type": "employed_by",
+      "object": "John W. Dady",
+      "context": "Chief of E.C.W. under Dady; new employee at time of Los Coyotes meeting"
+    },
+    {
+      "subject": "Harry W. Conradt",
+      "type": "employed_by",
+      "object": "Mission Indian Agency, Riverside",
+      "context": "School department official who attended Mesa Grande school meeting"
+    },
+    {
+      "subject": "Czerney Anderson",
+      "type": "related_to",
+      "object": "John W. Dady",
+      "context": "Anderson had previously done work for Dady; received commission letter from Dady for Los Coyotes survey; later returned it"
+    },
+    {
+      "subject": "Mrs. R. C. Block",
+      "type": "employed_by",
+      "object": "California Federation of Women's Clubs",
+      "context": "Indian welfare chairman"
+    },
+    {
+      "subject": "Eugene Ness",
+      "type": "represented",
+      "object": "Mission Indians",
+      "context": "Attorney of San Diego present at Los Coyotes conference September 23, 1934"
+    },
+    {
+      "subject": "Nathan Margold",
+      "type": "employed_by",
+      "object": "U.S. Department of Interior",
+      "context": "Solicitor of the Interior Department; received Willis letter August 1933"
+    },
+    {
+      "subject": "Willis",
+      "type": "related_to",
+      "object": "Collett",
+      "context": "Moore suggested legal advice to federation Indians came through Collett via Willis"
+    },
+    {
+      "subject": "E. C. Willis",
+      "type": "related_to",
+      "object": "Purl Willis",
+      "context": "Brother of Purl Willis; present at Los Coyotes conference"
+    },
+    {
+      "subject": "Mrs. Purl Willis",
+      "type": "related_to",
+      "object": "Purl Willis",
+      "context": "Wife; address 4085 Georgia Street, San Diego"
+    },
+    {
+      "subject": "A. A. Grorud",
+      "type": "employed_by",
+      "object": "Senate Indian Affairs Committee",
+      "context": "Staff member of Senate committee in possession of Willis letter to Margold"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "J. Aaron Moore",
+      "sender_title": "Deputy Special Officer at Large, United States Indian Service",
+      "recipient": "John Collier",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "1933-08-06",
+      "subject": "Mesa Grande fiesta incident; alleged lawlessness and Willis inciting Indians",
+      "action_requested": "Backing of Moore's authority on reservation",
+      "outcome": "Collier sent answering telegram backing Moore's authority; read to assembled Indians at Mesa Grande Sunday afternoon"
+    },
+    {
+      "sender": "J. Aaron Moore",
+      "sender_title": "Deputy Special Officer at Large",
+      "recipient": "John Collier",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "1933-08-06",
+      "subject": "Report on Mesa Grande fiesta incident (Report 83473)",
+      "action_requested": "Confirmation and support",
+      "outcome": "Collier responded with backing telegram"
+    },
+    {
+      "sender": "Adam Castillo, Vicente Albanes, Winston Couro, Purl Willis",
+      "sender_title": "Mission Indian Federation members",
+      "recipient": "Senate Indian Affairs Committee",
+      "recipient_title": "Chairman and Members",
+      "date": "1934-09-10",
+      "subject": "Contesting Moore's account of Mesa Grande incident; Mission Indian Federation activities; Indian police controversy",
+      "action_requested": "Statement to be printed along with committee report",
+      "outcome": "Submitted for inclusion in record"
+    },
+    {
+      "sender": "H. R. Prather",
+      "sender_title": "Citizen, La Jolla",
+      "recipient": "Edgar Howard",
+      "recipient_title": "Chairman, House Indian Committee, House of Representatives",
+      "date": "1934-05-03",
+      "subject": "Answering John Collier (J. A. Moore) accusation, report 83473, page 3, the Mesa Grande telegrams",
+      "action_requested": "Refutation of false accusations against Willis and Prather to be considered by committee",
+      "outcome": "Submitted; notarized May 5, 1934; attested by Mrs. Frank Booth and Marion S. Stough"
+    },
+    {
+      "sender": "H. R. Prather",
+      "sender_title": "Citizen, La Jolla",
+      "recipient": "Honorable Senators and Representatives serving on Indian Affairs Committees",
+      "recipient_title": "Congress members",
+      "date": "1935-04-07",
+      "subject": "Evidence indicating gag rule and espionage in Mission Indian Service, Riverside Office; Sycuan reservation incident",
+      "action_requested": "Facts to be placed on record",
+      "outcome": "Submitted with attestation by H. R. Prather, B. G. Prather, and Ruth G. Willis"
+    },
+    {
+      "sender": "E. J. Geehan",
+      "sender_title": "Agent, U.S. Department of Justice Bureau of Investigation",
+      "recipient": "Purl Willis",
+      "recipient_title": "Citizen, San Diego",
+      "date": "1935-04-25",
+      "subject": "Outcome of investigation into Willis's activities among Mission Indians",
+      "action_requested": "None; informational",
+      "outcome": "Confirmed no charges preferred against Willis; characterized as commendable letter; submitted to Senate committee"
+    },
+    {
+      "sender": "Purl Willis",
+      "sender_title": "Mission Indian advocate",
+      "recipient": "Nathan Margold",
+      "recipient_title": "Solicitor of the Interior Department",
+      "date": "1933-08-10",
+      "subject": "Mesa Grande incident and related matters",
+      "action_requested": "Enlightenment on Mesa Grande incident; to be made part of record",
+      "outcome": "Copy in possession of A. A. Grorud and Collier; recommended for inclusion in hearing record"
+    },
+    {
+      "sender": "V. J. Lachusa, Gilbert Clelland, Glace Lachusa, Ramon Charie",
+      "sender_title": "Spokesman and Committee, Mesa Grande",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "John Collier",
+      "date": "1934-05-05",
+      "subject": "Answer to Collier's charges against Federation, Willis, and Prather",
+      "action_requested": "Charges be recognized as unjust",
+      "outcome": "Submitted as part of hearing record"
+    },
+    {
+      "sender": "Adam Castillo, Winslow Couro, Purl Willis",
+      "sender_title": "Mission Indian Federation leaders",
+      "recipient": "To whom it may concern",
+      "recipient_title": "General record",
+      "date": "1934-11-15",
+      "subject": "Statement No. 2 on resurvey/retracing of Los Coyotes Indian Reservation and land exchange",
+      "action_requested": "Facts certified to be true for the record",
+      "outcome": "Submitted as statement for the record"
+    }
+  ],
+  "legislative_actions": [],
+  "testimony": [
+    {
+      "witness": "J. Aaron Moore",
+      "witness_title": "Deputy Special Officer at Large, United States Indian Service",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "Unknown",
+      "date": "1934",
+      "subject": "Mesa Grande fiesta incident August 1933; confrontation with federation Indians; Willis and Prather inciting resistance",
+      "key_claims": "Moore testified that federation Indians challenged his authority at Mesa Grande fiesta, threatened violence, claimed only federation police had authority, and that Willis had urged Indians to resist government officers. He claimed Indians were armed. He described de-escalating a potentially violent confrontation and sending telegram to Collier for backing. He characterized Willis, Prather, and Collett as dangerous racketeers interfering with government work.",
+      "questioner": "Unknown"
+    },
+    {
+      "witness": "Adam Castillo",
+      "witness_title": "President, Mission Indian Federation",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "Unknown",
+      "date": "1934",
+      "subject": "Mesa Grande incident; Los Coyotes resurvey; Mission Indian welfare",
+      "key_claims": "Co-signed letters asserting Moore made false charges; Willis never advised resorting to violence; Federation police never carry arms or offered physical resistance; Anderson failed to properly retrace old survey lines; Indians were not incited by Willis or Castillo to sign away rights.",
+      "questioner": "Unknown"
+    },
+    {
+      "witness": "Purl Willis",
+      "witness_title": "Mission Indian advocate; Mission Indian Federation",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "Unknown",
+      "date": "1934",
+      "subject": "Mesa Grande incident; Los Coyotes resurvey; Indian Bureau conduct; Sycuan reservation espionage",
+      "key_claims": "Moore made totally false charges manufactured out of whole cloth; no disturbance occurred while Willis was at fiesta on August 4, 1933; Willis left at 10:30 p.m. before alleged incidents; Willis's car was set on fire and Moore's police did nothing; Anderson attempted to fraudulently obtain Indian signature on land exchange paper; Dady and Anderson acted in concert against Indian interests; Indian policemen are cause of friction among Mission Indians; no Indian policemen are needed in southern California.",
+      "questioner": "Unknown"
+    },
+    {
+      "witness": "H. R. Prather",
+      "witness_title": "Citizen, La Jolla; Mission Indian advocate",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee and House Indian Committee",
+      "location": "Unknown",
+      "date": "1934-1935",
+      "subject": "Mesa Grande fiesta account; Sycuan reservation gag rule and espionage; Moore's false accusations",
+      "key_claims": "Prather and companions left Mesa Grande fiesta at 9 p.m. finding it entirely peaceful and orderly; school meeting was open and non-secret; Moore's telegram to Collier was maliciously conceived with neither truth nor basic fact; Frank Wachano attempted to prevent Prather from entering Sycuan reservation on orders from Riverside; Riverside office engaged in gag rule and espionage; Wachano was stool pigeon for superintendent.",
+      "questioner": "Unknown"
+    },
+    {
+      "witness": "John W. Dady",
+      "witness_title": "Local Superintendent, Mission Indian Agency, Riverside",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "Unknown",
+      "date": "1934",
+      "subject": "Armed Indians at Los Coyotes; Anderson survey commission",
+      "key_claims": "Dady was not present at the Los Coyotes meeting but stated Rieger was there and would testify he saw Indians armed. Implied armed Indians were present.",
+      "questioner": "The Chairman (Senator)"
+    },
+    {
+      "witness": "Mr. Rieger",
+      "witness_title": "Chief of E.C.W., Mission Indian Agency under Dady",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "Unknown",
+      "date": "1934",
+      "subject": "Whether Indians were armed at Los Coyotes meeting",
+      "key_claims": "Rieger stated he was not familiar with all men present but saw Nicholas Chaparosa had a gun in plain view that afternoon. Was uncertain about other men because he was not familiar with them at the time.",
+      "questioner": "The Chairman (Senator)"
+    },
+    {
+      "witness": "Mr. La Chusa",
+      "witness_title": "Indian witness at hearing",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "Unknown",
+      "date": "1934",
+      "subject": "Whether Nicholas Chaparosa had a gun at the meeting",
+      "key_claims": "La Chusa knew Nicholas Chaparosa and saw him that afternoon but stated he was not even a federation police, implying he did not have a gun in an official capacity; testimony appeared to contest Rieger's claim.",
+      "questioner": "The Chairman (Senator)"
+    },
+    {
+      "witness": "Robert McGee",
+      "witness_title": "Deputy under Moore; Indian policeman",
+      "hearing": "N/A - statement referenced in letter",
+      "committee": "Senate Indian Affairs Committee (referenced in September 10, 1934 letter)",
+      "location": "Unknown",
+      "date": "1934",
+      "subject": "Moore's accusations about armed Indians at Mesa Grande fiesta",
+      "key_claims": "McGee stated that Moore's accusations against Indians carrying arms at Mesa Grande fiesta were false.",
+      "questioner": "Unknown"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

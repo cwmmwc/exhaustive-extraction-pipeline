@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_005",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "9",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rachel Cilick Snider",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "578 Jefferson St., Milwaukee, Wis.",
+    "Allotment number": "3965",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "she gave attention to the paper and found it was a Deed for the above described land and had the same recorded",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mr. Dan Fisher of Vermillion, S.D. bought the land; he gave Mr. Dithmer $9.75 per acre for the half-section; land sold for $3120.00; deponent received $1000.00 from mortgage and $250.00 from sale",
+    "Tax burden forced sale/Mortgage": "knowing that I could not pay the interest and taxes on the land I told him that I would sell the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "48 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Borrowed $1000.00 from Northern Trust Co. of Pierre, S.D. on Aug. 9, 1915; husband died in 1915; left business to J.H. Dithmer of Kadoka, S.D.; deponent states she was defrauded in the deal; has three children to support; has been troubled with High Blood Pressure; has received no aid from the Government, State or County since she was granted a patent; land described as N.2 of sec. 1, T.43 R.36; paid Dithmer $50.00 for his services; document notarized April 22, 1920 in County of Washabaugh, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2814,
+    "output_tokens": 507
+  },
+  "elapsed": 7.8
+}

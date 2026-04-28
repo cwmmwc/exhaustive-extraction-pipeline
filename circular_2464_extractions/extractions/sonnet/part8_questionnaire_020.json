@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_questionnaire_020",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "61-62",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Josephine Delia De Cory Rogers",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "3066",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No, I didn't say anything.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, I didn't mortgage it. Yes, it is sold.",
+    "Buyer": "Land was sold to Mr. Tackett (W. H. Tackett); consideration was over $2,700; a house was received from W. H. Tackett; $1100.00 was paid in cash for a car by first husband Mr. Ferrin against allottee's will",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "I think it was 1920",
+    "Gender": "Female",
+    "Age": "34",
+    "Occupation/Income": "By my husband, Mr. Rogers; He is clerking in a store at St. Francis.",
+    "NOTES": "Allottee states: 'I really didn't want my patent; my husband got it for me, and he made more use of it than I did.' First husband Arthur Ferrin brought patent home; money from land sale deposited by first husband in Todd County Bank in his own name instead of allottee's. First husband paid $1100.00 cash for a car against allottee's will from land sale proceeds. Allottee has four children dependent on her. Allottee is in good health. Document signed May 21, 1929, before a notary public in Todd County, State of South Dakota.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2683,
+    "output_tokens": 467
+  },
+  "elapsed": 8.4
+}

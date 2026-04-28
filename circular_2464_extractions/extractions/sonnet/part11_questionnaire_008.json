@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_questionnaire_008",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "50-53",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Henry Jacobs",
+    "Tribe/Reservation": "Crow Creek Agency, Big Bend District",
+    "Post Office Address": "not stated",
+    "Allotment number": "800",
+    "Cancelled": "No",
+    "Refused/Protested": "Didn't make any application for the patent, Mr Jacobs clams that he was hauling ice and had stoped at the ice house when Chas Me Bride, who was interpter at the Agency office came up and told him that he was wanted at the office, when he got to the office Mr Johnson the Sup't asked me if I had made out an application for a pat-in-Fee and I told him no and that I never would make out application for a papent, Mr Johnson told me that he had been instructed to give me a patent fee for my allotment and handed me the patent and I told him to keep the patent there as I had not made application for it and didn't want it, and he Mr Johnson the Sup't said I have been instructed to deliver the patent to you, and again handed it to me so I took the patent. He accepted the patent with protest, and he didn't file same for record.",
+    "Recorded patent": "He did not file patent for record in the county",
+    "Sold/Mortgaged": "Land was not sold but mortgaged",
+    "Buyer": "Jacobs mortgaged his allotment to one Chas Anderson of Pierre S.D. and William Summerville of Canning S.D. for $4,000.00 at 8% interest and received $4,000.00",
+    "Tax burden forced sale/Mortgage": "Was not sold for debt or taxes. The mortgage was foreclosed, and date of redemption expired. Jacobs claims that most of the money was used for the education of his children sending them to the Pierre S.D. high school.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 22, 1919",
+    "Gender": "Male",
+    "Age": "63 years",
+    "Occupation/Income": "has worked for the Gov't as special police, drawing $2.00 and $1.50 a day for days worked and rations, has been taken off of force, sells some wood, and a horse once in a while, has 5 horses left, worked for the Gov't 23 years up until 1927",
+    "NOTES": "Patent received at agency January 28, 1920. Does not remember the date received but thinks it was in the month of December 1920. Did not sign a receipt for the patent. Mental condition good, physical condition fair, financial condition has nothing at all but has an interest in some land. Wife is dependent on him. Jacobs claims his wife didn't sign the mortgage given to Summerville. At the time land was mortgaged, land was selling from $25.00 to $50.00 an acre; half of the allotment was sold after the mortgage was foreclosed for $4,800.00 and they had half section left which they are holding for $4,000.00 at time of interview. Document also contains partial questionnaire data for Daniel Irving, Crow Creek allottee 1400, whose allotment was mortgaged to E. E. Crisp of Chamberlain, S. Dak. for $500.00 at 10% interest June 1, 1920, filed for record June 3, 1920, volume 164, page 180. Document dated January 11, 1928.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 3866,
+    "output_tokens": 867
+  },
+  "elapsed": 11.7
+}

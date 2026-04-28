@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_030",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "36-37",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Joseph Brown and Alice Brown",
+    "Tribe/Reservation": "Bennett County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Chadron, Nebraska",
+    "Allotment number": "4449",
+    "Cancelled": "not stated",
+    "Refused/Protested": "the son, William D. Brown, did not desire the patent, as he did not want to pay taxes; but Joseph Brown was told that, if it was not accepted, and the taxes paid, the land would be taxed just the same, and later sold for taxes, so he accepted the patent for his son",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "as far as they are concerned, this land has never been mortgaged or sold",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "no taxes were ever paid on this land; in 1922, the land was sold for taxes then due and delinquent for the year 1921, at tax sale by the Treasurer of said County to Bennett County, purchaser",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Male (Joseph Brown); Female (Alice Brown)",
+    "Age": "Joseph Brown: 59 years old; Alice Brown: 58 years old",
+    "Occupation/Income": "Mrs. Alice Brown receives United States Army insurance amounting to $57.50 per month; Joseph Brown and his wife Alice each receive $15.00 per month pension money",
+    "NOTES": "Affidavit sworn March 29, 1929. The allotment belonged to their son William D. Brown, who died February 7, 1919, in Germany of influenza while serving in the United States Army. Son's Army insurance was drawn in favor of his mother Alice Brown. The 160-acre allotment (SE1, Sec. 6, T. 36N., R. 36W., 6th P.M., South Dakota) was never probated; deponents were informed probate would prevent putting it back in trust. They desired to have the allotment put back in trust. Land leased to Dewey Dirks for $64.00 per annum. Deponents furnished four soldier boys for the World War. Document includes a newspaper clipping from the Martin Messenger regarding a Notice to Owner Before Tax Deed Shall Expire. The forced patent was sent to the father Joseph Brown, who refused to sign for it at first.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2876,
+    "output_tokens": 634
+  },
+  "elapsed": 8.0
+}

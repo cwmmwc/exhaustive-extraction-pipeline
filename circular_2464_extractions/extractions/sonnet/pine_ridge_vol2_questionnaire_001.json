@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_questionnaire_001",
+  "type": "questionnaire",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "6-7",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alice Brown Larvie",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Norris, South Dakota",
+    "Allotment number": "1871",
+    "Cancelled": "application of Alice Brown Larvie for cancelation of forced patent in fee",
+    "Refused/Protested": "I got it thru the mail and just kept it, made no protest becuase I thot it was legal requirement of the U.S. Government, and the patent was already recorded without my knowledge",
+    "Recorded patent": "the patent was already recorded without my knowledge, and I do not know who record the same",
+    "Sold/Mortgaged": "The was taken by foreclosure, sold by sheriff",
+    "Buyer": "foreclosed by Bank of Ipswich, Ipswich, Edmunds Co. So. Dak.; H.E. Beebe was Vice President of the Bank of Ipswich who notified her land would be sold for the $500.00 owed; Buell & Denu of Rapid City, So. Dak. were the attorneys done the business for the Ipswich Bank",
+    "Tax burden forced sale/Mortgage": "There were some taxes due so I was obliged mortgaged all of my allotment for five ($500.00) hundred dollars and paid the said taxes and used the balance for my support; the mortgage was foreclosed and redemption period closed on July 20, 1923",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Female",
+    "Age": "39 years old",
+    "Occupation/Income": "I am now supported by my husbond partly and I take in washing and help to support myself to a certain extent, and no assistance from the Federal Government nor from the State",
+    "NOTES": "Mental conditions good, health good, financial conditions very poor; has three children depending upon husband and herself; did not receive any money from the foreclosure sale \u2014 land taken by law to satisfy the $500.00 mortgage and interest; I did not get what my land was worth; document is a questionnaire responding to 13 questions per instructions in letter from Supt. E. W. Jermark, Pine Ridge, dated November 9, 1928; notarized February 25, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2785,
+    "output_tokens": 598
+  },
+  "elapsed": 8.6
+}

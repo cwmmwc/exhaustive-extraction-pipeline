@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_093",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "118",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Antoine Shangreau",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "1206",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 320 acre allotment when it was issued, but the Indian Agency advised him that it would be assessed for taxes, and later sold for same, if he did not accept the patent, so he took it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to the Patterson Company, through a Mr. Leedom, of Gordon, Nebraska, for $1200.00; sold in 1922 to C. C. Coffin, of Hot Springs, South Dakota, Coffin taking over the mortgage, paying the taxes, paying deponent $1000.00 cash and a White Truck, valued at $3000.00",
+    "Tax burden forced sale/Mortgage": "got behind in taxes, and, in 1920, he mortgaged his allotment",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "43 years old",
+    "Occupation/Income": "he farms for a living, that being his only source of income",
+    "NOTES": "mentally competent, has good health; has a wife and four children to support, all of whom have good health; the place was not sold for back debts, except that he could not meet payments on the mortgage, got a good chance to sell, and let it go; deponent considers that he received a good price for his land; has never received any help from the County, State nor the United States Government; document sworn December 15, 1928; Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2321,
+    "output_tokens": 495
+  },
+  "elapsed": 7.0
+}

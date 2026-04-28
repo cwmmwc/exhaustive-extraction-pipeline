@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_104",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "129",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Joseph Ecoffey",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Martin, South Dakota",
+    "Allotment number": "1360",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want this forced patent, as he did not want to pay taxes; but his banker advised him that, if he did not take it, and look after the taxes, it would be taxed any way, and interest compounded on the taxes until it would finally be sold to satisfy this tax claim, so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "First mortgage to First National Bank of Gordon, Nebraska for approximately $24,000.00; second mortgage to Federal Land Bank of Omaha for $9,000.00; sold to W. R. Annett of Gordon, Nebraska, who took over the mortgage and paid deponent about $10,000.00, part in cash, the rest in payments, of which $2,800.00 and interest remain unpaid and are subject to suit",
+    "Tax burden forced sale/Mortgage": "sold his land for debts incurred prior to receiving the patent in fee, as he had gone into the cattle business; the cattle business broke so badly that his bank asked him for a mortgage to cover the loan they had made him",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Male",
+    "Age": "51 years old",
+    "Occupation/Income": "farms his wife's land for a living, raising grain, and having a few cows, hogs and chickens; and that this constitutes his entire income",
+    "NOTES": "Mentally competent, has good health; has a wife and two children to support; family have good health; has never received any help from the county, State nor the United States Government; allotment of 640 acres described as N\u00bd Sec. 11, T.35N., R.40W., SE Sec. 3, T.35N., R.40W., S of NW\u00bc Sec. 3, T.35N., R.40W., N\u00bd of SW\u00bc Sec. 3, T.35N., R.40W., of the 6th P.M. in South Dakota; deponent considers he received a poor price for his section of land; affidavit sworn April 23, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2662,
+    "output_tokens": 649
+  },
+  "elapsed": 9.4
+}

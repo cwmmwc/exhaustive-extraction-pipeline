@@ -1,0 +1,33 @@
+{
+  "document_id": "part12_questionnaire_019",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "42-45",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charles Deroin",
+    "Tribe/Reservation": "Otoe Agency",
+    "Post Office Address": "not stated",
+    "Allotment number": "107",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Was it filed for record? No",
+    "Sold/Mortgaged": "Land was sold to John Know for $4000 but when deed signed to Know, he gave allottee $10 applied bal. to debts",
+    "Buyer": "John Knox (now residing in Calif.); $4000 stated price but allottee received only $10 with balance applied to debts",
+    "Tax burden forced sale/Mortgage": "no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sept. 1917",
+    "Gender": "Male",
+    "Age": "54 years",
+    "Occupation/Income": "$57.50 War Risk Insurance, received each month. Has small inherited interest. No contributions.",
+    "NOTES": "Good health, no property or money accumulated. Two minor children dependent upon allottee. Allottee feels he was defrauded of his land, as he did not owe anything like $4000 to John Knox. Knox reported to be in fair circumstances. Document also contains a separate questionnaire for Moses Haragarra (Allotment No. 5), who is a different allottee. Notarized November 22, 1928, in Kay County, State of Oklahoma; notary commission expires Aug. 3rd, 1931. Both witnesses of Ponca City, Okla.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 3396,
+    "output_tokens": 436
+  },
+  "elapsed": 7.2,
+  "retry_count": 1
+}

@@ -1,0 +1,29 @@
+{
+  "document_id": "part3_agency_narrative_page059",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "059",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "not stated",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Pine Ridge, S. Dak.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "forced Patents were issued",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "This is an administrative cover letter from E. W. Jermark at Pine Ridge Agency to the Commissioner of Indian Affairs, dated November 3, 1928, acknowledging receipt of Circular No. 2464 (promulgated June 18, received October 31, marked 'important'). The letter states that a form letter was written to each of the 844 persons to whom forced patents were issued, and that approximately twenty had called at the office in response. The agency notes that data is being formulated as rapidly as possible in connection with regular work. File reference: 5-114-2, Circular 2464, No. 112.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {},
+  "elapsed": 0
+}

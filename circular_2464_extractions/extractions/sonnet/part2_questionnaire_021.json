@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_021",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "63",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ida Houston Roubideaux",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I don't remember now.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold all my land.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "No.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "I think it was in 1917.",
+    "Gender": "Female",
+    "Age": "About 54 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Received patent by mail while living at Wood; has been sick a long time and does not remember signing a receipt; husband was living at the time and took care of these matters; sold land in 1918 for $3600.00, paid in full in cash at one time; no debts settled at time of sale; document notarized by E. E. McKean, Superintendent, April 4, 1929",
+    "Literate/Illiterate": "I have had no education and can neither read nor write.",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2228,
+    "output_tokens": 343
+  },
+  "elapsed": 11.0
+}

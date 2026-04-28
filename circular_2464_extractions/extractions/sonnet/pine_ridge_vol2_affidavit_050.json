@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_050",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "68",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Baptiste Pourier (allottee); Mrs. Alice Brown (deponent/heir)",
+    "Tribe/Reservation": "Pine Ridge Sioux",
+    "Post Office Address": "Chadron, Nebraska",
+    "Allotment number": "2608",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to this allotment when he took it for he did not want to pay taxes; but that he took it on the advice of the Indian Agency",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged the 280 acres of this allotment for $1000.00; deeded all his land to William Swallow and Ellen Swallow",
+    "Buyer": "Mortgaged through A. Barker, of Denby, South Dakota, an agent for an Omaha firm; land deeded to William Swallow, his son-in-law, and Ellen Swallow, his daughter",
+    "Tax burden forced sale/Mortgage": "mortgaged to pay taxes, which had gotten behind",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male (allottee); Female (deponent)",
+    "Age": "84 years of age at the time of his death, October 7, 1928 (allottee); 57 years old (deponent)",
+    "Occupation/Income": "not stated",
+    "NOTES": "Deponent Mrs. Alice Brown is the daughter of Baptiste Pourier. Baptiste Pourier was mentally incompetent and had been sick for six years previous to his death, having suffered from asthma and catarrh of the stomach. For the last six years of his life he was supported between his children \u2014 Charlie Pourier, of Pine Ridge, South Dakota, and Mrs. Alice Brown, of Chadron, Nebraska. In the spring of 1928, William Swallow (son-in-law) and Ellen Swallow (daughter) influenced him to deed all his land to them; he was almost blind, sick and easy to influence. Allotment described as 280 acres acquired under a forced patent in fee. Baptiste Pourier never received any help from the County or the Government. Document sworn before notary on the 19th day, 1928.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2404,
+    "output_tokens": 596
+  },
+  "elapsed": 8.8
+}

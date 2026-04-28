@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_065",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "83",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Romena Jensen",
+    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Post Office Address": "Scenic, So. Dak.",
+    "Allotment number": "2689",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee, for she knew she could not pay the taxes, but took it on the advise of the Farme: and Superintendent, who told her that she would lose the land if she did not take it and pay the taxes",
+    "Recorded patent": "she did not have the papers recorded, but that it was done by Thomas Arnold, now of Merriman, Nebr.",
+    "Sold/Mortgaged": "sold her allotment to Thomas Arnold of Merriman, Nebr for 4480.00",
+    "Buyer": "Thomas Arnold of Merriman, Nebr. for $4480.00",
+    "Tax burden forced sale/Mortgage": "this was the best she could do, as she was about to lose the land for taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "50 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "mentally competent but in very poor health; has nothing, no home and is living on the allotment of her son; has received no aid from the Government, County or State since she was given her patent; has seven minor children depending on her for support; husband is an invalid and unable to do much work but works what he can; deponent thinks the land should have been worth $6400.00; document sworn November 13, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2285,
+    "output_tokens": 459
+  },
+  "elapsed": 5.5
+}

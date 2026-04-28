@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_affidavit_015",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "88",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Henry Young",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Martin, So. Dak.",
+    "Allotment number": "2528",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want it, and paid no attention to the letter, but that later he received another letter from the Pine Ridge Office stating that the issuance of the patent had been reported to the tax Commission and that if he did not pay the taxes, that the land would be sold to satisfy them. This scared him into taking the patent, though he still did not want it",
+    "Recorded patent": "did not have it recorded but that the man to whom he had it mortgaged had it recorded",
+    "Sold/Mortgaged": "mortgaged his land to the Bennett County Bank, Martin, So. Dak. for $500.00 and then to the Bank of Cody, Cody, for another $500.00; gave them a deed",
+    "Buyer": "Bank of Cody bought the Bennett County Bank Mortgage and then gave him 24 hours to pay it or they would foreclose; offered him $50.00 for a deed, to save the cost of foreclosing",
+    "Tax burden forced sale/Mortgage": "received another letter from the Pine Ridge Office stating that the issuance of the patent had been reported to the tax Commission and that if he did not pay the taxes, that the land would be sold to satisfy them. This scared him into taking the patent",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "34 years old",
+    "Occupation/Income": "compelled to work out where ever he could get work",
+    "NOTES": "has a wife and three children depending on him for support; has heart trouble which is getting a little worse as he grows older; since he lost his land he has no home and lived on his mother's allotment until she died and the estate was settled; considered his land worth about $3600.00 and did not get a fair price for it; has received no aid from the Government, State or County since his patent was issued; mentally competent and in fair health; document sworn November 9, 1928, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2454,
+    "output_tokens": 584
+  },
+  "elapsed": 7.7
+}

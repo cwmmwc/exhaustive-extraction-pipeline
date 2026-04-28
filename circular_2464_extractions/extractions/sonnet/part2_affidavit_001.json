@@ -1,0 +1,33 @@
+{
+  "document_id": "part2_affidavit_001",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "3",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Richard D. Ellston",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Herrick, S. D.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "mailed to me at Herrick, S. D.",
+    "Sold/Mortgaged": "I mortgaged the Gregory county land and sold the Todd county land. I then transferred the land to my boy who lost it by foreclosure.",
+    "Buyer": "I got 425n $2500 for the mortgage on the Gregory county land and sold the Todd county land for $4500.00. I then transferred the land to my boy who lost it by foreclosure.",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "61",
+    "Occupation/Income": "By farming",
+    "NOTES": "Did not ask for the patent. Did not receive anything from his boy for the Gregory county land because it could not be redeemed. His boy's intentions were all right. Has six children, two of which are married. In good health. Allotment number possibly referenced as '20 240.' Notarized before Jas. W. Cross, Notary Public, commission expires 4-28-32, on April 30, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2252,
+    "output_tokens": 403
+  },
+  "elapsed": 5.9,
+  "retry_count": 1
+}

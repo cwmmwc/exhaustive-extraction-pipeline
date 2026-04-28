@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_010",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "16",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Adelia Twiss",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Porcupine, South Dakota",
+    "Allotment number": "2142",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 160 acre allotment when she got it, for she did not want to pay taxes, but the Indian Agency advised her that taxes would be assessed against it anyway, for which it would finally be sold; so she decided to accept the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1921, she traded her allotment to Wallace Ellis, of Tuthill, South Dakota, for thirty-four head of cattle, valued at $1000.00, and Ellis was to pay the back taxes",
+    "Buyer": "Wallace Ellis, of Tuthill, South Dakota, for thirty-four head of cattle, valued at $1000.00, and Ellis was to pay the back taxes",
+    "Tax burden forced sale/Mortgage": "got behind in taxes, and Ellis was to pay the back taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "60 years old",
+    "Occupation/Income": "her husband, who has poor health, having stomach trouble, supports her, by working at farm labor",
+    "NOTES": "mentally competent, has poor health, as she has rheumatism, which hinders her working ability; has a home of her own; considers she got an extremely poor price for her land; has never received any help from the County, State or the United States Government; affidavit sworn November 27, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2261,
+    "output_tokens": 470
+  },
+  "elapsed": 6.0
+}

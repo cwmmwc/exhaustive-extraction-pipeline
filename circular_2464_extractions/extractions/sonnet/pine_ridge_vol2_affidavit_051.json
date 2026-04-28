@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_051",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "69",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Emil Pourier",
+    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Post Office Address": "Manderson, South Dakota",
+    "Allotment number": "2610",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 320 acre allotment, when it was issued, April 13, 1918, but he was advised by the Indian Agency, if he did not take the patent and pay the taxes, that taxes would be assessed against it, for which the land would finally be sold; so he accepted the patent in fee",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold; the Federal Land Company of Omaha, Nebraska, loaned $1000.00 on the place, taking $50.00 for the commission of making the loan; in 1925, Andrew Dumble, of Manderson, South Dakota, bought the allotment, paying off this debt to the Federal Land Company",
+    "Buyer": "Andrew Dumble, of Manderson, South Dakota, bought the allotment, paying off this debt to the Federal Land Company, paying deponent $100.00 in cash and a team of horses, valued at $100.00",
+    "Tax burden forced sale/Mortgage": "the taxes got behind until the Federal Land Company of Omaha, Nebraska, loaned $1000.00 on the place; he paid up his taxes out of this loan; he was not able to pay this loan, only keeping up the interest; he only sold it because he could not pay off the loan; he did not sell his place for any debts incurred prior to receiving his patent in fee; it was account of these taxes, which had accumulated for years",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Male",
+    "Age": "47 years old",
+    "Occupation/Income": "farms his children's land for a living; this being his only income",
+    "NOTES": "Deponent considers he received an extremely poor price for this land; has never received any aid from the County, State nor the United States Government; has a wife and four children to support; family have good health; document dated December 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2388,
+    "output_tokens": 594
+  },
+  "elapsed": 7.7
+}

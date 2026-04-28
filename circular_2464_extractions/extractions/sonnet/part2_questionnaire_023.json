@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_023",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "67",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Clairmont",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "699",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Several weeks after it was sent to me I told my wife that I do not like the way the patent was issued without my consent.",
+    "Recorded patent": "It was more than seven years ago that it was sent to me by mail.",
+    "Sold/Mortgaged": "No, I sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "72",
+    "Occupation/Income": "I do different kind of farm work.",
+    "NOTES": "Received $3000.00 in cash and $1000.00 in the form of horses, cattle, lister hay rack, corn planter, two sets of harness and a wheat drill for the land. Did not owe the purchaser anything and purchaser gave all agreed to. Does not remember signing a receipt for the patent. Did not ask for the patent. Was under the impression that the land was to be held in trust for twenty-five years or more but the patent came before the time was up. No one depends on him for support except himself. Was satisfied with the sale. Document sworn before A. W. Cross, Notary Public, on May 14, 1929; commission expires 4-28-32.",
+    "Literate/Illiterate": "Signed with a mark (X)",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2343,
+    "output_tokens": 425
+  },
+  "elapsed": 5.5
+}

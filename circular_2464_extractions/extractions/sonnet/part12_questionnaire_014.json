@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_014",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "32-33",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Baptiste Jones",
+    "Tribe/Reservation": "Otoe Agency",
+    "Post Office Address": "not stated",
+    "Allotment number": "302",
+    "Cancelled": "none",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Filed for record, Noble County, Okla.",
+    "Sold/Mortgaged": "Land mortgaged to Red Rock State Bank and Albright Title & Trust Co. for $7400.00; Sold to Hoy Hess for $9500 and he to assume mortgages",
+    "Buyer": "Hoy Hess of Ponca City, Ok. for $9500 (he to assume mortgages); mortgaged to Red Rock State Bank and Albright Title & Trust Co. for $7400.00",
+    "Tax burden forced sale/Mortgage": "Has any of the land been sold for debt or taxes? no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sept. 1917",
+    "Gender": "Male",
+    "Age": "43 years",
+    "Occupation/Income": "$20.00 per year income from inherited land and no contributions of any kind",
+    "NOTES": "Good health, no property or money accumulated; wife and one minor child dependent; patent delivered at Otoe Agency and receipted for; date of redemption expired yes; at the time the allottee sold the land he says that he did not owe mortgages or notes to the amount of $9500.00 \u2014 when he sold the land to Mr. Hess, he was required to deduct a loan of $500 which made the consideration $9500.00 but that after mortgages were paid, he received no money; notarized November 23, 1928, Kay County, Oklahoma; file no. 61391; mortgage when: 1917 or 1918",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2665,
+    "output_tokens": 497
+  },
+  "elapsed": 6.6
+}

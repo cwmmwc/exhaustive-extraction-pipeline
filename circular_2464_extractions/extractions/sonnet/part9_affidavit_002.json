@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_affidavit_002",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "68",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lucy Larvie Quick Bear",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "3820",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No. I did not ask for the patent but it was given me.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Female",
+    "Age": "33",
+    "Occupation/Income": "not stated",
+    "NOTES": "Patent delivered in 1918 from the Farmer at Norris. Sold land for $5000.00 cash. Did not settle any debts with purchaser at time of sale. Signed a receipt for the patent. Has four children. Supported by herself and husband. States she is not in good health. Affidavit sworn before Chas. W. Cross, Notary Public, June 4, 1929; commission expires 4-28-32. Deponent signed with an X mark.",
+    "Literate/Illiterate": "Signed with an X mark",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2279,
+    "output_tokens": 353
+  },
+  "elapsed": 6.7
+}

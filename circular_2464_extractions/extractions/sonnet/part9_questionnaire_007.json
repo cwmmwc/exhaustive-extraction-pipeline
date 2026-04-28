@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_questionnaire_007",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "24",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Arthur Parker",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "3280",
+    "Cancelled": "not stated",
+    "Refused/Protested": "The Farmer of the Hamill district told me that he had a patent for me and was authorized to deliver it. I said that it was contrary to the agreement in the trust patent to force us to take a fee patent under twenty five years and that I did not want it and that he should keep it. He then stated that he would have to send it to me by registered mail and so he did. George Kares, a banker in Winner heard the conversation and stated to me that I was the first Indian that he had ever heard of that did not want a patent. I said that I did not want to pay taxes on the land and wanted to live there as a home and did not want the land so that I could mortgage it. The Farmer's name is Whiteis.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged and then sold it to my wife for $1. We still live there and there is a mortgage on the place for $3500.00 due in 1933.",
+    "Buyer": "Sold to my wife for $1; mortgage on the place for $3500.00 due in 1933",
+    "Tax burden forced sale/Mortgage": "the patent is the cause for my getting the mortgage on the place in order to pay the taxes and the results therefrom. The taxes as I remember have averaged about $160 per year, some years over $200.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "during the war but I do not remember the exact date",
+    "Gender": "Male",
+    "Age": "46",
+    "Occupation/Income": "By farming",
+    "NOTES": "Wife is white, not a Rosebud Indian. Has wife and eight children depending on him. Has lived on the place since 1907. Patent was sent by registered mail by a Farmer named Whiteis of the Hamill district. Deeded land to wife on account of domestic troubles; later reconciled and both live on the land. Installments on mortgage prior to Jan. 1, 1929 have been paid; taxes prior to 1928 have all been paid. In good health. Notary: Ues. W. Cross, commission expires 4-28-32. Document sworn May 8, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2561,
+    "output_tokens": 631
+  },
+  "elapsed": 12.2
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_129",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "36",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Sophia Munroe",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Patricia, So. Dak.",
+    "Allotment number": "2319o",
+    "Cancelled": "not stated",
+    "Refused/Protested": "refused to accept her patent in fee for a long time, but finally accepted it on the advise of Superintendent Tidwell, who told her that if she did not take it and pay the taxes that she would lose the land anyway",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Ipswich Bank, Ipswich, So. Dak. for $500.00; sold the land to Mrs. Voltz of Martin, So. Dak. for $300.00 in trade at a store, and she was to pay the mortgage",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes so she had to mortgage it to Ipswich Bank, Ipswich, So. Dak. for $500.00, that she could not pay the mortgage, interest or taxes so she sold the land to Mrs. Voltz of Martin, So. Dak. for $300.00 in trade at a store",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "72 years old",
+    "Occupation/Income": "supported by her husband who raises a garden and does what common labor he can, but that they only make about $150.00 per year",
+    "NOTES": "mentally competent but in very poor health; owns 40 acres of land on which she lives with her husband; has no one depending on her; has received no aid from the Government, State or County since she was granted a patent; document dated December 5, 1828 (likely a transcription error for a later date); County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2289,
+    "output_tokens": 523
+  },
+  "elapsed": 5.3
+}

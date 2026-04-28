@@ -1,0 +1,33 @@
+{
+  "document_id": "part7_questionnaire_004",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "13",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lena Lema Bordeaux LaPointe",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "St. Francis, South Dakota",
+    "Allotment number": "2968",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I received word through my husband that a fee patent for me was in the Rosebud office and that I should come for it. I told him to tell the authorities at Rosebud that if that patent was occupying too much space that it should be returned to Washington. However, some two or three weeks afterwards my husband brought the patent home to me.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged it and then sold it E. R. Rusho who used to deal with Clement Valandra.",
+    "Buyer": "E. R. Rusho; records show land sold to O. M. Walcott; allottee received $2170.00 and the purchaser paid the interest and taxes",
+    "Tax burden forced sale/Mortgage": "the purchaser paid the interest and taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Female",
+    "Age": "42 years of age",
+    "Occupation/Income": "husband supports them",
+    "NOTES": "Has seven children; husband is Jacob LaPointe who brought the patent from the Rosebud office; allottee signed the deed in the presence of Rusho under the impression the deed was in his favor but did not read the deed; records show land sold to O. M. Walcott; document number 2268; notarized March 21, 1929, commission expires 4/28/32",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2396,
+    "output_tokens": 469
+  },
+  "elapsed": 8.3,
+  "retry_count": 1
+}

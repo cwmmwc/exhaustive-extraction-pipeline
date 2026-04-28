@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kiowa Mortgage Network, 1917–1921</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; background: #F7F3EC; color: #1A1714; }
+  header { padding: 40px 48px 24px; border-bottom: 1px solid #D4CEC4; }
+  header h1 { font-family: 'Newsreader', Georgia, serif; font-size: 32px; font-weight: 500; margin-bottom: 12px; }
+  header p { font-size: 15px; color: #6B6358; max-width: 700px; line-height: 1.6; }
+  .stats { padding: 16px 48px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #6B6358; border-bottom: 1px solid #D4CEC4; display: flex; gap: 32px; }
+  .stats span { color: #A3542E; font-weight: 500; }
+  #chart { padding: 32px 48px; }
+  svg { display: block; }
+  .tooltip { position: absolute; background: #1A1714; color: #E8E4DC; padding: 12px 16px; border-radius: 4px; font-size: 12px; line-height: 1.6; pointer-events: none; max-width: 400px; display: none; z-index: 100; }
+  .tooltip .t-label { color: #D4754A; font-weight: 600; }
+  h2 { font-family: 'Newsreader', Georgia, serif; font-size: 22px; font-weight: 500; padding: 32px 48px 16px; border-top: 1px solid #D4CEC4; }
+  table { margin: 0 48px 48px; border-collapse: collapse; font-size: 13px; width: calc(100% - 96px); }
+  th { text-align: left; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #6B6358; padding: 8px 12px; border-bottom: 2px solid #1A1714; }
+  td { padding: 8px 12px; border-bottom: 1px solid #D4CEC4; vertical-align: top; }
+  tr:hover td { background: #EDE8DF; }
+  .outcome { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 600; color: white; }
+  .outcome-sold { background: #C0392B; }
+  .outcome-mortgaged { background: #D4754A; }
+  .outcome-both { background: #8B1A1A; }
+  .outcome-retained { background: #2E7D32; }
+  .outcome-canceled { background: #5A7A8F; }
+  .outcome-unknown { background: #BBB; }
+</style>
+</head>
+<body>
+<header>
+  <h1>The Kiowa Mortgage Economy, 1917&ndash;1921</h1>
+  <p>Between August 1917 and December 1921, fee patents were issued to Kiowa, Comanche, Caddo, and Wichita allottees at the Kiowa Agency in Anadarko, Oklahoma. Within months, many allottees had mortgaged their land to a small number of lending institutions. This graph shows each named allottee connected to the lender(s) who held mortgages on their allotment, with dollar amounts on every edge.</p>
+  <p style="margin-top: 12px; font-style: italic; font-size: 13px; color: #8B7B6B;">Note: This is not a complete list of fee patents issued at the Kiowa Agency. These are the 57 allottees documented in the KCA and Survey of Conditions corpora. Allottees marked with a filled circle (&bull;) gave sworn depositions in 1928&ndash;1929 as part of the federal investigation into forced fee patents; their records include first-person testimony. Allottees marked with an open circle (&cir;) appear in BIA correspondence, competency commission records, or congressional testimony. &ldquo;Outcome unknown&rdquo; means the outcome does not appear in these collections, not that the allottee retained the land.</p>
+</header>
+<div class="stats">
+  <div>Allottees with named lenders: <span>7</span></div>
+  <div>Total allottees in cohort: <span>57</span></div>
+  <div>Lenders: <span>8</span></div>
+  <div>Mortgage links: <span>8</span></div>
+</div>
+<div id="chart"></div>
+<div class="tooltip" id="tooltip"></div>
+
+<h2>Complete Allottee Register, 1917&ndash;1921</h2>
+<table>
+  <thead>
+    <tr><th>Allottee</th><th>Patent Date</th><th>Source</th><th>Outcome</th><th>Lender(s)</th><th>Buyer</th></tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
+
+<script>
+const data = {"nodes": [{"id": 0, "label": "Commerce Trust Company", "type": "lender", "count": 1, "volume": 6000.0, "volume_label": "$6,000"}, {"id": 1, "label": "State School Land Department On 140 Acres At 5% Interest For 5 Years", "type": "lender", "count": 1, "volume": 5000.0, "volume_label": "$5,000"}, {"id": 2, "label": "Enid Loan Company Assumed By Purchasers", "type": "lender", "count": 1, "volume": 4000.0, "volume_label": "$4,000"}, {"id": 3, "label": "Ed S. LeVan", "type": "lender", "count": 1, "volume": 4000.0, "volume_label": "$4,000"}, {"id": 4, "label": "Gumm Bros", "type": "lender", "count": 1, "volume": 4000.0, "volume_label": "$4,000"}, {"id": 5, "label": "Gum Brothers Of Oklahoma City Through Baldwin & Gibbs", "type": "lender", "count": 1, "volume": 3000.0, "volume_label": "$3,000"}, {"id": 6, "label": "Gumm Brothers", "type": "lender", "count": 1, "volume": 1000.0, "volume_label": "$1,000"}, {"id": 7, "label": "Wilmore", "type": "lender", "count": 1, "volume": 1000.0, "volume_label": "$1,000"}, {"id": 8, "label": "Mattie Sturm", "type": "allottee", "patent_date": "1917-08-14", "outcome": "sold & mortgaged", "acreage": "not specified", "is_affidavit": true}, {"id": 9, "label": "Jesse Sturm", "type": "allottee", "patent_date": "1917-08-24", "outcome": "sold & mortgaged", "acreage": "160 acres", "is_affidavit": true}, {"id": 10, "label": "Clay J. Brown", "type": "allottee", "patent_date": "1917-08-24", "outcome": "mortgaged", "acreage": "130.46 acres", "is_affidavit": true}, {"id": 11, "label": "Alice F. Osborne", "type": "allottee", "patent_date": "1917-08-24", "outcome": "mortgaged", "acreage": "", "is_affidavit": true}, {"id": 12, "label": "Nancy Parrish", "type": "allottee", "patent_date": "1917-08-24", "outcome": "mortgaged", "acreage": "unknown total (140 acres mortgaged)", "is_affidavit": true}, {"id": 13, "label": "Thomas Wyatt", "type": "allottee", "patent_date": "1919-12-03", "outcome": "mortgaged", "acreage": "80 acres", "is_affidavit": true}, {"id": 14, "label": "Keahtiaukau", "type": "allottee", "patent_date": "1919-12-03", "outcome": "sold & mortgaged", "acreage": "160 acres (implied standard allotment)", "is_affidavit": true}], "edges": [{"source": 8, "target": 0, "amount": 6000.0, "amount_label": "$6,000"}, {"source": 9, "target": 2, "amount": 4000.0, "amount_label": "$4,000"}, {"source": 10, "target": 3, "amount": 4000.0, "amount_label": "$4,000"}, {"source": 11, "target": 4, "amount": 4000.0, "amount_label": "$4,000"}, {"source": 12, "target": 1, "amount": 5000.0, "amount_label": "$5,000"}, {"source": 13, "target": 5, "amount": 3000.0, "amount_label": "$3,000"}, {"source": 14, "target": 6, "amount": 1000.0, "amount_label": "$1,000"}, {"source": 14, "target": 7, "amount": 1000.0, "amount_label": "$1,000"}], "table": [{"name": "Rachel Downing", "date": "1917", "acreage": "unknown", "allotment": "unknown", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Hattie McKenzie", "date": "1917", "acreage": "unknown", "allotment": "unknown", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Neda Birdsong", "date": "1917 or early 1918", "acreage": "Lots 1 and 2 and S 1/2-NE-3-21-14 W.I.M.", "allotment": "2249", "outcome": "", "source_type": "BIA correspondence (CCF)", "is_affidavit": false, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Mattie Sturm", "date": "1917-08-14", "acreage": "not specified", "allotment": "No. 40 Caddo", "outcome": "sold & mortgaged", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "Commerce Trust Company ($6,000)", "buyer": "John Brown", "context": ""}, {"name": "Maggie Parrish", "date": "1917-08-24", "acreage": "unknown", "allotment": "74 Caddo", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "[unknown]", "context": ""}, {"name": "Jesse Sturm", "date": "1917-08-24", "acreage": "160 acres", "allotment": "No. 39 Caddo", "outcome": "sold & mortgaged", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "Enid loan company assumed by purchasers ($4,000)", "buyer": "B. Tackett (60 acres) and Fred Talkington (100 acres)", "context": ""}, {"name": "Laura Butler", "date": "1917-08-24", "acreage": "unknown", "allotment": "269 Caddo", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Clay J. Brown", "date": "1917-08-24", "acreage": "130.46 acres", "allotment": "128-Wichita", "outcome": "mortgaged", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "Ed S. LeVan ($4,000)", "buyer": "\u2014", "context": ""}, {"name": "Rachel E. Briscoe", "date": "1917-08-24", "acreage": "160 acres", "allotment": "34", "outcome": "", "source_type": "BIA correspondence (CCF)", "is_affidavit": false, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "John D. Downing", "date": "1917-08-24", "acreage": "160 acres", "allotment": "30 Caddo", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "Unnamed purchaser", "context": ""}, {"name": "Alice F. Osborne", "date": "1917-08-24", "acreage": "", "allotment": "945", "outcome": "mortgaged", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "Gumm Bros ($4,000)", "buyer": "\u2014", "context": ""}, {"name": "Alice Inkanish Cussen", "date": "1917-08-24", "acreage": "N/2 (80 acres)", "allotment": "No. 12 Caddo", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "J. E. Finney", "context": ""}, {"name": "Helena Ara Spar", "date": "1917-08-24", "acreage": "", "allotment": "943", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "Unnamed Purchaser", "context": ""}, {"name": "John Haddon", "date": "1917-08-24", "acreage": "", "allotment": "188", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "Unnamed Purchaser", "context": ""}, {"name": "Ella Sturm", "date": "1917-08-24", "acreage": "400 acres (total including this allotment)", "allotment": "No. 7 Caddo", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Nancy Parrish", "date": "1917-08-24", "acreage": "unknown total (140 acres mortgaged)", "allotment": "73 Caddo", "outcome": "mortgaged", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "State School Land Department on 140 acres at 5% interest for 5 years ($5,000)", "buyer": "\u2014", "context": ""}, {"name": "Felipe Gonzales", "date": "1917-09", "acreage": "162.69 acres", "allotment": "223 (also referenced as 823)", "outcome": "sold", "source_type": "Other archival source", "is_affidavit": false, "lenders": "\u2014", "buyer": "Unnamed parties", "context": ""}, {"name": "Mrs. Frank Cussen", "date": "1917-1918", "acreage": "unknown", "allotment": "unknown", "outcome": "", "source_type": "Congressional testimony (Survey of Conditions)", "is_affidavit": false, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Tofpi", "date": "1917-1918", "acreage": null, "allotment": null, "outcome": "patent canceled", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": "One of approximately 110 Indians issued fee patent under April 17, 1917 policy letter without application; patent later canceled; paid $78.95 taxes under protest"}, {"name": "Mr. Wells", "date": "1917-1918", "acreage": "unknown", "allotment": "unknown", "outcome": "", "source_type": "Congressional testimony (Survey of Conditions)", "is_affidavit": false, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Queton", "date": "1917-1918", "acreage": null, "allotment": null, "outcome": "patent canceled", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": "One of approximately 110 Indians issued fee patent under April 17, 1917 policy letter without application; patent later canceled; paid $78.75 taxes under protest"}, {"name": "George Roberts", "date": "1917-1919", "acreage": "80 acres", "allotment": "unspecified", "outcome": "sold", "source_type": "Congressional testimony (Survey of Conditions)", "is_affidavit": false, "lenders": "\u2014", "buyer": "retained but encumbered", "context": ""}, {"name": "Robert Small", "date": "1918", "acreage": "unknown", "allotment": "unknown", "outcome": "", "source_type": "Congressional testimony (Survey of Conditions)", "is_affidavit": false, "lenders": "\u2014", "buyer": "\u2014", "context": "Forced issuance without application, Small did not want patent, later sold/traded land"}, {"name": "Joseph C. Vaughan", "date": "1918-08-02", "acreage": "40 acres", "allotment": "unknown", "outcome": "sold", "source_type": "Congressional testimony (Survey of Conditions)", "is_affidavit": false, "lenders": "\u2014", "buyer": "Joseph C. Vaughan", "context": ""}, {"name": "Tulethe Araspar", "date": "1919-08-24", "acreage": null, "allotment": "No. 942 Caddo", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "Mr. McVey", "context": ""}, {"name": "Yeahgope", "date": "1919-12", "acreage": "unspecified", "allotment": "No. 963 Kiowa", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Kaulaity", "date": "1919-12", "acreage": "", "allotment": "1224 Kiowa", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Teyou", "date": "1919-12", "acreage": "unknown", "allotment": "659 Kiowa", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Togonegatty", "date": "1919-12-03", "acreage": "80", "allotment": "1277", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Mabel Sautaukoy", "date": "1919-12-03", "acreage": null, "allotment": "1255 Kiowa", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Nettie Kaulaity", "date": "1919-12-03", "acreage": null, "allotment": "2894", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Sain To Hoodie", "date": "1919-12-03", "acreage": null, "allotment": "658 Kiowa", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Lula Wyatt Willis", "date": "1919-12-03", "acreage": "160 acres (implied; reference to 'the other 80' suggests two 80-acre parcels)", "allotment": "303", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Taukauemah", "date": "1919-12-03", "acreage": "160 acres", "allotment": "2416 Kiowa", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "Unnamed buyer", "context": ""}, {"name": "Thomas Wyatt", "date": "1919-12-03", "acreage": "80 acres", "allotment": "302 Kiowa", "outcome": "mortgaged", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "Gum Brothers of Oklahoma City through Baldwin & Gibbs ($3,000)", "buyer": "\u2014", "context": ""}, {"name": "Yeah-gope", "date": "1919-12-03", "acreage": "160", "allotment": "963", "outcome": "", "source_type": "BIA correspondence (CCF)", "is_affidavit": false, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Jack Bointy", "date": "1919-12-03", "acreage": "160", "allotment": "961", "outcome": "", "source_type": "BIA correspondence (CCF)", "is_affidavit": false, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Toyebo", "date": "1919-12-03", "acreage": "240 acres (three 80-acre parcels)", "allotment": "640", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "Unnamed purchasers", "context": ""}, {"name": "Toykoytodle", "date": "1919-12-03", "acreage": "160 acres", "allotment": "1253 Kiowa", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "Unnamed purchaser", "context": ""}, {"name": "John Queton", "date": "1919-12-03", "acreage": "unknown", "allotment": "2730 Kiowa", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Tsomah", "date": "1919-12-03", "acreage": "160 acres (sold in two 80-acre tracts)", "allotment": "2694 Kiowa", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Tsoodle", "date": "1919-12-03", "acreage": "160 acres (two 80-acre parcels)", "allotment": "1245 Kiowa", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "Fred Baker", "context": ""}, {"name": "Kauntodle", "date": "1919-12-03", "acreage": "Original acreage unspecified (160 acres standard less 53 remaining and other sales)", "allotment": "660 Kiowa", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "Various unspecified buyers (majority of tract)", "context": ""}, {"name": "Keahtiaukau", "date": "1919-12-03", "acreage": "160 acres (implied standard allotment)", "allotment": "1280 Kiowa", "outcome": "sold & mortgaged", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "Gumm Brothers ($1,000), Wilmore ($1,000)", "buyer": "none yet", "context": ""}, {"name": "Lee Kodaseet", "date": "1919-12-03", "acreage": "120 acres", "allotment": "1278 Kiowa", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "Unspecified", "context": ""}, {"name": "Wife Of John Queton", "date": "1919-1920", "acreage": "unknown", "allotment": "unknown", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Phylis Poolaw", "date": "1920-03-04", "acreage": "", "allotment": "2696 Kiowa", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Quoecopah", "date": "1920-08-23", "acreage": "160 acres (approximate, based on two 80-acre parcels)", "allotment": "964 Kiowa", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "L. P. Crose (deed purchaser)", "context": ""}, {"name": "Lillian Marie Goombi", "date": "1920-08-23", "acreage": "unknown", "allotment": "661", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Howard Smith", "date": "1920-12-21", "acreage": "unknown", "allotment": "45 Wichita", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Earl T. Downing", "date": "1920-12-21", "acreage": "", "allotment": "No. 36 Caddo", "outcome": "sold", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "Unnamed Buyer", "context": ""}, {"name": "Ethel M. Curtis", "date": "1920-12-21", "acreage": "unknown", "allotment": "131 Caddo", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "John D. Downing, Jr.", "date": "1920-12-21", "acreage": null, "allotment": "35 Caddo", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Carrie Smith", "date": "1920-12-21", "acreage": "unspecified", "allotment": "46 Wichita", "outcome": "", "source_type": "Sworn affidavit (1928-1929)", "is_affidavit": true, "lenders": "\u2014", "buyer": "\u2014", "context": ""}, {"name": "Mr. Diamond", "date": "1920s", "acreage": "unknown", "allotment": "Washhorn field", "outcome": "sold", "source_type": "Congressional testimony (Survey of Conditions)", "is_affidavit": false, "lenders": "\u2014", "buyer": "101 Ranch", "context": "Allotment of deceased child, signed while intoxicated, patent obtained by 101 Ranch"}, {"name": "Annie B. Jones Berry", "date": "1921", "acreage": "Northwest Quarter of Section 7 (quarter section, approximately 160 acres implied but not stated)", "allotment": "Not specified (purchased after sale of original allotment)", "outcome": "sold", "source_type": "Congressional testimony (Survey of Conditions)", "is_affidavit": false, "lenders": "\u2014", "buyer": "N/A (purchased for her after sale of allotment)", "context": ""}, {"name": "Otto Wells", "date": "Not specified (pending/issued 1917-1918)", "acreage": "Not specified", "allotment": "Not specified", "outcome": "", "source_type": "Competency commission records", "is_affidavit": false, "lenders": "\u2014", "buyer": "\u2014", "context": ""}], "n_allottees": 7, "n_allottees_total": 57, "n_lenders": 8};
+const tooltip = document.getElementById('tooltip');
+
+// Bipartite layout: allottees left, lenders right
+const margin = {top: 30, right: 280, bottom: 30, left: 220};
+const allottees = data.nodes.filter(n => n.type === 'allottee');
+const lenders = data.nodes.filter(n => n.type === 'lender');
+
+const rowHeight = Math.max(24, 500 / Math.max(allottees.length, 1));
+const height = Math.max(allottees.length, lenders.length) * rowHeight + margin.top + margin.bottom;
+const width = 900;
+const innerW = width - margin.left - margin.right;
+
+const svg = d3.select('#chart').append('svg').attr('width', width).attr('height', height);
+const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+// Position nodes
+allottees.forEach((n, i) => { n.x = 0; n.y = i * rowHeight; });
+
+// Space lenders by volume
+const totalVol = lenders.reduce((s, l) => s + Math.max(Math.sqrt(l.volume || 1), 3), 0);
+let ly = 0;
+lenders.forEach(n => {
+  const w = Math.max(Math.sqrt(n.volume || 1), 3) / totalVol;
+  n.x = innerW;
+  n.y = ly + (w * (height - margin.top - margin.bottom)) / 2;
+  ly += w * (height - margin.top - margin.bottom);
+});
+
+const pos = {};
+data.nodes.forEach(n => pos[n.id] = n);
+
+// Edges
+g.selectAll('path')
+  .data(data.edges)
+  .enter()
+  .append('path')
+  .attr('d', d => {
+    const s = pos[d.source]; const t = pos[d.target];
+    const mx = innerW / 2;
+    return `M${s.x},${s.y} C${mx},${s.y} ${mx},${t.y} ${t.x},${t.y}`;
+  })
+  .attr('fill', 'none')
+  .attr('stroke', '#C4B8A8')
+  .attr('stroke-opacity', 0.5)
+  .attr('stroke-width', d => d.amount ? Math.max(1, Math.min(5, d.amount / 1500)) : 1)
+  .on('mouseover', function(event, d) {
+    const a = pos[d.source]; const l = pos[d.target];
+    tooltip.innerHTML = `<span class="t-label">${a.label}</span> &rarr; <span class="t-label">${l.label}</span><br>${d.amount_label || 'unknown amount'}`;
+    tooltip.style.display = 'block';
+    tooltip.style.left = (event.pageX + 12) + 'px';
+    tooltip.style.top = (event.pageY - 20) + 'px';
+    d3.select(this).attr('stroke', '#A3542E').attr('stroke-opacity', 1).attr('stroke-width', 4);
+  })
+  .on('mouseout', function(d) {
+    tooltip.style.display = 'none';
+    d3.select(this).attr('stroke', '#C4B8A8').attr('stroke-opacity', 0.5)
+      .attr('stroke-width', d => d.amount ? Math.max(1, Math.min(5, d.amount / 1500)) : 1);
+  });
+
+// Edge amount labels
+g.selectAll('.amt')
+  .data(data.edges.filter(d => d.amount_label))
+  .enter()
+  .append('text')
+  .attr('x', d => { const s = pos[d.source]; const t = pos[d.target]; return (s.x + t.x) / 2; })
+  .attr('y', d => { const s = pos[d.source]; const t = pos[d.target]; return (s.y + t.y) / 2 - 3; })
+  .attr('text-anchor', 'middle')
+  .attr('font-family', 'JetBrains Mono, monospace')
+  .attr('font-size', '9px')
+  .attr('fill', '#8B7B6B')
+  .text(d => d.amount_label);
+
+// Allottee nodes + labels
+g.selectAll('.a-dot')
+  .data(allottees).enter().append('circle')
+  .attr('cx', d => d.x).attr('cy', d => d.y)
+  .attr('r', d => d.is_affidavit ? 5 : 4)
+  .attr('stroke', d => d.is_affidavit ? '#1A1714' : 'none')
+  .attr('stroke-width', d => d.is_affidavit ? 1.5 : 0)
+  .attr('fill', d => {
+    const o = d.outcome || '';
+    if (o.includes('sold') && o.includes('mortgaged')) return '#8B1A1A';
+    if (o.includes('sold')) return '#C0392B';
+    if (o.includes('mortgaged')) return '#D4754A';
+    if (o.includes('retained')) return '#2E7D32';
+    if (o.includes('cancel')) return '#5A7A8F';
+    return '#3D4F5F';
+  });
+
+g.selectAll('.a-label')
+  .data(allottees).enter().append('text')
+  .attr('x', d => d.x - 10).attr('y', d => d.y + 4)
+  .attr('text-anchor', 'end')
+  .attr('font-family', 'DM Sans, sans-serif')
+  .attr('font-size', '11px')
+  .attr('fill', '#1A1714')
+  .text(d => d.label);
+
+// Lender nodes + labels
+g.selectAll('.l-dot')
+  .data(lenders).enter().append('circle')
+  .attr('cx', d => d.x).attr('cy', d => d.y)
+  .attr('r', d => Math.max(6, Math.sqrt((d.volume || 100) / 200)))
+  .attr('fill', '#A3542E')
+  .attr('stroke', '#8B1A1A')
+  .attr('stroke-width', 1.5);
+
+g.selectAll('.l-label')
+  .data(lenders).enter().append('text')
+  .attr('x', d => d.x + Math.max(6, Math.sqrt((d.volume || 100) / 200)) + 8)
+  .attr('y', d => d.y + 4)
+  .attr('font-family', 'DM Sans, sans-serif')
+  .attr('font-size', '12px')
+  .attr('font-weight', '600')
+  .attr('fill', '#A3542E')
+  .text(d => {
+    let t = `${d.label} (${d.count})`;
+    if (d.volume_label) t += ` ${d.volume_label}`;
+    return t;
+  });
+
+// Legend
+const legend = svg.append('g').attr('transform', `translate(${margin.left}, ${height - 10})`);
+const items = [
+  ['#C0392B', 'Sold'], ['#D4754A', 'Mortgaged'], ['#8B1A1A', 'Sold & Mortgaged'],
+  ['#2E7D32', 'Retained'], ['#5A7A8F', 'Canceled'], ['#3D4F5F', 'Unknown']
+];
+// Add affidavit indicator to legend
+legend.append('circle').attr('cx', items.length * 120).attr('cy', 0).attr('r', 5)
+  .attr('fill', '#3D4F5F').attr('stroke', '#1A1714').attr('stroke-width', 1.5);
+legend.append('text').attr('x', items.length * 120 + 10).attr('y', 4)
+  .attr('font-size', '10px').attr('fill', '#6B6358').text('= Sworn affidavit');
+items.forEach((item, i) => {
+  legend.append('circle').attr('cx', i * 120).attr('cy', 0).attr('r', 5).attr('fill', item[0]);
+  legend.append('text').attr('x', i * 120 + 10).attr('y', 4)
+    .attr('font-size', '10px').attr('fill', '#6B6358').text(item[1]);
+});
+
+// Table
+const tbody = document.getElementById('tbody');
+data.table.forEach(r => {
+  const tr = document.createElement('tr');
+  const oClass = r.outcome.includes('sold') && r.outcome.includes('mortgaged') ? 'outcome-both'
+    : r.outcome.includes('sold') ? 'outcome-sold'
+    : r.outcome.includes('mortgaged') ? 'outcome-mortgaged'
+    : r.outcome.includes('retained') ? 'outcome-retained'
+    : r.outcome.includes('cancel') ? 'outcome-canceled'
+    : 'outcome-unknown';
+  const srcTag = r.is_affidavit
+    ? '<span style="color:#2E7D32;font-weight:600;font-size:10px">AFFIDAVIT</span>'
+    : `<span style="color:#6B6358;font-size:10px">${r.source_type}</span>`;
+  tr.innerHTML = `
+    <td><strong>${r.name}</strong></td>
+    <td style="font-family:'JetBrains Mono',monospace;font-size:11px">${r.date}</td>
+    <td>${srcTag}</td>
+    <td><span class="outcome ${oClass}">${r.outcome}</span></td>
+    <td>${r.lenders}</td>
+    <td>${r.buyer}</td>
+  `;
+  tbody.appendChild(tr);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_057",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "75",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Emma Stirk, Senior",
+    "Tribe/Reservation": "Shannon County, South Dakota (reservation not explicitly named)",
+    "Post Office Address": "Scenic, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her allotment, on account of not wishing to pay taxes, but the people at the Agency told her that she would have to pay taxes any way, so she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1921 she mortgaged 560 acres, to The Lincoln National Life Insurance Company, for $10,000.00",
+    "Buyer": "The Lincoln National Life Insurance Company foreclosed on the 560 acres, cattle, horses and other chattels on August 28, 1926",
+    "Tax burden forced sale/Mortgage": "taxes were only partly kept up on all this land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "69 years old",
+    "Occupation/Income": "their only source of income is from leasing this 640 acres of land",
+    "NOTES": "mentally incompetent; very poor health, having rheumatism, stomach trouble and heart trouble; husband is living but 75 years of age, having poor health and unable to work at anything; they have no one to care for except themselves; had in her entire allotment 1100 acres of land; bought cattle with mortgage money; still retains clear of all debt the 640 acres wherein her home is established; never received any aid from the County or Government; document number No. 2665; sworn November 13, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2298,
+    "output_tokens": 471
+  },
+  "elapsed": 6.1
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_questionnaire_006",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "44-46",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Dolly Daugherty, Deceased; Mrs. Louisa Daugherty, Mother & Heir",
+    "Tribe/Reservation": "Big Bend District",
+    "Post Office Address": "not stated",
+    "Allotment number": "1350",
+    "Cancelled": "No",
+    "Refused/Protested": "Not known if accepted without protest",
+    "Recorded patent": "Filed for record January 20, 1920, in volume 167, page 47, at Court House, Hughes Co., Pierre, S. Dak. It is not known by whom it was filed.",
+    "Sold/Mortgaged": "Mortgaged and sold; Mrs. Daugherty mortgaged the allotment to H. G. Fuller of Pierre, S. Dak. for $250.00 at 10% interest; Deeded to Theodore F. Riggs for $500.00 recorded on volume 178, page 38",
+    "Buyer": "Mortgaged to H. G. Fuller of Pierre, S.D. for $250.00 at 10% interest; Deeded to Theodore F. Riggs for $500.00",
+    "Tax burden forced sale/Mortgage": "Was given for a debt. The deed came to the girl when she was sick and she died shortly afterwards. The land was willed to the Mother by the girl and she gave the deed to the Doctor for what she owed him.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 22, 1919",
+    "Gender": "Female",
+    "Age": "Present age of heir, Mrs. Louisa Daugherty is 53 years",
+    "Occupation/Income": "Makes her own living by farming and stock raising. She has received no support from any source.",
+    "NOTES": "Dolly Daugherty deceased October 1, 1920 at the home of her Mother. Before dying she made a will leaving her Mother the land and leaving the personal property to her brother Albert Daugherty. Mrs. Daugherty was made Executrix of the estate. Mr. Fuller, Attorney of Pierre, S.D. appeared for Mrs. Daugherty in the final decree before Judge John A. Holms at Pierre, S.D. and gave Mrs. Daugherty the real estate. Proceedings filed in court house at Pierre August 24, 1921; filed for record September 12, 1921 in volume 166, page 603. Patent issued Dec. 22, 1919; filed for record in volume 167, page 47, Nov. 20, 1920. NE/4 Sec. 16, Township 108, Range 75. Dolly Daugherty was doctored by Mr. Riggs, M.D. of Pierre for about five months and then came home and died. Soon after the girl was dead the Pierre National Bank sent Mrs. Daugherty word to come to Pierre; McKnight told her she owed a Doctor bill of over $500.00 and advised her to turn over the deed to Dr. Riggs. She did this and never received a cent in cash for the land. This was not a fair price for the land. Mrs. Daugherty claims she paid the mortgage out of her personal funds. Mrs. Daugherty is a widow and has 6 children dependent on her for support. Physical condition: Good. Mental condition: Good. Financial condition: Good. Document reference: 5-1142. Date of document: January 15, 1928.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 3905,
+    "output_tokens": 856
+  },
+  "elapsed": 13.9
+}

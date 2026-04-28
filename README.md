@@ -265,11 +265,14 @@ The pipeline offers two extraction modes. The choice depends on the document:
 
 | Mode | Flag | Best For | Model | How It Works |
 |------|------|----------|-------|-------------|
-| **Text** | (default) | Narrative prose — testimony, correspondence, case histories | Kimi K2.5 | PyMuPDF extracts OCR'd text → 40K-char chunks → LLM returns structured JSON |
+| **Text (v5)** | (default) | Narrative prose — testimony, correspondence, case histories | Kimi K2.5 | PyMuPDF extracts OCR'd text → 40K-char chunks → LLM returns structured JSON (10 types, slim prompt) |
+| **Affidavit** | `--affidavit` | Sworn depositions — Circular 2464, forced fee patent affidavits | Kimi K2.5 | Same text pipeline but with form-aware prompt that extracts one linked record per deponent |
 | **Vision (tables)** | `--vision` | Tables, ledgers, allotment schedules, financial data | Claude Sonnet | Pages rendered as images → sent to Claude vision → structured JSON with tables |
 | **Vision (index cards)** | `--vision --index-cards` | DOJ record slips, structured index cards | Qwen2.5-VL-72B (HPC) | Pages rendered as images → sent to Qwen-VL vLLM server → record_slips/legal_cases/persons JSON |
 
-**When to use which:** If the document is mostly running text (congressional hearings, correspondence files, litigation records), use text mode with Kimi — it finds more fee patents and dispossession evidence than any other model. If the document has tables with columns and aligned numbers (land transaction schedules, financial reports, census-style data), use vision mode with Claude Sonnet — PyMuPDF turns tables into jumbled text, but Claude vision reads the actual page layout. If the document is a stack of typed DOJ index cards, use Qwen-VL on HPC with the `--index-cards` schema.
+**When to use which:** If the document is mostly running text (congressional hearings, correspondence files, litigation records), use text mode (v5 default) with Kimi — it finds more fee patents and dispossession evidence than any other model. If the document is a structured sworn deposition with numbered questions or "Deponent further states..." format, use `--affidavit` — the generic v5 prompt captures 4% of complete case records on affidavits; the affidavit prompt is designed to capture 90%+. If the document has tables with columns and aligned numbers (land transaction schedules, financial reports, census-style data), use vision mode with Claude Sonnet — PyMuPDF turns tables into jumbled text, but Claude vision reads the actual page layout. If the document is a stack of typed DOJ index cards, use Qwen-VL on HPC with the `--index-cards` schema.
+
+**Prompt versions:** The default is v5 (10 extraction types, slim template optimized for Kimi). v3 (7 types, legacy) and v4 (10 types, verbose) are available with `--v3` and `--v4` flags. v5 produces 103% of v3's total output while adding testimony, taxes, and mortgages categories. See `comparisons/MODEL_COMPARISON_SUMMARY.md` Section 11 for the full three-way comparison.
 
 **Sonnet vs Qwen-VL on index cards.** Both models were tested on the DOJ record slip collection with the same `--index-cards` prompt. The 20-page test PDF was sparse (1.4 slips/page) and showed Qwen-VL tying Sonnet on slips, beating it on cases, and trailing on persons. A larger 2-PDF apples-to-apples on 66 dense pages (~11 slips/page) painted a more nuanced picture:
 
@@ -1055,6 +1058,76 @@ python3 compare_claude_vs_local_models.py --local-models llama3.3:70b --mode ext
 | `hpc/run_comparison.slurm` | SLURM job: launch vLLM + run comparison for one model |
 | `hpc/run_all_models.sh` | Submit jobs for all three models in parallel |
 | `corpus_context.json` | Pre-dumped corpus data (no DB needed on cluster) |
+
+## Knowledge Graph
+
+The extraction pipeline produces the raw material for a knowledge graph: entities are nodes, relationships and structured records (fee patents, correspondence, testimony, mortgages) are edges. A unified graph combining the KCA, Survey of Conditions, and DOJ index card databases contains **93,474 nodes** and **108,416 edges**, with **3,575 entities that appear in both the KCA and Survey corpora** — the cross-database linkage that connects individual case files to congressional testimony about the same people, policies, and institutions.
+
+### How It Works
+
+The graph explorer (`explore_graph.py`) builds a NetworkX graph from PostgreSQL by:
+
+1. **Entities as nodes.** Every extracted person, organization, location, land parcel, legal case, and legislation becomes a node. Nodes are merged across databases by name+type, so "John Collier" extracted from a KCA document and "John Collier" extracted from a Survey hearing become one node with connections to both.
+
+2. **Documents as nodes.** Each document is a node. Entity-document edges (via the `mentions` table) record which entities appear in which documents.
+
+3. **Structured records as edges.** Fee patents create `allottee_of`, `sold_to`, and `mortgaged_to` edges with dollar amounts. Correspondence creates `wrote_to` edges with dates and subjects. Testimony creates `testified_in` edges with key claims. Relationships from the extraction (employed_by, represented, guardian_of, etc.) become direct entity-to-entity edges.
+
+### Path Finding
+
+The graph supports multi-hop path queries. For example, tracing the connection from Commissioner John Collier to an individual Caddo allottee named Mattie Sturm:
+
+```
+graph> paths John Collier -> Mattie Sturm
+
+Path 1 (length 4):
+    Commissioner John Collier [person]
+  → part 37 [document]
+  → Anadarko [location]
+  → Mattie Sturm Caddo 40.pdf [document]
+  → Mattie Sturm [person]
+```
+
+Collier testified in Survey Part 37 → which mentions Anadarko (the BIA agency town) → Anadarko appears in Mattie Sturm's affidavit (where she traded her allotment for a house) → Mattie Sturm. That's the Commissioner of Indian Affairs connected to an individual allottee through the town where the Bureau administered her dispossession. The graph found 1,253 paths between these two nodes in 4 hops — most are noise routed through shared institutions (BIA, Department of the Interior), but the Anadarko path and the competency commission path are real historiographic connections.
+
+### Visualizations
+
+Three visualization tools built from the graph and extraction data:
+
+**Fee Patent Flow** (`viz_fee_patent_flow.py`): A Sankey diagram showing how 3,827 fee patents flowed from mechanism (Administrative, Competency Commission, Declaration of Policy, By Application) to outcome (Sold, Mortgaged, Retained, Canceled, Unknown). Includes temporal Sankey splits by decade showing how the mechanism mix shifted over time, a DOJ tax recovery county chart (299 cases across 106 counties), and an individual cases register.
+
+**Kiowa Mortgage Network** (`viz_kiowa_mortgage_network.py`): A focused bipartite graph of Kiowa Agency allottees (1917–1921) connected to their lenders, with dollar amounts on every edge. Allottees are color-coded by outcome and marked by source type (sworn affidavit vs. BIA correspondence). Includes a complete register with source provenance notes. The visualization reveals the batch patenting pattern: twelve allottees patented on August 24, 1917, seventeen on December 3, 1919 — an administrative operation, not individual decisions — with lenders (Commerce Trust Company, Gum Brothers, Ed S. LeVan) positioned to move on the allotments immediately.
+
+**Circular 2464** (`viz_circular_2464.py`): A visualization of 528 hand-transcribed affidavit records from the 1928–1929 federal investigation into forced fee patents. This is not AI-extracted data — it is the ground truth. Includes a Consent→Outcome Sankey (82% of allottees protested; most still lost their land), reservation breakdown, selected testimony quotes, and a filterable complete register. The Circular 2464 data serves as the benchmark for evaluating AI extraction quality: an HPC job is running v3, v4, and v5 extraction on the same documents for direct comparison against the hand-transcribed spreadsheet.
+
+### Tools
+
+| Script | Description |
+|--------|-------------|
+| `explore_graph.py` | Interactive graph explorer. Build graph from PostgreSQL, find nodes, trace paths, export to GEXF for Gephi. |
+| `viz_fee_patent_flow.py` | Fee patent Sankey + temporal splits + DOJ tax recovery. Pulls from all 4 databases. |
+| `viz_kiowa_mortgage_network.py` | Focused Kiowa 1917–1921 mortgage bipartite graph with provenance marking. |
+| `viz_circular_2464.py` | Circular 2464 affidavit visualization from hand-transcribed data. |
+| `allotment_graph.gexf` | Full graph export for Gephi (93K nodes, 108K edges). |
+
+### What the Graph Reveals
+
+The graph's value is in multi-hop connections that no single document makes visible:
+
+- **Policy → Official → Testimony → Bank.** The Declaration of Policy (Office Circular of March 7, 1919) connects to Commissioner Sells, who connects to the Survey of Conditions hearings, where Commerce Trust Company appears as a mortgagee. Four hops from policy to profit.
+
+- **Batch patenting dates.** The December 3, 1919 cluster — seventeen Kiowa allottees patented on one day — is visible as a dense cluster of nodes sharing the same patent_date edge attribute. This is not an artifact of the query; it's evidence that the BIA processed forced patents as administrative batches.
+
+- **Two-track outcomes.** Allottees who avoided lenders (Tofpi, Queton) had their patents canceled and trust status restored. Allottees who took mortgages couldn't go back. The cancellation path and the mortgage path are distinct subgraphs in the network — the graph structure encodes the finding that the damage was reversible only if you avoided the mortgage economy.
+
+- **Cross-corpus linkage.** 3,575 entities appear in both the KCA case files and the Survey congressional hearings. These are the points where individual dispossession connects to national policy debate — the same people, places, and institutions appearing in both the "deep" and "wide" records described in the HAVI proposal.
+
+### Known Limitations
+
+- **Edge type proliferation.** The extraction produces hundreds of unique relationship types (employed_by, employed, employed_as, etc.) that need normalization. A consolidation pass would merge synonymous edge types.
+- **Generic hub nodes.** "Washington, D.C.", "Bureau of Indian Affairs", and "Department of the Interior" connect to nearly every document, creating paths between any two entities that route through these hubs. Filtering by edge type or requiring non-institutional intermediate nodes produces more meaningful paths.
+- **Entity deduplication.** "Commissioner of Indian Affairs" and "John Collier" are separate nodes when they should sometimes be the same. Cross-type entity resolution (merging a title with a name when they co-refer in context) is a graph learning problem described in the HAVI proposal.
+- **No temporal edges.** Edges have date attributes but the graph structure doesn't encode temporal ordering. A historian traversing from a 1917 patent to a 1934 hearing knows the sequence; the graph treats both as equally weighted edges. Temporal graph modeling is a future direction.
 
 ## Future Work
 

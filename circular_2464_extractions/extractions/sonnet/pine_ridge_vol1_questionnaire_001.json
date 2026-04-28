@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_questionnaire_001",
+  "type": "questionnaire",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "53",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Greyearth, Mrs. Isaac",
+    "Tribe/Reservation": "Flandreau, South Dakota",
+    "Post Office Address": "Flandreau, South Dakota",
+    "Allotment number": "694",
+    "Cancelled": "The patent has not been canceled.",
+    "Refused/Protested": "It was accepted with mental protest but was not recorded in the county.",
+    "Recorded patent": "The patent was received by mail in September and was receipted for; not recorded in the county.",
+    "Sold/Mortgaged": "The land was mortgaged and one year later was sold.",
+    "Buyer": "Mortgaged to J. D. Cordier of Pine Ridge and later sold to A. Baker",
+    "Tax burden forced sale/Mortgage": "The land was sold because the debt and taxes were due and I could not raise the money to pay it. My property was mortgaged and it was due and taxes were due and I had no earning capacity so had to sell it for what I could get.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 9, 1907",
+    "Gender": "Female",
+    "Age": "fifty-seven",
+    "Occupation/Income": "I have no way of making a living and depend solely on my husband who is sixty-nine years old, very poor eye site and has practically no earning capacity.",
+    "NOTES": "Received $2300 for the land but the mortgage, taxes and interest amounted to about $800 and only $1500 was actually received. Sound of mind, not strong physically, financial condition is poor. Has no land, property, or money. No one depends upon her for support. An interpreter was present at the swearing. Document references District Superintendent. Land passed out of possession after one year.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2336,
+    "output_tokens": 467
+  },
+  "elapsed": 6.0
+}

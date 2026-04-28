@@ -1,0 +1,33 @@
+{
+  "document_id": "part13_questionnaire_018",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "39",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Will Justice",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "not stated",
+    "Allotment number": "207",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes",
+    "Sold/Mortgaged": "Mortgaged, but released",
+    "Buyer": "Pawnee Nat. Bank, Pawnee County, Okla.",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Nov. 13, 1917",
+    "Gender": "not stated",
+    "Age": "40 years",
+    "Occupation/Income": "Has an income of about $400 per year, inherited land. Shares in Pawnee annuity.",
+    "NOTES": "Date and manner of delivery of patent Dec. 4, 1917, Agency office; receipted for yes; mortgage released; land has not been sold; no property or money accumulated; good health; questions and answers to circular No. 2464, June 18, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2315,
+    "output_tokens": 327
+  },
+  "elapsed": 6.2,
+  "retry_count": 1
+}

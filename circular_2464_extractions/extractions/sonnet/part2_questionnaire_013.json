@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_013",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "37",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Edward Beauvais",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Mission",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, I sold it in 1924.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I sold it because the crops were poor and I had to pay the taxes.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March, 1920",
+    "Gender": "Male",
+    "Age": "51",
+    "Occupation/Income": "By farming.",
+    "NOTES": "Did not request the patent. Sold land for $15.00 an acre - $2400.00 Cash. Had paid all taxes; no mortgage on it. Sold because crops didn't grow and was afraid he would lose it. Satisfied with the sale. Has a 12 year old daughter in school and his mother as dependents. Not married. Document number N04086. 460. Superintendent E. E. McKean referenced. Subscribed and sworn April 30, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2260,
+    "output_tokens": 348
+  },
+  "elapsed": 5.8
+}

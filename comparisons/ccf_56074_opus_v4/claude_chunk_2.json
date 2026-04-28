@@ -1,0 +1,1702 @@
+{
+  "entities": [
+    {
+      "name": "Charles B. Thompson",
+      "type": "person",
+      "context": "Farmer at Otoe Sub-agency, Red Rock, Oklahoma"
+    },
+    {
+      "name": "Otoe Sub-agency",
+      "type": "organization",
+      "context": "Indian agency at Red Rock, Oklahoma"
+    },
+    {
+      "name": "Red Rock",
+      "type": "location",
+      "context": "Oklahoma, location of Otoe Sub-agency"
+    },
+    {
+      "name": "Harold Barnes",
+      "type": "person",
+      "context": "Successful merchant who retains his land and farms considerable"
+    },
+    {
+      "name": "Jacob Blackhawk",
+      "type": "person",
+      "context": "City property owner with children in high school, considered fairly successful"
+    },
+    {
+      "name": "James Arkeketa",
+      "type": "person",
+      "context": "Retains 80 acres, farms and leases other land, raises stock, fairly successful"
+    },
+    {
+      "name": "Henry Black",
+      "type": "person",
+      "context": "Still retains some land and is farming a little"
+    },
+    {
+      "name": "George W. Dailey",
+      "type": "person",
+      "context": "Sold all his land but is a successful farmer on his wife's land, owns considerable livestock"
+    },
+    {
+      "name": "Blaine Faw Faw",
+      "type": "person",
+      "context": "Disposed of his land but now owns a feed barn and town property"
+    },
+    {
+      "name": "David Pettit",
+      "type": "person",
+      "context": "Retains his land and farms a little, owns livestock"
+    },
+    {
+      "name": "Berth Tillman",
+      "type": "person",
+      "context": "Owns a garage and town property, appears successful"
+    },
+    {
+      "name": "Sam Lincoln",
+      "type": "person",
+      "context": "Disposed of his lands but leases and farms his father's land very successfully"
+    },
+    {
+      "name": "Grant Cloghorn",
+      "type": "person",
+      "context": "Mentioned in context of Indians questioned about being released from federal control"
+    },
+    {
+      "name": "George Haymond",
+      "type": "person",
+      "context": "Received fee patent and sold every acre of land"
+    },
+    {
+      "name": "Jobie Taylor",
+      "type": "person",
+      "context": "Received fee patent and sold every acre of land"
+    },
+    {
+      "name": "Wilber Eaves",
+      "type": "person",
+      "context": "Received fee patent and sold every acre of land"
+    },
+    {
+      "name": "Gorden Shaw",
+      "type": "person",
+      "context": "Received fee patent and sold every acre of land"
+    },
+    {
+      "name": "Henry Chapman",
+      "type": "person",
+      "context": "Received fee patent and sold every acre of land"
+    },
+    {
+      "name": "Willie Lewis",
+      "type": "person",
+      "context": "Received fee patent and sold every acre of land"
+    },
+    {
+      "name": "Robert Peters",
+      "type": "person",
+      "context": "Received fee patent and sold every acre of land"
+    },
+    {
+      "name": "James Little Sun",
+      "type": "person",
+      "context": "Received fee patent and sold every acre of land"
+    },
+    {
+      "name": "Joe Taylor",
+      "type": "person",
+      "context": "Received fee patent and sold every acre of land"
+    },
+    {
+      "name": "Elmer Echo Hawk",
+      "type": "person",
+      "context": "Received fee patent and sold every acre of land, in bad shape"
+    },
+    {
+      "name": "Pawnee Agency",
+      "type": "organization",
+      "context": "Indian agency at Pawnee, Oklahoma"
+    },
+    {
+      "name": "Pawnee",
+      "type": "location",
+      "context": "Oklahoma, location of Pawnee Agency"
+    },
+    {
+      "name": "G. W. Long",
+      "type": "person",
+      "context": "Farmer at Pawnee Agency, Pawnee, Oklahoma"
+    },
+    {
+      "name": "H. F. Furry",
+      "type": "person",
+      "context": "Agent Farmer at Pawnee Agency, Pawnee, Oklahoma"
+    },
+    {
+      "name": "Louis Matlock",
+      "type": "person",
+      "context": "Received fee patent, Pawnee, Oklahoma, doing very well"
+    },
+    {
+      "name": "Elmo Jim",
+      "type": "person",
+      "context": "Pawnee, Oklahoma, doing very well with fee patent"
+    },
+    {
+      "name": "Eva N. Cummings",
+      "type": "person",
+      "context": "Maramec, Oklahoma, doing very well with fee patent"
+    },
+    {
+      "name": "Maramec",
+      "type": "location",
+      "context": "Oklahoma"
+    },
+    {
+      "name": "Clarance Field",
+      "type": "person",
+      "context": "Pawnee, Oklahoma, has not gained by fee patent"
+    },
+    {
+      "name": "Wallace Murie",
+      "type": "person",
+      "context": "Pawnee, Oklahoma, has not gained by fee patent"
+    },
+    {
+      "name": "Caroline Murie",
+      "type": "person",
+      "context": "Pawnee, Oklahoma, has not gained by fee patent"
+    },
+    {
+      "name": "Maggie Knife Chief",
+      "type": "person",
+      "context": "Pawnee, Oklahoma, has not gained by fee patent"
+    },
+    {
+      "name": "Thomas Hand",
+      "type": "person",
+      "context": "Pawnee, Oklahoma, has not gained by fee patent"
+    },
+    {
+      "name": "John Howell",
+      "type": "person",
+      "context": "Pawnee, Oklahoma, has not gained by fee patent"
+    },
+    {
+      "name": "Maude Hand",
+      "type": "person",
+      "context": "Pawnee, Oklahoma, has not gained by fee patent"
+    },
+    {
+      "name": "Emmit Pearson",
+      "type": "person",
+      "context": "Ralston, Oklahoma, still holds land and cultivates it"
+    },
+    {
+      "name": "Ralston",
+      "type": "location",
+      "context": "Oklahoma"
+    },
+    {
+      "name": "George Gover",
+      "type": "person",
+      "context": "Pawnee, Oklahoma, still holds land and cultivates it"
+    },
+    {
+      "name": "Frank Rouwalk",
+      "type": "person",
+      "context": "Pawnee, Oklahoma, still holds land and cultivates it"
+    },
+    {
+      "name": "A. B. Collins",
+      "type": "person",
+      "context": "Farmer, submitting report on patent-in-fee Indians"
+    },
+    {
+      "name": "Shawnee Agency",
+      "type": "organization",
+      "context": "Indian agency dealing with Sac & Fox and Iowa Indians"
+    },
+    {
+      "name": "Sac & Fox Indians",
+      "type": "organization",
+      "context": "Indian tribe under Shawnee Agency"
+    },
+    {
+      "name": "Iowa Indians",
+      "type": "organization",
+      "context": "Indian tribe under Shawnee Agency"
+    },
+    {
+      "name": "Edward McClellan",
+      "type": "person",
+      "context": "RFD No. 4, Cushing, Oklahoma, has not sold allotment"
+    },
+    {
+      "name": "Fannie Foote",
+      "type": "person",
+      "context": "Nee Keokuk, 1706 W-37th Street, Oklahoma City, has not sold allotment"
+    },
+    {
+      "name": "Robert Peyton Keokuk",
+      "type": "person",
+      "context": "Guthrie, Oklahoma, has not sold allotment"
+    },
+    {
+      "name": "Sadie Feider",
+      "type": "person",
+      "context": "Nee Ingalls, RFD No. 4, Cushing, Oklahoma, has not sold allotment"
+    },
+    {
+      "name": "Leona Chandler",
+      "type": "person",
+      "context": "Nee Greyeyes, Locust Grove, Oklahoma, has not sold allotment"
+    },
+    {
+      "name": "Clara Ellis",
+      "type": "person",
+      "context": "RFD No. 4, Meeker, Oklahoma, sold 1/2 interest"
+    },
+    {
+      "name": "Stella Ellis",
+      "type": "person",
+      "context": "Akron, New York, sold one-half interest"
+    },
+    {
+      "name": "Cushing",
+      "type": "location",
+      "context": "Oklahoma"
+    },
+    {
+      "name": "Oklahoma City",
+      "type": "location",
+      "context": "Oklahoma"
+    },
+    {
+      "name": "Guthrie",
+      "type": "location",
+      "context": "Oklahoma"
+    },
+    {
+      "name": "Locust Grove",
+      "type": "location",
+      "context": "Oklahoma"
+    },
+    {
+      "name": "Meeker",
+      "type": "location",
+      "context": "Oklahoma"
+    },
+    {
+      "name": "Akron",
+      "type": "location",
+      "context": "New York"
+    },
+    {
+      "name": "Cantonment Agency",
+      "type": "organization",
+      "context": "Indian agency for Cheyenne and Arapahoe Indians"
+    },
+    {
+      "name": "Cheyenne and Arapahoe Indians",
+      "type": "organization",
+      "context": "Indian tribes under Cantonment Agency"
+    },
+    {
+      "name": "William O. Mitchell",
+      "type": "person",
+      "context": "Farmer at Eagle City, Oklahoma, reporting on Cheyenne and Arapahoe Indians"
+    },
+    {
+      "name": "Eagle City",
+      "type": "location",
+      "context": "Oklahoma"
+    },
+    {
+      "name": "David Bighead",
+      "type": "person",
+      "context": "Indian making a success of farming under Government control"
+    },
+    {
+      "name": "Harry Bates",
+      "type": "person",
+      "context": "Eagle City, Oklahoma, Indian farming successfully"
+    },
+    {
+      "name": "Walter Fire",
+      "type": "person",
+      "context": "Eagle City, Oklahoma, Indian farming successfully"
+    },
+    {
+      "name": "Dan Tucker",
+      "type": "person",
+      "context": "Canton, Oklahoma, Indian farming successfully"
+    },
+    {
+      "name": "Canton",
+      "type": "location",
+      "context": "Oklahoma"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Department of the Interior board, Washington D.C."
+    },
+    {
+      "name": "George Vaux Jr.",
+      "type": "person",
+      "context": "Chairman of Board of Indian Commissioners, Philadelphia, PA"
+    },
+    {
+      "name": "Malcolm McDowell",
+      "type": "person",
+      "context": "Secretary of Board of Indian Commissioners, Washington D.C."
+    },
+    {
+      "name": "William H. Ketcham",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Washington D.C."
+    },
+    {
+      "name": "Daniel Smiley",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Mohonk Lake, N.Y."
+    },
+    {
+      "name": "Hugh L. Scott",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Princeton, N.J."
+    },
+    {
+      "name": "Alfred E. Smith",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, New York, N.Y."
+    },
+    {
+      "name": "Tille E. Gates",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Washington D.C."
+    },
+    {
+      "name": "Frank Moorehead",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Andover, Mass."
+    },
+    {
+      "name": "Samuel A. Eliot",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Boston, Mass."
+    },
+    {
+      "name": "Frank Knox",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Manchester, N.H."
+    },
+    {
+      "name": "Commissioner of Indian Affairs",
+      "type": "organization",
+      "context": "Office of Indian Affairs, Washington D.C."
+    },
+    {
+      "name": "Office of Indian Affairs",
+      "type": "organization",
+      "context": "Washington D.C."
+    },
+    {
+      "name": "J. A. Garber",
+      "type": "person",
+      "context": "Superintendent of Spokane Indian Agency, Wellpinit, Washington"
+    },
+    {
+      "name": "Spokane Indian Agency",
+      "type": "organization",
+      "context": "Indian agency at Wellpinit, Washington"
+    },
+    {
+      "name": "Wellpinit",
+      "type": "location",
+      "context": "Washington state, location of Spokane Indian Agency"
+    },
+    {
+      "name": "Spokane Reservation",
+      "type": "location",
+      "context": "Indian reservation in Washington state"
+    },
+    {
+      "name": "C. Tandy",
+      "type": "person",
+      "context": "Agency Farmer at Spokane Indian Agency, Wellpinit, Washington"
+    },
+    {
+      "name": "William C. Tandy",
+      "type": "person",
+      "context": "Farmer at Spokane Indian Agency, same as C. Tandy"
+    },
+    {
+      "name": "Albert Sochemtioken (Garry)",
+      "type": "person",
+      "context": "Wellpinit, Washington, sold land for $3000 and automobile"
+    },
+    {
+      "name": "Caulette Ford",
+      "type": "person",
+      "context": "Chewelah, Washington, used money to build a good house"
+    },
+    {
+      "name": "Chewelah",
+      "type": "location",
+      "context": "Washington state"
+    },
+    {
+      "name": "Del Brown",
+      "type": "person",
+      "context": "Miles, Washington, renting out his place, interest in small sawmill"
+    },
+    {
+      "name": "Miles",
+      "type": "location",
+      "context": "Washington state"
+    },
+    {
+      "name": "Daniel Sherwood",
+      "type": "person",
+      "context": "Wellpinit, Washington, used money to buy a better place and farms it"
+    },
+    {
+      "name": "Duncan Desautel",
+      "type": "person",
+      "context": "Lincoln, Washington, sold land and lived up the money"
+    },
+    {
+      "name": "Lincoln",
+      "type": "location",
+      "context": "Washington state"
+    },
+    {
+      "name": "John Inkster Jr.",
+      "type": "person",
+      "context": "Ford, Washington, renting allotments of two old Indians, doing good farming"
+    },
+    {
+      "name": "Ford",
+      "type": "location",
+      "context": "Washington state"
+    },
+    {
+      "name": "Thomas (Bob) Flett",
+      "type": "person",
+      "context": "Wellpinit, Washington, lives on his land and rents land of two old Indians"
+    },
+    {
+      "name": "Mary A. Galbraith",
+      "type": "person",
+      "context": "Wellpinit, Washington, husband farms and is improving the balance"
+    },
+    {
+      "name": "Robert Sherwood",
+      "type": "person",
+      "context": "Retains land, Wellpinit, Washington"
+    },
+    {
+      "name": "Charley Haines",
+      "type": "person",
+      "context": "Retains land, Fruitland, Washington"
+    },
+    {
+      "name": "Moses Phillips",
+      "type": "person",
+      "context": "Retains land, Miles, Washington"
+    },
+    {
+      "name": "Victor Desautel",
+      "type": "person",
+      "context": "Retains land, Wellpinit, Washington"
+    },
+    {
+      "name": "Robert B. McCoy",
+      "type": "person",
+      "context": "Retains land, Ford, Washington"
+    },
+    {
+      "name": "Frances E. LeBret",
+      "type": "person",
+      "context": "Retains land, Miles, Washington"
+    },
+    {
+      "name": "Gibson Moses",
+      "type": "person",
+      "context": "Retains land, Miles, Washington"
+    },
+    {
+      "name": "Carl Brown",
+      "type": "person",
+      "context": "Retains land, Ford, Washington"
+    },
+    {
+      "name": "Magnes Brown",
+      "type": "person",
+      "context": "Retains land, Wellpinit, Washington"
+    },
+    {
+      "name": "Thomas Flett",
+      "type": "person",
+      "context": "Retains land, Ford, Washington"
+    },
+    {
+      "name": "Robert Hill",
+      "type": "person",
+      "context": "Retains land, Chewelah, Washington"
+    },
+    {
+      "name": "Brigman",
+      "type": "person",
+      "context": "Retains land, Ford, Washington"
+    },
+    {
+      "name": "Fruitland",
+      "type": "location",
+      "context": "Washington state"
+    },
+    {
+      "name": "A. L. Irvine",
+      "type": "person",
+      "context": "Field Clerk, United States Indian Service, Poteau, Oklahoma"
+    },
+    {
+      "name": "Poteau",
+      "type": "location",
+      "context": "Oklahoma"
+    },
+    {
+      "name": "Choctaw Indians",
+      "type": "organization",
+      "context": "Indian tribe in Five Tribes area"
+    },
+    {
+      "name": "Five Tribes",
+      "type": "organization",
+      "context": "Collective term for Five Civilized Tribes in Oklahoma"
+    },
+    {
+      "name": "C. V. Stinchecum",
+      "type": "person",
+      "context": "Superintendent, Kiowa Indian Agency, Anadarko, Oklahoma"
+    },
+    {
+      "name": "Kiowa Indian Agency",
+      "type": "organization",
+      "context": "Indian agency at Anadarko, Oklahoma"
+    },
+    {
+      "name": "Anadarko",
+      "type": "location",
+      "context": "Oklahoma, location of Kiowa Indian Agency"
+    },
+    {
+      "name": "Charles W. Edmister",
+      "type": "person",
+      "context": "Farmer, Shawnee, Oklahoma"
+    },
+    {
+      "name": "Samuel Charger",
+      "type": "person",
+      "context": "Sioux Indian, La Plant, South Dakota"
+    },
+    {
+      "name": "La Plant",
+      "type": "location",
+      "context": "South Dakota"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Federal department overseeing Indian affairs"
+    },
+    {
+      "name": "United States Indian Service",
+      "type": "organization",
+      "context": "Federal service managing Indian affairs"
+    },
+    {
+      "name": "Shawnee",
+      "type": "location",
+      "context": "Oklahoma"
+    }
+  ],
+  "events": [
+    {
+      "type": "correspondence",
+      "date": "1921-05-26",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners forwarded replies about condition of patent-in-fee Indians to Commissioner of Indian Affairs"
+    },
+    {
+      "type": "bulletin_publication",
+      "date": "1921-05-26",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners issued Bulletin No. 145 containing letters from superintendents, farmers, and field clerks about releasing Indians from Government supervision"
+    },
+    {
+      "type": "inquiry",
+      "date": "1921-03-21",
+      "location": "",
+      "description": "Letter of inquiry sent to field service officers relative to issuance of fee patents to Indians and granting citizenship"
+    },
+    {
+      "type": "inquiry",
+      "date": "1921-03-24",
+      "location": "Shawnee, Oklahoma",
+      "description": "Circular letter received at Shawnee Indian Office requesting information relative to patented Indians"
+    },
+    {
+      "type": "inquiry",
+      "date": "1921-04-03",
+      "location": "",
+      "description": "Request sent to A. L. Irvine regarding full removal of restrictions on Indian lands"
+    },
+    {
+      "type": "competency_commission",
+      "date": "",
+      "location": "",
+      "description": "Competency commission declared the larger majority of Indians as capable of managing their own affairs and patents-in-fee were issued to them"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "",
+      "location": "Kiowa Indian Agency, Anadarko, Oklahoma",
+      "description": "About 81 patents issued to Indians approximately four or five years before report; not more than 10 still have their land"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1910",
+      "location": "Spokane Reservation",
+      "description": "1 fee patent issued in 1910"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1911",
+      "location": "Spokane Reservation",
+      "description": "6 fee patents issued in 1911"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1912",
+      "location": "Spokane Reservation",
+      "description": "2 fee patents issued in 1912"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1913",
+      "location": "Spokane Reservation",
+      "description": "3 fee patents issued in 1913"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1914",
+      "location": "Spokane Reservation",
+      "description": "7 fee patents issued in 1914"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1915",
+      "location": "Spokane Reservation",
+      "description": "16 fee patents issued in 1915"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1916",
+      "location": "Spokane Reservation",
+      "description": "6 fee patents issued in 1916"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1917",
+      "location": "Spokane Reservation",
+      "description": "49 fee patents issued in 1917"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1919",
+      "location": "Spokane Reservation",
+      "description": "6 fee patents issued in 1919"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1920",
+      "location": "Spokane Reservation",
+      "description": "11 fee patents issued in 1920"
+    },
+    {
+      "type": "fee_patent_issuance",
+      "date": "1921",
+      "location": "Spokane Reservation",
+      "description": "5 fee patents issued in 1921"
+    },
+    {
+      "type": "declaration_of_policy",
+      "date": "",
+      "location": "Kiowa Indian Agency",
+      "description": "Last sixty patents issued as result of Declaration of Policy; twenty promptly mortgaged, sixteen tracts sold outright, twenty-four so far clear"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$3000.00 and automobile",
+      "payer": "buyer (unknown)",
+      "payee": "Albert Sochemtioken (Garry)",
+      "date": "",
+      "description": "Albert Sochemtioken sold his land at Wellpinit, Washington for $3000 and an automobile; spent $2000 but has $1000 due"
+    },
+    {
+      "type": "payment",
+      "amount": "$100.00 monthly",
+      "payer": "Government/tribal funds",
+      "payee": "Old dependent Indians",
+      "date": "",
+      "description": "Old dependent Indians receiving $100.00 monthly but scarcely able to exist because funds divided among so many"
+    },
+    {
+      "type": "other",
+      "amount": "$400.00 to $800.00 each",
+      "payer": "buyers",
+      "payee": "Spokane Reservation Indians",
+      "date": "",
+      "description": "Many 80-acre allotments on Spokane Reservation worth only $400-$800 after timber is cut off"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Charles B. Thompson",
+      "type": "employed_by",
+      "object": "Otoe Sub-agency",
+      "context": "Farmer at Otoe Sub-agency, Red Rock, Oklahoma"
+    },
+    {
+      "subject": "Jacob Blackhawk",
+      "type": "related_to",
+      "object": "wife",
+      "context": "City property owners with son and daughter in high school"
+    },
+    {
+      "subject": "George W. Dailey",
+      "type": "related_to",
+      "object": "wife",
+      "context": "Farms on his wife's land after selling all his own land"
+    },
+    {
+      "subject": "G. W. Long",
+      "type": "employed_by",
+      "object": "Pawnee Agency",
+      "context": "Farmer at Pawnee Agency, Pawnee, Oklahoma"
+    },
+    {
+      "subject": "H. F. Furry",
+      "type": "employed_by",
+      "object": "Pawnee Agency",
+      "context": "Agent Farmer at Pawnee Agency, Pawnee, Oklahoma"
+    },
+    {
+      "subject": "A. B. Collins",
+      "type": "employed_by",
+      "object": "Shawnee Agency",
+      "context": "Farmer reporting on Sac & Fox and Iowa Indians"
+    },
+    {
+      "subject": "William O. Mitchell",
+      "type": "employed_by",
+      "object": "Cantonment Agency",
+      "context": "Farmer at Eagle City, Oklahoma"
+    },
+    {
+      "subject": "Malcolm McDowell",
+      "type": "employed_by",
+      "object": "Board of Indian Commissioners",
+      "context": "Secretary of Board of Indian Commissioners"
+    },
+    {
+      "subject": "George Vaux Jr.",
+      "type": "employed_by",
+      "object": "Board of Indian Commissioners",
+      "context": "Chairman of Board of Indian Commissioners"
+    },
+    {
+      "subject": "J. A. Garber",
+      "type": "employed_by",
+      "object": "Spokane Indian Agency",
+      "context": "Superintendent of Spokane Indian Agency"
+    },
+    {
+      "subject": "C. Tandy",
+      "type": "employed_by",
+      "object": "Spokane Indian Agency",
+      "context": "Agency Farmer at Spokane Indian Agency"
+    },
+    {
+      "subject": "A. L. Irvine",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Field Clerk at Poteau, Oklahoma, reporting on Choctaw Indians"
+    },
+    {
+      "subject": "C. V. Stinchecum",
+      "type": "employed_by",
+      "object": "Kiowa Indian Agency",
+      "context": "Superintendent of Kiowa Indian Agency, Anadarko, Oklahoma"
+    },
+    {
+      "subject": "Charles W. Edmister",
+      "type": "employed_by",
+      "object": "Shawnee Agency",
+      "context": "Farmer at Shawnee, Oklahoma"
+    },
+    {
+      "subject": "John Inkster Jr.",
+      "type": "leased_from",
+      "object": "two old Indians",
+      "context": "Renting allotments of two old Indians and doing good farming at Ford, Washington"
+    },
+    {
+      "subject": "Thomas (Bob) Flett",
+      "type": "leased_from",
+      "object": "two old Indians",
+      "context": "Rents the land of two old Indians which he farms at Wellpinit, Washington"
+    },
+    {
+      "subject": "Sam Lincoln",
+      "type": "leased_from",
+      "object": "his father",
+      "context": "Leases and farms his father's land very successfully"
+    },
+    {
+      "subject": "Del Brown",
+      "type": "related_to",
+      "object": "small sawmill",
+      "context": "Has interest in small sawmill which he helps run, Miles, Washington"
+    },
+    {
+      "subject": "Mary A. Galbraith",
+      "type": "related_to",
+      "object": "husband",
+      "context": "Husband farms what land there is in cultivation and is improving the balance"
+    },
+    {
+      "subject": "Fannie Foote",
+      "type": "related_to",
+      "object": "Keokuk family",
+      "context": "Nee Keokuk"
+    },
+    {
+      "subject": "Sadie Feider",
+      "type": "related_to",
+      "object": "Ingalls family",
+      "context": "Nee Ingalls"
+    },
+    {
+      "subject": "Leona Chandler",
+      "type": "related_to",
+      "object": "Greyeyes family",
+      "context": "Nee Greyeyes"
+    },
+    {
+      "subject": "Board of Indian Commissioners",
+      "type": "reported_to",
+      "object": "Commissioner of Indian Affairs",
+      "context": "Forwarded replies about condition of patent-in-fee Indians"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "James Arkeketa",
+      "allotment_number": "",
+      "acreage": "80 acres retained",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Harold Barnes",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Jacob Blackhawk",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Henry Black",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "George W. Dailey",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold all land",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Blaine Faw Faw",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "disposed of land",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "David Pettit",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Berth Tillman",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Sam Lincoln",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "disposed of lands",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "George Haymond",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold every acre",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Jobie Taylor",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold every acre",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Wilber Eaves",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold every acre",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Gorden Shaw",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold every acre",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Henry Chapman",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold every acre",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Willie Lewis",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold every acre",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Robert Peters",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold every acre",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "James Little Sun",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold every acre",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Joe Taylor",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold every acre",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Elmer Echo Hawk",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold every acre",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Louis Matlock",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Elmo Jim",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Eva N. Cummings",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Clarance Field",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Wallace Murie",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Caroline Murie",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Maggie Knife Chief",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Thomas Hand",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "John Howell",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Maude Hand",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Emmit Pearson",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "George Gover",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Frank Rouwalk",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Edward McClellan",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "not sold",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Fannie Foote (nee Keokuk)",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "not sold",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Robert Peyton Keokuk",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "not sold",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Sadie Feider (nee Ingalls)",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "not sold",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Leona Chandler (nee Greyeyes)",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "not sold",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Clara Ellis",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold 1/2 interest",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Stella Ellis",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold one-half interest",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Albert Sochemtioken (Garry)",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "$3000.00 and automobile",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Caulette Ford",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Del Brown",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Daniel Sherwood",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold original, bought better place",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Duncan Desautel",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "sold land",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Malcolm McDowell",
+      "sender_title": "Secretary, Board of Indian Commissioners",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "1921-05-26",
+      "subject": "Condition of patent-in-fee Indians",
+      "action_requested": "Forwarding replies to letters about condition of patent-in-fee Indians",
+      "outcome": ""
+    },
+    {
+      "sender": "Charles B. Thompson",
+      "sender_title": "Farmer, Otoe Sub-agency",
+      "recipient": "",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Condition of Indians before and after receiving patents-in-fee",
+      "action_requested": "Report on condition of fee patent Indians and suggestions for their benefit",
+      "outcome": ""
+    },
+    {
+      "sender": "G. W. Long",
+      "sender_title": "Farmer, Pawnee Agency",
+      "recipient": "",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Condition of fee patent Indians at Pawnee",
+      "action_requested": "Report on Indians who gained and who did not gain by fee patents",
+      "outcome": ""
+    },
+    {
+      "sender": "H. F. Furry",
+      "sender_title": "Agent Farmer, Pawnee Agency",
+      "recipient": "",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Condition of fee patent Indians at Pawnee",
+      "action_requested": "Report on Indians with fee patents",
+      "outcome": ""
+    },
+    {
+      "sender": "A. B. Collins",
+      "sender_title": "Farmer",
+      "recipient": "",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Patented Indians at Shawnee Agency, Sac & Fox and Iowa Indians",
+      "action_requested": "Information relative to patented Indians per circular letter of March 24, 1921",
+      "outcome": ""
+    },
+    {
+      "sender": "William O. Mitchell",
+      "sender_title": "Farmer",
+      "recipient": "",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Cheyenne and Arapahoe Indians and fee patents",
+      "action_requested": "Report on condition of fee patent Indians",
+      "outcome": ""
+    },
+    {
+      "sender": "J. A. Garber",
+      "sender_title": "Superintendent, Spokane Indian Agency",
+      "recipient": "",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Issuance of fee patents and releasing Indians from Government supervision",
+      "action_requested": "Reply to letter of March 21, 1921 about fee patents and citizenship",
+      "outcome": ""
+    },
+    {
+      "sender": "William C. Tandy",
+      "sender_title": "Farmer, Spokane Indian Agency",
+      "recipient": "",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Condition of patent-in-fee Indians on Spokane Reservation",
+      "action_requested": "Information about condition of fee patent Indians",
+      "outcome": ""
+    },
+    {
+      "sender": "A. L. Irvine",
+      "sender_title": "Field Clerk, United States Indian Service",
+      "recipient": "",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Full removal of restrictions on Choctaw Indians",
+      "action_requested": "Reply to request of April 3 about removal of restrictions",
+      "outcome": ""
+    },
+    {
+      "sender": "C. V. Stinchecum",
+      "sender_title": "Superintendent, Kiowa Indian Agency",
+      "recipient": "",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Patents-in-fee at Kiowa Indian Agency",
+      "action_requested": "Reply to letter of March 21, 1921 about patents-in-fee",
+      "outcome": ""
+    },
+    {
+      "sender": "Charles W. Edmister",
+      "sender_title": "Farmer, Shawnee, Oklahoma",
+      "recipient": "",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Issuance of patents to Indians",
+      "action_requested": "Views on issuance of patents",
+      "outcome": ""
+    }
+  ],
+  "legislative_actions": [],
+  "testimony": [
+    {
+      "witness": "Charles B. Thompson",
+      "witness_title": "Farmer, Otoe Sub-agency, Red Rock, Oklahoma",
+      "hearing": "",
+      "committee": "",
+      "location": "Red Rock, Oklahoma",
+      "date": "",
+      "subject": "Condition of Indians before and after receiving patents-in-fee",
+      "key_claims": "Fee patent Indians are in worse condition than when under Government jurisdiction. Indians who received patents sold land, bought expensive automobiles, spent money on gambling. Old dependent Indians receiving $100 monthly can scarcely exist. Indians are dissatisfied and believe government employees are in league with grafters. Recommends turning loose able-bodied and educated Indians but establishing community system for uneducated and old dependent ones with 20 acres reserved for home. Successful examples include Harold Barnes, Jacob Blackhawk, James Arkeketa, Henry Black, George W. Dailey, Blaine Faw Faw, David Pettit, Berth Tillman, Sam Lincoln.",
+      "questioner": ""
+    },
+    {
+      "witness": "G. W. Long",
+      "witness_title": "Farmer, Pawnee Agency, Pawnee, Oklahoma",
+      "hearing": "",
+      "committee": "",
+      "location": "Pawnee, Oklahoma",
+      "date": "",
+      "subject": "Fee patent Indians at Pawnee",
+      "key_claims": "Indians questioned about release from federal control stated they are not satisfied, in bad financial shape, and feel government should not have released them. Indians mortgaged or sold land immediately upon receiving patent-in-fee, purchased expensive autos and lived high. Suggests older Indians be kept under government control while younger Indians should be given competency rights. Believes sooner younger Indians are released, sooner Indian problem will be solved. Suggests reserving 40 acres of original allotment as home site.",
+      "questioner": ""
+    },
+    {
+      "witness": "H. F. Furry",
+      "witness_title": "Agent Farmer, Pawnee Agency, Pawnee, Oklahoma",
+      "hearing": "",
+      "committee": "",
+      "location": "Pawnee, Oklahoma",
+      "date": "",
+      "subject": "Fee patent Indians at Pawnee",
+      "key_claims": "Indians who received fee patents sold land and spent all money, are in debt. Very few who received patents still own their allotments - not one out of ten have not sold. Recommends issuing fee patent for part of allotment and holding at least 40 acres in trust. Names of those doing well: Louis Matlock, Elmo Jim, Eva N. Cummings. Names of those who have not gained: Clarance Field, Wallace Murie, Caroline Murie, Maggie Knife Chief, Thomas Hand, John Howell, Maude Hand. Those doing well who still hold land: Emmit Pearson, George Gover, Frank Rouwalk.",
+      "questioner": ""
+    },
+    {
+      "witness": "A. B. Collins",
+      "witness_title": "Farmer, Shawnee Agency",
+      "hearing": "",
+      "committee": "",
+      "location": "Cushing, Oklahoma",
+      "date": "",
+      "subject": "Patented Indians - Sac & Fox and Iowa Indians",
+      "key_claims": "Patented Indians have disposed of allotments and are compelled to labor. Not as easy for Indian to secure position as white man. One Indian worked for one company for three or four years. About 81 patents given out four or five years ago, not more than 10 still have their land. Some heired lands remain. Children do not have necessaries of life. Does not think advisable to turn all Indians loose at once. Suggests allowing Indians to dispose of heired lands but hold own allotments.",
+      "questioner": ""
+    },
+    {
+      "witness": "William O. Mitchell",
+      "witness_title": "Farmer, Eagle City, Oklahoma",
+      "hearing": "",
+      "committee": "",
+      "location": "Eagle City, Oklahoma",
+      "date": "",
+      "subject": "Cheyenne and Arapahoe Indians and fee patents",
+      "key_claims": "Has worked three years with Cheyenne and Arapahoe Indians. Knows of only a few who kept land after receiving patent. Nearly all sell as soon as they can make sale, spend money, are satisfied, go to work and make better citizens. Does not think it good policy to turn all Indians loose from Government control at once. Suggests young boys and girls who finish education should have property turned over. Indians should be expected to take care of themselves. Lists Indians farming successfully under government control: David Bighead, Harry Bates, Walter Fire, Dan Tucker.",
+      "questioner": ""
+    },
+    {
+      "witness": "J. A. Garber",
+      "witness_title": "Superintendent, Spokane Indian Agency, Wellpinit, Washington",
+      "hearing": "",
+      "committee": "",
+      "location": "Wellpinit, Washington",
+      "date": "",
+      "subject": "Fee patents and releasing Indians from Government supervision on Spokane Reservation",
+      "key_claims": "Pretty well in accord with Office policy but does not think good to make all Indians of half or less Indian blood citizens at once. Each case should be decided on merits considering educational qualifications, business experience, degree of Indian blood, robustness, and age. Spokane allotments mostly 80 acres, not good quality, mostly timber. Many allotments worth only $400-$800. Recommends 20-40 acres held in trust for home site. 112 Indians received fee patents; 54 retained allotments, 48 sold them. Most sold soon after receiving patents. Indians who retained land are generally doing as well as before.",
+      "questioner": ""
+    },
+    {
+      "witness": "William C. Tandy",
+      "witness_title": "Farmer, Spokane Indian Agency, Wellpinit, Washington",
+      "hearing": "",
+      "committee": "",
+      "location": "Wellpinit, Washington",
+      "date": "",
+      "subject": "Condition of patent-in-fee Indians on Spokane Reservation",
+      "key_claims": "Larger percent of fee patent Indians doing as well as before. Quite a few sold land but larger percent used money to good advantage. Percentage who spent money without good returns no larger than any other race. Most are satisfied with patents. Would use same policy Department has been using, examine each individual case. Would release all allotments on this reservation because each is small. Provides names and addresses of those who sold and those who retained land.",
+      "questioner": ""
+    },
+    {
+      "witness": "A. L. Irvine",
+      "witness_title": "Field Clerk, United States Indian Service, Poteau, Oklahoma",
+      "hearing": "",
+      "committee": "",
+      "location": "Poteau, Oklahoma",
+      "date": "",
+      "subject": "Full removal of restrictions on Choctaw Indians in Five Tribes",
+      "key_claims": "Government work in Five Tribes has been to divide common estate and vest individually. Future business will be with individuals. Should focus on fitting individual Indian for life in competition. Quantum of Indian blood alone should not determine management. Some full-bloods have better business sense than those of small degree of Indian blood. Character, education, business experience, environment, age, and all circumstances should be considered. Considerable number should have restrictions retained indefinitely. Estimates between 50 and 75 percent have made a success. Most failures come from 'easy money' attitude. Successes due to simple homely virtues.",
+      "questioner": ""
+    },
+    {
+      "witness": "C. V. Stinchecum",
+      "witness_title": "Superintendent, Kiowa Indian Agency, Anadarko, Oklahoma",
+      "hearing": "",
+      "committee": "",
+      "location": "Anadarko, Oklahoma",
+      "date": "",
+      "subject": "Patents-in-fee at Kiowa Indian Agency",
+      "key_claims": "Most important administrative function is deciding whether to recommend patent-in-fee. Granting control of estate prematurely subjects Indian to temptation and extravagant habits. Believes it is grossest mistake to issue patents based on blood status or educational qualifications alone. Has many full-blood Indians who cannot speak English whom he would rather trust with patent than educated young fellows. Of last sixty patents from Declaration of Policy, twenty were promptly mortgaged (only one released), sixteen sold outright, twenty-four clear but likely to be encumbered. In more than six years, can recall only one case of success. Recommends original allotment or at least 40 acres be inalienable during life of allottee with land taxable after trust period. Better to err by delaying patent than granting prematurely.",
+      "questioner": ""
+    },
+    {
+      "witness": "Charles W. Edmister",
+      "witness_title": "Farmer, Shawnee, Oklahoma",
+      "hearing": "",
+      "committee": "",
+      "location": "Shawnee, Oklahoma",
+      "date": "",
+      "subject": "Issuance of patents to Indians",
+      "key_claims": "Convinced that reports of Indians selling lands and wasting proceeds are only too true, and probably only a portion of the full story. Going too fast in releasing Indians from government supervision and protection.",
+      "questioner": ""
+    }
+  ],
+  "taxes": [
+    {
+      "taxpayer": "Indians with fee patents",
+      "land_description": "40 acres reserved as homestead on original allotment",
+      "tax_type": "property",
+      "amount": "",
+      "year": "",
+      "status": "exempt",
+      "county": "",
+      "context": "C. V. Stinchecum proposed that 40 acres be inalienable during allottee's lifetime but taxable at end of trust period; taxes could not be collected from that property but would be chargeable to other property the Indian might own"
+    }
+  ],
+  "mortgages": [
+    {
+      "borrower": "20 Indians (unnamed)",
+      "lender": "",
+      "amount": "",
+      "land_description": "Allotments at Kiowa Indian Agency from Declaration of Policy patents",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "default",
+      "context": "Of last sixty patents issued under Declaration of Policy at Kiowa Indian Agency, twenty were promptly mortgaged; of these twenty only one has been released"
+    },
+    {
+      "borrower": "Indians at Otoe/Pawnee reservations",
+      "lender": "",
+      "amount": "",
+      "land_description": "Allotments received under patent-in-fee",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "other",
+      "context": "Indians mortgaged or sold their land immediately upon receiving the patent-in-fee and in most cases purchased large expensive autos and lived high for a time"
+    }
+  ]
+}

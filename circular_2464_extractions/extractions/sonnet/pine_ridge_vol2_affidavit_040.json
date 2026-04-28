@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_040",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "57",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Shangreau",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Cody, Nebr.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want a patent in fee to his land, and refused to accept it, but that the Superintendent advised him to take it, telling him that if he did not take it and pay the taxes and keep them up that the land would be sold to pay them, so he took it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged 480 acres for $8000.00 to Fred Simpson of Tuthill, So. Dak.; mortgaged the other 160 acres for $2000.00 to the same man; finally sold the east half in connection with the allotments of his two daughters, Mary and Winnit",
+    "Tax burden forced sale/Mortgage": "had to mortgage his land to pay taxes; could not pay the taxes and interest so he had to mortgage the other 160 acres",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "68 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Has a wife to support; in very poor health and nearly blind; has 480 acres of land but does not think he will be able to keep up the taxes and hold the land without aid from the Government; has received no aid from the Government, State or County since he was granted a patent to his land; speaks and understands English pretty well; heirship land involved; daughters named Mary and Winnit; document No. 2552; sworn December 5, 1928; State of South Dakota, County of Shannon (?).",
+    "Literate/Illiterate": "does not read nor write",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2379,
+    "output_tokens": 501
+  },
+  "elapsed": 6.0
+}

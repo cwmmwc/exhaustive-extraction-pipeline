@@ -1,0 +1,32 @@
+{
+  "document_id": "part10_agency_narrative_007",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 10.pdf",
+  "source_pages": "12",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louis Ferrin",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "4600",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded April 8, 1920, by the Volz Abstract Company",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "W. H. Tackett for $3500",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739614 issued; Northeast quarter section 33, township 96, north of range 78; receipt for patent signed April 2, 1920, by the allottee; conveyance dated March 29, 1920",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2008,
+    "output_tokens": 308
+  },
+  "elapsed": 4.3
+}

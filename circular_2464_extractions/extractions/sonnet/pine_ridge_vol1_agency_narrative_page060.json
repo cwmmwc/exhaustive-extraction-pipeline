@@ -1,0 +1,29 @@
+{
+  "document_id": "pine_ridge_vol1_agency_narrative_page060",
+  "type": "agency_narrative",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "060",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Pourier",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Porcupine, So. Dak.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "issued to you without your application or consent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is a letter dated October 20, 1928, from Pine Ridge Agency requesting John Pourier call at the office to provide an affidavit regarding his forced patent, per Indian Office circular letter. File reference 5-1142. Letter signed by E./W. Jermerk, Superintendent.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {},
+  "elapsed": 0
+}

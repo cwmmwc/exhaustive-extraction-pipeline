@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_011",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "24",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Elvira Pike",
+    "Tribe/Reservation": "Uintah & Whiteriver",
+    "Post Office Address": "Cortez, Colorado",
+    "Allotment number": "601",
+    "Cancelled": "Patent not canceled.",
+    "Refused/Protested": "Accepted without protest",
+    "Recorded patent": "Recorded in Duchesne County October 7, 1920 by the patentee.",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgage dated September 7, 1927 for $400.00 to Louise McLean; land has since been sold to R.M. Michie for $40.00 per acre, plus $500.00 for the improvements.",
+    "Tax burden forced sale/Mortgage": "Not sold, for debt or taxes.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "August 12, 1920",
+    "Gender": "Female",
+    "Age": "41",
+    "Occupation/Income": "teacher at Cortez, Colo., off the reservation; self-supporting",
+    "NOTES": "Mental and physical condition excellent; unmarried and so far as can be determined has no one dependent on her for support; was not defrauded of her property; the price received was a good consideration, and not in settlement of an old debt; fee patent delivered September 8, 1920 by mail and was receipted for; land description: Lot 4, Sec. 19, T. 1 S., R. 7 W., 30.81 acres; document dated 8-27-29.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2223,
+    "output_tokens": 442
+  },
+  "elapsed": 5.4
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part10_agency_narrative_012",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 10.pdf",
+  "source_pages": "19",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Frank DuCharme",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "5630",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "On February 22, 1920, Richard Jones recorded the patent.",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "DuCharme and wife mortgaged the SE/4 of Section 10 to W. S. Slaughter for $1500; DuCharme and wife mortgaged the Northeast to Slaughter for $1500; on November 10, 1928, DuCharme and wife conveyed the Northeast quarter to Alice Hettinger for $1.00 and other valuable consideration",
+    "Tax burden forced sale/Mortgage": "Tax certificate for the year 1925 was issued against the Southeast quarter and subsequent taxes are unpaid.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612802 issued; East half of Section 10, township 41, north of range 26; receipt signed by allottee February 14, 1918; patent recorded by Richard Jones February 22, 1920; mortgage on SE/4 to W. S. Slaughter for $1500 dated November 19, 1920; mortgage on NE/4 to Slaughter for $1500 also dated November 19, 1920; NE/4 conveyed to Alice Hettinger November 10, 1928; tax certificate issued 1925 against SE/4, subsequent taxes unpaid; no other liens or judgments appear; S.D. 19929 referenced",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2123,
+    "output_tokens": 512
+  },
+  "elapsed": 5.9
+}

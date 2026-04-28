@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_agency_narrative_002",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "2",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Richard D. Ellston",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. Dak.",
+    "Allotment number": "240",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded in the Todd County records by C. L. Dice on February 8, 1919 and in the Gregory county records it was recorded on March 25, 1919, but the information is not given as to who submitted the instrument for record",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Northeast quarter of section 1, township 35, range 27 was conveyed by deed dated February 8, 1919 signed by Richard Ellston to G. A. Roberts for $300.00; other land was mortgaged March 31, 1919 for $300.00, again May 8, 1920 for $12,000 including other land; on Oct. 2, 1922 this land and some other land was conveyed to J. H. Ellston and Cornelius Ellston for $1.00 and other valuable consideration; a sheriff's sale on this land for the second [parcel dated March 21, 1925]",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 28, 1917; fee patent No. 653982 issued under date of November 8, 1918",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 602113 issued September 28, 1917 for northeast quarter of section 11, township 95, range 71; fee patent No. 653982 issued for the same land under date of November 8, 1918; receipt for patent signed by allottee October 30, 1917; northeast quarter of section 1, township 35, range 27 also involved; sheriff's sale dated March 21, 1925; document dated 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2243,
+    "output_tokens": 574
+  },
+  "elapsed": 7.2
+}

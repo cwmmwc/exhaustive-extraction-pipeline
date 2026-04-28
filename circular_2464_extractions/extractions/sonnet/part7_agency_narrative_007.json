@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_agency_narrative_007",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "14",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Phoebe Bordeaux (Mrs. Dave Whiting, deceased)",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2268",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "recorded by R. E. Wang June 7, 1918",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Peters Trust Company; land conveyed to John O. Petterson and Emma Petterson for $4000, subject to the mortgage which Petterson assumes and agrees to pay",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 21, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612449 issued December 21, 1917; receipt was signed by the allottee in February 1918; mortgage by Phoebe Whiting formerly Bordeaux and David Whiting dated May 10, 1918 for $1000 executed in favor of Peters Trust Company; deed dated February 26, 1920 by Phoebe Whiting formerly Bordeaux and husband conveyed land to John O. Petterson and Emma Petterson for $4000 subject to mortgage; Southwest quarter section 4, township 39, north of range 28",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2104,
+    "output_tokens": 429
+  },
+  "elapsed": 5.8
+}

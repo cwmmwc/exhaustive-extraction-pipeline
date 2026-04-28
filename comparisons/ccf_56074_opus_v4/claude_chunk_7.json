@@ -1,0 +1,811 @@
+{
+  "entities": [
+    {
+      "name": "E. H. Hutchison",
+      "type": "person",
+      "context": "Superintendent of Shoshone Indian Reservation"
+    },
+    {
+      "name": "Shoshone Indian Reservation",
+      "type": "location",
+      "context": "Indian reservation at Fort Washakie, Wyoming"
+    },
+    {
+      "name": "Fort Washakie",
+      "type": "location",
+      "context": "Location of Shoshone Indian Reservation, Wyoming"
+    },
+    {
+      "name": "L. S. Bonnin",
+      "type": "person",
+      "context": "Superintendent of Cheyenne & Arapaho Indian Agency"
+    },
+    {
+      "name": "Cheyenne & Arapaho Indian Agency",
+      "type": "organization",
+      "context": "Indian agency at Concho, Oklahoma"
+    },
+    {
+      "name": "Concho",
+      "type": "location",
+      "context": "Location of Cheyenne & Arapaho Indian Agency, Oklahoma"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Federal board investigating patents-in-fee and Indian competency matters, located at 5120 Interior Building, Washington, D.C."
+    },
+    {
+      "name": "George Vaux, Jr.",
+      "type": "person",
+      "context": "Chairman of the Board of Indian Commissioners, Philadelphia, PA"
+    },
+    {
+      "name": "Malcolm McDowell",
+      "type": "person",
+      "context": "Secretary of the Board of Indian Commissioners, Washington, D.C."
+    },
+    {
+      "name": "William H. Ketcham",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Washington, D.C."
+    },
+    {
+      "name": "Daniel Smiley",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Mohonk Lake, N.Y."
+    },
+    {
+      "name": "Isidore B. Dockweiler",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Los Angeles, Calif."
+    },
+    {
+      "name": "Hugh L. Scott",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Princeton, N.J."
+    },
+    {
+      "name": "Merrill E. Gates",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Washington, D.C."
+    },
+    {
+      "name": "Warren K. Moorehead",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Andover, Mass."
+    },
+    {
+      "name": "Samuel A. Eliot",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Boston, Mass."
+    },
+    {
+      "name": "Frank Knox",
+      "type": "person",
+      "context": "Member of Board of Indian Commissioners, Manchester, N.H."
+    },
+    {
+      "name": "Commissioner of Indian Affairs",
+      "type": "organization",
+      "context": "Federal official to whom Board of Indian Commissioners sent survey results"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Federal department overseeing Indian affairs"
+    },
+    {
+      "name": "Edward G. Martin",
+      "type": "person",
+      "context": "Agency Farmer at Yankton Indian Agency, South Dakota"
+    },
+    {
+      "name": "A. W. Leech",
+      "type": "person",
+      "context": "Agency Superintendent at Yankton Indian Agency, South Dakota"
+    },
+    {
+      "name": "Yankton Indian Agency",
+      "type": "organization",
+      "context": "Indian agency in South Dakota managing Yankton Sioux reservation"
+    },
+    {
+      "name": "Yankton Indian Reservation",
+      "type": "location",
+      "context": "Yankton Sioux reservation in South Dakota, Wagner area"
+    },
+    {
+      "name": "Yankton Sioux",
+      "type": "organization",
+      "context": "Indian tribe on Yankton Indian Reservation, South Dakota"
+    },
+    {
+      "name": "Santee Indians",
+      "type": "organization",
+      "context": "Indian group referenced in Yankton agency farmer's report"
+    },
+    {
+      "name": "John A. Buntin",
+      "type": "person",
+      "context": "Agency Superintendent at Rosebud Indian Agency, South Dakota"
+    },
+    {
+      "name": "Rosebud Indian Agency",
+      "type": "organization",
+      "context": "Indian agency at Rosebud, South Dakota"
+    },
+    {
+      "name": "Henry J. McQuigg",
+      "type": "person",
+      "context": "Agency Superintendent at Turtle Mountain Indian Agency, North Dakota"
+    },
+    {
+      "name": "Turtle Mountain Indian Agency",
+      "type": "organization",
+      "context": "Indian agency in North Dakota"
+    },
+    {
+      "name": "Lon S. Tolliver",
+      "type": "person",
+      "context": "Agency Farmer at Turtle Mountain Indian Agency, North Dakota"
+    },
+    {
+      "name": "P. J. Everest",
+      "type": "person",
+      "context": "Agency Superintendent at La Pointe Indian Agency, Wisconsin"
+    },
+    {
+      "name": "La Pointe Indian Agency",
+      "type": "organization",
+      "context": "Indian agency in Wisconsin"
+    },
+    {
+      "name": "Joseph Ellis",
+      "type": "person",
+      "context": "Yankton Sioux Indian from Lake Andes, SD who still retained land and was doing well"
+    },
+    {
+      "name": "Thomas Hunter",
+      "type": "person",
+      "context": "Yankton Sioux Indian from Lake Andes, SD who still retained land and was doing well"
+    },
+    {
+      "name": "Robert Medicinehorn",
+      "type": "person",
+      "context": "Yankton Sioux Indian from Wagner, SD who still retained land"
+    },
+    {
+      "name": "Mark Patterson",
+      "type": "person",
+      "context": "Yankton Sioux Indian from Wagner, SD who still retained land"
+    },
+    {
+      "name": "Simon Vasser",
+      "type": "person",
+      "context": "Yankton Sioux Indian mentioned as example of those who sold land and squandered proceeds"
+    },
+    {
+      "name": "Gilbert St. Pierre",
+      "type": "person",
+      "context": "Yankton Sioux Indian from Wagner, SD mentioned as example of those who sold land"
+    },
+    {
+      "name": "Lake Andes",
+      "type": "location",
+      "context": "Town in South Dakota on Yankton reservation"
+    },
+    {
+      "name": "Wagner",
+      "type": "location",
+      "context": "Town in South Dakota on Yankton reservation"
+    },
+    {
+      "name": "Secretary of the Interior",
+      "type": "person",
+      "context": "Visited Yankton reservation in May 1916 to deliver 186 patents in fee"
+    },
+    {
+      "name": "Competency Commission",
+      "type": "organization",
+      "context": "Federal commission that evaluated Indian competency for fee patents, active 1916 and 1918"
+    }
+  ],
+  "events": [
+    {
+      "type": "patent_issuance",
+      "date": "1907",
+      "location": "Shoshone Indian Reservation",
+      "description": "68 patents-in-fee issued to Indians covering allotments"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1909",
+      "location": "Shoshone Indian Reservation",
+      "description": "33 patents-in-fee issued"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1910",
+      "location": "Shoshone Indian Reservation",
+      "description": "57 patents-in-fee issued"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1911",
+      "location": "Shoshone Indian Reservation",
+      "description": "17 patents-in-fee issued"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1912",
+      "location": "Shoshone Indian Reservation",
+      "description": "6 patents-in-fee issued"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1913",
+      "location": "Shoshone Indian Reservation",
+      "description": "3 patents-in-fee issued"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1914",
+      "location": "Shoshone Indian Reservation",
+      "description": "90 patents-in-fee issued"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1915",
+      "location": "Shoshone Indian Reservation",
+      "description": "12 patents-in-fee issued"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1916",
+      "location": "Shoshone Indian Reservation",
+      "description": "65 patents-in-fee issued"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1917",
+      "location": "Shoshone Indian Reservation",
+      "description": "1 patent-in-fee issued"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1918",
+      "location": "Shoshone Indian Reservation",
+      "description": "9 patents-in-fee issued"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1919",
+      "location": "Shoshone Indian Reservation",
+      "description": "Patents-in-fee issued (included in 303 total)"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1930",
+      "location": "Shoshone Indian Reservation",
+      "description": "Patents-in-fee issued (included in 303 total)"
+    },
+    {
+      "type": "survey",
+      "date": "1921-05-03",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners sent copies of field service letters to Commissioner of Indian Affairs regarding patents-in-fee survey"
+    },
+    {
+      "type": "policy_inquiry",
+      "date": "1921-03-31",
+      "location": "Washington, D.C.",
+      "description": "Letter sent to field service requesting information on effects of releasing Indians from government control and granting patents-in-fee"
+    },
+    {
+      "type": "survey_distribution",
+      "date": "1921-04-27",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners issued Bulletin No. 138 containing letters from superintendents and farmers on patents-in-fee"
+    },
+    {
+      "type": "patent_delivery",
+      "date": "1916-05",
+      "location": "Yankton Indian Reservation",
+      "description": "Secretary of the Interior visited reservation and personally delivered 186 patents in fee to tribal members upon report of Competency Commission"
+    },
+    {
+      "type": "competency_commission_review",
+      "date": "1916",
+      "location": "Various reservations",
+      "description": "Competency Commission evaluated Indians for fee patents"
+    },
+    {
+      "type": "competency_commission_review",
+      "date": "1918",
+      "location": "Various reservations",
+      "description": "Competency Commission evaluated Indians for fee patents"
+    },
+    {
+      "type": "declaration_of_policy",
+      "date": "1919",
+      "location": "Indian Office",
+      "description": "Declaration of Policy of the Indian Office for releasing Indians, continuing through 1930"
+    },
+    {
+      "type": "land_dispossession",
+      "date": "",
+      "location": "Shoshone Indian Reservation",
+      "description": "About 90 per cent of patent-in-fee Indians have either sold or mortgaged their lands"
+    },
+    {
+      "type": "land_dispossession",
+      "date": "",
+      "location": "Yankton Indian Reservation",
+      "description": "Approximately 550 of 613 patentees disposed of all their land; about 400 have nothing to show for it"
+    },
+    {
+      "type": "land_dispossession",
+      "date": "",
+      "location": "Rosebud Indian Agency",
+      "description": "About 90 per cent of Indians receiving patents-in-fee immediately sold their allotments or mortgaged and sold when mortgage became due"
+    },
+    {
+      "type": "questionnaire_sent",
+      "date": "1921",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners sent questionnaire to 35 superintendents, 110 reservation farmers, 13 field clerks and 8 farmers in Five Tribes jurisdiction"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "",
+      "payer": "Various white buyers",
+      "payee": "Patent-in-fee Indians",
+      "date": "",
+      "description": "At Yankton reservation, Indians typically sold land immediately after receiving patents, often at inadequate prices, with proceeds spent within 12 months"
+    },
+    {
+      "type": "sale",
+      "amount": "$1000 to $16000 per quarter section, average $4000",
+      "payer": "Buyers",
+      "payee": "Rosebud Agency Indians",
+      "date": "",
+      "description": "160-acre allotments at Rosebud Agency sold by patent-in-fee Indians, ranging $1000-$16000, average $4000 per quarter section"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "E. H. Hutchison",
+      "type": "employed_by",
+      "object": "Shoshone Indian Reservation",
+      "context": "Superintendent of the Shoshone Indian Reservation at Fort Washakie, Wyoming"
+    },
+    {
+      "subject": "L. S. Bonnin",
+      "type": "employed_by",
+      "object": "Cheyenne & Arapaho Indian Agency",
+      "context": "Superintendent of the Cheyenne & Arapaho Indian Agency at Concho, Oklahoma"
+    },
+    {
+      "subject": "George Vaux, Jr.",
+      "type": "employed_by",
+      "object": "Board of Indian Commissioners",
+      "context": "Chairman of the Board"
+    },
+    {
+      "subject": "Malcolm McDowell",
+      "type": "employed_by",
+      "object": "Board of Indian Commissioners",
+      "context": "Secretary of the Board"
+    },
+    {
+      "subject": "Edward G. Martin",
+      "type": "employed_by",
+      "object": "Yankton Indian Agency",
+      "context": "Agency Farmer at Yankton Indian Reservation, Wagner, South Dakota"
+    },
+    {
+      "subject": "A. W. Leech",
+      "type": "employed_by",
+      "object": "Yankton Indian Agency",
+      "context": "Agency Superintendent at Yankton Indian Reservation, Wagner, South Dakota"
+    },
+    {
+      "subject": "John A. Buntin",
+      "type": "employed_by",
+      "object": "Rosebud Indian Agency",
+      "context": "Agency Superintendent at Rosebud, South Dakota"
+    },
+    {
+      "subject": "Henry J. McQuigg",
+      "type": "employed_by",
+      "object": "Turtle Mountain Indian Agency",
+      "context": "Agency Superintendent"
+    },
+    {
+      "subject": "Lon S. Tolliver",
+      "type": "employed_by",
+      "object": "Turtle Mountain Indian Agency",
+      "context": "Agency Farmer"
+    },
+    {
+      "subject": "P. J. Everest",
+      "type": "employed_by",
+      "object": "La Pointe Indian Agency",
+      "context": "Agency Superintendent"
+    },
+    {
+      "subject": "Board of Indian Commissioners",
+      "type": "reported_to",
+      "object": "Commissioner of Indian Affairs",
+      "context": "Sent survey results and field letters to the Commissioner"
+    },
+    {
+      "subject": "Joseph Ellis",
+      "type": "related_to",
+      "object": "Yankton Sioux",
+      "context": "Yankton Sioux Indian from Lake Andes who retained land"
+    },
+    {
+      "subject": "Thomas Hunter",
+      "type": "related_to",
+      "object": "Yankton Sioux",
+      "context": "Yankton Sioux Indian from Lake Andes who retained land"
+    },
+    {
+      "subject": "Robert Medicinehorn",
+      "type": "related_to",
+      "object": "Yankton Sioux",
+      "context": "Yankton Sioux Indian from Wagner who retained land"
+    },
+    {
+      "subject": "Mark Patterson",
+      "type": "related_to",
+      "object": "Yankton Sioux",
+      "context": "Yankton Sioux Indian from Wagner who retained land"
+    },
+    {
+      "subject": "Simon Vasser",
+      "type": "related_to",
+      "object": "Yankton Sioux",
+      "context": "Yankton Sioux Indian who sold land and squandered proceeds"
+    },
+    {
+      "subject": "Gilbert St. Pierre",
+      "type": "related_to",
+      "object": "Yankton Sioux",
+      "context": "Yankton Sioux Indian from Wagner who sold land"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "303 Indians (Shoshone Reservation)",
+      "allotment_number": "",
+      "acreage": "80 acres average",
+      "patent_date": "1907-1930",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": "About 90% sold or mortgaged lands"
+    },
+    {
+      "allottee_name": "85 Indians (Shoshone - released by individual application)",
+      "allotment_number": "",
+      "acreage": "80 acres average",
+      "patent_date": "1907-1930",
+      "patent_number": "",
+      "mechanism": "application",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Shoshone Indians (Competency Commission 1916)",
+      "allotment_number": "",
+      "acreage": "80 acres average",
+      "patent_date": "1916",
+      "patent_number": "",
+      "mechanism": "certificate_of_competency",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Shoshone Indians (Competency Commission 1918)",
+      "allotment_number": "",
+      "acreage": "80 acres average",
+      "patent_date": "1918",
+      "patent_number": "",
+      "mechanism": "certificate_of_competency",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "34 Indians (Shoshone - Declaration of Policy)",
+      "allotment_number": "",
+      "acreage": "80 acres average",
+      "patent_date": "1919-1930",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "599 original allottees (Yankton Sioux - entire allotments)",
+      "allotment_number": "",
+      "acreage": "80-320 acres",
+      "patent_date": "Various, pre-1916 through post-1916",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": "Approximately 550 of 613 disposed of all land"
+    },
+    {
+      "allottee_name": "13 allottees (Yankton Sioux - partial allotments)",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "186 Yankton Sioux Indians (Competency Commission)",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "1916-05",
+      "patent_number": "",
+      "mechanism": "certificate_of_competency",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Over 100 Yankton Sioux Indians (Declaration Policy)",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "Post-1916",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Approximately 600 Rosebud Agency Indians",
+      "allotment_number": "",
+      "acreage": "160 acres (85% of cases)",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "Average $4000 per quarter section, range $1000-$16000",
+      "attorney": "",
+      "mortgage": "About 90% immediately sold or mortgaged and sold when mortgage due"
+    },
+    {
+      "allottee_name": "Over 17,000 Indians nationwide",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "Since 1917",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Malcolm McDowell",
+      "sender_title": "Secretary, Board of Indian Commissioners",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "1921-05-03",
+      "subject": "Transmittal of field service letters regarding patents-in-fee and competency",
+      "action_requested": "Review of field service responses regarding Indian patents-in-fee policy",
+      "outcome": "First installment of letters forwarded; more to follow"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "",
+      "recipient": "Superintendents (35), Reservation Farmers (110), Field Clerks (13), Farmers in Five Tribes (8)",
+      "recipient_title": "Indian Service field officers",
+      "date": "1921",
+      "subject": "Questionnaire on patents-in-fee to Indians and effects of releasing Indians from government supervision",
+      "action_requested": "Information on number of patents issued, disposition of lands, condition of patentees, and policy recommendations",
+      "outcome": "Multiple responses received from field officers"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "",
+      "recipient": "L. S. Bonnin",
+      "recipient_title": "Superintendent, Cheyenne & Arapaho Indian Agency",
+      "date": "1921-03-31",
+      "subject": "Request for information on effects of releasing Indians from government control",
+      "action_requested": "List of Indians who received patents, allotment numbers, land descriptions, acreage and disposition",
+      "outcome": "Bonnin provided list and views supporting individual case examination"
+    },
+    {
+      "sender": "L. S. Bonnin",
+      "sender_title": "Superintendent, Cheyenne & Arapaho Indian Agency",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Response to inquiry on patents-in-fee effects at Cheyenne & Arapaho Agency",
+      "action_requested": "",
+      "outcome": "Reported practically every case lands were sold; believed it beneficial to give competent Indians their patents"
+    },
+    {
+      "sender": "E. H. Hutchison",
+      "sender_title": "Superintendent, Shoshone Indian Reservation",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Report on 303 patents-in-fee issued at Shoshone Reservation 1907-1930",
+      "action_requested": "",
+      "outcome": "Reported 90% sold or mortgaged; recommended holding back 160 acres minimum and exercising caution with female patentees"
+    },
+    {
+      "sender": "Edward G. Martin",
+      "sender_title": "United States Indian Farmer, Yankton Indian Reservation",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Views on releasing Indians from government supervision among Santee and Yankton Sioux",
+      "action_requested": "",
+      "outcome": "Recommended individual case examination; favored full release of able-bodied Indians; opposed partial release"
+    },
+    {
+      "sender": "A. W. Leech",
+      "sender_title": "Superintendent, Yankton Indian Agency",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Detailed report on patents-in-fee at Yankton reservation",
+      "action_requested": "",
+      "outcome": "Reported 599 full and 13 partial patents issued; approximately 550 of 613 disposed of all land; recommended full release rather than partial"
+    },
+    {
+      "sender": "John A. Buntin",
+      "sender_title": "Superintendent, Rosebud Indian Agency",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Report on patents-in-fee at Rosebud Agency and competency policy recommendations",
+      "action_requested": "",
+      "outcome": "Reported approximately 600 patents issued; 90% immediately sold or mortgaged; recommended individual case evaluation and clear competency standards"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "enacted",
+      "date": "",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Special Act of Congress authorizing patents-in-fee for some Yankton Sioux Indians prior to 1916"
+    },
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "enacted",
+      "date": "1919",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Declaration of Policy of Indian Office adopted for releasing Indians from supervision, continuing through 1930"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "E. H. Hutchison",
+      "witness_title": "Superintendent, Shoshone Indian Reservation",
+      "hearing": "Board of Indian Commissioners survey on patents-in-fee",
+      "committee": "Board of Indian Commissioners",
+      "location": "Fort Washakie, Wyoming",
+      "date": "1921",
+      "subject": "Results of 303 patents-in-fee at Shoshone Reservation",
+      "key_claims": "303 patents issued 1907-1930 covering average 80-acre allotments of good irrigable agricultural land. Blood quantum breakdown: 1 full-blood, 3 three-fourths, 2 five-eighths, 5 one-half, 2 three-eighths, 3 one-fourth, 7 five-sixteenths, 9 one-eighth, and others. About 90% sold or mortgaged lands. Few made beneficial use of proceeds for livestock and agricultural equipment; majority squandered in extravagant living and automobiles. Recommended holding back at least 160 acres. Reservation not adapted for farming. Recommended great caution in granting patents to females as husbands squander property, desertions frequent, women left with children. Those who went broke and settled down to work for wages made better showing than on allotments. Reservation environments are the great drawback.",
+      "questioner": ""
+    },
+    {
+      "witness": "L. S. Bonnin",
+      "witness_title": "Superintendent, Cheyenne & Arapaho Indian Agency",
+      "hearing": "Board of Indian Commissioners survey on patents-in-fee",
+      "committee": "Board of Indian Commissioners",
+      "location": "Concho, Oklahoma",
+      "date": "1921",
+      "subject": "Effects of patents-in-fee at Cheyenne & Arapaho Agency",
+      "key_claims": "In practically every case lands have been sold. Many used money unwisely but possibly a majority used proceeds for some benefit - improvement of other lands or investment in business. On the whole believes it has been beneficial to give able-bodied competent Indians their patents. Agency officials do not follow up Indian activities after patent issued. Indians resent follow-up efforts. Recommended examining each individual case as to age, opportunity and physical capacity. If mentally and physically competent, favored turning them loose. Indians are no different than any other race regarding extravagance.",
+      "questioner": ""
+    },
+    {
+      "witness": "Edward G. Martin",
+      "witness_title": "United States Indian Farmer, Yankton Indian Reservation",
+      "hearing": "Board of Indian Commissioners survey on patents-in-fee",
+      "committee": "Board of Indian Commissioners",
+      "location": "Wagner, South Dakota",
+      "date": "1921",
+      "subject": "Views on releasing Santee and Yankton Sioux from supervision",
+      "key_claims": "As long as Indian's land held in trust he will never take his place in affairs of life among white brothers. Every young able-bodied Indian whose mind is functioning properly should have everything turned over unrestricted. Opposes reserving part of allotment as compromise. Indian should be either full citizen or ward. Does not know a single Santee Indian who received patent to entire allotment and still owns all of it. Among Yankton Sioux a few cases of patentees who still own all land and built good homes. Most disposed of land and used money in riotous living. Sooner they are broke and have to work the better. Identified Joseph Ellis and Thomas Hunter of Lake Andes as doing well; Simon Vasser and Gilbert St. Pierre among those who sold.",
+      "questioner": ""
+    },
+    {
+      "witness": "A. W. Leech",
+      "witness_title": "Superintendent, Yankton Indian Agency",
+      "hearing": "Board of Indian Commissioners survey on patents-in-fee",
+      "committee": "Board of Indian Commissioners",
+      "location": "Wagner, South Dakota",
+      "date": "1921",
+      "subject": "Detailed report on patents-in-fee at Yankton Sioux reservation",
+      "key_claims": "599 patents to entire allotments and 13 for portions issued. Not more than 10 own entire original allotments; not more than 50 own any portion. Practically 550 disposed of all land; about 400 have absolutely nothing to show. Originally 3113 allotments comprising 368,400 acres; today not exceeding 59,000 acres held in trust. Allotments varied 80-320 acres. Mixed-bloods obtained twice the land through sharp practice of having agricultural land classified as grazing. Indians typically sell immediately after patent; within 12 months have nothing. Principal squandering through automobile purchases and joy-riding. White men beset Indians upon patent receipt to buy land at inadequate prices. About 60% of able-bodied members farming to some extent. Believes in issuing patents to entire allotments rather than partial. One of great mistakes is leaving impression that US is still responsible after release. Transitory period of suffering is necessary.",
+      "questioner": ""
+    },
+    {
+      "witness": "John A. Buntin",
+      "witness_title": "Superintendent, Rosebud Indian Agency",
+      "hearing": "Board of Indian Commissioners survey on patents-in-fee",
+      "committee": "Board of Indian Commissioners",
+      "location": "Rosebud, South Dakota",
+      "date": "1921",
+      "subject": "Patents-in-fee effects and competency policy at Rosebud Agency",
+      "key_claims": "More than 17,000 Indians received patents since 1917 nationally. Opposes granting patents 'in the bulk.' Each case should be decided on own merits irrespective of blood status or educational qualifications. Approximately 600 of allotments under agency received patents. About 90% immediately sold or mortgaged lands. 85% of tracts were 160 acres, valued $1000-$16000, average $4000 per quarter. Not one in ten Indians purchases teams, farm implements, or makes improvements. An Indian capable of earning living may still be classified as competent even if he wastes property proceeds. Recommends Office outline standard for competency commissioners and superintendents.",
+      "questioner": ""
+    }
+  ],
+  "taxes": [],
+  "mortgages": [
+    {
+      "borrower": "Patent-in-fee Indians (Shoshone Reservation)",
+      "lender": "",
+      "amount": "",
+      "land_description": "Allotments on Shoshone Indian Reservation",
+      "acreage": "80 acres average",
+      "date": "1907-1930",
+      "interest_rate": "",
+      "status": "other",
+      "context": "About 90% of 303 patent-in-fee Indians either sold or mortgaged their lands"
+    },
+    {
+      "borrower": "Patent-in-fee Indians (Rosebud Agency)",
+      "lender": "",
+      "amount": "",
+      "land_description": "160-acre allotments at Rosebud Agency",
+      "acreage": "160 acres",
+      "date": "",
+      "interest_rate": "",
+      "status": "foreclosed",
+      "context": "About 90% of approximately 600 patentees immediately sold allotments or mortgaged and sold when mortgage became due"
+    },
+    {
+      "borrower": "Patent-in-fee Indians (Yankton Reservation)",
+      "lender": "",
+      "amount": "",
+      "land_description": "Allotments on Yankton Sioux Reservation",
+      "acreage": "80-320 acres",
+      "date": "",
+      "interest_rate": "",
+      "status": "other",
+      "context": "Approximately 550 of 613 patentees disposed of all land through sale or mortgage"
+    }
+  ]
+}

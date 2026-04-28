@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_022",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "38",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Josephine Dubray (Whitford)",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S.D.",
+    "Allotment number": "3496",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded May 1, 1918 by McManigal",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "conveyed the land to G. A. Dodson, for $6500",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 21, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612462 issued; Southeast quarter of Section 10, township 100, range 77; deed dated May 1, 1918, Josephine Dubray Whitford and husband conveyed to G. A. Dodson; receipt for patent was signed by the allottee but not dated",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2013,
+    "output_tokens": 339
+  },
+  "elapsed": 4.4
+}

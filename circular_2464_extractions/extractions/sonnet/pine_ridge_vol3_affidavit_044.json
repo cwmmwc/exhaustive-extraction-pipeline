@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_044",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "56",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Minnie Pourier, nee Dubray",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "4580",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee to her 160 acre allotment, when it was issued, September 29, 1919; for she did not want to pay taxes, but the Indian Agency told her that, if she did not take it, the land would be assessed for taxes, for which it would later be sold, so she accepted the patent to the allotment",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and foreclosed",
+    "Buyer": "Bank of Interior, South Dakota, for $900.00; bank foreclosed in 1923",
+    "Tax burden forced sale/Mortgage": "got behind in taxes, for which reason, in 1921, she mortgaged her place to the Bank of Interior, South Dakota, for $900.00; that she failed to make her payments on this mortgage, and, in 1923, the bank foreclosed on her place",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "36 years old",
+    "Occupation/Income": "her husband supports her and the six children by farming the land of the children, which constitutes their only income",
+    "NOTES": "mentally competent; has very poor health; mother of six minor children who have good health; husband has poor health; did not sell her place for debts incurred prior to receiving her patent in fee; considers she received a poor price for her land; never received any help from the County, State nor the United States Government; document sworn December 29, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2302,
+    "output_tokens": 503
+  },
+  "elapsed": 7.0
+}

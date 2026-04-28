@@ -1,0 +1,32 @@
+{
+  "document_id": "part10_questionnaire_009",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 10.pdf",
+  "source_pages": "37-38",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Barnett Shaw",
+    "Tribe/Reservation": "Shawnee Indian Agency",
+    "Post Office Address": "Shawnee, Oklahoma",
+    "Allotment number": "7157",
+    "Cancelled": "No",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "10/30/1918",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is heavily damaged and largely illegible; multiple questions and answers are unreadable. Allotment number 7157 and fee patent date 10/30/1918 are partially legible. Questions regarding mortgage, sale, taxes, cancellation, and dependents appear present but answers are illegible or missing. Postmark date JAN 30 1929 visible on envelope portion.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 3169,
+    "output_tokens": 315
+  },
+  "elapsed": 7.5
+}

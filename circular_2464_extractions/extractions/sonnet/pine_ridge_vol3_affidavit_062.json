@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_062",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "87-88",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susie Green",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Merriman, Nebraska",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "while she did not object to taking it, she would rather not have received it, as she did not want to pay taxes",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged 160 acres of her allotment, for $1600.00, to the Bank of Ipswich, South Dakota; that she never redeemed this mortgage, and, in 1924, she lost this quarter of land; that, about 1921, her husband borrowed money on another 160 acres of her allotment, of the American State Bank, of Merriman, Nebraska, for $2000.00, to buy cattle with, and this mortgage was never made good; that about 1925, her last remaining 160 acres of land was sold for taxes, in Bennett County, South Dakota",
+    "Buyer": "Bank of Ipswich, South Dakota ($1600.00 mortgage on 160 acres); American State Bank of Merriman, Nebraska ($2000.00 mortgage on another 160 acres); last remaining 160 acres sold for taxes in Bennett County, South Dakota",
+    "Tax burden forced sale/Mortgage": "getting behind in taxes, and a bad case of rheumatism, causing her to go to the Springs, in Wyoming for her health, she mortgaged 160 acres of her allotment; about 1925, her last remaining 160 acres of land was sold for taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "68 years old",
+    "Occupation/Income": "the only money she can earn is what little she makes by sewing; her niece furnishes her with a furnished house",
+    "NOTES": "Document No. 5453; mentally competent; health is not so good, being bothered with rheumatism, and getting up in years; she is alone in the world; her niece furnishes her with a furnished house; she considers that she was defrauded out of her land by the American State Bank; deficiency judgment secured against another 160 acres to satisfy their claim; she nor her husband never received a cent of it; she regrets ever having received her patent in fee, for had it been held in trust she would still own it; she never sold her land for any debts incurred prior to receiving her patent in fee; has never received any aid from the County, State, nor the United States Government; the Indian Agency Office sent her a letter asking for a dime to register a document to her, and she sent it; when she received it, it was the patent in fee to her 631.09 acre allotment; document also contains a separate affidavit by William Valandry (No. 5396), 74 years old, Post Office: Martin, South Dakota, who did not want his patent in fee to his allotment of 320 acres on account of not wishing to pay taxes but was told it would be necessary for him to accept it; sold to Bates & Foster of Gordon, Nebraska for $4800.00 cash in 1919; income from rent of several town houses and janitor work for the high school; has a wife and child to support; wife has a severe case of heart trouble; has rheumatism very badly; never received any help from County or United States Government",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 3076,
+    "output_tokens": 881
+  },
+  "elapsed": 14.1
+}

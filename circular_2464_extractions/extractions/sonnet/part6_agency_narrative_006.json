@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_agency_narrative_006",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "44",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Burnett",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Wood, S.D.",
+    "Allotment number": "1538",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Patent recorded December 4, 1922, by C. E. Kell",
+    "Sold/Mortgaged": "Mortgaged",
+    "Buyer": "Mortgage signed by John and Lottie Burnett on November 29, 1922 in favor of Jones County State Bank, for $2500",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739654; Lots 1, 2 and 3, Section 14, Lots 1, 3, 4 and 5, and West half of Northeast quarter, and North half of Southeast quarter of section 23, township 44, north of range 30; Receipt for patent was signed; On January 31, 1929, notice of lis pendens was filed, action to foreclose mortgage and quiet title; mortgage signed by John and Lottie Burnett",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2161,
+    "output_tokens": 390
+  },
+  "elapsed": 6.5
+}

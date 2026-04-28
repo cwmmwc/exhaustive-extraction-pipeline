@@ -1,0 +1,32 @@
+{
+  "document_id": "part10_questionnaire_008",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 10.pdf",
+  "source_pages": "32",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Benjamin Drapeau",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "6490",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No I first mortgaged and then sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "The mortgage I had placed on the land resulted in my selling the land as it was time to pay it.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Male",
+    "Age": "40",
+    "Occupation/Income": "By common labor.",
+    "NOTES": "Patent was sent in the mail in 1918 at Camp Funston, Kansas. Did not ask for the patent. Got $2500 by mortgage and $6000 net at the time of sale. Sale was a cash deal; no debts settled with purchaser. Not married. Was satisfied with the sale. Document notarized April 30, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2222,
+    "output_tokens": 348
+  },
+  "elapsed": 7.1
+}

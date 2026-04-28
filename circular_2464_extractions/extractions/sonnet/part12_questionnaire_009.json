@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_009",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "20-21",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Paul Little Eagle",
+    "Tribe/Reservation": "Pawnee County, Okla.",
+    "Post Office Address": "Pawnee, Oklahoma",
+    "Allotment number": "491",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes, filed for record by allottee",
+    "Sold/Mortgaged": "Mortgaged to R. C. Spinning; Sold to R. C. Spinning in 1918 for $2600.00",
+    "Buyer": "Sold to R. C. Spinning in 1918 for $2600.00, which about $1000 below the real value",
+    "Tax burden forced sale/Mortgage": "Had to sell to clear the above mortgage",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Nov. 30, 1917",
+    "Gender": "Male",
+    "Age": "38 years, good health",
+    "Occupation/Income": "Income of about $70.00 per year from inherited land. Shares in Pawnee annuity.",
+    "NOTES": "Patent delivered Dec. 26, 1917, by mail. No property or funds accumulated. No foreclosure. No land sold for debt or taxes. Wife and one child dependent upon allottee. It appears that the entrance of the allottee in the Army was responsible for the sale of this land at a price $1000 lower than its real value. Document notarized November 28, 1928; notary commission expires Jan. 31, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2675,
+    "output_tokens": 431
+  },
+  "elapsed": 6.6
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_106",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "125",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Oliver Hudspeth",
+    "Tribe/Reservation": "Pine Ridge (Oglala)",
+    "Post Office Address": "Oglala, So. Dak.",
+    "Allotment number": "3363",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee, but took it because he was told that if he did not take it and keep the taxes up that the land would be sold to satisfy them",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged his land for $3023.17 to A. P. Obanion of Buffalo Gap, So. Dak., that the price of cattle dropped and the mortgagee took the cattle, horses and land to satisfy it",
+    "Buyer": "A. P. Obanion of Buffalo Gap, So. Dak. \u2014 mortgagee foreclosed, taking cattle, horses, and land to satisfy the mortgage of $3023.17",
+    "Tax burden forced sale/Mortgage": "told that if he did not take it and keep the taxes up that the land would be sold to satisfy them",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "48 years old",
+    "Occupation/Income": "farms some, milks some cows and raises a little stock for a living",
+    "NOTES": "mentally competent, in poor health; has a wife and seven minor children depending on him for support; has 20 head of cattle, 30 head of horses, 20 hogs, all valued at about $2500.00; has no home and lives on the allotment of his wife; has received no aid from the Government, State or County since he was granted a patent; affidavit sworn November 30, 1928, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2260,
+    "output_tokens": 497
+  },
+  "elapsed": 7.4
+}

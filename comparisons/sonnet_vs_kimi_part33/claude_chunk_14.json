@@ -1,0 +1,530 @@
+{
+  "entities": [
+    {
+      "name": "Mr. Collett",
+      "type": "person",
+      "context": "Representative of an Indian organization claiming to represent 17,000 California Indians, involved in Court of Claims litigation"
+    },
+    {
+      "name": "John Collier",
+      "type": "person",
+      "context": "Present Commissioner of Indian Affairs, previously represented Indian Defense Association in California"
+    },
+    {
+      "name": "The Chairman",
+      "type": "person",
+      "context": "Chairman of the Senate committee conducting survey of conditions of Indians in United States"
+    },
+    {
+      "name": "Senator Thomas",
+      "type": "person",
+      "context": "Senate committee member participating in hearing"
+    },
+    {
+      "name": "Attorney General Webb",
+      "type": "person",
+      "context": "Attorney General of California, representing the State in the Court of Claims suit on behalf of California Indians"
+    },
+    {
+      "name": "Mr. Henderson",
+      "type": "person",
+      "context": "Attorney contracted by Indians of California"
+    },
+    {
+      "name": "Mr. Hanley",
+      "type": "person",
+      "context": "Attorney contracted by Indians of California, described as able and careful attorney by Attorney General Webb"
+    },
+    {
+      "name": "Mr. Pemberton",
+      "type": "person",
+      "context": "Attorney contracted by Indians of California"
+    },
+    {
+      "name": "Mr. Stormont",
+      "type": "person",
+      "context": "Representative of the Government / Department of Justice in California Indian Court of Claims case"
+    },
+    {
+      "name": "Congressman Lee",
+      "type": "person",
+      "context": "Congressman who gave the bill that was finally passed by the State legislature"
+    },
+    {
+      "name": "Mr. Burke",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs prior to John Collier"
+    },
+    {
+      "name": "Mr. Elkus",
+      "type": "person",
+      "context": "Witness who testified about impossibility of multiple sets of accountants working simultaneously on records"
+    },
+    {
+      "name": "Mr. Butler",
+      "type": "person",
+      "context": "Individual present at hearing who requested to make a statement"
+    },
+    {
+      "name": "Indian Defense Association",
+      "type": "organization",
+      "context": "Organization represented by John Collier, proposed $49,500,000 appropriation for California Indians"
+    },
+    {
+      "name": "Mission Indian Federation of Southern California",
+      "type": "organization",
+      "context": "Organization with membership of about 8,000 Indians in Southern California"
+    },
+    {
+      "name": "Department of Justice",
+      "type": "organization",
+      "context": "Federal department representing the Government in the California Indians Court of Claims case"
+    },
+    {
+      "name": "Indian Office",
+      "type": "organization",
+      "context": "Federal office managing Indian affairs, also referred to as Indian Department"
+    },
+    {
+      "name": "General Accounting Office",
+      "type": "organization",
+      "context": "Federal office responsible for accounting work in Indian claims cases, causing delays"
+    },
+    {
+      "name": "Court of Claims",
+      "type": "organization",
+      "context": "Federal court where California Indians suit was filed"
+    },
+    {
+      "name": "House Committee on Indian Affairs",
+      "type": "organization",
+      "context": "Congressional committee that refused to hear John Collier and held his expenditures up to ridicule"
+    },
+    {
+      "name": "California State Legislature",
+      "type": "organization",
+      "context": "State legislative body that considered bills related to California Indian claims"
+    },
+    {
+      "name": "Indians of California",
+      "type": "organization",
+      "context": "Plaintiffs in the Court of Claims suit, approximately 23,000 total"
+    },
+    {
+      "name": "Blackfeet Indians",
+      "type": "organization",
+      "context": "Indian tribe used as example of a case where offsets resulted in deficiency judgment against the Indians"
+    },
+    {
+      "name": "Los Angeles Times",
+      "type": "organization",
+      "context": "Newspaper mentioned by John Collier as planning to cover State investigation of Indian conditions"
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "context": "State with approximately 23,000 Indians, subject of Court of Claims litigation"
+    },
+    {
+      "name": "Oklahoma",
+      "type": "location",
+      "context": "Location where Indians were relocated, later found to have oil"
+    },
+    {
+      "name": "Washington D.C.",
+      "type": "location",
+      "context": "Location of federal government records and accounting departments"
+    },
+    {
+      "name": "California Indian lands",
+      "type": "land_parcel",
+      "context": "Lands covered by unratified treaties, subject of Court of Claims suit"
+    },
+    {
+      "name": "California Indians Court of Claims case",
+      "type": "legal_case",
+      "context": "Suit filed by Attorney General of California on behalf of California Indians for lands taken under unratified treaties"
+    },
+    {
+      "name": "Jurisdictional Act 1920",
+      "type": "legislation",
+      "context": "Federal act authorizing California to bring suit in Court of Claims on behalf of California Indians, required filing within 36 months"
+    },
+    {
+      "name": "Court of Claims bill",
+      "type": "legislation",
+      "context": "Bill in Congress for a number of years to allow California Indians to sue in Court of Claims"
+    },
+    {
+      "name": "California enabling act",
+      "type": "legislation",
+      "context": "State enabling act passed approximately one year before the Federal act, in contemplation of Federal act"
+    },
+    {
+      "name": "State bill vetoed",
+      "type": "legislation",
+      "context": "Bill proposed by Indian Defense Association/Collier for State investigation and $125,000 appropriation, passed legislature but vetoed by Governor"
+    },
+    {
+      "name": "Bill signed May 18, 1927",
+      "type": "legislation",
+      "context": "Bill signed into law on approximately May 18, 1927 related to California Indian claims"
+    }
+  ],
+  "events": [
+    {
+      "type": "legislative_veto",
+      "date": "1926",
+      "location": "California",
+      "description": "Governor of California vetoed a bill proposed by John Collier/Indian Defense Association for State investigation of Indian conditions and $125,000 appropriation"
+    },
+    {
+      "type": "bill_reintroduction",
+      "date": "1926",
+      "location": "United States Congress",
+      "description": "California Indians Court of Claims bill reintroduced in next Congress after veto"
+    },
+    {
+      "type": "legislation_signed",
+      "date": "1927-05-18",
+      "location": "California",
+      "description": "Bill related to California Indian claims signed into law, approximately May 18, 1927"
+    },
+    {
+      "type": "federal_act_passed",
+      "date": "1920",
+      "location": "United States",
+      "description": "Federal jurisdictional act passed authorizing California to bring suit in Court of Claims on behalf of California Indians, requiring filing within 36 months"
+    },
+    {
+      "type": "organization_founded",
+      "date": "1910",
+      "location": "California",
+      "description": "Mr. Collett's Indian organization started in 1910 and began Court of Claims bill effort"
+    },
+    {
+      "type": "collier_california_activities",
+      "date": "1926",
+      "location": "California",
+      "description": "John Collier began activities in California around 1926, seeking State legislation for investigation"
+    },
+    {
+      "type": "court_filing",
+      "date": "1921",
+      "location": "Court of Claims, Washington D.C.",
+      "description": "California Indians case filed in Court of Claims approximately 15 months after jurisdictional act passed in 1920"
+    },
+    {
+      "type": "post_filing_conference",
+      "date": "1920-1921",
+      "location": "Washington D.C.",
+      "description": "Attorney General Webb held conference with Department of Justice, Indian Office, accountants, and Controller regarding data gathering after suit was filed"
+    },
+    {
+      "type": "attorney_admission_denied",
+      "date": "unknown",
+      "location": "Court of Claims",
+      "description": "Court denied motion by Indian-contracted attorneys to be admitted as attorneys of record with full authority; Department of Justice and Attorney General Webb both opposed"
+    },
+    {
+      "type": "attorney_admission_granted",
+      "date": "unknown",
+      "location": "Court of Claims",
+      "description": "Indian-contracted attorneys admitted as friends of the court without opposition from Attorney General Webb or Department of Justice"
+    },
+    {
+      "type": "hearing",
+      "date": "unknown",
+      "location": "California",
+      "description": "Senate subcommittee survey hearing on conditions of Indians in United States, examining California Indian Court of Claims case"
+    },
+    {
+      "type": "congressional_hearing_refusal",
+      "date": "unknown",
+      "location": "Washington D.C.",
+      "description": "House Committee on Indian Affairs refused to hear John Collier and held his expenditures up to ridicule"
+    },
+    {
+      "type": "blackfeet_case_judgment",
+      "date": "unknown",
+      "location": "Court of Claims",
+      "description": "Blackfeet Indians case tried in Court of Claims; after offsets, deficiency judgment entered against the Indians for approximately $500,000 instead of the $6.5 million claimed"
+    },
+    {
+      "type": "amendments_filed",
+      "date": "unknown",
+      "location": "Court of Claims",
+      "description": "Amendments to California Indians complaint filed after expiration of 3-year period; their timeliness disputed"
+    },
+    {
+      "type": "state_legislature_appropriation_request",
+      "date": "unknown",
+      "location": "California",
+      "description": "Attorney General Webb asked State legislature to appropriate $15,000 for running expenses of the California Indians suit"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "other",
+      "amount": "$49,500,000",
+      "payer": "United States Congress",
+      "payee": "Indians of California",
+      "date": "1926",
+      "description": "Proposed outright appropriation requested by Indian Defense Association for California Indians, counter-proposal to Court of Claims bill"
+    },
+    {
+      "type": "other",
+      "amount": "$125,000",
+      "payer": "State of California",
+      "payee": "Investigation commission",
+      "date": "1926",
+      "description": "Proposed State appropriation in Collier's bill for investigation of California Indian conditions, bill was vetoed"
+    },
+    {
+      "type": "other",
+      "amount": "$12,000,000",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "unknown",
+      "description": "Attorney General Webb's estimate of total recovery sought in original complaint before government offsets"
+    },
+    {
+      "type": "other",
+      "amount": "$150,000,000",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "unknown",
+      "description": "Alleged representation made to California Indians of fabulous sum recoverable in the suit, described by Attorney General Webb as unfortunate exaggeration"
+    },
+    {
+      "type": "payment",
+      "amount": "$15,000",
+      "payer": "California State Legislature",
+      "payee": "Office of Attorney General of California",
+      "date": "unknown",
+      "description": "Appropriation by State legislature for running expenses of California Indians Court of Claims suit; approximately $14,000 remained unspent"
+    },
+    {
+      "type": "other",
+      "amount": "$500,000",
+      "payer": "Blackfeet Indians",
+      "payee": "United States Government",
+      "date": "unknown",
+      "description": "Deficiency judgment entered against Blackfeet Indians in Court of Claims case after offsets exceeded claimed recovery of approximately $6.5 million"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Mr. Collett",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Claims to represent about 17,000 California Indians through membership organization"
+    },
+    {
+      "subject": "John Collier",
+      "type": "represented",
+      "object": "Indian Defense Association",
+      "context": "Represented Indian Defense Association in California and before Congress"
+    },
+    {
+      "subject": "Attorney General Webb",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney General of California representing State as plaintiff in Court of Claims suit on behalf of California Indians"
+    },
+    {
+      "subject": "Mr. Stormont",
+      "type": "represented",
+      "object": "United States Government",
+      "context": "Represented Department of Justice in California Indians Court of Claims case"
+    },
+    {
+      "subject": "Mr. Henderson",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney contracted by California Indians, approved by contracting Indians"
+    },
+    {
+      "subject": "Mr. Hanley",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney contracted by California Indians, described as able and careful by Attorney General Webb"
+    },
+    {
+      "subject": "Mr. Pemberton",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney contracted by California Indians"
+    },
+    {
+      "subject": "John Collier",
+      "type": "employed_by",
+      "object": "Indian Defense Association",
+      "context": "Represented and led Indian Defense Association activities"
+    },
+    {
+      "subject": "John Collier",
+      "type": "related_to",
+      "object": "Mr. Collier (Commissioner of Indian Affairs)",
+      "context": "Same person - John Collier identified as present Commissioner of Indian Affairs"
+    },
+    {
+      "subject": "Congressman Lee",
+      "type": "related_to",
+      "object": "California Indians Court of Claims bill",
+      "context": "Gave the bill that was finally passed by the State legislature to Mr. Collett"
+    },
+    {
+      "subject": "Mr. Collett",
+      "type": "related_to",
+      "object": "Congressman Lee",
+      "context": "Received bill from Congressman Lee and brought it to California legislature"
+    },
+    {
+      "subject": "Attorney General Webb",
+      "type": "related_to",
+      "object": "Mr. Hanley",
+      "context": "Counseled with Mr. Hanley more frequently than other Indian attorneys; describes them as friends"
+    },
+    {
+      "subject": "Attorney General Webb",
+      "type": "related_to",
+      "object": "Mr. Collett",
+      "context": "Hostile relationship; Webb stated he would not work with attorneys selected by or associated with Mr. Collett"
+    },
+    {
+      "subject": "John Collier",
+      "type": "related_to",
+      "object": "Mr. Burke",
+      "context": "Collier sought to embarrass Commissioner Burke before California State legislature"
+    },
+    {
+      "subject": "General Accounting Office",
+      "type": "related_to",
+      "object": "California Indians Court of Claims case",
+      "description": "Responsible for accounting work causing delays in multiple Indian claims cases"
+    },
+    {
+      "subject": "Mr. Stormont",
+      "type": "related_to",
+      "object": "John Collier",
+      "context": "Stormont called in by Collier to oppose Indians having their own attorneys, though Stormont said he knew nothing about the bill"
+    },
+    {
+      "subject": "Indians of California",
+      "type": "related_to",
+      "object": "California Indian lands",
+      "context": "Treaty Indians who occupied productive lands, moved to poorer lands after agents represented unratified treaties were in force"
+    },
+    {
+      "subject": "Senate subcommittee",
+      "type": "related_to",
+      "object": "General Accounting Office",
+      "context": "Committee complained to GAO about delays in Indian claims cases and had GAO officials appear before committee to explain difficulties"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "John Collier",
+      "sender_title": "Commissioner of Indian Affairs",
+      "recipient": "Senate Committee / House Committee on Indian Affairs",
+      "recipient_title": "Congressional Committee",
+      "date": "unknown",
+      "subject": "Report on California Indians jurisdictional act and claims",
+      "action_requested": "Amendment or interpretation of jurisdictional act",
+      "outcome": "Report found to contain errors by Mr. Collett; paragraph 2 used 'previously' instead of 'subsequently'; paragraph 3 said 'California is the litigant' instead of 'Indians of California'; paragraph 5 incorrectly claimed Court of Claims law predetermines values of claims"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "unknown",
+      "sponsor": "Indian Defense Association / John Collier",
+      "action_type": "introduced",
+      "date": "1926",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Counter proposal for $49,500,000 outright appropriation introduced; not passed"
+    },
+    {
+      "bill_number": "unknown",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1920",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Federal jurisdictional act passed authorizing California to bring Court of Claims suit on behalf of California Indians within 36 months"
+    },
+    {
+      "bill_number": "unknown",
+      "sponsor": "John Collier / Indian Defense Association",
+      "action_type": "passed",
+      "date": "1926",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Bill for State investigation of California Indian conditions and $125,000 appropriation passed California senate and assembly but was vetoed by Governor"
+    },
+    {
+      "bill_number": "unknown",
+      "sponsor": "Congressman Lee",
+      "action_type": "enacted",
+      "date": "1927-05-18",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Bill signed into law approximately May 18, 1927, related to California Indian claims and enabling State attorney general to serve as major attorney"
+    },
+    {
+      "bill_number": "unknown",
+      "sponsor": "Mr. Collett's organization",
+      "action_type": "introduced",
+      "date": "1910",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Original Court of Claims bill effort started in 1910; underwent considerable history before passage"
+    },
+    {
+      "bill_number": "unknown",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "1926",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Bill reintroduced in Congress after earlier veto; Indian Defense Association introduced counter proposal"
+    },
+    {
+      "bill_number": "pending bill referenced by Attorney General Webb",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Attorney General Webb recommended amendment to pending bill to make filing of amendments entirely safe and remove any jurisdictional question; recommended passage at next congressional session"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Mr. Collett",
+      "witness_title": "Representative, Indian organization for California Indians",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee",
+      "location": "California",
+      "date": "unknown",
+      "subject": "California Indians Court of Claims case, attorney representation, bill history, delay in proceedings",
+      "key_claims": "Organization represents approximately 17,000 of 23,000 California Indians via membership roll. Indians contracted with attorneys Henderson, Hanley, and Pemberton. Case delay caused by filing suit 15 months after jurisdictional act, allowing 13 other cases to be filed ahead. Jurisdictional act should not be amended but an extension of time for filing amendments to suit should be made. John Collier's report to committee contains errors. No testimony has been taken, many valuable witnesses are now dead, others aged and feeble. Indians of California are the litigants not the State. Court of Claims law does not predetermine values of claims. Repeatedly visited attorney general's office without satisfactory progress. Indians should have attorneys of their own choice. Mr. Stormont was called in by Collier to oppose Indians having their own attorneys but said he knew nothing about the bill. Mr. Collett opposed Collier's California State investigation bill as it would have delayed Court of Claims bill passage.",
+      "questioner": "The Chairman, Senator Thomas"
+    },
+    {
+      "witness": "Attorney General Webb",
+      "witness_title": "Attorney General of California",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee",
+      "location": "California",
+      "date": "unknown",
+      "subject": "Status of California Indians Court of Claims case, timeline, attorney representation, estimated recovery, State appropriation",
+      "key_claims": "Enabling act passed approximately one year before Federal act of 1920. Suit filed within 15 months of Federal act; Congress allowed 36 months. Conference held in Washington with DOJ, Indian Office, accountants, and Controller after suit filed. No compromise of case ever suggested or possible given nature of case. Indians were misled about delay being caused by failure of their attorneys; delay actually due to federal accounting process. Amended complaint filed after 3-year period but Webb believes amendments are sustainable. Indian contracted attorneys admitted as friends of court; denied as attorneys of record. Original complaint estimated $12 million total recovery; government offsets to be deducted. Claims of $150 million recovery circulating among Indians are unfortunate exaggerations. State legislature appropriated $15,000 for suit expenses; approximately $14,000 remains. Webb would not work with attorneys selected by or associated with Mr. Collett. Webb declined to approve Indian attorney contracts due to lack of authority and character of contracts. Webb recommended either allowing Indians to select their own attorneys with complete control, or maintaining current arrangement. California treaty Indians occupied good productive lands, were moved to poorer lands after agents falsely represented unratified treaties were in force, never received payment for personal property stipulated in treaties.",
+      "questioner": "The Chairman, Senator Thomas"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

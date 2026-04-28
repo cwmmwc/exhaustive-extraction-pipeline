@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_agency_narrative_008",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "85-86",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Victoria Prue or Yellow Bird",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "127",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded by C. L. Dice on February 21, 1919",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged on two occasions; the first February 10, 1918 for $1500.00, and the second May 28, 1919, for $500.00. Conveyed by deed signed by Victoria Prue on March 27, 1920 to H. G. Davis for $3500.00, subject to the two mortgages.",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612734 issued; southeast quarter of section 26, township 38, range 26; receipt for patent signed by allottee on January 31, 1918.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2299,
+    "output_tokens": 371
+  },
+  "elapsed": 5.3
+}

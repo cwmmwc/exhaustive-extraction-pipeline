@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_099",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "127",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Bessie Martin",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee at the time she accepted it, but was told that it was necessary for her to take it, and she did so",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold her allotment in 1919",
+    "Buyer": "J. W. Good, of Chadron, Nebraska, for $1000.00, cash",
+    "Tax burden forced sale/Mortgage": "she was back on taxes, knew that she could not meet future taxes, and thought best to take what she could get",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "49 years old",
+    "Occupation/Income": "she and her family is supported by her husband, who has poor health, but he farms her home place, and occasionally works for a neighbor, and this is the source of his income",
+    "NOTES": "mentally incompetent, has poor health, having stomach trouble and rheumatism; has four minor children to support; has never received any help from the County or the Government; document number 7584; sworn November 20, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2246,
+    "output_tokens": 390
+  },
+  "elapsed": 4.6
+}

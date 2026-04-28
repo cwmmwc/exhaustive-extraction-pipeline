@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_088",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "114",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Emma Running Hawk\u2014nee Marrow Bone",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "6473",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee to her 320 acre allotment, when it was issued, September 29, 1919, but the Indian Office told her that, if she did not take it, and pay the taxes, it would be taxed just the same, and later sold for taxes, so she took the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold her allotment to Walcott & Walcott, of Valentine, Nebraska, for $1000.00 cash",
+    "Buyer": "Walcott & Walcott, of Valentine, Nebraska, for $1000.00 cash",
+    "Tax burden forced sale/Mortgage": "could not keep up the taxes on it, hence was forced to sell",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "49 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Mentally incompetent; has rheumatism, which makes it hard for her to get around, otherwise her health is good; mother of two minor children, one with good health, the other with poor eye sight and cannot go to school; husband has good health, works at common labor, and receives $80.00 per year lease money on his allotment, supports her and the children; these two sources of income is all they have; did not sell her allotment for any debts incurred prior to the receipt of the patent in fee; has never received any help from the United States Government, the State Government nor the County; allotment was 320 acres; document sworn March 21, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2378,
+    "output_tokens": 520
+  },
+  "elapsed": 5.4
+}

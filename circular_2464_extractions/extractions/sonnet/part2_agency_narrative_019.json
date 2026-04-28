@@ -1,0 +1,33 @@
+{
+  "document_id": "part2_agency_narrative_019",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "34",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Benjamin Beauvais",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "484",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded Sept. 29, 1924 by the Tri-County Abstract Company",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Benjamin and his wife conveyed the land by deed on September 5, 1924 to James S. Slaughter for $3,000.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739628 issued; southeast quarter of section 3, township 39, range 28; receipt for patent signed by the allottee April 2, 1920; Benjamin had a wife at time of conveyance",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2107,
+    "output_tokens": 329
+  },
+  "elapsed": 4.2,
+  "retry_count": 1
+}

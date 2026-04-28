@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_031",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "41",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susan Clark",
+    "Tribe/Reservation": "Shannon County (Pine Ridge area, South Dakota)",
+    "Post Office Address": "Batesland, So. Dak.",
+    "Allotment number": "375",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee, but only took it because she was told that if she did not take it and pay the taxes that the land would be sold to satisfy them",
+    "Recorded patent": "she does not remember whether or not she had the patent recorded",
+    "Sold/Mortgaged": "Mortgaged; mortgage was foreclosed in 1926",
+    "Buyer": "Peters Co. Minneapolis, Minn. (mortgagee who foreclosed); borrowed $1000.00 from the Peters Co. Minneapolies, Minn.",
+    "Tax burden forced sale/Mortgage": "got behind on the taxes and borrowed $1000.00 from the Peters Co. Minneapolies, Minn, and paid the taxes and used the rest for improvements, that she could not pay the mortgage or interest, so the mortgage was foreclosed in 1926",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "73 years old",
+    "Occupation/Income": "supported by her husband who farms a little on the allotment of her son",
+    "NOTES": "Mentally competent and in fair health for her age; has no minor children but supports a grandchild; all she has is 4 lots in Batesland, So. Dak. worth about $100.00 for them all; did not get a fair price for her land, believing it to be worth $20.00 per acre at that time; has not received any assistance from the Government, State or County since her patent was issued; sworn November 21, 1928, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2298,
+    "output_tokens": 510
+  },
+  "elapsed": 6.4
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_agency_narrative_006",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "11",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susan Utterback",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2432",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "patent was recorded by the Belvidere State Bank on July 10, 1918",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Susan Estes, formerly Susan Utterback and Edward F. Estes conveyed the land by deed to J. E. Utterback for $1.00 and other valuable consideration",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 21, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612456 issued; Lots 5 and 6 of section 6, Lots 2, 3 and 4, and Southeast quarter of Northwest quarter, section 7, township 44, north of range 32; receipt for the patent was signed by the allottee but not dated; conveyance dated March 20, 1918; allottee also known as Susan Estes",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2063,
+    "output_tokens": 377
+  },
+  "elapsed": 5.6
+}

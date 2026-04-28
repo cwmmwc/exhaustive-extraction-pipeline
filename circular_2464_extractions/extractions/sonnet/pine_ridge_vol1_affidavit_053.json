@@ -1,0 +1,55 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_053",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "67-68",
+  "model": "sonnet",
+  "extraction": [
+    {
+      "Name": "Mamie Jumping Eagle",
+      "Tribe/Reservation": "Pine Ridge",
+      "Post Office Address": "Pine Ridge, South Dakota",
+      "Allotment number": "762",
+      "Cancelled": "not stated",
+      "Refused/Protested": "did not want her patent to her allotment for the reason that she did not want to pay taxes; but that the Indian Agency informed her that it was necessary for her to accept it, and she did",
+      "Recorded patent": "not stated",
+      "Sold/Mortgaged": "she never mortgaged her 320 acres, but, in the spring 1921, she sold it to Mr. Tom Tibbitts, of Rocky ford, South Dakota, for $2000.00",
+      "Buyer": "Mr. Tom Tibbitts, of Rocky ford, South Dakota, for $2000.00",
+      "Tax burden forced sale/Mortgage": "she sold this land to raise money to pay the taxes, as it was the only source of raising money she had, there being one and one half years taxes against the allotment",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "not stated",
+      "Gender": "Female",
+      "Age": "43 years old",
+      "Occupation/Income": "supported by her husband, who is in the Service of the United States Government, as a Chief of Police",
+      "NOTES": "mentally competent; health is now good, although several years ago she had hemorrhages; mother of nine children, one daughter 14 years of age has tuberculosis, other children are healthy; all children are minors who have to be supported by her husband; has never received any help from the County or United States Government; sworn November 15, 1928",
+      "Literate/Illiterate": "not stated",
+      "Document type": "affidavit"
+    },
+    {
+      "Name": "Florence Twiis Cuny",
+      "Tribe/Reservation": "Pine Ridge",
+      "Post Office Address": "Rockyford, South Dakota",
+      "Allotment number": "818",
+      "Cancelled": "not stated",
+      "Refused/Protested": "did not want her patent in fee and refused to accept it at first, but that she was told that if she did not take it and pay the taxes that she would lose the land so, on the advise of the Farmer and Superintendent she took it",
+      "Recorded patent": "not stated",
+      "Sold/Mortgaged": "she held the land for some time but that she could not pay the taxes so she mortgaged it for $600.00 to Charles I. Moore & Co. Galena, Ill, that she found that she could not pay the mortgage or taxes so she had to sell the land, selling it to Ben Gall of Scenic, So. Dak. for $3000.00",
+      "Buyer": "Mortgaged to Charles I. Moore & Co., Galena, Ill. for $600.00; sold to Ben Gall of Scenic, South Dakota for $3000.00, he to pay all back taxes and pay the mortgage",
+      "Tax burden forced sale/Mortgage": "she could not pay the taxes so she mortgaged it; she found that she could not pay the mortgage or taxes so she had to sell the land",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "not stated",
+      "Gender": "Female",
+      "Age": "36 years old",
+      "Occupation/Income": "supported by her husband, who does common labor for a living",
+      "NOTES": "mentally competent; in fair health; has seven children depending on her; has received no aid from the Government, State or County since she was granted a patent; also states she has 160 acres of fair land that she bought with the money for her allotment, but has paid no taxes and does not know as to the title at this time; sworn December 3, 1928",
+      "Literate/Illiterate": "not stated",
+      "Document type": "affidavit"
+    }
+  ],
+  "usage": {
+    "input_tokens": 2735,
+    "output_tokens": 996
+  },
+  "elapsed": 13.1,
+  "retry_count": 1
+}

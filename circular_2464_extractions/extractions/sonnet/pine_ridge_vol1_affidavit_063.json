@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_063",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "78",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Joseph Lessert",
+    "Tribe/Reservation": "Pine Ridge (Oglala Sioux)",
+    "Post Office Address": "Leupp, Arizona",
+    "Allotment number": "963",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee, but accepted it without protest",
+    "Recorded patent": "This instrument was recorded soon after same was received, the exact date being unknown. R. C. Lessert, my Cousin, attended to the recording of this paper.",
+    "Sold/Mortgaged": "the land in question was sold, the proceeds being used for the purchase of cattle, date of sale unknown",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "the land was not sold to pay debts or taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "43 years old",
+    "Occupation/Income": "employed by the United States Government, and working every day for a living",
+    "NOTES": "Received $900.00 from the sale of the land, which was considered a fair price at the time; mentally competent, in good health; has no land; has not received any aid from the Government, State or County since his patent in fee was issued; document references four children (text partially illegible); R. C. Lessert is his cousin; document number 22201; State of Arizona, County of Coconino; sworn 1929 | Source review 2026-04-27: Joseph Lessert is a Pine Ridge (Oglala Sioux) allottee who had relocated to Leupp, Arizona by the time of the affidavit. Affidavit sworn before notary in Coconino County, Arizona, on May 4, 1929. Notary commission expires 7/27/30. R.C. Lessert (named in the original recording note) is identified in source as Joseph's cousin, who attended to recording the patent. Joseph stated he 'has no land' (terminal sale; proceeds went to cattle purchase). He considered the $900 sale price a fair price at the time. No Pine Ridge Agency receipt stamp appears on this affidavit (unlike his cousin Minnie's, allot 969). BLM patent accession: 625270. Tribe/Reservation field corrected from 'Leupp, Arizona (agency not explicitly named)' which incorrectly conflated current residence with tribal affiliation.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2316,
+    "output_tokens": 416
+  },
+  "elapsed": 5.2
+}

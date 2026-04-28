@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_005",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "9",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louise Beauvais Young",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. D.",
+    "Allotment number": "1071",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded December 17, 1920 by the Farmers State Bank of Crookston",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Deed from Louise Beauvais Young and husband dated August 13, 1921 conveyed the land to I. C. Snyder for $1.00 and other valuable consideration. Also a similar deed dated August 23, 1921 conveyed the land to Anna Hughes for $1.00 and other valuable consideration.",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739627 issued; southwest quarter of section 3, township 42, range 27; receipt for patent signed by the allottee April 2, 1920",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2072,
+    "output_tokens": 368
+  },
+  "elapsed": 5.0
+}

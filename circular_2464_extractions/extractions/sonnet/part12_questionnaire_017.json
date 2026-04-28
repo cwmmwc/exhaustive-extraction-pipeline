@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_017",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "38-39",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Henry Black",
+    "Tribe/Reservation": "Otoe Agency",
+    "Post Office Address": "Ponca City, Okla.",
+    "Allotment number": "6435",
+    "Cancelled": "not stated",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Do not remember",
+    "Sold/Mortgaged": "Mortgaged for $5000",
+    "Buyer": "$5000 mortgage. but was not full settlement.",
+    "Tax burden forced sale/Mortgage": "Foreclosed and redemption expired.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sept. 1917",
+    "Gender": "Male",
+    "Age": "48 years",
+    "Occupation/Income": "Allottee has no income nor does he receive any contributions from any source.",
+    "NOTES": "Delivered at Otoe Agency; patent delivered by Noble; four minor children dependent upon allottee; allottee executed two mortgages on the land, which were foreclosed; he states that he received approximately $5000 for the land, which did not represent full value; notarized in Kay County, Oklahoma on November 2nd, 1928; commission expires Aug. 3rd, 1931",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2602,
+    "output_tokens": 352
+  },
+  "elapsed": 5.2
+}

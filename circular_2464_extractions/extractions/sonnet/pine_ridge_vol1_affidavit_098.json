@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_098",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "123",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Patsy Robinson\u2014Nee McWilliams",
+    "Tribe/Reservation": "Shannon County (South Dakota) \u2014 agency not specified",
+    "Post Office Address": "Merriman, Nebraska",
+    "Allotment number": "1348",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 320 acre allotment at the time it was issued; that she had come to the Indian Agency Office to transact some other business; that Mr. Marston told her that her patent was listed among others, and it would be necessary for her to take it, or it would be taxed, and finally sold for taxes if she did not accept it; so when she received it in the mail she took it, although she had protested against it in the first place, as she did not want to pay taxes",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "parted with one quarter of it, to Charlie Lessert, of Merriman, Nebraska, for $1600.00 cash, and a trade consideration in real estate as well",
+    "Buyer": "Charlie Lessert, of Merriman, Nebraska, for $1600.00 cash and a trade consideration in real estate",
+    "Tax burden forced sale/Mortgage": "kept up the taxes on this allotment up to 1926, when she parted with one quarter of it; she considers that this was really a very poor price for the land, as it is all hay land; but that she made the transfer to even up the acreage of their other lands",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "37 years old",
+    "Occupation/Income": "her husband is a rancher, and that is his only source of income",
+    "NOTES": "Deponent states she has never received any help from the County, State or the United States Government; mentally competent, has good health; has three children to support; husband has good health and supports her and the three children; children have good health; allotment described as 320 acres, all hay land; document notarized November 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2346,
+    "output_tokens": 572
+  },
+  "elapsed": 7.8
+}

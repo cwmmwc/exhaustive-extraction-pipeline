@@ -1,0 +1,579 @@
+{
+  "entities": [
+    {
+      "name": "Mr. Elkus",
+      "type": "person",
+      "context": "Representative of Indian Defense Association, attorney, testified before committee about California Indians Court of Claims case"
+    },
+    {
+      "name": "Mr. Collett",
+      "type": "person",
+      "context": "F.O. Collett, representative of Indian organization claiming to represent about 17,000 California Indians, initiated Court of Claims bill"
+    },
+    {
+      "name": "F. O. Collett",
+      "type": "person",
+      "context": "Signed letter dated January 18, 1935 from Los Angeles regarding audit of organization books"
+    },
+    {
+      "name": "Senator Thomas",
+      "type": "person",
+      "context": "Committee member asking questions during hearing"
+    },
+    {
+      "name": "The Chairman",
+      "type": "person",
+      "context": "Committee chairman, referenced as A.A. Grorud in correspondence address"
+    },
+    {
+      "name": "A. A. Grorud",
+      "type": "person",
+      "context": "Senate Office Building, Washington D.C., recipient of Collett's letter"
+    },
+    {
+      "name": "Attorney General Webb",
+      "type": "person",
+      "context": "Attorney General of State of California, entered hearing room during testimony, representing California Indians in Court of Claims"
+    },
+    {
+      "name": "Mr. Henderson",
+      "type": "person",
+      "context": "Attorney representing Indians of California as friend of the court, appeared at Court of Claims December 7, 1931"
+    },
+    {
+      "name": "Mr. Hanley",
+      "type": "person",
+      "context": "Attorney contracted by Indian delegates from California in September 1928"
+    },
+    {
+      "name": "Mr. Pemberton",
+      "type": "person",
+      "context": "Attorney contracted by Indian delegates from California in September 1928"
+    },
+    {
+      "name": "Judge Raker",
+      "type": "person",
+      "context": "Congressman who presented the original Court of Claims bill (Raker bill) in 1920, focused on treaty rights"
+    },
+    {
+      "name": "Congressman Lee",
+      "type": "person",
+      "context": "Congressman who recommended attorney general be authorized to come into the suit, provided bill passed by State legislature"
+    },
+    {
+      "name": "Senator Phelan",
+      "type": "person",
+      "context": "Senator who reviewed the Court of Claims bill and directed Senator Ashurst to introduce it"
+    },
+    {
+      "name": "Senator Ashurst",
+      "type": "person",
+      "context": "Senator who introduced the Court of Claims bill, was chairman of the committee"
+    },
+    {
+      "name": "Mr. Merritt",
+      "type": "person",
+      "context": "Official who cooperated with Reverend Collett and Judge Raker in preparation of legislation, submitted favorable report"
+    },
+    {
+      "name": "Secretary Albert B. Fall",
+      "type": "person",
+      "context": "Secretary of Interior, opposed California Indians Court of Claims bill, said court might find larger amount than Congress willing to pay"
+    },
+    {
+      "name": "Mr. Collier",
+      "type": "person",
+      "context": "Representative of Indian Defense Association who had counter proposal to appropriate $49,500,000 outright"
+    },
+    {
+      "name": "Mr. Tibbitts",
+      "type": "person",
+      "context": "Representative of one of three Indian associations in Southern California at time bill was passed"
+    },
+    {
+      "name": "Indian Defense Association",
+      "type": "organization",
+      "context": "One of three Indian associations in California, represented by Mr. Collier, collected funds from white people and some Indians"
+    },
+    {
+      "name": "Mission Indian Federation of Southern California",
+      "type": "organization",
+      "context": "Indian organization in Southern California with membership of about 8,000"
+    },
+    {
+      "name": "Navajo Council",
+      "type": "organization",
+      "context": "Tribal governing body for Navajo Indians, cited as example of organized tribal representation"
+    },
+    {
+      "name": "All Pueblo Council",
+      "type": "organization",
+      "context": "Governing body for Pueblo Indians, cited as example of organized tribal representation"
+    },
+    {
+      "name": "Blackfeet",
+      "type": "organization",
+      "context": "Indian tribe cited as example of organized group representation"
+    },
+    {
+      "name": "State of California",
+      "type": "organization",
+      "context": "Has real interest in rehabilitation of California Indians, authorized attorney general to bring suit"
+    },
+    {
+      "name": "California Legislature",
+      "type": "organization",
+      "context": "Passed memorials urging Congressional representatives to give Indians day in court, authorized attorney general to bring suit in 1927"
+    },
+    {
+      "name": "Court of Claims",
+      "type": "organization",
+      "context": "Federal court where suit on behalf of California Indians was filed"
+    },
+    {
+      "name": "California Attorney General",
+      "type": "organization",
+      "context": "Office authorized to bring suit for California Indians when Court of Claims bill passed"
+    },
+    {
+      "name": "Indians of California",
+      "type": "organization",
+      "context": "Approximately 22,000-23,000 Indians in California divided into about 150 bands, subject of Court of Claims suit"
+    },
+    {
+      "name": "Organization represented by Mr. Collett",
+      "type": "organization",
+      "context": "Indian organization collecting from Indians, claiming to represent about 17,000 California Indians"
+    },
+    {
+      "name": "Senate Committee on Conditions of Indians in United States",
+      "type": "organization",
+      "context": "Congressional committee conducting survey and hearing testimony about California Indians"
+    },
+    {
+      "name": "California (State)",
+      "type": "location",
+      "context": "State where approximately 22,000-23,000 Indians are located in approximately 150 bands"
+    },
+    {
+      "name": "Los Angeles, California",
+      "type": "location",
+      "context": "Location from which F.O. Collett wrote letter dated January 18, 1935"
+    },
+    {
+      "name": "San Francisco, California",
+      "type": "location",
+      "context": "Location where Indian delegates contracted with attorneys in September 1928"
+    },
+    {
+      "name": "Washington, D.C.",
+      "type": "location",
+      "context": "Location of Senate Office Building, where committee hearings held and delegations traveled to seek legislation"
+    },
+    {
+      "name": "Court of Claims bill (1920)",
+      "type": "legislation",
+      "context": "Original bill prepared by Collett, presented to Judge Raker and Senator Phelan in 1920, providing California Indians authority to sue in Court of Claims"
+    },
+    {
+      "name": "Raker bill",
+      "type": "legislation",
+      "context": "Original Court of Claims bill relying primarily on treaty rights and lost treaties"
+    },
+    {
+      "name": "California Indians Court of Claims Act (1928)",
+      "type": "legislation",
+      "context": "Act passed May 1928 authorizing California Indians to sue in Court of Claims for lost lands and property"
+    },
+    {
+      "name": "California Attorney General Authorization Act (1927)",
+      "type": "legislation",
+      "context": "State legislative authority granted in 1927 for attorney general to bring suit for California Indians"
+    },
+    {
+      "name": "Senator Frazier bill",
+      "type": "legislation",
+      "context": "Bill introduced by Senator Frazier at Collett's request asking that attorneys be permitted to assist attorney general"
+    },
+    {
+      "name": "Lost treaties",
+      "type": "legal_case",
+      "context": "Unsigned treaties with California Indians used as limitation on recovery amount but not as limitation of right"
+    },
+    {
+      "name": "California Indians Court of Claims suit",
+      "type": "legal_case",
+      "context": "Suit filed by California Attorney General on behalf of California Indians for lost lands and personal property"
+    },
+    {
+      "name": "Treaty of Guadalupe Hidalgo",
+      "type": "legislation",
+      "context": "Treaty cited as basis for right of occupancy for all California Indians"
+    },
+    {
+      "name": "Right of occupancy claim",
+      "type": "legal_case",
+      "context": "Primary legal right under Treaty of Guadalupe Hidalgo used as basis for California Indians recovery for all tribes"
+    },
+    {
+      "name": "California Indians (approximately 22,000-23,000)",
+      "type": "acreage_holding",
+      "context": "Lost lands valued at $1.25 per acre under Court of Claims bill"
+    }
+  ],
+  "events": [
+    {
+      "type": "legislation_introduced",
+      "date": "1920-03-23",
+      "location": "Washington D.C.",
+      "description": "Court of Claims bill presented to Judge Raker and Senator Phelan by Collett; Mr. Merritt testified favorably; bill passed Senate on Unanimous Consent Calendar but failed House due to congestion"
+    },
+    {
+      "type": "legislation_vetoed",
+      "date": "1926",
+      "location": "Washington D.C.",
+      "description": "Third Congress passed Court of Claims bill but it received a Presidential pocket veto; question raised about expense to Government"
+    },
+    {
+      "type": "state_authorization_granted",
+      "date": "1927",
+      "location": "California",
+      "description": "California Legislature authorized attorney general to bring suit for California Indians"
+    },
+    {
+      "type": "legislation_enacted",
+      "date": "1928-05",
+      "location": "Washington D.C.",
+      "description": "Court of Claims Act passed in May 1928, one year after State authority was given"
+    },
+    {
+      "type": "contract_signed",
+      "date": "1928-09",
+      "location": "San Francisco, California",
+      "description": "Indian delegates from all parts of California, 22 in number, entered into contract with attorneys Henderson, Hanley, and Pemberton to represent them"
+    },
+    {
+      "type": "attorney_conference",
+      "date": "1928-09",
+      "location": "California",
+      "description": "Indian delegates and their attorneys met with attorney general and advised him they had employed attorneys to cooperate in preparing claims"
+    },
+    {
+      "type": "suit_filed",
+      "date": "1928",
+      "location": "Court of Claims",
+      "description": "Attorney general filed suit approximately 15 months after act was passed; found to be in error in many respects, excluding several tribes and thousands of Indians"
+    },
+    {
+      "type": "court_calendar_placement",
+      "date": "1931-12",
+      "location": "Court of Claims",
+      "description": "Court placed California Indians case on calendar in December 1931 due to slow action"
+    },
+    {
+      "type": "court_hearing",
+      "date": "1931-12-07",
+      "location": "Court of Claims",
+      "description": "Case came up at order of the court on December 7, 1931; Mr. Henderson appeared as friend of the court"
+    },
+    {
+      "type": "court_hearing",
+      "date": "1932-03-07",
+      "location": "Court of Claims",
+      "description": "Court of Claims set case for March 7, 1932; attorney general requested and received one week extension"
+    },
+    {
+      "type": "court_hearing",
+      "date": "1932-03-14",
+      "location": "Court of Claims",
+      "description": "Case argued in Court of Claims on March 14, 1932; attorney general advised court that law did not deprive Indians from having attorneys of own choice; court held additional counsel required Congressional action"
+    },
+    {
+      "type": "petition_amendments_filed",
+      "date": "1932",
+      "location": "Court of Claims",
+      "description": "Attorney general made amendments at conclusion of argument, substantially same as amendments prepared by friends of court, but filed 10 months after 3-year jurisdictional period"
+    },
+    {
+      "type": "congressional_lobbying",
+      "date": "1933",
+      "location": "Washington D.C.",
+      "description": "Collett and associates went to Washington last winter to ask Congress for additional authority for Indians to be represented by attorneys of their own choice"
+    },
+    {
+      "type": "senate_committee_hearing",
+      "date": "1935-01-18",
+      "location": "California",
+      "description": "Subcommittee hearing on Survey of Conditions of Indians in United States, pages 17340-17351, with testimony from Elkus, Collett, and appearance of Attorney General Webb"
+    },
+    {
+      "type": "letter_sent",
+      "date": "1935-01-18",
+      "location": "Los Angeles, California",
+      "description": "F.O. Collett wrote to A.A. Grorud at Senate Office Building stating organization books had not been audited and there was insufficient funds, promising to provide report when audit possible"
+    },
+    {
+      "type": "counter_proposal_introduced",
+      "date": "1927",
+      "location": "Washington D.C.",
+      "description": "Indian Defense Association through Mr. Collier introduced counter proposal to appropriate $49,500,000 outright for California Indians"
+    },
+    {
+      "type": "budget_authorization",
+      "date": "1927",
+      "location": "California",
+      "description": "California Legislature passed act to provide proper budget for attorney general to proceed with case"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "fee",
+      "amount": "$17,000-$30,000 per year",
+      "payer": "California Indians",
+      "payee": "Organization represented by Mr. Collett (attorneys)",
+      "date": "1922-1935",
+      "description": "Annual budgets for legal expenses collected from California Indians commencing as far back as 1923 and 1924, budgets written up as high as $17,000 and $30,000 per year"
+    },
+    {
+      "type": "other",
+      "amount": "$49,500,000",
+      "payer": "United States Government",
+      "payee": "California Indians",
+      "date": "1927",
+      "description": "Counter proposal by Indian Defense Association/Mr. Collier to have Congress appropriate this sum outright for California Indians"
+    },
+    {
+      "type": "other",
+      "amount": "$1.25 per acre",
+      "payer": "United States Government",
+      "payee": "California Indians",
+      "date": "1928",
+      "description": "Value fixed for lost lands of California Indians under Court of Claims bill"
+    },
+    {
+      "type": "other",
+      "amount": "up to $10,000,000 (referenced)",
+      "payer": "United States Government",
+      "payee": "California Indians",
+      "date": "unknown",
+      "description": "Potential recovery amount referenced by Senator Thomas in questioning about per capita distribution"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Mr. Collett",
+      "type": "represented",
+      "object": "California Indians (approximately 17,000)",
+      "context": "Claims to represent about 17,000 California Indians through his organization with membership roll"
+    },
+    {
+      "subject": "Mr. Elkus",
+      "type": "represented",
+      "object": "Indian Defense Association",
+      "context": "Testified on behalf of Indian Defense Association before Senate committee"
+    },
+    {
+      "subject": "Attorney General Webb",
+      "type": "represented",
+      "object": "California Indians",
+      "context": "State of California Attorney General authorized to bring suit for California Indians in Court of Claims"
+    },
+    {
+      "subject": "Mr. Henderson",
+      "type": "represented",
+      "object": "California Indians",
+      "context": "Attorney for Indians appearing as friend of court in Court of Claims proceedings"
+    },
+    {
+      "subject": "Mr. Hanley",
+      "type": "represented",
+      "object": "California Indians",
+      "context": "Attorney contracted by Indian delegates September 1928"
+    },
+    {
+      "subject": "Mr. Pemberton",
+      "type": "represented",
+      "object": "California Indians",
+      "context": "Attorney contracted by Indian delegates September 1928"
+    },
+    {
+      "subject": "Senator Frazier",
+      "type": "represented",
+      "object": "Mr. Collett's interests",
+      "context": "Introduced bill at Collett's request to allow attorneys to assist attorney general"
+    },
+    {
+      "subject": "Mr. Collett",
+      "type": "related_to",
+      "object": "Court of Claims bill",
+      "context": "Initiated and prepared the original Court of Claims bill presented to Judge Raker in 1920"
+    },
+    {
+      "subject": "Judge Raker",
+      "type": "related_to",
+      "object": "Raker bill",
+      "context": "Congressman who had bill presented to him and introduced it in Congress"
+    },
+    {
+      "subject": "Senator Ashurst",
+      "type": "related_to",
+      "object": "Court of Claims bill",
+      "context": "Introduced bill at direction of Senator Phelan, was chairman of the committee"
+    },
+    {
+      "subject": "Indian Defense Association",
+      "type": "related_to",
+      "object": "Mr. Collier",
+      "context": "Collier represented Indian Defense Association and proposed counter legislation"
+    },
+    {
+      "subject": "California Legislature",
+      "type": "related_to",
+      "object": "Attorney General Webb",
+      "context": "Authorized attorney general to bring suit in 1927 with Collett's solicitation"
+    },
+    {
+      "subject": "Mr. Collett",
+      "type": "related_to",
+      "object": "Congressman Lee",
+      "context": "Congressman Lee gave Collett the bill passed by State legislature; Lee recommended attorney general as major attorney"
+    },
+    {
+      "subject": "Secretary Albert B. Fall",
+      "type": "related_to",
+      "object": "Court of Claims bill",
+      "context": "Opposed bill as unfriendly Secretary of Interior, said court might find larger amount than economic Congress willing to pay"
+    },
+    {
+      "subject": "Organization represented by Collett",
+      "type": "related_to",
+      "object": "Mission Indian Federation of Southern California",
+      "context": "Mission Indian Federation has membership of about 8,000, part of the approximately 17,000 Collett claims to represent"
+    },
+    {
+      "subject": "Mr. Merritt",
+      "type": "related_to",
+      "object": "Judge Raker",
+      "context": "Cooperated with Reverend Collett and Judge Raker in preparation of legislation, submitted favorable report"
+    },
+    {
+      "subject": "Indian delegates (22)",
+      "type": "related_to",
+      "object": "Henderson, Hanley, and Pemberton",
+      "context": "Contracted with attorneys in September 1928 in San Francisco to represent them"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "F. O. Collett",
+      "sender_title": "Representative of California Indian Organization",
+      "recipient": "A. A. Grorud",
+      "recipient_title": "Senate Office Building",
+      "date": "1935-01-18",
+      "subject": "Audit of organization books and financial records",
+      "action_requested": "Response to committee request for certified public accountant statement of moneys collected",
+      "outcome": "Collett stated it had not been possible to have organization books audited, there was not enough money to pay office rent for more than a year, he had no salary for several years and only temporary stenographic help; promised report when audit possible"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "unknown (Raker bill, 1920)",
+      "sponsor": "Judge Raker / Senator Phelan / Senator Ashurst",
+      "action_type": "introduced",
+      "date": "1920",
+      "vote_count": "passed Senate on Unanimous Consent Calendar",
+      "committee": "unknown",
+      "outcome": "Failed House due to congestion on calendar"
+    },
+    {
+      "bill_number": "unknown (reintroduced)",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "1921-1922",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Failed under Secretary Albert B. Fall opposition"
+    },
+    {
+      "bill_number": "unknown (third Congress)",
+      "sponsor": "unknown",
+      "action_type": "passed",
+      "date": "1926",
+      "vote_count": "passed both chambers on Unanimous Consent Calendar",
+      "committee": "unknown",
+      "outcome": "Presidential pocket veto; reason given was expense to Government in defending itself"
+    },
+    {
+      "bill_number": "unknown (California Indians Court of Claims Act)",
+      "sponsor": "Congressman Lee",
+      "action_type": "enacted",
+      "date": "1928-05",
+      "vote_count": "passed both chambers",
+      "committee": "unknown",
+      "outcome": "Signed into law; authorized California attorney general to represent California Indians in Court of Claims"
+    },
+    {
+      "bill_number": "unknown (California state authorization)",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1927",
+      "vote_count": "unknown",
+      "committee": "California Legislature",
+      "outcome": "Signed; authorized attorney general to bring suit and use appropriated funds"
+    },
+    {
+      "bill_number": "unknown (Indian Defense Association counter bill)",
+      "sponsor": "Mr. Collier / Indian Defense Association",
+      "action_type": "introduced",
+      "date": "1927",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Passed but vetoed; proposed $49,500,000 outright appropriation"
+    },
+    {
+      "bill_number": "unknown (Senator Frazier bill)",
+      "sponsor": "Senator Frazier",
+      "action_type": "introduced",
+      "date": "1933-1934",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Introduced at Collett's request to allow attorneys to assist attorney general in California Indians case; outcome unknown from text"
+    },
+    {
+      "bill_number": "unknown (California budget authorization)",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1927-1928",
+      "vote_count": "unknown",
+      "committee": "California Legislature",
+      "outcome": "Passed to provide proper budget for attorney general to prepare and prosecute California Indians case"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Mr. Elkus",
+      "witness_title": "Representative of Indian Defense Association, Attorney",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee on Survey of Conditions of Indians in United States",
+      "location": "California (subcommittee hearing)",
+      "date": "1935-01-18",
+      "subject": "California Indians Court of Claims case, attorney representation, per capita distribution, legal expenses collected from Indians",
+      "key_claims": "Legal assistance budget was provided so Indians would have benefit of total recovery without cost. No contingent fee arrangement was made or needed. Lost lands were valued at $1.25 per acre. California Indians have no general tribal organization unlike Navajo or Pueblo Indians, with about 150 bands and approximately 22,000 Indians. Three Indian associations existed at time bill passed: one represented by Collett, one by Tibbitts in the South, and the Indian Defense Association. Per capita distribution would be a mistake; money should benefit all Indians through a commission with U.S. Government, State of California, and Indian representation. Indians have been propaganded to desire certain attorneys. Attorney general would resign if certain attorneys were joined with him. Large sums ($17,000-$30,000 annually) have been collected from California Indians for legal expenses since 1922-1924. The real legal basis for recovery is right of occupancy under Treaty of Guadalupe Hidalgo, not lost unsigned treaties. Original Raker bill was based on treaty rights but recovery should be for all California Indians.",
+      "questioner": "The Chairman, Senator Thomas"
+    },
+    {
+      "witness": "Mr. Collett",
+      "witness_title": "Representative of California Indian Organization (approximately 17,000 members)",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee on Survey of Conditions of Indians in United States",
+      "location": "California (subcommittee hearing)",
+      "date": "1935-01-18",
+      "subject": "History of Court of Claims bill, attorney general's handling of case, need for Indian attorneys, per capita payment, organizational finances",
+      "key_claims": "Attorney general was authorized to bring suit at Collett's solicitation. Attorney general had not progressed with suit as rapidly or thoroughly as anticipated. Fifteen months passed before suit was filed without attorneys being advised or given opportunity to assist. Petition was filed in error, excluding many tribes and several thousand Indians; attorney general misunderstood who his clients were. Attorney general prayed for unnecessarily fixed sum, limiting court recovery. Amendments needed for 2 years and 7 months before being made, and when made were 10 months after 3-year jurisdictional period. Indians have inherent constitutional right to be represented by attorneys of their own choice. Collett not an attorney and has no contract to share in any recovery. Per capita payment is for current Congress to decide, not previous Congress. Original Court of Claims bill prepared by Collett and presented personally to Judge Raker and Senator Phelan in 1920. In September 1928 Indian delegates contracted with Henderson, Hanley, and Pemberton as their attorneys. Organization claims to represent about 17,000 of 23,000 California Indians. Organization books not yet audited due to lack of funds; no salary paid to Collett for several years. Counter proposal by Indian Defense Association for $49,500,000 outright appropriation was unsatisfactory. Bill failed in 1920 due to House congestion, failed under Secretary Fall, received pocket veto approximately 1926.",
+      "questioner": "The Chairman, Senator Thomas"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

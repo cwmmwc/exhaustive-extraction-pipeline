@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_013",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "30",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ruth Josephine Smith Point At Him",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No I did not say anything it was a shock to me as I did not ask for it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, I sold it.",
+    "Buyer": "William Tackett, through Bordeaux (Wm. Bordeaux); sale price was $3200, of which $2400 was received in cash; remaining $800 was never paid",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Female",
+    "Age": "44",
+    "Occupation/Income": "My husband supports us.",
+    "NOTES": "Patent delivered at the Rosebud Office. Allottee did not apply for patent. Sale conducted through Wm. Bordeaux; $800 balance was to be held at Farmers State Bank at Kilgore but banker stated he knew nothing of it; Bordeaux repeatedly deferred payment and allottee never received the $800. Allottee states she is not satisfied with the sale. Has had two operations and is not very well. Has one child. Notary: Jas. W. Gross, commission expires 4-28-32. Document sworn April 8, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2406,
+    "output_tokens": 420
+  },
+  "elapsed": 7.6
+}

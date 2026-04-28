@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_108",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "127",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Julia Garnier Makes Shine",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "3568",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her allotment, of 640 acres, for the reason that she knew that she could not pay the taxes, but that she was told that if she did not take the patent, and pay the taxes, she would lose the land, and that she was advised to take it by the Farmer of her district as well as by the people in the Agency Office, and she took their advice",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged one quarter of her 640 acres to a Mr. Barker, of Gordon, Nebraska, and that she lost this quarter under this mortgage; that she sold one quarter of her allotment, near Holy Rosary Mission, for $2000.00, paying the taxes on this quarter, amounting to $200.00; that she sold a half section, at Corn Creek, for $1200.00, paying the delinquent taxes on this half section, amounting to $400.00",
+    "Buyer": "Mr. Barker, of Gordon, Nebraska (mortgage on one quarter, lost under mortgage); buyer of quarter near Holy Rosary Mission not stated ($2000.00); buyer of half section at Corn Creek not stated ($1200.00)",
+    "Tax burden forced sale/Mortgage": "paying the taxes on this quarter, amounting to $200.00; paying the delinquent taxes on this half section, amounting to $400.00; lost one quarter under mortgage to Mr. Barker",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "65 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Mentally incompetent to the extent that she had Store-keeper Dawson, of Pine Ridge, South Dakota, handle her business deals in the above mentioned land sales; in poor health, being bothered with severe stomach trouble; husband is 58 years old and suffering with heart trouble; they have a very hard time getting along; has no children; has never gotten any aid from the County or Government; affidavit subscribed and sworn before Notary Public on November 10, 1928, Shannon County, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2403,
+    "output_tokens": 632
+  },
+  "elapsed": 8.6
+}

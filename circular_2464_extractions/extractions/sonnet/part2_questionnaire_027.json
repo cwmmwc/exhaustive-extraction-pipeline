@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_027",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "78",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Armine Turgeon",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Bonesteel, South Dakota",
+    "Allotment number": "966",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Sold in favor of Otto Nightingale, Fairfax, S. D. for $1000 (mortgaged with other land for $18000)",
+    "Tax burden forced sale/Mortgage": "I mortgaged it with some other land and was going to lose it so I sold it with some other land for $1000",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "59",
+    "Occupation/Income": "I live in the town of Bonesteel and take in boarders do fancy work and other small chores then the children help me some",
+    "NOTES": "Patent was sent by mail; allottee did not ask for the patent; signed the mortgage of her own accord thinking the land would be redeemed; signed deed in summer of 1928; at present is not satisfied with the deal; health is fair; has three children all married; sworn before Jas. W. Cross, Notary Public, commission expires 4-28-32, on 1st day of May 1929; document number 001940",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2329,
+    "output_tokens": 413
+  },
+  "elapsed": 6.6
+}

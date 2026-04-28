@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_004",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "10-11",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Z. Emery",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "423 East 5th Street, Leadville, Colorado",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "received, without protest",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "The Jackson Brothers purchased the land; allottee was supposed to get $3,000.00 but did not get all; $130.00 taxes paid and $190.00 was held out by a lawyer",
+    "Tax burden forced sale/Mortgage": "I paid $130.00 taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "32 years",
+    "Occupation/Income": "working in the mines at Leadville, Colorado",
+    "NOTES": "Did sign a receipt for the patent; patent was handed to him at Winner, South Dakota; did make application for patent; states he did not receive the value of the land, was sick at the time and had to take what was offered, does not think he received a square deal, that they took advantage of the condition he was in; Never been mortgaged by him; wife and 1 boy dependent on him; in poor health \u2014 stomach trouble; document notarized July 13, 1929, State of Colorado, County of Lake; received stamp dated SEP 30 1929",
+    "Literate/Illiterate": "Illiterate \u2014 signed with an X mark",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2640,
+    "output_tokens": 430
+  },
+  "elapsed": 6.3
+}

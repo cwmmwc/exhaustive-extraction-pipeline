@@ -1,0 +1,699 @@
+{
+  "entities": [
+    {
+      "name": "J. W. Henderson",
+      "type": "person",
+      "context": "Attorney chosen by Indians of California to represent them in Court of Claims case"
+    },
+    {
+      "name": "J. E. Pemberton",
+      "type": "person",
+      "context": "Attorney chosen by Indians of California to represent them in Court of Claims case"
+    },
+    {
+      "name": "James M. Hanley",
+      "type": "person",
+      "context": "Attorney chosen by Indians of California to represent them in Court of Claims case"
+    },
+    {
+      "name": "U. S. Webb",
+      "type": "person",
+      "context": "Attorney General of California, authorized to file suit on behalf of Indians of California"
+    },
+    {
+      "name": "F. G. Collett",
+      "type": "person",
+      "context": "Executive Representative of Indians of California, Inc.; associated with Indian Board of Cooperation"
+    },
+    {
+      "name": "Peter Williams",
+      "type": "person",
+      "context": "Signatory of statement on behalf of Indians of California"
+    },
+    {
+      "name": "S. Walker",
+      "type": "person",
+      "context": "Signatory of statement on behalf of Indians of California"
+    },
+    {
+      "name": "John Dockweiler",
+      "type": "person",
+      "context": "Member of Congress, recipient of letter from V.S. Webb dated May 1"
+    },
+    {
+      "name": "Burton K. Wheeler",
+      "type": "person",
+      "context": "Chairman, Senate Committee on Indian Affairs"
+    },
+    {
+      "name": "John Collier",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs, signatory of letter to Senator Wheeler dated May 22"
+    },
+    {
+      "name": "Curtis D. Wilbur",
+      "type": "person",
+      "context": "Formerly Secretary of the Navy, Chief Justice of Federal Appellate Court in San Francisco; endorsed attorneys for Indians"
+    },
+    {
+      "name": "William H. Waste",
+      "type": "person",
+      "context": "Chief Justice of the Supreme Court of California; endorsed attorneys for Indians"
+    },
+    {
+      "name": "Thomas L. Slhan",
+      "type": "person",
+      "context": "Person who previously called matter to Congressman Dockweiler's attention; located at 708 Edmond Building, Washington D.C."
+    },
+    {
+      "name": "Marion Butler",
+      "type": "person",
+      "context": "Attorney for some Indians of California; signatory of letter to Senator Wheeler dated June 9, 1934"
+    },
+    {
+      "name": "Englebright",
+      "type": "person",
+      "context": "Congressman mentioned in correspondence regarding amendments to Jurisdictional Act"
+    },
+    {
+      "name": "Ickes",
+      "type": "person",
+      "context": "Secretary of the Interior, referenced in letter from Marion Butler"
+    },
+    {
+      "name": "Indians of California",
+      "type": "organization",
+      "context": "Plaintiffs in Court of Claims case against the United States; represented through Indian auxiliaries"
+    },
+    {
+      "name": "Indians of California, Inc.",
+      "type": "organization",
+      "context": "Organization representing Indians of California, with F.G. Collett as Executive Representative"
+    },
+    {
+      "name": "Indian Board of Cooperation",
+      "type": "organization",
+      "context": "Organization associated with F.G. Collett and Indian delegates; entered into contract with attorneys"
+    },
+    {
+      "name": "Court of Claims",
+      "type": "organization",
+      "context": "Federal court where case of Indians of California v. United States was filed, case no. K-344"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Federal department involved in oversight of Indian affairs and case"
+    },
+    {
+      "name": "Office of the Commissioner of Indian Affairs",
+      "type": "organization",
+      "context": "Federal office involved in oversight of California Indians case and amendments"
+    },
+    {
+      "name": "General Accounting Office",
+      "type": "organization",
+      "context": "Accounting department responsible for preparing report on claims; caused delays"
+    },
+    {
+      "name": "Attorney General of California",
+      "type": "organization",
+      "context": "Office held by U.S. Webb, authorized to bring suit on behalf of Indians of California"
+    },
+    {
+      "name": "Legislature of California",
+      "type": "organization",
+      "context": "Passed act authorizing attorney general to bring suit for Indians if congressional authority given"
+    },
+    {
+      "name": "Department of Justice",
+      "type": "organization",
+      "context": "Referenced as having been used to prevent plaintiffs from having attorneys of their own choice"
+    },
+    {
+      "name": "Senate Committee on Indian Affairs",
+      "type": "organization",
+      "context": "Committee chaired by Senator Burton K. Wheeler; considered amendments to Jurisdictional Act"
+    },
+    {
+      "name": "House Committee on Indian Affairs",
+      "type": "organization",
+      "context": "Committee that received unfavorable report on H.R. 7095 dated April 16, 1934"
+    },
+    {
+      "name": "Indians of California v. The United States",
+      "type": "legal_case",
+      "context": "Case pending in Court of Claims, no. K-344, brought under Public Law No. 423, 70th Congress"
+    },
+    {
+      "name": "Public Law No. 423, 70th Congress (Enabling Act/Jurisdictional Act)",
+      "type": "legislation",
+      "context": "Act approved May 18, 1928, authorizing suit by Indians of California against United States"
+    },
+    {
+      "name": "H.R. 7095",
+      "type": "legislation",
+      "context": "House bill to permit Indians of California to be represented by attorneys of their own selection"
+    },
+    {
+      "name": "S. 3572",
+      "type": "legislation",
+      "context": "Senate bill to permit Indians of California to be represented by attorneys of their own selection"
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "context": "State whose attorney general was authorized to file suit on behalf of Indians"
+    },
+    {
+      "name": "San Francisco",
+      "type": "location",
+      "context": "Location referenced in correspondence and hearings; seat of Federal Appellate Court"
+    },
+    {
+      "name": "Washington, D.C.",
+      "type": "location",
+      "context": "Location of Congress, Senate Committee hearings, and Commissioner of Indian Affairs office"
+    },
+    {
+      "name": "Yuma",
+      "type": "location",
+      "context": "Proposed hearing location for Senate Committee on Indian Affairs in California"
+    },
+    {
+      "name": "San Diego",
+      "type": "location",
+      "context": "Proposed hearing location for Senate Committee on Indian Affairs in California"
+    },
+    {
+      "name": "Los Angeles",
+      "type": "location",
+      "context": "Proposed hearing location for Senate Committee on Indian Affairs in California"
+    },
+    {
+      "name": "708 Edmond Building, Washington D.C.",
+      "type": "location",
+      "context": "Address of Thomas L. Slhan"
+    },
+    {
+      "name": "Mission Indians",
+      "type": "organization",
+      "context": "Indian group for whom Mr. Butler had a disapproved contract"
+    }
+  ],
+  "events": [
+    {
+      "type": "legislation_passed",
+      "date": "1927-05-18",
+      "location": "California",
+      "description": "Legislature of California passed act authorizing attorney general to bring suit for Indians if congressional authority given"
+    },
+    {
+      "type": "legislation_enacted",
+      "date": "1928-05-18",
+      "location": "United States",
+      "description": "Congress approved Enabling Act (Public Law No. 423, 70th Cong., 1st sess., 45 Stat.L. 602) authorizing suit by Indians of California against United States in Court of Claims"
+    },
+    {
+      "type": "notification_and_conference",
+      "date": "1928-09-25",
+      "location": "California",
+      "description": "Attorney General Webb notified of employment of attorneys by Indians of California; told Indian delegates he had known these attorneys for many years and they had chosen wisely"
+    },
+    {
+      "type": "attorneys_recognized_as_friends_of_court",
+      "date": "1930-02-08",
+      "location": "Court of Claims",
+      "description": "J.W. Henderson, J.E. Pemberton, and James M. Hanley recognized by Court of Claims as Friends of the Court"
+    },
+    {
+      "type": "petition_filed",
+      "date": "1929-08-14",
+      "location": "Court of Claims",
+      "description": "Original petition filed by Attorney General U.S. Webb commencing suit for Indians of California, 15 months after congressional authority"
+    },
+    {
+      "type": "letter_from_government",
+      "date": "1930-02-04",
+      "location": "Washington D.C.",
+      "description": "Government letter to Attorney General of California stating report when received would be filed in case after plaintiffs signified they closed evidence"
+    },
+    {
+      "type": "case_set_for_showing_or_dismissal",
+      "date": "1931-12-07",
+      "location": "Court of Claims",
+      "description": "Case of Indians of California v. United States peremptorily set for showing or dismissal"
+    },
+    {
+      "type": "amended_petition_filed",
+      "date": "1932-03-14",
+      "location": "Court of Claims",
+      "description": "Amended petition filed by Attorney General Webb incorporating amendments substantially prepared by special attorneys for Indians; filed 10 months after 3-year period expired"
+    },
+    {
+      "type": "court_hearing",
+      "date": "1932-03-14",
+      "location": "Court of Claims",
+      "description": "Hearing at which Attorney General Webb argued against recognition of Indians' special attorneys as attorneys of record; authorities cited by attorneys"
+    },
+    {
+      "type": "court_hearing_argument",
+      "date": "1932-03-14",
+      "location": "Court of Claims",
+      "description": "Attorney General Webb stated he would have nothing to do with anyone connected with F.G. Collett"
+    },
+    {
+      "type": "correspondence",
+      "date": "1934-04-16",
+      "location": "Washington D.C.",
+      "description": "Commissioner of Indian Affairs made unfavorable report to House Committee on Indian Affairs on H.R. 7095"
+    },
+    {
+      "type": "senate_committee_hearing",
+      "date": "1934-06-01",
+      "location": "Washington D.C.",
+      "description": "Senate Committee on Indian Affairs considered S. 3572; Commissioner of Indian Affairs appeared and stated unfavorable report had been made on H.R. 7095"
+    },
+    {
+      "type": "correspondence",
+      "date": "1934-06-01",
+      "location": "Washington D.C.",
+      "description": "Commissioner of Indian Affairs made report to Senate Committee on Indian Affairs on S. 3572, stating possible net award would amount to $13,063,832"
+    },
+    {
+      "type": "letter_to_senator",
+      "date": "1934-06-09",
+      "location": "Washington D.C.",
+      "description": "Marion Butler submitted letter to Senator Wheeler arguing for Indians' right to private attorneys and analyzing Commissioner's reports"
+    },
+    {
+      "type": "letter_to_senator",
+      "date": "1934-06-18",
+      "location": "San Francisco, California",
+      "description": "Indians of California, Inc. through F.G. Collett requested Senate Committee hold hearings in California"
+    },
+    {
+      "type": "committee_consideration",
+      "date": "1934-05-17",
+      "location": "Washington D.C.",
+      "description": "Committee on Indian Affairs considered matter related to Indians of California"
+    },
+    {
+      "type": "collett_solicitation_activities",
+      "date": "1920-01-01",
+      "location": "California",
+      "description": "Since 1920, Collett and associates uninterruptedly solicited needy California Indians, collecting sums described by Commissioner Collier as far greater than $5,000 stated by Collett"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "fee",
+      "amount": "$20,000 retainer",
+      "payer": "Indians of California",
+      "payee": "Henderson, Pemberton, and Hanley",
+      "date": "unknown",
+      "description": "Retainer paid to attorneys; described as less than $1 each for the Indians of California"
+    },
+    {
+      "type": "fee",
+      "amount": "not to exceed 3 percent of final judgment",
+      "payer": "Secretary of the Treasury (from judgment)",
+      "payee": "Attorneys for Indians of California",
+      "date": "upon conclusion of litigation",
+      "description": "Proposed attorney fee and expenses to be fixed by Court of Claims and paid by Secretary of Treasury from judgment"
+    },
+    {
+      "type": "fee",
+      "amount": "25% of first $1,200,000; 15% of additional $1,000,000; 10% of all amounts over $2,200,000",
+      "payer": "State of California",
+      "payee": "Certain attorneys of California",
+      "date": "unknown",
+      "description": "Contract approved by Webb in case of California against United States for certain ancient claims"
+    },
+    {
+      "type": "other",
+      "amount": "many times greater than $5,000",
+      "payer": "California Indians",
+      "payee": "Collett and associates",
+      "date": "1920 onward",
+      "description": "Solicitations collected from needy California Indians by Collett and associates since 1920, described by Commissioner Collier as an organized racket"
+    },
+    {
+      "type": "other",
+      "amount": "thousands of dollars",
+      "payer": "California Indians",
+      "payee": "Collett's attorneys",
+      "date": "unknown",
+      "description": "Indians contributed thousands of dollars for work described by Commissioner Collier as superrogatory"
+    },
+    {
+      "type": "other",
+      "amount": "$6,000,000 (alleged compromise)",
+      "payer": "United States",
+      "payee": "Indians of California",
+      "date": "unknown",
+      "description": "Alleged settlement amount that case was about to be settled for, per Marion Butler's clients; confirmed by Commissioner's reference to $180,000 being 3% of award"
+    },
+    {
+      "type": "other",
+      "amount": "$13,063,832 (possible net award)",
+      "payer": "United States",
+      "payee": "Indians of California",
+      "date": "unknown",
+      "description": "Possible net award stated by Commissioner in report to Senate committee dated June 1, 1934"
+    },
+    {
+      "type": "other",
+      "amount": "$49,000,000 (possible recovery)",
+      "payer": "United States",
+      "payee": "Indians of California",
+      "date": "unknown",
+      "description": "Amount Commissioner allegedly stated when seeking his appointment as possible recovery for Indians"
+    },
+    {
+      "type": "other",
+      "amount": "$180,000",
+      "payer": "Indians of California (from judgment)",
+      "payee": "Attorneys",
+      "date": "unknown",
+      "description": "3 percent of $6,000,000 judgment referenced in Secretary's report to House Committee as charge against Indian recovery"
+    },
+    {
+      "type": "other",
+      "amount": "hundreds of thousands of dollars (estimated loss)",
+      "payer": "Indians of California",
+      "payee": "N/A",
+      "date": "unknown",
+      "description": "Estimated loss to Indians in interest on judgment amount due to undue delay by Attorney General Webb in filing petition"
+    },
+    {
+      "type": "other",
+      "amount": "$1.25 per acre",
+      "payer": "United States",
+      "payee": "Indians of California",
+      "date": "unknown",
+      "description": "Proposed valuation of land for gross judgment, per Commissioner's first letter, limited to land value at $1.25 per acre"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "J.W. Henderson",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney chosen by Indian delegates to represent Indians in Court of Claims"
+    },
+    {
+      "subject": "J.E. Pemberton",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney chosen by Indian delegates to represent Indians in Court of Claims"
+    },
+    {
+      "subject": "James M. Hanley",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney chosen by Indian delegates to represent Indians in Court of Claims"
+    },
+    {
+      "subject": "U.S. Webb",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney General of California authorized by Congress to file suit on behalf of Indians"
+    },
+    {
+      "subject": "F.G. Collett",
+      "type": "employed_by",
+      "object": "Indians of California, Inc.",
+      "context": "Served as Executive Representative"
+    },
+    {
+      "subject": "F.G. Collett",
+      "type": "associated_with",
+      "object": "Indian Board of Cooperation",
+      "context": "Associated with organization that entered into contract with attorneys"
+    },
+    {
+      "subject": "John Collier",
+      "type": "employed_by",
+      "object": "Office of the Commissioner of Indian Affairs",
+      "context": "Served as Commissioner of Indian Affairs"
+    },
+    {
+      "subject": "Curtis D. Wilbur",
+      "type": "endorsed",
+      "object": "Henderson, Pemberton, and Hanley",
+      "context": "Recommended attorneys to Court of Claims; formerly Secretary of the Navy, now Chief Justice of Federal Appellate Court in San Francisco"
+    },
+    {
+      "subject": "William H. Waste",
+      "type": "endorsed",
+      "object": "Henderson, Pemberton, and Hanley",
+      "context": "Chief Justice of Supreme Court of California recommended attorneys to Court of Claims"
+    },
+    {
+      "subject": "Marion Butler",
+      "type": "represented",
+      "object": "Indians of California (some)",
+      "context": "Attorney for Indians; submitted letter to Senator Wheeler dated June 9, 1934"
+    },
+    {
+      "subject": "Marion Butler",
+      "type": "submitted_contract_for",
+      "object": "Mission Indians",
+      "context": "Contract submitted but disapproved"
+    },
+    {
+      "subject": "U.S. Webb",
+      "type": "opposed",
+      "object": "F.G. Collett",
+      "context": "Webb stated he would have nothing to do with anyone connected with Collett"
+    },
+    {
+      "subject": "John Collier",
+      "type": "opposed",
+      "object": "Collett organization",
+      "context": "Commissioner characterized Collett's activities as an organized racket and opposed amendments that would benefit Collett's group"
+    },
+    {
+      "subject": "Indians of California",
+      "type": "filed_against",
+      "object": "United States",
+      "context": "Case no. K-344 pending in Court of Claims"
+    },
+    {
+      "subject": "Henderson, Pemberton, and Hanley",
+      "type": "recognized_as",
+      "object": "Friends of the Court",
+      "context": "Recognized by Court of Claims on February 8, 1930"
+    },
+    {
+      "subject": "Attorney General of California",
+      "type": "chosen_by",
+      "object": "Defendant (United States)",
+      "context": "Per Indians' attorneys, the attorney general was in reality not attorney for plaintiffs but attorney chosen by defendant"
+    },
+    {
+      "subject": "Thomas L. Slhan",
+      "type": "informed",
+      "object": "John Dockweiler",
+      "context": "Previously called matter of amendments to Dockweiler's attention; located at 708 Edmond Building, Washington D.C."
+    },
+    {
+      "subject": "V.S. Webb",
+      "type": "wrote_to",
+      "object": "John Dockweiler",
+      "context": "Letter dated May 1 suggesting amendment to section 4 of Jurisdictional Act"
+    },
+    {
+      "subject": "V.S. Webb",
+      "type": "wrote_to",
+      "object": "Englebright",
+      "context": "Webb wrote to Congressman Englebright regarding amendments"
+    },
+    {
+      "subject": "V.S. Webb",
+      "type": "wrote_to",
+      "object": "John Collier",
+      "context": "Webb wrote to Commissioner Collier regarding amendments"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "Peter Williams and S. Walker",
+      "sender_title": "Representatives of Indians of California",
+      "recipient": "Court of Claims",
+      "recipient_title": "Honorable Court",
+      "date": "1932",
+      "subject": "Petition to recognize Henderson, Pemberton, and Hanley as attorneys of record for Indians of California",
+      "action_requested": "Court to recognize J.W. Henderson, J.E. Pemberton, and James M. Hanley as attorneys of record in case no. K-344",
+      "outcome": "Court held it did not have authority under jurisdictional act to accord litigants these rights"
+    },
+    {
+      "sender": "V.S. Webb",
+      "sender_title": "Attorney (possibly Attorney General or associated counsel)",
+      "recipient": "Hon. John Dockweiler",
+      "recipient_title": "Member of Congress",
+      "date": "1934-05-01",
+      "subject": "Proposed amendment to Section 4 of California Jurisdictional Act regarding time limit for amendments to petition",
+      "action_requested": "Amend Section 4 to allow amendments filed after expiration of three-year period to have same force and effect as if filed within that period; use pending bill as vehicle",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "John Collier",
+      "sender_title": "Commissioner of Indian Affairs",
+      "recipient": "Hon. Burton K. Wheeler",
+      "recipient_title": "Chairman, Senate Committee on Indian Affairs",
+      "date": "1934-05-22",
+      "subject": "Opposition to proposed amendments to California Jurisdictional Act; characterization of Collett's activities as organized racket",
+      "action_requested": "Committee to insist on accounting from Collett's organization; reject proposed amendments",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "Marion Butler",
+      "sender_title": "Attorney for Indians of California",
+      "recipient": "Hon. Burton K. Wheeler",
+      "recipient_title": "Chairman, Senate Committee on Indian Affairs",
+      "date": "1934-06-09",
+      "subject": "Analysis of Commissioner's reports on H.R. 7095 and S. 3572; argument for Indians' right to private attorneys",
+      "action_requested": "Allow Indians to have private attorneys; do not settle case for inadequate amount",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "Indians of California, Inc., F.G. Collett",
+      "sender_title": "Executive Representative",
+      "recipient": "Hon. Burton K. Wheeler",
+      "recipient_title": "Chairman, Senate Committee on Indian Affairs",
+      "date": "1934-06-18",
+      "subject": "Request for Senate Committee hearings in California on amendments to Jurisdictional Act",
+      "action_requested": "Committee to hold hearings at Yuma, San Diego, Los Angeles, and San Francisco in California",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "Government (unspecified)",
+      "sender_title": "Unknown",
+      "recipient": "Attorney General of California",
+      "recipient_title": "Attorney General",
+      "date": "1930-02-04",
+      "subject": "Filing of accounting department report in Indians of California case",
+      "action_requested": "Report to be filed in case after plaintiffs have signified they have closed their evidence",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "Attorney General Webb",
+      "sender_title": "Attorney General of California",
+      "recipient": "Senate Committee on Indian Affairs",
+      "recipient_title": "Committee",
+      "date": "unknown",
+      "subject": "Denial that Collett or his attorneys caused amendment of petition",
+      "action_requested": "Committee to accept his position that amendments were not caused by Collett's attorneys",
+      "outcome": "Unknown"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Public Law No. 423, 70th Cong., 1st sess. (45 Stat.L. 602)",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1928-05-18",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Enacted; authorized suit by Indians of California against United States in Court of Claims; provided attorney general of California could not receive attorney's fee; no per capita payments from judgment proceeds"
+    },
+    {
+      "bill_number": "California Legislature Act",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1927-05-18",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Enacted; authorized attorney general of California to bring suit for Indians if congressional authority given"
+    },
+    {
+      "bill_number": "H.R. 7095",
+      "sponsor": "unknown",
+      "action_type": "reported",
+      "date": "1934-04-16",
+      "vote_count": "unknown",
+      "committee": "House Committee on Indian Affairs",
+      "outcome": "Unfavorable report made by Commissioner of Indian Affairs on April 16, 1934; status pending"
+    },
+    {
+      "bill_number": "S. 3572",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "1934",
+      "vote_count": "unknown",
+      "committee": "Senate Committee on Indian Affairs, chaired by Burton K. Wheeler",
+      "outcome": "Under consideration; Commissioner of Indian Affairs stated unfavorable report would be made; status pending as of June 1934"
+    },
+    {
+      "bill_number": "Bill offered by Dockweiler (unnamed)",
+      "sponsor": "John Dockweiler",
+      "action_type": "introduced",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Still pending in committee as of May 1, 1934; suggested as vehicle for Section 4 amendment"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Peter Williams",
+      "witness_title": "Representative of Indians of California",
+      "hearing": "Statement submitted to Court of Claims",
+      "committee": "Court of Claims",
+      "location": "unknown",
+      "date": "1932",
+      "subject": "Indians' desire to be represented by Henderson, Pemberton, and Hanley; criticism of Attorney General Webb's handling of case",
+      "key_claims": "Indians chose their own attorneys who have served them well; Webb took 15 months to file petition, which was defective; Webb failed to amend petition for over 2 years after errors pointed out; Indians do not want Webb; F.G. Collett is highly respected by Indians; retainer of $20,000 is less than $1 per Indian; Indians have constitutional right to employ own attorneys; Webb's delay cost Indians hundreds of thousands in lost interest",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "S. Walker",
+      "witness_title": "Representative of Indians of California",
+      "hearing": "Statement submitted to Court of Claims",
+      "committee": "Court of Claims",
+      "location": "unknown",
+      "date": "1932",
+      "subject": "Indians' desire to be represented by Henderson, Pemberton, and Hanley; criticism of Attorney General Webb's handling of case",
+      "key_claims": "Co-signatory with Peter Williams of statement; same claims as Williams regarding attorneys and Webb's dereliction",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "John Collier",
+      "witness_title": "Commissioner of Indian Affairs",
+      "hearing": "Senate Committee hearing on S. 3572",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Washington D.C.",
+      "date": "1934-06-01",
+      "subject": "Opposition to amendments to California Jurisdictional Act; characterization of Collett's solicitation activities",
+      "key_claims": "Since 1920 Collett and associates have solicited California Indians collecting sums far greater than $5,000 stated by Collett; described as organized racket with carefully guarded misrepresentations; attorney general proceeded with due diligence; delays chargeable entirely to General Accounting Office; amount of recovery predetermined; additional attorneys cannot expedite or increase judgment; possible net award would amount to $13,063,832; no per capita payments to be made from judgment; proposed amendments would strengthen Collett organization's ability to extract money from Indians; unfavorable report made on H.R. 7095 on April 16, 1934",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Marion Butler",
+      "witness_title": "Attorney for Indians of California",
+      "hearing": "Senate Committee hearing on S. 3572 / written submission",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Washington D.C.",
+      "date": "1934-06-09",
+      "subject": "Analysis of Commissioner's reports; need for private attorneys for Indians of California",
+      "key_claims": "Case about to be settled for $6,000,000; Commissioner doubled probable judgment amount in Senate report after Butler's testimony; Commissioner's first report did not allow any value for rights guaranteed in treaties, only $1.25 per acre for land; Indians need private attorneys to question book charges; possible recovery should be $49,000,000 per Commissioner's earlier statement when seeking appointment; conspiracy to settle case for $6,000,000 temporarily broken; attorney general has not questioned book charges against Indians; Indians not allowed to question correctness of acreage or charges; Mr. Butler does not hold approved contract with Mission Indians",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "U.S. Webb",
+      "witness_title": "Attorney General of California",
+      "hearing": "Court of Claims hearing, March 14, 1932",
+      "committee": "Court of Claims",
+      "location": "Court of Claims",
+      "date": "1932-03-14",
+      "subject": "Opposition to recognition of Henderson, Pemberton, and Hanley as attorneys of record; conduct of Indians of California case",
+      "key_claims": "Stated he conferred with departmental heads soon after passage of jurisdictional act concerning preparation of Indians' case; stated contract was entered into by Indian Board of Cooperation and handed to him by attorneys; stated Collett or attorneys did not cause amendment of petition; stated he would have nothing to do with anyone connected with F.G. Collett; read letter about dues collection to court; claimed amendments were evidence of his diligence and good faith; opposed recognition of Indians' special attorneys as attorneys of record",
+      "questioner": "unknown"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

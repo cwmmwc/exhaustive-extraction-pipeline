@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_agency_narrative_017",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "33",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Colomb, Jr.",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2301",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded October 14, 1918, by John Colombe, Jr.",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Security Bank of Winner for $1000 on November 14, 1918; mortgaged to J. L. Brown for $1172.20 on April 19, 1919; conveyed to Richard D. Gammon for $8000 by deed dated May 1, 1919",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612767 issued; North half of Southeast quarter, North half of Southwest quarter, Section 16, township 98, north of range 77; receipt for patent signed by allottee February 13, 1918; Colomb and his wife were parties to both mortgages and the conveyance",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2092,
+    "output_tokens": 390
+  },
+  "elapsed": 7.1
+}

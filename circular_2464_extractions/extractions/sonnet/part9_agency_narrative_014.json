@@ -1,0 +1,33 @@
+{
+  "document_id": "part9_agency_narrative_014",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "25",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Bordeaux, Jr.",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S.D.",
+    "Allotment number": "3303",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded August 2, 1918, by the Kilgore State Bank",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Bordeaux and wife mortgaged the land January 10, 1919, to Martha G. Snyder for $1000. Foreclosure sale was made August 15, 1927. On August 30, 1925, Bordeaux and wife executed a quit claim deed to E. R. Rusho for $1.00 and other valuable consideration.",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "June 5, 1918",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 633400 issued; East half of Southeast quarter section 8, township 37, range 25. The receipt for patent was signed by the allottee June 28, 1918. Foreclosure sale made August 15, 1927.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2071,
+    "output_tokens": 394
+  },
+  "elapsed": 6.5,
+  "retry_count": 1
+}

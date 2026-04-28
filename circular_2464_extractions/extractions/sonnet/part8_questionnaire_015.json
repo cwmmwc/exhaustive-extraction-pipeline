@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_questionnaire_015",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "48",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Emily Swallow",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "There was no one to whom I could protest at the time but I did not want it and told my father so.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged it to Mr. Dougherty for $1275 and then sold it to The Floete Lumber Company for $480. I then turned the proceeds over to my father for a quarter section of land. No, I sold it for $900.00.",
+    "Buyer": "Mortgaged to Mr. Dougherty for $1275; sold to The Floete Lumber Company for $480",
+    "Tax burden forced sale/Mortgage": "I wanted to keep my land but the taxes were too much for me.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Female",
+    "Age": "30",
+    "Occupation/Income": "not stated",
+    "NOTES": "Patent was sent by mail in 1920; allottee did not sign a receipt (not that she remembers); proceeds from sale turned over to father for a quarter section of land; no dependents; in good health; document references numbers 2992 and what appear to be additional file reference numbers; subscribed and sworn before A. S. W. Cross, Notary Public, commission expires 4-28-32, on June 6, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2253,
+    "output_tokens": 434
+  },
+  "elapsed": 5.8
+}

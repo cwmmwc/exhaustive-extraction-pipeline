@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_009",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "18",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rose Cordier (Setter)",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1200",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The instrument was recorded Sept. 30, 1920 by Rose Cordier Wolf Setter",
+    "Sold/Mortgaged": "Sold and Mortgaged",
+    "Buyer": "Frank O. Setter conveyed the land to Sol L. Degen for $4400.00; Degen and his wife gave Rose Cordier Wolf Setter a mortgage on the land for $2800.00, due in five yearly installments",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "February 4, 1920",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 732782 issued; northwest quarter of section 10, township 99, range 76; receipt for patent signed April 2, 1920 by Rose Cordier Wolf Setter; conveyance dated April 16, 1928; allottee formerly known as Rose Cordier",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2070,
+    "output_tokens": 375
+  },
+  "elapsed": 5.6
+}

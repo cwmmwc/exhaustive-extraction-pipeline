@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_016",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "37",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ellen Miller (Duran) [questionnaire answered by Catarino Duran]",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "3182",
+    "Cancelled": "not stated",
+    "Refused/Protested": "none",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Ellen Miller Duran is deceased. Questionnaire answered by Catarino Duran, presumably her husband. Subscribed and sworn before a notary, South Dakota, on the 2nd day of June [year partially legible, possibly 1935]. Notary commission expires 1932 [partially legible]. Document references allottee as 'Ellen Miller (Duran) Dec't' indicating she was deceased at time of questionnaire. Year of death partially legible as possibly 1927.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2238,
+    "output_tokens": 344
+  },
+  "elapsed": 6.6
+}

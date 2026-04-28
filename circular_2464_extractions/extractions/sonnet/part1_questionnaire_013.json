@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_013",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "33",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Margaret DeCory",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "Rosebud, So. Dak.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I never made any protest, took patent home and kept it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "56 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Did not sign a receipt for the patent. Patent received through the mail at Rosebud, So. Dak. Land never mortgaged. No application made for patent. Sold land for all cash in one payment for $12000.00.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2229,
+    "output_tokens": 297
+  },
+  "elapsed": 3.8
+}

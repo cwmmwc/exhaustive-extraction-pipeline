@@ -1,0 +1,33 @@
+{
+  "document_id": "part9_affidavit_001",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "15",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charles Miller",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "3183",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I told Mr. Brtton the farmer at that time that I did not want it. Some one then sent it to the Bank at Herrick where my father got it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I was to get $8500 but when I closed the deal $130 was held out for taxes. I got the rest in cash.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "38",
+    "Occupation/Income": "By labor",
+    "NOTES": "Patent was brought home to him in 1918 by his father; did not sign a receipt for the patent; did not ask for the patent; has two children; was satisfied with the sale; notary public Jas. W. Cross, commission expires 4-28-32; affidavit sworn April 30, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2200,
+    "output_tokens": 354
+  },
+  "elapsed": 5.6,
+  "retry_count": 1
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_063",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "89",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Julia Goings",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee to her 320 acre allotment at the time she received it, September 29, 1919, but that the Indian Agency told her, if she did not take the patent, and pay the taxes, it would be taxed just the same, for which it would later be sold, so she accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1926, she sold her place to a Mr. Collier, of Kadoka, South Dakota, for $1300.00 cash",
+    "Buyer": "Mr. Collier, of Kadoka, South Dakota, for $1300.00 cash",
+    "Tax burden forced sale/Mortgage": "got behind in the taxes, and Mr. Collier paid the back taxes, which amounted to $688.00",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "51 years old",
+    "Occupation/Income": "her husband does some gardening, besides working at common labor whenever he can get it to do; and that this constitutes their only income",
+    "NOTES": "mentally incompetent; health is not good, being bothered with rheumatism and kidney trouble; she and her husband have two minor children and six grand children to support, all of whom have good health; husband has good health; she considers she received a poor price for her land, it being good soil, with running water and timber on it; did not sell her land for any debts incurred prior to receiving her patent in fee; has never received any aid from the County, State nor the United States Government; document number No. 5460; sworn March 7, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2374,
+    "output_tokens": 527
+  },
+  "elapsed": 7.0
+}

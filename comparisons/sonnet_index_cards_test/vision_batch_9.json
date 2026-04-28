@@ -1,0 +1,48 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Oklahoma",
+      "date": "1935-09-21",
+      "correspondent": "Ellis, C. L., Pawhuska, Okla.",
+      "correspondent_role": "incoming",
+      "case_name": "U.S. v. Hughes, et al.",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Refers to letter in which correspondent enclosed copy of application and order which Mr. McCoy submitted, and which will be submitted to Court within next few days.",
+      "action_type": "enclosure",
+      "enclosures": "copy of application and order",
+      "routing_division": "Lands",
+      "routing_date": "1935-09-28",
+      "clerk_initials": "cam",
+      "processed_date": "1935-09-28"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. v. Hughes, et al.",
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Oklahoma",
+      "case_type": "other",
+      "allottee_name": "",
+      "tribe_or_reservation": "",
+      "county": ""
+    }
+  ],
+  "persons": [
+    {
+      "name": "Ellis, C. L.",
+      "role": "correspondent",
+      "tribe": "",
+      "allottee_number": ""
+    },
+    {
+      "name": "McCoy",
+      "role": "other",
+      "tribe": "",
+      "allottee_number": ""
+    }
+  ]
+}

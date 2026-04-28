@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_022",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "26",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Katie Peck Young",
+    "Tribe/Reservation": "Shannon County (Pine Ridge area implied)",
+    "Post Office Address": "Martin, So. Dak.",
+    "Allotment number": "4361",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee but took it under protest. on the advise of the District Farmer and the Superintendent, some time after she had received the notice",
+    "Recorded patent": "she did not have it recorded but that her husband did some time after she received it",
+    "Sold/Mortgaged": "sold her land to Art Stevens of Wanblee, So. Dak. to pay a large doctor bill and the taxes that she could not pay",
+    "Buyer": "Art Stevens of Wanblee, So. Dak. at $22.00 per acre",
+    "Tax burden forced sale/Mortgage": "sold to pay a large doctor bill and the taxes that she could not pay",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "42 years old",
+    "Occupation/Income": "a little sewing when she can get it",
+    "NOTES": "mentally competent and in very poor health, doctoring all the time; has received no help from the Government, State or County since she received her patent; widow with two children to support; has no home; document dated 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2198,
+    "output_tokens": 400
+  },
+  "elapsed": 5.8
+}

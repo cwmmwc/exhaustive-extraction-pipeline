@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_085",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "107-108",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Laura Desersa",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Rapid City, South Dakota",
+    "Allotment number": "1116",
+    "Cancelled": "said patent has not been cancelled",
+    "Refused/Protested": "she made no application for a patent in fee to her allotment number 1116 ... the said patent was sent to her from the agency without her request",
+    "Recorded patent": "she had the same recorded in the office of the Register of Deeds of Bennett County, South Dakota",
+    "Sold/Mortgaged": "sold and conveyed the said land to Charles Volts of Martin, South Dakota; that the said land was never mortgaged by this deponent",
+    "Buyer": "Charles Volts of Martin, South Dakota for the sum of $2800.00",
+    "Tax burden forced sale/Mortgage": "so far as affiant knows none of the said land has been sold for taxes or debts",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "39 years old",
+    "Occupation/Income": "she has no property and no means of livelihood other then her husband",
+    "NOTES": "Land is Northwest Quarter of Section 16, Township 36 North of Range 38 West of the 6th Principal Meridian in Bennett County, South Dakota. Sold about two months after receiving patent. Affiant received only about $150.00 or $175.00 in cash; the remainder of consideration was paid in goods, wares and merchandise from Charles Volts's store in Martin, SD; affiant believes she did not receive the full amount of consideration and has never been able to receive an accounting. Husband Louis Desersa works at Warren-Lamb Lumber Company sawmill in Rapid City earning about $2.75 per day, supporting affiant and four children. Children: Clarence Desersa (14), Leo William Desersa (9), Aaron Garfield Desersa (8), Katherine Genevieve Desersa (4). Mental and physical condition about normal. Notary: Martha Bockert. Document dated May 20, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2605,
+    "output_tokens": 570
+  },
+  "elapsed": 8.2
+}

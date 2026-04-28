@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_003",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "11",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Virginia Miller Peniska",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No I did not know what to do about it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged \u2014 Yes twice; mortgage still on land for $3000.00, due in December 1930",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "When I mortgaged the place I needed the money for doctors bills and I used some of the money in improving the place by erecting buildings and so forth. We are trying to pay off the mortgage but on account of short crops it is pretty hard to make much of an impression on it.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 29, 1918",
+    "Gender": "Female",
+    "Age": "43",
+    "Occupation/Income": "By myself and husband at farming.",
+    "NOTES": "Patent delivered at the Bank of Herrick on March 29, 1918. Did not ask for patent. All taxes paid except 1928 taxes. Still has the land. Has eight children. Did not remember signing a receipt for the patent. Subscribed and sworn before Notary Public Cas. W. Cross, commission expires 4-28-32, on April 30, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2259,
+    "output_tokens": 403
+  },
+  "elapsed": 6.0
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part10_agency_narrative_005",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 10.pdf",
+  "source_pages": "9",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Katherine Biggins",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. D.",
+    "Allotment number": "4430a",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded July 16, 1919, by A. L. Biggins",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Katherine Biggins McGill and Roswell Foster Magill conveyed the land by deed to Arthur L. Biggins and W. M. Quinn for $20,000",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612793 issued; Southeast quarter section 21, township 99, north of range 76; receipt for patent signed by allottee February 14, 1918; conveyance dated August 1, 1919; allottee also appears as Katherine Biggins McGill and Katherine Biggins Magill in document",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2031,
+    "output_tokens": 364
+  },
+  "elapsed": 6.0
+}

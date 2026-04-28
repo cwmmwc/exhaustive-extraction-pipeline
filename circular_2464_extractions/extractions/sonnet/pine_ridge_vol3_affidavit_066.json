@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_066",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "92",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susie Bullard\u2014nee Gresh",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Hot Springs, South Dakota",
+    "Allotment number": "5502",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee to her allotment of 160 acres when it was issued, April 13, 1918; but that she was informed by the Indian Agency the land would be taxed, and sold for taxes, if she did not take the patent in fee, and keep up her taxes, hence she accepted the patent in fee",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold; mortgaged the place to George Derry, of Eli, Nebraska, for $600.00, and redeemed her allotment; in 1928, she sold the place to Carl Northrope, of Cody, Nebraska",
+    "Buyer": "Mortgaged to George Derry, of Eli, Nebraska, for $600.00; sold to Carl Northrope, of Cody, Nebraska, he paying her $600.00 in cash, and paying off the $600.00 mortgage",
+    "Tax burden forced sale/Mortgage": "the taxes had accumulated from 1918 until 1927, when it was put up and sold for the taxes; but that she had sixty days in which to redeem it, so she mortgaged the place to George Derry, of Eli, Nebraska, for $600.00, and redeemed her allotment",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Female",
+    "Age": "38 years old",
+    "Occupation/Income": "her husband supports her and the family by his efforts at common labor; her oldest child gets $16.00 every six months as lease money from his allotment; and that these two sources are their only sources of income",
+    "NOTES": "Mentally competent and has very poor health; mother of four minor children, all of whom have good health except the oldest one, who is bothered with his lungs; husband has pretty good health except that he is blind in one eye, causing him great trouble with the sight of the supposedly good eye; did not sell allotment for debts incurred prior to receipt of patent in fee; considers she received a poor price for her land, as it is good land and has timber on it; has never received any help from the County, State nor the United States Government; document notarized February 11, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2470,
+    "output_tokens": 676
+  },
+  "elapsed": 9.0
+}

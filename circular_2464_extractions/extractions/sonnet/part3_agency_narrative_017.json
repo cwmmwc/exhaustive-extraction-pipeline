@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_017",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "39",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Robert McLean",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. D.",
+    "Allotment number": "1483",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded by Lyman County Abstract Company February 16, 1921",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "W. H. Tackett for a consideration of $2400",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739637 issued; No receipt for patent is shown; Deed dated February 8, 1921; Lots 1 and 2 and the East half of the northwest quarter of Section 30, township 38, north of range 26",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2020,
+    "output_tokens": 319
+  },
+  "elapsed": 4.1
+}

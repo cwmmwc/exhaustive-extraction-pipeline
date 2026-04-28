@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_075",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "94",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary White Russell",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "2738",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 480 acre allotment at the time it was issued, account of not wishing to pay taxes, and she was not a citizen at the time; but this paper was sent to her by John Clifford, from the Indian Agency, forcing her to accept citizenship and the forced patent to her land",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Peter Duhamel, of Rapid City, South Dakota, for $600.00; sold to an unnamed man for $1700.00, the man buying the place paying off the mortgage, which left her $1000.00 cash",
+    "Tax burden forced sale/Mortgage": "got behind in taxes; that she mortgaged the three quarters to Peter Duhamel, of Rapid City, South Dakota, for $600.00; that she could not pay off this mortgage, so she sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "64 years old",
+    "Occupation/Income": "receiving a ration recommended by the Government Doctor",
+    "NOTES": "mentally incompetent, has poor health, having rheumatism especially; husband is dead; has no one to help her; lately the Government Doctor recommended a ration for her which she is now receiving; outside of this ration she has never gotten any help from the County, State nor the United States Government; allotment described as three quarters (480 acres); document signed with a mark (X)",
+    "Literate/Illiterate": "Illiterate \u2014 signed with a mark",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2324,
+    "output_tokens": 504
+  },
+  "elapsed": 6.5
+}

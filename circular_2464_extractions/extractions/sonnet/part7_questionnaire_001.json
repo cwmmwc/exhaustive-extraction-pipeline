@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_001",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "3",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Stephen Murray",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Parmelee, S. D.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Yes, I brought the patent to the office, and they said it was too late then, they could not do anything. I took it to the farmer first, Mr. Gardner then district farmer, and he told me to take it in to the office.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold it to a Mr. Hitts for $2500.00",
+    "Buyer": "Mr. Hitts for $2500.00",
+    "Tax burden forced sale/Mortgage": "I did not want to pay taxes on this land but the county was after me to pay, so I felt I had to sell the land. Out of this $2500.00 I had to pay the taxes which amounted to a little over $700.00.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "I don't remember the exact date but I think it was in 1919",
+    "Gender": "Male",
+    "Age": "68 years",
+    "Occupation/Income": "I live on the farm",
+    "NOTES": "Had ten children but the oldest died in January; four are at home with him now. Has kidney trouble which has bothered him for several years. The Belvidere State Bank had been paying the taxes and asked what he wanted for the land; he asked $10,000 but they were not interested. He had to sue to get the remainder of the $2500.00 sale price. Patent was mailed to him from the office. Subscribed and sworn before E. E. McKean, Superintendent, April 25, 1929. No mortgages or debts against the land.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2416,
+    "output_tokens": 493
+  },
+  "elapsed": 7.1
+}

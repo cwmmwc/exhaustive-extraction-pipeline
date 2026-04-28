@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_affidavit_001",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "5",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Angeline Larvie Roberts",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2177",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Yes I protested to the Farmer at Little White River station but he said I would have to take it any how.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged and then sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Female",
+    "Age": "51",
+    "Occupation/Income": "My husband, and I farm, raise chickens milk and so forth.",
+    "NOTES": "Husband signed receipt for patent on her behalf; sale was for $2600.00 cash, no old debt involved; has eight children depending on her for support; fair health, a little rheumatism; states 'I would have my land yet had the fee patent not been forced upon me'; document notarized by W. Cross, Notary Public, commission expires 4-28-32, sworn May 14, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2262,
+    "output_tokens": 359
+  },
+  "elapsed": 5.1
+}

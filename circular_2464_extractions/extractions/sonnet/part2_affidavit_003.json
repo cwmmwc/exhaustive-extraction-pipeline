@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_affidavit_003",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "80",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alvina Turgeon Ducharme",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "972",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Yes on two occasions, first for $2500 and again for $2000.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Yes, but I do not know the amount.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Female",
+    "Age": "50",
+    "Occupation/Income": "By milking cows and what we raise on the farm.",
+    "NOTES": "Patent delivered at Herrick, South Dakota; Narcisse McKenzie the interpreter gave it to her; signed a receipt for it; has no biological children but has adopted one; health has been poor for some time \u2014 that is the reason she borrowed money on the land; mortgages are not paid; did not ask for this patent; land is still owned by her; notarized April 30, 1929 by Jas. W. Gross, Notary Public, commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2252,
+    "output_tokens": 367
+  },
+  "elapsed": 5.4
+}

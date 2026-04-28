@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_026",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "57",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louis Giroux",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1534",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded April 16, 1918",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Deed from Louis Giroux and wife dated July 2, 1918, for $4680 to Florence V. Brodball, for Lot 2 of section 4 and the SE/4 of Section 5; Contract for sale dated November 20, 1918, between Louis Giroux and J. A. Hutchinson and J. B. Bryan for $4800 covering Lots 1, 2 and 5 and Southwest quarter of Northeast quarter of section 5; deed from Louis Giroux and wife to J. A. Hutchinson and J. B. Bryan for $3300 to be paid $1500 in cash, remainder on or before one year",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "February, 1918",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612763 issued. Receipt for patent signed by allottee December 29, 1917. Land described as Lot 2 section 4; lots 1, 2 and 5, Southwest quarter of Northeast quarter and Southeast quarter section 5, township 43, north of range 29. A second deed from Louis Giroux and wife to J. A. Hutchinson and J. B. Bryan was made January 29, 1918, apparently because the wife had not signed the former deed. Contract for sale dated December 16, 1918 for $4800 covering land in contract.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2266,
+    "output_tokens": 525
+  },
+  "elapsed": 7.6
+}

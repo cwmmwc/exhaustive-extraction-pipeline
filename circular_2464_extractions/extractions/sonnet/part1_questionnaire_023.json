@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_023",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "75",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "David Whiting",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Yes I told the Farmer that I did not want the patent but he said it was issued and it had to be taken.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1917",
+    "Gender": "Male",
+    "Age": "42",
+    "Occupation/Income": "I farm",
+    "NOTES": "Patent delivered at the Farmer's office in Okreek in 1917; sold land at $100 per acre; allottee satisfied with the sale; four children depend on him for support; document reference: 2a=/602.24; signed as David B. Whiting; notarized May 7, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2188,
+    "output_tokens": 336
+  },
+  "elapsed": 5.4
+}

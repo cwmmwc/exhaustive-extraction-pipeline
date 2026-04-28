@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_038",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "49",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James G. Dixon",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Batesland, South Dakota",
+    "Allotment number": "408",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 160 acre allotment when it was issued, but he was told by the Indian Agency at Pine Ridge, that it would be assessed for taxes, and finally be sold for them, if he did not take it, so he accepted",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1919, he sold it to his father, John H. Dixon, for $1000.00, receiving $500.00 in cash, and $500.00 in trade, stock",
+    "Buyer": "John H. Dixon (father) for $1000.00, $500.00 in cash and $500.00 in trade stock",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Male",
+    "Age": "38 years old",
+    "Occupation/Income": "he farms a small, rented farm, in summer, and, in winter, he hunts coyotes, these two sources of supply is his only income",
+    "NOTES": "mentally competent, has pretty good health; has a wife who is so badly done up with the rheumatism that she cannot get around; has three children to support with good health; considers $1000.00 a pretty slim price for his allotment; father promised to deed it back but was accidentally killed before he could do so; has never received any help from the County, State or the United States Government; document sworn November 30, 1928; allotment was 160 acres",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2317,
+    "output_tokens": 487
+  },
+  "elapsed": 9.5
+}

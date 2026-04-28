@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_065",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "91",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Thomas Tway",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Gordon, Nebraska",
+    "Allotment number": "5493",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 160 acre allotment at the time he got it, for he did not want to pay the taxes; that he was informed that, if he did not take charge of it, that the county finally would for taxes, as it would be assessed, so he accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold his allotment, in 1918, to a man whose name he does not remember, but through a real estate man, by the name of William White, of Merriman, Nebraska, for $960.00 cash",
+    "Buyer": "a man whose name he does not remember, through a real estate man by the name of William White, of Merriman, Nebraska, for $960.00 cash",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "32 years old",
+    "Occupation/Income": "works at common labor for a living, this being his only income",
+    "NOTES": "mentally competent, has good health; has a wife and three children to support, the family have good health; figures $960.00 was a poor price for the land; has never received any help from the County, State nor the United States Government; affidavit sworn December 1, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2263,
+    "output_tokens": 451
+  },
+  "elapsed": 4.6
+}

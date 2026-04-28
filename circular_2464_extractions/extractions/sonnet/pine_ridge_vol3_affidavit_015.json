@@ -1,0 +1,33 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_015",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "19",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alice Youmans",
+    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Post Office Address": "Kadoka, South Dakota",
+    "Allotment number": "4072",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 640 acre allotment when it was issued, April 18, 1918, as she did not want to pay taxes on it, but that she was informed by the Indian Agency that, if she did not accept it, and pay the taxes on the land, that the land would be taxed just the same, for which it would later be sold, so she accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold; in 1919, mortgaged her place to get money to pay taxes, giving a mortgage on the land to George Smith of Kadoka, South Dakota; in 1920, paid this mortgage off by selling one half section of her allotment; the other half section is to this day clear of indebtedness excepting for taxes",
+    "Buyer": "Mortgage to George Smith of Kadoka, South Dakota for $3400; one half section sold to B. Scovill, from Missouri, for $3400.00",
+    "Tax burden forced sale/Mortgage": "in 1919, when the taxes became due, she mortgaged her place to get money to pay these taxes; at this time she paid her taxes; in 1920, she paid this mortgage off by selling one half section of her allotment",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 18, 1918",
+    "Gender": "Female",
+    "Age": "54 years old",
+    "Occupation/Income": "her husband supports the family by farming for himself, and working at common labor",
+    "NOTES": "mentally competent; very poor health, suffering from the effects of typhoid fever, hearing also being affected; mother of six minor children, all of whom have good health except the youngest girl; husband has rather poor health; they find it close getting along on what he makes; never sold this land for any debts incurred prior to receiving the patent in fee; never received any aid from the County, State nor the United States Government; document sworn February 5, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2406,
+    "output_tokens": 600
+  },
+  "elapsed": 6.8,
+  "retry_count": 1
+}

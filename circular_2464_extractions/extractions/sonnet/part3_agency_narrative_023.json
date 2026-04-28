@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_023",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "51",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susan Jane Carter formerly Wright",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1510",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded by Harold Oldham June 28, 1920",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Harold A. Oldham for $1.00 and other valuable consideration; Oldham agrees to sell the land for $7000, $700 in cash, $700 by Susan to Oldham, $2500 of the purchase price in the form of one certain Franklin automobile, balance $3100 on or before July 1, 1920",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739694 issued; Lots 3 and 4 and S/2 of NW/4, section 2, township 99, north of range 78; receipt signed by allottee April 3, 1920; land contract dated April 15, 1920 between Susan Jane Fielder (formerly Susan Jane Wright) and Harold A. Oldham; deed dated July 28, 1920; allottee also referred to as Susan Jane Fielder and Susan Jane Carter (divorced)",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2158,
+    "output_tokens": 435
+  },
+  "elapsed": 5.6
+}

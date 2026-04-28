@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_012",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "16",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Paul Gallagher",
+    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Post Office Address": "Interior, South Dakota",
+    "Allotment number": "4042",
+    "Cancelled": "not stated",
+    "Refused/Protested": "he was agreeable to accepting this patent at the time",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1922, he sold it to Ernest Reeves, of Belvidere, South Dakota, for $900.00 cash",
+    "Buyer": "Ernest Reeves, of Belvidere, South Dakota, for $900.00 cash",
+    "Tax burden forced sale/Mortgage": "he never paid any taxes on this land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Male",
+    "Age": "34 years old",
+    "Occupation/Income": "farms rented land for his living",
+    "NOTES": "Allotment described as SW\u00bc, Sec. 23, T. 44N., R. 34W., of the 6th P.M., in South Dakota; 160 acre allotment; described as a 'forced patent in fee'; health is not very good; single, has no one to support but himself; considers he received a poor price for his land; never sold his land for any debts incurred prior to receiving his patent in fee; never received any help from the United States Government, the State Government, nor the County; affidavit sworn April 17, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2258,
+    "output_tokens": 437
+  },
+  "elapsed": 6.0
+}

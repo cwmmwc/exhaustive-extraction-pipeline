@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_082",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "108",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lucy Shangreau",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee to her 320 acre allotment when she got it, as she did not wish to have the taxes to pay on it; but she was advised by the Indian Agency that she would have to accept it, and she did so",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged her 2 section to Leedom, of Gordon, Nebraska; lost her 2 section",
+    "Buyer": "Leedom, of Gordon, Nebraska",
+    "Tax burden forced sale/Mortgage": "she was behind in her taxes in 1922 on her allotment",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "63 years old",
+    "Occupation/Income": "supported by her husband, who receives $30.00 pension for his services as an Indian Scout, this being his only income",
+    "NOTES": "Document No. 6094; mentally incompetent; health not very good, having liver trouble; husband Peter Shangreau also mortgaged a section of his allotment to Leedom of Gordon, Nebraska and lost it at the same time; they claim they were to get $2500.00 on one piece and $1200.00 on another piece, though they got only about $500.00, and never saw the money, as it was evidently turned over to Gerber by Leedom to pay for an automobile purchased from Gerber; they have a grandson to support; has never received any help from the County, State or United States Government; sworn November 22, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2357,
+    "output_tokens": 502
+  },
+  "elapsed": 7.0
+}

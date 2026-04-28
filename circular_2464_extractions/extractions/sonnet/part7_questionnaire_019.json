@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_019",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "50",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rena Whiting, formerly Rena Giroux",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2385",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I did not want the patent at the time but was under the impression that I had to take so I just kept it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged and then sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "We had to pay taxes on the place and had the patent not been issued no effort would have been made to sell it; they were going to foreclose on the mortgage.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "about eight years ago (approximate, from 1929 sworn date = approximately 1921)",
+    "Gender": "Female",
+    "Age": "36",
+    "Occupation/Income": "Farming and darying",
+    "NOTES": "Formerly Rena Giroux. Patent was sent by mail; does not remember signing a receipt. Received $2000.00 for land; proceeds of loan turned into other land, no other money given when deed was signed. Mortgage was not made before patent was issued and was not in settlement of an old debt. Seven dependents. Not in good health. Stated she ought to have the taxes back for the time she had the land before it was deeded away. Subscribed and sworn May 13, 1929; notary commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2351,
+    "output_tokens": 433
+  },
+  "elapsed": 5.6
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_095",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "122",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rosa Ruff",
+    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Post Office Address": "Martin, South Dakota",
+    "Allotment number": "7302",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent to her 320 acre allotment, as she did not want to pay taxes, but she was told that she would lose it finally through taxes being assessed against it, if she did not accept it, so she took it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "in 1919, sold one quarter of her land to James B. Clifford, of Conata, South Dakota, for $1500.00, about half in cash and half in trade; in 1921, sold the other quarter to James B. Clifford for $2500.00, he paying $500.00 down, the next year he paid $200.00, the next year she bought a team of him valued at $100.00 and received $50.00 in cash; in 1926 he paid $100.00 in cash; in 1927 he paid in trade seven pigs valued at $50.00; in 1928 he paid a payment in trade, 17 pigs, valued at $100.10; the place is not yet paid for",
+    "Tax burden forced sale/Mortgage": "the first quarter was sold to pay taxes on her husband's land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "51 years old",
+    "Occupation/Income": "only income is that derived from leasing their land, which is one third of the crop",
+    "NOTES": "mentally competent, health is good; husband has poor health and cannot work; two children to support, who have good health; has never received any help from the County, State or the United States Government; document dated November 26, 1928; 320 acre allotment",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2454,
+    "output_tokens": 542
+  },
+  "elapsed": 5.5
+}

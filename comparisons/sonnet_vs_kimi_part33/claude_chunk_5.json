@@ -1,0 +1,651 @@
+{
+  "entities": [
+    {
+      "name": "Mr. Couro",
+      "type": "person",
+      "context": "Witness/speaker representing Indian interests at Senate hearing, member of California Indian community"
+    },
+    {
+      "name": "The Chairman",
+      "type": "person",
+      "context": "Chairman of Senate Committee on Indian Affairs conducting the hearing"
+    },
+    {
+      "name": "Senator Thomas",
+      "type": "person",
+      "context": "Senator participating in the committee hearing, asking questions of witnesses"
+    },
+    {
+      "name": "Mr. J. A. Moore",
+      "type": "person",
+      "context": "Deputy Special Officer / Special Officer, United States Indian Service, San Diego, California"
+    },
+    {
+      "name": "John Collier",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs, United States Department of the Interior"
+    },
+    {
+      "name": "Secretary Ickes",
+      "type": "person",
+      "context": "Secretary of the Interior, appointed by President Roosevelt"
+    },
+    {
+      "name": "President Roosevelt",
+      "type": "person",
+      "context": "President of the United States who appointed Secretary Ickes and Commissioner Collier"
+    },
+    {
+      "name": "Mr. Dady",
+      "type": "person",
+      "context": "Superintendent/Agent of the Mission Indian Agency in California"
+    },
+    {
+      "name": "Mr. Fry",
+      "type": "person",
+      "context": "Former agent, removed and given a position under Mr. Dady as sub-agent"
+    },
+    {
+      "name": "Ellis",
+      "type": "person",
+      "context": "Former superintendent under whom certain employees served"
+    },
+    {
+      "name": "John Lewis",
+      "type": "person",
+      "context": "Indian policeman at Santa Ysabel reservation, subject of complaint by Winslow"
+    },
+    {
+      "name": "Robert Magee",
+      "type": "person",
+      "context": "Ex-United States Indian Service policeman, Pala Indian Reservation, submitted affidavit about Mesa Grande incident; later discharged for inefficiency"
+    },
+    {
+      "name": "Capt. V. J. La Chusa",
+      "type": "person",
+      "context": "Captain at Mesa Grande Reservation, witness at Senate hearing, husband of Grace La Chusa"
+    },
+    {
+      "name": "Grace La Chusa",
+      "type": "person",
+      "context": "Assistant Secretary of Tribal Council at Mesa Grande, wife of Capt. V. J. La Chusa, submitted statement about Mesa Grande fiesta incident"
+    },
+    {
+      "name": "Ray La Chusa",
+      "type": "person",
+      "context": "Head fiesta committeeman at Mesa Grande, introduced in Moore's report"
+    },
+    {
+      "name": "George Ponchetti",
+      "type": "person",
+      "context": "Named in Moore's telegram and report as ringleader at Mesa Grande fiesta; also signatory to letter to Collier"
+    },
+    {
+      "name": "Remijo Lechussa",
+      "type": "person",
+      "context": "Named in Moore's telegram as spokesman at Mesa Grande fiesta"
+    },
+    {
+      "name": "Coonrod Chaparros",
+      "type": "person",
+      "context": "Chief of police of the Mission Indian Federation, named in Moore's telegram as ringleader"
+    },
+    {
+      "name": "Valentine La Chusa",
+      "type": "person",
+      "context": "Captain at Mesa Grande, named in Moore's telegram; signatory to letter to Collier"
+    },
+    {
+      "name": "Reginald Duro",
+      "type": "person",
+      "context": "Named in Moore's telegram as ringleader at Mesa Grande fiesta; signatory to letter to Collier"
+    },
+    {
+      "name": "Bernardino Couts",
+      "type": "person",
+      "context": "United States Indian Police officer present at Mesa Grande fiesta"
+    },
+    {
+      "name": "Remijo Luga",
+      "type": "person",
+      "context": "United States Indian Police officer present at Mesa Grande fiesta"
+    },
+    {
+      "name": "Ramon Ames",
+      "type": "person",
+      "context": "United States Indian Police officer present at Mesa Grande fiesta"
+    },
+    {
+      "name": "John Beresford",
+      "type": "person",
+      "context": "United States Indian Police officer present at Mesa Grande fiesta; mentioned as bringing message to Valentine La Chusa"
+    },
+    {
+      "name": "Mr. Willis",
+      "type": "person",
+      "context": "Associated with Mission Indian Federation, held meeting with Indians at Mesa Grande fiesta Saturday evening; accused by Moore of interfering with law enforcement"
+    },
+    {
+      "name": "Mr. Prather",
+      "type": "person",
+      "context": "Associated with Mission Indian Federation, held meeting with Indians at Mesa Grande fiesta Saturday evening alongside Willis"
+    },
+    {
+      "name": "Adam Castillo",
+      "type": "person",
+      "context": "Federation president of the Mission Indian Federation"
+    },
+    {
+      "name": "Senator McAdoo",
+      "type": "person",
+      "context": "Senator who held up John Collier's appointment as Commissioner of Indian Affairs"
+    },
+    {
+      "name": "A. A. Grisold",
+      "type": "person",
+      "context": "Addressee of Moore's October 1934 letter; associated with Committee on Indian Affairs"
+    },
+    {
+      "name": "Miss York",
+      "type": "person",
+      "context": "Sent word about school matters to Mesa Grande Indians through Willis and Prather"
+    },
+    {
+      "name": "Mr. Reagon",
+      "type": "person",
+      "context": "Representative from the Mission Indian Agency who spoke to assembled Indians at Mesa Grande about road work"
+    },
+    {
+      "name": "Tom Strick",
+      "type": "person",
+      "context": "Deputy Sheriff present with Moore at Mesa Grande fiesta"
+    },
+    {
+      "name": "William Pablo",
+      "type": "person",
+      "context": "Nonfederation Indian who listened outside the federation meeting house at Mesa Grande"
+    },
+    {
+      "name": "Winslow",
+      "type": "person",
+      "context": "Person making complaint against John Lewis according to Mr. Dady"
+    },
+    {
+      "name": "Juan Leo",
+      "type": "person",
+      "context": "Referenced in Moore's report; his sons overheard Indians talking about potential violence at fiesta"
+    },
+    {
+      "name": "George R. Rastall",
+      "type": "person",
+      "context": "Notary Public in and for the County of San Diego, State of California; notarized Robert Magee's affidavit"
+    },
+    {
+      "name": "Sec. Ramon Cables",
+      "type": "person",
+      "context": "Signatory to Grace La Chusa's statement confirming its truth"
+    },
+    {
+      "name": "Remijo L. Chusa",
+      "type": "person",
+      "context": "Signatory to letter to John Collier from Mesa Grande"
+    },
+    {
+      "name": "Reinaldo Duro",
+      "type": "person",
+      "context": "Signatory to letter to John Collier from Mesa Grande"
+    },
+    {
+      "name": "Frank Loan",
+      "type": "person",
+      "context": "Signatory to letter to John Collier from Mesa Grande"
+    },
+    {
+      "name": "Mission Indian Federation",
+      "type": "organization",
+      "context": "Indian organization with its own police force operating on California reservations"
+    },
+    {
+      "name": "United States Indian Service",
+      "type": "organization",
+      "context": "Federal agency administering Indian affairs on reservations"
+    },
+    {
+      "name": "Office of Indian Affairs",
+      "type": "organization",
+      "context": "Federal office under the Department of the Interior responsible for Indian affairs"
+    },
+    {
+      "name": "United States Department of the Interior",
+      "type": "organization",
+      "context": "Cabinet department overseeing Indian affairs"
+    },
+    {
+      "name": "Senate Committee on Indian Affairs",
+      "type": "organization",
+      "context": "Senate committee conducting the survey of conditions of Indians in the United States"
+    },
+    {
+      "name": "House Committee on Indian Affairs",
+      "type": "organization",
+      "context": "House committee before which affidavits were previously submitted"
+    },
+    {
+      "name": "Civil Service Commission",
+      "type": "organization",
+      "context": "Federal body to which charges against civil service employees must be filed"
+    },
+    {
+      "name": "Mission Indian Agency",
+      "type": "organization",
+      "context": "Federal agency overseeing Mission Indians in California, associated with Mr. Dady and Mr. Reagon"
+    },
+    {
+      "name": "Mesa Grande Reservation",
+      "type": "location",
+      "context": "California Indian reservation where the fiesta incident of August 1933 took place"
+    },
+    {
+      "name": "Pala Indian Reservation",
+      "type": "location",
+      "context": "California Indian reservation where Robert Magee resided"
+    },
+    {
+      "name": "Santa Ysabel",
+      "type": "location",
+      "context": "Location of John Lewis, Indian policeman subject of complaint"
+    },
+    {
+      "name": "San Diego, California",
+      "type": "location",
+      "context": "Location from which Moore sent telegrams and where the hearing took place"
+    },
+    {
+      "name": "Washington, D.C.",
+      "type": "location",
+      "context": "Location of Commissioner of Indian Affairs and central federal authority"
+    },
+    {
+      "name": "Muskogee, Oklahoma",
+      "type": "location",
+      "context": "Location of earlier hearings with Five Civilized Tribes in March 1934"
+    },
+    {
+      "name": "Campo",
+      "type": "location",
+      "context": "Location of prior shooting and killing incident referenced as precedent for danger at Mesa Grande; also referenced as a previous Senate investigation case"
+    },
+    {
+      "name": "Julian",
+      "type": "location",
+      "context": "Town near Mesa Grande where Moore drove for dinner during the federation meeting"
+    },
+    {
+      "name": "Five Civilized Tribes",
+      "type": "organization",
+      "context": "Indian tribes of Oklahoma referenced in connection with Muskogee conference March 1934"
+    },
+    {
+      "name": "Wheeler Bill",
+      "type": "legislation",
+      "context": "Bill referenced by Mr. Couro as cause of dissension among Indians; associated with Commissioner Collier's Indian New Deal policies"
+    },
+    {
+      "name": "Section 2147 Revised Statutes",
+      "type": "legislation",
+      "context": "Federal statute Moore suggested could be invoked against racketeers at Mesa Grande"
+    }
+  ],
+  "events": [
+    {
+      "type": "Senate hearing on Indian conditions",
+      "date": "1934",
+      "location": "San Diego, California (likely)",
+      "description": "Senate Committee on Indian Affairs hearing as part of Survey of Conditions of Indians in the United States; witnesses including Mr. Couro, J. A. Moore, Capt. V. J. La Chusa, and Mr. Dady testified"
+    },
+    {
+      "type": "Mesa Grande annual fiesta",
+      "date": "1933-08-03",
+      "location": "Mesa Grande Reservation, California",
+      "description": "Annual Indian fiesta held August 3-6, 1933; site of confrontation between US Indian police under Moore and Mission Indian Federation police"
+    },
+    {
+      "type": "Confrontation between US Indian police and federation Indians",
+      "date": "1933-08-05",
+      "location": "Mesa Grande Reservation, California",
+      "description": "Approximately 75-100 Indians surrounded Moore and demanded he and US Indian police leave the fiesta, threatening violence; Moore reported some federation police carried concealed weapons"
+    },
+    {
+      "type": "Federation meeting at fiesta",
+      "date": "1933-08-05",
+      "location": "Mesa Grande Reservation, California",
+      "description": "Meeting held in federation meeting house at 6 p.m. Saturday; Willis and Prather present; first part open, last part closed to federation members only; William Pablo discovered listening outside"
+    },
+    {
+      "type": "Telegram sent to Commissioner Collier",
+      "date": "1933-08-06",
+      "location": "San Diego, California",
+      "description": "J. A. Moore sent telegram to Commissioner Collier reporting near-conflict at Mesa Grande fiesta and requesting firm backing from Washington"
+    },
+    {
+      "type": "Response telegram from Commissioner Collier",
+      "date": "1933-08-06",
+      "location": "Washington, D.C.",
+      "description": "Collier responded authorizing Moore to attend fiesta, observe, and leave physical interference with liquor to federation police; warned that federation's actions jeopardized future recognition by US Government"
+    },
+    {
+      "type": "Reading of Collier telegram to Mesa Grande Indians",
+      "date": "1933-08-07",
+      "location": "Mesa Grande Reservation, California",
+      "description": "Moore returned to Mesa Grande and read Collier's responding telegram to assembled Indians, which averted further trouble and silenced ringleaders"
+    },
+    {
+      "type": "Moore's detailed report to Commissioner Collier",
+      "date": "1933-08-15",
+      "location": "San Diego, California",
+      "description": "J. A. Moore submitted detailed written report of Mesa Grande fiesta activities August 3-6 to Commissioner Collier"
+    },
+    {
+      "type": "Muskogee conference with Five Civilized Tribes",
+      "date": "1934-03-22",
+      "location": "Muskogee, Oklahoma",
+      "description": "Conference held with Indians of Five Civilized Tribes of Oklahoma; Collier made statements about his and Ickes's appointments"
+    },
+    {
+      "type": "Affidavit by Robert Magee",
+      "date": "1934-05-05",
+      "location": "Pala Indian Reservation, California",
+      "description": "Robert Magee, ex-US Indian Service policeman, submitted affidavit contesting Moore's report, swearing no armed federation police were encountered and fiesta was peaceful"
+    },
+    {
+      "type": "Statement by Grace La Chusa",
+      "date": "1934-05-04",
+      "location": "Mesa Grande, California",
+      "description": "Grace La Chusa submitted statement disputing Moore's telegram account of the Mesa Grande fiesta incident"
+    },
+    {
+      "type": "Letter from Mesa Grande committee to John Collier",
+      "date": "1934-05-05",
+      "location": "Mesa Grande, California",
+      "description": "Letter signed by V. J. La Chusa, George Ponchetti, Remijo L. Chusa, Reinaldo Duro, and Frank Loan disputing Moore's account of the Mesa Grande fiesta"
+    },
+    {
+      "type": "Letter from Moore to A. A. Grisold",
+      "date": "1934-10-05",
+      "location": "San Diego, California",
+      "description": "Moore responded to September 8 letter requesting names of Indians carrying concealed weapons at Mesa Grande fiesta; reported memorandum with names had been lost"
+    },
+    {
+      "type": "Campo shooting and killing",
+      "date": "1927",
+      "location": "Campo, California",
+      "description": "Prior incident of shooting and killing at Campo reservation referenced by Moore as precedent for danger at Mesa Grande"
+    },
+    {
+      "type": "Previous Senate investigation in California",
+      "date": "unknown",
+      "location": "California",
+      "description": "Earlier Senate investigation that included the Campo case and examined employee conduct under Agent Ellis"
+    },
+    {
+      "type": "Discharge of Robert Magee",
+      "date": "1934",
+      "location": "California",
+      "description": "Robert Magee discharged from US Indian Service for inefficiency, specifically for not performing duty and not carrying out specific assigned missions"
+    }
+  ],
+  "financial_transactions": [],
+  "relationships": [
+    {
+      "subject": "J. A. Moore",
+      "type": "employed_by",
+      "object": "United States Indian Service",
+      "context": "Deputy Special Officer / Special Officer operating in San Diego, California"
+    },
+    {
+      "subject": "J. A. Moore",
+      "type": "reports_to",
+      "object": "Commissioner John Collier",
+      "context": "Moore's authority and orders came from Washington, not from Superintendent Dady"
+    },
+    {
+      "subject": "Mr. Dady",
+      "type": "employed_by",
+      "object": "Mission Indian Agency",
+      "context": "Superintendent of Mission Indian Agency overseeing California reservations"
+    },
+    {
+      "subject": "Mr. Fry",
+      "type": "employed_by",
+      "object": "Mr. Dady",
+      "context": "Former agent, removed and given position under Dady as sub-agent"
+    },
+    {
+      "subject": "John Collier",
+      "type": "appointed_by",
+      "object": "President Roosevelt",
+      "context": "Roosevelt picked Collier as Commissioner of Indian Affairs"
+    },
+    {
+      "subject": "Secretary Ickes",
+      "type": "appointed_by",
+      "object": "President Roosevelt",
+      "context": "Roosevelt picked Ickes as Secretary of the Interior"
+    },
+    {
+      "subject": "John Collier",
+      "type": "appointment_delayed_by",
+      "object": "Senator McAdoo",
+      "context": "McAdoo held up Collier's appointment; Collier sought endorsement from Indians at that time"
+    },
+    {
+      "subject": "Grace La Chusa",
+      "type": "related_to",
+      "object": "Capt. V. J. La Chusa",
+      "context": "Wife of Captain V. J. La Chusa"
+    },
+    {
+      "subject": "Mr. Willis",
+      "type": "associated_with",
+      "object": "Mission Indian Federation",
+      "context": "Willis held meetings with federation Indians and was accused by Moore of interfering with law enforcement"
+    },
+    {
+      "subject": "Mr. Prather",
+      "type": "associated_with",
+      "object": "Mission Indian Federation",
+      "context": "Prather held meetings with federation Indians alongside Willis"
+    },
+    {
+      "subject": "Adam Castillo",
+      "type": "leads",
+      "object": "Mission Indian Federation",
+      "context": "Federation president who advised Indians to be truthful, law-abiding, and good citizens"
+    },
+    {
+      "subject": "Robert Magee",
+      "type": "contradicts",
+      "object": "J. A. Moore",
+      "context": "Magee's affidavit stated no armed federation police were encountered and the fiesta was peaceful, contradicting Moore's telegram and report"
+    },
+    {
+      "subject": "Mr. Couro",
+      "type": "represents",
+      "object": "California Indians",
+      "context": "Testified before Senate committee on behalf of Indian grievances against Commissioner Collier and agency employees"
+    },
+    {
+      "subject": "Capt. V. J. La Chusa",
+      "type": "represents",
+      "object": "Mesa Grande Reservation Indians",
+      "context": "Testified before Senate committee contesting Moore's claims about armed federation police"
+    },
+    {
+      "subject": "Winslow",
+      "type": "complaint_against",
+      "object": "John Lewis",
+      "context": "Winslow made complaint against John Lewis, Indian policeman at Santa Ysabel"
+    },
+    {
+      "subject": "Mr. Willis",
+      "type": "accused_of",
+      "object": "Mission Indian Agency",
+      "context": "Moore reported Willis told federation Indians he was arranging to have Mr. Dady fired and himself appointed as superintendent"
+    },
+    {
+      "subject": "William Pablo",
+      "type": "identified_as",
+      "object": "nonfederation Indian",
+      "context": "Was caught listening to private part of federation meeting at Mesa Grande fiesta"
+    },
+    {
+      "subject": "George R. Rastall",
+      "type": "notarized",
+      "object": "Robert Magee affidavit",
+      "context": "Notary Public, County of San Diego, California; commission expires June 27, 1934"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "J. A. Moore",
+      "sender_title": "Deputy Special Officer, United States Indian Service",
+      "recipient": "John Collier",
+      "recipient_title": "Commissioner of Indian Affairs, United States Department of the Interior",
+      "date": "1933-08-06",
+      "subject": "Near-conflict at Mesa Grande fiesta; request for instructions and backing",
+      "action_requested": "Firm decisive stand from Washington; full authority of US Indian police backed visibly and forcefully; Willis and Prather to cease interfering; invoke section 2147 Revised Statutes against racketeers; wire instructions",
+      "outcome": "Collier responded same day authorizing Moore to attend fiesta, observe, and leave liquor enforcement to federation police; warned federation that their actions jeopardized future recognition"
+    },
+    {
+      "sender": "John Collier",
+      "sender_title": "Commissioner of Indian Affairs",
+      "recipient": "J. A. Moore",
+      "recipient_title": "Deputy Special Officer, San Diego, California",
+      "date": "1933-08-06",
+      "subject": "Response to Moore's telegram about Mesa Grande fiesta conflict",
+      "action_requested": "Attend fiesta, observe, leave liquor interference to federation police, report fully; inform federation officers their actions jeopardize recognition by US Government",
+      "outcome": "Moore read telegram to Mesa Grande Indians on August 7, averting further trouble"
+    },
+    {
+      "sender": "J. A. Moore",
+      "sender_title": "Special Officer, United States Indian Service",
+      "recipient": "John Collier",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "1933-08-07",
+      "subject": "Confirmation that Collier's telegram averted trouble at Mesa Grande",
+      "action_requested": "None; informational",
+      "outcome": "Acknowledged; ringleaders were speechless after hearing telegram"
+    },
+    {
+      "sender": "J. A. Moore",
+      "sender_title": "Special Officer, United States Indian Service",
+      "recipient": "John Collier",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "1933-08-15",
+      "subject": "Detailed report of Mesa Grande fiesta activities August 3-6, 1933",
+      "action_requested": "None explicitly stated in excerpt; informational report",
+      "outcome": "Filed as part of official record; submitted to Senate committee"
+    },
+    {
+      "sender": "J. A. Moore",
+      "sender_title": "Special Officer, United States Indian Service",
+      "recipient": "A. A. Grisold",
+      "recipient_title": "Committee on Indian Affairs, Washington, D.C.",
+      "date": "1934-10-05",
+      "subject": "Request for list of Indians carrying concealed weapons at Mesa Grande fiesta",
+      "action_requested": "Response to September 8 letter requesting names",
+      "outcome": "Moore reported memorandum with names had been lost; would not trust his memory due to elapsed time"
+    },
+    {
+      "sender": "Grace La Chusa",
+      "sender_title": "Assistant Secretary of Tribal Council, Mesa Grande",
+      "recipient": "John Collier",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "1934-05-04",
+      "subject": "Disputing Moore's telegram account of Mesa Grande fiesta incident",
+      "action_requested": "Commissioner to hear the truth and correct misrepresentation; identify which federation police were alleged to be armed",
+      "outcome": "Submitted to House committee and later to Senate committee"
+    },
+    {
+      "sender": "V. J. La Chusa, George Ponchetti, Remijo L. Chusa, Reinaldo Duro, Frank Loan",
+      "sender_title": "Mesa Grande tribal members and captain",
+      "recipient": "John Collier",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "1934-05-05",
+      "subject": "Disputing Moore's account of Mesa Grande fiesta; questioning authority of federal officers; disputing claim of armed federation police",
+      "action_requested": "Moore to name which federation police were armed; clarification of federal officer authority on reservation",
+      "outcome": "Submitted to House committee and later to Senate committee"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Wheeler Bill",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "1934",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Debated; caused dissension among Indians according to Mr. Couro; Chairman defended bill as beneficial to Indians giving them more power over their affairs than ever before"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Mr. Couro",
+      "witness_title": "California Indian community member and voter",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "San Diego, California (likely)",
+      "date": "1934",
+      "subject": "Complaints about Commissioner John Collier, the Wheeler Bill, employee retention under Dady, and conduct of Indian police",
+      "key_claims": "Commissioner Collier has caused more dissension and dissatisfaction among Indians than any previous Commissioner; the Wheeler Bill was setting Indians back 100 years instead of advancing them; same employees remain from the Ellis era who mistreated Indians; Indian police are retained indefinitely without accountability; J. A. Moore sent a telegram to Collier about federation police carrying guns at Mesa Grande but would not show the telegram to Indians when asked; requested changes in the police force; stated he is a voter and citizen and wishes to continue as such; referenced Muskogee hearing page 20 where Collier stated he and Ickes were not appointed politically; stated Collier asked for Indian endorsement while his appointment was held up by Senator McAdoo",
+      "questioner": "The Chairman; Senator Thomas"
+    },
+    {
+      "witness": "J. A. Moore",
+      "witness_title": "Special Officer, United States Indian Service",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "San Diego, California (likely)",
+      "date": "1934",
+      "subject": "Mesa Grande fiesta incident of August 1933; telegram to Commissioner Collier; concealed weapons",
+      "key_claims": "A telegram was sent about trouble at Mesa Grande fiesta; some federation police carried concealed weapons which he personally witnessed; Robert Magee was present at the fiesta but did not operate as an officer and was later discharged for inefficiency; no formal written charges had been preferred against John Lewis; Moore's authority comes from Washington and he has no connection to Mr. Dady",
+      "questioner": "The Chairman; Senator Thomas; Mr. Couro"
+    },
+    {
+      "witness": "Capt. V. J. La Chusa",
+      "witness_title": "Captain, Mesa Grande Reservation",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "San Diego, California (likely)",
+      "date": "1934",
+      "subject": "Disputing Moore's claim that federation police were armed at Mesa Grande fiesta",
+      "key_claims": "Moore is mistaken about federation police being armed; federation police are not allowed to carry any arms; Indians are peaceful people who do not need arms; Moore's report said several federation police were armed but he should name which ones; federation police carry nothing for protection, not even a club",
+      "questioner": "The Chairman; Senator Thomas"
+    },
+    {
+      "witness": "Mr. Dady",
+      "witness_title": "Superintendent, Mission Indian Agency",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "San Diego, California (likely)",
+      "date": "1934",
+      "subject": "John Lewis as Indian policeman; police force management",
+      "key_claims": "John Lewis is as far as he knows a good policeman; Winslow is making a complaint against John Lewis; Mr. Moore is in charge of the police",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "Robert Magee (via affidavit)",
+      "witness_title": "Ex-United States Indian Service policeman",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Pala Indian Reservation (affidavit origin)",
+      "date": "1934-05-05",
+      "subject": "Disputing Moore's account of armed federation police at Mesa Grande fiesta August 5, 1933",
+      "key_claims": "On the night of August 5, 1933, under Moore's leadership, no armed Indian Federation policemen were encountered; not one arrest was made; the fiesta went on very peacefully; Moore's report is not true; on many occasions Mission Indian Federation police were helpful rather than a disturbance",
+      "questioner": "N/A (affidavit read into record by Mr. Couro)"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

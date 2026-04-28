@@ -1,0 +1,33 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_115",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "141",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Julia Wilson",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Buffalo Gap, South Dakota",
+    "Allotment number": "1784",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 160 acre allotment at the time it was issued, for she did not want to have the taxes to pay; but that the Indian Agency advised her, if she did not take charge of it, it would be taxed, and finally sold for taxes, so she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Charlie Gerber, of Pine Ridge, South Dakota, for $250.00; sold to John Wallace, of Alliance, Nebraska, for delinquent taxes, the mortgage, and $160.00 in cash for her further interest in the allotment",
+    "Tax burden forced sale/Mortgage": "got behind in taxes, and, in 1920, she mortgaged it to Charlie Gerber; in 1922, she sold it to John Wallace, as she saw she could not make the money good; Wallace paid off the delinquent taxes and the mortgage",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "32 years old",
+    "Occupation/Income": "her husband farms his own place for a living, which constitutes his only income",
+    "NOTES": "mentally competent, has good health, except for rheumatism; husband has good health; supports her and her five children, all of whom have good health; this makes close living for their family; she considers that she got a very poor price on her land; has never received any help from the County, State nor the United States Government; document dated December 6, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2310,
+    "output_tokens": 500
+  },
+  "elapsed": 6.8,
+  "retry_count": 1
+}

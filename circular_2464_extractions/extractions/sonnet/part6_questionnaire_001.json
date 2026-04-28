@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_001",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "3-4",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Henry Benedict Emery",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "Careyhurst, Wyoming",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Patent was issued without my knowledge or consent, but when delivered by Postmaster I accepted it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Do you still own the land? Yes.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "After receiving it I was compelled to pay about $500.00 back taxes to Gregory County, South Dakota. Up to this time I had no knowledge that these taxes were delinquent or that the patent had been issued.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Summer of 1919 (delivered); allottee states patent was issued approximately two years prior to delivery",
+    "Gender": "Male",
+    "Age": "40 years",
+    "Occupation/Income": "By my labor.",
+    "NOTES": "Patent delivered by Postmaster in Careyhurst, Wyoming, summer of 1919. Allottee did not make application for patent. No receipt signed (does not remember). Allottee states patent was issued approximately two years before he received it or had any knowledge of it. Paid approximately $500.00 in back taxes to Gregory County, South Dakota after receiving patent. Wife and one child are dependents. Notary commission expires September 13, 1932. Document signed June 27, 1939.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2624,
+    "output_tokens": 431
+  },
+  "elapsed": 6.4
+}

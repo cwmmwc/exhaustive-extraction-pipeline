@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_090",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "109",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Elizabeth O'Rourke",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Scenic, South Dakota",
+    "Allotment number": "2917",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent to her 160 acre allotment at the time she got it, but was advised by the Indian Agency that she would have to take it, as it was reported to the tax collector, and it would be taxed, so she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Mr. Corbon Morris, of Rapid City, South Dakota, who paid the taxes, and paid her $500.00 in cash, and deponent gave Mr. Morris a deed to the land",
+    "Tax burden forced sale/Mortgage": "by 1920, she had gotten behind in taxes, could not make the payment of them, so she found a purchaser",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "45 years old",
+    "Occupation/Income": "she and her family are supported by her husband, who has poor health; that her husband's chief income is derived by his working for a cattle man",
+    "NOTES": "mentally competent; health is good; mother of five minor children, all of whom have good health except one boy who is a cripple for life caused by a horse falling on him; husband has poor health; they find it hard to get along on this income; has never received any aid from the County, State or United States Government; document sworn November 21, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2312,
+    "output_tokens": 462
+  },
+  "elapsed": 6.0
+}

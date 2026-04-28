@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_008",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "18-19",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rudolph D. Anderson",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Without protest.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged to H. H. More Loan Company, Lincoln, Nebraska; traded equity to Gene Smith of Gregory, So. Dakota for 320 acres of clear land located in Todd County, So. Dakota",
+    "Buyer": "Traded equity to Gene Smith of Gregory, So. Dakota; value of the half section $9600.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1921",
+    "Gender": "Male",
+    "Age": "29",
+    "Occupation/Income": "On what I can earn.",
+    "NOTES": "Patent delivered in 1921 at Bristow, Nebraska. Allottee applied for patent. Same year as trade, allottee traded his allotment to Gene Smith; in 1922, Fred C. Jenkins and E. R. Rusho by fraudulent means took his land and he lost everything in less than a year. Allottee is suffering from disabilities acquired in France during the World War. Wife and two children dependent: boy age five and girl age seven. Document notarized July 1, 1929, Lancaster County, Nebraska; notary commission expires 1935.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2672,
+    "output_tokens": 419
+  },
+  "elapsed": 6.3
+}

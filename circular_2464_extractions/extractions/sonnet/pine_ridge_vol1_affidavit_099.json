@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_099",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "124",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Emma Weber",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Merriman, Nebraska",
+    "Allotment number": "1352",
+    "Cancelled": "not stated",
+    "Refused/Protested": "while she did not make application for the patent in fee to her 632.16 acre allotment when it was issued, April 13,1918, she was perfectly willing to accept it when it was sent to her; and has never regretted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1923, she mortgaged it, together with the quarter allotments of her three children, Frank, Joseph and Julia, for the sum of $7000.00, mortgage in favor of the Federal Loan Association, of Omaha, Nebraska",
+    "Buyer": "Federal Loan Association, of Omaha, Nebraska, for $7000.00",
+    "Tax burden forced sale/Mortgage": "she did not sell her land for any debts incurred prior to receiving her patent in fee; mortgage was taken in order for her husband to buy three whole sections of land; she has kept the interest paid up on this loan, and expects to pay this mortgage off this coming fall, when her husband sells his stock, thus clearing her land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Female",
+    "Age": "59 years old",
+    "Occupation/Income": "her husband, who has fine health, supports her and the six children, he being a rancher, or stockman",
+    "NOTES": "mentally competent; health is pretty fair; has 6 children to support; husband has fine health and is a rancher/stockman; mortgaged her allotment along with quarter allotments of three children Frank, Joseph, and Julia; husband bought three whole sections of land in his own name; she has kept taxes paid on all land up to date; has never received any help from the County, State nor the United States Government; allotment is 632.16 acres",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2324,
+    "output_tokens": 551
+  },
+  "elapsed": 8.2
+}

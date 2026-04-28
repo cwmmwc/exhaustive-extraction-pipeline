@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_agency_narrative_004",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "41",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charlotte Giroux",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1535",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "patent was recorded by John Burnett; receipt for patent signed by the allottee February 23, 1918",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Charlotte Giroux conveyed to J. A. Hutchinson and J. B. Bryan for $4500, of which $1500 is to be paid and the remainder in a year; then on January 10, 1919, Charlotte Giroux Burnett and John Burnett conveyed the same land to Hutchinson and Bryan for $4500 (apparently because the husband did not sign the former deed)",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 21, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612446 issued; Lots 3, 4 and 5 and Southeast quarter of Southwest quarter, section 32, township 44, north of range 29. Contract for sale made November 20, 1918, between Charlotte Giroux and J. A. Hutchinson and J. B. Bryan. Deed signed by Charlotte Giroux on December 16, 1918; second deed executed January 10, 1919 by Charlotte Giroux Burnett and John Burnett to correct omission of husband's signature on first deed.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2138,
+    "output_tokens": 466
+  },
+  "elapsed": 6.1
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_028",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "37",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Aloyseus Monroe",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Patricia, South Dakota",
+    "Allotment number": "2320",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee to his 143 acre allotment when it was issued, September 29, 1919, but that he was told that it would be taxed just the same as if he had accepted the patent in fee, so he took the patent in fee to this allotment",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold the place to Jack Stotts",
+    "Buyer": "Jack Stotts, paying down $50.00 on the deal, and promising to pay the $650.00 due on the agreement in about ten days, which was done",
+    "Tax burden forced sale/Mortgage": "the taxes got behind for three years, and, in 1922, he sold the place; deponent paid the back taxes out of this $650.00; and that this was his only reason in selling the place",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Male",
+    "Age": "34 years old",
+    "Occupation/Income": "works in the coal mines, on ranches and farms some for himself; and that these three things are the only sources of his income",
+    "NOTES": "mentally competent; his health is rather poor, having had a broken leg, and he now has rheumatism in it; that he is single; that he helps to support his mother; that he has no one else to support; did not sell his land for any debts incurred prior to the receipt of his patent in fee; has never received any help from the County, State Government nor the United States Government; considers that he got a poor price for his place; County of Shannon; sworn February 2, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2339,
+    "output_tokens": 517
+  },
+  "elapsed": 4.9
+}

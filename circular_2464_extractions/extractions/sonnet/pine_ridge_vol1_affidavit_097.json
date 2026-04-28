@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_097",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "122",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Gay",
+    "Tribe/Reservation": "Shannon County (Pine Ridge area, South Dakota)",
+    "Post Office Address": "Kyle, So. Dak.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee to his land for he was sure he could not pay the taxes, but was told that if he did not take it and keep the taxes up that it would be sold to pay them so he took it and signed a receipt but he still did not want it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold \u2014 sold 1 quartersection to John Short of Kyle, So. Dak. for $700.00, half cash and half stock, to get money to pay taxes; gave deed to a half section to J. B. Campbell of Interior, So. Dak. to clear up the remaining 160 acres",
+    "Buyer": "John Short of Kyle, So. Dak. for $700.00, half cash and half stock; J. B. Campbell of Interior, So. Dak. received a deed to a half section",
+    "Tax burden forced sale/Mortgage": "sold 1 quartersection to get money to pay taxes; J. B. Campbell told him he owed $400.16 taxes and that he was to lose his land, and said if he would give him a deed to a half section that he would clear up the remaining 160 acres",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "57 years old",
+    "Occupation/Income": "farms a little, what he can, but his health is so poor that he can do but little",
+    "NOTES": "mentally competent; in poor health, suffering with heart trouble; has a wife and three minor children; has received no aid from the Government, State or County since his patent in fee was issued; still owns 160 acres but has not paid taxes on it and cannot do so; document references case numbers e=e=2c01s2047 and noo1321; sworn November 28, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2337,
+    "output_tokens": 567
+  },
+  "elapsed": 6.8
+}

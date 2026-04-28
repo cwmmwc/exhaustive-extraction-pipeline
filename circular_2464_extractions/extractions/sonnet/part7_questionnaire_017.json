@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_017",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "47",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Chris Colome (also spelled Chris Colombo)",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Colome",
+    "Allotment number": "2331",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "55",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document concerns Chris Colome's purchase of land from William McCloskey or Dillon (allotment 2331) for approximately $3500; payments made circa 1909-1910 by signing a note with Dillon for lumber from Montgomery Lumber Company of Winner, which Colome ultimately paid; from then until about 1919 Colome arranged store credit at Colome and provided horses, harness, buggy, piano money and other things; when land was purchased Dillon owed Colome over $800 after deducting the agreed price; Dillon acknowledged the debt but died without paying it. Notary: Jas. W. Cross, commission expires 4-28-32. Subscribed and sworn 18th day of June 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2266,
+    "output_tokens": 399
+  },
+  "elapsed": 7.2
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_questionnaire_005",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "40",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mekeh Carpenter, Mother of Alma Carpenter, deceased",
+    "Tribe/Reservation": "Crow Creek Reservation",
+    "Post Office Address": "not stated",
+    "Allotment number": "143",
+    "Cancelled": "Do not know if patent has been cancelled.",
+    "Refused/Protested": "Patent was accepted without protest.",
+    "Recorded patent": "It was filed in the County by William Carpenter.",
+    "Sold/Mortgaged": "Land has not been sold or mortgaged.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Taxes were paid for year of 1927. No assessments have been refunded.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 22, 1919",
+    "Gender": "Female",
+    "Age": "68 years of age",
+    "Occupation/Income": "Supported by husband.",
+    "NOTES": "Patent was delivered in person July 6, 1920. Mental condition is good, physical condition is fair, financial condition is fair. No contributions from Government, State or County. Has no one dependent upon her for support. Has not been defrauded of her property. Document is in Buffalo County, State of South Dakota. Subscribed and sworn before notary on a day in 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2279,
+    "output_tokens": 365
+  },
+  "elapsed": 5.2
+}

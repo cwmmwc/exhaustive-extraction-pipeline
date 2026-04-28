@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_agency_narrative_028",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "64",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Reason Didier",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Wewela, S. D.",
+    "Allotment number": "2376",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded August 13, 1919, by Wewela State Bank",
+    "Sold/Mortgaged": "The land was mortgaged July 28, 1919",
+    "Buyer": "Mortgaged to Peters Trust Company for $2200",
+    "Tax burden forced sale/Mortgage": "Tax certificate No. 43 for year 1924 was issued. The 1924 and subsequent taxes are unpaid.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612709 issued; northwest quarter section 32, township 95, north of range 75; receipt for the patent was signed February 12, 1918, by the allottee",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2039,
+    "output_tokens": 343
+  },
+  "elapsed": 6.5
+}

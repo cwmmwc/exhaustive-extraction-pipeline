@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_102",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "130",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Helena Kills Enemy at Night",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Brennan, South Dakota",
+    "Allotment number": "8052",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee to her 320 acre allotment, when it was issued, September 29, 1919, for she did not want to pay taxes; but that the Indian Agency told her that, if she did not take it and pay the taxes, it would be assessed for taxes any way, and later sold for same; so she accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in June 1920, she sold her allotment to Tom Arnold, of Rapid City, South Dakota, for $800.00, cash; and that she considers that she received a very poor price for her allotment",
+    "Buyer": "Tom Arnold, of Rapid City, South Dakota, for $800.00, cash",
+    "Tax burden forced sale/Mortgage": "did not sell her place for debts incurred prior to the receipt of her patent in fee; she never paid any taxes on her allotment",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "65 years old",
+    "Occupation/Income": "only source of income is a little lease money her husband receives off of his land",
+    "NOTES": "mentally incompetent; poor health and is blind; husband is 52 years old and has very poor health; they have 2 grandchildren to support; they find it hard to get along; has never received any help from the County or State governments; the only help received from the United States Government since the fee was issued is the monthly rations she started to receive about one year ago; allotment was 320 acres; document sworn December 27, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2362,
+    "output_tokens": 522
+  },
+  "elapsed": 7.0
+}

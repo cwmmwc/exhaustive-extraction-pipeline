@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_036",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "45",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Elbridge Gerry",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "St. Francis, South Dakota",
+    "Allotment number": "4495",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Was not accepted by me. I do believe that the patent being issued without any request from me and mailing it out here while I was fighting for my country in France was an unfair advantage to take under the circumstances, particularly when it reached my wife who did not possess enough business experience and was not the right person to trust with the only thing that I had on earth to depend on when I returned from the wars",
+    "Recorded patent": "Was not receipted for but do not remember the date.",
+    "Sold/Mortgaged": "Passed from my control and have never kept track of the history of the land.",
+    "Buyer": "wife got a lawyer in Valentine, Nebraska, to make out a power of attorney to sell the land and I do not know the price she got for it as the proceeds was all gone when I got back and all that I ever received was about three hundred dollars in money",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Do not remember the date of the patent.",
+    "Gender": "Male",
+    "Age": "thirty five years of age",
+    "Occupation/Income": "I am resort to manual labor to support myself and family and I do not receive any support from the state or county.",
+    "NOTES": "Deponent was serving in the army in France when the patent was mailed to his mother at Martin, S.D. and then to his wife at St. Francis; wife engaged a lawyer in Valentine, Nebraska to execute a power of attorney to sell the land; deponent signed the power of attorney in a spirit of desperation, not expecting to return alive; received only about three hundred dollars from the proceeds; good physical condition but financially destitute; wife and three minor children dependent upon him for support; Was not mortgaged; county Todd, state South Dakota; document numbered No. 10-13 and No. 1-8 in margin references; sworn and subscribed in 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2579,
+    "output_tokens": 561
+  },
+  "elapsed": 8.9
+}

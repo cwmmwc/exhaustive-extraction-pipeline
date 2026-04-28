@@ -1,0 +1,32 @@
+{
+  "document_id": "part13_questionnaire_001",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "2",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Solon Cries For Rib",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Ponca City, Okla.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Wife and eight minor children dependent upon allottee for support. This allottee, if statements are true, has been defrauded out of his land and case should be investigated. He was thrown in jail at Newkirk, Oklahoma, after signing deed and was not released until he paid his fine. He stated that no money was received by him for the land, but that his wife was paid $100 for signing the deed. Document notarized November 22nd (year not fully legible); commission expires Aug. 3rd, 1931. County of Kay, State of Oklahoma.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2224,
+    "output_tokens": 357
+  },
+  "elapsed": 6.4
+}

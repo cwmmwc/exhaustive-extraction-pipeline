@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_069",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "95",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ellen Richard",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Tuthill, So. Dak.",
+    "Allotment number": "5588",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee but accepted it on the advice of the Superintendent and Government Farmer",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it",
+    "Buyer": "Sob Allen, of Martin, So. Dak. for $3200.00",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes on her land so she sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "43 years old",
+    "Occupation/Income": "lives with her husband, who supports her, and his income comes from the lease of his land",
+    "NOTES": "mentally competent and in fair health; has no land of her own; has five minor children depending on her for support; has received no aid from the Government, County or State since she received her patent; affidavit sworn November 26, 1928; County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2171,
+    "output_tokens": 354
+  },
+  "elapsed": 4.7
+}

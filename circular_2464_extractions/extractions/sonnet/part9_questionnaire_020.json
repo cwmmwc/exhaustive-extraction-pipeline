@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_questionnaire_020",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "61",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Edward Arcoren",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Okreek",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I was not in favor of it but my two brothers already had theirs and when they tried to refuse theirs it was no use so they told me it would be no use.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, I sold it.",
+    "Buyer": "$7500.00 in cash. In addition I was to have the pick of four of his horses and to pay him for the horses $150.00, but when I had the horses at home he claimed that the ones I took were not his and I paid him $250.00 to settle for the horses.",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1919 (mailed to allottee; date uncertain)",
+    "Gender": "Male",
+    "Age": "33",
+    "Occupation/Income": "By common labor.",
+    "NOTES": "Did not ask for the patent. Does not remember signing a receipt for it. Has five children and a wife depending on him for support. Not in good health. Signed with an 'X' mark. Document number 5569. Sworn before Notary Public on May 7, 1929 (written as 1989 in document, likely error); commission expires 4-28-32.",
+    "Literate/Illiterate": "Illiterate; signed with an 'X' mark",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2264,
+    "output_tokens": 428
+  },
+  "elapsed": 7.7
+}

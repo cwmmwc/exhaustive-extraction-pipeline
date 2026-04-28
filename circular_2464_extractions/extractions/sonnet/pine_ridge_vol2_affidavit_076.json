@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_076",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "95",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susie White Clifford",
+    "Tribe/Reservation": "Shannon County, South Dakota",
+    "Post Office Address": "Scenic, So. Dak.",
+    "Allotment number": "2740",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee, but took it on the advise of her husband, the Farmer and the Superintendent, who told her that if she did not take the patent and pay the taxes, that the land would be sold to pay them",
+    "Recorded patent": "does not know anything about whether the patent was recorded or not",
+    "Sold/Mortgaged": "sold her land",
+    "Buyer": "R. C. Stirk of Scenic, So Dak for $1000.00",
+    "Tax burden forced sale/Mortgage": "because she could not pay the taxes, that she sold her land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "36 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "mentally competent and in very poor health, having a broken collar bone and some kind of female trouble that makes it impossible for her to do any hard work; has no home; is a widow and no place to live; stays with her mother when she is out of work; mother is in poor health; has her mother and one child to support; has drawn no aid from the Government, State or County since she was given her patent; document reference: ad2624/n4; sworn November 13, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2243,
+    "output_tokens": 433
+  },
+  "elapsed": 5.5
+}

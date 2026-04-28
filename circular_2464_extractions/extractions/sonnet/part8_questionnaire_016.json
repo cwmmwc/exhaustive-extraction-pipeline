@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_questionnaire_016",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "51",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Robert Emery",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2997",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, I didn't sell it. It was turned over to satisfy a mortgage.",
+    "Buyer": "The State Bank of Wood, S. D. held the mortgage and it was turned over to satisfy a mortgage against some cattle. It was taken in and I was allowed $3500.00.",
+    "Tax burden forced sale/Mortgage": "I had a mortgage on this land prior to the loan on cattle and they the bank agreed to clear up the deal it by turning the deed over to them and taking the balance of the cattle, that would satisfy cattle paper amounting to about $5500.00, and I turned that deed over to the bank sometime during the summer of 1919.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1917",
+    "Gender": "Male",
+    "Age": "33 years old",
+    "Occupation/Income": "Farming",
+    "NOTES": "Received patent at Parmelee in 1917. Did not request patent. Married, no children. Deed turned over to State Bank of Wood, S.D. during summer of 1919. Prior to army service, Robert and his brother purchased cattle; brother was crippled and unable to care for them while Robert was in the army. Superintendent: E. E. McKean. Document sworn April 27, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2357,
+    "output_tokens": 434
+  },
+  "elapsed": 6.4
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_022",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "30",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Whalen",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Chadron, Nebraska",
+    "Allotment number": "318",
+    "Cancelled": "not stated",
+    "Refused/Protested": "his patent was received without protest",
+    "Recorded patent": "filed for record in Fall River county, South Dakota",
+    "Sold/Mortgaged": "sold one half of the said lands covered by the said patent for the sum of Five-hundred & NO/100 Dollars; made a present of one half of the land covered by the patent to one Julia Bissonett, she being a sister to deponent; and this was a gift for love and affection",
+    "Buyer": "one half sold for $500.00; one half given as a present to Mrs. Julia Bissonett, sister of deponent",
+    "Tax burden forced sale/Mortgage": "none of the said land was sold for taxes or debt but was disposed of as above stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "47 years of age",
+    "Occupation/Income": "his only source of support is what he earns by physical labor",
+    "NOTES": "Deponent states he was not defrauded of his lands; mentally competent and in good physical condition, enjoys good health; has no land, has no money only as he earns it by daily physical labor; receives no support or help from the Government, nor from the state, nor from the county; no one is dependent upon him for support; affidavit subscribed and sworn before Robert G. Easley, Notary Public for Dawes County, Nebraska, November 20, 1928; notary commission expires Nov. 13, 1931; document also references age as 37 at one point and 47 at another point",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2456,
+    "output_tokens": 497
+  },
+  "elapsed": 7.2
+}

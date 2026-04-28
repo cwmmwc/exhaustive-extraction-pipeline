@@ -1,0 +1,54 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_027",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "35-36",
+  "model": "sonnet",
+  "extraction": [
+    {
+      "Name": "John Monroe",
+      "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+      "Post Office Address": "Patricia, So. Dak.",
+      "Allotment number": "2318",
+      "Cancelled": "not stated",
+      "Refused/Protested": "did not want his patent in fee, but that he refused to accept it for six months or more, and then accepted it on the advice of the Superintendent, who told him that if he did not take it and pay the taxes that the land would be sold to satisfy them",
+      "Recorded patent": "not stated",
+      "Sold/Mortgaged": "mortgaged it to Ipswich Bank, Ipswich, So. Dak. for $2000.00, that he could not pay the mortgage, the interest or taxes, so the mortgage was foreclosed, but that he got an additional thousand dollars in trade, horses, cows, and machinery",
+      "Buyer": "Ipswich Bank, Ipswich, So. Dak. (foreclosed); additional $1000 in trade received",
+      "Tax burden forced sale/Mortgage": "could not raise the money to pay the taxes so he had to mortgage it to get money",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "not stated",
+      "Gender": "Male",
+      "Age": "58 years old",
+      "Occupation/Income": "farms a little, does common labor what he can, making about $150.00 per year",
+      "NOTES": "mentally competent, not in good health; has no minor children but has a wife depending on him for support; has nothing, no land, no home and lives on the allotment of his wife, 40 acres which she still retains in trust; has received no aid from the Government, State or County since he was granted a patent; subscribed and sworn December 5, 1928",
+      "Literate/Illiterate": "not stated",
+      "Document type": "affidavit"
+    },
+    {
+      "Name": "Sophia Munroe",
+      "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+      "Post Office Address": "Patricia, So. Dak.",
+      "Allotment number": "2319",
+      "Cancelled": "not stated",
+      "Refused/Protested": "refused to accept her patent in fee for a long time, but finally accepted it on the advise of Superintendent Tidwell, who told her that if she did not take it and pay the taxes that she would lose the land anyway",
+      "Recorded patent": "not stated",
+      "Sold/Mortgaged": "mortgaged it to Ipswich Bank, Ipswich, So. Dak. for $500.00, that she could not pay the mortgage, interest or taxes so she sold the land to Mrs. Voltz of Martin, So. Dak. for $300.00 in trade at a store, and she was to pay the mortgage",
+      "Buyer": "Mrs. Voltz of Martin, So. Dak. for $300.00 in trade at a store (also mortgaged to Ipswich Bank, Ipswich, So. Dak. for $500.00)",
+      "Tax burden forced sale/Mortgage": "could not pay the taxes so she had to mortgage it to Ipswich Bank",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "not stated",
+      "Gender": "Female",
+      "Age": "72 years old",
+      "Occupation/Income": "supported by her husband who raises a garden and does what common labor he can, making about $150.00 per year",
+      "NOTES": "mentally competent, but in very poor health; owns 40 acres of land on which she lives with her husband; has no one depending on her; has received no aid from the Government, State or County since she was granted a patent; subscribed and sworn December 5, 1928 (year also appears as 1828 in document, likely a transcription error)",
+      "Literate/Illiterate": "not stated",
+      "Document type": "affidavit"
+    }
+  ],
+  "usage": {
+    "input_tokens": 2728,
+    "output_tokens": 1023
+  },
+  "elapsed": 9.9
+}

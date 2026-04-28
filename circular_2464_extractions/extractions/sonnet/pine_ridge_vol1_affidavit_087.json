@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_087",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "112",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Berry Martin",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "1160",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee at the time he accepted it, but was told that it was necessary for him to take it, and he did so",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold his allotment, in 1919",
+    "Buyer": "sold to J. W. Good, of Chadron, Nebraska, for $800.00, half in cash and half in a horse deal",
+    "Tax burden forced sale/Mortgage": "he had to sell it, being behind in taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "52 years old",
+    "Occupation/Income": "the only income he has is by farming his wife's allotment, and sometimes he works for a neighbor, day labor",
+    "NOTES": "mentally incompetent, health not good, as he complains with headaches and rheumatism; has a wife and four children to support; wife's health is poor, childrens' health good; he considers $800.00 a very poor price for his land; has never received any help from the County or the Government; document sworn November 20, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2235,
+    "output_tokens": 401
+  },
+  "elapsed": 4.3
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_agency_narrative_004",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "76",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Hattie E. Whiting (now Whitcher)",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "10",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Recorded July 3, 1918 by the First National Bank of Spencer, Nebraska",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Northeast quarter of the northeast quarter of section 12 conveyed to William D. Bradstreet for $4,000; remainder conveyed to Kate Shaw on February 26, 1924 for a consideration of $1.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612834 issued; southeast quarter of the southeast quarter of section 1 and the northeast quarter of the northeast quarter of section 12, township 33, range 12; receipt for patent signed by allottee in February 1918; Mrs. Whiting and her husband mortgaged the land on at least four different occasions",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2126,
+    "output_tokens": 380
+  },
+  "elapsed": 7.6
+}

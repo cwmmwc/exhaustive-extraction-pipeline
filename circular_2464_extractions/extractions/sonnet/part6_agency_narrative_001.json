@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_agency_narrative_001",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "25-26",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Theresa Reed",
+    "Tribe/Reservation": "Uintah & Whiteriver",
+    "Post Office Address": "not stated",
+    "Allotment number": "438 U&W",
+    "Cancelled": "Patent has not been canceled.",
+    "Refused/Protested": "Fee patent accepted without protest.",
+    "Recorded patent": "Same was filed for record in Uintah County on March 18, 1926 by Herbert Tyzack, an attorney of Vernal, Utah.",
+    "Sold/Mortgaged": "Land has not been sold to date. On March 18, 1926 a mortgage in the consideration of $600.00 was given by Stacey Reed and his wife Ada Reed to Charles E. Hirth.",
+    "Buyer": "Warranty deed given by Theresa Reed (Workman) and Ammon Workman, her husband, to Stacey Reed (son of Theresa) on March 11, 1926 for a consideration of $1.00. Mortgage of $600.00 given to Charles E. Hirth.",
+    "Tax burden forced sale/Mortgage": "Land has not been sold for debt or taxes.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "August 12, 1920",
+    "Gender": "Female",
+    "Age": "48",
+    "Occupation/Income": "She derives her support from her husband, a white man, who is a sheep-herder near Evanston, Wyoming.",
+    "NOTES": "Fee patent delivered to patentee in person on September 7, 1920 and receipted for. Theresa Reed advised this office that the purpose of conveying property to her son Stacey was so that he might dispose of it for her, she being out of the country. Patentee advises mortgage was given with her knowledge but would not say what portion of the $600.00 she received. The mortgage has been neither released nor foreclosed to date of latest information. She appears to be in fair mental and physical condition. Her financial condition appears to be poor. She has four minor children dependent on her for support. She has not as yet been defrauded of her property. Also known as Theresa Reed (Workman); husband is Ammon Workman. Document dated 8-27-29.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2789,
+    "output_tokens": 598
+  },
+  "elapsed": 7.5
+}

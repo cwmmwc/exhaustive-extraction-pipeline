@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_107",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "87",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Valandry",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Martin, South Dakota",
+    "Allotment number": "5396",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee to his allotment of 320 acres, on account of not wishing to pay taxes on it; but that he was told that it would be necessary for him to accept it, so he did",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it, as he did not want to keep the land taxes up any longer",
+    "Buyer": "Bates & Foster, of Gordon, Nebraska, for $4800.00, cash",
+    "Tax burden forced sale/Mortgage": "kept up the taxes on this place until 1919, when he sold it, as he did not want to keep the land taxes up any longer",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "74 years old",
+    "Occupation/Income": "income is derived from the rent of several town houses and from janitor work that he does for the high school",
+    "NOTES": "mentally competent, has good health except that he has rheumatism very badly; has a wife and child to support; wife is bothered with a severe case of heart trouble; has never received any help from the County or the United States Government; allotment of 320 acres; document dated November 17, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2320,
+    "output_tokens": 429
+  },
+  "elapsed": 5.7
+}

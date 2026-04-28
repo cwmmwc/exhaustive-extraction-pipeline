@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_011",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "25",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lizzie Guerue Two Horse",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No, but I was under the impression that I had to take it because it had been issued to me.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Yes, sold the land.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Female",
+    "Age": "59",
+    "Occupation/Income": "house keeper at the Government jail at Rosebud",
+    "NOTES": "Husband is chief of police at Rosebud; together husband and wife advertised their land for sale to the highest bidder after receiving patents and together got $9065.00; allottee received $3565.00 in cash for her land; three children depend on allottee and husband for support; delivered by mail; document number 10662; notarized June 26, 1929 by Cas. W. Cross, Notary Public, commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2270,
+    "output_tokens": 364
+  },
+  "elapsed": 6.4
+}

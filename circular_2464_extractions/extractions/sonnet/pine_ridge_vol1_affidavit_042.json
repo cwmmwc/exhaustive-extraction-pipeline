@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_042",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "54",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alex Mousseau",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Porcupine, South Dakota",
+    "Allotment number": "695",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee to his 640 acre allotment when he got it but was informed by the Indian Agency, that it was reported to the tax collector, and that he took it under protest",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "deeded the whole section to Velandry, who took possession of it, but did not put the half section back in trust for deponent",
+    "Buyer": "Clements Velandry",
+    "Tax burden forced sale/Mortgage": "in 1923, being behind in taxes, Clements Velandry told him that if deponent would agree to sell Velandry 320 acres, that he would see that the remaining 320 acres was put back in trust, and that Velandry would clear the taxes on all the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "71 years old",
+    "Occupation/Income": "the only income he has is $50.00 per month pension money, for being an Indian Scout",
+    "NOTES": "mentally incompetent; in bad shape physically, has been paralyzed lately on the right side; has a wife and one grandchild to support, both of whom have poor health; has never received any help from the County, State or United States Government; deeded whole 640-acre section to Velandry but Velandry did not put the promised half section (320 acres) back in trust; affidavit sworn November 23, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2305,
+    "output_tokens": 495
+  },
+  "elapsed": 5.4
+}

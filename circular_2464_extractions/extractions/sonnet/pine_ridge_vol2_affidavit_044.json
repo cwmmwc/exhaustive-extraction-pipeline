@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_044",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "61",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Frank Bullard",
+    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Post Office Address": "Eli, Nebraska",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee to his 160 acre allotment at the time it was issued, in fact, he claims that he signed a petition protesting against it; but that he was advised by the Indian Agency that the patent had been recorded in Martin, South Dakota, and that the allotment would be assessed for taxes, for which it would finally be sold, if he did not accept his patent and take care of his land, so he took the patent",
+    "Recorded patent": "patent had been recorded in Martin, South Dakota",
+    "Sold/Mortgaged": "mortgaged it to the Rancher's State Bank, of Cody, Nebraska, for $3500.00",
+    "Buyer": "Mortgaged to the Rancher's State Bank, of Cody, Nebraska, for $3500.00",
+    "Tax burden forced sale/Mortgage": "the interest and payments on the mortgage are now lagging behind, and, unless someone comes to the rescue soon, it will be foreclosed; and that this would be a total loss to the deponent",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "51 years old",
+    "Occupation/Income": "farms 240 acres for a living, but says that there is nothing left, after he pays the taxes, for his living expenses; and that he has to work for other people whenever he can get it",
+    "NOTES": "Document No. 2566; file reference ax/024244; mentally competent, has pretty fair health; has a wife and three children to support, wife having good health, but none of the children are strong; mortgaged about 1921, having sickness in the family and also made improvements with the money; in 1927 paid up all taxes and interest on mortgage; has never received any help from the County, State nor the United States Government; affidavit subscribed and sworn to December 12, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2385,
+    "output_tokens": 574
+  },
+  "elapsed": 10.2
+}

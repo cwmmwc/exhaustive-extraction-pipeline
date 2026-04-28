@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_120",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "141",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Laura Palmier, nee Patton",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "3791",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent to her 320 acre allotment at the time she got it, but was told that it was reported to the tax collector, that it would be taxed, which if she did not pay, that she would finally lose the allotment",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Snodgrass, of Interior, South Dakota, for $2000.00; sold to Clyde Taylor, of Interior, South Dakota, he taking over the mortgage in favor of Snodgrass",
+    "Tax burden forced sale/Mortgage": "in 1920, being behind in her taxes, she mortgaged her allotment to Snodgrass, of Interior, South Dakota, for $2000.00; also one reason she mortgaged this land was on account of having a sick husband to take care of at the time",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "44 years old",
+    "Occupation/Income": "works in the homes of other people for a living; also, her oldest son helps to support her and the other six children",
+    "NOTES": "Mentally incompetent; health is good except for poor teeth; has six children to support; husband died two years ago last August; sold in 1921 to Clyde Taylor but got no consideration at all for her allotment; considers she was defaulted out of her land; has never received any help from the County, State or United States Government except rations at the present time, which issuance was started five years ago, for two children, by the United States Government; document subscribed and sworn November 24, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2358,
+    "output_tokens": 546
+  },
+  "elapsed": 5.5
+}

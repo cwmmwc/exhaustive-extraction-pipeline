@@ -1,0 +1,33 @@
+{
+  "document_id": "part1_agency_narrative_013",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "97",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Sie An Bordeaux formerly Susan Butler",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. Dak.",
+    "Allotment number": "105",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Patent was recorded in Todd County Records by the Tri-County Abstract Company on November 5, 1923 and in the Tripp County Records by the Todd County State Bank on May 29, 1920",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Conveyed by deed on October 13, 1923 to Carl H. Diez for $1.00 and other valuable consideration; later quit claimed by Susan Bordeaux, formerly Susan Butler, deed dated October 13, 1923 to Carl H. Diez for $5200.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Land includes northeast quarter of section 8, and northwest quarter of section 9, township 96, range 79, and southeast quarter of the northeast quarter of section 25, township 37, range 25. Deeds signed by Susan Bordeaux and Samuel Bordeaux. A quit claim deed signed by Susan Bordeaux, formerly Susan Butler, was also executed in favor of Carl H. Diez. Document dated June 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2193,
+    "output_tokens": 437
+  },
+  "elapsed": 4.8,
+  "retry_count": 1
+}

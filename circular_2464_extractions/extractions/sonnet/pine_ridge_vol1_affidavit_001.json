@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_001",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "6",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ben Irving",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his allotment of 320 acres, but was told that he would be forded to take it, so he accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold his allotment, in 1919, for $3200.00, $1600.00 cash, and the other $1600.00 went in on a car deal",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "when he sold his place he paid the delinquemt taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "46 years old",
+    "Occupation/Income": "only source of income is what he can make as a day laborer",
+    "NOTES": "mentally competent, has good health; has a wife and three minor children to support; wife has poor health, being troubled with her heart, and one child is troubled with a bone disease; has never received any help from the County or Government; document reference No. 18; sworn November 17, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2196,
+    "output_tokens": 382
+  },
+  "elapsed": 3.7
+}

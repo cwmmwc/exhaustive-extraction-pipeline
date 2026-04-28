@@ -1,0 +1,33 @@
+{
+  "document_id": "part12_questionnaire_002",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "5",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Walker",
+    "Tribe/Reservation": "Big Bend District",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "There was no protest made by Walker",
+    "Recorded patent": "Walker never had recorded, (look up record in Brule Co)",
+    "Sold/Mortgaged": "Land was sold.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "William Walker was Indian police at time",
+    "NOTES": "Patent was delivered to Walker by Major McGlaughin; patent was receipted for / not receipted for (unclear from document); Walker received letter from Sup't Marble through Mr O'Shea farmer of the Big Bend district to take one Mrs Arrow to Agency, letter dated Apr 23rd 1918; when he arrived Major McGlaughin called William Walker into the office and told him he was one of the Indians that was going to be turned loose; a year afterwards he received a letter from Sup't Marble to come to the agency that he had a patent in fee and to come shoot the arrow before the inspector; he arrived too late to shoot the arrow; they gave him the arrow to keep; McGlaughin gave him a citizen paper and also the patent. Document dated Jan 11th 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2256,
+    "output_tokens": 416
+  },
+  "elapsed": 8.5,
+  "retry_count": 1
+}

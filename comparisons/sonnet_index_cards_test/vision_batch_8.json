@@ -1,0 +1,42 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Interior",
+      "date": "1935-06-29",
+      "correspondent": "Secretary",
+      "correspondent_role": "incoming",
+      "case_name": "U.S. v. Ralph Hughes, Osage County Treasurer, et al",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "Osage",
+      "subject": "Re: Ref. letter of 5-10-35 case of U.S. v. Ralph Hughes Osage County, Treasurer, et al.",
+      "action_type": "acknowledgment",
+      "enclosures": "",
+      "routing_division": "",
+      "routing_date": "1935-06-29",
+      "clerk_initials": "PGR:ms",
+      "processed_date": "1935-06-29"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. v. Ralph Hughes, Osage County Treasurer, et al",
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Interior",
+      "case_type": "other",
+      "allottee_name": "",
+      "tribe_or_reservation": "Osage",
+      "county": "Osage"
+    }
+  ],
+  "persons": [
+    {
+      "name": "Ralph Hughes",
+      "role": "defendant",
+      "tribe": "",
+      "allottee_number": ""
+    }
+  ]
+}

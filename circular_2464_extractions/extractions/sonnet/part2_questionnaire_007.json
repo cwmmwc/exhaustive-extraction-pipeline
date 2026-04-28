@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_007",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "19-20",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alexander Ellis Swallow",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "between Wood and Mission",
+    "Allotment number": "320",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I just told outsiders I didn't want it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold and mortgaged one quarter. Had to sell the land to pay the mortgage.",
+    "Buyer": "Mortgaged one quarter to E. E. Morford, $500.00. Sold the mortgaged quarter for $900.00 which included mortgage, interest and all. Sold other land for $3500.00, Cash.",
+    "Tax burden forced sale/Mortgage": "Had to sell the land to pay the mortgage. I paid the taxes on this before it was sold.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "55",
+    "Occupation/Income": "Farming",
+    "NOTES": "Has a wife and 8 children dependent upon him. Not in good health. Did not make application for patent. It was mailed to him at his home between Wood and Mission. He traded one quarter to his son Eli who put the mortgage on it; he did this in order to have a piece of Eli's land which was still in trust and let Eli have the fee patent land to sell, but he did not get Eli's land which is still held in trust. Had a half section and mortgaged one quarter. Questionnaire signed May 17, 1929, before a notary public in Todd County, South Dakota.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2621,
+    "output_tokens": 453
+  },
+  "elapsed": 7.1
+}

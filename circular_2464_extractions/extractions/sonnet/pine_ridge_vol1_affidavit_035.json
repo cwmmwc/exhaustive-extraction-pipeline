@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_035",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "46",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Joseph Knight",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Batesland, So. Dak.",
+    "Allotment number": "399",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee for he knew he could not keep up the taxes, but that he took it on the advice of the Farmer and Superintendent, who told him that if he did not take it and keep the taxes paid that he would lose the land for they would sell it to pay them",
+    "Recorded patent": "does not know who recorded the patent",
+    "Sold/Mortgaged": "sold 160 acres of the 320 acres and paid the taxes",
+    "Buyer": "Louis Patterson, of Batesland, So. Dak.; received $25.00 per acre for the 160 acres he sold",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes, and he was told that his land was being advertised for sale to pay them so he sold 160 acres of the 320 acres and paid the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "70 years old",
+    "Occupation/Income": "leases part of his land and receives crop payment for the tract he sold and is living on that, being unable to do any work of any kind",
+    "NOTES": "mentally competent and in very poor health, suffering from rheumatism, and having been crippled by horses falling with him while riding; retains 160 acres from his allotment; has an invalid wife and himself to support; has received no aid from the Government, County or state since he was granted his forced patent; keeps taxes up on retained 160 acres but finds it very hard to raise the money to pay them; document notarized November 16, 1928 in Shannon County, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2391,
+    "output_tokens": 513
+  },
+  "elapsed": 7.0
+}

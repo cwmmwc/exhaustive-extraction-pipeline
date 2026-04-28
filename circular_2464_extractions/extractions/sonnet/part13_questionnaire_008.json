@@ -1,0 +1,32 @@
+{
+  "document_id": "part13_questionnaire_008",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "17-18",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jesse Howell",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Okla.",
+    "Allotment number": "113",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Yes, filed for record in Pawnee County; receipted for: Yes",
+    "Sold/Mortgaged": "Mortgaged for $1500; Land sale to Milam Bros. for $9000 and paid off mortgage",
+    "Buyer": "Milam Bros. for $9000",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 1917",
+    "Gender": "Male",
+    "Age": "50",
+    "Occupation/Income": "income of $5.00 per year from inherited land and get annuity paid to Pawnee tribe",
+    "NOTES": "Patent delivered at Agency. Good price received for the land. Date of redemption expired: yes, released. No evidence of fraud in connection with this case. No property or funds accumulated. Wife and five children dependent upon him. Health fair. Notarized November 26, 1928, Pawnee County, Oklahoma; notary commission expires Jan. 31, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2586,
+    "output_tokens": 376
+  },
+  "elapsed": 5.9
+}

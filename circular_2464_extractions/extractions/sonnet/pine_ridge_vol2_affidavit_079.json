@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_079",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "98",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "George Clifford",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "2756",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 160 acre allotment at the time he received it, but he was informed by the Indian Agency that it would be assessed for taxes, for which it would finally be sold, if he did not accept it, so he did",
+    "Recorded patent": "deponent wanted the patent to get it recorded, and told Miller that he would get it recorded, sell the land to someone else, and pay the store bill; but Miller would not agree to this, kept the patent",
+    "Sold/Mortgaged": "gave it to him [Miller] as security until the store bill was paid; Miller kept the land",
+    "Buyer": "O. L. Miller, of Oak Creek, South Dakota; Miller promised to buy the allotment and give deponent the difference above the store bill for what it was worth, which he figured was $1000.00, but never paid the $1000.00",
+    "Tax burden forced sale/Mortgage": "owing a store bill of $500.00, to O. L. Miller, of Oak Creek, South Dakota, Miller asked for this patent in fee as security until the store bill was paid",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1919",
+    "Gender": "Male",
+    "Age": "33 years old",
+    "Occupation/Income": "his only supply of money is derived from common labor, mostly on farms",
+    "NOTES": "mentally competent, health is all right except he is crippled in the left arm\u2014it is withering away; has a wife and three children to support; family has good health except one child who had typhoid pneumonia and measles and has never been the same since; considers even if Miller had paid the $1000.00, he would not have been getting a fair price for his land; has never received any help from the County, State or the United States Government; now owns no land; document signed before Notary Public, County of Shannon, November 30, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2448,
+    "output_tokens": 568
+  },
+  "elapsed": 8.1
+}

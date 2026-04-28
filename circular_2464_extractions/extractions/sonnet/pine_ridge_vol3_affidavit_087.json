@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_087",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "113",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Polly Holy Rock",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Manderson, So. Dak.",
+    "Allotment number": "6417",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent and told the Farmer and Superintendent so, for she knew that she could not pay the taxes, but that they advised her to take it and told her that if she did not pay the taxes that the land would be sold to pay them so she took it",
+    "Recorded patent": "she does not know who had the patent recorded",
+    "Sold/Mortgaged": "mortgaged her land to Harry Wentzy, Rapid City, So. Dak. for $200.00, that in order to pay the mortgage, she deeded one quarter to her daughter for the money, which she had on the books of Pine Ridge",
+    "Buyer": "Mortgaged to Harry Wentzy, Rapid City, So. Dak. for $200.00; one quarter deeded to her daughter to pay off the mortgage",
+    "Tax burden forced sale/Mortgage": "she knew that she could not pay the taxes; could not pay the taxes on the remaining 160 acres; she has nothing but her interest in her land, which she is about to lose on account of the delinquent taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "52 years old",
+    "Occupation/Income": "supported by her husband, who farms what he can, but that his health is poor and he can do very little",
+    "NOTES": "County of Shannon, South Dakota; affidavit sworn November 13, 1928; mentally competent, in poor health; has five minor children and one invalid child depending on her and her husband for support; husband has been so crippled for the last year or more that he is unable to do anything; has received no aid from the Gov., State or County since the patent was issued",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2359,
+    "output_tokens": 535
+  },
+  "elapsed": 7.2
+}

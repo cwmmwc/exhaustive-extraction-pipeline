@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_090",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "116",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Julia Red Bear",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Denby, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she did not desire this patent in fee, for she did not want to pay taxes on her land; that the Indian Agency told her that, if she did not take the patent, and pay the taxes on it, she would lose it finally through taxes being assessed, so she took the patent in fee",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1920, she sold it to Douglas Point, of White Clay, Nebraska, for a stipulated sum of $2000.00, receiving $800.00 in cash, and 12 horses, valued at $100.00 each",
+    "Buyer": "Douglas Point, of White Clay, Nebraska, for $2000.00 ($800.00 in cash and 12 horses valued at $100.00 each)",
+    "Tax burden forced sale/Mortgage": "she never paid any taxes on this place; that the only reason she sold it was because she could not pay the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "49 years old",
+    "Occupation/Income": "their only income is what they make off of her husband's land that they rent to white people",
+    "NOTES": "Allotment described as Lots 1, 2, 3, 4, and the SE1, of Sec. 1, T. 36N., R. 44W., of the 6th P.M., in South Dakota; deponent has poor health with rheumatism especially bad; husband is living but has very poor health and is unable to make any money; two children to support, both in good health; she considers she was defrauded out of her land \u2014 three of the 12 horses were good, the other nine were poor old ponies, four of which died when she brought them home; she never sold her place to pay any debts incurred prior to receiving her patent in fee; she never received any help from the County, State, nor the United States Government; affidavit sworn April 17, 1929; document number 6753; Douglas Point (buyer) still living at White Clay, Nebraska",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2454,
+    "output_tokens": 620
+  },
+  "elapsed": 7.1
+}

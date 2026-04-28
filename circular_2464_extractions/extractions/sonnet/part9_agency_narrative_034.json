@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_034",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "58",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Rosa Guerue",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "3565",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded by Richard Jones March 12, 1918",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Mary Rosa Guerue Battelyoun and Lorenzo Battelyoun, husband, conveyed the land by deed to Joseph Valandra for $1700",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612664 issued; Southwest quarter section 13, township 40, north of range 26; receipt signed by the allottee but not dated; conveyance dated March 14, 1918; allottee's married name is Mary Rosa Guerue Battelyoun; husband is Lorenzo Battelyoun",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2011,
+    "output_tokens": 348
+  },
+  "elapsed": 4.8
+}

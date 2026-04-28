@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_001",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "3",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mark Wells",
+    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Post Office Address": "Kadoka, So. Dak.",
+    "Allotment number": "3913",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent, but wanted the land to continue in trust, but that he was told that if he did not take it, that the land would be taxed anyway and if he did not pay the taxes, that the land would be sold to satisfy them",
+    "Recorded patent": "Wells did not record patent and does not know who did",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to McKenny & Allen, Co. Sioux Falls, S.D. for $700.00; brother Philip Wells bought the land when foreclosure was threatened; no equity left for deponent, all he received was the $700.00; deponent believes land was worth about $2000.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "34 years old",
+    "Occupation/Income": "I get a little income from the cattle, and do all odd jobs I can find to do, such as common labor and working on farms and on the highways",
+    "NOTES": "Mentally competent and in good health; has no land; owns a half interest in about 50 head of cattle valued at about $1250.00; father and mother, ages 78 and 63 respectively, are dependent on him for support; was in military service when he received the patent; mortgaged land to help his father; document sworn October 31, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2342,
+    "output_tokens": 478
+  },
+  "elapsed": 7.7
+}

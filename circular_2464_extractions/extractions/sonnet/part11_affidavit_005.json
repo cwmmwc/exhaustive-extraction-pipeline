@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_affidavit_005",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "43",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Victoria Carpenter",
+    "Tribe/Reservation": "Crow Creek Reservation",
+    "Post Office Address": "not stated",
+    "Allotment number": "881",
+    "Cancelled": "Patent has not been cancelled. Not cancelled.",
+    "Refused/Protested": "Patent was accepted without protest.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Land has not been sold. Land has not been mortgaged. Land has not been sold for debt or taxes.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Land has not been sold for debt or taxes.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 22, 1919",
+    "Gender": "Female",
+    "Age": "34 years old",
+    "Occupation/Income": "I am supported by my husband.",
+    "NOTES": "Patent was delivered in person June 2, 1920. Financial condition is fair. Mental condition is good. Physical condition is good. No one is dependent upon me for support. Has not been defrauded of property. Government, State or County contributes nothing to her support. County of Buffalo, State of South Dakota.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2175,
+    "output_tokens": 337
+  },
+  "elapsed": 4.0
+}

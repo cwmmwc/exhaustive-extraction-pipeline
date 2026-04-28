@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_005",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "9",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Samuel Smith",
+    "Tribe/Reservation": "Shannon County, South Dakota (reservation not stated)",
+    "Post Office Address": "Allen, South Dakota",
+    "Allotment number": "1873",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee to 317.36 acre allotment, when it was issued, September 29, 1919, but he was told that, if he did not take it, and pay his taxes, the land would be taxed just the same, and later sold for taxes, so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1920, he sold his 317.36 acre allotment",
+    "Buyer": "R. E. Emly, of Martin, South Dakota, for the sum of $8000.00 cash",
+    "Tax burden forced sale/Mortgage": "he paid the year's taxes assessed against the land out of this money; did not sell his land for any debts incurred prior to receiving the patent in fee",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Male",
+    "Age": "68 years old",
+    "Occupation/Income": "he farms a little for a living, this being his only income",
+    "NOTES": "mentally incompetent; health is poor\u2014bad eyes, rheumatism, and feeling the effects of old age; has a wife to support, who is, also, old, feeble and rheumatic; has never received any help from the County, State nor the United States Government; considers he received a very good price for his land; document sworn March 11, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2299,
+    "output_tokens": 465
+  },
+  "elapsed": 7.1
+}

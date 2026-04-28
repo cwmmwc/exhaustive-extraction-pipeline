@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_130",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "92",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susie Keester\u2014nee Harvey",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Imlay, South Dakota",
+    "Allotment number": "2723",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she was single, and without any income, so could not pay taxes, and did not want the patent in fee, but was informed that it would be taxed, if she did not take the patent, and pay the taxes, so she took the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged her land for $500.00; bank foreclosed on her land May 21, 1926",
+    "Buyer": "The Security & Savings Bank of Rapid City, South Dakota foreclosed on her land; bank retained $100.00 as commission out of the $500.00 for making the loan",
+    "Tax burden forced sale/Mortgage": "she was single, and without any income, so could not pay taxes; thereafter she was unable to pay anything; and the bank foreclosed on her land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1929",
+    "Gender": "Female",
+    "Age": "30 years old",
+    "Occupation/Income": "husband supports the family by working as section laborer on the railroad; and that this is their only income",
+    "NOTES": "Allotment described as Lots 7, 8, 9 and 10, Sec. 3, T. 41N., R. 43W., 147.20 acres; foreclosure notice not served until April 7, 1928, deponent states they had no right to the $100.00 commission and should have served foreclosure notice prior to foreclosure proceedings so she might have the option of redeeming it; in 1921 she went to Rapid City to borrow money on her horses but Harry Wentzy, president of the bank, talked her out of mortgaging the horses and mortgaged her land instead; first year she paid interest of $30.00; did not sell her place for any debts made prior to receiving her patent in fee; has never received any help from the County, State nor the United States Government; mentally competent and in good health; mother of 4 children, all of whom have good health; husband is tubercular; document No. 2723; affidavit subscribed and sworn April 23, 1929 | Allotment number 2723 from source page 92 (No. 2723 visible on same page as affidavit), 2026-04-21.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2575,
+    "output_tokens": 643
+  },
+  "elapsed": 8.7
+}

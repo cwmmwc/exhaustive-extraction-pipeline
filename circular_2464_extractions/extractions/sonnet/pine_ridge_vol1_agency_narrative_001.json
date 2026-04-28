@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_agency_narrative_001",
+  "type": "agency_narrative",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "33",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "George Colhoff",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "337",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Pat. Recorded Jun. 18, 1923, by Security Savings Bank",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged SW\u00b1 26-37-39 (including the NW1) to State Bank of Scenic, Scenic, So. Dak. for $2000.00; SW4 26-37-39 deeded to Enla B. Snodgrass of Interior, So. Dak. by George Colhoff and Louisa Colhoff, his wife, on Aug. 18, 1925 for $1.00 and other valuable considerations",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sep. 29, 1919",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Receipt dated Jan. 15, 1920. Mortgage recorded Jan. 25, 1923. Deed to Enla B. Snodgrass recorded Aug. 19, 1925. Wife named Louisa Colhoff (also spelled Louise Colhoff). Land described as SW4 26-37-39. Document taken from records at the County Seat.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2109,
+    "output_tokens": 441
+  },
+  "elapsed": 5.8
+}

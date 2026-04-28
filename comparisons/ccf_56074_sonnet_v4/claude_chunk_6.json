@@ -1,0 +1,797 @@
+{
+  "entities": [
+    {
+      "name": "James B. Kitoh",
+      "type": "person",
+      "context": "Superintendent, Fort Peck Indian Reservation, Montana"
+    },
+    {
+      "name": "Fort Peck Indian Reservation",
+      "type": "location",
+      "context": "Reservation in Montana where James B. Kitoh was superintendent"
+    },
+    {
+      "name": "Standing Rock Reservation",
+      "type": "location",
+      "context": "Reservation in North Dakota where correspondent was located for six years"
+    },
+    {
+      "name": "James H. McGregor",
+      "type": "person",
+      "context": "Superintendent, Cheyenne River Agency, South Dakota"
+    },
+    {
+      "name": "Cheyenne River Agency",
+      "type": "organization",
+      "context": "Indian agency in South Dakota"
+    },
+    {
+      "name": "H. M. Tidwell",
+      "type": "person",
+      "context": "Superintendent, Pine Ridge Indian Agency, South Dakota"
+    },
+    {
+      "name": "Pine Ridge Indian Agency",
+      "type": "organization",
+      "context": "Indian agency in Pine Ridge, South Dakota"
+    },
+    {
+      "name": "Henry LeBeau",
+      "type": "person",
+      "context": "Farmer, Cheyenne River Agency, Promise, South Dakota"
+    },
+    {
+      "name": "John W. Welsh, Jr.",
+      "type": "person",
+      "context": "Farmer, Cheyenne River Agency, Whitehorse, South Dakota"
+    },
+    {
+      "name": "Elmer B. Pomeroy",
+      "type": "person",
+      "context": "Farmer, Pine Ridge Reservation, Eagle Nest District, Wanblee, South Dakota"
+    },
+    {
+      "name": "Judson Shook",
+      "type": "person",
+      "context": "Farmer, Pine Ridge Indian Reservation, Anderson, South Dakota"
+    },
+    {
+      "name": "J. W. C. Miller",
+      "type": "person",
+      "context": "Farmer, Pine Ridge Reservation, Oglala, South Dakota"
+    },
+    {
+      "name": "B. E. Brigance",
+      "type": "person",
+      "context": "Farmer, Pine Ridge Indian Reservation, Wakpamni District, Pine Ridge, South Dakota"
+    },
+    {
+      "name": "Ben Irving",
+      "type": "person",
+      "context": "Farmer, Pine Ridge Indian Reservation, Porcupine, South Dakota"
+    },
+    {
+      "name": "Leoni J. Roebuck",
+      "type": "person",
+      "context": "Farmer, Pine Ridge Indian Reservation, Kyle, South Dakota"
+    },
+    {
+      "name": "E. H. Hutchison",
+      "type": "person",
+      "context": "Superintendent, Shoshone Indian Reservation, Fort Washakie, Wyoming"
+    },
+    {
+      "name": "Leroy Cuny",
+      "type": "person",
+      "context": "Fee patent Indian, 39 years old, Pine Ridge area, retained land and prospered with 300 head of cattle"
+    },
+    {
+      "name": "William Twiss",
+      "type": "person",
+      "context": "Fee patent Indian, 58 years old, cannot read, disposed of all land and has nothing to show for it"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Federal body whose letter prompted responses regarding fee patent policy"
+    },
+    {
+      "name": "Pine Ridge Indian Reservation",
+      "type": "location",
+      "context": "Indian reservation in South Dakota"
+    },
+    {
+      "name": "Shoshone Indian Reservation",
+      "type": "location",
+      "context": "Indian reservation at Fort Washakie, Wyoming"
+    },
+    {
+      "name": "Fort Washakie",
+      "type": "location",
+      "context": "Location of Shoshone Indian Reservation in Wyoming"
+    },
+    {
+      "name": "Cheyenne River Agency Whitehorse District",
+      "type": "location",
+      "context": "District within Cheyenne River Agency, South Dakota"
+    },
+    {
+      "name": "Cannonball River",
+      "type": "location",
+      "context": "River along which Standing Rock Reservation Indians were located"
+    },
+    {
+      "name": "Grand River",
+      "type": "location",
+      "context": "River along which Standing Rock Reservation Indians were located"
+    },
+    {
+      "name": "Missouri River",
+      "type": "location",
+      "context": "River along which Standing Rock Reservation allotments were made"
+    },
+    {
+      "name": "Eagle Nest District",
+      "type": "location",
+      "context": "District of Pine Ridge Reservation near Wanblee, South Dakota"
+    },
+    {
+      "name": "Wakpamni District",
+      "type": "location",
+      "context": "District of Pine Ridge Reservation, Pine Ridge, South Dakota"
+    },
+    {
+      "name": "Porcupine",
+      "type": "location",
+      "context": "Location within Pine Ridge Indian Reservation, South Dakota"
+    },
+    {
+      "name": "Kyle",
+      "type": "location",
+      "context": "Location within Pine Ridge Indian Reservation, South Dakota"
+    },
+    {
+      "name": "Oglala",
+      "type": "location",
+      "context": "Location within Pine Ridge Reservation, South Dakota"
+    },
+    {
+      "name": "Wanblee",
+      "type": "location",
+      "context": "Location of Eagle Nest District, Pine Ridge Reservation"
+    },
+    {
+      "name": "Promise",
+      "type": "location",
+      "context": "Location in South Dakota, Cheyenne River Agency"
+    },
+    {
+      "name": "Whitehorse",
+      "type": "location",
+      "context": "Location of district within Cheyenne River Agency, South Dakota"
+    },
+    {
+      "name": "Anderson",
+      "type": "location",
+      "context": "Location near Pine Ridge Indian Reservation, South Dakota"
+    },
+    {
+      "name": "Enabling Act of 1905",
+      "type": "legislation",
+      "context": "Act under which Indian allotments became homes for heads of families and children"
+    },
+    {
+      "name": "Amendatory Act",
+      "type": "legislation",
+      "context": "Act under which wives of heads of families were allotted land at Standing Rock Reservation"
+    },
+    {
+      "name": "Competency Commission",
+      "type": "organization",
+      "context": "Commission that issued patents-in-fee to Indians deemed competent, largely mixed-blood"
+    },
+    {
+      "name": "Indian Office",
+      "type": "organization",
+      "context": "Federal office managing Indian affairs and patent-in-fee policy"
+    },
+    {
+      "name": "Declaration of Policy 1919",
+      "type": "legislation",
+      "context": "Policy under which fee patents were issued 1919-1930 at Shoshone Reservation"
+    }
+  ],
+  "events": [
+    {
+      "type": "circular_letter_issued",
+      "date": "1921-03-21",
+      "location": "unknown",
+      "description": "Circular letter dated March 21st, 1921 sent requesting information about fee patent Indians and policy outcomes"
+    },
+    {
+      "type": "patents_in_fee_issued",
+      "date": "1918-04",
+      "location": "Pine Ridge Indian Reservation",
+      "description": "In April 1918, patents-in-fee were issued to 341 persons owning allotments on Pine Ridge reservation having less than one-half Indian blood"
+    },
+    {
+      "type": "patents_in_fee_issued",
+      "date": "1919-09",
+      "location": "Pine Ridge Indian Reservation",
+      "description": "In September 1919, patents-in-fee were issued to 370 Indians of half or less Indian blood at Pine Ridge"
+    },
+    {
+      "type": "patents_in_fee_issued",
+      "date": "1907-1930",
+      "location": "Shoshone Indian Reservation",
+      "description": "303 patents-in-fee issued to Indians covering their allotments at Shoshone Reservation, broken down by year and blood group"
+    },
+    {
+      "type": "county_tax_assessments_begun",
+      "date": "unknown",
+      "location": "ceded portion of reservation",
+      "description": "Since county seats came into existence on the ceded portion of the Indian reservation, county authorities began making assessments on all Indians, valuing lands as farm lands despite being allotted as grazing lands"
+    },
+    {
+      "type": "allotments_made",
+      "date": "unknown",
+      "location": "Standing Rock Reservation",
+      "description": "Heads of families allotted 640 acres, wives allotted 320 acres by Amendatory Act, children allotted land miles from parents' homes"
+    },
+    {
+      "type": "special_detail_assignment",
+      "date": "1921",
+      "location": "Southwest United States",
+      "description": "Correspondent (formerly at Standing Rock) placed on special detail in southwest purchasing cattle for Indians, then transferred to Fort Peck Reservation"
+    },
+    {
+      "type": "competency_commission_patents_issued",
+      "date": "1916",
+      "location": "Shoshone Indian Reservation",
+      "description": "Competency Commission issued patents at Shoshone Reservation in 1916"
+    },
+    {
+      "type": "competency_commission_patents_issued",
+      "date": "1918",
+      "location": "Shoshone Indian Reservation",
+      "description": "Competency Commission issued patents at Shoshone Reservation in 1918"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "up to $30 per acre",
+      "payer": "unknown buyers",
+      "payee": "young Indian allottees",
+      "date": "unknown",
+      "description": "Land allotted to children on Standing Rock Reservation sold at average $20/acre, some as high as $30/acre"
+    },
+    {
+      "type": "sale",
+      "amount": "not exceeding $10 per acre",
+      "payer": "unknown buyers",
+      "payee": "Indian allottees",
+      "date": "unknown",
+      "description": "Rough land along coulees and water courses on Standing Rock Reservation valued at not exceeding $10/acre"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "unknown buyers",
+      "payee": "45 of 57 citizen Indians",
+      "date": "unknown",
+      "description": "In the Whitehouse District of Cheyenne River Agency, 45 of 57 citizen Indians sold their lands"
+    },
+    {
+      "type": "other",
+      "amount": "unknown",
+      "payer": "Indians",
+      "payee": "county tax authorities",
+      "date": "unknown",
+      "description": "County assessed taxes on allotted lands valuing them as farm lands rather than grazing lands, creating high tax burden on Indian allottees"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "James B. Kitoh",
+      "type": "employed_by",
+      "object": "Fort Peck Indian Reservation",
+      "context": "Superintendent of Fort Peck Indian Reservation, Montana"
+    },
+    {
+      "subject": "James H. McGregor",
+      "type": "employed_by",
+      "object": "Cheyenne River Agency",
+      "context": "Superintendent of Cheyenne River Agency, Cheyenne Agency, South Dakota"
+    },
+    {
+      "subject": "H. M. Tidwell",
+      "type": "employed_by",
+      "object": "Pine Ridge Indian Agency",
+      "context": "Superintendent of Pine Ridge Indian Agency, South Dakota"
+    },
+    {
+      "subject": "Henry LeBeau",
+      "type": "employed_by",
+      "object": "Cheyenne River Agency",
+      "context": "Farmer at Cheyenne River Agency, Promise, South Dakota"
+    },
+    {
+      "subject": "John W. Welsh, Jr.",
+      "type": "employed_by",
+      "object": "Cheyenne River Agency",
+      "context": "Farmer at Cheyenne River Agency, Whitehorse, South Dakota"
+    },
+    {
+      "subject": "Elmer B. Pomeroy",
+      "type": "employed_by",
+      "object": "Pine Ridge Reservation",
+      "context": "Farmer at Eagle Nest District, Wanblee, South Dakota"
+    },
+    {
+      "subject": "Judson Shook",
+      "type": "employed_by",
+      "object": "Pine Ridge Indian Reservation",
+      "context": "Farmer at Pine Ridge Indian Reservation, Anderson, South Dakota"
+    },
+    {
+      "subject": "J. W. C. Miller",
+      "type": "employed_by",
+      "object": "Pine Ridge Reservation",
+      "context": "Farmer at Pine Ridge Reservation, Oglala, South Dakota"
+    },
+    {
+      "subject": "B. E. Brigance",
+      "type": "employed_by",
+      "object": "Pine Ridge Indian Reservation",
+      "context": "Farmer at Pine Ridge Indian Reservation, Wakpamni District"
+    },
+    {
+      "subject": "Ben Irving",
+      "type": "employed_by",
+      "object": "Pine Ridge Indian Reservation",
+      "context": "Farmer at Pine Ridge Indian Reservation, Porcupine, South Dakota"
+    },
+    {
+      "subject": "Leoni J. Roebuck",
+      "type": "employed_by",
+      "object": "Pine Ridge Indian Reservation",
+      "context": "Farmer at Pine Ridge Indian Reservation, Kyle, South Dakota"
+    },
+    {
+      "subject": "E. H. Hutchison",
+      "type": "employed_by",
+      "object": "Shoshone Indian Reservation",
+      "context": "Superintendent of Shoshone Indian Reservation, Fort Washakie, Wyoming"
+    },
+    {
+      "subject": "Leroy Cuny",
+      "type": "related_to",
+      "object": "Pine Ridge Reservation",
+      "context": "39-year-old Indian residing near Pine Ridge, retained land, has 300 head of cattle and large family"
+    },
+    {
+      "subject": "William Twiss",
+      "type": "related_to",
+      "object": "Pine Ridge Reservation",
+      "context": "58-year-old Indian residing near Pine Ridge, disposed of all land, people caring for his children"
+    },
+    {
+      "subject": "Competency Commission",
+      "type": "related_to",
+      "object": "Indian Office",
+      "context": "Commission that issued patents-in-fee to Indians regardless of blood degree who had been successful in industrial work"
+    },
+    {
+      "subject": "county authorities",
+      "type": "related_to",
+      "object": "Indian allottees",
+      "context": "County authorities made assessments on Indians on ceded portions, valuing grazing lands as farm lands and imposing high taxes"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "341 persons less than one-half Indian blood",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "1918-04",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "370 Indians of half or less Indian blood",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "1919-09",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "303 Indians at Shoshone Reservation",
+      "allotment_number": "unknown",
+      "acreage": "80 acres average, irrigable agricultural land",
+      "patent_date": "1907-1930",
+      "patent_number": "unknown",
+      "mechanism": "individual_application|certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "approximately 90% sold or mortgaged"
+    },
+    {
+      "allottee_name": "Leroy Cuny",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "none - retained land",
+      "sale_price": "none",
+      "attorney": "unknown",
+      "mortgage": "none mentioned"
+    },
+    {
+      "allottee_name": "William Twiss",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "unknown (formerly at Standing Rock, North Dakota)",
+      "sender_title": "Agent or Superintendent formerly at Standing Rock",
+      "recipient": "James B. Kitoh",
+      "recipient_title": "Superintendent, Fort Peck Indian Reservation",
+      "date": "after 1921-03-21",
+      "subject": "Response to circular letter regarding fee patent Indians and policy outcomes at Standing Rock Reservation",
+      "action_requested": "furnish information as desired per circular letter of March 21, 1921",
+      "outcome": "Respondent regrets inability to fully comply due to special detail and transfer, provides partial report on Standing Rock"
+    },
+    {
+      "sender": "H. M. Tidwell",
+      "sender_title": "Superintendent, Pine Ridge Indian Agency",
+      "recipient": "unknown",
+      "recipient_title": "unknown",
+      "date": "after 1921-03-31",
+      "subject": "Response to letter of March 31st enclosing circulars for farmers regarding fee patent Indian policy",
+      "action_requested": "Distribute circulars among farmers and compile their responses",
+      "outcome": "Circulars distributed to farmers; letters collected expressing opinions on fee patent policy"
+    },
+    {
+      "sender": "Henry LeBeau",
+      "sender_title": "Farmer, Cheyenne River Agency, Promise, South Dakota",
+      "recipient": "unknown",
+      "recipient_title": "unknown",
+      "date": "unknown",
+      "subject": "Opinion on fee patent Indian policy at Cheyenne River Agency",
+      "action_requested": "unknown",
+      "outcome": "Reports 45 of 57 citizen Indians in Whitehouse District sold lands; 12 are holding; recommends individual examination of each case"
+    },
+    {
+      "sender": "John W. Welsh, Jr.",
+      "sender_title": "Farmer, Cheyenne River Agency, Whitehorse, South Dakota",
+      "recipient": "unknown",
+      "recipient_title": "unknown",
+      "date": "unknown",
+      "subject": "Opinion on releasing Indians from Government control and fee patent policy",
+      "action_requested": "unknown",
+      "outcome": "States government released Indians too suddenly; majority of first fee patent Indians sold all lands; recommends individual examination and government machinery assistance"
+    },
+    {
+      "sender": "Elmer B. Pomeroy",
+      "sender_title": "Farmer, Pine Ridge Reservation, Eagle Nest District, Wanblee, South Dakota",
+      "recipient": "unknown",
+      "recipient_title": "unknown",
+      "date": "unknown",
+      "subject": "Conditions of fee patent Indians at Pine Ridge, Eagle Nest District",
+      "action_requested": "unknown",
+      "outcome": "Reports mixed results; most successful citizen Indians on Standing Rock are more than one-half Indian blood; recommends continuing patent issuance based on individual merit"
+    },
+    {
+      "sender": "Judson Shook",
+      "sender_title": "Farmer, Pine Ridge Indian Reservation, Anderson, South Dakota",
+      "recipient": "unknown",
+      "recipient_title": "unknown",
+      "date": "unknown",
+      "subject": "Fee patent Indian policy outcomes at Pine Ridge",
+      "action_requested": "unknown",
+      "outcome": "Estimates one-fourth retained land and are accumulating property; one-fourth sold part and used money for machinery; one-half sold lands with little to show; recommends individual assessment and retaining 160 acres in trust"
+    },
+    {
+      "sender": "J. W. C. Miller",
+      "sender_title": "Farmer, Pine Ridge Reservation, Oglala, South Dakota",
+      "recipient": "unknown",
+      "recipient_title": "unknown",
+      "date": "unknown",
+      "subject": "Fee patent Indian outcomes, citing cases of Leroy Cuny and William Twiss",
+      "action_requested": "unknown",
+      "outcome": "Recommends individual case-by-case approach; notes 90% sold or mortgaged land at Shoshone; describes contrast between Leroy Cuny (success) and William Twiss (failure)"
+    },
+    {
+      "sender": "B. E. Brigance",
+      "sender_title": "Farmer, Pine Ridge Indian Reservation, Wakpamni District, Pine Ridge, South Dakota",
+      "recipient": "unknown",
+      "recipient_title": "unknown",
+      "date": "unknown",
+      "subject": "Fee patent Indian policy at Wakpamni District",
+      "action_requested": "unknown",
+      "outcome": "Three exceptions retained land and are doing well; all others sold land and spent money on automobiles and riotous living; recommends releasing young able-bodied Indians and holding money from sales in trust"
+    },
+    {
+      "sender": "Ben Irving",
+      "sender_title": "Farmer, Pine Ridge Indian Reservation, Porcupine, South Dakota",
+      "recipient": "unknown",
+      "recipient_title": "unknown",
+      "date": "unknown",
+      "subject": "Fee patent Indian policy at Porcupine District",
+      "action_requested": "unknown",
+      "outcome": "Knows no fee patent Indians who have made good from land sales; recommends individual examination; suggests withholding patents as land prices are currently low"
+    },
+    {
+      "sender": "Leoni J. Roebuck",
+      "sender_title": "Farmer, Pine Ridge Indian Reservation, Kyle, South Dakota",
+      "recipient": "unknown",
+      "recipient_title": "unknown",
+      "date": "unknown",
+      "subject": "Fee patent Indian policy at Kyle District",
+      "action_requested": "unknown",
+      "outcome": "Recommends individual examination; notes some who are competent refuse patents to avoid taxes"
+    },
+    {
+      "sender": "E. H. Hutchison",
+      "sender_title": "Superintendent, Shoshone Indian Reservation, Fort Washakie, Wyoming",
+      "recipient": "unknown",
+      "recipient_title": "unknown",
+      "date": "unknown",
+      "subject": "Fee patent Indians at Shoshone Reservation, statistical breakdown and outcomes",
+      "action_requested": "unknown",
+      "outcome": "303 patents issued 1907-1930; 90% sold or mortgaged; average allotment 80 acres irrigable land; recommends holding back not less than 160 acres; favors removal of restrictions for competent Indians"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "unknown",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1905",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Enabling Act of 1905 - established allotment process for Standing Rock Reservation, allotments became homes for heads of families and their children"
+    },
+    {
+      "bill_number": "unknown",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Amendatory Act - wives of heads of families at Standing Rock were allotted land, 320 acres each, often not adjacent to husbands' allotments"
+    },
+    {
+      "bill_number": "unknown",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1919",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Declaration of Policy 1919 - resulted in issuance of fee patents at Shoshone Reservation from 1919 to 1930"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "unnamed correspondent (formerly at Standing Rock, North Dakota)",
+      "witness_title": "Former agent/superintendent at Standing Rock, transferred to Fort Peck",
+      "hearing": "response to circular letter",
+      "committee": "unknown",
+      "location": "Fort Peck Reservation, Montana",
+      "date": "after 1921-03-21",
+      "subject": "Outcomes of fee patent policy at Standing Rock Reservation",
+      "key_claims": "Fee patents dealt largely with mixed-blood element, practically all as educated and competent as white people, but practically all land was disposed of. Mortgages and interest ate up resources. Only one Indian known to have regained his allotment. Subsequent issues by Competency Commission dealt with those successful in industrial work and returned soldiers; fair percentage retained lands. Young Indians allotted land 50-70 miles from parents' homes had little use for allotments. Money was in many cases wisely spent on cattle and implements. Inheritance of multiple scattered allotments made consolidation nearly impossible. County land speculators used unethical practices to induce land sales. Issuance of patents was a benefit as it gave Indians independence and self-determination.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "James H. McGregor",
+      "witness_title": "Superintendent, Cheyenne River Agency, South Dakota",
+      "hearing": "response to circular letter",
+      "committee": "unknown",
+      "location": "Cheyenne River Agency, South Dakota",
+      "date": "after 1921-03-21",
+      "subject": "Fee patent policy outcomes at Cheyenne River Agency and general Indian land policy",
+      "key_claims": "Standing Rock Reservation originally over three million acres; allotments ranged from 160 acres (unmarried) to 640 acres (heads of families) to 320 acres (wives). Most valuable agricultural land allotted to children whose families were miles away due to railroad building. Many young Indians sold allotments simply because land was too remote to use. Money often wisely spent on cattle and improvements. Inheritance of scattered allotments made use impossible. Strongly opposed to allowing Indians to lease home allotment. Believes fee patent issuance should continue on individual merit basis, not class distinction. Most successful citizen Indians on Standing Rock are those of more than one-half Indian blood. At Pine Ridge, April 1918: 341 patents issued to those with less than one-half Indian blood; September 1919: 370 patents to those of half or less blood. About 10% retained lands free of debt; 15% more have equity with mortgages of half to two-thirds value; majority sold and are now living on relatives. Tendency of Indians to convert land to cash as quickly as possible. Issuing patents indiscriminately would be disastrous.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Henry LeBeau",
+      "witness_title": "Farmer, Cheyenne River Agency, Promise, South Dakota",
+      "hearing": "response to circular letter",
+      "committee": "unknown",
+      "location": "Promise, South Dakota",
+      "date": "unknown",
+      "subject": "Fee patent Indian conditions in his district",
+      "key_claims": "Government released Indians from federal control too suddenly. Some were made citizens under protest. Majority of first fee patent Indians sold all their lands and spent the money. Those who sold deliberately are in worse condition. Recommends individual examination of each case and sending government machinery free of charge to assist remaining Indian landowners. County authorities assessed allotted grazing lands as farm lands causing high taxes. Original ruling was allottee holds land for 25 years then receives patent if capable, or 10-year extension; county overrules this. Every head of family allotted 640 acres as grazing land. Tax burden shocked Indians and made them want to rid themselves of patents.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "John W. Welsh, Jr.",
+      "witness_title": "Farmer, Cheyenne River Agency, Whitehorse, South Dakota",
+      "hearing": "response to circular letter",
+      "committee": "unknown",
+      "location": "Whitehorse, South Dakota",
+      "date": "unknown",
+      "subject": "Fee patent Indian policy at Cheyenne River Agency Whitehouse District",
+      "key_claims": "Out of 57 citizen Indians in Whitehouse District, 45 have sold their lands and 12 are holding. High percent of those who disposed of lands have little to show for sale money. Young Indian using white man as example in everyday habits and getting same education advantages. Experience will be his teacher and younger he gets it the sooner he will realize his worth. Old Indians must be protected. Some have used money to make improvements on homes. Recommends giving each Indian individual chance and making him care for himself.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Elmer B. Pomeroy",
+      "witness_title": "Farmer, Pine Ridge Reservation, Eagle Nest District, Wanblee, South Dakota",
+      "hearing": "response to circular letter",
+      "committee": "unknown",
+      "location": "Wanblee, South Dakota",
+      "date": "unknown",
+      "subject": "Fee patent Indian conditions and policy recommendations at Eagle Nest District",
+      "key_claims": "Most successful citizen Indians on Standing Rock are those of more than one-half Indian blood. Does not agree degree of blood is measure of competency. Each case should be on individual merit. 90% of unmarried Indians allotted land miles from homes with no practical use for allotments. Leases and sales were only method of remuneration. Fee patent issuance was benefit - Indians now feel independent and self-reliant. Believes policy of issuing fee patents to competent Indians should continue so children of these Indians learn to feel proper responsibility. Believes each case should be judged individually, not by blood or class distinction.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Judson Shook",
+      "witness_title": "Farmer, Pine Ridge Indian Reservation, Anderson, South Dakota",
+      "hearing": "response to circular letter",
+      "committee": "unknown",
+      "location": "Anderson, South Dakota",
+      "date": "unknown",
+      "subject": "Fee patent Indian conditions at Pine Ridge",
+      "key_claims": "About one-fourth of those turned loose have sold none of their land and are accumulating property. About one-fourth have sold part and used money for stock and machinery. About one-half have sold lands with very little to show for proceeds. Recommends individual case-by-case assessment. Believes Indians should be compelled to retain 160 acres under trust. Withholding patents at present time recommended as land prices are low and not equal to appraised valuation. Few cases where patent-in-fee Indians are really better off financially.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "J. W. C. Miller",
+      "witness_title": "Farmer, Pine Ridge Reservation, Oglala, South Dakota",
+      "hearing": "response to circular letter",
+      "committee": "unknown",
+      "location": "Oglala, South Dakota",
+      "date": "unknown",
+      "subject": "Fee patent Indian outcomes with case examples of Leroy Cuny and William Twiss",
+      "key_claims": "As soon as Indian receives patent-in-fee he tries to sell land for cash and stock. If cannot sell he mortgages it. Government not handling releasing of Indians correctly. Only policy is to take each case individually. Leroy Cuny, 39 years old, declared citizen, disposed of none of his land, raised large family, has 300 head of cattle, horses, hogs, poultry, making money, farming on large scale. William Twiss, 58 years old, cannot read, only writes name, immediately disposed of all land and has absolutely nothing to show for it, people caring for his children. Has been a little too fast in some cases turning Indians loose. Recommends each Indian be compelled to retain 160 acres under trust. Ten to twenty acres as homestead would amount to very little.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "B. E. Brigance",
+      "witness_title": "Farmer, Pine Ridge Indian Reservation, Wakpamni District, Pine Ridge, South Dakota",
+      "hearing": "response to circular letter",
+      "committee": "unknown",
+      "location": "Pine Ridge, South Dakota",
+      "date": "unknown",
+      "subject": "Fee patent Indian conditions at Wakpamni District, Pine Ridge",
+      "key_claims": "Wishes to state that with exception of three Indians, all who received patents-in-fee in his district are in much worse condition than before release from federal control. Three exceptions have not sold their land, have small herds of cattle, farming on small scale, contented and happy. All others sold allotments and spent money on automobiles and riotous living. Generally dissatisfied and seeking more money from Government. Recommends releasing all young able-bodied educated Indians from federal control; allowing others to sell part of allotment holding quarter section as homesite; money from sales held in trust and expenditure supervised by superintendent.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Ben Irving",
+      "witness_title": "Farmer, Pine Ridge Indian Reservation, Porcupine, South Dakota",
+      "hearing": "response to circular letter",
+      "committee": "unknown",
+      "location": "Porcupine, South Dakota",
+      "date": "unknown",
+      "subject": "Fee patent Indian outcomes at Porcupine District",
+      "key_claims": "Does not know of any patent-in-fee Indians who have made good from land sales. Quite a number have done exceedingly well and others have done nothing; receiving patents has been great detriment. Those turned loose seem satisfied with what has been done for them. A few retained all land and making good, but only small number, and these were doing well before patents were issued. Some sold part of land and improved homes. Others sold and have nothing. Some who are competent say only reason they do not apply for patents is they do not want to pay taxes. Recommends handling each case separately. In some cases retaining homestead would be detriment as Indian would think it made no difference what happened to rest of land.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Leoni J. Roebuck",
+      "witness_title": "Farmer, Pine Ridge Indian Reservation, Kyle, South Dakota",
+      "hearing": "response to circular letter",
+      "committee": "unknown",
+      "location": "Kyle, South Dakota",
+      "date": "unknown",
+      "subject": "Fee patent Indian policy at Kyle District",
+      "key_claims": "Will not say Government is too fast in releasing Indians. Recommends individual examination of each case by superintendent and farmers. Some who are competent refuse to apply for patents to avoid paying taxes. Recommends looking into each case separately. Not much difference made between land character and Indian character in assessing policy.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "E. H. Hutchison",
+      "witness_title": "Superintendent, Shoshone Indian Reservation, Fort Washakie, Wyoming",
+      "hearing": "response to circular letter",
+      "committee": "unknown",
+      "location": "Fort Washakie, Wyoming",
+      "date": "unknown",
+      "subject": "Statistical and qualitative outcomes of fee patent policy at Shoshone Indian Reservation",
+      "key_claims": "303 patents-in-fee issued at Shoshone Reservation 1907-1930. Breakdown: 1907:1, 1909:3, 1910:2, 1911:5, 1912:2, 1913:3, 1914:7, 1915:9, 1916:41, 1917:3, 1918:8, 1919:85, 1930(sic):34, total 303. Blood group breakdown provided. About 90% have either sold or mortgaged lands. Some few made beneficial use of proceeds purchasing livestock and agricultural equipment. Majority squandered lands in extravagant living and purchase of automobiles. Those who went broke have settled down to work for wages making better showing. Patent Indians mostly half-blood or less, educated, speak English fluently, in prime of life. Doubts single instance on reservation where if patent-in-fee Indians removed they would not make better showing. Reservation environment is great drawback. Favors entire removal of restrictions where Indians deemed competent. Recommends holding back not less than 160 acres as reservation not adapted for farming. Great caution in granting patents. Ignorant full-blood may be as competent as educated breed who is indolent. Industrial education in schools is of first importance.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "unnamed superintendent (formerly at Standing Rock, responding about general policy)",
+      "witness_title": "Superintendent (unidentified, Pine Ridge area context)",
+      "hearing": "response to circular letter",
+      "committee": "unknown",
+      "location": "unknown",
+      "date": "unknown",
+      "subject": "General policy on fee patents and Indian citizenship",
+      "key_claims": "Does not believe disposition or sale of Indian allotments is proper basis for judging success of policy. Does not agree that Indian must be pauperized to get proper start. Does not believe any land should be retained in trust as it removes responsibility from Indian. Believes issuance of patents and freeing from jurisdictional control has been benefit to Indians involved. Each individual Indian has a natural sphere or level they will attain. Unscrupulous white men including so-called bankers and land speculators used unethical practices to induce land sales. Indians suddenly thrown on own resources and subject to desire for money came under influence of unscrupulous white men. Indian same as white person has a certain sphere of physical and mental attainment.",
+      "questioner": "unknown"
+    }
+  ],
+  "taxes": [
+    {
+      "taxpayer": "Indian allottees on ceded portions of reservation",
+      "land_description": "Allotted lands on ceded portion of reservation, originally designated as grazing lands",
+      "tax_type": "county",
+      "amount": "high, over-valued",
+      "year": "unknown, after county seats established",
+      "status": "delinquent",
+      "county": "unknown county adjacent to ceded portion of reservation",
+      "context": "County authorities began making assessments on all Indians on ceded portions, valuing lands as farm lands despite being allotted as grazing lands. This created high tax burden. Original ruling was county would have no jurisdiction over allottee during 25-year trust period with possible 10-year extension, but county overruled this. Tax burden shocked Indians and made them anxious to dispose of patents to avoid taxes."
+    },
+    {
+      "taxpayer": "fee patent Indians generally",
+      "land_description": "allotted lands after fee patent issuance",
+      "tax_type": "county",
+      "amount": "unknown",
+      "year": "unknown",
+      "status": "other",
+      "county": "various",
+      "context": "Some competent Indians refused to apply for patents specifically to avoid paying taxes. Tax burden was a major factor causing Indians to want to dispose of patented lands."
+    }
+  ],
+  "mortgages": [
+    {
+      "borrower": "approximately 15% of Pine Ridge fee patent Indians",
+      "lender": "unknown",
+      "amount": "half to two-thirds of land value",
+      "land_description": "fee patented allotments at Pine Ridge Indian Reservation",
+      "acreage": "unknown",
+      "date": "post 1918-1919",
+      "interest_rate": "unknown",
+      "status": "foreclosed",
+      "context": "H.M. Tidwell reported approximately 15% more of Pine Ridge fee patent Indians have some equity in their lands having placed mortgages ranging from half to two-thirds of value of lands on them. Such cases practically always result in foreclosure."
+    },
+    {
+      "borrower": "Indian allottees generally",
+      "lender": "unknown",
+      "amount": "unknown",
+      "land_description": "fee patented allotments",
+      "acreage": "unknown",
+      "date": "unknown",
+      "interest_rate": "unknown",
+      "status": "foreclosed",
+      "context": "Earlier patentees at Standing Rock involved themselves in mortgages; interest and principal gradually ate up their resources and it was necessary to dispose of land entirely. Mortgages and interest described as key mechanism of land loss."
+    },
+    {
+      "borrower": "approximately 90% of Shoshone Reservation fee patent Indians",
+      "lender": "unknown",
+      "amount": "unknown",
+      "land_description": "allotments at Shoshone Indian Reservation, 80 acres average irrigable agricultural land",
+      "acreage": "80 acres average",
+      "date": "1907-1930",
+      "interest_rate": "unknown",
+      "status": "other",
+      "context": "E.H. Hutchison reported about 90% of 303 fee patent Indians at Shoshone Reservation have either sold or mortgaged their lands. Some few made beneficial use of proceeds."
+    },
+    {
+      "borrower": "unnamed Indian described by J.W.C. Miller",
+      "lender": "unknown",
+      "amount": "unknown",
+      "land_description": "fee patented allotment, Pine Ridge area",
+      "acreage": "unknown",
+      "date": "unknown",
+      "interest_rate": "unknown",
+      "status": "default",
+      "context": "J.W.C. Miller described that if Indian cannot sell his land he will mortgage it and that is the end of it - cash used for supporting himself or traveling, does not improve home or purchase stock."
+    }
+  ]
+}

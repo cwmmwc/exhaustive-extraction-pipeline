@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_064",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "79",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Edward Lessert",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "965",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 160 acre allotment when it was issued, but the Indian Agency advised him that, if he did not accept it, the allotment would be assessed for taxes, for which the land would finally be sold, so he took the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged his allotment to the Bennett County Bank, of Martin, South Dakota, for the sum of $2500.00; that the mortgage was never satisfied, and he allowed the bank to take his place for the satisfaction of this mortgage, in 1922",
+    "Buyer": "Bennett County Bank, of Martin, South Dakota, for $2500.00; land has since sold for $3000.00",
+    "Tax burden forced sale/Mortgage": "being in need of money to start a garage, he mortgaged his allotment; the mortgage was never satisfied and he allowed the bank to take his place for the satisfaction of this mortgage",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "37 years old",
+    "Occupation/Income": "works for the United States Government, as a mechanic; and that this is his only income",
+    "NOTES": "mentally competent, has pretty good health; has a wife and child to support, both of whom have good health; has never received any help from the County, State nor the United States Government; allotment was 160 acres; mortgage taken out in 1919, bank took place in 1922; land subsequently sold for $3000.00; document sworn December 10, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2302,
+    "output_tokens": 498
+  },
+  "elapsed": 7.0
+}

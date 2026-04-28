@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_016",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "20",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Julia Goodwin Little Horse",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "4084",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her allotment to her section of land, but that she was informed by the Indian Agency that she would have to accept it any way, and she did so",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold three quarters of her allotment, for cash, in 1920; that on the remaining quarter there are some taxes against, but that she never paid it; that there is no mortgage or other debts against this land",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "on the remaining quarter there are some taxes against, but that she never paid it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "54 years old",
+    "Occupation/Income": "they have no income whatever",
+    "NOTES": "mentally incompetent; health is not good, being pretty deaf and in generally run down condition; has a husband 73 years old, whose health is poor and he is unable to work; husband draws rations from the United States Government; has never received any help from the County or United States Government; document subscribed and sworn November 16, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2250,
+    "output_tokens": 402
+  },
+  "elapsed": 4.0
+}

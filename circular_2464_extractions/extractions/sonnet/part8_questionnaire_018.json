@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_questionnaire_018",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "57",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Annie Desersa Bonser",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "30/4",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Will Tackett called me by phone wanting to buy my land; this is the first I knew I had a patent and I told him I did not want. I told the Supt. at school that I did not want it; he was the one who gave it to me, it having been mailed to him to give to me.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold. Borrowed $550 from Walcott and Walcott. I sold it.",
+    "Buyer": "Sold for $2200.00, paid by notes due every six months. Full amount paid. Buyer name not stated.",
+    "Tax burden forced sale/Mortgage": "It was worth a whole lot more. I had to pay taxes and I was single at that time, and could not do it, therefore sold it.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Female",
+    "Age": "32",
+    "Occupation/Income": "By husband, who does trucking.",
+    "NOTES": "Received patent in 1918 at Genoa, Nebraska, at school, received by mail. Did not make application for patent. Did not remember signing a receipt for it. Has four children. Was single at time of sale. Not satisfied with the sale \u2014 land was worth more. Notarized April 9, 1929, before E. E. McKean.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2346,
+    "output_tokens": 455
+  },
+  "elapsed": 6.0
+}

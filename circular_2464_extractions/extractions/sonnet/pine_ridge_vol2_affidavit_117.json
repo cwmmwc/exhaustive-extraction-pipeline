@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_117",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "138",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rosa Bush",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Kyle, So. Dak.",
+    "Allotment number": "3689",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want a patent in fee for her land, and made protest against taking it, for she knew she could not pay the taxes, but that she took it on the advice of her Farmer and the people in the Agency Office",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold her land to Mr. W. E. Hieffe of Kyle, So. Dak. for $2000.00, that he paid her $850.00 and has not paid the balance",
+    "Buyer": "W. E. Hieffe of Kyle, So. Dak. for $2000.00 ($850.00 paid, balance unpaid)",
+    "Tax burden forced sale/Mortgage": "she sold her land simply for the reason that she could not pay the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "57 years old",
+    "Occupation/Income": "unable to work; supported by her husband, who is a full blood Indian, but that he does not support her very well",
+    "NOTES": "mentally competent but in very poor health, having heart trouble; has one grandchild depending on her for support; has not received any aid from the Government, County or State since she received her patent in fee; sworn before notary public November 5, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2243,
+    "output_tokens": 445
+  },
+  "elapsed": 7.1
+}

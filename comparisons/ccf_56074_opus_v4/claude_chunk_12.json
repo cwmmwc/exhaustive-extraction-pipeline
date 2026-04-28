@@ -1,0 +1,1506 @@
+{
+  "entities": [
+    {
+      "name": "William Manning",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Medicine Lake, Montana. Accumulated considerable property before receiving patent, retains all land, has cattle, horses, farms about 350 acres."
+    },
+    {
+      "name": "David Manning",
+      "type": "person",
+      "context": "Brother of William Manning, patent-in-fee Indian of Culbertson, Montana, considered a good citizen and fairly prosperous."
+    },
+    {
+      "name": "Francis Murray",
+      "type": "person",
+      "context": "Young man of Homestead, Montana who still retains his property, lives in a white community."
+    },
+    {
+      "name": "Alfred Murray",
+      "type": "person",
+      "context": "Young man of Homestead, Montana who still retains his property."
+    },
+    {
+      "name": "Daniel Courchene",
+      "type": "person",
+      "context": "Patent-in-fee Indian, business man of Culbertson, Montana, respected citizen and prosperous."
+    },
+    {
+      "name": "Fred Bauer",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Culbertson, Montana, retains patented lands, stock, and good home, sends children to public school."
+    },
+    {
+      "name": "Traffle Sears",
+      "type": "person",
+      "context": "Patent-in-fee Indian who sold his land, now at Weston, Oregon."
+    },
+    {
+      "name": "Charles Seeds",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Poplar, Montana, has accumulated some property and stock, has been using children's money."
+    },
+    {
+      "name": "Joe Alvarez",
+      "type": "person",
+      "context": "Young man of Poplar, Montana with patent, dissipated all of it, lives around Poplar, addicted to intoxicants."
+    },
+    {
+      "name": "John Anderson",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Brookton, Montana, received patent to all land, purchased stock and machinery, ate all cattle, sold horses and machinery, has nothing left."
+    },
+    {
+      "name": "John Bruguior",
+      "type": "person",
+      "context": "Middle-aged man of Medicine Lake, Montana, addicted to drink, received patent to all land, dissipated it, has very little to show."
+    },
+    {
+      "name": "William Boyd",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Wolf Point, Montana, sold whole allotment and dissipated all of it."
+    },
+    {
+      "name": "Alvin Warrior",
+      "type": "person",
+      "context": "Farmer at Box Elder Sub-agency, Brockton, Montana, Fort Peck Reservation. Authored report on patent-in-fee conditions."
+    },
+    {
+      "name": "Charles Owens",
+      "type": "person",
+      "context": "Patent-in-fee Indian who sold all of his allotment, 390 acres for $750 cash, two horses and two young heifers, disposed of stock and money, no home, living under father-in-law's roof."
+    },
+    {
+      "name": "Cleveland Owens",
+      "type": "person",
+      "context": "Patent-in-fee Indian who sold all of his allotment, 380 acres for four horses and some money, living under father-in-law's roof."
+    },
+    {
+      "name": "Ned Cantrell",
+      "type": "person",
+      "context": "Patent-in-fee Indian who with wife Lizzie sold all allotments, 740 acres, squandered money, office purchased home with children's money."
+    },
+    {
+      "name": "Lizzie Cantrell",
+      "type": "person",
+      "context": "Wife of Ned Cantrell, patent-in-fee Indian, sold all allotments totaling 740 acres with husband."
+    },
+    {
+      "name": "William Knorr",
+      "type": "person",
+      "context": "Patent-in-fee Indian who with wife Nancy sold all allotments except twenty acres, living on children's money."
+    },
+    {
+      "name": "Nancy Knorr",
+      "type": "person",
+      "context": "Wife of William Knorr, patent-in-fee Indian, sold all allotments except twenty acres."
+    },
+    {
+      "name": "Henry Blacktail",
+      "type": "person",
+      "context": "Trust patent Indian who has not received patent for original allotment, has 40-80 head of cattle and horses, good home, making progress."
+    },
+    {
+      "name": "Joshua Wets It",
+      "type": "person",
+      "context": "Trust patent Indian making good progress toward self-support."
+    },
+    {
+      "name": "Thomas Ryan",
+      "type": "person",
+      "context": "Trust patent Indian making good progress toward self-support."
+    },
+    {
+      "name": "Philip Larvie",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Morris, South Dakota, still has land or equivalent."
+    },
+    {
+      "name": "Mary Larvie",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Morris, South Dakota, still has land or equivalent."
+    },
+    {
+      "name": "Richard Larvie",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Morris, South Dakota, still has land or equivalent."
+    },
+    {
+      "name": "Rose Larvie",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Morris, South Dakota, still has land or equivalent."
+    },
+    {
+      "name": "Addie McLane",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Morris, South Dakota, still has land or equivalent."
+    },
+    {
+      "name": "Lucy Larvie",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Morris, South Dakota, still has land or equivalent."
+    },
+    {
+      "name": "Peter Larvie",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Morris, South Dakota."
+    },
+    {
+      "name": "Anna Larvie",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Belvidere, South Dakota, still retains land."
+    },
+    {
+      "name": "Anna Utterback",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Belvidere, South Dakota, still retains land."
+    },
+    {
+      "name": "Zoe Utterback",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Belvidere, South Dakota, still retains land."
+    },
+    {
+      "name": "Joe Larvie",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Norris, South Dakota, disposed of land and has nothing to show for it."
+    },
+    {
+      "name": "Winnie Larvie",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Norris, South Dakota, disposed of land and has nothing to show for it."
+    },
+    {
+      "name": "John Cordier",
+      "type": "person",
+      "context": "Half-breed patent-in-fee Indian of Norris, South Dakota, squandered land and made no effort to work since receiving patent."
+    },
+    {
+      "name": "Thomas Larvie",
+      "type": "person",
+      "context": "Quarter-breed patent-in-fee Indian who squandered land and made no effort to work since receiving patent."
+    },
+    {
+      "name": "Fred Ashley",
+      "type": "person",
+      "context": "Patent-in-fee Indian who received patent in 1913, disposed of land immediately."
+    },
+    {
+      "name": "Harris Low Cloud",
+      "type": "person",
+      "context": "Patent-in-fee Indian who received patent in 1913, disposed of land immediately."
+    },
+    {
+      "name": "Edward Face Darkling",
+      "type": "person",
+      "context": "Patent-in-fee Indian who received patent in 1913, disposed of land immediately."
+    },
+    {
+      "name": "Bull Tail",
+      "type": "person",
+      "context": "Patent-in-fee Indian who received patent in 1913, disposed of land immediately."
+    },
+    {
+      "name": "Thomas Larvie",
+      "type": "person",
+      "context": "Patent-in-fee Indian who received patent in 1913."
+    },
+    {
+      "name": "Edward Quick Bear",
+      "type": "person",
+      "context": "Patent-in-fee Indian who received patent in 1913, disposed of land immediately."
+    },
+    {
+      "name": "Reuben Quick Bear",
+      "type": "person",
+      "context": "Patent-in-fee Indian who received patent in 1913, disposed of land immediately."
+    },
+    {
+      "name": "Joseph Runs Close to Village",
+      "type": "person",
+      "context": "Patent-in-fee Indian who received patent in 1913, disposed of land immediately."
+    },
+    {
+      "name": "John Runs Close to Village",
+      "type": "person",
+      "context": "Patent-in-fee Indian who received patent in 1913, disposed of land immediately."
+    },
+    {
+      "name": "J. D. Kephart",
+      "type": "person",
+      "context": "Farmer at Rosebud Indian Agency, Morris, South Dakota. Authored report on Blackpipe District patent-in-fee conditions."
+    },
+    {
+      "name": "Robert Emery",
+      "type": "person",
+      "context": "Farmer at Rosebud Indian Reservation, Little White River, South Dakota. Authored report on patent-in-fee conditions."
+    },
+    {
+      "name": "W. L. Gardner",
+      "type": "person",
+      "context": "Farmer at Rosebud Indian Agency, Wososo, South Dakota. Authored report on patent-in-fee conditions."
+    },
+    {
+      "name": "F. Rogers",
+      "type": "person",
+      "context": "Farmer at Rosebud Indian Agency, Rosebud, South Dakota. Authored report on patent-in-fee conditions."
+    },
+    {
+      "name": "L. W. Shotwell",
+      "type": "person",
+      "context": "Farmer at Rosebud Indian Agency, Hamill, South Dakota. Authored report on patent-in-fee conditions."
+    },
+    {
+      "name": "William Simpson",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Rosebud, South Dakota. He and wife are both patent-in-fees, no home, land sold, only has two teams of horses and a wagon."
+    },
+    {
+      "name": "William Bordeaux",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Kilgore, Nebraska. He and wife are both patent-in-fees, has not even a home, living from hand to mouth."
+    },
+    {
+      "name": "Todd Smith",
+      "type": "person",
+      "context": "Patent-in-fee Indian of Rosebud, South Dakota. Received patents for original allotment and inherited land, sold about $13,000 worth of land, has only a little house worth about $300 and works for Indian trader."
+    },
+    {
+      "name": "James R. Holsclaw",
+      "type": "person",
+      "context": "Farmer at Rosebud Indian Agency, Okreek, South Dakota. Authored report on patent-in-fee conditions."
+    },
+    {
+      "name": "J. A. Rennick",
+      "type": "person",
+      "context": "Farmer at Ponca District, Rosebud Reservation, Herrick, South Dakota. Authored report on patent-in-fee conditions."
+    },
+    {
+      "name": "Nation Flying",
+      "type": "person",
+      "context": "Only Indian on Standing Rock Reservation known to have made good with patent-in-fee. Sold inherited land, bought farming tools, tractor, plows and stock, farming 160 acres, refused $9,000 for his half-section near town."
+    },
+    {
+      "name": "Fort Peck Reservation",
+      "type": "location",
+      "context": "Indian reservation in Montana where patent-in-fee conditions are reported."
+    },
+    {
+      "name": "Standing Rock Reservation",
+      "type": "location",
+      "context": "Indian reservation in South and North Dakota where approximately 600 patents-in-fee were issued."
+    },
+    {
+      "name": "Rosebud Reservation",
+      "type": "location",
+      "context": "Indian reservation in South Dakota where approximately 800 patents-in-fee were issued."
+    },
+    {
+      "name": "Medicine Lake, Montana",
+      "type": "location",
+      "context": "Location of William Manning and John Bruguior."
+    },
+    {
+      "name": "Culbertson, Montana",
+      "type": "location",
+      "context": "Location of David Manning, Daniel Courchene, and Fred Bauer."
+    },
+    {
+      "name": "Homestead, Montana",
+      "type": "location",
+      "context": "Location of Francis Murray and Alfred Murray."
+    },
+    {
+      "name": "Poplar, Montana",
+      "type": "location",
+      "context": "Location of Charles Seeds and Joe Alvarez, Fort Peck Agency headquarters."
+    },
+    {
+      "name": "Wolf Point, Montana",
+      "type": "location",
+      "context": "Location of William Boyd, Wolf Point Sub-agency."
+    },
+    {
+      "name": "Brookton, Montana",
+      "type": "location",
+      "context": "Location of John Anderson."
+    },
+    {
+      "name": "Brockton, Montana",
+      "type": "location",
+      "context": "Location of Box Elder Sub-agency."
+    },
+    {
+      "name": "Weston, Oregon",
+      "type": "location",
+      "context": "Where Traffle Sears moved after selling his land."
+    },
+    {
+      "name": "Morris, South Dakota",
+      "type": "location",
+      "context": "Location of multiple Larvie family patent-in-fee Indians and J. D. Kephart."
+    },
+    {
+      "name": "Norris, South Dakota",
+      "type": "location",
+      "context": "Location of Joe Larvie, Winnie Larvie, and John Cordier."
+    },
+    {
+      "name": "Belvidere, South Dakota",
+      "type": "location",
+      "context": "Location of Anna Larvie, Anna Utterback, and Zoe Utterback."
+    },
+    {
+      "name": "Rosebud, South Dakota",
+      "type": "location",
+      "context": "Location of William Simpson, Todd Smith, Rosebud Indian Agency."
+    },
+    {
+      "name": "Kilgore, Nebraska",
+      "type": "location",
+      "context": "Location of William Bordeaux."
+    },
+    {
+      "name": "Hamill, South Dakota",
+      "type": "location",
+      "context": "Location of L. W. Shotwell, Rosebud Indian Agency farmer."
+    },
+    {
+      "name": "Wososo, South Dakota",
+      "type": "location",
+      "context": "Location of W. L. Gardner, Rosebud Indian Agency farmer."
+    },
+    {
+      "name": "Okreek, South Dakota",
+      "type": "location",
+      "context": "Location of James R. Holsclaw, Rosebud Indian Agency farmer."
+    },
+    {
+      "name": "Herrick, South Dakota",
+      "type": "location",
+      "context": "Location of J. A. Rennick, Ponca District farmer."
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Organization receiving reports and circular letter dated March 1921 regarding patent-in-fee conditions."
+    },
+    {
+      "name": "Fort Peck Agency",
+      "type": "organization",
+      "context": "Indian agency at Poplar, Montana."
+    },
+    {
+      "name": "Rosebud Indian Agency",
+      "type": "organization",
+      "context": "Indian agency on Rosebud Reservation, South Dakota."
+    },
+    {
+      "name": "Box Elder Sub-agency",
+      "type": "organization",
+      "context": "Sub-agency of Fort Peck Reservation at Brockton, Montana."
+    },
+    {
+      "name": "Wolf Point Sub-agency",
+      "type": "organization",
+      "context": "Sub-agency of Fort Peck Indian Reservation."
+    },
+    {
+      "name": "Blackpipe District",
+      "type": "location",
+      "context": "District within Rosebud Reservation where J. D. Kephart served as farmer for eight and a half years, 33 patents issued."
+    },
+    {
+      "name": "Little White River District",
+      "type": "location",
+      "context": "District within Rosebud Reservation, almost all patent-in-fee Indians squandered land."
+    },
+    {
+      "name": "Ponca District",
+      "type": "location",
+      "context": "District within Rosebud Reservation where J. A. Rennick served as farmer."
+    }
+  ],
+  "events": [
+    {
+      "type": "patent_issuance",
+      "date": "1913",
+      "location": "Rosebud Indian Agency, South Dakota",
+      "description": "Patents issued to Fred Ashley, Harris Low Cloud, Edward Face Darkling, Bull Tail, Thomas Larvie, Edward Quick Bear, Reuben Quick Bear, Joseph Runs Close to Village, and John Runs Close to Village. They disposed of land immediately and spent money within 6 months."
+    },
+    {
+      "type": "patent_issuance",
+      "date": "",
+      "location": "Fort Peck Reservation, Montana",
+      "description": "Multiple patents-in-fee issued to Fort Peck allottees, majority resulted in land loss and destitution."
+    },
+    {
+      "type": "patent_issuance",
+      "date": "1916",
+      "location": "Standing Rock Reservation",
+      "description": "Subsequent issuance of patents-in-fee largely to mixed blood element, practically all land disposed of."
+    },
+    {
+      "type": "patent_issuance",
+      "date": "before 1915",
+      "location": "Standing Rock Reservation",
+      "description": "Approximately 600 patents-in-fee issued beginning with mixed bloods and educated Indians."
+    },
+    {
+      "type": "patent_issuance",
+      "date": "",
+      "location": "Rosebud Reservation, South Dakota",
+      "description": "Approximately 800 patents-in-fee issued to Rosebud Indians, estimated 10% made success."
+    },
+    {
+      "type": "circular_letter",
+      "date": "1921-03",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners issued circular letter requesting information on patent-in-fee Indian conditions from Indian Service farmers."
+    },
+    {
+      "type": "report_response",
+      "date": "1921-07-09",
+      "location": "Fort Peck Agency, Poplar, Montana",
+      "description": "Response letter to Board of Indian Commissioners regarding patent-in-fee conditions, writer on special detail purchasing cattle in Southwest."
+    },
+    {
+      "type": "allotment",
+      "date": "1905",
+      "location": "Standing Rock Reservation",
+      "description": "First Enabling Act of 1905 led to allotments to heads of families on Standing Rock Reservation."
+    },
+    {
+      "type": "allotment",
+      "date": "1908-1909",
+      "location": "Standing Rock Reservation",
+      "description": "Children allotted lands under amendatory act, often 50-70 miles from parents' homes."
+    },
+    {
+      "type": "policy_change",
+      "date": "1917",
+      "location": "",
+      "description": "Children born after 1917 were not allotted 160 acres of land."
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$750 cash, two horses, two young heifers",
+      "payer": "unknown buyer",
+      "payee": "Charles Owens",
+      "date": "",
+      "description": "Charles Owens sold all of his allotment, 390 acres, for $750 cash, two horses and two young heifers."
+    },
+    {
+      "type": "sale",
+      "amount": "four horses and some money",
+      "payer": "unknown buyer",
+      "payee": "Cleveland Owens",
+      "date": "",
+      "description": "Cleveland Owens sold all of his allotment, 380 acres, for four horses and some money."
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "unknown buyer",
+      "payee": "Ned Cantrell and Lizzie Cantrell",
+      "date": "",
+      "description": "Ned and Lizzie Cantrell sold all their allotments, 740 acres, squandered the money."
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "unknown buyer",
+      "payee": "William Knorr and Nancy Knorr",
+      "date": "",
+      "description": "William and Nancy Knorr sold all allotments except twenty acres."
+    },
+    {
+      "type": "sale",
+      "amount": "$13,000",
+      "payer": "unknown buyers",
+      "payee": "Todd Smith",
+      "date": "",
+      "description": "Todd Smith sold approximately $13,000 worth of land from original allotment and inherited land over ten years."
+    },
+    {
+      "type": "sale",
+      "amount": "$6,200",
+      "payer": "unknown buyer",
+      "payee": "unnamed patent-in-fee Indian",
+      "date": "",
+      "description": "One man sold his quarter for $6,200 and bought another quarter for $4,800."
+    },
+    {
+      "type": "sale",
+      "amount": "$4,000",
+      "payer": "unknown buyer",
+      "payee": "unnamed young man",
+      "date": "",
+      "description": "Young man sold his quarter for $4,000, spent $1,800, investing remaining $2,200 in lands."
+    },
+    {
+      "type": "sale",
+      "amount": "$5,500",
+      "payer": "unknown buyer",
+      "payee": "unnamed young woman",
+      "date": "",
+      "description": "Young woman sold her quarter for $5,500 and bought another quarter for $4,400."
+    },
+    {
+      "type": "sale",
+      "amount": "$4,800",
+      "payer": "unnamed patent-in-fee Indian",
+      "payee": "unknown seller",
+      "date": "",
+      "description": "Man who sold quarter for $6,200 bought another quarter for $4,800."
+    },
+    {
+      "type": "sale",
+      "amount": "$4,400",
+      "payer": "unnamed young woman",
+      "payee": "unknown seller",
+      "date": "",
+      "description": "Young woman who sold for $5,500 bought another quarter for $4,400."
+    },
+    {
+      "type": "other",
+      "amount": "$9,000 (refused offer)",
+      "payer": "unknown prospective buyer",
+      "payee": "Nation Flying",
+      "date": "",
+      "description": "Nation Flying was offered $9,000 for his half-section near town but refused to sell."
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "David Manning",
+      "type": "related_to",
+      "object": "William Manning",
+      "context": "David Manning of Culbertson is a brother to William Manning of Medicine Lake."
+    },
+    {
+      "subject": "Alvin Warrior",
+      "type": "employed_by",
+      "object": "Fort Peck Reservation",
+      "context": "Farmer at Box Elder Sub-agency, Brockton, Montana, Fort Peck Reservation."
+    },
+    {
+      "subject": "J. D. Kephart",
+      "type": "employed_by",
+      "object": "Rosebud Indian Agency",
+      "context": "Farmer at Rosebud Indian Agency, Morris, South Dakota, Blackpipe District for eight and a half years."
+    },
+    {
+      "subject": "Robert Emery",
+      "type": "employed_by",
+      "object": "Rosebud Indian Reservation",
+      "context": "Farmer at Rosebud Indian Reservation, Little White River, South Dakota."
+    },
+    {
+      "subject": "W. L. Gardner",
+      "type": "employed_by",
+      "object": "Rosebud Indian Agency",
+      "context": "Farmer at Rosebud Indian Agency, Wososo, South Dakota."
+    },
+    {
+      "subject": "F. Rogers",
+      "type": "employed_by",
+      "object": "Rosebud Indian Agency",
+      "context": "Farmer at Rosebud Indian Agency, Rosebud, South Dakota."
+    },
+    {
+      "subject": "L. W. Shotwell",
+      "type": "employed_by",
+      "object": "Rosebud Indian Agency",
+      "context": "Farmer at Rosebud Indian Agency, Hamill, South Dakota."
+    },
+    {
+      "subject": "James R. Holsclaw",
+      "type": "employed_by",
+      "object": "Rosebud Indian Agency",
+      "context": "Farmer at Rosebud Indian Agency, Okreek, South Dakota."
+    },
+    {
+      "subject": "J. A. Rennick",
+      "type": "employed_by",
+      "object": "Rosebud Reservation",
+      "context": "Farmer at Ponca District, Rosebud Reservation, Herrick, South Dakota."
+    },
+    {
+      "subject": "Ned Cantrell",
+      "type": "related_to",
+      "object": "Lizzie Cantrell",
+      "context": "Husband and wife, both patent-in-fee Indians who sold 740 acres combined."
+    },
+    {
+      "subject": "William Knorr",
+      "type": "related_to",
+      "object": "Nancy Knorr",
+      "context": "Husband and wife, both patent-in-fee Indians who sold all allotments except twenty acres."
+    },
+    {
+      "subject": "Todd Smith",
+      "type": "employed_by",
+      "object": "Indian trader",
+      "context": "Todd Smith working for an Indian trader in Rosebud after selling all his land."
+    },
+    {
+      "subject": "Charles Owens",
+      "type": "related_to",
+      "object": "father-in-law (unnamed)",
+      "context": "Living under father-in-law's roof and support after selling allotment."
+    },
+    {
+      "subject": "Cleveland Owens",
+      "type": "related_to",
+      "object": "father-in-law (unnamed)",
+      "context": "Living under father-in-law's roof and support after selling allotment."
+    },
+    {
+      "subject": "Thomas Larvie",
+      "type": "related_to",
+      "object": "Larvie family",
+      "context": "Quarter breed, part of Larvie family of Blackpipe District, squandered land."
+    },
+    {
+      "subject": "John Cordier",
+      "type": "related_to",
+      "object": "Rosebud Reservation",
+      "context": "Half breed patent-in-fee Indian who squandered land."
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "William Manning",
+      "allotment_number": "",
+      "acreage": "350+ acres (family lands)",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "David Manning",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Francis Murray",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Alfred Murray",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Daniel Courchene",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Fred Bauer",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Traffle Sears",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Charles Seeds",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Joe Alvarez",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "John Anderson",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "John Bruguior",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "William Boyd",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Charles Owens",
+      "allotment_number": "",
+      "acreage": "390",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "$750 cash, two horses, two young heifers",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Cleveland Owens",
+      "allotment_number": "",
+      "acreage": "380",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "four horses and some money",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Ned Cantrell",
+      "allotment_number": "",
+      "acreage": "370 (half of 740)",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Lizzie Cantrell",
+      "allotment_number": "",
+      "acreage": "370 (half of 740)",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "William Knorr",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Nancy Knorr",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Philip Larvie",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Mary Larvie",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Richard Larvie",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Rose Larvie",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Addie McLane",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Lucy Larvie",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Peter Larvie",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Anna Larvie",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Anna Utterback",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Zoe Utterback",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Joe Larvie",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Winnie Larvie",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "John Cordier",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Thomas Larvie",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Fred Ashley",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "1913",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Harris Low Cloud",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "1913",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Edward Face Darkling",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "1913",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Bull Tail",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "1913",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Edward Quick Bear",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "1913",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Reuben Quick Bear",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "1913",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Joseph Runs Close to Village",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "1913",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "John Runs Close to Village",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "1913",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "William Simpson",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "William Bordeaux",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Todd Smith",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "approximately $13,000",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Nation Flying",
+      "allotment_number": "",
+      "acreage": "160 acres plus half-section",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "sold inherited land, kept own allotment",
+      "attorney": "",
+      "mortgage": ""
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Alvin Warrior",
+      "sender_title": "Farmer, Box Elder Sub-agency, Fort Peck Reservation",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Conditions of patent-in-fee Indians on Fort Peck Reservation",
+      "action_requested": "Report on patent-in-fee Indian conditions",
+      "outcome": "Recommended more careful examination before issuing patents, retaining homestead"
+    },
+    {
+      "sender": "unnamed farmer",
+      "sender_title": "Farmer, Wolf Point Sub-agency, Fort Peck Indian Reservation",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Patent-in-fee Indian conditions at Wolf Point",
+      "action_requested": "Report on patent-in-fee conditions",
+      "outcome": "Reported every patent-in-fee Indian in district failed, recommended retaining 40 acres minimum"
+    },
+    {
+      "sender": "J. D. Kephart",
+      "sender_title": "Farmer, Rosebud Indian Agency, Morris, South Dakota",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Patent-in-fee conditions in Blackpipe District, 33 patents issued over 8.5 years",
+      "action_requested": "Report on patent-in-fee conditions",
+      "outcome": "Recommended retaining 100 acres minimum, very strenuous examination before issuing patents"
+    },
+    {
+      "sender": "Robert Emery",
+      "sender_title": "Farmer, Rosebud Indian Reservation, Little White River, South Dakota",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Patent-in-fee Indian conditions in Little White River District",
+      "action_requested": "Report on patent-in-fee conditions",
+      "outcome": "Reported almost all patent-in-fee Indians squandered land except four"
+    },
+    {
+      "sender": "W. L. Gardner",
+      "sender_title": "Farmer, Rosebud Indian Agency, Wososo, South Dakota",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Patent-in-fee Indian conditions",
+      "action_requested": "Report on patent-in-fee conditions",
+      "outcome": "Recommended Indians should not sell all land, retain own allotment for 35 more years"
+    },
+    {
+      "sender": "F. Rogers",
+      "sender_title": "Farmer, Rosebud Indian Agency, Rosebud, South Dakota",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Patent-in-fee conditions, approximately 800 patents issued on Rosebud, about 10% success rate",
+      "action_requested": "Report on patent-in-fee conditions",
+      "outcome": "Recommended allowing sale of inherited lands through Office but retaining own allotments"
+    },
+    {
+      "sender": "L. W. Shotwell",
+      "sender_title": "Farmer, Rosebud Indian Agency, Hamill, South Dakota",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Patent-in-fee conditions, listed 59 benefited Indians in Hamill, Colome, Winner, Dallas, Dison area",
+      "action_requested": "Report on patent-in-fee conditions",
+      "outcome": "Argued Indian must be placed on own resources to progress, fee patents create independence"
+    },
+    {
+      "sender": "unnamed writer",
+      "sender_title": "Farmer or official, Rosebud Indian Agency",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Patent-in-fee individual examination and retention of 40 acres in trust",
+      "action_requested": "Policy guidance",
+      "outcome": "Recommended individual examination, 40 acres retained in trust, clause compelling construction of house and barn"
+    },
+    {
+      "sender": "James R. Holsclaw",
+      "sender_title": "Farmer, Rosebud Indian Agency, Okreek, South Dakota",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Patent-in-fee conditions, success through experience and independence",
+      "action_requested": "Report on patent-in-fee conditions",
+      "outcome": "Believed Indians settle down after squandering initial proceeds, cited examples of success after failure"
+    },
+    {
+      "sender": "J. A. Rennick",
+      "sender_title": "Farmer, Ponca District, Rosebud Reservation, Herrick, South Dakota",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Patent-in-fee conditions, four years experience, few Indians did not sell and blow money",
+      "action_requested": "Report on patent-in-fee conditions",
+      "outcome": "Recommended individual examination, restrictions, not turning all loose"
+    },
+    {
+      "sender": "unnamed official",
+      "sender_title": "Formerly of Standing Rock Reservation",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "5120 Interior Building, Washington D.C.",
+      "date": "1921-07-09",
+      "subject": "Patent-in-fee conditions on Standing Rock Reservation, approximately 600 patents issued",
+      "action_requested": "Response to circular letter of March 1921",
+      "outcome": "Detailed analysis of patent failures, discussed allotment geography problems, mortgage exploitation"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "enacted",
+      "date": "1905",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "First Enabling Act of 1905 for Standing Rock Reservation allotments to heads of families."
+    },
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "enacted",
+      "date": "",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Amendatory Act allowing allotment of wives of heads of families on Standing Rock Reservation."
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Alvin Warrior",
+      "witness_title": "Farmer, Box Elder Sub-agency, Fort Peck Reservation",
+      "hearing": "",
+      "committee": "Board of Indian Commissioners",
+      "location": "Brockton, Montana",
+      "date": "",
+      "subject": "Patent-in-fee conditions on Fort Peck Reservation",
+      "key_claims": "Patent-in-fee issuance too liberal for Indians. Conditions far better before citizenship was given. Indians selling allotments outright or mortgaging for cash and automobiles. Recommended more careful examination and retaining homesteads.",
+      "questioner": ""
+    },
+    {
+      "witness": "unnamed farmer",
+      "witness_title": "Farmer, Wolf Point Sub-agency, Fort Peck Indian Reservation",
+      "hearing": "",
+      "committee": "Board of Indian Commissioners",
+      "location": "Wolf Point, Montana",
+      "date": "",
+      "subject": "Patent-in-fee conditions at Wolf Point",
+      "key_claims": "Every Indian in district who received patent-in-fee has failed. No lands, no money, no homes. Some living with relatives for support, using children's money. Charles Owens sold 390 acres for $750 cash and livestock. Cleveland Owens sold 380 acres for horses and money. Ned and Lizzie Cantrell sold 740 acres and squandered money. Trust patent Indians like Henry Blacktail and Joshua Wets It have 40-80 head cattle and good homes. Recommended retaining at least 40 acres per individual.",
+      "questioner": ""
+    },
+    {
+      "witness": "J. D. Kephart",
+      "witness_title": "Farmer, Rosebud Indian Agency",
+      "hearing": "",
+      "committee": "Board of Indian Commissioners",
+      "location": "Morris, South Dakota",
+      "date": "",
+      "subject": "Patent-in-fee conditions in Blackpipe District",
+      "key_claims": "33 patents issued in 8.5 years. Some Larvie family members retained land. Full-bloods not successful with patents. Quarter breeds who retained land did better. 1913 patentees disposed of land immediately and spent money within 6 months. Recommended retaining 100 acres minimum and strenuous examination.",
+      "questioner": ""
+    },
+    {
+      "witness": "Robert Emery",
+      "witness_title": "Farmer, Rosebud Indian Reservation",
+      "hearing": "",
+      "committee": "Board of Indian Commissioners",
+      "location": "Little White River, South Dakota",
+      "date": "",
+      "subject": "Patent-in-fee conditions in Little White River District",
+      "key_claims": "Almost all patent-in-fee Indians squandered land except four. First thing most do is get drunk and trade land for car and money. Those who sold bought automobiles used for joy-rides. Patent Indians come back to superintendent requesting patents on other allotments.",
+      "questioner": ""
+    },
+    {
+      "witness": "W. L. Gardner",
+      "witness_title": "Farmer, Rosebud Indian Agency",
+      "hearing": "",
+      "committee": "Board of Indian Commissioners",
+      "location": "Wososo, South Dakota",
+      "date": "",
+      "subject": "Patent-in-fee conditions on Rosebud Reservation",
+      "key_claims": "Great mistake to let Indians sell all land. Should be allowed to dispose of inherited lands but compelled to hold own allotment for another 35 years. Majority sell lands as fast as they get patent. Some mortgage land for old automobiles, lose land when unable to pay. Indian experience with money handling may do them good in time but they are very slow to learn.",
+      "questioner": ""
+    },
+    {
+      "witness": "F. Rogers",
+      "witness_title": "Farmer, Rosebud Indian Agency",
+      "hearing": "",
+      "committee": "Board of Indian Commissioners",
+      "location": "Rosebud, South Dakota",
+      "date": "",
+      "subject": "Patent-in-fee conditions, 800 patents issued, 10% success",
+      "key_claims": "About 800 patents-in-fee issued on Rosebud. Not more than 10% made success. Large majority would have been far better off if land retained in trust. Of 21 patent-in-fee Indians in his district, only 3 did not sell. Fourteen of twenty-one sold lands and spent money. One sold for $6,200 and reinvested. One sold for $4,000 and partly reinvested. Recommended allowing sale of inherited lands through Office with supervision, retaining white settlement as good example.",
+      "questioner": ""
+    },
+    {
+      "witness": "L. W. Shotwell",
+      "witness_title": "Farmer, Rosebud Indian Agency",
+      "hearing": "",
+      "committee": "Board of Indian Commissioners",
+      "location": "Hamill, South Dakota",
+      "date": "",
+      "subject": "Patent-in-fee conditions, benefits of independence",
+      "key_claims": "Indian will make no material progress until placed on own resources. Too much dependence on Government guardianship. After patent, Indians have nothing to sit and wait for. 90% squander land but then settle down. Knows dozens who squandered at least part but settled down and joined white community. Nearly all Indians more than half white made success. Cited full-blood typist employee who improved after receiving patent. 59 names submitted of benefited Indians. Recommended issuing fee patents for own land since children's lands still available.",
+      "questioner": ""
+    },
+    {
+      "witness": "unnamed writer",
+      "witness_title": "Farmer or official, Rosebud Indian Agency",
+      "hearing": "",
+      "committee": "Board of Indian Commissioners",
+      "location": "Rosebud, South Dakota",
+      "date": "",
+      "subject": "Individual examination and trust retention policy",
+      "key_claims": "Strongly favors individual examination for each patent applicant. Many Indians realize they would be better off if property still held in trust. Recommends at least 40 acres retained in trust with clause compelling building of house and barn. Without restriction, Indians sell land or mortgage for one-third value, buy automobile, lose land when loan due. William Simpson and wife have no home, land sold. William Bordeaux and wife have no home, living hand to mouth. Todd Smith sold $13,000 of land, has only $300 house.",
+      "questioner": ""
+    },
+    {
+      "witness": "James R. Holsclaw",
+      "witness_title": "Farmer, Rosebud Indian Agency",
+      "hearing": "",
+      "committee": "Board of Indian Commissioners",
+      "location": "Okreek, South Dakota",
+      "date": "",
+      "subject": "Patent-in-fee conditions, learning through experience",
+      "key_claims": "Believes more probability of Indians succeeding if they must depend on themselves. Cited full-blood young man who sold patent, bought car and stock, exhausted funds, returned to work and became best employee. Another full-blood sold two fee patents, using proceeds to improve wife's quarter. Indians sow wild oats then settle down.",
+      "questioner": ""
+    },
+    {
+      "witness": "J. A. Rennick",
+      "witness_title": "Farmer, Ponca District, Rosebud Reservation",
+      "hearing": "",
+      "committee": "Board of Indian Commissioners",
+      "location": "Herrick, South Dakota",
+      "date": "",
+      "subject": "Patent-in-fee conditions, four years experience",
+      "key_claims": "Grave question with as much against as for it. In four years knows few who did not sell and blow money. Small number making homes on land. Individual examination recommended. Should not turn all loose as most would be in poor house or begging, burden to state or county. Real estate men pester Indians until they sell.",
+      "questioner": ""
+    },
+    {
+      "witness": "unnamed official",
+      "witness_title": "Formerly of Standing Rock Reservation",
+      "hearing": "",
+      "committee": "Board of Indian Commissioners",
+      "location": "Fort Peck Agency, Poplar, Montana",
+      "date": "1921-07-09",
+      "subject": "Patent-in-fee conditions on Standing Rock Reservation",
+      "key_claims": "Approximately 600 patents-in-fee issued on Standing Rock. First issuance to mixed bloods and educated Indians before 1915 resulted in most immediately disposing of land. 1916 issuance largely to mixed blood element, practically all disposed of. Indians permitted themselves to be involved in mortgages. Only one Indian (Nation Flying) known to have made good. Many Indians received allotments 50-70 miles from parents' home, making land useless. Children allotted in 1908-1909 had no knowledge of their allotments. Many sold for no other reason than land was useless to them. White people felt administration period was one of private gain.",
+      "questioner": ""
+    }
+  ],
+  "taxes": [],
+  "mortgages": [
+    {
+      "borrower": "unnamed patent-in-fee Indians",
+      "lender": "unknown",
+      "amount": "approximately one-third of land value",
+      "land_description": "patented allotment lands",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "foreclosed",
+      "context": "General pattern described: Indians mortgage land for one-third of value, buy automobile, unable to meet obligation when due, lender gets land at considerably less than actual value. Described by Rosebud Agency farmer."
+    },
+    {
+      "borrower": "unnamed patent-in-fee Indians",
+      "lender": "unknown",
+      "amount": "",
+      "land_description": "patented allotment lands on Fort Peck Reservation",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "foreclosed",
+      "context": "Fort Peck Indians mortgaging allotments for part cash and automobile, losing land through practices."
+    },
+    {
+      "borrower": "unnamed Standing Rock Indians",
+      "lender": "unknown",
+      "amount": "",
+      "land_description": "patented lands on Standing Rock Reservation",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "foreclosed",
+      "context": "Standing Rock patentees permitted themselves to be involved in mortgages, interest and principal gradually ate up resources, necessary to dispose of land entirely. Only one Indian known to have regained allotment after mortgage."
+    },
+    {
+      "borrower": "unnamed Rosebud Indians",
+      "lender": "unknown",
+      "amount": "",
+      "land_description": "patented allotment lands on Rosebud Reservation",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "foreclosed",
+      "context": "Some mortgage land for old third or fourth class automobile, lose land when unable to pay, company gets land for a song."
+    }
+  ]
+}

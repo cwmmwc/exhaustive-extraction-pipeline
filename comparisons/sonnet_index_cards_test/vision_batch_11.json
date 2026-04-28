@@ -1,0 +1,42 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Interior",
+      "date": "1935-10-21",
+      "correspondent": "Office of Indian Affairs, First Asst. Secretary",
+      "correspondent_role": "incoming",
+      "case_name": "U.S. vs. Ralph Hughes, County Treasurer, et al",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Refers letter of Oct. 1, 1935, transmitting copy of letter from U.S. Atty. at Tulsa, Okla., re proposed application for an Order of Court in case of U.S. vs. Ralph Hughes, County Treasurer, et al.",
+      "action_type": "enclosure",
+      "enclosures": "copy of letter from U.S. Atty. at Tulsa, Okla.",
+      "routing_division": "Lands",
+      "routing_date": "1935-10-22",
+      "clerk_initials": "RK",
+      "processed_date": "1935-10-22"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. vs. Ralph Hughes, County Treasurer, et al",
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Interior",
+      "case_type": "other",
+      "allottee_name": "",
+      "tribe_or_reservation": "",
+      "county": ""
+    }
+  ],
+  "persons": [
+    {
+      "name": "Ralph Hughes",
+      "role": "defendant/County Treasurer",
+      "tribe": "",
+      "allottee_number": ""
+    }
+  ]
+}

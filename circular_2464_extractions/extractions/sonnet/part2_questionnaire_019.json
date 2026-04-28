@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_019",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "57-58",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Matilda Emery",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "2901",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No. I made no protest.",
+    "Recorded patent": "No, I never signed a receipt.",
+    "Sold/Mortgaged": "Sold the land.",
+    "Buyer": "not stated; all I got out of it was $400.00 and that was not all cash; he turned in a car on the deal but it was no good, and he took the car back and I didn't get nothing out of it.",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Female",
+    "Age": "Age 36 in August",
+    "Occupation/Income": "not stated",
+    "NOTES": "Patent delivered by mail at Bonesteel, S.D.; Adolph Stamer got the patent and then sent for her to come and sign it. Land was never mortgaged. Does not still own the land. Has five boys and one [girl, text unclear]. Husband and she parted. States: 'I think I would have been better off if I had never received the patents. I would have had a better home for my children and myself.' Dependent children noted; making a living for them as husband and she parted.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2644,
+    "output_tokens": 405
+  },
+  "elapsed": 6.8
+}

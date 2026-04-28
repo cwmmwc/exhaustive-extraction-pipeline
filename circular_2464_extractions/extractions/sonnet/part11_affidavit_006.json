@@ -1,0 +1,33 @@
+{
+  "document_id": "part11_affidavit_006",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "47",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mrs. Louisa Dougherty (Mother & Heir of Dolly Dougherty, deceased)",
+    "Tribe/Reservation": "Crow Creek Reservation",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "do not know if Patent was accepted without protest",
+    "Recorded patent": "Filed for record January 20, 1920, in volume 167, page 47, at Court House, Hughes Co., Pierre, S. Dak. It is known by whom it was filed.",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "53 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Affiant is mother and heir of Dolly Dougherty, deceased; physical condition is good; mental condition is good; financial condition is good; document signed with signature; county is Buffalo County, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2128,
+    "output_tokens": 341
+  },
+  "elapsed": 6.1,
+  "retry_count": 1
+}

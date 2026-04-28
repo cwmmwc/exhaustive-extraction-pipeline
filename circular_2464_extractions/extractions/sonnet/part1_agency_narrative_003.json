@@ -1,0 +1,54 @@
+{
+  "document_id": "part1_agency_narrative_003",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "73-74",
+  "model": "sonnet",
+  "extraction": [
+    {
+      "Name": "Benjamin Decory",
+      "Tribe/Reservation": "Rosebud",
+      "Post Office Address": "Rosebud, S. D.",
+      "Allotment number": "8",
+      "Cancelled": "not stated",
+      "Refused/Protested": "not stated",
+      "Recorded patent": "The patent was recorded by C. L. Dice on April 9, 1920",
+      "Sold/Mortgaged": "conveyed by deed from Benjamin Decory to W. H. Whitcher for a consideration of $3400.00",
+      "Buyer": "W. H. Whitcher for a consideration of $3400.00",
+      "Tax burden forced sale/Mortgage": "not stated",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "March 12, 1920",
+      "Gender": "Male",
+      "Age": "not stated",
+      "Occupation/Income": "not stated",
+      "NOTES": "Fee patent No. 739603 issued; Southeast quarter of Section 18, township 38, range 28; receipt for patent signed by the allottee on April 3, 1920; deed recorded on September 10, 1920",
+      "Literate/Illiterate": "not stated",
+      "Document type": "agency_narrative"
+    },
+    {
+      "Name": "David Whiting",
+      "Tribe/Reservation": "Rosebud",
+      "Post Office Address": "Rosebud, S. Dak.",
+      "Allotment number": "9",
+      "Cancelled": "not stated",
+      "Refused/Protested": "not stated",
+      "Recorded patent": "The patent was recorded Febr. 4, 1920",
+      "Sold/Mortgaged": "The land was mortgaged five times and conveyed by deed signed by David and Phoebe Whiting on March 3, 1921, to William J. Whitcher for $10,000",
+      "Buyer": "William J. Whitcher for $10,000",
+      "Tax burden forced sale/Mortgage": "not stated",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "December 29, 1917",
+      "Gender": "Male",
+      "Age": "not stated",
+      "Occupation/Income": "not stated",
+      "NOTES": "Fee patent No. 612742 issued; The northwest quarter of the southeast quarter and the northeast quarter of the southwest quarter of section 1, township 33, range 12, in Nebraska; receipt for patent signed by the allottee in February, 1918; deed also signed by Phoebe Whiting (wife); land was mortgaged five times before conveyance",
+      "Literate/Illiterate": "not stated",
+      "Document type": "agency_narrative"
+    }
+  ],
+  "usage": {
+    "input_tokens": 2195,
+    "output_tokens": 721
+  },
+  "elapsed": 6.6
+}

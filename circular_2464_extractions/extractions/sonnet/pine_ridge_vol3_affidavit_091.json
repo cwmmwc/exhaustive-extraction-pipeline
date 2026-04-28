@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_091",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "117",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Patton",
+    "Tribe/Reservation": "Oglala (Pine Ridge Agency)",
+    "Post Office Address": "Oglala, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee to his 160 acre allotment, when it was issued, April 13, 1918, for he did not want to pay taxes; but the Indian Agency informed him that, if he did not take care of it, the land would be assessed for taxes, for which it would later be sold; so he accepted the patent in fee",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold his allotment to Harry Evans, of Pine Ridge, South Dakota, for $600.00 cash",
+    "Buyer": "Harry Evans, of Pine Ridge, South Dakota, for $600.00 cash",
+    "Tax burden forced sale/Mortgage": "paid the taxes out of this $600.00",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Male",
+    "Age": "34 years old",
+    "Occupation/Income": "mail carrier for the United States Government; runs a freight line from Rushville, Nebraska, to Oglala, South Dakota; raises a few hogs; these three enterprises constituting his entire income",
+    "NOTES": "mentally competent, has good health; has a wife and seven children to support, all of whom have good health; considers he got a pretty poor price for his land; never sold his land for debts incurred before receiving the patent in fee; has never received any help from the County, State nor the United States Government; allotment was 160 acres; document No. 6801; sworn December 17, 1928, County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2300,
+    "output_tokens": 497
+  },
+  "elapsed": 6.9
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_questionnaire_004",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "12",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susan Estes, formerly Susan Utterback",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2432",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Ko.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "48",
+    "Occupation/Income": "My husband and I farm and raise stock.",
+    "NOTES": "Six dependents; not in good health; does not remember making an application for patent; got patent from the Blackpipe Farmer but does not remember the date; received $4000.00 for land; cash deal; satisfied with the sale; subscribed and sworn before Jas. W. Cross, Notary Public, May 14, 1929; commission expires 4-28-32",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2214,
+    "output_tokens": 316
+  },
+  "elapsed": 10.6
+}

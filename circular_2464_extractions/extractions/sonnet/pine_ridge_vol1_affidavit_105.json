@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_105",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "130",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rays Hernandez",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Kyle, South Dakota",
+    "Allotment number": "1410",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 160 acre allotment, when he got it, but that he was forced to take it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "deeded the land to Velandry",
+    "Buyer": "Clements Velandry; agreed to pay up taxes and give $800.00 besides; paid $50.00 cash at time of deed, later paid $200.00, leaving $550.00 owing which has never been paid, nor has Velandry paid even the interest on this $550.00",
+    "Tax burden forced sale/Mortgage": "got behind in taxes, and, in 1923, Clements Velandry came to him, and told him that he would pay up his taxes, and give him $800.00 besides, if Hernandez would deed him the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "40 years old",
+    "Occupation/Income": "he farms a little and works out at common labor, this being his only income",
+    "NOTES": "mentally competent, health not good, having had an operation for appendicitis; has a wife and eight children to support, the family being all healthy except three of the children; even if Velandry had paid him the $800.00, it would not have been a fair price for his allotment; has never received any help from the County, State or the United States Government; affidavit sworn November 23, 1928, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2328,
+    "output_tokens": 499
+  },
+  "elapsed": 7.0
+}

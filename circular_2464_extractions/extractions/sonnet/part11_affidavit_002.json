@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_affidavit_002",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "38",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "J. Amelie Carpenter",
+    "Tribe/Reservation": "Crow Creek",
+    "Post Office Address": "not stated",
+    "Allotment number": "63",
+    "Cancelled": "Do not know if patent has been cancelled. Patent was mailed to Indian office by Superintendent.",
+    "Refused/Protested": "I accepted it with protest, and not filed by me.",
+    "Recorded patent": "Patent was mailed to Indian office by Superintendent",
+    "Sold/Mortgaged": "Land has not been sold, or mortgaged. Land has not been mortgaged. Land has not been sold.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 14, 1910",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "Supported by husband. No contributions for support from Government, State, or County.",
+    "NOTES": "Legal resident of the Crow Creek Reservation, State of South Dakota; there is no dependent upon me for support; paid assessments have not been refunded; has not been defrauded of property; document sworn in County of Buffalo, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2268,
+    "output_tokens": 353
+  },
+  "elapsed": 5.4
+}

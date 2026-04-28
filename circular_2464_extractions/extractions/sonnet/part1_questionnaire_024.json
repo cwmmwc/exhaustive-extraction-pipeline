@@ -1,0 +1,33 @@
+{
+  "document_id": "part1_questionnaire_024",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "77",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Hattie Whiting Whitcher",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Spencer, Nebraska",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged and then sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I shoyld rather not have had the patent as the taxes were high and we were living on the place. Under the circumstances I think it only fair that I should be reimbursed for the taxes I had to pay before I sold the land which amounts to about $400.00.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "about 10 years ago",
+    "Gender": "Female",
+    "Age": "47",
+    "Occupation/Income": "My husband and I farm.",
+    "NOTES": "Patent was mailed to her at Spencer, Nebraska; sold land for $6000.00, not all at once (cash consideration); four of her brothers' children depend upon her for support; states she should be reimbursed ~$400.00 for taxes paid before sale; document notarized May 13, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2282,
+    "output_tokens": 389
+  },
+  "elapsed": 5.2,
+  "retry_count": 1
+}

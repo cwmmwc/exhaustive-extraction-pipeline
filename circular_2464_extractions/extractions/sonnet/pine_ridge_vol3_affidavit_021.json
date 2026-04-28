@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_021",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "25",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Yellow Bird",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent at the time it was issued, September 29, 1919, for this 640 acre allotment, but was told by the Indian Agency that, if he did not take it, that it would be taxed, and finally sold for the taxes; so he accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to John H. Mithen for $2500.00; sold to a real estate man by the name of White, of Kadoka, South Dakota, for $5000.00",
+    "Tax burden forced sale/Mortgage": "got behind in taxes, receiving a $90.00 tax bill, on April 5, 1920 he mortgaged his place to John H. Mithen for $2500.00; in 1923, being again behind in taxes, he sold the place",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Male",
+    "Age": "70 years old",
+    "Occupation/Income": "only income is the $40.00 pension he receives monthly, for having been an Indian Scout",
+    "NOTES": "mentally incompetent, has poor health, bothered with his lungs and eyes; has no one dependent upon him; purchaser took over the mortgage for $2500.00, paid back taxes amounting to $403.77, paid him in cash $892.23, and has since paid him balance due; deponent considers he received a good price for his land; has never received any help from the County, State or the United States Government with the exception of the $40.00 pension; document number No. 4202; County of Shannon, State of South Dakota; subscribed and sworn December 1, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2382,
+    "output_tokens": 548
+  },
+  "elapsed": 8.0
+}

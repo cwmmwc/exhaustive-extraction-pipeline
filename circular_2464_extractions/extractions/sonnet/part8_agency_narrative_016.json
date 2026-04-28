@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_agency_narrative_016",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "28",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Victoria LaPointe",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2878",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded by Frank Nunemaker",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Deed by Victoria Collins (nee Victoria LaPoint) and Wellman Collins dated September 23, 1926, conveyed the North half of Southeast quarter section 18, to Frank Nunemaker for $1.00 and other valuable consideration",
+    "Tax burden forced sale/Mortgage": "Tax certificate No. 477 was issued for the year 1926 on the South half of Southeast quarter of section 18. Subsequent taxes are still due but on March 6, 1929, there were not judgments or liens of record.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739687 issued; Southeast quarter section 18, township 100, north of range 73; receipt for patent issued April 3, 1920, by the allottee; conveyance dated September 23, 1926; allottee also known as Victoria Collins (nee Victoria LaPoint)",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2103,
+    "output_tokens": 408
+  },
+  "elapsed": 5.7
+}

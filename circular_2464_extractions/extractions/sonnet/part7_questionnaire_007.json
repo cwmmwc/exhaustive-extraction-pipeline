@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_007",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "19",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Earnest Charbonneau (Dec'd)",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "3373",
+    "Cancelled": "not stated",
+    "Refused/Protested": "He did not.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "He did sell it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Deponent is Alexis M. Charbonneau, age 80, father of Earnest Charbonneau; Earnest died April 5th, 1931, two years after receiving the fee patent; he was not married at the time of sale or at death; sold land for $5000 in cash and one half section of land closer to his home, and sold that half section for $1300 cash; notary public for Cherry County, Nebraska; commission expires April 17th, 1930; document sworn June 4, 1939",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2220,
+    "output_tokens": 354
+  },
+  "elapsed": 5.7
+}

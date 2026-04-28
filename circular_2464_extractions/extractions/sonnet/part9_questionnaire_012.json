@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_questionnaire_012",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "39",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Josephine DuBrey Whitford",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "3496",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Without protest.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "we traded it for mother peice of land",
+    "Buyer": "Bill Tackett assumed the mortgage on the first piece and gave us $1200 to boot on the piece we now own; the $1200 was in cash",
+    "Tax burden forced sale/Mortgage": "It was mortgaged to the attorneys. A fraud deal was pulled over on us, George Dodson's agent showed us one piece of land and deeded us another, and we took it to court and won tha lanc our own land back. Then we finally traded for a piece in Todd County, which was satisfactory. The mortgage was for $1,000.00",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1917",
+    "Gender": "Female",
+    "Age": "32",
+    "Occupation/Income": "Farming, and milking cows",
+    "NOTES": "Patent delivered by mother, who got it from boss farmer; allotment north of Winner; did not sign a receipt for it; did not make application for the patent; not in good health; four children dependent upon her; supported by husband; superintendent E. E. McKean noted on document; questionnaire subscribed and sworn June 19, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2315,
+    "output_tokens": 426
+  },
+  "elapsed": 6.1
+}

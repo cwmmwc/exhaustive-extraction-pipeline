@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_038",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "47-48",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Edna Johnson\u2014nee Ruff",
+    "Tribe/Reservation": "Shannon County, South Dakota (agency not specified)",
+    "Post Office Address": "Martin, South Dakota",
+    "Allotment number": "4507",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 160 acre allotment, for the reason that she knew that the taxes would be hard for her to pay, but the Indian Agency told her that, if she did not accept it, the land would be assessed for taxes, for which they would finally sell her land, so she took the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged the place to Mythen, of Omaha, Nebraska, for $2000.00, to get money to pay taxes and make improvements; she was unable to keep up the payments on this mortgage, and the place was foreclosed in 1924",
+    "Buyer": "Mortgaged to Mythen, of Omaha, Nebraska, for $2000.00; foreclosed in 1924",
+    "Tax burden forced sale/Mortgage": "she kept the taxes paid up on the allotment until 1921, when she mortgaged the place to Mythen, of Omaha, Nebraska, for $2000.00, to get money to pay taxes and make improvements; she was unable to keep up the payments on this mortgage, and the place was foreclosed in 1924; she considers this a total loss, as they put this money all into taxes and improvements",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "38 years old",
+    "Occupation/Income": "her husband owns sheep and cows, keeps them on her heirship land that she received from her mother's estate, this being their only means of support",
+    "NOTES": "mentally competent; has good health; husband has good health and supports her and her two children, who have good health; heirship land received from mother's estate; has never received any help from the County, State nor the United States Government; document also contains a separate affidavit for Vina Ruff Dessert (No. 4508), sworn April 17, 1929, age 36, Martin, South Dakota, who sold her allotment in 1919 to Max Robinwitz of Martin, South Dakota for $2000.00 cash; Vina Ruff Dessert's fee patent was issued April 13, 1918 for SW\u00bc, Sec. 17, T. 36N., R. 37W., 6th P.M., South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2813,
+    "output_tokens": 687
+  },
+  "elapsed": 11.1
+}

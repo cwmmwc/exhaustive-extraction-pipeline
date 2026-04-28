@@ -1,0 +1,35 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-24",
+      "jurisdiction": "South Dakota",
+      "date": "1935-08-08",
+      "correspondent": "Asst. U.S. Atty.",
+      "correspondent_role": "outgoing",
+      "case_name": "U.S. v. Tripp County, S. Dak. et al",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "In accord with letter of 29th ultimo, enclosing two copies of Judgment entered",
+      "action_type": "enclosure",
+      "enclosures": "two copies of Judgment entered",
+      "routing_division": "Lands",
+      "routing_date": "1935-08-10",
+      "clerk_initials": "ar",
+      "processed_date": "1935-08-10"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. v. Tripp County, S. Dak. et al",
+      "file_number": "90-2-5-24",
+      "jurisdiction": "South Dakota",
+      "case_type": "other",
+      "allottee_name": "",
+      "tribe_or_reservation": "",
+      "county": "Tripp"
+    }
+  ],
+  "persons": []
+}

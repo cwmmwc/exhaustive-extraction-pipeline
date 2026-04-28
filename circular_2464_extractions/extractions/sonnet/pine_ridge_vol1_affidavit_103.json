@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_103",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "128",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jule Ecoffey",
+    "Tribe/Reservation": "Shannon County (South Dakota) \u2014 specific tribe not stated",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "1358",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent to his 640 acre allotment, but was advised by the Indian Agency that he would have to accept it, or lose it finally through delinquent taxes, so he took it under protest",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged his allotment to J. T. Johnson, Lancaster County, Nebraska, for $8,000.00; then turned the deal, together with other land he owned, amounting to 1760 acres all told, over to the Anchor Bank, of Merriman, Nebraska",
+    "Buyer": "Anchor Bank, of Merriman, Nebraska; they agreeing to pay off the mortgage to Johnson, and pay deponent $13,000.00 cash besides",
+    "Tax burden forced sale/Mortgage": "forced to take what he could get on account of the price of cattle dropping at that time, and other draw backs; mortgage money used in part to pay taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "53 years old",
+    "Occupation/Income": "only income is by working on a farm for wages",
+    "NOTES": "Health is not good, has rheumatism and stomach trouble, and once a horse fell on him injuring his head and neck; has a wife and a son to support, the son being deaf, and the wife has poor health, having kidney trouble and headaches; has never received any help from the County, State or United States Government; mortgaged October 1, 1918; kept payments up until 1922; allotment was 640 acres; total land transferred to Anchor Bank was 1760 acres; deponent states that while legal, he does not consider that he received a fair price; document dated November 23, 1928; State of South Dakota, County of Shannon",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2390,
+    "output_tokens": 568
+  },
+  "elapsed": 7.0
+}

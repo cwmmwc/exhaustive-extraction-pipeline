@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_110",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "136",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charles Clifford, junior",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "1638",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee to his 160 allotment at the time it was issued, as he did not want to pay taxes, but was told that it would be taxed any way, so he took it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged, then foreclosed",
+    "Buyer": "Mortgaged to William Charles, of Rapid City, South Dakota, for $350.00; in 1924, they foreclosed on his place",
+    "Tax burden forced sale/Mortgage": "got behind in taxes, and, in 1920, he mortgaged to William Charles, of Rapid City, South Dakota, for $350.00, keeping up the payments for three years, paying $35.00, then he had hard luck, and, in 1924, they foreclosed on his place",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "38 years old",
+    "Occupation/Income": "farms on a rented place for his living",
+    "NOTES": "mentally competent, health pretty good; has a wife and five children to support, all of whom have good health; finds it pretty close living off of what he raises, especially when he gets hailed out \u2014 experienced this three years in succession; has never received any aid from the County, State or the United States Government; document subscribed November 24, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2270,
+    "output_tokens": 466
+  },
+  "elapsed": 5.1
+}

@@ -1,0 +1,982 @@
+{
+  "entities": [
+    {
+      "name": "Fort Peck Indian Agency",
+      "type": "organization",
+      "context": "Indian agency located in Poplar, Montana"
+    },
+    {
+      "name": "Poplar, Montana",
+      "type": "location",
+      "context": "Location of Fort Peck Indian Agency"
+    },
+    {
+      "name": "Nez Perce",
+      "type": "organization",
+      "context": "Native American tribe referenced at Fort Peck; described as thrifty, sober, law-abiding"
+    },
+    {
+      "name": "Rocky Boy Indians",
+      "type": "organization",
+      "context": "Tribe that roamed Montana for sixty years without a reservation; described as most backward non-English speaking tribe in Montana"
+    },
+    {
+      "name": "H.D. Lawshe",
+      "type": "person",
+      "context": "Superintendent of Coeur d'Alene Indian Agency, Sorrento, Idaho"
+    },
+    {
+      "name": "Coeur d'Alene Indian Agency",
+      "type": "organization",
+      "context": "Indian agency located in Sorrento, Idaho"
+    },
+    {
+      "name": "Sorrento, Idaho",
+      "type": "location",
+      "context": "Location of Coeur d'Alene Indian Agency"
+    },
+    {
+      "name": "Coeur d'Alene Reservation",
+      "type": "location",
+      "context": "Reservation allotted with 190 acres per Indian; located in Inland Empire region"
+    },
+    {
+      "name": "Sisseton Reservation",
+      "type": "location",
+      "context": "Reservation where superintendent served for seven years; Indians had been citizens for many years with poor civil oversight"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Washington D.C. organization that issued Bulletin No. 141 on releasing Indians from Government supervision"
+    },
+    {
+      "name": "Five Civilized Tribes",
+      "type": "organization",
+      "context": "Tribes of Oklahoma subject to letters about releasing Indians from Government supervision"
+    },
+    {
+      "name": "Walter McLaughlin",
+      "type": "person",
+      "context": "Farmer, Ardmore, Oklahoma; field officer who wrote letter dated May 4, 1931"
+    },
+    {
+      "name": "Edward P. Snead",
+      "type": "person",
+      "context": "Field Clerk, Idabel, Oklahoma; Choctaw Indian and member of tribe who wrote about releasing Indians from supervision"
+    },
+    {
+      "name": "R.R. Youngblood",
+      "type": "person",
+      "context": "Farmer, Holdenville, Oklahoma; wrote about holding restrictions on allotted land"
+    },
+    {
+      "name": "Dean H. Shannon",
+      "type": "person",
+      "context": "Field Clerk, Sallisaw, Oklahoma"
+    },
+    {
+      "name": "A.B. Keith",
+      "type": "person",
+      "context": "Field Clerk, Muskogee, Oklahoma"
+    },
+    {
+      "name": "Homer Polk",
+      "type": "person",
+      "context": "Field Clerk, Stilwell, Oklahoma"
+    },
+    {
+      "name": "G.R. Clements",
+      "type": "person",
+      "context": "Field Clerk, McAlester, Oklahoma"
+    },
+    {
+      "name": "D. Brauninger",
+      "type": "person",
+      "context": "Farmer, Eufaula, Oklahoma"
+    },
+    {
+      "name": "M.R. Gayle",
+      "type": "person",
+      "context": "Farmer, Atoka, Oklahoma"
+    },
+    {
+      "name": "C.M. Brandt",
+      "type": "person",
+      "context": "Farmer, Poteau, Oklahoma"
+    },
+    {
+      "name": "Choctaw Indians",
+      "type": "organization",
+      "context": "Tribe of southeastern Oklahoma; Edward P. Snead is a member; subject to restriction removal concerns"
+    },
+    {
+      "name": "Creek Indians",
+      "type": "organization",
+      "context": "Tribe referenced in specific land fraud cases in Hughes County Oklahoma"
+    },
+    {
+      "name": "Seminole Indians",
+      "type": "organization",
+      "context": "Tribe referenced alongside Creek Indians; mixed-blood allotments in Seminole County"
+    },
+    {
+      "name": "Mollie Johnson",
+      "type": "person",
+      "context": "One-quarter blood Creek, Roll No. 9130; conveyed lands to various parties without fair consideration; loss $750"
+    },
+    {
+      "name": "Daniel Johnson",
+      "type": "person",
+      "context": "One-quarter blood Creek, Roll No. 9131; prevailed upon to deed away land for practically nothing; loss $900"
+    },
+    {
+      "name": "Adeline Grayson",
+      "type": "person",
+      "context": "One-half blood Creek; deluded into executing conveyances transferring allotment without adequate consideration"
+    },
+    {
+      "name": "Henderson Arbor",
+      "type": "person",
+      "context": "One-quarter blood Creek, Roll No. 9613; defrauded out of his land"
+    },
+    {
+      "name": "Hughes County",
+      "type": "location",
+      "context": "Oklahoma county with 1,600 mixed-blood allotments; site of land fraud against mixed-blood Indians"
+    },
+    {
+      "name": "Seminole County",
+      "type": "location",
+      "context": "Oklahoma county with 630 mixed-blood Seminole allotments; site of land fraud"
+    },
+    {
+      "name": "Ardmore, Oklahoma",
+      "type": "location",
+      "context": "Location of farmer Walter McLaughlin"
+    },
+    {
+      "name": "Idabel, Oklahoma",
+      "type": "location",
+      "context": "Location of Field Clerk Edward P. Snead"
+    },
+    {
+      "name": "Holdenville, Oklahoma",
+      "type": "location",
+      "context": "Location of farmer R.R. Youngblood"
+    },
+    {
+      "name": "Sallisaw, Oklahoma",
+      "type": "location",
+      "context": "Location of Field Clerk Dean H. Shannon"
+    },
+    {
+      "name": "Muskogee, Oklahoma",
+      "type": "location",
+      "context": "Location of Field Clerk A.B. Keith"
+    },
+    {
+      "name": "Stilwell, Oklahoma",
+      "type": "location",
+      "context": "Location of Field Clerk Homer Polk"
+    },
+    {
+      "name": "McAlester, Oklahoma",
+      "type": "location",
+      "context": "Location of Field Clerk G.R. Clements"
+    },
+    {
+      "name": "Eufaula, Oklahoma",
+      "type": "location",
+      "context": "Location of farmer D. Brauninger"
+    },
+    {
+      "name": "Atoka, Oklahoma",
+      "type": "location",
+      "context": "Location of farmer M.R. Gayle"
+    },
+    {
+      "name": "Poteau, Oklahoma",
+      "type": "location",
+      "context": "Location of farmer C.M. Brandt"
+    },
+    {
+      "name": "Dawes Act",
+      "type": "legislation",
+      "context": "Act under which old reservations were allotted; allottees became citizens"
+    },
+    {
+      "name": "Act of Congress of May 27, 1908",
+      "type": "legislation",
+      "context": "Removed restrictions of mixed-blood Indians of the Five Civilized Tribes"
+    },
+    {
+      "name": "Competency Commission",
+      "type": "organization",
+      "context": "Commission that visited Idabel district in 1917 and subsequently to grant removal of restrictions to Indians"
+    },
+    {
+      "name": "House Committee on Indian Affairs",
+      "type": "organization",
+      "context": "Congressional committee before which Edward P. Snead appeared regarding extension of restriction period"
+    },
+    {
+      "name": "Investigation Committee for the House Committee of Indian Affairs",
+      "type": "organization",
+      "context": "Committee before which Snead appeared regarding Choctaw restriction termination"
+    },
+    {
+      "name": "Inland Empire",
+      "type": "location",
+      "context": "Region where Coeur d'Alene Reservation lands were located; prairie land producing up to sixty bushels of wheat per acre"
+    },
+    {
+      "name": "Oklahoma",
+      "type": "location",
+      "context": "State where Five Civilized Tribes are located; formerly Indian Territory"
+    },
+    {
+      "name": "Washington D.C.",
+      "type": "location",
+      "context": "Location of Board of Indian Commissioners"
+    },
+    {
+      "name": "Bulletin No. 141",
+      "type": "legislation",
+      "context": "Board of Indian Commissioners publication dated May 4, 1931 on releasing Indians from Government supervision"
+    },
+    {
+      "name": "Harry Thaw",
+      "type": "person",
+      "context": "Referenced as an example of the destructive result of giving irresponsible persons valuable property"
+    },
+    {
+      "name": "French-Canadian allottees",
+      "type": "organization",
+      "context": "Approximately eighty allotments made to whites or near-whites of French-Canadian extraction at Coeur d'Alene reservation"
+    },
+    {
+      "name": "Inland Empire prairie land",
+      "type": "land_parcel",
+      "context": "190-acre allotments at Coeur d'Alene; prairie producing up to 60 bushels wheat per acre"
+    },
+    {
+      "name": "Full-blood farmer at Coeur d'Alene",
+      "type": "person",
+      "context": "One full-blood Indian with little education who purchased additional land and farmed family land; doing well"
+    },
+    {
+      "name": "Indian Territory",
+      "type": "location",
+      "context": "Former territory that became Oklahoma; where Five Civilized Tribes settled"
+    }
+  ],
+  "events": [
+    {
+      "type": "Agency report / policy letter",
+      "date": "unknown",
+      "location": "Fort Peck Indian Agency, Poplar, Montana",
+      "description": "Superintendent of Fort Peck Indian Agency wrote a policy letter discussing patent-in-fee issuance, Indian competency, and reservation conditions"
+    },
+    {
+      "type": "Allotment of Coeur d'Alene Reservation",
+      "date": "unknown",
+      "location": "Coeur d'Alene Reservation, Sorrento, Idaho",
+      "description": "Reservation allotted with 190 acres per Indian; approximately eighty allotments made to whites or near-whites of French-Canadian extraction"
+    },
+    {
+      "type": "Competency Commission visit",
+      "date": "1917",
+      "location": "Idabel, Oklahoma district",
+      "description": "First competency commission visited Idabel district; large number of applicants received orders for removal of restrictions"
+    },
+    {
+      "type": "Subsequent Competency Commission visits",
+      "date": "post-1917",
+      "location": "Idabel, Oklahoma district",
+      "description": "Commission made two subsequent visits; office recommended unconditional removal of restrictions for additional Indians"
+    },
+    {
+      "type": "Submission of restricted Indian names",
+      "date": "unknown",
+      "location": "Idabel, Oklahoma district",
+      "description": "Under instructions, approximately thirty-five names of adult half-blood Indians submitted from Idabel district; given orders for removal of restrictions"
+    },
+    {
+      "type": "Removal of restrictions on mixed-blood Indians",
+      "date": "1908",
+      "location": "Five Civilized Tribes territory, Oklahoma",
+      "description": "Act of Congress of May 27, 1908 removed restrictions on mixed-blood Indians of the Five Civilized Tribes"
+    },
+    {
+      "type": "Land fraud harvest",
+      "date": "post-1908",
+      "location": "Hughes County and Seminole County, Oklahoma",
+      "description": "Large-scale land fraud against mixed-blood Indians following removal of restrictions; estimated 75% defrauded of 70% of land value"
+    },
+    {
+      "type": "Oklahoma statehood",
+      "date": "unknown",
+      "location": "Oklahoma",
+      "description": "Oklahoma admitted to the Union as a state; described as a transitional moment for tribal Indians"
+    },
+    {
+      "type": "Testimony before Investigation Committee",
+      "date": "unknown",
+      "location": "Washington D.C.",
+      "description": "Edward P. Snead appeared before the Investigation Committee for the House Committee on Indian Affairs regarding extension of restriction period for Choctaw Indians"
+    },
+    {
+      "type": "Issuance of patents-in-fee at Fort Peck",
+      "date": "unknown",
+      "location": "Fort Peck Indian Agency, Poplar, Montana",
+      "description": "Superintendent issued patents-in-fee over four years to young and middle-aged people; approximately 50 homes built for Indians who sold land"
+    },
+    {
+      "type": "Rocky Boy Reservation establishment",
+      "date": "unknown",
+      "location": "Montana",
+      "description": "After sixty years of freedom, Rocky Boy Indians were placed on a reservation following a petition by the people of Montana"
+    },
+    {
+      "type": "Indians living on childrens moneys",
+      "date": "unknown",
+      "location": "Fort Peck Indian Agency, Poplar, Montana",
+      "description": "Indians on the reservation had practically lived on their childrens moneys for four years and refused to work"
+    },
+    {
+      "type": "Bulletin issuance",
+      "date": "1931-05-04",
+      "location": "Washington D.C.",
+      "description": "Board of Indian Commissioners issued Bulletin No. 141 on releasing Indians from Government supervision, soliciting letters from field clerks and government farmers among Five Civilized Tribes"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "unknown buyers",
+      "payee": "Indians at Fort Peck",
+      "date": "unknown",
+      "description": "Indians sold portions of their allotments; proceeds used to build approximately 50 homes over four years"
+    },
+    {
+      "type": "sale",
+      "amount": "$750 loss",
+      "payer": "various parties",
+      "payee": "Mollie Johnson",
+      "date": "post-1908",
+      "description": "Mollie Johnson, one-quarter blood Creek Roll No. 9130, executed deeds conveying lands without fair consideration; loss approximately $750"
+    },
+    {
+      "type": "sale",
+      "amount": "$900 loss",
+      "payer": "unknown buyer",
+      "payee": "Daniel Johnson",
+      "date": "post-1908",
+      "description": "Daniel Johnson, one-quarter blood Creek Roll No. 9131, prevailed upon to deed away land for practically nothing; loss $900"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "unknown buyer",
+      "payee": "Adeline Grayson",
+      "date": "post-1908",
+      "description": "Adeline Grayson, one-half blood Creek, deluded into executing conveyances transferring allotment without adequate consideration"
+    },
+    {
+      "type": "sale",
+      "amount": "$850 loss",
+      "payer": "unknown buyer",
+      "payee": "Henderson Arbor",
+      "date": "post-1908",
+      "description": "Henderson Arbor, one-quarter blood Creek Roll No. 9613, persuaded to sign conveyance on allotment without adequate consideration; loss $850"
+    },
+    {
+      "type": "sale",
+      "amount": "$873,600 estimated total loss",
+      "payer": "unknown buyers",
+      "payee": "1,300 mixed-blood Indians of Hughes County",
+      "date": "post-1908",
+      "description": "Estimated total loss: 1,300 mixed-bloods in Hughes County lost based on 75% defrauded of 70% of allotment value of $960 each; calculated as 1,300 x $960 x 70% = approximately $873,600"
+    },
+    {
+      "type": "sale",
+      "amount": "$544,320 estimated total loss",
+      "payer": "unknown buyers",
+      "payee": "567 mixed-blood Indians of Seminole County",
+      "date": "post-1908",
+      "description": "Estimated loss: 567 mixed-blood Seminoles lost; 567 x $960 = $544,320 total loss calculated"
+    },
+    {
+      "type": "other",
+      "amount": "$3.50 per thousand stumpage",
+      "payer": "timber buyers",
+      "payee": "Coeur d'Alene allottees",
+      "date": "unknown",
+      "description": "Timber on Coeur d'Alene allotments being sold off at average price of $3.50 per thousand stumpage"
+    },
+    {
+      "type": "other",
+      "amount": "several thousand dollars",
+      "payer": "unknown",
+      "payee": "Indian allottees at Coeur d'Alene",
+      "date": "unknown",
+      "description": "When Indian receives patent, usual practice is to mortgage the land; proceeds often wasted immediately"
+    },
+    {
+      "type": "other",
+      "amount": "$5,000 to $10,000 allotment values",
+      "payer": "unknown",
+      "payee": "Indian allottees in Idabel district",
+      "date": "unknown",
+      "description": "Allotments in Idabel district valued at from $5,000 to $10,000 turned over to individuals upon removal of restrictions"
+    },
+    {
+      "type": "other",
+      "amount": "$1,040 appraised value each",
+      "payer": "unknown",
+      "payee": "mixed-blood Indians",
+      "date": "post-1908",
+      "description": "One hundred sixty acre allotments in Hughes County appraised at $1,040 each for allotment purposes; 1,600 mixed-blood allotments in Hughes County"
+    },
+    {
+      "type": "other",
+      "amount": "$960 per allotment value used for calculation",
+      "payer": "unknown",
+      "payee": "mixed-blood Seminoles",
+      "date": "post-1908",
+      "description": "Value of Seminole County allotment used as $960 for loss calculation; 630 mixed-blood Seminole allotments"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "H.D. Lawshe",
+      "type": "employed_by",
+      "object": "Coeur d'Alene Indian Agency",
+      "context": "Superintendent of Coeur d'Alene Indian Agency, Sorrento, Idaho"
+    },
+    {
+      "subject": "Edward P. Snead",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes field service",
+      "context": "Field Clerk at Idabel, Oklahoma; also member of Choctaw tribe"
+    },
+    {
+      "subject": "Edward P. Snead",
+      "type": "related_to",
+      "object": "Choctaw Indians",
+      "context": "Self-identified member of the Choctaw tribe; received training in Indian schools"
+    },
+    {
+      "subject": "Walter McLaughlin",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes field service",
+      "context": "Farmer at Ardmore, Oklahoma"
+    },
+    {
+      "subject": "R.R. Youngblood",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes field service",
+      "context": "Farmer at Holdenville, Oklahoma"
+    },
+    {
+      "subject": "Dean H. Shannon",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes field service",
+      "context": "Field Clerk at Sallisaw, Oklahoma"
+    },
+    {
+      "subject": "A.B. Keith",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes field service",
+      "context": "Field Clerk at Muskogee, Oklahoma"
+    },
+    {
+      "subject": "Homer Polk",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes field service",
+      "context": "Field Clerk at Stilwell, Oklahoma"
+    },
+    {
+      "subject": "G.R. Clements",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes field service",
+      "context": "Field Clerk at McAlester, Oklahoma"
+    },
+    {
+      "subject": "D. Brauninger",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes field service",
+      "context": "Farmer at Eufaula, Oklahoma"
+    },
+    {
+      "subject": "M.R. Gayle",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes field service",
+      "context": "Farmer at Atoka, Oklahoma"
+    },
+    {
+      "subject": "C.M. Brandt",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes field service",
+      "context": "Farmer at Poteau, Oklahoma"
+    },
+    {
+      "subject": "Mollie Johnson",
+      "type": "sold_to",
+      "object": "various parties",
+      "context": "Executed deeds conveying lands without fair consideration after restriction removal"
+    },
+    {
+      "subject": "Daniel Johnson",
+      "type": "sold_to",
+      "object": "unknown buyer",
+      "context": "Deeded away land for practically nothing after restriction removal"
+    },
+    {
+      "subject": "Adeline Grayson",
+      "type": "sold_to",
+      "object": "unknown buyer",
+      "context": "Executed conveyances transferring allotment without adequate consideration"
+    },
+    {
+      "subject": "Henderson Arbor",
+      "type": "sold_to",
+      "object": "unknown buyer",
+      "context": "Persuaded to sign conveyance on allotment without adequate consideration; loss $850"
+    },
+    {
+      "subject": "Fort Peck Superintendent",
+      "type": "employed_by",
+      "object": "Fort Peck Indian Agency",
+      "context": "Superintendent who issued patents-in-fee and built approximately 50 homes over four years"
+    },
+    {
+      "subject": "Competency Commission",
+      "type": "related_to",
+      "object": "Indian allottees",
+      "context": "Commission determined competency and issued orders for removal of restrictions"
+    },
+    {
+      "subject": "French-Canadian allottees",
+      "type": "related_to",
+      "object": "Coeur d'Alene tribe",
+      "context": "Whites or near-whites married into or adopted into the tribe; received allotments then quickly obtained patents-in-fee"
+    },
+    {
+      "subject": "land grafters",
+      "type": "related_to",
+      "object": "Indian allottees",
+      "context": "Land men operating graft machinery to separate Indians from their property upon removal of restrictions"
+    },
+    {
+      "subject": "Mollie Johnson",
+      "type": "related_to",
+      "object": "Daniel Johnson",
+      "context": "Same Roll sequence (9130, 9131) suggesting family relationship; both one-quarter blood Creek"
+    },
+    {
+      "subject": "full-blood farmer",
+      "type": "related_to",
+      "object": "Coeur d'Alene tribe",
+      "context": "One full-blood Indian with little education who purchased additional land and farmed family land successfully"
+    },
+    {
+      "subject": "Fort Peck Superintendent",
+      "type": "related_to",
+      "object": "two Indian families",
+      "context": "Superintendent stated he has two Indian families of his own, indicating personal connection to Indian community"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "various Fort Peck Indians",
+      "allotment_number": "unknown",
+      "acreage": "irrigable forties or quarter section of grazing land",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "various",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "204 patents total at Fort Peck (full allotments: 333, part allotments: 196)",
+      "allotment_number": "unknown",
+      "acreage": "full or partial allotments",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "139 original allottees at Coeur d'Alene",
+      "allotment_number": "unknown",
+      "acreage": "190 acres each",
+      "patent_date": "48 prior to 1916; 91 from 1916 onward",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "various",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "various; many mortgaged"
+    },
+    {
+      "allottee_name": "approximately 80 French-Canadian allottees at Coeur d'Alene",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "Mollie Johnson",
+      "allotment_number": "Roll No. 9130",
+      "acreage": "160 acres",
+      "patent_date": "post-1908",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "various parties",
+      "sale_price": "approximately $750 or less (loss $750)",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "Daniel Johnson",
+      "allotment_number": "Roll No. 9131",
+      "acreage": "160 acres",
+      "patent_date": "post-1908",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "practically nothing (loss $900)",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "Adeline Grayson",
+      "allotment_number": "unknown",
+      "acreage": "160 acres",
+      "patent_date": "post-1908",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "inadequate consideration",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "Henderson Arbor",
+      "allotment_number": "Roll No. 9613",
+      "acreage": "160 acres",
+      "patent_date": "post-1908",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "little to nothing (loss $850)",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "1,600 mixed-blood Indians, Hughes County",
+      "allotment_number": "unknown",
+      "acreage": "160 acres each",
+      "patent_date": "post-1908",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "various land grafters",
+      "sale_price": "approximately 30% of appraised value of $1,040 each on average",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "630 mixed-blood Seminoles, Seminole County",
+      "allotment_number": "unknown",
+      "acreage": "160 acres each",
+      "patent_date": "post-1908",
+      "patent_number": "unknown",
+      "mechanism": "administrative",
+      "buyer": "various land grafters",
+      "sale_price": "approximately 30% of appraised value on average",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "approximately 35 half-blood Indians, Idabel district",
+      "allotment_number": "unknown",
+      "acreage": "unknown",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "unknown"
+    },
+    {
+      "allottee_name": "Indians who built homes at Fort Peck (56 reported retaining land)",
+      "allotment_number": "unknown",
+      "acreage": "up to approximately 1,000 acres in some cases across multiple patents",
+      "patent_date": "unknown",
+      "patent_number": "unknown",
+      "mechanism": "application",
+      "buyer": "various",
+      "sale_price": "unknown",
+      "attorney": "unknown",
+      "mortgage": "many badly mortgaged"
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Superintendent, Fort Peck Indian Agency",
+      "sender_title": "Superintendent",
+      "recipient": "Board of Indian Commissioners or Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "unknown",
+      "subject": "Policy on patents-in-fee, Indian competency, and reservation conditions at Fort Peck",
+      "action_requested": "Presentation of views on patent-in-fee issuance policy",
+      "outcome": "Recommendations included restricting patents, retaining homestead allotments, conserving childrens moneys"
+    },
+    {
+      "sender": "H.D. Lawshe",
+      "sender_title": "Superintendent, Coeur d'Alene Indian Agency",
+      "recipient": "unknown (likely Commissioner of Indian Affairs or Board)",
+      "recipient_title": "Commissioner",
+      "date": "unknown (after 31st ultimo referenced letter)",
+      "subject": "Granting of patents-in-fee to Indian wards; response to inquiry",
+      "action_requested": "Expression of views on patent-in-fee policy",
+      "outcome": "Recommended patent-in-fee only after Indian demonstrates self-support; reported statistics on 139 patents issued"
+    },
+    {
+      "sender": "Edward P. Snead",
+      "sender_title": "Field Clerk, Idabel, Oklahoma",
+      "recipient": "Board of Indian Commissioners or supervisor",
+      "recipient_title": "unknown",
+      "date": "unknown",
+      "subject": "Releasing Indians from Government supervision; Choctaw Indians of southeastern Oklahoma",
+      "action_requested": "Response to April 2nd correspondence on advisability of releasing Indians from supervision",
+      "outcome": "Opposed relinquishing supervision over those unable to handle affairs; advocated individual consideration"
+    },
+    {
+      "sender": "R.R. Youngblood",
+      "sender_title": "Farmer, Holdenville, Oklahoma",
+      "recipient": "Board of Indian Commissioners or supervisor",
+      "recipient_title": "unknown",
+      "date": "unknown",
+      "subject": "Policy on holding restrictions on allotted land",
+      "action_requested": "Expression of views on restriction removal policy",
+      "outcome": "Firmly in favor of holding restrictions; advocated legislation to repeal laws allowing unrestricted inheritance and will execution without departmental approval"
+    },
+    {
+      "sender": "unknown supervisor",
+      "sender_title": "unknown",
+      "recipient": "H.D. Lawshe",
+      "recipient_title": "Superintendent, Coeur d'Alene Indian Agency",
+      "date": "unknown (31st ultimo)",
+      "subject": "Granting of patents-in-fee to Indian wards",
+      "action_requested": "Request for information and views on patent-in-fee issuance",
+      "outcome": "Prompted Lawshe's detailed response"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "Field clerks and government farmers, Five Civilized Tribes",
+      "recipient_title": "Field officers",
+      "date": "1931-05-04",
+      "subject": "Releasing Indians from Government supervision",
+      "action_requested": "Solicitation of letters from field officers on the subject",
+      "outcome": "Resulted in Bulletin No. 141 compilation of responses"
+    },
+    {
+      "sender": "unknown",
+      "sender_title": "unknown",
+      "recipient": "Edward P. Snead",
+      "recipient_title": "Field Clerk",
+      "date": "unknown (April 2nd)",
+      "subject": "Advisability of releasing Indians from Government supervision",
+      "action_requested": "Request for views and information",
+      "outcome": "Prompted Snead's detailed response about Choctaw Indians"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "unknown",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1908-05-27",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Act of Congress of May 27, 1908 removed restrictions on mixed-blood Indians of the Five Civilized Tribes; led to massive land fraud"
+    },
+    {
+      "bill_number": "Dawes Act",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Allotment of old reservations; allottees became citizens"
+    },
+    {
+      "bill_number": "unknown restriction extension bill",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "approaching 1931",
+      "vote_count": "unknown",
+      "committee": "House Committee on Indian Affairs",
+      "outcome": "Extension of restriction period for Choctaw Indians to be considered only in cases of absolute necessity; period set to terminate in 1931"
+    },
+    {
+      "bill_number": "unknown",
+      "sponsor": "R.R. Youngblood advocates",
+      "action_type": "introduced",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Youngblood advocated for repeal of law authorizing restricted lands to become unrestricted immediately upon death of allottee; also repeal of law authorizing valid wills disposing of restricted property without departmental approval"
+    },
+    {
+      "bill_number": "unknown Indian citizenship bill",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Fort Peck superintendent opposed granting citizenship to Indians in the bulk"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Edward P. Snead",
+      "witness_title": "Field Clerk, Idabel, Oklahoma; Choctaw tribal member",
+      "hearing": "Investigation Committee hearing",
+      "committee": "Investigation Committee for the House Committee on Indian Affairs",
+      "location": "Washington D.C.",
+      "date": "unknown (some time last year prior to letter)",
+      "subject": "Extension of period of restriction for Choctaw Indians; condition of Indians unable to handle their own affairs",
+      "key_claims": "Snead appeared before the committee and was impressed that extension of the restriction period would be entertained only in cases of absolute necessity. He urged Congress to know the real condition and that failure to provide protection where needed would further the interests of those whose business it is to separate the Indian from his property. He was unalterably opposed to relinquishing supervision over those unable to handle their own affairs, particularly as the restriction period for Choctaw Indians was approaching termination in 1931.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Fort Peck Agency Superintendent",
+      "witness_title": "Superintendent, Fort Peck Indian Agency",
+      "hearing": "unknown inquiry or survey",
+      "committee": "Board of Indian Commissioners or Office of Indian Affairs",
+      "location": "Fort Peck Indian Agency, Poplar, Montana",
+      "date": "unknown",
+      "subject": "Patent-in-fee policy, Indian competency, reservation conditions",
+      "key_claims": "Superintendent described issuing patents-in-fee to practically all young and middle-aged people asking for them over four years, recommending only portions of allotments in most cases. Reported that in the great majority of cases Indians did nothing with the patents. Those made citizens by Competency Commission varied widely. Provided statistical data: 204 total patents issued (333 for full allotments, 196 for part allotments); 36 built homes; 31 purchased machinery and stock; 13 retained land; 56 had cash in bank; large numbers had nothing to show. Indians had lived on childrens moneys for four years and refused to work. Opposed bulk citizenship grants.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "H.D. Lawshe",
+      "witness_title": "Superintendent, Coeur d'Alene Indian Agency",
+      "hearing": "unknown inquiry or survey",
+      "committee": "Board of Indian Commissioners or Office of Indian Affairs",
+      "location": "Coeur d'Alene Indian Agency, Sorrento, Idaho",
+      "date": "unknown",
+      "subject": "Patent-in-fee issuance policy at Coeur d'Alene Reservation",
+      "key_claims": "Lawshe reported 139 patents-in-fee issued to original allottees; 55 classified as whites; 48 issued prior to 1916; of 91 issued since 1916, 54 lost their land; 22 doing fairly well but dependent on rental income from ward family members; 15 with no record; only 12 doing fairly well overall. One full-blood with little education purchased additional land and is farming family land. Many patents led to immediate sale, trade for automobile, or mortgage. Ordinary method upon receiving patent is to mortgage the land; proceeds consumed quickly. Recommended patent only after Indian demonstrates self-support through farming or other gainful occupation. Did not believe blood quantum or years of schooling should be the gauge for competency.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "R.R. Youngblood",
+      "witness_title": "Farmer, Holdenville, Oklahoma",
+      "hearing": "Board of Indian Commissioners survey",
+      "committee": "Board of Indian Commissioners",
+      "location": "Holdenville, Oklahoma",
+      "date": "unknown",
+      "subject": "Policy on releasing Indians from government supervision; Creek and Seminole Indians",
+      "key_claims": "Youngblood described large-scale land fraud following the 1908 Act removing restrictions. Reported 1,600 mixed-blood allotments in Hughes County each appraised at $1,040; estimated 75% of mixed-blood Indians defrauded of 70% of allotment value; total losses estimated at $873,600 in Hughes County and $544,320 in Seminole County. Cited nine specific cases of fraud. Favored holding restrictions during allottee lifetime or until proven ability to provide for family. Advocated for repeal of laws facilitating land transfer without protection. Described land grafters as demanding Indians be turned loose. Witnessed historical transformation of tribes from tepees to modern homes.",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Edward P. Snead",
+      "witness_title": "Field Clerk, Idabel, Oklahoma",
+      "hearing": "Board of Indian Commissioners survey response",
+      "committee": "Board of Indian Commissioners",
+      "location": "Idabel, Oklahoma",
+      "date": "unknown",
+      "subject": "Competency of Choctaw Indians; individual vs. blanket removal of restrictions",
+      "key_claims": "Snead reported first competency commission visited in 1917; some recipients already demonstrated business management capacity while others were intelligent but poor managers. Commission made two subsequent visits. Submitted approximately 35 names of adult half-blood Indians for restriction removal. Observed that restrictions removed from Indians doing well led to their undoing. Half-blood Indians not actually half-blood in lineage immediately disposed of property. Full-blood educated boys also immediately sold property. Estimated 90% of land sold or encumbered above earning capacity among those released from control. Concluded 50% either retained land, bought other land, or engaged in business. Greatest cause of failure is graft machinery; allotments valued $5,000-$10,000 entirely at disposal of unprepared individuals. Favored liberal policy for competent Indians and protection for others. In favor of unconditional removal for half-blood or less if properly enrolled and of average intelligence.",
+      "questioner": "unknown"
+    }
+  ],
+  "taxes": [
+    {
+      "taxpayer": "Indian allottees, Coeur d'Alene Reservation",
+      "land_description": "190-acre allotments, Inland Empire prairie and timber land",
+      "tax_type": "property",
+      "amount": "unknown",
+      "year": "unknown",
+      "status": "other",
+      "county": "unknown",
+      "context": "Land grafters demanded Indians be turned loose in order that the country may develop and taxes be lowered; implies allotted land was subject to or expected to be subject to property taxes"
+    },
+    {
+      "taxpayer": "Indian allottees, Five Civilized Tribes",
+      "land_description": "160-acre allotments in Hughes County and Seminole County, Oklahoma",
+      "tax_type": "property",
+      "amount": "unknown",
+      "year": "unknown",
+      "status": "other",
+      "county": "Hughes County and Seminole County, Oklahoma",
+      "context": "Land men argued land should be freed from restrictions so country could develop and taxes be lowered; restricted Indian lands not generating tax revenue"
+    }
+  ],
+  "mortgages": [
+    {
+      "borrower": "Indian allottees, Coeur d'Alene Reservation",
+      "lender": "unknown",
+      "amount": "often thousands of dollars",
+      "land_description": "190-acre allotments, Inland Empire prairie and timber land, Coeur d'Alene Reservation",
+      "acreage": "190 acres",
+      "date": "unknown",
+      "interest_rate": "unknown",
+      "status": "foreclosed",
+      "context": "Upon receiving patent, ordinary practice was to mortgage the land; many of the 56 reported as still having land had it badly mortgaged; of 91 patents issued since 1916 at Coeur d'Alene, twenty known to have been sold or lost through mortgages"
+    },
+    {
+      "borrower": "Indian allottees, Fort Peck Reservation",
+      "lender": "unknown",
+      "amount": "unknown",
+      "land_description": "allotted lands at Fort Peck Reservation, Poplar, Montana",
+      "acreage": "unknown",
+      "date": "unknown",
+      "interest_rate": "unknown",
+      "status": "other",
+      "context": "Superintendent described ordinary pattern: upon receiving patent, Indians either sell land, trade it for an automobile, or mortgage it"
+    },
+    {
+      "borrower": "Indian allottees, Idabel district, Oklahoma",
+      "lender": "unknown",
+      "amount": "above Indians earning capacity",
+      "land_description": "allotted lands in Idabel district valued $5,000-$10,000",
+      "acreage": "unknown",
+      "date": "unknown",
+      "interest_rate": "unknown",
+      "status": "foreclosed",
+      "context": "Snead reported 90% of land sold or encumbered for funds above earning capacity; allottees later obliged to sell"
+    },
+    {
+      "borrower": "Coeur d'Alene allottees receiving timber patents",
+      "lender": "unknown",
+      "amount": "exceeding $1,000-$2,000 timber sale proceeds",
+      "land_description": "timber allotments at Coeur d'Alene Reservation",
+      "acreage": "unknown",
+      "date": "unknown",
+      "interest_rate": "unknown",
+      "status": "foreclosed",
+      "context": "Upon receiving patent after timber sale bringing thousands of dollars, practice is to mortgage the lands; no good times or money would be left as funds used for immediate needs"
+    }
+  ]
+}

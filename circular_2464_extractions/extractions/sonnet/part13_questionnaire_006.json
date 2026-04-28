@@ -1,0 +1,33 @@
+{
+  "document_id": "part13_questionnaire_006",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "11-14",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Lockley",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Oklahoma",
+    "Allotment number": "414",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes, filed for record, Pawnee County, Okla.",
+    "Sold/Mortgaged": "Land mortgaged then sold.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "She was forced to mortgage the land to keep up taxes, and finally had to sell the land to satisfy the mortgage and obtain something like a fair price for the land.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 6, 1917",
+    "Gender": "Female",
+    "Age": "43 years",
+    "Occupation/Income": "Nothing only annuity to Pawnee Tribe, about $35 per annum",
+    "NOTES": "Patent delivered Feb. 4, 1918, Pawnee, Okla.; patent receipted for Feb. 1918; no children dependent; allottee has no inherited interest; fair health, no money or property accumulated; allottee feels that the Government did wrong in issuing her a fee patent to the land; notarized November 26, 1928, Pawnee County, Oklahoma; commission expires Jan. 31, 1929. Second record in document: Edward Vanderwart Roberts, Allotment No. 35, Date of patent Dec. 6, 1917, delivered Jan. 14, 1918 by mail, with protest, patent receipted for Feb. 8, 1918, filed for record yes, Pawnee County Okla., mortgage for $800.00, mortgage due about 1933, no sale, 69 years very sickly, financial not very good at this time, farm rents from this and other land, also receives a pension of Indian Scout $50 per month, two children Rush Roberts Jr. and Terry Roberts dependent, allottee still owns his land and has paid all taxes, also owns Lou Roberts allotment having purchased interest of Henry Roberts, Lena Roberts, Nellie Roberts and Terry Roberts; appeared Rush Roberts Sr. before notary November 26, 1928, commission expires Jan. 31, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 3424,
+    "output_tokens": 606
+  },
+  "elapsed": 11.9,
+  "retry_count": 1
+}

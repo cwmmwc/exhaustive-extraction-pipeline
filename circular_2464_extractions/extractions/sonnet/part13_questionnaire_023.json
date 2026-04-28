@@ -1,0 +1,33 @@
+{
+  "document_id": "part13_questionnaire_023",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "48-49",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Cecelia Guittar Rappuie",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Oklahoma",
+    "Allotment number": "665",
+    "Cancelled": "no",
+    "Refused/Protested": "Witt protest",
+    "Recorded patent": "yes, filed for record in Pawnee County, Oklahoma, by allottee",
+    "Sold/Mortgaged": "Land has not been sold. No mortgage.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 24, 1917",
+    "Gender": "Female",
+    "Age": "75 years",
+    "Occupation/Income": "Shares in Pawnee Annuity. Land leased for $360.00 per annum, but a good part of same used for repairs to improvements.",
+    "NOTES": "Patent delivered Feb. 4, 1918, Agency office. Was receipted for: yes. Has any of the land been sold for debt or taxes: no. Patent has not been cancelled; no mortgage issued; date of redemption expired: none. Allottee is in poor health. Has two small houses in Pawnee, Oklahoma. Two boys dependent upon her who work a part of the time but have no income of any sort. The allottee feels that the Government made a mistake in granting her a patent on this land, which has worked a hardship on her in keeping the taxes paid up and improvements repaired. No inherited land. Notarized December 6, 1928, Pawnee County, Oklahoma; commission expires Jan. 31, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2666,
+    "output_tokens": 462
+  },
+  "elapsed": 8.3,
+  "retry_count": 1
+}

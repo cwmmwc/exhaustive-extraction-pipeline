@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_070",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "85",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Samuel Cottier",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Batesland, So. Dak.",
+    "Allotment number": "981",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee but took it because he was told that if he did not take it and pay the taxes that he would lose the land",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold his land to Dick Lessert for $1850.00, rather than to lose it for taxes",
+    "Buyer": "Dick Lessert for $1850.00",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes so he sold his land to Dick Lessert for $1850.00, rather than to lose it for taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "37 years old",
+    "Occupation/Income": "makes his living by common labor",
+    "NOTES": "mentally competent, in fair health; has nothing no one depending on him for support; has received no aid from the Government, State or County since he was granted a patent in fee; has nothing whatever, no land no home or anything; document sworn November 28, 1928; County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2187,
+    "output_tokens": 385
+  },
+  "elapsed": 4.0
+}

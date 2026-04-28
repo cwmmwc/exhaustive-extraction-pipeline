@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_089",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "114",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Galligo, senior",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "1178",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent to his 640 acre allotment at the time he got it, but was informed that it was recorded in the court house, that he would have the taxes to pay, and failing in this, that the land would be put up for sale; so he accepted it",
+    "Recorded patent": "recorded in the court house",
+    "Sold/Mortgaged": "sold a half section of his allotment, to Herman Vahernkamp, of White Clay, Nebraska, for $1200.00, receiving $600.00 in cash and a trade in horses, seven head",
+    "Buyer": "Herman Vahernkamp, of White Clay, Nebraska, for $1200.00",
+    "Tax burden forced sale/Mortgage": "got behind in taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "50 years old",
+    "Occupation/Income": "he farms his other half section, and works on farms for other people, this being the only source of income he has",
+    "NOTES": "mentally competent, health not good, he having catarrh; has a wife and six children to support; the family is tubercular; he considers that he got a pretty bum price for his place; has never received any help from the County, State or the United States Government; document dated November 24, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2265,
+    "output_tokens": 445
+  },
+  "elapsed": 6.1
+}

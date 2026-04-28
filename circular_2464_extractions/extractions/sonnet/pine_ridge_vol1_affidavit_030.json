@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_030",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "40",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Conry, Jr.",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "he has never asked for a cancellation of patent",
+    "Refused/Protested": "did not want his patent to his allotment, on account of not wishing to pay taxes, but he was advised that his patent was at the Indian Agency, and he accepted same",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "he has never sold any part of his allotment; that it was once mortgaged, and cleared of this mortgage; that it is now mortgaged again",
+    "Buyer": "mortgaged in favor of J. M. Morey, of Gordon, Nebraska, who loaned him money to pay his taxes, and part of the loan for personal use, the loan being Five Hundred Dollars ($500.00). This mortgage falls due about April 1, 1931.",
+    "Tax burden forced sale/Mortgage": "J. M. Morey of Gordon, Nebraska, who loaned him money to pay his taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "30 years old",
+    "Occupation/Income": "carpenter and painter for the United States Government, this, together with One Hundred and Twenty Dollars ($120.00) for a year and a half lease for his land, being the only source of his income",
+    "NOTES": "has a wife and two minor children to support; condition of health of his family is good; mentally competent and condition of health good; both sources of income are not ample to cover actual needs; has never received any aid from the County or Government; document numbered No. 361; sworn November 10, 1928; Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2325,
+    "output_tokens": 498
+  },
+  "elapsed": 7.0
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part13_questionnaire_021",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "44-45",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "George Haymond",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Okla.",
+    "Allotment number": "612",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Yes, filed for record in 1918, Payne County, Okla.",
+    "Sold/Mortgaged": "No mortgaged issued.",
+    "Buyer": "Land sold to C. E. Vandervoort, Sr. for $50,000.00 but money not delivered to allottee at time of sale",
+    "Tax burden forced sale/Mortgage": "No",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 24, 1917",
+    "Gender": "Male",
+    "Age": "38 years",
+    "Occupation/Income": "No income from any source. Shares in annuity to Pawnee Indians.",
+    "NOTES": "Patent delivered Feb. 15, 1918, Agency Office; receipted for by allottee. Wife and three children dependent upon allottee. No property or money accumulated. Good health. Allottee feels he was forced to sell for $50,000 to settle a divorce suit then pending; had a buyer for $75,000 but attorneys advised him to sell for $50,000; allottee paid attorney fees for himself and wife costing $2,000.00. Notarized December 3, 1928, Pawnee County, Oklahoma; commission expires Jan. 31, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2687,
+    "output_tokens": 434
+  },
+  "elapsed": 6.3
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_051",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "67",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jennie Yankton",
+    "Tribe/Reservation": "Shannon County (South Dakota)",
+    "Post Office Address": "Brennan, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she did not want the patent to this half section of land at that time, for she did not want to pay taxes; that she was advised by the Indian Agency that, if she did not accept the patent, and pay the taxes, it would be assessed for taxes just the same, and later be sold for same, so she accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it to Bell & Lather, of Gordon, Nebraska, for $3600.00 cash",
+    "Buyer": "Bell & Lather, of Gordon, Nebraska, for $3600.00 cash",
+    "Tax burden forced sale/Mortgage": "she got behind in taxes, and, in 1920, she sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 9, 1919",
+    "Gender": "Female",
+    "Age": "54 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Mentally incompetent; very poor health, crippled up in her hips to such an extent that she cannot walk; supports two small children of her own; lives with her grown son who contributes toward her support, son working at common labor as his only source of income; did not sell land for debts incurred prior to receipt of patent in fee; in 1916 made application for a patent in fee to 160 acres but was refused; considers $3600.00 a fair price but only sold because she needed money to live; has not received help from County, State, or U.S. Government since fee patent except that U.S. Government in July 1928 started to issue her rations; document No. 4707; subscribed and sworn December 22, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2400,
+    "output_tokens": 529
+  },
+  "elapsed": 7.7
+}

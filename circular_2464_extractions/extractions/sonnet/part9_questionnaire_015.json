@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_questionnaire_015",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "44",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Annie Moran Dubray (formerly Annie Moran)",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "3512",
+    "Cancelled": "Yes",
+    "Refused/Protested": "No, the folks brought it home from the postoffice and I did not say anything about it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "first mortgaged it to Peters Trust Company for $1500 and later sold it to Renwick Cross for three lots and a house in the town of Mission, S. D., and he assumed the mortgage",
+    "Buyer": "Mortgaged to Peters Trust Company for $1500; sold to Renwick Cross for three lots and a house in the town of Mission, S. D., who assumed the mortgage",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Female",
+    "Age": "30",
+    "Occupation/Income": "farming",
+    "NOTES": "Was not satisfied with the sale and mortgage of her land; states 'I think I would be better off if I had never received this patent.' Did not ask for the patent; did not sign a receipt for it. Patent was mailed to her in 1920. Did not get clear title retained to the Mission property (no longer has it). Husband made the deal for the house and lots. Has six children dependent on her for support; husband and she support them by farming. In good health. Notarized June 6, 1929 before Jas. W. Cross, Notary Public, commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2298,
+    "output_tokens": 460
+  },
+  "elapsed": 6.8
+}

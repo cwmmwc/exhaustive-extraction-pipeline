@@ -1,0 +1,641 @@
+{
+  "entities": [
+    {
+      "name": "Ramon Manuel",
+      "type": "person",
+      "context": "Member of Agua Caliente Band of Mission Indians, Palm Springs, CA; witness at Senate hearing"
+    },
+    {
+      "name": "Marcus J. Pete",
+      "type": "person",
+      "context": "Member of Agua Caliente Band of Mission Indians, Palm Springs, CA; committee member"
+    },
+    {
+      "name": "Pico Manuel",
+      "type": "person",
+      "context": "Member of Agua Caliente Band of Mission Indians, Palm Springs, CA; signatory of letter"
+    },
+    {
+      "name": "John W. Dady",
+      "type": "person",
+      "context": "Superintendent of Mission Indian Agency; testified at Senate hearing"
+    },
+    {
+      "name": "Czerny Anderson",
+      "type": "person",
+      "context": "Surveyor employed by the Indian Service to survey reservation boundaries"
+    },
+    {
+      "name": "Winslow Couro",
+      "type": "person",
+      "context": "Mission Indian of Santa Ysabel, spokesman of Santa Ysabel Indian Reservation, member of Mission Indian Federation"
+    },
+    {
+      "name": "Mr. McCallum",
+      "type": "person",
+      "context": "Former agent who drove Agua Caliente Band away from their irrigated lands"
+    },
+    {
+      "name": "Miss C. True",
+      "type": "person",
+      "context": "Former agent who refused water proposition from Rogers/water company for Agua Caliente Band"
+    },
+    {
+      "name": "Mr. Ellis",
+      "type": "person",
+      "context": "Former agent at Palm Springs who gave no satisfaction regarding water rights"
+    },
+    {
+      "name": "Mr. Rogers",
+      "type": "person",
+      "context": "Head of water company organized in 1909 at Palm Springs"
+    },
+    {
+      "name": "Mr. Rieger",
+      "type": "person",
+      "context": "Engineer employed by Dady who estimated cost of pipe line for domestic water system"
+    },
+    {
+      "name": "Mr. Engle",
+      "type": "person",
+      "context": "Engineer with Mission Indian Agency tasked with surveying water sources"
+    },
+    {
+      "name": "Mr. Waltham",
+      "type": "person",
+      "context": "Official who thought Dady might be granted $50,000 for miscellaneous irrigation work"
+    },
+    {
+      "name": "Mr. Moore",
+      "type": "person",
+      "context": "Special agent who sent a telegram related to Mission Indian Federation police"
+    },
+    {
+      "name": "Senator Burton K. Wheeler",
+      "type": "person",
+      "context": "Chairman of Senate subcommittee on Indian Affairs, presiding over hearings in San Diego, CA"
+    },
+    {
+      "name": "Commissioner Collier",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs; associated with the Wheeler bill and Indian policy"
+    },
+    {
+      "name": "Secretary Ickes",
+      "type": "person",
+      "context": "Secretary of the Interior appointed by President Roosevelt"
+    },
+    {
+      "name": "President Roosevelt",
+      "type": "person",
+      "context": "U.S. President who appointed Secretary Ickes and supported Indian legislation"
+    },
+    {
+      "name": "Pedro Chino",
+      "type": "person",
+      "context": "Last surviving member of the family after whom Chino Canyon was named"
+    },
+    {
+      "name": "R. C. Mathewson",
+      "type": "person",
+      "context": "Deputy United States surveyor who surveyed township boundaries in 1855"
+    },
+    {
+      "name": "William Minto",
+      "type": "person",
+      "context": "Deputy United States surveyor who surveyed boundaries of Rancho San Jose del Valle (Warners) in 1878"
+    },
+    {
+      "name": "A. P. Hanson",
+      "type": "person",
+      "context": "Deputy United States surveyor who subdivided Los Coyotes township into sections in 1880"
+    },
+    {
+      "name": "Newman",
+      "type": "person",
+      "context": "Private surveyor who made a survey of Warner Ranch boundary around 1903"
+    },
+    {
+      "name": "W. J. Lightfoot",
+      "type": "person",
+      "context": "United States surveyor who resurveyed Los Coyotes Indian Reservation boundaries in 1910"
+    },
+    {
+      "name": "E. F. Beale",
+      "type": "person",
+      "context": "Superintendent of Indian Affairs for California; authored report dated May 11, 1852"
+    },
+    {
+      "name": "Agua Caliente Band of Mission Indians",
+      "type": "organization",
+      "context": "Tribe located at Palm Springs, CA; subject of land, water, and boundary grievances"
+    },
+    {
+      "name": "Mission Indian Federation",
+      "type": "organization",
+      "context": "Organization to which Winslow Couro belonged; accused of carrying guns by Commissioner Collier"
+    },
+    {
+      "name": "Mission Indian Agency",
+      "type": "organization",
+      "context": "Federal agency overseeing approximately 30 reservations including Palm Springs and Los Coyotes"
+    },
+    {
+      "name": "General Land Office",
+      "type": "organization",
+      "context": "Federal agency responsible for surveys of Indian and public lands"
+    },
+    {
+      "name": "Senate Subcommittee on Indian Affairs",
+      "type": "organization",
+      "context": "Committee conducting survey of conditions of Indians in the United States"
+    },
+    {
+      "name": "Palm Springs",
+      "type": "location",
+      "context": "Location of Agua Caliente Band reservation in California"
+    },
+    {
+      "name": "Los Coyotes Indian Reservation",
+      "type": "location",
+      "context": "Reservation being surveyed by Czerny Anderson; covers township 10 south, range 4 east, San Bernardino meridian"
+    },
+    {
+      "name": "Santa Ysabel Indian Reservation",
+      "type": "location",
+      "context": "Reservation represented by Winslow Couro"
+    },
+    {
+      "name": "Chino Canyon",
+      "type": "location",
+      "context": "Historical home of Agua Caliente Band members; water company refuses water rights from this canyon"
+    },
+    {
+      "name": "Tahquitz Canyon",
+      "type": "location",
+      "context": "Source of irrigation and domestic water for Agua Caliente Band; dries up every summer"
+    },
+    {
+      "name": "Andreas Canyon",
+      "type": "location",
+      "context": "Canyon with year-round water supply approximately 2 miles from end of pipe line"
+    },
+    {
+      "name": "Palm Canyon",
+      "type": "location",
+      "context": "Location of trading-post establishment set up without consent of Agua Caliente Band"
+    },
+    {
+      "name": "San Diego, California",
+      "type": "location",
+      "context": "Location of Senate subcommittee hearing on June 29, 1934"
+    },
+    {
+      "name": "Warner Ranch",
+      "type": "land_parcel",
+      "context": "Adjacent property to Los Coyotes Indian Reservation; boundary dispute subject of survey discussion"
+    },
+    {
+      "name": "Rancho San Jose del Valle",
+      "type": "land_parcel",
+      "context": "Spanish/Mexican land grant adjacent to Los Coyotes Reservation; surveyed by William Minto in 1878"
+    },
+    {
+      "name": "Section 6, Palm Springs area",
+      "type": "land_parcel",
+      "context": "Land where water intake of 1909 water company was located; Agua Caliente Band land"
+    },
+    {
+      "name": "Sections 4, 5, and 10, Palm Springs area",
+      "type": "land_parcel",
+      "context": "Sections through which water company pipe line ran; Agua Caliente Band land"
+    },
+    {
+      "name": "Township 10 south, range 4 east, San Bernardino meridian",
+      "type": "land_parcel",
+      "context": "Area comprising Los Coyotes Reservation except small portion in southwest corner"
+    },
+    {
+      "name": "Churchill v. Beale (Cal. Appl. 99-482)",
+      "type": "legal_case",
+      "context": "California appellate case cited regarding survey plats as part of patent grants"
+    },
+    {
+      "name": "Choctaw Nation v. U.S. (119 U.S. 1)",
+      "type": "legal_case",
+      "context": "U.S. Supreme Court case holding Indians entitled to compensation for land excluded by surveying mistakes"
+    },
+    {
+      "name": "Wheeler Bill",
+      "type": "legislation",
+      "context": "Bill associated with Senator Wheeler and Commissioner Collier providing for Indian self-governance; opposed by Mission Indian Federation"
+    },
+    {
+      "name": "Treaty of Guadalupe Hidalgo",
+      "type": "legislation",
+      "context": "Treaty by which U.S. took over California and recognized existing land titles"
+    },
+    {
+      "name": "Airport at Palm Springs",
+      "type": "land_parcel",
+      "context": "Airport taken from Agua Caliente Band with understanding tribe would receive derived money"
+    },
+    {
+      "name": "Domestic water system, Palm Springs reservation",
+      "type": "land_parcel",
+      "context": "Proposed water system for Agua Caliente Band requiring approximately $3,600 in pipe costs"
+    }
+  ],
+  "events": [
+    {
+      "type": "letter/petition submitted",
+      "date": "1934-06-28",
+      "location": "Palm Springs, CA",
+      "description": "Agua Caliente Band of Mission Indians submitted petition to Senate committee requesting land survey, boundary reestablishment, water rights, and review of trading post and airport compensation"
+    },
+    {
+      "type": "Senate subcommittee hearing",
+      "date": "1934-06-29",
+      "location": "San Diego, CA",
+      "description": "Senate Subcommittee on Indian Affairs hearing presided over by Senator Burton K. Wheeler on conditions of Indians in the United States"
+    },
+    {
+      "type": "water company organized",
+      "date": "1909",
+      "location": "Palm Springs, CA",
+      "description": "Water company organized by Rogers laid a pipe line through Agua Caliente Band land; agent Miss C. True refused proposition for water for Indians"
+    },
+    {
+      "type": "government survey",
+      "date": "1855",
+      "location": "San Diego County, CA",
+      "description": "R. C. Mathewson surveyed township boundaries in Los Coyotes area"
+    },
+    {
+      "type": "government survey",
+      "date": "1878",
+      "location": "San Diego County, CA",
+      "description": "William Minto surveyed boundaries of Rancho San Jose del Valle (Warners)"
+    },
+    {
+      "type": "government survey",
+      "date": "1880",
+      "location": "San Diego County, CA",
+      "description": "A. P. Hanson subdivided township into sections for Los Coyotes area"
+    },
+    {
+      "type": "private survey",
+      "date": "1903",
+      "location": "Warner Ranch, San Diego County, CA",
+      "description": "Private surveyor Newman surveyed Warner Ranch boundary; map or field notes never filed"
+    },
+    {
+      "type": "government resurvey",
+      "date": "1910",
+      "location": "Los Coyotes Indian Reservation, San Diego County, CA",
+      "description": "W. J. Lightfoot resurveyed boundaries of Los Coyotes Indian Reservation; disputed by Indians as shifting boundary nearly a quarter mile"
+    },
+    {
+      "type": "report by superintendent of Indian affairs",
+      "date": "1852-05-11",
+      "location": "California",
+      "description": "E. F. Beale reported that reservations in southern California were composed of the most barren and sterile lands"
+    },
+    {
+      "type": "election of spokespersons",
+      "date": "unknown",
+      "location": "Palm Springs, CA",
+      "description": "Superintendent Dady facilitated elections among Agua Caliente Band to elect spokesmen and committee members"
+    },
+    {
+      "type": "conference with Five Civilized Tribes",
+      "date": "1934-03-22",
+      "location": "Muskogee, Oklahoma",
+      "description": "Commissioner Collier held conference with Indians of Five Civilized Tribes of Oklahoma"
+    },
+    {
+      "type": "airport lease agreement",
+      "date": "unknown",
+      "location": "Palm Springs, CA",
+      "description": "Airport taken from Agua Caliente Band with understanding tribe would receive money derived from it; payment not received as of hearing date"
+    },
+    {
+      "type": "trading post established",
+      "date": "unknown",
+      "location": "Palm Canyon, CA",
+      "description": "Trading post established at Palm Canyon without consent or knowledge of Agua Caliente Band"
+    },
+    {
+      "type": "county highway construction",
+      "date": "unknown",
+      "location": "Palm Springs reservation area, CA",
+      "description": "County constructed a highway through Agua Caliente Band land without consent"
+    },
+    {
+      "type": "surveying contract",
+      "date": "1934",
+      "location": "Los Coyotes Reservation, CA",
+      "description": "Czerny Anderson hired under approximately one-month-old contract to survey Los Coyotes reservation boundaries"
+    },
+    {
+      "type": "chamber of commerce payment",
+      "date": "unknown",
+      "location": "Palm Springs, CA",
+      "description": "Chamber of commerce paid $400 to Agua Caliente Band fund"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "payment",
+      "amount": "$1,250.92",
+      "payer": "Airport lessee",
+      "payee": "Agua Caliente Band of Mission Indians (held in treasury)",
+      "date": "unknown",
+      "description": "Airport lease funds found in treasury by Superintendent Dady; accumulated from airport lease"
+    },
+    {
+      "type": "payment",
+      "amount": "$400",
+      "payer": "Chamber of Commerce",
+      "payee": "Agua Caliente Band of Mission Indians fund",
+      "date": "unknown",
+      "description": "Chamber of Commerce payment to Agua Caliente Band fund; combined with airport money to total approximately $1,600-$1,700"
+    },
+    {
+      "type": "fee",
+      "amount": "$3,600",
+      "payer": "Agua Caliente Band of Mission Indians",
+      "payee": "pipe supplier",
+      "date": "1934",
+      "description": "Estimated cost of pipe alone for domestic water system on Palm Springs reservation per engineer Rieger's estimate"
+    },
+    {
+      "type": "fee",
+      "amount": "$3,000",
+      "payer": "Agua Caliente Band of Mission Indians",
+      "payee": "unknown",
+      "date": "1934",
+      "description": "Earlier estimate by engineer Rieger for domestic water system; deemed insufficient funds available"
+    },
+    {
+      "type": "payment",
+      "amount": "$50,000 (requested)",
+      "payer": "Federal Government (Public Works)",
+      "payee": "Mission Indian Agency reservations",
+      "date": "1934",
+      "description": "Amount Dady hoped to receive for miscellaneous irrigation work; had requested $100,000, Waltham thought $50,000 possible"
+    },
+    {
+      "type": "other",
+      "amount": "$500",
+      "payer": "Agua Caliente Band treasury",
+      "payee": "truck purchase",
+      "date": "1934",
+      "description": "Marcus Pete requested $500 from Band funds for a truck"
+    },
+    {
+      "type": "payment",
+      "amount": "unknown",
+      "payer": "Agua Caliente Band members",
+      "payee": "water company",
+      "date": "ongoing as of 1934",
+      "description": "Indians required to pay water company for domestic water; some members had water shut off due to inability to pay"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Ramon Manuel",
+      "type": "member_of",
+      "object": "Agua Caliente Band of Mission Indians",
+      "context": "Tribal member and committee member representing band at Senate hearing"
+    },
+    {
+      "subject": "Marcus J. Pete",
+      "type": "member_of",
+      "object": "Agua Caliente Band of Mission Indians",
+      "context": "Committee member, delegate"
+    },
+    {
+      "subject": "Pico Manuel",
+      "type": "member_of",
+      "object": "Agua Caliente Band of Mission Indians",
+      "context": "Signatory of petition letter"
+    },
+    {
+      "subject": "John W. Dady",
+      "type": "superintendent_of",
+      "object": "Mission Indian Agency",
+      "context": "Superintendent overseeing approximately 30 reservations including Palm Springs"
+    },
+    {
+      "subject": "Czerny Anderson",
+      "type": "employed_by",
+      "object": "Indian Service / Mission Indian Agency",
+      "context": "Hired under contract to survey Los Coyotes reservation boundaries"
+    },
+    {
+      "subject": "Winslow Couro",
+      "type": "member_of",
+      "object": "Mission Indian Federation",
+      "context": "Member and spokesman"
+    },
+    {
+      "subject": "Winslow Couro",
+      "type": "spokesman_of",
+      "object": "Santa Ysabel Indian Reservation",
+      "context": "Designated spokesman for reservation"
+    },
+    {
+      "subject": "Mr. Rieger",
+      "type": "employed_by",
+      "object": "Mission Indian Agency",
+      "context": "Engineer who estimated pipe line cost for Palm Springs water system"
+    },
+    {
+      "subject": "Mr. Engle",
+      "type": "employed_by",
+      "object": "Mission Indian Agency",
+      "context": "Engineer tasked with surveying water sources for Palm Springs reservation"
+    },
+    {
+      "subject": "Miss C. True",
+      "type": "former_agent_at",
+      "object": "Palm Springs reservation",
+      "context": "Agent who refused water proposition from Rogers/water company on behalf of Agua Caliente Band"
+    },
+    {
+      "subject": "Mr. Ellis",
+      "type": "former_agent_at",
+      "object": "Palm Springs reservation",
+      "context": "Agent who gave no satisfaction on water rights issue and did not inform band of airport money"
+    },
+    {
+      "subject": "Mr. McCallum",
+      "type": "former_agent_at",
+      "object": "Palm Springs reservation",
+      "context": "Agent who drove Agua Caliente Band away from their irrigated lands"
+    },
+    {
+      "subject": "Rogers water company",
+      "type": "refused_water_rights_to",
+      "object": "Agua Caliente Band of Mission Indians",
+      "context": "Water company organized 1909 laid pipe through Indian land but gave no water rights to tribe"
+    },
+    {
+      "subject": "County",
+      "type": "constructed_highway_through",
+      "object": "Agua Caliente Band land",
+      "context": "County built highway through reservation land without consent"
+    },
+    {
+      "subject": "Trading post",
+      "type": "established_without_consent_of",
+      "object": "Agua Caliente Band of Mission Indians",
+      "context": "Trading post at Palm Canyon established without tribal knowledge or consent"
+    },
+    {
+      "subject": "Commissioner Collier",
+      "type": "charged",
+      "object": "Mission Indian Federation",
+      "context": "Collier alleged Mission Indian Federation police were carrying guns"
+    },
+    {
+      "subject": "Senator Wheeler",
+      "type": "chairman_of",
+      "object": "Senate Subcommittee on Indian Affairs",
+      "context": "Presided over San Diego hearing June 29, 1934"
+    },
+    {
+      "subject": "W. J. Lightfoot resurvey",
+      "type": "disputed_by",
+      "object": "Los Coyotes Reservation Indians",
+      "context": "Indians rejected Lightfoot 1910 resurvey which shifted boundary nearly a quarter mile"
+    },
+    {
+      "subject": "John W. Dady",
+      "type": "instructed",
+      "object": "Czerny Anderson",
+      "context": "Dady instructed Anderson to survey boundaries comprehensively so Indians could understand"
+    },
+    {
+      "subject": "President Roosevelt",
+      "type": "appointed",
+      "object": "Secretary Ickes",
+      "context": "Roosevelt appointed Ickes as Secretary of the Interior"
+    },
+    {
+      "subject": "Pedro Chino",
+      "type": "last_surviving_member_of",
+      "object": "Chino Canyon family",
+      "context": "Last member of family after whom Chino Canyon was named"
+    },
+    {
+      "subject": "E. F. Beale",
+      "type": "superintendent_of",
+      "object": "Indian Affairs, California",
+      "context": "Reported in 1852 that southern California reservations were barren and sterile"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "Agua Caliente Band of Mission Indians (Pico Manuel, Marcus J. Pete, Ramon Manuel)",
+      "sender_title": "The Committee, Agua Caliente Band of Mission Indians",
+      "recipient": "Senate Committee on Indian Affairs (Senator Wheeler)",
+      "recipient_title": "Chairman, Senate Subcommittee on Indian Affairs",
+      "date": "1934-06-28",
+      "subject": "Request for land survey, boundary reestablishment, water rights, trading post, airport compensation",
+      "action_requested": "Complete survey of lands marking old boundary lines with substantial monuments; resolution of water rights from Chino Canyon; improvement of Tahquitz Canyon water delivery; development of Andreas Canyon water; review of unauthorized trading post at Palm Canyon; payment of airport revenues to tribe",
+      "outcome": "Letter placed in record by Senator Wheeler; committee agreed to investigate"
+    },
+    {
+      "sender": "John W. Dady",
+      "sender_title": "Superintendent, Mission Indian Agency",
+      "recipient": "Mr. Engle",
+      "recipient_title": "Engineer, Mission Indian Agency",
+      "date": "1934 (approximate)",
+      "subject": "Request for surveys of water sources at Palm Springs reservation",
+      "action_requested": "Make surveys of all water sources to determine best supply for Palm Springs reservation",
+      "outcome": "Engle was overworked; Rieger went out instead and estimated pipe requirements"
+    },
+    {
+      "sender": "John W. Dady",
+      "sender_title": "Superintendent, Mission Indian Agency",
+      "recipient": "Department (Indian Affairs office)",
+      "recipient_title": "unknown",
+      "date": "1934 (approximate)",
+      "subject": "Request for reallocation of appropriated funds for Palm Springs water system",
+      "action_requested": "Cut down amounts appropriated for other reservations to allow Palm Springs band to use their airport lease funds",
+      "outcome": "Outcome not stated in document"
+    },
+    {
+      "sender": "Czerny Anderson",
+      "sender_title": "Surveyor, United States Indian Service",
+      "recipient": "Senate Subcommittee on Indian Affairs",
+      "recipient_title": "Committee at Washington",
+      "date": "1934-06-29",
+      "subject": "Written statement on Indian lands, surveys, boundaries under Mission Agency jurisdiction",
+      "action_requested": "That committee members of each reservation receive complete set of maps, field notes, and plat showing adjacent land owners; that original boundary lines be retraced rather than resurveyed",
+      "outcome": "Statement entered into record"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Wheeler Bill (Wheeler-Howard Act / Indian Reorganization Act)",
+      "sponsor": "Senator Wheeler / Commissioner Collier",
+      "action_type": "introduced",
+      "date": "1934",
+      "vote_count": "unknown",
+      "committee": "Senate Committee on Indian Affairs",
+      "outcome": "Opposed by Mission Indian Federation; discussed at hearing; Senator Wheeler defended the bill's provisions for Indian self-governance and courts"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Ramon Manuel",
+      "witness_title": "Committee Member, Agua Caliente Band of Mission Indians",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "San Diego, CA",
+      "date": "1934-06-29",
+      "subject": "Grievances of Agua Caliente Band including land boundaries, water rights, airport compensation, trading post, and domestic water system",
+      "key_claims": "White neighbors have been encroaching on tribal land; boundary lines are lost; water company refuses to grant water rights from Chino Canyon despite pipe running through Indian land; Tahquitz Canyon water is contaminated and shared with five non-Indian landowners leaving Indians short; airport revenues have not been paid to tribe; trading post established at Palm Canyon without consent; county built highway through reservation without consent; Superintendent Dady visited reservation only once since taking office (disputed by Dady); approximately $1,600-$1,700 in tribal fund but insufficient for water system; Indians willing to provide labor for water system at no cost",
+      "questioner": "Senator Burton K. Wheeler"
+    },
+    {
+      "witness": "John W. Dady",
+      "witness_title": "Superintendent, Mission Indian Agency",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "San Diego, CA",
+      "date": "1934-06-29",
+      "subject": "Defense of his administration; water system project for Palm Springs; working conditions",
+      "key_claims": "Has visited Palm Springs reservation approximately seven times, more than any other; manages 30 reservations, 20 of appreciable size, with 640 or more Indians and over 100 projects; works 12-15 hours per day; found $1,250.92 in airport lease funds; chamber of commerce paid additional $400; pipe alone costs $3,600, insufficient funds available; requesting $50,000 for miscellaneous irrigation work from Public Works; Indians can use their existing funds as they wish; asked Indians to suggest uses for funds; has confidence of Indians before outside agitators interfere; attorney for band confirmed Dady is treating them fairly",
+      "questioner": "Senator Burton K. Wheeler"
+    },
+    {
+      "witness": "Czerny Anderson",
+      "witness_title": "Surveyor, United States Indian Service",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "San Diego, CA",
+      "date": "1934-06-29",
+      "subject": "Improper resurveying of Indian reservation boundaries; Los Coyotes boundary dispute with Warner Ranch; legal basis for Indian land rights",
+      "key_claims": "Government sends eastern engineers who do resurveys instead of retracing original boundary lines; Indians cannot reconcile differences caused by resurveys; Los Coyotes Reservation has four official government surveys of same line, none findable on ground; Lightfoot 1910 resurvey shifted boundary nearly a quarter mile from original, dispossessing Indians of land and water they used before 1855; Indians have no maps or records of their land; General Land Office has no right to change boundaries of patented Indian lands; Indians entitled to compensation for land excluded by surveying mistakes per Choctaw Nation v. U.S.; Spanish law recognized Indian possessory rights; reservations in southern California given worthless, barren, mountainous land; recommends each reservation committee receive complete set of maps and field notes; Dady has confidence of Indians and understands their land problems",
+      "questioner": "Senator Burton K. Wheeler"
+    },
+    {
+      "witness": "Winslow Couro",
+      "witness_title": "Spokesman, Santa Ysabel Indian Reservation; Member, Mission Indian Federation",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "San Diego, CA",
+      "date": "1934-06-29",
+      "subject": "Charges against Mission Indian Federation; opposition to Wheeler Bill; dissatisfaction with Commissioner Collier",
+      "key_claims": "Commissioner Collier falsely charged Mission Indian Federation police with carrying guns; Special Agent Moore sent a telegram and refused to provide a copy when asked; Commissioner Collier has caused more dissension among Indians than any previous commissioner; Wheeler Bill would set Indians back 100 years by imposing tribal courts and customs; Mission Indians are voters and citizens who wish to continue on that basis; Indians of Santa Ysabel have no tribal customs; Collier stated at Muskogee conference that President Roosevelt personally appointed him",
+      "questioner": "Senator Burton K. Wheeler"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_questionnaire_005",
+  "type": "questionnaire",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "147",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Margaret White Deer",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "1868",
+    "Cancelled": "No",
+    "Refused/Protested": "Accepted without protest",
+    "Recorded patent": "I did not record the parent, but delivered the patent when I sold the land, and probably the purchaser had the patent recorded.",
+    "Sold/Mortgaged": "I, the patentee, sold the land, all of it, never mortgaged it.",
+    "Buyer": "Sold to Mr. Snodgrass, a banker at that time in Interior, S.D. for $1,000.00 cash",
+    "Tax burden forced sale/Mortgage": "No",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "unknown",
+    "Gender": "Female",
+    "Age": "73 years",
+    "Occupation/Income": "A monthly allowance from her Individual Indian Money",
+    "NOTES": "Mentally sound, physically poor and feeble; has about $500.00 individual money at the present time, from which she is drawing a monthly allowance for her support. No dependents excepting herself. Sale was considered a fair price for the land at that time. Document notarized December 4, 1928, before Elmer B. Pomeroy, Notary Public, Washington County, State of South Dakota.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2499,
+    "output_tokens": 391
+  },
+  "elapsed": 4.8
+}

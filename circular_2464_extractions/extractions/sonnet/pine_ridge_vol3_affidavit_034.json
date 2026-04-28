@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_034",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "43",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louis Pourier",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "4471",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to SC acre allotment when it was issued, for he figured that he would better off without it, leaving it under Government management; that he wrote to the Superintendent of the Pine Ridge Agency to that effect; that he got notice that gradually the County would get it any how for taxes, so he accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "R.C. Dessert, from Merriman, Nebraska; deponent signed a warranty deed in favor of Dessert written on a piece of paper torn from a common tablet by lawyer James Ryan; deed was not notarized; Dessert refused to give deed back but gave $400.00 through lawyer Charles Milner of Martin, South Dakota in the shape of a check",
+    "Tax burden forced sale/Mortgage": "his taxes got behind, and, in 1920, he was having trouble with his first wife, she suing for divorce; that R.C. Dessert came to deponent and said this piece of land would be involved in the law-suit case, and if he gave a blind deed to it, when the trouble was over, Dessert would give it back and save the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "48 years old",
+    "Occupation/Income": "farms the children's allotments for a living",
+    "NOTES": "mentally competent, has good health; married again, wife's health is not very good, she having liver trouble; has six children to support, but they have good health; it keeps him pretty busy to make ends meet; has never received any help from the County, State or United States Government; considers he was defrauded out of the land pure and simple; lawyer James Ryan's address is Martin, South Dakota; lawyer Charles Milner of Martin, South Dakota was also involved; deed was written on a piece of paper torn from a common tablet and was not notarized; deponent cashed the $400.00 check on advice of lawyer Milner who said 'Cash it; we will get this land back from him' but land was never recovered; sworn before Notary Public, Shannon County, South Dakota, November 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2553,
+    "output_tokens": 646
+  },
+  "elapsed": 7.4
+}

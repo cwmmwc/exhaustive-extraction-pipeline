@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_questionnaire_006",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "16",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Frank Arcoren (Dec'd)",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "1197",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I do not know",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Yes",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Frank Arcoren is deceased, died in 1920. Document is a questionnaire answered by his mother, Josephine Arcoren, age 60, who signed with a mark (witnessed). Frank was divorced at the time he sold his land and left no children. Josephine Arcoren has four dependents. Notarized June 11, 1929, by Jas. W. Cross, Notary Public, commission expires 4-28-32.",
+    "Literate/Illiterate": "Josephine Arcoren signed with a mark",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2146,
+    "output_tokens": 333
+  },
+  "elapsed": 6.2
+}

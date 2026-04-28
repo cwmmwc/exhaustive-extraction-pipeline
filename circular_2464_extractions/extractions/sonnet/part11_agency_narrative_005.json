@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_agency_narrative_005",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "65",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Joe St John",
+    "Tribe/Reservation": "Big Bond District",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "I would reconmend that he have his patent cancelled",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "took out a mtg on this land for $100 dollars",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "he got this mtg of $100.00 to pay up the taxes on this allotment; taxes are sky high in this part of the county and it is only a matter of time, that he will loose his land or be forced to sell it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "good farmer and has farmed year after year, and still is willing to farm",
+    "NOTES": "Document dated January 14, 1989 [likely 1929]; Joe St John tried to get his land reverted back to trust land but the mortgage clause stopped him; he still holds his land and is one of the few that kept his land; he is getting old and unable to earn as much as he used to; there has been crop failure in recent years; taxes run from $80.00 to $135.00 a year; has some small children to raise; agency writer recommends patent cancellation",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2200,
+    "output_tokens": 413
+  },
+  "elapsed": 5.9
+}

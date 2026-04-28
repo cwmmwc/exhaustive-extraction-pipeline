@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_050",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "64",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ellen Steele, nee Pourier",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "719",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 160 acre allotment at the time it was issued, but she was informed by the Indian Agency that, if she did not accept it, the allotment would be taxed and finally sold for same, so she took the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged the allotment to the Peterson Company, of Minneapolis, Minnesota, for $800.00; that she made two payments of interest on this loan, then when she failed on third payment they foreclosed; and she considers it was almost a total loss",
+    "Buyer": "Peterson Company, of Minneapolis, Minnesota, for $800.00 (foreclosed)",
+    "Tax burden forced sale/Mortgage": "she never paid taxes, and in 1919 she mortgaged the allotment to the Peterson Company; when she failed on third payment they foreclosed",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "33 years old",
+    "Occupation/Income": "they make their living by farming rented land, this being their only income",
+    "NOTES": "mentally competent and in good health; husband is sickly, being bothered very badly with erysipelas; they have five minor children, all of whom have good health except one; has never received any help from the County, State nor the United States Government; 160 acre allotment; document number No. 719; sworn December 10, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2261,
+    "output_tokens": 485
+  },
+  "elapsed": 7.3
+}

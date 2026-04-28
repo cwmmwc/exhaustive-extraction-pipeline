@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_001",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "2",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Brown",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Hisle, So. Dak.",
+    "Allotment number": "4220c",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee and refused to accept it for some time, but finally took it on the recommendation of the Superintendent who told him that if he did not take it and pay the taxes that the land would be sold to pay them",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "took the land for his fee, paying him only $100.00",
+    "Buyer": "A. G. Granger of Kadoka, So. Dak. (attorney retained to defend son and son-in-law accused of stealing two auto tires) took the land for his fee, with only $100.00 paid",
+    "Tax burden forced sale/Mortgage": "told by Superintendent that if he did not take it and pay the taxes that the land would be sold to pay them",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "62 years old",
+    "Occupation/Income": "farms what he can, but is in poor health and has little equipment and can't do much, and works out what he is able to do but his income is very small",
+    "NOTES": "Mentally competent and in very poor health; has no land and no home; living on his wife's allotment; has a wife and three minor grand children depending on him for support, the grand children being orphans; the Government, State nor county have furnished him no aid since he was granted this patent; document references No. 01869 and file numbers 22402, 22240/6; sworn December 5, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2290,
+    "output_tokens": 496
+  },
+  "elapsed": 7.5
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_016",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "36-37",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "McKay Kemble",
+    "Tribe/Reservation": "Ponca City, Okla. (agency not explicitly stated)",
+    "Post Office Address": "Vets. Hospital, Washington DC",
+    "Allotment number": "334",
+    "Cancelled": "none",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes, filed for record; receipted for yes; by whom: allottee; where: Noble County, Okla.",
+    "Sold/Mortgaged": "Sold to Leo Heney, for $3500 cash",
+    "Buyer": "Leo Heney, for $3500.00 cash, which was a good price at that time",
+    "Tax burden forced sale/Mortgage": "none",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Aug. 1918",
+    "Gender": "Male",
+    "Age": "38, good health",
+    "Occupation/Income": "$45.00 per year from inherited land. No contribution from State or County.",
+    "NOTES": "No property or money accumulated. Wife and three children. Both of Ponca City, Okla. File no. 61391. Document states: 'If the Indian appears to have been defrauded of his property... It does not appear so, in this case. However, it should be looked into.' Notarized November 23, 1928, before notary in Kay County, Oklahoma; commission expires 1931.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2605,
+    "output_tokens": 403
+  },
+  "elapsed": 6.4
+}

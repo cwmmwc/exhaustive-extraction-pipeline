@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_013",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "17",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rebecca Rooks Livermont",
+    "Tribe/Reservation": "Shannon County, South Dakota (reservation not explicitly named)",
+    "Post Office Address": "Vetal, So. Dak.",
+    "Allotment number": "4058",
+    "Cancelled": "an application for cancellation is now pending in the Indian Office",
+    "Refused/Protested": "did not want her patent in fee, but that she took on the advise of the Farmer and the Supt, decidedly under protest",
+    "Recorded patent": "her husband had the patent recorded about six months ago",
+    "Sold/Mortgaged": "has not sold or mortgaged her land",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "if her patent is cancelled that she will have her land, but that if it is not cancelled, she can not pay the taxes, and will lose it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "34 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Has five children, all in fair health, depending on her; has received no aid from the Government, State or County since the patent was issued; document sworn November 13, 1928; mentally competent, in fair health",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2193,
+    "output_tokens": 371
+  },
+  "elapsed": 4.5
+}

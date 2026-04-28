@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_079",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "105",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mrs. Emma Fog",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Fort Thompson, So. Dak",
+    "Allotment number": "5877",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she asked for patent in fee for 320 acres or one-half of her allotment and did not want patent in fee for all of her allotment, but that a patent in fee for all her allotment was mailed to her and receipt for same signed by her and mailed back to the Pine Ridge Agency office",
+    "Recorded patent": "patent in fee was filed, at Kadoka, South Dakota, by Fred Limbard, Chamberlain, S. D., who purchased her land",
+    "Sold/Mortgaged": "her allotment was not mortgaged but that the whole 640 acres was sold to Fred Limbard, now deceased, who lived at Chamberlain, So. Dak.",
+    "Buyer": "Fred Limbard, Chamberlain, S. D., now deceased; she received $3000.00 cash and there was an understanding that she was to receive $3000.00 more or have 320 acres of the land deeded back to her, but that Mr. Limbard went to California and died before he gave her the second $3000.00 or gave her back 320 acres",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "51 years old",
+    "Occupation/Income": "supported by her husband, Frank Fog",
+    "NOTES": "Physical condition is poor; does not own any land or property at this time; has two minor children; allotment was 640 acres total; patent receipt signed and mailed back to Pine Ridge Agency office",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2406,
+    "output_tokens": 505
+  },
+  "elapsed": 5.2
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_034",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "44",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Ione Valandry Reynolds",
+    "Tribe/Reservation": "Pine Ridge Reservation",
+    "Post Office Address": "Wanamaker, S.D.",
+    "Allotment number": "24-61",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not know that she was to receive a patent and it came to her at Vetal, S.D. in a letter from the Superintendent of the Pine Ridge Reservation, on Jan. 1920",
+    "Recorded patent": "she never had the patent recorded",
+    "Sold/Mortgaged": "had to mortgage the land to get money on the land",
+    "Buyer": "Claud Dale of Norris, S.D. holds the mortgage and is being foreclosed at present",
+    "Tax burden forced sale/Mortgage": "she was unable to pay the taxes on the land and had to mortgage the land to get money on the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Jan. 1920",
+    "Gender": "Female",
+    "Age": "33 years old",
+    "Occupation/Income": "all of her support comes from the land; she is living on the land and has farmed about 80 acres",
+    "NOTES": "mentally competent; first mortgaged the land for $500.00, had the mortgage renewed and now there is close to $2200.00 against the land with taxes and mortgage; has not received any aid from the Government, State, or County since the patent was granted; document subscribed and sworn before notary public on the 20th day of [month unclear], 1929; patent received at Vetal, S.D.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2295,
+    "output_tokens": 451
+  },
+  "elapsed": 6.7
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_016",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "23",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Colhoff",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Rapid City, South Dakota",
+    "Allotment number": "288",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 160 acre allotment, when it was issued, September 29, 1919, but he was informed by the Indian Agency that, if he did not accept the patent, the land would be taxed just the same, for which it would finally be sold, so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1920, he sold his allotment to Hermus Merrival, of Pine Ridge, South Dakota, for $1450.00, $950.00 in cash, took in trade a horse and saddle; taxes were paid out of this sale price; refund of lease money amounting to $96.00 was made; and $88.50 is still due deponent on the deal",
+    "Buyer": "Hermus Merrival, of Pine Ridge, South Dakota, for $1450.00",
+    "Tax burden forced sale/Mortgage": "taxes were paid out of this sale price",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Male",
+    "Age": "39 years old",
+    "Occupation/Income": "farms in the summertime, and works at the sawmill in the winter time, for his living; and that these two sources of income constitutes his entire income",
+    "NOTES": "mentally competent; has pretty good health; has a wife and five children to support; family all have good health; did not sell his land for any debts incurred prior to receiving patent in fee; has never received any aid from the County, State nor the United States Government; considers he received a pretty good price for his land; document signed March 13, 1929; County of Shannon",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2329,
+    "output_tokens": 526
+  },
+  "elapsed": 7.5
+}

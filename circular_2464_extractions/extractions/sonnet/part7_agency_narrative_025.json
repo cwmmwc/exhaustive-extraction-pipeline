@@ -1,0 +1,54 @@
+{
+  "document_id": "part7_agency_narrative_025",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "51-52",
+  "model": "sonnet",
+  "extraction": [
+    {
+      "Name": "John DuBray (Boyd)",
+      "Tribe/Reservation": "Rosebud",
+      "Post Office Address": "Rosebud, S. D.",
+      "Allotment number": "2338",
+      "Cancelled": "not stated",
+      "Refused/Protested": "not stated",
+      "Recorded patent": "The patent was recorded April 19, 1919, by R. R. Hazen",
+      "Sold/Mortgaged": "conveyed the land to Charles Burtz for $2000",
+      "Buyer": "Charles Burtz for $2000",
+      "Tax burden forced sale/Mortgage": "not stated",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "December 21, 1917",
+      "Gender": "Male",
+      "Age": "not stated",
+      "Occupation/Income": "not stated",
+      "NOTES": "Fee patent No. 612453; Lots 3, 4 and 5 and Southeast quarter of Northwest quarter, Section 6, Township 102, north of range 77; receipt signed by the allottee September 6, 1918; on April 19, 1919, John and Sadie DuBray conveyed the land to Charles Burtz for $2000",
+      "Literate/Illiterate": "not stated",
+      "Document type": "agency_narrative"
+    },
+    {
+      "Name": "Lucy DuBray Sturdevant",
+      "Tribe/Reservation": "Rosebud",
+      "Post Office Address": "Rosebud, S. D.",
+      "Allotment number": "2341",
+      "Cancelled": "not stated",
+      "Refused/Protested": "not stated",
+      "Recorded patent": "The patent was recorded December 30, 1919, by Lucy Sturdevant",
+      "Sold/Mortgaged": "mortgaged the land to Ray C. Wynn for $800; conveyed the land by deed to Charles W. Varley, for $1.00 and other valuable consideration",
+      "Buyer": "Mortgaged to Ray C. Wynn for $800; mortgage assigned to John R. Olson and released August 19, 1925; deed conveyed to Charles W. Varley for $1.00 and other valuable consideration on August 4, 1925",
+      "Tax burden forced sale/Mortgage": "not stated",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "December 29, 1917",
+      "Gender": "Female",
+      "Age": "not stated",
+      "Occupation/Income": "not stated",
+      "NOTES": "Fee patent No. 612761; Lots 5 and 4 and east half of Southwest quarter, section 30, township 100, north of range 76; receipt for the patent signed by the allottee February 6, 1918; on January 17, 1921, Lucy DuBray Sturdevant and husband mortgaged the land to Ray C. Wynn for $800; mortgage assigned to John R. Olson and released August 19, 1925; on August 4, 1925, Lucy DuBray Sturdevant and husband conveyed the land by deed to Charles W. Varley for $1.00 and other valuable consideration",
+      "Literate/Illiterate": "not stated",
+      "Document type": "agency_narrative"
+    }
+  ],
+  "usage": {
+    "input_tokens": 2265,
+    "output_tokens": 865
+  },
+  "elapsed": 8.3
+}

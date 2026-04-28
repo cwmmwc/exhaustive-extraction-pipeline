@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_012",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "28",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rosa DuBray Iron Shell",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "3463",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I did not expect it at all, but after it was received I was told by several people that I would have to pay taxes on the land so might as well take it. I do not remember who told me that but some people.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged then sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "after it was received I was told by several people that I would have to pay taxes on the land so might as well take it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 1920",
+    "Gender": "Female",
+    "Age": "30",
+    "Occupation/Income": "By my husband who works here and there.",
+    "NOTES": "Did not make application for patent; patent received in the mail in April 1920. Was to receive $3500.00 for the land but received approximately $1500 in all, part of which was a used Ford touring car valued at $500.00. Each party she dealt with blamed the other for not paying the remainder; Mr. Covey died and blame was put on him. Has five children. She and her husband are in good health. Notarized March 27, 1929, before Jas. W. Cross, Notary Public, commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2407,
+    "output_tokens": 436
+  },
+  "elapsed": 8.2
+}

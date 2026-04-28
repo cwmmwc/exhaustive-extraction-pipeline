@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_questionnaire_011",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "29",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jacob Schweigman",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1447",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No. not at the time of delivery, but before it was sent to me by mail I was at the agency and some one of the officials there, I do not remember for sure which one, offered me the patent and I would not take it. Then in about a week I received it by mail.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold it for $9000 in the form of 150 heifers valued at $60.00.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "some 12 years ago (approximately 1917, relative to 1929 document date)",
+    "Gender": "Male",
+    "Age": "39",
+    "Occupation/Income": "Farming and at odd jobs",
+    "NOTES": "Received 150 heifers as payment; did not think he signed a receipt for the patent; received patent by mail; notary public is S. W. Cross, commission expires 4-28-32; sworn March 25, 1929; satisfied with the sale of his land; did not make an application for the patent; has seven children, all of whom depend on him.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2276,
+    "output_tokens": 406
+  },
+  "elapsed": 7.6
+}

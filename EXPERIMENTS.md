@@ -225,17 +225,16 @@ This was a straightforward success — noted here primarily because the tabular 
 
 ## Appendix: Cost Summary
 
-| Experiment | Cost | Outcome |
-|-----------|------|---------|
-| Fine-tuning Llama 3.3 70B | ~$71 | Negative result (made model worse) |
-| Together AI model benchmarks | ~$15 | Identified Kimi K2.5 as best open-source option |
-| Survey extraction (26 vols, Kimi via Together AI) | ~$40 | 158,351 structured records |
-| Survey extraction (remaining vols, RC GenAI) | $0 | Free university infrastructure |
-| Index card vision extraction (87 PDFs, Sonnet) | ~$130 | 12,969 slips, 4,811 cases, 6,588 persons |
-| Qwen-VL index cards (HPC) | $0 | 13,887 slips (complementary to Sonnet) |
-| Sonnet vs. Kimi Part 33 comparison | ~$4 | Confirmed pipeline fix > model switch |
-| Deep Read analysis queries (Opus) | ~$20 | Ongoing research use |
-| **Total** | **~$280** | |
+| Experiment | Cost | Source | Outcome |
+|-----------|------|--------|---------|
+| Fine-tuning Llama 3.3 70B | $71 | Together AI invoice | Negative result (made model worse) |
+| Open-source model benchmarks | ~$15 | Together AI usage | Identified Kimi K2.5 as best open-source option |
+| Survey extraction (26 vols, Kimi via Together AI) | ~$55 | Together AI usage | 158,351 structured records |
+| Survey extraction (remaining vols, RC GenAI) | $0 | UVA RC | Free university infrastructure |
+| Index card vision extraction (87 PDFs, Sonnet) | ~$130 | Estimated at ~$0.04/page × 2,400 pages + overhead | 12,969 slips, 4,811 cases, 6,588 persons |
+| Qwen-VL index cards (HPC) | $0 | UVA HPC | 13,887 slips (complementary to Sonnet) |
+| Analysis queries and comparisons (Opus) | ~$25 | Estimated at ~$0.34/query | Ongoing research use |
+| **Total** | **~$300** | | |
 
 ---
 

@@ -1,0 +1,32 @@
+{
+  "document_id": "part10_affidavit_004",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 10.pdf",
+  "source_pages": "46",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "not stated",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is largely illegible. Subscribed and sworn to before a notary on the 12th day of [month unclear] 1929. No substantive content extractable due to poor image quality.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 1959,
+    "output_tokens": 262
+  },
+  "elapsed": 6.2
+}

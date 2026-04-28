@@ -1,0 +1,33 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_071",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "97",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Lone Wolf",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Wanblee, S.D.",
+    "Allotment number": "5659",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she thought she had to take the patent, she did not apply for a patent but took it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "deeded the land to Maggie Williams because she could not pay the taxes and the land did not bring her enough money to pay the taxes and she gave it to her daughter to keep for the taxes",
+    "Buyer": "Maggie Williams (daughter)",
+    "Tax burden forced sale/Mortgage": "she could not pay taxes on the land and deeded the land to Maggie Williams because she could not pay the taxes and the land did not bring her enough money to pay the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "82 years old",
+    "Occupation/Income": "impossible to work",
+    "NOTES": "Deponent makes her home with her daughter and has done so for 14 years; has not received any help from the Government, State or County since she received the patent in fee; was living in Missouri when she received her patent in fee; is not competent and is of poor health, suffering with hardening of the arteries and heart trouble; document sworn December 4, 1928; County of Washabaugh, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2215,
+    "output_tokens": 421
+  },
+  "elapsed": 5.7,
+  "retry_count": 1
+}

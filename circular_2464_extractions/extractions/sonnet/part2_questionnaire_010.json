@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_010",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "29",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ellen Prue Packard",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Okreek",
+    "Allotment number": "421",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I was told by Gilbert Blacksmith, an Indian, that there was a patent for me at the Farmer's office in Okreek and I should come after it, but I told him that I did not want it. Then, if I remember correctly, my father later brought it to me.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1917",
+    "Gender": "Female",
+    "Age": "47",
+    "Occupation/Income": "I am teaching school at St. Francis.",
+    "NOTES": "Allottee was supposed to get $7600 but received in cash about $5000.00; sale was made on the deferred payment plan but the last payment has not been made; she states she lost her home in the deal; she is not satisfied with the sale; does not remember signing a receipt; did not make application for the patent; has two children but only one is living; document sworn before Jas. W. Cross, Notary Public, April 1st 1929; notary commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2341,
+    "output_tokens": 404
+  },
+  "elapsed": 7.9
+}

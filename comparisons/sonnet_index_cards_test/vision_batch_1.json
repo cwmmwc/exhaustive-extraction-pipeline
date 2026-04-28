@@ -1,0 +1,61 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Interior",
+      "date": "1935-01-08",
+      "correspondent": "Secy",
+      "correspondent_role": "outgoing",
+      "case_name": "US v. Ralph Hughes et al",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Transmitt copy of final decree in case of US v. Ralph Hughes et al",
+      "action_type": "enclosure",
+      "enclosures": "copy of final decree",
+      "routing_division": "",
+      "routing_date": "",
+      "clerk_initials": "PCR:RMH",
+      "processed_date": ""
+    },
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Interior",
+      "date": "1935-01-31",
+      "correspondent": "Secy",
+      "correspondent_role": "outgoing",
+      "case_name": "U.S. vs. Ralph Hughes, County Treas., et al",
+      "case_number": "No. 488 Equity",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "U.S. vs. Ralph Hughes, County Treas., et al, No. 488 Equity, U.S. Dist. Ct. for the No. Dist. of Okla.",
+      "action_type": "other",
+      "enclosures": "",
+      "routing_division": "Lands",
+      "routing_date": "1935-02-02",
+      "clerk_initials": "hf",
+      "processed_date": "1935-02-26"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. vs. Ralph Hughes, County Treas., et al",
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Interior",
+      "case_type": "other",
+      "allottee_name": "",
+      "tribe_or_reservation": "",
+      "county": ""
+    }
+  ],
+  "persons": [
+    {
+      "name": "Ralph Hughes",
+      "role": "defendant",
+      "tribe": "",
+      "allottee_number": ""
+    }
+  ]
+}

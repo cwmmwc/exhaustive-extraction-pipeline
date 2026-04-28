@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_064",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "90",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Levi Bert Amiotte",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Vetal, So. Dak.",
+    "Allotment number": "5484",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee, but took it on the advice of the Farmer and the Supt. for they told him that if he did not take it that the land would be sold to pay the taxes",
+    "Recorded patent": "Slimmer & Thomas, St. Paul, Minn. had the patent recorded",
+    "Sold/Mortgaged": "put his land up as security on a bunch of cattle, that the cattle sold $2800.00 less than he paid for them and they took the land for the difference. This was in 1924 that deponent was closed out on his land.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "told that if he did not take the patent the land would be sold to pay the taxes; cattle sold for $2800.00 less than he paid for them and they took the land for the difference",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "28 years old",
+    "Occupation/Income": "makes his living by common labor on farms and ranches, income is about $500.00 per year",
+    "NOTES": "mentally competent, in fair health; has a wife who is not well and 8 children to support; has no land, no home and is living on the allotment of his nephew, who will let him live there until spring, when he must hunt another place; all he has is about $250.00 worth of horses; did not get what he thought his land was worth, does not think $2800.00 was a fair price; affidavit subscribed and sworn before Notary Public, County of Shannon, State of South Dakota, on November 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2342,
+    "output_tokens": 540
+  },
+  "elapsed": 8.1
+}

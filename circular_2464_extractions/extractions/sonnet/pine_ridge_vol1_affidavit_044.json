@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_044",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "56",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Janis",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Rockyford, So. Dak.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee and refused to accept it for some time, but finally took it on the advice of the Farmer and Superintendet, who told him that if he did not atke it and pay the taxes that the land would be sold to satisfy them",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "mortgaged his land to the Anchor Bank, Merriman, Nebr. for $3350.00, giving a mortgage on the allotment of my wife as well as mine; sold his land to J. C. Cozad, Martin, So. Dak. he to pay the mortgage and taxes",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes and mortgage so he had to sell his land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "40 years old",
+    "Occupation/Income": "he farms what he can, does common labor and anything else that he can do and that his income is about $400.00 per annum",
+    "NOTES": "mentally competent and in poor health, suffering with stomach trouble; has a wife and five children to support, all in fair health; has received no aid from the Government, State or County since his patent in fee was issued; document number No. 710; Shannon County, South Dakota; sworn November 28, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2282,
+    "output_tokens": 466
+  },
+  "elapsed": 5.8
+}

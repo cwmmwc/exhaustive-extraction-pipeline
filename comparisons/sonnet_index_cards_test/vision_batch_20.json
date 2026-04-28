@@ -1,0 +1,42 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-28",
+      "jurisdiction": "Interior",
+      "date": "1935-02-02",
+      "correspondent": "First Asst. Secy., Office of the Secy.",
+      "correspondent_role": "incoming",
+      "case_name": "U.S. v. Bippus",
+      "case_number": "",
+      "allottee_name": "Charles Tecumseh",
+      "allottee_number": "",
+      "tribe_or_reservation": "Potawatomi",
+      "subject": "Case of U.S. v. Bippus re an illegal tax sale of land belonging to Charles Tecumseh, a Potawatomi Indian.",
+      "action_type": "other",
+      "enclosures": "",
+      "routing_division": "Lands Div.",
+      "routing_date": "1935-02-04",
+      "clerk_initials": "vt",
+      "processed_date": "1935-02-04"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. v. Bippus",
+      "file_number": "90-2-5-28",
+      "jurisdiction": "Interior",
+      "case_type": "tax_recovery",
+      "allottee_name": "Charles Tecumseh",
+      "tribe_or_reservation": "Potawatomi",
+      "county": ""
+    }
+  ],
+  "persons": [
+    {
+      "name": "Charles Tecumseh",
+      "role": "allottee",
+      "tribe": "Potawatomi",
+      "allottee_number": ""
+    }
+  ]
+}

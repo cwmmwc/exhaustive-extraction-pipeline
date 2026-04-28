@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_011",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "30",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lizzie Colomb",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Yes I cried for two days after it came because I did not want it, and I did not want to lose my home. I seldom go to the agency so I did not see any of them to protest to. I told a number of my friends that I did not want it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold it because the taxes were so high that I could not pay them and I intended to purchase a home over at Okreek",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I sold it because the taxes were so high that I could not pay them",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "during the World War",
+    "Gender": "Female",
+    "Age": "64",
+    "Occupation/Income": "My husband is the chief means of support",
+    "NOTES": "Document number 22991; received patent by mail during World War; signed a receipt for the patent; got $1600 in Liberty Bonds and $515.00 in cash for the land; four people depend on her; states 'the Government should not have issued the patent as I did not ask for it'; intended to purchase a home at Okreek; in poor health, states 'some days I feel pretty well and some days I am sick because I am old'; notarized May 8, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2348,
+    "output_tokens": 457
+  },
+  "elapsed": 6.5
+}

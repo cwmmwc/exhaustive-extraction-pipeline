@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_015",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "21",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Leander Sears",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Gordon, Nebraska",
+    "Allotment number": "2176",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 160 acre allotment, when it was issued April 13, 1918, but he was in the United States Army when it was issued, and when he returned it was awaiting him at the Indian Agency, at Pine Ridge; that the Indian Agency told him that, if he did not take charge of the patent, the land would be assessed for taxes, for which it would later be sold, so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1919, he sold his land to John Scott, of Gordon, Nebraska, for $1120.00 cash",
+    "Buyer": "John Scott, of Gordon, Nebraska, for $1120.00 cash",
+    "Tax burden forced sale/Mortgage": "did not sell his allotment for debts incurred prior to the receipt of his patent in fee",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Male",
+    "Age": "38 years old",
+    "Occupation/Income": "works on a ranch for his brother-in-law, for his living; and that this is his only source of income",
+    "NOTES": "mentally competent, has good health, is single; has no one to support except himself; has never received any aid from the County, State nor the United States Government; was in the United States Army when patent was issued; document sworn December 20, 1928; County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2259,
+    "output_tokens": 470
+  },
+  "elapsed": 6.3
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_050",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "64",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Richard No.2",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Tuthill, South Dakota",
+    "Allotment number": "4693",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his allotment, on account of not wanting to pay taxes, but that he was told by the Indian Agency that he would have the taxes to pay at any rate, so he took it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold 320 acres for $4000.00 Cash, and sold James Cozet 160 acres for a promised $800.00 which was never paid; retains 160 acres with home on it",
+    "Buyer": "320 acres sold to Mr. Rus ho of Winner, South Dakota for $4000.00 cash; 160 acres sold to James Cozet who promised $800.00 but has never paid one dollar",
+    "Tax burden forced sale/Mortgage": "no debt or taxes charged against his home quarter; was told by the Indian Agency he would have taxes to pay at any rate",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "41 years old",
+    "Occupation/Income": "his only source of revenue is what he receives from Mr. Tom Linn, who rents his allotment, and who also hires him as a laborer",
+    "NOTES": "mentally incompetent; health is good except he has rheumatism in the legs; has a wife and three minor children to support; wife is also bothered with rheumatism; children are well; had 640 acres in original allotment; sold 320 acres leaving 160 acres with home, no debt or taxes against it; has never received any help from the County or United States Governments; document number 99809; sworn November 14, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2325,
+    "output_tokens": 529
+  },
+  "elapsed": 6.2
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_076",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "93",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Fred Bissonette",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Allen, South Dakota",
+    "Allotment number": "1021",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want this patent, as he did not want to pay taxes, but he was informed that it would be taxed whether he took the patent, or not, and later sold for taxes, if not taken care of, so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold east quarter February 7, 1920; traded west quarter March 29, 1920; mortgaged half section April 1920; sold half section to M. F. Jones",
+    "Buyer": "East quarter sold to Blanche Parker of Gordon, Nebraska for $1500.00 cash; west quarter traded to Blanche Parker for a half section of land exchanging deeds; half section mortgaged to Mr. Torson of Martin, South Dakota for $240.00; half section sold to M. F. Jones residing in Bennett County, South Dakota, Mr. Jones paying the taxes and the mortgage and trading deponent a Buick roadster valued at $500.00",
+    "Tax burden forced sale/Mortgage": "he was unable to make the payments, and the mortgage was due a few months after this, and, as he was about to be foreclosed on, he sold the half section to M. F. Jones",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Male",
+    "Age": "41 years old",
+    "Occupation/Income": "does a little truck farming, and that is his only income",
+    "NOTES": "Health is poor, having weak eyes, hard of hearing and his light lung is in poor shape; has a sister to support, she having poor health, having had rheumatism for 20 years; sister draws rations from the Pine Ridge Agency, South Dakota; has never received any help from the county, State nor the United States Government; did not sell his land for any debts incurred prior to receiving the patent in fee; allotment described as the N\u00bd, Sec. 16, T. 37N., R. 39W., of the 6th P.M., in South Dakota, 320 acres; considers he received an exceedingly poor price for the half section; sworn April 23, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2576,
+    "output_tokens": 631
+  },
+  "elapsed": 7.2
+}

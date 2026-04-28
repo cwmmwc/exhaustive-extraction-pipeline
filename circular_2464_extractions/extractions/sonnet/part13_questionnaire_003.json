@@ -1,0 +1,32 @@
+{
+  "document_id": "part13_questionnaire_003",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "5-6",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ernest Blue Back",
+    "Tribe/Reservation": "Ponca City, Okla. (Agency not explicitly named)",
+    "Post Office Address": "Ponca City, Okla.",
+    "Allotment number": "533",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "not filed for record",
+    "Sold/Mortgaged": "Sold by allottee",
+    "Buyer": "Land was sold to Miller Bros., Ponca City, Okla.; $2700.00 received for entire allotment",
+    "Tax burden forced sale/Mortgage": "none",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Aug. 6, 1918",
+    "Gender": "Male",
+    "Age": "42 years",
+    "Occupation/Income": "$15.00 per annum from inherited lands. No contributions from Government or State or County.",
+    "NOTES": "Good health, no funds; wife and five children dependent upon him; at the time of sale, the consideration probably represented full value of such land; patent delivered at Agency; date of redemption expired: none; notarized November 21, 1928, before Notary Public whose commission expires Aug. 3, 1931, Kay County, State of Oklahoma",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2563,
+    "output_tokens": 366
+  },
+  "elapsed": 6.3
+}

@@ -1,0 +1,42 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Northern Oklahoma",
+      "date": "1935-09-26",
+      "correspondent": "U.S. Atty. (by asst. U.S. Atty.)",
+      "correspondent_role": "incoming",
+      "case_name": "U.S. v. Ralph Hughes, County Treasurer, et al.",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "Osage",
+      "subject": "Have prepared and submitted application and order to pay sp. Disbursing Agent for Osage Agency sum of $42,935.44",
+      "action_type": "filing",
+      "enclosures": "",
+      "routing_division": "Lands",
+      "routing_date": "1935-09-28",
+      "clerk_initials": "mr",
+      "processed_date": "1935-09-28"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. v. Ralph Hughes, County Treasurer, et al.",
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Northern Oklahoma",
+      "case_type": "tax_recovery",
+      "allottee_name": "",
+      "tribe_or_reservation": "Osage",
+      "county": ""
+    }
+  ],
+  "persons": [
+    {
+      "name": "Ralph Hughes",
+      "role": "defendant",
+      "tribe": "",
+      "allottee_number": ""
+    }
+  ]
+}

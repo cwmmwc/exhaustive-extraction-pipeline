@@ -1,0 +1,29 @@
+{
+  "document_id": "part10_shawnee_10",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 10.pdf",
+  "source_pages": "35",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "R. DeGraff",
+    "Tribe/Reservation": "Shawnee",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Fee patent issued prior to 1921 without application",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "prior to 1921",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Status per Shawnee Indian Agency cover letter: Report mailed to her not returned. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page035. Document reference: 5-1142. Allotment number not recorded on source list nor in RA spreadsheet.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {},
+  "elapsed": 0
+}

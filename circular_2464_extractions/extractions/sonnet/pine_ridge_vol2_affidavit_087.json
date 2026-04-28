@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_087",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "106",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Leroy Cuny",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "2910",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 160 acre allotment; but he was advised by the Indian Agency that it was reported to the tax collector, and he would have taxes to pay, or would finally lose it, so he accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it to Charles Cuny, receiving $300.00 in cash, 12 head of horses, valued at $50.00 each, also, Charles Cuny paid these back taxes; and Leroy Cuny gave Charles Cuny a deed to his land",
+    "Buyer": "Charles Cuny; $300.00 in cash, 12 head of horses valued at $50.00 each, plus payment of back taxes",
+    "Tax burden forced sale/Mortgage": "in 1920, being behind in taxes, he sold it to Charles Cuny; he does not consider it a fair price for his land, but took it because the taxes were unpaid, and he could not pay them",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "36 years old",
+    "Occupation/Income": "works out on farms for a living",
+    "NOTES": "Mentally competent, has pretty good health; has been married but his wife is dead; has three minor children to support; finds it hard to make ends meet; has never received any aid from the County, State or United States Government; document sworn November 21, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2276,
+    "output_tokens": 483
+  },
+  "elapsed": 5.7
+}

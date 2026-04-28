@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_questionnaire_013",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "67-68",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Peter St John",
+    "Tribe/Reservation": "Big Bend District",
+    "Post Office Address": "not stated",
+    "Allotment number": "5-1142",
+    "Cancelled": "Patent has not been cancelled.",
+    "Refused/Protested": "Peter St John claims that he had made out an application for his allotment and sent it to Washington D.C. and before his application was received or acted on the patent for his land was sent to the Agency office for delivery with the rest of the patents issued at that time. That he received the patent with out protest or saying anything as he was informed that the patent was there by some one in the office when he was at the office on other buisness.",
+    "Recorded patent": "Patent as recorded by himself at the County seat of Hughs County located at Pierre S.D. Patent recorded April 26th 1920 in Vol 158, page 602 at Court house Hughs Co. Pierre S.D.",
+    "Sold/Mortgaged": "Not mortgaged. Peter St John kept the land one year and paid the taxes on same amounting to 20.00 dollars and then sold the land to Harry Grey. Not Sold for debt or taxes.",
+    "Buyer": "Sold to Harry Grey who was living in this district for about another consideration, recorded in vol 165 page 176, Hughs Co Pierre S.D. Harry Grey sold to Dommey for $3600.00, Dommey assuming mtg of $1800.00, sold to Leroy Taea in vol 170 page 302, Hughs Co Pierre S.D. Land was sold by patentee, he received $2300.00; land sold for about half of what land was selling for at that time.",
+    "Tax burden forced sale/Mortgage": "Not Sold for debt or taxes.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "November 18th 1919",
+    "Gender": "Male",
+    "Age": "57 years old",
+    "Occupation/Income": "The source of his support is by farming some, selling wood, working at odd jobs when there is any. Has not received any support from the Government, State or County; wife has received rations some during the winter months, and has lived on the proceeds from his wife land sale.",
+    "NOTES": "Mental condition: Good. Physical condition: Poor. Financial condition: Poor. Wife and Mother-in-law dependent upon him part time. At the time this land was patented land was selling from $20.00 to $30.00 an acre; this land is a choice tract of land and when it resold it sold for about $3500.00, the land was sold soon after the Indian sold it, and a good profit made. Patent delivered by Peter Lightfoot; patent was receipted for. Prepared by Geo H. Boesi, Government Farmer.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2954,
+    "output_tokens": 717
+  },
+  "elapsed": 11.5
+}

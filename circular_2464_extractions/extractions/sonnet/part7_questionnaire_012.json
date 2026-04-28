@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_012",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "32",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louise Colombe (Koch)",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2300",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Not that I know of to any official but she did not want it as we had the use of the land without it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Yes she mortgaged it and the mortgage was foreclosed. I later redeemed it and it has again been foreclosed but I still have time to redeem it until March 11, 1930.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I think the patent was injurious to us rather than helpful as the taxes were an added burden. The taxes on this land and another quarter joining it amount to $478.00 for 1928.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "early part of 1918",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Allottee Louise Colombe (Koch) is deceased, died April 10, 1920. Questionnaire answered by her husband Joseph Koch, age 51, who still lives on the allotment. They had four children whom Joseph supports. Patent was mailed to her in early 1918; whether she signed a receipt is unknown. Mortgage was foreclosed; Joseph redeemed it but it was foreclosed again; he had until March 11, 1930 to redeem. Notarized before Jas. W. Cross, Notary Public, commission expires 4-28-32, on May 8, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2289,
+    "output_tokens": 470
+  },
+  "elapsed": 7.2
+}

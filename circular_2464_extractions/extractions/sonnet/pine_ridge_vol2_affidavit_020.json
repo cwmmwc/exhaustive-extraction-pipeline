@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_020",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "27",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Annie Yellow Bull\u2014nee Fast Horse",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Denby, South Dakota",
+    "Allotment number": "2257",
+    "Cancelled": "not stated",
+    "Refused/Protested": "in 1916, she applied for her patent in fee, and was refused; that, in September, 1919, when it was forced upon her, she did not want it, as she had by then decided that it would be too hard for her to pay taxes; that the Indian Agency, at Pine Ridge, then informed her that, if she did not accept the patent, the land would be assessed for taxes, for which it would later be sold, so she took the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold her place to Chester Grooms, of Brennan, South Dakota, the deal being made partly for trade and for $1600.00 in cash",
+    "Buyer": "Chester Grooms, of Brennan, South Dakota; what she actually received was $1000.00 in cash, 15 head of very poor cattle, 7 of which died immediately upon their receipt, an old saddle, and old wagon and an old set of harness; also, he gave her an old team of horses and a good team of horses, later taking the good team of horses away from her; he failed to come through with the $600.00 cash due on the deal",
+    "Tax burden forced sale/Mortgage": "she did not want it, as she had by then decided that it would be too hard for her to pay taxes; that the Indian Agency, at Pine Ridge, then informed her that, if she did not accept the patent, the land would be assessed for taxes, for which it would later be sold",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 1919",
+    "Gender": "Female",
+    "Age": "52 years old",
+    "Occupation/Income": "her husband supports her, her one minor child, and four minor grandchildren, by working at farm labor; that this is their only income",
+    "NOTES": "health is not very good, being bothered with stomach trouble; husband is bothered with rheumatism; two of her grandchildren have consumption; they have a hard time to get along on what he can make; she had not made any debts prior to receiving this patent in fee, the place being clear of debt when she sold it; she considers that she received an extremely poor price for her land; she never knew what valuation to place on the trade goods received; has never received any help from the County, State nor the United States Government; document sworn December 15, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2554,
+    "output_tokens": 677
+  },
+  "elapsed": 9.3
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_068",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "94",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "George Bartlett",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not desire his patent in fee at the time he accepted it, for the reason that he did not want to pay taxes; that he received a letter from the Indian Agency, stating that his patent in fee was in this Office; that he answered back that he did not want the patent in fee; and that he later received a registered letter from the Indian Agency, enclosing patent in fee to his allotment, and advising that it was necessary that he accept it, which he did, signing for same",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold; about 1920, he traded this allotment of 160 acres to Albert Morton for another 160; in 1927, he sold the place to Roy Searby, of Wanblee, South Dakota, for Sixteen Hundred Dollars ($1600.00), Five Hundred Dollars ($500.00) of this amount being absorbed by a mortgage given to Frank Alberts, of Presho, South Dakota, for improvements on place and farm implements necessary for carrying on farming",
+    "Buyer": "Sold to Roy Searby, of Wanblee, South Dakota, for $1600.00; mortgage given to Frank Alberts, of Presho, South Dakota",
+    "Tax burden forced sale/Mortgage": "had to sell it through the force of circumstances; does not consider that $1600.00 was a fair price for the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "39 years old",
+    "Occupation/Income": "income is about $500.00 per year, earned by being a printer for the United States Government, and this is his only revenue",
+    "NOTES": "File No. 5563; mentally competent; enjoying fair health \u2014 is bothered with rheumatism; has a wife and six minor children to support; health of entire family is good except one child, who had pneumonia and has never been well since; has never received any aid from the Government or County; affidavit subscribed and sworn to November 12, 1928; document appears to be continuation of a prior deponent's statement before Bartlett's testimony begins",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2434,
+    "output_tokens": 630
+  },
+  "elapsed": 6.8
+}

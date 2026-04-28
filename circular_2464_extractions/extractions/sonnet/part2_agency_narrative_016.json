@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_agency_narrative_016",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "28",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ellen Prue Packard",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. Dak.",
+    "Allotment number": "421",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "recorded February 23, 1918 by the Volz Abstract Company",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "conveyed by deed signed by Ellen Prue Packard and Harry Packard to Joseph M. Bartlett for a consideration of $7600.00, assumed and agreed to pay as part of the purchase price",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 29, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612727 issued; northwest quarter of section 13, township 98, range 79; receipt for patent signed by the allottee February 8, 1918; land mortgaged February 21, 1918 for $1600.00; again February 25, 1919 for $2800.00; land conveyed May 19, 1919; sale subject to a mortgage of $2800.00 which Bartlett assumed and agreed to pay as part of the purchase price; Harry Packard also signed the deed",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2103,
+    "output_tokens": 424
+  },
+  "elapsed": 5.9
+}

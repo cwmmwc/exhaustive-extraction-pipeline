@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_054",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "72",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susie Yellow Horse",
+    "Tribe/Reservation": "Shannon County (South Dakota)",
+    "Post Office Address": "Manderson, So. Dak.",
+    "Allotment number": "2618",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent to her land but took it for the reason that she was told that if she did not, and keep the taxes up, that she would lose the land",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged her land to Stockmen's National Bank, Rushville. Nebr. for $300.00; sold it to Peter Pourier for $1800.00, the purchaser to pay the mortgage",
+    "Buyer": "Peter Pourier for $1800.00, the purchaser to pay the mortgage",
+    "Tax burden forced sale/Mortgage": "she was about to lose the land for Taxes so she sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "52 years old",
+    "Occupation/Income": "supported by her husband who does common labor for a living, making about $200.00 per year",
+    "NOTES": "mentally competent, in poor health; has no land, no home and is living on the allotment of her brother; has not received any aid from the Government, State or County since her patent was issued; document appears to reference dependents but text is cut off ('Deponent, further state depending on her for suppor')",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2227,
+    "output_tokens": 430
+  },
+  "elapsed": 6.2
+}

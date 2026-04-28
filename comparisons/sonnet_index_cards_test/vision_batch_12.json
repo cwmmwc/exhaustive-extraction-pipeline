@@ -1,0 +1,42 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-21",
+      "jurisdiction": "Western Oklahoma",
+      "date": "1935-06-12",
+      "correspondent": "U.S. Atty",
+      "correspondent_role": "incoming",
+      "case_name": "U.S. v. Board of County Com. of Caddo County, Okla.",
+      "case_number": "",
+      "allottee_name": "Otto Wells",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Recovery of taxes paid by the Indian, Otto Wells",
+      "action_type": "tax_recovery",
+      "enclosures": "",
+      "routing_division": "Lands",
+      "routing_date": "1935-06-15",
+      "clerk_initials": "ms",
+      "processed_date": "1935-06-15"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. v. Board of County Com. of Caddo County, Okla.",
+      "file_number": "90-2-5-21",
+      "jurisdiction": "Western Oklahoma",
+      "case_type": "tax_recovery",
+      "allottee_name": "Otto Wells",
+      "tribe_or_reservation": "",
+      "county": "Caddo"
+    }
+  ],
+  "persons": [
+    {
+      "name": "Otto Wells",
+      "role": "allottee",
+      "tribe": "",
+      "allottee_number": ""
+    }
+  ]
+}

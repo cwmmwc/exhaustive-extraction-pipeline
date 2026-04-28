@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_004",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "8-9",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Thomas Hand",
+    "Tribe/Reservation": "Pawnee Indian Agency",
+    "Post Office Address": "Pawnee, Oklahoma",
+    "Allotment number": "314",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Was it filed for record? no",
+    "Sold/Mortgaged": "sold",
+    "Buyer": "Land sold for $1664.80 to Bill Perry, who was employed at Pawnee Indian Agency",
+    "Tax burden forced sale/Mortgage": "Has any of the land been sold for debt or taxes? no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "July 15, 1917",
+    "Gender": "Male",
+    "Age": "38",
+    "Occupation/Income": "No inherited land, only income of allottee is Pawnee Annuity",
+    "NOTES": "Good health, no money or property accumulated; seven children dependent on allottee for support; patent delivered August 2, 1917, by mail; receipted for: yes; allottee states that he wanted $60 per acre for his land, but had to sell for $40.00 per acre; mortgage: no; document notarized November 26, 1928, in Pawnee County, State of Oklahoma; commission expires Aug. 31, 1929; file reference 61391",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2536,
+    "output_tokens": 390
+  },
+  "elapsed": 6.5
+}

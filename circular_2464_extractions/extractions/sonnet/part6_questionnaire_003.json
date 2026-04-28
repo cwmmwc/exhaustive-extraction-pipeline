@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_003",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "8",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Luther Arcorn",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No sir",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, I sold it.",
+    "Buyer": "Ella McHenry",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "40",
+    "Occupation/Income": "not stated",
+    "NOTES": "Received patent at the Agency Office; signed a receipt for it; sold land to Ella McHenry; was supposed to get $10,000 but only received $1500.00 at time of sale plus notes for $6000.00 ($600.00 due each year for ten years at 6% interest); received two bogus checks for $10,000; gave three notes to attorneys; notes he held were worthless; Wm. J. Bordeaux had court proceedings against the land which allottee describes as fraud, stating he had no contract or agreement with Bordeaux; McHenry allegedly maneuvered to cloud title to say land was not clear; has wife and three children whom he supports; document number 1196; notarized April 8, 1929 by Jas. W. Cross, Notary Public (commission expires 4-28-32)",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2442,
+    "output_tokens": 423
+  },
+  "elapsed": 7.3
+}

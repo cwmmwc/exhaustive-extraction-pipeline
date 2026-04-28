@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_agency_narrative_006",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "12",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lena Lima Bordeaux",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. D.",
+    "Allotment number": "2268",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded March 15, 1918 by R. E. Wang",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Land mortgaged by Lima Bordeaux LaPointe and husband to the Valentine State Bank for $1075; agreement entered July 5, 1919 with Whittemore and Lewis Investment Company deed in escrow between Lima Bordeaux Lapointe and her husband and Edward A. Heuer, payment of $100 down and $2700 on or before; then Mrs. Lapointe and her husband conveyed by deed to O. M. Walcott for $2500 subject to the two mortgages which Walcott assumed and agreed to pay",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 21, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612448 issued; Lots 3 and 4 and East half of Southwest quarter section 7, township 37, north of range 25; receipt for the patent was signed by the allottee January 24, 1918; land first mortgaged for $1000; then mortgaged to Valentine State Bank for $1075; deed in escrow with Whittemore and Lewis Investment Company and Edward A. Heuer dated August 18, 1919; final conveyance to O. M. Walcott for $2500 subject to two mortgages; document appears incomplete/fragmentary",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2195,
+    "output_tokens": 522
+  },
+  "elapsed": 7.8
+}

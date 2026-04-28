@@ -1,0 +1,33 @@
+{
+  "document_id": "part1_affidavit_001",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "96",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charging Iron Shooter",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No, I wanted the patent.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, I sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "February 1919",
+    "Gender": "Male",
+    "Age": "51",
+    "Occupation/Income": "I Farm some, work for the Government and raise and sell horses.",
+    "NOTES": "Received patent by mail in February 1919; signed a receipt for it; sold land for $5300.00 \u2014 $2800.00 in cash and 25 head of horses valued at $100 each; transaction was satisfactory to him; in about 1910 made an application for a patent before A. K. Wood and never heard from it; four children depend upon him for support; subscribed and sworn before A. W. Cross, Notary Public, on May 15, 1929; commission expires 4-28-32; document page reference 156.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2251,
+    "output_tokens": 368
+  },
+  "elapsed": 6.4,
+  "retry_count": 1
+}

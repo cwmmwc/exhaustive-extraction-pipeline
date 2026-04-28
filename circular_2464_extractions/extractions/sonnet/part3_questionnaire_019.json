@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_questionnaire_019",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "50",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Luther Wright",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "1506",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I took it to the farmer at Okreek and told him that I did not want it and he said that he could not help it as it had been issued to me and it would be necessary for me to keep it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "The sale was satisfactory so far as that goes as I had to do something with the land on account of the patent having been issued and taxes were high",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Male",
+    "Age": "44",
+    "Occupation/Income": "I farm some and work at odd jobs",
+    "NOTES": "Received patent by mail in 1920; did not sign a receipt for it; got $5600.00 and a Buick roadster worth $1000.00 for the land; eight dependents; poor health and nearly blind; patent given without his asking for it; notarized June 6, 1929 by Zas. W. Cross, Notary Public, commission expires 4-28-32",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2268,
+    "output_tokens": 389
+  },
+  "elapsed": 6.5
+}

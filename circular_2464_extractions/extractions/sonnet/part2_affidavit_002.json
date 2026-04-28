@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_affidavit_002",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "31",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Sarah Colombe formerly Sarah Prue",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Okreek",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No. Did you ask for that patent? No.",
+    "Recorded patent": "It was sent to me by mail at Okreek in 1920.",
+    "Sold/Mortgaged": "I first mortgaged and then sold it.",
+    "Buyer": "the banker to whom I sold the land",
+    "Tax burden forced sale/Mortgage": "I think the banker to whom I sold the land took advantage of the mortgage and told me that I would sooner or later lose the land and I might as well sell it. I got $1500 in cash and the remainder went to pay commission taxes and interest.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Female",
+    "Age": "40",
+    "Occupation/Income": "We farm.",
+    "NOTES": "Sold land for $3500.00; received $1500 in cash, remainder went to pay commission, taxes, and interest; six people depend on her including her husband; states 'I should rather the patent had not been issued'; signed receipt for patent; notarized May 7, 1929 by S. W. Cross, Notary Public, commission expires 4-28-32; document number 424",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2262,
+    "output_tokens": 404
+  },
+  "elapsed": 5.8
+}

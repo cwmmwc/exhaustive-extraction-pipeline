@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_014",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "39",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Conoyer",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2316",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I traded my quarter for another quarter",
+    "Buyer": "traded with my mother for the land she received a patent to without asking for the patent",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "53",
+    "Occupation/Income": "Farming and odd jobs",
+    "NOTES": "Patent was mailed to him; does not remember the date but it was at the time others were getting their patents; thinks he signed a receipt for it; traded his allotment quarter for another quarter from his mother; new land is clear except 1928 taxes; has never mortgaged it; not married; satisfied with the trade; notarized May 2, 1929 by Jas. W. Ross, Notary Public, commission expires 4-28-32",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2198,
+    "output_tokens": 345
+  },
+  "elapsed": 5.2
+}

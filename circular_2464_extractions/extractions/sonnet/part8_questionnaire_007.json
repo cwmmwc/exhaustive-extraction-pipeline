@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_questionnaire_007",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "24",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Albert Emery",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Yes, I signed an application for this and gave it to Mr. Whiteis, the Government Farmer at Hamill in 1916.",
+    "Recorded patent": "Did not sign a receipt for the patent when it came; delivered in 1916 by the Farmer in Winner, S. D.",
+    "Sold/Mortgaged": "I sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1916",
+    "Gender": "Male",
+    "Age": "37",
+    "Occupation/Income": "Laboring",
+    "NOTES": "Sold land for $6500.00; received $4300.00 in cash and a Chalmer sedan. Was satisfied with the sale. Went to superintendent to ask for patent; superintendent said he would have to get recommendation of district farmer, so he went to Mr. Whiteis, Government Farmer at Hamill. Has wife and child dependent on him. In good health. Sworn before notary public T. O. S. S., commission expires 4-28-32, on May 17, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2245,
+    "output_tokens": 388
+  },
+  "elapsed": 6.8
+}

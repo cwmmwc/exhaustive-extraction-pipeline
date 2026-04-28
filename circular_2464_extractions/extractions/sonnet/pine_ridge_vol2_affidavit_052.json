@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_052",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "70",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Peter Pourier",
+    "Tribe/Reservation": "Pine Ridge Reservation",
+    "Post Office Address": "Manderson, South Dakota",
+    "Allotment number": "2614",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee to his allotment, on account of not wishing to pay taxes, but was told by the Indian Agency that he would have to take it, so he accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged his allotment to the Hot Springs Clinic, at Hot Springs, South Dakota, for $550.00; and that it was foreclosed on in 1926",
+    "Buyer": "State Bank of Scenic, South Dakota had purchased the papers from the Hot Springs Clinic; foreclosed in 1926",
+    "Tax burden forced sale/Mortgage": "it being heavily indebted for taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "40 years old",
+    "Occupation/Income": "chief source of revenue at present is working for the United States Government, as Assistant Farmer, on the Pine Ridge Reservation",
+    "NOTES": "mentally competent; health generally good but suffered a broken leg in 1925 by a saw log rolling on it and will always be a cripple from it; for about a year after the accident received $55.00 per month from F.L. Nihart of Pringle, South Dakota, for whom he was working at the time of the accident; has a wife and seven minor children to support; family all have good health; close living on his salary for his large family; had a chance to repurchase the place through the Indian Agency but the State Bank of Scenic would not surrender the papers, wishing to retain the land; has never received any help from the County or Government; document sworn in 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2388,
+    "output_tokens": 511
+  },
+  "elapsed": 6.6
+}

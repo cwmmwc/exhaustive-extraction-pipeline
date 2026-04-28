@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_041",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "52",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Nancy Irving",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her allotment, covering 320 acres, but that she was told by the Indian Agency that it would be necessary for her to take it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it to A. L. Krouse, of Batesland, South Dakota, he taking over this mortgage in favor of Hugo Hoppe",
+    "Buyer": "A. L. Krouse, of Batesland, South Dakota, taking over the mortgage in favor of Hugo Hoppe, and paying her the purchase price of $4800.00 for the place, $500.00 in cash, later $400.00 in cash, and again $300.00 in cash; that when making this last payment of $300.00, he told her that this was the final payment, and he has never paid anything since",
+    "Tax burden forced sale/Mortgage": "the taxes on this allotment accumulated for six or seven years, and was sold by the County for taxes; then Hugo Hoppe, of Gordon, Nebraska, redeemed it, paying the taxes, and taking a mortgage on the land for his protection; that she was never able to meet these payments",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "43 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Mentally competent; health is poor, being bothered with heart trouble; has three minor children, two of whom are not very well; sold in March 1926; has never received any help from the County or Government; document No. 479; sworn November 17, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2320,
+    "output_tokens": 510
+  },
+  "elapsed": 6.5
+}

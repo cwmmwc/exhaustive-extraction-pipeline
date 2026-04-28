@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_133",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "23",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charles Provost",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Martin, South Dakota",
+    "Allotment number": "2189",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 320 acre allotment when it was issued, for he did not want to pay taxes, but the Indian Agency Office informed him that, if he did not take it, it would be assessed for taxes, for which it would finally be sold, if he did not accept it, and pay his taxes; so he accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it to a man by the name of Johnson, whose address was then Vetal, South Dakota, for $3300.00 cash",
+    "Buyer": "a man by the name of Johnson, whose address was then Vetal, South Dakota, for $3300.00 cash",
+    "Tax burden forced sale/Mortgage": "he sold it on account of not wishing to pay the taxes on it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "63 years old",
+    "Occupation/Income": "his wife works in a restaurant, and he works at common labor when he can get it and is able to do it; and that such labor is the only source of their income",
+    "NOTES": "mentally competent; has very poor health, has not been able to work for the last twenty-six years on account of back trouble and rheumatism; has a wife who has very good health; four children to support whose health is very good excepting one; sold land in 1920; considers he got a very poor price for his land; has never received any help from the County, State or the United States Government; document dated November 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2316,
+    "output_tokens": 503
+  },
+  "elapsed": 7.5
+}

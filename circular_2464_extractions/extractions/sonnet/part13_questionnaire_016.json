@@ -1,0 +1,32 @@
+{
+  "document_id": "part13_questionnaire_016",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "35-36",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "St. Elmo Jim",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Okla.",
+    "Allotment number": "620",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes, filed for record in Pawnee County, Okla., by allottee",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 24, 1917",
+    "Gender": "Male",
+    "Age": "45",
+    "Occupation/Income": "Shares in Pawnee annuity",
+    "NOTES": "Patent delivered June 8, 1918, by mail; receipted for yes; allotment No. 620; NOV 61 20, 75 30; land sold but does not appear allottee was defrauded; has no inherited interest; wife and three children dependent on him; good health; no property or money accumulated; commission expired Jan. 31, 1929; document signed November 28, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2554,
+    "output_tokens": 352
+  },
+  "elapsed": 5.5
+}

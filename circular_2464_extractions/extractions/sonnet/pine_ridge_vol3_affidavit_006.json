@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_006",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "10",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mrs. Ramona Glick Jenkins",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "612 Sawyer Street, Lead, South Dakota",
+    "Allotment number": "3966",
+    "Cancelled": "the patent was not cancelled",
+    "Refused/Protested": "sale was made with her full knowledge and consent and that she was entirely satisfied with sale",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "sold to A. E. Granger, address: Kadoka, South Dakota, in 1920, consideration for sale being Twenty-five Hundred ($2500.00) Dollars for one hundred sixty (160) acres",
+    "Tax burden forced sale/Mortgage": "the land was not sold for debt or taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "thirty-one years of age",
+    "Occupation/Income": "husband is supporting her in a satisfactory manner",
+    "NOTES": "land was taken by her father for the benefit of his minor children; father's name being T. W. Glick; deponent received cash for sale; she is in good mental, physical, and financial condition; has no dependents upon her for support; she was not defrauded of her property; document dated 1927",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2258,
+    "output_tokens": 388
+  },
+  "elapsed": 7.3
+}

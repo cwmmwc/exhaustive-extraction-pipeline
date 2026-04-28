@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_008",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "17",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charles Arcoran",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1198",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The instrument was recorded June 20, 1922 by the Volz Abstract Company",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Charles Arcoran conveyed the land by deed to Clement Valandra for a consideration of $5,000",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739688 issued; northwest quarter of section 20, township 100, range 76; receipt for patent signed by allottee April 3, 1920; conveyance dated April 24, 1920; location: Rosebud, S. Dak.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2021,
+    "output_tokens": 332
+  },
+  "elapsed": 5.7
+}

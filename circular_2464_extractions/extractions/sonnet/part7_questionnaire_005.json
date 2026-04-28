@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_005",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "15",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Phoebe Bordeaux (Dec'd); deponent David Whiting",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2269",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "It was sent to the Farmer at Okreek and I took it home to her in 1917 the best I remember",
+    "Sold/Mortgaged": "Yes, she sold the land",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1917 (approximate, per deponent's recollection)",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Phoebe Bordeaux is deceased; deponent David Whiting, age 42, is her former husband. She left four children, the oldest of which is 18; David Whiting supports them. She sold the land for $25.00 per acre, received in cash. She signed a receipt for the patent. Deponent states she was satisfied with the sale so far as he knows. Patent/allotment reference: Dav/ (6 45Z. Notary: W. Gross, commission expires 4-28-32. Sworn May 7, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2212,
+    "output_tokens": 402
+  },
+  "elapsed": 5.7
+}

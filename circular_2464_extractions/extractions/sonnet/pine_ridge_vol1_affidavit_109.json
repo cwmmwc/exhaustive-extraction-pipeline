@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_109",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "134",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Clifford",
+    "Tribe/Reservation": "Shannon County, South Dakota (reservation not explicitly named)",
+    "Post Office Address": "Conata, So. Dak.",
+    "Allotment number": "1587",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent and made a personal trip to the Agency to protest against taking it, but that he was told at the Agency that the issuance of the patent had been reported to the Tax Commission, and that if he did not take the patent and keep the taxes up that the land would be sold to satisfy them",
+    "Recorded patent": "he recorded the patent himself after about two years",
+    "Sold/Mortgaged": "mortgaged the land to pay them again and was unable to pay the mortgage and lost the land",
+    "Buyer": "Security Savings Bank, Rapid City, So. Dak.",
+    "Tax burden forced sale/Mortgage": "he paid the taxes just as long as he could, and then mortgaged the land to pay them again and was unable to pay the mortgage and lost the land; he mortgaged the land to the Security Savings Bank, Rapid City, So. Dak. for money to pay the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "46 years old",
+    "Occupation/Income": "does a little common labor, farms a little and does anything he can to make a living",
+    "NOTES": "mentally competent and in fair health for his age; has no land, no home and nothing with which to make a living; compelled to rent a place to live on; has a wife and six children depending on him for support; mortgage included in a deal for some cattle which he eventually lost along with the land; affidavit sworn November 5, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2372,
+    "output_tokens": 493
+  },
+  "elapsed": 6.6
+}

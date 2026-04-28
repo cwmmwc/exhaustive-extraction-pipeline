@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_052",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "68",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Julia Irving Mesteth",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "4718",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her allotment of 160, but the Indian Agency told her that she would have to accept it, so she did",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1920, she sold her land to Louis Larvie, of Martin, South Dakota, for $1600.00 cash",
+    "Buyer": "Louis Larvie, of Martin, South Dakota, for $1600.00 cash",
+    "Tax burden forced sale/Mortgage": "she paid her taxes, which were delinquent",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "32 years old",
+    "Occupation/Income": "she and her children are supported by her husband, who works for the Holy Rosary Mission School",
+    "NOTES": "mentally competent and has good health; mother of two minor children who have good health; has never received any help from the County or Government; document sworn November 17, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2174,
+    "output_tokens": 365
+  },
+  "elapsed": 7.4
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_058",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "76",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Richard Stirk, Jr.",
+    "Tribe/Reservation": "Shannon County, South Dakota (reservation not explicitly named)",
+    "Post Office Address": "Scenic, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his allotment for the reason that he knew how hard it would be to pay the taxes; but his farmer told him that it would be recorded just the same, and that he would have the taxes to pay, so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "he never sold or mortgaged this land; but he deeded it over to his wife, March 1, 1921; that, on March 31, 1928, she deeded it back to him",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "There are some taxes now due on the place, but that is the only encumbrance. The reason for the transfer of this land was on account of getting into debt so heavily at the time, and he went through bankruptcy.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "40 years old",
+    "Occupation/Income": "his only source of income is what he raises on this allotment and by doing odd jobs, such as road work",
+    "NOTES": "Document No. 2667; subscribed and sworn before a notary public on November 13, 1928; deponent is mentally competent and in good possession of good health; has a wife and 5 minor children to support, all in good health; has never received any aid from the County or Government; he was not conversant with the law on this matter as to the land being exempt on these debts; at present the only debts are the aforementioned taxes",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2313,
+    "output_tokens": 499
+  },
+  "elapsed": 6.8
+}

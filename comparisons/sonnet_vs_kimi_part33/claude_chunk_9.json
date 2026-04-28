@@ -1,0 +1,668 @@
+{
+  "entities": [
+    {
+      "name": "Julian Augustine",
+      "type": "person",
+      "context": "Captain of La Mesa, signed statement with thumb mark"
+    },
+    {
+      "name": "Mr. Dady",
+      "type": "person",
+      "context": "New Indian agent, criticized for never visiting La Mesa Augustine Reservation"
+    },
+    {
+      "name": "Billy Callaway",
+      "type": "person",
+      "context": "Signatory from Cabazon Reservation"
+    },
+    {
+      "name": "William Levy",
+      "type": "person",
+      "context": "Signatory from Torro Reservation"
+    },
+    {
+      "name": "Pablo Kristano",
+      "type": "person",
+      "context": "Signatory from Martinez Reservation"
+    },
+    {
+      "name": "La Mesa Augustine Reservation",
+      "type": "location",
+      "context": "Reservation where Julian Augustine resides"
+    },
+    {
+      "name": "Cabazon Reservation",
+      "type": "location",
+      "context": "Reservation of Billy Callaway"
+    },
+    {
+      "name": "Torro Reservation",
+      "type": "location",
+      "context": "Reservation of William Levy"
+    },
+    {
+      "name": "Martinez Reservation",
+      "type": "location",
+      "context": "Reservation of Pablo Kristano"
+    },
+    {
+      "name": "Burton K. Wheeler",
+      "type": "person",
+      "context": "Chairman of Senate Subcommittee on Indian Affairs, presiding at hearing"
+    },
+    {
+      "name": "Elmer Thomas",
+      "type": "person",
+      "context": "Senator from Oklahoma, present at subcommittee hearing"
+    },
+    {
+      "name": "Florence P. Kahn",
+      "type": "person",
+      "context": "Member of Congress, Fourth District of California"
+    },
+    {
+      "name": "U. S. Webb",
+      "type": "person",
+      "context": "Attorney General for State of California"
+    },
+    {
+      "name": "Florenz Treu",
+      "type": "person",
+      "context": "Assistant Director, California State Department of Social Welfare"
+    },
+    {
+      "name": "O. H. Lipps",
+      "type": "person",
+      "context": "Superintendent, Sacramento Indian Agency"
+    },
+    {
+      "name": "Roy Nash",
+      "type": "person",
+      "context": "Representing the Commissioner of Indian Affairs at the hearing"
+    },
+    {
+      "name": "Charles DeY. Elkus",
+      "type": "person",
+      "context": "President, American Indian Defense Association of Northern California"
+    },
+    {
+      "name": "Rachel B. Barker",
+      "type": "person",
+      "context": "Secretary, American Indian Defense Association"
+    },
+    {
+      "name": "F. G. Collett",
+      "type": "person",
+      "context": "Executive Secretary, Indians of California, Inc."
+    },
+    {
+      "name": "J. W. Henderson",
+      "type": "person",
+      "context": "Attorney for Indians of California, Inc., recognized as friend of the court"
+    },
+    {
+      "name": "James M. Hanley",
+      "type": "person",
+      "context": "Attorney for Indians of California, Inc., recognized as friend of the court"
+    },
+    {
+      "name": "Marion Butler",
+      "type": "person",
+      "context": "Attorney for Mission Indians of California"
+    },
+    {
+      "name": "Winnifred Codman",
+      "type": "person",
+      "context": "State Chairman, Indian Citizenship, California State Society, Daughters of the American Revolution"
+    },
+    {
+      "name": "Albert A. Grorud",
+      "type": "person",
+      "context": "Special assistant to the committee"
+    },
+    {
+      "name": "Roy Mingins",
+      "type": "person",
+      "context": "Reporter at the Senate subcommittee hearing"
+    },
+    {
+      "name": "Ben F. Mitchell",
+      "type": "person",
+      "context": "Representative from Klamath Reservation, attended hearing"
+    },
+    {
+      "name": "Harold L. Ickes",
+      "type": "person",
+      "context": "Secretary of the Interior, authored letter recommending against H.R. 7095"
+    },
+    {
+      "name": "J. B. Pemberton",
+      "type": "person",
+      "context": "Attorney for Indians of California, recognized as friend of the court"
+    },
+    {
+      "name": "Dan Williams",
+      "type": "person",
+      "context": "Member of California legislature who presented act authorizing suit"
+    },
+    {
+      "name": "Egar Howard",
+      "type": "person",
+      "context": "Chairman, Committee on Indian Affairs, House of Representatives"
+    },
+    {
+      "name": "Senate Subcommittee of the Committee on Indian Affairs",
+      "type": "organization",
+      "context": "Conducted survey of conditions of Indians in United States"
+    },
+    {
+      "name": "American Indian Defense Association of Northern California",
+      "type": "organization",
+      "context": "White organization supporting California Indian claims, headed by Charles DeY. Elkus"
+    },
+    {
+      "name": "Indians of California, Inc.",
+      "type": "organization",
+      "context": "Indian advocacy organization with approximately 17,000 members, endorsed H.R. 7095"
+    },
+    {
+      "name": "Federation of Mission Indians",
+      "type": "organization",
+      "context": "Indian organization with approximately 3,000 members, endorsed H.R. 7095"
+    },
+    {
+      "name": "California State Department of Social Welfare",
+      "type": "organization",
+      "context": "State agency represented at hearing by Florenz Treu"
+    },
+    {
+      "name": "Sacramento Indian Agency",
+      "type": "organization",
+      "context": "Federal Indian agency, superintendent O. H. Lipps"
+    },
+    {
+      "name": "Court of Claims",
+      "type": "organization",
+      "context": "Federal court authorized to hear California Indian land claims"
+    },
+    {
+      "name": "Commonwealth Club of California",
+      "type": "organization",
+      "context": "Cooperated in framing the California Indians claims bill"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Federal department that reported on H.R. 7095"
+    },
+    {
+      "name": "Department of Justice",
+      "type": "organization",
+      "context": "Filed exceptions to petition of attorneys seeking recognition as attorneys of record"
+    },
+    {
+      "name": "Sherman Institute",
+      "type": "organization",
+      "context": "School at Riverside, California cited as example of potential offset against Indian claims"
+    },
+    {
+      "name": "California State Society, Daughters of the American Revolution",
+      "type": "organization",
+      "context": "Organization whose state chairman Winnifred Codman attended hearing"
+    },
+    {
+      "name": "St. Francis Hotel",
+      "type": "location",
+      "context": "Location of Senate subcommittee hearing on July 2, 1934"
+    },
+    {
+      "name": "San Francisco, California",
+      "type": "location",
+      "context": "City where subcommittee hearing was held"
+    },
+    {
+      "name": "Klamath Reservation",
+      "type": "location",
+      "context": "Oregon reservation whose representatives attended the hearing"
+    },
+    {
+      "name": "Lower Klamath River",
+      "type": "location",
+      "context": "Location of Indian community represented at the hearing"
+    },
+    {
+      "name": "Riverside, California",
+      "type": "location",
+      "context": "Location of Sherman Institute"
+    },
+    {
+      "name": "Mills Building",
+      "type": "location",
+      "context": "Headquarters of American Indian Defense Association of Northern California"
+    },
+    {
+      "name": "Washington, D.C.",
+      "type": "location",
+      "context": "Location of Court of Claims and Department of the Interior"
+    },
+    {
+      "name": "H.R. 491",
+      "type": "legislation",
+      "context": "Public Law No. 423, 70th Congress, authorizing California attorney general to bring suit in Court of Claims on behalf of Indians of California, approved May 16, 1928"
+    },
+    {
+      "name": "S. 3572, 73d Congress, 2d Session",
+      "type": "legislation",
+      "context": "Senate bill to amend the 1928 act by adding section 8 recognizing attorneys employed by Indians of California"
+    },
+    {
+      "name": "H.R. 7095, 73d Congress, 2d Session",
+      "type": "legislation",
+      "context": "House bill to amend the 1928 act by adding section 8 recognizing attorneys employed by Indians of California"
+    },
+    {
+      "name": "18 Unratified Treaties",
+      "type": "legal_case",
+      "context": "Treaties negotiated with California Indians in 1851-52, submitted to Senate June 1, 1852, never ratified; basis of Court of Claims suit"
+    },
+    {
+      "name": "Indians of California v. United States",
+      "type": "legal_case",
+      "context": "Court of Claims suit filed August 12, 1929 by attorney general of California on behalf of Indians of California"
+    },
+    {
+      "name": "Act of March 3, 1851 (9 Stat. 631)",
+      "type": "legislation",
+      "context": "Commission created by this act referenced in Court of Claims jurisdictional act"
+    },
+    {
+      "name": "California Indian Claims",
+      "type": "acreage_holding",
+      "context": "Approximately 8,800,000 acres proposed to be reserved for Indians of California under 18 unratified treaties"
+    }
+  ],
+  "events": [
+    {
+      "type": "Senate subcommittee hearing",
+      "date": "1934-07-02",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "description": "Senate Subcommittee of the Committee on Indian Affairs met to survey conditions of Indians in the United States, particularly California Indians and Klamath Reservation Indians"
+    },
+    {
+      "type": "Legislative approval",
+      "date": "1927-05-18",
+      "location": "California",
+      "description": "Governor of California approved act by the legislature authorizing attorney general of California to bring suit for and on behalf of Indians of California, presented by Dan Williams"
+    },
+    {
+      "type": "Federal legislation enacted",
+      "date": "1928-05-16",
+      "location": "Washington, D.C.",
+      "description": "President approved H.R. 491 (Public Law No. 423, 70th Congress), authorizing attorney general of California to bring suit in Court of Claims on behalf of Indians of California"
+    },
+    {
+      "type": "Indian convention",
+      "date": "1928-09-25",
+      "location": "Office of Attorney General of California",
+      "description": "Indian delegates representing auxiliaries to Indians of California, Inc., met with attorney general of California; 22 persons including attorneys J.W. Henderson, J.B. Pemberton, and James M. Hanley presented contract and offered assistance"
+    },
+    {
+      "type": "Court action filed",
+      "date": "1929-08-12",
+      "location": "Court of Claims, Washington, D.C.",
+      "description": "Attorney general of California filed action in the Court of Claims on behalf of the Indians of California"
+    },
+    {
+      "type": "Court order recognizing friends of the court",
+      "date": "1930-02-08",
+      "location": "Court of Claims",
+      "description": "Court of Claims recognized J.W. Henderson, J.B. Pemberton, and James M. Hanley as friends of the court in the California Indians case"
+    },
+    {
+      "type": "Petition hearing denied",
+      "date": "1932-03-14",
+      "location": "Court of Claims",
+      "description": "Hearing on petition by friends of the court to be recognized as attorneys of record; denied on grounds that Court of Claims lacked authority to substitute attorneys under the special jurisdictional act"
+    },
+    {
+      "type": "Treaties negotiated",
+      "date": "1851-01-01",
+      "location": "California",
+      "description": "Federal Government negotiated 18 separate treaties with Indians of California in 1851-52, promising approximately 8,800,000 acres of land, schools, goods, and services"
+    },
+    {
+      "type": "Treaties submitted to Senate",
+      "date": "1852-06-01",
+      "location": "Washington, D.C.",
+      "description": "18 unratified treaties submitted to Senate of the United States by President for ratification; never ratified"
+    },
+    {
+      "type": "Department of Interior correspondence",
+      "date": "1934-04-16",
+      "location": "Washington, D.C.",
+      "description": "Secretary of the Interior Harold L. Ickes sent letter to Egar Howard, Chairman, Committee on Indian Affairs, House of Representatives, recommending H.R. 7095 not be enacted"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "fee",
+      "amount": "not to exceed 3 percent of the final decree",
+      "payer": "Indians of California (from judgment proceeds)",
+      "payee": "Attorneys employed by Indians of California",
+      "date": "upon appropriation of judgment",
+      "description": "Proposed attorney fees under H.R. 7095 and S. 3572, to be fixed by Court of Claims"
+    },
+    {
+      "type": "other",
+      "amount": "$180,000 or more (estimated)",
+      "payer": "Indians of California",
+      "payee": "Attorneys",
+      "date": "upon judgment",
+      "description": "Secretary Ickes estimated 3 percent of probable judgment would be $180,000 or more in attorney fees under H.R. 7095"
+    },
+    {
+      "type": "other",
+      "amount": "4 percent per annum interest",
+      "payer": "United States Treasury",
+      "payee": "Indians of California",
+      "date": "after judgment",
+      "description": "Per H.R. 491, judgment amount placed in Treasury to credit of Indians of California, drawing 4% interest per annum"
+    },
+    {
+      "type": "other",
+      "amount": "$1.25 per acre",
+      "payer": "United States",
+      "payee": "Indians of California",
+      "date": "per court decree",
+      "description": "Compensation rate for lands described in 18 unratified treaties, as specified in H.R. 491"
+    },
+    {
+      "type": "other",
+      "amount": "reasonable costs and expenses",
+      "payer": "United States (from judgment)",
+      "payee": "State of California",
+      "date": "upon judgment",
+      "description": "Reimbursement to State of California for costs and expenses of suit, excluding attorney fees of attorney general, per H.R. 491 Section 5"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Charles DeY. Elkus",
+      "type": "president_of",
+      "object": "American Indian Defense Association of Northern California",
+      "context": "Elkus stated he is president of the organization and it is his avocation"
+    },
+    {
+      "subject": "American Indian Defense Association",
+      "type": "cooperated_with",
+      "object": "Commonwealth Club of California",
+      "description": "Cooperated in framing the California Indians claims bill and helping pass it through Congress"
+    },
+    {
+      "subject": "F. G. Collett",
+      "type": "employed_by",
+      "object": "Indians of California, Inc.",
+      "context": "Executive Secretary of the organization"
+    },
+    {
+      "subject": "J. W. Henderson",
+      "type": "attorney_for",
+      "object": "Indians of California, Inc.",
+      "context": "Attorney recognized as friend of the court in Court of Claims case"
+    },
+    {
+      "subject": "James M. Hanley",
+      "type": "attorney_for",
+      "object": "Indians of California, Inc.",
+      "context": "Attorney recognized as friend of the court in Court of Claims case"
+    },
+    {
+      "subject": "J. B. Pemberton",
+      "type": "attorney_for",
+      "object": "Indians of California, Inc.",
+      "context": "Attorney recognized as friend of the court in Court of Claims case"
+    },
+    {
+      "subject": "Marion Butler",
+      "type": "attorney_for",
+      "object": "Mission Indians of California",
+      "context": "Present at Senate subcommittee hearing"
+    },
+    {
+      "subject": "Rachel B. Barker",
+      "type": "secretary_of",
+      "object": "American Indian Defense Association",
+      "context": "Present at Senate subcommittee hearing"
+    },
+    {
+      "subject": "Roy Nash",
+      "type": "represented",
+      "object": "Commissioner of Indian Affairs",
+      "context": "Present at Senate subcommittee hearing representing the Commissioner"
+    },
+    {
+      "subject": "O. H. Lipps",
+      "type": "superintendent_of",
+      "object": "Sacramento Indian Agency",
+      "context": "Present at Senate subcommittee hearing"
+    },
+    {
+      "subject": "Harold L. Ickes",
+      "type": "Secretary_of",
+      "object": "Department of the Interior",
+      "context": "Authored letter recommending H.R. 7095 not be enacted"
+    },
+    {
+      "subject": "U. S. Webb",
+      "type": "attorney_general_of",
+      "object": "State of California",
+      "context": "Present at Senate subcommittee hearing"
+    },
+    {
+      "subject": "Dan Williams",
+      "type": "member_of",
+      "object": "California Legislature",
+      "context": "Presented the act authorizing suit sponsored by Indians of California"
+    },
+    {
+      "subject": "Florenz Treu",
+      "type": "employed_by",
+      "object": "California State Department of Social Welfare",
+      "context": "Assistant Director present at hearing"
+    },
+    {
+      "subject": "Attorney General of California",
+      "type": "authorized_to_represent",
+      "object": "Indians of California",
+      "context": "Authorized by H.R. 491 to bring suit in Court of Claims on behalf of Indians"
+    },
+    {
+      "subject": "Indians of California, Inc.",
+      "type": "endorsed",
+      "object": "H.R. 7095",
+      "context": "One of two Indian organizations endorsing the bill"
+    },
+    {
+      "subject": "Federation of Mission Indians",
+      "type": "endorsed",
+      "object": "H.R. 7095",
+      "context": "One of two Indian organizations endorsing the bill"
+    },
+    {
+      "subject": "Commissioner of Indian Affairs",
+      "type": "previously_served_as",
+      "object": "Executive Secretary of Indian Defense Association",
+      "context": "Elkus stated the current Commissioner was executive secretary of Indian Defense Association when actively helping pass the bill"
+    },
+    {
+      "subject": "Burton K. Wheeler",
+      "type": "chairman_of",
+      "object": "Senate Subcommittee of the Committee on Indian Affairs",
+      "context": "Presiding at hearing on July 2, 1934"
+    },
+    {
+      "subject": "Winnifred Codman",
+      "type": "state_chairman_of",
+      "object": "California State Society, Daughters of the American Revolution - Indian Citizenship",
+      "context": "Present at Senate subcommittee hearing"
+    },
+    {
+      "subject": "Albert A. Grorud",
+      "type": "special_assistant_to",
+      "object": "Senate Subcommittee of the Committee on Indian Affairs",
+      "context": "Present at Senate subcommittee hearing"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "Harold L. Ickes",
+      "sender_title": "Secretary of the Interior",
+      "recipient": "Egar Howard",
+      "recipient_title": "Chairman, Committee on Indian Affairs, House of Representatives",
+      "date": "1934-04-16",
+      "subject": "Report on H.R. 7095, bill to amend act authorizing attorney general of California to bring suit in Court of Claims on behalf of Indians of California",
+      "action_requested": "Recommendation that H.R. 7095 not be enacted",
+      "outcome": "Secretary recommended against enactment; memoranda filed contesting the report's accuracy"
+    },
+    {
+      "sender": "Egar Howard",
+      "sender_title": "Chairman, Committee on Indian Affairs, House of Representatives",
+      "recipient": "Department of the Interior",
+      "recipient_title": "",
+      "date": "1934-02-19",
+      "subject": "Request for report on H.R. 7095",
+      "action_requested": "Report on H.R. 7095",
+      "outcome": "Secretary of Interior responded April 16, 1934"
+    },
+    {
+      "sender": "Egar Howard",
+      "sender_title": "Chairman, Committee on Indian Affairs, House of Representatives",
+      "recipient": "Department of the Interior",
+      "recipient_title": "",
+      "date": "1934-03-02",
+      "subject": "Follow-up request for report on H.R. 7095",
+      "action_requested": "Report on H.R. 7095",
+      "outcome": "Secretary of Interior responded April 16, 1934"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "H.R. 491 (Public Law No. 423, 70th Congress)",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1928-05-16",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Approved; authorized attorney general of California to bring suit in Court of Claims on behalf of Indians of California; defined Indians of California as those residing in state on June 1, 1852 and their descendants"
+    },
+    {
+      "bill_number": "S. 3572, 73d Congress, 2d Session",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "",
+      "vote_count": "",
+      "committee": "Committee on Indian Affairs",
+      "outcome": "Pending; bill to amend 1928 act by adding section 8 recognizing attorneys employed by Indians of California and allowing attorney fees not to exceed 3 percent"
+    },
+    {
+      "bill_number": "H.R. 7095, 73d Congress, 2d Session",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "",
+      "vote_count": "",
+      "committee": "Committee on Indian Affairs, House of Representatives",
+      "outcome": "Pending; Secretary Ickes recommended against enactment; bill to amend 1928 act by adding section 8 recognizing attorneys employed by Indians of California"
+    },
+    {
+      "bill_number": "California State Act",
+      "sponsor": "Dan Williams",
+      "action_type": "enacted",
+      "date": "1927-05-18",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Approved by Governor; authorized attorney general of California to bring suit for Indians of California contingent on federal authorization"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Julian Augustine",
+      "witness_title": "Captain, La Mesa",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Subcommittee of the Committee on Indian Affairs",
+      "location": "La Mesa Augustine Reservation",
+      "date": "",
+      "subject": "Complaints about Indian agent Mr. Dady and conditions on La Mesa Augustine Reservation",
+      "key_claims": "Agent Mr. Dady has never visited La Mesa Augustine Reservation and does not know the troubles and hardships there. The agent has never helped Julian Augustine despite magazines claiming otherwise. Augustine requested investigators be sent to see conditions firsthand.",
+      "questioner": ""
+    },
+    {
+      "witness": "Billy Callaway",
+      "witness_title": "",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Subcommittee of the Committee on Indian Affairs",
+      "location": "Cabazon Reservation",
+      "date": "",
+      "subject": "Conditions on Cabazon Reservation",
+      "key_claims": "Signatory to statement about conditions; details not specified beyond co-signing Augustine's statement",
+      "questioner": ""
+    },
+    {
+      "witness": "William Levy",
+      "witness_title": "",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Subcommittee of the Committee on Indian Affairs",
+      "location": "Torro Reservation",
+      "date": "",
+      "subject": "Conditions on Torro Reservation",
+      "key_claims": "Signatory to statement about conditions; details not specified beyond co-signing Augustine's statement",
+      "questioner": ""
+    },
+    {
+      "witness": "Pablo Kristano",
+      "witness_title": "",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Subcommittee of the Committee on Indian Affairs",
+      "location": "Martinez Reservation",
+      "date": "",
+      "subject": "Conditions on Martinez Reservation",
+      "key_claims": "Signatory to statement about conditions; details not specified beyond co-signing Augustine's statement",
+      "questioner": ""
+    },
+    {
+      "witness": "Charles DeY. Elkus",
+      "witness_title": "President, American Indian Defense Association of Northern California",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Subcommittee of the Committee on Indian Affairs",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "date": "1934-07-02",
+      "subject": "Role of American Indian Defense Association and California Indians claims bill",
+      "key_claims": "Elkus stated he is president of the American Indian Defense Association of Northern California, a white organization. He stated the association cooperated with the Commonwealth Club of California and Congressman Lee in framing the California Indians claims bill and helping pass it through Congress. He noted the current Commissioner of Indian Affairs was formerly executive secretary of the Indian Defense Association and actively worked to pass the bill.",
+      "questioner": "Senator Elmer Thomas"
+    },
+    {
+      "witness": "Ben F. Mitchell",
+      "witness_title": "",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Subcommittee of the Committee on Indian Affairs",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "date": "1934-07-02",
+      "subject": "Klamath Reservation Indians",
+      "key_claims": "Mitchell confirmed he was from Klamath Reservation; expected another man with him; requested to be heard in the afternoon",
+      "questioner": "Burton K. Wheeler"
+    },
+    {
+      "witness": "Lower Klamath River Indian (unnamed)",
+      "witness_title": "Lower Klamath River Indian",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Subcommittee of the Committee on Indian Affairs",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "date": "1934-07-02",
+      "subject": "Lower Klamath River Indians' presence and availability",
+      "key_claims": "Stated they are from the Lower Klamath River and would be present for 2 weeks",
+      "questioner": "Burton K. Wheeler"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

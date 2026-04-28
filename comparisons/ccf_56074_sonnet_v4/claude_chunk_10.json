@@ -1,0 +1,1066 @@
+{
+  "entities": [
+    {
+      "name": "Mollie Johnson",
+      "type": "person",
+      "context": "One-quarter blood Creek, Roll No. 9130, defrauded of allotment lands"
+    },
+    {
+      "name": "Daniel Johnson",
+      "type": "person",
+      "context": "One-quarter blood Creek, Roll No. 9131, defrauded of allotment land for practically nothing"
+    },
+    {
+      "name": "Adeline Grayson",
+      "type": "person",
+      "context": "One-half blood Creek, deluded into executing conveyances transferring allotment without adequate consideration"
+    },
+    {
+      "name": "Caney Arbor",
+      "type": "person",
+      "context": "One-quarter blood Creek, Roll No. 9613, executed deeds on land at instigation of grafters, died destitute"
+    },
+    {
+      "name": "Henderson Arbor",
+      "type": "person",
+      "context": "One-quarter blood Creek, Roll No. 9613, defrauded out of land, now in destitute circumstances"
+    },
+    {
+      "name": "Talof Harjo",
+      "type": "person",
+      "context": "One-half blood Creek, Roll No. 7501, persuaded to sign conveyance on allotment without adequate consideration"
+    },
+    {
+      "name": "Lizzie Sewell",
+      "type": "person",
+      "context": "Three-quarter blood Creek, Roll No. 7529, induced to part with land for $800 less than value"
+    },
+    {
+      "name": "Tilda Sunday",
+      "type": "person",
+      "context": "One-half blood Creek, defrauded out of land"
+    },
+    {
+      "name": "Jemima Harjo",
+      "type": "person",
+      "context": "One-half blood Creek, induced to sign deed to allotment receiving only $400 when land was worth $1,400"
+    },
+    {
+      "name": "Jackson Wolf",
+      "type": "person",
+      "context": "Full-blood Seminole, unable to speak read or write English, declared competent and turned loose by competency commission, land taken by grafters"
+    },
+    {
+      "name": "Milla Wolf",
+      "type": "person",
+      "context": "Wife of Jackson Wolf, unable to speak read or write English, declared competent and turned loose by competency commission"
+    },
+    {
+      "name": "Abijah Colbert",
+      "type": "person",
+      "context": "Chickasaw Roll No. 961, turned loose by competency commission along with brother Richard Floyd Colbert"
+    },
+    {
+      "name": "Richard Floyd Colbert",
+      "type": "person",
+      "context": "Chickasaw Roll No. 960, turned loose by competency commission, disposed of allotment and purchased garage assuming $20,000 mortgage"
+    },
+    {
+      "name": "Felix Canard",
+      "type": "person",
+      "context": "Full-blood Creek who has not disposed of land after being turned loose"
+    },
+    {
+      "name": "Roley Canard",
+      "type": "person",
+      "context": "Full-blood Creek who has not disposed of land after being turned loose"
+    },
+    {
+      "name": "William Buck",
+      "type": "person",
+      "context": "Full-blood Creek who has not disposed of land after being turned loose"
+    },
+    {
+      "name": "John Smith",
+      "type": "person",
+      "context": "Full-blood Creek who has not disposed of land after being turned loose"
+    },
+    {
+      "name": "Dean H. Shannon",
+      "type": "person",
+      "context": "Field Clerk, Sallisaw, Oklahoma, provided information on unconditional removal of restrictions"
+    },
+    {
+      "name": "A. B. Keith",
+      "type": "person",
+      "context": "U.S. Field Clerk, Muskogee, Oklahoma, provided testimony on Creek, Cherokee and Choctaw Indians"
+    },
+    {
+      "name": "Homer Polk",
+      "type": "person",
+      "context": "Field Clerk, Stilwell, Oklahoma, provided testimony on Cherokee Indians"
+    },
+    {
+      "name": "G. R. Clements",
+      "type": "person",
+      "context": "Field Clerk, McAlester, Oklahoma, provided testimony on Choctaw Indians"
+    },
+    {
+      "name": "W. D. Brauninger",
+      "type": "person",
+      "context": "Farmer, Eufaula, Oklahoma, provided testimony on Creek, Cherokee and Choctaw Indians"
+    },
+    {
+      "name": "G. R. Gayle",
+      "type": "person",
+      "context": "Farmer, Atoka, Oklahoma, provided testimony on Choctaw Indians"
+    },
+    {
+      "name": "Walter McLaughlin",
+      "type": "person",
+      "context": "Temporary Farmer, Ardmore, Oklahoma, provided testimony on Chickasaw Indians"
+    },
+    {
+      "name": "C. M. Brandt",
+      "type": "person",
+      "context": "Farmer, Poteau, Oklahoma, provided testimony on Choctaw Indians"
+    },
+    {
+      "name": "Five Civilised Tribes",
+      "type": "organization",
+      "context": "Indian tribes whose mixed-blood members had restrictions removed by Act of Congress of May 27, 1908"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Sought first-hand information concerning Indians and the Indian problem"
+    },
+    {
+      "name": "United States Government",
+      "type": "organization",
+      "context": "Federal government responsible for supervision of Indian affairs and allotments"
+    },
+    {
+      "name": "Superintendent for the Five Civilised Tribes",
+      "type": "organization",
+      "context": "Office managing Indian affairs, competency commissions, and restrictions"
+    },
+    {
+      "name": "Union Agency",
+      "type": "organization",
+      "context": "Located at Muskogee, dealing with Cherokees, Choctaws and Creeks"
+    },
+    {
+      "name": "Murry Agricultural School",
+      "type": "organization",
+      "context": "School attended by the Colbert brothers before they purchased garage"
+    },
+    {
+      "name": "Oklahoma Agricultural and Mechanical College",
+      "type": "organization",
+      "context": "College attended by the Colbert brothers"
+    },
+    {
+      "name": "Cantonment Agency",
+      "type": "organization",
+      "context": "Agency where W. D. Brauninger worked for three years dealing with Cheyenne and Arapahoes"
+    },
+    {
+      "name": "Kiowa Agency",
+      "type": "organization",
+      "context": "Agency where W. D. Brauninger worked for three years dealing with Kiowas, Comanches and Apaches"
+    },
+    {
+      "name": "Cherokee Nation",
+      "type": "organization",
+      "context": "By Act of Congress all citizens become unrestricted in 1931"
+    },
+    {
+      "name": "Hughes County",
+      "type": "location",
+      "context": "County in Oklahoma with 1,600 mixed blood allotments examined for fraud"
+    },
+    {
+      "name": "Seminole County",
+      "type": "location",
+      "context": "County in Oklahoma with 630 mixed-blood Seminoles receiving allotments"
+    },
+    {
+      "name": "Sallisaw, Oklahoma",
+      "type": "location",
+      "context": "Location of Dean H. Shannon, Field Clerk"
+    },
+    {
+      "name": "Muskogee, Oklahoma",
+      "type": "location",
+      "context": "Location of A. B. Keith, U.S. Field Clerk, and Union Agency"
+    },
+    {
+      "name": "Stilwell, Oklahoma",
+      "type": "location",
+      "context": "Location of Homer Polk, Field Clerk"
+    },
+    {
+      "name": "McAlester, Oklahoma",
+      "type": "location",
+      "context": "Location of G. R. Clements, Field Clerk"
+    },
+    {
+      "name": "Eufaula, Oklahoma",
+      "type": "location",
+      "context": "Location of W. D. Brauninger, Farmer"
+    },
+    {
+      "name": "Atoka, Oklahoma",
+      "type": "location",
+      "context": "Location of G. R. Gayle, Farmer"
+    },
+    {
+      "name": "Ardmore, Oklahoma",
+      "type": "location",
+      "context": "Location of Walter McLaughlin, Temporary Farmer"
+    },
+    {
+      "name": "Poteau, Oklahoma",
+      "type": "location",
+      "context": "Location of C. M. Brandt, Farmer"
+    },
+    {
+      "name": "Oklahoma",
+      "type": "location",
+      "context": "State formed from Indian Territory where Five Civilised Tribes were allotted lands"
+    },
+    {
+      "name": "Navajo Reservation",
+      "type": "location",
+      "context": "Reservation in New Mexico and Arizona referenced as different type of Indian problem"
+    },
+    {
+      "name": "Muskogee County",
+      "type": "location",
+      "context": "County in district comprising Muskogee, McIntosh and Haskell Counties"
+    },
+    {
+      "name": "McIntosh County",
+      "type": "location",
+      "context": "County in district comprising Muskogee, McIntosh and Haskell Counties"
+    },
+    {
+      "name": "Haskell County",
+      "type": "location",
+      "context": "County in district comprising Muskogee, McIntosh and Haskell Counties"
+    },
+    {
+      "name": "Act of Congress of May 27, 1908",
+      "type": "legislation",
+      "context": "Removed restrictions of mixed blood Indians of the Five Civilised Tribes"
+    },
+    {
+      "name": "Hughes County allotments",
+      "type": "acreage_holding",
+      "context": "1,600 mixed blood allotments in Hughes County, appraised value $1,040 each"
+    },
+    {
+      "name": "Seminole mixed-blood allotments",
+      "type": "acreage_holding",
+      "context": "630 mixed-blood Seminole allotments, appraised value $960 each, estimated true value $1,200 each"
+    }
+  ],
+  "events": [
+    {
+      "type": "Legislative action removing restrictions",
+      "date": "1908-05-27",
+      "location": "United States Congress",
+      "description": "Act of Congress of May 27, 1908 removed restrictions of the mixed blood Indians of the Five Civilised Tribes"
+    },
+    {
+      "type": "Oklahoma statehood",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "Oklahoma admitted into the Union as a state, at which time many Indians were living in houses with cultivated fields"
+    },
+    {
+      "type": "Competency commission authorized",
+      "date": "1918",
+      "location": "Muskogee/McIntosh/Haskell County district",
+      "description": "In fall of 1918 a competency commission was authorized for work in the district, resulting in about 200 Indians granted unconditional removal of restrictions"
+    },
+    {
+      "type": "Competency commission operations",
+      "date": "1918",
+      "location": "Oklahoma",
+      "description": "Board of competency commissioners took applications and recommended unconditional removal of restrictions for Indians in years 1918-19-20"
+    },
+    {
+      "type": "Blanket order removal of restrictions",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "About 125 half-blood Indians granted unconditional removal of restrictions by blanket order of the Secretary of the Interior"
+    },
+    {
+      "type": "Departmental order releasing half-blood Indians",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "Approximately 100 cases of Indians enrolled as one-half degree of blood released from supervision by Departmental order"
+    },
+    {
+      "type": "Colbert brothers turned loose by competency commission",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "Abijah Colbert (Roll No. 961) and Richard Floyd Colbert (Roll No. 960) turned loose by competency commission, disposed of allotments and purchased garage with $20,000 mortgage"
+    },
+    {
+      "type": "Jackson Wolf and Milla Wolf declared competent",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "Jackson and Milla Wolf, neither able to speak read or write English, declared competent and turned loose by competency commission, grafters soon had their land"
+    },
+    {
+      "type": "Inquiry letter sent to field clerks",
+      "date": "1921-04-02",
+      "location": "Oklahoma",
+      "description": "Letter sent to field clerks asking for data concerning unconditional removal of restrictions"
+    },
+    {
+      "type": "Inquiry letter sent to field clerks",
+      "date": "1921-04-03",
+      "location": "Oklahoma",
+      "description": "Letter sent to W. D. Brauninger asking for opinion on removing restrictions"
+    },
+    {
+      "type": "Cherokee Nation unrestriction deadline",
+      "date": "1931",
+      "location": "Oklahoma",
+      "description": "By Act of Congress all citizens of the Cherokee Nation become unrestricted in 1931, deemed too soon by field clerks"
+    },
+    {
+      "type": "Forced march and Indian resettlement",
+      "date": "partial",
+      "location": "Oklahoma/Indian Territory",
+      "description": "Historical account of Indians being marched into Indian Territory under soldier guard, settling in tepees"
+    },
+    {
+      "type": "Caney Arbor death",
+      "date": "partial",
+      "location": "Oklahoma",
+      "description": "Caney Arbor, one-quarter blood Creek, died destitute after being defrauded of land"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "loss $750.00",
+      "payer": "grafters",
+      "payee": "Henderson Arbor",
+      "date": "partial",
+      "description": "Henderson Arbor, one-quarter blood Creek Roll No. 9613, defrauded out of his land, loss $750.00"
+    },
+    {
+      "type": "sale",
+      "amount": "loss $900.00",
+      "payer": "grafters",
+      "payee": "Daniel Johnson",
+      "date": "partial",
+      "description": "Daniel Johnson, one-quarter blood Creek Roll No. 9131, prevailed upon to deed away land for practically nothing, loss $900.00"
+    },
+    {
+      "type": "sale",
+      "amount": "loss $850.00",
+      "payer": "grafters",
+      "payee": "Adeline Grayson",
+      "date": "partial",
+      "description": "Adeline Grayson, one-half blood Creek, deluded into executing conveyances transferring allotment without adequate consideration, loss $850.00"
+    },
+    {
+      "type": "sale",
+      "amount": "loss $900.00",
+      "payer": "grafters",
+      "payee": "Caney Arbor",
+      "date": "partial",
+      "description": "Caney Arbor, one-quarter blood Creek Roll No. 9613, executed divers deeds on land at instigation of grafters, loss $900.00"
+    },
+    {
+      "type": "sale",
+      "amount": "loss $850.00",
+      "payer": "grafters",
+      "payee": "Talof Harjo",
+      "date": "partial",
+      "description": "Talof Harjo, one-half blood Creek Roll No. 7501, persuaded to sign conveyance on allotment without adequate consideration, loss $850.00"
+    },
+    {
+      "type": "sale",
+      "amount": "$800.00 less than appraised value",
+      "payer": "unknown buyer",
+      "payee": "Lizzie Sewell",
+      "date": "partial",
+      "description": "Lizzie Sewell, three-quarter blood Creek Roll No. 7529, induced to part with land for $800 less than value"
+    },
+    {
+      "type": "sale",
+      "amount": "loss $900.00",
+      "payer": "grafters",
+      "payee": "Tilda Sunday",
+      "date": "partial",
+      "description": "Tilda Sunday, one-half blood Creek, defrauded out of land, loss $900.00"
+    },
+    {
+      "type": "sale",
+      "amount": "$400.00 received, land worth $1,400.00, loss $1,000.00",
+      "payer": "unknown buyer",
+      "payee": "Jemima Harjo",
+      "date": "partial",
+      "description": "Jemima Harjo, one-half blood Creek, induced to sign deed receiving only $400 when land worth $1,400, loss $1,000.00"
+    },
+    {
+      "type": "sale",
+      "amount": "loss $650.00 (Mollie Johnson)",
+      "payer": "various parties",
+      "payee": "Mollie Johnson",
+      "date": "partial",
+      "description": "Mollie Johnson, one-quarter blood Creek Roll No. 9130, executed deeds conveying lands to various parties without receiving fair consideration, loss noted as $7.50 in one record but $650 overall"
+    },
+    {
+      "type": "other",
+      "amount": "$873,600 total loss estimate Hughes County",
+      "payer": "mixed-blood Indians",
+      "payee": "land grafters",
+      "date": "partial",
+      "description": "1200 mixed-bloods in Hughes County lost 70% of allotment value; 1200 x $728 = $873,600 estimated total loss"
+    },
+    {
+      "type": "other",
+      "amount": "$544,320 total loss estimate Seminole County",
+      "payer": "mixed-blood Seminoles",
+      "payee": "land grafters",
+      "date": "partial",
+      "description": "567 mixed-blood Seminoles x $960 = $544,320 estimated total loss at 90% defrauded of 80% of value"
+    },
+    {
+      "type": "other",
+      "amount": "$20,000.00 mortgage assumed",
+      "payer": "Abijah Colbert and Richard Floyd Colbert",
+      "payee": "lender unknown",
+      "date": "partial",
+      "description": "Colbert brothers disposed of allotments, purchased a garage and assumed a $20,000 mortgage which they were likely to lose"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Mollie Johnson",
+      "type": "defrauded_by",
+      "object": "various land purchasers",
+      "context": "Executed deeds conveying lands without receiving fair consideration"
+    },
+    {
+      "subject": "Daniel Johnson",
+      "type": "defrauded_by",
+      "object": "unknown parties",
+      "context": "Prevailed upon to deed away land for practically nothing"
+    },
+    {
+      "subject": "Adeline Grayson",
+      "type": "defrauded_by",
+      "object": "unknown parties",
+      "context": "Deluded into executing conveyances without adequate consideration"
+    },
+    {
+      "subject": "Caney Arbor",
+      "type": "defrauded_by",
+      "object": "grafters",
+      "context": "Executed deeds at instigation of grafters, died destitute"
+    },
+    {
+      "subject": "Henderson Arbor",
+      "type": "defrauded_by",
+      "object": "unknown parties",
+      "context": "Defrauded out of land, now in destitute circumstances"
+    },
+    {
+      "subject": "Talof Harjo",
+      "type": "defrauded_by",
+      "object": "unknown parties",
+      "context": "Persuaded to sign conveyance without adequate consideration"
+    },
+    {
+      "subject": "Lizzie Sewell",
+      "type": "defrauded_by",
+      "object": "unknown buyer",
+      "context": "Induced to part with land for $800 less than value"
+    },
+    {
+      "subject": "Tilda Sunday",
+      "type": "defrauded_by",
+      "object": "unknown parties",
+      "context": "Defrauded out of land"
+    },
+    {
+      "subject": "Jemima Harjo",
+      "type": "defrauded_by",
+      "object": "unknown buyer",
+      "context": "Induced to sign deed receiving only $400 for land worth $1,400"
+    },
+    {
+      "subject": "Jackson Wolf",
+      "type": "declared_competent_by",
+      "object": "competency commission",
+      "context": "Despite being unable to speak, read or write English"
+    },
+    {
+      "subject": "Milla Wolf",
+      "type": "declared_competent_by",
+      "object": "competency commission",
+      "context": "Despite being unable to speak, read or write English"
+    },
+    {
+      "subject": "Abijah Colbert",
+      "type": "declared_competent_by",
+      "object": "competency commission",
+      "context": "Chickasaw Roll No. 961, turned loose along with brother"
+    },
+    {
+      "subject": "Richard Floyd Colbert",
+      "type": "declared_competent_by",
+      "object": "competency commission",
+      "context": "Chickasaw Roll No. 960, attended Murry Agricultural School and Oklahoma A&M"
+    },
+    {
+      "subject": "Richard Floyd Colbert",
+      "type": "educated_at",
+      "object": "Murry Agricultural School",
+      "context": "Graduated from Murry Agricultural School"
+    },
+    {
+      "subject": "Richard Floyd Colbert",
+      "type": "educated_at",
+      "object": "Oklahoma Agricultural and Mechanical College",
+      "context": "Attended Oklahoma A&M after Murry Agricultural School"
+    },
+    {
+      "subject": "Abijah Colbert",
+      "type": "educated_at",
+      "object": "Murry Agricultural School",
+      "context": "Graduated from Murry Agricultural School"
+    },
+    {
+      "subject": "Abijah Colbert",
+      "type": "educated_at",
+      "object": "Oklahoma Agricultural and Mechanical College",
+      "context": "Attended Oklahoma A&M after Murry Agricultural School"
+    },
+    {
+      "subject": "Dean H. Shannon",
+      "type": "employed_by",
+      "object": "U.S. Indian Service",
+      "context": "Field Clerk at Sallisaw, Oklahoma"
+    },
+    {
+      "subject": "A. B. Keith",
+      "type": "employed_by",
+      "object": "U.S. Indian Service",
+      "context": "U.S. Field Clerk at Muskogee, Oklahoma"
+    },
+    {
+      "subject": "Homer Polk",
+      "type": "employed_by",
+      "object": "U.S. Indian Service",
+      "context": "Field Clerk at Stilwell, Oklahoma"
+    },
+    {
+      "subject": "G. R. Clements",
+      "type": "employed_by",
+      "object": "U.S. Indian Service",
+      "context": "Field Clerk at McAlester, Oklahoma"
+    },
+    {
+      "subject": "W. D. Brauninger",
+      "type": "employed_by",
+      "object": "U.S. Indian Service",
+      "context": "Farmer at Eufaula, Oklahoma"
+    },
+    {
+      "subject": "G. R. Gayle",
+      "type": "employed_by",
+      "object": "U.S. Indian Service",
+      "context": "Farmer at Atoka, Oklahoma"
+    },
+    {
+      "subject": "Walter McLaughlin",
+      "type": "employed_by",
+      "object": "U.S. Indian Service",
+      "context": "Temporary Farmer at Ardmore, Oklahoma"
+    },
+    {
+      "subject": "C. M. Brandt",
+      "type": "employed_by",
+      "object": "U.S. Indian Service",
+      "context": "Farmer at Poteau, Oklahoma"
+    },
+    {
+      "subject": "W. D. Brauninger",
+      "type": "previously_employed_by",
+      "object": "Cantonment Agency",
+      "context": "Three years dealing with Cheyenne and Arapahoes"
+    },
+    {
+      "subject": "W. D. Brauninger",
+      "type": "previously_employed_by",
+      "object": "Kiowa Agency",
+      "context": "Three years dealing with Kiowas, Comanches and Apaches"
+    },
+    {
+      "subject": "Secretary of the Interior",
+      "type": "authorized",
+      "object": "blanket order removal of restrictions",
+      "context": "Granted unconditional removal of restrictions for approximately 125 half-blood Indians"
+    },
+    {
+      "subject": "Felix Canard",
+      "type": "related_to",
+      "object": "Roley Canard",
+      "context": "Both full-blood Creeks who have not disposed of land after being turned loose"
+    },
+    {
+      "subject": "Abijah Colbert",
+      "type": "related_to",
+      "object": "Richard Floyd Colbert",
+      "context": "Brothers, both Chickasaw, both turned loose by competency commission"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Mollie Johnson",
+      "allotment_number": "Roll No. 9130",
+      "acreage": "one hundred sixty acres",
+      "patent_date": "partial",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "various parties",
+      "sale_price": "appraised value $1,040, received far less",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Daniel Johnson",
+      "allotment_number": "Roll No. 9131",
+      "acreage": "",
+      "patent_date": "partial",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "practically nothing, loss $900.00",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Adeline Grayson",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "partial",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "inadequate, loss $850.00",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Caney Arbor",
+      "allotment_number": "Roll No. 9613",
+      "acreage": "",
+      "patent_date": "partial",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "grafters",
+      "sale_price": "inadequate, loss $900.00",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Henderson Arbor",
+      "allotment_number": "Roll No. 9613",
+      "acreage": "",
+      "patent_date": "partial",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "inadequate, loss $750.00",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Talof Harjo",
+      "allotment_number": "Roll No. 7501",
+      "acreage": "",
+      "patent_date": "partial",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "inadequate, loss $850.00",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Lizzie Sewell",
+      "allotment_number": "Roll No. 7529",
+      "acreage": "",
+      "patent_date": "partial",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "$800 less than appraised value",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Tilda Sunday",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "partial",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "inadequate, loss $900.00",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Jemima Harjo",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "partial",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "$400.00, land worth $1,400.00, loss $1,000.00",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Abijah Colbert",
+      "allotment_number": "Chickasaw Roll No. 961",
+      "acreage": "",
+      "patent_date": "partial",
+      "patent_number": "",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Richard Floyd Colbert",
+      "allotment_number": "Chickasaw Roll No. 960",
+      "acreage": "",
+      "patent_date": "partial",
+      "patent_number": "",
+      "mechanism": "certificate_of_competency",
+      "buyer": "unknown",
+      "sale_price": "unknown",
+      "attorney": "",
+      "mortgage": "$20,000 mortgage on garage purchased with proceeds"
+    },
+    {
+      "allottee_name": "Jackson Wolf",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "partial",
+      "patent_number": "",
+      "mechanism": "certificate_of_competency",
+      "buyer": "grafters",
+      "sale_price": "unknown",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Milla Wolf",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "partial",
+      "patent_number": "",
+      "mechanism": "certificate_of_competency",
+      "buyer": "grafters",
+      "sale_price": "unknown",
+      "attorney": "",
+      "mortgage": ""
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Federal oversight board",
+      "recipient": "Dean H. Shannon",
+      "recipient_title": "Field Clerk, Sallisaw, Oklahoma",
+      "date": "1921-04-02",
+      "subject": "Data concerning unconditional removal of restrictions from Indians",
+      "action_requested": "Provide frank and free information on unconditional removal of restrictions",
+      "outcome": "Shannon responded with detailed account of restriction removal cases and outcomes in his district"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Federal oversight board",
+      "recipient": "A. B. Keith",
+      "recipient_title": "U.S. Field Clerk, Muskogee, Oklahoma",
+      "date": "1921-04-02",
+      "subject": "Data concerning unconditional removal of restrictions from Creek, Cherokee and Choctaw Indians",
+      "action_requested": "Provide opinion and data on removal of restrictions",
+      "outcome": "Keith responded with detailed analysis of restriction removals in Muskogee/McIntosh/Haskell County district"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Federal oversight board",
+      "recipient": "Homer Polk",
+      "recipient_title": "Field Clerk, Stilwell, Oklahoma",
+      "date": "1921-04-02",
+      "subject": "Data concerning unconditional removal of restrictions from Cherokee Indians",
+      "action_requested": "Provide opinion on advisability of removing restrictions from full-blood Indians",
+      "outcome": "Polk responded recommending competency commission approach with careful individual case review"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Federal oversight board",
+      "recipient": "G. R. Clements",
+      "recipient_title": "Field Clerk, McAlester, Oklahoma",
+      "date": "1921-04-02",
+      "subject": "Data concerning unconditional removal of restrictions from Choctaw Indians",
+      "action_requested": "Provide opinion and views on present condition among restricted Indians",
+      "outcome": "Clements responded recommending individual case approach, opposed wholesale removal"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Federal oversight board",
+      "recipient": "W. D. Brauninger",
+      "recipient_title": "Farmer, Eufaula, Oklahoma",
+      "date": "1921-04-03",
+      "subject": "Advisability of removing all restrictions from Creek, Cherokee and Choctaw Indians",
+      "action_requested": "Provide opinion on removing all restrictions and letting Indians handle own property",
+      "outcome": "Brauninger responded strongly opposed to unconditional removal, noted 80% failure rate"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Federal oversight board",
+      "recipient": "G. R. Gayle",
+      "recipient_title": "Farmer, Atoka, Oklahoma",
+      "date": "partial",
+      "subject": "Unconditional removal of restrictions from Choctaw Indians",
+      "action_requested": "Provide opinion on removal of restrictions",
+      "outcome": "Gayle responded recommending gradual removal of small parcels at a time, 40-80 acres"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Federal oversight board",
+      "recipient": "Walter McLaughlin",
+      "recipient_title": "Temporary Farmer, Ardmore, Oklahoma",
+      "date": "partial",
+      "subject": "Advisability of removing restrictions from Chickasaw Indians",
+      "action_requested": "Provide reply on unconditional removal of restrictions",
+      "outcome": "McLaughlin responded noting 80% of Indians given control wasted all property"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Federal oversight board",
+      "recipient": "C. M. Brandt",
+      "recipient_title": "Farmer, Poteau, Oklahoma",
+      "date": "partial",
+      "subject": "Removal of restrictions from Choctaw Indians",
+      "action_requested": "Provide opinion on turning Indians loose without government supervision",
+      "outcome": "Brandt responded that it would be a sad mistake to remove all restrictions"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Act of Congress of May 27, 1908",
+      "sponsor": "",
+      "action_type": "enacted",
+      "date": "1908-05-27",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Removed restrictions of mixed blood Indians of the Five Civilised Tribes, enabling sale of allotments"
+    },
+    {
+      "bill_number": "Act of Congress regarding Cherokee Nation",
+      "sponsor": "",
+      "action_type": "enacted",
+      "date": "1931",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "All citizens of the Cherokee Nation to become unrestricted in 1931, deemed dangerously premature by field workers"
+    },
+    {
+      "bill_number": "proposed legislation for repeal",
+      "sponsor": "",
+      "action_type": "introduced",
+      "date": "partial",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Legislation for repeal of law authorizing removal of restrictions referenced but not enacted, writer firmly convinced it is needed"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Dean H. Shannon",
+      "witness_title": "Field Clerk, Sallisaw, Oklahoma",
+      "hearing": "Board of Indian Commissioners inquiry on removal of restrictions",
+      "committee": "Board of Indian Commissioners",
+      "location": "Sallisaw, Oklahoma",
+      "date": "1921-04-02",
+      "subject": "Unconditional removal of restrictions from Cherokee Indians",
+      "key_claims": "Has been in service at Sallisaw more than eight years. District has approximately 1,600 restricted Indians including minors. Restrictions unconditionally removed through regular channels in about 60 cases; by competency commissions 105 cases; by Departmental order covering half-blood Indians approximately 100 cases. Education of coming generation is most important. Full-blood Indian children at great disadvantage attending public schools. Recommends encouraging attendance at Government schools. Urges that removal of restrictions not be done as a class proposition.",
+      "questioner": "Board of Indian Commissioners"
+    },
+    {
+      "witness": "A. B. Keith",
+      "witness_title": "U.S. Field Clerk, Muskogee, Oklahoma",
+      "hearing": "Board of Indian Commissioners inquiry on removal of restrictions",
+      "committee": "Board of Indian Commissioners",
+      "location": "Muskogee, Oklahoma",
+      "date": "1921-04-02",
+      "subject": "Unconditional removal of restrictions from Creek, Cherokee and Choctaw Indians",
+      "key_claims": "Has been employed in office of Superintendent for Five Civilised Tribes about ten years, Field Clerk in Muskogee/McIntosh/Haskell County district for more than four years. Since fall of 1918, about 200 Indians granted unconditional removal by competency commission and about 125 half-blood Indians by blanket order of Secretary of Interior. Approximately one-fifth of adult Indians under restrictions in 1918. Of 100 personally known Indians with restrictions removed, 65 sold land and dissipated proceeds, 35 retained land or purchased other land. Only about 10% would be classed as success. Competency commissions too lenient. Opposes blanket removal of restrictions. Notes that many competent Indians refuse removal of restrictions citing treaty obligations. Recommends competency commission work in conjunction with local field representative. Commission should visit Indians in their homes.",
+      "questioner": "Board of Indian Commissioners"
+    },
+    {
+      "witness": "Homer Polk",
+      "witness_title": "Field Clerk, Stilwell, Oklahoma",
+      "hearing": "Board of Indian Commissioners inquiry on removal of restrictions",
+      "committee": "Board of Indian Commissioners",
+      "location": "Stilwell, Oklahoma",
+      "date": "1921-04-02",
+      "subject": "Unconditional removal of restrictions from Cherokee Indians",
+      "key_claims": "About 400 families of Cherokee Indians in district. Opposes removal of restrictions as a class proposition. About 60% of Indians whose restrictions removed by competency commissions have disposed of or encumbered property so title is in jeopardy. Approximately 75% of Indians enrolled as 2 degree of blood released by Departmental order have sold or mortgaged allotments. Removal from this class a serious mistake. Removal as a class based on degree of blood is often incorrect. By Act of Congress all Cherokee citizens become unrestricted in 1931, which is entirely too soon. Full-blood Indians would rather die than ask for assistance from white people. Agitation to free all Indians originated from grafters and unscrupulous merchants and lawyers. Full-blood Indian has inherent weakness in moral fibre and is easiest person to influence. Recommends gradual freedom through Field Clerk and careful competency commission.",
+      "questioner": "Board of Indian Commissioners"
+    },
+    {
+      "witness": "G. R. Clements",
+      "witness_title": "Field Clerk, McAlester, Oklahoma",
+      "hearing": "Board of Indian Commissioners inquiry on removal of restrictions",
+      "committee": "Board of Indian Commissioners",
+      "location": "McAlester, Oklahoma",
+      "date": "1921-04-02",
+      "subject": "Unconditional removal of restrictions from Choctaw Indians",
+      "key_claims": "Recommends handling each individual case strictly on its merits. Unconditional removal of restrictions from Indian citizens would result in wreck and ruin of most of them. Some old ignorant full-bloods safer to turn loose than young educated full-bloods. Majority of people associate with Indians do not set good example. Many Indians own land in other counties where they do not live and receive little benefit; suggests that land should be sold or restrictions removed to allow use of funds in home community. Believes restrictions should be removed from surplus land not occupied, while living conditions improved and made sanitary.",
+      "questioner": "Board of Indian Commissioners"
+    },
+    {
+      "witness": "W. D. Brauninger",
+      "witness_title": "Farmer, Eufaula, Oklahoma",
+      "hearing": "Board of Indian Commissioners inquiry on removal of restrictions",
+      "committee": "Board of Indian Commissioners",
+      "location": "Eufaula, Oklahoma",
+      "date": "1921-04-03",
+      "subject": "Unconditional removal of restrictions from Creek, Cherokee and Choctaw Indians",
+      "key_claims": "In Indian Service since 1913: three years Cantonment Agency with Cheyenne and Arapahoes, three years Kiowa Agency with Kiowas, Comanches and Apaches, past 13 months Union Agency at Muskogee. Work brought direct contact with Indians of various tribes. Restricted full-blood Indians live in Indian community, withdrawn from white citizenship, unable to speak or write English. Unconditional removal would invite hordes of land grafters to invade Indian country. When Indian can speak read and write English should be given full citizenship. In most cases Indians given full citizenship sold land and squandered money. Department has not removed restrictions from Indian not sufficiently intelligent to make his way. Unconditional removal from all classes would not cooperate with Department's present system.",
+      "questioner": "Board of Indian Commissioners"
+    },
+    {
+      "witness": "G. R. Gayle",
+      "witness_title": "Farmer, Atoka, Oklahoma",
+      "hearing": "Board of Indian Commissioners inquiry on removal of restrictions",
+      "committee": "Board of Indian Commissioners",
+      "location": "Atoka, Oklahoma",
+      "date": "partial",
+      "subject": "Unconditional removal of restrictions from Choctaw Indians",
+      "key_claims": "Recommends not turning loose too much at once. After land and money is gone it is too late. Restrictions should be removed from small part of surplus land, 40 or 80 acres at a time, in most cases sold with money spent for Indians through Indian Office. Would be governed by value of land. In cases of old and feeble Indians with no money, should sell land piece at a time and give money as needed. Does not think any white man he has met would not like to see restrictions removed - they want Indians to pay taxes and work roads.",
+      "questioner": "Board of Indian Commissioners"
+    },
+    {
+      "witness": "Walter McLaughlin",
+      "witness_title": "Temporary Farmer, Ardmore, Oklahoma",
+      "hearing": "Board of Indian Commissioners inquiry on removal of restrictions",
+      "committee": "Board of Indian Commissioners",
+      "location": "Ardmore, Oklahoma",
+      "date": "partial",
+      "subject": "Unconditional removal of restrictions from Chickasaw Indians",
+      "key_claims": "Fully 80% of Indians turned loose have wasted all that was given to them and have nothing to show. Indians do not live to work, are easily influenced, majority of associates do not set good example. Business men advise Indians to make bad investments when in white man's favor. Indians do not appreciate value of property until it is gone. Five Civilised Tribes would be much better off financially if there never had been any restrictions removed. In another way, having restrictions removed made better citizens of some who then became willing to do honest labor. Worst enemy of Indians in this section is whiskey and various other intoxicants.",
+      "questioner": "Board of Indian Commissioners"
+    },
+    {
+      "witness": "C. M. Brandt",
+      "witness_title": "Farmer, Poteau, Oklahoma",
+      "hearing": "Board of Indian Commissioners inquiry on removal of restrictions",
+      "committee": "Board of Indian Commissioners",
+      "location": "Poteau, Oklahoma",
+      "date": "partial",
+      "subject": "Unconditional removal of restrictions from Choctaw Indians",
+      "key_claims": "Turning Indians loose without government supervision would be a sad mistake. There is always a grafter ready to buy at small figure, borrow, beg or steal whatever Indian has privilege to sell. Indians who did well after restriction removal are part white, inheriting ability to take care of themselves. Those doing well after removal often insist full-bloods get restrictions removed so they can exploit them. Would not be possible to change customs and manner of living of a race of people in short time. Until Indians become imbued with desire to better living conditions no wholesale removal of restrictions should be considered.",
+      "questioner": "Board of Indian Commissioners"
+    },
+    {
+      "witness": "unidentified field officer",
+      "witness_title": "Indian Service employee dealing with Hughes County",
+      "hearing": "Board of Indian Commissioners inquiry on removal of restrictions",
+      "committee": "Board of Indian Commissioners",
+      "location": "Hughes County, Oklahoma",
+      "date": "partial",
+      "subject": "Fraud against mixed-blood Creek Indians in Hughes County and Seminole County",
+      "key_claims": "In Hughes County there were 1,600 mixed blood allotments of 160 acres, appraised value $1,040 each. Very small percent of mixed-blood Indians received anything like fair consideration for allotments. Nine specific cases documented. Estimated 75% of mixed-blood Indians of Hughes County defrauded out of 70% of value of allotments. 1,200 mixed-bloods in Hughes County lost estimated $873,600. 567 mixed-blood Seminoles lost estimated $544,320. These figures are extremely low and investigation would show larger amounts. Full-blood Seminoles disposed of land when turned loose. Competency commission turning Indians loose including those unable to speak English. Most important work is training in industrial lines and educating rising generation, not merely supervision of property.",
+      "questioner": "Board of Indian Commissioners"
+    }
+  ],
+  "taxes": [
+    {
+      "taxpayer": "restricted Indian allottees",
+      "land_description": "restricted Indian allotments in Oklahoma",
+      "tax_type": "property",
+      "amount": "none paid",
+      "year": "partial",
+      "status": "exempt",
+      "county": "multiple Oklahoma counties",
+      "context": "As long as land remains in hands of full-blood allottees no taxes are paid thereon. In communities where practically all land owned by restricted allottees, burden of taxes very heavy on small amount of taxable land."
+    },
+    {
+      "taxpayer": "communities with restricted Indian land",
+      "land_description": "non-Indian taxable land in communities with restricted allotments",
+      "tax_type": "property",
+      "amount": "increased burden",
+      "year": "partial",
+      "status": "other",
+      "county": "multiple Oklahoma counties",
+      "context": "Communities with large amounts of restricted non-taxable Indian land faced heavier tax burden on remaining taxable properties. White neighbors wanted restrictions removed so Indians would pay taxes."
+    },
+    {
+      "taxpayer": "Indians after restriction removal",
+      "land_description": "formerly restricted Indian allotments",
+      "tax_type": "property",
+      "amount": "unspecified",
+      "year": "partial",
+      "status": "other",
+      "county": "multiple Oklahoma counties",
+      "context": "White farmers and merchants wanted restrictions removed so Indians would pay taxes and work the roads. After restrictions removed, land becomes taxable."
+    }
+  ],
+  "mortgages": [
+    {
+      "borrower": "Abijah Colbert and Richard Floyd Colbert",
+      "lender": "unknown",
+      "amount": "$20,000.00",
+      "land_description": "garage property purchased after disposal of allotments",
+      "acreage": "",
+      "date": "partial",
+      "interest_rate": "",
+      "status": "default",
+      "context": "The Colbert brothers, Chickasaw Roll Nos. 961 and 960, disposed of allotments, purchased a garage and assumed a $20,000 mortgage. When mortgage came due they would in all probability lose the garage. They graduated from Murry Agricultural School and attended Oklahoma A&M but lacked ability to handle own affairs."
+    },
+    {
+      "borrower": "approximately 75% of half-blood Indians released by Departmental order",
+      "lender": "various",
+      "amount": "unspecified",
+      "land_description": "Indian allotments in Cherokee district",
+      "acreage": "",
+      "date": "partial",
+      "interest_rate": "",
+      "status": "active",
+      "context": "About 75% of Indians enrolled as 2 degree of blood released from supervision by Departmental order have sold or mortgaged their allotments, putting title in jeopardy."
+    },
+    {
+      "borrower": "Indians whose restrictions removed by competency commissions",
+      "lender": "various",
+      "amount": "unspecified",
+      "land_description": "Indian allotments in multiple districts",
+      "acreage": "",
+      "date": "partial",
+      "interest_rate": "",
+      "status": "other",
+      "context": "About 60% of Indians whose restrictions removed by competency commissions have either disposed of property or encumbered it such that title is in jeopardy. Property on which it is possible to obtain funds in times of stress is a temptation to Indians as well as white men."
+    }
+  ]
+}

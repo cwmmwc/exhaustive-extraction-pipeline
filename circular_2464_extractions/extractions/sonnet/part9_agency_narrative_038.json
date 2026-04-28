@@ -1,0 +1,54 @@
+{
+  "document_id": "part9_agency_narrative_038",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "65-66",
+  "model": "sonnet",
+  "extraction": [
+    {
+      "Name": "James Edward Schmidt",
+      "Tribe/Reservation": "Rosebud",
+      "Post Office Address": "not stated",
+      "Allotment number": "3612",
+      "Cancelled": "not stated",
+      "Refused/Protested": "not stated",
+      "Recorded patent": "The patent was recorded April 8, 1920, by O. L. Dice",
+      "Sold/Mortgaged": "Mortgaged and sold",
+      "Buyer": "Mortgaged to W. H. Tackett for $3000; conveyed by deed to Evelyn A. Schmidt for $6400",
+      "Tax burden forced sale/Mortgage": "not stated",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "March 12, 1920",
+      "Gender": "Male",
+      "Age": "not stated",
+      "Occupation/Income": "not stated",
+      "NOTES": "Fee patent No. 739621 issued; Northwest quarter section 26, township 38, north of range 27; receipt issued April 2, 1920, by the allottee; mortgage dated May 5, 1920; conveyance dated October 23, 1920, by James Edward Schmidt and wife to Evelyn A. Schmidt",
+      "Literate/Illiterate": "not stated",
+      "Document type": "agency_narrative"
+    },
+    {
+      "Name": "Patsey McLane (Reed)",
+      "Tribe/Reservation": "Rosebud",
+      "Post Office Address": "not stated",
+      "Allotment number": "3625",
+      "Cancelled": "not stated",
+      "Refused/Protested": "not stated",
+      "Recorded patent": "The patent was recorded October 6, 1925, by D. A. Sinclair",
+      "Sold/Mortgaged": "Mortgaged",
+      "Buyer": "Patsey McLane Reid and Francis E. Reid mortgaged the land to Union Central Life Insurance Company for $5000, due in 20 annual installments, interest at 6\u00bd%",
+      "Tax burden forced sale/Mortgage": "In March 1929, when the records were viewed, the 1927 taxes amounting to $164.72 and the 1928 taxes amounting to $125.26 were unpaid",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "December 29, 1917",
+      "Gender": "Female",
+      "Age": "not stated",
+      "Occupation/Income": "not stated",
+      "NOTES": "Fee patent No. 612764 issued; Southeast quarter of section 10, township 99, north range 74; receipt for the patent was signed by the allottee February 7, 1918; mortgage dated October 10, 1925",
+      "Literate/Illiterate": "not stated",
+      "Document type": "agency_narrative"
+    }
+  ],
+  "usage": {
+    "input_tokens": 2251,
+    "output_tokens": 741
+  },
+  "elapsed": 10.8
+}

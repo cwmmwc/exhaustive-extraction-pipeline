@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_067",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "93",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lucy La Point, Nee Giroux",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Denby, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not desire to take her patent to her 160 acre allotment at the time she got it; but she was advised by the Indian Agency that she would have to accept it, so she did it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "borrowed $500.00 of A. Barker, of Denby, South Dakota, without giving a mortgage to him",
+    "Buyer": "A. Barker, of Denby, South Dakota",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "35 years old",
+    "Occupation/Income": "she and her child are supported by her second husband, Oliver LaPoint, who farms for a living",
+    "NOTES": "Deponent states she is mentally incompetent; has pretty fair health; has one small child, somewhat sickly all the time; second husband is Oliver LaPoint; first husband was Charlie Giroux, who willed her 160 acres; that place is clear of debt; in 1920 borrowed $500.00 from A. Barker without giving a mortgage; in 1927 Barker said he did not know who owned the land; document No. 5544; notarized November 21, 1928 in Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2338,
+    "output_tokens": 464
+  },
+  "elapsed": 6.9
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_029",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "90-91",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Belle Bonser Harris",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "Williamsburg, Virginia",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "With protest. To the Commissioner of Indian Affairs, Washington, D.C. By authority of the Congress.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged it and it was mortgaged. Not mortgaged.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "No debt. Not mortgaged.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Female",
+    "Age": "45 years",
+    "Occupation/Income": "Living on a farm",
+    "NOTES": "Patent delivered in 1918 at Williamsburg, Virginia, by mail. No application made for patent. Sold the land for $3000 cash. No debts settled with purchaser at time of sale. Did not make application for patent. Signed receipt for patent. Notarized in State of Virginia, City/County of Williamsburg, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2515,
+    "output_tokens": 347
+  },
+  "elapsed": 5.2
+}

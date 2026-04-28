@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_097",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "125",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Philip Mesteth",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Brennan, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee to his 160 acre allotment, when it was issued, September 29, 1919, for he did not want to pay taxes; but that the Indian Agency told him that, if he did not take it and pay the taxes, it would be assessed for taxes at any rate, and later sold for same; so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold his allotment to Ward Alice, of Gordon, Nebraska, for $500.00, $200.00 he received in cash, and he received an automobile, valued at $300.00; that he considers that this was a very poor price for his land",
+    "Buyer": "Ward Alice, of Gordon, Nebraska, for $500.00 ($200.00 cash and an automobile valued at $300.00)",
+    "Tax burden forced sale/Mortgage": "did not sell his place for debts incurred prior to the receipt of his patent in fee; never paid any taxes on his allotment, nor did he ever receive a tax bill on the place",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Male",
+    "Age": "39 years old",
+    "Occupation/Income": "farms some heirship land for his living, and this is his only income",
+    "NOTES": "Mentally competent and in good health; has a wife and 3 children to support; wife has very poor health; never received any help from the County, State nor the United States Government; sale date July 20, 1920; 160 acre allotment; document No. 7390; subscribed and sworn December 27, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2345,
+    "output_tokens": 528
+  },
+  "elapsed": 6.8
+}

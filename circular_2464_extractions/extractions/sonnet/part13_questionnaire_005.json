@@ -1,0 +1,33 @@
+{
+  "document_id": "part13_questionnaire_005",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "9-10",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Williams",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "407",
+    "Cancelled": "No",
+    "Refused/Protested": "Protested",
+    "Recorded patent": "Filed for record; where and by whom not stated",
+    "Sold/Mortgaged": "Mortgaged it and lost it as I could not raise the money to pay out",
+    "Buyer": "Mortgaged for $1800.00 and lost it; A. D. Harris, of Ponca City, Okla. alleged to have defrauded the allottee",
+    "Tax burden forced sale/Mortgage": "Yes, for debts. Mortgaged it and lost it as I could not raise the money to pay out. Foreclosed, redemption date has not expired.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "August 1918",
+    "Gender": "Male",
+    "Age": "56",
+    "Occupation/Income": "By my own efforts",
+    "NOTES": "Mental & physical condition are good. Financial condition bad. Wife and seven children dependent upon him. Allottee states he feels he was defrauded out of this place by one A. D. Harris, of Ponca City, Okla. His financial condition is good [referring to Harris]. Patent delivered at his home. Document notarized December 10, 1928, in Kay County, Oklahoma. Commission expires noted but partially illegible.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2698,
+    "output_tokens": 411
+  },
+  "elapsed": 8.6,
+  "retry_count": 1
+}

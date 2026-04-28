@@ -1,0 +1,32 @@
+{
+  "document_id": "part13_questionnaire_019",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "40-41",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Will Justice",
+    "Tribe/Reservation": "Pawnee County, Okla.",
+    "Post Office Address": "Pawnee, Okla.",
+    "Allotment number": "207",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes",
+    "Sold/Mortgaged": "Mortgaged, but released",
+    "Buyer": "Pawnee Nat. Bank",
+    "Tax burden forced sale/Mortgage": "no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Nov. 13, 1917",
+    "Gender": "Male",
+    "Age": "40 years",
+    "Occupation/Income": "Has an income of about $400 per year, inherited land. Shares in Pawnee annuity.",
+    "NOTES": "Date and manner of delivery of patent Dec. 4, 1917, Agency office. Patent receipted for: yes. Good health. No property or money accumulated. None dependent upon the Indian for support. The land has not been sold, but has been deeded to two minor children, upon court order. The allottee reserves a life use of the land. Notarized November 28, 1928, Pawnee County, Oklahoma. Commission expires Jan. 31st, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2570,
+    "output_tokens": 373
+  },
+  "elapsed": 5.1
+}

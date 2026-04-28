@@ -1,0 +1,32 @@
+{
+  "document_id": "part10_questionnaire_005",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 10.pdf",
+  "source_pages": "24",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Claude Sully",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "6467",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Yes, one time Mr. Covey, who was then Superintendent, came to our house and we were talking about these patents and he asked me if I wanted it and I told him that I did not but he said we would have to take them. This was before the patent had been given to me so when the patent reached me I thought it no use to protest.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I mortgaged it for $5000.00 all together at two different times.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Yes, mortgage was finally foreclosed; they took out for taxes, interest commission and abstracts and other things",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918 (sent by mail)",
+    "Gender": "Male",
+    "Age": "32, or 31 I am not sure",
+    "Occupation/Income": "not stated",
+    "NOTES": "No one depends on allottee for support except himself; is in good health; received notice of foreclosure and mortgage was finally foreclosed; bought some cattle through the bank that made the mortgage for about $2500.00, received about $300 in cash and a Buick car for $1000.00; patent delivered by mail in 1918; signed receipt for patent; notarized June 7, 1929 before Jas. W. Cross, Notary Public, commission expires 4-28-32",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2336,
+    "output_tokens": 456
+  },
+  "elapsed": 7.1
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_017",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "30",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Helena Larvie",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S.D.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded July 2, 1918, by B. A. Olson",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Edward Gary, husband, conveyed the land by deed to P. J. Navin for $1.00 and other valuable consideration",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 21, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612464 issued; Northeast quarter of section 27, township 44, north of range 32; receipt for the patent was signed by the allottee; deed dated July 1, 1918; Helena Larvie also known as Helena Gary (formerly Larvie); conveyance by husband Edward Gary, deed not dated",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2009,
+    "output_tokens": 353
+  },
+  "elapsed": 5.9
+}

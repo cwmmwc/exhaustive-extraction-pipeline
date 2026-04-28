@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_008",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "12",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Randall, Sr.",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Hisle, South Dakota",
+    "Allotment number": "2037",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee to his 320 acre allotment at the time he got it, but was advised by the Indian Agency that it would be taxed the same as if he had accepted it, and that he would finally either have them to pay or that he would lose the land thereby, so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1919, he sold the 320 acres to E.E. Larkin, of Wagoner, South Dakota, for $3200.00, receiving $2200.00 in cash and an automobile, valued at $1000.00",
+    "Buyer": "E.E. Larkin, of Wagoner, South Dakota, for $3200.00",
+    "Tax burden forced sale/Mortgage": "was advised by the Indian Agency that it would be taxed the same as if he had accepted it, and that he would finally either have them to pay or that he would lose the land thereby",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "60 years old",
+    "Occupation/Income": "he farms a little, and does church work for the Holy Rosary Mission\u2014and these two small sources of income is all he has",
+    "NOTES": "mentally incompetent, has good health; has a wife who is in good health; has three children to support, one of whom is sick all the time, one side being paralyzed; has never received any help from the County, State or United States Government; document number 2037; sworn November 23, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2270,
+    "output_tokens": 509
+  },
+  "elapsed": 6.2
+}

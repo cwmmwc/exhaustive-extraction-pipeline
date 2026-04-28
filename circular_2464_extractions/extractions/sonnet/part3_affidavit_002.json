@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_affidavit_002",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "54",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Wright",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "1516",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Well the patent was at the Farmers office for some time and I was told about it and told to come and get but I did not want it so did not answer him and let it go.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged and then sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "the taxes were hard to pay and I sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "57",
+    "Occupation/Income": "Farming and any work I can get.",
+    "NOTES": "There are nine of us in all depending on him for living; not in good health; did not sign a receipt for the patent; Mr. Holsolaw delivered the patent to his house; received $2000 for the mortgage and enough to make a little over $6000 in all when sold; affidavit sworn before Jas. W. Cross, Notary Public, May 7, 1929, commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2264,
+    "output_tokens": 375
+  },
+  "elapsed": 5.3
+}

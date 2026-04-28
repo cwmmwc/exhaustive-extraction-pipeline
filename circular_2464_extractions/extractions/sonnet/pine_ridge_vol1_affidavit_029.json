@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_029",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "39",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Millie Conroy Harvey",
+    "Tribe/Reservation": "Shannon County (South Dakota)",
+    "Post Office Address": "Rockyford, So. Dak.",
+    "Allotment number": "4204",
+    "Cancelled": "applied for cancellation and that it is pending in the Indian Office",
+    "Refused/Protested": "did not want her patent in fee but accepted it on the advice of the Superintendent and Farmer, who told her that if she did not take it and pay the taxes that she would lose the land and get nothing for it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "has not deeded or mortgaged her land",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "told her that if she did not take it and pay the taxes that she would lose the land and get nothing for it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "36 years old",
+    "Occupation/Income": "supported by her husband who farms what of his sisters land he can and does common labor for a living",
+    "NOTES": "mentally competent and in fair health; has two children depending on her for support; has received no aid from the Government, State or County since she was granted a patent; states she will have her land back if the Department cancels the patent; document number 358; affidavit sworn November 28, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2221,
+    "output_tokens": 407
+  },
+  "elapsed": 5.5
+}

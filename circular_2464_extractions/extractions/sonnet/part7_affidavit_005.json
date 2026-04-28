@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_affidavit_005",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "45",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Dillon",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Yes, sold",
+    "Buyer": "Chris Colome; consideration included a piano worth about $200.00, a team of horses, a set of harness and a buggy (the buggy and harness being used considerably, and the horses were small), food and clothing for five people over one winter (estimated at about $1000.00), two dozen chickens worth about 75 cents each, and $400 in cash",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "55",
+    "Occupation/Income": "not stated",
+    "NOTES": "Mary Dillon is the widow of William McClosky or Dillon (deceased February 17, 1924); she states the land was deeded to Chris Colome though records apparently show it was deeded to O'Hallern; she believed the land was worth at least $1000.00 more than received; Chris Colome promised to help her if in need but did not respond when asked after husband's death; document reference number 2331; witnesses mentioned: George Dillon, Tom Dillon, John, Ed, and Dave Colome",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2599,
+    "output_tokens": 424
+  },
+  "elapsed": 7.4
+}

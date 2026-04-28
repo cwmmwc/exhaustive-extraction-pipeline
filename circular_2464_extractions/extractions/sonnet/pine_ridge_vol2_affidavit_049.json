@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_049",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "67",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Emma Stirk",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Manderson, So. Dak.",
+    "Allotment number": "2606",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent, but that she was told by the clerk in the Office at Pine Ridge that the issuance of the patent had been reported to the tax commission, and that if she did not take it, the land would be taxed anyway and if the taxes were not paid that the land would be sold to satisfy them",
+    "Recorded patent": "she did not record the patent and does not know whether it has been recorded or not",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to the Federal Loan Bank of Omaha, Nebr. for $1200.00; land later turned over to Andrew Dombalo (now deceased) for $100.00, giving him a deed for the land",
+    "Tax burden forced sale/Mortgage": "the land had been sold for taxes and in order to redeem it, she mortgaged it to the Federal Loan Bank of Omaha, Nebr. for $1200.00; About two years ago Andrew Dombalo (now deceased) came to me and told me that they were about to forclose the Federal Loan, and that I then turned the land over to him for $100.00",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "42 years old",
+    "Occupation/Income": "supported by her husband, who is not able to do any kind of work, being in very poor health",
+    "NOTES": "Mentally competent and not in very good health, being rhumatic and crippled in the right hip, resulting from a fall from a horse this last summer; also has heart trouble; has an adoptive daughter and husband in very poor health; deponent states the land was all she has and she now has nothing; thinks land is worth $2400.00; Government, State nor County has not contributed to her support since the patent was issued; mortgage and redemption occurred about 1922; document number 2606; sworn November 2, 1928, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2428,
+    "output_tokens": 595
+  },
+  "elapsed": 8.9
+}

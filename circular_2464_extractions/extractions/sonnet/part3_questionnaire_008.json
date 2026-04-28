@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_questionnaire_008",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "22",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Cordier",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "1201",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Do",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged and then sold it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "49",
+    "Occupation/Income": "Farming and odd jobs",
+    "NOTES": "Fee patent delivered in 1918 from Mr. Kephart, the farmer at Black Pipe; mortgaged for $300 and sold for $2600 (payment for sale not all made at one time); wife and four children depend on him for support; in good health; did ask for patent; notarized June 4, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2189,
+    "output_tokens": 326
+  },
+  "elapsed": 5.1
+}

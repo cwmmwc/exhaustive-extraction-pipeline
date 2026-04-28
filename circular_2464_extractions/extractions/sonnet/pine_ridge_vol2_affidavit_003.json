@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_003",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "5",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lizzie Brown",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Hisle, S.D.",
+    "Allotment number": "1870",
+    "Cancelled": "not stated",
+    "Refused/Protested": "when she received the receipt for her patent in fee that she did not want it and as it was sent to her at Wanblee, S.D. she returned the receipt to Pine Ridge with out signing the receipt and later she was at the Pine Ridge Agency and it was presented to her and she was told that she had to sign the receipt which she did",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "traded half of the land to her son Harry Brown for land and sold that land; kept the other half till two years ago and had to sell the part that remained in her name",
+    "Buyer": "not stated by name; received $75.00 in cash and took a mortgage for $500.00 on the land; the man that bought the land was to pay the taxes; got $800.00 for the land that she got from her son",
+    "Tax burden forced sale/Mortgage": "unable to pay taxes on the land; taxes were not paid on the land and she had to sell the part that remained in her name",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "60 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "mentally competent and in poor health, suffering from stomach trouble which makes it impossible for her to do much work; husband is not able to do hard work; takes care of four orphan children; has not received any aid from the Government, State or County since she was granted a patent in fee for her land; she thinks she did not receive a fair price for the land; document subscribed and sworn before notary public, State of South Dakota, County of Washabaugh, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2370,
+    "output_tokens": 515
+  },
+  "elapsed": 6.3
+}

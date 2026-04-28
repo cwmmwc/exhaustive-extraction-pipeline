@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_021",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "28",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Eugene Means",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "C/o Mrs. Sam Deon, Pine Ridge, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee to his allotment at the time he received it, but was told by the Indian Agency that, if he did not accept it, that the taxes would accrue, and that he would finally lose it if they were not paid; so he accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to a real estate man of Gordon, Nebraska; sold to John Potts of Gordon, Nebraska, Potts taking over the mortgage, and paying the taxes, paying deponent $2000.00\u2014$800.00 in cash, and an automobile, valued at $1200.00",
+    "Tax burden forced sale/Mortgage": "was told by the Indian Agency that, if he did not accept it, that the taxes would accrue, and that he would finally lose it if they were not paid; Potts taking over the mortgage, and paying the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "29 years old",
+    "Occupation/Income": "works at common labor for his living, that being his only income",
+    "NOTES": "mentally competent, has pretty good health, is single; has no one to support; mortgaged place in 1920; sale to John Potts occurred about a month after mortgage; document number No. 2249; sworn November 24, 1928; County of Shannon, State of South Dakota; has never received any help from the County, State or United States Government",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2274,
+    "output_tokens": 496
+  },
+  "elapsed": 7.5
+}

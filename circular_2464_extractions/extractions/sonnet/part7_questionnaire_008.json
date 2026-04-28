@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_008",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "21",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Carrie Clara Huggins Longcor",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2276",
+    "Cancelled": "I am not and wish to have it cancelled",
+    "Refused/Protested": "No i was in Todd county at the time the patent arrived at our home in Tripp count.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "the taxes are an added burden",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Female",
+    "Age": "50",
+    "Occupation/Income": "We work for our living on the farm",
+    "NOTES": "Allottee did not ask for the patent and wishes to have it cancelled. States she does not remember signing a receipt for the patent. Health is variable: 'Sometimes I feel well and at others I do not.' Has three living children. Notarized May 9, 1929 before Jas. W. Cross, Notary Public, commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2215,
+    "output_tokens": 344
+  },
+  "elapsed": 5.9
+}

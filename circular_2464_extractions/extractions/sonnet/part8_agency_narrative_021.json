@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_agency_narrative_021",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "37",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Henry Emery",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S.D.",
+    "Allotment number": "2903",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded March 13, 1918; the records do not show by whom",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Henry Emery and Lulu Emery conveyed the land by deed to W. H. Tackett for $2600",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 21, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612458 issued; Southwest quarter section 9, township 97, north of range 69; receipt for patent signed by allottee February 27, 1918; conveyance dated May 1, 1918; document dated JUN 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2019,
+    "output_tokens": 338
+  },
+  "elapsed": 5.5
+}

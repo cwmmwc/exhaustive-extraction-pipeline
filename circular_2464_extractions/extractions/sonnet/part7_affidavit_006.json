@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_affidavit_006",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "60",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Thomas Wright",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2357",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I think the patent should not have been issued to me without my asking for it as I have no education and would therefore not be in a position to take care of it. This is the reason I sent it back to the office",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "not stated (reference to Smith, Colome, Youngquist, or Martin)",
+    "Tax burden forced sale/Mortgage": "the taxes were going to take it and I would receive letters telling me that the land was about to be sold for taxes so I thought I had better get a little something out of it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "I work a little here and there and stay with my relatives part of the time as I have no home",
+    "NOTES": "At time of sale had a wife and one child who have since died; was working for the government as policeman at the time the patent was issued; states he has no education; interpreter Carlos Gallineaux present; notary Ths. W. Cross, commission expires 4-28-32; did not receive a car, horses, or anything else from Smith, Colome, Youngquist, or Martin, nor were any promised",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2259,
+    "output_tokens": 427
+  },
+  "elapsed": 5.8
+}

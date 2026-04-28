@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_004",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "13",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jeffrey Miller",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Yes, I told Mr. Britton that I did not want it and he answered that I might as well take it as it had been issued and would be put on record that the taxes would accrue just the same.",
+    "Recorded patent": "It was in 1918 that Mr. Britton the farmer brought it to me in Herrick.",
+    "Sold/Mortgaged": "I first mortgaged it and then sold it",
+    "Buyer": "Iris Baldwin, Herrick South Dakota, for $3700.00 as follows: the mortgage, tax and interest was $3000 which was held out and I received $700 at the time of sale",
+    "Tax burden forced sale/Mortgage": "the mortgage, tax and interest was $3000 which was held out",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Male",
+    "Age": "38",
+    "Occupation/Income": "By farming",
+    "NOTES": "Allottee stated: 'I have always held that the Government erred in issuing this patent before the end of the 25 years that it was agreed that it should be held. I think it was an injustice to me to have the patent issued. I did the best I could with the money I got from the land.' Has four children. Document page references: 7, 266, 1. Notary: Jas. W. Gross, commission expires 4-28-32. Subscribed and sworn April 30, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2349,
+    "output_tokens": 468
+  },
+  "elapsed": 6.4
+}

@@ -1,0 +1,33 @@
+{
+  "document_id": "part13_questionnaire_002",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "3-4",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Dick Gayton",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Ponca City, Okla.",
+    "Allotment number": "677",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Not by allottee",
+    "Sold/Mortgaged": "Sold for $7000.00 Received $6000 in cash and applied $1000 of fathers debts owed to Miller Brothers",
+    "Buyer": "Geo. L. Miller",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "May 28, 1918",
+    "Gender": "Male",
+    "Age": "33",
+    "Occupation/Income": "Approximately $100 per annum",
+    "NOTES": "Delivered in Agency; allottee says he never saw the land before or after sale and cannot say as to value of land; it would appear that a fair price was received; wife and four children dependent upon allottee for support; no funds to credit of allottee; notarized November 21, 1928, County of Kay, State of Oklahoma; witnesses both of Ponca City, Okla.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2646,
+    "output_tokens": 358
+  },
+  "elapsed": 6.8,
+  "retry_count": 1
+}

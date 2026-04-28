@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_108",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "133",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Pulliam",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Kyle, South Dakota",
+    "Allotment number": "1567",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 160 acre allotment, when it was issued in 1919, for he did not desire to have taxes to pay; but the Indian Agency, at Pine Ridge, advised him that the land would be assessed for taxes at any rate, and later sold for same; so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "the place being behind for taxes, was put up and sold for the taxes",
+    "Buyer": "deponent thinks that Barker bought it",
+    "Tax burden forced sale/Mortgage": "the place being behind for taxes, was put up and sold for the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1919",
+    "Gender": "Male",
+    "Age": "36 years old",
+    "Occupation/Income": "drives a dray in Crawford, Nebraska, and works at any common labor he can get either in town or the country for his living; has some land on which he raises stock; and that this labor and the stock on his ranch is the source of all his income",
+    "NOTES": "mentally competent, has good health; has a wife and three children to support, who have good health; borrowed $65.00 in 1921 from A.R. Barker of Denby, South Dakota \u2014 Barker drew up a mortgage on the strength of this loan against his allotment but deponent refused to sign it; deponent asked Barker $1500.00 for the place but Barker said that was too much; Barker urged deponent to sign the mortgage which he again promptly refused to do; deponent considers the place a total loss to him; never sold the place for debts incurred before receiving the patent in fee; never received any help from the County, State nor the United States Government; affidavit sworn December 17, 1928, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2421,
+    "output_tokens": 556
+  },
+  "elapsed": 6.5
+}

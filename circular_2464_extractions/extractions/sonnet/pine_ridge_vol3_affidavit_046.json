@@ -1,0 +1,33 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_046",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "59",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Sophia Russell",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Wanblee, S.D.",
+    "Allotment number": "4629",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent and held the receipt for some time before she sent it to the Agency, and accepted it under protest and was told that she would have to take the patent and pay taxes on the land",
+    "Recorded patent": "the patent was recorded May 5 1919",
+    "Sold/Mortgaged": "sold the land",
+    "Buyer": "Bob Allen, of Allen, S.D. for $3000.00",
+    "Tax burden forced sale/Mortgage": "she was unable to pay taxes on the land and it was a case to take that or let the taxes eat the land up",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "49 years old",
+    "Occupation/Income": "does her house work and takes care of a small truck patch for the support of the family but has little success",
+    "NOTES": "mentally competent and fair health but can not earn much money owing to the fact that she has three small children to care for; has not received any help from the Government, State or County since she received the patent in fee; does not think she received a fair price for the land; document sworn December 13, 1928, in Washabaugh County, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2315,
+    "output_tokens": 414
+  },
+  "elapsed": 5.3,
+  "retry_count": 1
+}

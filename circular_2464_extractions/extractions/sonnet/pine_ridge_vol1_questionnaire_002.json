@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_questionnaire_002",
+  "type": "questionnaire",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "98-99",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Wm. Valandry, Jr.",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "No. 100 Market Street, Sioux City, Iowa",
+    "Allotment number": "1083",
+    "Cancelled": "No",
+    "Refused/Protested": "I did not want my patent in fee and accepted it under protest because I was told that if I did not accept it and keep up the taxes, the land would be sold to satisfy them. On account of this, I did not have it recorded, but someone did.",
+    "Recorded patent": "I did not have it recorded, but someone did.",
+    "Sold/Mortgaged": "sold the land March 26th, 1924, final payment being made April 1926, price $1000.00",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Land was not sold to pay debt or mortgage, but was sold to pay taxes. Before I knew it, the taxes were so high that it was impossible for me to pay them, so I just had to take whatever I could get for it rather than to lose it all.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "I have forgotten patent number, but I think it was issued in 1918.",
+    "Gender": "Male",
+    "Age": "40 years old",
+    "Occupation/Income": "None. I rent a house at 100 Market St.",
+    "NOTES": "Patent was sent to allottee and he returned it, after which it was sent back to him again. He states: 'I was not actually defrauded of my land, but patent in fee was forced on me so that I sold said land for approximately 6% of its value to pay taxes. My land has never been mortgaged and I would still have it if it had not been for the taxes.' Mental and physical condition good. Wife and three children dependent upon him. Document received at Pine Ridge Agency January 10, 1929. Notarized in Woodbury County, Iowa.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2870,
+    "output_tokens": 528
+  },
+  "elapsed": 5.8
+}

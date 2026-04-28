@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_056",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "79",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lizzie Carson",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "4937",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee to her 320 acre allotment when it was sent to her by mail; but the Indian Agency told her it would be taxed, and sold for taxes, if she did not accept the patent, so she took it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it, not remembering the man's name she sold it through; that she received $1000.00 cash for it; and that she thinks she got a very poor price for it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "got behind in taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "45 years old",
+    "Occupation/Income": "supported by her mother and step-father, the latter receiving a pension",
+    "NOTES": "mentally incompetent; health is poor, has heart trouble; single; has never gotten any aid from the County, State nor the United States Government; sold land about 1923 for $1000.00 cash; affidavit sworn December 5, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2235,
+    "output_tokens": 389
+  },
+  "elapsed": 5.6
+}

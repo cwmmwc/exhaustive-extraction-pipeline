@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_questionnaire_007",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "19-20",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rose Cordier Setter",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Female",
+    "Age": "50 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is heavily handwritten and largely illegible; notarized May 21, 1929 in Sawyer County, Wisconsin before notary public; notary commission expires Aug. 7, 1932; allottee signed her own name (not an X mark); questions reference Rosebud Sioux allottee status, fee patent delivery, protest status, land sale/mortgage, health, and dependents, but answers are not legibly recoverable",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2860,
+    "output_tokens": 327
+  },
+  "elapsed": 7.5
+}

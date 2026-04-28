@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_025",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "35",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alex Adams",
+    "Tribe/Reservation": "Shannon County, South Dakota (reservation not stated)",
+    "Post Office Address": "Porcupine, South Dakota",
+    "Allotment number": "345",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 640 acre allotment for the reason that he did not want to pay the taxes, but he was told that he would have to take it, and he did so",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1919, he deeded one quarter to a son, and one quarter each to two grand sons; that, in 1923, he sold a quarter, through Frank O'Roake, of Gordon, Nebraska, for $1600.00",
+    "Buyer": "buyer's name not remembered; Frank O'Roake of Gordon, Nebraska acted as agent; O'Roake made a deposit in the First National Bank of Gordon, Nebraska, in favor of Alex Adams, who drew out $75.00 of it, and Adams' son drew out $125.00",
+    "Tax burden forced sale/Mortgage": "did not want his patent to his 640 acre allotment for the reason that he did not want to pay the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "89 years old",
+    "Occupation/Income": "he has no income whatever",
+    "NOTES": "Mentally incompetent; supported by his daughter, Susie Mills; has very good health for one of his age; has never received any help from the County or Government; O'Roake charged him transportation charges in going to Gordon on this deal; land has changed hands twice since 1923; land is now farmed by a man named Jensen; affidavit sworn November 19, 1928",
+    "Literate/Illiterate": "signed with his mark (X)",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2337,
+    "output_tokens": 507
+  },
+  "elapsed": 7.6
+}

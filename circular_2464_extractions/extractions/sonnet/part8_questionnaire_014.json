@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_questionnaire_014",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "46",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Todd Harding Smith",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No, I did not know any better, but if it was now and knowing as I do that I should have to pay taxes I would protest.",
+    "Recorded patent": "I think I did [sign a receipt for the patent]. I do not remember the date but it was some time ago. I think I got it from the Agency office.",
+    "Sold/Mortgaged": "I mortgaged it in order to pay taxes and when the time came to pay the interest I could not pay it so I sold it for what I could get for it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I borrowed the thousand to pay taxes and when the interest came due on the mortgage I could not pay that, so I had to sell then or run the risk of losing the land for only the thousand.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "30",
+    "Occupation/Income": "working at the St. Francis school",
+    "NOTES": "Allottee received $1000 at time of mortgage and $1500 additional when sold, totaling $2500; records show consideration of $3500.00 but allottee states he received only $2500; nothing except the mortgage was mentioned as being against the land at time of sale; has 5 children; notary: Jas. W. Cross, commission expires 4-28-32; sworn April 15, 1929; allottee states he did not ask for the patent; satisfied with sale: No \u2014 states he was beat out of part of the consideration.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2414,
+    "output_tokens": 483
+  },
+  "elapsed": 7.5
+}

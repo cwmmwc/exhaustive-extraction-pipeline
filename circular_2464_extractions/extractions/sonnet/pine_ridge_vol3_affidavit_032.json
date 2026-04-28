@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_032",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "39",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louis Brown",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, So. Dak.",
+    "Allotment number": "4457",
+    "Cancelled": "not stated",
+    "Refused/Protested": "took the patent without protest for the general belief was that all the mixed blood Indians had to take them",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged it to Charles A. Bates of Martin, So. Dak. for $700.00 to pay the taxes, that he could not keep up the interest on the loan or pay the taxes and was about to lose the land so he deeded it to Spurgeon Waddill of Martin, So. Dak. he taking over the mortgage and paying me $1800.00",
+    "Buyer": "Spurgeon Waddill of Martin, So. Dak., taking over the mortgage and paying $1800.00; previously mortgaged to Charles A. Bates of Martin, So. Dak. for $700.00",
+    "Tax burden forced sale/Mortgage": "could not keep up the taxes on his land so he mortgaged it to Charles A. Bates of Martin, So. Dak. for $700.00 to pay the taxes, that he could not keep up the interest on the loan or pay the taxes and was about to lose the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "32 years old",
+    "Occupation/Income": "driving a truck for the Government",
+    "NOTES": "mentally competent, in good health; has a wife; has no land and no home; has received no aid from the County, State or Government since his patent in fee was issued; helps his father and mother out with money as they are getting old and unable to make a comfortable living, his father being nearly blind; document sworn November 26, 1928; County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2274,
+    "output_tokens": 531
+  },
+  "elapsed": 7.0
+}

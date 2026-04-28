@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_022",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "59",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Thomas Wright",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Yes, I told Mr. Gruber that I did not want the patent as I did not have any education and could not read but he gave it to me. I then sent it back to the Rosebud agency. It was then sent back to Mr. Gruber and Gruber told me that I would have to take it as it had been issued. It was then that I signed the receipt.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Traded to George Smith for a quarter section of land in North Dakota and $1000.00; mortgage to Farmers State Bank of Carter for $800 dated Dec. 5, 1923",
+    "Tax burden forced sale/Mortgage": "I signed a paper for Chris Colome about that time when he and Jack Martin came to my place, but it was my understanding at the time that the paper was a contract that Chris and Jack was to either sell the land for me or trade it for some other land. Nothing was said to me about a mortgage.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "64",
+    "Occupation/Income": "not stated",
+    "NOTES": "Wright received patent from Mr. Gruber, farmer at Okreek; signed receipt under protest; sent patent back to Rosebud agency but it was returned and he was told he had to take it; received a deed to a quarter section in North Dakota which he left at a bank for safekeeping; the bank later closed and he was unable to retrieve the deed; states he could not read and had to rely on others; believed paper signed for Chris Colome and Jack Martin was a sales/trade contract, not a mortgage; considers the transaction 'a raw deal'",
+    "Literate/Illiterate": "Illiterate; stated 'I did not have any education and could not read'",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2505,
+    "output_tokens": 545
+  },
+  "elapsed": 8.1
+}

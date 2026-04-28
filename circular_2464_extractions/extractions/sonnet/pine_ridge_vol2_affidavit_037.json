@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_037",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "50-52",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ida Young",
+    "Tribe/Reservation": "Bennett County, South Dakota",
+    "Post Office Address": "not stated",
+    "Allotment number": "2613",
+    "Cancelled": "not stated",
+    "Refused/Protested": "had not requested or made any application for said patent and did not know that the same was about to be or had been issued, and did not understand why it was issued, but was told that it was her duty to receive same",
+    "Recorded patent": "did not record the said patent until on or about August 21st, 1918 when she was advised so to do by a Mr. Wolcott of Valentine, Nebraska; Wolcott took her patent and sent it to the Register of Deeds of Bennett County for record",
+    "Sold/Mortgaged": "Mortgaged and sold; she in form executed a warranty deed to said premises, in form conveying the same to Edward Young, March 22nd, 1919",
+    "Buyer": "Edward Young, who in turn conveyed said property to Frank Livermont",
+    "Tax burden forced sale/Mortgage": "the purchase price for said property was caused to be deposited in a bank and there seized and levied upon because of alleged judgments against her husband, and appropriated for payment of alleged judgments, attorney fees, collections and taxes; was required to pay the full amount of One Thousand ($1,000.00) in order to get a satisfaction of the said mortgage",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13th, 1918",
+    "Gender": "Female",
+    "Age": "forty-eight years old",
+    "Occupation/Income": "receives a small allowance from the Government",
+    "NOTES": "Land described as Lots Three (3) and Four (4) and the East Half of the Southwest Quarter (E\u00bd of SW\u00bc) and the Southeast Quarter (SE\u00bc) of Section Seven (7), Township Thirty-six (36) North, Range Thirty-three (33) West of the Sixth P.M., Bennett County, South Dakota, containing 309.34 acres; husband was at Norfolk, Nebraska for medical treatment and needed money for a surgical operation; she was given only $150.00 despite signing a note for $1,000.00; Mr. Wolcott of Valentine, Nebraska charged her $110.00 for securing the loan; mortgage bore interest at ten percent from date; she sold some other land and paid said mortgage in full; affiant states she was actually defrauded of her land and never received any substantial consideration therefor; in ill health and financially insolvent for a number of years; has four dependent children aged eight, ten, twelve, and fourteen years respectively; affidavit subscribed and sworn December 8, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2880,
+    "output_tokens": 698
+  },
+  "elapsed": 8.5
+}

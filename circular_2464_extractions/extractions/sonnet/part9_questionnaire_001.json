@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_questionnaire_001",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "3-4",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Julia Turgeon Grauel",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "accepted without protest",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is heavily damaged/illegible with many fields left blank or unreadable. Notarized on June 18, 1929 in Todd County, State of South Dakota. Allottee signed her name before a notary public.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2419,
+    "output_tokens": 279
+  },
+  "elapsed": 4.1
+}

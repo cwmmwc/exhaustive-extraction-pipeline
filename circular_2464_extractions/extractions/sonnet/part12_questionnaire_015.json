@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_015",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "34-35",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louis Primeaux",
+    "Tribe/Reservation": "Ponca City, Okla.",
+    "Post Office Address": "Ponca City, Oklahoma",
+    "Allotment number": "235",
+    "Cancelled": "No",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Not by allottee",
+    "Sold/Mortgaged": "All sold by allottee to satisfy mortgage.",
+    "Buyer": "purchased by Ed Barclay, of Marland, Okla.",
+    "Tax burden forced sale/Mortgage": "after paying mortgage and debts, I received $3000.00",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Aug. 6, 1918",
+    "Gender": "Male",
+    "Age": "69",
+    "Occupation/Income": "Approximately $50.00 per annum",
+    "NOTES": "Health good; wife and four minor children dependent upon him for support; $10,000.00 was the consideration for the land, but after paying mortgage and debts, received $3000.00; patent was receipted for by purchaser; document notarized November 20, 1928, before notary in Kay County, Oklahoma; notary commission expires Aug. 3, 1931; No funds stated under financial condition.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2520,
+    "output_tokens": 369
+  },
+  "elapsed": 5.4
+}

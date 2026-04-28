@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_agency_narrative_001",
+  "type": "agency_narrative",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "33",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alice Brown",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "4447",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Pat. recorded Jul. 18, 1919, by Home Abstract Co. Martin, So. Dak.",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "On July 26, 1921, mortgaged to Mary Volz and Charles Volz of Martin; On July 18, 1919 mortgaged to Bennett County Bank, Martin, So. Dak. for $594.75; On Jan. 15, 1920 mortgaged to McKinney & Allen, Sioux Falls, So. Dak. for $1600.00; On May 3, 1924, sold at Sheriff's Sale by advertisement for $2003.85, to Lois C. Newkirk; Sheriff's Deed on Default of mortgage to Lois C. Newkirk on April 28, 1925, Recorded May 6, 1925",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Apr. 13, 1918",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Receipt dated Jul. 1, 1918; Patent recorded Jul. 28, 1921; Taken from the records at the County Seat; Bennett County Bank Satisfaction of Mortgage dated July 18, 1919, recorded Feb. 17, 1920; McKinney & Allen assigned mortgage dated Jan. 15, 1920 to Lois C. Newkirk, recorded Jan. 8, 1924; Joseph Brown is husband; land description: W\u00bd 33-37-36; So. Dak.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2373,
+    "output_tokens": 533
+  },
+  "elapsed": 7.1
+}

@@ -1,0 +1,143 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "N. Oklahoma",
+      "date": "1935-03-09",
+      "correspondent": "U.S. Attorney (Asst.)",
+      "correspondent_role": "outgoing",
+      "case_name": "U.S. v. Ralph Hughes County Treasurer et al",
+      "case_number": "488 Equity",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Retel U.S. vs. Ralph Hughes County Treasurer et al number four eighty eight Equity. Will make recommendations Monday to the Dept. with reference to this case.",
+      "action_type": "other",
+      "enclosures": "",
+      "routing_division": "Lands",
+      "routing_date": "1935-03-11",
+      "clerk_initials": "RK",
+      "processed_date": "1935-03-11"
+    },
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "N. Oklahoma",
+      "date": "1935-03-11",
+      "correspondent": "U.S. Atty",
+      "correspondent_role": "outgoing",
+      "case_name": "U.S. v. Ralph Hughes et al",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Re/ U.S. v. Ralph Hughes et al - recommends that no appeal be taken by the Govt in this case",
+      "action_type": "appeal",
+      "enclosures": "",
+      "routing_division": "Lands",
+      "routing_date": "1935-03-13",
+      "clerk_initials": "mc",
+      "processed_date": "1935-03-13"
+    },
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "N. Oklahoma",
+      "date": "1935-03-12",
+      "correspondent": "US Attorney",
+      "correspondent_role": "incoming",
+      "case_name": "U.S. v. Hughes",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Re: in finding 2 purported final decrees US v. Hughes is stated 'by agreement of the parties hereto every decree, journal entry of judgment and order heretofore made herein has been vacated, set aside and held for naught save etc.'",
+      "action_type": "ruling",
+      "enclosures": "",
+      "routing_division": "",
+      "routing_date": "1935-03-12",
+      "clerk_initials": "RMN",
+      "processed_date": "1935-03-12"
+    },
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "N. Oklahoma",
+      "date": "1935-03-13",
+      "correspondent": "US Attorney (Asst)",
+      "correspondent_role": "outgoing",
+      "case_name": "US v. Ralph Hughes, et al",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Re: US v. Ralph Hughes, et al -- ack. wire of March 12 re to above advise that Mr. Bailey is absent holding court at Vinita, Okla.",
+      "action_type": "acknowledgment",
+      "enclosures": "",
+      "routing_division": "Lands",
+      "routing_date": "1935-03-14",
+      "clerk_initials": "rmh",
+      "processed_date": "1935-03-14"
+    },
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "N. Oklahoma",
+      "date": "1935-03-15",
+      "correspondent": "U.S. Attorney",
+      "correspondent_role": "outgoing",
+      "case_name": "U.S. v. Ralph Hughes, County Treasurer et al",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Re: U.S. v. Ralph Hughes, County Treasurer et al",
+      "action_type": "other",
+      "enclosures": "",
+      "routing_division": "",
+      "routing_date": "1935-03-15",
+      "clerk_initials": "RK",
+      "processed_date": "1935-03-15"
+    },
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "N. Oklahoma",
+      "date": "1935-03-19",
+      "correspondent": "US Attorney",
+      "correspondent_role": "outgoing",
+      "case_name": "US v. Hughes",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "copy your letter March 11th re US v. Hughes transmitted to Secy. of Int. for his views and recommendations.",
+      "action_type": "other",
+      "enclosures": "copy of letter March 11th",
+      "routing_division": "",
+      "routing_date": "1935-03-19",
+      "clerk_initials": "PCR/RMN",
+      "processed_date": "1935-03-19"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. v. Ralph Hughes County Treasurer et al",
+      "file_number": "90-2-5-10",
+      "jurisdiction": "N. Oklahoma",
+      "case_type": "tax_recovery",
+      "allottee_name": "",
+      "tribe_or_reservation": "",
+      "county": ""
+    }
+  ],
+  "persons": [
+    {
+      "name": "Ralph Hughes",
+      "role": "defendant/County Treasurer",
+      "tribe": "",
+      "allottee_number": ""
+    },
+    {
+      "name": "Bailey",
+      "role": "attorney",
+      "tribe": "",
+      "allottee_number": ""
+    }
+  ]
+}

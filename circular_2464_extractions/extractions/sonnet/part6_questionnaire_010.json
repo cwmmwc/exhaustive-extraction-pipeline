@@ -1,0 +1,33 @@
+{
+  "document_id": "part6_questionnaire_010",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "23",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Tecumseh H. Murray",
+    "Tribe/Reservation": "Uintah",
+    "Post Office Address": "not stated",
+    "Allotment number": "538",
+    "Cancelled": "Patent has not been canceled.",
+    "Refused/Protested": "Fee patent accepted without protest",
+    "Recorded patent": "filed for record in Uintah County on March 23, 1920 by Thos. W. O'Donnell, an attorney of Vernal, Utah",
+    "Sold/Mortgaged": "land has been sold; Not mortgaged.",
+    "Buyer": "Land was sold for $4,000, which was a good price for same. The purchase price was paid at time of sale.",
+    "Tax burden forced sale/Mortgage": "None of the land has been sold for debt or taxes.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "August 18, 1919",
+    "Gender": "Male",
+    "Age": "47",
+    "Occupation/Income": "This Indian derives his support from a limited amount of carpentering and farming. The Government, State, or County does not contribute to such support.",
+    "NOTES": "Fee patent delivered December 29, 1919 to the patentee in person, and same was receipted for. In good mental and physical condition, but in poor condition financially. His wife, Annie Reed Murray, is dependent on him for support. The Indian does not appear to have been defrauded of his property. Allotment noted as 538 U & W. Document dated 8-27-29.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2186,
+    "output_tokens": 427
+  },
+  "elapsed": 6.6,
+  "retry_count": 1
+}

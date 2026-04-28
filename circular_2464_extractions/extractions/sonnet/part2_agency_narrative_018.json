@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_agency_narrative_018",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "32",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Cordier Red Owl",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. Dak.",
+    "Allotment number": "477",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded July 19, 1920 by The Clanco Realty Company",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Sold by Mary Cordier Red Owl and her husband to N. A. Perebloom for $1.00 and other valuable consideration",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739620 issued; northeast quarter of section 17, township 38, range 28; receipt for patent signed by allottee April 2, 1920; land mortgaged July 10, 1920 for $2000.00; sold October 27, 1923",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2060,
+    "output_tokens": 359
+  },
+  "elapsed": 4.3
+}

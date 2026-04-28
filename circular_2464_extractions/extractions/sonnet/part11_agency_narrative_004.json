@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_agency_narrative_004",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "63",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Joseph St John",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "547",
+    "Cancelled": "not stated",
+    "Refused/Protested": "he had never made any application for a patent and that he didn't want to take it. that if he did he would be required to pay taxes on the land. the Sup't told him that he would have to pay taxes on the land and that he take the patent and that he was also cut loose from the supervision of the overment, and was a citezen of the U.S.",
+    "Recorded patent": "Patent was recorded by Joseph St John in Hughs Co S.D. at Pierre S.D. in the recorder office on the 27th day of March 1920, at 4 oclock P.M. in volum 158 of Deeds on Page 571",
+    "Sold/Mortgaged": "Land has not been sold. Land was mtged for $100.00 to pay taxes on in the yr of 1925.",
+    "Buyer": "Mtged to the Farmers State Bank of Canning S.D. for 6 months interest at the rate of 10%",
+    "Tax burden forced sale/Mortgage": "Land was mtged for $100.00 to pay taxes on in the yr of 1925",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 22nd 1919",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Patent number 724983. Patent was not receiped for by Joseph St John. Patent was delivered by Sup't of Agency at office Feb 13th 1920. Joseph St John was at agency watering his horses when Edward Little Eagle came and told him he was wanted at the Agency office. Mortgage was paid in one month after the loan was made. Satisfaction of Mtg shows in book 174 of Mtg Page 650 on the 31st day of Oct 1925 at 9 A.M. Filed for record Dec 9th 1925 9 A.M. Book 175, Page 549. Mortgage has been paid and released. File reference: 5-1142.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2563,
+    "output_tokens": 590
+  },
+  "elapsed": 7.8
+}

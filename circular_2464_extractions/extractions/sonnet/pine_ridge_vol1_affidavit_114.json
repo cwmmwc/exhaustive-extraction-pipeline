@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_114",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "140",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mollie Janis",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, So. Dak.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee, in fact did not know much about it and did not realize what she was doing when she signed the receipt, but did it on the advice of the Farmer who told her that she must take the patent, pay the taxes or lose the land",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold the land to H. A. Dawson for $160.00 in cash and the rest in trade in the store, and he paid the taxes",
+    "Buyer": "H. A. Dawson; she does not know just how much she received but thinks it is over $2000.00",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes so she sold the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "64 years old",
+    "Occupation/Income": "does washing for a living when she is able to work",
+    "NOTES": "mentally competent, in very poor health; has nothing and no home; has a very hard time and does not think she can last much longer; has no one to support; has received no aid from the Government, State or County since her patent was issued; document reference No. 1783; possible allotment reference 2044 noted at bottom of document",
+    "Literate/Illiterate": "can neither read, write or understand or speak English",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2280,
+    "output_tokens": 442
+  },
+  "elapsed": 6.5
+}

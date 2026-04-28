@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_036",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "46-49",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "George Young",
+    "Tribe/Reservation": "Bennett County, South Dakota",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not request or make any application to be, or had been issued, and did not understand why it was issued, but was told that it was his duty to receive the same, which he did, on or about April 20th, 1918",
+    "Recorded patent": "sent the deed and patent to his said wife, who turned the same over to said F. M. Walcott to be recorded on or about August 20th, 1918",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Valentine State Bank for five hundred dollars ($500); sold to one William I. Wray for the sum of thirty-eight hundred dollars ($3800)",
+    "Tax burden forced sale/Mortgage": "the purchase price of said land was caused to be deposited in a bank, and siezed and levied upon because of alleged judgments against your affiant, and appropriated for alleged attorney fees for the defense of law suits which were collusively brought, and practically the entire consideration dissipated and consumed in payment of alleged judgments, attorney fees, collections and taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13th, 1918",
+    "Gender": "Male",
+    "Age": "fifty-six years of age",
+    "Occupation/Income": "Small allowance from the United States Government from time to time",
+    "NOTES": "Affiant suffered an injury to his right arm about a year ago, and again about two months ago, which has left him somewhat crippled, and is financially insolvent. Has four dependent children, being of the ages of eight years, ten years, twelve years and fourteen years respectively. Wife is Ida Young. Land describes east half (E 1/2) of section twenty-nine (29), in township thirty-seven (37) north, range thirty-three (33) west of the Sixth P.M., Bennett County, South Dakota. Mortgage was for $500 at 10% interest from date. Affiant went to firm of Hayes & Heffron at Deadwood who recovered approximately $400 cash and secured release of spurious taxes; efforts to collect from Walcott & Walcott were discontinued by affiant. Affiant states he was actually defrauded of his land and never received more than half the consideration therefor. Sworn December 5th, 1928.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 3560,
+    "output_tokens": 661
+  },
+  "elapsed": 8.6
+}

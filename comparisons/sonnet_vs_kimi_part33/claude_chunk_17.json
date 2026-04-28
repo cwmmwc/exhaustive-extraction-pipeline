@@ -1,0 +1,1747 @@
+{
+  "entities": [
+    {
+      "name": "Mr. Ainsworth",
+      "type": "person",
+      "context": "Indian witness from Sacramento, Me-wuk tribe, testified against private attorneys for California Indians"
+    },
+    {
+      "name": "Senator Thomas",
+      "type": "person",
+      "context": "Senator questioning witnesses at hearing on conditions of Indians in United States"
+    },
+    {
+      "name": "The Chairman",
+      "type": "person",
+      "context": "Chairman of Senate committee conducting hearing on conditions of Indians in United States"
+    },
+    {
+      "name": "Mr. Hanley",
+      "type": "person",
+      "context": "Committee staff member who called witnesses"
+    },
+    {
+      "name": "William Walker",
+      "type": "person",
+      "context": "Half-Indian witness, mother's tribe Chonschasi, testified in support of Indian Board of Cooperation attorneys"
+    },
+    {
+      "name": "Washoe Barrington",
+      "type": "person",
+      "context": "Indian witness from Susanville, Washoe tribe, auxiliary chairman of Susanville auxiliary"
+    },
+    {
+      "name": "Stephen Knight",
+      "type": "person",
+      "context": "Indian witness from Ukiah, Mendocino County, Ukiah/Pomo tribe, organizer of California Indian Brotherhood, opposed Indian Board of Cooperation"
+    },
+    {
+      "name": "Mr. Collett",
+      "type": "person",
+      "context": "Executive Representative of Indian Board of Cooperation, white man who worked 20 years for California Indian cause"
+    },
+    {
+      "name": "F. O. Collett",
+      "type": "person",
+      "context": "Executive Representative, Indian Board of Cooperation, signed newsletter"
+    },
+    {
+      "name": "Mr. Henderson",
+      "type": "person",
+      "context": "Field worker for Indian Board of Cooperation, worked approximately 20 years"
+    },
+    {
+      "name": "Mr. Pemberton",
+      "type": "person",
+      "context": "Field worker for Indian Board of Cooperation, worked approximately 20 years"
+    },
+    {
+      "name": "Mr. Fisher",
+      "type": "person",
+      "context": "Treasurer of the Indian Board of Cooperation"
+    },
+    {
+      "name": "Attorney General Webb",
+      "type": "person",
+      "context": "California Attorney General handling California Indians court of claims suit"
+    },
+    {
+      "name": "John Somerville",
+      "type": "person",
+      "context": "Leader of Big Pine Auxiliary, Inyo County, led membership contest"
+    },
+    {
+      "name": "Dr. George Wharton James",
+      "type": "person",
+      "context": "Associate with Indian Board of Cooperation, ill at time of newsletter publication"
+    },
+    {
+      "name": "John Collier",
+      "type": "person",
+      "context": "Appeared before House Committee on Indian Affairs, mentioned in letter to Stephen Knight"
+    },
+    {
+      "name": "Hubert H. Work",
+      "type": "person",
+      "context": "Secretary of the Interior, named as defendant in test suit by Federal Power Commission"
+    },
+    {
+      "name": "Henry C. Wallace",
+      "type": "person",
+      "context": "Secretary of Agriculture, named as defendant in test suit by Federal Power Commission"
+    },
+    {
+      "name": "John W. Weeks",
+      "type": "person",
+      "context": "Secretary of War, named as defendant in test suit by Federal Power Commission"
+    },
+    {
+      "name": "Me-wuk Tribe",
+      "type": "organization",
+      "context": "Tribe of Mr. Ainsworth, scattered across California, not reservation Indians"
+    },
+    {
+      "name": "Chonschasi Tribe",
+      "type": "organization",
+      "context": "Mother's tribe of William Walker"
+    },
+    {
+      "name": "Washoe Tribe",
+      "type": "organization",
+      "context": "Tribe of Washoe Barrington, approximately 700 members in California and Nevada"
+    },
+    {
+      "name": "Ukiah Tribe",
+      "type": "organization",
+      "context": "Tribe of Stephen Knight, part of Pomo group in Mendocino County"
+    },
+    {
+      "name": "Pomo Group",
+      "type": "organization",
+      "context": "Group of approximately 12-15 Indian groups in Mendocino County area, estimated 1,500-1,600 members"
+    },
+    {
+      "name": "Indian Board of Cooperation",
+      "type": "organization",
+      "context": "Organization representing California Indians, claimed 17,000 members, collected dues, existed approximately 20 years"
+    },
+    {
+      "name": "Indians of California, Inc.",
+      "type": "organization",
+      "context": "New name for Indian Board of Cooperation"
+    },
+    {
+      "name": "California Indian Brotherhood",
+      "type": "organization",
+      "context": "Rival organization to Indian Board of Cooperation, founded by Stephen Knight and others, estimated 3,000-5,000 members, no white men in organization"
+    },
+    {
+      "name": "Hoopa Reservation Council",
+      "type": "organization",
+      "context": "Independent council formed by Hoopa Reservation Indians after leaving Indian Board of Cooperation"
+    },
+    {
+      "name": "Federal Power Commission",
+      "type": "organization",
+      "context": "Named in test suit by California Indians against Cabinet officers"
+    },
+    {
+      "name": "House Committee on Indian Affairs",
+      "type": "organization",
+      "context": "Congressional committee holding hearings on Indian affairs, heard John Collier and correspondent"
+    },
+    {
+      "name": "Senate Committee on Indian Affairs",
+      "type": "organization",
+      "context": "Senate committee conducting survey of conditions of Indians in United States"
+    },
+    {
+      "name": "Sacramento",
+      "type": "location",
+      "context": "Residence of Mr. Ainsworth"
+    },
+    {
+      "name": "Susanville",
+      "type": "location",
+      "context": "Residence of Washoe Barrington"
+    },
+    {
+      "name": "Ukiah, Mendocino County",
+      "type": "location",
+      "context": "Residence of Stephen Knight"
+    },
+    {
+      "name": "Amador County",
+      "type": "location",
+      "context": "Location of large tract mentioned by William Walker, contains mother-lode belt and 13 gold mines"
+    },
+    {
+      "name": "Hoopa Reservation",
+      "type": "location",
+      "context": "Largest Indian reservation in California, Humboldt County, approximately 700-800 Indians"
+    },
+    {
+      "name": "Humboldt County",
+      "type": "location",
+      "context": "Location of Hoopa Reservation"
+    },
+    {
+      "name": "Modoc County",
+      "type": "location",
+      "context": "Location of Pit River Indians, approximately 800 Indian population, all members of California Indian Brotherhood"
+    },
+    {
+      "name": "Fresno County",
+      "type": "location",
+      "context": "Southernmost county with California Indian Brotherhood members"
+    },
+    {
+      "name": "San Francisco",
+      "type": "location",
+      "context": "Location of fall conference of Indian delegates"
+    },
+    {
+      "name": "Washington, D.C.",
+      "type": "location",
+      "context": "Location of federal courts, House Committee hearings, and where Indian delegates worked for court of claims bill"
+    },
+    {
+      "name": "Inyo County",
+      "type": "location",
+      "context": "Location of Big Pine Auxiliary led by John Somerville"
+    },
+    {
+      "name": "Nevada",
+      "type": "location",
+      "context": "Part of territory of Washoe tribe"
+    },
+    {
+      "name": "Argonaut Mine",
+      "type": "land_parcel",
+      "context": "Gold mine located on tract in Amador County, part of 13 gold mines on tract"
+    },
+    {
+      "name": "Amador County Tract",
+      "type": "land_parcel",
+      "context": "25 miles square tract in Amador County, mother-lode belt runs through it, 13 gold mines, 8,500,000 acres claimed"
+    },
+    {
+      "name": "California Indians Court of Claims Suit",
+      "type": "legal_case",
+      "context": "Suit by California Indians for land rights based on 1851-1852 treaties"
+    },
+    {
+      "name": "Test Suit Against Cabinet Officers",
+      "type": "legal_case",
+      "context": "Suit against Secretary of Interior, Secretary of Agriculture, Secretary of War as Federal Power Commission members, dismissed with leave to amend"
+    },
+    {
+      "name": "Indian Herald",
+      "type": "organization",
+      "context": "Publication of Indian Board of Cooperation"
+    },
+    {
+      "name": "Pit River Indians",
+      "type": "organization",
+      "context": "Indians of Modoc County, approximately 800 members, all members of California Indian Brotherhood"
+    },
+    {
+      "name": "Big Pine Auxiliary",
+      "type": "organization",
+      "context": "Auxiliary No. 19 of Indian Board of Cooperation, Inyo County, led by John Somerville in membership contest"
+    },
+    {
+      "name": "Mono Lake Auxiliary",
+      "type": "organization",
+      "context": "Auxiliary No. 16 of Indian Board of Cooperation"
+    },
+    {
+      "name": "Blue Lake Auxiliary",
+      "type": "organization",
+      "context": "Auxiliary No. 39 of Indian Board of Cooperation"
+    },
+    {
+      "name": "Willow Creek Auxiliary",
+      "type": "organization",
+      "context": "Auxiliary No. 66 of Indian Board of Cooperation"
+    },
+    {
+      "name": "Hayfork Auxiliary",
+      "type": "organization",
+      "context": "Auxiliary No. 3 of Indian Board of Cooperation"
+    },
+    {
+      "name": "Topaz Auxiliary",
+      "type": "organization",
+      "context": "Auxiliary No. 14 of Indian Board of Cooperation"
+    },
+    {
+      "name": "Yreka Auxiliary",
+      "type": "organization",
+      "context": "Auxiliary No. 51 of Indian Board of Cooperation"
+    },
+    {
+      "name": "Baird Auxiliary",
+      "type": "organization",
+      "context": "Auxiliary No. 2 of Indian Board of Cooperation, largest membership at 429"
+    },
+    {
+      "name": "Susanville Auxiliary",
+      "type": "organization",
+      "context": "Auxiliary of Indian Board of Cooperation, 80 members, Washoe Barrington as auxiliary chairman"
+    }
+  ],
+  "events": [
+    {
+      "type": "congressional_hearing",
+      "date": "partial-1930s",
+      "location": "California",
+      "description": "Senate committee survey hearing on conditions of Indians in United States, multiple Indian witnesses testified about California Indians court of claims and representation by Indian Board of Cooperation vs. Attorney General"
+    },
+    {
+      "type": "organization_founding",
+      "date": "partial-1903-1923",
+      "location": "California",
+      "description": "Indian Board of Cooperation founded, existed approximately 20 years prior to hearing"
+    },
+    {
+      "type": "treaty_making",
+      "date": "1851-1852",
+      "location": "California",
+      "description": "Treaties made with California Indians establishing reservation boundaries approximately 80 years before hearing"
+    },
+    {
+      "type": "court_dismissal",
+      "date": "partial-1923-1924",
+      "location": "Washington D.C.",
+      "description": "Test suit against Cabinet officers (Secretary of Interior, Agriculture, War as Federal Power Commission members) dismissed with leave to amend petition"
+    },
+    {
+      "type": "conference",
+      "date": "partial-1923-10",
+      "location": "San Francisco",
+      "description": "Fall conference of Indian auxiliary delegates, approved budget of $37,438.75 for year ending September 30, 1924"
+    },
+    {
+      "type": "legislation_renewal",
+      "date": "1928",
+      "location": "Washington D.C.",
+      "description": "Congress renewed California Indians bill in 1928"
+    },
+    {
+      "type": "organization_founding",
+      "date": "partial-1920s",
+      "location": "California",
+      "description": "California Indian Brotherhood founded by Stephen Knight and colleagues after dissatisfaction with Indian Board of Cooperation"
+    },
+    {
+      "type": "congressional_hearing",
+      "date": "partial-1926-01",
+      "location": "Washington D.C.",
+      "description": "Important hearings before House Committee on Indian Affairs, John Collier and letter writer both heard"
+    },
+    {
+      "type": "mining_production",
+      "date": "partial-1925",
+      "location": "Amador County, California",
+      "description": "Records show $262,000,000 taken out of Amador County tract including Argonaut Mine area"
+    },
+    {
+      "type": "delegation_to_washington",
+      "date": "partial-1920s",
+      "location": "Washington D.C.",
+      "description": "Stephen Knight and seven or eight other delegates traveled to Washington and worked 4 months on court of claims bill"
+    },
+    {
+      "type": "auxiliary_report_period",
+      "date": "1922-11-01",
+      "location": "California",
+      "description": "First auxiliary report period begins November 1, 1922"
+    },
+    {
+      "type": "auxiliary_report_period",
+      "date": "1923-06-30",
+      "location": "California",
+      "description": "First auxiliary report period ends June 30, 1923, total collected $10,203.70"
+    },
+    {
+      "type": "auxiliary_report_period",
+      "date": "1923-10-01",
+      "location": "California",
+      "description": "Second auxiliary report period begins October 1, 1923"
+    },
+    {
+      "type": "auxiliary_report_period",
+      "date": "1924-05-31",
+      "location": "California",
+      "description": "Second auxiliary report period ends May 31, 1924, total collected $11,214.45"
+    },
+    {
+      "type": "newsletter_publication",
+      "date": "partial-1923",
+      "location": "California",
+      "description": "Indian Herald newsletter published by Indian Board of Cooperation with auxiliary financial reports and membership contest information"
+    },
+    {
+      "type": "letter_sent",
+      "date": "1926-01-20",
+      "location": "Washington D.C.",
+      "description": "Letter sent to Stephen Knight in Ukiah, California reporting on hearings before House Committee on Indian Affairs"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "fee",
+      "amount": "$10,000",
+      "payer": "California Indians",
+      "payee": "attorneys",
+      "date": "partial-1923",
+      "description": "Legal fee for extra legal services included in budget for suit to test rights of California Indians"
+    },
+    {
+      "type": "payment",
+      "amount": "$17,324.00",
+      "payer": "California Indians",
+      "payee": "legal expenses",
+      "date": "partial-1923",
+      "description": "Estimated expenses for suit including $10,000 legal fee, court expenses, witnesses and depositions for year ending Sept 30, 1923"
+    },
+    {
+      "type": "payment",
+      "amount": "$13,080.88",
+      "payer": "California Indians auxiliaries",
+      "payee": "welfare work expenses",
+      "date": "partial-1923",
+      "description": "Estimated expenses approved by Indian auxiliaries for welfare work for year ending Sept 30, 1923"
+    },
+    {
+      "type": "payment",
+      "amount": "$30,413.38",
+      "payer": "California Indians",
+      "payee": "total budget",
+      "date": "partial-1923",
+      "description": "Total amount needed for welfare work and legal suit for year ending Sept 30, 1923"
+    },
+    {
+      "type": "payment",
+      "amount": "$10,203.70",
+      "payer": "California Indians auxiliaries",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-06-30",
+      "description": "Total amount received from all auxiliaries by June 30, 1923"
+    },
+    {
+      "type": "payment",
+      "amount": "$20,209.68",
+      "payer": "California Indians",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial-1923",
+      "description": "Amount yet to be raised after June 30, 1923 receipts"
+    },
+    {
+      "type": "payment",
+      "amount": "$37,438.75",
+      "payer": "California Indians",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial-1924",
+      "description": "Budget approved at San Francisco conference for year ending September 30, 1924"
+    },
+    {
+      "type": "payment",
+      "amount": "$21,839.23",
+      "payer": "California Indians",
+      "payee": "Indian Board of Cooperation",
+      "date": "1924-05-31",
+      "description": "Amount that should have been received by May 31, 1924 per budget"
+    },
+    {
+      "type": "payment",
+      "amount": "$11,214.45",
+      "payer": "California Indians auxiliaries",
+      "payee": "Indian Board of Cooperation",
+      "date": "1924-05-31",
+      "description": "Actual total amount received by May 31, 1924, $10,621.78 less than needed"
+    },
+    {
+      "type": "payment",
+      "amount": "$10,621.78",
+      "payer": "unknown",
+      "payee": "unknown",
+      "date": "1924-05-31",
+      "description": "Shortfall between needed budget amount and actual receipts by May 31, 1924"
+    },
+    {
+      "type": "payment",
+      "amount": "$2,000 or better",
+      "payer": "California Indians",
+      "payee": "William Walker",
+      "date": "partial",
+      "description": "Approximate amount collected by William Walker from Indians including borrowed money, expenses only paid"
+    },
+    {
+      "type": "payment",
+      "amount": "$200-$300",
+      "payer": "attorney",
+      "payee": "Indian group leader",
+      "date": "partial",
+      "description": "Alleged bribe amounts that attorneys might pay to Indian group leaders to secure representation contracts (alleged by Mr. Ainsworth)"
+    },
+    {
+      "type": "payment",
+      "amount": "$402.00",
+      "payer": "Big Pine Auxiliary No. 10",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues collected from Big Pine Auxiliary, November 1922 to June 1923"
+    },
+    {
+      "type": "payment",
+      "amount": "$253.00",
+      "payer": "Big Pine Auxiliary No. 10",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-07 to 1923-10",
+      "description": "Dues collected from Big Pine Auxiliary, July to October 1923"
+    },
+    {
+      "type": "payment",
+      "amount": "$655.00",
+      "payer": "Big Pine Auxiliary No. 10",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-10",
+      "description": "Total dues from Big Pine Auxiliary, 154 members, average $4.25 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$122.50",
+      "payer": "Woodsford Auxiliary No. 74",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-07 to 1923-10",
+      "description": "Dues from Woodsford Auxiliary, 36 members, average $3.40 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$75.00",
+      "payer": "Forks of Salmon Auxiliary No. 70",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Forks of Salmon Auxiliary, 23 members, average $3.26 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$934.00",
+      "payer": "Blue Lake Auxiliary No. 39",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-10",
+      "description": "Dues from Blue Lake Auxiliary, 203 members, average $3.22 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$64.50",
+      "payer": "Hayfork Auxiliary No. 3",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Hayfork Auxiliary, 68 members, average $3.05 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$229.75",
+      "payer": "Willow Creek Auxiliary No. 66",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Willow Creek Auxiliary, 76 members, average $3.02 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$76.00",
+      "payer": "Sawyers Bar Auxiliary No. 55",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Sawyers Bar Auxiliary, 26 members, average $2.92 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$342.00",
+      "payer": "Mono Lake Auxiliary No. 16",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Mono Lake Auxiliary, 174 members, average $1.96 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$389.00",
+      "payer": "Orleans Auxiliary No. 48",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Orleans Auxiliary, 102 members, average $1.93 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$128.50",
+      "payer": "Crescent City Auxiliary No. 40",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Crescent City Auxiliary, 71 members, average $1.91 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$97.00",
+      "payer": "Harris Auxiliary No. 65",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Harris Auxiliary, 61 members, average $1.90 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$154.00",
+      "payer": "Benton Auxiliary No. 21",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Benton Auxiliary, 84 members, average $1.83 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$51.60",
+      "payer": "Topaz Auxiliary No. 14",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Topaz Auxiliary, 28 members, average $1.83 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$197.00",
+      "payer": "Round Valley Auxiliary No. 17",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Round Valley Auxiliary, 109 members, average $1.80 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$100.00",
+      "payer": "El Portal Auxiliary No. 50",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from El Portal Auxiliary, 100 members, average $1.72 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$375.75",
+      "payer": "Lolet Auxiliary No. 62",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Lolet Auxiliary, 225 members, average $1.67 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$253.00",
+      "payer": "Auberry Auxiliary No. 32",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Auberry Auxiliary, 154 members, average $1.64 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$542.00",
+      "payer": "North Fork Auxiliary No. 31",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from North Fork Auxiliary, 331 members, average $1.64 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$538.50",
+      "payer": "Bishop Auxiliary No. 18",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Bishop Auxiliary, 351 members, average $1.53 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$223.00",
+      "payer": "El Dorado Auxiliary No. 30",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from El Dorado Auxiliary, 146 members, average $1.52 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$191.50",
+      "payer": "Cottage Grove Auxiliary No. 44",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Cottage Grove Auxiliary, 129 members, average $1.49 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$80.00",
+      "payer": "Onyx Auxiliary No. 28",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Onyx Auxiliary, 54 members, average $1.48 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$243.50",
+      "payer": "Berry Creek Auxiliary No. 63",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Berry Creek Auxiliary, 173 members, average $1.40 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$585.00",
+      "payer": "Baird Auxiliary No. 2",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Baird Auxiliary, 429 members, average $1.36 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$81.50",
+      "payer": "Stewarts Point Auxiliary No. 54",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Stewarts Point Auxiliary, 60 members, average $1.33 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$133.50",
+      "payer": "Garberville Auxiliary No. 69",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Garberville Auxiliary, 102 members, average $1.30 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$47.00",
+      "payer": "Doyle Auxiliary No. 76",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-07 to 1923-10",
+      "description": "Dues from Doyle Auxiliary, 36 members, average $1.30 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$96.50",
+      "payer": "Mariposa Auxiliary No. 67",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Mariposa Auxiliary, 76 members, average $1.27 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$107.25",
+      "payer": "Loraine Auxiliary No. 60",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Loraine Auxiliary, 87 members, average $1.23 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$163.00",
+      "payer": "Independence Auxiliary No. 20",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Independence Auxiliary, 134 members, average $1.21 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$90.50",
+      "payer": "Auburn Auxiliary No. 35",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Auburn Auxiliary, 89 members, average $1.20 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$67.50",
+      "payer": "Manchester Auxiliary No. 9",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Manchester Auxiliary, 59 members, average $1.14 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$178.00",
+      "payer": "Smith River Auxiliary No. 23",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Smith River Auxiliary, 173 members, average $1.03 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$405.00",
+      "payer": "Requa Auxiliary No. 41",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Requa Auxiliary, 408 members, average $1.00 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$290.00",
+      "payer": "Yreka Auxiliary No. 51",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Yreka Auxiliary, 316 members, average $1.00 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$11.00",
+      "payer": "Feather Falls Auxiliary No. 71",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Feather Falls Auxiliary, 12 members, average $0.91 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$342.00",
+      "payer": "Hoopa Auxiliary No. 37",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Hoopa Auxiliary, 385 members, average $0.89 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$181.50",
+      "payer": "Weitchpec Auxiliary No. 38",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Weitchpec Auxiliary, 224 members, average $0.81 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$21.00",
+      "payer": "Forks of Salmon (Tom Bar) Auxiliary No. 42",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Tom Bar Auxiliary, 27 members, average $0.80 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$200.00",
+      "payer": "Ione Auxiliary No. 24",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Ione Auxiliary, 248 members, average $0.80 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$203.50",
+      "payer": "Covelo Auxiliary No. 12",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Covelo Auxiliary, 256 members, average $0.79 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$67.50",
+      "payer": "Santa Rosa Auxiliary No. 11",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Santa Rosa Auxiliary, 73 members, average $0.79 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$65.00",
+      "payer": "Ukiah Auxiliary No. 3",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Ukiah Auxiliary, 913 members, average $0.71 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$69.00",
+      "payer": "Keeler Auxiliary No. 72",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Keeler Auxiliary, 85 members, average $0.68 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$93.00",
+      "payer": "Big Bend Auxiliary No. 26",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Big Bend Auxiliary, 137 members, average $0.68 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$14.00",
+      "payer": "Happy Camp Auxiliary No. 45",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Happy Camp Auxiliary, 226 members, average $0.06 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$84.50",
+      "payer": "Sheep Ranch Auxiliary No. 47",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Sheep Ranch Auxiliary, 130 members, average $0.65 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$113.75",
+      "payer": "Tuolumne Auxiliary No. 46",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Tuolumne Auxiliary, 178 members, average $0.64 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$10.75",
+      "payer": "Middletown Auxiliary No. 5",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Middletown Auxiliary, 20 members, average $0.64 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$39.00",
+      "payer": "Friant Auxiliary No. 34",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Friant Auxiliary, 74 members, average $0.62 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$156.75",
+      "payer": "Coarse Gold Auxiliary No. 33",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Coarse Gold Auxiliary, 303 members, average $0.61 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$26.00",
+      "payer": "Bridgeport Auxiliary No. 15",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Bridgeport Auxiliary, 50 members, average $0.60 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$10.95",
+      "payer": "Lewiston Auxiliary No. 52",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Lewiston Auxiliary, 21 members, average $0.60 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$51.00",
+      "payer": "Millsap Auxiliary No. 64",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Millsap Auxiliary, 119 members, average $0.43 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$33.50",
+      "payer": "Hamburg Auxiliary No. 43",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Hamburg Auxiliary, 82 members, average $0.40 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$42.75",
+      "payer": "Trinidad Auxiliary No. 36",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Trinidad Auxiliary, 112 members, average $0.38 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$4.00",
+      "payer": "Wetwood Auxiliary No. 68",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Wetwood Auxiliary, 12 members, average $0.36 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$15.60",
+      "payer": "Lower Lake Auxiliary No. 57",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Lower Lake Auxiliary, 43 members, average $0.34 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$19.00",
+      "payer": "Delpiedre Auxiliary No. 49",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Delpiedre Auxiliary, 65 members, average $0.31 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$22.00",
+      "payer": "Geyserville Auxiliary No. 6",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Dues from Geyserville Auxiliary, 89 members, average $0.25 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$41.50",
+      "payer": "Upper Lake Auxiliary No. 7",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Upper Lake Auxiliary, 222 members, average $0.19 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$11.00",
+      "payer": "Ellasson Auxiliary No. 27",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Ellasson Auxiliary, 77 members, average $0.14 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$4.65",
+      "payer": "Chico Auxiliary No. 13",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-11-01 to 1923-06-30",
+      "description": "Dues from Chico Auxiliary, 53 members, average $0.08 per member"
+    },
+    {
+      "type": "other",
+      "amount": "None",
+      "payer": "Fort Bidwell Auxiliary No. 56",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Fort Bidwell Auxiliary paid nothing, 102 members"
+    },
+    {
+      "type": "other",
+      "amount": "None",
+      "payer": "Hopland Auxiliary No. 4",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Hopland Auxiliary paid nothing, 95 members"
+    },
+    {
+      "type": "other",
+      "amount": "None",
+      "payer": "Montgomery Creek Auxiliary No. 1",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Montgomery Creek Auxiliary paid nothing, unknown members"
+    },
+    {
+      "type": "other",
+      "amount": "None",
+      "payer": "Clovis Auxiliary No. 8",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Clovis Auxiliary paid nothing, 89 members"
+    },
+    {
+      "type": "other",
+      "amount": "None",
+      "payer": "Gilmore Auxiliary No. 50 (alternate)",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Gilmore Auxiliary paid nothing, 47 members"
+    },
+    {
+      "type": "other",
+      "amount": "None",
+      "payer": "Porterville Auxiliary No. 58",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Porterville Auxiliary paid nothing, 46 members"
+    },
+    {
+      "type": "other",
+      "amount": "None",
+      "payer": "Sherwood and Longvale Auxiliary No. 11",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Sherwood and Longvale Auxiliary paid nothing, 33 members"
+    },
+    {
+      "type": "other",
+      "amount": "None",
+      "payer": "Colusa Auxiliary No. 22",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Colusa Auxiliary paid nothing, 27 members"
+    },
+    {
+      "type": "other",
+      "amount": "None",
+      "payer": "Rumsey Auxiliary No. 25",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Rumsey Auxiliary paid nothing, 21 members"
+    },
+    {
+      "type": "other",
+      "amount": "None",
+      "payer": "Laytonville Auxiliary No. 10 (alternate)",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Laytonville Auxiliary paid nothing, 19 members"
+    },
+    {
+      "type": "other",
+      "amount": "None",
+      "payer": "Cortina Auxiliary No. 2 (alternate)",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Cortina Auxiliary paid nothing, 18 members"
+    },
+    {
+      "type": "other",
+      "amount": "None",
+      "payer": "Sycamore Auxiliary No. 73",
+      "payee": "Indian Board of Cooperation",
+      "date": "partial",
+      "description": "Sycamore Auxiliary paid nothing, 16 members"
+    },
+    {
+      "type": "payment",
+      "amount": "$125.60",
+      "payer": "Mokelumne Auxiliary No. 1 (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Mokelumne Auxiliary, 25 members, average $5.02 per member in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$10.00",
+      "payer": "Wetwood Auxiliary No. 58 (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Wetwood Auxiliary, 21 members, average $4.85 per member in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$747.90",
+      "payer": "Ione Auxiliary No. 24 (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Ione Auxiliary, 400 members, average $4.60 per member in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$352.00",
+      "payer": "Berry Creek Auxiliary No. 5 (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Berry Creek Auxiliary, 103 members, average $3.41 per member in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$159.00",
+      "payer": "Loyalton Auxiliary",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Loyalton Auxiliary, 48 members, average $3.31 per member"
+    },
+    {
+      "type": "payment",
+      "amount": "$21.00",
+      "payer": "Manchester Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Manchester Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$43.00",
+      "payer": "Auburn Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Auburn Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$81.00",
+      "payer": "Forks of Salmon Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Forks of Salmon Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$101.50",
+      "payer": "Elk Creek Auxiliary No. 4",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Elk Creek Auxiliary, 28 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$81.00",
+      "payer": "Sawyers Bar Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Sawyers Bar Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$203.30",
+      "payer": "Crescent City Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Crescent City Auxiliary, 82 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$467.00",
+      "payer": "El Dorado Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from El Dorado Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$216.50",
+      "payer": "Independence Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Independence Auxiliary, 195 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$794.45",
+      "payer": "Yreka Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Yreka Auxiliary, 413 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$747.90",
+      "payer": "North Fork Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from North Fork Auxiliary, 406 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$332.00",
+      "payer": "Auberry Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Auberry Auxiliary, 175 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$562.75",
+      "payer": "Baird Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Baird Auxiliary, 355 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$470.00",
+      "payer": "Covelo Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Covelo Auxiliary, 104 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$249.00",
+      "payer": "Big Pine Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Big Pine Auxiliary, 102 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$370.00",
+      "payer": "Big Bend Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Big Bend Auxiliary, 27 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$331.02",
+      "payer": "Blue Lake Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Blue Lake Auxiliary, 121 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$139.00",
+      "payer": "Round Valley Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Round Valley Auxiliary, 45 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$37.00",
+      "payer": "Middletown Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Middletown Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$49.00",
+      "payer": "Feather Falls Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Feather Falls Auxiliary, 69 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$100.75",
+      "payer": "Mariposa Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Mariposa Auxiliary, 188 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$142.10",
+      "payer": "Santa Rosa Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Santa Rosa Auxiliary, 110 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$516.34",
+      "payer": "Requa Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Requa Auxiliary, 42 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$74.00",
+      "payer": "Sacramento Auxiliary",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Sacramento Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$93.00",
+      "payer": "Taylorville Auxiliary No. 7",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Taylorville Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$33.50",
+      "payer": "Doyle Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Doyle Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$73.50",
+      "payer": "Montgomery Creek Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Montgomery Creek Auxiliary, 84 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$117.75",
+      "payer": "Weitchpec Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Weitchpec Auxiliary, 154 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$131.00",
+      "payer": "Mono Lake Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Mono Lake Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$3.50",
+      "payer": "Paskenta Auxiliary No. 53",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Paskenta Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$14.00",
+      "payer": "Sheep Ranch Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Sheep Ranch Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$15.00",
+      "payer": "unknown auxiliary",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from unnamed auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$75.30",
+      "payer": "Willow Creek Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Willow Creek Auxiliary, 46 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$125.00",
+      "payer": "Tuolumne Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Tuolumne Auxiliary, 4 members in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$3.15",
+      "payer": "Trinidad Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Trinidad Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$66.90",
+      "payer": "Keeler Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Keeler Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$147.50",
+      "payer": "Happy Camp Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Happy Camp Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$12.00",
+      "payer": "Chico Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Chico Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$31.07",
+      "payer": "Hopland Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Hopland Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$41.00",
+      "payer": "Corning Auxiliary No. 21 (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Corning Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$36.00",
+      "payer": "Cottage Grove Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Cottage Grove Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$15.00",
+      "payer": "Hoopa Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Hoopa Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$86.50",
+      "payer": "Some Bar Auxiliary No. 42 (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Some Bar Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$52.95",
+      "payer": "Harris Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Harris Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$9.00",
+      "payer": "Tehama Auxiliary No. 50 (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Tehama Auxiliary in second report period"
+    },
+    {
+      "type": "payment",
+      "amount": "$50.00",
+      "payer": "Smith River Auxiliary (second report)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1923-10-01 to 1924-05-31",
+      "description": "Dues from Smith River Auxiliary in second report period"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Mr. Ainsworth",
+      "type": "member_of",
+      "object": "Me-wuk Tribe",
+      "context": "Ainsworth identifies as Me-wuk Indian from Sacramento"
+    },
+    {
+      "subject": "William Walker",
+      "type": "member_of",
+      "object": "Chonschasi Tribe",
+      "context": "Walker states his mother's tribe is Chonschasi"
+    },
+    {
+      "subject": "Washoe Barrington",
+      "type": "member_of",
+      "object": "Washoe Tribe",
+      "context": "Barrington is from Susanville and identifies as Washoe"
+    },
+    {
+      "subject": "Stephen Knight",
+      "type": "member_of",
+      "object": "Ukiah Tribe / Pomo Group",
+      "context": "Knight is from Ukiah, Mendocino County, belongs to Ukiah/Pomo tribe"
+    },
+    {
+      "subject": "Washoe Barrington",
+      "type": "leads",
+      "object": "Susanville Auxiliary",
+      "context": "Barrington is auxiliary chairman of Susanville auxiliary, elected 3-4 years prior"
+    },
+    {
+      "subject": "F. O. Collett",
+      "type": "employed_by",
+      "object": "Indian Board of Cooperation",
+      "context": "Collett serves as Executive Representative of Indian Board of Cooperation"
+    },
+    {
+      "subject": "Mr. Henderson",
+      "type": "employed_by",
+      "object": "Indian Board of Cooperation",
+      "context": "Henderson is a field worker for Indian Board of Cooperation"
+    },
+    {
+      "subject": "Mr. Pemberton",
+      "type": "employed_by",
+      "object": "Indian Board of Cooperation",
+      "context": "Pemberton is a field worker for Indian Board of Cooperation"
+    },
+    {
+      "subject": "Mr. Fisher",
+      "type": "employed_by",
+      "object": "Indian Board of Cooperation",
+      "context": "Fisher serves as treasurer of Indian Board of Cooperation"
+    },
+    {
+      "subject": "Stephen Knight",
+      "type": "founded",
+      "object": "California Indian Brotherhood",
+      "context": "Knight and colleagues organized California Indian Brotherhood after leaving Indian Board of Cooperation"
+    },
+    {
+      "subject": "California Indian Brotherhood",
+      "type": "opposes",
+      "object": "Indian Board of Cooperation",
+      "context": "Two opposing factions among California Indians, Brotherhood advocates no white leadership"
+    },
+    {
+      "subject": "Hoopa Reservation Indians",
+      "type": "left",
+      "object": "Indian Board of Cooperation",
+      "context": "Hoopa Reservation Indians dissatisfied with money collection and propaganda, formed their own council"
+    },
+    {
+      "subject": "Attorney General Webb",
+      "type": "represents",
+      "object": "California Indians",
+      "context": "Webb handling Court of Claims suit on behalf of California Indians"
+    },
+    {
+      "subject": "Indian Board of Cooperation attorneys",
+      "type": "represents",
+      "object": "California Indians",
+      "context": "Contested representation of California Indians in Court of Claims suit"
+    },
+    {
+      "subject": "John Collier",
+      "type": "testified_before",
+      "object": "House Committee on Indian Affairs",
+      "context": "Collier appeared at hearings before House Committee on Indian Affairs"
+    },
+    {
+      "subject": "Hubert H. Work",
+      "type": "named_as_defendant",
+      "object": "Test Suit Against Cabinet Officers",
+      "context": "Work named as member of Federal Power Commission in Indian test suit"
+    },
+    {
+      "subject": "Henry C. Wallace",
+      "type": "named_as_defendant",
+      "object": "Test Suit Against Cabinet Officers",
+      "context": "Wallace named as member of Federal Power Commission in Indian test suit"
+    },
+    {
+      "subject": "John W. Weeks",
+      "type": "named_as_defendant",
+      "object": "Test Suit Against Cabinet Officers",
+      "context": "Weeks named as member of Federal Power Commission in Indian test suit"
+    },
+    {
+      "subject": "John Somerville",
+      "type": "leads",
+      "object": "Big Pine Auxiliary",
+      "context": "Somerville leads Big Pine Auxiliary in membership dues contest"
+    },
+    {
+      "subject": "William Walker",
+      "type": "collected_dues_for",
+      "object": "Indian Board of Cooperation",
+      "context": "Walker collected approximately $2,000 from California Indians for the organization"
+    },
+    {
+      "subject": "Stephen Knight",
+      "type": "worked_for",
+      "object": "Indian Board of Cooperation",
+      "context": "Knight was formerly connected with Indian Board of Cooperation, did field and organizing work"
+    },
+    {
+      "subject": "Indians of California, Inc.",
+      "type": "same_as",
+      "object": "Indian Board of Cooperation",
+      "context": "Indians of California, Inc. is the new name for the Indian Board of Cooperation"
+    },
+    {
+      "subject": "Pit River Indians",
+      "type": "member_of",
+      "object": "California Indian Brotherhood",
+      "context": "All approximately 800 Pit River Indians of Modoc County are members of the Brotherhood"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "F. O. Collett",
+      "sender_title": "Executive Representative, Indian Board of Cooperation",
+      "recipient": "Indian auxiliary members",
+      "recipient_title": "Members",
+      "date": "partial-1923",
+      "subject": "Auxiliary financial report and fundraising appeal",
+      "action_requested": "Members to pay $1 dues promptly and complete $30 pledges to fund welfare work and legal suit",
+      "outcome": "Published in Indian Herald newsletter"
+    },
+    {
+      "sender": "F. O. Collett",
+      "sender_title": "Executive Representative, Indian Board of Cooperation",
+      "recipient": "Indian auxiliary members",
+      "recipient_title": "Members",
+      "date": "partial-1924",
+      "subject": "Second auxiliary financial report, budget shortfall of $10,621.78",
+      "action_requested": "All members to pay dues promptly to meet budget; repay loans to save interest costs",
+      "outcome": "Published as newsletter, shortfall documented"
+    },
+    {
+      "sender": "unknown correspondent (possibly John Collier or Indian Board of Cooperation representative)",
+      "sender_title": "unknown",
+      "recipient": "Stephen Knight",
+      "recipient_title": "California Indian Brotherhood leader",
+      "date": "1926-01-20",
+      "subject": "Report on hearings before House Committee on Indian Affairs and Indian delegations from Wyoming, Montana, North Dakota",
+      "action_requested": "Informational update on Congressional activities",
+      "outcome": "Letter submitted into hearing record by Stephen Knight"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "unknown",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1928",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Congress renewed California Indians bill in 1928, no price put on reserve in treaty, commissioner survey followed"
+    },
+    {
+      "bill_number": "California Indians Court of Claims Bill",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "partial-1920s",
+      "vote_count": "unknown",
+      "committee": "House Committee on Indian Affairs",
+      "outcome": "Pending; Indian delegates from California worked 4 months in Washington; Indian Board of Cooperation raising funds"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Mr. Ainsworth",
+      "witness_title": "Me-wuk Indian, Sacramento",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee",
+      "location": "California",
+      "date": "partial-1930s",
+      "subject": "Opposition to private attorneys representing California Indians; challenge to Indian Board of Cooperation membership claims",
+      "key_claims": "Ainsworth argued that attorneys claiming to represent 17,000 California Indians were exaggerating, that 5,000 would be an overestimate. He alleged attorneys enrolled Indians by telling them they would get money, inducing families to sign up without understanding. He argued that old Indians who knew about the 1851-1852 treaties were no longer living or would have been too young to remember. He said surveys of reservations would add expense to the bill. He contended that the Attorney General was sufficient representation and that hiring private attorneys was unnecessary expense and delay, alleging attorneys bribed Indian group leaders with $200-$300 to secure contracts. He believed the bill would pass without opposition.",
+      "questioner": "Senator Thomas, The Chairman"
+    },
+    {
+      "witness": "William Walker",
+      "witness_title": "Half-Indian, Chonschasi tribe (mother's side), collector for Indian Board of Cooperation",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee",
+      "location": "California",
+      "date": "partial-1930s",
+      "subject": "Support for Indian Board of Cooperation and its attorneys; valuation of Indian land claims",
+      "key_claims": "Walker defended the Indian Board of Cooperation, stating that Collett, Henderson, and Pemberton were the best friends California Indians ever had, having worked 20 years for the cause. He argued that without the organization's fundraising, no one would have funded the Indians' cause, citing 50 years of inaction by Government officials. He attempted to present the valuation of treaty tract lands including a 25-mile-square tract in Amador County with 13 gold mines including the Argonaut Mine, from which $262,000,000 was extracted around 1925. He argued the tract was worth over $100,000,000 even at the time of the treaties. He stated he collected approximately $2,000 from Indians and received only expense reimbursement for 4 years of work. He contended Indians would be lost without their chosen attorneys.",
+      "questioner": "Senator Thomas, The Chairman"
+    },
+    {
+      "witness": "Washoe Barrington",
+      "witness_title": "Washoe Indian, Susanville; Auxiliary Chairman, Susanville Auxiliary",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee",
+      "location": "California",
+      "date": "partial-1930s",
+      "subject": "Support for Mr. Collett and Indian Board of Cooperation",
+      "key_claims": "Barrington stated that as auxiliary chairman representing 80 members in Susanville, the Indians in his district felt that Mr. Collett had done more for the Indians than any white man in the State. He challenged anyone to produce a white man better thought of than Collett through the mountain counties. He reported that 90 percent of Indians in his district were members of Indians of California, Inc. (new name for Indian Board of Cooperation) and urged him to come place that on record substantiating Collett's testimony.",
+      "questioner": "Senator Thomas, The Chairman"
+    },
+    {
+      "witness": "Stephen Knight",
+      "witness_title": "Indian, Ukiah, Mendocino County, Ukiah/Pomo tribe; founder of California Indian Brotherhood",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Committee",
+      "location": "California",
+      "date": "partial-1930s",
+      "subject": "Opposition to Indian Board of Cooperation attorneys; challenge to membership claims; support for Attorney General Webb; presentation of documents showing propaganda against attorney general",
+      "key_claims": "Knight stated he was formerly connected with the Indian Board of Cooperation but became discontented with money collection practices and misleading propaganda. He traveled to Washington with 7-8 delegates and worked 4 months on the court of claims bill, concluding that having a white man as organizational head collecting money from Indians made it impossible to get the bill through Congress. He and colleagues then organized the California Indian Brotherhood with no white men, estimated 3,000-5,000 active members plus nonactive members, representing Indians from various counties including all Hoopa Reservation and all Pit River Indians of Modoc County (approximately 800). He stated the Indian Board of Cooperation's 17,000 membership claim was false, as the roll was made years ago, many members have died, and younger generation is not involved. He claimed almost half of northern California Indians were satisfied with Attorney General Webb's handling of the suit and bitterly opposed to Collett's attorneys. He offered to submit letters from Indian Board of Cooperation (including originals signed by Collett and Fisher) and letters from Indians opposing the private attorneys to the committee.",
+      "questioner": "Senator Thomas, The Chairman"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

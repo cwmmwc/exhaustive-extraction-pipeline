@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_007",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "16-17",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alice Cunningham",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "Eagle Butte",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "received. Did not protest.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold. Never mortgaged.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "43 years of age",
+    "Occupation/Income": "supported by my husband's money. My husband has money in the office at Cheyenne Agency.",
+    "NOTES": "Patent was mailed to her at Eagle Butte; does not remember the time of delivery. Signed receipt for patent. No application made. Sold land for $600 all cash. Dependents: a boy and a girl. Not in good health. Notarized August 27, 1929, in Todd County, South Dakota.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2488,
+    "output_tokens": 328
+  },
+  "elapsed": 4.2
+}

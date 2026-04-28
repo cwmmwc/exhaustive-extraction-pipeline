@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_011",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "17",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louise Ruleau now Cottier",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Martin, So. Dak.",
+    "Allotment number": "2145",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee, but took it on the advice of the Superintendent and Farmer who told her that if she did not take it and pay the taxes that the land would be sold to pay them",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold her land to Provost & Emily of Gordon, Nebr. for $2240.00",
+    "Buyer": "Provost & Emily of Gordon, Nebr. for $2240.00",
+    "Tax burden forced sale/Mortgage": "took it on the advice of the Superintendent and Farmer who told her that if she did not take it and pay the taxes that the land would be sold to pay them",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "32 years old",
+    "Occupation/Income": "husband supports her by common labor, earning about $500.00 a year, both husband and wife working",
+    "NOTES": "mentally competent, in good health; has no land, no home and lives on the allotment of her husband; has 3 children depending on her for support; has received no aid from the Government, State or County since she received her patent; document sworn November 26, 1928; county of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2205,
+    "output_tokens": 434
+  },
+  "elapsed": 5.3
+}

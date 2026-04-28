@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_060",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "78",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "George Stirk",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Scenic, South Dakota",
+    "Allotment number": "2669",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his allotment, on account of paying taxes, but that he was advised by the Agency to take it, so he accepted same",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "deeded the allotment over to his wife, in 1921, on account of debts, in whose name the place still stands, but that she intends to deed it back to her husband; the wife mortgaged her 160 acres to pay taxes on both places, and other debts",
+    "Buyer": "deeded to his wife (name not stated)",
+    "Tax burden forced sale/Mortgage": "wife mortgaged her 160 acres to pay taxes on both places, and other debts",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "36 years old",
+    "Occupation/Income": "main sources of income is farming on this allotment, and some road work",
+    "NOTES": "mentally competent; has good health; has a wife and three children to support, all of whom have good health; has never received any aid from the County or United States Government; this place, 160 acres, is clear of mortgage; taxes are pretty well caught up; document number 220268; sworn November 13, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2246,
+    "output_tokens": 436
+  },
+  "elapsed": 5.5
+}

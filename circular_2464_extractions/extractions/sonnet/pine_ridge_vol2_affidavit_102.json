@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_102",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "121",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Willie Swallow",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Manderson, So. Dak.",
+    "Allotment number": "3237",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want a patent in fee for his land, but that he took it for the reason that he was told that if he did not take it and pay the taxes that he would lose the land and get nothing for it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged 1 quarter for $700.00 to pay taxes, then sold all of it",
+    "Buyer": "Sold to Daniel Swallow for $3200.00, he to pay the taxes; has paid $1000.00 and owes $1500.00 and is to pay the mortgage",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes so he mortgaged 1 quarter for $700.00 to pay them, that he could not pay the mortgage or taxes so he had to sell all of it or lose it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "42 years old",
+    "Occupation/Income": "farms for a living on the allotment of his father in law, but that he does not make much",
+    "NOTES": "mentally competent, in fair health; has no money or property; has a wife and 6 minor children depending on him for support; has received no aid from the Government, State or County since his patent was issued to him; sworn before notary public November 28, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2257,
+    "output_tokens": 463
+  },
+  "elapsed": 6.3
+}

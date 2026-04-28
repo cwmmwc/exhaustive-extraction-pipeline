@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_078",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "95",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Pugh",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Martin, South Dakota",
+    "Allotment number": "1079",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not apply for it, and did not want it; but took he took it on general principles",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to the State of South Dakota for $800.00; sold to P. A. Livermont, of Martin, South Dakota, who took over the mortgage and gave him an automobile valued at $300.00 and his personal note for $300.00",
+    "Tax burden forced sale/Mortgage": "in the fall of 1918 he owed for taxes on the allotment, and did not have the money to meet them, and he mortgaged his allotment to the State of South Dakota, for $800.00, paying the taxes out of the loan; in April, 1929, seeing that the debt was too much for him, and the taxes behind for two years, rather than lose the entire interest in the place from foreclosure, he found a purchaser",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Male",
+    "Age": "36 years old",
+    "Occupation/Income": "printer operator, which is his only income; and that he is not even working at his trade at the present time",
+    "NOTES": "mentally competent, health is not so very good; has a wife to support, she has good health; allotment described as NW1/4, Sec. 12, T.36N., R.39., of the 6th P.M., in South Dakota, 160 acres; total realized over and above mortgage was $600.00 in 'weak form'; considers he received a very poor price for his land, it being a good home for him; has never received any help from the County, State nor the United States Government; document sworn April 29, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2484,
+    "output_tokens": 565
+  },
+  "elapsed": 6.6
+}

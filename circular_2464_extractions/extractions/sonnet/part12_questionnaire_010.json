@@ -1,0 +1,33 @@
+{
+  "document_id": "part12_questionnaire_010",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "22-23",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Peter LeQlair",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Newkirk, Kay County, Okla.",
+    "Allotment number": "842",
+    "Cancelled": "no",
+    "Refused/Protested": "With protest",
+    "Recorded patent": "Yes, filed for record by Allottee",
+    "Sold/Mortgaged": "All sold",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Aug. 6, 1918",
+    "Gender": "Male",
+    "Age": "59",
+    "Occupation/Income": "No income whatever",
+    "NOTES": "Patent delivered at Agency Office after released from Army; receipted for: Yes; price received: $10,000.00, described as 'Good price at that time' and 'a fair consideration'; land sold in Summer of 1918; date of redemption expired: none; tax assessments or tax sales: none canceled or paid; wife and four minor children dependent upon allottee; notarized November 20, 1928 in Kay County, Oklahoma; health good, no funds; both parties of Ponca City, Okla.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2705,
+    "output_tokens": 356
+  },
+  "elapsed": 8.6,
+  "retry_count": 1
+}

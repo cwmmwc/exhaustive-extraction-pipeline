@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_092",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "118",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lucy Patton",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, care of the Holy Rosary Mission, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee to her 160 acre allotment, when it was issued, April 13, 1818, for she did not want to pay taxes; but the Indian Agency informed her that, if she did not take care of it, the land would be assessed for taxes, for which it would later be sold; so she accepted the patent in fee",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1918, she sold her allotment to Harry Evans, for $600.00 cash",
+    "Buyer": "Harry Evans, for $600.00 cash",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1818",
+    "Gender": "Female",
+    "Age": "42 years old",
+    "Occupation/Income": "she sews for the Holy Rosary Mission, which her only source of income",
+    "NOTES": "mentally competent; has very poor health; has no one to support but herself; she never sold her land for any debts incurred before receiving the patent in fee; has never received any help from the County, State nor the United States Government; she considers she received a very poor price for her land; document No. 6802; subscribed and sworn December 17, 1928; fee patent date as stated in document reads April 13, 1818, likely a transcription error for 1918",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2278,
+    "output_tokens": 467
+  },
+  "elapsed": 5.4
+}

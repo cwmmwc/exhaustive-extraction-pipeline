@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_023",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "30",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alex Labuff",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Wanamaker, So. Dak.",
+    "Allotment number": "2260",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee, but after refusung for some time, he took it on the advice of the Government Farmer, who told him that he must take it and pay the taxes or he would lose the land and get nothing",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold his land to Smith & Graham, White River, So. Dak. for $5600.00, and they paid me $700.00 and I paid the taxes with it and that was all I got for the land, they never making another payment",
+    "Buyer": "Smith & Graham, White River, So. Dak. for $5600.00 (only $700.00 actually paid); also sold 160 acres to a Mr. Chub of Cody Nebr. for $1400.00, half of which had been paid",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes so he sold his land; paid the taxes with the $700.00 he received",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "66 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Has 160 acres of land remaining at time of affidavit; got a lawyer to fight his case and recovered 480 acres \u2014 gave lawyer 160 acres for his work, sold 160 acres to Mr. Chub of Cody, Nebr. for $1400.00 (half paid); has one minor child depending on him for support; has received no aid from the Government, State or County since his patent was issued; mentally competent and in very poor health; affidavit subscribed and sworn November 30, 1928, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2286,
+    "output_tokens": 550
+  },
+  "elapsed": 10.4
+}

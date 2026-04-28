@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_001",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "4",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Philomena Beauvais Leighton",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged it and then sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "They charged me $50 for coming from Carter and making the mortgage.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Female",
+    "Age": "45",
+    "Occupation/Income": "We farm and sell cream and so forth.",
+    "NOTES": "Did not sign receipt for patent; application found in allotment folder \u2014 'It looks something like my handwriting but I do not remember signing it'; another application signed before H. G. Sherman, July 25, 1917, allottee told 'this one did not go through'; sold for $2000.00, of which $500.00 was cash, 10 heifers and 4 horses; no debts settled with purchaser at time of sale; 8 children at home; in good health; document subscribed and sworn to before Notary Public on June 27, 1929 (commission expires 4-28-32).",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2347,
+    "output_tokens": 396
+  },
+  "elapsed": 6.8
+}

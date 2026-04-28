@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_017",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "21",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Maggie Williams",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Wanblee, So. Dak.",
+    "Allotment number": "4086",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she took it but did not want it. She thought that she had to take the patent in fee as it was sent to her but she had never made any application for the patent in fee.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold the land for $5000.00 to some one through Chas. Bates",
+    "Buyer": "some one through Chas. Bates for $5000.00",
+    "Tax burden forced sale/Mortgage": "it was a great hard-ship to her as her husband was sick and children were small and had to take care of her aged mother. Her husband died and the expense was great and she lost some money that was in the Bank and had to borrow money to pay taxes.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "56 years old",
+    "Occupation/Income": "keeping house for an old Indian lady; tries to raise chickens and a garden",
+    "NOTES": "Mentally competent and in fair health; has aged mother who is 82 years old to care for; has not received any help from the Government, State or County since she received a patent in fee; husband died; document received at Pine Ridge Agency Dec. 29, 1928; subscribed and sworn before notary public Dec. 4, 1928; County of Washabaugh, State of South Dakota.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2349,
+    "output_tokens": 458
+  },
+  "elapsed": 6.8
+}

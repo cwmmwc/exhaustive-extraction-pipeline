@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_021",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "48-49",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Nannie Childs Alley",
+    "Tribe/Reservation": "Otoe Agency",
+    "Post Office Address": "Ponca City, Okla.",
+    "Allotment number": "176",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes, filed for record; When Nov. 24, 1917",
+    "Sold/Mortgaged": "Mortgaged for $1065.00 and $2471.00",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "date of redemption expired? Mortgages paid off by Agency and lands deeded to minor children, with restrictive clause.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sept. 15, 1917",
+    "Gender": "Female",
+    "Age": "46 years",
+    "Occupation/Income": "Allottee has no source of income, no contributions.",
+    "NOTES": "Land was not sold to anyone; land was deeded to minor children of the allottee with restrictive clause after mortgages paid off by Agency. Has no funds accumulated. Good health. One minor child dependent upon her. Patent delivered at Otoe Agency; receipted for by allottee. Not defrauded \u2014 land deeded to minor children. Document notarized November 22, 1928, in Kay County, Oklahoma; Notary Public commission expires Aug. 3rd, 1931. Circular No. 2464, June 18, 1928.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2643,
+    "output_tokens": 424
+  },
+  "elapsed": 6.9
+}

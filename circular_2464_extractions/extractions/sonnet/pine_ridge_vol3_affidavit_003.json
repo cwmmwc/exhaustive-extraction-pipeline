@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_003",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "7",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louisa Twiss",
+    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Post Office Address": "Porcupine, So. Dak.",
+    "Allotment number": "3961",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she did not want the patent and would not have signed the receipt had she known what it was about",
+    "Recorded patent": "she received a receipt for her patent, together with a letter from the Superintendent asking her to sign and return the receipt, and not knowing just what it was about, she signed the receipt and returned it",
+    "Sold/Mortgaged": "sold it to a white man in Kadoka, So. Dak. whose his name she does not know, for $1500.00, and he was to pay the taxes",
+    "Buyer": "a white man in Kadoka, So. Dak. whose his name she does not know, for $1500.00",
+    "Tax burden forced sale/Mortgage": "she could not pay the taxes so she was about to lose the land so she sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "57 years old",
+    "Occupation/Income": "draws a pension as the widow of an Indian Scout of $30.00 per month and that is all she lives on",
+    "NOTES": "mentally competent and in poor health, having heart trouble and short of wind; has one minor child; has received no aid from the Government, State or County since she was granted a patent to her land; she received all the money from the sale; document notarized November 30, 1928, in Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2243,
+    "output_tokens": 468
+  },
+  "elapsed": 6.9
+}

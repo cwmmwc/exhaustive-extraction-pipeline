@@ -1,0 +1,962 @@
+{
+  "entities": [
+    {
+      "name": "Burton K. Wheeler",
+      "type": "person",
+      "context": "Senator from Montana, Chairman of the Committee on Indian Affairs and Subcommittee"
+    },
+    {
+      "name": "Henry F. Ashurst",
+      "type": "person",
+      "context": "Senator from Arizona, Committee on Indian Affairs member"
+    },
+    {
+      "name": "Lynn J. Frazier",
+      "type": "person",
+      "context": "Senator from North Dakota, Committee on Indian Affairs member and Subcommittee member"
+    },
+    {
+      "name": "Elmer Thomas",
+      "type": "person",
+      "context": "Senator from Oklahoma, Committee on Indian Affairs member and Subcommittee member, present at San Diego hearing"
+    },
+    {
+      "name": "Thomas D. Schall",
+      "type": "person",
+      "context": "Senator from Minnesota, Committee on Indian Affairs member"
+    },
+    {
+      "name": "W. J. Bulow",
+      "type": "person",
+      "context": "Senator from South Dakota, Committee on Indian Affairs member"
+    },
+    {
+      "name": "Robert M. La Follette Jr.",
+      "type": "person",
+      "context": "Senator from Wisconsin, Committee on Indian Affairs member and Subcommittee member"
+    },
+    {
+      "name": "William H. Thompson",
+      "type": "person",
+      "context": "Senator from Nebraska, Committee on Indian Affairs member"
+    },
+    {
+      "name": "Frederick Steiwer",
+      "type": "person",
+      "context": "Senator from Oregon, Committee on Indian Affairs member"
+    },
+    {
+      "name": "Marcus A. Coolidge",
+      "type": "person",
+      "context": "Senator from Massachusetts, Committee on Indian Affairs member"
+    },
+    {
+      "name": "Peter Norbeck",
+      "type": "person",
+      "context": "Senator from South Dakota, Committee on Indian Affairs member"
+    },
+    {
+      "name": "Carl A. Hatch",
+      "type": "person",
+      "context": "Senator from New Mexico, Committee on Indian Affairs member"
+    },
+    {
+      "name": "Joseph C. O'Mahoney",
+      "type": "person",
+      "context": "Senator from Wyoming, Committee on Indian Affairs member"
+    },
+    {
+      "name": "Barclay Craighead",
+      "type": "person",
+      "context": "Clerk of the Committee on Indian Affairs"
+    },
+    {
+      "name": "Albert A. Grorud",
+      "type": "person",
+      "context": "Special Assistant to the Subcommittee, present at San Diego hearing"
+    },
+    {
+      "name": "Richard Nejo",
+      "type": "person",
+      "context": "Witness, representative of Yuma Indian Federation auxiliary, Mission Indian with inheritance land in Yuma"
+    },
+    {
+      "name": "Samuel La Fort Collins",
+      "type": "person",
+      "context": "Representative for the Nineteenth Congressional District, California, present at San Diego hearing"
+    },
+    {
+      "name": "Rheba Crawford Spivalo",
+      "type": "person",
+      "context": "Director of California State Department of Social Welfare, present at San Diego hearing"
+    },
+    {
+      "name": "Roy Nash",
+      "type": "person",
+      "context": "Representing the Commissioner of Indian Affairs at San Diego hearing"
+    },
+    {
+      "name": "John W. Dady",
+      "type": "person",
+      "context": "Superintendent of Mission Indian Agency, present at San Diego hearing"
+    },
+    {
+      "name": "Donald H. Biery",
+      "type": "person",
+      "context": "Superintendent of Sherman Institute, present at San Diego hearing"
+    },
+    {
+      "name": "Marion Butler",
+      "type": "person",
+      "context": "Attorney for the Mission Indians, present at San Diego hearing"
+    },
+    {
+      "name": "Fred Weitzen",
+      "type": "person",
+      "context": "Reporter at San Diego hearing"
+    },
+    {
+      "name": "John Collier",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs, not present at hearing, referenced throughout testimony"
+    },
+    {
+      "name": "H. B. Jolley",
+      "type": "person",
+      "context": "Agent at Yuma Reservation"
+    },
+    {
+      "name": "William Gates",
+      "type": "person",
+      "context": "Witness, faculty at Johns Hopkins University, research assistant appointed by Collier to Yuma Reservation"
+    },
+    {
+      "name": "Escalante",
+      "type": "person",
+      "context": "Yuma Indian witness called but declined to testify without interpreter"
+    },
+    {
+      "name": "Marian Lewis",
+      "type": "person",
+      "context": "Witness, Yuma Indian living on reservation, mother of Anna Hollingshead"
+    },
+    {
+      "name": "Anna Hollingshead",
+      "type": "person",
+      "context": "Daughter of Marian Lewis, Yuma Indian, had 10-acre allotment, mother of four, husband left 4 years prior, had been in mental sanitarium"
+    },
+    {
+      "name": "Owen McKinley",
+      "type": "person",
+      "context": "Yuma Indian federation member, father of three children, denied work allegedly after sending delegation to Washington"
+    },
+    {
+      "name": "Scott",
+      "type": "person",
+      "context": "Yuma Indian, approximately 60 years old, wanting work but denied"
+    },
+    {
+      "name": "Albert Snow",
+      "type": "person",
+      "context": "Yuma Indian, had 10-acre allotment, wife also had 10 acres, land leased 1923-1924 for $150, allegedly never received lease money"
+    },
+    {
+      "name": "Martin Domingo",
+      "type": "person",
+      "context": "Yuma Indian, 10-acre allotment, 7 acres taken by Southern Pacific Railroad and Highway 80, no compensation received"
+    },
+    {
+      "name": "Chaco",
+      "type": "person",
+      "context": "Yuma Indian approximately 100 years old, given job digging Johnson grass"
+    },
+    {
+      "name": "Cleveland",
+      "type": "person",
+      "context": "Yuma Indian approximately 80-90 years old, given work"
+    },
+    {
+      "name": "Sims",
+      "type": "person",
+      "context": "Former agent at Yuma Reservation, not seen by Nejo for a whole year"
+    },
+    {
+      "name": "John Curran",
+      "type": "person",
+      "context": "Yuma Indian, presented records claiming representation of 271 Yuma Indians at federation meeting"
+    },
+    {
+      "name": "Ainsworth",
+      "type": "person",
+      "context": "Witness at hearing, page 17382"
+    },
+    {
+      "name": "Czerney Anderson",
+      "type": "person",
+      "context": "Witness at hearing, page 17259"
+    },
+    {
+      "name": "Ethan Anderson",
+      "type": "person",
+      "context": "Witness at hearing, pages 17368 and 17371"
+    },
+    {
+      "name": "Julian Augustin",
+      "type": "person",
+      "context": "Witness at hearing, page 17304"
+    },
+    {
+      "name": "Rachel B. Barker",
+      "type": "person",
+      "context": "Witness at hearing, page 17406"
+    },
+    {
+      "name": "Washoe Barrington",
+      "type": "person",
+      "context": "Witness at hearing, page 17386"
+    },
+    {
+      "name": "Mrs. Bristol",
+      "type": "person",
+      "context": "Witness at hearing, page 17407"
+    },
+    {
+      "name": "Billy Calloway",
+      "type": "person",
+      "context": "Witness at hearing, page 17304"
+    },
+    {
+      "name": "Lillian Clifton",
+      "type": "person",
+      "context": "Witness at hearing, page 17407"
+    },
+    {
+      "name": "F. G. Collet",
+      "type": "person",
+      "context": "Witness at hearing, pages 17332 and 17344"
+    },
+    {
+      "name": "Mrs. Winnifred Codman",
+      "type": "person",
+      "context": "Witness at hearing, page 17408"
+    },
+    {
+      "name": "Adam Costillo",
+      "type": "person",
+      "context": "Witness at hearing, page 17288"
+    },
+    {
+      "name": "Winslow Couro",
+      "type": "person",
+      "context": "Witness at hearing, page 17265"
+    },
+    {
+      "name": "A. H. Deering",
+      "type": "person",
+      "context": "Witness at hearing, page 17246"
+    },
+    {
+      "name": "Charles Dey Elkus",
+      "type": "person",
+      "context": "Witness at hearing, pages 17308 and 17338"
+    },
+    {
+      "name": "Miguel Estudillo",
+      "type": "person",
+      "context": "Witness at hearing, page 17291"
+    },
+    {
+      "name": "William Fuller",
+      "type": "person",
+      "context": "Witness at hearing, page 17405"
+    },
+    {
+      "name": "Inez Gallagher",
+      "type": "person",
+      "context": "Witness at hearing, page 17415"
+    },
+    {
+      "name": "William Gates",
+      "type": "person",
+      "context": "Witness at hearing, pages 17232 and 17235"
+    },
+    {
+      "name": "E. J. Geehan",
+      "type": "person",
+      "context": "Statement submitted to hearing, page 17279"
+    },
+    {
+      "name": "James M. Hanley",
+      "type": "person",
+      "context": "Witness at hearing, page 17375"
+    },
+    {
+      "name": "J. W. Henderson",
+      "type": "person",
+      "context": "Witness at hearing, page 17371"
+    },
+    {
+      "name": "Gladys M. Hull",
+      "type": "person",
+      "context": "Witness at hearing, page 17415"
+    },
+    {
+      "name": "James Johnson",
+      "type": "person",
+      "context": "Witness at hearing, page 17417"
+    },
+    {
+      "name": "J. L. Kirk",
+      "type": "person",
+      "context": "Witness at hearing, page 17418"
+    },
+    {
+      "name": "Charles Knight",
+      "type": "person",
+      "context": "Witness at hearing, page 17414"
+    },
+    {
+      "name": "Stephen Knight",
+      "type": "person",
+      "context": "Witness at hearing, page 17387"
+    },
+    {
+      "name": "Pablo Kristano",
+      "type": "person",
+      "context": "Witness at hearing, page 17304"
+    },
+    {
+      "name": "Grace LaChusa",
+      "type": "person",
+      "context": "Witness at hearing, page 17272"
+    },
+    {
+      "name": "V. J. LaChusa",
+      "type": "person",
+      "context": "Witness at hearing, page 17274"
+    },
+    {
+      "name": "Williams Levy",
+      "type": "person",
+      "context": "Witness at hearing, page 17304"
+    },
+    {
+      "name": "O. H. Lipps",
+      "type": "person",
+      "context": "Witness at hearing, pages 17371 and 17411"
+    },
+    {
+      "name": "Evelyn Long",
+      "type": "person",
+      "context": "Witness at hearing, page 17416"
+    },
+    {
+      "name": "Robert M. Magee",
+      "type": "person",
+      "context": "Witness at hearing, page 17271"
+    },
+    {
+      "name": "Ramon Manuel",
+      "type": "person",
+      "context": "Witness at hearing, pages 17251 and 17303"
+    },
+    {
+      "name": "Ben F. Mitchell",
+      "type": "person",
+      "context": "Witness at hearing, pages 17307 and 17412"
+    },
+    {
+      "name": "J. A. Moore",
+      "type": "person",
+      "context": "Witness at hearing, page 17268"
+    },
+    {
+      "name": "Ventura Palpa",
+      "type": "person",
+      "context": "Witness at hearing, pages 17251 and 17303"
+    },
+    {
+      "name": "Alice Piper",
+      "type": "person",
+      "context": "Witness at hearing, page 17379"
+    },
+    {
+      "name": "H. B. Prather",
+      "type": "person",
+      "context": "Statement submitted to hearing, page 17279"
+    },
+    {
+      "name": "Julius H. Rainwater",
+      "type": "person",
+      "context": "Witness at hearing, page 17298"
+    },
+    {
+      "name": "Thomas L. Sloan",
+      "type": "person",
+      "context": "Witness at hearing, pages 17307 and 17370"
+    },
+    {
+      "name": "William Walker",
+      "type": "person",
+      "context": "Witness at hearing, page 17384"
+    },
+    {
+      "name": "U. S. Webb",
+      "type": "person",
+      "context": "Honorable witness at hearing, page 17355"
+    },
+    {
+      "name": "Purl Willis",
+      "type": "person",
+      "context": "Witness at hearing, page 17295"
+    },
+    {
+      "name": "John F. Yuma",
+      "type": "person",
+      "context": "Witness at hearing, page 17249"
+    },
+    {
+      "name": "Richard Nejo",
+      "type": "person",
+      "context": "Witness, page 17225"
+    },
+    {
+      "name": "American Indian Defense Association",
+      "type": "organization",
+      "context": "Submitted statement to hearing, page 17252"
+    },
+    {
+      "name": "Yuma Indian Federation",
+      "type": "organization",
+      "context": "Organization represented by Richard Nejo, auxiliary with over 400 members out of approximately 800 Yuma Indians"
+    },
+    {
+      "name": "Committee on Indian Affairs",
+      "type": "organization",
+      "context": "United States Senate committee conducting survey of Indian conditions"
+    },
+    {
+      "name": "Mission Indian Agency",
+      "type": "organization",
+      "context": "Indian agency in California, superintendent John W. Dady"
+    },
+    {
+      "name": "Yuma Agency",
+      "type": "organization",
+      "context": "Indian agency at Yuma Reservation"
+    },
+    {
+      "name": "Klamath Agency",
+      "type": "organization",
+      "context": "Indian agency referenced in hearing contents"
+    },
+    {
+      "name": "Sherman Institute",
+      "type": "organization",
+      "context": "School with superintendent Donald H. Biery"
+    },
+    {
+      "name": "California State Department of Social Welfare",
+      "type": "organization",
+      "context": "State agency, director Rheba Crawford Spivalo"
+    },
+    {
+      "name": "Bureau of Indian Affairs",
+      "type": "organization",
+      "context": "Federal agency responsible for Indian affairs, referenced throughout"
+    },
+    {
+      "name": "Johns Hopkins University",
+      "type": "organization",
+      "context": "University where William Gates was on faculty"
+    },
+    {
+      "name": "Carlisle",
+      "type": "organization",
+      "context": "Indian boarding school attended by Richard Nejo"
+    },
+    {
+      "name": "Southern Pacific Railroad",
+      "type": "organization",
+      "context": "Railroad that took 7 acres of Martin Domingo's 10-acre allotment"
+    },
+    {
+      "name": "San Diego, California",
+      "type": "location",
+      "context": "Location of hearing on June 29, 1934"
+    },
+    {
+      "name": "San Francisco, California",
+      "type": "location",
+      "context": "Location of hearing on July 2, 1934"
+    },
+    {
+      "name": "Yuma Reservation",
+      "type": "location",
+      "context": "Reservation where Yuma Indians reside, approximately 800 Indians"
+    },
+    {
+      "name": "Los Angeles",
+      "type": "location",
+      "context": "Government office where Albert Snow's lease money was allegedly sent"
+    },
+    {
+      "name": "Washington D.C.",
+      "type": "location",
+      "context": "Referenced as location of Indian Bureau and congressional delegation visits"
+    },
+    {
+      "name": "Taos",
+      "type": "location",
+      "context": "Location William Gates visited to study housing plans"
+    },
+    {
+      "name": "Albert Snow allotment",
+      "type": "land_parcel",
+      "context": "10-acre allotment belonging to Albert Snow, leased in 1923-1924"
+    },
+    {
+      "name": "Albert Snow wife allotment",
+      "type": "land_parcel",
+      "context": "10-acre allotment belonging to wife of Albert Snow"
+    },
+    {
+      "name": "Martin Domingo allotment",
+      "type": "land_parcel",
+      "context": "10-acre allotment, 7 acres taken by Southern Pacific Railroad and Highway 80"
+    },
+    {
+      "name": "Anna Hollingshead allotment",
+      "type": "land_parcel",
+      "context": "10-acre allotment belonging to Anna Hollingshead, flooded with Johnson grass"
+    },
+    {
+      "name": "S.Res. 79",
+      "type": "legislation",
+      "context": "Senate resolution authorizing general survey of Indian conditions, 70th Congress"
+    },
+    {
+      "name": "S.Res. 308",
+      "type": "legislation",
+      "context": "Senate resolution, 70th Congress, related to survey of Indian conditions"
+    },
+    {
+      "name": "S.Res. 263",
+      "type": "legislation",
+      "context": "Senate resolution, 71st Congress, related to survey of Indian conditions"
+    },
+    {
+      "name": "S.Res. 416",
+      "type": "legislation",
+      "context": "Senate resolution, 71st Congress, related to survey of Indian conditions"
+    },
+    {
+      "name": "S.Res. 323",
+      "type": "legislation",
+      "context": "Senate resolution, 72nd Congress, related to survey of Indian conditions"
+    },
+    {
+      "name": "Wheeler-Howard bill",
+      "type": "legislation",
+      "context": "Bill on which Yuma Indians held tribal convention and signed petition in support, 252 of 341 adult Indians signed in favor"
+    },
+    {
+      "name": "Civil service law",
+      "type": "legislation",
+      "context": "Law modified recently to allow Indians to take government jobs without civil service examinations in certain cases"
+    },
+    {
+      "name": "Highway 80",
+      "type": "land_parcel",
+      "context": "Highway that took portions of Martin Domingo's 10-acre allotment along with Southern Pacific Railroad"
+    }
+  ],
+  "events": [
+    {
+      "type": "hearing",
+      "date": "1934-06-29",
+      "location": "San Diego, California",
+      "description": "Subcommittee of the Committee on Indian Affairs hearing on conditions of Indians in the United States, Part 33"
+    },
+    {
+      "type": "hearing",
+      "date": "1934-07-02",
+      "location": "San Francisco, California",
+      "description": "Subcommittee of the Committee on Indian Affairs hearing on conditions of Indians in the United States, Part 33"
+    },
+    {
+      "type": "delegation_trip",
+      "date": "partial-1934",
+      "location": "Washington D.C.",
+      "description": "Yuma Indian delegation traveled to Washington, asked Collier to be present at hearing"
+    },
+    {
+      "type": "tribal_convention",
+      "date": "partial-1934",
+      "location": "Yuma Reservation",
+      "description": "Tribal convention held to seek expression of opinion on Wheeler-Howard bill; 252 of 341 adult Indians signed petition in favor, approximately 70 opposed"
+    },
+    {
+      "type": "federation_meeting",
+      "date": "partial-1934",
+      "location": "San Diego area",
+      "description": "Federation meeting attended by William Gates and John Curran, who presented records of 271 Yuma Indians"
+    },
+    {
+      "type": "land_lease",
+      "date": "1923",
+      "location": "Yuma Reservation",
+      "description": "Albert Snow's 10-acre allotment and wife's 10-acre allotment leased for $150, money allegedly sent to government office in Los Angeles and never received by the Indians"
+    },
+    {
+      "type": "land_lease",
+      "date": "1924",
+      "location": "Yuma Reservation",
+      "description": "Continuation of Albert Snow land lease, $150 owed but allegedly not paid to Indians"
+    },
+    {
+      "type": "right_of_way_taking",
+      "date": "unknown",
+      "location": "Yuma Reservation",
+      "description": "Southern Pacific Railroad and Highway 80 took 7 of Martin Domingo's 10 acres with no compensation"
+    },
+    {
+      "type": "enrollment_at_carlisle",
+      "date": "unknown",
+      "location": "Carlisle, Pennsylvania",
+      "description": "Richard Nejo attended Carlisle Indian School starting around age 10"
+    },
+    {
+      "type": "employment_denial",
+      "date": "partial-1934",
+      "location": "Yuma Reservation",
+      "description": "Owen McKinley denied further work after delegation sent to Washington"
+    },
+    {
+      "type": "legislation_passed",
+      "date": "partial-1934",
+      "location": "United States Congress",
+      "description": "Law passed doing away with civil service examination requirement for Indians in certain government job cases"
+    },
+    {
+      "type": "legislation_passed",
+      "date": "partial-1934",
+      "location": "United States Congress",
+      "description": "Law authorizing appropriation for higher education for certain Indians"
+    },
+    {
+      "type": "agronomic_survey",
+      "date": "partial-1934",
+      "location": "Yuma Reservation",
+      "description": "William Gates conducted 6-week intensive agronomic survey of Yuma Reservation including inheritance records, allotment status, and leasing records"
+    },
+    {
+      "type": "treaties",
+      "date": "1851",
+      "location": "California/Yuma area",
+      "description": "Treaties referenced by Richard Nejo as starting point of Indian land dispossession"
+    },
+    {
+      "type": "treaties",
+      "date": "1852",
+      "location": "California/Yuma area",
+      "description": "Treaties referenced by Richard Nejo as starting point of Indian land dispossession"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "lease",
+      "amount": "$150",
+      "payer": "unknown lessee (white man)",
+      "payee": "Albert Snow and wife (allottees)",
+      "date": "1923-1924",
+      "description": "20 acres (10 acres Snow + 10 acres wife) leased; $150 allegedly sent to government office in Los Angeles and never received by Snow or wife"
+    },
+    {
+      "type": "payment",
+      "amount": "50 cents per year",
+      "payer": "unknown",
+      "payee": "Albert Snow",
+      "date": "unknown",
+      "description": "Payment for telephone poles on Snow's land, alleged underpayment"
+    },
+    {
+      "type": "payment",
+      "amount": "$21 per month",
+      "payer": "government/reservation employment",
+      "payee": "Anna Hollingshead's 16-year-old son",
+      "date": "partial-1934",
+      "description": "Wages for 10 days of work per month for Anna Hollingshead's oldest child"
+    },
+    {
+      "type": "fee",
+      "amount": "$4.50 per diem plus travel expenses",
+      "payer": "U.S. Government",
+      "payee": "William Gates",
+      "date": "partial-1934",
+      "description": "Per diem and travel expenses for Gates' dollar-a-year appointment as research assistant at Yuma Reservation"
+    },
+    {
+      "type": "payment",
+      "amount": "tuition payments",
+      "payer": "U.S. Government",
+      "payee": "public schools",
+      "date": "partial-1934",
+      "description": "Government paying tuition to public schools for Indian children to attend"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Richard Nejo",
+      "type": "represents",
+      "object": "Yuma Indian Federation auxiliary (435 members)",
+      "context": "Nejo represents one faction of Yuma Indians at Senate hearing"
+    },
+    {
+      "subject": "Marion Butler",
+      "type": "represented",
+      "object": "Mission Indians",
+      "context": "Attorney for the Mission Indians, present at San Diego hearing"
+    },
+    {
+      "subject": "William Gates",
+      "type": "employed_by",
+      "object": "Commissioner John Collier / Bureau of Indian Affairs",
+      "context": "Dollar-a-year research assistant appointment, faculty at Johns Hopkins"
+    },
+    {
+      "subject": "Roy Nash",
+      "type": "represented",
+      "object": "Commissioner of Indian Affairs",
+      "context": "Nash representing Commissioner at San Diego hearing"
+    },
+    {
+      "subject": "John W. Dady",
+      "type": "employed_by",
+      "object": "Mission Indian Agency",
+      "context": "Superintendent of Mission Indian Agency"
+    },
+    {
+      "subject": "Donald H. Biery",
+      "type": "employed_by",
+      "object": "Sherman Institute",
+      "context": "Superintendent of Sherman Institute"
+    },
+    {
+      "subject": "H. B. Jolley",
+      "type": "employed_by",
+      "object": "Bureau of Indian Affairs / Yuma Agency",
+      "context": "Agent at Yuma Reservation"
+    },
+    {
+      "subject": "Sims",
+      "type": "employed_by",
+      "object": "Bureau of Indian Affairs / Yuma Agency",
+      "context": "Former agent at Yuma Reservation"
+    },
+    {
+      "subject": "Marian Lewis",
+      "type": "related_to",
+      "object": "Anna Hollingshead",
+      "context": "Mother-daughter relationship, Lewis testifying on Hollingshead's behalf"
+    },
+    {
+      "subject": "Albert Snow",
+      "type": "related_to",
+      "object": "Albert Snow's wife",
+      "context": "Married couple both holding 10-acre allotments"
+    },
+    {
+      "subject": "William Gates",
+      "type": "related_to",
+      "object": "John Collier",
+      "context": "Gates on board of directors of Collier's American Indian Defense Association"
+    },
+    {
+      "subject": "John Curran",
+      "type": "related_to",
+      "object": "Yuma Indian Federation",
+      "context": "Presented records of 271 Yuma Indians at federation meeting"
+    },
+    {
+      "subject": "Richard Nejo",
+      "type": "related_to",
+      "object": "Yuma Reservation",
+      "context": "Nejo identified by Gates as not a Yuma Indian but a Mission Indian with inheritance land in Yuma"
+    },
+    {
+      "subject": "Anna Hollingshead",
+      "type": "related_to",
+      "object": "Anna Hollingshead's husband",
+      "context": "Husband left her 4 years before hearing"
+    },
+    {
+      "subject": "Southern Pacific Railroad",
+      "type": "sold_to",
+      "object": "Martin Domingo allotment",
+      "context": "Took 7 of 10 acres from Martin Domingo's allotment with no compensation"
+    },
+    {
+      "subject": "Highway 80",
+      "type": "related_to",
+      "object": "Martin Domingo allotment",
+      "context": "Highway 80 took portion of Martin Domingo's 10-acre allotment"
+    },
+    {
+      "subject": "Rheba Crawford Spivalo",
+      "type": "employed_by",
+      "object": "California State Department of Social Welfare",
+      "context": "Director of the department"
+    },
+    {
+      "subject": "Albert A. Grorud",
+      "type": "employed_by",
+      "object": "Senate Subcommittee on Indian Affairs",
+      "context": "Special assistant to the subcommittee"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "Yuma Indian delegation",
+      "sender_title": "tribal delegates",
+      "recipient": "John Collier",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "partial-1934",
+      "subject": "Request for Collier to attend San Diego hearing",
+      "action_requested": "Collier to be present at San Diego hearing",
+      "outcome": "Collier did not attend, citing late notice"
+    },
+    {
+      "sender": "Commissioner of Indian Affairs",
+      "sender_title": "Commissioner",
+      "recipient": "Yuma Tribal Council / Indians",
+      "recipient_title": "tribal members",
+      "date": "partial-1934",
+      "subject": "Expression of opinion on Wheeler-Howard bill",
+      "action_requested": "Indians asked to express opinion on Wheeler-Howard bill",
+      "outcome": "252 of 341 adult Indians signed petition supporting the bill; approximately 70 opposed"
+    },
+    {
+      "sender": "John Collier",
+      "sender_title": "Commissioner of Indian Affairs",
+      "recipient": "H. B. Jolley",
+      "recipient_title": "Agent, Yuma Reservation",
+      "date": "partial-1934",
+      "subject": "Authorization for William Gates to review reservation records",
+      "action_requested": "Open all records to Gates for agronomic survey",
+      "outcome": "Jolley opened all records to Gates"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "S.Res. 79",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "partial-1928",
+      "vote_count": "",
+      "committee": "Committee on Indian Affairs",
+      "outcome": "Authorized general survey of Indian conditions, 70th Congress"
+    },
+    {
+      "bill_number": "S.Res. 308",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "partial-1928",
+      "vote_count": "",
+      "committee": "Committee on Indian Affairs",
+      "outcome": "Additional authorization for survey, 70th Congress"
+    },
+    {
+      "bill_number": "S.Res. 263",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "partial-1930",
+      "vote_count": "",
+      "committee": "Committee on Indian Affairs",
+      "outcome": "Continuing authorization for survey, 71st Congress"
+    },
+    {
+      "bill_number": "S.Res. 416",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "partial-1930",
+      "vote_count": "",
+      "committee": "Committee on Indian Affairs",
+      "outcome": "Additional continuing authorization for survey, 71st Congress"
+    },
+    {
+      "bill_number": "S.Res. 323",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "partial-1932",
+      "vote_count": "",
+      "committee": "Committee on Indian Affairs",
+      "outcome": "Continuing authorization for survey, 72nd Congress"
+    },
+    {
+      "bill_number": "Wheeler-Howard bill",
+      "sponsor": "Burton K. Wheeler",
+      "action_type": "introduced",
+      "date": "partial-1934",
+      "vote_count": "252 of 341 Yuma adult Indians signed petition supporting original bill; 70 opposed",
+      "committee": "Committee on Indian Affairs",
+      "outcome": "Under consideration; tribal convention held at Yuma; bill expected to be modified"
+    },
+    {
+      "bill_number": "civil service exemption for Indians",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "partial-1934",
+      "vote_count": "",
+      "committee": "unknown",
+      "outcome": "Law passed doing away with civil service examination for Indians in certain government job cases"
+    },
+    {
+      "bill_number": "higher education appropriation for Indians",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "partial-1934",
+      "vote_count": "",
+      "committee": "unknown",
+      "outcome": "Law authorizing appropriation to give certain Indians higher education opportunities"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Richard Nejo",
+      "witness_title": "Representative, Yuma Indian Federation auxiliary",
+      "hearing": "Survey of Conditions of Indians in the United States, Part 33",
+      "committee": "Subcommittee of the Committee on Indian Affairs, United States Senate",
+      "location": "San Diego, California",
+      "date": "1934-06-29",
+      "subject": "Conditions on Yuma Reservation including education, employment, land leases, relief work, roads, and reimbursement",
+      "key_claims": "Nejo represents 435 of approximately 800 Yuma Indians in the Yuma Indian Federation auxiliary. He complained about: (1) Absence of Commissioner Collier from the hearing despite alleged commitment to attend; (2) Land abuses since treaties of 1851-1852; (3) Government schools failing to educate Indians, preferring public schools and higher education including college and university; (4) Attended Carlisle himself; (5) Relief work insufficient, with very young (14-15) and very old (60-100) Indians working while able-bodied men with families have no work; (6) Federation members specifically deprived of work\u2014Owen McKinley lost work after sending delegation to Washington; (7) Albert Snow's 20 acres (10 his, 10 wife's) leased in 1923-1924 for $150, money sent to Los Angeles government office and never received by Snow; (8) Snow received only 50 cents per year for telephone poles on his land; (9) Roads on Yuma Reservation in terrible condition; (10) Martin Domingo's 10-acre allotment had 7 acres taken by Southern Pacific Railroad and Highway 80 with no compensation; (11) Government-built house given to him but empty with no implements or horses to farm with; (12) Educated Indians on reservation unable to use their education because not employed as teachers or in other roles.",
+      "questioner": "Senator Burton K. Wheeler; Senator Elmer Thomas"
+    },
+    {
+      "witness": "William Gates",
+      "witness_title": "Research Assistant (dollar-a-year), faculty at Johns Hopkins University",
+      "hearing": "Survey of Conditions of Indians in the United States, Part 33",
+      "committee": "Subcommittee of the Committee on Indian Affairs, United States Senate",
+      "location": "San Diego, California",
+      "date": "1934-06-29",
+      "subject": "Conditions at Yuma Reservation, status of Wheeler-Howard bill vote, character of witnesses, leasing records",
+      "key_claims": "Gates stated: (1) He is on faculty at Johns Hopkins and was asked by Collier to come to Yuma 3 months prior as a research assistant; (2) Richard Nejo is not a Yuma Indian and has no land in Yuma; (3) He spent 6 weeks doing intensive agronomic survey of Yuma Reservation including inheritance records, allottee representatives, leasing records; (4) Lease money is placed to individual Indians' personal credit accounts, not general funds; (5) John Curran claimed 271 Yuma Indians but did not respond when Gates asked him to verify names; (6) Tribal convention held, 252 of 341 adult Indians (74%) signed petition supporting Wheeler-Howard bill; approximately 70 opposed; (7) Regarding Anna Hollingshead\u2014she visited Gates at his hotel in Yuma multiple times, dresses well, was in a mental sanitarium, is not right in her mind, and Mr. Jolley has given her work; (8) Indians of Yuma making progress and finding their voice through Collier's New Deal; (9) He visited Taos to study housing plans; (10) Board of directors of Collier's Indian defense society.",
+      "questioner": "Senator Burton K. Wheeler; Senator Elmer Thomas"
+    },
+    {
+      "witness": "Marian Lewis",
+      "witness_title": "Yuma Indian, reservation resident",
+      "hearing": "Survey of Conditions of Indians in the United States, Part 33",
+      "committee": "Subcommittee of the Committee on Indian Affairs, United States Senate",
+      "location": "San Diego, California",
+      "date": "1934-06-29",
+      "subject": "Mistreatment of her daughter Anna Hollingshead by agent Jolley",
+      "key_claims": "Lewis testified that her daughter Anna Hollingshead has been ill treated by agent Jolley. Anna's husband left 4 years ago; Anna is in ill health with a nervous breakdown. She asked Jolley for work and was only given temporary jobs. When Anna works, Jolley does not provide rations. Anna's oldest boy (16) was taken out of school to work for $21 per month for 10 days per month to support the family of four. Anna's 10-acre allotment land is neglected, full of Johnson grass, diked up, and flooded.",
+      "questioner": "Senator Burton K. Wheeler"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

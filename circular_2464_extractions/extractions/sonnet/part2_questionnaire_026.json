@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_026",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "73",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Aaron Moran (deponent); Susan Moran (allottee, deceased)",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "8092",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "It was never mortgaged so far as I know but some of it was sold.",
+    "Buyer": "Harry Moran sold for $100, Louise Moran sold for $100.00, Annie Moran sold for $300-$400; Narcise, Jesse, Ellen, Amy, Mable and Susie deeded their share for $1; David Colome inherited Susie's share. Tripp county land: $2700.00 and a Chandler sedan that had been used and valued at perhaps $1000.00 at the time.",
+    "Tax burden forced sale/Mortgage": "Nothing but taxes for all the time the patent has been issued, at least none have been paid so far as I know.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female (Susan Moran, allottee); Male (Aaron Moran, deponent)",
+    "Age": "Aaron Moran, age 34 (deponent); Louis Moran, age 84 (heir, in poor health)",
+    "Occupation/Income": "not stated",
+    "NOTES": "Susan Moran is deceased; Aaron Moran is her son and deponent. Estate was probated in state court. Aaron Moran is living on part of the Mellette county land; Louis Moran (husband of Susan Moran, age 84, in poor health) is living on the other part. Heirs who have not sold their interest: Aaron Moran, Louis Moran, Minnie Jacobson, and Lily Colomb. Document notarized by Jas. W. Cross, Notary Public, commission expires 4-28-32, on June 6, 1929. Document references both Mellette county land and Tripp county land.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2411,
+    "output_tokens": 568
+  },
+  "elapsed": 8.4
+}

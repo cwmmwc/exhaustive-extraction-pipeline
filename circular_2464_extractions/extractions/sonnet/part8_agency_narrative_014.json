@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_agency_narrative_014",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "25",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William A. Pierce",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2572",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded by R. E. Wang February 23, 1918",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Peter C. Peterson for $4000 on January 20, 1919",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612693 issued; Southeast quarter section 12, township 35, north of range 27; receipt for patent signed by the allottee February 8, 1918; conveyance by deed dated January 20, 1919",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2018,
+    "output_tokens": 313
+  },
+  "elapsed": 4.2
+}

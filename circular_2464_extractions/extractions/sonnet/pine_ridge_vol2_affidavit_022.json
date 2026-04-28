@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_022",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "29",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Clara Peck",
+    "Tribe/Reservation": "Osage",
+    "Post Office Address": "Wynona, Oklahoma",
+    "Allotment number": "2256",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee and accepted it under protest because she was told that if she did not accept it and keep the taxes up that the land would be sold to satisfy them",
+    "Recorded patent": "she does not know who it was that had her patent recorded, nor the date",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to the Bates Investment Co., Gordon, Neb. for $500 in 1918; sold in 1919 to Geourge Baker, Vetal, South Dakota",
+    "Tax burden forced sale/Mortgage": "could not raise money to keep the taxes up, so she mortgaged her land for $500 in 1918; could not pay the mortgage without selling her land, which she did in 1919",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "34 years old",
+    "Occupation/Income": "compelled to take care of and teach her neighbors children for a living",
+    "NOTES": "mentally competent and in fair health for one of her age; has no land, only a shack home in which she lives; has three minor children dependent upon her for support; has received no aid from the Government (except her pro rata payment), State or County, since her patent in fee was issued; all she received for her land was the original mortgage and a small sum in addition, but none of it was used to pay a debt contracted before the patent was issued; was not actually defrauded of her land but the money she received was not 10% of what it was worth after paying mortgage, interest, taxes, etc.; notary commission expires Jan. 20, 1931; document received April 8, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2631,
+    "output_tokens": 531
+  },
+  "elapsed": 7.2
+}

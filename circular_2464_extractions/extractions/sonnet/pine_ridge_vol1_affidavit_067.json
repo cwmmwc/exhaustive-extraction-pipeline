@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_067",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "82",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Richard Lessert",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Merriman, Nebraska",
+    "Allotment number": "972",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not desire the patent in fee to his 160 acre allotment when it was issued, April 13, 1918, but he was told, that, if he did not accept the patent, and pay the taxes, it would be taxed just the same, and later sold for taxes, so he took the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "he still owns this 160 acres of land, has never mortgaged or sold it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Male",
+    "Age": "40 years old",
+    "Occupation/Income": "he is in the hardware and automobile business, at Merriman, Nebraska, besides owning a farm, which he leases out; and that this hardware and automobile business, together with his farm, are the sources of his income",
+    "NOTES": "mentally competent; splendid health; has a wife and one child to support; family have good health; has kept the taxes paid up on it to date; has never sold his allotment for any debts incurred prior to receiving the patent in fee; has never received any help from the County, State nor the United States Government; affidavit sworn April 4, 1929; document located in Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2272,
+    "output_tokens": 453
+  },
+  "elapsed": 7.8
+}

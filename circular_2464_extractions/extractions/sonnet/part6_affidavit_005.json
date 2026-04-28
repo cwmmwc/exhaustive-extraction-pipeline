@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_affidavit_005",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "58-59",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Raymond (Dec'd) \u2014 affidavit by Enoch W. Raymond, Jr., son and heir; also separate affidavit by Chris Colombe",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2282",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Lid you ever hear him make any protest concerning the patent? No.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "It would be hard to say whether he sold it; father deeded the land to Chris [Colombe]; My father then mortgaged the land to C. E. Talbott for $500 and Kenneth Clark for $1500",
+    "Buyer": "Chris Colombe \u2014 deed shows consideration of $5500.00 but father got no money from this conveyance and some two or three years later he, in order to get anything, accepted a Buick touring car, a 1917 model",
+    "Tax burden forced sale/Mortgage": "My father owed a store bill amounting to around $1400 to Kenneth Clark of Wewela, S.D., and Chris Colome came along and had my father believe that Mr. Clark was going to levy on the land for this store bill and in order to protect my father Chris suggested that he deed the land to him",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "39 (Enoch W. Raymond, Jr., deponent); William Raymond (Dec'd) \u2014 age not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "William Raymond died in September 1924. Affidavit sworn by his son Enoch W. Raymond, Jr., age 39, on the 9th day of May 1929, before Jas. W. Cross, Notary Public (commission expires 4-28-32). A second affidavit by Chris Colombe, age 55, sworn 18th day of June 1929, before Jas. W. Cross, Notary Public. Colombe states he purchased the land outright for approximately $5000\u2013$5500, paid partly with a new Buick (~$1850) and remainder in money and checks, with Ella McHenry as witness to the agreement. Land was subject to prolonged litigation; mortgaged to C. E. Talbott ($500, as attorney security) and Kenneth Clark ($1500). Deponent refers for further information to O. L. Olmstead (Winner, S.D.), Mary Wright Ross (Okreek, S.D.), Louisa Ross Cutschall (Okreek, S.D.), P. A. Hosford, C. E. Talbott, Windsor Lougherty (Winner, S.D.), and Kenneth Clark (Wewela, South Dakota). SW/4 of allotment referenced. Statement noted as based partly on hearsay.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 3014,
+    "output_tokens": 763
+  },
+  "elapsed": 15.9
+}

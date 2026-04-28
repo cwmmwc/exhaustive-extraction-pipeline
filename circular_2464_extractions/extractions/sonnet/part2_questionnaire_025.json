@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_025",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "71",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Roberts",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "White River (Tarmerkax post office)",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Before the patent was issued I asked to exchange part of my land for that of my son's and was at the agency office to see whether anything had been approved in this connection. I was informed that the application had not been acted upon but that a fee patent would soon be issued to me for my land. I told the land clerk, Mr. Day, that I did not want the patent that I did not want to sell the land and that the taxes would have to be paid. Well, he said the patent would come and it would be necessary to take it. Then the next spring the patent came to the Tarmerkax post office at White River. I took it to the Farmer and told him that I did not want it, but he said it had been issued and it would be necessary for me to take it and that I should sign a receipt for it. I then signed the receipt.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I mortgaged the west quarter of it for $1000 and they foreclosed on it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "This mortgage was made in order to make payment on some other land I had bought, but I lost that land too. The other quarter has never had taxes paid on it.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Male",
+    "Age": "54",
+    "Occupation/Income": "Raising stock and farming",
+    "NOTES": "Commission was taken out of the $1000.00 before he got the money, leaving only about $850.00. Still has the other (east) quarter with no lien or mortgage but taxes unpaid. Wife and eight children depend on him for support. Health: fair, a little rheumatism. States: 'If the patent had not been issued I would not have asked for it yet and would still have the land in trust so far as I am concerned.' Land clerk referenced as Mr. Day. Notarized by Jas. W. Cross, Notary Public, commission expires 4-28-32, 1929. Document reference: AP9-724.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2479,
+    "output_tokens": 605
+  },
+  "elapsed": 7.4
+}

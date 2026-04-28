@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_010",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "16",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Nora Shangreau, nee Allman",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "209",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 320 acre allotment, when it was issued, April 13,1918; that she left it at the Indian Agency, at Pine Ridge, and went to Idaho; that the Indian Agency of Pine Ridge wrote to her, and told her if she did not accept it, the allotment would be assessed for taxes, for which the land would finally be sold, so she accepted the patent by mail",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1919, she sold it to Mr. Evans, of Pine Ridge, South Dakota, for $2000.00 cash",
+    "Buyer": "Mr. Evans, of Pine Ridge, South Dakota, for $2000.00 cash",
+    "Tax burden forced sale/Mortgage": "the Indian Agency of Pine Ridge wrote to her, and told her if she did not accept it, the allotment would be assessed for taxes, for which the land would finally be sold; she never paid any taxes on her allotment, for the Lease Agent, at Port Latwar Indian Agency, Idaho, told her that it could not be taxed for 25 years, and she acted on this advice",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Female",
+    "Age": "40 years old",
+    "Occupation/Income": "supported by her husband, who farms for a living, that being his only source of income",
+    "NOTES": "Place was not sold for any debts contracted before the issuance of the patent; has never received any help from the County, State nor the United States Government; has good health, is mentally competent; has four minor children, whose health is good; considers $2000.00 a very poor price for her land, as it had timber, good grass, good water and farming land on it; document sworn December 15, 1928, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2332,
+    "output_tokens": 572
+  },
+  "elapsed": 7.7
+}

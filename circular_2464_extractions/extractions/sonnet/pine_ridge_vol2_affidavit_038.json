@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_038",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "53",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Henry Young",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Martin, So. Dak.",
+    "Allotment number": "2528",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want it, and paid no attention to the letter, but that later he received another letter from the Pine Ridge Office stating that the issuance of the patent had been reported to the tax Commission and that if he did not pay the taxes, that the land would be sold to satisfy them. This scared him into taking the patent, though he still did not want it",
+    "Recorded patent": "did not have it recorded but that the man to whom he had it mortgaged had it recorded",
+    "Sold/Mortgaged": "mortgaged his land to the Bennett County Bank, Martin, So. Dak. for $500.00 and then to the Bank of Cody, Cody, for another $500.00; gave them a deed for $50.00",
+    "Buyer": "Bank of Cody, Cody \u2014 bought the Bennett County Bank Mortgage, then offered him $50.00 for a deed to save the cost of foreclosing",
+    "Tax burden forced sale/Mortgage": "received another letter from the Pine Ridge Office stating that the issuance of the patent had been reported to the tax Commission and that if he did not pay the taxes, that the land would be sold to satisfy them. This scared him into taking the patent; Bank of Cody gave him 24 hours to pay or they would foreclose, that they offered him $50.00 for a deed, to save the cost of foreclosing, and that as he could not raise the money, he took it and gave them a deed",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "34 years old",
+    "Occupation/Income": "compelled to work out where ever he could get work",
+    "NOTES": "Deponent considered his land worth about $3600.00 and did not get a fair price for it; has a wife and three children depending on him for support; having a very hard time getting along since he lost his place; mentally competent and in fair health, though has heart trouble which is getting a little worse as he grows older; since he lost his land he has no home and lived on his mother's allotment until she died and the estate was settled; has received no aid from the Government, State or County since his patent was issued; affidavit sworn November 9, 1928, Shannon County, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2435,
+    "output_tokens": 660
+  },
+  "elapsed": 9.5
+}

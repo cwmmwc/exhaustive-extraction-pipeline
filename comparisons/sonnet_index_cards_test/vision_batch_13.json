@@ -1,0 +1,35 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-21",
+      "jurisdiction": "Western Oklahoma",
+      "date": "1935-06-29",
+      "correspondent": "US Attorney (Asst)",
+      "correspondent_role": "outgoing",
+      "case_name": "US v. Board of Com'rs Caddo County, Okla",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Advise court has not rendered decision in case",
+      "action_type": "acknowledgment",
+      "enclosures": "",
+      "routing_division": "Lands",
+      "routing_date": "1935-07-01",
+      "clerk_initials": "rmh",
+      "processed_date": "1935-07-01"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "US v. Board of Com'rs Caddo County, Okla",
+      "file_number": "90-2-5-21",
+      "jurisdiction": "Western Oklahoma",
+      "case_type": "other",
+      "allottee_name": "",
+      "tribe_or_reservation": "",
+      "county": "Caddo"
+    }
+  ],
+  "persons": []
+}

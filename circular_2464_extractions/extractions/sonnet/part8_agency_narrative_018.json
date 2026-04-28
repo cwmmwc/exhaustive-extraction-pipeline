@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_agency_narrative_018",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "32",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Josephine Emery",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S.D.",
+    "Allotment number": "2900",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "recorded May 1, 1918, but records do not show by whom",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to the State of South Dakota for $1000; conveyed by the Emerys to Adolph Stamer for $17000",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 21, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612810 issued; Northeast quarter section 7, and North half section 8, township 97, range 69. Receipt for patent signed by the allottee February 27, 1918. On December 4, 1918, Josephine and James Emery mortgaged the Northeast quarter of section 7 to the State of South Dakota for $1000. On January 17, 1921, the land was conveyed by the Emerys to Adolph Stamer for $17000.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2113,
+    "output_tokens": 401
+  },
+  "elapsed": 6.2
+}

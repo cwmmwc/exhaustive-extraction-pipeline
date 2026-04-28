@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_questionnaire_009",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "29",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Wallace Murray",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "3428",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Nothing was said about it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Yes. It was never mortgaged.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "32",
+    "Occupation/Income": "not stated",
+    "NOTES": "No one is dependent upon allottee for support; allottee did not sign a receipt for the patent; never made application for the patent; was in Cuba with the Marine Corps when patent was delivered \u2014 it was delivered to his father; consideration was $4,000.00 cash at time of sale; subscribed and sworn before E. E. McKean, Superintendent, June 6, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2126,
+    "output_tokens": 316
+  },
+  "elapsed": 5.9
+}

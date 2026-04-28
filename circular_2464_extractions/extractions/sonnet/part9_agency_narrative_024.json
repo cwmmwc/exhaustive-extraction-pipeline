@@ -1,0 +1,33 @@
+{
+  "document_id": "part9_agency_narrative_024",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "42",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Annie Dubray",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "3512",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded January 28, 1922, by J. R. Martin",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged by Annie and Charles Dubray on March 31, 1922 to Peters Trust Company for $1500; Annie Moran Dubray and Charles Dubray conveyed the land to Renwick Cross for $1.00 and other valuable consideration on May 29, 1922",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739633 issued; Northeast quarter section 32, township 98, range 77; no receipt for the patent is shown",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2039,
+    "output_tokens": 345
+  },
+  "elapsed": 4.2,
+  "retry_count": 1
+}

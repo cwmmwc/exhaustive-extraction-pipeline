@@ -1,0 +1,54 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_020",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "27-28",
+  "model": "sonnet",
+  "extraction": [
+    {
+      "Name": "Sarah Thompson",
+      "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+      "Post Office Address": "Batesland, South Dakota",
+      "Allotment number": "not stated",
+      "Cancelled": "not stated",
+      "Refused/Protested": "in 1913, she applied for her patent to her 640 acre allotment, but she was refused, and, on April 13, 1918, the forced patent was issued, being sent to her by mail",
+      "Recorded patent": "not stated",
+      "Sold/Mortgaged": "she has never mortgaged nor sold any portion of it",
+      "Buyer": "not stated",
+      "Tax burden forced sale/Mortgage": "she has found it hard to pay the taxes ever since",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "April 13, 1918",
+      "Gender": "Female",
+      "Age": "45 years old",
+      "Occupation/Income": "her husband farms her land for their livlihood; and that this is their only income",
+      "NOTES": "mentally competent; health is only fair; husband has fair health and supports her and her nine children, all of whom have good health; has kept taxes paid up and is making it her home; has never received any aid from the County, State nor the United States Government; document No. 312; sworn December 12, 1928",
+      "Literate/Illiterate": "not stated",
+      "Document type": "affidavit"
+    },
+    {
+      "Name": "Hermos Merrivall",
+      "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+      "Post Office Address": "Pine Ridge, So. Dak.",
+      "Allotment number": "not stated",
+      "Cancelled": "not stated",
+      "Refused/Protested": "when he received the receipt for his patent that he did not want it, but that he receipted for it and took it because he was told in the Agency Office that he would have to pay taxes on the land or lose it if he didnt take it",
+      "Recorded patent": "he had it recorded at Hot Springs, So. Dak.",
+      "Sold/Mortgaged": "he has not deeded or mortgaged any part of his land... it was sold for taxes and he redeemed it and that later it was sold again and he did not redeem it",
+      "Buyer": "not stated",
+      "Tax burden forced sale/Mortgage": "it was sold for taxes and he redeemed it and that later it was sold again and he did not redeem it",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "not stated",
+      "Gender": "Male",
+      "Age": "32 years old",
+      "Occupation/Income": "works as much as he can, farming on his fathers allotment for a living",
+      "NOTES": "mentally competent and in fair health; broke all the time and has a hard time getting along; mother, wife and two children are dependent on him for support; has not received any aid from the Government, County or State since his patent was issued; document No. 315; sworn November 2, 1928",
+      "Literate/Illiterate": "not stated",
+      "Document type": "affidavit"
+    }
+  ],
+  "usage": {
+    "input_tokens": 2589,
+    "output_tokens": 831
+  },
+  "elapsed": 9.5
+}

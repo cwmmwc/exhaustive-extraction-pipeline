@@ -1,0 +1,33 @@
+{
+  "document_id": "part7_agency_narrative_003",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "6",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Nellie Anniotte Brown",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, South Dakota",
+    "Allotment number": "2178",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded April 17, 1918 by James Murphy",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "from Nellie Brown formerly Nellie Anniotte, and Harry Brown conveyed the land to James Kane and James Murphy for $1.00 and other valuable consideration",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 21, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612472 issued; Northwest quarter of section 28, township 100, north of range 76; Deed dated April 15, 1918 to 'N26792'; receipt was signed but not dated; document dated June 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2027,
+    "output_tokens": 342
+  },
+  "elapsed": 4.8,
+  "retry_count": 1
+}

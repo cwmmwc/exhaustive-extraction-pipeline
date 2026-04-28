@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_057",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "80",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louis Deon",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "5001",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his allotment, but he was told by the employees of the Agency that his patent was here, and that he might just as well take it, because he would have to pay taxes whether he got it or not, and he came after the patent and siged for it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold the place in 1922, to a man by the name of Gates, receiving Five Thousand Dollars ($5,000.00) in cash for same, it being free from all encumbrance",
+    "Buyer": "a man by the name of Gates, for Five Thousand Dollars ($5,000.00) in cash",
+    "Tax burden forced sale/Mortgage": "kept taxes paid at all times",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "56 years old",
+    "Occupation/Income": "works as a carpenter for the United States Government. This is his only revenue.",
+    "NOTES": "mentally competent; enjoying good health; financial circumstances are rather poor; has a wife and seven children \u2014 three children grown and self-supporting, and four depending upon him for support; entire family have good health; never received any aid from the County or Government; never had the place mortgaged; affidavit sworn November 10, 1928, in Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2269,
+    "output_tokens": 445
+  },
+  "elapsed": 6.1
+}

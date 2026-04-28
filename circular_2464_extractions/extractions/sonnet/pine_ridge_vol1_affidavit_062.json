@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_062",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "77",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Christina Mesteth",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Manderson, South Dakota",
+    "Allotment number": "93",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee to her 160 acre allotment, when it was issued, but was informed by the Pine Ridge Agency, that taxes would be assessed against it, for which it would finally be sold, if she did not take it over, so she accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged her allotment to John C. Jordan, of Gordan, Nebraska, for $250.00; mortgage subsequently cancelled on the sixth day of April, 1921",
+    "Buyer": "Mortgaged to John C. Jordan, of Gordan, Nebraska, for $250.00 at 10% interest, to be paid by January 1, 1924; mortgage cancelled April 6, 1921",
+    "Tax burden forced sale/Mortgage": "in 1925, she got notice from Rapid City, South Dakota, that her land would be sold for taxes, if she did not pay them; her husband told them to sell it, for he did not have the money to pay the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "31 years old",
+    "Occupation/Income": "husband farms some land of his own, and occasionally works for other farmers, these being the only sources of his income",
+    "NOTES": "mentally competent, has very poor health; husband has good health and supports her and her six minor children, four of whom have good health and two having poor health \u2014 one suffering from the effects of pneumonia and the other has the eczema; they find it pretty close living off of this income for such a big family; has never received any aid from the County, State nor the United States Government; affidavit sworn December 3, 1928; County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2533,
+    "output_tokens": 544
+  },
+  "elapsed": 7.0
+}

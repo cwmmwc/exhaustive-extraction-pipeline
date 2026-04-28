@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_017",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "24",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Herbert Janis",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Gordon, Nebraska",
+    "Allotment number": "300",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee to his 160 acre allotment when it was issued, September 29, 1929; but the Indian Agency informed him that, if he did not take the patent, and pay his taxes, the land would be taxed just the same, and later be sold for same; so he accepted the patent in fee",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged the place to A. Barker, of Gordon, Nebraska, for $800.00; and in 1927, Harry Evans, of Pine Ridge, South Dakota, called on deponent, and offered to pay off this mortgage",
+    "Buyer": "Mortgaged to A. Barker of Gordon, Nebraska for $800.00; subsequently Harry Evans of Pine Ridge, South Dakota paid off mortgage in exchange for the place, promising a team of horses, a wagon, a set of harness, some merchandise out of his store and some cash; deponent received $100.00 worth of merchandise and $50.00 in cash, but never received the horses, wagon and harness, valued at $300.00",
+    "Tax burden forced sale/Mortgage": "got behind in taxes, and on December 11, 192[?] mortgaged the place to A. Barker of Gordon, Nebraska for $800.00; Barker told him that he would pay the taxes out of this $800.00, though Barker never gave the deponent any cash on this deal, and deponent could not swear that Barker paid the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1929",
+    "Gender": "Male",
+    "Age": "40 years old",
+    "Occupation/Income": "only source of income is by working at common labor, at Gordon, Nebraska",
+    "NOTES": "mentally competent, has good health except he has heart trouble; has a wife and five minor children to support; family has good health; never sold his place for any debts incurred prior to receiving his patent in fee; never received any help from the county, State nor the United States Government; house on land was valued at $2500.00, having been built for him by his father; land described as 160 acre allotment; document sworn February 6, 1929 in Shannon County, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2532,
+    "output_tokens": 654
+  },
+  "elapsed": 8.0
+}

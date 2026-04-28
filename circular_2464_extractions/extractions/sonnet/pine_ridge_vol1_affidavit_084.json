@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_084",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "105-106",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lizzie Carlow",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Martin, So. Dak.",
+    "Allotment number": "1105",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee and at first refused to take it, but that she was advised to take it by the Superintendent and the Farmer, so she did",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged it to J. P. Hess & Co. Omaha, Nebr, for $1600.00, that they then sold the north quarter of the allotment, paid off the mortgage and cleared up the south quarter section. that they then sold the south quarter section for the reason that they could not keep up the taxes and were about to lose it",
+    "Buyer": "J. P. Hess & Co., Omaha, Nebr. for $1600.00 mortgage; south 160 acres sold at $25.00 per acre",
+    "Tax burden forced sale/Mortgage": "could not keep up the taxes on her land so she mortgaged it; sold the south quarter section for the reason that they could not keep up the taxes and were about to lose it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "41 years old",
+    "Occupation/Income": "supported by her husband, that he does common labor for a living, and that his income was about $300.00",
+    "NOTES": "mentally competent and in just fair health; has a home in Martin, So. Dak. valued at about $800.00; has two children depending on her for support; has received no aid from the Government, State or County since she received her patent; sworn November 26, 1928. Document also contains a separate affidavit by Louis Hawkins (Pine Ridge Sioux, allotted on Pine Ridge Indian Reservation), who received a fee patent in 1918 without application, received it through the mail at Martin, South Dakota, without prior knowledge, without protest but did not record it, and sold his allotment in 1919 for $2,400.00 cash; age 71, in poor health, unable to work, no property or funds, makes his home with his son William Hawkins near Marty, South Dakota; sworn November 15, 1928 at Greenwood, South Dakota before Joseph V. King, notary public.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2745,
+    "output_tokens": 650
+  },
+  "elapsed": 7.4
+}

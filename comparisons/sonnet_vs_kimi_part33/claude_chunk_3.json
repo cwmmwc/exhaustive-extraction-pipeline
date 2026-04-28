@@ -1,0 +1,1427 @@
+{
+  "entities": [
+    {
+      "name": "H. B. Jolley",
+      "type": "person",
+      "context": "Superintendent at Yuma Indian Reservation, subject of removal demands"
+    },
+    {
+      "name": "Billy Poor",
+      "type": "person",
+      "context": "Committee member of Yuma Indian Federation, made statement to Senate Committee on Indian Affairs"
+    },
+    {
+      "name": "Romon Cocopah",
+      "type": "person",
+      "context": "Cocopah Tribe representative, committee member"
+    },
+    {
+      "name": "S-Coosh Romon",
+      "type": "person",
+      "context": "Cocopah Tribe representative"
+    },
+    {
+      "name": "Captain Mike Escalante",
+      "type": "person",
+      "context": "Committee member, Yuma Indian Federation"
+    },
+    {
+      "name": "Joe Manchado",
+      "type": "person",
+      "context": "Committee member, Yuma Indian Federation"
+    },
+    {
+      "name": "John E. Curran",
+      "type": "person",
+      "context": "Committee member, Yuma Indian Federation"
+    },
+    {
+      "name": "A. A. Chaleco",
+      "type": "person",
+      "context": "Committee member, Yuma Indian Federation"
+    },
+    {
+      "name": "John Ducan",
+      "type": "person",
+      "context": "Indian injured/killed in automobile accident on U.S. Highway 80, March 7, 1926"
+    },
+    {
+      "name": "William Penn",
+      "type": "person",
+      "context": "Indian whose team collided with car on U.S. Highway 80"
+    },
+    {
+      "name": "Condry Cooper",
+      "type": "person",
+      "context": "Indian injured by car on Highway 80"
+    },
+    {
+      "name": "Shekima",
+      "type": "person",
+      "context": "Wife of Condry Cooper, badly injured and crippled by car on Highway 80"
+    },
+    {
+      "name": "John Cash",
+      "type": "person",
+      "context": "Indian involved in collision with car on U.S. Highway 80, May 23, 1929"
+    },
+    {
+      "name": "Juan Largo",
+      "type": "person",
+      "context": "Old Indian injured by car on Peacho Road, died July 20, 1926"
+    },
+    {
+      "name": "Jose Emerson",
+      "type": "person",
+      "context": "Indian shot by white man named Reveese in 1926"
+    },
+    {
+      "name": "Reveese",
+      "type": "person",
+      "context": "White man who shot Jose Emerson in 1926, released on bail"
+    },
+    {
+      "name": "Clement Escalante",
+      "type": "person",
+      "context": "Indian killed by train, November 24, 1928"
+    },
+    {
+      "name": "Gas Townsent",
+      "type": "person",
+      "context": "Indian killed by train in Arizona, March 7, 1930"
+    },
+    {
+      "name": "Henry Snow",
+      "type": "person",
+      "context": "Indian who died on railroad track, July 19, 1930"
+    },
+    {
+      "name": "Frank Moaut",
+      "type": "person",
+      "context": "Indian who died on railroad track, June 4, 1924"
+    },
+    {
+      "name": "Loson L. Odle",
+      "type": "person",
+      "context": "Former superintendent at Yuma Indian Reservation during Frank Moaut's death; later promoted to head of Southern Pueblos"
+    },
+    {
+      "name": "Augustine Carello",
+      "type": "person",
+      "context": "Indian who lost leg cut by train, October 6, 1932"
+    },
+    {
+      "name": "Raymond Baker",
+      "type": "person",
+      "context": "Indian found dead on railroad track, October 13, 1933"
+    },
+    {
+      "name": "Bert Underwood",
+      "type": "person",
+      "context": "County coroner not called in Raymond Baker case"
+    },
+    {
+      "name": "Homer Thomas",
+      "type": "person",
+      "context": "Indian whose death was investigated by Federal agent Albert Miller"
+    },
+    {
+      "name": "William Whitman",
+      "type": "person",
+      "context": "Made X-ray examination of Homer Thomas body"
+    },
+    {
+      "name": "Dr. John",
+      "type": "person",
+      "context": "Present at hearing at funeral of Homer Thomas, June 11"
+    },
+    {
+      "name": "Dr. Danielson",
+      "type": "person",
+      "context": "Doctor at Yuma Indian Reservation, subject of discharge demand; examined Homer Thomas body"
+    },
+    {
+      "name": "Albert Miller",
+      "type": "person",
+      "context": "Federal agent, Department of Justice, investigating Homer Thomas case"
+    },
+    {
+      "name": "John Doan",
+      "type": "person",
+      "context": "United States Commissioner of Yuma, Arizona, involved in Homer Thomas investigation"
+    },
+    {
+      "name": "Melton Sims",
+      "type": "person",
+      "context": "Farm agent at Yuma Indian Reservation, subject of discharge demand; also spelled Simms"
+    },
+    {
+      "name": "Rapheal Sheridan",
+      "type": "person",
+      "context": "Deceased Indian, allottee of allotment no. 639"
+    },
+    {
+      "name": "Sarah Chaleco",
+      "type": "person",
+      "context": "Indian allottee, allotment no. 118"
+    },
+    {
+      "name": "E. I. Rhodes",
+      "type": "person",
+      "context": "White man living on Indian allotment no. 639 of deceased Rapheal Sheridan, 10 acres"
+    },
+    {
+      "name": "Acoyhaquits Escalante",
+      "type": "person",
+      "context": "Indian woman with adjacent allotment, boundary dispute with allotment no. 639"
+    },
+    {
+      "name": "E. A. Breech",
+      "type": "person",
+      "context": "Justice of the peace, precinct of Winterhaven; appointed foreman of irrigation service"
+    },
+    {
+      "name": "Jim Parker",
+      "type": "person",
+      "context": "White man living on Indian land without paying taxes"
+    },
+    {
+      "name": "John F. Yuma",
+      "type": "person",
+      "context": "Spokesman of the Tribe, signed statement"
+    },
+    {
+      "name": "Johnnie L. Black",
+      "type": "person",
+      "context": "Indian boss/half-breed foreman of Johnson-grass crew; also chairman of Quachan Tribal Council"
+    },
+    {
+      "name": "Ed. Bloomer",
+      "type": "person",
+      "context": "Foreman forming partnership with agency at Yuma"
+    },
+    {
+      "name": "John Collier",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs; also Executive Secretary of American Indian Defense Association; visited Yuma area in 1932"
+    },
+    {
+      "name": "Patrick Miguel",
+      "type": "person",
+      "context": "Indian mentioned by John Collier at 1932 meeting; member of Quachan Tribal Council"
+    },
+    {
+      "name": "Lincoln Johnson",
+      "type": "person",
+      "context": "Indian who attended John Collier's 1932 meeting; member of Quachan Tribal Council"
+    },
+    {
+      "name": "Alphonso Hammond",
+      "type": "person",
+      "context": "Secretary of Quachan Tribal Council"
+    },
+    {
+      "name": "Michael Bryant",
+      "type": "person",
+      "context": "Member of Quachan Tribal Council"
+    },
+    {
+      "name": "Bernard Jackson",
+      "type": "person",
+      "context": "Member of Quachan Tribal Council"
+    },
+    {
+      "name": "Sennanr Russell",
+      "type": "person",
+      "context": "Member of Quachan Tribal Council"
+    },
+    {
+      "name": "Wilfret Parker",
+      "type": "person",
+      "context": "Member of Quachan Tribal Council"
+    },
+    {
+      "name": "Benjamin DeCorse",
+      "type": "person",
+      "context": "Member of Quachan Tribal Council"
+    },
+    {
+      "name": "Jefferson D. Miguel",
+      "type": "person",
+      "context": "Member of Quachan Tribal Council"
+    },
+    {
+      "name": "Mr. Alberts",
+      "type": "person",
+      "context": "Indian whose 20 acres of land was leased in 1923-1924 for $150 without money being given to him and wife"
+    },
+    {
+      "name": "Arsenas Chaleco",
+      "type": "person",
+      "context": "Indian subject to water charges; overcharged at $3 instead of ordered $2.50"
+    },
+    {
+      "name": "Emerson",
+      "type": "person",
+      "context": "Indian subject to water charges in lease case"
+    },
+    {
+      "name": "McOoon",
+      "type": "person",
+      "context": "Man subdividing land into lots and selling in Winterhaven area"
+    },
+    {
+      "name": "Ella Hodges",
+      "type": "person",
+      "context": "Witness to sale of rationed meat at Yuma reservation"
+    },
+    {
+      "name": "Edward Curran",
+      "type": "person",
+      "context": "Witness to sale of rationed meat at Yuma reservation"
+    },
+    {
+      "name": "Robert Newton",
+      "type": "person",
+      "context": "Indian whose flood damages were never paid"
+    },
+    {
+      "name": "Albert Snow",
+      "type": "person",
+      "context": "Indian allottee through whose allotment Southern Sierras power-line poles pass"
+    },
+    {
+      "name": "Sanders",
+      "type": "person",
+      "context": "Chief clerk at Yuma Indian Reservation, described as mean to people; had wife and son working in service"
+    },
+    {
+      "name": "Richard Nio",
+      "type": "person",
+      "context": "Signed testimony statement about conditions at Yuma Indian Reservation"
+    },
+    {
+      "name": "Lynn J. Frazier",
+      "type": "person",
+      "context": "Chairman, Senate Indian Investigation Committee, Washington"
+    },
+    {
+      "name": "Ramon Manuel",
+      "type": "person",
+      "context": "Indian from Palm Springs, testified before committee; committee member for Agua Caliente Band"
+    },
+    {
+      "name": "Mr. Dady",
+      "type": "person",
+      "context": "Superintendent at Palm Springs Indian Reservation"
+    },
+    {
+      "name": "John W. Dady",
+      "type": "person",
+      "context": "Superintendent at Palm Springs, testified he had visited Palm Springs about seven times"
+    },
+    {
+      "name": "Pedro Chino",
+      "type": "person",
+      "context": "Last member of the family after whom Chino Canyon was named"
+    },
+    {
+      "name": "Mr. McCallum",
+      "type": "person",
+      "context": "Former agent at Palm Springs who drove Indians away from their cultivated land"
+    },
+    {
+      "name": "Mr. Rogers",
+      "type": "person",
+      "context": "Head of water company at Palm Springs, agreed to give small water portion to Indians"
+    },
+    {
+      "name": "Miss C. True",
+      "type": "person",
+      "context": "Agent at Palm Springs who refused water proposition from Rogers"
+    },
+    {
+      "name": "Mr. Ellis",
+      "type": "person",
+      "context": "Agent at Palm Springs who gave no satisfaction on water rights"
+    },
+    {
+      "name": "Pico Manuel",
+      "type": "person",
+      "context": "Signatory of Palm Springs petition, member of Agua Caliente Band"
+    },
+    {
+      "name": "Marcus J. Pete",
+      "type": "person",
+      "context": "Signatory of Palm Springs petition, member of Agua Caliente Band"
+    },
+    {
+      "name": "Commissioner Scattergood",
+      "type": "person",
+      "context": "Indian Bureau Commissioner who told Yumas that the Department was making an investigation"
+    },
+    {
+      "name": "Senator Wheeler",
+      "type": "person",
+      "context": "Senator who insisted it was wholly improper to seize trust funds of Indian orphans; present at Yuma hearings"
+    },
+    {
+      "name": "Yuma Indian Federation",
+      "type": "organization",
+      "context": "Federation representing Yuma Indians, organized under act of October 4, 1920"
+    },
+    {
+      "name": "Mission Indian Federation of the State of California",
+      "type": "organization",
+      "context": "Federation of Mission Indians in California"
+    },
+    {
+      "name": "Indian Welfare Organization of California",
+      "type": "organization",
+      "context": "California Indian welfare organization"
+    },
+    {
+      "name": "Cocopah Tribe of Indians",
+      "type": "organization",
+      "context": "Tribe at Yuma Indian Reservation, forcibly ejected"
+    },
+    {
+      "name": "Quachan Tribal Council",
+      "type": "organization",
+      "context": "Tribal council at Yuma, opposed Indian self-government bill"
+    },
+    {
+      "name": "American Indian Defense Association",
+      "type": "organization",
+      "context": "Organization for which John Collier was Executive Secretary"
+    },
+    {
+      "name": "Indian Rights Association",
+      "type": "organization",
+      "context": "Organization that protested against Superintendent Odle"
+    },
+    {
+      "name": "Indian Defense Association",
+      "type": "organization",
+      "context": "Organization that protested against Superintendent Odle"
+    },
+    {
+      "name": "Federated Women's Clubs",
+      "type": "organization",
+      "context": "Organization that protested against Superintendent Odle"
+    },
+    {
+      "name": "Southern Pacific Company",
+      "type": "organization",
+      "context": "Railroad company whose trains killed Indians on the reservation; no compensation paid"
+    },
+    {
+      "name": "Southern Sierras Power Company",
+      "type": "organization",
+      "context": "Company with power-line poles through Albert Snow's allotment paying $1.69/year"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Body that recommended making past irrigation gratuities into reimbursable loans"
+    },
+    {
+      "name": "Indian Bureau",
+      "type": "organization",
+      "context": "Federal agency overseeing Indian affairs, organized in 1824 under War Department"
+    },
+    {
+      "name": "Senate Committee on Indian Affairs",
+      "type": "organization",
+      "context": "Senate committee hearing testimony about Indian conditions"
+    },
+    {
+      "name": "Department of Justice",
+      "type": "organization",
+      "context": "Department under which Federal agent Albert Miller investigated Homer Thomas death"
+    },
+    {
+      "name": "Agua Caliente Band of Mission Indians",
+      "type": "organization",
+      "context": "Indian band at Palm Springs, California"
+    },
+    {
+      "name": "Water company at Palm Springs",
+      "type": "organization",
+      "context": "Company organized in 1909, laid pipe line through Indian land sections 4, 5, 6, 10"
+    },
+    {
+      "name": "Fort Yuma Indian Reservation",
+      "type": "location",
+      "context": "Indian reservation in California on U.S. Highway 80"
+    },
+    {
+      "name": "Yuma Indian Reservation",
+      "type": "location",
+      "context": "Reservation in California/Arizona area"
+    },
+    {
+      "name": "Winterhaven",
+      "type": "location",
+      "context": "City near Yuma Indian Reservation with liquor traffic issues; site of Winterhaven townsite question"
+    },
+    {
+      "name": "Yuma, Arizona",
+      "type": "location",
+      "context": "City near the reservation; location of Federal hearings"
+    },
+    {
+      "name": "Palm Springs, California",
+      "type": "location",
+      "context": "Location of Agua Caliente Band of Mission Indians reservation"
+    },
+    {
+      "name": "Los Angeles",
+      "type": "location",
+      "context": "Location of Federal court where Reveese case was tried"
+    },
+    {
+      "name": "San Carlos Hotel, Yuma, Arizona",
+      "type": "location",
+      "context": "Hotel where John Collier stayed and held meetings in 1932"
+    },
+    {
+      "name": "Chino Canyon",
+      "type": "location",
+      "context": "Home of Agua Caliente Band members, named after Pedro Chino family"
+    },
+    {
+      "name": "Tahquitz Canyon",
+      "type": "location",
+      "context": "Source of irrigation and domestic water for Palm Springs Indians"
+    },
+    {
+      "name": "Andreas Canyon",
+      "type": "location",
+      "context": "Canyon with year-round water near Palm Springs reservation"
+    },
+    {
+      "name": "Palm Canyon",
+      "type": "location",
+      "context": "Site of trading-post establishment set up without Indian consent"
+    },
+    {
+      "name": "Peacho Road",
+      "type": "location",
+      "context": "Road where Juan Largo was injured by a car"
+    },
+    {
+      "name": "U.S. Highway 80",
+      "type": "location",
+      "context": "Highway crossing through Yuma Indian Reservation causing numerous accidents"
+    },
+    {
+      "name": "Welton",
+      "type": "location",
+      "context": "Location where Gus Townsend was killed by train"
+    },
+    {
+      "name": "Island",
+      "type": "location",
+      "context": "Bottom land at Yuma referred to in water charge dispute"
+    },
+    {
+      "name": "Allotment No. 639",
+      "type": "land_parcel",
+      "context": "Allotment of Rapheal Sheridan, deceased; occupied by E. I. Rhodes"
+    },
+    {
+      "name": "Allotment No. 118",
+      "type": "land_parcel",
+      "context": "Allotment in name of Sarah Chaleco, exchanged April 5, 1926"
+    },
+    {
+      "name": "Allotment No. 273",
+      "type": "land_parcel",
+      "context": "Allotment referenced in connection with Melton Simms failures"
+    },
+    {
+      "name": "Section 6",
+      "type": "land_parcel",
+      "context": "Section of Palm Springs land where water intake is located, belonging to Agua Caliente Band"
+    },
+    {
+      "name": "Sections 4, 5, 10",
+      "type": "land_parcel",
+      "context": "Sections of Palm Springs land through which water company pipe line runs, belonging to Agua Caliente Band"
+    },
+    {
+      "name": "General Allotment Act of 1887",
+      "type": "legislation",
+      "context": "Act of February 8, 1887, guaranteeing allotments free from encumbrance at end of trust period"
+    },
+    {
+      "name": "Act of February 28, 1891",
+      "type": "legislation",
+      "context": "Act giving Yumas right to allotment of 40 acres agricultural or 80 acres grazing land per member"
+    },
+    {
+      "name": "Yuma Agreement of 1893/1894",
+      "type": "legislation",
+      "context": "Agreement signed December 4, 1893, ratified August 15, 1894, by which Yumas surrendered large portion of reservation"
+    },
+    {
+      "name": "Act of August 1, 1914",
+      "type": "legislation",
+      "context": "Act making past irrigation gratuities into reimbursable loans retroactively"
+    },
+    {
+      "name": "Act of March 3, 1911",
+      "type": "legislation",
+      "context": "Act making entire cost of irrigation of Yuma allotted lands reimbursable; created liens on Yuma allotments"
+    },
+    {
+      "name": "Act of March 7, 1928",
+      "type": "legislation",
+      "context": "Act making unpaid irrigation charges a first lien on Indian lands, recited in patents"
+    },
+    {
+      "name": "Act of October 4, 1920",
+      "type": "legislation",
+      "context": "Act under which Yuma Indian Federation of California was organized"
+    },
+    {
+      "name": "Sections 2147, 2148, 2189",
+      "type": "legislation",
+      "context": "Law digest sections regarding removal of whites from Indian reservations, dated 1834"
+    },
+    {
+      "name": "Section 2139",
+      "type": "legislation",
+      "context": "Law section regarding liquor traffic"
+    },
+    {
+      "name": "Laws enacted 1789",
+      "type": "legislation",
+      "context": "Early laws regarding powers and histories relating to President of United States"
+    },
+    {
+      "name": "Laws enacted 1925",
+      "type": "legislation",
+      "context": "Indian Bureau drafted laws in 1925 without consulting Indian chiefs or leaders"
+    },
+    {
+      "name": "Self-government bill No. 7902",
+      "type": "legislation",
+      "context": "Indian self-government bill introduced in Congress, opposed by Quachan Tribal Council"
+    },
+    {
+      "name": "S. 2755",
+      "type": "legislation",
+      "context": "Senate bill related to Indian self-government, opposed by Quachan Tribal Council"
+    },
+    {
+      "name": "Court of Claims bill",
+      "type": "legislation",
+      "context": "Bill rejected, opposed to Federation Indians of California"
+    },
+    {
+      "name": "Mr. Alberts land holding",
+      "type": "acreage_holding",
+      "context": "20 acres belonging to Mr. Alberts and wife, leased in 1923-1924 for $150"
+    },
+    {
+      "name": "Rapheal Sheridan allotment",
+      "type": "acreage_holding",
+      "context": "10-acre allotment no. 639, occupied by E. I. Rhodes after Sheridan's death"
+    },
+    {
+      "name": "Boy's 10-acre allotment",
+      "type": "acreage_holding",
+      "context": "10-acre allotment of which more than half taken by Southern Pacific Railroad, Highway 80, Bard Road, and Spillway without compensation"
+    },
+    {
+      "name": "Albert Snow allotment",
+      "type": "acreage_holding",
+      "context": "Allotment through which Southern Sierras power-line poles pass, receiving $1.69/year"
+    }
+  ],
+  "events": [
+    {
+      "type": "meeting",
+      "date": "1934-06-19",
+      "location": "Superintendent's office, Yuma Indian Reservation",
+      "description": "Federation officials met with Superintendent H. B. Jolley for about one and a half hours to discuss Indian affairs; Billy Poor made statement"
+    },
+    {
+      "type": "automobile accident",
+      "date": "1926-03-07",
+      "location": "Highway Bridge U.S. 80, Yuma Indian Reservation",
+      "description": "John Ducan involved in automobile accident on U.S. Highway 80"
+    },
+    {
+      "type": "automobile accident",
+      "date": "partial-1926",
+      "location": "U.S. Highway 80, Yuma Indian Reservation",
+      "description": "William Penn's team collided with car on U.S. Highway 80"
+    },
+    {
+      "type": "automobile accident",
+      "date": "partial-unknown",
+      "location": "U.S. Highway 80, Yuma Indian Reservation",
+      "description": "Condry Cooper and wife Shekima badly injured by car on Highway 80; Shekima left badly crippled"
+    },
+    {
+      "type": "automobile accident",
+      "date": "1929-05-23",
+      "location": "U.S. Highway 80, Yuma Indian Reservation",
+      "description": "John Cash and his team collided with car on U.S. Highway 80; wagon upset about 100 feet from road"
+    },
+    {
+      "type": "automobile accident/death",
+      "date": "1926-07-20",
+      "location": "Peacho Road, Yuma Indian Reservation",
+      "description": "Old Indian Juan Largo was injured by car on Peacho Road and died from injuries on July 20, 1926"
+    },
+    {
+      "type": "shooting",
+      "date": "partial-1926",
+      "location": "Yuma Indian Reservation",
+      "description": "Jose Emerson was shot by white man named Reveese in 1926"
+    },
+    {
+      "type": "trial",
+      "date": "partial-1926",
+      "location": "Federal Court, Los Angeles",
+      "description": "Case of Jose Emerson shooting brought to Federal court in Los Angeles; white man Reveese released on bail bond"
+    },
+    {
+      "type": "train death",
+      "date": "1928-11-24",
+      "location": "Yuma Indian Reservation railroad track",
+      "description": "Clement Escalante killed by train"
+    },
+    {
+      "type": "train death",
+      "date": "1930-03-07",
+      "location": "Arizona side, near Yuma Reservation",
+      "description": "Gas Townsent killed by train; also noted as killed in Welton"
+    },
+    {
+      "type": "train death",
+      "date": "1930-07-19",
+      "location": "Railroad track, Yuma Indian Reservation",
+      "description": "Henry Snow died on railroad track"
+    },
+    {
+      "type": "train death",
+      "date": "1924-06-04",
+      "location": "Railroad track, Yuma Indian Reservation",
+      "description": "Frank Moaut died on railroad track under Superintendent Odle's administration"
+    },
+    {
+      "type": "train injury/death",
+      "date": "1932-10-06",
+      "location": "Yuma Indian Reservation, S.P.Co. track",
+      "description": "Augustine Carello lost leg cut by train operated by Southern Pacific Company"
+    },
+    {
+      "type": "train death/discovery",
+      "date": "1933-10-13",
+      "location": "Railroad track, Yuma Indian Reservation",
+      "description": "Raymond Baker found dead on track by Indians and Indian policeman; brought to hospital; county coroner Bert Underwood not called"
+    },
+    {
+      "type": "death investigation",
+      "date": "1934-06-11",
+      "location": "Funeral, Yuma Indian Reservation",
+      "description": "Hearing held at funeral regarding Homer Thomas death; attended by William Whitman, Dr. John, and others"
+    },
+    {
+      "type": "X-ray examination",
+      "date": "1934-06-11",
+      "location": "Yuma Indian Reservation",
+      "description": "William Whitman made X-ray of Homer Thomas body; Dr. Danielson and nurse examined body"
+    },
+    {
+      "type": "federal investigation",
+      "date": "1934-06-14",
+      "location": "Yuma, Arizona",
+      "description": "Federal agent Albert Miller of Department of Justice and U.S. Commissioner John Doan of Yuma investigated Homer Thomas death"
+    },
+    {
+      "type": "land exchange",
+      "date": "1926-04-05",
+      "location": "Yuma Indian Reservation",
+      "description": "Allotment no. 639 of Rapheal Sheridan exchanged into name of Sarah Chaleco in allotment no. 118"
+    },
+    {
+      "type": "statement to committee",
+      "date": "1934-06-19",
+      "location": "Yuma Indian Reservation",
+      "description": "Billy Poor made statement to Committee of Yuma Indian Federation and to Senate Committee on Indian Affairs"
+    },
+    {
+      "type": "relief work dispute",
+      "date": "1934-05-01",
+      "location": "Yuma Indian Reservation",
+      "description": "Both crews turned down for labor under relief work from May 1 to May 15, 1934; many Indians dropped off by Indian boss Johnnie L. Black"
+    },
+    {
+      "type": "secret meeting",
+      "date": "1932-08-01",
+      "location": "San Carlos Hotel, Yuma, Arizona",
+      "description": "John Collier visited area secretly, stayed at San Carlos New Hotel and held meetings with select Indians including Patrick Miguel and Lincoln Johnson over three or four nights"
+    },
+    {
+      "type": "Senate subcommittee hearing",
+      "date": "1931-04-16",
+      "location": "Yuma, California",
+      "description": "Senate subcommittee hearing at Yuma Reservation; Indian Bureau witnesses present; Superintendent Jolley and Commissioner Scattergood testified"
+    },
+    {
+      "type": "correspondence",
+      "date": "1931-10-02",
+      "location": "Washington, D.C.",
+      "description": "John Collier, Executive Secretary American Indian Defense Association, wrote to Senator Lynn J. Frazier about Yuma Indian conditions"
+    },
+    {
+      "type": "testimony",
+      "date": "1934-06-29",
+      "location": "Yuma, Arizona",
+      "description": "Ramon Manuel testified before Senate committee about Palm Springs Agua Caliente Band conditions"
+    },
+    {
+      "type": "petition submission",
+      "date": "1934-06-28",
+      "location": "Palm Springs, California",
+      "description": "Agua Caliente Band petition submitted requesting survey of lands and reestablishment of boundary lines"
+    },
+    {
+      "type": "treaty/agreement signing",
+      "date": "1893-12-04",
+      "location": "Yuma Indian Reservation",
+      "description": "Yuma Indians signed agreement surrendering large portion of reservation, believing they would receive free water in exchange"
+    },
+    {
+      "type": "congressional ratification",
+      "date": "1894-08-15",
+      "location": "Washington, D.C.",
+      "description": "Congress ratified Yuma agreement with added provision giving Secretary of Interior authority to fix water rent rates"
+    },
+    {
+      "type": "congressional act",
+      "date": "1911-03-03",
+      "location": "Washington, D.C.",
+      "description": "Congress enacted that entire cost of irrigation of Yuma allotted lands shall be reimbursed; created liens on Yuma allotments"
+    },
+    {
+      "type": "congressional act",
+      "date": "1914-08-01",
+      "location": "Washington, D.C.",
+      "description": "Congress made past irrigation gratuities totaling more than $3,000,000 into reimbursable loans by retroactive enactment"
+    },
+    {
+      "type": "congressional act",
+      "date": "1928-03-07",
+      "location": "Washington, D.C.",
+      "description": "Congress enacted that unpaid charges against Indian lands shall constitute a first lien thereon, recited in any patent or instrument issued"
+    },
+    {
+      "type": "water company organization",
+      "date": "1909-01-01",
+      "location": "Palm Springs, California",
+      "description": "Water company organized and laid pipe line to Palm Springs town through Indian land sections 4, 5, 6, and 10"
+    },
+    {
+      "type": "forced ejection",
+      "date": "partial-1934",
+      "location": "Yuma Indian Reservation",
+      "description": "Cocopah Indians forcibly ejected from Yuma Reservation following death resulting from blow by Indian policeman"
+    },
+    {
+      "type": "arrest",
+      "date": "partial-unknown",
+      "location": "Yuma Indian Reservation",
+      "description": "E. I. Rhodes and others involved in fight with Indian woman; arrest made through justice of peace E. A. Breech of Winterhaven"
+    },
+    {
+      "type": "Indian Bureau establishment",
+      "date": "1824-01-01",
+      "location": "Washington, D.C.",
+      "description": "Indian Bureau organized in 1824 under the War Department"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "lease",
+      "amount": "$150",
+      "payer": "unknown lessee",
+      "payee": "never given to Mr. Alberts and wife",
+      "date": "1923-1924",
+      "description": "20 acres belonging to Mr. Alberts and wife leased for $150; money went to pay water charges on bottom land instead of being given to owners"
+    },
+    {
+      "type": "payment",
+      "amount": "$1.69 per year",
+      "payer": "Southern Sierras Power Company",
+      "payee": "Albert Snow and wife",
+      "date": "annual",
+      "description": "Payment for eight power-line poles going through Albert Snow's allotment, shared between man and wife"
+    },
+    {
+      "type": "fee",
+      "amount": "$3.00",
+      "payer": "Arsenas Chaleco and Emerson",
+      "payee": "Indian Bureau agent",
+      "date": "partial-unknown",
+      "description": "Water charges collected at $3 per case despite 1903 Department order that only $2.50 should be paid"
+    },
+    {
+      "type": "fee",
+      "amount": "$2.50",
+      "payer": "Indian lessees",
+      "payee": "Department",
+      "date": "1903",
+      "description": "1903 Department order setting water charges at $2.50, which agent was violating by collecting $3"
+    },
+    {
+      "type": "sale",
+      "amount": "8 cents per pound",
+      "payer": "unknown buyers",
+      "payee": "unknown sellers",
+      "date": "partial-1934",
+      "description": "Choice ration meat being sold at 8 cents per pound instead of distributed to old people as intended"
+    },
+    {
+      "type": "payment",
+      "amount": "$14,000 appropriation",
+      "payer": "Federal Government",
+      "payee": "relief workers at Yuma",
+      "date": "partial-1934",
+      "description": "First relief work appropriation of $14,000 lasting only 3 months"
+    },
+    {
+      "type": "payment",
+      "amount": "reimbursable debt - amount unspecified",
+      "payer": "Yuma Indians",
+      "payee": "United States Government",
+      "date": "retroactive from 1914",
+      "description": "Past irrigation gratuities totaling more than $3,000,000 converted to reimbursable loans by August 1, 1914 act"
+    },
+    {
+      "type": "payment",
+      "amount": "$30,000",
+      "payer": "Yuma Indians",
+      "payee": "United States Government",
+      "date": "partial-unknown",
+      "description": "Reimbursable charge for roads and bridges standing against the Yumas"
+    },
+    {
+      "type": "payment",
+      "amount": "$5,500",
+      "payer": "Yuma Indians",
+      "payee": "United States Government",
+      "date": "partial-unknown",
+      "description": "Amount already collected from Yumas for roads and bridges reimbursable charge"
+    },
+    {
+      "type": "sale",
+      "amount": "unspecified",
+      "payer": "white buyers",
+      "payee": "United States Government",
+      "date": "post-1894",
+      "description": "Sale of approximately half of remaining irrigable Yuma land, split into 10-acre parcels and sold to whites per article III of 1893 agreement"
+    },
+    {
+      "type": "lease",
+      "amount": "exorbitant prices",
+      "payer": "unknown",
+      "payee": "agency/reservation",
+      "date": "partial-1934",
+      "description": "Gravel pits in reservation leased at exorbitant prices speculating on All-American Canal's path"
+    },
+    {
+      "type": "other",
+      "amount": "unspecified compensation never paid",
+      "payer": "United States Government",
+      "payee": "Yuma Indians",
+      "date": "partial-unknown",
+      "description": "19 cases of flood damage to crops or land never compensated, including Robert Newton's case"
+    },
+    {
+      "type": "other",
+      "amount": "never compensated",
+      "payer": "Highway No. 80 builders",
+      "payee": "Yuma Indians",
+      "date": "partial-unknown",
+      "description": "Some Indians never received complete payments for land given as right-of-way for Highway No. 80"
+    },
+    {
+      "type": "other",
+      "amount": "never compensated",
+      "payer": "Southern Pacific Railroad, Highway 80, Bard Road, Spillway",
+      "payee": "unidentified Indian boy",
+      "date": "partial-unknown",
+      "description": "7 of 10 acres taken from Indian boy's allotment by Southern Pacific Railroad, Highway 80, Bard Road, and Spillway without any compensation"
+    },
+    {
+      "type": "lease",
+      "amount": "unknown, income to superintendent",
+      "payer": "unknown",
+      "payee": "superintendent/bureau",
+      "date": "past 20 years prior to 1934",
+      "description": "Allotment no. 639 of deceased Rapheal Sheridan leased by superintendent for own use, money income retained"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Billy Poor",
+      "type": "member_of",
+      "object": "Yuma Indian Federation",
+      "context": "Committee member who made statement to Senate Committee on Indian Affairs"
+    },
+    {
+      "subject": "H. B. Jolley",
+      "type": "employed_by",
+      "object": "Indian Bureau",
+      "context": "Superintendent at Yuma Indian Reservation for past 8 years"
+    },
+    {
+      "subject": "Melton Sims",
+      "type": "employed_by",
+      "object": "Indian Bureau",
+      "context": "Farm agent at Yuma Indian Reservation"
+    },
+    {
+      "subject": "Dr. Danielson",
+      "type": "employed_by",
+      "object": "Indian Bureau",
+      "context": "Doctor at Yuma Indian Reservation"
+    },
+    {
+      "subject": "E. I. Rhodes",
+      "type": "occupies",
+      "object": "Allotment No. 639",
+      "context": "White man living on deceased Rapheal Sheridan's 10-acre allotment"
+    },
+    {
+      "subject": "Acoyhaquits Escalante",
+      "type": "adjacent_to",
+      "object": "Allotment No. 639",
+      "context": "Has adjacent allotment with disputed boundary line 49 feet into her land"
+    },
+    {
+      "subject": "E. A. Breech",
+      "type": "appointed_by",
+      "object": "H. B. Jolley",
+      "context": "White man appointed as foreman of irrigation service and justice of peace in Winterhaven"
+    },
+    {
+      "subject": "Johnnie L. Black",
+      "type": "employed_by",
+      "object": "Indian Bureau/agency",
+      "context": "Indian boss/foreman of Johnson-grass crew backed by superintendent Jolley"
+    },
+    {
+      "subject": "Ed. Bloomer",
+      "type": "partnership_with",
+      "object": "agency",
+      "context": "Forming partnership with agency at Yuma"
+    },
+    {
+      "subject": "John Collier",
+      "type": "employed_by",
+      "object": "American Indian Defense Association",
+      "context": "Executive Secretary of the association as of 1931"
+    },
+    {
+      "subject": "John Collier",
+      "type": "employed_by",
+      "object": "Indian Bureau",
+      "context": "Commissioner of Indian Affairs in Washington, D.C. by 1934"
+    },
+    {
+      "subject": "Ramon Manuel",
+      "type": "member_of",
+      "object": "Agua Caliente Band of Mission Indians",
+      "context": "Indian from Palm Springs who testified before Senate committee"
+    },
+    {
+      "subject": "Pico Manuel",
+      "type": "member_of",
+      "object": "Agua Caliente Band of Mission Indians",
+      "context": "Signatory of Palm Springs petition"
+    },
+    {
+      "subject": "Marcus J. Pete",
+      "type": "member_of",
+      "object": "Agua Caliente Band of Mission Indians",
+      "context": "Signatory of Palm Springs petition"
+    },
+    {
+      "subject": "John W. Dady",
+      "type": "employed_by",
+      "object": "Indian Bureau",
+      "context": "Superintendent at Palm Springs Indian Reservation"
+    },
+    {
+      "subject": "Loson L. Odle",
+      "type": "promoted_to",
+      "object": "headship of Southern Pueblos",
+      "context": "Former superintendent at Yuma, promoted despite protests from Indian rights organizations"
+    },
+    {
+      "subject": "Indian Bureau",
+      "type": "organized_under",
+      "object": "War Department",
+      "context": "Indian Bureau organized in 1824 under the War Department"
+    },
+    {
+      "subject": "Sanders",
+      "type": "employed_by",
+      "object": "Indian Bureau",
+      "context": "Chief clerk at Yuma Indian Reservation"
+    },
+    {
+      "subject": "Sanders wife",
+      "type": "employed_by",
+      "object": "Indian Bureau",
+      "context": "Wife of chief clerk Sanders working in service"
+    },
+    {
+      "subject": "Sanders son",
+      "type": "employed_by",
+      "object": "Indian Bureau",
+      "context": "Son of chief clerk Sanders put to work after returning from school"
+    },
+    {
+      "subject": "Rapheal Sheridan",
+      "type": "allottee_of",
+      "object": "Allotment No. 639",
+      "context": "Deceased Indian allottee; land occupied by E. I. Rhodes"
+    },
+    {
+      "subject": "Sarah Chaleco",
+      "type": "allottee_of",
+      "object": "Allotment No. 118",
+      "context": "Allotment exchanged April 5, 1926"
+    },
+    {
+      "subject": "Southern Pacific Company",
+      "type": "caused_death_of",
+      "object": "multiple Yuma Indians",
+      "description": "Train killed at least 6 Indians including Clement Escalante, Gas Townsent, Henry Snow, Frank Moaut, Augustine Carello, Raymond Baker, Homer Thomas"
+    },
+    {
+      "subject": "Albert Snow",
+      "type": "allottee_of",
+      "object": "allotment with power-line poles",
+      "context": "Southern Sierras power-line poles through his allotment, receiving only $1.69/year"
+    },
+    {
+      "subject": "Yuma Indians",
+      "type": "signed_agreement_with",
+      "object": "United States Government",
+      "context": "Agreement of December 4, 1893 surrendering large portion of reservation"
+    },
+    {
+      "subject": "Congress",
+      "type": "ratified",
+      "object": "Yuma agreement",
+      "context": "Ratified August 15, 1894 with added provision on water rents"
+    },
+    {
+      "subject": "Lynn J. Frazier",
+      "type": "chairman_of",
+      "object": "Senate Indian Investigation Committee",
+      "context": "Recipient of John Collier's letter dated October 2, 1931"
+    },
+    {
+      "subject": "Indian Bureau",
+      "type": "blocked",
+      "object": "tribes' efforts to prosecute test case",
+      "context": "Blocked tribes' attempts to bring constitutional questions before Supreme Court"
+    },
+    {
+      "subject": "Johnnie L. Black",
+      "type": "chairman_of",
+      "object": "Quachan Tribal Council",
+      "context": "Also serves as Indian boss/foreman"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "John Collier",
+      "sender_title": "Executive Secretary, American Indian Defense Association",
+      "recipient": "Lynn J. Frazier",
+      "recipient_title": "Chairman, Senate Indian Investigation Committee",
+      "date": "1931-10-02",
+      "subject": "Conditions of Yuma Indians; facts withheld at April 16 hearing",
+      "action_requested": "Review of withheld record showing Government betrayal of Yumas; consideration of reimbursable charges for roads and bridges totaling $30,000, of which $5,500 already collected",
+      "outcome": "Letter submitted for record"
+    },
+    {
+      "sender": "Pico Manuel, Marcus J. Pete, Ramon Manuel",
+      "sender_title": "Members of Agua Caliente Band of Mission Indians, The Committee",
+      "recipient": "Senate Committee on Indian Affairs",
+      "recipient_title": "Committee",
+      "date": "1934-06-28",
+      "subject": "Survey of Palm Springs Indian lands, boundary reestablishment, water rights, trading post, airport payment",
+      "action_requested": "Complete survey of lands, marking old boundary lines with substantial monuments at section corners; investigation of water rights, trading post, airport payment",
+      "outcome": "Document put in record by Chairman; committee agreed to check it up"
+    },
+    {
+      "sender": "Billy Poor",
+      "sender_title": "Committee Member, Yuma Indian Federation",
+      "recipient": "Senate Committee on Indian Affairs",
+      "recipient_title": "Committee",
+      "date": "1934-06-19",
+      "subject": "Removal of Superintendent H. B. Jolley, conditions on Yuma Indian Reservation",
+      "action_requested": "Removal of Superintendent Jolley, Melton Sims, and Dr. Danielson from Indian Service; settlement of outstanding cases",
+      "outcome": "Statement entered into record"
+    },
+    {
+      "sender": "Quachan Tribal Council",
+      "sender_title": "Tribal Council",
+      "recipient": "Senate Committee on Indian Affairs",
+      "recipient_title": "Committee",
+      "date": "1934-06-29",
+      "subject": "Opposition to self-government bill no. 7902 and S. 2755; Court of Claims bill rejection",
+      "action_requested": "Committee to note opposition of educated Indians to self-government bill",
+      "outcome": "Statement entered into record"
+    },
+    {
+      "sender": "Agua Caliente Band (Ramon Manuel)",
+      "sender_title": "Committee member",
+      "recipient": "Senate Committee Chairman",
+      "recipient_title": "Chairman",
+      "date": "partial-1934",
+      "subject": "Request for Mr. Dady to meet with tribe",
+      "action_requested": "Mr. Dady asked to come down and talk; he refused saying he had no time",
+      "outcome": "Dady testified he had visited about seven times and tribe visited his office less than a week prior"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "unspecified",
+      "sponsor": "unspecified",
+      "action_type": "enacted",
+      "date": "1887-02-08",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "General Allotment Act; guaranteed allotments free from encumbrances; gave Yumas right to 40 acres agricultural or 80 acres grazing land per member"
+    },
+    {
+      "bill_number": "unspecified",
+      "sponsor": "unspecified",
+      "action_type": "enacted",
+      "date": "1891-02-28",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Act giving Yumas right to allotment of 40 acres per member"
+    },
+    {
+      "bill_number": "Yuma Agreement ratification",
+      "sponsor": "unspecified",
+      "action_type": "enacted",
+      "date": "1894-08-15",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Congress ratified Yuma agreement with added joker giving Secretary of Interior authority to fix water rent rates for Yuma Indians"
+    },
+    {
+      "bill_number": "unspecified",
+      "sponsor": "unspecified",
+      "action_type": "enacted",
+      "date": "1911-03-03",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Entire cost of irrigation of Yuma allotted lands made reimbursable; debts made liens on Yuma allotments; guarantee of freedom from encumbrance repudiated for Yumas"
+    },
+    {
+      "bill_number": "unspecified",
+      "sponsor": "unspecified",
+      "action_type": "enacted",
+      "date": "1914-08-01",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Made past irrigation gratuities totaling more than $3,000,000 into reimbursable loans by retroactive enactment; acting on recommendation of Board of Indian Commissioners and Indian Bureau; Congress refused to make charges liens on allotments at this time"
+    },
+    {
+      "bill_number": "unspecified",
+      "sponsor": "unspecified",
+      "action_type": "enacted",
+      "date": "1928-03-07",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Unpaid charges against Indian lands constituted a first lien thereon; to be recited in any patent or instrument issued for such lands"
+    },
+    {
+      "bill_number": "7902",
+      "sponsor": "unspecified",
+      "action_type": "introduced",
+      "date": "partial-1934",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Indian self-government bill; working for passage by Indian Commissioners in Washington; opposed by Quachan Tribal Council and Yuma Indian Federation"
+    },
+    {
+      "bill_number": "S. 2755",
+      "sponsor": "unspecified",
+      "action_type": "introduced",
+      "date": "partial-1934",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Senate bill related to Indian self-government; opposed by Quachan Tribal Council"
+    },
+    {
+      "bill_number": "Court of Claims bill",
+      "sponsor": "unspecified",
+      "action_type": "introduced",
+      "date": "partial-1934",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Rejected; also opposed to Federation Indians of California"
+    },
+    {
+      "bill_number": "sections 2147, 2148, 2189",
+      "sponsor": "unspecified",
+      "action_type": "enacted",
+      "date": "1834-01-01",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Law of digest regarding removal of whites from Indian reservations; 100 years old; cannot be changed without act of Congress"
+    },
+    {
+      "bill_number": "new bill",
+      "sponsor": "unspecified",
+      "action_type": "introduced",
+      "date": "partial-1934",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "New bill introduced in Congress supported by Yuma Indian Federation; copy requested"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Billy Poor",
+      "witness_title": "Committee Member, Yuma Indian Federation; Cocopah Tribe",
+      "hearing": "Senate Committee on Indian Affairs hearing at Yuma Indian Reservation",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Yuma Indian Reservation, California",
+      "date": "1934-06-19",
+      "subject": "Conditions on Yuma Indian Reservation; Superintendent Jolley; large landowner Billy Poor (self-identified)",
+      "key_claims": "Superintendent Jolley refused to give orders to Billy Poor and failed to protect Indians. Federation officials met with Jolley for about one and a half hours. Jolley's men fought against them. Demanded Jolley show authority. Demanded Jolley be removed. Statement made on behalf of Cocopah Tribe and Yuma Indian Federation.",
+      "questioner": "unspecified"
+    },
+    {
+      "witness": "John F. Yuma",
+      "witness_title": "Spokesman of the Tribe",
+      "hearing": "Senate Committee on Indian Affairs hearing at Yuma Indian Reservation",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Yuma Indian Reservation, California",
+      "date": "1934-06-19",
+      "subject": "Highway accidents, railroad deaths, allotment abuses, white squatters, relief work discrimination, self-government bill opposition, request for special attorney",
+      "key_claims": "Multiple Indians killed or injured on U.S. Highway 80 with no compensation or suits filed by Superintendent Jolley. Railroad killed Indians with no compensation. Allotment no. 639 improperly managed; E. I. Rhodes living on deceased Indian's land. Whites living on Indian land without paying taxes including Jim Parker. White foreman E. A. Breech appointed to irrigation foreman position that should go to an Indian. Superintendent backed discrimination in relief work. Relief work crews excluding Federation Indians. John Collier visited secretly in 1932 and held small meetings. Opposed self-government bill no. 7902 and S. 2755. District attorney never helped Indians. Requested special attorney under contract approved by Secretary of Interior. Indians have Indian judges and policemen for past 14 years.",
+      "questioner": "unspecified"
+    },
+    {
+      "witness": "Richard Nio",
+      "witness_title": "unspecified, Indian from Yuma Reservation",
+      "hearing": "Senate Committee on Indian Affairs hearing",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Yuma, Arizona",
+      "date": "1934-06-29",
+      "subject": "Land lease abuses, water charges, Winterhaven townsite, relief work problems, railroad deaths, meat rationing abuses, Southern Sierras power poles, Cocopah ejections, Highway 80 compensation, farmer agent failures, reimbursable homes",
+      "key_claims": "Mr. Alberts land of 20 acres leased in 1923-24 for $150 with money never given to owners; went to pay water charges. Agent collecting $3 for water charges despite 1903 order setting rate at $2.50. Boy had more than half of 10-acre allotment taken by Southern Pacific, Highway 80, Bard Road, and Spillway without compensation. Winterhaven section taken up by whites, subdivided and sold by McOoon; saloons open on reservation. Relief work very poor; $14,000 appropriation lasted only 3 months; old people aged 60-100 put to work; Federation members refused work. Choice ration meat being sold at 8 cents per pound; worst meat given to old people. Gravel pits leased at exorbitant prices. Roads in terrible condition. Gas stations re-leased or subleased. Cotton gin inactive 4 years but operator still living there. Cocopahs forcibly ejected. 19 flood damage cases never compensated. Southern Sierras power poles through Albert Snow's allotment paying only $1.69/year. Farmer agent never seen in whole year; does not encourage farming. 6 Indians killed by railroad total under Jolley and Odle. Reimbursable homes provided without furniture or implements. Chief clerk Sanders mean to people; his wife and son employed in service. Home economics teacher useless and dishonest in reports to Washington.",
+      "questioner": "unspecified"
+    },
+    {
+      "witness": "Ramon Manuel",
+      "witness_title": "Committee member, Agua Caliente Band of Mission Indians, Palm Springs",
+      "hearing": "Senate Committee on Indian Affairs hearing",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Yuma, Arizona",
+      "date": "1934-06-29",
+      "subject": "Palm Springs Indian land boundary issues, water rights, trading post, airport",
+      "key_claims": "Old boundary lines lost; white neighbors continuously encroaching. Forefathers tilled soil and brought Tahquitz Canyon water for irrigation but agent McCallum drove them away. Cemetery still visible with fig trees as markers. Pedro Chino is last member of family after whom Chino Canyon was named. Water company organized in 1909 laid pipe line through Indian land sections 4, 5, 6, and 10; Mr. Rogers agreed to give small water portion for domestic use as intake was on their land, but agent Miss C. True refused. Agent Ellis gave no satisfaction. Tahquitz Canyon water dries up every summer, is unsafe, flows through open ditch. Five other landowners given water from ditch leaving Indians short. Have to pay water company for domestic water; some members had water shut off. Trading post at Palm Canyon established without consent. County constructed highway through Indian land without compensation. Airport taken with understanding tribe would receive money but never paid. Request to reestablish old boundaries with substantial monuments.",
+      "questioner": "Senator Wheeler (Chairman)"
+    },
+    {
+      "witness": "John W. Dady",
+      "witness_title": "Superintendent, Palm Springs Indian Reservation",
+      "hearing": "Senate Committee on Indian Affairs hearing",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Yuma, Arizona",
+      "date": "1934-06-29",
+      "subject": "Visits to Palm Springs reservation",
+      "key_claims": "Has visited Palm Springs about seven times. Tribe visited his office less than a week ago as full committee. Received a pleasant letter after their visit stating they were pleased with what he said and would consider what he talked about.",
+      "questioner": "Senator Wheeler (Chairman)"
+    },
+    {
+      "witness": "H. B. Jolley",
+      "witness_title": "Superintendent, Yuma Indian Reservation",
+      "hearing": "Senate subcommittee hearing at Yuma Reservation",
+      "committee": "Senate Indian Investigation subcommittee",
+      "location": "Yuma, California",
+      "date": "1931-04-16",
+      "subject": "Conditions of Yuma and Cocopah Indians",
+      "key_claims": "Many Yuma Indians do not have money to provide proper clothing and food. Cocopahs exist under squalid conditions: little mud house, no sanitary arrangements, mud floors, no furniture. No reimbursable money to buy implements for Cocopahs trying to farm. They borrow implements and work animals from each other. Despite all this, stated the Yumas are in fairly satisfactory condition. Yumas preferred as workers over Mexicans but cannot get employment. Yumas denied agricultural credit and admittedly cannot farm their own lands without it.",
+      "questioner": "unspecified"
+    },
+    {
+      "witness": "Commissioner Scattergood",
+      "witness_title": "Commissioner, Indian Bureau",
+      "hearing": "Senate subcommittee hearing at Yuma Reservation",
+      "committee": "Senate Indian Investigation subcommittee",
+      "location": "Yuma, California",
+      "date": "1931-04-16",
+      "subject": "Department investigation of Yuma Indian complaints",
+      "key_claims": "Department was making an investigation of all the matters raised by the Yumas about their treatment. After 2 years in office, still making undesignated investigation.",
+      "questioner": "unspecified"
+    }
+  ],
+  "taxes": [
+    {
+      "taxpayer": "Jim Parker",
+      "land_description": "Indian land, Yuma Indian Reservation",
+      "tax_type": "property",
+      "amount": "unpaid",
+      "year": "unspecified",
+      "status": "delinquent",
+      "county": "unspecified",
+      "context": "White man living on Indian land without paying taxes; permitted by Superintendent Jolley"
+    },
+    {
+      "taxpayer": "Yuma Indians",
+      "land_description": "Yuma Indian allotments",
+      "tax_type": "other",
+      "amount": "$3.00 per case (overcharge; should be $2.50 per 1903 Department order)",
+      "year": "ongoing",
+      "status": "paid under protest",
+      "county": "Yuma County",
+      "context": "Water charges collected by agent at $3 per case despite 1903 Department order setting rate at $2.50; cases of Arsenas Chaleco and Emerson cited"
+    }
+  ],
+  "mortgages": [
+    {
+      "borrower": "Yuma Indians",
+      "lender": "United States Government",
+      "amount": "more than $3,000,000 total (irrigation reimbursable charges)",
+      "land_description": "All Yuma Indian allotted lands",
+      "acreage": "unspecified",
+      "date": "1914-08-01 retroactive",
+      "interest_rate": "unspecified",
+      "status": "active",
+      "context": "Congress converted past irrigation gratuities into reimbursable loans by retroactive enactment of August 1, 1914; Act of March 7, 1928 further made unpaid charges a first lien on Indian lands"
+    },
+    {
+      "borrower": "Yuma Indians",
+      "lender": "United States Government",
+      "amount": "$30,000 (roads and bridges)",
+      "land_description": "Yuma Indian Reservation",
+      "acreage": "unspecified",
+      "date": "unspecified",
+      "interest_rate": "unspecified",
+      "status": "active",
+      "context": "Reimbursable charge for roads and bridges standing against the Yumas despite act appropriating the money not making it reimbursable against Indians; $5,500 already collected"
+    }
+  ]
+}

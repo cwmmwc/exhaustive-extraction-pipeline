@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_074",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "100",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louis H. Goings",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Rapid City, Pennington County, South Dakota",
+    "Allotment number": "5728",
+    "Cancelled": "The patent has not been cancelled.",
+    "Refused/Protested": "accepted without protest",
+    "Recorded patent": "was not filed for record. I just received it through the mail and put it with his papers.",
+    "Sold/Mortgaged": "mortgaged; title lost by foreclosure; land remaining is now sold for taxes",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "got a loan of Six hundred dollars, or part of the land as described herein, and was unable to pay the same. Paid some interest and taxes on the place for a few years, then affiant got behind in his payments, and the same was foreclosed, and title lost. Of the land remaining, it is now sold for taxes, and affiant is unable to redeem from it at the present time.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Apr. 3, 1918",
+    "Gender": "Male",
+    "Age": "50 years of age",
+    "Occupation/Income": "working for wages at the United States Indian School",
+    "NOTES": "Allotment is All of section 9, T. 40N., R. 37W., of the 6th P.M., in South Dakota, 640 acres. Patent sent from Pine Ridge, S.D. by Major Brennan. Date of delivery of patent was Jul. 1, 1918; he thinks it was receipted for. Mortgage foreclosed with title taken away approximately March 1928. Not defrauded in his opinion, but a combination of circumstances which would not permit meeting interest and tax payments. Dependents are wife and six children. Mental condition good, physical condition good, financial condition poor. The Government or State does not contribute anything except wages earned. Document received at Pine Ridge Agency March 25, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2643,
+    "output_tokens": 534
+  },
+  "elapsed": 10.4
+}

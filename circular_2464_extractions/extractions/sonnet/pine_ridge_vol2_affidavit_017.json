@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_017",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "23-24",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Mousseau",
+    "Tribe/Reservation": "Pine Ridge Reservation",
+    "Post Office Address": "Patricia, So. Dakota",
+    "Allotment number": "2206",
+    "Cancelled": "patent has not been cancelled",
+    "Refused/Protested": "Receipt was not protested",
+    "Recorded patent": "it was filed by S.W. Waddell, to whom I sold the land",
+    "Sold/Mortgaged": "The land was sold by me outright, not mortgaged",
+    "Buyer": "W.S. Waddell, Martin, S.D., and received $4500.00",
+    "Tax burden forced sale/Mortgage": "None of this land was sold for taxes or debts",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "59 years of age",
+    "Occupation/Income": "I support myself by my own effort, with no assistance from the U.S.Government, with poor success",
+    "NOTES": "Resides on Pine Ridge Reservation, in Bennett County; received fee patent by registered letter and receipted for; supports wife and partially supports three boys, all single and living at home but of legal age; states 'I was not defrauded out of this property in any manner'; believes $4500.00 was a fair consideration; paid in full by check; document also contains partial text from a separate affidavit by Charles Provost (No. 2189, Shannon County, South Dakota), age 63, post office Martin, South Dakota, allotment 320 acres, sold in 1920 to a man named Johnson of Vetal, South Dakota for $3300.00 cash, sold on account of not wishing to pay taxes; Provost stated he did not want his patent but accepted it after Indian Agency Office warned land would be assessed for taxes and sold; Provost has very poor health (back trouble and rheumatism, unable to work for 26 years), wife works in a restaurant, he works common labor when able, four children to support (one in poor health); sworn November 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2964,
+    "output_tokens": 562
+  },
+  "elapsed": 12.0
+}

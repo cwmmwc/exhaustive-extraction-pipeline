@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_039",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "56",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Ivy Johnson\u2014nee Livermont",
+    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Post Office Address": "Gordon, Nebraska",
+    "Allotment number": "2549",
+    "Cancelled": "not stated",
+    "Refused/Protested": "while she did not protest against taking it, she would not have taken it until the end of the trust period, if she had been consulted about it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "she still owns it, and it has never been under mortgage",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "she has kept the taxes paid up on her land all these years",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Female",
+    "Age": "43 years old",
+    "Occupation/Income": "her husband supports her and the children by ranching; and that this is the only source of his revenue",
+    "NOTES": "mentally competent and has good health; mother of four minor children, all of whom have good health; husband has good health; forced patent in fee issued for her 320 acre allotment and forwarded by mail; she never sold her land for any debts incurred prior to receiving the patent in fee; has never received any help from the County, State nor the United States Government; document reference: 222444. 22404/a; sworn April 9, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2243,
+    "output_tokens": 413
+  },
+  "elapsed": 6.8
+}

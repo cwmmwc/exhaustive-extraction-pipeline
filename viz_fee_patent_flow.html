@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fee Patent Flow: Mechanism to Outcome</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #F7F3EC;
+    color: #1A1714;
+  }
+  header {
+    padding: 40px 48px 24px;
+    border-bottom: 1px solid #D4CEC4;
+  }
+  header h1 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  header p {
+    font-size: 14px;
+    color: #6B6358;
+    max-width: 800px;
+    line-height: 1.5;
+  }
+  .stats {
+    padding: 16px 48px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: #6B6358;
+    border-bottom: 1px solid #D4CEC4;
+    display: flex;
+    gap: 32px;
+  }
+  .stats span { color: #A3542E; font-weight: 500; }
+  #sankey {
+    padding: 20px 48px;
+  }
+  .node-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .link {
+    fill: none;
+    stroke-opacity: 0.3;
+  }
+  .link:hover {
+    stroke-opacity: 0.7;
+  }
+  .tooltip {
+    position: absolute;
+    background: #1A1714;
+    color: #E8E4DC;
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.5;
+    pointer-events: none;
+    max-width: 350px;
+    display: none;
+    z-index: 100;
+  }
+  .tooltip .label { color: #D4754A; font-weight: 600; }
+
+  h2 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 32px 48px 16px;
+  }
+  .cases-table {
+    margin: 0 48px 48px;
+    border-collapse: collapse;
+    font-size: 13px;
+    width: calc(100% - 96px);
+  }
+  .cases-table th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #6B6358;
+    padding: 8px 12px;
+    border-bottom: 2px solid #1A1714;
+  }
+  .cases-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #D4CEC4;
+    vertical-align: top;
+  }
+  .cases-table tr:hover td {
+    background: #EDE8DF;
+  }
+  .mech-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+  }
+  .outcome-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Fee Patent Flow: From Policy to Outcome</h1>
+  <p>How were fee patents issued, and what happened to the land? The left column shows the mechanism by which trust land was converted to fee patent status. The right column shows the outcome. The width of each flow is proportional to the number of allottees.</p>
+</header>
+
+<div class="stats">
+  <div>Total fee patents: <span>3827</span></div>
+  <div>Named allottees: <span>3115</span></div>
+  <div>Sources: <span>KCA + Survey of Conditions</span></div>
+</div>
+
+<div id="sankey"></div>
+<div class="tooltip" id="tooltip"></div>
+
+<h2 style="padding: 32px 48px 8px; font-family: 'Newsreader', Georgia, serif; font-size: 22px; font-weight: 500; border-top: 1px solid #D4CEC4;">The Policy Shift Over Time</h2>
+<p style="padding: 0 48px 16px; font-size: 14px; color: #6B6358; max-width: 800px; line-height: 1.5;">
+The same Sankey split by decade. Watch how the mechanisms and outcomes change: Declaration of Policy and competency commission patents cluster in the pre-1920 era under Commissioner Sells. Administrative patents continue through the 1920s. The proportion of known outcomes varies by period.
+</p>
+<div id="temporal-sankeys" style="padding: 0 48px 24px;"></div>
+
+<h2 style="padding: 32px 48px 8px; font-family: 'Newsreader', Georgia, serif; font-size: 22px; font-weight: 500; border-top: 1px solid #D4CEC4;">The Government's Response: DOJ Tax Recovery Cases</h2>
+<p style="padding: 0 48px 16px; font-size: 14px; color: #6B6358; max-width: 800px; line-height: 1.5;">
+After allottees received fee patents, counties began taxing their land — often illegally, since trust land was tax-exempt. The Department of Justice filed suits to recover these taxes. The DOJ index cards document <span style="color: #A3542E; font-weight: 600;">299</span> tax recovery cases naming <span style="color: #A3542E; font-weight: 600;">383</span> allottees across <span style="color: #A3542E; font-weight: 600;">106</span> counties.
+</p>
+<div id="doj-chart" style="padding: 0 48px 24px;"></div>
+
+<h3 style="padding: 16px 48px 8px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; color: #6B6358;">DOJ Tax Recovery: Allottees by Case</h3>
+<table class="cases-table">
+  <thead>
+    <tr><th>Allottee</th><th>Tribe</th><th>County</th><th>Case</th><th>File #</th></tr>
+  </thead>
+  <tbody id="doj-body"></tbody>
+</table>
+
+<h2>Individual Fee Patent Cases</h2>
+<table class="cases-table">
+  <thead>
+    <tr>
+      <th>Allottee</th>
+      <th>Mechanism</th>
+      <th>Outcome</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody id="cases-body">
+  </tbody>
+</table>
+
+<script>
+const data = {"nodes": [{"label": "Administrative", "type": "mechanism", "count": 1673}, {"label": "Other/Unknown", "type": "mechanism", "count": 1125}, {"label": "By Application", "type": "mechanism", "count": 496}, {"label": "Competency Commission", "type": "mechanism", "count": 389}, {"label": "Private Bill", "type": "mechanism", "count": 78}, {"label": "Forced (no application)", "type": "mechanism", "count": 43}, {"label": "Declaration of Policy", "type": "mechanism", "count": 23}, {"label": "Outcome Unknown", "type": "outcome", "count": 2221}, {"label": "Sold", "type": "outcome", "count": 1265}, {"label": "Sold & Mortgaged", "type": "outcome", "count": 159}, {"label": "Mortgaged", "type": "outcome", "count": 123}, {"label": "Patent Canceled", "type": "outcome", "count": 35}, {"label": "Retained", "type": "outcome", "count": 24}], "links": [{"source": 0, "target": 7, "value": 1013}, {"source": 1, "target": 7, "value": 606}, {"source": 0, "target": 8, "value": 499}, {"source": 1, "target": 8, "value": 429}, {"source": 2, "target": 7, "value": 335}, {"source": 3, "target": 7, "value": 211}, {"source": 3, "target": 8, "value": 135}, {"source": 2, "target": 8, "value": 134}, {"source": 0, "target": 10, "value": 67}, {"source": 1, "target": 9, "value": 59}, {"source": 0, "target": 9, "value": 58}, {"source": 4, "target": 8, "value": 44}, {"source": 4, "target": 7, "value": 32}, {"source": 0, "target": 11, "value": 23}, {"source": 1, "target": 10, "value": 22}, {"source": 3, "target": 9, "value": 20}, {"source": 3, "target": 10, "value": 17}, {"source": 2, "target": 9, "value": 16}, {"source": 5, "target": 7, "value": 16}, {"source": 5, "target": 8, "value": 14}, {"source": 0, "target": 12, "value": 13}, {"source": 6, "target": 8, "value": 10}, {"source": 2, "target": 10, "value": 9}, {"source": 6, "target": 7, "value": 8}, {"source": 1, "target": 12, "value": 5}, {"source": 5, "target": 11, "value": 5}, {"source": 5, "target": 9, "value": 5}, {"source": 1, "target": 11, "value": 4}, {"source": 3, "target": 12, "value": 4}, {"source": 6, "target": 10, "value": 4}, {"source": 5, "target": 10, "value": 3}, {"source": 2, "target": 12, "value": 2}, {"source": 3, "target": 11, "value": 2}, {"source": 4, "target": 9, "value": 1}, {"source": 6, "target": 11, "value": 1}, {"source": 4, "target": 10, "value": 1}], "notable": [{"allottee": "Tribal members", "mechanism": "Administrative", "outcome": "Sold", "period": "Unknown", "acreage": "unknown", "patent_date": "unknown", "buyer": "City of Lawton", "sale_price": "unknown (resulted in $42.50 per capita for 7,235 members)", "mortgage_holder": null, "mortgage_amount": "unknown", "context": "Land sale to City of Lawton pending Secretary of Interior approval", "database": "historical_docs"}, {"allottee": "Lula Wyatt Willis", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": "160 acres (implied; reference to 'the other 80' suggests two 80-acre parcels)", "patent_date": "1919-12-03", "buyer": "", "sale_price": "", "mortgage_holder": null, "mortgage_amount": "$6500 mortgage still in effect, due 1950", "context": "", "database": "historical_docs"}, {"allottee": "Individual Indians", "mechanism": "Administrative", "outcome": "Sold & Mortgaged", "period": "Unknown", "acreage": "160 acres per person", "patent_date": "25 years after allotment", "buyer": "Not applicable", "sale_price": "Not applicable", "mortgage_holder": null, "mortgage_amount": "Land cannot be encumbered or mortgaged during 25-year trust period", "context": "", "database": "historical_docs"}, {"allottee": "Levi W. Jones", "mechanism": "Competency Commission", "outcome": "Sold", "period": "Unknown", "acreage": "unknown", "patent_date": "unknown", "buyer": "none (retained)", "sale_price": "none", "mortgage_holder": null, "mortgage_amount": "none", "context": "Only member of Sac and Fox Tribe who owns his 1891 allotment unrestricted and pays taxes", "database": "historical_docs"}, {"allottee": "Sac and Fox allottees (493 of 499)", "mechanism": "Administrative", "outcome": "Sold", "period": "Pre-1920", "acreage": "various", "patent_date": "1891-1955", "buyer": "various", "sale_price": "unknown", "mortgage_holder": null, "mortgage_amount": "unknown", "context": "493 of 499 allotments made in 1891 have been sold and are no longer restricted, with owners scattered across the US", "database": "historical_docs"}, {"allottee": "Mabel Sautaukoy", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": null, "patent_date": "1919-12-03", "buyer": null, "sale_price": null, "mortgage_holder": null, "mortgage_amount": "$2500.00", "context": "", "database": "historical_docs"}, {"allottee": "Creek citizens (general)", "mechanism": "Administrative", "outcome": "Sold", "period": "Pre-1920", "acreage": "160 acres", "patent_date": "1901-03-01 onwards", "buyer": "N/A - direct allotment", "sale_price": "$1,040 (standard value at $6.50/acre)", "mortgage_holder": null, "mortgage_amount": "Restricted: not alienable for 5 years; homestead (40 acres) inalienable for 21 years and nontaxable", "context": "", "database": "historical_docs"}, {"allottee": "John C. West", "mechanism": "Competency Commission", "outcome": "Sold", "period": "1935+", "acreage": "not specified", "patent_date": "1955-08-21 (approved date mentioned)", "buyer": "not applicable", "sale_price": "not applicable", "mortgage_holder": null, "mortgage_amount": "not specified", "context": "", "database": "historical_docs"}, {"allottee": "Mattie Sturm", "mechanism": "Administrative", "outcome": "Sold & Mortgaged", "period": "Pre-1920", "acreage": "not specified", "patent_date": "1917-08-14", "buyer": "John Brown", "sale_price": "$15,000 (approximate, trade)", "mortgage_holder": null, "mortgage_amount": "$6000 to Commerce Trust Company, assumed by buyer", "context": "", "database": "historical_docs"}, {"allottee": "Alice F. Osborne", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": "", "patent_date": "1917-08-24", "buyer": "", "sale_price": "", "mortgage_holder": null, "mortgage_amount": "Allotment heavily mortgaged: $4000 to Gumm Bros (10 years, renewed) and $1000 Government loan (31 years)", "context": "", "database": "historical_docs"}, {"allottee": "Nancy Parrish", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": "unknown total (140 acres mortgaged)", "patent_date": "1917-08-24", "buyer": null, "sale_price": null, "mortgage_holder": null, "mortgage_amount": "$5000 mortgage to State School Land Department on 140 acres at 5% interest for 5 years", "context": "", "database": "historical_docs"}, {"allottee": "[Deceased child of Delos K. Lonewolf]", "mechanism": "Administrative", "outcome": "Sold", "period": "Pre-1920", "acreage": "160 acres", "patent_date": "[Prior to 1908]", "buyer": "[Unnamed]", "sale_price": "$3500", "mortgage_holder": null, "mortgage_amount": "", "context": "", "database": "historical_docs"}, {"allottee": "Nettie Kaulaity", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": null, "patent_date": "1919-12-03", "buyer": null, "sale_price": "$3775.00", "mortgage_holder": null, "mortgage_amount": "never mortgaged", "context": "", "database": "historical_docs"}, {"allottee": "Delos K. Lonewolf", "mechanism": "Administrative", "outcome": "Sold & Mortgaged", "period": "Pre-1920", "acreage": "unspecified", "patent_date": "1910-01", "buyer": "none (retained by allottee)", "sale_price": "none", "mortgage_holder": null, "mortgage_amount": "$2300.00 immediately after patent issued, land valued at $6000.00", "context": "", "database": "historical_docs"}, {"allottee": "Ada Didier (Duggan)", "mechanism": "Administrative", "outcome": "Sold", "period": "1930-1934", "acreage": "unknown", "patent_date": "during trust period (prior to 1930)", "buyer": "none - issued in fee", "sale_price": "none", "mortgage_holder": null, "mortgage_amount": "none mentioned", "context": "", "database": "historical_docs"}, {"allottee": "Carrie Smith", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "1920-1929", "acreage": "unspecified", "patent_date": "1920-12-21", "buyer": "none", "sale_price": "none", "mortgage_holder": null, "mortgage_amount": "$6500 mortgage held, transferred from initial $5000 mortgage, runs 10 years, not yet due as of November 1928", "context": "", "database": "historical_docs"}, {"allottee": "Queton", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": "unknown", "patent_date": "1919-12-03", "buyer": "N/A", "sale_price": "N/A", "mortgage_holder": null, "mortgage_amount": "None - Queton stated no part of allotment was ever mortgaged", "context": "", "database": "historical_docs"}, {"allottee": "Clay J. Brown", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": "130.46 acres", "patent_date": "1917-08-24", "buyer": "", "sale_price": "", "mortgage_holder": null, "mortgage_amount": "$4000 to Ed S. LeVan, executed circa 1919-1920, renewed 1929 for 7 years", "context": "", "database": "historical_docs"}, {"allottee": "Quoecopah", "mechanism": "Administrative", "outcome": "Sold & Mortgaged", "period": "1920-1929", "acreage": "160 acres (approximate, based on two 80-acre parcels)", "patent_date": "1920-08-23", "buyer": "L. P. Crose (deed purchaser)", "sale_price": "$350 (debt settlement)", "mortgage_holder": null, "mortgage_amount": "$6000 total indebtedness including Jasper Saunkeah $1500, Porter Loan Company $3000, L. P. Crose $2000", "context": "", "database": "historical_docs"}, {"allottee": "Earl T. Downing", "mechanism": "Administrative", "outcome": "Sold & Mortgaged", "period": "1920-1929", "acreage": "", "patent_date": "1920-12-21", "buyer": "Unnamed Buyer", "sale_price": "$9000", "mortgage_holder": null, "mortgage_amount": "$1000 (1 year) and $6500 (2 years on entire allotment)", "context": "", "database": "historical_docs"}, {"allottee": "Ella Sturm", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": "400 acres (total including this allotment)", "patent_date": "1917-08-24", "buyer": null, "sale_price": null, "mortgage_holder": null, "mortgage_amount": "$7000.00 total indebtedness (approximately $5500.00 principal)", "context": "", "database": "historical_docs"}, {"allottee": "Ethel M. Curtis", "mechanism": "Administrative", "outcome": "Sold & Mortgaged", "period": "1920-1929", "acreage": "unknown", "patent_date": "1920-12-21", "buyer": "none (retained by allottee)", "sale_price": "none", "mortgage_holder": null, "mortgage_amount": "$5,000 for 33 years", "context": "", "database": "historical_docs"}, {"allottee": "Sain to hoodie", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": null, "patent_date": "1919-12-03", "buyer": null, "sale_price": "$2500", "mortgage_holder": null, "mortgage_amount": "$400-$500 on west 80 acres", "context": "", "database": "historical_docs"}, {"allottee": "[illegible]", "mechanism": "Administrative", "outcome": "Sold", "period": "Pre-1920", "acreage": "[not specified in visible text]", "patent_date": "1907-06-24", "buyer": "[referenced in Q6, name illegible]", "sale_price": "$320.00", "mortgage_holder": null, "mortgage_amount": "[referenced in Q4, details illegible]", "context": "", "database": "historical_docs"}, {"allottee": "Taukauemah", "mechanism": "Administrative", "outcome": "Sold", "period": "Pre-1920", "acreage": "160 acres", "patent_date": "1919-12-03", "buyer": "Unnamed buyer", "sale_price": "$5,500", "mortgage_holder": null, "mortgage_amount": "none - explicitly denied by allottee", "context": "", "database": "historical_docs"}, {"allottee": "160 Indians", "mechanism": "Administrative", "outcome": "Sold", "period": "Unknown", "acreage": "160", "patent_date": "current fiscal year", "buyer": "Various purchasers", "sale_price": "$10,683.67", "mortgage_holder": null, "mortgage_amount": "N/A", "context": "", "database": "historical_docs"}, {"allottee": "Various Indians", "mechanism": "Administrative", "outcome": "Sold", "period": "Unknown", "acreage": "873,218.77", "patent_date": "to June 30, current fiscal year", "buyer": "Various purchasers", "sale_price": "Cumulative total", "mortgage_holder": null, "mortgage_amount": "N/A", "context": "", "database": "historical_docs"}, {"allottee": "Unspecified Indians receiving patents", "mechanism": "Administrative", "outcome": "Sold", "period": "1920-1929", "acreage": "160 acres (1901 allottees) or 120 acres (1910 children)", "patent_date": "1920-1923", "buyer": "White citizens", "sale_price": "Not specified - proceeds used for automobiles and travel", "mortgage_holder": null, "mortgage_amount": "Not specified", "context": "", "database": "historical_docs"}, {"allottee": "Allottees under 1901 Act", "mechanism": "Administrative", "outcome": "Sold", "period": "1920-1929", "acreage": "Various", "patent_date": "1926 (trust period expiration)", "buyer": "N/A - trust period to be extended", "sale_price": "N/A", "mortgage_holder": null, "mortgage_amount": "Not specified", "context": "Trust period expires 1926; petitions circulated by leading Indians requesting extension for 10-15 years on 95% of allotments", "database": "historical_docs"}, {"allottee": "Fort Sill-Apaches", "mechanism": "Administrative", "outcome": "Sold", "period": "1920-1929", "acreage": "unknown", "patent_date": "1928", "buyer": "United States Government", "sale_price": "unknown", "mortgage_holder": null, "mortgage_amount": "unknown", "context": "", "database": "historical_docs"}, {"allottee": "Helena Ara spar", "mechanism": "Administrative", "outcome": "Sold & Mortgaged", "period": "Pre-1920", "acreage": "", "patent_date": "1917-08-24", "buyer": "Unnamed Purchaser", "sale_price": "$6000", "mortgage_holder": null, "mortgage_amount": "$3000 mortgage assumed by purchaser", "context": "", "database": "historical_docs"}, {"allottee": "Teyou", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": "unknown", "patent_date": "1919-12", "buyer": null, "sale_price": null, "mortgage_holder": null, "mortgage_amount": "Land was mortgaged by allottee Teyou; total indebtedness of $2500 against land; land tied up in lawsuit", "context": "", "database": "historical_docs"}, {"allottee": "Howard Smith", "mechanism": "Administrative", "outcome": "Sold & Mortgaged", "period": "1920-1929", "acreage": "unknown", "patent_date": "1920-12-21", "buyer": "none retained by allottee", "sale_price": "none", "mortgage_holder": null, "mortgage_amount": "$5000 first mortgage (renewed) and $1000 second mortgage placed by allottee", "context": "", "database": "historical_docs"}, {"allottee": "Thomas Wyatt", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": "80 acres", "patent_date": "1919-12-03", "buyer": "", "sale_price": "", "mortgage_holder": null, "mortgage_amount": "$3000 to Gum Brothers of Oklahoma City through Baldwin & Gibbs", "context": "", "database": "historical_docs"}, {"allottee": "Tofpi", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": "unknown", "patent_date": "1919-12-03", "buyer": "none", "sale_price": "none", "mortgage_holder": null, "mortgage_amount": "Never mortgaged; Tofpi never mortgaged or sold any of his land per sworn testimony", "context": "", "database": "historical_docs"}, {"allottee": "Jesse Sturm", "mechanism": "Administrative", "outcome": "Sold & Mortgaged", "period": "Pre-1920", "acreage": "160 acres", "patent_date": "1917-08-24", "buyer": "B. Tackett (60 acres) and Fred Talkington (100 acres)", "sale_price": "$70 per acre ($11,200 total)", "mortgage_holder": null, "mortgage_amount": "$4000 mortgage to Enid loan company assumed by purchasers", "context": "", "database": "historical_docs"}, {"allottee": "Yeah-gope", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": "160", "patent_date": "1919-12-03", "buyer": null, "sale_price": null, "mortgage_holder": null, "mortgage_amount": "Mortgaged by allottee; cancellation ordered to restore trust status and address tax issues", "context": "", "database": "historical_docs"}, {"allottee": "Jack Bointy", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "Pre-1920", "acreage": "160", "patent_date": "1919-12-03", "buyer": null, "sale_price": null, "mortgage_holder": null, "mortgage_amount": "Mortgaged by allottee; cancellation ordered July 1927", "context": "", "database": "historical_docs"}, {"allottee": "John D. Downing", "mechanism": "Administrative", "outcome": "Sold & Mortgaged", "period": "Pre-1920", "acreage": "160 acres", "patent_date": "1917-08-24", "buyer": "Unnamed purchaser", "sale_price": "$2000", "mortgage_holder": null, "mortgage_amount": "Deming Investment Co., $10,000 mortgage active at time of sale, threatening foreclosure", "context": "", "database": "historical_docs"}, {"allottee": "Toyebo", "mechanism": "Administrative", "outcome": "Sold & Mortgaged", "period": "Pre-1920", "acreage": "240 acres (three 80-acre parcels)", "patent_date": "1919-12-03", "buyer": "Unnamed purchasers", "sale_price": "$1200 total ($600 per 80-acre parcel)", "mortgage_holder": null, "mortgage_amount": "Multiple: $2000 on first 80 acres; $1600 on second 80 acres; $400 second mortgage on third 80 acres", "context": "", "database": "historical_docs"}, {"allottee": "John D. Downing, Jr.", "mechanism": "Administrative", "outcome": "Mortgaged", "period": "1920-1929", "acreage": null, "patent_date": "1920-12-21", "buyer": "Unknown", "sale_price": "$7000", "mortgage_holder": null, "mortgage_amount": "None - Downing stated he never mortgaged the land", "context": "", "database": "historical_docs"}, {"allottee": "Toykoytodle", "mechanism": "Competency Commission", "outcome": "Sold & Mortgaged", "period": "Pre-1920", "acreage": "160 acres", "patent_date": "1919-12-03", "buyer": "Unnamed purchaser", "sale_price": "$6000", "mortgage_holder": null, "mortgage_amount": "$4000 total ($3000 original + $1000 additional)", "context": "", "database": "historical_docs"}, {"allottee": "John Haddon", "mechanism": "Administrative", "outcome": "Sold & Mortgaged", "period": "Pre-1920", "acreage": "", "patent_date": "1917-08-24", "buyer": "Unnamed Purchaser", "sale_price": "$5750 (approximate)", "mortgage_holder": null, "mortgage_amount": "$3000.00", "context": "", "database": "historical_docs"}, {"allottee": "Various Indians in jurisdiction", "mechanism": "Administrative", "outcome": "Sold", "period": "Unknown", "acreage": "Approximately 400 individual trust allotments remaining", "patent_date": "25-year trust period expired, some extended 10 years", "buyer": "Various (sold after restrictions removed)", "sale_price": "Not specified", "mortgage_holder": null, "mortgage_amount": "Not specified", "context": "", "database": "historical_docs"}, {"allottee": "Unknown allottees", "mechanism": "Administrative", "outcome": "Sold", "period": "Unknown", "acreage": "440 acres (two 220-acre tracts)", "patent_date": "unknown", "buyer": "Tribe (reverted)", "sale_price": "N/A", "mortgage_holder": null, "mortgage_amount": "N/A", "context": "Allotments canceled, reverted to tribal ownership, considered 'late allotments' to children born since last allotment", "database": "historical_docs"}, {"allottee": "Hobb Conn", "mechanism": "Competency Commission", "outcome": "Sold", "period": "Unknown", "acreage": "unspecified", "patent_date": "unspecified", "buyer": "unspecified", "sale_price": "unspecified", "mortgage_holder": null, "mortgage_amount": "unspecified", "context": "Applied three times through subagent at Kaw but was not recommended; obtained through other means", "database": "historical_docs"}, {"allottee": "Kaw Allottees (general)", "mechanism": "Competency Commission", "outcome": "Sold & Mortgaged", "period": "Unknown", "acreage": "400 acres each originally", "patent_date": "various", "buyer": "various white purchasers", "sale_price": "various", "mortgage_holder": null, "mortgage_amount": "various", "context": "90% lost land through sale after fee patent or mortgage and foreclosure; only 10% retain original allotment", "database": "historical_docs"}, {"allottee": "Frank Eagle", "mechanism": "Administrative", "outcome": "Sold", "period": "Unknown", "acreage": "unspecified", "patent_date": "unspecified", "buyer": "unspecified", "sale_price": "unspecified", "mortgage_holder": null, "mortgage_amount": "unspecified", "context": "Described as patent-in-fee Indian, unrestricted", "database": "historical_docs"}, {"allottee": "Mrs. Eagle", "mechanism": "Administrative", "outcome": "Sold", "period": "Unknown", "acreage": "unspecified", "patent_date": "unspecified", "buyer": "unspecified", "sale_price": "unspecified", "mortgage_holder": null, "mortgage_amount": "unspecified", "context": "Had patent and sold her original allotment prior to current restricted status on inherited land", "database": "historical_docs"}, {"allottee": "Hugh Eagle and wife", "mechanism": "Administrative", "outcome": "Sold", "period": "Unknown", "acreage": "unspecified", "patent_date": "unspecified", "buyer": "unspecified", "sale_price": "unspecified", "mortgage_holder": null, "mortgage_amount": "unspecified", "context": "Sold their allotment and received back inherited land", "database": "historical_docs"}], "total_patents": 3827, "temporal": {"Pre-1920": {"nodes": [{"label": "Administrative", "type": "mechanism", "count": 382}, {"label": "Competency Commission", "type": "mechanism", "count": 102}, {"label": "Other/Unknown", "type": "mechanism", "count": 91}, {"label": "By Application", "type": "mechanism", "count": 34}, {"label": "Private Bill", "type": "mechanism", "count": 20}, {"label": "Forced (no application)", "type": "mechanism", "count": 6}, {"label": "Declaration of Policy", "type": "mechanism", "count": 6}, {"label": "Outcome Unknown", "type": "outcome", "count": 313}, {"label": "Sold", "type": "outcome", "count": 223}, {"label": "Mortgaged", "type": "outcome", "count": 47}, {"label": "Sold & Mortgaged", "type": "outcome", "count": 41}, {"label": "Patent Canceled", "type": "outcome", "count": 15}, {"label": "Retained", "type": "outcome", "count": 2}], "links": [{"source": 0, "target": 7, "value": 195}, {"source": 0, "target": 8, "value": 122}, {"source": 1, "target": 7, "value": 46}, {"source": 2, "target": 7, "value": 45}, {"source": 1, "target": 8, "value": 38}, {"source": 2, "target": 8, "value": 36}, {"source": 0, "target": 9, "value": 30}, {"source": 0, "target": 10, "value": 24}, {"source": 3, "target": 8, "value": 14}, {"source": 3, "target": 7, "value": 14}, {"source": 0, "target": 11, "value": 11}, {"source": 4, "target": 7, "value": 10}, {"source": 1, "target": 10, "value": 9}, {"source": 4, "target": 8, "value": 9}, {"source": 1, "target": 9, "value": 9}, {"source": 2, "target": 10, "value": 4}, {"source": 3, "target": 9, "value": 4}, {"source": 2, "target": 9, "value": 3}, {"source": 5, "target": 11, "value": 3}, {"source": 6, "target": 8, "value": 3}, {"source": 2, "target": 12, "value": 2}, {"source": 3, "target": 10, "value": 2}, {"source": 6, "target": 7, "value": 2}, {"source": 4, "target": 10, "value": 1}, {"source": 5, "target": 8, "value": 1}, {"source": 5, "target": 7, "value": 1}, {"source": 2, "target": 11, "value": 1}, {"source": 5, "target": 10, "value": 1}, {"source": 6, "target": 9, "value": 1}], "total": 641}, "1920-1929": {"nodes": [{"label": "By Application", "type": "mechanism", "count": 214}, {"label": "Administrative", "type": "mechanism", "count": 196}, {"label": "Other/Unknown", "type": "mechanism", "count": 87}, {"label": "Competency Commission", "type": "mechanism", "count": 62}, {"label": "Declaration of Policy", "type": "mechanism", "count": 9}, {"label": "Forced (no application)", "type": "mechanism", "count": 7}, {"label": "Private Bill", "type": "mechanism", "count": 5}, {"label": "Outcome Unknown", "type": "outcome", "count": 376}, {"label": "Sold", "type": "outcome", "count": 156}, {"label": "Sold & Mortgaged", "type": "outcome", "count": 30}, {"label": "Mortgaged", "type": "outcome", "count": 15}, {"label": "Retained", "type": "outcome", "count": 2}, {"label": "Patent Canceled", "type": "outcome", "count": 1}], "links": [{"source": 0, "target": 7, "value": 162}, {"source": 1, "target": 7, "value": 131}, {"source": 1, "target": 8, "value": 47}, {"source": 0, "target": 8, "value": 47}, {"source": 3, "target": 7, "value": 39}, {"source": 2, "target": 8, "value": 37}, {"source": 2, "target": 7, "value": 33}, {"source": 3, "target": 8, "value": 17}, {"source": 1, "target": 9, "value": 12}, {"source": 2, "target": 9, "value": 12}, {"source": 4, "target": 7, "value": 5}, {"source": 2, "target": 10, "value": 5}, {"source": 1, "target": 10, "value": 4}, {"source": 5, "target": 7, "value": 4}, {"source": 6, "target": 8, "value": 3}, {"source": 3, "target": 10, "value": 3}, {"source": 0, "target": 9, "value": 3}, {"source": 4, "target": 8, "value": 3}, {"source": 6, "target": 7, "value": 2}, {"source": 5, "target": 8, "value": 2}, {"source": 3, "target": 9, "value": 2}, {"source": 0, "target": 10, "value": 2}, {"source": 3, "target": 11, "value": 1}, {"source": 5, "target": 9, "value": 1}, {"source": 1, "target": 12, "value": 1}, {"source": 4, "target": 10, "value": 1}, {"source": 1, "target": 11, "value": 1}], "total": 580}, "1930-1934": {"nodes": [{"label": "Administrative", "type": "mechanism", "count": 24}, {"label": "By Application", "type": "mechanism", "count": 9}, {"label": "Competency Commission", "type": "mechanism", "count": 9}, {"label": "Other/Unknown", "type": "mechanism", "count": 4}, {"label": "Private Bill", "type": "mechanism", "count": 1}, {"label": "Forced (no application)", "type": "mechanism", "count": 1}, {"label": "Outcome Unknown", "type": "outcome", "count": 23}, {"label": "Sold", "type": "outcome", "count": 17}, {"label": "Mortgaged", "type": "outcome", "count": 5}, {"label": "Sold & Mortgaged", "type": "outcome", "count": 3}], "links": [{"source": 0, "target": 7, "value": 10}, {"source": 0, "target": 6, "value": 9}, {"source": 1, "target": 6, "value": 6}, {"source": 2, "target": 6, "value": 5}, {"source": 0, "target": 8, "value": 4}, {"source": 3, "target": 6, "value": 3}, {"source": 1, "target": 7, "value": 3}, {"source": 2, "target": 7, "value": 3}, {"source": 4, "target": 7, "value": 1}, {"source": 3, "target": 9, "value": 1}, {"source": 5, "target": 9, "value": 1}, {"source": 0, "target": 9, "value": 1}, {"source": 2, "target": 8, "value": 1}], "total": 48}, "1935+": {"nodes": [{"label": "Administrative", "type": "mechanism", "count": 141}, {"label": "Other/Unknown", "type": "mechanism", "count": 85}, {"label": "By Application", "type": "mechanism", "count": 20}, {"label": "Competency Commission", "type": "mechanism", "count": 18}, {"label": "Private Bill", "type": "mechanism", "count": 2}, {"label": "Declaration of Policy", "type": "mechanism", "count": 2}, {"label": "Outcome Unknown", "type": "outcome", "count": 144}, {"label": "Sold", "type": "outcome", "count": 94}, {"label": "Sold & Mortgaged", "type": "outcome", "count": 25}, {"label": "Mortgaged", "type": "outcome", "count": 3}, {"label": "Retained", "type": "outcome", "count": 2}], "links": [{"source": 0, "target": 6, "value": 85}, {"source": 1, "target": 6, "value": 41}, {"source": 0, "target": 7, "value": 39}, {"source": 1, "target": 7, "value": 39}, {"source": 0, "target": 8, "value": 13}, {"source": 2, "target": 6, "value": 9}, {"source": 2, "target": 7, "value": 8}, {"source": 3, "target": 6, "value": 7}, {"source": 3, "target": 7, "value": 6}, {"source": 3, "target": 8, "value": 5}, {"source": 1, "target": 8, "value": 5}, {"source": 0, "target": 9, "value": 3}, {"source": 4, "target": 6, "value": 2}, {"source": 5, "target": 7, "value": 2}, {"source": 2, "target": 8, "value": 2}, {"source": 2, "target": 10, "value": 1}, {"source": 0, "target": 10, "value": 1}], "total": 268}, "Unknown": {"nodes": [{"label": "Administrative", "type": "mechanism", "count": 930}, {"label": "Other/Unknown", "type": "mechanism", "count": 858}, {"label": "By Application", "type": "mechanism", "count": 219}, {"label": "Competency Commission", "type": "mechanism", "count": 198}, {"label": "Private Bill", "type": "mechanism", "count": 50}, {"label": "Forced (no application)", "type": "mechanism", "count": 29}, {"label": "Declaration of Policy", "type": "mechanism", "count": 6}, {"label": "Outcome Unknown", "type": "outcome", "count": 1365}, {"label": "Sold", "type": "outcome", "count": 775}, {"label": "Sold & Mortgaged", "type": "outcome", "count": 60}, {"label": "Mortgaged", "type": "outcome", "count": 53}, {"label": "Patent Canceled", "type": "outcome", "count": 19}, {"label": "Retained", "type": "outcome", "count": 18}], "links": [{"source": 0, "target": 7, "value": 593}, {"source": 1, "target": 7, "value": 484}, {"source": 1, "target": 8, "value": 317}, {"source": 0, "target": 8, "value": 281}, {"source": 2, "target": 7, "value": 144}, {"source": 3, "target": 7, "value": 114}, {"source": 3, "target": 8, "value": 71}, {"source": 2, "target": 8, "value": 62}, {"source": 1, "target": 9, "value": 37}, {"source": 4, "target": 8, "value": 31}, {"source": 0, "target": 10, "value": 26}, {"source": 4, "target": 7, "value": 18}, {"source": 1, "target": 10, "value": 14}, {"source": 0, "target": 12, "value": 11}, {"source": 5, "target": 8, "value": 11}, {"source": 5, "target": 7, "value": 11}, {"source": 0, "target": 11, "value": 11}, {"source": 2, "target": 9, "value": 9}, {"source": 0, "target": 9, "value": 8}, {"source": 3, "target": 9, "value": 4}, {"source": 3, "target": 10, "value": 4}, {"source": 1, "target": 12, "value": 3}, {"source": 5, "target": 10, "value": 3}, {"source": 1, "target": 11, "value": 3}, {"source": 2, "target": 10, "value": 3}, {"source": 3, "target": 12, "value": 3}, {"source": 5, "target": 11, "value": 2}, {"source": 5, "target": 9, "value": 2}, {"source": 3, "target": 11, "value": 2}, {"source": 6, "target": 8, "value": 2}, {"source": 6, "target": 10, "value": 2}, {"source": 6, "target": 7, "value": 1}, {"source": 2, "target": 12, "value": 1}, {"source": 6, "target": 11, "value": 1}, {"source": 4, "target": 10, "value": 1}], "total": 2290}}, "doj_counties": [{"county": "Unknown", "count": 50}, {"county": "Bennett", "count": 19}, {"county": "Osage", "count": 18}, {"county": "Pennington", "count": 14}, {"county": "Fall River", "count": 13}, {"county": "Washabaugh", "count": 12}, {"county": "Tulsa", "count": 11}, {"county": "Mahnomen", "count": 8}, {"county": "Pawnee", "count": 8}, {"county": "Thurston", "count": 6}, {"county": "Washington", "count": 6}, {"county": "McCurtain", "count": 5}, {"county": "Dewey", "count": 4}, {"county": "Osage County", "count": 3}, {"county": "Mayes", "count": 3}, {"county": "Roosevelt", "count": 3}, {"county": "Umatilla", "count": 3}, {"county": "Ferry", "count": 3}, {"county": "Brown", "count": 3}, {"county": "Oklahoma", "count": 3}, {"county": "Tripp", "count": 3}, {"county": "Nez Perce", "count": 3}, {"county": "Clark", "count": 2}, {"county": "Ottawa", "count": 2}, {"county": "Becker", "count": 2}], "doj_cases": [{"allottee": "Edward Smith", "tribe": "Winnebago", "county": "Wood", "case_name": "U.S. et al v. Joe Cook et al, #2326-Equity-action to quiet title to certain tracts of Sect. 55, Twp. 24 North, R. 3 East, 4th P. M., Wis., in Edward Smith, a Winnebago Indian.", "file_number": "90-2-11-456", "slips": 115}, {"allottee": "Lucy", "tribe": "Seminole", "county": "Oklahoma", "case_name": "Refers to dept. ltrs. of 6-18 & 7-26 re case: U.S. vs. Okla. Tax Comm., L.#432 E.Okla., action to recover inheritance taxes paid under protest from estate of Lucy Bemore, a deceased restricted full-blood Seminole Indian, No.1563 & encl.copies of agency's ltrs.", "file_number": "90-2-5-209", "slips": 13}, {"allottee": "Jessie Eng", "tribe": "Fort Peck", "county": "Roosevelt, Sheridan, Valley", "case_name": "U.S. v. Roosevelt county, et al- No. 3023, equity. U.S. v. Sheridan county, et al. 3024 equity. U.S. v. Valley county, et al. equity 3929.", "file_number": "90-2-5-109", "slips": 135}, {"allottee": "Jessie Eng", "tribe": "Fort Peck", "county": "Roosevelt, Valley, Sheridan, Daniels", "case_name": "ROOSEVELT COUNTY DOCUMENTS FOR MARY LAROQUE ALLOTMENT REQUESTED TO BE SENT BY SUPT FORTPECK RESERVATION IN LETTER 1-24 TO COMMR. OF INDIAN AFFAIRS NOT YET REC. STOP REQ. PAPERS BE SENT TO GREAT FALLS FOR TRIAL 3-2", "file_number": "90-2-5-49", "slips": 318}, {"allottee": "Capo-Rodriguez, Pedro", "tribe": "Kiowa", "county": "Caddo", "case_name": "U.S. v. Board of County Commissioners of Caddo County, Okla. (C.O.A. 10th Cir. No. 1437)", "file_number": "90-2-5-21", "slips": 60}, {"allottee": "Peter Janis", "tribe": "Allottee", "county": "Fall River", "case_name": "U. S. v. Fall River Co., et al Eq. No. 148 W. D. Peter Janis, Allottee Ackn letter of the 16th Clerk accepted warrant of Fall River Co. in payment of this judgment.", "file_number": "90-2-11-491", "slips": 14}, {"allottee": "Aaron Hicks", "tribe": "Cherokee", "county": "Mayes", "case_name": "Proposed suit to quiet title to land located in Mayes County, Okla., purchased by Aaron Hicks, Cherokee Indian Roll No. 18694", "file_number": "90-2-11-601", "slips": 39}, {"allottee": "Sarah Thompson", "tribe": "Kaw", "county": "Kay", "case_name": "Allotted to Sarah Thompson Kaw allottee No. 228 for homestead in Oklahoma which was to be nontaxable for period of 25 years from 1903, and extended for 20 years from 1-1-28", "file_number": "90-2-11-638", "slips": 19}, {"allottee": "Cook, Joe", "tribe": "Tomah", "county": "Wood", "case_name": "U.S. et al v. Joe Cook et al, #2326-Equity-action to quiet title to certain tracts of Sect. 55, Twp. 24 North, R. 3 East, 4th P. M., Wis., in Edward Smith, a Winnebago Indian.", "file_number": "90-2-11-456", "slips": 115}, {"allottee": "Vernon Murie", "tribe": "Pawnee", "county": "Pawnee", "case_name": "Ref. letter 8-18-38--suit to be instituted against Pawnee Co., Okla and others, to clear title to certain property owned by Vernon Murie, a Pawnee Indian, etc.", "file_number": "90-2-11-677", "slips": 48}, {"allottee": "Nora White", "tribe": "Pawnee", "county": "Pawnee", "case_name": "Enclosure of two copies of Journal Entry of Judgment for U.S. vs. Board of County Commissioners of Pawnee Co., Okla., et al., No. 16 Civil", "file_number": "90-2-11-678", "slips": 55}, {"allottee": "R. C. Drummond", "tribe": "Unknown", "county": "Becker", "case_name": "Indian claimants concerning clouds on the title to lands in Becker County, Minn.", "file_number": "90-2-11-833", "slips": 9}, {"allottee": "John Adams", "tribe": "Unknown", "county": "Mahnomen", "case_name": "USA v. County of Mahnomen, a corp.; John Adams, et al., #785 Equity", "file_number": "90-2-11-358", "slips": 13}, {"allottee": "Woodworth, F.S.", "tribe": "Unknown", "county": "Wood", "case_name": "U.S. et al v. Joe Cook et al, #2326-Equity-action to quiet title to certain tracts of Sect. 55, Twp. 24 North, R. 3 East, 4th P. M., Wis., in Edward Smith, a Winnebago Indian.", "file_number": "90-2-11-456", "slips": 115}, {"allottee": "Leaphart, C. W.", "tribe": "Unknown", "county": "Jackson County, Kansas", "case_name": "State Rules Governing the right to recover interest in actions to recover taxes wrongfully collected. At request of Mr. McKevitt, material collected to supplement my memo, 2-28-40. Sup. Court suggested in its decision in Board of Comm'rs of Jackson Co. v. US, it would be inconsistent for Fed. courts to apply state rules in act. for refund taxes.", "file_number": "90-2-5-131", "slips": 211}, {"allottee": "Littell, Norman M.", "tribe": "Unknown", "county": "Jackson County, Kansas", "case_name": "State Rules Governing the right to recover interest in actions to recover taxes wrongfully collected. At request of Mr. McKevitt, material collected to supplement my memo, 2-28-40. Sup. Court suggested in its decision in Board of Comm'rs of Jackson Co. v. US, it would be inconsistent for Fed. courts to apply state rules in act. for refund taxes.", "file_number": "90-2-5-131", "slips": 211}, {"allottee": "George Snowball", "tribe": "Winnebago", "county": "Shawano", "case_name": "Proposed action against the County of Shawano, Wisconsin and one Paul Miller et al for purpose of cancelling tax assessments, removing from the tax rolls and quieting title to the homestead allotment of George Snowball, Wisconsin Winnebago Indian.", "file_number": "90-2-11-726", "slips": 61}, {"allottee": "Paul Miller", "tribe": "Unknown", "county": "Shawano", "case_name": "Proposed action against the County of Shawano, Wisconsin and one Paul Miller et al for purpose of cancelling tax assessments, removing from the tax rolls and quieting title to the homestead allotment of George Snowball, Wisconsin Winnebago Indian.", "file_number": "90-2-11-726", "slips": 61}, {"allottee": "Evelyn Seber", "tribe": "Creek", "county": "Creek", "case_name": "Enc. copies of a report of 12-6 from the Five Civilized Tribes Agency, Muskogee, Okla and the encls. re notice served on the Supt. in Civil case No. 637 US Dist. Court for W. Okla Evelyn Seber, et al v. J. D. Carmichael, Chairman of the Okla. Tax Com. et al.re legality of State's assessment of estate or inheritance taxes involving the estates of deceased restricted Indians.", "file_number": "90-2-5-197", "slips": 26}, {"allottee": "Evelyn Seber", "tribe": "Creek", "county": "Unknown", "case_name": "U.S. v. Oklahoma Tax Commission, Civil #419. Action to recover inheritance taxes paid under protest by the estate by estate of Wosey Deere, Indian of the Five Civilized Tribes.", "file_number": "90-2-5-203", "slips": 29}, {"allottee": "Meh-ska-nah-bah-nah or Grand Eagle", "tribe": "Quapaw allottee #171", "county": "Ottawa", "case_name": "Meh-Sk-Nah-Bah-Nah or Grand Eagle Quspaw allottee #171 of 200 acres of land Action to clear title to land to determine the matter of taxation against it involving Kah-dash, Walter Coldspring, George Redeagle, Sophia Redeagle, LeRoy Redeagle and Doane Redeagle heirs of above.", "file_number": "90-2-11-789", "slips": 21}, {"allottee": "Ne-gaun-e-bi-nais-e-quay", "tribe": "Chippewa", "county": "Mahnomen", "case_name": "Cloud on title to NW\u00bd SW\u00bc & Lot 5 of Sec.24 T.144 N., R.40 W. of 5th P.M. in Mahnomen Co., Minn., 64 acres, allotted to Ne-gaun-e-bi-nais-e-quay, full blood White Earth Chippewa allottee #2351", "file_number": "90-2-11-804", "slips": 12}, {"allottee": "Ne gaun e be nais e quay", "tribe": "Chippewa", "county": "Mahnomen", "case_name": "Cloud on title to NW\u00bd SW\u00bc & Lot 5 of Sec.24 T.144 N., R.40 W. of 5th P.M. in Mahnomen Co., Minn., 64 acres, allotted to Ne-gaun-e-bi-nais-e-quay, full blood White Earth Chippewa allottee #2351", "file_number": "90-2-11-804", "slips": 12}, {"allottee": "Louise Push", "tribe": "Choctaw", "county": "Stephens", "case_name": "USA--T. H. McCasland vs. L. R. Baker, et al--USA Intervener--Civil 414", "file_number": "90-2-11-819", "slips": 23}, {"allottee": "Eva Shay-day", "tribe": "Becker County", "county": "Becker", "case_name": "Indian claimants concerning clouds on the title to lands in Becker County, Minn.", "file_number": "90-2-11-833", "slips": 9}, {"allottee": "Grand Eagle", "tribe": "Quapaw", "county": "Ottawa", "case_name": "Meh-Sk-Nah-Bah-Nah or Grand Eagle Quspaw allottee #171 of 200 acres of land Action to clear title to land to determine the matter of taxation against it involving Kah-dash, Walter Coldspring, George Redeagle, Sophia Redeagle, LeRoy Redeagle and Doane Redeagle heirs of above.", "file_number": "90-2-11-789", "slips": 21}, {"allottee": "Eva Shayday", "tribe": "White Earth Chippewa", "county": "Becker", "case_name": "Indian claimants concerning clouds on the title to lands in Becker County, Minn.", "file_number": "90-2-11-833", "slips": 9}, {"allottee": "John, Curtis", "tribe": "Unknown", "county": "Harrison", "case_name": "U.S. v. W W. Jackson, et al, #80 Equity and occupant is willing to vacate immediately after harvest and he has agreed to store one-third of crops for benefit of Indian allottee", "file_number": "90-2-5-137", "slips": 186}, {"allottee": "Ne-gaun-e-be-mis-e-quay", "tribe": "Chippewa", "county": "Mahnomen", "case_name": "Cloud on title to NW\u00bd SW\u00bc & Lot 5 of Sec.24 T.144 N., R.40 W. of 5th P.M. in Mahnomen Co., Minn., 64 acres, allotted to Ne-gaun-e-bi-nais-e-quay, full blood White Earth Chippewa allottee #2351", "file_number": "90-2-11-804", "slips": 12}, {"allottee": "Ne-gaun-e-bi-mis-e-quay", "tribe": "Chippewa", "county": "Mahnomen", "case_name": "Cloud on title to NW\u00bd SW\u00bc & Lot 5 of Sec.24 T.144 N., R.40 W. of 5th P.M. in Mahnomen Co., Minn., 64 acres, allotted to Ne-gaun-e-bi-nais-e-quay, full blood White Earth Chippewa allottee #2351", "file_number": "90-2-11-804", "slips": 12}, {"allottee": "Lodie Willis", "tribe": "Choctaw", "county": "Tulsa", "case_name": "U. S. vs. BOARD OF COUNTY COMMISSIONERS OF TULSA COUNTY, ET AL", "file_number": "90-2-11-911", "slips": 6}, {"allottee": "Loretta Hewitt", "tribe": "Osage", "county": "Tulsa", "case_name": "Reporting of claim of Mrs. Loretta Hewitt, Osage Indian and requesting protection by U. S. in sale of Lots 12 and 13, Blk. 1., Suset View Addition, Tulsa, Okla, by County for taxes, claiming land bought with restricted funds.", "file_number": "90-2-11-966", "slips": 6}, {"allottee": "Alice Corlett", "tribe": "McCurtain County", "county": "McCurtain", "case_name": "J. P. Harkey v. W. J. Whiteman, et al--No. 11261--action to quiet title to certain lands in McCurtain County, involving U.S. by reason of possible inheritance tax on estate of Alice Corlett, dec'd, and judgment in case of U.S. v. J. A. Davis, et al", "file_number": "5-59-96", "slips": 2}, {"allottee": "Neo Beak", "tribe": "Leech Lake Chippewa", "county": "Unknown", "case_name": "Property of Neo Beak, Leech Lake Chippewa allottee No. 120", "file_number": "90-2-11-1120", "slips": 2}, {"allottee": "George Eagle", "tribe": "Wisconsin Winnebago", "county": "Unknown", "case_name": "George Eagle, Wisconsin Winnebago Homesteader No. 63", "file_number": "90-2-11-1121", "slips": 2}, {"allottee": "Jackson Sequichie", "tribe": "Cherokee", "county": "Unknown", "case_name": "Oklahoma Tax Comm vs Carrie Collier to determine the heirs of Jackson Sequichie, Cherokee #25880, dec'd. Civil 3707", "file_number": "90-2-11-1230", "slips": 2}, {"allottee": "Henry Thunder", "tribe": "Winnebago", "county": "Monroe", "case_name": "Advise under provisions of act of 1-18-21 a 20 year restrictive fee patent was issued to Good Bear, Wisconsin Winnebago Homesteader No. 1 for NE\u00bc of sec. 24, T.18 N., R. 1 W., 4th P.M. Wis. cont. 40 a.", "file_number": "90-2-5-251", "slips": 13}, {"allottee": "Otto Wells", "tribe": "Unknown", "county": "Caddo", "case_name": "U.S. v. Board of County Commissioners of Caddo County, Okla. (C.O.A. 10th Cir. No. 1437)", "file_number": "90-2-5-21", "slips": 60}, {"allottee": "Otto Wells", "tribe": "Unknown", "county": "Caddo", "case_name": "U.S. v. Board of County Commissioners of Caddo County, Okla. No. 5799 at law- Otto Wells Allotment", "file_number": "90-2-5-60", "slips": 70}, {"allottee": "Charles Tecumseh", "tribe": "Potawatomi", "county": "Price", "case_name": "U.S. v. James F. Bippus, et al. Equity No. 2186, Equity.", "file_number": "90-2-5-28", "slips": 68}, {"allottee": "George A. Jemison", "tribe": "Cattaraugus", "county": "Erie", "case_name": "U. S. vs. County of Erie, et al Eq. #2253; Receipt ackn. of yours of 5-16-40 requ. def. advice as to advisability of appeal in CCA 2nd from judgment in above. Outline of facts in case and for small amt. involved we recommend no appeal be taken from the judgment. Your views will be appreciated.", "file_number": "90-2-5-44", "slips": 266}, {"allottee": "Etta McGea Swallow", "tribe": "Unknown", "county": "Washington", "case_name": "District of S. Dak. v. Washington Co. et al. re. recovery of taxes levied upon allotment of Etta McGaa Swallow--etc.", "file_number": "90-2-5-124", "slips": 28}, {"allottee": "Etta McGea Swallow", "tribe": "Unknown", "county": "Bennett, Washington, Washabaugh, Pennington", "case_name": "invalid tax assessments by officials of Shannon, Bennett, Washington and Washabaugh Counties, S.D., vs 58 allotments made to members of the Pine Ridge Reservation", "file_number": "90-2-5-51", "slips": 65}, {"allottee": "MaryGresh Smith [?]", "tribe": "Unknown", "county": "Bennett, Washington, Washabaugh, Pennington", "case_name": "invalid tax assessments by officials of Shannon, Bennett, Washington and Washabaugh Counties, S.D., vs 58 allotments made to members of the Pine Ridge Reservation", "file_number": "90-2-5-51", "slips": 65}, {"allottee": "Carl Joseph Brown", "tribe": "Unknown", "county": "Washabaugh", "case_name": "Compl that tax collectors of N.C. state revenue dept have entered Reservation of Eastern Band of Cherokee Indians, Cherokee, N.C., without consent of Tribal officials, or local B.I.A. authorities, and by threatening local business owners, with assessment warrants have practically forced business people to pay state taxes or lose their autos, household furniture and in cases, motel furnishings, such as beds, etc.", "file_number": "90-2-5-0", "slips": 80}, {"allottee": "Carl Joseph Brown", "tribe": "Unknown", "county": "Bennett, Washington, Washabaugh, Pennington", "case_name": "invalid tax assessments by officials of Shannon, Bennett, Washington and Washabaugh Counties, S.D., vs 58 allotments made to members of the Pine Ridge Reservation", "file_number": "90-2-5-51", "slips": 65}, {"allottee": "Carl Joseph Brown", "tribe": "Unknown", "county": "Bennett", "case_name": "U.S. vs Bennett County, et al, (Carl Joseph Brown, Allottee) Eq #162 W.D. Cancellation taxes, Indian land.", "file_number": "90-2-5-63", "slips": 31}, {"allottee": "Frank Bird Necklace", "tribe": "Pine Ridge Sioux", "county": "Bennett, Washington, Washabaugh, Pennington", "case_name": "invalid tax assessments by officials of Shannon, Bennett, Washington and Washabaugh Counties, S.D., vs 58 allotments made to members of the Pine Ridge Reservation", "file_number": "90-2-5-51", "slips": 65}, {"allottee": "Frank Bird Necklace", "tribe": "Pine Ridge Sioux", "county": "Fall River", "case_name": "U.S. vs Fall River County, et al. Equity No. 158 W.D. - Cancellation of taxes - Frank Bird Necklace, Allottee; Case in which judgment entered has been paid, etc.", "file_number": "90-2-5-69", "slips": 23}, {"allottee": "John Mesteth", "tribe": "Pine Ridge Sioux", "county": "Bennett, Washington, Washabaugh, Pennington", "case_name": "invalid tax assessments by officials of Shannon, Bennett, Washington and Washabaugh Counties, S.D., vs 58 allotments made to members of the Pine Ridge Reservation", "file_number": "90-2-5-51", "slips": 65}], "doj_total_cases": 299, "doj_total_allottees": 383};
+
+const mechColors = {"Declaration of Policy": "#8B1A1A", "Competency Commission": "#A3542E", "Forced (no application)": "#C0392B", "Administrative": "#D4754A", "By Application": "#5A7A8F", "Private Bill": "#3D4F5F", "Other/Unknown": "#999"};
+const outcomeColors = {"Sold": "#C0392B", "Sold & Mortgaged": "#8B1A1A", "Mortgaged": "#D4754A", "Retained": "#2E7D32", "Patent Canceled": "#5A7A8F", "Outcome Unknown": "#BBB"};
+
+// Sankey diagram
+const margin = {top: 20, right: 200, bottom: 20, left: 200};
+const width = 900;
+const height = 500;
+
+const svg = d3.select('#sankey')
+  .append('svg')
+  .attr('width', width)
+  .attr('height', height);
+
+const sankey = d3.sankey()
+  .nodeId(d => d.index)
+  .nodeWidth(20)
+  .nodePadding(12)
+  .nodeAlign(d3.sankeyLeft)
+  .extent([[margin.left, margin.top], [width - margin.right, height - margin.bottom]]);
+
+const {nodes, links} = sankey({
+  nodes: data.nodes.map((d, i) => ({...d, index: i})),
+  links: data.links.map(d => ({...d}))
+});
+
+const tooltip = document.getElementById('tooltip');
+
+// Draw links
+svg.append('g')
+  .selectAll('.link')
+  .data(links)
+  .enter()
+  .append('path')
+  .attr('class', 'link')
+  .attr('d', d3.sankeyLinkHorizontal())
+  .attr('stroke', d => {
+    const srcLabel = d.source.label;
+    return mechColors[srcLabel] || '#999';
+  })
+  .attr('stroke-width', d => Math.max(1, d.width))
+  .on('mouseover', function(event, d) {
+    tooltip.innerHTML = `<span class="label">${d.source.label}</span> &rarr; <span class="label">${d.target.label}</span><br>${d.value} allottees`;
+    tooltip.style.display = 'block';
+    tooltip.style.left = (event.pageX + 12) + 'px';
+    tooltip.style.top = (event.pageY - 20) + 'px';
+    d3.select(this).attr('stroke-opacity', 0.7);
+  })
+  .on('mouseout', function() {
+    tooltip.style.display = 'none';
+    d3.select(this).attr('stroke-opacity', 0.3);
+  });
+
+// Draw nodes
+svg.append('g')
+  .selectAll('rect')
+  .data(nodes)
+  .enter()
+  .append('rect')
+  .attr('x', d => d.x0)
+  .attr('y', d => d.y0)
+  .attr('height', d => Math.max(1, d.y1 - d.y0))
+  .attr('width', d => d.x1 - d.x0)
+  .attr('fill', d => {
+    if (d.type === 'mechanism') return mechColors[d.label] || '#999';
+    return outcomeColors[d.label] || '#999';
+  });
+
+// Node labels
+svg.append('g')
+  .selectAll('.node-label')
+  .data(nodes)
+  .enter()
+  .append('text')
+  .attr('class', 'node-label')
+  .attr('x', d => d.type === 'mechanism' ? d.x0 - 8 : d.x1 + 8)
+  .attr('y', d => (d.y0 + d.y1) / 2)
+  .attr('dy', '0.35em')
+  .attr('text-anchor', d => d.type === 'mechanism' ? 'end' : 'start')
+  .text(d => `${d.label} (${d.count})`);
+
+// Populate cases table
+const tbody = document.getElementById('cases-body');
+data.notable.forEach(p => {
+  const tr = document.createElement('tr');
+  const mechColor = mechColors[p.mechanism] || '#999';
+  const outColor = outcomeColors[p.outcome] || '#999';
+
+  let details = [];
+  if (p.acreage) details.push(p.acreage + ' acres');
+  if (p.patent_date) details.push('patented ' + p.patent_date);
+  if (p.buyer) details.push('buyer: ' + p.buyer);
+  if (p.sale_price) details.push(p.sale_price);
+  if (p.mortgage_holder) details.push('mortgage: ' + p.mortgage_holder);
+  if (p.mortgage_amount && p.mortgage_amount !== p.mortgage_holder) details.push(p.mortgage_amount);
+
+  tr.innerHTML = `
+    <td><strong>${p.allottee}</strong></td>
+    <td><span class="mech-tag" style="background:${mechColor}">${p.mechanism}</span></td>
+    <td><span class="outcome-tag" style="background:${outColor}">${p.outcome}</span></td>
+    <td>${details.join(' · ') || p.context}</td>
+  `;
+  tbody.appendChild(tr);
+});
+
+// Temporal Sankeys
+if (data.temporal) {
+  const periods = ['Pre-1920', '1920-1929', '1930-1934', '1935+'];
+  const container = d3.select('#temporal-sankeys');
+
+  periods.forEach(period => {
+    const pData = data.temporal[period];
+    if (!pData || !pData.nodes.length) return;
+
+    const div = container.append('div')
+      .style('margin-bottom', '24px');
+
+    div.append('h3')
+      .style('font-family', 'DM Sans, sans-serif')
+      .style('font-size', '14px')
+      .style('font-weight', '700')
+      .style('color', '#6B6358')
+      .style('margin-bottom', '8px')
+      .text(`${period} (${pData.total} patents)`);
+
+    const tMargin = {top: 10, right: 180, bottom: 10, left: 180};
+    const tWidth = 800;
+    const tHeight = Math.max(150, pData.nodes.length * 18 + tMargin.top + tMargin.bottom);
+
+    const tSvg = div.append('svg')
+      .attr('width', tWidth)
+      .attr('height', tHeight);
+
+    try {
+      const tSankey = d3.sankey()
+        .nodeId(d => d.index)
+        .nodeWidth(15)
+        .nodePadding(8)
+        .nodeAlign(d3.sankeyLeft)
+        .extent([[tMargin.left, tMargin.top], [tWidth - tMargin.right, tHeight - tMargin.bottom]]);
+
+      const tGraph = tSankey({
+        nodes: pData.nodes.map((d, i) => ({...d, index: i})),
+        links: pData.links.map(d => ({...d}))
+      });
+
+      tSvg.append('g')
+        .selectAll('path')
+        .data(tGraph.links)
+        .enter()
+        .append('path')
+        .attr('d', d3.sankeyLinkHorizontal())
+        .attr('fill', 'none')
+        .attr('stroke', d => mechColors[d.source.label] || '#999')
+        .attr('stroke-opacity', 0.35)
+        .attr('stroke-width', d => Math.max(1, d.width));
+
+      tSvg.append('g')
+        .selectAll('rect')
+        .data(tGraph.nodes)
+        .enter()
+        .append('rect')
+        .attr('x', d => d.x0)
+        .attr('y', d => d.y0)
+        .attr('height', d => Math.max(1, d.y1 - d.y0))
+        .attr('width', d => d.x1 - d.x0)
+        .attr('fill', d => d.type === 'mechanism' ? (mechColors[d.label] || '#999') : (outcomeColors[d.label] || '#999'));
+
+      tSvg.append('g')
+        .selectAll('text')
+        .data(tGraph.nodes)
+        .enter()
+        .append('text')
+        .attr('x', d => d.type === 'mechanism' ? d.x0 - 6 : d.x1 + 6)
+        .attr('y', d => (d.y0 + d.y1) / 2)
+        .attr('dy', '0.35em')
+        .attr('text-anchor', d => d.type === 'mechanism' ? 'end' : 'start')
+        .attr('font-family', 'DM Sans, sans-serif')
+        .attr('font-size', '10px')
+        .attr('font-weight', '600')
+        .text(d => `${d.label} (${d.count})`);
+    } catch(e) {
+      div.append('p')
+        .style('color', '#999')
+        .style('font-size', '12px')
+        .text('Could not render Sankey for this period');
+    }
+  });
+}
+
+// DOJ county bar chart
+if (data.doj_counties && data.doj_counties.length > 0) {
+  const dojMargin = {top: 20, right: 20, bottom: 30, left: 140};
+  const dojWidth = 800;
+  const barHeight = 22;
+  const dojHeight = data.doj_counties.length * barHeight + dojMargin.top + dojMargin.bottom;
+
+  const dojSvg = d3.select('#doj-chart')
+    .append('svg')
+    .attr('width', dojWidth)
+    .attr('height', dojHeight);
+
+  const dojG = dojSvg.append('g')
+    .attr('transform', `translate(${dojMargin.left},${dojMargin.top})`);
+
+  const maxCount = d3.max(data.doj_counties, d => d.count);
+  const xScale = d3.scaleLinear()
+    .domain([0, maxCount])
+    .range([0, dojWidth - dojMargin.left - dojMargin.right]);
+
+  const yScale = d3.scaleBand()
+    .domain(data.doj_counties.map(d => d.county))
+    .range([0, dojHeight - dojMargin.top - dojMargin.bottom])
+    .padding(0.2);
+
+  dojG.selectAll('rect')
+    .data(data.doj_counties)
+    .enter()
+    .append('rect')
+    .attr('x', 0)
+    .attr('y', d => yScale(d.county))
+    .attr('width', d => xScale(d.count))
+    .attr('height', yScale.bandwidth())
+    .attr('fill', '#3D4F5F');
+
+  dojG.selectAll('.bar-label')
+    .data(data.doj_counties)
+    .enter()
+    .append('text')
+    .attr('x', -8)
+    .attr('y', d => yScale(d.county) + yScale.bandwidth() / 2)
+    .attr('dy', '0.35em')
+    .attr('text-anchor', 'end')
+    .attr('font-family', 'DM Sans, sans-serif')
+    .attr('font-size', '11px')
+    .attr('fill', '#1A1714')
+    .text(d => d.county);
+
+  dojG.selectAll('.count-label')
+    .data(data.doj_counties)
+    .enter()
+    .append('text')
+    .attr('x', d => xScale(d.count) + 6)
+    .attr('y', d => yScale(d.county) + yScale.bandwidth() / 2)
+    .attr('dy', '0.35em')
+    .attr('font-family', 'JetBrains Mono, monospace')
+    .attr('font-size', '10px')
+    .attr('fill', '#6B6358')
+    .text(d => d.count);
+}
+
+// DOJ cases table
+const dojBody = document.getElementById('doj-body');
+if (data.doj_cases) {
+  data.doj_cases.forEach(c => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><strong>${c.allottee}</strong></td>
+      <td>${c.tribe}</td>
+      <td>${c.county}</td>
+      <td style="font-size:12px">${c.case_name.substring(0, 80)}</td>
+      <td style="font-family:'JetBrains Mono',monospace;font-size:11px">${c.file_number}</td>
+    `;
+    dojBody.appendChild(tr);
+  });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,965 @@
+{
+  "entities": [
+    {
+      "name": "Indian Board of Cooperation, Inc.",
+      "type": "organization",
+      "context": "California Indian advocacy organization based in San Francisco, collecting dues and donations to fund Court of Claims suit"
+    },
+    {
+      "name": "J. W. Henderson",
+      "type": "person",
+      "context": "Attorney for Indians of California, member of Court of Claims, part of firm Henderson, Pemberton & Hanley"
+    },
+    {
+      "name": "J. E. Pemberton",
+      "type": "person",
+      "context": "Attorney for Indians of California, member of Court of Claims, part of firm Henderson, Pemberton & Hanley"
+    },
+    {
+      "name": "James M. Hanley",
+      "type": "person",
+      "context": "Attorney for Indians of California, member of Court of Claims, speaker at Indian meetings"
+    },
+    {
+      "name": "F. G. Collett",
+      "type": "person",
+      "context": "Executive Representative of Indian Board of Cooperation, also referred to as Frederick G. Collett"
+    },
+    {
+      "name": "Frederick G. Collett",
+      "type": "person",
+      "context": "Executive Representative of Indian Board of Cooperation; indicted February 14, 1928, not apprehended until August 14; subject of controversy"
+    },
+    {
+      "name": "C. R. Fisher",
+      "type": "person",
+      "context": "Secretary-Treasurer of Indian Board of Cooperation"
+    },
+    {
+      "name": "U. S. Webb",
+      "type": "person",
+      "context": "Attorney General of California, held office more than 30 years, entrusted with presenting California Indian claims to Court of Claims"
+    },
+    {
+      "name": "William Fuller",
+      "type": "person",
+      "context": "Chief of Mewuk Tribe of California, testified at Senate hearing, wrote letter to Congressman Englebright"
+    },
+    {
+      "name": "H. L. Englebright",
+      "type": "person",
+      "context": "Member of Congress, Washington D.C., recipient of letter from William Fuller dated March 11, 1932"
+    },
+    {
+      "name": "W. J. Conway",
+      "type": "person",
+      "context": "Lender of $1,000 to Indian Board of Cooperation, from Chico, California"
+    },
+    {
+      "name": "Dewey Conway",
+      "type": "person",
+      "context": "Co-lender with W.J. Conway of $1,000 to Indian Board of Cooperation"
+    },
+    {
+      "name": "Rachael B. Barker",
+      "type": "person",
+      "context": "Non-Indian witness at Senate hearing, submitted documents about Collett's collections in 1923-1924"
+    },
+    {
+      "name": "Mrs. Bristol",
+      "type": "person",
+      "context": "Secretary of the Klamath Indians, testified at Senate hearing in support of Collett and attorneys"
+    },
+    {
+      "name": "Lillian Clifton",
+      "type": "person",
+      "context": "Testified at Senate hearing, member from Owens Valley, supported hiring private attorneys"
+    },
+    {
+      "name": "Mrs. Winifred Codman",
+      "type": "person",
+      "context": "State chairman of Indian citizenship for California State Society of Daughters of the American Revolution"
+    },
+    {
+      "name": "Mrs. Julian Yale",
+      "type": "person",
+      "context": "Member of Kiteemu Tribe, Molelumne, testified at Senate hearing"
+    },
+    {
+      "name": "Court of Claims",
+      "type": "organization",
+      "context": "Federal court handling the $12,800,000 suit of Indians of California against the United States"
+    },
+    {
+      "name": "Indians of California",
+      "type": "organization",
+      "context": "Plaintiff in Court of Claims suit against the United States for treaty promises made in 1851-52"
+    },
+    {
+      "name": "Mewuk Tribe of California",
+      "type": "organization",
+      "context": "Tribe led by William Fuller, covering about 2,500-3,000 members across nine counties"
+    },
+    {
+      "name": "Klamath Indians",
+      "type": "organization",
+      "context": "Tribal group whose secretary Mrs. Bristol testified at hearing"
+    },
+    {
+      "name": "Kiteemu Tribe",
+      "type": "organization",
+      "context": "Tribe of Mrs. Julian Yale, Molelumne"
+    },
+    {
+      "name": "California State Society of the Daughters of the American Revolution",
+      "type": "organization",
+      "context": "Organization with ~5,000 members in ~80 chapters, active in California Indian welfare"
+    },
+    {
+      "name": "Hopland Auxiliary",
+      "type": "organization",
+      "context": "Local auxiliary of Indian Board of Cooperation, Hopland area"
+    },
+    {
+      "name": "Henderson, Pemberton & Hanley",
+      "type": "organization",
+      "context": "San Francisco law firm representing Indians of California in Court of Claims"
+    },
+    {
+      "name": "H.R. 491",
+      "type": "legislation",
+      "context": "Bill whose passage was claimed by Collett but disputed; passed through House committee on merits"
+    },
+    {
+      "name": "Mr. Levitt",
+      "type": "person",
+      "context": "Congressman who testified before the House on December 11, 1928 regarding H.R. 491 and Collett's role"
+    },
+    {
+      "name": "Mr. Lee",
+      "type": "person",
+      "context": "Congressman from California who sponsored bill before Committee on Indian Affairs"
+    },
+    {
+      "name": "Mr. Knight",
+      "type": "person",
+      "context": "Submitted supporting documents referenced by Mrs. Barker at Senate hearing"
+    },
+    {
+      "name": "O. H. Lipps",
+      "type": "person",
+      "context": "Member of Indian Office, present at large meeting May 24, 1931"
+    },
+    {
+      "name": "Judge Fred A. Baker",
+      "type": "person",
+      "context": "Indian Office judge, present at large meeting May 24, 1931"
+    },
+    {
+      "name": "Schype",
+      "type": "person",
+      "context": "Attorney and member of Washington D.C. firm employed by Henderson, Pemberton & Hanley"
+    },
+    {
+      "name": "Dr. Mildred E. Thoren",
+      "type": "person",
+      "context": "Tuberculosis specialist in California who donated services as examiner for DAR tuberculosis clinics"
+    },
+    {
+      "name": "Mrs. Joseph Radke",
+      "type": "person",
+      "context": "Mother of Mrs. Codman, attended Indian Board of Cooperation meeting in Nashville, El Dorado County"
+    },
+    {
+      "name": "Mrs. M. L. Dimmick",
+      "type": "person",
+      "context": "Accompanied Mrs. Codman to Indian Board of Cooperation meeting"
+    },
+    {
+      "name": "Mrs. Edgar Feree",
+      "type": "person",
+      "context": "From Fair Oaks, accompanied Mrs. Codman to Indian Board of Cooperation meeting"
+    },
+    {
+      "name": "Ellerck F. Smith",
+      "type": "person",
+      "context": "Pledge of $10 to Hopland Auxiliary Court of Claims fund"
+    },
+    {
+      "name": "Sam Alen",
+      "type": "person",
+      "context": "Pledge of $10 to Hopland Auxiliary Court of Claims fund"
+    },
+    {
+      "name": "Joe Passador",
+      "type": "person",
+      "context": "Pledge of $10 to Hopland Auxiliary Court of Claims fund"
+    },
+    {
+      "name": "C. I. Illy",
+      "type": "person",
+      "context": "Pledge of $10 to Hopland Auxiliary Court of Claims fund"
+    },
+    {
+      "name": "Salvador Ur",
+      "type": "person",
+      "context": "Pledge of $10 to Hopland Auxiliary Court of Claims fund"
+    },
+    {
+      "name": "Louis Arnold",
+      "type": "person",
+      "context": "Pledge of $10 to Hopland Auxiliary Court of Claims fund"
+    },
+    {
+      "name": "Dick Burk",
+      "type": "person",
+      "context": "Pledge of $10 to Hopland Auxiliary Court of Claims fund"
+    },
+    {
+      "name": "Henry Allen",
+      "type": "person",
+      "context": "Pledge of $10 to Hopland Auxiliary Court of Claims fund"
+    },
+    {
+      "name": "Vivian Burk",
+      "type": "person",
+      "context": "Pledge of $10 to Hopland Auxiliary Court of Claims fund"
+    },
+    {
+      "name": "Elinor Pakador",
+      "type": "person",
+      "context": "Pledge of $10 to Hopland Auxiliary Court of Claims fund"
+    },
+    {
+      "name": "Mrs. Joe Passador",
+      "type": "person",
+      "context": "Pledge of $10 to Hopland Auxiliary Court of Claims fund"
+    },
+    {
+      "name": "8 City Hall Avenue, San Francisco, California",
+      "type": "location",
+      "context": "Address of Indian Board of Cooperation headquarters"
+    },
+    {
+      "name": "San Francisco, California",
+      "type": "location",
+      "context": "Base of operations for Indian Board of Cooperation"
+    },
+    {
+      "name": "Washington, D.C.",
+      "type": "location",
+      "context": "Location of Court of Claims and Federal departments"
+    },
+    {
+      "name": "Owens Valley, California",
+      "type": "location",
+      "context": "Area where Lillian Clifton's people lived; Los Angeles took water away from residents"
+    },
+    {
+      "name": "Nashville, El Dorado County, California",
+      "type": "location",
+      "context": "Location of Indian Board of Cooperation branch meeting attended by Mrs. Codman"
+    },
+    {
+      "name": "Chico, California",
+      "type": "location",
+      "context": "Residence of W. J. Conway"
+    },
+    {
+      "name": "Fair Oaks, California",
+      "type": "location",
+      "context": "Residence of Mrs. Edgar Feree"
+    },
+    {
+      "name": "Somersville, California",
+      "type": "location",
+      "context": "Location from which William Fuller's letter was sent on March 11, 1932"
+    },
+    {
+      "name": "Tuolumne County",
+      "type": "location",
+      "context": "Location of DAR tuberculosis clinics arranged by Mrs. Codman"
+    },
+    {
+      "name": "Placer County",
+      "type": "location",
+      "context": "Location of DAR tuberculosis clinics"
+    },
+    {
+      "name": "Mendocino County",
+      "type": "location",
+      "context": "Location of DAR tuberculosis clinics"
+    },
+    {
+      "name": "Round Valley Auxiliary",
+      "type": "organization",
+      "context": "Auxiliary of Indian Board of Cooperation, average $3.26 paid per member"
+    },
+    {
+      "name": "Big Pine Auxiliary",
+      "type": "organization",
+      "context": "Auxiliary of Indian Board of Cooperation, Inyo County, average $2.21 paid per member"
+    },
+    {
+      "name": "Red Bluff Auxiliary",
+      "type": "organization",
+      "context": "Auxiliary of Indian Board of Cooperation, Tehama County, average $2.05 per member"
+    },
+    {
+      "name": "18 unratified treaties",
+      "type": "legal_case",
+      "context": "Treaties negotiated in 1851-52 with California Indians that were never ratified"
+    },
+    {
+      "name": "Indians of California v. United States",
+      "type": "legal_case",
+      "context": "$12,800,000 suit before Court of Claims, started August 12, 1929"
+    },
+    {
+      "name": "California Indians, Inc.",
+      "type": "organization",
+      "context": "Name change from Indian Board of Cooperation branch mentioned by Mrs. Codman"
+    },
+    {
+      "name": "City of Los Angeles",
+      "type": "organization",
+      "context": "Took water away from Owens Valley, displacing Indian residents"
+    },
+    {
+      "name": "Dockweiler bill",
+      "type": "legislation",
+      "context": "Referenced by Mrs. Codman as bill with similar provisions sponsored by organizations she opposed"
+    }
+  ],
+  "events": [
+    {
+      "type": "legal_motion_allowed",
+      "date": "1930-03-05",
+      "location": "Court of Claims, Washington D.C.",
+      "description": "Motion allowed by Court of Claims for J.W. Henderson and associates to appear as friends of the court in the case of the Indians of California against the United States"
+    },
+    {
+      "type": "lawsuit_filed",
+      "date": "1929-08-12",
+      "location": "Court of Claims, Washington D.C.",
+      "description": "Suit for $12,800,000 filed by Attorney General on behalf of Indians of California against the United States"
+    },
+    {
+      "type": "amendment_filed",
+      "date": "1932-03-14",
+      "location": "Court of Claims, Washington D.C.",
+      "description": "Amendments to the Court of Claims suit filed by U.S. Webb, prepared by Henderson, Pemberton, and Hanley as early as October 1929"
+    },
+    {
+      "type": "indictment",
+      "date": "1928-02-14",
+      "location": "California",
+      "description": "Frederick G. Collett was indicted"
+    },
+    {
+      "type": "apprehension",
+      "date": "1928-08-14",
+      "location": "California",
+      "description": "Frederick G. Collett was apprehended after being indicted February 14, 1928"
+    },
+    {
+      "type": "congressional_hearing",
+      "date": "1928-03-08",
+      "location": "House of Representatives",
+      "description": "Hearings on H.R. 491 before House Committee on Indian Affairs; Collett's whereabouts unknown to Federal authorities"
+    },
+    {
+      "type": "congressional_hearing",
+      "date": "1928-03-17",
+      "location": "House of Representatives",
+      "description": "Further hearings on H.R. 491"
+    },
+    {
+      "type": "congressional_testimony",
+      "date": "1928-12-11",
+      "location": "House of Representatives",
+      "description": "Testimony by Mr. Levitt and Mr. Lee before the House regarding Collett's role in passage of H.R. 491"
+    },
+    {
+      "type": "indian_board_meeting",
+      "date": "1931-04-05",
+      "location": "Nashville, El Dorado County, California",
+      "description": "Meeting of Indian Board of Cooperation branch attended by Mrs. Codman, Mrs. Radke, Mrs. Dimmick, and Mrs. Feree; Collett spoke about Attorney General Webb's negligence"
+    },
+    {
+      "type": "indian_board_meeting",
+      "date": "1931-05-24",
+      "location": "California",
+      "description": "Large meeting attended by O.H. Lipps and Judge Fred A. Baker of the Indian Office; Collett more guarded in speech"
+    },
+    {
+      "type": "senate_hearing",
+      "date": "1932-01-01",
+      "location": "California",
+      "description": "Senate subcommittee hearing on Survey of Conditions of Indians in the United States; testimony from William Fuller, Mrs. Barker, Mrs. Bristol, Lillian Clifton, Mrs. Codman, Mrs. Julian Yale"
+    },
+    {
+      "type": "tuberculosis_clinic",
+      "date": "1931-01-01",
+      "location": "Tuolumne, Placer, and Mendocino Counties, California",
+      "description": "DAR tuberculosis clinics arranged by Mrs. Codman; Dr. Mildred E. Thoren donated services; over 100 Indians examined"
+    },
+    {
+      "type": "fund_drive_deadline",
+      "date": "1930-09-15",
+      "location": "Hopland, California",
+      "description": "Hopland Auxiliary members pledged $10 each, 40 persons target, payments due by September 15, 1930"
+    },
+    {
+      "type": "auxiliary_report_period",
+      "date": "1931-10-01",
+      "location": "California",
+      "description": "Start of auxiliary report period for Indian Board of Cooperation"
+    },
+    {
+      "type": "auxiliary_report_period_end",
+      "date": "1933-07-31",
+      "location": "California",
+      "description": "End of auxiliary report period for Indian Board of Cooperation"
+    },
+    {
+      "type": "treaty_negotiations",
+      "date": "1851-01-01",
+      "location": "California",
+      "description": "Federal Government negotiated 18 unratified treaties with California Indians promising lands and goods in exchange for 94,000,000 acres"
+    },
+    {
+      "type": "state_legislature_appraisal",
+      "date": "1852-01-01",
+      "location": "California",
+      "description": "State legislature appraised Indian lands at not less than $100,000,000"
+    },
+    {
+      "type": "lawsuit_delay",
+      "date": "1928-05-18",
+      "location": "Court of Claims",
+      "description": "Webb took from May 18, 1928 to March 14, 1932 (3 years 10 months) to get case properly before Court of Claims"
+    },
+    {
+      "type": "organization_name_change",
+      "date": "1931-01-01",
+      "location": "California",
+      "description": "Branch of Indian Board of Cooperation changed name to California Indians, Inc."
+    },
+    {
+      "type": "loan_receipt",
+      "date": "1934-03-12",
+      "location": "San Francisco, California",
+      "description": "Receipt issued to W.J. and Dewey Conway for $1,000 loan for Court of Claims suit work"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "payment",
+      "amount": "$12,800,000",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "1929-08-12",
+      "description": "Amount sought in Court of Claims suit filed August 12, 1929"
+    },
+    {
+      "type": "payment",
+      "amount": "$11,000,000",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "1929-08-12",
+      "description": "Amount Attorney General asked for lands which were to have been kept for the Indians"
+    },
+    {
+      "type": "payment",
+      "amount": "$1,800,000",
+      "payer": "United States Government",
+      "payee": "Indians of California",
+      "date": "1929-08-12",
+      "description": "Amount Attorney General asked for promises made in treaties for sundry goods and school privileges for 94,000,000 acres; less than 2 cents per acre"
+    },
+    {
+      "type": "fee",
+      "amount": "$5,000",
+      "payer": "Indian Board of Cooperation auxiliaries",
+      "payee": "Indian Board of Cooperation",
+      "date": "1930-03-05",
+      "description": "Amount needed within 30 days for legal fees and other costs of Court of Claims work"
+    },
+    {
+      "type": "fee",
+      "amount": "$36",
+      "payer": "Indian members",
+      "payee": "Indian Board of Cooperation",
+      "date": "1930-07-15",
+      "description": "Membership dues per member to be paid in full"
+    },
+    {
+      "type": "payment",
+      "amount": "$10",
+      "payer": "Ellerck F. Smith",
+      "payee": "Hopland Auxiliary, Indian Board of Cooperation",
+      "date": "1930-09-15",
+      "description": "Pledge payment for Court of Claims fund, Hopland Auxiliary"
+    },
+    {
+      "type": "payment",
+      "amount": "$10",
+      "payer": "Sam Alen",
+      "payee": "Hopland Auxiliary, Indian Board of Cooperation",
+      "date": "1930-09-15",
+      "description": "Pledge payment for Court of Claims fund, Hopland Auxiliary"
+    },
+    {
+      "type": "payment",
+      "amount": "$10",
+      "payer": "Joe Passador",
+      "payee": "Hopland Auxiliary, Indian Board of Cooperation",
+      "date": "1930-09-15",
+      "description": "Pledge payment for Court of Claims fund, Hopland Auxiliary"
+    },
+    {
+      "type": "payment",
+      "amount": "$10",
+      "payer": "C. I. Illy",
+      "payee": "Hopland Auxiliary, Indian Board of Cooperation",
+      "date": "1930-09-15",
+      "description": "Pledge payment for Court of Claims fund, Hopland Auxiliary"
+    },
+    {
+      "type": "payment",
+      "amount": "$10",
+      "payer": "Salvador Ur",
+      "payee": "Hopland Auxiliary, Indian Board of Cooperation",
+      "date": "1930-09-15",
+      "description": "Pledge payment for Court of Claims fund, Hopland Auxiliary"
+    },
+    {
+      "type": "payment",
+      "amount": "$10",
+      "payer": "Louis Arnold",
+      "payee": "Hopland Auxiliary, Indian Board of Cooperation",
+      "date": "1930-09-15",
+      "description": "Pledge payment for Court of Claims fund, Hopland Auxiliary"
+    },
+    {
+      "type": "payment",
+      "amount": "$10",
+      "payer": "Dick Burk",
+      "payee": "Hopland Auxiliary, Indian Board of Cooperation",
+      "date": "1930-09-15",
+      "description": "Pledge payment for Court of Claims fund, Hopland Auxiliary"
+    },
+    {
+      "type": "payment",
+      "amount": "$10",
+      "payer": "Henry Allen",
+      "payee": "Hopland Auxiliary, Indian Board of Cooperation",
+      "date": "1930-09-15",
+      "description": "Pledge payment for Court of Claims fund, Hopland Auxiliary"
+    },
+    {
+      "type": "payment",
+      "amount": "$10",
+      "payer": "Vivian Burk",
+      "payee": "Hopland Auxiliary, Indian Board of Cooperation",
+      "date": "1930-09-15",
+      "description": "Pledge payment for Court of Claims fund, Hopland Auxiliary"
+    },
+    {
+      "type": "payment",
+      "amount": "$10",
+      "payer": "Elinor Pakador",
+      "payee": "Hopland Auxiliary, Indian Board of Cooperation",
+      "date": "1930-09-15",
+      "description": "Pledge payment for Court of Claims fund, Hopland Auxiliary"
+    },
+    {
+      "type": "payment",
+      "amount": "$10",
+      "payer": "Mrs. Joe Passador",
+      "payee": "Hopland Auxiliary, Indian Board of Cooperation",
+      "date": "1930-09-15",
+      "description": "Pledge payment for Court of Claims fund, Hopland Auxiliary"
+    },
+    {
+      "type": "payment",
+      "amount": "$110",
+      "payer": "Hopland Auxiliary members (11 persons)",
+      "payee": "Indian Board of Cooperation",
+      "date": "1930-09-15",
+      "description": "Total pledges from Hopland Auxiliary for Court of Claims fund"
+    },
+    {
+      "type": "other",
+      "amount": "$1,000",
+      "payer": "Indian Board of Cooperation",
+      "payee": "W. J. Conway",
+      "date": "1938-03-07",
+      "description": "Loan received from W.J. Conway for operating expenses and attorney fees, bearing 8% interest per annum, estimated repayable within 2 years"
+    },
+    {
+      "type": "payment",
+      "amount": "$1,000",
+      "payer": "W. J. and Dewey Conway",
+      "payee": "Indian Board of Cooperation",
+      "date": "1934-03-12",
+      "description": "Receipt issued for $1,000 loan for Court of Claims suit work"
+    },
+    {
+      "type": "fee",
+      "amount": "$20,000",
+      "payer": "Indians of California",
+      "payee": "Henderson, Pemberton & Hanley",
+      "date": "1931-04-05",
+      "description": "Total attorney fee set by attorneys for their services in Court of Claims suit; attorneys would pay Washington firm from this amount"
+    },
+    {
+      "type": "other",
+      "amount": "$10,000",
+      "payer": "Indians of California members",
+      "payee": "F. G. Collett / Indian Board of Cooperation",
+      "date": "1923-01-01",
+      "description": "Collections made by Collett in 1923, totaling $10,000 or more in one year, per Mrs. Barker's testimony"
+    },
+    {
+      "type": "other",
+      "amount": "$11,000",
+      "payer": "Indians of California members",
+      "payee": "F. G. Collett / Indian Board of Cooperation",
+      "date": "1924-01-01",
+      "description": "Collections made by Collett in 1924, totaling $11,000, per Mrs. Barker's testimony"
+    },
+    {
+      "type": "payment",
+      "amount": "$755.77",
+      "payer": "California State Society DAR",
+      "payee": "Various Indian welfare causes",
+      "date": "1932-01-01",
+      "description": "Annual cash contribution by DAR for California Indian welfare work including cabin repairs, necessities for elderly, shoes for children, spectacles, wheel chair, tent, community house furnishings, nurse training"
+    },
+    {
+      "type": "other",
+      "amount": "8% interest per annum",
+      "payer": "Indian Board of Cooperation",
+      "payee": "Lenders",
+      "date": "1932-04-01",
+      "description": "Formal agreement providing 8 percent interest to persons who loan money to Indian Board of Cooperation"
+    },
+    {
+      "type": "fee",
+      "amount": "$25 to $1,000",
+      "payer": "Auxiliary members",
+      "payee": "Indian Board of Cooperation",
+      "date": "1932-04-01",
+      "description": "Suggested loan amounts from auxiliary members able to lend to the organization"
+    },
+    {
+      "type": "payment",
+      "amount": "$100,000,000",
+      "payer": "United States Government (proposed)",
+      "payee": "Indians of California (proposed)",
+      "date": "1852-01-01",
+      "description": "Value at which California State legislature appraised Indian lands in 1852; described as not less than this amount"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "J. W. Henderson",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney appearing before Court of Claims"
+    },
+    {
+      "subject": "J. E. Pemberton",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney appearing before Court of Claims"
+    },
+    {
+      "subject": "James M. Hanley",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney appearing before Court of Claims"
+    },
+    {
+      "subject": "F. G. Collett",
+      "type": "employed_by",
+      "object": "Indian Board of Cooperation",
+      "context": "Executive Representative"
+    },
+    {
+      "subject": "C. R. Fisher",
+      "type": "employed_by",
+      "object": "Indian Board of Cooperation",
+      "context": "Secretary-Treasurer"
+    },
+    {
+      "subject": "U. S. Webb",
+      "type": "represented",
+      "object": "Indians of California",
+      "context": "Attorney General of California, entrusted with presenting California Indian claims to Court of Claims"
+    },
+    {
+      "subject": "William Fuller",
+      "type": "related_to",
+      "object": "Mewuk Tribe of California",
+      "context": "Chief of the Mewuk Tribe"
+    },
+    {
+      "subject": "Mrs. Winifred Codman",
+      "type": "employed_by",
+      "object": "California State Society of the Daughters of the American Revolution",
+      "context": "State chairman of Indian citizenship"
+    },
+    {
+      "subject": "Mrs. Julian Yale",
+      "type": "related_to",
+      "object": "Kiteemu Tribe",
+      "context": "Tribal member, Molelumne"
+    },
+    {
+      "subject": "Mrs. Bristol",
+      "type": "related_to",
+      "object": "Klamath Indians",
+      "context": "Secretary of the Klamath Indians"
+    },
+    {
+      "subject": "Henderson, Pemberton & Hanley",
+      "type": "employed_by",
+      "object": "Indian Board of Cooperation",
+      "context": "San Francisco law firm employed as attorneys for Indians of California through Collett's organization"
+    },
+    {
+      "subject": "Schype",
+      "type": "employed_by",
+      "object": "Henderson, Pemberton & Hanley",
+      "context": "Member of Washington D.C. law firm employed by Henderson, Pemberton & Hanley"
+    },
+    {
+      "subject": "William Fuller",
+      "type": "related_to",
+      "object": "H. L. Englebright",
+      "context": "Fuller wrote letter to Englebright reaffirming position on California Indian claims settlement"
+    },
+    {
+      "subject": "W. J. Conway",
+      "type": "sold_to",
+      "object": "Indian Board of Cooperation",
+      "context": "Loaned $1,000 at 8% interest for operating expenses and attorney fees"
+    },
+    {
+      "subject": "Indian Board of Cooperation",
+      "type": "related_to",
+      "object": "California Indians, Inc.",
+      "context": "Branch organization that changed its name"
+    },
+    {
+      "subject": "City of Los Angeles",
+      "type": "related_to",
+      "object": "Owens Valley Indians",
+      "context": "Los Angeles took water away from Owens Valley, displacing Indian residents"
+    },
+    {
+      "subject": "Dr. Mildred E. Thoren",
+      "type": "employed_by",
+      "object": "California State Society of the Daughters of the American Revolution",
+      "context": "Donated services as tuberculosis examiner for DAR clinics"
+    },
+    {
+      "subject": "Mrs. Joseph Radke",
+      "type": "related_to",
+      "object": "Mrs. Winifred Codman",
+      "context": "Mother of Mrs. Codman, accompanied her to Indian Board of Cooperation meeting"
+    },
+    {
+      "subject": "Mr. Levitt",
+      "type": "related_to",
+      "object": "H.R. 491",
+      "context": "Testified before House on December 11, 1928 that Collett's organization played no role in passage of H.R. 491"
+    },
+    {
+      "subject": "Mr. Lee",
+      "type": "related_to",
+      "object": "H.R. 491",
+      "context": "Congressman from California who sponsored bill before Committee on Indian Affairs"
+    },
+    {
+      "subject": "O. H. Lipps",
+      "type": "related_to",
+      "object": "Indian Office",
+      "context": "Member of Indian Office present at meeting May 24, 1931"
+    },
+    {
+      "subject": "Judge Fred A. Baker",
+      "type": "related_to",
+      "object": "Indian Office",
+      "context": "Judge from Indian Office present at meeting May 24, 1931"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "Indian Board of Cooperation",
+      "sender_title": "F. G. Collett, Executive Representative",
+      "recipient": "Auxiliary Officers and Members",
+      "recipient_title": "",
+      "date": "1930-03-05",
+      "subject": "Court of Claims motion allowed; fundraising urgency",
+      "action_requested": "Hold auxiliary meetings, entertainments, house-to-house canvass to raise $5,000 within 30 days; complete $36 membership dues; donations of $5 or more from those who have paid dues",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "Indian Board of Cooperation",
+      "sender_title": "F. G. Collett, Executive Representative",
+      "recipient": "Indians of California and their friends",
+      "recipient_title": "",
+      "date": "1930-07-15",
+      "subject": "Court of Claims suit status and fundraising for attorneys and expenses",
+      "action_requested": "Each auxiliary to raise its share of money; pledges of $10 each from 40 persons per auxiliary by September 15, 1930",
+      "outcome": "Hopland Auxiliary pledges totaling $110 from 11 members"
+    },
+    {
+      "sender": "William Fuller",
+      "sender_title": "Chief of Mewuk Tribe of California",
+      "recipient": "H. L. Englebright",
+      "recipient_title": "Member of Congress",
+      "date": "1932-03-11",
+      "subject": "Reaffirmation of position on California Indian claims settlement",
+      "action_requested": "Render assistance to Attorney General U.S. Webb in handling the California Indian claims matter",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "Indian Board of Cooperation",
+      "sender_title": "C. R. Fisher, Secretary-Treasurer",
+      "recipient": "William Fuller",
+      "recipient_title": "Chief of Mewuk Tribe",
+      "date": "1932-08-20",
+      "subject": "Response to Fuller's letter; defense of Indian Board of Cooperation against reliance on Webb",
+      "action_requested": "Raise largest sum of money possible at once; hold special auxiliary meeting Sunday May 1; house-to-house canvass; loans of $25 to $1,000",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "Indian Board of Cooperation",
+      "sender_title": "F. G. Collett, Executive Representative",
+      "recipient": "Auxiliary officers and members",
+      "recipient_title": "",
+      "date": "1932-08-06",
+      "subject": "Warning against trusting U.S. Webb; campaign to raise $1 per week from 300 persons for one year",
+      "action_requested": "Join committee of 300 persons to raise $1 each week for 1 year beginning first week of August",
+      "outcome": "Unknown"
+    },
+    {
+      "sender": "Indian Board of Cooperation",
+      "sender_title": "C. R. Fisher, Secretary-Treasurer (O. R. Fisher per document)",
+      "recipient": "W. J. Conway",
+      "recipient_title": "",
+      "date": "1938-03-07",
+      "subject": "Acknowledgment of $1,000 loan for operating expenses and attorney fees",
+      "action_requested": "Confirms terms: 8% interest per annum, repayment when funds received, estimated within 2 years; security from Indian real property",
+      "outcome": "Loan received; receipt issued March 12, 1934"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "H.R. 491",
+      "sponsor": "Mr. Lee (Congressman from California)",
+      "action_type": "enacted",
+      "date": "1928-01-01",
+      "vote_count": "",
+      "committee": "Committee on Indian Affairs",
+      "outcome": "Passed through committee and House on its merits; created Court of Claims law allowing Indians of California to present all claims against the United States; Collett's organization not present at hearings and played no role in passage per testimony of Levitt and Lee"
+    },
+    {
+      "bill_number": "Dockweiler bill",
+      "sponsor": "Unknown",
+      "action_type": "introduced",
+      "date": "1932-01-01",
+      "vote_count": "",
+      "committee": "Congress",
+      "outcome": "Congress recently adjourned without passing; DAR opposed because private attorneys do not represent all California Indians; similar provisions introduced for two sessions"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "William Fuller",
+      "witness_title": "Chief of Mewuk Tribe of California",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate subcommittee",
+      "location": "California",
+      "date": "1932-01-01",
+      "subject": "Contract with Indian Board of Cooperation attorneys; criticism of Collett's leadership; withdrawal from Board of Cooperation",
+      "key_claims": "Fuller stated that delegates who signed contracts should be held responsible for those contracts and pay pro rata of what they receive from the Federal Government. He claimed he always submitted affairs to his Indian people before acting. He criticized how delegates claimed to represent the whole State without proper authorization. He said Collett misled people and that his tribe viewed Collett as a reverend-like figure who misled them. His tribe retired from the Board of Cooperation when they found Collett was misleading them. Fuller also stated in his prior letter that the attorney for Indian Board of Cooperation represents not more than seven or eight tribes, not a majority, and that the contract was made by a vast minority without knowledge or consent of the majority.",
+      "questioner": "Senator Thomas, The Chairman"
+    },
+    {
+      "witness": "Rachael B. Barker",
+      "witness_title": "Unknown, non-Indian welfare worker",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate subcommittee",
+      "location": "California",
+      "date": "1932-01-01",
+      "subject": "Collections by Collett; role of Indian Board of Cooperation in passage of H.R. 491",
+      "key_claims": "Submitted documents showing Collett collected $10,000 or more in 1923 and $11,000 in 1924. Contradicted Collett's claim that his organization was responsible for passage of H.R. 491, noting Collett was indicted February 14, 1928 and not apprehended until August 14, 1928, so was not present during March 8 and March 17 hearings. Submitted testimony of Levitt and Lee from December 11, 1928, stating Collett's organization was not present at hearings and played no part in passage of the bill. Stated her organization does not collect money from Indians.",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "Mrs. Bristol",
+      "witness_title": "Secretary of the Klamath Indians",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate subcommittee",
+      "location": "California",
+      "date": "1932-01-01",
+      "subject": "Support for Collett and attorneys hired by Klamath Indians",
+      "key_claims": "Stated that the Klamath Indians wanted Collett and his lawyers, hired them, and she knows what money was collected. Defended them as true Indian friends and said Indians should not undermine them for their own cause.",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "Lillian Clifton",
+      "witness_title": "Unknown, member of Owens Valley community",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate subcommittee",
+      "location": "California",
+      "date": "1932-01-01",
+      "subject": "Owens Valley Indians' water and land loss; right to choose own attorneys",
+      "key_claims": "Stated that the city of Los Angeles took the water away from Owens Valley and people are destitute. Asserted that Owens Valley people were overlooked by Webb and therefore needed to hire their own attorney. Claimed that Indians used to own the whole valley but white people took it. Acknowledged some people sold land for whatever they could get. Defended Indians' right to choose their own attorneys and to spend their money on their organization. Expressed belief that the bill (H.R. 491/Court of Claims suit) was the result of their organization and contributions.",
+      "questioner": "Senator Thomas, The Chairman"
+    },
+    {
+      "witness": "Mrs. Winifred Codman",
+      "witness_title": "State Chairman of Indian Citizenship, California State Society of the Daughters of the American Revolution",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate subcommittee",
+      "location": "California",
+      "date": "1932-01-01",
+      "subject": "DAR activities for California Indians; opposition to Collett and private attorneys; observations at Indian Board of Cooperation meetings",
+      "key_claims": "DAR has ~5,000 members in ~80 chapters, each with Indian chairman. DAR policy is to help Indians become good citizens on equal footing with whites. DAR spent $755.77 in cash plus donations of clothes, building materials, furniture, medicine, books that past year. DAR provides student loan fund, supports helpful legislation, assists aged Indians in securing aid. DAR opposes stirring up dissatisfaction among Indians or inciting hatred of government. Arranged tuberculosis clinics in Tuolumne, Placer, Mendocino Counties; Dr. Mildred E. Thoren donated services; over 100 Indians examined. Attended Indian Board of Cooperation meetings at Nashville, El Dorado County. At first meeting, Collett and Hanley speeches designed to stir up dissatisfaction with State's handling of Court of Claims case and repeatedly urged Indians to contribute to private attorney fees (Henderson, Pemberton, Hanley; fee $20,000). At April 5, 1931 meeting Collett stated $100-500 million would be asked in petition; said suit ready for trial 'last fall' (1930) per attorney Schype of Washington D.C. firm; criticized Webb's conduct. At May 24, 1931 meeting Lipps and Judge Baker of Indian Office were present. Concluded that Collett should not collect money from destitute Indians who need county/state/federal aid. Opposed Dockweiler bill on grounds private attorneys do not represent all California Indians. Observed considerable cash paid at secretary's table after meetings.",
+      "questioner": "Senator Thomas, The Chairman"
+    },
+    {
+      "witness": "Mrs. Julian Yale",
+      "witness_title": "Member of Kiteemu Tribe, Molelumne",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate subcommittee",
+      "location": "California",
+      "date": "1932-01-01",
+      "subject": "Nature of the Court of Claims suit as a matter between California Indians and the Government",
+      "key_claims": "Stated that the suit is a suit between the California Indians and the Government. Her auxiliary has about 50 or 60 members.",
+      "questioner": "Senator Thomas, The Chairman"
+    }
+  ],
+  "taxes": [],
+  "mortgages": [
+    {
+      "borrower": "Indian Board of Cooperation",
+      "lender": "W. J. Conway and Dewey Conway",
+      "amount": "$1,000",
+      "land_description": "Indian real property pledged as security by Indian people with valuable real property",
+      "acreage": "unknown",
+      "date": "1938-03-07",
+      "interest_rate": "8% per annum",
+      "status": "active",
+      "context": "Loan for operating expenses and attorney fees in Court of Claims suit; Indian real property offered as collateral security; receipt issued March 12, 1934 suggesting transaction may have occurred earlier than the acknowledgment letter date; repayment estimated within 2 years from date of letter"
+    }
+  ]
+}

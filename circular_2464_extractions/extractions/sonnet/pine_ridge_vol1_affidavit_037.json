@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_037",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "48",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William H. Dixon",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Batesland, South Dakota",
+    "Allotment number": "407",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee to his 160 acre allotment at the time he got it, but was told by the Indian Agency Office, that it would be better for him to accept it, else it would be assessed for taxes, which, if allowed to accumulate, would cause the allotment to be sold for; so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged it to John Olson, of Gordon, Nebraska, for $1000.00; that he never paid anything on this loan, Olson finally telling him that, if he did not transfer this place to his mother the mortgage would be foreclosed, and deponent transferred it to his mother",
+    "Buyer": "Mortgaged to John Olson of Gordon, Nebraska for $1000.00; Olson taking out of this $1000.00 at least 10 per cent, if not more, for his own commission; land transferred to deponent's mother",
+    "Tax burden forced sale/Mortgage": "taxes got behind until 1920, when he mortgaged it to John Olson",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "39 years old",
+    "Occupation/Income": "income is derived by working on ranches, driving tractors or anything he can get to do; and that this is his only source of income",
+    "NOTES": "health poor, as he has piles and stomach trouble; has a wife whose health is good; has 9 children to support, all with good health; mother has kept up interest on mortgage and taxes on the land; matter still unsettled but deponent considers the place lost; deponent states he considers that he was truly defrauded out of his allotment; has never received any help from the County, State or the United States Government; affidavit sworn November 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2394,
+    "output_tokens": 575
+  },
+  "elapsed": 10.4
+}

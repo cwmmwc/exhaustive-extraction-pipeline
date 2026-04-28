@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_029",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "35",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James A. Brown",
+    "Tribe/Reservation": "Shannon County / Pine Ridge area (South Dakota)",
+    "Post Office Address": "Martin, South Dakota",
+    "Allotment number": "4448",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want this patent, as he did not want to pay taxes; but he was given to understand that, if he did not take the patent, and pay his taxes, it would be assessed for taxes just the same, and later sold for same, so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to T.C. Torson, a Banker, of Martin, South Dakota, for $500.00; sold to William Hancock, of Tuthill, South Dakota, for $3200.00 cash in February 1920",
+    "Tax burden forced sale/Mortgage": "when he got back home there was one year's taxes against his land, which he paid; also paid the back taxes for 1919 and 1920; Bennett County refunded the taxes he paid for 1918, the year he spent in the Army",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Male",
+    "Age": "38 years old",
+    "Occupation/Income": "works at the carpenter trade for a livelihood; and that this is his only source of income",
+    "NOTES": "Mentally competent; good health; has a wife and one child to support; family has good health; mortgaged land to T.C. Torson for $500.00 to make improvements on another piece of land he was turning into a home; joined the United States Army a few months after receiving fee patent, served one year; paid off $500.00 mortgage with accrued interest from sale proceeds; considers he received a fair price for his land; did not sell land for any debts incurred prior to receiving patent in fee; never received any help from County, State, nor United States Government; allotment described as SW\u00bc, Sec. 5, T.36N., R.36W., of the 6th P.M., in South Dakota, 160 acres; affidavit sworn April 19, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2489,
+    "output_tokens": 604
+  },
+  "elapsed": 8.1
+}

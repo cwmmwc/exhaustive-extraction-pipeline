@@ -1,0 +1,32 @@
+{
+  "document_id": "part13_questionnaire_020",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "42-43",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary B. Lane",
+    "Tribe/Reservation": "Pawnee, Oklahoma",
+    "Post Office Address": "Pawnee, Oklahoma",
+    "Allotment number": "772",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Yes, filed for record by allottee",
+    "Sold/Mortgaged": "Mortgaged to Pawnee Nat. Bank, but mortgage paid off; Sold the land for $4500.00 and paid the mortgage on 40 acres off.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Has any of the land been sold for debt or taxes? no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Nov. 30, 1917",
+    "Gender": "Female",
+    "Age": "58 years",
+    "Occupation/Income": "income of $33.33 per year from inherited land. Shares in Pawnee annuity.",
+    "NOTES": "Patent delivered Dec. 26, 1917, by mail. Mortgage released by Pawnee Nat. Bank. Three minor children dependent upon allottee. Good health. No property or money accumulated. Allottee feels that the issuance of fee patent, without her application, is the cause of her selling the land. There appears to be no evidence of fraud in connection with this sale. Document notarized Nov. 30, 1928, Pawnee County, Oklahoma. Commission expires Jan. 31, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2612,
+    "output_tokens": 426
+  },
+  "elapsed": 8.6
+}

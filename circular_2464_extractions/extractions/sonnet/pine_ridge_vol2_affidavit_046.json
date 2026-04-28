@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_046",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "63",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Titbits",
+    "Tribe/Reservation": "Shannon County (Pine Ridge area, South Dakota)",
+    "Post Office Address": "Manderson, So. Dak.",
+    "Allotment number": "2572",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee but took it on the advice of the Farmer and the Agency authorities for he was told that if he did not take it and pay the taxes that he would lose the land",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it to Hex Livermont of Cody, Nebr. for $35.00 per acre",
+    "Buyer": "Hex Livermont of Cody, Nebr. for $35.00 per acre, which is a fair price for the land",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes on his land so he sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "48 years old (document also states 46 years old in a second reference)",
+    "Occupation/Income": "makes a living by common labor, but that he makes very little, about $200.00 per year",
+    "NOTES": "Document contains conflicting age statements: first states 48 years old, later states 46 years old. Mentally competent; in poor health, suffering with rheumatism; has no land or home and lives on the allotment of his son, which is poor land; has nine children and a wife to support; has received no aid from the Government, State or County since he was granted a patent. Affidavit subscribed and sworn November 28, 1928.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2244,
+    "output_tokens": 478
+  },
+  "elapsed": 10.2
+}

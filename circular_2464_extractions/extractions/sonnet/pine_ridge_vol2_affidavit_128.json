@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_128",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "14-15",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Cecilia Armstrong Ross",
+    "Tribe/Reservation": "Turtle Mountain Indian Reservation",
+    "Post Office Address": "Belcourt, Rolette County, North Dakota",
+    "Allotment number": "2107",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee and accepted it under protest because she was told that if she did not accept it and keep the taxes paid up, that the land would be sold to satisfy them; that this affiant signed the receipt for said patent in fee under protest before one Tidwell, the agent in charge at that time",
+    "Recorded patent": "the said agent caused the said patent to be duly recorded in the office of the proper Register of Deeds",
+    "Sold/Mortgaged": "the land has been regularly sold for both taxes and the mortgage debt",
+    "Buyer": "mortgage foreclosed; land also lost through nonpayment of real estate taxes; period of redemption upon such foreclosure will expire in August, 1929",
+    "Tax burden forced sale/Mortgage": "she could not raise the money with which to keep up the taxes on the land; her husband intended to pay $25.00 a month to pay said mortgage indebtedness but that he became sick and was unable to do so and that this affiant was unable to raise the money to pay said mortgage indebtedness",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "forty-five years of age",
+    "Occupation/Income": "the only source of income is her husband's salary as a Government employee",
+    "NOTES": "Mortgage given in August 1927 for $265.00 as security for an old debt of her husband, eleven years old at the time the mortgage was given; mortgage foreclosed and period of redemption expires August 1929; land also lost for nonpayment of taxes; affiant states she received absolutely nothing from her land, no rents or profits; mentally competent and physical condition and health is good; has no land and no home except living with her husband who is a Government employee at the Turtle Mountain Indian Reservation at Belcourt, North Dakota; mother of four children all residing at home, ages twenty-one, eighteen, fifteen, and thirteen years; the child twenty-one years of age is a girl and is at the present time crippled and in bed; affiant states she was not actually defrauded but land was given to her contrary to her will; document signed December 6, 1928; notary commission expires November 6, 1932; attorney John A. Stormon, Rolla, N.D.; State of North Dakota, County of Rolette | Allotment number 2107 from RA spreadsheet; source pages 14-15 have no visible No. marker. Page 13 header (No. 2100) belongs to Peter Condelario, not this allottee.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 3124,
+    "output_tokens": 683
+  },
+  "elapsed": 19.3
+}

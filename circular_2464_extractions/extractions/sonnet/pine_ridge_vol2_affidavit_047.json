@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_047",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "64",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Emery Amiotte",
+    "Tribe/Reservation": "Shannon County (Pine Ridge area, South Dakota)",
+    "Post Office Address": "Long Valley, South Dakota",
+    "Allotment number": "2584",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee to his 160 acre allotment at the time it was issued, for he did not want to pay taxes; but the Indian Agency advised him he would have the placed assessed for taxes, if he did not accept the patent, and that the land would finally be sold for taxes, if he did not take care of it, so he took the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1919, he traded his allotment to Oscar Amiotte, for another 160 acre piece of land, and deponent was supposed to get $1000.00 in the bargain; the men exchanging deeds",
+    "Buyer": "Oscar Amiotte (trade/exchange); Oscar died within a week's time after the trade, before he had a chance to turn over the $1000.00, so that it was paid to deponent",
+    "Tax burden forced sale/Mortgage": "the Indian Agency advised him he would have the place assessed for taxes, if he did not accept the patent, and that the land would finally be sold for taxes, if he did not take care of it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "32 years old",
+    "Occupation/Income": "he farms that quarter of land he received in the trade for a living; and that this is the only income he has",
+    "NOTES": "Deponent traded his 160-acre allotment (good meadow land) to Oscar Amiotte for another 160-acre piece (higher, rolling prairie land); $1000.00 was to be paid to deponent as part of the bargain but was never paid because Oscar died within a week of the trade; deponent considers he received a poor deal even if the $1000.00 had been paid, on account of the difference in the value of the land; mentally competent, good health; has a wife and four children to support, wife and three children having good health, but the fourth child is in a tubercular sanitorium; has never received any help from the County, State nor the United States Government; document dated December 12, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2374,
+    "output_tokens": 633
+  },
+  "elapsed": 7.3
+}

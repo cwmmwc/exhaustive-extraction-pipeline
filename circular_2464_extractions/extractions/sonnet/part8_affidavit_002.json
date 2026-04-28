@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_affidavit_002",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "26",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William A. Pierce",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged and then sold it",
+    "Buyer": "Peterson (through agent Hancock)",
+    "Tax burden forced sale/Mortgage": "I owed some debts and my creditors were urging payment",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "37",
+    "Occupation/Income": "Farming and ranching",
+    "NOTES": "Paid Hancock approximately $520 at time of sale; debt consisted of hay and cottonseed cake; Hancock acted as agent for Peterson who finally got the land; Hancock charged for his trips to Oacoma in connection with his claim; actual money received in hand was $100.00; land sold for approximately $4000.00 less commission; debts were incurred after the patent was given; has three children; affidavit sworn before Jas. W. Cross, Notary Public, commission expires 4-28-32, on April 29, 1929; document number 2572",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2387,
+    "output_tokens": 379
+  },
+  "elapsed": 8.4
+}

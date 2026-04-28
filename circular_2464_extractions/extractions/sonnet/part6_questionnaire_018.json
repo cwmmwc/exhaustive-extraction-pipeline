@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_018",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "43",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charlotte Giroux Burnett",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "1535",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No, I thought that it was issued and it was up to me to take it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "44",
+    "Occupation/Income": "My husband is dead and the children and I farm and milk a few cows and so forth.",
+    "NOTES": "Husband is deceased; nine dependents; was satisfied with the sale and stated she got a good price; patent was brought home by her husband at some point she does not remember; did not remember signing a receipt for it; consideration was a cash deal; subscribed and sworn before A.W. Cross, Notary Public, commission expires 4-28-32, on May 14, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2223,
+    "output_tokens": 339
+  },
+  "elapsed": 5.8
+}

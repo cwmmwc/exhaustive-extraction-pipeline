@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_055",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "73",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Mesteth",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Manderson, So. Dak.",
+    "Allotment number": "2630",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee but took it because he was told that if he did not take it and pay the taxes that he would lose the land to pay them",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold his land",
+    "Buyer": "Chris Christenson for $200.00 and a ford car, valued at about $200.00",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes so he had to sell his land or lose it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "44 years old",
+    "Occupation/Income": "farms as much as he can, milks cows and does common labor for a living, making about $300.00 per year",
+    "NOTES": "mentally competent, in good health; has a wife and six children to support; has no land, only 4 cows and ten horses; has no home and lives on a tract of land he leases from the Security Bank, Rapid City, So. Dak.; has received no aid from the Government, State or County since he was granted a patent in fee; document subscribed and sworn before a Notary Public on November 30, 1928; County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2260,
+    "output_tokens": 429
+  },
+  "elapsed": 6.0
+}

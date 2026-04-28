@@ -1,0 +1,33 @@
+{
+  "document_id": "part12_questionnaire_023",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "52",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "So lon Cries For Rib",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "393",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not recorded",
+    "Sold/Mortgaged": "All sold",
+    "Buyer": "The purchaser, John Carson & Son, agreed to pay $2500 for the land, but only $100 was paid on the sale",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sept. 26, 1919",
+    "Gender": "not stated",
+    "Age": "40 years",
+    "Occupation/Income": "Allottee has absolutely no source of income",
+    "NOTES": "Patent was receipted for; $50 mortgage which allottee never paid, nor was settlement demanded; good health but poor eyesight, no money accumulated; no contributions made toward his support from Government, State, or County; patent delivered at Agency office; document dated June 18, 1928; file reference 61391",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2361,
+    "output_tokens": 336
+  },
+  "elapsed": 5.5,
+  "retry_count": 1
+}

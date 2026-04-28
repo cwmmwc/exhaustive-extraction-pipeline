@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_002",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "7",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Nellie Larvie Brown",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "I did not want this patent but it was sent to me without my asking for it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I could not pay the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Female",
+    "Age": "47",
+    "Occupation/Income": "My husband and I support three and the others take care of themselves",
+    "NOTES": "Not in good health; has six children; was not satisfied with the sale, stating 'that Tx was not enough for it'; received $4800.00 for the land; does not remember signing a receipt for it; did not ask for the patent; patent was mailed to her in 1918; notarized by Jas. W. Cross, Notary Public, commission expires 4-28-32, on June 4, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2219,
+    "output_tokens": 352
+  },
+  "elapsed": 5.2
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_affidavit_013",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "84",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Josephine Swallow, nee Brown",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Chadron, Nebraska",
+    "Allotment number": "4452",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her allotment for the reason that she did not want to pay taxes; that she was told that she would have to accept it and pay taxes, and she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold her allotment to a McLaughlin, of Gordon, Nebraska, for $1150.00 cash",
+    "Buyer": "a McLaughlin, of Gordon, Nebraska, for $1150.00 cash",
+    "Tax burden forced sale/Mortgage": "at the time she sold it, she paid up her taxes, amounting to $200.00",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "30 years old",
+    "Occupation/Income": "her husband supports her and four minor children; that her husband works in Chadron, Nebraska, for the Chicago & Northwestern Railroad Company--that being his only source of income",
+    "NOTES": "mentally competent; health is not so very good, she has liver trouble; husband's health is very good, except for stomach trouble; health of the children is good; has never received any help from the County or Government; sale occurred in March, 1923; document sworn November 16, 1928; Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2283,
+    "output_tokens": 432
+  },
+  "elapsed": 6.7
+}

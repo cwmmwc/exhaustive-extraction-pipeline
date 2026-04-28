@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_026",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "81",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Millie Prue",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "1212",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Did you ask for that patent? No.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold NEK one quarter and 60 acres of the other; remaining hundred acres still held with mortgage",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "about 10 years ago (from 1929, approximately 1919)",
+    "Gender": "Female",
+    "Age": "69",
+    "Occupation/Income": "I make garden and get some rent and my children help me out",
+    "NOTES": "Patent was brought to her by her husband from the Farmer's office at Okreek. Sold NE quarter for $4500 and 60 acres for $2000 (records show consideration for the sixty was $2400; deponent states she was supposed to get only $2000 and received that). Remaining 100 acres still held. Mortgage on remaining land was for $800; $400 has been paid; daughter is managing it. Has two grandchildren staying with her. Health: 'No, I am sickly all the time.' Stated: 'I am having a hard time. I would like to save something for my Children but I cant do it now.' Subscribed and sworn before Jas. W. Cross, Notary Public, commission expires 4-28-32, on May 7, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2535,
+    "output_tokens": 456
+  },
+  "elapsed": 8.5
+}

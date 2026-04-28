@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_questionnaire_010",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "57-58",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "George Lewis Shields",
+    "Tribe/Reservation": "Crow Creek",
+    "Post Office Address": "not stated",
+    "Allotment number": "574",
+    "Cancelled": "Patent has not been cancelled.",
+    "Refused/Protested": "Accepted without protest.",
+    "Recorded patent": "I did not file patent for record in County.",
+    "Sold/Mortgaged": "I sold the land, all of it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 22, 1919",
+    "Gender": "Male",
+    "Age": "43",
+    "Occupation/Income": "Farming and laboring. No contributions from any source.",
+    "NOTES": "Patent delivered in person Feb. 20, 1920, and was receipted for. Land sold for $1500.00 $1600.00, fair consideration, not sold for settlement of old debt. Mental condition good, physical condition good, financial condition very poor. Wife and four minor children dependent on him. Signed document October 31, 1929, before notary in Buffalo County, State of South Dakota. Document also contains a second record for Benjamin Oliver St. John, Crow Creek allottee No. 550, fee patent issued December 22, 1919, recorded May 8, 1920, Vol. 158 page 621; land sold to M. B. Gregg for one dollar and other valuable consideration, recorded March 17, 1920, Vol. 165 page 193; patentee age 41, mental condition good, physical condition good, financial condition poor; wife and 8 children dependent; living by selling wood and working when he can get a job; also helper in church, sick; has drawn rations for one and two children; patent received sometime in first part of March 1920, handed to him in envelope by Superintendent without his knowing it was a patent until he got home; recorded by M. B. Gregg; received $2250.00, not in settlement of old debt, but records show land was selling for $30.00 to $50.00 per acre at the time; $200.00 paid down, then mortgaged to Frank Kotilienk for $3600.00 by Mrs. Annie Gregg; Kotilienk got loan from Kimball State Bank which got loan from state for $3700.00; land foreclosed by State which is still owner; mortgage to Kotilienk by Annie Gregg recorded Vol. 164, page 495.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 3171,
+    "output_tokens": 744
+  },
+  "elapsed": 14.7
+}

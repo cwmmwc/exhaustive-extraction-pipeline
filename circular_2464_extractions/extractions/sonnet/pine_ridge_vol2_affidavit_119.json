@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_119",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "140",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Wilde",
+    "Tribe/Reservation": "Pine Ridge Agency (Shannon County, South Dakota)",
+    "Post Office Address": "Interior, So. Dak.",
+    "Allotment number": "3759",
+    "Cancelled": "not stated",
+    "Refused/Protested": "refused to take the patent for some time, but that he was told by the District Farmer and the Superintendent that if he did not take the patent and pay the taxes that he would lose the land and on their advise he took it and signed the receipt",
+    "Recorded patent": "he had the patent recorded shortly after he receipted for it",
+    "Sold/Mortgaged": "Mortgaged; foreclosed",
+    "Buyer": "State Bank of Interior mortgaged for $2000.00; he then made a State Loan to pay this mortgage, and in April, 1927, they foreclosed on the land and took his place",
+    "Tax burden forced sale/Mortgage": "mortgaged his land to State Bank of Interior for $2000.00 to pay taxes on it and his personal taxes that had been charged against the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "53 years old",
+    "Occupation/Income": "rents a place to farm, but has very little equipment and is unable to do much",
+    "NOTES": "mentally competent; health of deponent and wife is poor; has an invalid wife and two grandchildren (orphans) to support; has no land, no home and nothing; has received no aid from the Government, State or County since patent was issued; deponent's sight is very poor; document sworn November 13, 1928, County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2320,
+    "output_tokens": 468
+  },
+  "elapsed": 8.1
+}

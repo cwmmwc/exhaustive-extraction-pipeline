@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_068",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "86",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lizzie Jones",
+    "Tribe/Reservation": "Shannon County (South Dakota)",
+    "Post Office Address": "Scenic, South Dakota",
+    "Allotment number": "2697",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent but that she took it because she was told that the land would be taxed anyway, and that if she did not pay the taxes, the land would be sold to satisfy them",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged her land to Security Savings Bank, Rapid City, So. Dak. for $500.00. in 1922, and as I could not pay the mortgage, the foreclosed.",
+    "Buyer": "Security Savings Bank, Rapid City, South Dakota (foreclosed)",
+    "Tax burden forced sale/Mortgage": "I mortgaged the land to raise money to pay the taxes which I was unable to pay",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "54 years old",
+    "Occupation/Income": "supported by my husband, Charles Jones",
+    "NOTES": "Suffering with gall stones and in very poor health; has no land, no home and nothing to live on; husband Charles Jones has nothing and is in poor health; has three minor children dependent on her and her husband for support; Add. 2442 noted on document",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2245,
+    "output_tokens": 401
+  },
+  "elapsed": 7.2
+}

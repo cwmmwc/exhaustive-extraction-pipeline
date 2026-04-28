@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_agency_narrative_017",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "30",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Sarah Colombe, formerly Sarah Prue",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. Dak.",
+    "Allotment number": "424",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded November 30, 1920 by the Volz Abstract Company; receipt for the same was signed by the allottee April 3, 1920",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Land mortgaged October 22, 1920 for $1,000; again October 14, 1922 for $100.00; again July 3, 1923 for $550.00; then by deed dated September 10, 1924 Sarah and her husband conveyed the land to John R. Martin for $3520.00, subject to existing encumbrances of record",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739683; land described as Lots 3 and 4 and the east half of the southwest quarter of section 7, township 98, range 78; mortgaged by Sarah Colombe Prue and her husband",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2108,
+    "output_tokens": 422
+  },
+  "elapsed": 5.1
+}

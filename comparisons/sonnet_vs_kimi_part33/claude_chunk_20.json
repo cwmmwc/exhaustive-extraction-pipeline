@@ -1,0 +1,927 @@
+{
+  "entities": [
+    {
+      "name": "Frederick O. Collett",
+      "type": "person",
+      "context": "Leader of California Indians, Inc., collecting fees for private attorneys for California Indians Court of Claims case"
+    },
+    {
+      "name": "J. W. Henderson",
+      "type": "person",
+      "context": "Attorney for California Indians, Inc., member of Henderson, Pemberton & Hanley firm"
+    },
+    {
+      "name": "J. E. Pemberton",
+      "type": "person",
+      "context": "Attorney for California Indians, Inc., member of Henderson, Pemberton & Hanley firm"
+    },
+    {
+      "name": "James M. Hanley",
+      "type": "person",
+      "context": "Attorney for California Indians, Inc., speaker at organization meetings"
+    },
+    {
+      "name": "Schype",
+      "type": "person",
+      "context": "Attorney in Washington D.C., member of firm employed by Henderson, Pemberton & Hanley"
+    },
+    {
+      "name": "U. S. Webb",
+      "type": "person",
+      "context": "California Attorney General, accused of negligence in California Indians Court of Claims case"
+    },
+    {
+      "name": "Mrs. Joseph Radke",
+      "type": "person",
+      "context": "Mother of the DAR member testifying, accompanied her to California Indians Inc. meetings"
+    },
+    {
+      "name": "Mrs. M. L. Dimmick",
+      "type": "person",
+      "context": "Accompanied DAR member to California Indians Inc. meetings, from Fair Oaks"
+    },
+    {
+      "name": "Mrs. Edgar Feree",
+      "type": "person",
+      "context": "From Fair Oaks, accompanied DAR member to California Indians Inc. meetings"
+    },
+    {
+      "name": "Mrs. Julian Yale",
+      "type": "person",
+      "context": "Member of Kiteemu Tribe, Molelumne, testified before Senate committee in support of California Indians Inc."
+    },
+    {
+      "name": "O. H. Lipps",
+      "type": "person",
+      "context": "Superintendent of Sacramento Indian Agency, covering 40 counties of central and northern California"
+    },
+    {
+      "name": "Judge Fred A. Baker",
+      "type": "person",
+      "context": "Member of Indian Office, attended May 24 1931 California Indians Inc. meeting"
+    },
+    {
+      "name": "Ben F. Mitchell",
+      "type": "person",
+      "context": "Klamath Indian from Sprague River, Oregon, testified before Senate committee about Klamath reservation problems"
+    },
+    {
+      "name": "J. L. Kirk",
+      "type": "person",
+      "context": "Klamath Indian, testified before Senate committee about reservation irregularities"
+    },
+    {
+      "name": "Wade Crawford",
+      "type": "person",
+      "context": "Superintendent of Klamath Indian Agency, tribal member, subject of numerous grievances and affidavits"
+    },
+    {
+      "name": "Charles Knight",
+      "type": "person",
+      "context": "Foreman in charge of beetle-control logging operations on Klamath Indian Reservation"
+    },
+    {
+      "name": "Inez Gallagher",
+      "type": "person",
+      "context": "Klamath Indian woman whose husband George Gallagher died, submitted affidavit about Crawford's denial of assistance"
+    },
+    {
+      "name": "George Gallagher",
+      "type": "person",
+      "context": "Klamath Indian, husband of Inez Gallagher, died of gland trouble after Crawford denied permission to sell steers for medical funds"
+    },
+    {
+      "name": "Gladys Hull",
+      "type": "person",
+      "context": "Pregnant Klamath Indian woman arrested and jailed under Crawford's orders in January 1934, baby died 2 days after birth"
+    },
+    {
+      "name": "Evelyn Lang",
+      "type": "person",
+      "context": "Klamath Indian woman arrested and jailed after Crawford incident at December 27 1933 business committee meeting"
+    },
+    {
+      "name": "James Johnson",
+      "type": "person",
+      "context": "Klamath Indian, allotment owner on Chiloquin Ridge grazing unit, submitted two affidavits"
+    },
+    {
+      "name": "Henry Shadley",
+      "type": "person",
+      "context": "Indian police officer at Klamath Agency who arrested Gladys Hull and Evelyn Lang on Crawford's orders"
+    },
+    {
+      "name": "John Arkell",
+      "type": "person",
+      "context": "Indian Officer at Klamath Agency, sent by Crawford to move George Gallagher to hospital"
+    },
+    {
+      "name": "George Fluey",
+      "type": "person",
+      "context": "Deputy Sheriff involved in attempt to move George Gallagher to hospital"
+    },
+    {
+      "name": "Ted Savage",
+      "type": "person",
+      "context": "Crawford's brother-in-law, posed as cattle buyer trying to purchase Gallagher's four steers"
+    },
+    {
+      "name": "Mr. Crystal",
+      "type": "person",
+      "context": "Husband of Cora Miller, sister-in-law to Wade Crawford, brought 2000 sheep onto Chiloquin Ridge grazing unit"
+    },
+    {
+      "name": "Cora Miller",
+      "type": "person",
+      "context": "Sister-in-law of Wade Crawford, wife of Mr. Crystal"
+    },
+    {
+      "name": "Mr. Howarth",
+      "type": "person",
+      "context": "Forester in charge of beetle-control logging at Klamath Indian Reservation, consulted with Wade Crawford on cutting instructions"
+    },
+    {
+      "name": "Harold Weaver",
+      "type": "person",
+      "context": "Head of weevil control of the Northwest, authored report on Klamath timber sales"
+    },
+    {
+      "name": "Mr. Zimmerman",
+      "type": "person",
+      "context": "Wrote letter to Senator Steiwer stating less than 25 percent merchantable timber in beetle-control logging area"
+    },
+    {
+      "name": "Mr. Walker",
+      "type": "person",
+      "context": "Klamath Indian representative, mentioned in context of appeals to Commissioner"
+    },
+    {
+      "name": "Mr. Grorud",
+      "type": "person",
+      "context": "Senate committee staff member expected in Washington to confer with Commissioner"
+    },
+    {
+      "name": "Mr. Collier",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs, referenced as authority to address Klamath grievances"
+    },
+    {
+      "name": "Senator Wheeler",
+      "type": "person",
+      "context": "Chairman of Senate committee investigating Indian conditions"
+    },
+    {
+      "name": "Senator Thomas",
+      "type": "person",
+      "context": "Senate committee member questioning witnesses at hearing"
+    },
+    {
+      "name": "Senator Steiwer",
+      "type": "person",
+      "context": "Senator who communicated with Commissioner about Klamath violations of Public Act 435"
+    },
+    {
+      "name": "Mr. Wilson",
+      "type": "person",
+      "context": "Agency official at Klamath Indian Agency who refused Gladys Hull money for groceries"
+    },
+    {
+      "name": "Mr. Philipps",
+      "type": "person",
+      "context": "Stockman for Klamath reservation in charge of grazing, gave permission for Crystal's sheep"
+    },
+    {
+      "name": "Dr. A. A. Soule",
+      "type": "person",
+      "context": "Practicing physician of Klamath Falls, attended George Gallagher and baby of Gladys Hull"
+    },
+    {
+      "name": "Patrick L. Gogarty",
+      "type": "person",
+      "context": "Notary Public who notarized Charles Knight's affidavit"
+    },
+    {
+      "name": "Earl P. Bradfield",
+      "type": "person",
+      "context": "Notary Public for Oregon who notarized multiple Klamath affidavits"
+    },
+    {
+      "name": "Engle",
+      "type": "person",
+      "context": "Nephew of Mrs. Crawford, sold 500 sheep each to his mother and sister"
+    },
+    {
+      "name": "California Indians, Inc.",
+      "type": "organization",
+      "context": "Organization formerly known as Indian Board of Co-operation, collecting funds for private attorneys for California Indians Court of Claims case"
+    },
+    {
+      "name": "Indian Board of Co-operation",
+      "type": "organization",
+      "context": "Former name of California Indians, Inc."
+    },
+    {
+      "name": "Henderson, Pemberton & Hanley",
+      "type": "organization",
+      "context": "San Francisco law firm serving as attorneys for California Indians, Inc."
+    },
+    {
+      "name": "Daughters of the American Revolution (DAR)",
+      "type": "organization",
+      "context": "Organization whose members attended California Indians Inc. meetings and testified before Senate committee"
+    },
+    {
+      "name": "Sacramento Indian Agency",
+      "type": "organization",
+      "context": "Federal Indian agency covering 40 counties of central and northern California, headed by O.H. Lipps"
+    },
+    {
+      "name": "Klamath Indian Agency",
+      "type": "organization",
+      "context": "Federal agency administering Klamath Indian Reservation in Oregon, headed by Wade Crawford"
+    },
+    {
+      "name": "Court of Claims",
+      "type": "organization",
+      "context": "Federal court where California Indians suit was pending"
+    },
+    {
+      "name": "Crane Lumber Co.",
+      "type": "organization",
+      "context": "Purchased approximately one million feet of logs from Bly Ridge unit at $4.50 per thousand"
+    },
+    {
+      "name": "Land Lumber Co.",
+      "type": "organization",
+      "context": "Purchased approximately one million feet of logs from Klamath Reservation at $5-$5.50 per thousand"
+    },
+    {
+      "name": "Crater Lake Co.",
+      "type": "organization",
+      "context": "Logging company whose road connected with road built during beetle-control operations"
+    },
+    {
+      "name": "Nashville",
+      "type": "location",
+      "context": "Location of branch meeting of California Indians organization, in El Dorado County"
+    },
+    {
+      "name": "El Dorado County",
+      "type": "location",
+      "context": "County where Nashville is located, California"
+    },
+    {
+      "name": "Fair Oaks",
+      "type": "location",
+      "context": "Home of Mrs. Edgar Feree and Mrs. M.L. Dimmick"
+    },
+    {
+      "name": "San Francisco",
+      "type": "location",
+      "context": "Location of Henderson, Pemberton & Hanley law firm"
+    },
+    {
+      "name": "Washington, D.C.",
+      "type": "location",
+      "context": "Location of law firm employed by Henderson Pemberton & Hanley, also location of Senate committee"
+    },
+    {
+      "name": "Klamath Indian Reservation",
+      "type": "location",
+      "context": "Oregon Indian reservation with $30,000,000 estate, subject of numerous grievances"
+    },
+    {
+      "name": "Sprague River, Oregon",
+      "type": "location",
+      "context": "Home of Ben F. Mitchell"
+    },
+    {
+      "name": "Klamath Falls",
+      "type": "location",
+      "context": "City in Oregon near Klamath Indian Reservation, location of Dr. A.A. Soule's practice"
+    },
+    {
+      "name": "Chiloquin",
+      "type": "location",
+      "context": "Location of Federal jail where Gladys Hull and Evelyn Lang were detained, site of Klamath Indian Agency"
+    },
+    {
+      "name": "Bly Ridge",
+      "type": "location",
+      "context": "Location of beetle-control logging operation on Klamath Indian Reservation, northeast quarter of reservation"
+    },
+    {
+      "name": "Skellog Draw",
+      "type": "location",
+      "context": "Location of second beetle-control logging operation on Klamath Indian Reservation"
+    },
+    {
+      "name": "Chiloquin Ridge grazing unit",
+      "type": "land_parcel",
+      "context": "Surplus range on Klamath Indian Reservation where Crystal brought 2000 sheep without proper bidding process"
+    },
+    {
+      "name": "Kern County",
+      "type": "location",
+      "context": "California county referenced in context of doctor's letter about demands made on Indians"
+    },
+    {
+      "name": "Public Act 435, 72d Congress",
+      "type": "legislation",
+      "context": "Act requiring consent of Klamath general council before sale of Indian timber on Klamath Indian Reservation"
+    },
+    {
+      "name": "Public Act 81, 73d Congress",
+      "type": "legislation",
+      "context": "Act amending Public Act 435, adding proviso about price restrictions not applying to Klamath Reservation, terminating 1 year after enactment"
+    },
+    {
+      "name": "Toppenish, Washington",
+      "type": "location",
+      "context": "Location where J.L. Kirk and Mr. Mitchell met Harold Weaver and requested his report"
+    },
+    {
+      "name": "Klamath Delegates Washington Trip",
+      "type": "legal_case",
+      "context": "December 1933 meeting to vote on allowing expenses of delegates to Washington D.C."
+    },
+    {
+      "name": "California Indians Court of Claims Case",
+      "type": "legal_case",
+      "context": "Lawsuit by California Indians against the government, with amounts of 100 million to 500 million dollars sought"
+    },
+    {
+      "name": "Kiteemu Tribe, Molelumne",
+      "type": "organization",
+      "context": "Tribe of Mrs. Julian Yale, members scattered across different counties"
+    },
+    {
+      "name": "Klamath Tribe",
+      "type": "organization",
+      "context": "Oregon Indian tribe with 1,347 members, $30,000,000 estate, subject of governance disputes"
+    }
+  ],
+  "events": [
+    {
+      "type": "organization_meeting",
+      "date": "1931-04-05",
+      "location": "Nashville, El Dorado County, California",
+      "description": "Meeting of California Indians Inc. branch where Collett spoke at length about negligence of Attorney General Webb and Court of Claims case"
+    },
+    {
+      "type": "organization_meeting",
+      "date": "1931-05-24",
+      "location": "California",
+      "description": "Large California Indians Inc. meeting attended by O.H. Lipps and Judge Fred A. Baker; Collett was more guarded in his speech"
+    },
+    {
+      "type": "hearing",
+      "date": "1934",
+      "location": "California",
+      "description": "Senate subcommittee hearing on Survey of Conditions of Indians in the United States, receiving testimony from multiple witnesses about California and Klamath Indian conditions"
+    },
+    {
+      "type": "legislation_enacted",
+      "date": "1933-03-04",
+      "location": "Washington, D.C.",
+      "description": "Public Act 435, 72d Congress enacted, requiring consent of Klamath general council for timber sales on Klamath Indian Reservation"
+    },
+    {
+      "type": "legislation_enacted",
+      "date": "1933-06-16",
+      "location": "Washington, D.C.",
+      "description": "Public Act 81, 73d Congress enacted, amending Public Act 435 regarding price restrictions on Klamath Reservation timber sales"
+    },
+    {
+      "type": "timber_sale",
+      "date": "1933",
+      "location": "Klamath Indian Reservation, Oregon",
+      "description": "Sale of approximately one million feet of logs from Klamath Reservation to Land Lumber Co. at $5-$5.50 per thousand, alleged violation of Public Act 435"
+    },
+    {
+      "type": "timber_sale",
+      "date": "1933",
+      "location": "Bly Ridge, Klamath Indian Reservation, Oregon",
+      "description": "Sale of approximately one million feet of logs from Bly Ridge unit to Crane Lumber Co. at $4.50 per thousand, alleged violation of Public Act 435"
+    },
+    {
+      "type": "logging_operation",
+      "date": "1934-06-20",
+      "location": "Bly Ridge, Klamath Indian Reservation, Oregon",
+      "description": "Beetle-control logging operation under foreman Charles Knight; cutting instructions required logs not less than 24 inches at stump down to 12-inch top, resulting in merchantable timber being taken and bug-infested trees left standing"
+    },
+    {
+      "type": "arrest",
+      "date": "1934-01",
+      "location": "Chiloquin, Oregon",
+      "description": "Gladys Hull, pregnant Klamath Indian woman, arrested by Henry Shadley on Crawford's orders, jailed overnight without fire, food, or matron; baby born February 4 1934 lived 2 days and died"
+    },
+    {
+      "type": "arrest",
+      "date": "1933-12-27",
+      "location": "Chiloquin, Oregon",
+      "description": "Evelyn Lang arrested by Henry Shadley at Crawford's direction after confrontation at Klamath business committee meeting, jailed overnight"
+    },
+    {
+      "type": "business_committee_meeting",
+      "date": "1933-12-27",
+      "location": "Klamath Indian Reservation, Oregon",
+      "description": "Open meeting of Klamath business committee to vote on allowing expenses of delegates to Washington D.C., disrupted by Crawford's confrontation with delegates"
+    },
+    {
+      "type": "death",
+      "date": "1934-03",
+      "location": "Klamath Indian Reservation, Oregon",
+      "description": "George Gallagher died of gland trouble after Crawford repeatedly denied permission to sell steers for medical operation funds"
+    },
+    {
+      "type": "death",
+      "date": "1934-02",
+      "location": "Klamath Falls, Oregon",
+      "description": "Baby of Gladys Hull born February 4 1934, lived 2 days and died; Dr. Soule attributed to treatment received during jailing"
+    },
+    {
+      "type": "sheep_grazing_violation",
+      "date": "1934-04",
+      "location": "Chiloquin Ridge, Klamath Indian Reservation",
+      "description": "Mr. Crystal brought approximately 2,000 sheep onto Chiloquin Ridge grazing unit with Crawford's permission before area was advertised for bidding, approximately 10 days prior to James Johnson's inspection on April 1934"
+    },
+    {
+      "type": "bids_submitted",
+      "date": "1934-04-27",
+      "location": "Klamath Indian Agency",
+      "description": "Bids for leasing Chiloquin Ridge grazing unit submitted to superintendent, turned over to business committee in June 1934"
+    },
+    {
+      "type": "correspondence",
+      "date": "1934-03-07",
+      "location": "Washington, D.C.",
+      "description": "Klamath Delegates wrote to Commissioner of Indian Affairs asking under what provisions timber sales had been made since March 4 1933"
+    },
+    {
+      "type": "affidavit",
+      "date": "1934-06-20",
+      "location": "Klamath County, Oregon",
+      "description": "Charles Knight sworn affidavit regarding logging in Beetle Control Camp"
+    },
+    {
+      "type": "affidavit",
+      "date": "1934-06-22",
+      "location": "Klamath County, Oregon",
+      "description": "Inez Gallagher sworn affidavit regarding Crawford's denial of medical assistance and her husband's death"
+    },
+    {
+      "type": "affidavit",
+      "date": "1934-06-28",
+      "location": "Klamath County, Oregon",
+      "description": "Gladys Hull sworn affidavit regarding arrest, jailing, and death of her baby"
+    },
+    {
+      "type": "affidavit",
+      "date": "1934-06-29",
+      "location": "Klamath County, Oregon",
+      "description": "Evelyn Lang sworn affidavit regarding arrest at December 1933 business committee meeting"
+    },
+    {
+      "type": "affidavit",
+      "date": "1934-06-22",
+      "location": "Klamath County, Oregon",
+      "description": "James Johnson first sworn affidavit regarding Crystal's sheep grazing on Chiloquin Ridge"
+    },
+    {
+      "type": "affidavit",
+      "date": "1934-06-22",
+      "location": "Klamath County, Oregon",
+      "description": "James Johnson second sworn affidavit regarding Crawford withholding son's per capita check and reimbursable money unless hogs were moved"
+    },
+    {
+      "type": "meeting",
+      "date": "1930",
+      "location": "Nashville, El Dorado County, California",
+      "description": "First branch meeting of California Indians Inc. (formerly Indian Board of Co-operation), speeches by Collett and Hanley designed to stir dissatisfaction and collect attorney fees"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "fee",
+      "amount": "$20,000",
+      "payer": "California Indians",
+      "payee": "Henderson, Pemberton & Hanley",
+      "date": "1931",
+      "description": "Total attorney fee set by California Indians Inc. attorneys for Court of Claims case services; attorneys would also pay their Washington D.C. affiliated firm from this amount"
+    },
+    {
+      "type": "payment",
+      "amount": "unspecified cash",
+      "payer": "California Indians",
+      "payee": "California Indians Inc. secretary",
+      "date": "1930",
+      "description": "Cash collected at secretary's table following California Indians Inc. branch meeting"
+    },
+    {
+      "type": "payment",
+      "amount": "$20",
+      "payer": "Klamath Indian Agency",
+      "payee": "Gladys Hull",
+      "date": "1934-01",
+      "description": "Purchase order for food and clothing given to Gladys Hull after initial refusal by Mr. Wilson"
+    },
+    {
+      "type": "sale",
+      "amount": "$5.00-$5.50 per thousand board feet",
+      "payer": "Land Lumber Co.",
+      "payee": "Klamath Indian Agency",
+      "date": "1933",
+      "description": "Sale of approximately one million feet of logs from Klamath Reservation to Land Lumber Co., alleged violation of Public Act 435"
+    },
+    {
+      "type": "sale",
+      "amount": "$4.50 per thousand board feet",
+      "payer": "Crane Lumber Co.",
+      "payee": "Klamath Indian Agency",
+      "date": "1933",
+      "description": "Sale of approximately one million feet of logs from Bly Ridge unit to Crane Lumber Co., alleged violation of Public Act 435"
+    },
+    {
+      "type": "payment",
+      "amount": "$1 per thousand board feet",
+      "payer": "Klamath Indian Agency",
+      "payee": "Gyppo loggers",
+      "date": "1934",
+      "description": "Payment rate to Gyppo loggers for beetle-control logging on Bly Ridge, with full scale without deductions for defects"
+    },
+    {
+      "type": "other",
+      "amount": "two purchase orders for food and clothing",
+      "payer": "Klamath Indian Agency",
+      "payee": "Inez Gallagher",
+      "date": "1934",
+      "description": "Two purchase orders given to Inez Gallagher approximately 2 months before her husband's death, the only assistance received during his illness"
+    },
+    {
+      "type": "other",
+      "amount": "$3.00 per thousand stumpage",
+      "payer": "Lumber companies",
+      "payee": "Klamath Indian Agency",
+      "date": "1933",
+      "description": "Stumpage price received by Klamath Reservation from timber sales, cited by J.L. Kirk as indication sales price was too low"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Frederick O. Collett",
+      "type": "leads",
+      "object": "California Indians, Inc.",
+      "context": "Collett is the leader/organizer of California Indians Inc. and its attorney fee collection campaign"
+    },
+    {
+      "subject": "Henderson, Pemberton & Hanley",
+      "type": "employed_by",
+      "object": "California Indians, Inc.",
+      "context": "San Francisco law firm hired as attorneys for Collett's organization for Court of Claims case"
+    },
+    {
+      "subject": "Schype firm",
+      "type": "employed_by",
+      "object": "Henderson, Pemberton & Hanley",
+      "context": "Washington D.C. law firm employed by Henderson Pemberton & Hanley for Court of Claims case"
+    },
+    {
+      "subject": "James M. Hanley",
+      "type": "member_of",
+      "object": "Henderson, Pemberton & Hanley",
+      "context": "Hanley is one of the attorneys and also a speaker at California Indians Inc. meetings"
+    },
+    {
+      "subject": "Mrs. Julian Yale",
+      "type": "member_of",
+      "object": "California Indians, Inc.",
+      "context": "Yale is an auxiliary member of California Indians Inc. representing Kiteemu Tribe Molelumne"
+    },
+    {
+      "subject": "O. H. Lipps",
+      "type": "employed_by",
+      "object": "Sacramento Indian Agency",
+      "context": "Lipps is superintendent of the Sacramento Indian Agency covering 40 counties of central and northern California"
+    },
+    {
+      "subject": "Wade Crawford",
+      "type": "employed_by",
+      "object": "Klamath Indian Agency",
+      "context": "Crawford is superintendent of Klamath Indian Agency, appointed because he is a tribal member"
+    },
+    {
+      "subject": "Wade Crawford",
+      "type": "related_to",
+      "object": "Ted Savage",
+      "context": "Ted Savage is Crawford's brother-in-law"
+    },
+    {
+      "subject": "Wade Crawford",
+      "type": "related_to",
+      "object": "Cora Miller",
+      "context": "Cora Miller is Crawford's sister-in-law, wife of Crystal"
+    },
+    {
+      "subject": "Wade Crawford",
+      "type": "related_to",
+      "object": "Mr. Crystal",
+      "context": "Crystal is married to Cora Miller, Crawford's sister-in-law"
+    },
+    {
+      "subject": "Wade Crawford",
+      "type": "related_to",
+      "object": "Engle",
+      "context": "Engle is a nephew of Mrs. Crawford"
+    },
+    {
+      "subject": "Ben F. Mitchell",
+      "type": "member_of",
+      "object": "Klamath Tribe",
+      "context": "Mitchell is a Klamath Indian from Sprague River Oregon"
+    },
+    {
+      "subject": "J. L. Kirk",
+      "type": "member_of",
+      "object": "Klamath Tribe",
+      "context": "Kirk is a Klamath Indian representative"
+    },
+    {
+      "subject": "Charles Knight",
+      "type": "employed_by",
+      "object": "Klamath Indian Agency",
+      "context": "Knight was foreman in direct charge of beetle-control logging operation"
+    },
+    {
+      "subject": "Mr. Howarth",
+      "type": "employed_by",
+      "object": "Klamath Indian Agency",
+      "context": "Howarth was forester in charge of beetle-control logging operations"
+    },
+    {
+      "subject": "Henry Shadley",
+      "type": "employed_by",
+      "object": "Klamath Indian Agency",
+      "context": "Shadley is an Indian police officer at Klamath Agency"
+    },
+    {
+      "subject": "John Arkell",
+      "type": "employed_by",
+      "object": "Klamath Indian Agency",
+      "context": "Arkell is an Indian Officer at Klamath Agency"
+    },
+    {
+      "subject": "Mr. Philipps",
+      "type": "employed_by",
+      "object": "Klamath Indian Agency",
+      "context": "Philipps is stockman for the reservation in charge of grazing"
+    },
+    {
+      "subject": "Mr. Wilson",
+      "type": "employed_by",
+      "object": "Klamath Indian Agency",
+      "context": "Wilson is an agency official who refused Gladys Hull money"
+    },
+    {
+      "subject": "Harold Weaver",
+      "type": "employed_by",
+      "object": "Northwest Weevil Control",
+      "context": "Weaver is head of weevil control of the Northwest and authored report on Klamath timber"
+    },
+    {
+      "subject": "Dr. A. A. Soule",
+      "type": "attended",
+      "object": "George Gallagher",
+      "context": "Dr. Soule was attending physician for George Gallagher in Klamath Falls"
+    },
+    {
+      "subject": "Dr. A. A. Soule",
+      "type": "attended",
+      "object": "Gladys Hull",
+      "context": "Dr. Soule was attending physician when Gladys Hull's baby was born"
+    },
+    {
+      "subject": "James Johnson",
+      "type": "owns",
+      "object": "Chiloquin Ridge allotment",
+      "context": "Johnson is owner of allotment on Chiloquin Ridge grazing unit"
+    },
+    {
+      "subject": "Crane Lumber Co.",
+      "type": "bought_from",
+      "object": "Klamath Indian Agency",
+      "context": "Crane Co. contracted for logs delivered at roads in Bly Ridge beetle-control operation at $4.50 per thousand"
+    },
+    {
+      "subject": "Land Lumber Co.",
+      "type": "bought_from",
+      "object": "Klamath Indian Agency",
+      "context": "Land Lumber Co. purchased approximately one million feet of logs at $5-$5.50 per thousand"
+    },
+    {
+      "subject": "Senator Steiwer",
+      "type": "communicated_with",
+      "object": "Commissioner of Indian Affairs",
+      "context": "Steiwer urged Commissioner to admit violation of Public Act 435 regarding Klamath timber sales"
+    },
+    {
+      "subject": "Klamath Delegates",
+      "type": "appealed_to",
+      "object": "Commissioner of Indian Affairs",
+      "context": "Klamath Indians repeatedly appealed to Commissioner about Crawford's conduct without receiving satisfactory replies"
+    },
+    {
+      "subject": "California Indians Inc.",
+      "type": "formerly_known_as",
+      "object": "Indian Board of Co-operation",
+      "context": "Organization changed its name from Indian Board of Co-operation to California Indians Inc."
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "Klamath Delegates",
+      "sender_title": "Klamath Indian tribal representatives",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "1934-03-07",
+      "subject": "Legality of timber sales on Klamath Indian Reservation since March 4 1933",
+      "action_requested": "Inform under what specific provisions of law any sales of Indian timber on Klamath Indian Reservation have been made since March 4 1933",
+      "outcome": "No satisfactory answer received; Commissioner admitted violation to Senator Steiwer but refused to take action"
+    },
+    {
+      "sender": "Unknown Indian",
+      "sender_title": "California Indian",
+      "recipient": "Sacramento Indian Agency",
+      "recipient_title": "Agency office",
+      "date": "1931",
+      "subject": "Method of soliciting funds from poor Indians by California Indians Inc.",
+      "action_requested": "Suppress method of soliciting funds from poor Indians",
+      "outcome": "Letter offered to Senate committee record by O.H. Lipps"
+    },
+    {
+      "sender": "Doctor from Kern County",
+      "sender_title": "Physician",
+      "recipient": "Sacramento Indian Agency",
+      "recipient_title": "Agency office",
+      "date": "1931",
+      "subject": "Demands made on Indians in Kern County for attorney fee contributions",
+      "action_requested": "Address unreasonable demands on poor Indians",
+      "outcome": "Letter offered to Senate committee record by O.H. Lipps"
+    },
+    {
+      "sender": "J. L. Kirk",
+      "sender_title": "Klamath Indian representative",
+      "recipient": "Mr. Walker",
+      "recipient_title": "Klamath representative",
+      "date": "1934",
+      "subject": "Request for copy of Harold Weaver's report on Klamath beetle-control logging",
+      "action_requested": "Ask Senate investigating committee to obtain copy of Weaver report after direct request was denied",
+      "outcome": "Pending at time of testimony"
+    },
+    {
+      "sender": "Klamath business committee",
+      "sender_title": "Klamath tribal business committee",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "1934",
+      "subject": "Removal or transfer of Superintendent Wade Crawford",
+      "action_requested": "Remove or transfer Superintendent Crawford due to numerous irregularities",
+      "outcome": "No reply received from Commissioner"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "Public No. 435, 72d Congress",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1933-03-04",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Enacted; required consent of Klamath general council before any sale of Indian timber on Klamath Indian Reservation in Oregon"
+    },
+    {
+      "bill_number": "Public No. 81, 73d Congress",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1933-06-16",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Enacted; amended Public No. 435 by adding proviso that price restrictions shall not apply to Klamath Indian Reservation and that authority terminates 1 year from enactment"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "DAR member (unnamed)",
+      "witness_title": "Member of Daughters of the American Revolution",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "California",
+      "date": "1931",
+      "subject": "Activities of California Indians Inc. and Frederick O. Collett collecting attorney fees from destitute Indians",
+      "key_claims": "Attended meetings in Nashville El Dorado County in 1930 and April 5 1931 and May 24 1931. Collett and Hanley made speeches designed to stir dissatisfaction with State handling of Court of Claims case. Collett stated 100 million to 500 million dollars would be sought. Attorney fee set at $20,000. Collett said suit was ready for trial in fall of 1930 but also said Indians not ready until money collected. Cash collected at secretary's table after meetings. Indians are destitute and being asked to contribute to attorney fees while seeking county state and federal aid. DAR organization constantly appealed to by same Indians for assistance.",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "Mrs. Julian Yale",
+      "witness_title": "Member of Kiteemu Tribe, Molelumne; auxiliary member of California Indians Inc.",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "California",
+      "date": "1931",
+      "subject": "Defense of California Indians Inc. and the hiring of private attorneys; conditions of Kiteemu tribal members",
+      "key_claims": "Auxiliary comprises about 50-60 members. Members voluntarily contributed dues and selected their own attorneys freely. Attorneys are sincere friends who did not initially ask for pay. Doubted Attorney General Webb would represent Indians' interests as fully as private attorneys. Tribal land is of poorest class, steep rocky hillsides. Son had been bedridden for 2 years with heart trouble from high school injury. Family received no outside help. Indians need a just settlement including land with water. Criticized DAR witness for neglecting Molelumne.",
+      "questioner": "The Chairman; Senator Thomas"
+    },
+    {
+      "witness": "O. H. Lipps",
+      "witness_title": "Superintendent, Sacramento Indian Agency",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "California",
+      "date": "1931",
+      "subject": "Sacramento Indian Agency's approach to California Indian conditions and attorney fee collection controversy",
+      "key_claims": "Agency covers 40 counties of central and northern California. Has taken no part in attorney controversy. Believes Indians should have equal rights with all citizens. Main problem is getting Indians to concentrate on development rather than agitation. Has demonstrated California Indians have ability. Receives many letters complaining about methods of collecting funds from poor Indians. Trying to bring in county welfare, agricultural extension, state educational department and local agencies to help California Indians. Wants factionalism and agitation suppressed. Has shown that Indians given farms and education will make fine citizens.",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "Ben F. Mitchell",
+      "witness_title": "Klamath Indian, Sprague River Oregon",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "California hearing location",
+      "date": "1934",
+      "subject": "Klamath Indian Reservation misadministration by Superintendent Wade Crawford and violations of Public Act 435",
+      "key_claims": "Current superintendent Wade Crawford is unqualified to administer tribal business worth $30,000,000. Klamath Indians have repeatedly appealed to Commissioner without reply. Two sales of timber made on Klamath in violation of Public Act 435 without consent of general council. Commissioner admitted violation to Senator Steiwer but refused to act further. Affidavits document people jailed for standing up for rights, pregnant woman handled roughly and jailed without matron causing baby's death, and loose business methods. Came to hearing at own personal expense after superintendent refused to pay travel expenses. Situation nearly broke into open warfare. Requested proper investigation of Klamath situation.",
+      "questioner": "The Chairman; Senator Thomas"
+    },
+    {
+      "witness": "J. L. Kirk",
+      "witness_title": "Klamath Indian representative",
+      "hearing": "Survey of Conditions of Indians in the United States",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "California hearing location",
+      "date": "1934",
+      "subject": "Klamath timber sales violations, grazing irregularities, and Crawford's administration",
+      "key_claims": "Numerous irregularities on reservation. Klamath Indians virtually unanimous against Crawford as superintendent. Have appealed to Commissioner repeatedly for removal or transfer with no reply. Harold Weaver's report shows approximately one million feet sold to Land Lumber Co. at $5-$5.50 per thousand with about 50 percent beetle infected. One million feet sold to Crane Lumber Co. from Bly Ridge at $4.50 per thousand with about 45 percent beetle infested. Zimmerman letter to Senator Steiwer stated less than 25 percent merchantable timber. Violation is selling without consent of general council per Act 435. Crawford removed sheep 3 years ago then brought them back through relatives on conditional sales contracts. Under treaty rights 500 head per family member free but family members sold to each other to circumvent limits. Crawford allowed Crystal to bring sheep onto reservation before surplus range was advertised for bidding.",
+      "questioner": "The Chairman; Senator Thomas"
+    },
+    {
+      "witness": "Charles Knight",
+      "witness_title": "Foreman of beetle-control logging operation, Klamath Indian Reservation",
+      "hearing": "Submitted as affidavit to Senate committee record",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Klamath Indian Reservation, Oregon",
+      "date": "1934-06-20",
+      "subject": "Logging operations in Beetle Control Camp on Klamath Indian Reservation",
+      "key_claims": "Logging on Bly Ridge was poor beetle-control measure. Instructed by forester Howarth and Superintendent Crawford to cut logs not less than 24 inches at stump down to 12-inch top and take all spike tops. Most spike-top trees taken were not beetle infested. Bug-infested trees smaller than cutting specifications were left standing. Crane Co. contracted for logs delivered at roads. Logs were to be scaled after Crane hauled them to mill rather than at roadside. Same issues applied at Skellog Draw. Only cream of timber was logged. Methods used differed from other beetle-control camps. No brush was piled or bug-infested butts treated that were left.",
+      "questioner": "N/A - sworn affidavit"
+    },
+    {
+      "witness": "Inez Gallagher",
+      "witness_title": "Klamath Indian widow",
+      "hearing": "Submitted as affidavit to Senate committee record",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Klamath County, Oregon",
+      "date": "1934-06-22",
+      "subject": "Wade Crawford's denial of assistance during husband George Gallagher's fatal illness",
+      "key_claims": "In June 1933 husband asked Crawford for permission to sell four steers purchased with children's money to fund needed operation; Crawford refused unless money immediately returned to children's account. Later when husband was bedfast Crawford refused to give any of children's money or allow steers to be sold. Crawford told her to go get a job herself. Only received two purchase orders for food and clothing for children approximately 2 months before husband's death. About 3 weeks before death Crawford's brother-in-law Ted Savage posed as cattle buyer twice trying to purchase the four steers. About a week before death Crawford sent Indian Officer Arkell and Deputy Sheriff Fluey to move husband to hospital; refused on doctor's orders due to husband's extremely low vitality. Dr. Soule and Inez personally believe operation at time first requested would have saved George Gallagher's life.",
+      "questioner": "N/A - sworn affidavit"
+    },
+    {
+      "witness": "Gladys Hull",
+      "witness_title": "Pregnant Klamath Indian woman",
+      "hearing": "Submitted as affidavit to Senate committee record",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Klamath County, Oregon",
+      "date": "1934-06-28",
+      "subject": "Arrest and jailing while pregnant on Crawford's orders in January 1934",
+      "key_claims": "In first week of January 1934 while pregnant went to Klamath Indian Agency to request money for groceries and clothing. Mr. Wilson refused. Crawford called her back and gave $20 purchase order. Crawford then wanted to know why she would not go to a home for wayward girls as he had previously tried to arrange. She refused stating she was of age. Crawford came outside and took keys of automobile. When she returned inside Henry Shadley Indian officer told her Wade said to take her. She refused to get in his car so Shadley grasped her around stomach and threw her into car knowing she was visibly pregnant. Brought to Chiloquin then returned to agency for Arkell to consult then returned to Chiloquin jail at 2pm. No fire in jail, very little and very dirty bedding, kept overnight without fire or food. Given breakfast at 10 next morning. Aunt refused permission to stay with her. No matron in attendance. Kept in large room with all other prisoners. Released about noon following day and was very ill. Baby born about a month later on February 4 1934, lived 2 days and died. Dr. Soule informed her the treatment greatly endangered health and lives of both baby and herself.",
+      "questioner": "N/A - sworn affidavit"
+    },
+    {
+      "witness": "Evelyn Lang",
+      "witness_title": "Klamath Indian woman",
+      "hearing": "Submitted as affidavit to Senate committee record",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Klamath County, Oregon",
+      "date": "1934-06-29",
+      "subject": "Arrest and jailing following confrontation with Crawford at December 27 1933 business committee meeting",
+      "key_claims": "Attended open meeting of Klamath business committee on December 27 1933 to vote on expenses of delegates to Washington. Mrs. Wade Crawford arose to protest eligibility of one delegate. When member raised point of order Crawford began to vilify delegate with obscene names. Lang arose to ask chairman if meeting was meant to hear quarrels. Crawford swore at her told her to shut her mouth and advanced toward her with clenched fists in threatening manner and said he would throw her out. Several men intervened to prevent him striking her. Deputy Indian officer asked her to sit down. Henry Shadley arrived after Crawford telephoned him and placed her under arrest. Brought to Federal jail at Chiloquin about 3pm and kept overnight. Released next day.",
+      "questioner": "N/A - sworn affidavit"
+    },
+    {
+      "witness": "James Johnson",
+      "witness_title": "Klamath Indian allotment owner on Chiloquin Ridge",
+      "hearing": "Submitted as affidavit to Senate committee record",
+      "committee": "Senate Committee on Indian Affairs",
+      "location": "Klamath County, Oregon",
+      "date": "1934-06-22",
+      "subject": "Unauthorized sheep grazing on Chiloquin Ridge and Crawford withholding reimbursable money",
+      "key_claims": "First affidavit: On approximately April 1934 inspected allotment on Chiloquin Ridge and saw about 2000 sheep grazing under charge of Mr. Crystal husband of Cora Miller sister-in-law of Crawford. Sheep had been there about 10 days. Crystal said given permission by Crawford and Philipps stockman. Prior to this general council passed resolution requiring surplus range leased to highest bidder. Chiloquin Ridge classified as surplus range. Bids submitted April 27 1934 then turned over to business committee in June 1934. Second affidavit: Has small place on allotment not leased to sheepmen where he runs 5-6 hogs. Went to agency with son to get reimbursable money for buck rakes and harness. After consulting Crawford or Wilson agency informed son could not get reimbursable money despite having money in account. Crawford was holding son's per capita check and refused to release account money or reimbursable money until hogs were moved from Chiloquin Ridge.",
+      "questioner": "N/A - sworn affidavit"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

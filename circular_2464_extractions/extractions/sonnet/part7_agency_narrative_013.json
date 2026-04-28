@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_agency_narrative_013",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "26",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Huggins",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. D.",
+    "Allotment number": "2280",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded August 10, 1920, by the Volz Abstract Company",
+    "Sold/Mortgaged": "Mortgaged",
+    "Buyer": "Mortgage dated September 23, 1919, by James and Ora Huggins to Bank of Norden for $2400; this mortgage was released November 7, 1919 and a new mortgage by Huggins and his wife was made dated July 23, 1920 in favor of E. B. Bradley for $2000; this mortgage was assigned to Register Life Insurance Company of Davenport, Iowa and was due August 1, 1925",
+    "Tax burden forced sale/Mortgage": "In 1927 prior taxes have been paid but at the time the records were viewed the 1928 taxes amounting to $96.15 had not been paid",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612717 issued; Southwest quarter section 16, township 95, north of range 78; receipt for patent was signed by the allottee but not dated; wife named Ora Huggins",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2117,
+    "output_tokens": 434
+  },
+  "elapsed": 5.0
+}

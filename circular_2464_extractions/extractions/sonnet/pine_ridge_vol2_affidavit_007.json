@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_007",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "11",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Frank Randall",
+    "Tribe/Reservation": "Pine Ridge Agency (Shannon County, South Dakota)",
+    "Post Office Address": "Headley's Ranch, South Dakota",
+    "Allotment number": "1990",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent to his 160 acre allotment at the time he got it; but he was informed that it would be taxed just the same as if he had accepted, and that he would finally lose it through the taxes, so he took it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold; about 1919, he sold 80 acres of his allotment to Tom Dunbar, of Headley's Ranch, South Dakota, to have Mr. Dunbar pay off the taxes, receiving in cash $600.00; about 1922, having gotten in debt to Clyde Taylor, of Interior, South Dakota, for a $100.00 store bill, he let the other 80 acres go for this debt",
+    "Buyer": "Tom Dunbar of Headley's Ranch, South Dakota for $600.00 (80 acres); Clyde Taylor of Interior, South Dakota for a $100.00 store bill debt (80 acres)",
+    "Tax burden forced sale/Mortgage": "got behind in taxes and sold 80 acres to Tom Dunbar to have Mr. Dunbar pay off the taxes; he considers that he got a very poor price for the 80 acres he sold to Dunbar, but that he had to part with it on account of the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "59 years old",
+    "Occupation/Income": "sometimes he works for a farmer; finds it hard to get along on what he makes",
+    "NOTES": "mentally incompetent, health is poor, having a bad case of rheumatism; has a wife and four children to support; family has good health; did not sign any deed in favor of Taylor for the second 80 acres; has never received any help from the County, State or the United States Government; allotment was 160 acres total; document notarized November 23, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2361,
+    "output_tokens": 592
+  },
+  "elapsed": 7.6
+}

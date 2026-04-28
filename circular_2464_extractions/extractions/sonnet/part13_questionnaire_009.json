@@ -1,0 +1,32 @@
+{
+  "document_id": "part13_questionnaire_009",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "19-20",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Bowman",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Okla.",
+    "Allotment number": "80",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Yes, filed for record in Pawnee County, Okla.",
+    "Sold/Mortgaged": "Land sold for $7000 and two lots and small house in Yale, Okla.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Jan. 25, 1918",
+    "Gender": "Male",
+    "Age": "68 years",
+    "Occupation/Income": "Gets annuity paid to Pawnee tribe; income per annum from inherited land",
+    "NOTES": "Date and manner of delivery of patent March 5, 1918; patent receipted for yes; $8000.00 received which was a good price at that time; sale described as settlement of an old debt; fair health, no property or money accumulated; only wife dependent upon him; evidence of fraud does not appear in this case; notarized Nov. 26, 1928, Pawnee County, Oklahoma; commission expires Jan. 31, 1929; allottee number also referenced as 61391",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2553,
+    "output_tokens": 391
+  },
+  "elapsed": 6.1
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_018",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "40-41",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Deroin",
+    "Tribe/Reservation": "Otoe Agency",
+    "Post Office Address": "not stated",
+    "Allotment number": "105",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Filed for record; receipted for by allottee",
+    "Sold/Mortgaged": "Mortgaged to Mr. Hansen of Perry, Oklahoma, for $3000",
+    "Buyer": "Mortgaged to Mr. Hansen of Perry, Oklahoma, for $3000; foreclosed and redemption expired",
+    "Tax burden forced sale/Mortgage": "Mortgaged for $3000 and foreclosed which was about one-half of its value",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sept. 1917",
+    "Gender": "Male",
+    "Age": "47 years",
+    "Occupation/Income": "Income of $10% from inherited land. No contributions from any source.",
+    "NOTES": "Patent delivered at Otoe Agency; accepted with protest in 1918. Land was worth $6000.00 per allottee's statement; mortgage of $3000 foreclosed, redemption expired. No land sold for debt or taxes. Wife and five minor children dependent upon allottee. Allottee appears to have been prevented in some way from receiving full value for his land. Document notarized November 22, 1928, in Kay County, Oklahoma; commission expires Aug. 23rd 1931. Both witnesses of Ponca City, Oklahoma.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2599,
+    "output_tokens": 422
+  },
+  "elapsed": 6.1
+}

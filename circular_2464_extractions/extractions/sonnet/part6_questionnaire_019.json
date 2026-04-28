@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_019",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "45",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charlotte Giroux Burnett (widow of John Burnett)",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "1538",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "He mortgaged it and that mortgage was foreclosed just lately. We have a year from January or March I do not remember which, in which to redeem it, so we are farming it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "44",
+    "Occupation/Income": "farming, milking cows and so forth",
+    "NOTES": "Document is a questionnaire answered by Charlotte Giroux Burnette, widow of John Burnett (deceased). John Burnett died February 11, 1929. John Burnett told Charlotte he asked the Farmer (C.C. Clark) for a patent two years before he received it but his application was turned down. He left 11 children; 9 stay with Charlotte. Allottee listed as '1538 John Burnett (Dec'd).' Subscribed and sworn before S. W. Cross, Notary Public, commission expires 4-28-32, on May 14, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2257,
+    "output_tokens": 410
+  },
+  "elapsed": 6.4
+}

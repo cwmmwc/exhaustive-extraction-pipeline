@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_018",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "25",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rose Pulliam\u2014nee Nelson",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Kyle, South Dakota",
+    "Allotment number": "2219",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent to her 160 acre allotment, when it was issued, in 1919, but the Indian Agency, at Pine Ridge, told her that, if she did not take care of it, the land would be assessed for taxes, for which it would later be sold, so she accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1921, she sold her land to John Janis, of Brannen, South Dakota, for $1400.00, receiving $900.00 in cash, the other $500.00 she owed him on an automobile she had purchased of him",
+    "Buyer": "John Janis, of Brannen, South Dakota, for $1400.00",
+    "Tax burden forced sale/Mortgage": "she paid her taxes out of this $900.00",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1919",
+    "Gender": "Female",
+    "Age": "30 years old",
+    "Occupation/Income": "her husband drays, works at common labor and raises stock for their living, and that this forms the basis of all his income",
+    "NOTES": "Deponent is 20 years old per one section of the document but also stated as 30 years old at oath; mentally competent, has good health; husband supports her and their three children, who have good health; she never sold her place for debts incurred before receiving the patent in fee; she considers that she got a fair price for her land; has never received any help from the County, State nor the United States Government; document dated December 17, 1928; allotment was 160 acres",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2309,
+    "output_tokens": 512
+  },
+  "elapsed": 6.9
+}

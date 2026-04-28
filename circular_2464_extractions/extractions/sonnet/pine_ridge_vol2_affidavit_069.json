@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_069",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "87",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Albert Palmier",
+    "Tribe/Reservation": "Shannon County, South Dakota",
+    "Post Office Address": "Scenic, South Dakota",
+    "Allotment number": "2707",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his allotment, for the reason that he did not want to pay taxes, but was written that they would have taxes to pay any way, so he accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "on October 6, 1921, he sold 263 acres acres to W.E.Keweef, of Kyle, South Dakota, for $1600.00, partly in cash and partly in trade; and that this left him 57 acres of his allotment, upon which is his house. This 57 acres is free of debt excepting taxes.",
+    "Buyer": "W.E.Keweef, of Kyle, South Dakota, for $1600.00, partly in cash and partly in trade",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "43 years old",
+    "Occupation/Income": "his only source of income is the products of his little farm, and a very small revenue from doing road work, which generally goes on taxes",
+    "NOTES": "has a wife and two minor children to support, none of whom are very healthy, the wife suffering from gall stones, the general health of the children not so good; has never received any aid from the County or United States Government; had a 320 acre allotment, sold 263 acres, retains 57 acres with his house, free of debt excepting taxes; health is fair, eyes are very poor and have been in this condition for 20 years; mentally competent; document dated November 13, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2309,
+    "output_tokens": 512
+  },
+  "elapsed": 7.0
+}

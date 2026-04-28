@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_075",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "92",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Esther Conroy",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Batesland, So. Dak.",
+    "Allotment number": "989",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent and did not sign for it for some time, but that the Fanner told her that she must take the land patent and pay the taxes or she would lose the land and get nothing so she did",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Joe Leedom of Gordon, Nebr. for $400.00; Mr. Leedom sold the mortgage to a woman in Iowa; mortgage foreclosed; sold to Earny McCarty of Gordon, Nebr. for $15.00 and a mare worth $35.00",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes so she mortgaged the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "34 years old",
+    "Occupation/Income": "dependent on her husband for support who does common labor for a living",
+    "NOTES": "mentally competent and not in good health, suffering with kidney trouble; has two minor children; has received no aid from the Government, State or County since she was granted a patent; has no land or nothing; did not know much about land matters so she did just about as she was told and lost her land",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2302,
+    "output_tokens": 439
+  },
+  "elapsed": 4.8
+}

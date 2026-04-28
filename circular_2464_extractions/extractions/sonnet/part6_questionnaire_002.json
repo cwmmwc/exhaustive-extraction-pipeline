@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_002",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "6",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Cecelia Ferrin (Longcor)",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "1130",
+    "Cancelled": "not stated",
+    "Refused/Protested": "She told me that she did not want it and did not ask for it and that she was under the impression that it would be of no use to protest to the Government",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged it for $1500 and later sold it for $21.25 per acre",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Cecelia Ferrin (Longcor) is deceased; died four years ago in December. Testified by husband Fred Longcor, age 57, who farms and cares for three minor children. Patent was for 400 acres; she sold the remainder through the office. Patent was sent to her by mail. Document notarized by Jas. W. Cross, Notary Public, commission expires 4-28-32, on July 1, 1929. File reference: 98,094.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2277,
+    "output_tokens": 390
+  },
+  "elapsed": 6.8
+}

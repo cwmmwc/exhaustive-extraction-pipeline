@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_086",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "111",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "not stated",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "not stated",
+    "Allotment number": "1119",
+    "Cancelled": "not stated",
+    "Refused/Protested": "patent was mailed to me on (unknown date)1918 and was accepted without protest as I took it for granted that it was issued in a legal way and had to be accepted",
+    "Recorded patent": "It was filed for recording by me in Bennett County on the tenth day of March,1919,Book 1,Page 519,Bennett County,South Dakota",
+    "Sold/Mortgaged": "Has not been sold but taken by mortgage foreclosure. The last mortgage was $5000.00",
+    "Buyer": "taken by mortgage foreclosure",
+    "Tax burden forced sale/Mortgage": "The land was mortgaged for funds to pay taxes and improvements on it. My first mortgage was for about $1100.00 and used to pay delinquent taxes and pay old mortgage and a few old debts and taxes. later, I had to give a second mortgage to the bank and later, made a new mortgage to pay off these former mortgages interest, taxes and other improvements. Mortgage was foreclosed and date of redemption has expired.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 18, 1918",
+    "Gender": "not stated",
+    "Age": "46",
+    "Occupation/Income": "his daily labor",
+    "NOTES": "State of Washington; patent stamped as received at the Pine Ridge Agency May 10, 1918 and mailed to allottee by the Agency; I never got a cent of this money but used it all for improving the land; all the money involved in these mortgages, except our bare living, was put on the land in necessary improvements; Fair health, sound mind, has no financial resources outside of his remaining interest in the Reservation and his daily labor; does not own his home; Wife and four daughters; 'I was not defrauded. The transactions were all apparently legal, though had the Government not forced me to take the deeds, I should still have my land.'",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2587,
+    "output_tokens": 554
+  },
+  "elapsed": 6.2
+}

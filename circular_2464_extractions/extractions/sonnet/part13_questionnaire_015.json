@@ -1,0 +1,32 @@
+{
+  "document_id": "part13_questionnaire_015",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "33-34",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Rice (Long)",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Oklahoma",
+    "Allotment number": "769",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes, receipted for",
+    "Sold/Mortgaged": "Mortgaged to Pawnee Nat. Bank for $1500 due Jan. 1, 1929.",
+    "Buyer": "Pawnee Nat. Bank for $1500",
+    "Tax burden forced sale/Mortgage": "The allottee still owns the land and is keeping up the taxes.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Nov. 30, 1917",
+    "Gender": "Female",
+    "Age": "77 years",
+    "Occupation/Income": "Land rented for $400 per year. Income from inherited land approximately $160 per year. Receives pension from deceased husband of about $40.00 per month.",
+    "NOTES": "Patent delivered Dec. 26, 1917 by mail. No foreclosure; date of redemption not expired. Has any of the land been sold for debt or taxes: no. No property or funds accumulated. No persons dependent upon the Indian for support. The allottee feels that the Government made a mistake in issuing her a patent to the land. Document notarized November 28, 1928, in Pawnee County, State of Oklahoma; commission expires Jan. 31, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2627,
+    "output_tokens": 422
+  },
+  "elapsed": 7.4
+}

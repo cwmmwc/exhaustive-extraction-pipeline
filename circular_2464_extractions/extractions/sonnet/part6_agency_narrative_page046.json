@@ -1,0 +1,29 @@
+{
+  "document_id": "part6_agency_narrative_page046",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "046",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Josephine Collins",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "not stated (seller states he purchased a quarter section of land from her years ago; buyer's name not stated in document)",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is a copy of a letter dated July 2, 1929, from V. H. Tackett to Mr. J. E. McKean, Supt., Rosebud, S.D. Tackett states he purchased a quarter section of land in Gregory County from Josephine Collins years ago and that she now claims she did not receive all of the purchase price. Tackett denies the accusation and states he has met with both Mrs. Collins and her husband at least fifty times since the transaction without any such claim being raised. Also references a Peter Bordeaux making a similar claim. Tackett states he is unable to locate relevant files but may have something in Omaha. He met Mrs. Collins at Winner Hospital the previous month and interpreted for her but she made no mention of the claim at that time.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {},
+  "elapsed": 0
+}

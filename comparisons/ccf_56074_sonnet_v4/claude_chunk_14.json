@@ -1,0 +1,1202 @@
+{
+  "entities": [
+    {
+      "name": "Frank McLeod",
+      "type": "person",
+      "context": "Allottee on Flathead Reservation, sold allotment and became penniless"
+    },
+    {
+      "name": "Alex McLeod",
+      "type": "person",
+      "context": "Allottee on Flathead Reservation, sold allotment and became penniless"
+    },
+    {
+      "name": "Louis Clairmont, Jr.",
+      "type": "person",
+      "context": "Allottee depending on tribal payments for support"
+    },
+    {
+      "name": "Gilbert Burland",
+      "type": "person",
+      "context": "Allottee depending on tribal payments for support"
+    },
+    {
+      "name": "Mary Duplessis",
+      "type": "person",
+      "context": "Allottee operating a lady's furnishing store, making comfortable living"
+    },
+    {
+      "name": "Duncan Campbell",
+      "type": "person",
+      "context": "Allottee operating feed barn and pool hall"
+    },
+    {
+      "name": "Sam Pierre",
+      "type": "person",
+      "context": "Allottee engaged in farming and stock raising"
+    },
+    {
+      "name": "Harry Burland",
+      "type": "person",
+      "context": "Allottee working as garage man"
+    },
+    {
+      "name": "Mose Delaware",
+      "type": "person",
+      "context": "Allottee engaged in farming and at times clerking in a store"
+    },
+    {
+      "name": "Edna Hull",
+      "type": "person",
+      "context": "Allottee working as nurse in hospital"
+    },
+    {
+      "name": "Louison Ashley",
+      "type": "person",
+      "context": "Allottee who sold allotment, bought saw mill, bought separator, failed at both, now broke"
+    },
+    {
+      "name": "Joseph Antiste",
+      "type": "person",
+      "context": "Allottee who sold allotment, spent proceeds in less than one month, now destitute"
+    },
+    {
+      "name": "Joseph Gardipie",
+      "type": "person",
+      "context": "Allottee who sold allotment, spent money, now broke and doing nothing"
+    },
+    {
+      "name": "Fred Paricole",
+      "type": "person",
+      "context": "Allottee who sold allotment, spent money but obtained employment in local laundry"
+    },
+    {
+      "name": "Joseph R.",
+      "type": "person",
+      "context": "Allottee who sold allotment for $3000, spent money, now living off mother's bounty and wife's allotment rent"
+    },
+    {
+      "name": "Peter Gangras",
+      "type": "person",
+      "context": "Allottee who sold allotment, went broke, works as logger when logging available"
+    },
+    {
+      "name": "David Ashley",
+      "type": "person",
+      "context": "Allottee farming his allotment and doing well, address Pablo, Montana"
+    },
+    {
+      "name": "Victor Dupuis",
+      "type": "person",
+      "context": "Allottee farming allotment, owns threshing machine, well improved place, address Pablo, Montana"
+    },
+    {
+      "name": "Caville Dupuis",
+      "type": "person",
+      "context": "Allottee farming allotment, owns threshing machine operated by sons, doing well, address Polson, Montana"
+    },
+    {
+      "name": "Pete Lamoose",
+      "type": "person",
+      "context": "One exception noted by superintendent who sold or mortgaged allotment"
+    },
+    {
+      "name": "Corrie Hiatt",
+      "type": "person",
+      "context": "Farmer, Flathead Reservation, Arlee, Montana, respondent to Board of Indian Commissioners inquiry"
+    },
+    {
+      "name": "J. L. Suffecool",
+      "type": "person",
+      "context": "Superintendent, Sisseton Agency, Sisseton, South Dakota"
+    },
+    {
+      "name": "A. R. Snyder",
+      "type": "person",
+      "context": "Superintendent, Potawatomi Agency, Mayetta, Kansas"
+    },
+    {
+      "name": "Fred E. Perkins",
+      "type": "person",
+      "context": "Superintendent, Seger Indian Agency, Colony, Oklahoma"
+    },
+    {
+      "name": "Charles T. Coggeshall",
+      "type": "person",
+      "context": "Superintendent, Cantonment Indian Agency, Canton, Oklahoma"
+    },
+    {
+      "name": "Alex Renville",
+      "type": "person",
+      "context": "Indian of Peever, South Dakota, secured patent, sold land, bought other land, successful Indian farmer"
+    },
+    {
+      "name": "Arthur Greycloud",
+      "type": "person",
+      "context": "Indian who received patent-in-fee, owns good home and farm, not dependent on Service"
+    },
+    {
+      "name": "Joe Thompson",
+      "type": "person",
+      "context": "Indian who received patent-in-fee, listed among successful cases at Veblen, South Dakota"
+    },
+    {
+      "name": "George Cloutier",
+      "type": "person",
+      "context": "Indian who received patent-in-fee, listed among successful cases at Veblen, South Dakota"
+    },
+    {
+      "name": "George Marlow",
+      "type": "person",
+      "context": "Indian who received patent-in-fee, listed among successful cases at Veblen, South Dakota"
+    },
+    {
+      "name": "Louis LaBelle",
+      "type": "person",
+      "context": "Indian who received patent-in-fee, listed among successful cases at Veblen, South Dakota"
+    },
+    {
+      "name": "Joseph Flute",
+      "type": "person",
+      "context": "Young Indian who squandered land proceeds, arrested for intoxication"
+    },
+    {
+      "name": "Taylor Flute",
+      "type": "person",
+      "context": "Young Indian who squandered land proceeds, arrested for intoxication"
+    },
+    {
+      "name": "Smiley Williams",
+      "type": "person",
+      "context": "Young Indian who squandered land proceeds, arrested for intoxication"
+    },
+    {
+      "name": "Stephen LaBelle",
+      "type": "person",
+      "context": "Young Indian who squandered land proceeds, some in jail or penitentiary"
+    },
+    {
+      "name": "Elizabeth Hopkins",
+      "type": "person",
+      "context": "Young Indian who squandered land proceeds"
+    },
+    {
+      "name": "Smiley Finley",
+      "type": "person",
+      "context": "Young Indian who squandered land proceeds"
+    },
+    {
+      "name": "Edward Williams",
+      "type": "person",
+      "context": "Young Indian who squandered land proceeds"
+    },
+    {
+      "name": "Flathead Reservation",
+      "type": "location",
+      "context": "Reservation in Montana where multiple allottees received fee patents"
+    },
+    {
+      "name": "Polson, Montana",
+      "type": "location",
+      "context": "Town where multiple allottees resided after selling land"
+    },
+    {
+      "name": "Pablo, Montana",
+      "type": "location",
+      "context": "Address of David Ashley and Victor Dupuis"
+    },
+    {
+      "name": "Arlee, Montana",
+      "type": "location",
+      "context": "Address of Corrie Hiatt, Farmer"
+    },
+    {
+      "name": "Sisseton Agency",
+      "type": "organization",
+      "context": "Indian agency in Sisseton, South Dakota"
+    },
+    {
+      "name": "Sisseton, South Dakota",
+      "type": "location",
+      "context": "Location of Sisseton Agency"
+    },
+    {
+      "name": "Potawatomi Agency",
+      "type": "organization",
+      "context": "Indian agency in Mayetta, Kansas"
+    },
+    {
+      "name": "Mayetta, Kansas",
+      "type": "location",
+      "context": "Location of Potawatomi Agency"
+    },
+    {
+      "name": "Seger Indian Agency",
+      "type": "organization",
+      "context": "Indian agency in Colony, Oklahoma"
+    },
+    {
+      "name": "Colony, Oklahoma",
+      "type": "location",
+      "context": "Location of Seger Indian Agency"
+    },
+    {
+      "name": "Cantonment Indian Agency",
+      "type": "organization",
+      "context": "Indian agency in Canton, Oklahoma"
+    },
+    {
+      "name": "Canton, Oklahoma",
+      "type": "location",
+      "context": "Location of Cantonment Indian Agency"
+    },
+    {
+      "name": "Fort Hall Reservation",
+      "type": "location",
+      "context": "Reservation in Idaho referenced in correspondence"
+    },
+    {
+      "name": "Fort Hall, Idaho",
+      "type": "location",
+      "context": "Location of Fort Hall Reservation agency"
+    },
+    {
+      "name": "Pocatello",
+      "type": "location",
+      "context": "City where many Indians who sold land are living in destitution"
+    },
+    {
+      "name": "Veblen, South Dakota",
+      "type": "location",
+      "context": "Location of successful patent-in-fee Indians"
+    },
+    {
+      "name": "Peever, South Dakota",
+      "type": "location",
+      "context": "Home of Alex Renville, successful Indian farmer"
+    },
+    {
+      "name": "Anadarko, Oklahoma",
+      "type": "location",
+      "context": "Town where one allottee purchased a home after selling allotment"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Board conducting inquiry into patent-in-fee Indians"
+    },
+    {
+      "name": "Bureau of Indian Affairs",
+      "type": "organization",
+      "context": "Federal agency administering Indian affairs"
+    },
+    {
+      "name": "Potawatomi tribe",
+      "type": "organization",
+      "context": "Tribe at Potawatomi Agency with about 730 enrolled, 813 allotments made"
+    },
+    {
+      "name": "Donner",
+      "type": "person",
+      "context": "Superintendent referenced at Fort Hall Reservation"
+    },
+    {
+      "name": "unnamed allottee at Cantonment",
+      "type": "person",
+      "context": "Female allottee who received patent to remaining 80 acres, sold for $6000, purchased home in Anadarko, deposited $1500 with office"
+    },
+    {
+      "name": "McLeod family",
+      "type": "acreage_holding",
+      "context": "Land with private water rights growing timothy hay, sold after receiving patents"
+    },
+    {
+      "name": "Polson district",
+      "type": "location",
+      "context": "District on Flathead Reservation containing approximately 49 patent-in-fee Indians"
+    }
+  ],
+  "events": [
+    {
+      "type": "patent_in_fee_issuance",
+      "date": "1908",
+      "location": "Flathead Reservation, Montana",
+      "description": "Patents in fee delivered to allottees in 1908"
+    },
+    {
+      "type": "patent_in_fee_issuance",
+      "date": "1909",
+      "location": "Flathead Reservation, Montana",
+      "description": "Patents in fee delivered to allottees in 1909"
+    },
+    {
+      "type": "patent_in_fee_issuance",
+      "date": "1910",
+      "location": "Flathead Reservation, Montana",
+      "description": "Patents in fee delivered to allottees in 1910"
+    },
+    {
+      "type": "patent_in_fee_issuance",
+      "date": "1913",
+      "location": "Flathead Reservation, Montana",
+      "description": "Patents in fee delivered to allottees in 1913 (two entries)"
+    },
+    {
+      "type": "patent_in_fee_issuance",
+      "date": "1915",
+      "location": "Flathead Reservation, Montana",
+      "description": "Patents in fee delivered to allottees in 1915"
+    },
+    {
+      "type": "patent_in_fee_issuance",
+      "date": "1916",
+      "location": "Flathead Reservation, Montana",
+      "description": "Patents in fee delivered to allottees in 1916"
+    },
+    {
+      "type": "patent_in_fee_issuance",
+      "date": "1917",
+      "location": "Flathead Reservation, Montana",
+      "description": "Patents in fee delivered to allottees in 1917"
+    },
+    {
+      "type": "patent_in_fee_issuance",
+      "date": "1918",
+      "location": "Flathead Reservation, Montana",
+      "description": "Patents in fee delivered to allottees in 1918"
+    },
+    {
+      "type": "patent_in_fee_issuance",
+      "date": "1919",
+      "location": "Flathead Reservation, Montana",
+      "description": "Patents in fee delivered to allottees in 1919"
+    },
+    {
+      "type": "patent_in_fee_issuance",
+      "date": "1930",
+      "location": "Flathead Reservation, Montana",
+      "description": "Patents in fee delivered to allottees in 1930"
+    },
+    {
+      "type": "competency_commission_examination",
+      "date": "1917",
+      "location": "Seger Indian Agency, Oklahoma",
+      "description": "During Spring of 1917, competency commission visited and examined large number of Indians; result was exceedingly disastrous for each and every Indian who received patent"
+    },
+    {
+      "type": "competency_board_patent_issuance",
+      "date": "1918",
+      "location": "Potawatomi Agency, Kansas",
+      "description": "In 1918, 43 original Potawatomi allottees from first roll given patents by competency board"
+    },
+    {
+      "type": "tribal_jurisdiction_change",
+      "date": "1919",
+      "location": "Potawatomi Agency, Kansas",
+      "description": "In 1919 all Kansas tribes placed under jurisdiction of A. R. Snyder"
+    },
+    {
+      "type": "allotment_sale",
+      "date": "",
+      "location": "Polson, Montana",
+      "description": "Joseph Antiste sold his allotment, spent proceeds in less than one month after receiving patent-in-fee, now destitute"
+    },
+    {
+      "type": "allotment_sale",
+      "date": "",
+      "location": "Polson, Montana",
+      "description": "Joseph Gardipie sold his allotment, spent money, now broke and doing nothing"
+    },
+    {
+      "type": "allotment_sale",
+      "date": "",
+      "location": "Polson, Montana",
+      "description": "Louison Ashley sold allotment, bought saw mill, failed, bought separator, failed, sold engine, now broke"
+    },
+    {
+      "type": "allotment_sale",
+      "date": "",
+      "location": "Polson, Montana",
+      "description": "Fred Paricole sold allotment, spent money, but employed in local laundry for more than a year"
+    },
+    {
+      "type": "allotment_sale",
+      "date": "",
+      "location": "Polson, Montana",
+      "description": "Joseph R. sold allotment for $3000, spent money, now living off mother and wife's allotment rent"
+    },
+    {
+      "type": "allotment_sale",
+      "date": "",
+      "location": "Polson, Montana",
+      "description": "Peter Gangras sold allotment, went broke in short time, works as logger"
+    },
+    {
+      "type": "allotment_sale",
+      "date": "",
+      "location": "Sisseton Reservation, South Dakota",
+      "description": "Alex Renville secured patent, sold land, bought other land, now successful Indian farmer"
+    },
+    {
+      "type": "allotment_sale",
+      "date": "",
+      "location": "Cantonment Indian Agency, Oklahoma",
+      "description": "Female allottee received patent to remaining 80 acres, sold for $6000, purchased home in Anadarko"
+    },
+    {
+      "type": "land_purchase",
+      "date": "",
+      "location": "Anadarko, Oklahoma",
+      "description": "Female allottee used $6000 proceeds from land sale to purchase home in town of Anadarko, also deposited $1500 with agency office"
+    },
+    {
+      "type": "inquiry_response",
+      "date": "1921",
+      "location": "Multiple reservations",
+      "description": "Superintendents and Indian Service farmers responding to Board of Indian Commissioners inquiry letters of March 21 and June 10 regarding patent-in-fee Indians"
+    },
+    {
+      "type": "patent_recommendation",
+      "date": "prior to 1914",
+      "location": "Potawatomi Agency, Kansas",
+      "description": "Approximately 100 original Potawatomi allottees obtained patents prior to 1914"
+    },
+    {
+      "type": "patent_recommendation",
+      "date": "1914-1918",
+      "location": "Potawatomi Agency, Kansas",
+      "description": "A. R. Snyder recommended 12 original allottees for patents between 1914 and 1918"
+    },
+    {
+      "type": "patent_recommendation",
+      "date": "post-1918",
+      "location": "Potawatomi Agency, Kansas",
+      "description": "A. R. Snyder recommended about 31 or 32 allottees for patents since 1918"
+    },
+    {
+      "type": "patent_issuance",
+      "date": "post-1920-06-10",
+      "location": "Cantonment Indian Agency, Oklahoma",
+      "description": "Writer has been in charge since June 10, 1920, recommended only one patent be issued direct during that time"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "$3000.00",
+      "payer": "unknown buyer",
+      "payee": "Joseph R.",
+      "date": "",
+      "description": "Joseph R. sold his allotment for $3000, spent money, now living off mother's bounty and wife's allotment rent"
+    },
+    {
+      "type": "sale",
+      "amount": "$6000.00",
+      "payer": "unknown buyer",
+      "payee": "unnamed female allottee",
+      "date": "post-1920",
+      "description": "Female allottee at Cantonment sold remaining 80 acres of allotment for approximately market value of $6,000"
+    },
+    {
+      "type": "other",
+      "amount": "$1500.00",
+      "payer": "unnamed female allottee",
+      "payee": "Cantonment Indian Agency office",
+      "date": "post-1920",
+      "description": "Allottee voluntarily deposited $1500 with agency office from land sale proceeds"
+    },
+    {
+      "type": "sale",
+      "amount": "approximately one-third of market price",
+      "payer": "unknown buyers",
+      "payee": "various allottees",
+      "date": "",
+      "description": "At Fort Hall Reservation, several instances where Indians sold land for about only one-third of market price of similar land"
+    },
+    {
+      "type": "other",
+      "amount": "ten to twelve thousand dollars each",
+      "payer": "unknown",
+      "payee": "Joseph Flute, Taylor Flute, Smiley Williams, Stephen LaBelle, Elizabeth Hopkins, Smiley Finley, Edward Williams",
+      "date": "within last three years",
+      "description": "These young Indians squandered from ten to twelve thousand dollars each in the last three years on fast living"
+    },
+    {
+      "type": "payment",
+      "amount": "tribal payments",
+      "payer": "tribal fund",
+      "payee": "Frank McLeod, Alex McLeod, Louis Clairmont Jr., Gilbert Burland",
+      "date": "",
+      "description": "Four families depending almost entirely on tribal payments for support after selling allotments"
+    },
+    {
+      "type": "lease",
+      "amount": "rent",
+      "payer": "unknown tenant",
+      "payee": "wife of Joseph R.",
+      "date": "",
+      "description": "Joseph R. living off rent from his wife's allotment"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Corrie Hiatt",
+      "type": "employed_by",
+      "object": "Flathead Reservation",
+      "context": "Farmer at Flathead Reservation, Arlee, Montana"
+    },
+    {
+      "subject": "J. L. Suffecool",
+      "type": "employed_by",
+      "object": "Sisseton Agency",
+      "context": "Superintendent at Sisseton Agency, Sisseton, South Dakota"
+    },
+    {
+      "subject": "A. R. Snyder",
+      "type": "employed_by",
+      "object": "Potawatomi Agency",
+      "context": "Superintendent at Potawatomi Agency, Mayetta, Kansas"
+    },
+    {
+      "subject": "Fred E. Perkins",
+      "type": "employed_by",
+      "object": "Seger Indian Agency",
+      "context": "Superintendent at Seger Indian Agency, Colony, Oklahoma"
+    },
+    {
+      "subject": "Charles T. Coggeshall",
+      "type": "employed_by",
+      "object": "Cantonment Indian Agency",
+      "context": "Superintendent at Cantonment Indian Agency, Canton, Oklahoma"
+    },
+    {
+      "subject": "Donner",
+      "type": "employed_by",
+      "object": "Fort Hall Reservation",
+      "context": "Superintendent at Fort Hall Reservation, Fort Hall, Idaho"
+    },
+    {
+      "subject": "Frank McLeod",
+      "type": "related_to",
+      "object": "Alex McLeod",
+      "context": "Members of McLeod family, both allottees depending on tribal payments"
+    },
+    {
+      "subject": "Victor Dupuis",
+      "type": "related_to",
+      "object": "Caville Dupuis",
+      "context": "Both Dupuis allottees farming their allotments successfully"
+    },
+    {
+      "subject": "Caville Dupuis",
+      "type": "related_to",
+      "object": "sons of Caville Dupuis",
+      "context": "Sons operate the threshing machine owned by Caville Dupuis"
+    },
+    {
+      "subject": "Joseph R.",
+      "type": "related_to",
+      "object": "mother of Joseph R.",
+      "context": "Joseph R. living off bounty of his mother after spending allotment sale proceeds"
+    },
+    {
+      "subject": "Joseph R.",
+      "type": "related_to",
+      "object": "wife of Joseph R.",
+      "context": "Joseph R. living off rent from wife's allotment"
+    },
+    {
+      "subject": "white people",
+      "type": "related_to",
+      "object": "Indians at Fort Hall",
+      "context": "White people encouraging Indians to ask for certificates of competency and advancing money on strength of having lands turned over to them"
+    },
+    {
+      "subject": "Fred Paricole",
+      "type": "employed_by",
+      "object": "local laundry",
+      "context": "Employed at local laundry as washer for more than a year after selling allotment"
+    },
+    {
+      "subject": "Edna Hull",
+      "type": "employed_by",
+      "object": "hospital",
+      "context": "Working as nurse in hospital"
+    },
+    {
+      "subject": "McLeod family",
+      "type": "owned",
+      "object": "land under private water rights with timothy",
+      "context": "Had good allotment with water rights and timothy hay, did not always cut hay, sold after receiving patents"
+    },
+    {
+      "subject": "A. R. Snyder",
+      "type": "related_to",
+      "object": "Bureau of Indian Affairs",
+      "context": "15 years of service within the Bureau of Indian Affairs in the field at various agencies"
+    },
+    {
+      "subject": "Board of Indian Commissioners",
+      "type": "related_to",
+      "object": "superintendents and Indian Service farmers",
+      "context": "Board sending inquiry letters of March 21 and June 10 requesting information on patent-in-fee Indians"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "Frank McLeod",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Alex McLeod",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Louis Clairmont, Jr.",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Gilbert Burland",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Joseph Antiste",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Joseph Gardipie",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Louison Ashley",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Fred Paricole",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Joseph R.",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "$3000.00",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Peter Gangras",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "David Ashley",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "retained",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Victor Dupuis",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "retained",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Caville Dupuis",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "retained",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Pete Lamoose",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": "noted as exception who sold or mortgaged"
+    },
+    {
+      "allottee_name": "Alex Renville",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "application",
+      "buyer": "unknown then re-purchased other land",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "unnamed female allottee at Cantonment",
+      "allotment_number": "",
+      "acreage": "80 acres remaining",
+      "patent_date": "post-1920",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "$6000",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "43 Potawatomi allottees (first roll)",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "1918",
+      "patent_number": "",
+      "mechanism": "certificate_of_competency",
+      "buyer": "various",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "approximately 100 Potawatomi original allottees",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "prior to 1914",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "12 Potawatomi original allottees recommended by Snyder",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "1914-1918",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "31-32 Potawatomi allottees recommended by Snyder",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "post-1918",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "mixed-bloods of one-half or less blood at Sisseton",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "various",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": "all received patents for allotments"
+    },
+    {
+      "allottee_name": "Joseph Flute",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "up to $10,000-$12,000",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Taylor Flute",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "up to $10,000-$12,000",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Smiley Williams",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Stephen LaBelle",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Elizabeth Hopkins",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Smiley Finley",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    },
+    {
+      "allottee_name": "Edward Williams",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "unknown",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": ""
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board of Indian Commissioners",
+      "recipient": "Corrie Hiatt",
+      "recipient_title": "Farmer, Flathead Reservation",
+      "date": "",
+      "subject": "Inquiry relative to patent-in-fee Indians, releasing Indians from Government control, names and addresses of patent-in-fee Indians",
+      "action_requested": "Report on patent-in-fee Indians, their condition, policy recommendations for releasing Indians from Government control",
+      "outcome": "Hiatt responded recommending patents-in-fee to all Indians of one-half or less Indian blood who had attained majority; reported mixed results of patenting; provided list of names"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "J. L. Suffecool",
+      "recipient_title": "Superintendent, Sisseton Agency",
+      "date": "1921-03-23",
+      "subject": "Patent-in-fee Indians inquiry",
+      "action_requested": "Information on patent-in-fee Indians and competency",
+      "outcome": "Suffecool responded with assessment of Sisseton reservation conditions; described nearly all patent-in-fee Indians losing land; advocated policy of requiring Indians to demonstrate work capability before receiving patents"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "A. R. Snyder",
+      "recipient_title": "Superintendent, Potawatomi Agency",
+      "date": "1921-03-21",
+      "subject": "Granting of patents-in-fee to Indians and releasing them from Government supervision",
+      "action_requested": "Response to inquiry on patent-in-fee policy and conditions",
+      "outcome": "Snyder responded at length; reported 85% of patentees sold land or mortgaged it; advocated competency-based issuance regardless of blood quantum; noted previous letter of January 1918 on same subject"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "A. R. Snyder",
+      "recipient_title": "Superintendent, Potawatomi Agency",
+      "date": "1921-06-10",
+      "subject": "Granting of patents-in-fee to Indians",
+      "action_requested": "Follow-up inquiry",
+      "outcome": "Part of same response by Snyder"
+    },
+    {
+      "sender": "A. R. Snyder",
+      "sender_title": "Superintendent, Potawatomi Agency",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "Board",
+      "date": "1918-01",
+      "subject": "Removal of restrictions on lands and funds of Indians",
+      "action_requested": "Policy recommendation",
+      "outcome": "Snyder stated he favored removal of restrictions after Indians attained majority and before incapacitated by age or large family obligations"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "Donner",
+      "recipient_title": "Superintendent, Fort Hall Reservation",
+      "date": "1921-03-21",
+      "subject": "Releasing Indians from Government control",
+      "action_requested": "Response to inquiry on patent-in-fee policy",
+      "outcome": "Donner had just taken charge when letter arrived; wanted to make general survey before answering; reported approximately 80% of certificate-of-competency Indians sold their land, remaining 20% with very rare exceptions have mortgages, some in foreclosure"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "Donner",
+      "recipient_title": "Superintendent, Fort Hall Reservation",
+      "date": "1921-06-10",
+      "subject": "Releasing Indians from Government control",
+      "action_requested": "Follow-up inquiry",
+      "outcome": "Part of same response by Donner"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "Fred E. Perkins",
+      "recipient_title": "Superintendent, Seger Indian Agency",
+      "date": "1921-03",
+      "subject": "Patent-in-fee Indians and competency",
+      "action_requested": "Report on conditions following competency commission",
+      "outcome": "Perkins reported Spring 1917 competency commission results were exceedingly disastrous; all patented allotments disposed of, most at ridiculously low prices; Indians immediately sold upon receipt"
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "Board",
+      "recipient": "Charles T. Coggeshall",
+      "recipient_title": "Superintendent, Cantonment Indian Agency",
+      "date": "",
+      "subject": "Patent-in-fee Indians",
+      "action_requested": "Report on conditions and policy",
+      "outcome": "Coggeshall reported only recommending one patent since taking charge June 10, 1920; that allottee sold 80 acres for $6000, purchased home in Anadarko, deposited $1500 with office; opposed issuing patents wholesale"
+    }
+  ],
+  "legislative_actions": [],
+  "testimony": [
+    {
+      "witness": "Corrie Hiatt",
+      "witness_title": "Farmer, Flathead Reservation, Arlee, Montana",
+      "hearing": "Board of Indian Commissioners Inquiry on Patent-in-Fee Indians",
+      "committee": "Board of Indian Commissioners",
+      "location": "Arlee, Montana",
+      "date": "",
+      "subject": "Condition of patent-in-fee Indians on Flathead Reservation; policy recommendations for releasing Indians from Government control",
+      "key_claims": "Would issue patents-in-fee to all Indians of one-half or less Indian blood who had attained majority. Would not reserve any part of allotments for home sites since no Indian in district could make a living on ten or twenty acres. Four families (Frank McLeod, Alex McLeod, Louis Clairmont Jr., Gilbert Burland) depending almost entirely on tribal payments. Multiple allottees sold land and became destitute. Others (Mary Duplessis, Duncan Campbell, Sam Pierre, Harry Burland, Mose Delaware, Edna Hull) making comfortable living without selling allotments. About 49 patent-in-fee Indians in Polson district. Provided breakdown of patents delivered by year from 1908 to 1930. Most patentees retaining allotments are doing fairly well; some doing better than white people. Full-bloods do not stay in one place long enough to require home sites.",
+      "questioner": "Board of Indian Commissioners"
+    },
+    {
+      "witness": "J. L. Suffecool",
+      "witness_title": "Superintendent, Sisseton Agency, Sisseton, South Dakota",
+      "hearing": "Board of Indian Commissioners Inquiry on Patent-in-Fee Indians",
+      "committee": "Board of Indian Commissioners",
+      "location": "Sisseton, South Dakota",
+      "date": "",
+      "subject": "Conditions of patent-in-fee Indians at Sisseton; policy on releasing Indians from Government control",
+      "key_claims": "Nearly all who received patents lost their land - only a negligible number retained it. Main reason Indians apply for patents is to sell the land. In most cases Indians receive adequate price but spend proceeds on subsistence, clothing, automobiles. About half the reservation is full-bloods. All mixed-bloods of one-half or less blood received patents for allotments. After selling land, many Indians leave reservation and find employment. Some Indians are 'parasites' who will not work regardless of opportunity. Policy is to disregard blood or educational status and require Indians to show by their own efforts they should not be held under Bureau control. Speeding up process of turning Indians loose regardless of competency should be materially curbed.",
+      "questioner": "Board of Indian Commissioners"
+    },
+    {
+      "witness": "A. R. Snyder",
+      "witness_title": "Superintendent, Potawatomi Agency, Mayetta, Kansas",
+      "hearing": "Board of Indian Commissioners Inquiry on Patent-in-Fee Indians",
+      "committee": "Board of Indian Commissioners",
+      "location": "Mayetta, Kansas",
+      "date": "",
+      "subject": "Patent-in-fee policy; conditions of Potawatomi patentees; competency standards",
+      "key_claims": "15 years of service in Bureau of Indian Affairs confirms that speeding up process of turning Indians loose regardless of competency should be materially curbed. Potawatomi tribe has about 730 enrolled, 813 allotments made on three rolls (first 39 years ago, last 16 years ago). In 1918, 43 allottees given patents by competency board. Total of approximately 177 patents issued. About one-third deceased; of remaining two-thirds all but 10-12 have sold land. 85% of patentees either sold land or have it mortgaged to approximately its value. Perhaps 50% of money received used paying old debts, remainder on automobiles, teams, wagons, harness, some small homes. About 25 patent-in-fee Indians holding and farming original allotments. Favors issuing patents to competent Indians regardless of blood status or education. Opposed to competency boards. An Indian who is able-bodied and able to work without wife and too many children dependent is competent. Many who squandered 10-12 thousand dollars each in last three years on fast living, arrested for intoxication, some in jails and penitentiaries.",
+      "questioner": "Board of Indian Commissioners"
+    },
+    {
+      "witness": "Donner",
+      "witness_title": "Superintendent, Fort Hall Reservation, Fort Hall, Idaho",
+      "hearing": "Board of Indian Commissioners Inquiry on Patent-in-Fee Indians",
+      "committee": "Board of Indian Commissioners",
+      "location": "Fort Hall, Idaho",
+      "date": "",
+      "subject": "Certificate of competency policy; conditions of Fort Hall Indians who received certificates",
+      "key_claims": "Approximately 80% of Indians who received certificates of competency sold their land. Remaining 20% with very rare exceptions have mortgages on their land, some going through foreclosure, perhaps all will be within the next year. Does not know of any failure to make good in his district with one exception (Pete Lamoose). White people have been encouraging Indians to ask for certificates and have advanced money on strength of having lands turned over to them. Certificates often recommended to help Indians sell heirship land. Some instances where Indians sold land for about only one-third of market price. Would only issue certificates to Indians living on or near reservation; for those away only if permanently established elsewhere. Better class of Indians do not want certificates; see no necessity unless they wish to dispose of their holdings. Many Indians in Pocatello destitute after selling land. Each case should receive careful consideration before certificate granted on heirship land.",
+      "questioner": "Board of Indian Commissioners"
+    },
+    {
+      "witness": "Fred E. Perkins",
+      "witness_title": "Superintendent, Seger Indian Agency, Colony, Oklahoma",
+      "hearing": "Board of Indian Commissioners Inquiry on Patent-in-Fee Indians",
+      "committee": "Board of Indian Commissioners",
+      "location": "Colony, Oklahoma",
+      "date": "",
+      "subject": "Results of Spring 1917 competency commission; conditions of patent-in-fee Indians at Seger Agency",
+      "key_claims": "Spring 1917 competency commission visited and examined large number of Indians; result was exceedingly disastrous for each and every Indian who received patent. All allotments disposed of, some at ridiculously low prices. Indians disposed of land immediately upon receipt of patent (contracts to sell likely existing prior to patent receipt). Most allotments disposed of as soon as or very soon after receipt. Most Indians are penniless without exception and depend wholly on relatives or inherited interests for livelihood. Believes restricted Indians leasing land is better business proposition than working it themselves but believes farming own land is better than leasing even if less money. Too much money without effort is trouble with Indian race. Able-bodied Indians are better off when they have to work.",
+      "questioner": "Board of Indian Commissioners"
+    },
+    {
+      "witness": "Charles T. Coggeshall",
+      "witness_title": "Superintendent, Cantonment Indian Agency, Canton, Oklahoma",
+      "hearing": "Board of Indian Commissioners Inquiry on Patent-in-Fee Indians",
+      "committee": "Board of Indian Commissioners",
+      "location": "Canton, Oklahoma",
+      "date": "",
+      "subject": "Patent-in-fee policy; conditions at Cantonment Agency",
+      "key_claims": "Has been in charge since June 10, 1920 and recommended only one patent be issued direct. Department concurred and allottee was given patent to remaining 80 acres; she immediately sold for $6,000 (approximately market value) and used proceeds to purchase home in Anadarko; also voluntarily deposited $1500 with office. Many patents under this agency sold in accordance with Departmental regulations with proceeds expended under supervision. This plan is much preferable and more advantageous to Indian than issuing fee patents direct. Opposed to issuing patents in wholesale manner; each case should be considered on its merits regardless of quantum of Indian blood. Heirship estate allotments being sold under departmental regulations. Average Indian here will out-trade and beat average white man in business transactions.",
+      "questioner": "Board of Indian Commissioners"
+    }
+  ],
+  "taxes": [],
+  "mortgages": [
+    {
+      "borrower": "approximately 20% of Fort Hall certificate-of-competency Indians",
+      "lender": "unknown",
+      "amount": "up to full land value",
+      "land_description": "individual allotments, Fort Hall Reservation, Idaho",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "foreclosed",
+      "context": "Donner reported remaining 20% who did not sell have mortgages on their land, some going through foreclosure proceedings, perhaps all will be within the next year"
+    },
+    {
+      "borrower": "85% of Potawatomi patentees",
+      "lender": "unknown",
+      "amount": "up to approximately full value of land",
+      "land_description": "allotments, Potawatomi Agency, Kansas",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "default",
+      "context": "A. R. Snyder reported 85% of patentees either sold land or have it plastered with mortgage up to about its value"
+    },
+    {
+      "borrower": "Pete Lamoose",
+      "lender": "unknown",
+      "amount": "unknown",
+      "land_description": "allotment, Fort Hall Reservation",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "other",
+      "context": "Cited as one exception by Fort Hall superintendent as allottee who sold or mortgaged his allotment"
+    },
+    {
+      "borrower": "various allottees at Fort Hall",
+      "lender": "white persons who advanced money",
+      "amount": "unknown",
+      "land_description": "allotments, Fort Hall Reservation, Idaho",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "other",
+      "context": "White people encouraging Indians to ask for certificates of competency and advancing money on strength of having lands turned over to them on arrival of certificate"
+    },
+    {
+      "borrower": "restricted Indians at Seger Agency",
+      "lender": "various",
+      "amount": "full crop value",
+      "land_description": "allotments, Seger Indian Agency, Oklahoma",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "other",
+      "context": "Perkins noted restricted Indians who farm their land begin to get loans and have mortgages on crops to their full value when ready to harvest"
+    }
+  ]
+}

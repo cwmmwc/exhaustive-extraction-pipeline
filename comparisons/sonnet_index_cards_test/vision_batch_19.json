@@ -1,0 +1,54 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-27",
+      "jurisdiction": "Idaho",
+      "date": "1935-05-14",
+      "correspondent": "US Attorney (Asst)",
+      "correspondent_role": "incoming",
+      "case_name": "US v. Nez Perce County",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "Nez Perce",
+      "subject": "Have pending in Central Div. above case. Commissioner of Indian Affairs and Secy. of Interior allotted certain lands to Indian wards.",
+      "action_type": "filing",
+      "enclosures": "",
+      "routing_division": "Lands Div.",
+      "routing_date": "1935-05-18",
+      "clerk_initials": "rmh",
+      "processed_date": "1935-05-18"
+    },
+    {
+      "file_number": "90-2-5-27",
+      "jurisdiction": "Idaho",
+      "date": "1935-11-13",
+      "correspondent": "US Attorney (Asst)",
+      "correspondent_role": "incoming",
+      "case_name": "US v. Nez Perce County",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "Nez Perce",
+      "subject": "Case came on regularly for hearing at Moscow term on Nov. 12, defendants stated facts set forth were admitted.",
+      "action_type": "ruling",
+      "enclosures": "",
+      "routing_division": "Lands",
+      "routing_date": "1935-11-18",
+      "clerk_initials": "rmh",
+      "processed_date": "1935-11-18"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "US v. Nez Perce County",
+      "file_number": "90-2-5-27",
+      "jurisdiction": "Idaho",
+      "case_type": "allotment",
+      "allottee_name": "",
+      "tribe_or_reservation": "Nez Perce",
+      "county": "Nez Perce"
+    }
+  ],
+  "persons": []
+}

@@ -1,0 +1,974 @@
+{
+  "entities": [
+    {
+      "name": "Dave Navarro",
+      "type": "person",
+      "context": "Recommended as Indian policeman by committees and other Indians; appointed by superintendent on Santa Rosa Reservation"
+    },
+    {
+      "name": "Santa Rosa Reservation",
+      "type": "location",
+      "context": "Reservation where Dave Navarro was appointed as Indian policeman"
+    },
+    {
+      "name": "Chief Myers",
+      "type": "person",
+      "context": "Individual for whom the same appointment procedure was used as Dave Navarro"
+    },
+    {
+      "name": "Superintendent Dady",
+      "type": "person",
+      "context": "Superintendent who came into office and agreed to carry out the plan of placing Indian policemen chosen by Indians"
+    },
+    {
+      "name": "John W. Dady",
+      "type": "person",
+      "context": "Superintendent of Mission Indian Agency, Riverside, California; appointed 1933"
+    },
+    {
+      "name": "Purl Willis",
+      "type": "person",
+      "context": "Individual in close touch with Indians appointed by board of supervisors; advocate for Mission Indians"
+    },
+    {
+      "name": "Adam Castillo",
+      "type": "person",
+      "context": "Head of Mission Indian Federation; sent letter to newly appointed agent on behalf of Mission Indians"
+    },
+    {
+      "name": "Mission Indians",
+      "type": "organization",
+      "context": "Group of California Indians represented by federation and attorneys"
+    },
+    {
+      "name": "Mission Indian Federation",
+      "type": "organization",
+      "context": "Organization representing Mission Indians of California"
+    },
+    {
+      "name": "Mr. Moore",
+      "type": "person",
+      "context": "Government official alleged to have participated in conspiracy at fiesta; referred to drinking incident"
+    },
+    {
+      "name": "Mr. Collier",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs; previously executive secretary of Indian Defense Association; wrote letter begging for endorsement to be sent to President"
+    },
+    {
+      "name": "John Collier",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs; visited Coachella Valley 15 years prior to hearing; letter mentioned alleging Purl Willis was party to killings"
+    },
+    {
+      "name": "Miss McGair",
+      "type": "person",
+      "context": "Bureau employee recommended for transfer/removal by prior committee"
+    },
+    {
+      "name": "Campo Reservation",
+      "type": "location",
+      "context": "Reservation where a field agent was in charge when a child starved to death"
+    },
+    {
+      "name": "Marcus Hilmiup",
+      "type": "person",
+      "context": "Individual who died July 16, 1927 in San Diego County from bullet wound; subject of coroner's jury verdict"
+    },
+    {
+      "name": "George J. Robertson",
+      "type": "person",
+      "context": "Deputy sheriff found by coroner's jury to have possibly inflicted fatal wound on Marcus Hilmiup"
+    },
+    {
+      "name": "Ralph Kennedy",
+      "type": "person",
+      "context": "Deputy sheriff found by coroner's jury to have possibly inflicted fatal wound on Marcus Hilmiup"
+    },
+    {
+      "name": "King J. Powell",
+      "type": "person",
+      "context": "Deputy sheriff found by coroner's jury to have possibly inflicted fatal wound on Marcus Hilmiup"
+    },
+    {
+      "name": "Captain La Chusa",
+      "type": "person",
+      "context": "Described as responsible person at the Indian fiesta; member of committee"
+    },
+    {
+      "name": "Julius H. Rainwater",
+      "type": "person",
+      "context": "Former executive secretary of Community Chest, San Diego; testified about meeting at reservation"
+    },
+    {
+      "name": "Marion Butler",
+      "type": "person",
+      "context": "Attorney for Mission Indians of California; present at San Francisco hearing July 2, 1934"
+    },
+    {
+      "name": "Tom Lukas",
+      "type": "person",
+      "context": "One of four leaders called together by Superintendent Dady; former federation man"
+    },
+    {
+      "name": "Winslow Couro",
+      "type": "person",
+      "context": "One of four leaders called together by Superintendent Dady; former federation man"
+    },
+    {
+      "name": "Jack Myers",
+      "type": "person",
+      "context": "Present during meetings between Dady and Adam Castillo"
+    },
+    {
+      "name": "Ventura Paipa",
+      "type": "person",
+      "context": "Testified about Capitan Grande Indian Reservation and need for new location due to dam construction"
+    },
+    {
+      "name": "Capitan Grande Indian Reservation",
+      "type": "location",
+      "context": "Reservation where Ventura Paipa lives; farmland being submerged by dam"
+    },
+    {
+      "name": "Viejas or Baron Long Ranch",
+      "type": "land_parcel",
+      "context": "Land identified as desired new location for Capitan Grande Indians; petition made for government purchase"
+    },
+    {
+      "name": "Cabazon Reservation",
+      "type": "location",
+      "context": "Reservation in Coachella Valley with water shortage problems"
+    },
+    {
+      "name": "La Mesa Reservation",
+      "type": "location",
+      "context": "Reservation in Coachella Valley with water shortage problems"
+    },
+    {
+      "name": "Torres Reservation",
+      "type": "location",
+      "context": "Reservation in Coachella Valley with water shortage problems"
+    },
+    {
+      "name": "Martinez Reservation",
+      "type": "location",
+      "context": "Reservation in Coachella Valley with water shortage problems; subagency location"
+    },
+    {
+      "name": "Billy Callaway",
+      "type": "person",
+      "context": "Captain of Cabazon Reservation; signed letter to Investigators' Committee"
+    },
+    {
+      "name": "Juan Augustin",
+      "type": "person",
+      "context": "Representative of La Mesa Reservation; signed letter and personal statement about water hardships"
+    },
+    {
+      "name": "William Levy",
+      "type": "person",
+      "context": "Representative of Torro Reservation; signed letter to Investigators' Committee"
+    },
+    {
+      "name": "Pablo Kristano",
+      "type": "person",
+      "context": "Representative of Martinez Reservation; signed letter to Investigators' Committee"
+    },
+    {
+      "name": "B. G. Prather",
+      "type": "person",
+      "context": "Friend and advocate of Coachella Valley Indians; endorsed by reservation captains as delegate"
+    },
+    {
+      "name": "Harry Hess",
+      "type": "person",
+      "context": "Indian farmer stationed at Martinez subagency; stated no funds for Cabazon and La Mesa reservations"
+    },
+    {
+      "name": "Henry Reiger",
+      "type": "person",
+      "context": "Manager of E.C.W. project on reservations; reported funds getting low"
+    },
+    {
+      "name": "Burton K. Wheeler",
+      "type": "person",
+      "context": "Chairman of Senate Subcommittee on Indian Affairs; presided over San Francisco hearing July 2, 1934"
+    },
+    {
+      "name": "Elmer Thomas",
+      "type": "person",
+      "context": "Senator from Oklahoma; present at San Francisco hearing July 2, 1934"
+    },
+    {
+      "name": "Florence P. Kahn",
+      "type": "person",
+      "context": "Member of Congress, Fourth District of California; present at San Francisco hearing"
+    },
+    {
+      "name": "U. S. Webb",
+      "type": "person",
+      "context": "Attorney General of the State of California; present at San Francisco hearing"
+    },
+    {
+      "name": "Florenz Treu",
+      "type": "person",
+      "context": "Assistant director, California State Department of Social Welfare; present at San Francisco hearing"
+    },
+    {
+      "name": "O. H. Lipps",
+      "type": "person",
+      "context": "Superintendent of Sacramento Indian Agency; present at San Francisco hearing"
+    },
+    {
+      "name": "Roy Nash",
+      "type": "person",
+      "context": "Representative of Commissioner of Indian Affairs; present at San Francisco hearing"
+    },
+    {
+      "name": "Charles DeY. Elkus",
+      "type": "person",
+      "context": "President of American Indian Defense Association of Northern California; present at San Francisco hearing"
+    },
+    {
+      "name": "Rachel B. Barker",
+      "type": "person",
+      "context": "Secretary of American Indian Defense Association; present at San Francisco hearing"
+    },
+    {
+      "name": "F. G. Collett",
+      "type": "person",
+      "context": "Executive secretary of Indians of California, Inc.; present at San Francisco hearing"
+    },
+    {
+      "name": "J. W. Henderson",
+      "type": "person",
+      "context": "Attorney for Indians of California, Inc.; present at San Francisco hearing"
+    },
+    {
+      "name": "James M. Hanley",
+      "type": "person",
+      "context": "Attorney for Indians of California, Inc.; present at San Francisco hearing"
+    },
+    {
+      "name": "Winnifred Codman",
+      "type": "person",
+      "context": "State chairman Indian Citizenship, California State Society, Daughters of the American Revolution; present at San Francisco hearing"
+    },
+    {
+      "name": "Albert A. Grorud",
+      "type": "person",
+      "context": "Special assistant to the Senate subcommittee; present at San Francisco hearing"
+    },
+    {
+      "name": "Roy Mingins",
+      "type": "person",
+      "context": "Reporter for the San Francisco hearing"
+    },
+    {
+      "name": "Ben F. Mitchell",
+      "type": "person",
+      "context": "Klamath Reservation Indian; present at San Francisco hearing; expected another man with him"
+    },
+    {
+      "name": "Lower Klamath River Indians",
+      "type": "organization",
+      "context": "Group of Indians from Lower Klamath River present at San Francisco hearing"
+    },
+    {
+      "name": "Klamath Reservation",
+      "type": "location",
+      "context": "Reservation in Oregon; Indians from reservation present at San Francisco hearing"
+    },
+    {
+      "name": "American Indian Defense Association",
+      "type": "organization",
+      "context": "Northern California organization; Elkus is president; had role in framing California Indians claims bill"
+    },
+    {
+      "name": "Indians of California, Inc.",
+      "type": "organization",
+      "context": "Organization with attorneys Henderson and Hanley; executive secretary F. G. Collett"
+    },
+    {
+      "name": "Mission Indian Agency",
+      "type": "organization",
+      "context": "Federal agency at Riverside, California managing Mission Indian reservations"
+    },
+    {
+      "name": "Sacramento Indian Agency",
+      "type": "organization",
+      "context": "Federal agency; O. H. Lipps superintendent"
+    },
+    {
+      "name": "Court of Claims",
+      "type": "legal_case",
+      "context": "Federal court where California Indians' suit against government was pending; estimated $6,000,000 conflict value"
+    },
+    {
+      "name": "California Indians Claims Act",
+      "type": "legislation",
+      "context": "H.R. 491, Public No. 423, 70th Congress; authorized California attorney general to bring suit in Court of Claims on behalf of California Indians"
+    },
+    {
+      "name": "Attorney General of California",
+      "type": "person",
+      "context": "State officer named by Congress as attorney for California Indians in Court of Claims suit"
+    },
+    {
+      "name": "Mr. Ness",
+      "type": "person",
+      "context": "Local attorney who accompanied Purl Willis to visit the Attorney General"
+    },
+    {
+      "name": "Commonwealth Club of California",
+      "type": "organization",
+      "context": "Cooperated with Congressman Lee in framing the California Indians claims bill"
+    },
+    {
+      "name": "Congressman Lee",
+      "type": "person",
+      "context": "Worked with Commonwealth Club of California in framing California Indians claims bill"
+    },
+    {
+      "name": "St. Francis Hotel",
+      "type": "location",
+      "context": "Location of San Francisco Senate subcommittee hearing on July 2, 1934"
+    },
+    {
+      "name": "San Francisco, California",
+      "type": "location",
+      "context": "Location of Senate subcommittee hearing July 2, 1934"
+    },
+    {
+      "name": "San Diego County",
+      "type": "location",
+      "context": "Location of death of Marcus Hilmiup on July 16, 1927"
+    },
+    {
+      "name": "Coachella Valley",
+      "type": "location",
+      "context": "Valley in Riverside County containing multiple Indian reservations with water shortage"
+    },
+    {
+      "name": "Riverside County",
+      "type": "location",
+      "context": "County location of Coachella Valley reservations"
+    },
+    {
+      "name": "Section 4 South of Mecca",
+      "type": "land_parcel",
+      "context": "Indian land held for lease; Harry Hess stated Indians must consent"
+    },
+    {
+      "name": "Mecca",
+      "type": "location",
+      "context": "Location near section 4 Indian land in Coachella Valley"
+    },
+    {
+      "name": "E.C.W.",
+      "type": "organization",
+      "context": "Emergency Conservation Work program employing Indians on reservations; funds running low"
+    },
+    {
+      "name": "C.W.A.",
+      "type": "organization",
+      "context": "Civil Works Administration; erected homes on reservations"
+    },
+    {
+      "name": "Daughters of the American Revolution",
+      "type": "organization",
+      "context": "California State Society; Mrs. Codman is state chairman Indian Citizenship"
+    },
+    {
+      "name": "California State Department of Social Welfare",
+      "type": "organization",
+      "context": "State agency; Miss Florenz Treu is assistant director"
+    },
+    {
+      "name": "Community Chest San Diego",
+      "type": "organization",
+      "context": "Organization where Julius H. Rainwater was former executive secretary"
+    },
+    {
+      "name": "Campo School",
+      "type": "location",
+      "context": "School at Campo; Indians not allowed to use it as community meeting house despite vacancy"
+    }
+  ],
+  "events": [
+    {
+      "type": "appointment",
+      "date": "unknown",
+      "location": "Santa Rosa Reservation",
+      "description": "Dave Navarro appointed as Indian policeman by superintendent following community recommendation"
+    },
+    {
+      "type": "appointment",
+      "date": "1933",
+      "location": "Mission Indian Agency",
+      "description": "Superintendent Dady came into office at Mission Indian Agency"
+    },
+    {
+      "type": "meeting",
+      "date": "1933-07",
+      "location": "unknown",
+      "description": "Mission Indians sent letter through Adam Castillo to newly appointed agent Dady offering whole-hearted cooperation; first time agent sat down and talked with Indians"
+    },
+    {
+      "type": "meeting",
+      "date": "1933-07",
+      "location": "unknown",
+      "description": "Purl Willis introduced Superintendent Dady to Mission Indians; Indians clapped hands in joy"
+    },
+    {
+      "type": "death",
+      "date": "1927-07-16",
+      "location": "San Diego County, California",
+      "description": "Marcus Hilmiup died from hemorrhage and shock from bullet wound to lung; coroner's jury found wound inflicted by deputy sheriffs Robertson, Kennedy, or Powell with homicidal intent"
+    },
+    {
+      "type": "coroner's jury verdict",
+      "date": "1927",
+      "location": "San Diego County, California",
+      "description": "Jury found deputy sheriffs exceeded authority entering Indian reservation; all testimony showed participants in festivities were peaceful and quiet with no signs of intoxication"
+    },
+    {
+      "type": "Indian fiesta ceremonial",
+      "date": "unknown",
+      "location": "unknown",
+      "description": "Peaceful Indian fiesta alleged to have involved drinking and disturbance; Willis and affidavits deny any disturbance or drinking"
+    },
+    {
+      "type": "arrest",
+      "date": "unknown",
+      "location": "fiesta location",
+      "description": "White man arrested night before fiesta; alleged conspiracy caused wrong man to confess to owning whisky"
+    },
+    {
+      "type": "meeting",
+      "date": "unknown",
+      "location": "reservation",
+      "description": "Julius Rainwater and committee arrived at reservation meeting; Purl Willis was making speech to Indians"
+    },
+    {
+      "type": "election",
+      "date": "1933",
+      "location": "Mission Indian reservations",
+      "description": "First election for reservation spokesmen held on Mission Indian reservations by their own free will"
+    },
+    {
+      "type": "election",
+      "date": "1933",
+      "location": "Mission Indian reservations",
+      "description": "Second election held for reservation spokesmen; alleged interference by emissaries"
+    },
+    {
+      "type": "election",
+      "date": "1933-12-28",
+      "location": "Mission Indian reservations",
+      "description": "Election called December 28 by Superintendent Dady after consulting Tom Lukas, Winslow Couro, and cooperative group head"
+    },
+    {
+      "type": "letter/meeting",
+      "date": "1933-07-17",
+      "location": "Mission Indian Agency, Riverside, California",
+      "description": "Superintendent Dady sent letter to all Mission Indian people requesting election of one spokesman per reservation"
+    },
+    {
+      "type": "meeting",
+      "date": "1934-06-25",
+      "location": "Harry Hess's house",
+      "description": "Indians called to meeting at Hess's house; told no funds for Cabazon and La Mesa Augustine Reservations"
+    },
+    {
+      "type": "meeting",
+      "date": "1934-06-27",
+      "location": "Cabazon Reservation",
+      "description": "Meeting held at Cabazon Reservation with headmen from Martinez, Torres, and La Mesa reservations; letter written to Investigators' Committee"
+    },
+    {
+      "type": "hearing",
+      "date": "1934-07-02",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "description": "Senate Subcommittee on Indian Affairs hearing chaired by Senator Wheeler; California and Klamath Indians present along with various officials"
+    },
+    {
+      "type": "dam construction",
+      "date": "1934",
+      "location": "Capitan Grande Indian Reservation",
+      "description": "Dam nearing completion; government contract required relocation of Indians approximately 90 days before completion; farmland to be submerged"
+    },
+    {
+      "type": "petition",
+      "date": "unknown",
+      "location": "Capitan Grande Indian Reservation",
+      "description": "Indians petitioned for government to buy Viejas/Baron Long Ranch as new location using money paid for water basin"
+    },
+    {
+      "type": "visit",
+      "date": "unknown",
+      "location": "Coachella Valley",
+      "description": "John Collier visited Coachella Valley Indian reservations 15 years before hearing; found Indians needed water; nothing accomplished"
+    },
+    {
+      "type": "layoff",
+      "date": "1934",
+      "location": "Coachella Valley reservations",
+      "description": "Many Indians laid off from E.C.W. work on reservations due to low funds"
+    },
+    {
+      "type": "legislative action",
+      "date": "unknown",
+      "location": "Washington, D.C.",
+      "description": "H.R. 491, Public No. 423, 70th Congress enacted, authorizing California attorney general to bring suit in Court of Claims on behalf of California Indians"
+    },
+    {
+      "type": "Congressional committee visit",
+      "date": "approximately 1932",
+      "location": "California",
+      "description": "Committeemen visited California two years before hearing and recommended removal/transfer of superintendent and Miss McGair; same bureau employees remained"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "payment",
+      "amount": "$0.50",
+      "payer": "Mission Indians",
+      "payee": "unknown",
+      "date": "unknown",
+      "description": "Indians paid 50 cents to obtain official copy of coroner's jury verdict on deaths at Campo"
+    },
+    {
+      "type": "other",
+      "amount": "$6,000,000 (estimated)",
+      "payer": "United States Government",
+      "payee": "Mission Indians of California",
+      "date": "unknown",
+      "description": "Estimated value of Court of Claims conflict/judgment in favor of Mission Indians; published in magazine"
+    },
+    {
+      "type": "other",
+      "amount": "unknown",
+      "payer": "City/Dam authority",
+      "payee": "Capitan Grande Indians",
+      "date": "unknown",
+      "description": "Money paid for water basin at Capitan Grande; Indians desired this money be used to purchase new land"
+    },
+    {
+      "type": "lease",
+      "amount": "unknown",
+      "payer": "unknown",
+      "payee": "unknown",
+      "date": "unknown",
+      "description": "Section 4 south of Mecca Indian land held for lease; Indians must consent"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Dave Navarro",
+      "type": "appointed_by",
+      "object": "Superintendent (Santa Rosa Reservation)",
+      "context": "Appointed as Indian policeman following community recommendation"
+    },
+    {
+      "subject": "Purl Willis",
+      "type": "advocate_for",
+      "object": "Mission Indians",
+      "context": "In close touch with Indians; brought their concerns to hearings"
+    },
+    {
+      "subject": "Adam Castillo",
+      "type": "president_of",
+      "object": "Mission Indian Federation",
+      "context": "Head of organization representing Mission Indians"
+    },
+    {
+      "subject": "Adam Castillo",
+      "type": "sent_letter_on_behalf_of",
+      "object": "Mission Indians",
+      "context": "Sent letter to newly appointed agent offering cooperation"
+    },
+    {
+      "subject": "Purl Willis",
+      "type": "introduced",
+      "object": "Superintendent Dady",
+      "context": "Willis introduced Dady to Mission Indians at first meeting"
+    },
+    {
+      "subject": "Purl Willis",
+      "type": "visited",
+      "object": "Attorney General of California",
+      "context": "Visited at request of Indians; accompanied by Mr. Ness"
+    },
+    {
+      "subject": "Mr. Ness",
+      "type": "accompanied",
+      "object": "Purl Willis",
+      "context": "Local attorney who accompanied Willis to visit Attorney General; offered services"
+    },
+    {
+      "subject": "Marion Butler",
+      "type": "attorney_for",
+      "object": "Mission Indians",
+      "context": "Attorney for 3,000 Mission Indians with no other attorney"
+    },
+    {
+      "subject": "J. W. Henderson",
+      "type": "attorney_for",
+      "object": "Indians of California, Inc.",
+      "context": "Attorney present at San Francisco hearing"
+    },
+    {
+      "subject": "James M. Hanley",
+      "type": "attorney_for",
+      "object": "Indians of California, Inc.",
+      "context": "Attorney present at San Francisco hearing"
+    },
+    {
+      "subject": "U. S. Webb",
+      "type": "attorney_for",
+      "object": "California Indians (Court of Claims)",
+      "context": "Attorney General of California named by Congress as attorney for Indians in federal claim"
+    },
+    {
+      "subject": "John Collier",
+      "type": "commissioner_of",
+      "object": "Bureau of Indian Affairs",
+      "context": "Current Commissioner of Indian Affairs at time of hearing"
+    },
+    {
+      "subject": "Charles DeY. Elkus",
+      "type": "president_of",
+      "object": "American Indian Defense Association of Northern California",
+      "context": "Present at San Francisco hearing"
+    },
+    {
+      "subject": "Rachel B. Barker",
+      "type": "secretary_of",
+      "object": "American Indian Defense Association",
+      "context": "Present at San Francisco hearing"
+    },
+    {
+      "subject": "F. G. Collett",
+      "type": "executive_secretary_of",
+      "object": "Indians of California, Inc.",
+      "context": "Present at San Francisco hearing"
+    },
+    {
+      "subject": "John W. Dady",
+      "type": "superintendent_of",
+      "object": "Mission Indian Agency",
+      "context": "Superintendent at Riverside, California"
+    },
+    {
+      "subject": "O. H. Lipps",
+      "type": "superintendent_of",
+      "object": "Sacramento Indian Agency",
+      "context": "Present at San Francisco hearing"
+    },
+    {
+      "subject": "Julius H. Rainwater",
+      "type": "former_executive_secretary_of",
+      "object": "Community Chest San Diego",
+      "context": "Testified about visit to reservation meeting"
+    },
+    {
+      "subject": "Harry Hess",
+      "type": "employed_by",
+      "object": "Mission Indian Agency",
+      "context": "Indian farmer stationed at Martinez subagency"
+    },
+    {
+      "subject": "Henry Reiger",
+      "type": "manager_of",
+      "object": "E.C.W. project",
+      "context": "Reported funds getting low causing Indian layoffs"
+    },
+    {
+      "subject": "George J. Robertson",
+      "type": "accused_of_homicide",
+      "object": "Marcus Hilmiup",
+      "context": "Deputy sheriff; coroner's jury found exceeded authority entering reservation"
+    },
+    {
+      "subject": "Ralph Kennedy",
+      "type": "accused_of_homicide",
+      "object": "Marcus Hilmiup",
+      "context": "Deputy sheriff; coroner's jury finding"
+    },
+    {
+      "subject": "King J. Powell",
+      "type": "accused_of_homicide",
+      "object": "Marcus Hilmiup",
+      "context": "Deputy sheriff; coroner's jury finding"
+    },
+    {
+      "subject": "Billy Callaway",
+      "type": "captain_of",
+      "object": "Cabazon Reservation",
+      "context": "Signed letter to Investigators' Committee"
+    },
+    {
+      "subject": "Julian Augustin",
+      "type": "captain_of",
+      "object": "La Mesa Reservation",
+      "context": "Signed letter and personal statement about water hardships"
+    },
+    {
+      "subject": "William Levy",
+      "type": "representative_of",
+      "object": "Torro Reservation",
+      "context": "Signed letter to Investigators' Committee"
+    },
+    {
+      "subject": "Pablo Kristano",
+      "type": "representative_of",
+      "object": "Martinez Reservation",
+      "context": "Signed letter to Investigators' Committee"
+    },
+    {
+      "subject": "Purl Willis",
+      "type": "endorsed_by",
+      "object": "Coachella Valley reservation captains",
+      "context": "Endorsed as delegate along with Prather and Castillo"
+    },
+    {
+      "subject": "B. G. Prather",
+      "type": "endorsed_by",
+      "object": "Coachella Valley reservation captains",
+      "context": "Endorsed as delegate along with Willis and Castillo"
+    },
+    {
+      "subject": "Adam Castillo",
+      "type": "endorsed_by",
+      "object": "Coachella Valley reservation captains",
+      "context": "Endorsed as delegate; president of Mission Indian Federation"
+    },
+    {
+      "subject": "Ventura Paipa",
+      "type": "resident_of",
+      "object": "Capitan Grande Indian Reservation",
+      "context": "Testified about need for new land due to dam"
+    },
+    {
+      "subject": "John Collier",
+      "type": "alleged_accusation_against",
+      "object": "Purl Willis",
+      "context": "Collier called attention of Nation saying Purl Willis was party to killings at Campo"
+    },
+    {
+      "subject": "Mr. Moore",
+      "type": "alleged_conspiracy_by",
+      "object": "unknown white man",
+      "context": "Alleged to have participated in conspiracy to have wrong man confess to owning whisky at fiesta"
+    },
+    {
+      "subject": "Charles DeY. Elkus",
+      "type": "cooperated_with",
+      "object": "Commonwealth Club of California",
+      "context": "Helped frame California Indians claims bill with Congressman Lee"
+    },
+    {
+      "subject": "Winnifred Codman",
+      "type": "state_chairman_of",
+      "object": "Indian Citizenship, California State Society, Daughters of the American Revolution",
+      "context": "Present at San Francisco hearing"
+    },
+    {
+      "subject": "Albert A. Grorud",
+      "type": "special_assistant_to",
+      "object": "Senate Subcommittee on Indian Affairs",
+      "context": "Present at San Francisco hearing"
+    },
+    {
+      "subject": "Florence P. Kahn",
+      "type": "member_of_congress",
+      "object": "Fourth District of California",
+      "context": "Present at San Francisco hearing"
+    },
+    {
+      "subject": "Burton K. Wheeler",
+      "type": "chairman_of",
+      "object": "Senate Subcommittee on Indian Affairs",
+      "context": "Presided over San Francisco hearing July 2, 1934"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "Mission Indians (through Adam Castillo)",
+      "sender_title": "Mission Indian Federation",
+      "recipient": "newly appointed agent (Dady)",
+      "recipient_title": "Superintendent, Mission Indian Agency",
+      "date": "1933-07",
+      "subject": "Offer of whole-hearted cooperation; requests regarding treaties, Indian policemen, Indian hospital, and voice in government",
+      "action_requested": "Cooperation from new agent; discussion of treaties, policemen, hospital, government representation",
+      "outcome": "Agent did not wait to hear Indians; did not discuss matters affecting them"
+    },
+    {
+      "sender": "Mission Indians (Purl Willis)",
+      "sender_title": "representative",
+      "recipient": "Mr. Collier",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "unknown",
+      "subject": "Endorsement for Commissioner Collier",
+      "action_requested": "Send endorsement to the President",
+      "outcome": "Collier wrote letter begging endorsement be sent to President"
+    },
+    {
+      "sender": "Mission Indians",
+      "sender_title": "Mission Indian Federation",
+      "recipient": "Attorney General of California",
+      "recipient_title": "Attorney General",
+      "date": "unknown",
+      "subject": "Status of Mission Indians' legal case; request for information",
+      "action_requested": "Report on progress of case; possibly step out as attorney if Indians can have own attorneys",
+      "outcome": "Attorney General said he didn't need information Indians might have; was proceeding as attorney; would be glad to step out if handled appropriately"
+    },
+    {
+      "sender": "John W. Dady",
+      "sender_title": "Superintendent, Mission Indian Agency",
+      "recipient": "All Indian people in territory of Mission Indian Agency",
+      "recipient_title": "Mission Indians",
+      "date": "1933-07-17",
+      "subject": "Request for election of one spokesman per reservation",
+      "action_requested": "Hold fair, open election by written ballots; send name of elected spokesman for each reservation",
+      "outcome": "Multiple elections held; complaints about procedure; controversy over ballot design requiring signature"
+    },
+    {
+      "sender": "Headmen of Cabazon, Martinez, Torres, La Mesa Reservations",
+      "sender_title": "Reservation Captains",
+      "recipient": "Investigators' Committee",
+      "recipient_title": "Senate Investigators' Committee",
+      "date": "1934-06-27",
+      "subject": "Water shortage on Coachella Valley reservations; request for investigation; endorsement of Willis, Prather, Castillo",
+      "action_requested": "Send investigators to see living conditions; provide water for reservations",
+      "outcome": "Letter submitted to committee record"
+    },
+    {
+      "sender": "Julian Augustin",
+      "sender_title": "Captain, La Mesa Reservation",
+      "recipient": "Committee/investigators",
+      "recipient_title": "unknown",
+      "date": "1934-06",
+      "subject": "Personal hardship due to water shortage at La Mesa Augustine Reservation; Hess statement about no funds",
+      "action_requested": "Send investigators to see conditions firsthand",
+      "outcome": "Statement submitted to committee record"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "H.R. 491",
+      "sponsor": "Congressman Lee (with Commonwealth Club of California and Indian Defense Association)",
+      "action_type": "enacted",
+      "date": "unknown (70th Congress)",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Enacted as Public No. 423, 70th Congress; authorized attorney general of California to bring suit in Court of Claims on behalf of Indians of California"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Purl Willis",
+      "witness_title": "advocate for Mission Indians",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "California (exact location not specified)",
+      "date": "1934",
+      "subject": "Indian policemen appointment; Mission Indians' cooperation letter to Dady; treaty matters; Attorney General situation; Court of Claims claim; fiesta conspiracy; Campo killings; ballot/election issues",
+      "key_claims": "Testified that Mission Indians sent letter through Adam Castillo to new agent Dady offering cooperation; that agent refused to sit down with Indians; that treaties, Indian policemen, Indian hospital, and Indian voice in government were key concerns; that the estimated $6,000,000 Court of Claims conflict incited Indians; that there was no disturbance or drinking at the Indian fiesta; that there was a conspiracy by certain officials including Mr. Moore to have the wrong man confess to owning whisky at the fiesta; that the Campo killings seven years prior were committed by deputy sheriffs who exceeded authority entering reservation; that ballot for spokesman election required Indians to sign names making them 'marked Indians'; that same bureau employees remained despite prior committee recommendations for removal",
+      "questioner": "The Chairman (Senator Wheeler)"
+    },
+    {
+      "witness": "Julius H. Rainwater",
+      "witness_title": "former executive secretary, Community Chest, San Diego",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "California (exact location not specified)",
+      "date": "1934",
+      "subject": "Meeting at reservation where Purl Willis was making a speech to Indians",
+      "key_claims": "Testified that he arrived at a reservation meeting expecting to meet captains; found Willis making a speech to Indians that he characterized as not beneficial or cooperative; that Willis changed tone upon seeing visitors arrive; that the meeting itself with Adam speaking was excellent; implied Willis was telling Indians they could get whatever they wanted",
+      "questioner": "The Chairman (Senator Wheeler)"
+    },
+    {
+      "witness": "Adam Castillo",
+      "witness_title": "President, Mission Indian Federation",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "California (exact location not specified)",
+      "date": "1934",
+      "subject": "Election of spokesmen; cooperation with Superintendent Dady; Campo school; loan inequality among Indians",
+      "key_claims": "Stated Dady picked him as election judge without consulting him first, which caused Indians to go against Dady; requested written statement from Chairman confirming cooperation directive so he could show Government officials; said some Indians got loans for homes while others could not despite claim there was no money; said Campo School not being made available to Indians as community house; said if another election were held it would satisfy the people; demanded Dady confirm he would cooperate",
+      "questioner": "The Chairman (Senator Wheeler); Senator Wheeler"
+    },
+    {
+      "witness": "John W. Dady",
+      "witness_title": "Superintendent, Mission Indian Agency",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "California (exact location not specified)",
+      "date": "1934",
+      "subject": "Spokesman elections; cooperation with Indians; house construction; relationship with Adam Castillo",
+      "key_claims": "Stated the ballot issue had already been discussed before the House; said he called together four leaders including Tom Lukas and Winslow Couro to agree on election process; said he waited 6 weeks then called election December 28; said he had worked more with Adam than any other Indian; said a third election would not do any good as election was for one year; stated he asked for 200 new homes after C.W.A. homes were erected; said outside white interference was the main problem; confirmed willingness to cooperate with Adam Castillo",
+      "questioner": "The Chairman (Senator Wheeler); Senator Wheeler"
+    },
+    {
+      "witness": "Marion Butler",
+      "witness_title": "attorney for Mission Indians of California",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "California (exact location not specified)",
+      "date": "1934",
+      "subject": "Mission Indians' Court of Claims suit; role of California Attorney General; cooperation with government",
+      "key_claims": "Stated he approved of committee's suggestion to take up suit with California attorney general; said he would use influence with Adam Castillo to encourage cooperation; told Indians when employed that he did not think the suit was being conducted to produce best results; said it was anomalous and unfortunate for a State officer to be named by Congress as attorney for Indians in a Federal matter; said nothing like it had happened before in government history",
+      "questioner": "The Chairman (Senator Wheeler)"
+    },
+    {
+      "witness": "Ventura Paipa",
+      "witness_title": "resident of Capitan Grande Indian Reservation",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "California (exact location not specified)",
+      "date": "1934",
+      "subject": "Relocation from Capitan Grande due to dam construction; request for government purchase of Viejas/Baron Long Ranch",
+      "key_claims": "Government promised new place to live; identified Viejas or Baron Long Ranch as desired new location; petitioned government to buy it with money paid for water basin; dam nearly complete with 90-day relocation deadline; currently farming minimally with no stable home; road to new area is bad; two groups want to move together; believes it would be good place for Indians to live",
+      "questioner": "The Chairman (Senator Wheeler)"
+    },
+    {
+      "witness": "Charles DeY. Elkus",
+      "witness_title": "President, American Indian Defense Association of Northern California; attorney",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "date": "1934-07-02",
+      "subject": "California Indians claims bill; Court of Claims suit; role of Indian Defense Association",
+      "key_claims": "Association had much to do with Commonwealth Club of California and Congressman Lee in framing H.R. 491 claims bill; helped put it through Congress; current Commissioner of Indian Affairs was in Congress actively engaged in getting bill through and was then executive secretary of Indian Defense Association; association is entirely a white organization; very interested in pending Court of Claims claim",
+      "questioner": "Senator Elmer Thomas"
+    },
+    {
+      "witness": "Ben F. Mitchell",
+      "witness_title": "Klamath Reservation Indian",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "date": "1934-07-02",
+      "subject": "Klamath Reservation matters (deferred to afternoon)",
+      "key_claims": "Requested to testify in afternoon; expected another man with him who did not arrive",
+      "questioner": "The Chairman (Senator Wheeler)"
+    },
+    {
+      "witness": "Lower Klamath River Indian (unnamed)",
+      "witness_title": "Lower Klamath River Indian",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Subcommittee on Indian Affairs",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "date": "1934-07-02",
+      "subject": "Lower Klamath River Indians' presence at hearing",
+      "key_claims": "Present for two weeks; from the Lower Klamath River (distinct from Klamath Reservation Indians)",
+      "questioner": "The Chairman (Senator Wheeler)"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

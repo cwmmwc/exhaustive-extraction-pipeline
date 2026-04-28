@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_095",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "120",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Myrtle Shangreau Galligo",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, So. Dak.",
+    "Allotment number": "1210",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent but that she was told by the District Farmer and the clerks in the Office that she would have to take the patent and pay the taxes or she would lose the land though so she took it, under protest",
+    "Recorded patent": "I did not have the patent recorded. but Mr. Bailey did, so he told me",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "L. D. Bailey of Rapid City, So. Dak. for $1100.00; paid her $50.00 and that is all",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes so she mortgaged the land for $100.00 and the mortgagee was to pay them also, which he did. The next year L. D. Bailey came and told her the mortgage was due and some more taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "31 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Mentally competent and in poor health, having very poor teeth and stomach trouble; has three small children and a husband who is not well, depending on her for support; has received no aid from the Government, State or County since her patent was issued; all she got for the land was $150.00 and she thinks it was worth about $1200.00; does not know where L. D. Bailey is now; subscribed and sworn November 10, 1928; County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2354,
+    "output_tokens": 495
+  },
+  "elapsed": 5.5
+}

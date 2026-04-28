@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_028",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "87-88",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mattie J. Bonser",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud",
+    "Allotment number": "1422",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No.",
+    "Recorded patent": "No.",
+    "Sold/Mortgaged": "I sold it to John Ormisher for $6400, payment to be completed within five years.",
+    "Buyer": "John Ormisher for $6400, payment to be completed within five years; paid $900.00 at time of sale and has been paying $120 each April since",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "I am not sure but I think it was in 1925.",
+    "Gender": "Female",
+    "Age": "59",
+    "Occupation/Income": "My son Lavern assists me and the payments on my land are used for support. The father of the children also assists me.",
+    "NOTES": "Patent delivered by Pete Schweigman, a policeman, at her home in Rosebud. Did not make application for patent. No mortgage on the land. Amount received to date something over $2000.00. Two small children of her son dependent upon her. Satisfied with the sale. Subscribed and sworn before notary March 22, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2374,
+    "output_tokens": 392
+  },
+  "elapsed": 6.8
+}

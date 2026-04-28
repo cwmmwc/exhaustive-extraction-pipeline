@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_043",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "55",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jennie Louise Brown\u2014nee Williams",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area implied)",
+    "Post Office Address": "Tuthill, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "forced patent in fee",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "she never sold her place for any debts incurred by herself prior to receiving the patent in fee; in April, 1920, she sold this allotment to Bert McCollister, of Martin, South Dakota, for $2000.00 cash",
+    "Buyer": "Bert McCollister, of Martin, South Dakota, for $2000.00 cash",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "32 years old",
+    "Occupation/Income": "her husband, who has good health, supports her and the children, he being a farmer, this being his only income",
+    "NOTES": "mentally competent; health is good; mother of two small children who have good health; husband is a farmer; she considers she received a good price for the land; her mother promised to reimburse her by deeding her a quarter of the mother's land but never did; sold land to get money for sick brother who needed to be taken to a good hospital; allotment described as SE\u00bc, Sec. 26, T. 37N., R. 37W., of the 6th P.M., in South Dakota, 160 acres; has never received any help from the County, State nor the United States Government; document no. 4574; subscribed and sworn April 22, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2336,
+    "output_tokens": 494
+  },
+  "elapsed": 7.9
+}

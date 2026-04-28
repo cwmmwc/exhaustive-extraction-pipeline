@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_082",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "101",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Prudy Cuny",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her allotment, for the reason that she did not want to pay the taxes, but was advised by the Indian Agency to take it, which she did",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged it, on October 17, 1921, together with her husband's allotment, of 40 acres, to the Rural Credit & Loan Company, Pierre, South Dakota, for $6,000.00, to pay taxes and purchase cattle; then lost the cattle as well as the allotment in 1926",
+    "Buyer": "Rural Credit & Loan Company, Pierre, South Dakota, for $6,000.00",
+    "Tax burden forced sale/Mortgage": "mortgaged to pay taxes and purchase cattle; then lost the cattle as well as the allotment in 1926",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "44 years old",
+    "Occupation/Income": "supported by her husband",
+    "NOTES": "Document No. 27 60; allotment was 320 acres; husband's allotment was 40 acres; husband has poor health, having had an attack of influenza and blood poison; has six minor children supported by her husband; mentally competent and in good health; has never received any help from the County or Government; affidavit sworn November 13, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2242,
+    "output_tokens": 470
+  },
+  "elapsed": 5.7
+}

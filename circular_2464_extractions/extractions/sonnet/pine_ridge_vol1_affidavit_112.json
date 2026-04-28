@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_112",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "138",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Robert S. Clifford",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "1642",
+    "Cancelled": "not stated",
+    "Refused/Protested": "at the time he got his patent in fee to his 160 acre allotment, he did not want it, but the Indian Agency sent word down to him to send up stamps for registering his letter, containing his patent in fee, and he did so",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "he never mortgaged his allotment, and has kept up his taxes to the year 1926, but has paid these taxes under protest, since 1922",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "has kept up his taxes to the year 1926, but has paid these taxes under protest, since 1922",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "28 years old",
+    "Occupation/Income": "Disciplinarian at the Holy Rosary Mission, at Pine Ridge, South Dakota, which is the source of his income",
+    "NOTES": "mentally competent; has no one to support but himself; has good health; has never received any aid from the County or United States Government; allotment is 160 acres",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2248,
+    "output_tokens": 396
+  },
+  "elapsed": 6.0
+}

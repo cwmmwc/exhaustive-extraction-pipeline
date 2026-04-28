@@ -1,0 +1,33 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_043",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "60",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Winnie Yellow Bird\u2014Nee Shangreau",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "2555",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee to her 160 acre allotment when it was issued; that she was informed that it was in the Indian Agency Office awaiting her acceptance; that she protested against taking it, as she did not want to pay taxes; but that she was advised by the Indian Agency that, if she did not accept it, that the taxes would run up on it, and it would finally be sold for taxes; she therefore accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it to her sister, Mary Shangreau, for $5220.00, in cash",
+    "Buyer": "Mary Shangreau (her sister) for $5220.00 in cash",
+    "Tax burden forced sale/Mortgage": "got behind in her tax payments, and, about 1921, she sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "38 years old",
+    "Occupation/Income": "not stated (husband supports her and her children, making his living by being a mail carrier for the United States Government; salary for carrying mail is his only income)",
+    "NOTES": "has very poor health; has two children, who have good health; husband has good health except being hard of hearing; deponent considers $5220.00 a fair price for her allotment; sale occurred about 1921; has never received any help from the County, State or United States Government; document sworn November 26, 1928, in Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2307,
+    "output_tokens": 497
+  },
+  "elapsed": 6.3,
+  "retry_count": 1
+}

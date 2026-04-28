@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_021",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "58",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Thomas Wright",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2357",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Jack Martin loaned him $800.00 and took a mortgage on the place; George Smith subsequently purchased the land",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "This is a questionnaire taken from Chris Colombe (also spelled Colome/Colombo), age 55, a third party, sworn before Notary Public Jas. W. Crows on June 18, 1929 (commission expires 4-28-32). Colombe states that in winter of 1923, he and Jack Martin went to Thomas Wright's place to purchase his land but could not agree on a price; Jack Martin then loaned Wright $800.00 by check and took a mortgage on the place. Before Martin and Colombe could return to negotiate a purchase, George Smith had purchased the land. Colombe does not know what Smith paid. References a separate affidavit by Thomas Wright dated June 6, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2257,
+    "output_tokens": 410
+  },
+  "elapsed": 9.2
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_affidavit_004",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "41-42",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Carpenter",
+    "Tribe/Reservation": "Crow Creek Reservation",
+    "Post Office Address": "not stated",
+    "Allotment number": "37; 660",
+    "Cancelled": "Patent has not been cancelled. Not cancelled.",
+    "Refused/Protested": "Accepted the patent without protest,,and filed it. / Patent was accepted without protest. It was filed in the County by William Carpenter.",
+    "Recorded patent": "Filed in the County by William Carpenter; Patent was delivered in person March 12, 1920 (allotment 37); Patent was delivered in person July 6, 1920 (allotment 660)",
+    "Sold/Mortgaged": "Land has not been sold or mortgaged. It was deeded to Mary Carpenter, his wife. / Land has not been sold. Land has not been mortgaged.",
+    "Buyer": "Deeded to Mary Carpenter, his wife",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 22, 1919 (both allotments 37 and 660)",
+    "Gender": "Male",
+    "Age": "79 years old",
+    "Occupation/Income": "I am supported by my own efforts, with no help from Government, State or County.",
+    "NOTES": "Document contains two affidavits: one for William Carpenter's own allotment (No. 37) and one for allotment No. 660 belonging to Alma Carpenter deceased, in which William Carpenter identifies himself as father of Alma Carpenter deceased. Mental condition is good. Physical condition is fair. Lost $24,000 in bank failure (stated twice, second time as $24,000.00). Wife Mary Carpenter is dependent upon him for support. Has not been defrauded of property. County of Buffalo, State of South Dakota.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2567,
+    "output_tokens": 500
+  },
+  "elapsed": 7.0
+}

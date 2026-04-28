@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_032",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "78",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louis Richard",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "4743",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Patent recorded Aug. 7, 1922 by Home Abstract Co., Martin, So. Lak.",
+    "Sold/Mortgaged": "Mortgaged",
+    "Buyer": "Mortgaged NWA 12-36-36 to Federal Land Bank of Omaha, Nebr. for $1000.00, recorded 10-12-22; mortgaged NWA 12-36-36 (with other land) to Rancher's State Bank, Cody, Nebr. for $1110.69, recorded 6-3-26; mortgaged NWA 12-36-36 (with other land) to Rancher's State Bank, Cody, Nebr. for $2000.00, recorded Mar. 2, 1928; Rancher's State Bank, Cody, Nebr. released mortgage dated Mar. 1, 1928 on Oct. 13, 1928",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sep. 29, 1919",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Louis F. Richard and Annie Richard, his wife, are named in all mortgage transactions. Receipt dated Jan. 15, 1920. Land described as NWA 12-36-36. Records taken from County Seat.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2208,
+    "output_tokens": 471
+  },
+  "elapsed": 6.0
+}

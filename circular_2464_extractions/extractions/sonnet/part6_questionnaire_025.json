@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_questionnaire_025",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "68",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Two Horse or Quigley",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No, it was received in the mail and I thought that since it had been issued I was under obligation to take it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, I sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Male",
+    "Age": "53",
+    "Occupation/Income": "not stated",
+    "NOTES": "Wife also received a fee patent on her allotment; together they received $9000 for both parcels combined; allottee received cash payment; has wife and three children dependent on him for support; notary public Jas. W. Cross, commission expires 4/28/28 [or 32]; document number 1936 appears at top; subscribed and sworn March 22, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2268,
+    "output_tokens": 338
+  },
+  "elapsed": 5.1
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_073",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "91-92",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jacob Harvey",
+    "Tribe/Reservation": "Shannon County, South Dakota",
+    "Post Office Address": "Rockyford, So. Dak.",
+    "Allotment number": "2722",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee to his land, but wanted it held in trust, but that he was told that if he did not take it and pay the taxes that the land would be sold to pay them",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged his land to Harry Wentzy of Rapid City, S.D. for $5300.00, in connection with the land of his brother John Harvey",
+    "Buyer": "Harry Wentzy of Rapid City, S.D. for $5300.00",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes so he mortgaged his land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "37 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Mentally competent, in good health; has a mother depending on him for support; has received no aid from the Gov., State or County since his patent was granted; still owes about $2200.00 on the mortgage; all he has is his equity in the land which he does not think he can hold without aid from the Government. Document also contains a separate affidavit for Susie Keester\u2014nee Harvey (No. 2723), age 30, of Imlay, South Dakota, whose 147.20 acre allotment (Lots 7, 8, 9 and 10, Sec. 3, T. 41N., R. 43W.) was mortgaged to The Security & Savings Bank of Rapid City, South Dakota for $500.00 in 1921, foreclosed on May 21, 1926; bank retained $100.00 commission; she is mother of 4 children all in good health; husband is tubercular and supports family as section laborer on the railroad; patent described as 'forced patent in fee'; sworn April 23, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2938,
+    "output_tokens": 586
+  },
+  "elapsed": 9.1
+}

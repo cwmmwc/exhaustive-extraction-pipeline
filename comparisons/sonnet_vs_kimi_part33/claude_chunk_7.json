@@ -1,0 +1,616 @@
+{
+  "entities": [
+    {
+      "name": "Mr. Dady",
+      "type": "person",
+      "context": "Superintendent who commissioned surveyor Anderson and is referenced throughout hearing"
+    },
+    {
+      "name": "Mr. Willis",
+      "type": "person",
+      "context": "Individual who Indians have confidence in; accused by Dady of inciting Indians"
+    },
+    {
+      "name": "Mr. Anderson",
+      "type": "person",
+      "context": "Licensed surveyor who returned Dady's commission and offered to do survey work free for Los Coyotes Indians"
+    },
+    {
+      "name": "Adam Castillo",
+      "type": "person",
+      "context": "Member of Saboba Mission Indians, representative of Mission Indian Federation, key witness at hearing"
+    },
+    {
+      "name": "Mr. Majado",
+      "type": "person",
+      "context": "Spokesman for Soboba Indians who received copy of Anderson's survey report"
+    },
+    {
+      "name": "Nicholas Chaparosa",
+      "type": "person",
+      "context": "Indian man alleged by Rieger to have had a gun in plain view"
+    },
+    {
+      "name": "Mr. Rieger",
+      "type": "person",
+      "context": "Chief of E.C.W. under Dady, was present at reservation incident"
+    },
+    {
+      "name": "Mrs. R. C. Block",
+      "type": "person",
+      "context": "Indian welfare chairman, California Federation of Women's Clubs"
+    },
+    {
+      "name": "Mr. La Chusa",
+      "type": "person",
+      "context": "Indian witness at hearing, member of fiesta committee"
+    },
+    {
+      "name": "Mr. Moore",
+      "type": "person",
+      "context": "Government Indian Service officer covering California, Arizona and Nevada reservations"
+    },
+    {
+      "name": "Senator Wheeler",
+      "type": "person",
+      "context": "Chairman of the committee conducting the hearing"
+    },
+    {
+      "name": "Senator Thomas",
+      "type": "person",
+      "context": "Committee member questioning witnesses"
+    },
+    {
+      "name": "Commissioner Collier",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs who sent telegram verifying Moore's authority; published statement in The Indians at Work"
+    },
+    {
+      "name": "Rivera Crawford Splivalo",
+      "type": "person",
+      "context": "State director of social welfare, spoke on behalf of Attorney General Webb"
+    },
+    {
+      "name": "Attorney General Webb",
+      "type": "person",
+      "context": "Attorney General of California representing California Indians in Court of Claims case"
+    },
+    {
+      "name": "Mr. Butler",
+      "type": "person",
+      "context": "Attorney engaged by Mission Indian Federation in Washington"
+    },
+    {
+      "name": "Mr. Collett",
+      "type": "person",
+      "context": "Head of separate Indian organization that collected money from Indians"
+    },
+    {
+      "name": "Chief Myers",
+      "type": "person",
+      "context": "Indian policeman appointed by superintendent"
+    },
+    {
+      "name": "Dave Navarro",
+      "type": "person",
+      "context": "Indian policeman appointed on Santa Rosa Reservation at tribal recommendation"
+    },
+    {
+      "name": "Miss McGair",
+      "type": "person",
+      "context": "Government official who held meetings at Indian reservations regarding law enforcement"
+    },
+    {
+      "name": "Superintendent Ellis",
+      "type": "person",
+      "context": "Previous superintendent before Dady who arranged with Moore for tribal recommendation of police"
+    },
+    {
+      "name": "Mr. Ness",
+      "type": "person",
+      "context": "Local attorney who accompanied Willis to visit Attorney General"
+    },
+    {
+      "name": "Purl Willis",
+      "type": "person",
+      "context": "Witness who introduced Dady to Mission Indians and was in close touch with Indians"
+    },
+    {
+      "name": "Mr. Miguel Estudillo",
+      "type": "person",
+      "context": "Attorney living in Riverside, friend of California Indians and Attorney General Webb"
+    },
+    {
+      "name": "Mission Indian Federation",
+      "type": "organization",
+      "context": "Federation of southern California Indians representing approximately 2,500-3,000 Indians"
+    },
+    {
+      "name": "California Federation of Women's Clubs",
+      "type": "organization",
+      "context": "Organization whose Indian welfare chairman submitted statement to hearing"
+    },
+    {
+      "name": "Bureau of Indian Affairs",
+      "type": "organization",
+      "context": "Federal agency administering Indian reservations"
+    },
+    {
+      "name": "E.C.W.",
+      "type": "organization",
+      "context": "Emergency Conservation Work program under Dady's administration on reservation"
+    },
+    {
+      "name": "Los Coyotes Reservation",
+      "type": "location",
+      "context": "Indian reservation where boundary dispute with ranch company was occurring"
+    },
+    {
+      "name": "Soboba Indian Reservation",
+      "type": "location",
+      "context": "Reservation near San Jacinto where Anderson conducted survey; home of Adam Castillo"
+    },
+    {
+      "name": "San Jacinto",
+      "type": "location",
+      "context": "Town near Soboba Indian Reservation"
+    },
+    {
+      "name": "Volcan Mountains",
+      "type": "location",
+      "context": "Area where surveyor Anderson lived"
+    },
+    {
+      "name": "San Diego County",
+      "type": "location",
+      "context": "County containing several Indian reservations"
+    },
+    {
+      "name": "Riverside County",
+      "type": "location",
+      "context": "County containing several Indian reservations"
+    },
+    {
+      "name": "Santa Rosa Reservation",
+      "type": "location",
+      "context": "Reservation where Dave Navarro was appointed as Indian policeman"
+    },
+    {
+      "name": "Campo",
+      "type": "location",
+      "context": "Location of field agent station where a child reportedly starved to death"
+    },
+    {
+      "name": "Court of Claims",
+      "type": "legal_case",
+      "context": "Federal court where California Indians' case for treaty violations was to be heard"
+    },
+    {
+      "name": "Temecula Treaty",
+      "type": "legislation",
+      "context": "One of two treaties forming basis of California Indians' land claims"
+    },
+    {
+      "name": "Santa Isabel Treaty",
+      "type": "legislation",
+      "context": "One of two treaties forming basis of California Indians' land claims covering San Diego and Riverside Counties"
+    },
+    {
+      "name": "The Indians at Work",
+      "type": "organization",
+      "context": "Magazine published by Commissioner Collier that stated Indians would receive $6,000,000"
+    },
+    {
+      "name": "Ranch Company",
+      "type": "organization",
+      "context": "Company claiming land against Los Coyotes Indians' reservation boundaries"
+    },
+    {
+      "name": "Title Company",
+      "type": "organization",
+      "context": "Company unable to give clear title to ranch lands claimed by Indians"
+    }
+  ],
+  "events": [
+    {
+      "type": "survey_commission",
+      "date": "unknown",
+      "location": "Los Coyotes Reservation",
+      "description": "Dady commissioned surveyor Anderson to survey reservation lines, with intent to help ranch company maintain their claimed lines"
+    },
+    {
+      "type": "survey_offer",
+      "date": "unknown",
+      "location": "Los Coyotes Reservation",
+      "description": "Anderson rejected Dady's commission and offered to retrace old reservation lines for free for the Indians, with 15-20 Indian men and women present"
+    },
+    {
+      "type": "survey_completed",
+      "date": "unknown",
+      "location": "Soboba Indian Reservation",
+      "description": "Anderson completed extensive survey and report of over 100 pages with maps for Dady and the Soboba Indians, showing Indian lines take in valuable ranch property"
+    },
+    {
+      "type": "congressional_hearing",
+      "date": "unknown",
+      "location": "California",
+      "description": "Senate subcommittee hearing on Survey of Conditions of Indians in United States, examining conditions at California reservations"
+    },
+    {
+      "type": "armed_confrontation",
+      "date": "unknown",
+      "location": "Indian reservation",
+      "description": "Nicholas Chaparosa alleged to have had gun in plain view during confrontation at reservation"
+    },
+    {
+      "type": "fiesta_incident",
+      "date": "unknown",
+      "location": "Indian reservation",
+      "description": "Moore approached by federation committee and told to leave reservation during fiesta; over 75 Indians allegedly gathered; Moore remained citing duty"
+    },
+    {
+      "type": "liquor_arrest",
+      "date": "unknown",
+      "location": "Indian reservation",
+      "description": "A white man who brought liquor onto reservation and gave it to Indians was arrested by Moore"
+    },
+    {
+      "type": "telegram_verification",
+      "date": "unknown",
+      "location": "Indian reservation",
+      "description": "Commissioner Collier sent telegram verifying Moore's authority on the reservation"
+    },
+    {
+      "type": "delegation_to_washington",
+      "date": "unknown",
+      "location": "Washington D.C.",
+      "description": "California Mission Indians sent delegates to Washington to find out about Court of Claims settlement, spending $400-500 collected by tribal captains"
+    },
+    {
+      "type": "attorney_general_visit",
+      "date": "unknown",
+      "location": "California",
+      "description": "Purl Willis and local attorney Mr. Ness visited Attorney General Webb on behalf of Mission Indians regarding treaty case"
+    },
+    {
+      "type": "new_agent_meeting",
+      "date": "unknown",
+      "location": "California",
+      "description": "Last July, Mission Indians sent through Adam Castillo a letter to newly appointed agent Dady offering cooperation; Dady met with Indians with Willis introducing him"
+    },
+    {
+      "type": "child_death",
+      "date": "unknown",
+      "location": "Campo",
+      "description": "A child reportedly starved to death while a field agent was in charge at Campo"
+    },
+    {
+      "type": "anti_alien_law",
+      "date": "unknown",
+      "location": "California",
+      "description": "Anti-alien law passed in California, which Attorney General Webb worked on with Mr. Estudillo"
+    },
+    {
+      "type": "court_of_claims_suit_filed",
+      "date": "unknown",
+      "location": "California",
+      "description": "Attorney General of California filed suit against the Government on behalf of California Indians for $12,800,000"
+    },
+    {
+      "type": "police_appointment_reform",
+      "date": "unknown",
+      "location": "California",
+      "description": "Moore arranged with Miss McGair and Superintendent Ellis that Indian police would hereafter be recommended by tribe first; two Indian police appointed under this procedure"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "other",
+      "amount": "$400-500",
+      "payer": "Indian captains/tribes",
+      "payee": "delegation expenses",
+      "date": "unknown",
+      "description": "Captains collected approximately $400-500 to send delegates to Washington"
+    },
+    {
+      "type": "other",
+      "amount": "$6,000,000",
+      "payer": "U.S. Government",
+      "payee": "California Indians",
+      "date": "unknown",
+      "description": "Amount stated in Collier's publication as likely recovery for California Indians in Court of Claims case; disputed as to accuracy"
+    },
+    {
+      "type": "other",
+      "amount": "$12,800,000",
+      "payer": "U.S. Government",
+      "payee": "California Indians",
+      "date": "unknown",
+      "description": "Original amount of suit filed by Attorney General of California on behalf of California Indians"
+    },
+    {
+      "type": "other",
+      "amount": "$250-300 per person",
+      "payer": "U.S. Government",
+      "payee": "individual California Indians",
+      "date": "unknown",
+      "description": "Estimated per-capita distribution of $6,000,000 among approximately 23,000 California Indians"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Mr. Anderson",
+      "type": "employed_by",
+      "object": "Mr. Dady",
+      "context": "Anderson was commissioned by Dady to survey reservation lines but returned the commission"
+    },
+    {
+      "subject": "Mr. Anderson",
+      "type": "represented",
+      "object": "Los Coyotes Indians",
+      "context": "Anderson offered to retrace reservation lines for free for the Indians"
+    },
+    {
+      "subject": "Mr. Rieger",
+      "type": "employed_by",
+      "object": "Mr. Dady",
+      "context": "Rieger is Dady's chief of E.C.W."
+    },
+    {
+      "subject": "Adam Castillo",
+      "type": "represented",
+      "object": "Mission Indian Federation",
+      "context": "Castillo represents many tribes in San Diego and Riverside counties"
+    },
+    {
+      "subject": "Attorney General Webb",
+      "type": "represented",
+      "object": "California Indians",
+      "context": "Webb was authorized by Congress to file suit on behalf of California Indians in Court of Claims"
+    },
+    {
+      "subject": "Mr. Butler",
+      "type": "represented",
+      "object": "Mission Indian Federation",
+      "context": "Butler was engaged as attorney by Mission Indian Federation in Washington"
+    },
+    {
+      "subject": "Mr. Dady",
+      "type": "employed_by",
+      "object": "Bureau of Indian Affairs",
+      "context": "Dady is superintendent over California Indian reservations"
+    },
+    {
+      "subject": "Mr. Moore",
+      "type": "employed_by",
+      "object": "Bureau of Indian Affairs",
+      "context": "Moore is Indian Service officer covering California, Arizona and Nevada reservations"
+    },
+    {
+      "subject": "Purl Willis",
+      "type": "related_to",
+      "object": "Mission Indians",
+      "context": "Willis was in close touch with Indians, introduced Dady to them, and advocated on their behalf"
+    },
+    {
+      "subject": "Rivera Crawford Splivalo",
+      "type": "represented",
+      "object": "Attorney General Webb",
+      "context": "Splivalo spoke on behalf of Attorney General Webb at hearing"
+    },
+    {
+      "subject": "Mission Indian Federation",
+      "type": "related_to",
+      "object": "Temecula Treaty",
+      "context": "Federation fighting for rights under Temecula and Santa Isabel treaties covering San Diego and Riverside Counties"
+    },
+    {
+      "subject": "Dave Navarro",
+      "type": "employed_by",
+      "object": "Bureau of Indian Affairs",
+      "context": "Dave Navarro appointed as Indian policeman on Santa Rosa Reservation following tribal recommendation"
+    },
+    {
+      "subject": "Chief Myers",
+      "type": "employed_by",
+      "object": "Bureau of Indian Affairs",
+      "context": "Chief Myers appointed as Indian policeman"
+    },
+    {
+      "subject": "Mr. Dady",
+      "type": "related_to",
+      "object": "Los Coyotes Indians",
+      "context": "Dady accused by Willis and Indians of working to help ranch company against Indian land interests"
+    },
+    {
+      "subject": "Mr. Estudillo",
+      "type": "related_to",
+      "object": "Attorney General Webb",
+      "context": "Estudillo knew Webb and vouched for his honesty, having worked with him on anti-alien law"
+    },
+    {
+      "subject": "Commissioner Collier",
+      "type": "employed_by",
+      "object": "Bureau of Indian Affairs",
+      "context": "Collier is Commissioner of Indian Affairs who published statement about $6,000,000 settlement"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "Adam Castillo",
+      "sender_title": "Representative, Mission Indian Federation",
+      "recipient": "Mr. Dady",
+      "recipient_title": "Superintendent",
+      "date": "unknown",
+      "subject": "Offering cooperation of Mission Indians to newly appointed agent",
+      "action_requested": "Indians offered whole-hearted cooperation to new superintendent",
+      "outcome": "Dady attended meeting; Willis introduced him; Indians clapped in joy"
+    },
+    {
+      "sender": "Mission Indians via Purl Willis",
+      "sender_title": "Indian representatives",
+      "recipient": "Attorney General Webb",
+      "recipient_title": "Attorney General of California",
+      "date": "unknown",
+      "subject": "Request for information on status of treaty case",
+      "action_requested": "Indians requested information on progress of their case",
+      "outcome": "Attorney General replied he did not need information Indians might have and was proceeding as attorney for Indians"
+    },
+    {
+      "sender": "Purl Willis",
+      "sender_title": "Indian advocate",
+      "recipient": "Commissioner Collier",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "unknown",
+      "subject": "Endorsement request",
+      "action_requested": "Collier requested endorsement from Indians through Willis",
+      "outcome": "Indians gave endorsement; Collier sent letter signed by himself requesting Willis send endorsement to President"
+    },
+    {
+      "sender": "Mr. Anderson",
+      "sender_title": "Licensed surveyor",
+      "recipient": "Mr. Dady",
+      "recipient_title": "Superintendent",
+      "date": "unknown",
+      "subject": "Return of survey commission",
+      "action_requested": "Anderson returned Dady's commission and stated he would not do work as Dady wanted",
+      "outcome": "Anderson offered to do work free for Indians instead"
+    },
+    {
+      "sender": "Mrs. R. C. Block",
+      "sender_title": "Indian welfare chairman, California Federation of Women's Clubs",
+      "recipient": "Senator Wheeler",
+      "recipient_title": "Chairman",
+      "date": "unknown",
+      "subject": "Statement about E.C.W. work origin",
+      "action_requested": "Requested statement be made to Indians that E.C.W. is President Roosevelt's relief program, not effort of any person in San Diego",
+      "outcome": "Chairman read statement into record"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "unknown",
+      "sponsor": "Congress",
+      "action_type": "enacted",
+      "date": "unknown",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Congress authorized attorney general of California to file suit on behalf of California Indians in Court of Claims, with intent to save Indians expense of hiring private attorney"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Mr. Anderson",
+      "witness_title": "Licensed surveyor",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate subcommittee",
+      "location": "Los Coyotes Reservation area",
+      "date": "unknown",
+      "subject": "Reservation boundary survey dispute between Los Coyotes Indians and ranch company",
+      "key_claims": "Anderson stated he returned Dady's commission because doing the work as Dady wanted would cause Indians to lose their lands. He offered to retrace old lines for free as Indians showed him, stating he was a licensed surveyor with much experience in land titles. He had completed a 100+ page survey of Soboba Reservation showing Indians justified in claiming ranch lands near San Jacinto. Stated the title company cannot give a good title free from Indian claims.",
+      "questioner": "unidentified questioners"
+    },
+    {
+      "witness": "Mr. Rieger",
+      "witness_title": "Chief of E.C.W.",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate subcommittee",
+      "location": "hearing room",
+      "date": "unknown",
+      "subject": "Alleged armed Indians at reservation",
+      "key_claims": "Stated that one man, Nicholas Chaparosa, had a gun in plain view that afternoon. Was not familiar with all men present and could not say positively about others. Was a new employee at the time attempting to start the E.C.W. program.",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "Mr. La Chusa",
+      "witness_title": "Indian, fiesta committee member",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate subcommittee",
+      "location": "hearing room",
+      "date": "unknown",
+      "subject": "Moore's presence on reservation during fiesta; Nicholas Chaparosa gun allegation; Indian police authority",
+      "key_claims": "Stated Nicholas Chaparosa is not even a federation police and did not have a gun. Denied that 75 Indians gathered to chase Moore off reservation, saying Coonrod was present and they were discussing school matters. Stated they asked Moore who sent him and to show papers; he only showed a badge and a card. Two years ago other officers claimed to be U.S. marshals and showed nothing. Stated Indians told Moore Friday morning he could stay and they would let him know Saturday evening. Saturday told him they didn't need him but he could stay. Accused previous officers of shining lights on women going to toilet. Argued Indians should have voice in selecting Indian police.",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "Mr. Moore",
+      "witness_title": "Indian Service officer",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate subcommittee",
+      "location": "hearing room",
+      "date": "unknown",
+      "subject": "Incident at Indian reservation fiesta; law enforcement authority; Indian police appointment",
+      "key_claims": "Stated incident occurred around 10:30 or 11 at night with over 75 Indians present; they made every effort to remove him short of laying hands on him. Has been in service about 2 years covering California, Arizona, Nevada - about 50 reservations. Went to fiesta committee to identify himself and seek cooperation, offering to work with committeemen. Offer was flatly refused. Told he was not wanted. Committee later said they didn't want any officer interfering with anyone selling liquor. Told him to stay in fiesta grounds and not make arrests or he could not stay. One man arrested for bringing liquor onto reservation and giving it to Indians - this man was white. Read telegram from Commissioner Collier verifying his authority. Had arranged with Miss McGair and Superintendent Ellis that Indian police would be recommended by tribe first; Dave Navarro appointed on Santa Rosa Reservation following this procedure.",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "Adam Castillo",
+      "witness_title": "Saboba Mission Indian, representative of Mission Indian Federation",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate subcommittee",
+      "location": "hearing room",
+      "date": "unknown",
+      "subject": "Reservation boundary lines, California Indians' Court of Claims case, attorney general representation, Indian police selection, Bureau of Indian Affairs conduct",
+      "key_claims": "Represents many tribes in San Diego and Riverside Counties, approximately 2,500 in Mission Indian Federation. Government failed to show Indians true boundaries of reservations; Indians have lost corners and don't know what land belongs to them. Requests lines be retraced. Government authorized attorney general to file suit; Attorney General Webb filed for $12,800,000. Collier's magazine stated Indians would only get $6,000,000 which would be only $250-300 per person for 23,000 California Indians. Indians sent delegates to Washington spending $400-500. Indians want their own attorney; object to defendant hiring attorney for plaintiff. Attorney General has never consulted with Indians and Indians have no way to consult with him. Indians believe Attorney General wants to settle for $6,000,000. Indians want case handled in Court of Claims. Government Indian police are hand-picked by Indian agent without Indian voice; police say they work for Government not Indians. Mission Indian Federation engaged attorney Mr. Butler in Washington. Case involves Temecula and Santa Isabel treaties covering San Diego and Riverside Counties.",
+      "questioner": "The Chairman, Senator Thomas"
+    },
+    {
+      "witness": "Rivera Crawford Splivalo",
+      "witness_title": "State director of social welfare",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate subcommittee",
+      "location": "hearing room",
+      "date": "unknown",
+      "subject": "Attorney General Webb's cooperation with California Indians",
+      "key_claims": "Speaking on behalf of Attorney General Webb: When Senator Wheeler wrote regarding the investigation, Webb sent for her and expressed his willingness and cooperation as far as Indians are concerned, and his anxiety to work for them in every possible way.",
+      "questioner": "none identified"
+    },
+    {
+      "witness": "Mr. Miguel Estudillo",
+      "witness_title": "Attorney, Riverside",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate subcommittee",
+      "location": "hearing room",
+      "date": "unknown",
+      "subject": "Character of Attorney General Webb",
+      "key_claims": "Has been friend of California Indians for years. Knows Attorney General Webb and worked with him when anti-alien law was passed in California. Webb has been elected term after term for nearly 30 years. People of California have confidence in Webb. Vouches for Webb as honest man and able prosecutor.",
+      "questioner": "none identified"
+    },
+    {
+      "witness": "Purl Willis",
+      "witness_title": "Indian advocate, close contact with Mission Indians",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate subcommittee",
+      "location": "hearing room",
+      "date": "unknown",
+      "subject": "Mission Indians' cooperation with new agent Dady; treaty case; fiesta incident; bureau employee misconduct",
+      "key_claims": "Last July Mission Indians sent through Castillo a letter to newly appointed Dady offering whole-hearted cooperation. Willis introduced Dady to Indians who clapped in joy. Has shorthand notes of the meeting. Indians raised issues of treaties, Indian policemen/physical enslavement. Committee previously recommended removal of superintendent and transfer, also Miss McGair, also field agent at Campo where child starved to death; same bureau employees still in place. Agent did not wait to hear Indians' discussion of matters affecting them. Willis sent copy of endorsement letter to Collier who requested Indians' endorsement for President. Visited Attorney General with Mr. Ness; AG was interested but nothing accomplished; AG stated he would step aside if Indians could have their own attorney. After turndown by superintendent, Collier's magazine stated conflict in favor of Mission Indians would probably be $6,000,000, further inciting Indians.",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "Mr. Dady",
+      "witness_title": "Superintendent",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate subcommittee",
+      "location": "hearing room",
+      "date": "unknown",
+      "subject": "Indian police appointment; his presence at reservation incident; E.C.W. program",
+      "key_claims": "Was not present at reservation during the incident described. Rieger was there as new E.C.W. employee. Two Indian policemen appointed: one is spokesman of reservation; other was appointed by spokesman. Chief Myers is one appointee. Committed to carrying out plan of tribal recommendation for police appointments during his administration.",
+      "questioner": "The Chairman"
+    },
+    {
+      "witness": "Chief Myers",
+      "witness_title": "Indian policeman",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate subcommittee",
+      "location": "hearing room",
+      "date": "unknown",
+      "subject": "Identity as Indian policeman",
+      "key_claims": "Confirmed he is an Indian policeman.",
+      "questioner": "The Chairman"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

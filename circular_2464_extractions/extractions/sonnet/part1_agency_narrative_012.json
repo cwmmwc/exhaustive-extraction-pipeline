@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_agency_narrative_012",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "95",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charging Iron Shooter",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. D.",
+    "Allotment number": "156",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No application on file for this patent",
+    "Recorded patent": "The patent was recorded March 5, 1919 by C. Abourezk on February 27, 1919",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Land was mortgaged for $3,000; then conveyed by deed signed by Charging Iron Shooter and Martha Iron Shooter to John N. Sturdevant for $5,300.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "January 11, 1919",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 658785 issued; south half of section 30, township 40, range 27; receipt for patent signed by allottee February 7, 1919; Indian Office form letter dated October 5, 1918 states his application has been approved; conveyance dated March 24, 1919; also signed by Martha Iron Shooter; this man is a full-blood; it is not understood how he would come in on the so-called forced patent",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2128,
+    "output_tokens": 414
+  },
+  "elapsed": 4.7
+}

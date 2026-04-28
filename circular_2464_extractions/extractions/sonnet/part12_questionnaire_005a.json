@@ -1,0 +1,29 @@
+{
+  "document_id": "part12_questionnaire_005a",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "10-11",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Warren Real Rider",
+    "Tribe/Reservation": "Pawnee County, Oklahoma (Pawnee Agency)",
+    "Post Office Address": "Pawnee, Oklahoma",
+    "Allotment number": "226",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes, filed for record by allottee",
+    "Sold/Mortgaged": "Land sold for $2000",
+    "Buyer": "Sold to C. E. Vandervoort for $2000 which was a good price at that time. Did not owe purchaser any money.",
+    "Tax burden forced sale/Mortgage": "Has any of the land been sold for debt or taxes? no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Nov. 13, 1917",
+    "Gender": "Male",
+    "Age": "48 years",
+    "Occupation/Income": "No income from any source. Shares in Pawnee annuity.",
+    "NOTES": "Good health. No property or money accumulated. Wife and two children dependent upon him. Date and manner of delivery of patent: 1917, Agency office. No evidence of fraud appears to have been practiced in this case. Notarized November 26, 1928; commission expires Jan. 31, 1929. | Split from bundled record part12_questionnaire_005 on 2026-04-27. Bundled extraction returned two records as a list; promoted to standalone records. Companion record: part12_questionnaire_005b (Jesse Peters).",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {},
+  "elapsed": 0
+}

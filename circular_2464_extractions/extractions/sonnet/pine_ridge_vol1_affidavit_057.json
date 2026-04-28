@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_057",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "72",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Nora Parkhurst",
+    "Tribe/Reservation": "Beltrami County, Minnesota (likely Red Lake or Leech Lake area)",
+    "Post Office Address": "Ponemah, Minnesota",
+    "Allotment number": "834",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she did apply for patent-in-fee, but she received her patent-in-fee, without request. Deponent further states that she made no protest",
+    "Recorded patent": "recorded in Pennington County, 1920",
+    "Sold/Mortgaged": "the land was mortgaged by herself, and that said mortgage was foreclosed",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1919",
+    "Gender": "Female",
+    "Age": "34 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "She has seven children, five of whom are now attending the boarding school; her health has improved to some extent and she has or always has had comfortable means; she has received no aid from the Government, State, or County at any time; she was not defrauded of her property and the money she received for the land was well spent and satisfactory consideration; the Indian Office denied her [some request, text unclear]; affidavit sworn before notary in May 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2216,
+    "output_tokens": 397
+  },
+  "elapsed": 4.8
+}

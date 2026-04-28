@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_077",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "94",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Frank Carlow",
+    "Tribe/Reservation": "Crow Agency",
+    "Post Office Address": "Crow Agency, Montana",
+    "Allotment number": "1071",
+    "Cancelled": "not stated",
+    "Refused/Protested": "This patent was issued against my wishes and the first I knew of the matter was when the patent reached me at Camp Kearney California.",
+    "Recorded patent": "recorded by the Superintendent at Martin, S. Dak.",
+    "Sold/Mortgaged": "The land was sold on March 15, 1920. The land never mortgaged.",
+    "Buyer": "sold to a Mr. Schulz of Martin S. Dak., at $15.00 per acre",
+    "Tax burden forced sale/Mortgage": "I was forced to sell the land for what ever I could get for it in order to pay the taxes, which had been accumulating for three and half years. Received $15.00 per acre, which I did not consider fair price, but sold on account of taxes accumulating and necessity of paying same.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "June 1918",
+    "Gender": "Male",
+    "Age": "34 years old",
+    "Occupation/Income": "self supporting, own my own home",
+    "NOTES": "Patent was sent to him at Camp Kearney, California, sent by registered mail; three years taxes paid from proceeds of sale; in good physical condition and in fair financial condition; persons depended upon him: wife, child, and mother in law; document received at Pine Ridge Agency Jan 7, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2340,
+    "output_tokens": 438
+  },
+  "elapsed": 7.2
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_122",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "28",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Hermos Merrivall",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, So. Dak.",
+    "Allotment number": "315",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want it, but that he receipted for it and took it because he was told in the Agency Office that he would have to pay taxes on the land or lose it if he didnt take it",
+    "Recorded patent": "had it recorded at Hot Springs, So. Dak.",
+    "Sold/Mortgaged": "he has not deeded or mortgaged any part of his land, and that it was sold for taxes and he redeemed it and that later it was sold again and he did not redeem it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "it was sold for taxes and he redeemed it and that later it was sold again and he did not redeem it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "32 years old",
+    "Occupation/Income": "farming on his fathers allotment for a living",
+    "NOTES": "mentally competent and in fair health; broke all the time and has a hard time getting along; has not received any aid from the Government, County or State since his patent was issued; mother, wife and two children are dependent on him for support; document subscribed and sworn November 2, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2245,
+    "output_tokens": 415
+  },
+  "elapsed": 8.9
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_004",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "8",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Harry Brown",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Norris, So. Dak.",
+    "Allotment number": "1872",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee, but refused to take it until he was repeatedly advised by the Superintendent that if he did not take it and pay the taxes that the land would be sold to pay them",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "he still owns the land he got from his mother",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "he has paid the taxes until 2 years ago, but that he can not pay them and must have aid from the Government or he will lose the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "38 years old",
+    "Occupation/Income": "he makes a living by common labor, making about $300.00 per year",
+    "NOTES": "mentally competent and in poor health; has a wife and five children to support; has received no aid from the Government, State or County since he was granted a patent in fee; exchanged his land for 160 acres of the allotment of his mother, which she held under a forced patent; document sworn December 5, 1928; County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2237,
+    "output_tokens": 402
+  },
+  "elapsed": 4.6
+}

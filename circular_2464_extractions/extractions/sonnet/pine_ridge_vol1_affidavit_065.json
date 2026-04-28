@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_065",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "80",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Samuel Lessert, Junior",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Martin, South Dakota",
+    "Allotment number": "967",
+    "Cancelled": "not stated",
+    "Refused/Protested": "he did not want this patent in fee, as he did not want to pay taxes; that he was told that, if he did not accept it, and keep his taxes up, it would be taxed just the same, and later sold for taxes, so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold his 160 acre allotment",
+    "Buyer": "H. B. Cherry, of Martin, South Dakota, for the sum of $2500.00 cash",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Male",
+    "Age": "31 years old",
+    "Occupation/Income": "farming, which is his only income",
+    "NOTES": "mentally competent; good health; has a wife and one child to support; wife and child have only fair health; did not sell his place for any debts incurred prior to receiving the patent in fee; considers he received a fair price for his allotment, but nothing more; has never received any aid from the County, State nor the United States Government; land described as SE, Sec. 19, T.37N., R.39W., of the 6th P.M., in South Dakota; document reference numbers 2244 20/4",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2315,
+    "output_tokens": 445
+  },
+  "elapsed": 6.1
+}

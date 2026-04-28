@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_002",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "7",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lucy Provost",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Batesland, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent to her 480 acre allotment at the time she received it; but it was mailed to her through the Pine Ridge Agency, and, as she understood it would be taxed against her at any rate, she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged the place to Ed Ross, of Gordon, Nebraska, for $1600.00, in 1921, Ross foreclosed on the allotment, paying the taxes",
+    "Buyer": "Mortgaged to Ed Ross of Gordon, Nebraska for $1600.00; Ross foreclosed in 1921",
+    "Tax burden forced sale/Mortgage": "got behind in taxes, and, in 1920, she mortgaged the place to Ed Ross, of Gordon, Nebraska, for $1600.00, in 1921, Ross foreclosed on the allotment, paying the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "49 years old",
+    "Occupation/Income": "husband's only income is derived by working at common labor, which is his only income",
+    "NOTES": "Document No. 45; mentally incompetent; left side is paralyzed and had three ribs removed, cannot do her house work; has five small children; husband's health is only fair and supports the family; has never received any aid from the County, State or United States Government; affidavit subscribed and sworn before Notary Public on 24th of November, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2244,
+    "output_tokens": 487
+  },
+  "elapsed": 7.6
+}

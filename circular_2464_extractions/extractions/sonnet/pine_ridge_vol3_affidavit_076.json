@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_076",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "102",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lena Brown Bull\u2014nee Glenn",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Kyle, South Dakota",
+    "Allotment number": "5844",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 160 acre allotment at the time it was issued, on account of not wanting to pay taxes, but she was informed by the Indian Agency that it was reported to the tax collector; that she would either have the taxes to pay, or that it would be sold for taxes after so long a time; so she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold her allotment, in 1920, for $900.00 cash",
+    "Buyer": "John Short, of Potato Creek, South Dakota, for $900.00 cash",
+    "Tax burden forced sale/Mortgage": "she thinks he paid the taxes for this one year she held her patent in fee",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "38 years old",
+    "Occupation/Income": "both he and she work what they can for a neighboring farmer, and this is the only source of income they have",
+    "NOTES": "Mentally competent, has good health except that she has rheumatism; has three children to support, and they have good health; husband has poor health as he has tuberculosis and cannot work much; deponent also receives a monthly ration from the United States Government; document subscribed November 24, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2273,
+    "output_tokens": 449
+  },
+  "elapsed": 4.8
+}

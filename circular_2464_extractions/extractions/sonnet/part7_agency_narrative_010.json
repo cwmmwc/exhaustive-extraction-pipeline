@@ -1,0 +1,33 @@
+{
+  "document_id": "part7_agency_narrative_010",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "20",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Carrie Clara Huggins (Longcor)",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. D.",
+    "Allotment number": "2276",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "patent was recorded March 22, 1919, by Carrie Longcor",
+    "Sold/Mortgaged": "the land is still in the name of the allottee",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "There are no liens or any judgments against the land except $87.98 for the 1928 taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612720 issued; Northwest quarter section 2, township 95, north of range 78; receipt for patent was signed by the allottee June 13, 1921; document dated 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2052,
+    "output_tokens": 339
+  },
+  "elapsed": 4.4,
+  "retry_count": 1
+}

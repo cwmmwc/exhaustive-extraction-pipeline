@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_126",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "151",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alma A. Sauser (formerly Alma A. Wells)",
+    "Tribe/Reservation": "Pine Ridge Sioux Reservation",
+    "Post Office Address": "not stated",
+    "Allotment number": "3911",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee and accepted it under protest because she was told that if she did not accept it and keep up the taxes that the land would be sold to satisfy them",
+    "Recorded patent": "recorded in the office of the Register of Deeds of Jackson County, South Dakota, April 29, 1919 in Book C of patents on page 87",
+    "Sold/Mortgaged": "mortgaged to the Farmers State Bank of Kadoka, South Dakota, for approximately $2500.00 sometime during the year 1919; could not pay the mortgage so it was foreclosed sometime during the year 1922 and she has lost her land",
+    "Buyer": "Farmers State Bank of Kadoka, South Dakota (foreclosed on mortgage of approximately $2500.00)",
+    "Tax burden forced sale/Mortgage": "could not raise the money to keep up the taxes on said land so that said land was mortgaged",
+    "Trust Patent Date": "January 12, 1911",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Female",
+    "Age": "39 years of age",
+    "Occupation/Income": "has no special training to carry on any employment sufficiently remunerative to support said children and if employment is sought must necessarily perform tasks of labor for which the compensation is slight and insufficient to support said children",
+    "NOTES": "Patent # 625388; Southwest quarter (SW\u00bc) of section twelve (12), Township forty-three (43) North, Range thirty-six (36) West of the 6th P.M., South Dakota; mentally competent, health is just fair; has no land and lives with her children; has five minor children dependent upon her for support; received no aid from Government, State or County since fee patent was issued; all she received from her land was the original mortgage and used most of that to pay debts not contracted before the patent was issued; was not actually defrauded but money received was less than 50% of real worth after paying taxes and other debts; land valued at approximately $5000.00 at time of mortgage; affiant states she has been damaged to the extent of $5000.00; document subscribed January 23, 1929, in Cedar County, Nebraska",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2858,
+    "output_tokens": 645
+  },
+  "elapsed": 10.9
+}

@@ -1,0 +1,42 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "N. Oklahoma",
+      "date": "1935-03-26",
+      "correspondent": "Asst. U.S. Atty.",
+      "correspondent_role": "incoming",
+      "case_name": "U.S. v. Ralph Hughes, Osage County, Treas'r et al.",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "Osage",
+      "subject": "Encloses two copies of motion filed this date",
+      "action_type": "enclosure",
+      "enclosures": "two copies of motion",
+      "routing_division": "Lands Div",
+      "routing_date": "1935-03-28",
+      "clerk_initials": "jt",
+      "processed_date": "1935-03-28"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. v. Ralph Hughes, Osage County, Treas'r et al.",
+      "file_number": "90-2-5-10",
+      "jurisdiction": "N. Oklahoma",
+      "case_type": "tax_recovery",
+      "allottee_name": "",
+      "tribe_or_reservation": "Osage",
+      "county": "Osage"
+    }
+  ],
+  "persons": [
+    {
+      "name": "Ralph Hughes",
+      "role": "defendant",
+      "tribe": "",
+      "allottee_number": ""
+    }
+  ]
+}

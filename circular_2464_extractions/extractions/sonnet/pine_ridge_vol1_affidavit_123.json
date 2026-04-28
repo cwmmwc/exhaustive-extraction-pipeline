@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_123",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "68",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Florence Twiis Cuny",
+    "Tribe/Reservation": "Shannon County, South Dakota (likely Pine Ridge or Rosebud)",
+    "Post Office Address": "Rockyford, So. Dak.",
+    "Allotment number": "762",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee and refused to accept it at first, but that she was told that if she did not take it and pay the taxes that she would lose the land so, on the advise of the Farmer and Superintendent she took it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Charles I. Moore & Co., Galena, Ill. for $600.00; sold to Ben Gall of Scenic, So. Dak. for $3000.00, he to pay all back taxes and pay the mortgage",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes so she mortgaged it; found that she could not pay the mortgage or taxes so she had to sell the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "36 years old",
+    "Occupation/Income": "supported by her husband, who does common labor for a living",
+    "NOTES": "Has seven children depending on her; has received no aid from the Government, State or County since she was granted a patent; bought 160 acres of fair land with money from her allotment but has paid no taxes and does not know as to the title at this time; document references No. 818 and A22e4e; sworn December 3, 1928; State of South Dakota, County of Shannon | Allotment number recovered from source page review of original bundled PDF header, 2026-04-21.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2294,
+    "output_tokens": 483
+  },
+  "elapsed": 6.6
+}

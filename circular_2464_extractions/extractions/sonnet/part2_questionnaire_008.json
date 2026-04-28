@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_008",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "23",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ada McCloskey Whipple",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "Parmelee",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No, I didn't say anything to anybody; it was just forced on me.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I got a loan from Albert Nelson for $500.00, then I sold it to him because he said the taxes would be so high so I sold the land to him.",
+    "Buyer": "Albert Nelson",
+    "Tax burden forced sale/Mortgage": "he said the taxes would be so high so I sold the land to him",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1917",
+    "Gender": "Female",
+    "Age": "37",
+    "Occupation/Income": "Working out, doing house work. My husband works at odd jobs.",
+    "NOTES": "Patent delivered to allottee at her home by the government farmer; she did not go get it as she did not want it; husband handled the sale paperwork; allottee only signed papers and did not know the sale price; $500 loan used to buy milch cows and pigs; what little money she had left was used to buy a home in Parmelee; lived on allotment five years; two children, both married; superintendent named B. E. McKean; document notarized April 9, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2396,
+    "output_tokens": 415
+  },
+  "elapsed": 6.3
+}

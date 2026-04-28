@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_032",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "56",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Samual Charbonneau",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "3546",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded March 13, 1918 by C. L. Lice",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to David A. Hancock for $1600 (March 5, 1918), again mortgaged to David A. Hancock for $400 (May 29, 1918); land sold by sheriff foreclosure February 25, 1919; Charbonneau and wife conveyed land by deed to R. J. McAllister for $3500 (March 8, 1919)",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612672 issued; Northwest quarter section 14, township 36, north of range 26; receipt signed by allottee but not dated; sheriff sold land by foreclosure on account of the $400 mortgage",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2102,
+    "output_tokens": 395
+  },
+  "elapsed": 6.5
+}

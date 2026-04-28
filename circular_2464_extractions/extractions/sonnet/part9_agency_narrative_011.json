@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_011",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "19",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susie McCloskey (also Susan McCloskey Whipple)",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S.D.",
+    "Allotment number": "3212",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "recorded June 19, 1918, by the Volz Abstract Company",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Susan McCloskey Whipple and Charles Whipple conveyed the land by deed to William Assman for $3000",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612699 issued; South half of northeast quarter and north half of southeast quarter section 24, township 98, range 78; receipt for patent was signed by the allottee March 12, 1918; conveyance dated June 18, 1918",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2058,
+    "output_tokens": 348
+  },
+  "elapsed": 5.4
+}

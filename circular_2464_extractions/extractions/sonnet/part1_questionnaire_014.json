@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_014",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "37-40",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lucy Kincaid",
+    "Tribe/Reservation": "Rosebud Agency",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Never had any land patented",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "39 years old",
+    "Occupation/Income": "I farm some and raise cattle, raise good garden",
+    "NOTES": "Degree of blood: one half; married; attended school at St. Francis Mission for nine years; does not use intoxicants; in good physical condition; land described as south half of North-East quarter and North half of South-East quarter, Section 28, Township 99 N, Range 74 West, 5th P.M., valued at $6400.00; cultivates ten acres, balance pasture and hay land; has 10 head of horses, four milk cows, six hogs, 30 chickens; owes nobody and has no debts; no individual Indian money on credit; land not leased; has no other land; has managed her own business for 17 years without assistance of husband; wants patent in fee to obtain credit and purchase more stock; dependents listed: Johnio Kincaid, male, 5 months old; family allotments include Frankie Kincaid, male, 16 yrs, son, 160 acres; Effie Kincaid, female, 14, daughter, 160 acres; Hilda, female, 13, daughter; Clifford, male, 11, son; Rosa, female; Olie; Helen; Corine; application signed August 18, 1917; allotment located in Mellette Co. and Todd Co.; application covers all of allotment",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 3458,
+    "output_tokens": 544
+  },
+  "elapsed": 10.0
+}

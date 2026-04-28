@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_questionnaire_005",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "20",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susie McCloskey Whipple",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No, I said nothing, just accepted it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "my husband wanted to sell it to pay other obligations",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1917",
+    "Gender": "Female",
+    "Age": "35",
+    "Occupation/Income": "Taking in Washings",
+    "NOTES": "Patent given at the Cut Meat Issue Station by Mr. Gardner, government farmer. Did not sign a receipt for the patent. Husband sold land for $2,000.00; abstract cost $6.90; proceeds received by husband. Husband promised another quarter in place of it, which she never got. Husband and wife have separated. Four children, all dependent on her. Never made application for patent. Superintendent: E. E. McKean. Document dated April 9, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2290,
+    "output_tokens": 349
+  },
+  "elapsed": 5.6
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part13_questionnaire_004",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "7",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Belle Water",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "61",
+    "Cancelled": "N",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Was it filed for record? No",
+    "Sold/Mortgaged": "Has been mortgaged and sold.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Sold it to keep the mortgage from taking it. Was for a settlement of an old debt of $2000.00",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1917",
+    "Gender": "Female",
+    "Age": "50",
+    "Occupation/Income": "Has inherited int. that gave her about $5.00 per yr",
+    "NOTES": "Patent receipted for: No; Was it filed for record: No; Land sold for debt or taxes: Yes, All; consideration was settlement of an old debt of $2000.00; Mental and physical condition good; Financial condition very bad; Gov. or Co. has never helped; Patent No. 61391 referenced; Delivered by Sant.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2330,
+    "output_tokens": 333
+  },
+  "elapsed": 8.6
+}

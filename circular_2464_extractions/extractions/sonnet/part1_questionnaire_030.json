@@ -1,0 +1,33 @@
+{
+  "document_id": "part1_questionnaire_030",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "94",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Clara Bonser Monteau",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Crookston, Nebraska",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No, I took it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Taxes, were the only things against the land.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Female",
+    "Age": "36 years of age",
+    "Occupation/Income": "My husband works for the railroad.",
+    "NOTES": "Did not sign a receipt for the patent. Sold land for $2400.00, received in cash all at one time. Not satisfied with the sale; stated land was worth more. Did not apply for patent; patent was sent by mail. Six children, all living at home and all dependent on her. Subscribed and sworn before E. E. McKean, Superintendent, April 5, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2264,
+    "output_tokens": 331
+  },
+  "elapsed": 5.6,
+  "retry_count": 1
+}

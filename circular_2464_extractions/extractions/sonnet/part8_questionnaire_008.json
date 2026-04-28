@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_questionnaire_008",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "29",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Victoria Lapointe Meng",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No. Many years of the Indians had received theirs and I thought it too late to send it back.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold 80 acres; retained 80 acres; did not mortgage the remainder",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "June 1920",
+    "Gender": "Female",
+    "Age": "35",
+    "Occupation/Income": "My husband supports me.",
+    "NOTES": "Has two children, ages six and three; sold 80 acres for $2000.00 cash; retained 80 acres; land appraised at $6500 for the quarter and $3500 for the remaining 80 acres; pays $93 to $97 per year in taxes; assessor appraises land too high; later bought a new car for $1300.00 from the same man; no debts settled at time of sale; no other debts against the land; received patent in mail at home; satisfied with the sale; document references 'Yisterial Victoria Lapointe Collins' as an alternate name form; subscribed and sworn April 26, 1929; document number 2878",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2334,
+    "output_tokens": 420
+  },
+  "elapsed": 7.2
+}

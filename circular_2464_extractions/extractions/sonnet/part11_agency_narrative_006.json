@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_agency_narrative_006",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "69",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Peter St John",
+    "Tribe/Reservation": "Big Bend District",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Harry Grey made a loan to Peter St John before the patent was received and as soon as it was received he got a loan on the land and using this money he paid St John the balance for the land; at this time a man by the name of Jerome Summy has the land and assumed the $1800.00 mtg on the tract of land",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "File reference 5-1142; dated January 14, 1928; Harry Grey made a loan to Peter St John before patent was received; loan was a State loan of $1800.00; Jerome Summy assumed the $1800.00 mortgage; Harry Grey reportedly in prison for issuing bad checks at time of writing; records show land was selling for twice as much as the Indian received for his allotment at the time of sale",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2103,
+    "output_tokens": 392
+  },
+  "elapsed": 6.2
+}

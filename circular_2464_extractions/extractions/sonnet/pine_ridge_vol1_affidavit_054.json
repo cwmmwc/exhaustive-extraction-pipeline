@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_054",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "69",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lillie Dixon, nee Twiss",
+    "Tribe/Reservation": "Pine Ridge Agency (Shannon County, South Dakota)",
+    "Post Office Address": "Batesland, South Dakota",
+    "Allotment number": "820",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee, when she received it, under date of September 29, 1919, to the SW\u00bc, Sec. 9, T. 40N., R. 43W, of the 6th P.M., in South Dakota, as she did not want to pay taxes; but that she was forced to take it",
+    "Recorded patent": "the deed was never recorded in the County",
+    "Sold/Mortgaged": "in 1920, her husband, Gordon James Dixon, mortgaged her place to a Mr. Barker, of Brennan, South Dakota, for an old Ford car, which Mr. Barker priced at $250.00",
+    "Buyer": "Mortgaged to Mr. Barker, of Brennan, South Dakota, for an old Ford car priced at $250.00; Mr. Barker never foreclosed on this mortgage, which was due three or four years ago",
+    "Tax burden forced sale/Mortgage": "she has never paid any taxes on her land; the mortgage was for an old Ford car, not taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "32 years old",
+    "Occupation/Income": "her husband works at common labor to support her and the family",
+    "NOTES": "Deponent states she considers she still owns the land; land is described as very good land and she can get a renter for it; has pretty poor health, has doctored for the last two years, having been in the hospital; mother of three children who have pretty good health; has never received any assistance from the United States Government, nor the State or County governments; this car has never been paid for; document signed June 3, 1930",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2360,
+    "output_tokens": 550
+  },
+  "elapsed": 8.8
+}

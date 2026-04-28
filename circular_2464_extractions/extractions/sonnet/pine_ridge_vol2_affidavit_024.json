@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_024",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "31",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rosa Bad Wound, nee Brown",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Wanblee, S.D.",
+    "Allotment number": "2295",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she did not want a patent in fee for her land but was told that unless she took the patent in fee and paid the taxes that she would loose the land, so she signed the receipt for the patent in fee and sent it to the Agency",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "her father William Brown took the patent in fee and sold the land to some man that she does not know",
+    "Tax burden forced sale/Mortgage": "was told that unless she took the patent in fee and paid the taxes that she would loose the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "33 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Has three small children to care for; has not received any aid from the Government, State or County since she received her patent in fee; in poor health, suffering from kidney trouble and lung trouble and is not able to do much work; lives with her husband who is an Indian Police and lives near the Station and has no land to farm; all she was to receive was $500.00 and two head of cows but was told the cows had died and all she got out of the land was $500.00; document sworn December 13, 1928, in Washabaugh County, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2411,
+    "output_tokens": 447
+  },
+  "elapsed": 6.2
+}

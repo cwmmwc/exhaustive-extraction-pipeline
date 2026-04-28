@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_014",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "20",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Hattie Swallow",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Martin, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee to her 320 acre allotment at the time it was issued, but she was told that, if she did not take it, taxes would be assessed against it, it would at last be sold for taxes; that the patent was mailed to her, and she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1919, she sold one quarter of her allotment to J. C. Snyder, of Martin, South Dakota, for $2400.00; then, in 1922, being behind in taxes on her remaining quarter, she mortgaged it to The Iphwick Loan Company, for $600.00, then being unable to pay off this mortgage, or the interest on the first payment even, she sold it to William Anderson, of Martin, South Dakota",
+    "Buyer": "J. C. Snyder, of Martin, South Dakota, for $2400.00 (one quarter); William Anderson, of Martin, South Dakota \u2014 he paying off the mortgage, back taxes, and gave her $600.00 in cash and a car, valued at $800.00, for her remaining interest in the place",
+    "Tax burden forced sale/Mortgage": "being behind in taxes on her remaining quarter, she mortgaged it to The Iphwick Loan Company, for $600.00, then being unable to pay off this mortgage, or the interest on the first payment even, she sold it to William Anderson",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "54 years old",
+    "Occupation/Income": "she sews and does domestic work for other people for her living, which is her only income",
+    "NOTES": "Mentally competent; health is poor since about a year ago, when she underwent a serious operation; has been supporting herself for the last nine years, having been separated from her husband; has one adopted child to support, who apparently has good health but comes of tubercular parents; has never received any help from the County, State nor the United States Government; allotment was 320 acres; document number F No. 2161; sworn December 6, 1928; County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2460,
+    "output_tokens": 645
+  },
+  "elapsed": 6.6
+}

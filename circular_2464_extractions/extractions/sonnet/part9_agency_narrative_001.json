@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_001",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "2",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Julia Turgeon",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S.D.",
+    "Allotment number": "5154",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent had not been recorded.",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "1927 and prior taxes had been paid but the 1928 taxes, amounting to $48.04 had not been paid on that date",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612855 issued; Southwest quarter of Southeast quarter section 50, Northwest quarter of northeast quarter, and East half of Northwest quarter section 52, township 97, range 69; receipt for patent was signed in February 1921 by the allottee; document dated June 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2051,
+    "output_tokens": 333
+  },
+  "elapsed": 5.5
+}

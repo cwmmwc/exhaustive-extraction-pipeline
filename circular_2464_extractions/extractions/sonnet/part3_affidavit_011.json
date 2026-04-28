@@ -1,0 +1,33 @@
+{
+  "document_id": "part3_affidavit_011",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "80",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Nora Tway Sandery",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Chadron, Nebr.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee, but took it on the advise of the Superintendent of the Pine Ridge reservation he having told her that if she did not take the patent and pay the taxes that the land would be sold to satisfy them",
+    "Recorded patent": "she did not have her patent recorded and that she does not think it has been",
+    "Sold/Mortgaged": "sold her land",
+    "Buyer": "a man whose name she does not know, for $2550.00",
+    "Tax burden forced sale/Mortgage": "compelled to sell it for she could not pay the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "34 years old",
+    "Occupation/Income": "husband is a clerk in a grocery store and they depend on that for a living",
+    "NOTES": "mentally competent and in fair health; has no home and has to rent a home; has four small children depending on her for support, none of them having been allotted; document reference number 76999; subscribed and sworn November 9, 1928, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2225,
+    "output_tokens": 394
+  },
+  "elapsed": 5.7,
+  "retry_count": 1
+}

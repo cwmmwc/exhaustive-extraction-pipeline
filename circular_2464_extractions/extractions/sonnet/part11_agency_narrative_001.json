@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_agency_narrative_001",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "17",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Byron D. Wilde",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Elbowoods, N. D.",
+    "Allotment number": "712",
+    "Cancelled": "Not cancelled",
+    "Refused/Protested": "No protest made by allottee and no signed receipt on file.",
+    "Recorded patent": "The patent was recorded by letter from this office addressed to the County Auditor, signed by H. J. Davis, clerk.",
+    "Sold/Mortgaged": "No part of the land has been sold or mortgaged.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Taxes have been assessed against the land since Dec. 13, 1921.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "12-10-1917",
+    "Gender": "Male",
+    "Age": "fifty-one years of age",
+    "Occupation/Income": "engaged in stock raising and farming",
+    "NOTES": "Fee patent No. 611264; patent was delivered to patentee by F. E. Brandon, personally, 11-22-17; allottee is married and makes his home on this reservation; has received patents to other lands; is thoroughly competent to manage his own affairs and is one of the most progressive members of this reservation; has handled the property covered by patent in fees in a very creditable manner; has not been defrauded; has his wife and three adopted children; has not received support from the government, other than the benefits received by the entire tribe; is self-supporting; document dated December 27, 1928; Circular No. 2464.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2285,
+    "output_tokens": 443
+  },
+  "elapsed": 5.6
+}

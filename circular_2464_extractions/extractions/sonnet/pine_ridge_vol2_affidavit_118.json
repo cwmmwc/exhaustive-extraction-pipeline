@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_118",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "139",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Nelson Goings",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "3744",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent to his 159.08 acre allotment when it was issued, September 29, 1919, but he was informed that, if he did not accept the patent and pay the taxes, it would be taxed at any rate, and later sold for the taxes, so he took the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold his allotment to George Gibbs, of Hay Springs, Nebraska, for $1000.00, receiving $400.00 in cash, in trade, 8 head of horses, valued at $50.00 each, and a Ford automobile, valued at $200.00",
+    "Buyer": "George Gibbs, of Hay Springs, Nebraska, for $1000.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Male",
+    "Age": "32 years old",
+    "Occupation/Income": "works at common labor for the United States Government; and that this labor is his only income",
+    "NOTES": "did not sell his allotment for any debts incurred prior to receiving the patent in fee; considers he received a good price for his allotment as it borders the Bad Lands; has a wife and two children to support; family have good health; has never received any help from the County, State nor the United States Government; document dated March 16, 1929; Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2311,
+    "output_tokens": 477
+  },
+  "elapsed": 7.3
+}

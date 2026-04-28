@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_questionnaire_009",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "31",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rose LaPointe Good Eagle",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2879",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Not just at that time but I did after wards. I had Reverend Barker wrute ti Congressman Williamson inquiring whether the patent could be cancelled or whether I could get the taxes I paid refunded. The Congressman answered that it was impossible to do either as it had been issued and it was mine, I was a citizen. I have the letter at home.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold it after I received the information that I could not have the patent cancelled or the taxes refunded. I sold 40 acres at a time the first in 1925 the second in February 1926, the third in June 1926 and the last 40 in November 1926.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I should like to have those taxes amounting to something more than $300 refunded to me and then I would be satisfied with the whole deal.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "spring of 1920",
+    "Gender": "Female",
+    "Age": "31",
+    "Occupation/Income": "Both myself and husband work.",
+    "NOTES": "Received patent through the mail while at home. Got $3650.00 for the land. Has one child, 9 years old. In good health. Did not ask for the patent. Paid taxes of more than $300 and sought to have them refunded or patent cancelled; Congressman Williamson responded that neither was possible. Subscribed and sworn before notary April 26, 1929; notary commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2387,
+    "output_tokens": 494
+  },
+  "elapsed": 9.3
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_100",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "128",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Josie Pourier",
+    "Tribe/Reservation": "Shannon County (Pine Ridge area, South Dakota)",
+    "Post Office Address": "Porcupine, So. Dak",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee, but wanted the land held in trust, but that she was told that the patent had been reported to the tax commission, and that whether or not she took the patent, that the land would be taxed and sold if they were not paid",
+    "Recorded patent": "she did not have the patent recorded, and does not know who did",
+    "Sold/Mortgaged": "lost the land",
+    "Buyer": "borrowed $1500.00 from Peters & co, St. Paul, Minn. to pay taxes, and couldn't pay it back so lost the land. This was in 1920.",
+    "Tax burden forced sale/Mortgage": "borrowed $1500.00 from Peters & co, St. Paul, Minn. to pay taxes, and I couldn't pay it back so I lost the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "52 years old",
+    "Occupation/Income": "supported by her husband",
+    "NOTES": "mentally competent; health is poor owing to stomach trouble; has no property of any kind; has a husband and six minor children supported by herself and husband; has not received any aid from the Government, State or County since the patent was issued; document number possibly 769%; subscribed and sworn October 31, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2271,
+    "output_tokens": 450
+  },
+  "elapsed": 5.3
+}

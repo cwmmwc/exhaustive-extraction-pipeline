@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_098",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "126",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Raymond Big Crow",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "7514",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his allotment, as he did not want to pay taxes; but his faimer and the people at the Indian Agency advised him to take it, and he did so",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it, in 1920, to Mr. Sam Pelley, of Oelrichs, South Dakota, receiving $500.00 in cash, the place being free from all encumbrance, including taxes",
+    "Buyer": "Mr. Sam Pelley, of Oelrichs, South Dakota, for $500.00 in cash",
+    "Tax burden forced sale/Mortgage": "did not want to continue paying taxes on this allotment, and sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "35 years old",
+    "Occupation/Income": "only income is what he makes by renting his mothing place, receiving a share of what he raises",
+    "NOTES": "mentally competent, health in good condition; financial standing poor; only property is a few horses and other chattels; has never received any aid from the County or Government; has a wife, seven children and a step-son all depending upon him for support; health of entire family is good; he considers $500.00 was a fair price for the time, taking in account the quality of the land; document contains a pronoun inconsistency ('she is 35 years old' in the sworn statement but 'his' used throughout)",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2254,
+    "output_tokens": 478
+  },
+  "elapsed": 6.7
+}

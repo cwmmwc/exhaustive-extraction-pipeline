@@ -1,0 +1,33 @@
+{
+  "document_id": "part9_agency_narrative_002",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "5",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Vestal Emery",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S.D.",
+    "Allotment number": "3155",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "recorded March 21, 1918, but records do not show by whom",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Vital Emery conveyed the land by deed to Adolph Stamer for $1.00 and other valuable consideration",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612812 issued; South half of southeast quarter section 9, north half of northeast quarter section 16, township 97, north of range 69; receipt for patent signed February 14, 1918, by the allottee; conveyance dated March 4, 1918; affidavit on record showing that Vestal and Vital Emery are one and the same person",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2061,
+    "output_tokens": 367
+  },
+  "elapsed": 4.9,
+  "retry_count": 1
+}

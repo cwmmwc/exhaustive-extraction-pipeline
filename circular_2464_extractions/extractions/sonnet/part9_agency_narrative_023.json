@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_023",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "40",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Emily Colomb",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "3500",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded March 3, 1918 by McManigal",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged by Emily Colomb to the Royal Union Mutual Life Insurance Company; receipt March 28, 1918, for $2500; mortgage released July 8, 1925. Deed by Emily Colombe dated July 18, 1918, conveyed the land to Emma Colombo for $6600.",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917 (patent issued); signed by allottee February 13, 1918",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612766 issued December 29, 1917; Northeast quarter section 15, township 100, range 77; fee patent signed by allottee February 13, 1918; receipt for patent signed March 28, 1918; mortgage to Royal Union Mutual Life Insurance Company for $2500, released July 8, 1925; conveyance to Emma Colombo for $6600 dated July 18, 1918; document dated 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2053,
+    "output_tokens": 441
+  },
+  "elapsed": 7.3
+}

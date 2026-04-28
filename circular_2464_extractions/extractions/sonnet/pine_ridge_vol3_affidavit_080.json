@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_080",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "106",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jake Herman",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Interior, South Dakota",
+    "Allotment number": "5926",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 160 acre allotment at the time he got it, for he did not want to pay taxes; but that he accepted it on advice of the Indian Agency to do so",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold it",
+    "Buyer": "sold to W.E. Kieffe, of Kyle, South Dakota, for $2000.00 cash, Mr. Kieffe paying the taxes",
+    "Tax burden forced sale/Mortgage": "in 1920, the taxes being back on it, he sold it to W.E. Kieffe, of Kyle, South Dakota, for $2000.00 cash, Mr. Kieffe paying the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "35 years old",
+    "Occupation/Income": "farms for a living, besides working for neighbors at odd times",
+    "NOTES": "mentally competent, has good health; married with a wife and two children to support; family has good health; has never received any help from the County or Government; sale occurred in 1920; affidavit sworn November 21, 1928, Shannon County, South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2192,
+    "output_tokens": 414
+  },
+  "elapsed": 5.1
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_052",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "66",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Frank Twiss",
+    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Post Office Address": "Porcupine, South Dakota",
+    "Allotment number": "724",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 320 acre allotment at the time he got it, as he did not want to pay taxes; but the Indian Agency informed him that, if he did not take it over, the land would be assessed for taxes, sold for them, too; so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged his allotment to J.C. Jordan, of Gordon, Nebraska, for $150.00; that he never made this payment; that, in 1923, there being $150.00 more against the allotment in taxes, Jordan paid them, and foreclosed on the land",
+    "Buyer": "J.C. Jordan, of Gordon, Nebraska; mortgage for $150.00; foreclosed in 1923; Jordan took the half section for himself",
+    "Tax burden forced sale/Mortgage": "got behind in the taxes, and, in 1919, he mortgaged his allotment; in 1923, there being $150.00 more against the allotment in taxes, Jordan paid them, and foreclosed on the land",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "65 years old",
+    "Occupation/Income": "only income is what he can make by farm labor, this being his only income",
+    "NOTES": "Mentally competent, has poor health, having stomach trouble; has a wife to support, and she has poor health, being bothered with rheumatism; has no children nor grandchildren to support; he empowered Jordan to sell one quarter of the land to pay off the mortgage and accumulated taxes, but Jordan took the half section for himself instead; deponent considers he got less than nothing for his allotment; has never received any help from the County, State nor the United States Government; document dated November 27, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2357,
+    "output_tokens": 568
+  },
+  "elapsed": 7.2
+}

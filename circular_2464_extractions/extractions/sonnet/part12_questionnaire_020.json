@@ -1,0 +1,33 @@
+{
+  "document_id": "part12_questionnaire_020",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "46-47",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Grant Cleghorn",
+    "Tribe/Reservation": "Pawnee County, Okla. / Otoe Agency",
+    "Post Office Address": "not stated",
+    "Allotment number": "322",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest. The allottee blames only the Government for the issuance of the patent against his protest. He states that he did not want the patent issued.",
+    "Recorded patent": "Yes, filed for record by Allottee",
+    "Sold/Mortgaged": "Mortgaged for $1000 and sold for $4000.00",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "Mortgage released by allottee; Has any of the land been sold for debt or taxes? no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 15, 1917",
+    "Gender": "Male",
+    "Age": "38 years",
+    "Occupation/Income": "No income whatever and no contributions.",
+    "NOTES": "Patent delivered at Otoe Agency; receipted for: Yes; wife and four children dependent upon the Indian for support; good health, no money accumulated; both witnesses of Ponca City, Okla.; notarized November 22, 1928 in Kay County, Oklahoma; notary commission expires Aug. 3rd, 1931; allottee received $4000.00 which was described as a fair price at that time; sale probably in 1918",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2579,
+    "output_tokens": 417
+  },
+  "elapsed": 7.7,
+  "retry_count": 1
+}

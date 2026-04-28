@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_020",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "45",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jennie Wright",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "15042",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded May 20, 1921 by Carter State Bank",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "William M. Knude for $7000.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612745 issued; Northwest quarter, section 13, township 97, N. R. 79; receipt signed by allottee February 5, 1918; deed dated August 10, 1922, signed by Jennie and James Wright, conveyed the N/2 of Section 13, township 97, north of range 79 to William M. Knude for $7000.00 (this would include the Northwest quarter of section 13); document stamped Rosebud, S.D., JUN 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2039,
+    "output_tokens": 378
+  },
+  "elapsed": 5.6
+}

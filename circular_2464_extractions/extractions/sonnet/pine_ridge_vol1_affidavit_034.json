@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_034",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "45",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Pearl Frazier",
+    "Tribe/Reservation": "Pine Ridge Sioux",
+    "Post Office Address": "Gordon, Nebr.",
+    "Allotment number": "380",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she did not want to accept it and did not want to take it, but that she understood that if she did not take the patent that the land would be sold to satisfy the taxes",
+    "Recorded patent": "she had the patent recorded after she received it",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Sold to C. J. Hysham of Omaha, Nebr. for $1000 ($15.00 per acre), though she only received about $1600.00; mortgaged to Charles A. Bates of Martin, So. Dak. for $500.00 before the sale, which Mr. Hysham paid off",
+    "Tax burden forced sale/Mortgage": "she understood that if she did not take the patent that the land would be sold to satisfy the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "32 years old",
+    "Occupation/Income": "her husband is a painter and during the painting season makes a good living but the rest of the year they have a hard time",
+    "NOTES": "mentally sound and in good health; has a husband and five children; owns a house and lot in Gordon, Nebr. valued at about $800.00, mortgaged for $300.00; does not think she received a fair price for her land but tried to get more from several parties; Government, State, or County has contributed nothing to her support; land was not sold to pay an old debt; affidavit sworn October 30, 1928, Shannon County, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2440,
+    "output_tokens": 502
+  },
+  "elapsed": 7.7
+}

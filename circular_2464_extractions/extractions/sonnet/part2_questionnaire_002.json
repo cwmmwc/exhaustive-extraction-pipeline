@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_002",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "9",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Samuel Miller (deceased); Mary Haukaas Miller (deponent, wife/widow)",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Herrick (implied)",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "You do not know whether he protested the patent? No.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Yes he sold it.",
+    "Buyer": "John Gormley, then of Herrick",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male (Samuel Miller); Female (Mary Haukaas Miller)",
+    "Age": "not stated",
+    "Occupation/Income": "I am making garden (Mary Haukaas Miller)",
+    "NOTES": "Samuel Miller died April 21, 1929. Mary Haukaas Miller is his widow and deponent. Samuel Miller had eight living children. He deeded the land to Mary at one time, she deeded it back to him, and he then sold it to John Gormley of Herrick for a mortgage of $4500.00 plus additional consideration totaling $21,000.00 in all. Samuel also had a house in Herrick which he sold. Money was used to buy another place and 'spent a lot of it foolishly.' Mary states she has not been in good health. Subscribed and sworn before Jas. W. Crose, Notary Public, commission expires 4-28-32, on May 1, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2300,
+    "output_tokens": 448
+  },
+  "elapsed": 9.2
+}

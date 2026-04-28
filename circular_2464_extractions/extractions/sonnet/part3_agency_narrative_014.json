@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_014",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "30-31",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Julia Neiss",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded January 17, 1921 by Bert Ine.",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Conveyed by deed dated January 13, 1921 to Kenneth Sellers for $1.00 and other valuable consideration",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739617 issued; Southeast quarter of section 1, township 35, north of range 27; receipt for patent signed by the allottee April 2, 1920. Document also contains partial information for Allotment No. 1463 (Alphonse Charbonneau) and Allotment No. 1466, which appear to be separate records within the same document.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2294,
+    "output_tokens": 363
+  },
+  "elapsed": 6.5
+}

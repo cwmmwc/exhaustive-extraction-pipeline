@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_005",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "10",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Martha Irving",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her allotment for the reason that she did not want to pay any taxes on the land; but, on the advice of her farmer and the people in the Indian Office, at Pine Ridge, she accepted the patent in fee",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "sold to Mr. Joe Leedom, of Gordon Nebraska, for $5100.00, in 1921",
+    "Tax burden forced sale/Mortgage": "not wishing to pay taxes on this allotment, and, receiving a cash offer of $5100.00, in 1921, from Mr. Joe Leedom, of Gordon Nebraska, she accepted this offer",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "43 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "No. 63; husband managed the business of the land sale and looks after some of her business at present; she looks after some of it herself; health is good, but husband is in the last stages of tuberculosis and has been suffering from same for the last six years, hence he is not able to earn anything; they have nine minor children, all of whom are depending upon her for support; has never received any aid from the County or Government; document sworn November 10, 1928, County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2253,
+    "output_tokens": 453
+  },
+  "elapsed": 6.2
+}

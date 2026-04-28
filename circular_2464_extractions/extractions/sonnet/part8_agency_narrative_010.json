@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_agency_narrative_010",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "20",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rose Ross (Carpenter)",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2559",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded June 12, 1918, by William Ross",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Rose Ross Carpenter and William Carpenter conveyed the land by deed to Irene Huggins Ross for $1.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612796 issued; Northwest quarter section 1, township 95, north of range 77; receipt for patent signed February 14, 1918, by the allottee; conveyance dated June 12, 1918",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2021,
+    "output_tokens": 321
+  },
+  "elapsed": 4.8
+}

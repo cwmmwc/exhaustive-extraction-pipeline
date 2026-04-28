@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_020",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "36",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rosa Dubray",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "3463",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded by Todd County State Bank",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Todd County State Bank April 15, 1920 for $300; mortgaged May 28, 1920 to the Todd County State Bank for $1368; another mortgage by Rosa Dubray now Rosa Iron Shell and husband to Clano Realty Company for $300; on August 17, 1920, Rosa Dubray Iron Shell and husband conveyed by deed to E. R. Rusho for $3500",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739609 issued; Southeast quarter section 32, township 38, north of range 26; receipt for the patent was signed by the allottee April 2, 1920; Agent's contract to sell dated May 18, 1920, between Rosa Dubray and Clanco Realty Company shows that the company was to have all over $4000 for which land was sold; mortgaged by Rosa Dubray to Todd County State Bank April 15, 1920 for $300; also mortgaged May 28, 1920 to Todd County State Bank for $1368; mortgage by Rosa Dubray now Rosa Iron Shell and husband dated June 12, 1920 to Clano Realty Company for $300; Rosa Dubray also signed a mortgage to Rosalie Dubray to the Todd County State Bank May 5, 1920 for $300; Rosa Dubray Iron Shell and husband conveyed by deed to E. R. Rusho for $3500 on August 17, 1920",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2181,
+    "output_tokens": 574
+  },
+  "elapsed": 8.3
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part13_questionnaire_011",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "23-24",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "George S. Gover",
+    "Tribe/Reservation": "Pawnee County, Okla.",
+    "Post Office Address": "Pawnee, Okla.",
+    "Allotment number": "102",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes, filed for record; yes, receipted for",
+    "Sold/Mortgaged": "Mortgaged to C. E. Vandervoort, Sr.; Sold to J. E. Lowry, for $8000.00 and paid off the mortgage, leaving allottee $2000.00",
+    "Buyer": "Sold to J. E. Lowry for $8000.00",
+    "Tax burden forced sale/Mortgage": "Mortgage paid off by allottee; Has any of the land been sold for debt or taxes? no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 6, 1917; delivered Feb. 4, 1918",
+    "Gender": "Male",
+    "Age": "51 years",
+    "Occupation/Income": "No inherited interest. income from annuity paid to Pawnee Indians.",
+    "NOTES": "Good health. Wife and five children. No property or funds accumulated. The allottee does not feel like he was defrauded of his land. Mortgage was during 1918; date of redemption expired; mortgage paid off by allottee. Document notarized November 26, 1928, before notary public, Pawnee County, Oklahoma; commission expires Jan. 31st 1929. File reference: 81391 / 6074.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2604,
+    "output_tokens": 455
+  },
+  "elapsed": 7.9
+}

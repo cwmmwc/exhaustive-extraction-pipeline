@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_034",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "83",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Elizabeth Stirk-nes-Cottier",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "982",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Pat. recorded 2-1-21 by state Bank of Scenic, Scenic, So. Dak.",
+    "Sold/Mortgaged": "Mortgaged and deeded to State Bank of Scenic",
+    "Buyer": "On Dec. 12, 1922, Mortgaged to State Bank of Scenic, Scenic, S.D. NE\u00bc 32-37-39 for $2650.00; On Feb. 14, 1924, Mortgaged to State Bank of Scenic, Scenic, So. Dak. the NE\u00bc 32-37-39 for $800.00; On Jan. 2, 1925, Mortgaged to State Bank of Scenic, Scenic, So. Dak. the NE\u00bc 32-37-39 for $3236.00; NE\u00bc 32-37-39 deeded to State Bank of Scenic, Scenic, So. Dak. for consideration Mar. 5, 1926, by Elizabeth Stirk and George Stirk, her husband",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Apr. 13, 1918",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Receipt dated Jul. 1, 1918. Taken from the records at the County Seat on Jan. 2, 1925, by Elizabeth Stirk and George Stirk, her husband. Land described as NE\u00bc 32-37-39. Also known as Elizabeth Stirk formerly Cottier. Multiple mortgages and eventual deed to State Bank of Scenic, Scenic, So. Dak.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2268,
+    "output_tokens": 558
+  },
+  "elapsed": 7.8
+}

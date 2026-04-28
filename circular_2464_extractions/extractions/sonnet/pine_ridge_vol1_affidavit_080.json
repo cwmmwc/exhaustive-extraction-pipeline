@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_080",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "97",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Jennie Red Wing, ne Velandry",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Martin, South Dakota",
+    "Allotment number": "1082",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 320 acre allotment; that they wrote her regarding it, she protested against it; but that they recorded it at the court house before she got the patent, she saw that she would have taxes to pay, so she accepted the patent",
+    "Recorded patent": "recorded it at the court house before she got the patent",
+    "Sold/Mortgaged": "sold her place, and sold it to Viola August, for $4800.00 cash",
+    "Buyer": "Viola August, for $4800.00 cash",
+    "Tax burden forced sale/Mortgage": "in 1918, having the taxes to pay, and being sick, she had, also, to go to the hospital, decided to sell her place",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "42 years old",
+    "Occupation/Income": "her husband, who has good health, supports her and the children; and that his wages at common labor is his only income; and that this labor is by no means regular",
+    "NOTES": "mentally competent; health is very poor, having rheumatism to such an extent that her hands are deformed and that she is incapacitated in doing her house work, also suffering from other ailments; has six minor children to support; has never received any help from the County, State or United States Government; sale was in 1918; she considers that she got a good price for her land",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2294,
+    "output_tokens": 472
+  },
+  "elapsed": 4.8
+}

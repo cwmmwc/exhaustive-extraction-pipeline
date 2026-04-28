@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_026",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "30",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Elmus Bullard",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "702 Jennings Street, Hot Springs, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent in fee to his 320 acre allotment when it was issued, April 13, 1918, but he was told by the Indian Agency that, if he did not accept the patent, and pay the taxes on his land, it would be taxed at any rate, and later sold for same, so he took the patent in fee",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold his allotment to E. G. Ward, of Eli, Nebraska, for $16,000.00",
+    "Buyer": "E. G. Ward, of Eli, Nebraska, for $16,000.00",
+    "Tax burden forced sale/Mortgage": "had gotten behind in taxes for two years, and, in 1920, he sold his allotment",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Male",
+    "Age": "46 years old",
+    "Occupation/Income": "works at common labor for his living; his boy has a 160 acre allotment, which brings in $32.00 per year rental money; and that these two sources are his only income",
+    "NOTES": "mentally competent; health is generally poor, especially bothered with a defective eye; has a wife and four children to support; one boy has lung trouble; wife has generally poor health; did not receive any down payment on sale but received 10 per cent interest on $16,000.00 for three years, and at the end of three years got his money as dealed for; considers he got a good price for his allotment; did not sell his place for debts incurred prior to receiving the patent in fee; has never received any help from the County, State nor the United States Government; document number No. 4441; sworn February 28, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2411,
+    "output_tokens": 566
+  },
+  "elapsed": 6.0
+}

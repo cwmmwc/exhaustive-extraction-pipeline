@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_055",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "75-76",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lizzie Hill Justice",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Harrington, So. Dak.",
+    "Allotment number": "4802",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee, for it was all the land she had left, and that she knew she could not pay the taxes, but that she took it on the advice of the Superintendent and the District Farmer, who told her that if she did not take it and pay the taxes that the land would be sold to pay them",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "sold the land to a man named Elmer Harrington if he would pay the mortgage and interest",
+    "Tax burden forced sale/Mortgage": "mortgaged the land for $2000.00 to pay the taxes and build some improvements with the balance, that she took sick and was unable to pay the taxes, interest or principal and that she sold the land to a man named Elmer Harrington if he would pay the mortgage and interest",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "53 years old",
+    "Occupation/Income": "her children support her",
+    "NOTES": "mentally competent and in poor health, suffering with appendicitis and a tumor of the stomach; has been operated on but it did no apparent good; widow with two minor children; has no home and no place to live except that she lives on the allotment of a minor daughter; has received no aid from the Government, State or County since she was granted a patent. Document also contains affidavit of Nora Tway Sander, No. 4839, Pine Ridge, age 34, Post Office address Chadron, Nebr., who stated she did not want her patent in fee but took it on the advise of the Superintendent of the Pine Ridge reservation he having told her that if she did not take the patent and pay the taxes that the land would be sold to satisfy them; she did not have her patent recorded and does not think it has been; sold her land to a man whose name she does not know for $2550.00, having been compelled to sell it for she could not pay the taxes; thinks she got a fair price as that was just about what it was worth; mentally competent and in fair health; no home; husband is a clerk in a grocery store and they depend on that for a living and have to rent a home; has four small children depending on her for support, none of them having been allotted; sworn November 9, 1928.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2656,
+    "output_tokens": 683
+  },
+  "elapsed": 9.6
+}

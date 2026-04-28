@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_agency_narrative_028",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "50",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Robert Emery",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2997",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded August 15, 1918, by O. F. Benson",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Henry J. Abrahams for $1000; on January 20, 1920, Emery conveyed the land by deed to the First State Bank of Wood for $1.00 and other things considered, subject to the $1000 mortgage",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612715 issued; Southeast quarter section 16, township 38, range 27; receipt for patent signed by the allottee but not dated; mortgage dated June 6, 1918, signed by Emery to Henry J. Abrahams for $1000, is of record",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2066,
+    "output_tokens": 376
+  },
+  "elapsed": 4.9
+}

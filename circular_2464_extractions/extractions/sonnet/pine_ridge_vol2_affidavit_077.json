@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_077",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "96",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John M. Clifford",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Conata, South Dakota",
+    "Allotment number": "2749",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 320 acre allotment at the time it was issued, but was told by the Indian Agency Office that it would be taxed if he did not take care of it, and finally be sold for them, so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged it to the Security Savings Bank, of Rapid City, South Dakota, for $1350.00; in 1924 he sold the place to a man by the name of Ellis, of Martin, South Dakota, for clearing the mortgage, paying him $500.00 in trade, and letting him retain 110 acres of his allotment",
+    "Buyer": "Ellis, of Martin, South Dakota, for clearing the mortgage, paying him $500.00 in trade, and letting him retain 110 acres of his allotment; Security Savings Bank of Rapid City, South Dakota foreclosed",
+    "Tax burden forced sale/Mortgage": "he fell behind in paying the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Male",
+    "Age": "48 years old",
+    "Occupation/Income": "he farms for a living on some airship land; and that is all his income",
+    "NOTES": "mentally competent, health not very good, has kidney trouble; has a wife and eight children to support, children have good health but his wife is not strong; he thinks he got a pretty poor price on his land; he never received any help from the County, State or the United States Government; he received $425.00 in trade but never got the 110 acres of his allotment; Mr. Ellis failed himself and the Security Savings Bank foreclosed on him; document sworn November 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2345,
+    "output_tokens": 543
+  },
+  "elapsed": 6.0
+}

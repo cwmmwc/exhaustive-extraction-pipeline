@@ -1,0 +1,42 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-24",
+      "jurisdiction": "Misc.",
+      "date": "1935-01-25",
+      "correspondent": "Croninger, A. G., Miami, Oklahoma",
+      "correspondent_role": "incoming",
+      "case_name": "U.S. vs. Tripp County",
+      "case_number": "",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Please wire official citations U.S. vs. Tripp County mentioned on page ninety eight of Atty. Genls Report June Thirteenth Nineteen Thirty Four",
+      "action_type": "request",
+      "enclosures": "",
+      "routing_division": "Lands",
+      "routing_date": "1935-01-28",
+      "clerk_initials": "hf",
+      "processed_date": "1935-01-28"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. vs. Tripp County",
+      "file_number": "90-2-5-24",
+      "jurisdiction": "Misc.",
+      "case_type": "other",
+      "allottee_name": "",
+      "tribe_or_reservation": "",
+      "county": "Tripp"
+    }
+  ],
+  "persons": [
+    {
+      "name": "Croninger, A. G.",
+      "role": "correspondent",
+      "tribe": "",
+      "allottee_number": ""
+    }
+  ]
+}

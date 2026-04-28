@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_066",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "81",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Minnie Lessert",
+    "Tribe/Reservation": "Pine Ridge (Oglala Sioux)",
+    "Post Office Address": "Leupp, Arizona",
+    "Allotment number": "969",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she was forced to accept the patent in fee received by her",
+    "Recorded patent": "This instrument was recorded soon after same was received, the exact being unknown, by R. C. Lessert and Clair C. Long",
+    "Sold/Mortgaged": "the land in question was sold, the proceeds being used for the purchase of cattle, date of sale unknown",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "the land was not sold to pay debts or taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "43 years old",
+    "Occupation/Income": "she is working every day for a living; employed by the United States Government",
+    "NOTES": "mentally competent, in good health; assists her husband in the support of their four minor children; received $900.00 from the sale of this land, which amount she figures was not a fair price; states she was not defrauded of her property; has not received any aid from the Government, state or County since her patent in fee was issued; document received at Pine Ridge Agency May 11, 1929 | Source review 2026-04-27: Minnie Lessert is a Pine Ridge (Oglala Sioux) allottee who had relocated to Leupp, Arizona by the time of the affidavit. Affidavit sworn before notary in Coconino County, Arizona, on May 4, 1929; received at Pine Ridge Agency May 11, 1929 (visible Pine Ridge Agency receipt stamp on source). One-week mail interval between Coconino County execution and Pine Ridge Agency receipt. Notary commission expires 7/27/30. R.C. Lessert (named as her cousin in Joseph Lessert's parallel affidavit, allot 963) attended to recording the patent. Minnie figured the $900 sale price was not a fair price (her cousin Joseph's parallel affidavit said $900 was fair for his sale — same family, same transaction structure, different framings of fairness). BLM patent accession: 625271. Tribe/Reservation field corrected from 'Leupp Agency (Arizona)' which incorrectly conflated current residence with tribal affiliation. Pine Ridge agent demonstrably tracked relocated allottees to Arizona for testimony — administrative diligence worth noting in contrast to the Shawnee Agency's mailed-form-only approach (per Leech 1929).",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2297,
+    "output_tokens": 400
+  },
+  "elapsed": 6.0
+}

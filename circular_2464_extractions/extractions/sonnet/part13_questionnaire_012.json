@@ -1,0 +1,33 @@
+{
+  "document_id": "part13_questionnaire_012",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "25-28",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Samuel Horse Chief",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Okla.",
+    "Allotment number": "609",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Was it filed for record? no \u2014 61391",
+    "Sold/Mortgaged": "sold to Mr. Jefferies for $2500 cash",
+    "Buyer": "Mr. Jefferies for $2500 cash",
+    "Tax burden forced sale/Mortgage": "no",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Jan. 25, 1918",
+    "Gender": "Male",
+    "Age": "50 years",
+    "Occupation/Income": "No interest in any inherited land. Shares in Pawnee annuity. No property or money accumulated.",
+    "NOTES": "Four minor children dependent on allottee for support. $2500 which allottee considers good price at that time. Patent delivered 1918, Agency office; receipted for yes. This case should be looked into further as to actual value of the land at the time it was sold. Document also contains a separate record for Eva N. Duncan, Allotment No. 251, whose S/2 was sold to Frank Armstrong for $3500 and N/2 has mortgage of $850 due in 1931; she has eight minor children; fee patent date Dec. 6, 1917; delivered Jan. 24, 1918; age 43, good health; income $100 per year from inherited land and share in Pawnee annuity; forced to sell on account of her home burning; purchaser paid $3200 for S/2 and gave allottee a Dodge truck valued at $800. Notarized November 26, 1928; commission expires Jan. 31, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 3341,
+    "output_tokens": 507
+  },
+  "elapsed": 10.6,
+  "retry_count": 1
+}

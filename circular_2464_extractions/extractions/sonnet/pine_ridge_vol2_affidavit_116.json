@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_116",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "136",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John S. Hunter",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Kyle, So. Dak.",
+    "Allotment number": "3679",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee but took it on the advice of the Farmer and Superintendent who told him that if he did not take the patent, keep the taxes up that he would lose the land for taxes",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged his land for $250.00 to C. J. Horigan, Rapid City, So. Dak. that he paid the mortgage and holds the land",
+    "Buyer": "Mortgaged to C. J. Horigan, Rapid City, So. Dak. for $250.00",
+    "Tax burden forced sale/Mortgage": "has a very hard time paying the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "46 years old",
+    "Occupation/Income": "farms a little, raises a little stock, milks cows and does common labor for a living and his income is about $400.00",
+    "NOTES": "mentally competent in fair health; has a wife and 6 minor children to support; has his land, 10 cows and 30 head of horses, all valued at $650.00; has received no aid from the Government, State or County since his patent was issued; document sworn November 30, 1928; County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2232,
+    "output_tokens": 445
+  },
+  "elapsed": 4.6
+}

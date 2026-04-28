@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_affidavit_001",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "5",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Annie Larvie",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged; mortgage on the south quarter has been foreclosed",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I have not paid any on it for the last three years",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "63",
+    "Occupation/Income": "Raise chickens, milk cows and so forth",
+    "NOTES": "Patent delivered over 8 years ago from the Farmer at Black Pipe. Does not remember signing mortgage on north quarter and states she did not receive the $800 recorded on it. Did not know south quarter mortgage had been foreclosed. States she still has the land. No one depends on her for support. Plans to go to White River to check county records about the other mortgage. Document number 24232 appears on document. Notary: Jas. C Cross, commission expires 4-28-32, sworn June 10, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2282,
+    "output_tokens": 368
+  },
+  "elapsed": 8.4
+}

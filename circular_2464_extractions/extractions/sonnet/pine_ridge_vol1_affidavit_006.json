@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_006",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "11",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charles Janis",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 160 acre allotment at the time it was issued; but that he was informed by the Indian Agency, if he did not take it over, it would be assessed for taxes, and finally sold for them; so he accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "in 1920, he deeded his allotment to his brother, John Janis, who was to sell it, and give deponent $2000.00 for it",
+    "Buyer": "John Janis did sell it to Joe Harris, of Denby, South Dakota, but did not pay any money over to deponent, did not even tell him how much he received for it, so that the allotment was a total loss to deponent",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "30 years old",
+    "Occupation/Income": "trucks for the United States Government, between Pine Ridge, South Dakota, and Rushville, Nebraska; and that this work is his only source of income",
+    "NOTES": "mentally competent; has good health; single, and no one but himself to support; has never received any help from the County, State nor the United States Government; allotment was 160 acres",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2266,
+    "output_tokens": 442
+  },
+  "elapsed": 5.8
+}

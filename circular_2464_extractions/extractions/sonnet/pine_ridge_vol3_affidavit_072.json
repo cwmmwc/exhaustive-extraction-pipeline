@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_072",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "98",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mrs. Virgie Hudspeth, formerly Virgie Goings",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Rapid City, South Dakota",
+    "Allotment number": "5727",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold the same very cheap, and not near what it was actually worth",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "she could not raise the money to pay the taxes during the time she owned the land, so sold the same",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "37 years of age",
+    "Occupation/Income": "works when she can get employment by the day",
+    "NOTES": "She is a widow; mentally competent; in just fair health; had to leave the Government Service on account of ill health; has no land at the present time, no home, and lives with some relatives at the U.S. Indian School at Rapid City, South Dakota; received a payment of $10.00 in the fall of 1928 and no further aid from Government, State or County since her patent in fee was issued; sold land two or three years after getting the patent, does not know exact date; states she was not defrauded of her land but sold it very cheap; received patent by calling at the Agent's Office after hearing patents were ready for delivery",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2474,
+    "output_tokens": 424
+  },
+  "elapsed": 7.3
+}

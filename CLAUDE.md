@@ -1,5 +1,20 @@
 # Exhaustive Extraction Pipeline
 
+## MANDATORY: Read Before Acting
+
+**Before writing ANY new script, making ANY infrastructure decision, or starting ANY multi-step task:**
+1. Read the relevant existing scripts in this repo FIRST. They document the established patterns.
+2. For HPC/extraction work: read `hpc/`, `push_to_hpc.sh`, `pull_survey_from_hpc.sh`, `load_survey_extractions.py`
+3. For Streamlit/analysis work: read `ai_analysis_interface_v4.py`, `enrich_summaries.py`
+4. NEVER run SSH/SCP/rsync scripts directly — always tell the user to run with `!` prefix
+5. NEVER call RC GenAI from the local machine — extraction runs on HPC via SLURM
+6. NEVER ask the user how something was done if the answer is in the codebase — READ THE CODE
+7. After completing a step, immediately do the next step in the established pipeline without waiting to be asked
+
+**The user is a historian who has spent weeks building these procedures. Follow them exactly. Do not improvise.**
+
+**Resources are not a constraint.** The goal is the best possible extraction, not the cheapest. UVA HPC provides ample GPUs at no cost for open-source models. The researcher has funding for Claude Sonnet and Opus when needed. Do NOT optimize for cost or time — optimize for quality. Do not suggest cheaper alternatives, shorter prompts for speed, or skipping steps to save money. If a two-pass extraction produces better results than a single pass, run two passes. If Opus produces better summaries than Kimi, use Opus.
+
 ## Project Overview
 AI-powered structured extraction from 4,925 historical PDFs (139M words) documenting federal Native American land dispossession, 1880–1990. Built by Christian McMillen, historian at UVA.
 

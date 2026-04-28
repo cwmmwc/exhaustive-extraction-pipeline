@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_questionnaire_022",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "65",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charles Lunderman",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "50",
+    "Occupation/Income": "I work out",
+    "NOTES": "Patent was sent to him by mail; he signed a receipt for it; did not ask for the patent; was satisfied with the sale; received $6500.00 cash for the land; has six living children \u2014 one is married, another helps support himself, and Lunderman works out to support the remaining ones. Notarized before Jas. W. Cross, Notary Public, commission expires 4-28-32, on April 30, 1929. Document number 620.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2178,
+    "output_tokens": 325
+  },
+  "elapsed": 5.5
+}

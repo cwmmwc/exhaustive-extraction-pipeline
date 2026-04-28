@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_025",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "32",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Angeline Brown Larvie",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Norris, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "application for cancellation of my patent in fee",
+    "Refused/Protested": "was issued to me without my application, and was forced to sell under price",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "forced to sell under price",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document No. 2296; letter dated February 25, 1929, addressed to Mr. E. W. Jermark, Supt. Pine Ridge, S.D.; affiant states she answered 13 questions (attached) in conformity with circular letter dated November 9, 1928; notarized February 25, 1929 (though letter references year as 1939, likely a transcription error); answers to 13 questions referenced as attached but not included in this document",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2187,
+    "output_tokens": 361
+  },
+  "elapsed": 5.7
+}

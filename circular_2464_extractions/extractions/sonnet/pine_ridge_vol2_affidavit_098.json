@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_098",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "117",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charlotte Huebner",
+    "Tribe/Reservation": "Shannon County (South Dakota)",
+    "Post Office Address": "Scenic, So. Dak.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her allotment for the reason that she knew she could not pay the taxes, but that she was told that if she did not take the patent and pay the taxes that she would lose the land and she was advised to take it by the Farmer of her district as well as by the people in the Agency Office, so she did",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged it and bought a bunch of cattle, thinking that she could make money enough out of them to pay the taxes and pay for the cattle and clear the land, but the price of cattle went down so she lost the cattle and the land too",
+    "Buyer": "Land and cattle were mortgaged to Harry Wentzy, Rapid City, So. Dak. and he foreclosed the mortgage and took the land and cattle both",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes, so she mortgaged it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "42 years old",
+    "Occupation/Income": "supported by her husband",
+    "NOTES": "mentally competent but in exceedingly poor health, having been laid up all last summer, suffering from kidney and heart trouble and has fainting spells; has a husband that is not at all well and six children depending on her for support; cattle cost $5100.00 and were included in the mortgage along with the land; document number No. 03037; subscribed and sworn before notary public on the 5th day of November, 1928, in County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2357,
+    "output_tokens": 508
+  },
+  "elapsed": 7.5
+}

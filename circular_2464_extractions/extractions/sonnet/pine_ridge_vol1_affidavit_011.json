@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_011",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "17",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Myrtle Allman Chief",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, So. Dak.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want the patent, but took it on the advice of the Agency Farmer and the Superintendent, who told her that if she did not take the patent and pay the taxes that the land would be sold to satisfy them",
+    "Recorded patent": "she did not have the patent recorded and does not know who did",
+    "Sold/Mortgaged": "sold it to Harry J. Evans of Pine Ridge, So. Dak. for $1000.00",
+    "Buyer": "Harry J. Evans of Pine Ridge, So. Dak. for $1000.00",
+    "Tax burden forced sale/Mortgage": "her land was up for sale (advertised for sale) for taxes, and that she could not pay them so she sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "33 years old",
+    "Occupation/Income": "depends on her husband for a living",
+    "NOTES": "mentally competent and in poor health, having a goiter and heart trouble; has no land, no home and nothing to live on; husband is also in poor health; has three small children depending on her for support; has not received any aid from the Government, State or County since her patent was issued; thinks the land should have brought $1200.00 but had to take what she could get; document No. 211, County of Shannon, State of South Dakota; sworn November 13, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2268,
+    "output_tokens": 463
+  },
+  "elapsed": 7.1
+}

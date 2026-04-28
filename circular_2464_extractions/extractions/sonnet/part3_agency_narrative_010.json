@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_010",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "21",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Cordier",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1201",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded by R. E. Wang",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged on June 18, 1918 for $300; conveyed by deed to Emil Petr and Emil Splichal on September 16, 1918 for $3500.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612704 issued; South half of Northeast quarter and the North half of Southeast quarter, section 2, township 37, north of range 28; receipt for patent signed by allottee on February 9, 1918; mortgage dated June 18, 1918 for $300; land conveyed September 16, 1918 for $3500.00",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2045,
+    "output_tokens": 369
+  },
+  "elapsed": 4.6
+}

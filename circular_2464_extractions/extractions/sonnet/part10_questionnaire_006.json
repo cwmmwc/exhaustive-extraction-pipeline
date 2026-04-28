@@ -1,0 +1,32 @@
+{
+  "document_id": "part10_questionnaire_006",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 10.pdf",
+  "source_pages": "26",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Millie Sully",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "6469",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Not at the time fo delivery but some time before this the Superintendent told me that war we would have to take our patents as they would be issued but I told him that I did not want them.",
+    "Recorded patent": "It was some time ago that it was mailed to me I do not remember the date.",
+    "Sold/Mortgaged": "I first mortgaged and then sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I had to sell on account of taxes and some other obligations I had to pay.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "43",
+    "Occupation/Income": "not stated",
+    "NOTES": "Received $5400 in cash for land. Signed receipt for patent. No dependents. In good health. Not married. Document notarized May 7, 1929 by Jas. Wi Cross, Notary Public; commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2226,
+    "output_tokens": 356
+  },
+  "elapsed": 5.0
+}

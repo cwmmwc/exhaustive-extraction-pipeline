@@ -1,0 +1,32 @@
+{
+  "document_id": "part11_questionnaire_003",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2564 part 11.pdf",
+  "source_pages": "13-14",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rush Roberts",
+    "Tribe/Reservation": "Pawnee County, Oklahoma",
+    "Post Office Address": "Pawnee, Oklahoma",
+    "Allotment number": "29",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "yes, filed for record in Pawnee County, Oklahoma, when Feb. 2, 1918, by allottee",
+    "Sold/Mortgaged": "No mortgage and no sale. Allottee still owns land.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "none",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Nov. 30, 1917",
+    "Gender": "Male",
+    "Age": "69 years",
+    "Occupation/Income": "Farm rents from this land. Also receives $50.00 as Indian Scout, from the Government.",
+    "NOTES": "Patent delivered 12-26-1917 by mail; receipted yes. Two children: Rush Roberts, Jr. and Terry Roberts, both of Pawnee, Oklahoma, dependent upon the Indian for support. Allottee is very sickly, not very good at this time. No land sold for debt or taxes. Notarized November 26, 1928, in Pawnee County, Oklahoma; commission expires Jan. 31, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2551,
+    "output_tokens": 387
+  },
+  "elapsed": 7.0
+}

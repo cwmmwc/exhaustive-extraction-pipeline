@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_questionnaire_016",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "49",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Mary Whiting (Dec'd)",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "3528",
+    "Cancelled": "not stated",
+    "Refused/Protested": "She told us she did not [ask for that patent]",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "It was first mortgaged for $9000 and the assignee of the mortgage got a deed from our father only a few days before he died.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Mary Whiting died October 1918; never married, no children; parents Edward L. Whiting (died January 30, 1923) and Mary Whiting (died January 12, 1925) were heirs; estate was probated; mortgage of $9000 placed on land by parents; parents believed they were to receive $16,000; assignee of mortgage obtained deed from father shortly before his death; mother (Mary Whiting senior) could not read nor write and signed by thumb mark; some notes with father's name typewritten alleged to have been brought out for collection after father's death; deponents are siblings Thomas Whiting (age 36) and Hattie Whitcher (age 47); questionnaire sworn before Notary Public Jas. W. Cross on May 13, 1929; commission expires 4-28-32; possible fraud noted regarding bank obligations and Mr. Woods",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2521,
+    "output_tokens": 463
+  },
+  "elapsed": 8.8
+}

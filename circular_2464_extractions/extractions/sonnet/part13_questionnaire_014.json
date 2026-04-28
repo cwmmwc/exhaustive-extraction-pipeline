@@ -1,0 +1,33 @@
+{
+  "document_id": "part13_questionnaire_014",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "31-32",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Little Sun, (Robert Peters)",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Oklahoma",
+    "Allotment number": "742",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "no",
+    "Sold/Mortgaged": "Mortgaged for $3000 and later sold",
+    "Buyer": "Sold to C. E. Van dervoort for $5000.00",
+    "Tax burden forced sale/Mortgage": "It seems that the allottee was forced to sell his land to pay off mortgage, which had about two years to run.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Nov. 30, 1917",
+    "Gender": "Male",
+    "Age": "52 years",
+    "Occupation/Income": "income of about $15 per year from inherited land; Shares in Pawnee annuity",
+    "NOTES": "Date and manner of delivery of patent Dec. 26, 1917, Agency office; receipted for: yes; mortgage not released or foreclosed, date of redemption not expired; did not owe purchaser anything; no land sold for debt or taxes; no contributions of any kind from Government or State or County; good health; no property or money accumulated; wife and one child dependent; allottee says the same land sold for more money a little later on; notarized November 26, 1928, County of Pawnee, State of Oklahoma; commission expires Jan. 31, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2645,
+    "output_tokens": 430
+  },
+  "elapsed": 6.6,
+  "retry_count": 1
+}

@@ -1,0 +1,29 @@
+{
+  "document_id": "part3_agency_narrative_page062",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "062",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "not stated",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Pine Ridge, So. Lak.",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "This is an administrative cover letter dated November 21, 1928, from Superintendent E. W. Jermark to the Commissioner of Indian Affairs, referencing Circular No. 2464 Fee Patent Data. The letter reports that 92 Indians have come in to make statements, of which 33 are Indians allotted in Bennett County. The letter requests guidance on whether to send data as completed or hold until the entire list is finished. No individual allottee data is contained in this document.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {},
+  "elapsed": 0
+}

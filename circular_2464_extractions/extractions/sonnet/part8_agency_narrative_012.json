@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_agency_narrative_012",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "22",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Ross",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "2561",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Patent recorded July 30, 1918, by William Ross",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Lloyd O. Lamphere for $1000 on October 17, 1918; again mortgaged April 16, 1923, to Charles J. Montgomery for $2500; then on June 24, 1925, the land was conveyed by deed to T. P. Ward for $4500 subject to the mortgage",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612738 issued; Northeast quarter section 1, township 95, north of range 77; receipt for patent was signed by the allottee in February 1918; Ross and his wife mortgaged the land; document stamped Rosebud, JUN 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2062,
+    "output_tokens": 382
+  },
+  "elapsed": 6.7
+}

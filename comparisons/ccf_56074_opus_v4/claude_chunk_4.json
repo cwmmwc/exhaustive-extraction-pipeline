@@ -1,0 +1,696 @@
+{
+  "entities": [
+    {
+      "name": "Five Civilized Tribes",
+      "type": "organization",
+      "context": "Collective name for Creek, Seminole, Chickasaw, Choctaw, and Cherokee tribes in Oklahoma"
+    },
+    {
+      "name": "Creek Nation",
+      "type": "organization",
+      "context": "One of the Five Civilized Tribes, formerly had territory in Eastern Oklahoma"
+    },
+    {
+      "name": "Chickasaw",
+      "type": "organization",
+      "context": "One of the Five Civilized Tribes"
+    },
+    {
+      "name": "Choctaw",
+      "type": "organization",
+      "context": "One of the Five Civilized Tribes, mentioned in context of pioneer merchants"
+    },
+    {
+      "name": "Creek Indians",
+      "type": "organization",
+      "context": "Mentioned in context of restriction removal and taxation"
+    },
+    {
+      "name": "Seminole Indians",
+      "type": "organization",
+      "context": "Mentioned alongside Creek and Chickasaw Indians"
+    },
+    {
+      "name": "J. R. Phillips",
+      "type": "person",
+      "context": "Field Clerk stationed at Okmulgee, Oklahoma, for the Five Civilized Tribes; 46 years old, enrolled member of the Chickasaw tribe"
+    },
+    {
+      "name": "J. Blair Shoenfelt",
+      "type": "person",
+      "context": "Official under whom J.R. Phillips served as Indian policeman"
+    },
+    {
+      "name": "Wm. E. Johnson",
+      "type": "person",
+      "context": "Official under whom J.R. Phillips served as an enforcement officer"
+    },
+    {
+      "name": "Gabe E. Parker",
+      "type": "person",
+      "context": "Superintendent for the Five Civilized Tribes, under whom J.R. Phillips served since 1916"
+    },
+    {
+      "name": "H. A. Archerd",
+      "type": "person",
+      "context": "Field Clerk stationed at Holdenville, Oklahoma, for the Five Civilized Tribes"
+    },
+    {
+      "name": "S. A. Mills",
+      "type": "person",
+      "context": "Field Clerk stationed at Ardmore, Oklahoma, for the Five Civilized Tribes; assigned to Chickasaw Indians"
+    },
+    {
+      "name": "C. H. Asbury",
+      "type": "person",
+      "context": "Superintendent of Crow Reservation, Montana"
+    },
+    {
+      "name": "Reginald Pearce",
+      "type": "person",
+      "context": "Farmer at Wyola, Crow Reservation, Montana"
+    },
+    {
+      "name": "S. P. Cope",
+      "type": "person",
+      "context": "Farmer at Lodge Grass, Crow Reservation, Montana"
+    },
+    {
+      "name": "Bridget C. Keough",
+      "type": "person",
+      "context": "Field Matron at St. Xavier, Crow Reservation, Montana"
+    },
+    {
+      "name": "W. A. Petzoldt",
+      "type": "person",
+      "context": "Baptist missionary on Crow Reservation, Montana, with extensive missionary work including community and school activities"
+    },
+    {
+      "name": "Father Taelman",
+      "type": "person",
+      "context": "Missionary who worked among Indians on Crow Reservation for a long time; had not submitted a report"
+    },
+    {
+      "name": "George Vaux, Jr.",
+      "type": "person",
+      "context": "Chairman of the Board of Indian Commissioners"
+    },
+    {
+      "name": "Malcolm McDowell",
+      "type": "person",
+      "context": "Secretary of the Board of Indian Commissioners"
+    },
+    {
+      "name": "William S. Ketcham",
+      "type": "person",
+      "context": "Member of the Board of Indian Commissioners, Washington, D.C."
+    },
+    {
+      "name": "Daniel Smiley",
+      "type": "person",
+      "context": "Member of the Board of Indian Commissioners, Mohonk Lake, N.Y."
+    },
+    {
+      "name": "Hugh L. Scott",
+      "type": "person",
+      "context": "Member of the Board of Indian Commissioners, Princeton, N.J."
+    },
+    {
+      "name": "Alfred E. Smith",
+      "type": "person",
+      "context": "Member of the Board of Indian Commissioners, New York, N.Y."
+    },
+    {
+      "name": "Merrill E. Gates",
+      "type": "person",
+      "context": "Member of the Board of Indian Commissioners, Washington, D.C."
+    },
+    {
+      "name": "Warren K. Moorehead",
+      "type": "person",
+      "context": "Member of the Board of Indian Commissioners, Andover, Mass."
+    },
+    {
+      "name": "Samuel A. Eliot",
+      "type": "person",
+      "context": "Member of the Board of Indian Commissioners, Boston, Mass."
+    },
+    {
+      "name": "Frank Knox",
+      "type": "person",
+      "context": "Member of the Board of Indian Commissioners, Manchester, N.H."
+    },
+    {
+      "name": "Eldon Lowe",
+      "type": "person",
+      "context": "Field Clerk, Five Civilized Tribes, Tulsa, Oklahoma"
+    },
+    {
+      "name": "B. F. McCurtain",
+      "type": "person",
+      "context": "Field Clerk, Five Civilized Tribes, Durant, Oklahoma"
+    },
+    {
+      "name": "C. W. Edmister",
+      "type": "person",
+      "context": "Farmer, Shawnee Agency, Oklahoma"
+    },
+    {
+      "name": "Board of Indian Commissioners",
+      "type": "organization",
+      "context": "Federal board in the Department of the Interior overseeing Indian affairs"
+    },
+    {
+      "name": "Department of the Interior",
+      "type": "organization",
+      "context": "Federal department with authority over Indian affairs"
+    },
+    {
+      "name": "Office of Indian Affairs",
+      "type": "organization",
+      "context": "Federal office handling Indian affairs, Washington, D.C."
+    },
+    {
+      "name": "Superintendent of the Five Civilized Tribes",
+      "type": "organization",
+      "context": "Federal office at Muskogee, Oklahoma overseeing the Five Civilized Tribes"
+    },
+    {
+      "name": "Okmulgee, Oklahoma",
+      "type": "location",
+      "context": "Location of J.R. Phillips' field clerk office, in former Creek Nation territory"
+    },
+    {
+      "name": "Holdenville, Oklahoma",
+      "type": "location",
+      "context": "Location of H.A. Archerd's field clerk office"
+    },
+    {
+      "name": "Ardmore, Oklahoma",
+      "type": "location",
+      "context": "Location of S.A. Mills' field clerk office"
+    },
+    {
+      "name": "Muskogee, Oklahoma",
+      "type": "location",
+      "context": "Location of the Superintendent of the Five Civilized Tribes office"
+    },
+    {
+      "name": "Crow Reservation, Montana",
+      "type": "location",
+      "context": "Indian reservation where multiple field employees and missionaries worked"
+    },
+    {
+      "name": "Crow Agency, Montana",
+      "type": "location",
+      "context": "Administrative center of Crow Indian Reservation"
+    },
+    {
+      "name": "Wyola",
+      "type": "location",
+      "context": "Location on Crow Reservation where Reginald Pearce was farmer"
+    },
+    {
+      "name": "Lodge Grass",
+      "type": "location",
+      "context": "Location on Crow Reservation where S.P. Cope was farmer"
+    },
+    {
+      "name": "St. Xavier",
+      "type": "location",
+      "context": "Location on Crow Reservation where Mrs. Keough was field matron"
+    },
+    {
+      "name": "Eastern Oklahoma",
+      "type": "location",
+      "context": "Region where land speculators known as 'grafters' operated"
+    },
+    {
+      "name": "Tulsa, Oklahoma",
+      "type": "location",
+      "context": "Location of Eldon Lowe's field clerk office"
+    },
+    {
+      "name": "Durant, Oklahoma",
+      "type": "location",
+      "context": "Location of B.F. McCurtain's field clerk office"
+    },
+    {
+      "name": "Competency Commission",
+      "type": "organization",
+      "context": "Board that arbitrarily removed restrictions from Indians two or three years prior to the document"
+    },
+    {
+      "name": "Congressional Act of May 27, 1908",
+      "type": "legislation",
+      "context": "Act that changed conditions for Five Civilized Tribes Indians, giving them individual property rights"
+    }
+  ],
+  "events": [
+    {
+      "type": "legislation",
+      "date": "1908-05-27",
+      "location": "Washington, D.C.",
+      "description": "Congressional act that established new conditions for Five Civilized Tribes Indians, giving individual property rights and changing their legal and economic circumstances"
+    },
+    {
+      "type": "military_service",
+      "date": "",
+      "location": "",
+      "description": "Members of the Five Civilized Tribes contributed to World War I both financially and with their lives, demonstrating patriotism and loyalty"
+    },
+    {
+      "type": "competency_review",
+      "date": "1918",
+      "location": "Five Civilized Tribes territory, Oklahoma",
+      "description": "Competency commission arbitrarily removed restrictions from Indians approximately two or three years before the document was written (c. 1918-1919)"
+    },
+    {
+      "type": "publication",
+      "date": "1921-06-13",
+      "location": "Washington, D.C.",
+      "description": "Board of Indian Commissioners issued Bulletin No. 147 regarding releasing Indians from Government supervision, containing eight letters on the subject"
+    },
+    {
+      "type": "correspondence",
+      "date": "1921-06-15",
+      "location": "Washington, D.C.",
+      "description": "Malcolm McDowell transmitted additional replies regarding patent-in-fee Indians to the Commissioner of Indian Affairs"
+    },
+    {
+      "type": "circular_letter",
+      "date": "1921-03-31",
+      "location": "Crow Reservation, Montana",
+      "description": "Superintendent Asbury received circular letter and distributed it to farmers, field matrons, and missionaries on the reservation requesting their opinions"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "50% or less of real value",
+      "payer": "various purchasers",
+      "payee": "Indian heirs of deceased allottees",
+      "date": "",
+      "description": "75% or more of inherited lands sold for fifty percent or less of their real value"
+    },
+    {
+      "type": "lease",
+      "amount": "only a fraction of rental value",
+      "payer": "lessees",
+      "payee": "Indian allottees",
+      "date": "",
+      "description": "At least 90% of allottees lease their surplus land for five years for cash in advance at only a fraction of the rental value"
+    },
+    {
+      "type": "other",
+      "amount": "in excess of purchase price",
+      "payer": "loan companies",
+      "payee": "land purchasers",
+      "date": "",
+      "description": "Purchasers of Indian land were able to secure loans from loan companies on the land even in excess of the purchase price paid for it"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "J. R. Phillips",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes",
+      "context": "Field Clerk stationed at Okmulgee, Oklahoma"
+    },
+    {
+      "subject": "J. R. Phillips",
+      "type": "employed_by",
+      "object": "J. Blair Shoenfelt",
+      "context": "Served as Indian policeman under Shoenfelt"
+    },
+    {
+      "subject": "J. R. Phillips",
+      "type": "employed_by",
+      "object": "Wm. E. Johnson",
+      "context": "Served as enforcement officer under Johnson"
+    },
+    {
+      "subject": "J. R. Phillips",
+      "type": "employed_by",
+      "object": "Gabe E. Parker",
+      "context": "Served under Parker as Superintendent since 1916"
+    },
+    {
+      "subject": "J. R. Phillips",
+      "type": "related_to",
+      "object": "Chickasaw tribe",
+      "context": "Enrolled member of the Chickasaw tribe of Indians"
+    },
+    {
+      "subject": "J. R. Phillips' father",
+      "type": "related_to",
+      "object": "Choctaw and Chickasaw merchants",
+      "context": "Pioneer merchant among the Choctaws and Chickasaws"
+    },
+    {
+      "subject": "H. A. Archerd",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes",
+      "context": "Field Clerk stationed at Holdenville, Oklahoma"
+    },
+    {
+      "subject": "S. A. Mills",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes",
+      "context": "Field Clerk stationed at Ardmore, Oklahoma, working with Chickasaw Indians"
+    },
+    {
+      "subject": "C. H. Asbury",
+      "type": "employed_by",
+      "object": "Crow Indian Reservation",
+      "context": "Superintendent of Crow Reservation, Montana"
+    },
+    {
+      "subject": "Reginald Pearce",
+      "type": "employed_by",
+      "object": "Crow Reservation",
+      "context": "Farmer at Wyola on Crow Reservation"
+    },
+    {
+      "subject": "S. P. Cope",
+      "type": "employed_by",
+      "object": "Crow Reservation",
+      "context": "Farmer at Lodge Grass on Crow Reservation"
+    },
+    {
+      "subject": "Bridget C. Keough",
+      "type": "employed_by",
+      "object": "Crow Reservation",
+      "context": "Field Matron at St. Xavier on Crow Reservation"
+    },
+    {
+      "subject": "W. A. Petzoldt",
+      "type": "employed_by",
+      "object": "Crow Reservation",
+      "context": "Baptist missionary on Crow Reservation with extensive community and school work"
+    },
+    {
+      "subject": "Malcolm McDowell",
+      "type": "employed_by",
+      "object": "Board of Indian Commissioners",
+      "context": "Secretary of the Board"
+    },
+    {
+      "subject": "George Vaux, Jr.",
+      "type": "employed_by",
+      "object": "Board of Indian Commissioners",
+      "context": "Chairman of the Board"
+    },
+    {
+      "subject": "Eldon Lowe",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes",
+      "context": "Field Clerk at Tulsa, Oklahoma"
+    },
+    {
+      "subject": "B. F. McCurtain",
+      "type": "employed_by",
+      "object": "Five Civilized Tribes",
+      "context": "Field Clerk at Durant, Oklahoma"
+    },
+    {
+      "subject": "C. W. Edmister",
+      "type": "employed_by",
+      "object": "Shawnee Agency",
+      "context": "Farmer at Shawnee Agency, Oklahoma"
+    },
+    {
+      "subject": "Secretary of the Interior",
+      "type": "authority_over",
+      "object": "Five Civilized Tribes",
+      "context": "Has authority over restricted Indians through acts of Congress and treaty stipulations"
+    },
+    {
+      "subject": "probate court",
+      "type": "authority_over",
+      "object": "inherited Indian lands",
+      "context": "County court approves sale of inherited lands with minimal judicial oversight"
+    },
+    {
+      "subject": "United States probate attorneys",
+      "type": "represented",
+      "object": "Indian interests",
+      "context": "Supposed to appear at confirmation of sales but their protests are largely ignored"
+    }
+  ],
+  "fee_patents": [
+    {
+      "allottee_name": "",
+      "allotment_number": "",
+      "acreage": "",
+      "patent_date": "",
+      "patent_number": "",
+      "mechanism": "administrative",
+      "buyer": "",
+      "sale_price": "",
+      "attorney": "",
+      "mortgage": "Discussion of general policy: 10% of those whose restrictions were removed by competency board sold lands and misused proceeds; 90% made good. 75% of those with restrictions removed disposed of allotments per Archerd's estimate."
+    }
+  ],
+  "correspondence": [
+    {
+      "sender": "Malcolm McDowell",
+      "sender_title": "Secretary, Board of Indian Commissioners",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner of Indian Affairs",
+      "date": "1921-06-15",
+      "subject": "Transmitting additional replies regarding condition of patent-in-fee Indians",
+      "action_requested": "Review of enclosed letters",
+      "outcome": ""
+    },
+    {
+      "sender": "Board of Indian Commissioners",
+      "sender_title": "",
+      "recipient": "Field clerks and superintendents",
+      "recipient_title": "Various",
+      "date": "",
+      "subject": "Requesting views on releasing Indians from Government supervision",
+      "action_requested": "Provide opinions and information on releasing Indians from government supervision",
+      "outcome": "Multiple replies received and compiled as Bulletin No. 147"
+    },
+    {
+      "sender": "J. R. Phillips",
+      "sender_title": "Field Clerk, Five Civilized Tribes",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Views on releasing Indians from Government supervision",
+      "action_requested": "",
+      "outcome": "Recommended continued supervision with more comprehensive legislation, especially regarding inherited lands"
+    },
+    {
+      "sender": "H. A. Archerd",
+      "sender_title": "Field Clerk, Five Civilized Tribes",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Information relative to removal of restrictions and winding up Indian affairs",
+      "action_requested": "",
+      "outcome": "Recommended merit-based decisions, retention of 40-acre homestead, and caution against blanket removal of restrictions"
+    },
+    {
+      "sender": "S. A. Mills",
+      "sender_title": "Field Clerk, Five Civilized Tribes",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Views on granting patents-in-fee and removing restrictions from Chickasaw Indians",
+      "action_requested": "",
+      "outcome": "Recommended merit-based system, reserving 40 acres inalienable during allottee's lifetime"
+    },
+    {
+      "sender": "C. H. Asbury",
+      "sender_title": "Superintendent, Crow Indian Reservation",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Responding to circular letter of March 31, 1921, regarding releasing Indians from government supervision",
+      "action_requested": "",
+      "outcome": "Transmitted letters from field employees and missionaries; prepared tabular statement of data"
+    },
+    {
+      "sender": "Unnamed author (pages 52-54)",
+      "sender_title": "Field worker among restricted Indians of Five Civilized Tribes",
+      "recipient": "Board of Indian Commissioners",
+      "recipient_title": "",
+      "date": "",
+      "subject": "Views on Indian competency and government supervision",
+      "action_requested": "",
+      "outcome": "Recommended education as primary solution; estimated 30% making decided success, 50% succeeding indifferently, 10% barely escaping failure, 10% complete failure among released Indians"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "enacted",
+      "date": "1908-05-27",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "Act established new conditions for Five Civilized Tribes including individual property rights; Indians with more than one-half degree of blood became restricted either by act of Congress or by treaty stipulations"
+    },
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "proposed",
+      "date": "",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "J.R. Phillips recommended legislation requiring Secretary of the Interior through Superintendent of Five Civilized Tribes to approve conveyance of lands of deceased allottees to their heirs"
+    },
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "proposed",
+      "date": "",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "J.R. Phillips recommended legislation supplementing law governing sale of inherited lands by providing for appraisal and advertisement similar to sale of allotted lands, applying to Indians of one-half or more blood, with proceeds impounded by the government"
+    },
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "proposed",
+      "date": "",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "J.R. Phillips recommended Congress require all lease contracts be made under supervision of field clerk or other Department officer"
+    },
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "proposed",
+      "date": "",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "H.A. Archerd recommended Congress enact law removing restrictions on all Indian land except sufficient acreage for a home, with proceeds used for improvements, livestock, and farming equipment"
+    },
+    {
+      "bill_number": "",
+      "sponsor": "",
+      "action_type": "proposed",
+      "date": "",
+      "vote_count": "",
+      "committee": "",
+      "outcome": "S.A. Mills recommended reserving or continuing restriction on 40 acres of average land per allottee, inalienable during lifetime, as homestead"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Unnamed field worker",
+      "witness_title": "Supervisor of restricted Indians, Five Civilized Tribes",
+      "hearing": "Board of Indian Commissioners inquiry on releasing Indians from government supervision",
+      "committee": "Board of Indian Commissioners",
+      "location": "",
+      "date": "",
+      "subject": "Competency and success rates of Indians released from government control",
+      "key_claims": "Spent lifetime among restricted class Indians; 30% of released Indians making decided success; 50% succeeding indifferently; 10% barely escaping failure; 10% failed completely. Education is the primary factor determining success or failure. Competent Indians rarely apply for restriction removal because restricted lands are not taxable and they value their homes. Recommended competency commission release competent Indians regardless of their wishes. 10% of those released by competency board sold lands and misused proceeds while 90% made good.",
+      "questioner": ""
+    },
+    {
+      "witness": "J. R. Phillips",
+      "witness_title": "Field Clerk, Five Civilized Tribes, Okmulgee, Oklahoma",
+      "hearing": "Board of Indian Commissioners inquiry on releasing Indians from government supervision",
+      "committee": "Board of Indian Commissioners",
+      "location": "Okmulgee, Oklahoma",
+      "date": "",
+      "subject": "Views on releasing Indians from government supervision",
+      "key_claims": "46 years old, enrolled Chickasaw member, lifelong resident among Five Civilized Tribes. Prior to allotment Indians had little knowledge of land value and held land in common. Notes and mortgages were unknown among Indians. Act of May 27, 1908 left Indians facing new conditions without experience - long on land but short on money. Indians were easily led to part with land. Full-blood Indians do not realize value of money. At least 90% of allottees lease surplus land for only a fraction of rental value. Money is soon spent and squandered. Inherited lands sold at prices far below real value with only county court approval. Probate court proceedings are only ministerial not judicial. 75% or more of inherited lands sold for 50% or less of real value. Recommended legislation requiring Department approval for conveyance of deceased allottees' lands. Recommended compelling Indian children to attend public schools. Recommended guardians furnish certificate of ward's school attendance.",
+      "questioner": ""
+    },
+    {
+      "witness": "H. A. Archerd",
+      "witness_title": "Field Clerk, Five Civilized Tribes, Holdenville, Oklahoma",
+      "hearing": "Board of Indian Commissioners inquiry on releasing Indians from government supervision",
+      "committee": "Board of Indian Commissioners",
+      "location": "Holdenville, Oklahoma",
+      "date": "",
+      "subject": "Removal of restrictions and winding up Indian affairs",
+      "key_claims": "Turning loose Indians by degree of blood or school grade is inadvisable because many enrolled as less than full-blood are actually full-blood. Knows one instance where an Indian enrolled as one-eighth blood is actually full-blood and speaks no English. At least 75% of those with restrictions removed have disposed of allotments. Really competent Indians do not desire restrictions removed; it is the incompetent who do. Successful Indians in district were arbitrarily removed by competency commission two or three years ago. Recommended each case decided on merits. Recommended Congress enact law retaining sufficient acreage for homestead and allowing sale of remainder with proceeds used for improvements and farming equipment.",
+      "questioner": ""
+    },
+    {
+      "witness": "S. A. Mills",
+      "witness_title": "Field Clerk, Five Civilized Tribes, Ardmore, Oklahoma",
+      "hearing": "Board of Indian Commissioners inquiry on releasing Indians from government supervision",
+      "committee": "Board of Indian Commissioners",
+      "location": "Ardmore, Oklahoma",
+      "date": "",
+      "subject": "Policy of granting patents-in-fee to Chickasaw Indians",
+      "key_claims": "Policy of granting patents-in-fee has been premature in many cases. Trust created by Congress has not been kept as intended; injury instead of good has resulted. Removal of restrictions should be decided on merits, not quantum of blood. Many less-than-half-blood Indians are less fit than many full-bloods. Too much liberality in general removal evident; many became prey of designing men. Only a small percentage have made success in full meaning. Recommended reserving at least one-fourth of homestead allotments of average value, held inalienable during allottee's lifetime. Recommended more careful disposition of applications for removal.",
+      "questioner": ""
+    },
+    {
+      "witness": "C. H. Asbury",
+      "witness_title": "Superintendent, Crow Indian Reservation",
+      "hearing": "Board of Indian Commissioners inquiry on releasing Indians from government supervision",
+      "committee": "Board of Indian Commissioners",
+      "location": "Crow Agency, Montana",
+      "date": "",
+      "subject": "Releasing Indians from government supervision at Crow Reservation",
+      "key_claims": "Prepared tabular statement on patent-in-fee Indians. Endorsed views of field employees and missionaries, especially W.A. Petzoldt's letter which closely matched his own opinion. Indian must be put on his own responsibility; nursing process will not prepare him. Does not believe in wholesale policy that would cause suffering among old people. Young men and women with schooling should be given their portion and told it is 'root hog or die.'",
+      "questioner": ""
+    }
+  ],
+  "taxes": [
+    {
+      "taxpayer": "Creek Indians with restrictions removed",
+      "land_description": "Surplus allotments",
+      "tax_type": "property",
+      "amount": "",
+      "year": "",
+      "status": "delinquent",
+      "county": "",
+      "context": "Among the Creeks when restrictions are removed from surplus allotments the land becomes taxable. Having had no experience with taxes they are left unpaid, penalties accrue, and in a great number of cases tax deeds are issued on the land."
+    },
+    {
+      "taxpayer": "Restricted Indians generally",
+      "land_description": "Restricted allotment lands",
+      "tax_type": "property",
+      "amount": "",
+      "year": "",
+      "status": "exempt",
+      "county": "",
+      "context": "So long as lands are restricted they are not subject to taxation. This is cited as one reason competent Indians do not apply for restriction removal."
+    },
+    {
+      "taxpayer": "Indians with restrictions removed",
+      "land_description": "Former restricted lands",
+      "tax_type": "property",
+      "amount": "",
+      "year": "",
+      "status": "tax_deed",
+      "county": "",
+      "context": "In a great number of cases, tax deeds are issued on the land of Indians who had restrictions removed but failed to pay taxes due to lack of experience with taxation"
+    }
+  ],
+  "mortgages": [
+    {
+      "borrower": "Purchasers of Indian land",
+      "lender": "Loan companies",
+      "amount": "In excess of purchase price",
+      "land_description": "Inherited and surplus Indian lands",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "active",
+      "context": "Purchasers of Indian land were able to secure loans from loan companies on the land even in excess of the purchase price paid for it, indicating the lands were sold far below actual value"
+    },
+    {
+      "borrower": "Indians with restrictions removed",
+      "lender": "",
+      "amount": "",
+      "land_description": "Allotment lands",
+      "acreage": "",
+      "date": "",
+      "interest_rate": "",
+      "status": "other",
+      "context": "When restrictions are removed, Indians proceed to sell or encumber land with a loan. Competent Indians cited as not wanting to sell or mortgage their lands as reason for not seeking restriction removal."
+    }
+  ]
+}

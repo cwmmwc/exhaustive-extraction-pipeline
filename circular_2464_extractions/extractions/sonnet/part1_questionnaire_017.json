@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_017",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "50-53",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Ann Black",
+    "Tribe/Reservation": "Sioux Indians, South Dakota",
+    "Post Office Address": "Genoa, Neb. 3 years; Chamberlain, S.D. 5 years; Lipp County, S.D. 3 years",
+    "Allotment number": "3518",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "21",
+    "Occupation/Income": "Housewife; married, living with husband and supported by him",
+    "NOTES": "Application for patent in fee covering Northwest quarter of Section Three, Township Twenty-Eight, North of Range Seventy-four West of the Fifth Principal Meridian, South Dakota, containing One Hundred and fifty-nine and fifteen-hundredths acres; degree of blood: one-fourth; married; husband has 175 acres, is a citizen and has a patent in fee to his land, is a member of the Standing Rock Sioux Indians, South Dakota; no inherited land; no individual Indian money on credit; not in debt; no other occupation stated beyond housewife; land not leased; no contract to sell land; no one asked her to procure patent for disposing of land; no other trust lands remaining after application is released",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 3138,
+    "output_tokens": 426
+  },
+  "elapsed": 9.8
+}

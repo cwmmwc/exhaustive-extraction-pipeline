@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_011",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "24-25",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Frank Shadlow",
+    "Tribe/Reservation": "Otoe Agency",
+    "Post Office Address": "Ponca City, Okla.",
+    "Allotment number": "336",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest; allottee says that he did not want the Government to issue him a patent on his land, that the same was against his wishes",
+    "Recorded patent": "yes, filed for record in Noble County",
+    "Sold/Mortgaged": "Sold S/2 for $4500 and paid a mortgage on land for $550.00",
+    "Buyer": "$4500.00 to Byron Phipps, no old debts to settle",
+    "Tax burden forced sale/Mortgage": "no land sold for debt or taxes; Mortgage released",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sept. 1917",
+    "Gender": "Male",
+    "Age": "53 years",
+    "Occupation/Income": "No income of any kind nor contribution of any sort",
+    "NOTES": "Good health; no property or funds accumulated; none dependent upon the Indian for support; no evidence of fraud in this case; patent receipted for by Supt. Hoyo; document notarized November 22, 1928 in Kay County, Oklahoma; notary commission expires Aug. 3rd, 1931; oua. 61391",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2606,
+    "output_tokens": 392
+  },
+  "elapsed": 8.8
+}

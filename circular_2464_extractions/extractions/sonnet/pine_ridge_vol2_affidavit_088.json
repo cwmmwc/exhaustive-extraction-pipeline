@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_088",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "107",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Wilson Cuny",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Manderson, South Dakota",
+    "Allotment number": "2911",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his allotment at the time he received it, but the Indian Agency Office advised him that he would have to accept it, so he did it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged it to Bill McGaa, of Scenic, South Dakota, for $600.00",
+    "Buyer": "Bill McGaa of Scenic, South Dakota for $600.00",
+    "Tax burden forced sale/Mortgage": "in 1920, he got behind in his taxes on this 160 acre allotment; that he mortgaged it to Bill McGaa, of Scenic, South Dakota, for $600.00; that, in 1923, Mr. McGaa foreclosed this mortgage, Mr. Cuny being unable to make his payments",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "35 years old",
+    "Occupation/Income": "his only source of income is laboring for other people",
+    "NOTES": "mentally competent, has good health; has a wife and 7 minor children to support, all of whom have good health except one child is bothered with stomach trouble; has a very tough time in making the ends meet; has never received any aid from the County or Government; allotment was 160 acres; document dated November 16, 1928; State of South Dakota, County of Shannon",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2235,
+    "output_tokens": 456
+  },
+  "elapsed": 6.2
+}

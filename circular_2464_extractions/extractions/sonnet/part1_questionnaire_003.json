@@ -1,0 +1,32 @@
+{
+  "document_id": "part1_questionnaire_003",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 Circular 2464 part 1.pdf",
+  "source_pages": "9",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "not stated",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "South Dakota, Sioux Avenue",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I paid $130.00 taxes and $190.00 was held out by a lawyer",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1929",
+    "Gender": "not stated",
+    "Age": "32 years",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is heavily damaged/fragmentary; sale price was supposed to be $3,000.00 but full amount was not received; $130.00 paid in taxes and $190.00 held out by a lawyer; stamp reads 'RECEIVED SEP 30 1929'; partial reference numbers visible (773e2, 500, 2500, 240, 38.6)",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2211,
+    "output_tokens": 327
+  },
+  "elapsed": 5.9
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part2_agency_narrative_040",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 2.pdf",
+  "source_pages": "84",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alfred Bordeaux",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. Dak.",
+    "Allotment number": "1045",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded by the Farmers State Bank of Colome April 21, 1920",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged by Bordeaux and wife dated March 1, 1921 for $2080.00, and another mortgage May 17, 1922 for $2000.00; deed dated May 2, 1923 conveyed the land to L. Yancey for a consideration of $3200.00, subject to a mortgage of $2000.00, which the grantee assumes and agrees to pay",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612667 issued; southeast quarter of section 4, township 35, range 31; also south half of the southwest quarter and south half [description appears incomplete in document]; receipt for patent signed by allottee January 23, 1918",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2095,
+    "output_tokens": 409
+  },
+  "elapsed": 6.2
+}

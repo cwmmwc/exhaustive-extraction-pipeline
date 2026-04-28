@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_097",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "116",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Emma Black Feather, nee Garnier",
+    "Tribe/Reservation": "Oglala (Pine Ridge Agency)",
+    "Post Office Address": "Oglala, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 160 acre allotment at the time she got it; but she was told that, if she did not accept it, it would be assessed for the taxes, and finally sold for same, so she took it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "George Linhan, of Oglala, South Dakota; he paid her $400.00 in cash, gave her the privilege of buying $400.00 worth more in merchandise, taking over her place for $1200.00",
+    "Tax burden forced sale/Mortgage": "she was owing a store bill of $400.00, in 1920, to George Linhan, of Oglala, South Dakota, and that she gave him a mortgage on her land to cover this debt; that, in 1921, being unable to pay this mortgage off, he paid her $400.00 in cash",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "37 years old",
+    "Occupation/Income": "a little lease money coming in; husband supports the family by farming the land of one of his daughters, and works for neighbors on the farm as common laborer",
+    "NOTES": "Mentally incompetent, has poor health, was wounded once and has had rheumatism ever since; has six children to support, four of whom have good health and two are sickly; husband has poor health; she considers that the price she got for her place was poor; has never received any help from the County, State or the United States Government; document number No. 30 34; subscribed and sworn December 1, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2357,
+    "output_tokens": 536
+  },
+  "elapsed": 11.3
+}

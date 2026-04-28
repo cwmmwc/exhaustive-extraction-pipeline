@@ -1,0 +1,32 @@
+{
+  "document_id": "part7_questionnaire_020",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 7.pdf",
+  "source_pages": "53-54",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "not stated",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "o Leal",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "not stated",
+    "Age": "46",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is heavily damaged and largely illegible. References to mortgage foreclosure and land questions visible but not fully readable. Notarized in 1929; commission expires noted as 12-La-27/1227. Agency stamp visible: 'RECEIVED MAY 18 1929 ROSEBUD AGENCY.' Allottee signed name in notary's presence.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2641,
+    "output_tokens": 299
+  },
+  "elapsed": 7.4
+}

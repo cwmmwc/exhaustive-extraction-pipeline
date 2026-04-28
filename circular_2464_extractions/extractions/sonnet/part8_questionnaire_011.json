@@ -1,0 +1,32 @@
+{
+  "document_id": "part8_questionnaire_011",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 8.pdf",
+  "source_pages": "38",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Henry H. Emery",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I sold it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Male",
+    "Age": "39",
+    "Occupation/Income": "Up until lately I have been farming but right now we are running a lunch counter in St. Francis",
+    "NOTES": "Patent delivered by mail at Bonesteel in 1918; sold land for an Oakland car valued at $400.00 and $2200 in cash; satisfied with sale at time of sale; signed receipt for sale; no debts settled with purchaser at time of sale; did not make application for patent; wife and three children depend on him for support; fair health; document numbers 2960 and 2903 appear at top",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2204,
+    "output_tokens": 332
+  },
+  "elapsed": 5.8
+}

@@ -1,0 +1,33 @@
+{
+  "document_id": "part13_questionnaire_024",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 13.pdf",
+  "source_pages": "50-51",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Henry Chapman",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Oklahoma",
+    "Allotment number": "not stated",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Filed for record by allottee; receipted for yes",
+    "Sold/Mortgaged": "Mortgaged; foreclosed and redemption expired",
+    "Buyer": "not stated; land sold for about $1800 through foreclosure",
+    "Tax burden forced sale/Mortgage": "Taxes paid by allottee while he held the land; allottee was forced to sell his land for the mortgage",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 6, 1917",
+    "Gender": "Male",
+    "Age": "36",
+    "Occupation/Income": "Allottee has interest in two restricted allotments, from which he receives about $35 per annum. Shares in Pawnee annuity.",
+    "NOTES": "Wife and five minor children dependent upon allottee for support. Good health. No other property accumulated. Owing to the fact that the allottee was forced to sell his land for the mortgage, he feels that he did not receive what it was worth, especially considering the oil play that was developing in the vicinity of his land. Has any of the land been sold for debt or taxes \u2014 Pawnee County, Okla. Document executed December 11, 1928, notarized with commission expiring Jan. 31st.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2582,
+    "output_tokens": 426
+  },
+  "elapsed": 6.4,
+  "retry_count": 1
+}

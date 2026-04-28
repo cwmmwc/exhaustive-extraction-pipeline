@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_117",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "143",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lillie Running Horse, nee Depend",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Kyle, South Dakota",
+    "Allotment number": "1837",
+    "Cancelled": "not stated",
+    "Refused/Protested": "she did not want this patent, as she did not want to pay taxes on her land; but that the Indian Agency informed her that, if she did not take the patent, and keep the taxes paid up on it, the land would finally be sold for taxes",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold her forced patent allotment to John Hart, of Rapid City, South Dakota, for $700.00, cash",
+    "Buyer": "John Hart, of Rapid City, South Dakota, for $700.00, cash",
+    "Tax burden forced sale/Mortgage": "the Indian Agency informed her that, if she did not take the patent, and keep the taxes paid up on it, the land would finally be sold for taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "52 years old",
+    "Occupation/Income": "her husband, her son-in-law and herself farm for their living; also, that they pick potatoes in the fall for other people; and that this home farming and working for other people constitutes their entire income",
+    "NOTES": "Land described as SWa, Sec. 22, T. 41N., R. 38W., of the 6th P.M., in South Dakota; she considers she received a poor price for her land; she never sold her land for any debts incurred prior to receiving her patent in fee; has poor health with stomach trouble especially bad; mother of two minor children who have poor health \u2014 the girl is lame and the boy is tubercular; husband is partially paralyzed; husband draws rations from the United States Government beginning in 1901; has never received any help from the United States Government, State Government, or county government; land sold late in 1919 or early in 1920; State of South Dakota, County of Shannon; document number 204/224244",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2456,
+    "output_tokens": 570
+  },
+  "elapsed": 6.9
+}

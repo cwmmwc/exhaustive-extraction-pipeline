@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_019",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "23",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Susie Janis (deceased); statement made by Benjamin Janis, husband",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "4133",
+    "Cancelled": "not stated",
+    "Refused/Protested": "his wife did not want the patent in fee to her 320 acre allotment at the time it was issued; but was informed that, if she did not take it, the allotment would be taxed, and finally sold for same, so she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to a Mr. Leedom, of Gordon, Nebraska, for $1500.00; in 1923, L. D. Bailey offered to pay off the mortgage, selling the allotment to a third party, and give her $700.00 for her interests in the place; Bailey sold the place, but never paid the $700.00",
+    "Tax burden forced sale/Mortgage": "was informed that, if she did not take it, the allotment would be taxed, and finally sold for same; mortgaged in 1920 as both his wife and himself were sick, and in need of money",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "65 years old at the time of her death, April 30, 1927",
+    "Occupation/Income": "not stated",
+    "NOTES": "Statement made by Benjamin Janis, husband of Susie Janis\u2014deceased. Benjamin Janis is 64 years old. Susie Janis died April 30, 1927, cause of death was dropsy. Susie Janis never received any aid from the County, State nor the United States Government. Bailey sold the place but never paid the $700.00; even if he had made good his promise, it would have been an extremely poor price for this land. Affidavit subscribed and sworn before a Notary Public on December 6, 1928, in Shannon County, South Dakota.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2320,
+    "output_tokens": 573
+  },
+  "elapsed": 7.1
+}

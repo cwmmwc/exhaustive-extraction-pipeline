@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_022",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "49",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Luther Wright",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1506",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded April 26, 1920, by Luther Wright",
+    "Sold/Mortgaged": "Sold",
+    "Buyer": "Wright and his wife conveyed the land to R. E. Minger by deed showing consideration to be $6667.50",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739646 issued; Lots 1 and 2 and South half of Northeast quarter, section 1, township 99, north of range 78; receipt signed by allottee April 5, 1920; land contract dated April 26, 1920 between R. E. Minger and Luther Wright shows that Wright agrees to sell the land for $6667.50, as follows: $2000 in cash, $1000 represented by one Buick roadster the delivery of which is acknowledged by Wright, and $3667.50 to be paid on or before July 1, 1920; subject to certain case between Luther Wright and Joseph E. Holton of Jordan",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2117,
+    "output_tokens": 422
+  },
+  "elapsed": 4.7
+}

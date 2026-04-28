@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_questionnaire_004",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "11",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Scissons, Jr.",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged",
+    "Buyer": "Mortgaged to J. P. Treweiler for $3000.00; records show mortgage of $6000.00 (additional $3000 on a garage purchase); records also show a deed on the land to Mr. Treweiler",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1920",
+    "Gender": "Male",
+    "Age": "33",
+    "Occupation/Income": "not stated",
+    "NOTES": "Mortgagee in possession since 1923. Allottee states mortgage on land was only $3000 and the other $3000 is on a garage he bought. Does not remember signing a deed to Treweiler; has a summons to answer a complaint by Treweiler praying for quieting of title, to be answered within 30 days from June 8th. Allottee states Treweiler has not given credit for all payments made and has charged excess prices for repairs. Allottee received patent in 1920 from the Farmer at Ponca. Did not make application for patent. Wife and her sister depend on him for support. Notary: S. W. Cross, commission expires 4-28-32. Subscribed and sworn May 10, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2437,
+    "output_tokens": 455
+  },
+  "elapsed": 9.9
+}

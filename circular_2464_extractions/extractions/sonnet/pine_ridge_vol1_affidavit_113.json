@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_113",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "139",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Julia Brafford",
+    "Tribe/Reservation": "Shannon County (Pine Ridge area, South Dakota)",
+    "Post Office Address": "Scenic, So. Dak.",
+    "Allotment number": "1648",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent in fee but accepted it on the advice of her Farmer and the Superintendent who told her that if she did not take the patent and pay the taxes that the land would be sold to satisfy them",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "borrowed $1900.00 from Federal Land Bank, Omaha, Nebr.",
+    "Buyer": "Mortgaged to Federal Land Bank, Omaha, Nebr. for $1900.00",
+    "Tax burden forced sale/Mortgage": "could not pay the taxes on this land and was about to lose it for taxes so she borrowed $1900.00 from Federal Land Bank, Omaha, Nebr.; she has kept the payments and taxes up on the land but that it has just kept her broke doing it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "49 years old",
+    "Occupation/Income": "not stated",
+    "NOTES": "Mentally competent and in poor health; has her equity in this land but that is all; has a husband who is crippled and unable to do any hard work, though he does the best he can; has received no aid from the Government, State or County since her patent was issued; a payment due next month and she does not know how she can raise the money to meet them; document dated November 27, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2243,
+    "output_tokens": 465
+  },
+  "elapsed": 5.5
+}

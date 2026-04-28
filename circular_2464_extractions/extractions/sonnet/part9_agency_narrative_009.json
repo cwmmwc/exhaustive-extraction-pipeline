@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_agency_narrative_009",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "16",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Myrtle Anderson (Kirwin)",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "3191",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "patent was recorded August 9, 1919, but records do not show by whom",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to John Frostrom for $2889.60; mortgaged to Wm. Krotter Co. for $273.91; mortgaged to Aetna Life Insurance Company for $2400, due October 1, 1923; on December 16, 1922, the sheriff conveyed the land to E. F. Strain, assignee",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612816 issued December 29, 1917. Land described as Southeast quarter of Northeast quarter and Lot 1 of Section 32, and Southwest quarter of Northwest quarter and Lot 4, Section 33, Township 95, Range 72. Receipt for patent signed February 28, 1918, by the allottee. On November 18, 1918, Myrtle Anderson Kirwin and John M. Kirwin mortgaged land to John Frostrom for $2889.60. On June 1, 1921, they mortgaged to Wm. Krotter Co. for $273.91. On August 19, 1921, they mortgaged to Aetna Life Insurance Company for $2400, due October 1, 1923. On December 10, 1921, the Aetna Life Insurance Company mortgage was foreclosed and on December 16, 1922, the sheriff conveyed the land to E. F. Strain, assignee. Two mechanics liens recorded against the land but they were satisfied.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2185,
+    "output_tokens": 578
+  },
+  "elapsed": 7.5
+}

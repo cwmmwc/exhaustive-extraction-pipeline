@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_affidavit_003",
+  "type": "affidavit",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "19",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Wm. Grant",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "2181",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "I was going to pay the taxes due (one year) but he said he would pay the taxes; I had $300.00 in the Crookston State Bank and they took $87.36 of my money to pay for the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document appears to be a partial/fragment. Affiant references a note for $500.00 and a promised additional $200.00 from an unnamed party, neither of which were received. The Crookston State Bank held $300.00 of affiant's money and deducted $87.36 for taxes; affiant received only a tax receipt when inquiring about the remaining balance.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2020,
+    "output_tokens": 357
+  },
+  "elapsed": 5.6
+}

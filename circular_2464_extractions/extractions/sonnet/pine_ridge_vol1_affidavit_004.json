@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_004",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "9",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "John Lee",
+    "Tribe/Reservation": "Shannon County (Pine Ridge area, South Dakota)",
+    "Post Office Address": "Denby, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his allotment, on account of not wishing to pay taxes; that he was told that he would have to take the patent and pay taxes, and he accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "mortgaged his half section for $396.00 to pay the taxes",
+    "Buyer": "Mr. A. Barker, of Denby, South Dakota, holding and foreclosing the mortgage, which was foreclosed in 1924",
+    "Tax burden forced sale/Mortgage": "got behind in taxes, and that he mortgaged his half section for $396.00 to pay the taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "66 years old",
+    "Occupation/Income": "supported by a grown son",
+    "NOTES": "Mentally incompetent; health is poor, being bothered especially with acute rheumatism; supported by a grown son; wife also supported by this same son; has never received any help from the County or Government; document No. 53; sworn November 15, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2228,
+    "output_tokens": 400
+  },
+  "elapsed": 4.5
+}

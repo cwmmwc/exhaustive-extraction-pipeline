@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_agency_narrative_005",
+  "type": "agency_narrative",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "70",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louis Richard",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "4743",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Patent recorded Aug. 7, 1922 by Home Abstract Co., Martin, So. Dak.",
+    "Sold/Mortgaged": "Mortgaged",
+    "Buyer": "Mortgaged NW1/4 12-36-36 (with other land) to Rancheros State Bank, Cody, Nebr. for $1110.69 on June 1, 1926; mortgaged NW1/4 12-36-36 (with other land) to Rancher's State Bank, Cody, Nebr. for $2000.00 on Mar. 1, 1928; mortgaged NW1/4 12-36-36 to Federal Land Bank of Omaha, Nebr. for $1000.00 on August 31, 1922",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Sep. 29, 1919",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Receipt dated Jan. 15, 1920. On Oct. 13, 1928, Rancher's State Bank, Cody, Nebr. released mortgage on NW1/4 12-36-36 dated Mar. 1, 1928. Wife named Annie Richard. Mortgage of Aug. 31, 1922 to Federal Land Bank of Omaha recorded 10-12-1922. Information taken from records at the County Seat.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2212,
+    "output_tokens": 498
+  },
+  "elapsed": 5.6
+}

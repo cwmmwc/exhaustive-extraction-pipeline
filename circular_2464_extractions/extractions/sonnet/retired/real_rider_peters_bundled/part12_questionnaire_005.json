@@ -1,0 +1,55 @@
+{
+  "document_id": "part12_questionnaire_005",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "10-13",
+  "model": "sonnet",
+  "extraction": [
+    {
+      "Name": "Warren Real Rider",
+      "Tribe/Reservation": "Pawnee County, Oklahoma (Pawnee Agency)",
+      "Post Office Address": "Pawnee, Oklahoma",
+      "Allotment number": "226",
+      "Cancelled": "no",
+      "Refused/Protested": "with protest",
+      "Recorded patent": "yes, filed for record by allottee",
+      "Sold/Mortgaged": "Land sold for $2000",
+      "Buyer": "Sold to C. E. Vandervoort for $2000 which was a good price at that time. Did not owe purchaser any money.",
+      "Tax burden forced sale/Mortgage": "Has any of the land been sold for debt or taxes? no",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "Nov. 13, 1917",
+      "Gender": "Male",
+      "Age": "48 years",
+      "Occupation/Income": "No income from any source. Shares in Pawnee annuity.",
+      "NOTES": "Good health. No property or money accumulated. Wife and two children dependent upon him. Date and manner of delivery of patent: 1917, Agency office. No evidence of fraud appears to have been practiced in this case. Notarized November 26, 1928; commission expires Jan. 31, 1929.",
+      "Literate/Illiterate": "not stated",
+      "Document type": "questionnaire"
+    },
+    {
+      "Name": "Jesse Peters",
+      "Tribe/Reservation": "Pawnee County, Oklahoma (Pawnee Agency)",
+      "Post Office Address": "Pawnee, Oklahoma",
+      "Allotment number": "728",
+      "Cancelled": "no",
+      "Refused/Protested": "with protest",
+      "Recorded patent": "don't remember",
+      "Sold/Mortgaged": "Mortgaged to R. C. Spinning for $1700 then sold for $2000 allottee receiving but $65.00 for the land.",
+      "Buyer": "Land sold for $2000 which the allottee thinks was $1000 below market value.",
+      "Tax burden forced sale/Mortgage": "It seems that the mortgage prevented him from receiving more money for the land.",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "Dec. 24, 1917",
+      "Gender": "Male",
+      "Age": "56 years",
+      "Occupation/Income": "No income from inherited land. Shares in Pawnee annuity.",
+      "NOTES": "Bad eyesight. No property and no money accumulated. Wife and two children dependent upon him. Date and manner of delivery of patent: Jan. 1918, Agency Office. It is believed that the allottee did not receive full value for his land. Notarized November 26, 1928; commission expires Jan. 31, 1929. Signed with x mark.",
+      "Literate/Illiterate": "Illiterate \u2014 signed with x mark",
+      "Document type": "questionnaire"
+    }
+  ],
+  "usage": {
+    "input_tokens": 3400,
+    "output_tokens": 781
+  },
+  "elapsed": 13.5,
+  "retry_count": 1
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_007",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "16-17",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Brown",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Oklahoma",
+    "Allotment number": "585",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "not by allottee 1930",
+    "Sold/Mortgaged": "Land all mortgaged for $4227 to R. C. Spinning, Mortgage paid off and new mortgage given on 80 acres, which was foreclosed.",
+    "Buyer": "R. C. Spinning",
+    "Tax burden forced sale/Mortgage": "no land sold for debt or taxes; mortgage foreclosed on 80 acres",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 24, 1917",
+    "Gender": "Male",
+    "Age": "58 years",
+    "Occupation/Income": "Shares in annuity to Pawnee Indians",
+    "NOTES": "Date and manner of delivery of patent Feb. 15, 1918 by mail; receipted for: yes; no property or money accumulated; fair health; no persons dependent upon him for support; has no inherited lands or interest; allottee says that the mortgages to R. C. Spinning were executed by him but that he received very little of the money \u2014 Mr. Spinning told him he would keep the money for him and pay it out in small sums as he needed funds; allottee says the last mortgage of $1800 was not paid to him at all; including sale and mortgages, the allottee should have received $6027 for the land, which he says was not a fair price for the land at that time; document notarized November 28, 1928, Pawnee County, Oklahoma; commission expires Jan. 31, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2677,
+    "output_tokens": 488
+  },
+  "elapsed": 7.2
+}

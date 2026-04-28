@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_120",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "146",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louis Mosseau",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Allen, South Dakota",
+    "Allotment number": "1859",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent in fee to his 160 acre allotment when it was issued, in September, 1919, but he was informed by the Indian Agency that, if he did not accept the patent, it would be taxed, and finally sold for taxes, so he took it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold his place early in 1920",
+    "Buyer": "William Losey, of Allen, South Dakota, for $1600.00 cash",
+    "Tax burden forced sale/Mortgage": "he was informed by the Indian Agency that, if he did not accept the patent, it would be taxed, and finally sold for taxes",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September, 1919",
+    "Gender": "Male",
+    "Age": "34 years old",
+    "Occupation/Income": "farms his wife's land and works for other farmers, this constituting his only income",
+    "NOTES": "mentally competent, has good health; has a wife whose health is poor, being bothered with appendicitis; has four children to support with pretty good health; he considers $1600.00 was a poor price for the allotment, as land was a good price at that time; has never received any aid from the County, State nor the United States Government; document sworn December 11, 1928; 160 acre allotment",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2240,
+    "output_tokens": 455
+  },
+  "elapsed": 5.9
+}

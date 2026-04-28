@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_094",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "113",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Patton",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area implied)",
+    "Post Office Address": "Rocky Ford, So. Dak.",
+    "Allotment number": "2929",
+    "Cancelled": "not stated",
+    "Refused/Protested": "accepted it under protest when he was told by the Farmer and Superintendent that if he did not take the patent and pay the taxes that the land would be sold to pay them",
+    "Recorded patent": "he had the patent recorded but does not remember the date",
+    "Sold/Mortgaged": "sold it to H. P. Simmons (now deceased) for $2400.00 and he was to pay the back taxes",
+    "Buyer": "H. P. Simmons (now deceased) for $2400.00",
+    "Tax burden forced sale/Mortgage": "he was unable to pay the taxes on the land, and that it was about to be sold to pay them so he sold it",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "54 years old",
+    "Occupation/Income": "farms a little on his sons land, but that it is poor and he raises very little, that he does what common labor he can",
+    "NOTES": "mentally competent but in poor health, suffering from liver and stomach trouble which makes it impossible for him to do much work; has an invalid wife to support besides himself; has received no aid from the Government, State or County since he was granted a patent for his land; does not think he received a fair price for the land, thinking it was worth at least $10.00 per acre; affidavit subscribed and sworn before Notary Public on 20th day of November, 1928; County of Shannon, State of South Dakota",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2330,
+    "output_tokens": 485
+  },
+  "elapsed": 5.8
+}

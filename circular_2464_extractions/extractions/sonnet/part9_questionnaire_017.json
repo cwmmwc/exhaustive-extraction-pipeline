@@ -1,0 +1,32 @@
+{
+  "document_id": "part9_questionnaire_017",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 9.pdf",
+  "source_pages": "52",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Varney Clyde Giroux",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "3538",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Yes I told Mr. Howry, the Farmer, that I did not want it? He said it is down at the office and you might as well get it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged and then they foreclosed the mortgage.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "1918",
+    "Gender": "Male",
+    "Age": "34",
+    "Occupation/Income": "Farming",
+    "NOTES": "Allottee stated he did not think he ought to have the patent as it would mean he would have to pay taxes and he did not need the patent at the time it was issued. The first mortgage was merely for security on some cattle he had purchased. The second mortgage was for $1600 and was the one that was foreclosed. Allottee stated he knew the amount of the encumbrance placed on the land was not all it was worth but did that in order to try to make a little money. No fraud alleged. Wife and two children depend upon him for support. Subscribed and sworn before Notary Public W. Cross, commission expires 4-28-32, on May 14, 1929.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2332,
+    "output_tokens": 419
+  },
+  "elapsed": 7.2
+}

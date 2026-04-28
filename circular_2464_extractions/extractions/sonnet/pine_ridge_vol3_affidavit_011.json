@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_011",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "15",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Angelina Standing Bear",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Wanblee, South Dakota",
+    "Allotment number": "402 9",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want her patent to her 320 acre allotment when it was issued, as she did not desire to have the taxes to pay; but that the Pine Ridge Agency advised her to take it, as it would be taxed just the same, and finally be sold for taxes if she did not take care of it; so she accepted it",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold a quarter section to a man by the name of Hankson, of Velvidere, South Dakota, for $2400.00 cash; then in 1924, she sold the other quarter to a man by the name of O'Brien, of Velvidere, South Dakota, for $1800.00 cash",
+    "Buyer": "Hankson of Velvidere, South Dakota for $2400.00 cash (1922); O'Brien of Velvidere, South Dakota for $1800.00 cash (1924)",
+    "Tax burden forced sale/Mortgage": "paid her taxes on this land every year, but the taxes kept getting higher all the time, and she felt she could not pay them any longer",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "52 years old",
+    "Occupation/Income": "pension of $30.00 a month derived from her husband's Indian Scout activities",
+    "NOTES": "mentally competent; in possession of good health for one of her age, except that her eyes bother her; husband is dead; has no children; thinks she received a poor price for her land; has never received any aid from the County, State or United States Government; affidavit sworn November 26, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2335,
+    "output_tokens": 525
+  },
+  "elapsed": 5.4
+}

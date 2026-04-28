@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol3_affidavit_045",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [3 of 3].pdf",
+  "source_pages": "57-58",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "James Hawkins",
+    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Post Office Address": "Hisle, South Dakota",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want his patent to his 640 acre allotment at the time he got it, but was told by the Indian Agency, that he would be taxed for it anyway, it being reported to the tax collector, so he took it under protest",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "sold a half section to some man from back East, through an agent named Torson, of Martin, South Dakota, for $1500.00 cash; then in 1921, he sold the other half section to Joe Wardell, of Martin, South Dakota, for $3000.00 cash",
+    "Buyer": "first half section sold to some man from back East through an agent named Torson of Martin, South Dakota for $1500.00; second half section sold to Joe Wardell of Martin, South Dakota for $3000.00",
+    "Tax burden forced sale/Mortgage": "got behind in taxes, and paid the taxes out of the $1500.00 from the first sale",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "68 years old",
+    "Occupation/Income": "farms a little, and works for farmers as a day laborer, and that is all the income he has",
+    "NOTES": "mentally incompetent, has very poor health, having a very stiff neck for seven or eight years; has a wife and three children to support, wife having very poor health, thinks she has tuberculosis, but the children have good health; satisfied with price on last half section but received a real poor price on the first half section; has never received any help from the County, State or the United States Government; document also contains a second affidavit for Andrew Russell, Allotment No. 4628, Wanblee, S.D., age 58, who stated he did not want his patent, wrote to Superintendent who replied it made no difference and he would have to pay taxes, so he sent 10 cents to have patent sent to him; sold one-half section to Raymond Cozad of Martin, S.D. for $2800.00 with buyer to pay back taxes; does not think he received a fair price; sworn December 13, 1928, County of Washabaugh",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2854,
+    "output_tokens": 655
+  },
+  "elapsed": 7.9
+}

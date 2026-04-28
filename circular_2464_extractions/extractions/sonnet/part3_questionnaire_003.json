@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_questionnaire_003",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "7",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Oliver Guerue",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1069",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "I first mortgaged it and then sold it.",
+    "Buyer": "Mortgaged to Andrew J. Stotts for $1520.00; sold to Joseph Valandra who paid the mortgage and gave me $110. Also received $300 in cash, a Ford car valued at $500, a set of harness at $40, a phonograph at $75, and seven head of horses.",
+    "Tax burden forced sale/Mortgage": "He then wanted his money for the mortgage and I did not have it so I made arrangements to sell it to Joseph Valandra who paid the mortgage and gave me $110.",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male",
+    "Age": "35",
+    "Occupation/Income": "By trust funds and my own efforts at farming and odd jobs.",
+    "NOTES": "Brother John brought the patent to Oliver at the place he was working. Oliver signed some papers in Cody soon after receiving the patent but is not sure if any were a receipt. States 'I would be better off today if I had not received it.' Has seven children. Original mortgage was for $1520.00. Andrew J. Stotts promised (not in writing) to purchase the land but later backed out. Subscribed and sworn before Jas. W. Cross, Notary Public, March 25, 1929; commission expires 4-28-32.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2432,
+    "output_tokens": 464
+  },
+  "elapsed": 6.3
+}

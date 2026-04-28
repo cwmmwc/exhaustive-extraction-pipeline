@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol2_affidavit_063",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [2 of 3].pdf",
+  "source_pages": "81",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Annie Hornbeck, nee Gibbons",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "Rockyford, South Dakota",
+    "Allotment number": "2677",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want it, for she did not want to pay taxes, but the Indian Agency told her that it would be assessed for taxes whether she took it or not, and, if she did not take it, the land would finally be sold for taxes, so she accepted the patent",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "in 1919, she mortgaged the SW4 of her allotment to Tom Arnold, of Scenic, South Dakota, for $300.00, and, in 1920, Arnold purchased her entire half section for this mortgage of $300.00, giving in addition $500.00 in cash",
+    "Tax burden forced sale/Mortgage": "Arnold, also, paid the back taxes on her 320 acre allotment, which he purchased",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "September 29, 1919",
+    "Gender": "Female",
+    "Age": "46 years old",
+    "Occupation/Income": "her husband's only income is derived by his working on farms",
+    "NOTES": "her health is very poor, as is, also, her two childrens' health; her husband supports her, her two children and one grandchild; she did not sell her place for debts incurred prior to receiving her patent in fee; she considers that she received a very poor price for her allotment; with the $500.00 cash she purchased another quarter of land; has never received any aid from the County, State nor the United States Government; patent issued for 320 acres; County of Shannon, State of South Dakota; affidavit sworn December 22, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2363,
+    "output_tokens": 521
+  },
+  "elapsed": 6.7
+}

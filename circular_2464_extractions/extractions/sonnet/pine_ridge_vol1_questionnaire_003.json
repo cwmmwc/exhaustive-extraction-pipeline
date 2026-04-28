@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_questionnaire_003",
+  "type": "questionnaire",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "109-110",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Grace Riley",
+    "Tribe/Reservation": "Pine Ridge Agency",
+    "Post Office Address": "Newell, Butte County, S.D.",
+    "Allotment number": "1117",
+    "Cancelled": "No",
+    "Refused/Protested": "Was accepted without protest",
+    "Recorded patent": "Filed by C.T. Torrison",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to C. T. Torrison for $1000, Nov. 1918. Sold same to Mrs. Mary Voltz about May 1919. Purchaser assumed mortgage at time of sale.",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 1918",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Deposition made by Mrs. Grace Riley to questionnaire submitted by E. W. Jermark, Superintendent, Pine Ridge Agency. Patent was sent by registered mail and card receipted about Aug. 1918; she had not requested patent. Five children dependent upon her for support. Notarized November 17, 1928 at Newell, Butte County, S.D. by notary C.D. Sanders.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2920,
+    "output_tokens": 382
+  },
+  "elapsed": 8.1
+}

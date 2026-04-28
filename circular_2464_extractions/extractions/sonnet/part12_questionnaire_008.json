@@ -1,0 +1,32 @@
+{
+  "document_id": "part12_questionnaire_008",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "18-19",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Darwin & Pena Peters, Deed (James Peters)",
+    "Tribe/Reservation": "Pawnee",
+    "Post Office Address": "Pawnee, Oklahoma",
+    "Allotment number": "362-363",
+    "Cancelled": "no",
+    "Refused/Protested": "with protest",
+    "Recorded patent": "Was it filed for record? no",
+    "Sold/Mortgaged": "Not mortgaged but money borrowed from R. C. Spinning. The allottee sold three allotments to R. C. Spinning, for $6500 which was not the real value. Proceeds used to settle old debts to Spinning.",
+    "Buyer": "R. C. Spinning, for $6500",
+    "Tax burden forced sale/Mortgage": "no land sold for debt or taxes; proceeds used to settle old debts to Spinning",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Dec. 6, 1917; date and manner of delivery of patent March 16, 1918, Agency office",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "The only income of allottee is his share of the Pawnee annuity.",
+    "NOTES": "Decedent Darwin & Pena Peters; document executed by James Peters on December 3, 1928, notarized in Pawnee County, Oklahoma; commission expires Jan. 31, 1929. Good health, no property or money accumulated. Wife and four minor children dependent upon allottee. Lands appear to have had a value of approximately $10,000.00; allottee appears to have been defrauded. Patent receipted: Yes. Questionnaire per Circular No. 2464, June 18, 1924. | Dual-allotment entry; Darwin & Pena Peters (deceased allottees) held allotments 362 and 363. James Peters is the heir/deponent.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2626,
+    "output_tokens": 479
+  },
+  "elapsed": 8.4
+}

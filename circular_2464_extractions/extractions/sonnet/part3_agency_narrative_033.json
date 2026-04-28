@@ -1,0 +1,32 @@
+{
+  "document_id": "part3_agency_narrative_033",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+  "source_pages": "81",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Nora Sway Sanders",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "4839",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Pat recorded 11-20-18 by First National Bank",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Joseph A. Skinner for $500; SEl 36-38-34 deeded to James R. Duff, Pierce, by Nora Sway Sanders and Jesse F. Sanders for $2550.00 on May 9, 1919",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Receipt dated July 7, 1918; Nora Sanders and Jesse F. Sanders (wife and husband) mortgaged SEl 56-38-34 to Joseph A. Skinner, recorded May 26, 1919; above mortgage 'satisfied' May 9, 1919; records taken from the county seat",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2098,
+    "output_tokens": 378
+  },
+  "elapsed": 6.4
+}

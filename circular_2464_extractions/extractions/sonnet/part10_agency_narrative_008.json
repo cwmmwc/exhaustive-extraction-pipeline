@@ -1,0 +1,32 @@
+{
+  "document_id": "part10_agency_narrative_008",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 10.pdf",
+  "source_pages": "13",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Evaline Mary Anderson",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S.D.",
+    "Allotment number": "5003",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent had not been recorded on March 8, 1929",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Receipt for patent was signed April 5, 1920, by the allottee. The 1927 and prior taxes had been paid but the taxes for 1928 amounting to $153.45 were unpaid. No judgments or liens on record. The Southwest quarter section 29, township 99, north of range 76. Fee patent No. 739669.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2015,
+    "output_tokens": 329
+  },
+  "elapsed": 3.4
+}

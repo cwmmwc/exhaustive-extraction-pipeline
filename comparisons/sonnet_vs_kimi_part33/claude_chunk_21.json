@@ -1,0 +1,967 @@
+{
+  "entities": [
+    {
+      "name": "Mr. Kirk",
+      "type": "person",
+      "context": "Witness/speaker testifying about grazing, timber, and reservation conditions; likely a tribal representative"
+    },
+    {
+      "name": "Mr. Zimmerman",
+      "type": "person",
+      "context": "Referenced in letter to Senator Steiwer stating less than 25 percent merchantable timber"
+    },
+    {
+      "name": "Senator Steiwer",
+      "type": "person",
+      "context": "Senator who received a letter from Mr. Zimmerman about timber conditions"
+    },
+    {
+      "name": "Senator Thomas",
+      "type": "person",
+      "context": "Committee member conducting hearing, has 140,000 Indians and 52 tribes in his state"
+    },
+    {
+      "name": "Mr. Crawford",
+      "type": "person",
+      "context": "Superintendent accused of manipulating grazing rights and sheep ownership on reservation"
+    },
+    {
+      "name": "Mrs. Crawford",
+      "type": "person",
+      "context": "Wife of superintendent Crawford; her relatives involved in sheep grazing arrangements"
+    },
+    {
+      "name": "Engle",
+      "type": "person",
+      "context": "Nephew of Mrs. Crawford; accused of illegally selling 500 head of sheep each to his mother and sister"
+    },
+    {
+      "name": "Crystal",
+      "type": "person",
+      "context": "Brother-in-law of Crawford's wife; allowed to bring sheep onto reservation before advertised bidding date"
+    },
+    {
+      "name": "Mr. Mitchell",
+      "type": "person",
+      "context": "Tribal representative who appealed to Commissioner along with Mr. Kirk"
+    },
+    {
+      "name": "Mr. Walker",
+      "type": "person",
+      "context": "Referenced in appeals to Commissioner alongside Mr. Mitchell"
+    },
+    {
+      "name": "Mr. Grorud",
+      "type": "person",
+      "context": "Individual who will be in Washington soon and will confer with the Commissioner on tribal charges"
+    },
+    {
+      "name": "Senator Wheeler",
+      "type": "person",
+      "context": "Chairman of the Indian Affairs Committee; referenced as person to send charges and statements to"
+    },
+    {
+      "name": "Mr. Collier",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs; referenced as authority to take up tribal charges"
+    },
+    {
+      "name": "Eugene Day",
+      "type": "person",
+      "context": "Author of letter from Tuolumne, Calif. dated July 3, 1934 to Senator Wheeler"
+    },
+    {
+      "name": "F. G. Collett",
+      "type": "person",
+      "context": "Representative of Indian Board of Cooperation; accused of threatening Indians and failing to account for funds"
+    },
+    {
+      "name": "Stephen Knight",
+      "type": "person",
+      "context": "Headed group of Indians from around Eureka in 1925 joint meeting"
+    },
+    {
+      "name": "Henderson, Pemberton & Hanley",
+      "type": "organization",
+      "context": "Law firm allegedly hired by certain California Indian bands for Court of Claims case"
+    },
+    {
+      "name": "U. S. Webb",
+      "type": "person",
+      "context": "Attorney General referenced as Government's choice; praised by Me-wuk Tribe for integrity"
+    },
+    {
+      "name": "Indian Board of Cooperation",
+      "type": "organization",
+      "context": "Organization represented by F.G. Collett; California Indians organization involved in Court of Claims"
+    },
+    {
+      "name": "Me-wuk Tribe",
+      "type": "organization",
+      "context": "Tribe residing in and around Tuolumne, Tuolumne County, California; subject of letter"
+    },
+    {
+      "name": "Tuolumne Reservation",
+      "type": "location",
+      "context": "Reservation in Tuolumne County, California where Me-wuk Tribe resides"
+    },
+    {
+      "name": "Tuolumne auxiliary",
+      "type": "organization",
+      "context": "Local auxiliary that discontinued relations with Indian Board of Cooperation after 1925 meeting"
+    },
+    {
+      "name": "Klamath Indian Reservation",
+      "type": "location",
+      "context": "Reservation referenced in index with complaint against superintendent and timber operations"
+    },
+    {
+      "name": "Yuma Indian Agency",
+      "type": "organization",
+      "context": "Federal agency managing Yuma Reservation Indians; subject of extensive complaints"
+    },
+    {
+      "name": "Mission Indian Federation",
+      "type": "organization",
+      "context": "Federation of Mission Indians with Yuma Auxiliary; involved in various reservation issues"
+    },
+    {
+      "name": "American Indian Defense Association",
+      "type": "organization",
+      "context": "Organization with statement re Yuma Indian Agency"
+    },
+    {
+      "name": "Indian Affairs Committee",
+      "type": "organization",
+      "context": "Senate committee conducting hearings on conditions of Indians in United States"
+    },
+    {
+      "name": "Quachan Tribal Council",
+      "type": "organization",
+      "context": "Tribal council at Yuma with statement in record"
+    },
+    {
+      "name": "Palm Springs Reservation",
+      "type": "location",
+      "context": "Reservation referenced with Agua Caliente Band and water development issues"
+    },
+    {
+      "name": "Agua Caliente Band",
+      "type": "organization",
+      "context": "Band at Palm Springs referenced under Mission Indian Agency jurisdiction"
+    },
+    {
+      "name": "Cabazon Reservation",
+      "type": "location",
+      "context": "Reservation under Mission Indian Agency jurisdiction"
+    },
+    {
+      "name": "Capitol Grande Reservation",
+      "type": "location",
+      "context": "Reservation under Mission Indian Agency jurisdiction"
+    },
+    {
+      "name": "LaMesa Reservation",
+      "type": "location",
+      "context": "Reservation under Mission Indian Agency jurisdiction"
+    },
+    {
+      "name": "Martinez Reservation",
+      "type": "location",
+      "context": "Reservation under Mission Indian Agency jurisdiction"
+    },
+    {
+      "name": "Saboba Reservation",
+      "type": "location",
+      "context": "Reservation under Mission Indian Agency jurisdiction"
+    },
+    {
+      "name": "Santa Ysabel Reservation",
+      "type": "location",
+      "context": "Reservation under Mission Indian Agency jurisdiction"
+    },
+    {
+      "name": "Toro Reservation",
+      "type": "location",
+      "context": "Reservation referenced in index"
+    },
+    {
+      "name": "Cocoph Reservation",
+      "type": "location",
+      "context": "Reservation referenced under Yuma Indian Agency"
+    },
+    {
+      "name": "St. Francis Hotel",
+      "type": "location",
+      "context": "Location in San Francisco where meeting was held on July 2, 1934"
+    },
+    {
+      "name": "San Francisco",
+      "type": "location",
+      "context": "City where Indian Board of Cooperation offices and July 2, 1934 meeting were located"
+    },
+    {
+      "name": "Tuolumne County",
+      "type": "location",
+      "context": "County in California where Tuolumne Reservation and Me-wuk Tribe reside"
+    },
+    {
+      "name": "Calaveras County",
+      "type": "location",
+      "context": "County referenced as part of Me-wuk section"
+    },
+    {
+      "name": "Mariposa County",
+      "type": "location",
+      "context": "County referenced as part of Me-wuk section"
+    },
+    {
+      "name": "Eureka",
+      "type": "location",
+      "context": "Area from which Stephen Knight headed a group of Indians"
+    },
+    {
+      "name": "Superintendent Jolly",
+      "type": "person",
+      "context": "Superintendent at Yuma/Mission Indian Agency; subject of petition for removal"
+    },
+    {
+      "name": "J. A. Moore",
+      "type": "person",
+      "context": "Enforcement officer who filed reports on Mesa Grande fiesta incident"
+    },
+    {
+      "name": "Czerney Anderson",
+      "type": "person",
+      "context": "Gave testimony re surveys and possessory rights"
+    },
+    {
+      "name": "Rachel B. Barker",
+      "type": "person",
+      "context": "Secretary, Indian Defense Association"
+    },
+    {
+      "name": "Adam Costillo/Costello",
+      "type": "person",
+      "context": "President, Mission Indian Federation; gave statements re jurisdictional act and Mesa Grande fiesta"
+    },
+    {
+      "name": "Marion Butler",
+      "type": "person",
+      "context": "Gave statement re jurisdictional act"
+    },
+    {
+      "name": "Winnifred Codman",
+      "type": "person",
+      "context": "Mrs. Codman gave statement re jurisdictional act"
+    },
+    {
+      "name": "Chas. Dey Elkins",
+      "type": "person",
+      "context": "Gave statement re jurisdictional act"
+    },
+    {
+      "name": "James M. Hanley",
+      "type": "person",
+      "context": "Gave statement re jurisdictional act; member of Henderson, Pemberton & Hanley law firm"
+    },
+    {
+      "name": "J. W. Henderson",
+      "type": "person",
+      "context": "Gave statement re jurisdictional act; member of Henderson, Pemberton & Hanley law firm"
+    },
+    {
+      "name": "Grace LaChusa",
+      "type": "person",
+      "context": "Individual referenced in index at page 17272"
+    },
+    {
+      "name": "Juan Largo",
+      "type": "person",
+      "context": "Individual who suffered accident and injury referenced in index"
+    },
+    {
+      "name": "Robert Magee",
+      "type": "person",
+      "context": "Individual referenced in index at page 17271"
+    },
+    {
+      "name": "Ramon Manuel",
+      "type": "person",
+      "context": "Individual referenced in index at pages 17256 and 17250"
+    },
+    {
+      "name": "Nathan Anderson",
+      "type": "person",
+      "context": "Gave statement re jurisdictional act"
+    },
+    {
+      "name": "Richard Nejo",
+      "type": "person",
+      "context": "Individual referenced in index under Mission Indian Federation Yuma Auxiliary"
+    },
+    {
+      "name": "Ventura Palpa",
+      "type": "person",
+      "context": "Captain, Grande Reservation"
+    },
+    {
+      "name": "Julius H. Rainwater",
+      "type": "person",
+      "context": "Secretary, Community Chest, San Diego, California"
+    },
+    {
+      "name": "Anna Smith",
+      "type": "person",
+      "context": "Made complaint re leasing at Yuma Agency"
+    },
+    {
+      "name": "Mr. Gates",
+      "type": "person",
+      "context": "Research assistant referenced at Yuma Agency"
+    },
+    {
+      "name": "John Collier",
+      "type": "person",
+      "context": "Commissioner of Indian Affairs; wrote letter re jurisdictional act"
+    },
+    {
+      "name": "O. H. Lipps",
+      "type": "person",
+      "context": "Individual referenced in index at pages 17371 and 17411; associated with Sacramento Agency"
+    },
+    {
+      "name": "Charles Knight",
+      "type": "person",
+      "context": "Gave statement re logging and beetle control camps at Klamath"
+    },
+    {
+      "name": "Wheeler-Howard Act",
+      "type": "legislation",
+      "context": "Legislation referenced with election notice and vote at Yuma Agency"
+    },
+    {
+      "name": "Act 435",
+      "type": "legislation",
+      "context": "Act allegedly violated; Kirk requests investigation into its violation"
+    },
+    {
+      "name": "Act of May 18, 1928",
+      "type": "legislation",
+      "context": "Court of Claims act referenced in index"
+    },
+    {
+      "name": "Indian Court of Claims bill",
+      "type": "legal_case",
+      "context": "Pending bill before Congress referenced in Eugene Day letter"
+    },
+    {
+      "name": "All American Canal",
+      "type": "location",
+      "context": "Canal construction through Yuma Reservation referenced in index"
+    },
+    {
+      "name": "Highway No. 80",
+      "type": "location",
+      "context": "Highway crossing allotments and scene of accidents at Yuma Reservation"
+    },
+    {
+      "name": "Peter William",
+      "type": "person",
+      "context": "Affidavit submitted re Court of Claims referenced in index"
+    },
+    {
+      "name": "W. G. Walker",
+      "type": "person",
+      "context": "Affidavit submitted re Court of Claims referenced in index"
+    }
+  ],
+  "events": [
+    {
+      "type": "tribal_meeting",
+      "date": "1922",
+      "location": "Tuolumne Reservation",
+      "description": "F.G. Collett stated that Indians who did not subscribe to the Indian Board of Cooperation would be left off the rolls and receive no benefits from any judgment"
+    },
+    {
+      "type": "tribal_meeting",
+      "date": "1925",
+      "location": "unknown",
+      "description": "Joint meeting held with Me-wuk Tribe and Indians from around Eureka headed by Stephen Knight; Collett invited to show cause for continued support of Indian Board of Cooperation and account for collected moneys; Collett failed to answer satisfactorily; Tuolumne auxiliary discontinued all relations with Indian Board of Cooperation"
+    },
+    {
+      "type": "meeting",
+      "date": "1934-07-02",
+      "location": "St. Francis Hotel, San Francisco, California",
+      "description": "Meeting at which statements were made that 17,000 California Indians voted to hire Henderson, Pemberton & Hanley law firm; Eugene Day disputes this claim as Me-wuk section had no voice or legal representative"
+    },
+    {
+      "type": "congressional_hearing",
+      "date": "1934-07-03",
+      "location": "California",
+      "description": "Senate subcommittee hearing on Survey of Conditions of Indians in United States; testimony by Kirk, Mitchell, and others about Klamath Reservation conditions"
+    },
+    {
+      "type": "hearing_adjournment",
+      "date": "1934-07-03",
+      "location": "California",
+      "description": "Senator Thomas adjourned the hearings after taking testimony"
+    },
+    {
+      "type": "grazing_resolution",
+      "date": "unknown",
+      "location": "Klamath Reservation",
+      "description": "General council adopted resolution to sell grazing rights to the highest bidder"
+    },
+    {
+      "type": "sheep_removal",
+      "date": "approximately_1931",
+      "location": "Klamath Reservation",
+      "description": "Mr. Crawford was instrumental in getting sheep off the reservation approximately 3 years before the hearing"
+    },
+    {
+      "type": "sheep_return",
+      "date": "approximately_1931-1934",
+      "location": "Klamath Reservation",
+      "description": "Crawford instrumental in bringing sheep back onto reservation in guise of Indian ownership through conditional-sales contracts with his sisters-in-law and wife's nephew"
+    },
+    {
+      "type": "premature_sheep_grazing",
+      "date": "unknown",
+      "location": "Klamath Reservation",
+      "description": "Crawford allowed Crystal (wife's brother-in-law) to bring flock of sheep onto reservation before grazing ranches were advertised for bid"
+    },
+    {
+      "type": "beetle_control_logging",
+      "date": "unknown",
+      "location": "Klamath Reservation area",
+      "description": "Beetle-control logging operation conducted on reservation; Kirk alleges trees were sold too cheaply and merchantable trees were left standing"
+    },
+    {
+      "type": "letter_submission",
+      "date": "1934-07-03",
+      "location": "Tuolumne, California",
+      "description": "Eugene Day submitted written statement to Senator Wheeler per his request at July 2 meeting regarding Indian Court of Claims bill and legal representation"
+    },
+    {
+      "type": "Mesa_Grande_fiesta_incident",
+      "date": "unknown",
+      "location": "Mesa Grande",
+      "description": "Incident at Mesa Grande fiesta involving guns and tribal police; multiple statements submitted"
+    },
+    {
+      "type": "survey_of_boundaries",
+      "date": "unknown",
+      "location": "Mission Indian lands",
+      "description": "Surveys of boundaries of Mission Indian lands conducted; various statements and reports submitted"
+    },
+    {
+      "type": "amended_petition_filed",
+      "date": "1932-03-14",
+      "location": "Court of Claims",
+      "description": "Amended petition filed in Court of Claims re California Indian claims"
+    },
+    {
+      "type": "accident",
+      "date": "unknown",
+      "location": "Highway 80, Yuma Reservation",
+      "description": "Accidents and collision on Highway 80 crossing Yuma allotments; Juan Largo injured"
+    },
+    {
+      "type": "canal_construction",
+      "date": "unknown",
+      "location": "Yuma Reservation",
+      "description": "All American Canal construction through Yuma Reservation"
+    },
+    {
+      "type": "right_of_way_taken",
+      "date": "unknown",
+      "location": "Yuma Reservation",
+      "description": "Right-of-way taken without compensation through Yuma Reservation for roads and bridges"
+    }
+  ],
+  "financial_transactions": [
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Crawford's sisters-in-law and wife's nephew",
+      "payee": "unknown seller",
+      "date": "approximately_1931-1934",
+      "description": "Sheep purchased by Crawford's 2 sisters-in-law and 1 nephew of his wife on conditional-sales contracts"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "Engle's mother and sister",
+      "payee": "Engle",
+      "date": "unknown",
+      "description": "Engle sold 500 head of sheep each to his mother and his sister, which he had no right to sell under treaty rights"
+    },
+    {
+      "type": "fee",
+      "amount": "unknown",
+      "payer": "California Indians",
+      "payee": "Henderson, Pemberton & Hanley",
+      "date": "unknown",
+      "description": "Law firm fee allegedly requested in connection with Court of Claims judgment; Me-wuk Tribe states they will contest the fee"
+    },
+    {
+      "type": "payment",
+      "amount": "unknown",
+      "payer": "Indian Board of Cooperation members",
+      "payee": "Indian Board of Cooperation",
+      "date": "1922-1925",
+      "description": "Membership dues and moneys collected by Indian Board of Cooperation; Collett failed to account for funds at 1925 meeting"
+    },
+    {
+      "type": "sale",
+      "amount": "unknown",
+      "payer": "outsiders",
+      "payee": "Yuma Agency",
+      "date": "unknown",
+      "description": "Rations at Yuma Agency sold to outsiders"
+    },
+    {
+      "type": "payment",
+      "amount": "unknown",
+      "payer": "unknown",
+      "payee": "unknown",
+      "date": "unknown",
+      "description": "Tuition paid for Yuma day school pupils"
+    },
+    {
+      "type": "other",
+      "amount": "unknown",
+      "payer": "unknown",
+      "payee": "unknown",
+      "date": "unknown",
+      "description": "Reimbursable indebtedness at Yuma Agency referenced at pages 17233 and 17256"
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Mr. Kirk",
+      "type": "represented",
+      "object": "tribal members at Klamath Reservation",
+      "context": "Testified on behalf of tribal members regarding grazing and timber grievances"
+    },
+    {
+      "subject": "Mr. Mitchell",
+      "type": "represented",
+      "object": "tribal members at Klamath Reservation",
+      "context": "Appealed in person and in writing to Commissioner alongside Kirk"
+    },
+    {
+      "subject": "Crawford",
+      "type": "employed_by",
+      "object": "Bureau of Indian Affairs",
+      "context": "Superintendent at Klamath Reservation"
+    },
+    {
+      "subject": "Crystal",
+      "type": "related_to",
+      "object": "Mrs. Crawford",
+      "context": "Crystal is a brother-in-law of Crawford's wife"
+    },
+    {
+      "subject": "Engle",
+      "type": "related_to",
+      "object": "Mrs. Crawford",
+      "context": "Engle is a nephew of Mrs. Crawford"
+    },
+    {
+      "subject": "Crawford",
+      "type": "related_to",
+      "object": "Crystal",
+      "context": "Crystal is described as one of Crawford's wife's brothers-in-law"
+    },
+    {
+      "subject": "Henderson, Pemberton & Hanley",
+      "type": "represented",
+      "object": "California Indians (claimed)",
+      "context": "Law firm claimed to represent approximately 17,000 California Indians in Court of Claims case"
+    },
+    {
+      "subject": "U. S. Webb",
+      "type": "represented",
+      "object": "California Indians (Government choice)",
+      "context": "Attorney General chosen by Government; praised by Me-wuk Tribe"
+    },
+    {
+      "subject": "F. G. Collett",
+      "type": "represented",
+      "object": "Indian Board of Cooperation",
+      "context": "Represented Indian Board of Cooperation at Tuolumne Reservation meeting in 1922"
+    },
+    {
+      "subject": "Eugene Day",
+      "type": "represented",
+      "object": "Me-wuk Tribe of Tuolumne",
+      "context": "Wrote letter to Senator Wheeler on behalf of tribe"
+    },
+    {
+      "subject": "Senator Wheeler",
+      "type": "employed_by",
+      "object": "Senate Indian Affairs Committee",
+      "context": "Chairman of the Senate Indian Affairs Committee"
+    },
+    {
+      "subject": "Senator Thomas",
+      "type": "employed_by",
+      "object": "Senate Indian Affairs Committee",
+      "context": "Committee member conducting hearings"
+    },
+    {
+      "subject": "John Collier",
+      "type": "employed_by",
+      "object": "Bureau of Indian Affairs",
+      "context": "Commissioner of Indian Affairs"
+    },
+    {
+      "subject": "Tuolumne auxiliary",
+      "type": "related_to",
+      "object": "Indian Board of Cooperation",
+      "context": "Former member; discontinued relations after 1925 meeting"
+    },
+    {
+      "subject": "Me-wuk Tribe",
+      "type": "related_to",
+      "object": "Calaveras, Tuolumne, and parts of Mariposa Counties",
+      "context": "Tribe resides in this section; had no voice at meetings where law firm was selected"
+    },
+    {
+      "subject": "Adam Costello",
+      "type": "employed_by",
+      "object": "Mission Indian Federation",
+      "context": "President of Mission Indian Federation"
+    },
+    {
+      "subject": "Rachel B. Barker",
+      "type": "employed_by",
+      "object": "Indian Defense Association",
+      "context": "Secretary of Indian Defense Association"
+    },
+    {
+      "subject": "Julius H. Rainwater",
+      "type": "employed_by",
+      "object": "Community Chest, San Diego",
+      "context": "Secretary of Community Chest in San Diego, California"
+    },
+    {
+      "subject": "O. H. Lipps",
+      "type": "employed_by",
+      "object": "Sacramento Agency",
+      "context": "Referenced in relation to Sacramento Agency"
+    },
+    {
+      "subject": "Mr. Gates",
+      "type": "employed_by",
+      "object": "Yuma Indian Agency",
+      "context": "Research assistant at Yuma Agency"
+    },
+    {
+      "subject": "J. A. Moore",
+      "type": "employed_by",
+      "object": "Mission Indian Agency",
+      "context": "Enforcement officer who reported on Mesa Grande fiesta incident"
+    },
+    {
+      "subject": "Superintendent Jolly",
+      "type": "employed_by",
+      "object": "Yuma/Mission Indian Agency",
+      "context": "Superintendent subject to petition for removal"
+    },
+    {
+      "subject": "Crawford's sisters-in-law",
+      "type": "bought_from",
+      "object": "unknown seller",
+      "context": "Purchased sheep on conditional-sales contracts"
+    },
+    {
+      "subject": "Engle",
+      "type": "sold_to",
+      "object": "Engle's mother and sister",
+      "context": "Sold 500 head of sheep each to mother and sister allegedly without right to do so"
+    }
+  ],
+  "fee_patents": [],
+  "correspondence": [
+    {
+      "sender": "Mr. Zimmerman",
+      "sender_title": "unknown",
+      "recipient": "Senator Steiwer",
+      "recipient_title": "Senator",
+      "date": "unknown",
+      "subject": "Beetle-control logging and timber quality on reservation",
+      "action_requested": "unknown",
+      "outcome": "Letter stated less than 25 percent merchantable timber and rest was bug infested"
+    },
+    {
+      "sender": "Eugene Day",
+      "sender_title": "Tribal representative, Me-wuk Tribe",
+      "recipient": "Hon. Mr. Wheeler",
+      "recipient_title": "Chairman, Indian Affairs Committee, Washington D.C.",
+      "date": "1934-07-03",
+      "subject": "Indian Court of Claims bill and legal representation of California Indians",
+      "action_requested": "Submission of written statement for records per Wheeler's wishes at July 2 meeting",
+      "outcome": "Statement submitted covering history from 1922 regarding Indian Board of Cooperation, Henderson Pemberton & Hanley law firm dispute, and Me-wuk Tribe's support for Attorney General U.S. Webb"
+    },
+    {
+      "sender": "tribal business committee (recommended)",
+      "sender_title": "tribal governing body",
+      "recipient": "Commissioner of Indian Affairs and Senator Wheeler",
+      "recipient_title": "Commissioner; Senate Committee Chairman",
+      "date": "1934",
+      "subject": "Charges against superintendent Crawford",
+      "action_requested": "Senator Thomas recommended business committee formally set forth charges against superintendent and send copies to Commissioner and Senator Wheeler",
+      "outcome": "Recommendation made during hearing; not yet acted upon"
+    },
+    {
+      "sender": "Mr. Kirk and Mr. Mitchell",
+      "sender_title": "tribal representatives",
+      "recipient": "Commissioner of Indian Affairs",
+      "recipient_title": "Commissioner",
+      "date": "multiple occasions prior to 1934",
+      "subject": "Complaints about reservation management",
+      "action_requested": "Investigation of superintendent's conduct",
+      "outcome": "No satisfactory response received"
+    },
+    {
+      "sender": "unknown",
+      "sender_title": "unknown",
+      "recipient": "Senator Wheeler",
+      "recipient_title": "Senate Committee Chairman",
+      "date": "1934",
+      "subject": "Weaver's report on beetle-control logging",
+      "action_requested": "Kirk suggested committee ask for Weaver's report on beetle-control logging",
+      "outcome": "Thomas advised Kirk to take up with Wheeler directly"
+    }
+  ],
+  "legislative_actions": [
+    {
+      "bill_number": "unknown",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "Senate Indian Affairs Committee",
+      "outcome": "Indian Court of Claims bill pending before Congress as of July 3, 1934"
+    },
+    {
+      "bill_number": "Wheeler-Howard Act",
+      "sponsor": "Wheeler/Howard",
+      "action_type": "enacted",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Referenced with election notice and vote at Yuma Agency; copy of notice of election referenced in index"
+    },
+    {
+      "bill_number": "Act 435",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Kirk requests investigation into violation of Act 435"
+    },
+    {
+      "bill_number": "Act of May 18, 1928",
+      "sponsor": "unknown",
+      "action_type": "enacted",
+      "date": "1928-05-18",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Court of Claims act for California Indians; referenced in index"
+    },
+    {
+      "bill_number": "Jurisdictional Act",
+      "sponsor": "unknown",
+      "action_type": "introduced",
+      "date": "unknown",
+      "vote_count": "unknown",
+      "committee": "unknown",
+      "outcome": "Multiple parties gave statements re proposed amendments; Secretary of Interior filed report on proposed amendments; amended petition filed March 14, 1932"
+    }
+  ],
+  "testimony": [
+    {
+      "witness": "Mr. Kirk",
+      "witness_title": "tribal representative",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "California",
+      "date": "1934-07-03",
+      "subject": "Beetle-control logging and grazing rights abuses at Klamath Reservation",
+      "key_claims": "Zimmerman's letter to Senator Steiwer stated less than 25% merchantable timber with rest bug-infested; trees marked for cutting were left standing; timber sold too cheaply. General council adopted resolution to sell grazing rights to highest bidder but Crawford allowed Crystal to bring sheep onto reservation before ranches were advertised for bid. Crawford was instrumental in removing sheep and then returning them under guise of Indian ownership through conditional-sales contracts with sisters-in-law and wife's nephew. Engle sold 500 head of sheep each to mother and sister without right to do so. Kirk requests thorough investigation into violation of Act 435 and asks committee to request Weaver's report on beetle-control logging.",
+      "questioner": "Senator Thomas"
+    },
+    {
+      "witness": "Mr. Mitchell",
+      "witness_title": "tribal representative",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "California",
+      "date": "1934-07-03",
+      "subject": "Appeals to Commissioner of Indian Affairs",
+      "key_claims": "Tribe has appealed to Commissioner in person and in writing and in every way possible without satisfactory response.",
+      "questioner": "Senator Thomas"
+    },
+    {
+      "witness": "Eugene Day",
+      "witness_title": "Me-wuk Tribe representative, Tuolumne",
+      "hearing": "Survey of Conditions of Indians in United States (written statement)",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "Tuolumne, California",
+      "date": "1934-07-03",
+      "subject": "Indian Court of Claims bill and legal representation dispute",
+      "key_claims": "In 1922 F.G. Collett threatened Indians who did not subscribe to Indian Board of Cooperation would be left off rolls. In 1925 Tuolumne auxiliary held joint meeting with Eureka Indians; Collett failed to answer questions about funds and statements; auxiliary discontinued relations with board. Claims that 17,000 Indians voted to hire Henderson Pemberton & Hanley is in error because Me-wuk section of Calaveras, Tuolumne, and parts of Mariposa Counties had no voice or representative at those meetings. Me-wuk Tribe flatly refuses to accept Henderson Pemberton & Hanley as representatives. Tribe supports Attorney General U.S. Webb and will contest any fee allowed to the rejected law firm.",
+      "questioner": "Senator Wheeler (recipient of letter)"
+    },
+    {
+      "witness": "Czerney Anderson",
+      "witness_title": "unknown",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "California",
+      "date": "1934",
+      "subject": "Surveys of boundaries and possessory rights",
+      "key_claims": "Provided testimony and report on surveys of Mission Indian boundaries and possessory rights",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Adam Costello",
+      "witness_title": "President, Mission Indian Federation",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "California",
+      "date": "1934",
+      "subject": "Jurisdictional Act and Mesa Grande fiesta incident",
+      "key_claims": "Provided statement re jurisdictional act and Mesa Grande fiesta incident",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Marion Butler",
+      "witness_title": "unknown",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "California",
+      "date": "1934",
+      "subject": "Jurisdictional Act",
+      "key_claims": "Provided statement re jurisdictional act pages 17289, 17300, 17330",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Winnifred Codman",
+      "witness_title": "Mrs.",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "California",
+      "date": "1934",
+      "subject": "Jurisdictional Act",
+      "key_claims": "Provided statement re jurisdictional act",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "F. G. Collett",
+      "witness_title": "Indian Board of Cooperation representative",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "California",
+      "date": "1934",
+      "subject": "Jurisdictional Act",
+      "key_claims": "Provided statement re jurisdictional act pages 17331 and 17341 and 17344",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Chas. Dey Elkins",
+      "witness_title": "unknown",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "California",
+      "date": "1934",
+      "subject": "Jurisdictional Act",
+      "key_claims": "Provided statement re jurisdictional act at page 17338",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "James M. Hanley",
+      "witness_title": "attorney, Henderson Pemberton & Hanley",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "California",
+      "date": "1934",
+      "subject": "Jurisdictional Act",
+      "key_claims": "Provided statement re jurisdictional act at page 17375",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "J. W. Henderson",
+      "witness_title": "attorney, Henderson Pemberton & Hanley",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "California",
+      "date": "1934",
+      "subject": "Jurisdictional Act",
+      "key_claims": "Provided statement re jurisdictional act at page 17371",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "U. S. Webb",
+      "witness_title": "Attorney General",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "California",
+      "date": "1934",
+      "subject": "Jurisdictional Act",
+      "key_claims": "Provided statement re jurisdictional act at page 17355",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Nathan Anderson",
+      "witness_title": "unknown",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "California",
+      "date": "1934",
+      "subject": "Jurisdictional Act",
+      "key_claims": "Provided statement re jurisdictional act at page 17368",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Charles Knight",
+      "witness_title": "unknown",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "Klamath",
+      "date": "1934",
+      "subject": "Logging and beetle control camps at Klamath Reservation",
+      "key_claims": "Gave statement re logging and beetle control camps at page 17414",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "J. A. Moore",
+      "witness_title": "Enforcement officer",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "California",
+      "date": "1934",
+      "subject": "Mesa Grande fiesta incident",
+      "key_claims": "Filed report and gave statement on Mesa Grande fiesta incident; referenced at pages 17268, 17274, 17293, 17290, 17296, 17302, 17304",
+      "questioner": "unknown"
+    },
+    {
+      "witness": "Quachan Tribal Council",
+      "witness_title": "tribal governing body",
+      "hearing": "Survey of Conditions of Indians in United States",
+      "committee": "Senate Indian Affairs Committee",
+      "location": "Yuma",
+      "date": "1934",
+      "subject": "Yuma Agency activities",
+      "key_claims": "Provided statement on activities of Quachan Tribal Council at page 17250",
+      "questioner": "unknown"
+    }
+  ],
+  "taxes": [],
+  "mortgages": []
+}

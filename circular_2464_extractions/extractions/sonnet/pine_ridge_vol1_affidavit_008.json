@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_affidavit_008",
+  "type": "affidavit",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "13",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louise Ullman",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Pine Ridge, South Dakota",
+    "Allotment number": "207",
+    "Cancelled": "not stated",
+    "Refused/Protested": "did not want it, but took it on the advise of the Superintendent, but that she brought it back several times and tried to get them to take it back",
+    "Recorded patent": "did not have it recorded and does not know who did",
+    "Sold/Mortgaged": "sold one, the north one to Douglas Points for $1000.00 and eleven head of horses and the south tract she sold the south Apart tract, in connection with a quarter of inherited land to Harry J. Evans, Pine Ridge, So. Dak. for $6000.00",
+    "Buyer": "Douglas Points (north tract, $1000.00 and eleven head of horses); Harry J. Evans, Pine Ridge, South Dakota (south tract and quarter of inherited land, $6000.00)",
+    "Tax burden forced sale/Mortgage": "this took all her stock with it, as they were mortgaged",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "68 years old",
+    "Occupation/Income": "depends on her children and friends for a living",
+    "NOTES": "mentally competent and in very poor health; has no home; has no one depending on her for support; has not received any aid from the Government, State or County since her patent was issued; allotment had two tracts; south tract sold together with a quarter of inherited land; stock was mortgaged and went with the south tract sale; affidavit subscribed and sworn before notary public, State of South Dakota, County of Shannon, November 13, 1928",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
+  "usage": {
+    "input_tokens": 2280,
+    "output_tokens": 485
+  },
+  "elapsed": 6.9
+}

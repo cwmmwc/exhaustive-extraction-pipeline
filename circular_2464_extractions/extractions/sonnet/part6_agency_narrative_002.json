@@ -1,0 +1,32 @@
+{
+  "document_id": "part6_agency_narrative_002",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 6.pdf",
+  "source_pages": "38",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Angelique Scissons (Swagger)",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. D.",
+    "Allotment number": "1937",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "was recorded by the Gregory County Abstract Company September 28, 1920",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "The land was mortgaged October 11, 1920, by Angelique Scissons Swagger and Jesse E. Swagger to the State of South Dakota for $5000; then on January 17, 1924, Angelique Swagger and husband conveyed by deed to Jeffrey H. Scissons for consideration of $1.00 and other valuable consideration",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612829 issued; South half of Northwest quarter and South half of Northeast quarter Section 33, township 97, north of range 69; receipt for patent was signed by the allottee February 14, 1918; husband is Jesse E. Swagger",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2077,
+    "output_tokens": 393
+  },
+  "elapsed": 5.4
+}

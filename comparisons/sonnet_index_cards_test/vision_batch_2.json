@@ -1,0 +1,42 @@
+{
+  "record_slips": [
+    {
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Northern Oklahoma",
+      "date": "1935-03-08",
+      "correspondent": "U.S. Atty.",
+      "correspondent_role": "outgoing",
+      "case_name": "U.S. vs. Ralph Hughes County Treas., et al",
+      "case_number": "488 equity",
+      "allottee_name": "",
+      "allottee_number": "",
+      "tribe_or_reservation": "",
+      "subject": "Please answer our letter of Feb. 20 requesting views and recommendations concerning appeal in U.S. vs. Ralph Hughes County Treas. et al Number four eighty eight equity. Time for appeal expires March 26.",
+      "action_type": "request",
+      "enclosures": "",
+      "routing_division": "",
+      "routing_date": "",
+      "clerk_initials": "PCR:BMG",
+      "processed_date": "1935-03-08"
+    }
+  ],
+  "legal_cases": [
+    {
+      "case_name": "U.S. vs. Ralph Hughes County Treas., et al",
+      "file_number": "90-2-5-10",
+      "jurisdiction": "Northern Oklahoma",
+      "case_type": "appeal",
+      "allottee_name": "",
+      "tribe_or_reservation": "",
+      "county": "Hughes"
+    }
+  ],
+  "persons": [
+    {
+      "name": "Ralph Hughes",
+      "role": "defendant",
+      "tribe": "",
+      "allottee_number": ""
+    }
+  ]
+}

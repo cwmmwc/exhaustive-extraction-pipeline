@@ -1,0 +1,32 @@
+{
+  "document_id": "pine_ridge_vol1_agency_narrative_002",
+  "type": "agency_narrative",
+  "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
+  "source_pages": "87",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Elizabeth Stirk nee Cottier",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "982",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Pat. recorded 2-1-21 by State Bank of Scenic, Scenic, So. Dak.",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to State Bank of Scenic, Scenic, So. Dak. for $2650.00 (recorded Jan. 5, 1923); Mortgaged to State Bank of Scenic, Scenic, So. Dak. for $800.00 (recorded Mar. 1, 1924); Mortgaged to State Bank of Scenic, Scenic, So. Dak. for $3236.00 (recorded Jan. 19, 1925); NE 32-37-39 deeded to State Bank of Scenic, Scenic, So. Dak. for $1.00 on Mar. 5, 1926",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "Apr. 13, 1918",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Receipt dated Jul. 1, 1918. Land described as NE 32-37-39. All transactions signed by Elizabeth Stirk and George Stirk, her husband. Three separate mortgages to State Bank of Scenic before final deed conveyance for $1.00 on Mar. 5, 1926. Taken from the records at the County Seat.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2264,
+    "output_tokens": 493
+  },
+  "elapsed": 5.8
+}
