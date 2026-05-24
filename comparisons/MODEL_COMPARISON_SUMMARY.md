@@ -1361,4 +1361,70 @@ Five silent measurement bugs were found and corrected across this work. Details 
 
 ---
 
-*Comparison and fine-tuning experiment conducted 2026-03-23. Recognition vs. comprehension analysis added 2026-03-24. Kimi K2.5 testing added 2026-03-25 — significantly changes the open-source extraction picture, particularly for fee patent identification. Full four-way analysis pipeline comparison ({Claude, Kimi} extraction × {Opus, Kimi} analysis) added 2026-03-25. Qwen 2.5 72B benchmark added 2026-03-27 (UVA HPC, 2x A100 80GB) — confirms Kimi's fee patent capability is exceptional among open-source models; Qwen at half the GPU cost is not a viable alternative for fee patent extraction. Model performance may change with future releases or prompt optimization. Fine-tuning was tested and did not improve results — see Section 3. For practical deployment recommendations, see Sections 4 and 5.*
+## 13. Vision Benchmark: BLM Patent Annotation Extraction (May 2026)
+
+Cross-reference to a related-but-separate model benchmark in the sister
+`~/projects/american-indian-allotment/` project. The full writeup is at
+[`BENCHMARK_v5_vision_extraction.md`](../../american-indian-allotment/BENCHMARK_v5_vision_extraction.md).
+
+### What was tested
+
+Bounded-template extraction from scanned BLM Indian allotment patents.
+Two fields per page: the top-left CCF (BIA Central Classified Files)
+reference, and a presence boolean for the middle-page "Fee Patent
+Issued" conversion stamp. Structurally similar to the NARA index card
+extraction task (DOJ record slips, RG 60) where Gemma 3 12B was
+previously found to be excellent — both are constrained-layout vision
+problems with predictable fields.
+
+### Methodology
+
+Same input PDFs to every model, same v5 prompt and schema, all
+disagreements verified against the source PDFs by hand. Three models:
+
+- Claude Opus 4.7 (Anthropic API) — 300-PDF benchmark vs. Sonnet
+- Claude Sonnet 4.6 (Anthropic API) — 300-PDF and 50-PDF benchmarks
+- Gemma 3 27B-it (UVA HPC, 1×A100 80GB, vLLM 0.14.1) — 50-PDF benchmark
+
+### Result
+
+**Sonnet 4.6 selected for the production extraction of 8,818 PDFs.**
+
+- **Opus vs. Sonnet (v4, 300 PDFs)**: tied on PDF-verified accuracy on
+  six disagreement cases. Bool agreement was 99.7%. Opus actual billed
+  cost was 2x Sonnet for comparable output quality. Verified empirical
+  Opus rate (~$0.046/PDF) was about a third of the list-price calculation
+  (~$0.135/PDF), a useful calibration finding for future cost projections.
+- **Sonnet vs. Gemma 3 27B (v5, 50 PDFs)**: Gemma demonstrated false
+  positives on both fields. The string `'49611'` appeared as a CCF
+  reference on 11 different patents in the sample; direct PDF
+  verification on one (985277) confirmed `49611` is not present —
+  hallucination, not OCR. Gemma flagged 29/50 patents as having a
+  fee-conversion stamp where Sonnet flagged 9; PDF verification of all
+  20 disagreement cases (those that were trust-class and could
+  logically carry a stamp) confirmed zero of Gemma's extra flags
+  matched a real stamp. Both layers had systematic Gemma false-positive
+  patterns the v5 prompt's anti-pattern instructions did not suppress.
+
+### Scope of the Gemma finding
+
+This is one specific task (bounded vision template on allotment patents)
+in one specific configuration (vLLM 0.14.1, Gemma 3 27B-it, structured
+output requested via prompt rather than `response_format` because the
+latter is not reliably honored). The result does **not** generalize to
+Gemma 3 12B on NARA index cards (which `CLAUDE.md` records as excellent
+on bounded template work), nor to future vLLM or Gemma releases.
+Re-test when either side sees a substantial upgrade.
+
+### Hidden-fee yield
+
+The original research question was: how many trust patents have a fee
+conversion stamp recorded only on the page, with no separate fee patent
+record in the database? At the v5 50-PDF sample, Sonnet found one
+genuine hidden conversion (patent 953646), an empirical rate of ~2%.
+Extrapolating to the 8,818-PDF residual is unreliable from a sample of
+50, but the production run will give a corpus-wide number.
+
+---
+
+*Comparison and fine-tuning experiment conducted 2026-03-23. Recognition vs. comprehension analysis added 2026-03-24. Kimi K2.5 testing added 2026-03-25 — significantly changes the open-source extraction picture, particularly for fee patent identification. Full four-way analysis pipeline comparison ({Claude, Kimi} extraction × {Opus, Kimi} analysis) added 2026-03-25. Qwen 2.5 72B benchmark added 2026-03-27 (UVA HPC, 2x A100 80GB) — confirms Kimi's fee patent capability is exceptional among open-source models; Qwen at half the GPU cost is not a viable alternative for fee patent extraction. BLM patent vision benchmark added 2026-05-24 (Sonnet vs. Gemma 3 27B on 50 PDFs, Opus vs. Sonnet on 300 PDFs) — Section 13 above. Model performance may change with future releases or prompt optimization. Fine-tuning was tested and did not improve results — see Section 3. For practical deployment recommendations, see Sections 4 and 5.*
