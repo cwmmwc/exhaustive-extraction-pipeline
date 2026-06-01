@@ -28,5 +28,158 @@
     "input_tokens": 2484,
     "output_tokens": 281
   },
-  "elapsed": 5.2
+  "elapsed": 5.2,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part1_questionnaire_005/vision_merged.json",
+    "entities": [
+      {
+        "name": "Edith Emery Lague",
+        "type": "person",
+        "context": "Rosebud Sioux allottee, age 31, respondent on fee patent questionnaire",
+        "source_page": "1-2"
+      },
+      {
+        "name": "W.N. Tackett",
+        "type": "person",
+        "context": "Purchaser of land from Edith Emery Lague",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Office of Indian Affairs",
+        "type": "organization",
+        "context": "Federal agency that received the document on September 30, 1929",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Houston, Texas",
+        "type": "location",
+        "context": "Location where patent was delivered in 1922",
+        "source_page": "1-2"
+      },
+      {
+        "name": "State of Nevada",
+        "type": "location",
+        "context": "State where notarization occurred",
+        "source_page": "1-2"
+      },
+      {
+        "name": "County of Washoe",
+        "type": "location",
+        "context": "County in Nevada where notarization occurred",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Ruth Vernon",
+        "type": "person",
+        "context": "Notary Public who notarized the document, commission expires June 26, 1932",
+        "source_page": "1-2"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Edith Emery Lague",
+        "allotment_number": "2996",
+        "acreage": "unknown",
+        "patent_date": "1922",
+        "patent_number": "unknown",
+        "mechanism": "administrative",
+        "buyer": "W.N. Tackett",
+        "sale_price": "$1800",
+        "attorney": "unknown",
+        "mortgage": "none mentioned; land was deeded/sold not mortgaged",
+        "source_page": "1-2"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$1800",
+        "payer": "W.N. Tackett",
+        "payee": "Edith Emery Lague",
+        "date": "unknown",
+        "description": "Cash sale of allotted land (Rosebud Sioux allotment) from Edith Emery Lague to W.N. Tackett",
+        "source_page": "1-2"
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "fee_patent_delivery",
+        "date": "1922",
+        "location": "Houston, Texas",
+        "description": "Fee patent delivered to Edith Emery Lague by office/agency without her application and without protest",
+        "source_page": "1-2"
+      },
+      {
+        "type": "land_sale",
+        "date": "unknown",
+        "location": "unknown",
+        "description": "Edith Emery Lague sold/deeded her allotted land to W.N. Tackett for $1800 cash",
+        "source_page": "1-2"
+      },
+      {
+        "type": "notarization",
+        "date": "1929-07-16",
+        "location": "Washoe County, Nevada",
+        "description": "Edith Emery Lague appeared before notary Ruth Vernon and signed questionnaire, acknowledging statements are true to best of her knowledge and belief",
+        "source_page": "1-2"
+      },
+      {
+        "type": "document_received",
+        "date": "1929-09-30",
+        "location": "Office of Indian Affairs",
+        "description": "Office of Indian Affairs received the fee patent questionnaire completed by Edith Emery Lague",
+        "source_page": "1-2"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Edith Emery Lague",
+        "type": "sold_to",
+        "object": "W.N. Tackett",
+        "context": "Deeded allotted land to W.N. Tackett for $1800 cash",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Edith Emery Lague",
+        "type": "related_to",
+        "object": "1 child",
+        "context": "One child dependent on Edith Emery Lague for support",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Edith Emery Lague",
+        "type": "supported_by",
+        "object": "husband",
+        "context": "She and her dependent child are supported by her husband",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Ruth Vernon",
+        "type": "notarized",
+        "object": "Edith Emery Lague",
+        "context": "Notary Public in Washoe County, Nevada notarized the questionnaire on July 16, 1929",
+        "source_page": "1-2"
+      }
+    ],
+    "testimony": [
+      {
+        "witness": "Edith Emery Lague",
+        "witness_title": "Rosebud Sioux allottee",
+        "hearing": "Fee Patent Questionnaire",
+        "committee": "Office of Indian Affairs",
+        "location": "Washoe County, Nevada",
+        "date": "1929-07-16",
+        "subject": "Disposition of Rosebud Sioux allotment fee patent and land",
+        "key_claims": "Age 31; is a Rosebud Sioux allottee; did receive a fee patent; never applied for the patent; patent was delivered in 1922 in Houston, Texas, given by the office/agency; did not sign a receipt for it; patent was accepted without protest; no longer owns the land; deeded the land to W.N. Tackett; sold for $1800 cash; is in good health; has 1 dependent child; supported by husband",
+        "questioner": "Office of Indian Affairs (printed questionnaire)",
+        "source_page": "1-2"
+      }
+    ],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

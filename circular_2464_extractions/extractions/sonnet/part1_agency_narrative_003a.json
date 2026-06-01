@@ -1,0 +1,253 @@
+{
+  "extraction": {
+    "Name": "Benjamin Decory",
+    "Allotment number": "8",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "Rosebud, South Dakota",
+    "Date": "1920-03-12",
+    "Document type": "agency_narrative",
+    "NOTES": "Source: split from multi-allottee bundle (part1_agency_narrative_003.json) on 2026-05-03 using Sonnet vision extraction. Allotment 8. Patent date: 1920-03-12. Patent number: 739603. Mechanism: administrative. Buyer: W. H. Whitcher. Sale price: $3400.00. Sold land to W. H. Whitcher for $3,400. Patent issued March 12, 1920. Sibling record (other allottee in original bundle): part1_agency_narrative_003b.json. Vision extraction archived at: validation_samples/part1_an003_vision/vision_merged.json."
+  },
+  "pre_split_sonnet_extraction": [
+    {
+      "Name": "Benjamin Decory",
+      "Tribe/Reservation": "Rosebud",
+      "Post Office Address": "Rosebud, S. D.",
+      "Allotment number": "8",
+      "Cancelled": "not stated",
+      "Refused/Protested": "not stated",
+      "Recorded patent": "The patent was recorded by C. L. Dice on April 9, 1920",
+      "Sold/Mortgaged": "conveyed by deed from Benjamin Decory to W. H. Whitcher for a consideration of $3400.00",
+      "Buyer": "W. H. Whitcher for a consideration of $3400.00",
+      "Tax burden forced sale/Mortgage": "not stated",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "March 12, 1920",
+      "Gender": "Male",
+      "Age": "not stated",
+      "Occupation/Income": "not stated",
+      "NOTES": "Fee patent No. 739603 issued; Southeast quarter of Section 18, township 38, range 28; receipt for patent signed by the allottee on April 3, 1920; deed recorded on September 10, 1920",
+      "Literate/Illiterate": "not stated",
+      "Document type": "agency_narrative"
+    },
+    {
+      "Name": "David Whiting",
+      "Tribe/Reservation": "Rosebud",
+      "Post Office Address": "Rosebud, S. Dak.",
+      "Allotment number": "9",
+      "Cancelled": "not stated",
+      "Refused/Protested": "not stated",
+      "Recorded patent": "The patent was recorded Febr. 4, 1920",
+      "Sold/Mortgaged": "The land was mortgaged five times and conveyed by deed signed by David and Phoebe Whiting on March 3, 1921, to William J. Whitcher for $10,000",
+      "Buyer": "William J. Whitcher for $10,000",
+      "Tax burden forced sale/Mortgage": "not stated",
+      "Trust Patent Date": "not stated",
+      "Fee Patent Date": "December 29, 1917",
+      "Gender": "Male",
+      "Age": "not stated",
+      "Occupation/Income": "not stated",
+      "NOTES": "Fee patent No. 612742 issued; The northwest quarter of the southeast quarter and the northeast quarter of the southwest quarter of section 1, township 33, range 12, in Nebraska; receipt for patent signed by the allottee in February, 1918; deed also signed by Phoebe Whiting (wife); land was mortgaged five times before conveyance",
+      "Literate/Illiterate": "not stated",
+      "Document type": "agency_narrative"
+    }
+  ],
+  "recovery_notes": [
+    {
+      "date": "2026-05-03",
+      "type": "task5_record_split_from_multi_allottee_bundle",
+      "method": "sonnet_vision_extraction_with_user_source_page_confirmation",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "Post Office Address",
+        "Date",
+        "Document type",
+        "NOTES",
+        "(record creation)"
+      ],
+      "previous_state": "Original part1_agency_narrative_003.json had list-shaped extraction collapsing two distinct allottees on sequential pages into a single record.",
+      "split_origin": {
+        "source_pdf": "agency_narratives/part1_agency_narrative_003.pdf",
+        "page_number": 1,
+        "sibling_record": "part1_agency_narrative_003b.json",
+        "vision_extraction_path": "validation_samples/part1_an003_vision/vision_merged.json"
+      },
+      "user_confirmed": true,
+      "rationale": "User source-page review confirmed two distinct allottees on sequential pages. Vision extraction captured per-allottee fee patent details (name, allotment, patent date, patent number, buyer, sale price). Split into two records preserving all captured content."
+    }
+  ],
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/part1_an003_vision/vision_merged.json",
+    "_retrofit_filter_note": "Multi-allottee bundle: filtered tables to entries matching Name='Benjamin Decory'. Filtered: financial_transactions: 2->1, relationships: 4->2, fee_patents: 2->1, mortgages: 1->0.",
+    "entities": [
+      {
+        "name": "Benjamin Decory",
+        "type": "person",
+        "context": "Allottee for Allotment No. 8, sold land to W. H. Whitcher",
+        "source_page": "1-2"
+      },
+      {
+        "name": "W. H. Whitcher",
+        "type": "person",
+        "context": "Buyer of land from Benjamin Decory for $3400.00",
+        "source_page": "1-2"
+      },
+      {
+        "name": "C. L. Dice",
+        "type": "person",
+        "context": "Recorded the patent for Allotment No. 8 on April 9, 1920",
+        "source_page": "1-2"
+      },
+      {
+        "name": "David B. Whiting",
+        "type": "person",
+        "context": "Allottee for Allotment No. 9, sold land to William J. Whitcher",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Phoebe Whiting",
+        "type": "person",
+        "context": "Co-signer of deed with David Whiting for Allotment No. 9",
+        "source_page": "1-2"
+      },
+      {
+        "name": "William J. Whitcher",
+        "type": "person",
+        "context": "Buyer of land from David and Phoebe Whiting for $10,000",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Rosebud, S.D.",
+        "type": "location",
+        "context": "Location associated with both allotment records",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Southeast quarter of Section 18, township 38, range 28",
+        "type": "land_parcel",
+        "context": "Land parcel for Allotment No. 8, Benjamin Decory",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Northwest quarter of the southeast quarter and northeast quarter of the southwest quarter of section 1, township 33, range 12, Nebraska",
+        "type": "land_parcel",
+        "context": "Land parcel for Allotment No. 9, David B. Whiting",
+        "source_page": "1-2"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Benjamin Decory",
+        "allotment_number": "8",
+        "acreage": "",
+        "patent_date": "1920-03-12",
+        "patent_number": "739603",
+        "mechanism": "administrative",
+        "buyer": "W. H. Whitcher",
+        "sale_price": "$3400.00",
+        "attorney": "",
+        "mortgage": "",
+        "source_page": "1-2"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$3400.00",
+        "payer": "W. H. Whitcher",
+        "payee": "Benjamin Decory",
+        "date": "1920-09-10",
+        "description": "Conveyance of southeast quarter of Section 18, township 38, range 28 by deed",
+        "source_page": "1-2"
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "fee_patent_issued",
+        "date": "1920-03-12",
+        "location": "Rosebud, S.D.",
+        "description": "Fee patent No. 739603 issued for Allotment No. 8, Benjamin Decory",
+        "source_page": "1-2"
+      },
+      {
+        "type": "receipt_signed",
+        "date": "1920-04-03",
+        "location": "Rosebud, S.D.",
+        "description": "Receipt for fee patent No. 739603 signed by allottee Benjamin Decory",
+        "source_page": "1-2"
+      },
+      {
+        "type": "patent_recorded",
+        "date": "1920-04-09",
+        "location": "Rosebud, S.D.",
+        "description": "Patent for Allotment No. 8 recorded by C. L. Dice",
+        "source_page": "1-2"
+      },
+      {
+        "type": "deed_recorded",
+        "date": "1920-09-10",
+        "location": "Rosebud, S.D.",
+        "description": "Deed from Benjamin Decory to W. H. Whitcher recorded",
+        "source_page": "1-2"
+      },
+      {
+        "type": "fee_patent_issued",
+        "date": "1917-12-29",
+        "location": "Rosebud, S.D.",
+        "description": "Fee patent No. 612742 issued for Allotment No. 9, David B. Whiting",
+        "source_page": "1-2"
+      },
+      {
+        "type": "receipt_signed",
+        "date": "1918-02",
+        "location": "Rosebud, S.D.",
+        "description": "Receipt for fee patent No. 612742 signed by allottee David B. Whiting",
+        "source_page": "1-2"
+      },
+      {
+        "type": "patent_recorded",
+        "date": "1920-02-04",
+        "location": "Rosebud, S.D.",
+        "description": "Patent for Allotment No. 9 recorded",
+        "source_page": "1-2"
+      },
+      {
+        "type": "deed_conveyed",
+        "date": "1921-03-03",
+        "location": "Nebraska",
+        "description": "Land conveyed by deed from David and Phoebe Whiting to William J. Whitcher for $10,000",
+        "source_page": "1-2"
+      },
+      {
+        "type": "document_stamped",
+        "date": "1929-06",
+        "location": "Rosebud, S.D.",
+        "description": "Both allotment records stamped June 1929",
+        "source_page": "1-2"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Benjamin Decory",
+        "type": "sold_to",
+        "object": "W. H. Whitcher",
+        "context": "Sold land parcel (Allotment No. 8) for $3400.00, deed recorded September 10, 1920",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "C. L. Dice",
+        "type": "recorded_patent_for",
+        "object": "Benjamin Decory",
+        "context": "Recorded patent for Allotment No. 8 on April 9, 1920",
+        "source_page": "1-2"
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
+}

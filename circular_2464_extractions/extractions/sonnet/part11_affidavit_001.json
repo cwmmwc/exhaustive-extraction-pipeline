@@ -28,5 +28,63 @@
     "input_tokens": 1888,
     "output_tokens": 263
   },
-  "elapsed": 5.2
+  "elapsed": 5.2,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part11_affidavit_001/vision_merged.json",
+    "entities": [
+      {
+        "name": "Nicholas Trombla",
+        "type": "person",
+        "context": "Allottee who signed/subscribed the document",
+        "source_page": 1
+      },
+      {
+        "name": "Allottee",
+        "type": "person",
+        "context": "Label beneath Nicholas Trombla's signature indicating his role",
+        "source_page": 1
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Nicholas Trombla",
+        "allotment_number": "unknown",
+        "acreage": "unknown",
+        "patent_date": "1929-02-16",
+        "patent_number": "unknown",
+        "mechanism": "application",
+        "buyer": "unknown",
+        "sale_price": "unknown",
+        "attorney": "unknown",
+        "mortgage": "unknown",
+        "source_page": 1
+      }
+    ],
+    "financial_transactions": [],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "sworn_statement",
+        "date": "1929-02-16",
+        "location": "unknown",
+        "description": "Document subscribed and sworn to before a notary or official on the 16th day of February 1929 by Nicholas Trombla as Allottee",
+        "source_page": 1
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Nicholas Trombla",
+        "type": "allottee",
+        "object": "land_parcel",
+        "context": "Nicholas Trombla is identified as the Allottee on this document dated February 1929",
+        "source_page": 1
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

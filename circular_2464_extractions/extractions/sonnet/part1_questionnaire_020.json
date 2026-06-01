@@ -28,5 +28,277 @@
     "input_tokens": 2759,
     "output_tokens": 295
   },
-  "elapsed": 6.3
+  "elapsed": 6.3,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part1_questionnaire_020/vision_merged.json",
+    "entities": [
+      {
+        "name": "Louise Drapeau",
+        "type": "person",
+        "context": "Applicant for patent in fee, age 20, half blood, married",
+        "source_page": "1-3"
+      },
+      {
+        "name": "Rosebud Agency",
+        "type": "organization",
+        "context": "Indian agency where application was filed",
+        "source_page": "1-3"
+      },
+      {
+        "name": "Office of Indian Affairs",
+        "type": "organization",
+        "context": "Federal office that received the application, stamp dated FEB 11 1929",
+        "source_page": "1-3"
+      },
+      {
+        "name": "NW/4-15-99-74",
+        "type": "land_parcel",
+        "context": "Allotment described as NW quarter, section 15, township 99, range 74",
+        "source_page": "1-3"
+      },
+      {
+        "name": "Act of May 8, 1906, 34 Stat. 182",
+        "type": "legislation",
+        "context": "Enabling legislation for patent in fee applications",
+        "source_page": "1-3"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Louise Drapeau",
+        "allotment_number": "NW/4-15-99-74",
+        "acreage": "unknown",
+        "patent_date": "pending",
+        "patent_number": "unknown",
+        "mechanism": "application",
+        "buyer": "none contracted",
+        "sale_price": "approximately $1500 (estimated land value per question 7)",
+        "attorney": "none mentioned",
+        "mortgage": "none",
+        "source_page": "1-3"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "lease",
+        "amount": "$100",
+        "payer": "unknown lessee",
+        "payee": "Louise Drapeau",
+        "date": "unknown",
+        "description": "Land leased; rent received of $100 for hay (answer to question 20)",
+        "source_page": "1-3"
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "application_filed",
+        "date": "1929-02-11",
+        "location": "Rosebud Agency",
+        "description": "Louise Drapeau filed Application for a Patent in Fee (form 5-105) received by Office of Indian Affairs on February 11, 1929",
+        "source_page": "1-3"
+      },
+      {
+        "type": "school_attendance",
+        "date": "partial",
+        "location": "unknown",
+        "description": "Applicant states she has attended school continuously since age 8 years",
+        "source_page": "1-3"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Louise Drapeau",
+        "type": "related_to",
+        "object": "brothers and sisters (unnamed)",
+        "context": "All brothers and sisters have allotments; parents also have allotments (question 23)",
+        "source_page": "1-3"
+      },
+      {
+        "subject": "Louise Drapeau",
+        "type": "related_to",
+        "object": "parents (unnamed)",
+        "context": "Parents have allotments as well (question 23)",
+        "source_page": "1-3"
+      },
+      {
+        "subject": "Louise Drapeau",
+        "type": "allottee_of",
+        "object": "Rosebud Agency",
+        "context": "Holds allotment NW/4-15-99-74 under trust at Rosebud Agency",
+        "source_page": "1-3"
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [
+      {
+        "sender": "Louise Drapeau",
+        "sender_title": "Allottee / Applicant",
+        "recipient": "Office of Indian Affairs",
+        "recipient_title": "Federal Agency",
+        "date": "1929-02-11",
+        "subject": "Application for Patent in Fee covering allotment NW/4-15-99-74 at Rosebud Agency",
+        "action_requested": "Grant patent in fee for all of allotment NW/4-15-99-74 so applicant can sell land and purchase cheaper land for stock range",
+        "outcome": "unknown",
+        "source_page": "1-3"
+      }
+    ],
+    "legislative_actions": [
+      {
+        "bill_number": "unknown",
+        "sponsor": "unknown",
+        "action_type": "enacted",
+        "date": "1906-05-08",
+        "vote_count": "unknown",
+        "committee": "unknown",
+        "outcome": "Act of May 8, 1906, 34 Stat. 182 enacted, authorizing applications for patents in fee by Indian allottees",
+        "source_page": "1-3"
+      }
+    ],
+    "tables": [
+      {
+        "title": "Application for Patent in Fee - Question and Answer Record (Form 5-105)",
+        "columns": [
+          "Question Number",
+          "Question Text",
+          "Answer"
+        ],
+        "rows": [
+          {
+            "Question Number": "1",
+            "Question Text": "Age?",
+            "Answer": "20"
+          },
+          {
+            "Question Number": "2",
+            "Question Text": "Degree of blood?",
+            "Answer": "half"
+          },
+          {
+            "Question Number": "3",
+            "Question Text": "Married or single?",
+            "Answer": "married"
+          },
+          {
+            "Question Number": "4",
+            "Question Text": "Did you attend school? If so, where and how long?",
+            "Answer": "Since I was 8 years of age I have attended school continuously"
+          },
+          {
+            "Question Number": "5",
+            "Question Text": "Do you use intoxicants?",
+            "Answer": "no"
+          },
+          {
+            "Question Number": "6",
+            "Question Text": "Are you in good physical condition?",
+            "Answer": "yes"
+          },
+          {
+            "Question Number": "7",
+            "Question Text": "What is the value of the land covered by your application?",
+            "Answer": "about $1500"
+          },
+          {
+            "Question Number": "8",
+            "Question Text": "Does your application cover your own allotment or inherited land?",
+            "Answer": "my allotment"
+          },
+          {
+            "Question Number": "9",
+            "Question Text": "Does your application cover all or a part of your land?",
+            "Answer": "all"
+          },
+          {
+            "Question Number": "10",
+            "Question Text": "Do you cultivate your land?",
+            "Answer": "no"
+          },
+          {
+            "Question Number": "11",
+            "Question Text": "Have you any other occupation?",
+            "Answer": "no"
+          },
+          {
+            "Question Number": "12",
+            "Question Text": "Are you self-supporting? If so, how is your self-support obtained?",
+            "Answer": "[blank/illegible]"
+          },
+          {
+            "Question Number": "13",
+            "Question Text": "Have you accumulated any property? If so, what?",
+            "Answer": "I have horses and cattle"
+          },
+          {
+            "Question Number": "14",
+            "Question Text": "Are you in debt? If so, whom do you owe, how much, and for what, and have you given security for the debts?",
+            "Answer": "I am not in debt"
+          },
+          {
+            "Question Number": "15",
+            "Question Text": "Have you been given a patent in fee for a part of your land? If so, did you sell it, and what use did you make of the proceeds of the sale?",
+            "Answer": "never had a patent"
+          },
+          {
+            "Question Number": "16",
+            "Question Text": "Have you any inherited land? If so, what is your interest in the estate and what is the value of the allotment?",
+            "Answer": "I have none"
+          },
+          {
+            "Question Number": "17",
+            "Question Text": "Have you sold any inherited land? If so, what use was made of the proceeds?",
+            "Answer": "none"
+          },
+          {
+            "Question Number": "18",
+            "Question Text": "Have you any individual Indian money to your credit with the superintendent? If so, how much?",
+            "Answer": "no money I chose cattle instead"
+          },
+          {
+            "Question Number": "19",
+            "Question Text": "Have you been given the privilege of leasing your own land?",
+            "Answer": "yes"
+          },
+          {
+            "Question Number": "20",
+            "Question Text": "Is your land leased? If so, what rent do you receive?",
+            "Answer": "yes, rent for $100 for hay"
+          },
+          {
+            "Question Number": "21",
+            "Question Text": "Have you made a contract to sell your land? If so, to whom, and at what price?",
+            "Answer": "no"
+          },
+          {
+            "Question Number": "22",
+            "Question Text": "Has anyone asked you to procure a patent in fee for the purpose of disposing of your land?",
+            "Answer": "no"
+          },
+          {
+            "Question Number": "23",
+            "Question Text": "Have other members of your family allotments of their own? If so, give names, sex, ages, relationship, and number of acres, and approximate value of each allotment.",
+            "Answer": "all of my brothers and sisters have allotments and parents too"
+          },
+          {
+            "Question Number": "24",
+            "Question Text": "What members of your family, if any, have no allotment? Designate those dependent on you for support, and give reasons, stating ages and sex.",
+            "Answer": "none"
+          },
+          {
+            "Question Number": "25",
+            "Question Text": "What practical business experience have you had?",
+            "Answer": "only have a fair education"
+          },
+          {
+            "Question Number": "26",
+            "Question Text": "Have you other lands that would continue to be held in trust after the lands described in this application are released? If so, give acreage, value, and character of improvements thereon.",
+            "Answer": "I have none but want to sell this to buy cheaper land for range for our stock"
+          }
+        ],
+        "source_page": "1-3"
+      }
+    ]
+  }
 }

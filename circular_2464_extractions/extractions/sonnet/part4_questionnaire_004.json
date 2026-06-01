@@ -1,0 +1,47 @@
+{
+  "document_id": "part4_questionnaire_004",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 4.pdf",
+  "source_pages": "11",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Louise Beauvais Young",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "St. Francis, South Dakota",
+    "Allotment number": "1071",
+    "Cancelled": "not stated",
+    "Refused/Protested": "Yes, I protested to the postmaster, Mr. Weston, but he said it had been sent to me and I had to take it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No I sold it.",
+    "Buyer": "Ella McHenry, through Clement Valandra. Records also show sold to J. C. Snyder and Anna Hughes, but allottee states she knows nothing about that and only signed papers once, to McHenry.",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "46",
+    "Occupation/Income": "My husband makes our living.",
+    "NOTES": "Was to receive $1800 for land but only received $500 in cash; remaining consideration was in the form of a barn, some horses, a note for some clothing and other articles in the city of Winner — horses were mortgaged so she did not get them, same applies to the barn; wrote regarding the note and received reply that the person would come to see her but she never came. Has thirteen living children, nine at home. Not satisfied with sale because she did not receive what she was supposed to receive. Patent received in post office at St. Francis, South Dakota; does not remember the date. Document number 6 also appears on document. | TASK 5 PART 4 TRIBE NORMALIZATION 2026-05-02: Tribe field updated from 'not stated' to 'Rosebud Sioux' per cross-reference with sibling agency narrative record (same allotment number, confirms Rosebud) and Kimi v3/v4/v5 entities (all confirm Rosebud Sioux). Sonnet failed to extract the tribe from the questionnaire form. Using 'Rosebud Sioux' convention to match other part 4 questionnaire records (q001, q007, q010, q011) rather than the plainer 'Rosebud' used in the agency narratives.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2502,
+    "output_tokens": 443
+  },
+  "elapsed": 7.4,
+  "recovery_notes": [
+    {
+      "date": "2026-05-02",
+      "type": "task5_part4_tribe_normalization",
+      "method": "sibling_agency_narrative_and_kimi_cross_reference",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Rosebud Sioux",
+      "allotment_number": "1071",
+      "user_confirmed": true
+    }
+  ]
+}

@@ -28,5 +28,244 @@
     "input_tokens": 2641,
     "output_tokens": 299
   },
-  "elapsed": 7.4
+  "elapsed": 7.4,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part7_questionnaire_020/vision_merged.json",
+    "entities": [
+      {
+        "name": "Lucy Dubray Sturdevant",
+        "type": "person",
+        "context": "Rosebud Sioux allottee, age 45, signed affidavit on May 27, 1929",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Rosebud Agency",
+        "type": "organization",
+        "context": "Agency that received the document on May 31, 1929",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Harry L. Gandy",
+        "type": "person",
+        "context": "Individual to whom Lucy's husband wrote regarding the patent and land",
+        "source_page": "1-2"
+      },
+      {
+        "name": "R.L. Hinn",
+        "type": "person",
+        "context": "Entity to whom land was mortgaged for $800 to buy a place at Farmington, MN",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Farmington, MN",
+        "type": "location",
+        "context": "Location where a place was purchased using mortgage proceeds",
+        "source_page": "1-2"
+      },
+      {
+        "name": "State of New Mexico",
+        "type": "location",
+        "context": "State where affidavit was signed",
+        "source_page": "1-2"
+      },
+      {
+        "name": "County of San Juan",
+        "type": "location",
+        "context": "County in New Mexico where affidavit was notarized",
+        "source_page": "1-2"
+      },
+      {
+        "name": "G.W.R. Hoy",
+        "type": "person",
+        "context": "Notary Public in San Juan County, New Mexico, commission expires November 27, 1929",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Rosebud Sioux",
+        "type": "organization",
+        "context": "Tribal affiliation of allottee Lucy Dubray Sturdevant",
+        "source_page": "1-2"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Lucy Dubray Sturdevant",
+        "allotment_number": "2341",
+        "acreage": "unknown",
+        "patent_date": "unknown",
+        "patent_number": "unknown",
+        "mechanism": "application",
+        "buyer": "unknown",
+        "sale_price": "$500 over taxes and mortgage",
+        "attorney": "unknown",
+        "mortgage": "$800 to R.L. Hinn",
+        "source_page": "1-2"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$500 over taxes and mortgage",
+        "payer": "unknown buyer",
+        "payee": "Lucy Dubray Sturdevant",
+        "date": "unknown",
+        "description": "Sale of allotted land; bank failed before money was received",
+        "source_page": "1-2"
+      },
+      {
+        "type": "other",
+        "amount": "$800",
+        "payer": "Lucy Dubray Sturdevant",
+        "payee": "R.L. Hinn",
+        "date": "unknown",
+        "description": "Mortgage on land to R.L. Hinn to buy a place at Farmington, MN",
+        "source_page": "1-2"
+      }
+    ],
+    "mortgages": [
+      {
+        "borrower": "Lucy Dubray Sturdevant",
+        "lender": "R.L. Hinn",
+        "amount": "$800",
+        "land_description": "Rosebud Sioux allotted land, allotment number 2341",
+        "acreage": "unknown",
+        "date": "unknown",
+        "interest_rate": "unknown",
+        "status": "other",
+        "context": "Mortgaged to buy a place at Farmington, MN; land subsequently sold for $500 over taxes and mortgage",
+        "source_page": "1-2"
+      }
+    ],
+    "events": [
+      {
+        "type": "fee_patent_receipt",
+        "date": "unknown",
+        "location": "unknown",
+        "description": "Fee patent delivered under protest to Lucy Dubray Sturdevant via boss farmer; she had to accept as it was already on file at the beat",
+        "source_page": "1-2"
+      },
+      {
+        "type": "document_received",
+        "date": "1929-05-31",
+        "location": "Rosebud Agency, South Dakota",
+        "description": "Questionnaire received by Rosebud Agency",
+        "source_page": "1-2"
+      },
+      {
+        "type": "affidavit_signed",
+        "date": "1929-05-27",
+        "location": "San Juan County, New Mexico",
+        "description": "Lucy Dubray Sturdevant appeared before notary public G.W.R. Hoy and signed affidavit",
+        "source_page": "1-2"
+      },
+      {
+        "type": "land_sale",
+        "date": "unknown",
+        "location": "unknown",
+        "description": "Lucy sold her allotted land for $500 over taxes and mortgage; bank failed before she received the money",
+        "source_page": "1-2"
+      },
+      {
+        "type": "bank_failure",
+        "date": "unknown",
+        "location": "unknown",
+        "description": "Bank failed before Lucy Dubray Sturdevant received money from land sale",
+        "source_page": "1-2"
+      },
+      {
+        "type": "letter_written",
+        "date": "unknown",
+        "location": "unknown",
+        "description": "Lucy had her husband write to Harry L. Gandy about the patent and land, to send copy of letter and list of taxes",
+        "source_page": "1-2"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Lucy Dubray Sturdevant",
+        "type": "allottee_of",
+        "object": "Rosebud Sioux",
+        "context": "Rosebud Sioux allottee who received a fee patent",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Lucy Dubray Sturdevant",
+        "type": "married_to",
+        "object": "unnamed husband",
+        "context": "Supported by husband; husband wrote letter to Harry L. Gandy on her behalf",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Lucy Dubray Sturdevant",
+        "type": "mortgaged_to",
+        "object": "R.L. Hinn",
+        "context": "Mortgaged land for $800 to buy a place at Farmington, MN",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Lucy Dubray Sturdevant",
+        "type": "notarized_by",
+        "object": "G.W.R. Hoy",
+        "context": "Notary Public in San Juan County, New Mexico",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Lucy Dubray Sturdevant",
+        "type": "wrote_to",
+        "object": "Harry L. Gandy",
+        "context": "Husband wrote on her behalf about patent and land taxes",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Lucy Dubray Sturdevant",
+        "type": "parent_of",
+        "object": "11 children (9 dependent)",
+        "context": "Has 11 children, 9 dependent upon her for support",
+        "source_page": "1-2"
+      }
+    ],
+    "testimony": [
+      {
+        "witness": "Lucy Dubray Sturdevant",
+        "witness_title": "Rosebud Sioux allottee",
+        "hearing": "Rosebud Agency questionnaire",
+        "committee": "Rosebud Agency",
+        "location": "San Juan County, New Mexico",
+        "date": "1929-05-27",
+        "subject": "Fee patent issuance and land loss",
+        "key_claims": "Did not want patent; patent delivered under protest via boss farmer; had to accept as it was already on file; signed receipt under protest; land was mortgaged for $800 to R.L. Hinn to buy a place at Farmington MN; sold land for $500 over taxes and mortgage but bank failed before receiving money; taxes on non-resident land were raised high; had husband write to Harry L. Gandy; if patent had not been issued she would still have land; has 11 children, 9 dependent, supported by husband; in good health",
+        "questioner": "Rosebud Agency (printed questionnaire)",
+        "source_page": "1-2"
+      }
+    ],
+    "taxes": [
+      {
+        "taxpayer": "Lucy Dubray Sturdevant",
+        "land_description": "allotted Rosebud Sioux land",
+        "tax_type": "property",
+        "amount": "unknown",
+        "year": "unknown",
+        "status": "other",
+        "county": "unknown",
+        "context": "Taxes on non-resident land were raised high; land sold for $500 over taxes and mortgage; list of taxes referenced in letter to Harry L. Gandy",
+        "source_page": "1-2"
+      }
+    ],
+    "correspondence": [
+      {
+        "sender": "unnamed husband of Lucy Dubray Sturdevant",
+        "sender_title": "unknown",
+        "recipient": "Harry L. Gandy",
+        "recipient_title": "unknown",
+        "date": "unknown",
+        "subject": "Patent and land taxes on allotted land",
+        "action_requested": "Send copy of letter and list of taxes on non-resident land",
+        "outcome": "unknown",
+        "source_page": "1-2"
+      }
+    ],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

@@ -28,5 +28,63 @@
     "input_tokens": 1927,
     "output_tokens": 269
   },
-  "elapsed": 6.0
+  "elapsed": 6.0,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part10_affidavit_003/vision_merged.json",
+    "entities": [
+      {
+        "name": "Belle Birdie Bruno",
+        "type": "person",
+        "context": "Allottee who signed the document",
+        "source_page": 1
+      },
+      {
+        "name": "Unknown Notary/Official",
+        "type": "person",
+        "context": "Person before whom the document was subscribed and sworn, signature partially legible as 'ALLCurb' or similar",
+        "source_page": 1
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Belle Birdie Bruno",
+        "allotment_number": "unknown",
+        "acreage": "unknown",
+        "patent_date": "unknown",
+        "patent_number": "unknown",
+        "mechanism": "application",
+        "buyer": "unknown",
+        "sale_price": "unknown",
+        "attorney": "unknown",
+        "mortgage": "unknown",
+        "source_page": 1
+      }
+    ],
+    "financial_transactions": [],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "sworn_statement",
+        "date": "1929-03-09",
+        "location": "unknown",
+        "description": "Document subscribed and sworn to before an official on the 9th day of March 1929 by allottee Belle Birdie Bruno",
+        "source_page": 1
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Belle Birdie Bruno",
+        "type": "is_allottee",
+        "object": "land parcel (unspecified)",
+        "context": "Identified as 'Allottee' beneath signature on document dated March 9, 1929",
+        "source_page": 1
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

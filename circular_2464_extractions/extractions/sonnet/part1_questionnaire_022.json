@@ -28,5 +28,89 @@
     "input_tokens": 2107,
     "output_tokens": 270
   },
-  "elapsed": 3.9
+  "elapsed": 3.9,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part1_questionnaire_022/vision_merged.json",
+    "entities": [
+      {
+        "name": "Margaret DeCory",
+        "type": "person",
+        "context": "Signatory of the document, supported by husband, received patent through mail",
+        "source_page": 1
+      },
+      {
+        "name": "S. Dak.",
+        "type": "location",
+        "context": "State where document was notarized",
+        "source_page": 1
+      },
+      {
+        "name": "B.G. Valleson",
+        "type": "person",
+        "context": "Notary Public who witnessed the signing",
+        "source_page": 1
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Margaret DeCory",
+        "allotment_number": "",
+        "acreage": "",
+        "patent_date": "",
+        "patent_number": "",
+        "mechanism": "administrative",
+        "buyer": "",
+        "sale_price": "",
+        "attorney": "",
+        "mortgage": "",
+        "source_page": 1
+      }
+    ],
+    "financial_transactions": [],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "notarization",
+        "date": "1929-06-03",
+        "location": "S. Dak., County (illegible)",
+        "description": "Margaret DeCory personally appeared before notary public B.G. Valleson and signed her name, acknowledging statements in the foregoing instrument are true to the best of her knowledge and belief.",
+        "source_page": 1
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Margaret DeCory",
+        "type": "related_to",
+        "object": "husband (unnamed)",
+        "context": "Margaret DeCory is supported by her husband; no dependents of her own.",
+        "source_page": 1
+      },
+      {
+        "subject": "Margaret DeCory",
+        "type": "witnessed_by",
+        "object": "B.G. Valleson",
+        "context": "Notary Public witnessed Margaret DeCory's signature on June 3, 1929.",
+        "source_page": 1
+      }
+    ],
+    "testimony": [
+      {
+        "witness": "Margaret DeCory",
+        "witness_title": "",
+        "hearing": "",
+        "committee": "",
+        "location": "S. Dak.",
+        "date": "1929-06-03",
+        "subject": "Patent receipt and health/support status",
+        "key_claims": "Witness states she is in good health (Q10). No persons are dependent upon her for support as she is supported by her husband (Q11). She and her husband are supported by her husband (Q12). She did not want the patent at all but received it through the mail and could not do anything but keep it (Q13).",
+        "questioner": "",
+        "source_page": 1
+      }
+    ],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

@@ -28,5 +28,140 @@
     "input_tokens": 2694,
     "output_tokens": 340
   },
-  "elapsed": 7.2
+  "elapsed": 7.2,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part10_questionnaire_011/vision_merged.json",
+    "entities": [
+      {
+        "name": "Lizzie Lyons nee Hartman",
+        "type": "person",
+        "context": "Allottee named at top of Circular No. 2464 form",
+        "source_page": 1
+      },
+      {
+        "name": "N.H. Worley",
+        "type": "person",
+        "context": "Referenced in answer to question 6, associated with sale Dec. 1927",
+        "source_page": 1
+      },
+      {
+        "name": "Julia",
+        "type": "person",
+        "context": "Partial name visible near question 7 answer, possibly reviewer or official",
+        "source_page": 1
+      },
+      {
+        "name": "Circular No. 2464",
+        "type": "legislation",
+        "context": "Form/circular number for this allotment inquiry document",
+        "source_page": 1
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Lizzie Lyons nee Hartman",
+        "allotment_number": "N1/2 SW1/4 S-8-5",
+        "acreage": "40 acres (last parcel mentioned)",
+        "patent_date": "1924-10-30",
+        "patent_number": "",
+        "mechanism": "administrative",
+        "buyer": "N.H. Worley",
+        "sale_price": "$1500.00",
+        "attorney": "",
+        "mortgage": "Mortgaged once; mortgage paid and released",
+        "source_page": 1
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$1500.00",
+        "payer": "N.H. Worley",
+        "payee": "Lizzie Lyons nee Hartman",
+        "date": "1927-12-01",
+        "description": "Last 40 acres royalty sold Dec. 1927 for $1500, considered possibly not very good consideration",
+        "source_page": 1
+      }
+    ],
+    "mortgages": [
+      {
+        "borrower": "Lizzie Lyons nee Hartman",
+        "lender": "",
+        "amount": "",
+        "land_description": "N1/2 SW1/4 S-8-5",
+        "acreage": "",
+        "date": "",
+        "interest_rate": "",
+        "status": "paid",
+        "context": "Land was mortgaged once; mortgage paid and released per answer to question 5",
+        "source_page": 1
+      }
+    ],
+    "events": [
+      {
+        "type": "fee_patent_issued",
+        "date": "1924-10-30",
+        "location": "",
+        "description": "Fee patent issued for allotment N1/2 SW1/4 S-8-5, date Oct. 30, 1924",
+        "source_page": 1
+      },
+      {
+        "type": "patent_delivery",
+        "date": "1924-10-30",
+        "location": "",
+        "description": "Patent sent by mail on Oct. 30, 1924",
+        "source_page": 1
+      },
+      {
+        "type": "patent_filed_for_record",
+        "date": "1920-12-09",
+        "location": "Enid, OK (possibly)",
+        "description": "Patent was forced on allottee; filed for record Dec. 9, 1920 at Enid (or similar location)",
+        "source_page": 1
+      },
+      {
+        "type": "land_sale",
+        "date": "1927-12-01",
+        "location": "",
+        "description": "Last 40 acres (royalty) sold Dec. 1927 at very good consideration; sold by or to N.H. Worley",
+        "source_page": 1
+      },
+      {
+        "type": "mortgage_release",
+        "date": "",
+        "location": "",
+        "description": "Mortgage on land was paid and released",
+        "source_page": 1
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Lizzie Lyons nee Hartman",
+        "type": "allottee_of",
+        "object": "N1/2 SW1/4 S-8-5",
+        "context": "Named allottee on Circular No. 2464",
+        "source_page": 1
+      },
+      {
+        "subject": "Lizzie Lyons nee Hartman",
+        "type": "parent_of",
+        "object": "4 children",
+        "context": "4 children dependent on her for support, ages approximately 10, 12, 14 years",
+        "source_page": 1
+      },
+      {
+        "subject": "Lizzie Lyons nee Hartman",
+        "type": "sold_to",
+        "object": "N.H. Worley",
+        "context": "Sold last 40 acres royalty Dec. 1927",
+        "source_page": 1
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

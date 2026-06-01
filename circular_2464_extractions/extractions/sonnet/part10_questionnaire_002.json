@@ -28,5 +28,154 @@
     "input_tokens": 2424,
     "output_tokens": 294
   },
-  "elapsed": 5.1
+  "elapsed": 5.1,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part10_questionnaire_002/vision_merged.json",
+    "entities": [
+      {
+        "name": "Myrtle Last",
+        "type": "person",
+        "context": "Rosebud Sioux allottee, age 48, residing at Shubert Nebraska",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Albert",
+        "type": "person",
+        "context": "Son of Myrtle Last, age 23",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Harvey",
+        "type": "person",
+        "context": "Son of Myrtle Last, age 26",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Shubert, Nebraska",
+        "type": "location",
+        "context": "Location where patent was delivered to Myrtle Last",
+        "source_page": "1-2"
+      },
+      {
+        "name": "South Dakota",
+        "type": "location",
+        "context": "State where document was notarized",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Tripp County",
+        "type": "location",
+        "context": "County in South Dakota where document was notarized",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Rosebud Sioux",
+        "type": "organization",
+        "context": "Tribal affiliation of allottee Myrtle Last",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Charles St. John",
+        "type": "person",
+        "context": "Notary Public, commission expires Sept 25 1932",
+        "source_page": "1-2"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Myrtle Last",
+        "allotment_number": "5406",
+        "acreage": "",
+        "patent_date": "",
+        "patent_number": "",
+        "mechanism": "administrative",
+        "buyer": "",
+        "sale_price": "",
+        "attorney": "",
+        "mortgage": "None - land not mortgaged, still owned by allottee",
+        "source_page": "1-2"
+      }
+    ],
+    "financial_transactions": [],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "fee_patent_delivery",
+        "date": "",
+        "location": "Shubert, Nebraska",
+        "description": "Fee patent for land delivered to Myrtle Last at her home in Shubert, Nebraska",
+        "source_page": "1-2"
+      },
+      {
+        "type": "notarization",
+        "date": "1929-06-03",
+        "location": "Tripp County, South Dakota",
+        "description": "Myrtle Last appeared before notary public Charles St. John and signed the questionnaire affirming statements are true",
+        "source_page": "1-2"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Myrtle Last",
+        "type": "parent_of",
+        "object": "Albert",
+        "context": "Albert is Myrtle Last's son, age 23",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Myrtle Last",
+        "type": "parent_of",
+        "object": "Harvey",
+        "context": "Harvey is Myrtle Last's son, age 26",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Myrtle Last",
+        "type": "supported_by",
+        "object": "husband",
+        "context": "Myrtle Last states she is supported by her husband",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Albert",
+        "type": "resides_with",
+        "object": "Myrtle Last",
+        "context": "Boys are still with her",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Harvey",
+        "type": "resides_with",
+        "object": "Myrtle Last",
+        "context": "Boys are still with her",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Charles St. John",
+        "type": "notarized",
+        "object": "Myrtle Last",
+        "context": "Notary public for Myrtle Last's sworn statement on June 3, 1929",
+        "source_page": "1-2"
+      }
+    ],
+    "testimony": [
+      {
+        "witness": "Myrtle Last",
+        "witness_title": "Rosebud Sioux Allottee",
+        "hearing": "Fee Patent Questionnaire",
+        "committee": "",
+        "location": "Tripp County, South Dakota",
+        "date": "1929-06-03",
+        "subject": "Fee patent receipt and current status of allotted land",
+        "key_claims": "Myrtle Last, age 48, is a Rosebud Sioux allottee who received a fee patent for her land (allotment 5406) delivered at her home in Shubert, Nebraska. She did not apply for the patent. She does not remember signing a receipt. She did not protest the patent. She still owns the land and has not sold or mortgaged it. Her health is yes but she is not strong. She has two sons, Albert (23) and Harvey (26), who are dependent on her and still live with her. She is supported by her husband.",
+        "questioner": "",
+        "source_page": "1-2"
+      }
+    ],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

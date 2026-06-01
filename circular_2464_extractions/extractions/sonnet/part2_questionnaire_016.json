@@ -28,5 +28,512 @@
     "input_tokens": 3030,
     "output_tokens": 366
   },
-  "elapsed": 8.1
+  "elapsed": 8.1,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part2_questionnaire_016/vision_merged.json",
+    "entities": [
+      {
+        "name": "George Menard",
+        "type": "person",
+        "context": "Applicant for patent in fee, age 45, 1/2 blood, married, farmer",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Emma Menard",
+        "type": "person",
+        "context": "Wife of George Menard, age 37, has 160-acre allotment",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Leo Menard",
+        "type": "person",
+        "context": "Son of George Menard, age 14, has 160-acre allotment",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Clarence Menard",
+        "type": "person",
+        "context": "Son of George Menard, age 12, has 160-acre allotment",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Florence Menard",
+        "type": "person",
+        "context": "Daughter of George Menard, age 10, has 160-acre allotment",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Nicholas Menard",
+        "type": "person",
+        "context": "Son of George Menard, age 7, has 160-acre allotment",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Willie Menard",
+        "type": "person",
+        "context": "Son of George Menard, age 4, has 160-acre allotment",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Francis Menard",
+        "type": "person",
+        "context": "Son of George Menard, age 2, has no allotment",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Rosebud Agency",
+        "type": "organization",
+        "context": "Indian agency under which the patent application is filed",
+        "source_page": "1-4"
+      },
+      {
+        "name": "East 1/2 of Section 35, Township 41 North of Range 27 West of the 6th Principal Meridian, South Dakota",
+        "type": "land_parcel",
+        "context": "Land described in patent application, allotment No. 548, part of SE quarter",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Allotment No. 548",
+        "type": "land_parcel",
+        "context": "George Menard's allotment number, covering part of SE quarter",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Act of May 8, 1906, 34 Stat., 182",
+        "type": "legislation",
+        "context": "Legislation under which the patent in fee application is made",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Reservation School",
+        "type": "organization",
+        "context": "School attended by George Menard for 3 years",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Geneva, Nebraska",
+        "type": "location",
+        "context": "Location of school attended by George Menard for 3 years",
+        "source_page": "1-4"
+      },
+      {
+        "name": "South Dakota",
+        "type": "location",
+        "context": "State where the allotment land is located",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Morton D. Frey",
+        "type": "person",
+        "context": "Notary Public who subscribed and swore the application on November 19, 1919",
+        "source_page": "1-4"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "George Menard",
+        "allotment_number": "548",
+        "acreage": "part of SE quarter (East 1/2 of Section 35, Township 41 North of Range 27 West of 6th Principal Meridian, South Dakota)",
+        "patent_date": "unknown (application dated 1919-11-19)",
+        "patent_number": "unknown",
+        "mechanism": "application",
+        "buyer": "unknown (applicant states intention to sell)",
+        "sale_price": "$3,000 (estimated land value)",
+        "attorney": "unknown",
+        "mortgage": "none stated",
+        "source_page": "1-4"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "lease",
+        "amount": "$80.00 per year",
+        "payer": "unknown lessee",
+        "payee": "George Menard (under government control)",
+        "date": "unknown",
+        "description": "Land leased under government control at $80.00 per year (Question 20)",
+        "source_page": "1-4"
+      },
+      {
+        "type": "other",
+        "amount": "$3,000",
+        "payer": "N/A",
+        "payee": "N/A",
+        "date": "1919-11-19",
+        "description": "Estimated value of land covered by the patent application (part of SE quarter, allotment No. 548)",
+        "source_page": "1-4"
+      },
+      {
+        "type": "other",
+        "amount": "$1,500",
+        "payer": "N/A",
+        "payee": "N/A",
+        "date": "1919-11-19",
+        "description": "Value of inherited land: 1/2 of a quarter section",
+        "source_page": "1-4"
+      },
+      {
+        "type": "other",
+        "amount": "$4,000",
+        "payer": "N/A",
+        "payee": "N/A",
+        "date": "1919-11-19",
+        "description": "Value of other 160 acres (trust land) with house and barn, 40 acres under cultivation, all fenced",
+        "source_page": "1-4"
+      },
+      {
+        "type": "other",
+        "amount": "$3,000 (approx)",
+        "payer": "N/A",
+        "payee": "N/A",
+        "date": "1919-11-19",
+        "description": "Approximate value of each family member's allotment of 160 acres (stated as 'value 3 000' in Question 23)",
+        "source_page": "1-4"
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "patent_application_filed",
+        "date": "1919-11-19",
+        "location": "Rosebud Agency, South Dakota",
+        "description": "George Menard filed Application for a Patent in Fee (Form 5-105) under Act of May 8, 1906, 34 Stat. 182, for part of SE quarter of allotment No. 548, East 1/2 of Section 35, Township 41 North of Range 27 West of 6th Principal Meridian, South Dakota",
+        "source_page": "1-4"
+      },
+      {
+        "type": "notarization",
+        "date": "1919-11-19",
+        "location": "South Dakota",
+        "description": "Application subscribed and sworn before Notary Public Morton D. Frey on the 19th day of November 1919",
+        "source_page": "1-4"
+      },
+      {
+        "type": "school_attendance",
+        "date": "unknown",
+        "location": "Reservation School",
+        "description": "George Menard attended Reservation School for 3 years",
+        "source_page": "1-4"
+      },
+      {
+        "type": "school_attendance",
+        "date": "unknown",
+        "location": "Geneva, Nebraska",
+        "description": "George Menard attended school in Geneva, Nebraska for 3 years",
+        "source_page": "1-4"
+      },
+      {
+        "type": "farming_experience",
+        "date": "unknown",
+        "location": "South Dakota",
+        "description": "George Menard has 10 years of farming experience",
+        "source_page": "1-4"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "George Menard",
+        "type": "married_to",
+        "object": "Emma Menard",
+        "context": "George Menard lists Emma Menard as wife, age 37",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "George Menard",
+        "type": "parent_of",
+        "object": "Leo Menard",
+        "context": "Son, age 14, 160 acres",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "George Menard",
+        "type": "parent_of",
+        "object": "Clarence Menard",
+        "context": "Son, age 12, 160 acres",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "George Menard",
+        "type": "parent_of",
+        "object": "Florence Menard",
+        "context": "Daughter, age 10, 160 acres",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "George Menard",
+        "type": "parent_of",
+        "object": "Nicholas Menard",
+        "context": "Son, age 7, 160 acres",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "George Menard",
+        "type": "parent_of",
+        "object": "Willie Menard",
+        "context": "Son, age 4, 160 acres",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "George Menard",
+        "type": "parent_of",
+        "object": "Francis Menard",
+        "context": "Son, age 2, no allotment",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "George Menard",
+        "type": "allottee_of",
+        "object": "Allotment No. 548",
+        "context": "George Menard holds allotment No. 548 at Rosebud Agency",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "George Menard",
+        "type": "applicant_at",
+        "object": "Rosebud Agency",
+        "context": "Filed patent in fee application at Rosebud Agency",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "Morton D. Frey",
+        "type": "notarized_for",
+        "object": "George Menard",
+        "context": "Notary Public who swore in the applicant on November 19, 1919",
+        "source_page": "1-4"
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [
+      {
+        "bill_number": "N/A",
+        "sponsor": "N/A",
+        "action_type": "enacted",
+        "date": "1906-05-08",
+        "vote_count": "N/A",
+        "committee": "N/A",
+        "outcome": "Act of May 8, 1906, 34 Stat. 182 — authorizing applications for patents in fee by Indian allottees",
+        "source_page": "1-4"
+      }
+    ],
+    "tables": [
+      {
+        "title": "Family Members' Allotments (Question 23)",
+        "columns": [
+          "Name",
+          "Relationship",
+          "Sex",
+          "Age",
+          "Acreage",
+          "Approximate Value"
+        ],
+        "rows": [
+          {
+            "Name": "Emma Menard",
+            "Relationship": "Wife",
+            "Sex": "Female",
+            "Age": "37",
+            "Acreage": "160",
+            "Approximate Value": "$3,000 (approx)"
+          },
+          {
+            "Name": "Leo Menard",
+            "Relationship": "Son",
+            "Sex": "Male",
+            "Age": "14",
+            "Acreage": "160",
+            "Approximate Value": "$3,000 (approx)"
+          },
+          {
+            "Name": "Clarence Menard",
+            "Relationship": "Son",
+            "Sex": "Male",
+            "Age": "12",
+            "Acreage": "160",
+            "Approximate Value": "$3,000 (approx)"
+          },
+          {
+            "Name": "Florence Menard",
+            "Relationship": "Daughter",
+            "Sex": "Female",
+            "Age": "10",
+            "Acreage": "160",
+            "Approximate Value": "$3,000 (approx)"
+          },
+          {
+            "Name": "Nicholas Menard",
+            "Relationship": "Son",
+            "Sex": "Male",
+            "Age": "7",
+            "Acreage": "160",
+            "Approximate Value": "$3,000 (approx)"
+          },
+          {
+            "Name": "Willie Menard",
+            "Relationship": "Son",
+            "Sex": "Male",
+            "Age": "4",
+            "Acreage": "160",
+            "Approximate Value": "$3,000 (approx)"
+          },
+          {
+            "Name": "Francis Menard",
+            "Relationship": "Son",
+            "Sex": "Male",
+            "Age": "2",
+            "Acreage": "none",
+            "Approximate Value": "N/A"
+          }
+        ],
+        "source_page": "1-4"
+      },
+      {
+        "title": "Application Questions and Answers Summary",
+        "columns": [
+          "Question Number",
+          "Question",
+          "Answer"
+        ],
+        "rows": [
+          {
+            "Question Number": "1",
+            "Question": "Age?",
+            "Answer": "45"
+          },
+          {
+            "Question Number": "2",
+            "Question": "Degree of blood?",
+            "Answer": "1/2"
+          },
+          {
+            "Question Number": "3",
+            "Question": "Married or single?",
+            "Answer": "Married"
+          },
+          {
+            "Question Number": "4",
+            "Question": "Did you attend school? If so, where and how long?",
+            "Answer": "Reservation School 3 years, Geneva, Nebraska 3 years"
+          },
+          {
+            "Question Number": "5",
+            "Question": "Do you use intoxicants?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "6",
+            "Question": "Are you in good physical condition?",
+            "Answer": "Yes"
+          },
+          {
+            "Question Number": "7",
+            "Question": "What is the value of the land covered by your application?",
+            "Answer": "$3,000"
+          },
+          {
+            "Question Number": "8",
+            "Question": "Does your application cover your own allotment or inherited land?",
+            "Answer": "My own allotment"
+          },
+          {
+            "Question Number": "9",
+            "Question": "Does your application cover all or a part of your land?",
+            "Answer": "Part"
+          },
+          {
+            "Question Number": "10",
+            "Question": "Do you cultivate your land?",
+            "Answer": "Yes"
+          },
+          {
+            "Question Number": "11",
+            "Question": "Have you any other occupation?",
+            "Answer": "Farming"
+          },
+          {
+            "Question Number": "12",
+            "Question": "Are you self-supporting? If so, how is your self-support obtained?",
+            "Answer": "Yes, very good"
+          },
+          {
+            "Question Number": "13",
+            "Question": "Have you accumulated any property? If so, what?",
+            "Answer": "Horses"
+          },
+          {
+            "Question Number": "14",
+            "Question": "Are you in debt?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "15",
+            "Question": "Have you been given a patent in fee for a part of your land? If so, did you sell it, and what use did you make of the proceeds of the sale?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "16",
+            "Question": "Have you any inherited land? If so, what is your interest in the estate and what is the value of the allotment?",
+            "Answer": "1/2 of a quarter section, value $1,500"
+          },
+          {
+            "Question Number": "17",
+            "Question": "Have you sold any inherited land? If so, what use was made of the proceeds?",
+            "Answer": "None"
+          },
+          {
+            "Question Number": "18",
+            "Question": "Have you any individual Indian money to your credit with the superintendent? If so, how much?",
+            "Answer": "None"
+          },
+          {
+            "Question Number": "19",
+            "Question": "Have you been given the privilege of leasing your own land?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "20",
+            "Question": "Is your land leased? If so, what rent do you receive?",
+            "Answer": "Yes, under government control at $80.00 per year"
+          },
+          {
+            "Question Number": "21",
+            "Question": "Have you made a contract to sell your land? If so, to whom, and at what price?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "22",
+            "Question": "Has anyone asked you to procure a patent in fee for the purpose of disposing of your land?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "23",
+            "Question": "Have other members of your family allotments of their own?",
+            "Answer": "Emma Menard wife age 37, 160 acres; Leo Menard son age 14, 160 acres; Clarence Menard son age 12, 160 acres; Florence Menard daughter age 10, 160 acres; Nicholas Menard son age 7, 160 acres; Willie Menard son age 4, 160 acres; Francis Menard son age 2, no allotment. Each 160 acres, value $3,000"
+          },
+          {
+            "Question Number": "24",
+            "Question": "What members of your family, if any, have no allotment?",
+            "Answer": "Francis Menard, son, age 2. Have no allotment, government runs out. My wife and all my children need my support"
+          },
+          {
+            "Question Number": "25",
+            "Question": "What practical business experience have you had?",
+            "Answer": "Farming 10 years"
+          },
+          {
+            "Question Number": "26",
+            "Question": "Have you other lands that would continue to be held in trust after the lands described in this application are released?",
+            "Answer": "Yes, 160 acres, value $4,000. House and barn, 40 acres under cultivation, all fenced"
+          },
+          {
+            "Question Number": "27",
+            "Question": "Set forth fully your reasons for requesting a patent in fee.",
+            "Answer": "My intention is to sell this 160 acres and to improve on my other 160 acres, and to buy more stocks and farm implements"
+          }
+        ],
+        "source_page": "1-4"
+      }
+    ]
+  }
 }

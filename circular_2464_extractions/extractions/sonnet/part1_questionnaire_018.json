@@ -28,5 +28,408 @@
     "input_tokens": 3456,
     "output_tokens": 351
   },
-  "elapsed": 7.2
+  "elapsed": 7.2,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part1_questionnaire_018/vision_merged.json",
+    "entities": [
+      {
+        "name": "John Sully",
+        "type": "person",
+        "context": "Applicant for patent in fee, allottee at Rosebud Agency, 29 years old, 1/4 Indian blood, married, stock raiser",
+        "source_page": "1-5"
+      },
+      {
+        "name": "Rosebud Agency",
+        "type": "organization",
+        "context": "Bureau of Indian Affairs agency under which the allotment is held",
+        "source_page": "1-5"
+      },
+      {
+        "name": "Office of Indian Affairs",
+        "type": "organization",
+        "context": "Federal office that received the application, stamped FEB 11 1929",
+        "source_page": "1-5"
+      },
+      {
+        "name": "Matt Bully",
+        "type": "person",
+        "context": "Creditor to whom John Sully owes one thousand dollars for thirty-five head of heifers",
+        "source_page": "1-5"
+      },
+      {
+        "name": "Cecilia Sully",
+        "type": "person",
+        "context": "Daughter of John Sully, girl age 2.5 years, holds allotment of 160 acres valued about $1600",
+        "source_page": "1-5"
+      },
+      {
+        "name": "Howard Sully",
+        "type": "person",
+        "context": "Son of John Sully, age 1 year, no allotment; allotment was requested but agent did not attend to it",
+        "source_page": "1-5"
+      },
+      {
+        "name": "John Knecht",
+        "type": "person",
+        "context": "Superintendent who subscribed and sworn the application on August 23, 1917",
+        "source_page": "1-5"
+      },
+      {
+        "name": "Southeast Quarter Section 32 Township 99 Range 74",
+        "type": "land_parcel",
+        "context": "Allotment No. 6470, southeast quarter of section thirty-two, Township ninety-nine, Range seventy-four west of the fifth Principal Meridian, South Dakota",
+        "source_page": "1-5"
+      },
+      {
+        "name": "Chamberlain",
+        "type": "location",
+        "context": "School location where John Sully attended for eight years",
+        "source_page": "1-5"
+      },
+      {
+        "name": "Pierre",
+        "type": "location",
+        "context": "School location where John Sully attended for eight years",
+        "source_page": "1-5"
+      },
+      {
+        "name": "South Dakota",
+        "type": "location",
+        "context": "State where the allotment land is located",
+        "source_page": "1-5"
+      },
+      {
+        "name": "Act of May 8, 1906, 34 Stat. 182",
+        "type": "legislation",
+        "context": "Legal authority under which the application for patent in fee is made",
+        "source_page": "1-5"
+      },
+      {
+        "name": "Allotment No. 6470",
+        "type": "acreage_holding",
+        "context": "John Sully's own allotment, southeast quarter of section 32, Township 99, Range 74 west of the fifth Principal Meridian, South Dakota",
+        "source_page": "1-5"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "John Sully",
+        "allotment_number": "6470",
+        "acreage": "160 (southeast quarter of section 32)",
+        "patent_date": "unknown",
+        "patent_number": "unknown",
+        "mechanism": "application",
+        "buyer": "unknown",
+        "sale_price": "unknown",
+        "attorney": "unknown",
+        "mortgage": "unknown",
+        "source_page": "1-5"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "other",
+        "amount": "$1000",
+        "payer": "John Sully",
+        "payee": "Matt Bully",
+        "date": "unknown",
+        "description": "John Sully owes Matt Bully one thousand dollars for thirty-five head of heifers; security has been given",
+        "source_page": "1-5"
+      },
+      {
+        "type": "other",
+        "amount": "$6000 (approximate)",
+        "payer": "unknown",
+        "payee": "unknown",
+        "date": "unknown",
+        "description": "Stated value of land covered by the application (question 7 answer reads approximately $6000)",
+        "source_page": "1-5"
+      }
+    ],
+    "mortgages": [
+      {
+        "borrower": "John Sully",
+        "lender": "Matt Bully",
+        "amount": "$1000",
+        "land_description": "unknown",
+        "acreage": "unknown",
+        "date": "unknown",
+        "interest_rate": "unknown",
+        "status": "active",
+        "context": "John Sully owes Matt Bully one thousand dollars for thirty-five head of heifers; security has been given (recorded in response to question 14 on the patent application)",
+        "source_page": "1-5"
+      }
+    ],
+    "events": [
+      {
+        "type": "application_for_patent_in_fee",
+        "date": "1917-08-23",
+        "location": "Rosebud Agency, South Dakota",
+        "description": "John Sully submitted application for patent in fee for allotment No. 6470, covering all of the southeast quarter of section 32, Township 99, Range 74 west of the fifth Principal Meridian, South Dakota",
+        "source_page": "1-5"
+      },
+      {
+        "type": "document_received",
+        "date": "1929-02-11",
+        "location": "Office of Indian Affairs",
+        "description": "Application for patent in fee received by the Office of Indian Affairs, stamped February 11, 1929",
+        "source_page": "1-5"
+      },
+      {
+        "type": "oath_sworn",
+        "date": "1917-08-23",
+        "location": "Rosebud Agency",
+        "description": "Application subscribed and sworn before Superintendent John Knecht on August 23, 1917",
+        "source_page": "1-5"
+      },
+      {
+        "type": "annotation",
+        "date": "1917-09",
+        "location": "unknown",
+        "description": "Handwritten note on document: 'On list reported Sept 1917'",
+        "source_page": "1-5"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "John Sully",
+        "type": "applicant_at",
+        "object": "Rosebud Agency",
+        "context": "John Sully is an allottee at Rosebud Agency applying for patent in fee",
+        "source_page": "1-5"
+      },
+      {
+        "subject": "John Sully",
+        "type": "related_to",
+        "object": "Cecilia Sully",
+        "context": "Cecilia Sully is John Sully's daughter, age 2.5 years",
+        "source_page": "1-5"
+      },
+      {
+        "subject": "John Sully",
+        "type": "related_to",
+        "object": "Howard Sully",
+        "context": "Howard Sully is John Sully's son, age 1 year, no allotment",
+        "source_page": "1-5"
+      },
+      {
+        "subject": "John Sully",
+        "type": "indebted_to",
+        "object": "Matt Bully",
+        "context": "John Sully owes Matt Bully $1000 for 35 head of heifers, security given",
+        "source_page": "1-5"
+      },
+      {
+        "subject": "John Knecht",
+        "type": "employed_by",
+        "object": "Rosebud Agency",
+        "context": "John Knecht is the Superintendent who administered the oath for the application",
+        "source_page": "1-5"
+      },
+      {
+        "subject": "John Sully",
+        "type": "owns",
+        "object": "Allotment No. 6470",
+        "context": "John Sully's own allotment, southeast quarter of section 32, Township 99, Range 74, South Dakota",
+        "source_page": "1-5"
+      },
+      {
+        "subject": "Cecilia Sully",
+        "type": "owns",
+        "object": "160 acres valued about $1600",
+        "context": "Cecilia Sully holds her own allotment of 160 acres",
+        "source_page": "1-5"
+      },
+      {
+        "subject": "John Sully",
+        "type": "attended_school_at",
+        "object": "Chamberlain",
+        "context": "John Sully attended school at Chamberlain for eight years",
+        "source_page": "1-5"
+      },
+      {
+        "subject": "John Sully",
+        "type": "attended_school_at",
+        "object": "Pierre",
+        "context": "John Sully attended school at Pierre for eight years (combined with Chamberlain)",
+        "source_page": "1-5"
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [
+      {
+        "sender": "John Sully",
+        "sender_title": "Applicant/Allottee",
+        "recipient": "Office of Indian Affairs",
+        "recipient_title": "Federal Agency",
+        "date": "1917-08-23",
+        "subject": "Application for Patent in Fee for Allotment No. 6470",
+        "action_requested": "Grant patent in fee for southeast quarter of section 32, Township 99, Range 74 west of the fifth Principal Meridian, South Dakota, so applicant can have the same privilege in buying and selling land as any other citizen",
+        "outcome": "Document received by Office of Indian Affairs on February 11, 1929; final outcome not recorded in document",
+        "source_page": "1-5"
+      }
+    ],
+    "legislative_actions": [
+      {
+        "bill_number": "34 Stat. 182",
+        "sponsor": "unknown",
+        "action_type": "enacted",
+        "date": "1906-05-08",
+        "vote_count": "unknown",
+        "committee": "unknown",
+        "outcome": "Act of May 8, 1906 enacted, providing authority for applications for patent in fee",
+        "source_page": "1-5"
+      }
+    ],
+    "tables": [
+      {
+        "title": "Application for Patent in Fee - Question and Answer Summary",
+        "columns": [
+          "Question Number",
+          "Question",
+          "Answer"
+        ],
+        "rows": [
+          {
+            "Question Number": "1",
+            "Question": "Age?",
+            "Answer": "29 years"
+          },
+          {
+            "Question Number": "2",
+            "Question": "Degree of blood?",
+            "Answer": "1/4 Indian"
+          },
+          {
+            "Question Number": "3",
+            "Question": "Married or single?",
+            "Answer": "Married"
+          },
+          {
+            "Question Number": "4",
+            "Question": "Did you attend school? If so, where and how long?",
+            "Answer": "Chamberlain & Pierre for eight years"
+          },
+          {
+            "Question Number": "5",
+            "Question": "Do you use intoxicants?",
+            "Answer": "Yes, but to a small extent"
+          },
+          {
+            "Question Number": "6",
+            "Question": "Are you in good physical condition?",
+            "Answer": "Yes"
+          },
+          {
+            "Question Number": "7",
+            "Question": "What is the value of the land covered by your application?",
+            "Answer": "$6000 (approximate)"
+          },
+          {
+            "Question Number": "8",
+            "Question": "Does your application cover your own allotment or inherited land?",
+            "Answer": "My own allotment"
+          },
+          {
+            "Question Number": "9",
+            "Question": "Does your application cover all or a part of your land?",
+            "Answer": "All"
+          },
+          {
+            "Question Number": "10",
+            "Question": "Do you cultivate your land?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "11",
+            "Question": "Have you any other occupation?",
+            "Answer": "Stock Raising"
+          },
+          {
+            "Question Number": "12",
+            "Question": "Are you self-supporting? If so, how is your self-support obtained?",
+            "Answer": "Yes, farming and stock raising"
+          },
+          {
+            "Question Number": "13",
+            "Question": "Have you accumulated any property? If so, what?",
+            "Answer": "Yes, horses and cattle"
+          },
+          {
+            "Question Number": "14",
+            "Question": "Are you in debt? If so, whom do you owe, how much, and for what, and have you given security for the debts?",
+            "Answer": "Yes, Matt Bully one thousand dollars for thirty-five head of heifers, I have given security"
+          },
+          {
+            "Question Number": "15",
+            "Question": "Have you been given a patent in fee for a part of your land? If so, did you sell it, and what use did you make of the proceeds of the sale?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "16",
+            "Question": "Have you any inherited land? If so, what is your interest in the estate and what is the value of the allotment?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "17",
+            "Question": "Have you sold any inherited land? If so, what use was made of the proceeds?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "18",
+            "Question": "Have you any individual Indian money to your credit with the superintendent? If so, how much?",
+            "Answer": "Some money issued while I was not on roll"
+          },
+          {
+            "Question Number": "19",
+            "Question": "Have you been given the privilege of leasing your own land?",
+            "Answer": "Yes"
+          },
+          {
+            "Question Number": "20",
+            "Question": "Is your land leased? If so, what rent do you receive?",
+            "Answer": "No, I use it myself for hay land"
+          },
+          {
+            "Question Number": "21",
+            "Question": "Have you made a contract to sell your land? If so, to whom, and at what price?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "22",
+            "Question": "Has anyone asked you to procure a patent in fee for the purpose of disposing of your land?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "23",
+            "Question": "Have other members of your family allotments of their own? If so, give names, sex, ages, relationship, and number of acres, and approximate value of each allotment.",
+            "Answer": "Yes. Cecilia Sully, girl, 2.5 years, my daughter, 160 acres valued about $1600"
+          },
+          {
+            "Question Number": "24",
+            "Question": "What members of your family, if any, have no allotment? Designate those dependent on you for support, and give reasons, stating ages and sex.",
+            "Answer": "Howard Sully, son, age 1 year, allotment asked for but agent did not attend to it"
+          },
+          {
+            "Question Number": "25",
+            "Question": "What practical business experience have you had?",
+            "Answer": "Buying and selling my stock"
+          },
+          {
+            "Question Number": "26",
+            "Question": "Have you other lands that would continue to be held in trust after the lands described in this application are released? If so, give acreage, value, and character of improvements thereon.",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "27",
+            "Question": "Set forth fully your reasons for requesting a patent in fee.",
+            "Answer": "So that I can have the same privilege in buying and selling land as any other citizen"
+          }
+        ],
+        "source_page": "1-5"
+      }
+    ]
+  }
 }

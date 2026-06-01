@@ -28,5 +28,306 @@
     "input_tokens": 2897,
     "output_tokens": 277
   },
-  "elapsed": 7.0
+  "elapsed": 7.0,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part1_questionnaire_019/vision_merged.json",
+    "entities": [
+      {
+        "name": "George Sully",
+        "type": "person",
+        "context": "Applicant for patent in fee, allottee at Rose Bud Agency",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Rose Bud Agency",
+        "type": "organization",
+        "context": "Indian Agency where application was filed",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Office of Indian Affairs",
+        "type": "organization",
+        "context": "Federal office that received the application, stamped FEB 11 1929",
+        "source_page": "1-4"
+      },
+      {
+        "name": "C.M. Burch",
+        "type": "person",
+        "context": "Superintendent and Notary Public who administered oath",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Northeast quarter of Section 33, Township 99 North, Range 74, Fifth Principal Meridian, South Dakota",
+        "type": "land_parcel",
+        "context": "Allotment No. 6465, containing approximately 160 acres",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Chamberlain",
+        "type": "location",
+        "context": "School attended by George Sully for eight years",
+        "source_page": "1-4"
+      },
+      {
+        "name": "South Dakota",
+        "type": "location",
+        "context": "State where the allotment land is located",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Act of May 8, 1906, 34 Stat., 182",
+        "type": "legislation",
+        "context": "Legal authority under which the patent in fee application is made",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Allotment No. 6465",
+        "type": "land_parcel",
+        "context": "George Sully's individual allotment at Rose Bud Agency",
+        "source_page": "1-4"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "George Sully",
+        "allotment_number": "6465",
+        "acreage": "160 acres (approximately, described as 'one hundred sixty acres')",
+        "patent_date": "",
+        "patent_number": "5-105",
+        "mechanism": "application",
+        "buyer": "",
+        "sale_price": "",
+        "attorney": "",
+        "mortgage": "no",
+        "source_page": "1-4"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "other",
+        "amount": "$5000",
+        "payer": "",
+        "payee": "",
+        "date": "",
+        "description": "Estimated value of land covered by the patent in fee application (Allotment No. 6465)",
+        "source_page": "1-4"
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "application_submission",
+        "date": "1929-02-11",
+        "location": "Rose Bud Agency",
+        "description": "George Sully submitted Application for a Patent in Fee covering all of Allotment No. 6465; received by Office of Indian Affairs on February 11, 1929",
+        "source_page": "1-4"
+      },
+      {
+        "type": "oath_administration",
+        "date": "1920-08-22",
+        "location": "Rose Bud Agency",
+        "description": "Application subscribed and sworn before Superintendent C.M. Burch, Notary Public, on the 22nd day of August (year inferred as circa 1920 based on notary commission expiration of April 14, 1921)",
+        "source_page": "1-4"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "George Sully",
+        "type": "applicant_at",
+        "object": "Rose Bud Agency",
+        "context": "George Sully is an allottee applying for patent in fee at Rose Bud Agency",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "George Sully",
+        "type": "administered_oath_by",
+        "object": "C.M. Burch",
+        "context": "C.M. Burch as Superintendent and Notary Public administered the oath for the application",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "C.M. Burch",
+        "type": "employed_by",
+        "object": "Rose Bud Agency",
+        "context": "C.M. Burch served as Superintendent of Rose Bud Agency",
+        "source_page": "1-4"
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [
+      {
+        "sender": "George Sully",
+        "sender_title": "Applicant / Allottee",
+        "recipient": "Office of Indian Affairs",
+        "recipient_title": "Federal Agency",
+        "date": "1929-02-11",
+        "subject": "Application for a Patent in Fee for Allotment No. 6465 at Rose Bud Agency",
+        "action_requested": "Grant patent in fee covering all of allotment No. 6465 — NE quarter of Section 33, Township 99 North, Range 74, Fifth Principal Meridian, South Dakota, containing approximately 160 acres",
+        "outcome": "Received by Office of Indian Affairs February 11, 1929; outcome not recorded in document",
+        "source_page": "1-4"
+      }
+    ],
+    "legislative_actions": [
+      {
+        "bill_number": "34 Stat. 182",
+        "sponsor": "",
+        "action_type": "enacted",
+        "date": "1906-05-08",
+        "vote_count": "",
+        "committee": "",
+        "outcome": "Act of May 8, 1906 enacted, authorizing applications for patents in fee by Indian allottees",
+        "source_page": "1-4"
+      }
+    ],
+    "tables": [
+      {
+        "title": "Application for a Patent in Fee — Questionnaire Responses",
+        "columns": [
+          "Question Number",
+          "Question",
+          "Answer"
+        ],
+        "rows": [
+          {
+            "Question Number": "1",
+            "Question": "Age?",
+            "Answer": "26"
+          },
+          {
+            "Question Number": "2",
+            "Question": "Degree of blood?",
+            "Answer": "1/4"
+          },
+          {
+            "Question Number": "3",
+            "Question": "Married or single?",
+            "Answer": "Single"
+          },
+          {
+            "Question Number": "4",
+            "Question": "Did you attend school? If so, where and how long?",
+            "Answer": "Chamberlain, eight years"
+          },
+          {
+            "Question Number": "5",
+            "Question": "Do you use intoxicants?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "6",
+            "Question": "Are you in good physical condition?",
+            "Answer": "Yes"
+          },
+          {
+            "Question Number": "7",
+            "Question": "What is the value of the land covered by your application?",
+            "Answer": "$5000"
+          },
+          {
+            "Question Number": "8",
+            "Question": "Does your application cover your own allotment or inherited land?",
+            "Answer": "My own allotment"
+          },
+          {
+            "Question Number": "9",
+            "Question": "Does your application cover all or a part of your land?",
+            "Answer": "All"
+          },
+          {
+            "Question Number": "10",
+            "Question": "Do you cultivate your land?",
+            "Answer": "Yes"
+          },
+          {
+            "Question Number": "11",
+            "Question": "Have you any other occupation?",
+            "Answer": "Stock raising"
+          },
+          {
+            "Question Number": "12",
+            "Question": "Are you self-supporting? If so, how is your self-support obtained?",
+            "Answer": "Yes, by raising stock"
+          },
+          {
+            "Question Number": "13",
+            "Question": "Have you accumulated any property? If so, what?",
+            "Answer": "Horses and cattle; 45 horses and cattle"
+          },
+          {
+            "Question Number": "14",
+            "Question": "Are you in debt? If so, whom do you owe, how much, and for what, and have you given security for the debts?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "15",
+            "Question": "Have you been given a patent in fee for a part of your land? If so, did you sell it, and what use did you make of the proceeds of the sale?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "16",
+            "Question": "Have you any inherited land? If so, what is your interest in the estate and what is the value of the allotment?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "17",
+            "Question": "Have you sold any inherited land? If so, what use was made of the proceeds?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "18",
+            "Question": "Have you any individual Indian money to your credit with the superintendent? If so, how much?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "19",
+            "Question": "Have you been given the privilege of leasing your own land?",
+            "Answer": "Yes"
+          },
+          {
+            "Question Number": "20",
+            "Question": "Is your land leased? If so, what rent do you receive?",
+            "Answer": "I use it for my stock"
+          },
+          {
+            "Question Number": "21",
+            "Question": "Have you made a contract to sell your land? If so, to whom, and at what price?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "22",
+            "Question": "Has anyone asked you to procure a patent in fee for the purpose of disposing of your land?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "23",
+            "Question": "Have other members of your family allotments of their own? If so, give names, sex, ages, relationship, and number of acres, and approximate value of each allotment.",
+            "Answer": "Yes"
+          },
+          {
+            "Question Number": "24",
+            "Question": "What members of your family, if any, have no allotment? Designate those dependent on you for support, and give reasons, stating ages and sex.",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "25",
+            "Question": "What practical business experience have you had?",
+            "Answer": "Stock raising and self [raising] horses and cattle"
+          },
+          {
+            "Question Number": "26",
+            "Question": "Have you other lands that would continue to be held in trust after the lands described in this application are released? If so, give acreage, value, and character of improvements thereon.",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "27",
+            "Question": "Set forth fully your reasons for requesting a patent in fee.",
+            "Answer": "No reasons only that I am able to look after myself and make my own living"
+          }
+        ],
+        "source_page": "1-4"
+      }
+    ]
+  }
 }

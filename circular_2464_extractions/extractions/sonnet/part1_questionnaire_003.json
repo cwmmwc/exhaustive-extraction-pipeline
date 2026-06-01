@@ -28,5 +28,170 @@
     "input_tokens": 2211,
     "output_tokens": 327
   },
-  "elapsed": 5.9
+  "elapsed": 5.9,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part1_questionnaire_003/vision_merged.json",
+    "entities": [
+      {
+        "name": "W. G. Emery",
+        "type": "person",
+        "context": "Letter writer, seller of land, signed the handwritten note",
+        "source_page": 1
+      },
+      {
+        "name": "Office of Indian Affairs",
+        "type": "organization",
+        "context": "Received the document on September 30, 1929",
+        "source_page": 1
+      },
+      {
+        "name": "Rosebud Agency",
+        "type": "organization",
+        "context": "Received the document on July 16, 1929, located in South Dakota",
+        "source_page": 1
+      },
+      {
+        "name": "Leadville, Colorado",
+        "type": "location",
+        "context": "Location from which the letter was written",
+        "source_page": 1
+      },
+      {
+        "name": "South Dakota",
+        "type": "location",
+        "context": "Location of Rosebud Agency and referenced land patent delivery",
+        "source_page": 1
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "W. G. Emery",
+        "allotment_number": "2902",
+        "acreage": "unknown",
+        "patent_date": "unknown",
+        "patent_number": "2902",
+        "mechanism": "unknown",
+        "buyer": "unknown",
+        "sale_price": "$3,000.00",
+        "attorney": "unknown lawyer",
+        "mortgage": "unknown",
+        "source_page": 1
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$3,000.00",
+        "payer": "unknown buyer",
+        "payee": "W. G. Emery",
+        "date": "prior to 1929-07-13",
+        "description": "Supposed sale price of land; W. G. Emery was supposed to receive $3,000 but did not receive full amount",
+        "source_page": 1
+      },
+      {
+        "type": "payment",
+        "amount": "$2,500.00",
+        "payer": "unknown buyer",
+        "payee": "W. G. Emery",
+        "date": "prior to 1929-07-13",
+        "description": "Actual amount received; handwritten note states 'what i need was $2500 but i put 3,000 down. That was what i was suppose to get. $2,500'",
+        "source_page": 1
+      },
+      {
+        "type": "fee",
+        "amount": "$190.00",
+        "payer": "W. G. Emery",
+        "payee": "lawyer",
+        "date": "at time of sale",
+        "description": "$190.00 was held out by a lawyer at time of sale",
+        "source_page": 1
+      },
+      {
+        "type": "payment",
+        "amount": "$130.00",
+        "payer": "W. G. Emery",
+        "payee": "tax authority",
+        "date": "at time of sale",
+        "description": "W. G. Emery paid $130.00 in taxes at time of sale",
+        "source_page": 1
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "letter_written",
+        "date": "1929-07-13",
+        "location": "Leadville, Colorado",
+        "description": "W. G. Emery wrote a letter noting a mistake in land sale proceeds, stating he was supposed to receive $3,000 but received less",
+        "source_page": 1
+      },
+      {
+        "type": "document_received",
+        "date": "1929-07-16",
+        "location": "Rosebud Agency, South Dakota",
+        "description": "Rosebud Agency received the document",
+        "source_page": 1
+      },
+      {
+        "type": "document_received",
+        "date": "1929-09-30",
+        "location": "Office of Indian Affairs",
+        "description": "Office of Indian Affairs received the document, stamped twice on September 30, 1929",
+        "source_page": 1
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "W. G. Emery",
+        "type": "sold_to",
+        "object": "unknown buyer",
+        "context": "W. G. Emery sold land, expected $3,000 but did not receive full amount",
+        "source_page": 1
+      },
+      {
+        "subject": "W. G. Emery",
+        "type": "represented_by",
+        "object": "lawyer",
+        "context": "A lawyer held out $190.00 from sale proceeds",
+        "source_page": 1
+      },
+      {
+        "subject": "Rosebud Agency",
+        "type": "part_of",
+        "object": "Office of Indian Affairs",
+        "context": "Rosebud Agency is a sub-office under the Office of Indian Affairs, both received this document",
+        "source_page": 1
+      }
+    ],
+    "testimony": [],
+    "taxes": [
+      {
+        "taxpayer": "W. G. Emery",
+        "land_description": "unknown allotment land, South Dakota",
+        "tax_type": "property",
+        "amount": "$130.00",
+        "year": "unknown",
+        "status": "paid",
+        "county": "unknown",
+        "context": "W. G. Emery paid $130.00 in taxes at the time of land sale",
+        "source_page": 1
+      }
+    ],
+    "correspondence": [
+      {
+        "sender": "W. G. Emery",
+        "sender_title": "unknown",
+        "recipient": "unknown (Dear Sir)",
+        "recipient_title": "unknown",
+        "date": "1929-07-13",
+        "subject": "Mistake in land sale proceeds",
+        "action_requested": "Correction of amount received from land sale; expected $3,000, received less after taxes and lawyer fees",
+        "outcome": "Document received by Rosebud Agency on 1929-07-16 and Office of Indian Affairs on 1929-09-30",
+        "source_page": 1
+      }
+    ],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

@@ -1,0 +1,32 @@
+{
+  "document_id": "part4_agency_narrative_014",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 4.pdf",
+  "source_pages": "26",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Charles Whipple",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1259",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded on April 27, 1918, by R. E. Wang",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged the land April 25, 1918, for $900.00; transferred by deed to Alexander Whipple for a consideration of $4500.00 on May 4, 1920",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612703 issued; Southwest quarter of Section 29, Township 39, north of range 32; receipt for patent signed in February 1918",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2057,
+    "output_tokens": 330
+  },
+  "elapsed": 3.8
+}

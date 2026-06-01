@@ -28,5 +28,152 @@
     "input_tokens": 2412,
     "output_tokens": 274
   },
-  "elapsed": 6.1
+  "elapsed": 6.1,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part8_questionnaire_022/vision_merged.json",
+    "entities": [
+      {
+        "name": "John Mullen",
+        "type": "person",
+        "context": "Rosebud Sioux allottee, age 35, subject of fee patent questionnaire",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Rosebud Sioux",
+        "type": "organization",
+        "context": "Tribal affiliation of allottee John Mullen",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Burke Postmaster",
+        "type": "person",
+        "context": "Delivered the fee patent to John Mullen at Lucas",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Lucas",
+        "type": "location",
+        "context": "Location where fee patent was delivered to John Mullen",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Gregory County",
+        "type": "location",
+        "context": "County in South Dakota where document was notarized",
+        "source_page": "1-2"
+      },
+      {
+        "name": "South Dakota",
+        "type": "location",
+        "context": "State where document was notarized",
+        "source_page": "1-2"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "John Mullen",
+        "allotment_number": "3152",
+        "acreage": "unknown",
+        "patent_date": "unknown",
+        "patent_number": "unknown",
+        "mechanism": "administrative",
+        "buyer": "unknown",
+        "sale_price": "traded for other land",
+        "attorney": "unknown",
+        "mortgage": "none recorded",
+        "source_page": "1-2"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "other",
+        "amount": "unknown",
+        "payer": "John Mullen",
+        "payee": "unknown",
+        "date": "unknown",
+        "description": "John Mullen traded his allotted land for other land; no cash consideration recorded",
+        "source_page": "1-2"
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "fee_patent_delivery",
+        "date": "unknown",
+        "location": "Lucas",
+        "description": "Fee patent delivered to John Mullen by Burke Postmaster at Lucas, without protest, no receipt signed",
+        "source_page": "1-2"
+      },
+      {
+        "type": "notarization",
+        "date": "1929-01-08",
+        "location": "Gregory County, South Dakota",
+        "description": "John Mullen appeared before notary public and signed sworn statement; notary commission expires November 19, 1931",
+        "source_page": "1-2"
+      },
+      {
+        "type": "land_trade",
+        "date": "unknown",
+        "location": "unknown",
+        "description": "John Mullen traded his allotted land for other land; no longer owns original allotment",
+        "source_page": "1-2"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "John Mullen",
+        "type": "member_of",
+        "object": "Rosebud Sioux",
+        "context": "Allottee of Rosebud Sioux tribe",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "John Mullen",
+        "type": "related_to",
+        "object": "wife",
+        "context": "Wife is dependent upon John Mullen for support",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "John Mullen",
+        "type": "related_to",
+        "object": "3 children",
+        "context": "Three children are dependent upon John Mullen for support",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "John Mullen",
+        "type": "related_to",
+        "object": "father",
+        "context": "Father is dependent upon John Mullen for support",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Burke Postmaster",
+        "type": "delivered_to",
+        "object": "John Mullen",
+        "context": "Delivered fee patent to John Mullen at Lucas",
+        "source_page": "1-2"
+      }
+    ],
+    "testimony": [
+      {
+        "witness": "John Mullen",
+        "witness_title": "Rosebud Sioux allottee",
+        "hearing": "Fee Patent Questionnaire",
+        "committee": "unknown",
+        "location": "Gregory County, South Dakota",
+        "date": "1929-01-08",
+        "subject": "Fee patent receipt, disposition of allotted land",
+        "key_claims": "John Mullen, age 35, is a Rosebud Sioux allottee who received a fee patent he did not apply for. It was delivered by the Burke Postmaster at Lucas without him signing a receipt. He accepted it without protest. He no longer owns the land, having traded it for other land. He is in good health and supports a wife, 3 children, and his father by his own work.",
+        "questioner": "unknown",
+        "source_page": "1-2"
+      }
+    ],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

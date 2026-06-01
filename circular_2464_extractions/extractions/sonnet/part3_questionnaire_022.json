@@ -28,5 +28,101 @@
     "input_tokens": 2316,
     "output_tokens": 304
   },
-  "elapsed": 6.9
+  "elapsed": 6.9,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part3_questionnaire_022/vision_merged.json",
+    "entities": [
+      {
+        "name": "United States Department of the Interior",
+        "type": "organization",
+        "context": "Issuing agency of the circular",
+        "source_page": 1
+      },
+      {
+        "name": "Office of Indian Affairs",
+        "type": "organization",
+        "context": "Sub-office within Department of the Interior issuing the circular",
+        "source_page": 1
+      },
+      {
+        "name": "Washington",
+        "type": "location",
+        "context": "Location of the Office of Indian Affairs",
+        "source_page": 1
+      },
+      {
+        "name": "All Superintendents",
+        "type": "person",
+        "context": "Recipients of Circular No. 2464, responsible for Indian jurisdictions",
+        "source_page": 1
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Unknown - list to be compiled",
+        "allotment_number": "To be reported",
+        "acreage": "Unknown",
+        "patent_date": "Prior to 1921",
+        "patent_number": "Unknown",
+        "mechanism": "administrative",
+        "buyer": "Unknown",
+        "sale_price": "Unknown",
+        "attorney": "Unknown",
+        "mortgage": "Unknown",
+        "source_page": 1
+      }
+    ],
+    "financial_transactions": [],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "circular_issued",
+        "date": "1928-06-18",
+        "location": "Washington",
+        "description": "Circular No. 2464 issued by Office of Indian Affairs requesting superintendents to prepare alphabetical lists of Indians who received fee patents prior to 1921 without their applications therefor",
+        "source_page": 1
+      },
+      {
+        "type": "fee_patent_issuance_cutoff",
+        "date": "1921",
+        "location": "Various jurisdictions",
+        "description": "Fee patents were issued prior to 1921 covering allotments or inherited lands during the trust period without the Indians' applications therefor",
+        "source_page": 1
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Office of Indian Affairs",
+        "type": "issued_directive_to",
+        "object": "All Superintendents",
+        "context": "Circular No. 2464 directed superintendents to compile and forward fee patent data",
+        "source_page": 1
+      },
+      {
+        "subject": "All Superintendents",
+        "type": "has_jurisdiction_over",
+        "object": "Indians receiving fee patents",
+        "context": "Superintendents oversee Indians to whom patents in fee were issued prior to 1921",
+        "source_page": 1
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [
+      {
+        "sender": "Office of Indian Affairs",
+        "sender_title": "United States Department of the Interior, Office of Indian Affairs",
+        "recipient": "All Superintendents",
+        "recipient_title": "Superintendent",
+        "date": "1928-06-18",
+        "subject": "Fee Patent Data - Circular No. 2464",
+        "action_requested": "Prepare and forward to the Office an alphabetical list of all Indians under each superintendent's jurisdiction to whom patents in fee were issued prior to 1921, covering allotments or inherited lands during the trust period without their applications therefor. For each name provide: (1) number of allotment and date of fee patent; (2) date and manner of delivery of patent and whether receipted; (3) whether acceptance was with or without protest and if filed for record in county; (4) whether land has been sold or mortgaged by patentee or heirs; (5) if mortgaged, whether mortgage released or foreclosed and date of redemption; (6) if land sold, amount received and whether fair consideration or settlement of old debt; (7) whether any land sold for debt or taxes; (8) whether patent has been canceled; (9) if canceled, whether tax assessments or tax sales canceled or paid assessments refunded; (10) present age, mental, physical and financial condition of patentee or heirs if deceased; (11) source of Indian's support and whether Government, State or County contributed.",
+        "outcome": "Pending response from superintendents",
+        "source_page": 1
+      }
+    ],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

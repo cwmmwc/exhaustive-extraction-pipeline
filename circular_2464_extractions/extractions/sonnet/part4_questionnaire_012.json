@@ -1,0 +1,231 @@
+{
+  "document_id": "part4_questionnaire_012",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 4.pdf",
+  "source_pages": "33-34",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alphonse M. Charbonneau",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "Valentine, Nebraska",
+    "Allotment number": "1466",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is severely damaged/illegible; most answer fields are unreadable. Notary commission expiration dates partially visible: '4-26-' and '?/3/3' and 'a-00-2'. Document notarized in 1929 in County of Oka[homa?]. The named allottee appears to be referenced as 'ObKowq' or similar but text is too degraded to confirm. State of [illegible]. | TASK 5 PART 4 SUBSTANTIVE EXTRACTION 2026-05-02 (SONNET VISION): Sonnet vision extraction of source PDF replaces thin Sonnet text extraction which had Name='not stated' and Allotment='not stated'. Vision extraction file: validation_samples/part4_q012_vision/vision_merged.json. ALLOTMENT 1466 confirmed (also confirmed by Kimi v3/v4/v5). PATENT MECHANISM: Charbonneau APPLIED for the fee patent himself (not government-initiated forced fee). PATENT RECEIPT: Patent was mailed to him at Valentine, Nebraska in 1918. He signed a receipt for it. Accepted WITHOUT PROTEST. NOTARIZATION: Document notarized June 11, 1929 in Cherry County, Nebraska, where Charbonneau personally appeared before the notary. SALE (per source-page verification): Part of allotment sold for $2,000 cash. Buyer name and date NOT in questionnaire source. (Sonnet vision had reported '$7,000' and 'NW 1/4' — both unsupported by the source page; vision extraction errors.) Q7 RESPONSE: States he still owns the land — apparent inconsistency with the NW 1/4 sale; possibly a different parcel from the same allotment, or framing-dependent. PERSONAL: In good health, no dependents, self-supported by farming. ANALYTICAL NOTE: This case (voluntary application, no protest, signed receipt) is meaningfully different from the predominantly involuntary fee patent narrative of Circular 2464. Worth preserving the distinction in any aggregate analysis. CROSS-REFERENCE: Companion record at part4_agency_narrative_016 (agency's own version of his case). Cross-referenced from part3_agency_narrative_014 (Mary Julia Neiss) which originally noted Alphonse as adjacent allottee 1466. AGENCY-SIDE DETAILS (from sibling record part4_agency_narrative_016, not from this questionnaire): Per Kimi v5 extraction of part 4, the agency narrative reports the buyer as Jesse E. Keeler, sale on April 2, 1924, patent recorded by Tri County Abstract Company on April 18, 1924. The questionnaire source confirms only the $2,000 cash amount and partial-allotment scope; buyer identity and date come from the agency narrative. The $2,000 figure is consistent between the two sources.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire",
+    "Date": "1929-06-11"
+  },
+  "usage": {
+    "input_tokens": 2339,
+    "output_tokens": 326
+  },
+  "elapsed": 5.2,
+  "recovery_notes": [
+    {
+      "date": "2026-05-02",
+      "type": "task5_part4_sonnet_vision_substantive_extraction",
+      "method": "claude_sonnet_4_6_vision_on_handwritten_pdf",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "Post Office Address",
+        "Date",
+        "Document type",
+        "NOTES"
+      ],
+      "vision_extraction_path": "validation_samples/part4_q012_vision/vision_merged.json",
+      "substantive_findings": {
+        "patent_mechanism": "application (voluntary)",
+        "patent_received": "mailed to Valentine NE 1918",
+        "patent_acceptance": "signed receipt, no protest",
+        "notarization": "1929-06-11 Cherry County NE",
+        "land_sale_per_questionnaire": "NW 1/4 for $7000 cash",
+        "land_sale_per_kimi_v5": "$2000 to Jesse E. Keeler 1924-04-02",
+        "personal": "good health, no dependents, supported by farming",
+        "q7_apparent_inconsistency": "states still owns land but also reports NW 1/4 sale"
+      },
+      "rationale": "Sonnet text-extraction failed completely on this handwritten questionnaire. Sonnet vision (rendered PDF as PNG, sent to Claude vision API) succeeded in extracting full substantive content. This is the corpus's first per-record use of Sonnet vision recovery (vs. Qwen vision which has been used for ledger/tabular content). The success suggests Sonnet vision is a viable recovery path for handwritten questionnaire responses where text extraction fails.",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-05-02",
+      "type": "task5_correction_resolution_path_language",
+      "method": "user_correction_blm_does_not_have_transaction_data",
+      "fields_corrected": [
+        "NOTES"
+      ],
+      "rationale": "Previous patch incorrectly said BLM cross-reference would resolve the Kimi vs Sonnet vision sale-detail discrepancy. BLM has patent issuance data only, not transaction data. Correct resolution path is user source-page review.",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-05-02",
+      "type": "task5_sale_detail_correction_per_source_verification",
+      "method": "user_source_page_verification",
+      "fields_corrected": [
+        "NOTES"
+      ],
+      "changes": [
+        "sale phrase corrected",
+        "discrepancy framing replaced with agency-source attribution"
+      ],
+      "rationale": "User rendered the source PDF and verified the questionnaire says part of allotment sold for $2000 cash, no buyer or date. Sonnet vision had reported $7000 and NW 1/4 — both errors. Kimi v5's Keeler/1924 detail is from the agency narrative (part4_agency_narrative_016), not from this questionnaire.",
+      "source_says": {
+        "sale_amount": "$2,000 cash",
+        "scope": "part of allotment",
+        "buyer": "not stated in questionnaire source",
+        "date": "not stated in questionnaire source"
+      },
+      "user_confirmed": true
+    }
+  ],
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/part4_q012_vision/vision_merged.json",
+    "entities": [
+      {
+        "name": "Alphonse Charbonneau",
+        "type": "person",
+        "context": "Rosebud Sioux allottee who received a fee patent for land",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Alphonse M Charbonneau",
+        "type": "person",
+        "context": "Full name as signed on notarized document",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Rosebud Sioux",
+        "type": "organization",
+        "context": "Tribal affiliation of the allottee",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Valentine",
+        "type": "location",
+        "context": "Location where patent was mailed to allottee",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Nebraska",
+        "type": "location",
+        "context": "State where document was notarized",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Cherry County",
+        "type": "location",
+        "context": "County in Nebraska where document was notarized",
+        "source_page": "1-2"
+      },
+      {
+        "name": "NW 1/4",
+        "type": "land_parcel",
+        "context": "Land parcel sold for $7000 cash",
+        "source_page": "1-2"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Alphonse Charbonneau",
+        "allotment_number": "1466",
+        "acreage": "unknown",
+        "patent_date": "1918",
+        "patent_number": "unknown",
+        "mechanism": "application",
+        "buyer": "unknown",
+        "sale_price": "$7000",
+        "attorney": "unknown",
+        "mortgage": "none indicated",
+        "source_page": "1-2"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$7000",
+        "payer": "unknown buyer",
+        "payee": "Alphonse Charbonneau",
+        "date": "unknown",
+        "description": "NW 1/4 sold for $7000 cash",
+        "source_page": "1-2"
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "fee_patent_delivery",
+        "date": "1918",
+        "location": "Valentine",
+        "description": "Fee patent was mailed to Alphonse Charbonneau at Valentine in 1918",
+        "source_page": "1-2"
+      },
+      {
+        "type": "notarization",
+        "date": "1929-06-11",
+        "location": "Cherry County, Nebraska",
+        "description": "Alphonse M Charbonneau appeared before notary public and signed the questionnaire document",
+        "source_page": "1-2"
+      },
+      {
+        "type": "land_sale",
+        "date": "unknown",
+        "location": "unknown",
+        "description": "NW 1/4 sold for $7000 cash",
+        "source_page": "1-2"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Alphonse Charbonneau",
+        "type": "member_of",
+        "object": "Rosebud Sioux",
+        "context": "Allottee is a Rosebud Sioux allottee",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Alphonse Charbonneau",
+        "type": "owner_of",
+        "object": "NW 1/4 land parcel",
+        "context": "Still owns land per question 7 answer yes, but also sold NW 1/4 for $7000",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Alphonse Charbonneau",
+        "type": "supported_by",
+        "object": "farming",
+        "context": "Self-supported through farming, no dependents",
+        "source_page": "1-2"
+      }
+    ],
+    "testimony": [
+      {
+        "witness": "Alphonse Charbonneau",
+        "witness_title": "Rosebud Sioux allottee",
+        "hearing": "Fee Patent Questionnaire",
+        "committee": "unknown",
+        "location": "Cherry County, Nebraska",
+        "date": "1929-06-11",
+        "subject": "Fee patent received for Rosebud Sioux allotment #1466",
+        "key_claims": "Confirmed he is a Rosebud Sioux allottee who received a fee patent. Applied for the patent himself. Patent was mailed to him at Valentine in 1918. Signed a receipt for it. Accepted without protest. States he still owns the land. NW 1/4 was sold for $7000 cash. Is in good health. Has no dependents. Is supported by farming.",
+        "questioner": "unknown",
+        "source_page": "1-2"
+      }
+    ],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
+}

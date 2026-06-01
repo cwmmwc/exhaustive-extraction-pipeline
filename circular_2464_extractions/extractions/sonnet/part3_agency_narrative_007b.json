@@ -1,0 +1,305 @@
+{
+  "extraction": {
+    "Name": "Frank Arcoran",
+    "Allotment number": "1197",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "Rosebud, South Dakota",
+    "Date": "1920-03-12",
+    "Document type": "agency_narrative",
+    "NOTES": "Source: split from multi-allottee bundle (part3_agency_narrative_007.json) on 2026-05-03 using Sonnet vision extraction. Allotment 1197. Patent date: 1920-03-12. Patent number: 739690. Mechanism: administrative. Buyer: William Lynass. Sale price: $9,000. Died June 19, 1920 (shortly after patent issuance March 12, 1920). Sold to William Lynass for $9,000. Note: this record duplicates content also captured at part4_agency_narrative_009 (also Frank Arcoran 1197) and part4_questionnaire_006 (where Josephine Arcoran as mother gave testimony for the deceased). Cross-reference all three records for full case detail. Sibling record (other allottee in original bundle): part3_agency_narrative_007a.json. Vision extraction archived at: validation_samples/part3_agency_narrative_007_vision/vision_merged.json."
+  },
+  "pre_split_sonnet_extraction": "See part3_agency_narrative_007a.json field 'pre_split_sonnet_extraction' for archived original",
+  "recovery_notes": [
+    {
+      "date": "2026-05-03",
+      "type": "task5_record_split_from_multi_allottee_bundle",
+      "method": "sonnet_vision_extraction_with_user_source_page_confirmation",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "Post Office Address",
+        "Date",
+        "Document type",
+        "NOTES",
+        "(record creation)"
+      ],
+      "previous_state": "Original part3_agency_narrative_007.json had list-shaped extraction collapsing two distinct allottees on sequential pages into a single record.",
+      "split_origin": {
+        "source_pdf": "agency_narratives/part3_agency_narrative_007.pdf",
+        "page_number": 2,
+        "sibling_record": "part3_agency_narrative_007a.json",
+        "vision_extraction_path": "validation_samples/part3_agency_narrative_007_vision/vision_merged.json"
+      },
+      "user_confirmed": true,
+      "rationale": "User source-page review confirmed two distinct allottees on sequential pages. Vision extraction captured per-allottee fee patent details (name, allotment, patent date, patent number, buyer, sale price). Split into two records preserving all captured content."
+    }
+  ],
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/part3_agency_narrative_007_vision/vision_merged.json",
+    "_retrofit_filter_note": "Multi-allottee bundle: filtered tables to entries matching Name='Frank Arcoran'. Filtered: financial_transactions: 3->1, relationships: 10->4, fee_patents: 2->1.",
+    "entities": [
+      {
+        "name": "Luther Arcoran",
+        "type": "person",
+        "context": "Allottee for Allotment No. 1196, conveyed land to Edward L. McHenry",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Lillian Arcoran",
+        "type": "person",
+        "context": "Co-conveyor with Luther Arcoran of land to Edward L. McHenry",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Edward L. McHenry",
+        "type": "person",
+        "context": "Buyer of land from Luther and Lillian Arcoran for $12,000",
+        "source_page": "1-2"
+      },
+      {
+        "name": "William J. Bordeaux",
+        "type": "person",
+        "context": "Initiated action leading to sheriff's levy on Luther Arcoran's land",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Tripp Co.",
+        "type": "organization",
+        "context": "County whose sheriff levied on Luther Arcoran's land",
+        "source_page": "1-2"
+      },
+      {
+        "name": "E. O. Frescoln",
+        "type": "person",
+        "context": "Reported certified copy of patent on June 17, 1920 for Allotment 1196",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Frank Arcoran",
+        "type": "person",
+        "context": "Allottee for Allotment No. 1197, died June 19, 1920",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Jack Arcoran",
+        "type": "person",
+        "context": "Heir of Frank Arcoran (also referred to as John Arcoran)",
+        "source_page": "1-2"
+      },
+      {
+        "name": "John Arcoran",
+        "type": "person",
+        "context": "Heir of Frank Arcoran (also referred to as Jack Arcoran)",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Josephine Arcoran",
+        "type": "person",
+        "context": "Heir of Frank Arcoran",
+        "source_page": "1-2"
+      },
+      {
+        "name": "William Lynass",
+        "type": "person",
+        "context": "Buyer of land from Frank Arcoran for $9,000",
+        "source_page": "1-2"
+      },
+      {
+        "name": "E. E. Frescoln",
+        "type": "person",
+        "context": "Recorded fee patent for Frank Arcoran on May 18, 1920",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Rosebud, S. Dak.",
+        "type": "location",
+        "context": "Location associated with both allotment records, dated June 1929",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Southeast quarter of section 19, township 100, range 76",
+        "type": "land_parcel",
+        "context": "Land parcel for Allotment No. 1196, Luther Arcoran",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Southwest quarter of section 17, township 100, range 76",
+        "type": "land_parcel",
+        "context": "Land parcel for Allotment No. 1197, Frank Arcoran",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Section 2452 Revised Code of South Dakota, 1919",
+        "type": "legislation",
+        "context": "Statutory basis for cancellation of levy on Luther Arcoran's land",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Fee Patent No. 739691",
+        "type": "legal_case",
+        "context": "Fee patent issued to Luther Arcoran on March 12, 1920",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Fee Patent No. 739690",
+        "type": "legal_case",
+        "context": "Fee patent issued to Frank Arcoran on March 12, 1920",
+        "source_page": "1-2"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Frank Arcoran",
+        "allotment_number": "1197",
+        "acreage": "unknown",
+        "patent_date": "1920-03-12",
+        "patent_number": "739690",
+        "mechanism": "administrative",
+        "buyer": "William Lynass",
+        "sale_price": "$9,000",
+        "attorney": "unknown",
+        "mortgage": "unknown",
+        "source_page": "1-2"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$9,000",
+        "payer": "William Lynass",
+        "payee": "Frank Arcoran",
+        "date": "1920-05-17",
+        "description": "Conveyance of southwest quarter of section 17, township 100, range 76 (Allotment No. 1197) via deed executed by Frank Arcoran",
+        "source_page": "1-2"
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "fee_patent_issued",
+        "date": "1920-03-12",
+        "location": "Rosebud, S. Dak.",
+        "description": "Fee patent No. 739691 issued for Allotment No. 1196 to Luther Arcoran for southeast quarter of section 19, township 100, range 76",
+        "source_page": "1-2"
+      },
+      {
+        "type": "receipt_signed",
+        "date": "1920-04-02",
+        "location": "Rosebud, S. Dak.",
+        "description": "Luther Arcoran signed receipt for fee patent No. 739691",
+        "source_page": "1-2"
+      },
+      {
+        "type": "certified_copy_reported",
+        "date": "1920-06-17",
+        "location": "Rosebud, S. Dak.",
+        "description": "E. O. Frescoln reported certified copy of patent for Allotment No. 1196",
+        "source_page": "1-2"
+      },
+      {
+        "type": "levy",
+        "date": "1920-04-03",
+        "location": "Tripp Co.",
+        "description": "Sheriff of Tripp Co. levied on Luther Arcoran's land to recover $3,500.00 on account of action started by William J. Bordeaux regarding sale and exchange of land",
+        "source_page": "1-2"
+      },
+      {
+        "type": "levy_cancellation",
+        "date": "1920",
+        "location": "South Dakota",
+        "description": "Notice of cancellation of levy given under Section 2452 Revised Code of South Dakota, 1919",
+        "source_page": "1-2"
+      },
+      {
+        "type": "land_conveyance",
+        "date": "1920-04-14",
+        "location": "Rosebud, S. Dak.",
+        "description": "Luther Arcoran and Lillian Arcoran conveyed land (SE quarter section 19, township 100, range 76) to Edward L. McHenry for $12,000",
+        "source_page": "1-2"
+      },
+      {
+        "type": "fee_patent_issued",
+        "date": "1920-03-12",
+        "location": "Rosebud, S. Dak.",
+        "description": "Fee patent No. 739690 issued for Allotment No. 1197 to Frank Arcoran for southwest quarter of section 17, township 100, range 76",
+        "source_page": "1-2"
+      },
+      {
+        "type": "death",
+        "date": "1920-06-19",
+        "location": "unknown",
+        "description": "Frank Arcoran died; heirs identified as Jack or John Arcoran and Josephine Arcoran",
+        "source_page": "1-2"
+      },
+      {
+        "type": "fee_patent_recorded",
+        "date": "1920-05-18",
+        "location": "Rosebud, S. Dak.",
+        "description": "Fee patent for Frank Arcoran recorded by E. E. Frescoln",
+        "source_page": "1-2"
+      },
+      {
+        "type": "land_conveyance",
+        "date": "1920-05-17",
+        "location": "Rosebud, S. Dak.",
+        "description": "Deed executed by Frank Arcoran conveying land (SW quarter section 17, township 100, range 76) to William Lynass for $9,000",
+        "source_page": "1-2"
+      },
+      {
+        "type": "document_filed",
+        "date": "1929-06",
+        "location": "Rosebud, S. Dak.",
+        "description": "Allotment records for No. 1196 and No. 1197 compiled/filed in June 1929",
+        "source_page": "1-2"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Frank Arcoran",
+        "type": "sold_to",
+        "object": "William Lynass",
+        "context": "Deed dated May 17, 1920 for SW quarter section 17, township 100, range 76 for $9,000",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Jack Arcoran",
+        "type": "related_to",
+        "object": "Frank Arcoran",
+        "context": "Heir of Frank Arcoran",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "John Arcoran",
+        "type": "related_to",
+        "object": "Frank Arcoran",
+        "context": "Heir of Frank Arcoran (same person as Jack Arcoran)",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Josephine Arcoran",
+        "type": "related_to",
+        "object": "Frank Arcoran",
+        "context": "Heir of Frank Arcoran",
+        "source_page": "1-2"
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [
+      {
+        "bill_number": "Section 2452",
+        "sponsor": "unknown",
+        "action_type": "enacted",
+        "date": "1919",
+        "vote_count": "unknown",
+        "committee": "unknown",
+        "outcome": "Provided basis for cancellation of levy on Luther Arcoran's land; notice of cancellation given pursuant to this section",
+        "source_page": "1-2"
+      }
+    ],
+    "tables": []
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "document_id": "part12_questionnaire_012",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 12.pdf",
+  "source_pages": "26-29",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Lee Ely; George King",
+    "Tribe/Reservation": "Otoe Agency",
+    "Post Office Address": "Ponca City, Okla.",
+    "Allotment number": "206 (Lee Ely); 166 (George King)",
+    "Cancelled": "no (Lee Ely); No (George King)",
+    "Refused/Protested": "with protest (Lee Ely); OV [unclear abbreviation, possibly 'without protest'] (George King)",
+    "Recorded patent": "Yes, filed for record (Lee Ely); Not by allottee (George King)",
+    "Sold/Mortgaged": "Mortgaged for $2000, mortgage foreclosed and redemption expired (Lee Ely); All sold (George King)",
+    "Buyer": "Mortgage held by John Knox, also in settlement of old debts; John Knox is still living, and making his home in Calif. (Lee Ely); Miller Brothers of Marland, Oklahoma (George King)",
+    "Tax burden forced sale/Mortgage": "Mortgaged foreclosed and redemption expired; The price for which land was mortgaged was not the actual value of the land (Lee Ely); No money was received by allottee for this land (George King)",
+    "Trust Patent Date": "June 21, 1909 (George King); not stated (Lee Ely)",
+    "Fee Patent Date": "not stated",
+    "Gender": "Male (Lee Ely); Male (George King)",
+    "Age": "48 (Lee Ely); 69 (George King)",
+    "Occupation/Income": "Income from inherited land, about $25.00 per year. No contributions from any source. (Lee Ely); Income from lease on 80 acres, $160 per annum (George King)",
+    "NOTES": "Lee Ely: good health, no money accumulated; wife is dependent upon him; patent receipt: Yes; patent accepted with protest; allotment No. 206; document executed November 22, 1928; notary commission expires Aug. 3rd 1931; County of Kay, State of Oklahoma. George King: poor health; has $300.00 with income of $160.00 per annum; wife and one daughter are dependents; allotment No. 166; appears to have been defrauded by the Miller Brothers of Marland, Oklahoma \u2014 he states he did not know a patent was to be issued, believed the land was being sold by the Department, and that no money was paid him by the Miller Brothers; patent not filed for record by allottee; document executed November 20, 1928; County of Kay, State of Oklahoma; notary commission expires Aug. 3rd 1931; S 61391 file reference noted.",
+    "Literate/Illiterate": "George King signed with an X mark",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 3361,
+    "output_tokens": 701
+  },
+  "elapsed": 18.2,
+  "retry_count": 1
+}

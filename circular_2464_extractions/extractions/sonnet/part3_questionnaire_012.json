@@ -28,5 +28,157 @@
     "input_tokens": 2417,
     "output_tokens": 292
   },
-  "elapsed": 6.5
+  "elapsed": 6.5,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part3_questionnaire_012/vision_merged.json",
+    "entities": [
+      {
+        "name": "Alphonse Charbonneau",
+        "type": "person",
+        "context": "Rosebud Sioux allottee who received a fee patent for land in 1918",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Alphonse M. Charbonneau",
+        "type": "person",
+        "context": "Full name as signed on notarized document",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Rosebud Sioux",
+        "type": "organization",
+        "context": "Tribe of which the allottee is a member",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Valentine",
+        "type": "location",
+        "context": "Location where the fee patent was mailed to the allottee in 1918",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Nebraska",
+        "type": "location",
+        "context": "State where the document was notarized",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Cherry County",
+        "type": "location",
+        "context": "County in Nebraska where the document was notarized",
+        "source_page": "1-2"
+      },
+      {
+        "name": "NW 15",
+        "type": "land_parcel",
+        "context": "Land parcel sold by Alphonse Charbonneau for $2000 cash",
+        "source_page": "1-2"
+      },
+      {
+        "name": "J.H. May",
+        "type": "person",
+        "context": "Notary Public in Cherry County, Nebraska, commission expires 7/2/30",
+        "source_page": "1-2"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Alphonse Charbonneau",
+        "allotment_number": "1466",
+        "acreage": "unknown",
+        "patent_date": "1918",
+        "patent_number": "unknown",
+        "mechanism": "application",
+        "buyer": "unknown",
+        "sale_price": "$2000",
+        "attorney": "unknown",
+        "mortgage": "none indicated (X marked for foreclosure question, still owns land answered yes but NW 15 sold for $2000)",
+        "source_page": "1-2"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$2000",
+        "payer": "unknown buyer",
+        "payee": "Alphonse Charbonneau",
+        "date": "unknown",
+        "description": "Sale of land parcel NW 15 for $2000 cash",
+        "source_page": "1-2"
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "fee_patent_delivery",
+        "date": "1918",
+        "location": "Valentine",
+        "description": "Fee patent was mailed to Alphonse Charbonneau at Valentine in 1918",
+        "source_page": "1-2"
+      },
+      {
+        "type": "fee_patent_receipt_signed",
+        "date": "1918",
+        "location": "Valentine",
+        "description": "Alphonse Charbonneau signed a receipt for the fee patent",
+        "source_page": "1-2"
+      },
+      {
+        "type": "land_sale",
+        "date": "unknown",
+        "location": "unknown",
+        "description": "Alphonse Charbonneau sold NW 15 for $2000 cash",
+        "source_page": "1-2"
+      },
+      {
+        "type": "notarization",
+        "date": "1929-06-11",
+        "location": "Cherry County, Nebraska",
+        "description": "Alphonse Charbonneau appeared before notary public J.H. May and signed the questionnaire document on June 11, 1929",
+        "source_page": "1-2"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Alphonse Charbonneau",
+        "type": "member_of",
+        "object": "Rosebud Sioux",
+        "context": "He is identified as a Rosebud Sioux allottee",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Alphonse Charbonneau",
+        "type": "notarized_by",
+        "object": "J.H. May",
+        "context": "J.H. May notarized Alphonse Charbonneau's signature on June 11, 1929 in Cherry County, Nebraska",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Alphonse Charbonneau",
+        "type": "sold",
+        "object": "NW 15",
+        "context": "Alphonse Charbonneau sold the NW 15 land parcel for $2000 cash",
+        "source_page": "1-2"
+      }
+    ],
+    "testimony": [
+      {
+        "witness": "Alphonse Charbonneau",
+        "witness_title": "Rosebud Sioux allottee",
+        "hearing": "Fee Patent Questionnaire",
+        "committee": "unknown",
+        "location": "Cherry County, Nebraska",
+        "date": "1929-06-11",
+        "subject": "Fee patent received in 1918, land ownership and sale status",
+        "key_claims": "Alphonse Charbonneau confirmed he is a Rosebud Sioux allottee who applied for and received a fee patent mailed to him at Valentine in 1918. He signed a receipt for it and accepted it without protest. He states he still owns the land but also notes NW 15 was sold for $2000 cash. He is in good health, has no dependents, and supports himself through farming.",
+        "questioner": "unknown",
+        "source_page": "1-2"
+      }
+    ],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

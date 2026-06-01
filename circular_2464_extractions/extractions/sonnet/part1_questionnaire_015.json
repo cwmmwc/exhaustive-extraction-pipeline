@@ -28,5 +28,403 @@
     "input_tokens": 2834,
     "output_tokens": 351
   },
-  "elapsed": 5.8
+  "elapsed": 5.8,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part1_questionnaire_015/vision_merged.json",
+    "entities": [
+      {
+        "name": "Mrs. Anna Shuck",
+        "type": "person",
+        "context": "Applicant for patent in fee, age 38, 1/4 degree of blood, married, residing in Sparks, Nebraska",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Aeda Bell Shuck",
+        "type": "person",
+        "context": "Daughter of Anna Shuck, age 14 years, holds 160 acres allotment valued at $3,000",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Caroline Alice Shuck",
+        "type": "person",
+        "context": "Daughter of Anna Shuck, age 8 years, holds 160 acres allotment valued at $3,000",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Rosebud Agency",
+        "type": "organization",
+        "context": "Indian agency under which the allotment is held",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Office of Indian Affairs",
+        "type": "organization",
+        "context": "Federal office that received the application on February 11, 1929",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Stephan Indian Mission",
+        "type": "organization",
+        "context": "School attended by Anna Shuck, located in Hyde County, South Dakota, for 5 years",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Chamberlain",
+        "type": "location",
+        "context": "Location where Anna Shuck attended school for 2 years, in South Dakota",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Hyde County, South Dakota",
+        "type": "location",
+        "context": "Location of Stephan Indian Mission school",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Sparks, Nebraska",
+        "type": "location",
+        "context": "Address of applicant Anna Shuck at time of signing",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Allotment No. 7394",
+        "type": "land_parcel",
+        "context": "320-acre allotment of Anna Shuck at Rosebud Agency",
+        "source_page": "1-4"
+      },
+      {
+        "name": "NE 1/4 of Sec 8 and NE 1/4 of Sec 9, Twp 35 N of R 25 West of the 6th PM",
+        "type": "land_parcel",
+        "context": "Legal description of Anna Shuck's 320-acre allotment",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Act of May 8, 1906, 34 Stat. 182",
+        "type": "legislation",
+        "context": "Authorizing legislation under which the patent in fee application is made",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Superintendent (signatory)",
+        "type": "person",
+        "context": "Superintendent who subscribed and swore the application on May 9, 1919",
+        "source_page": "1-4"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Mrs. Anna Shuck",
+        "allotment_number": "7394",
+        "acreage": "320 acres",
+        "patent_date": "unknown",
+        "patent_number": "5-105",
+        "mechanism": "application",
+        "buyer": "",
+        "sale_price": "",
+        "attorney": "",
+        "mortgage": "None indicated; applicant states she wants to borrow money to purchase other land and more cattle",
+        "source_page": "1-4"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "other",
+        "amount": "$5,000",
+        "payer": "",
+        "payee": "",
+        "date": "1919-05-09",
+        "description": "Estimated value of 320 acres of land covered by Anna Shuck's patent in fee application",
+        "source_page": "1-4"
+      },
+      {
+        "type": "other",
+        "amount": "$3,000",
+        "payer": "",
+        "payee": "",
+        "date": "1919-05-09",
+        "description": "Estimated value of Aeda Bell Shuck's 160-acre allotment",
+        "source_page": "1-4"
+      },
+      {
+        "type": "other",
+        "amount": "$3,000",
+        "payer": "",
+        "payee": "",
+        "date": "1919-05-09",
+        "description": "Estimated value of Caroline Alice Shuck's 160-acre allotment",
+        "source_page": "1-4"
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "application_filed",
+        "date": "1919-05-09",
+        "location": "Rosebud Agency / Sparks, Nebraska",
+        "description": "Mrs. Anna Shuck subscribed and sworn application for patent in fee before the Superintendent on May 9, 1919",
+        "source_page": "1-4"
+      },
+      {
+        "type": "document_received",
+        "date": "1929-02-11",
+        "location": "Office of Indian Affairs",
+        "description": "Application for patent in fee received by the Office of Indian Affairs on February 11, 1929",
+        "source_page": "1-4"
+      },
+      {
+        "type": "school_attendance",
+        "date": "unknown",
+        "location": "Stephan Indian Mission, Hyde County, SD",
+        "description": "Anna Shuck attended Stephan Indian Mission for 5 years",
+        "source_page": "1-4"
+      },
+      {
+        "type": "school_attendance",
+        "date": "unknown",
+        "location": "Chamberlain, South Dakota",
+        "description": "Anna Shuck attended school in Chamberlain, SD for 2 years",
+        "source_page": "1-4"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Anna Shuck",
+        "type": "related_to",
+        "object": "Aeda Bell Shuck",
+        "context": "Mother-daughter relationship; Aeda Bell Shuck is Anna's daughter, age 14",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "Anna Shuck",
+        "type": "related_to",
+        "object": "Caroline Alice Shuck",
+        "context": "Mother-daughter relationship; Caroline Alice Shuck is Anna's daughter, age 8",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "Anna Shuck",
+        "type": "allottee_of",
+        "object": "Allotment No. 7394",
+        "context": "Anna Shuck holds 320-acre allotment No. 7394 at Rosebud Agency",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "Anna Shuck",
+        "type": "applicant_at",
+        "object": "Rosebud Agency",
+        "context": "Filed patent in fee application through Rosebud Agency",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "Anna Shuck",
+        "type": "sworn_before",
+        "object": "Superintendent",
+        "context": "Application subscribed and sworn before Superintendent on May 9, 1919",
+        "source_page": "1-4"
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [
+      {
+        "sender": "Anna Shuck",
+        "sender_title": "Applicant / Allottee",
+        "recipient": "Office of Indian Affairs",
+        "recipient_title": "Federal Agency",
+        "date": "1919-05-09",
+        "subject": "Application for Patent in Fee for Allotment No. 7394, 320 acres, Rosebud Agency",
+        "action_requested": "Grant patent in fee for 320 acres to enable borrowing money to purchase other land and more cattle",
+        "outcome": "Received by Office of Indian Affairs on 1929-02-11; final outcome not documented in these pages",
+        "source_page": "1-4"
+      }
+    ],
+    "legislative_actions": [
+      {
+        "bill_number": "",
+        "sponsor": "",
+        "action_type": "enacted",
+        "date": "1906-05-08",
+        "vote_count": "",
+        "committee": "",
+        "outcome": "Act of May 8, 1906, 34 Stat. 182 enacted, authorizing applications for patent in fee by Indian allottees",
+        "source_page": "1-4"
+      }
+    ],
+    "tables": [
+      {
+        "title": "Application for Patent in Fee - Anna Shuck Questionnaire Responses",
+        "columns": [
+          "Question Number",
+          "Question",
+          "Answer"
+        ],
+        "rows": [
+          {
+            "Question Number": "1",
+            "Question": "Age?",
+            "Answer": "38"
+          },
+          {
+            "Question Number": "2",
+            "Question": "Degree of blood?",
+            "Answer": "1/4"
+          },
+          {
+            "Question Number": "3",
+            "Question": "Married or single?",
+            "Answer": "Married"
+          },
+          {
+            "Question Number": "4",
+            "Question": "Did you attend school? If so, where and how long?",
+            "Answer": "5 yrs Stephan Indian Mission Hyde Co. SD; 2 yrs Chamberlain SD"
+          },
+          {
+            "Question Number": "5",
+            "Question": "Do you use intoxicants?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "6",
+            "Question": "Are you in good physical condition?",
+            "Answer": "Yes"
+          },
+          {
+            "Question Number": "7",
+            "Question": "What is the value of the land covered by your application?",
+            "Answer": "$5,000"
+          },
+          {
+            "Question Number": "8",
+            "Question": "Does your application cover your own allotment or inherited land?",
+            "Answer": "My own allotment"
+          },
+          {
+            "Question Number": "9",
+            "Question": "Does your application cover all or a part of your land?",
+            "Answer": "All"
+          },
+          {
+            "Question Number": "10",
+            "Question": "Do you cultivate your land?",
+            "Answer": "Yes"
+          },
+          {
+            "Question Number": "11",
+            "Question": "Have you any other occupation?",
+            "Answer": "Stock raising"
+          },
+          {
+            "Question Number": "12 (partial)",
+            "Question": "Are you self-supporting? If so, how is your self-support obtained?",
+            "Answer": "Farming and Stock raising"
+          },
+          {
+            "Question Number": "13 (partial)",
+            "Question": "Have you accumulated any property? If so, what?",
+            "Answer": "80 acres of land, horses and cattle, also farming implements"
+          },
+          {
+            "Question Number": "14 (partial)",
+            "Question": "Are you in debt? If so, whom do you owe, how much, and for what, and have you given security for the debts?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "15 (partial)",
+            "Question": "Have you been given a patent in fee for a part of your land? If so, did you sell it, and what use did you make of the proceeds of the sale?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "16 (partial)",
+            "Question": "Have you any inherited land? If so, what is your interest in the estate and what is the value of the allotment?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "17",
+            "Question": "Have you sold any inherited land? If so, what use was made of the proceeds?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "18",
+            "Question": "Have you any individual Indian money to your credit with the superintendent? If so, how much?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "19",
+            "Question": "Have you been given the privilege of leasing your own land?",
+            "Answer": "(not fully legible)"
+          },
+          {
+            "Question Number": "20",
+            "Question": "Is your land leased? If so, what rent do you receive?",
+            "Answer": "I am using my own land"
+          },
+          {
+            "Question Number": "21 (partial)",
+            "Question": "What price?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "22",
+            "Question": "Has anyone asked you to procure a patent in fee for the purpose of disposing of your land?",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "23",
+            "Question": "Have other members of your family allotments of their own? If so, give names, sex, ages, relationship, and number of acres, and approximate value of each allotment.",
+            "Answer": "Two daughters: Aeda Bell Shuck age 14 yrs. 160 acres value $3,000; Caroline Alice Shuck age 8 yrs. 160 acres value $3,000"
+          },
+          {
+            "Question Number": "24",
+            "Question": "What members of your family, if any, have no allotment? Designate those dependent on you for support, and give reasons, stating ages and sex.",
+            "Answer": "None"
+          },
+          {
+            "Question Number": "25",
+            "Question": "What practical business experience have you had?",
+            "Answer": "Farming and Stock raising"
+          },
+          {
+            "Question Number": "26",
+            "Question": "Have you other lands that would continue to be held in trust after the lands described in this application are released? If so, give acreage, value, and character of improvements thereon.",
+            "Answer": "No"
+          },
+          {
+            "Question Number": "27",
+            "Question": "Set forth fully your reasons for requesting a patent in fee.",
+            "Answer": "I want to borrow money to purchase other land and more cattle"
+          }
+        ],
+        "source_page": "1-4"
+      },
+      {
+        "title": "Family Allotment Summary",
+        "columns": [
+          "Name",
+          "Relationship to Applicant",
+          "Age",
+          "Acreage",
+          "Approximate Value"
+        ],
+        "rows": [
+          {
+            "Name": "Aeda Bell Shuck",
+            "Relationship to Applicant": "Daughter",
+            "Age": "14 years",
+            "Acreage": "160 acres",
+            "Approximate Value": "$3,000"
+          },
+          {
+            "Name": "Caroline Alice Shuck",
+            "Relationship to Applicant": "Daughter",
+            "Age": "8 years",
+            "Acreage": "160 acres",
+            "Approximate Value": "$3,000"
+          }
+        ],
+        "source_page": "1-4"
+      }
+    ]
+  }
 }

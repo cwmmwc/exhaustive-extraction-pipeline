@@ -50,5 +50,339 @@
     "input_tokens": 2292,
     "output_tokens": 850
   },
-  "elapsed": 10.8
+  "elapsed": 10.8,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/part7_agency_narrative_005_vision/vision_merged.json",
+    "entities": [
+      {
+        "name": "William Grant",
+        "type": "person",
+        "context": "Allottee for Allotment No. 2181, Rosebud S.D.",
+        "source_page": "1-2"
+      },
+      {
+        "name": "K. L. Smith",
+        "type": "person",
+        "context": "Purchaser of land from William Grant and wife, October 15, 1921",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Furlong",
+        "type": "person",
+        "context": "Recorded the patent on October 21, 1921",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Peter Bordeaux",
+        "type": "person",
+        "context": "Allottee for Allotment No. 2266, Rosebud S.D.",
+        "source_page": "1-2"
+      },
+      {
+        "name": "W. R. McGeer",
+        "type": "person",
+        "context": "Lender/mortgagee for Peter Bordeaux land mortgages",
+        "source_page": "1-2"
+      },
+      {
+        "name": "E. R. Rusho",
+        "type": "person",
+        "context": "Lender/mortgagee for Peter Bordeaux land mortgage, July 31, 1920",
+        "source_page": "1-2"
+      },
+      {
+        "name": "W. H. Tackett",
+        "type": "person",
+        "context": "Purchaser of Peter Bordeaux land, September 25, 1923",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Office of Indian Affairs",
+        "type": "organization",
+        "context": "Received documents, stamped June 26, 1929, reference number 32541",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Rosebud, S.D.",
+        "type": "location",
+        "context": "Location of allotment records office",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Southeast quarter of section 27 and Northeast quarter section 34, township 37, north of range 27",
+        "type": "land_parcel",
+        "context": "Land parcel for Allotment No. 2181, William Grant",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Northeast quarter section 12, township 37, north of range 26",
+        "type": "land_parcel",
+        "context": "Land parcel for Allotment No. 2266, Peter Bordeaux",
+        "source_page": "1-2"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "William Grant",
+        "allotment_number": "2181",
+        "acreage": "",
+        "patent_date": "1920-03-12",
+        "patent_number": "739610",
+        "mechanism": "administrative",
+        "buyer": "K. L. Smith",
+        "sale_price": "$1.00 and other valuable consideration",
+        "attorney": "",
+        "mortgage": "",
+        "source_page": "1-2"
+      },
+      {
+        "allottee_name": "Peter Bordeaux",
+        "allotment_number": "2266",
+        "acreage": "",
+        "patent_date": "1920-03-12",
+        "patent_number": "739598",
+        "mechanism": "administrative",
+        "buyer": "W. H. Tackett",
+        "sale_price": "$2000.00",
+        "attorney": "",
+        "mortgage": "Mortgaged to W. R. McGeer ($500, due June 23 1921), E. R. Rusho ($300, due on demand), W. R. McGeer ($115, due June 23 1921)",
+        "source_page": "1-2"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$1.00 and other valuable consideration",
+        "payer": "K. L. Smith",
+        "payee": "William Grant",
+        "date": "1921-10-15",
+        "description": "Deed from William Grant and wife conveying Allotment No. 2181 land to K. L. Smith",
+        "source_page": "1-2"
+      },
+      {
+        "type": "sale",
+        "amount": "$2000.00",
+        "payer": "W. H. Tackett",
+        "payee": "Peter Bordeaux",
+        "date": "1923-09-25",
+        "description": "Deed conveying Allotment No. 2266 land to W. H. Tackett, subject to foregoing mortgages which Tackett assumes and agrees to pay",
+        "source_page": "1-2"
+      },
+      {
+        "type": "other",
+        "amount": "$500.00",
+        "payer": "Peter Bordeaux",
+        "payee": "W. R. McGeer",
+        "date": "1920-06-23",
+        "description": "Mortgage on Allotment No. 2266 land to W. R. McGeer, due June 23, 1921",
+        "source_page": "1-2"
+      },
+      {
+        "type": "other",
+        "amount": "$300.00",
+        "payer": "Peter Bordeaux",
+        "payee": "E. R. Rusho",
+        "date": "1920-07-31",
+        "description": "Mortgage on Allotment No. 2266 land to E. R. Rusho, due on demand",
+        "source_page": "1-2"
+      },
+      {
+        "type": "other",
+        "amount": "$115.00",
+        "payer": "Peter Bordeaux",
+        "payee": "W. R. McGeer",
+        "date": "1920-09-17",
+        "description": "Second mortgage on Allotment No. 2266 land to W. R. McGeer, due June 23, 1921",
+        "source_page": "1-2"
+      }
+    ],
+    "mortgages": [
+      {
+        "borrower": "Peter Bordeaux",
+        "lender": "W. R. McGeer",
+        "amount": "$500.00",
+        "land_description": "Northeast quarter section 12, township 37, north of range 26",
+        "acreage": "",
+        "date": "1920",
+        "interest_rate": "",
+        "status": "other",
+        "context": "Mortgage due June 23, 1921; later assumed by W. H. Tackett upon purchase of land",
+        "source_page": "1-2"
+      },
+      {
+        "borrower": "Peter Bordeaux",
+        "lender": "E. R. Rusho",
+        "amount": "$300.00",
+        "land_description": "Northeast quarter section 12, township 37, north of range 26",
+        "acreage": "",
+        "date": "1920-07-31",
+        "interest_rate": "",
+        "status": "other",
+        "context": "Due on demand; later assumed by W. H. Tackett upon purchase of land",
+        "source_page": "1-2"
+      },
+      {
+        "borrower": "Peter Bordeaux",
+        "lender": "W. R. McGeer",
+        "amount": "$115.00",
+        "land_description": "Northeast quarter section 12, township 37, north of range 26",
+        "acreage": "",
+        "date": "1920-09-17",
+        "interest_rate": "",
+        "status": "other",
+        "context": "Due June 23, 1921; later assumed by W. H. Tackett upon purchase of land",
+        "source_page": "1-2"
+      }
+    ],
+    "events": [
+      {
+        "type": "fee_patent_issued",
+        "date": "1920-03-12",
+        "location": "Rosebud, S.D.",
+        "description": "Fee Patent No. 739610 issued for Allotment No. 2181, William Grant",
+        "source_page": "1-2"
+      },
+      {
+        "type": "receipt_signed",
+        "date": "1920-04-02",
+        "location": "Rosebud, S.D.",
+        "description": "Receipt for patent signed by allottee William Grant",
+        "source_page": "1-2"
+      },
+      {
+        "type": "patent_recorded",
+        "date": "1921-10-21",
+        "location": "Rosebud, S.D.",
+        "description": "Patent for Allotment No. 2181 recorded by Furlong",
+        "source_page": "1-2"
+      },
+      {
+        "type": "deed_conveyance",
+        "date": "1921-10-15",
+        "location": "Rosebud, S.D.",
+        "description": "Deed from William Grant and wife conveying land to K. L. Smith for $1.00 and other valuable consideration",
+        "source_page": "1-2"
+      },
+      {
+        "type": "fee_patent_issued",
+        "date": "1920-03-12",
+        "location": "Rosebud, S.D.",
+        "description": "Fee Patent No. 739598 issued for Allotment No. 2266, Peter Bordeaux",
+        "source_page": "1-2"
+      },
+      {
+        "type": "receipt_signed",
+        "date": "1920-04-03",
+        "location": "Rosebud, S.D.",
+        "description": "Receipt for patent signed by allottee Peter Bordeaux",
+        "source_page": "1-2"
+      },
+      {
+        "type": "patent_recorded",
+        "date": "1920-05-07",
+        "location": "Rosebud, S.D.",
+        "description": "Patent for Allotment No. 2266 recorded by Peter Bordeaux",
+        "source_page": "1-2"
+      },
+      {
+        "type": "mortgage",
+        "date": "1920-07-31",
+        "location": "Rosebud, S.D.",
+        "description": "Bordeaux mortgaged land to E. R. Rusho for $300, due on demand",
+        "source_page": "1-2"
+      },
+      {
+        "type": "mortgage",
+        "date": "1920-09-17",
+        "location": "Rosebud, S.D.",
+        "description": "Bordeaux mortgaged land to W. R. McGeer for $115.00, due June 23, 1921",
+        "source_page": "1-2"
+      },
+      {
+        "type": "deed_conveyance",
+        "date": "1923-09-25",
+        "location": "Rosebud, S.D.",
+        "description": "Deed whereby Bordeaux and wife conveyed land to W. H. Tackett for $2000, subject to foregoing mortgages",
+        "source_page": "1-2"
+      },
+      {
+        "type": "document_received",
+        "date": "1929-06-26",
+        "location": "Office of Indian Affairs",
+        "description": "Documents received by Office of Indian Affairs, reference number 32541",
+        "source_page": "1-2"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "William Grant",
+        "type": "allottee_of",
+        "object": "Allotment No. 2181",
+        "context": "William Grant is the named allottee for Allotment No. 2181",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "William Grant",
+        "type": "sold_to",
+        "object": "K. L. Smith",
+        "context": "Deed dated October 15, 1921 conveyed land from William Grant and wife to K. L. Smith",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Peter Bordeaux",
+        "type": "allottee_of",
+        "object": "Allotment No. 2266",
+        "context": "Peter Bordeaux is the named allottee for Allotment No. 2266",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Peter Bordeaux",
+        "type": "mortgaged_to",
+        "object": "W. R. McGeer",
+        "context": "Bordeaux mortgaged land to W. R. McGeer for $500.00, due June 23, 1921",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Peter Bordeaux",
+        "type": "mortgaged_to",
+        "object": "E. R. Rusho",
+        "context": "Bordeaux mortgaged land to E. R. Rusho for $300, due on demand, July 31, 1920",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Peter Bordeaux",
+        "type": "mortgaged_to",
+        "object": "W. R. McGeer",
+        "context": "Bordeaux mortgaged land to W. R. McGeer for $115.00, due June 23, 1921, on September 17, 1920",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Peter Bordeaux",
+        "type": "sold_to",
+        "object": "W. H. Tackett",
+        "context": "Deed dated September 25, 1923 conveyed land from Bordeaux and wife to W. H. Tackett for $2000",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "W. H. Tackett",
+        "type": "assumed_mortgages_of",
+        "object": "Peter Bordeaux",
+        "context": "Tackett assumed and agreed to pay the foregoing mortgages upon purchase of land",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Furlong",
+        "type": "recorded_patent_for",
+        "object": "William Grant",
+        "context": "Furlong recorded the patent for Allotment No. 2181 on October 21, 1921",
+        "source_page": "1-2"
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

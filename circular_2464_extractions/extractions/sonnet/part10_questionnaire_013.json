@@ -28,5 +28,101 @@
     "input_tokens": 2403,
     "output_tokens": 276
   },
-  "elapsed": 4.9
+  "elapsed": 4.9,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part10_questionnaire_013/vision_merged.json",
+    "entities": [
+      {
+        "name": "Edward Hutton",
+        "type": "person",
+        "context": "Allottee named on Circular No. 2464 fee patent questionnaire",
+        "source_page": 1
+      },
+      {
+        "name": "W2S E14",
+        "type": "land_parcel",
+        "context": "Land description on the document, description 25-8-4",
+        "source_page": 1
+      },
+      {
+        "name": "Circular No. 2464",
+        "type": "legislation",
+        "context": "Federal circular number under which this patent questionnaire was issued",
+        "source_page": 1
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Edward Hutton",
+        "allotment_number": "4-457N",
+        "acreage": "25-8-4",
+        "patent_date": "1920-03-05",
+        "patent_number": "715727",
+        "mechanism": "administrative",
+        "buyer": "",
+        "sale_price": "",
+        "attorney": "",
+        "mortgage": "None",
+        "source_page": 1
+      }
+    ],
+    "financial_transactions": [],
+    "mortgages": [
+      {
+        "borrower": "Edward Hutton",
+        "lender": "",
+        "amount": "",
+        "land_description": "W2S E14, 25-8-4",
+        "acreage": "25-8-4",
+        "date": "",
+        "interest_rate": "",
+        "status": "other",
+        "context": "Question 4 asks if land sold or mortgaged; answer is No. Question 5 asks if mortgage released or foreclosed; answer is None.",
+        "source_page": 1
+      }
+    ],
+    "events": [
+      {
+        "type": "fee_patent_delivery",
+        "date": "1920-03-05",
+        "location": "",
+        "description": "Patent number 715727 issued with allotment number 4-457N, delivered by mail in 1920",
+        "source_page": 1
+      },
+      {
+        "type": "patent_acceptance",
+        "date": "1920",
+        "location": "",
+        "description": "Patent accepted without protest and filed for record with the County",
+        "source_page": 1
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Edward Hutton",
+        "type": "related_to",
+        "object": "Wife and 1 Child",
+        "context": "Dependents listed for Edward Hutton on question 12",
+        "source_page": 1
+      }
+    ],
+    "testimony": [],
+    "taxes": [
+      {
+        "taxpayer": "Edward Hutton",
+        "land_description": "W2S E14, 25-8-4",
+        "tax_type": "property",
+        "amount": "",
+        "year": "",
+        "status": "other",
+        "county": "",
+        "context": "Question 7 asks if land sold for debts or taxes; answer is No",
+        "source_page": 1
+      }
+    ],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

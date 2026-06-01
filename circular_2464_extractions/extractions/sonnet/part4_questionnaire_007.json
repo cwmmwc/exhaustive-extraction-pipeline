@@ -1,0 +1,48 @@
+{
+  "document_id": "part4_questionnaire_007",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 4.pdf",
+  "source_pages": "20-21",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Rose Cordier",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "not stated",
+    "Allotment number": "1200",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "Female",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is heavily degraded and largely illegible. Notarized on May 31, 1929, before a Notary Public of Sawyer County, Wisconsin; commission expires Aug. 7, 1933. Some partial text references a date of 1920 and what may be allotment or patent numbers. Allottee signed her own name in the notary's presence. | TASK 5 PART 4 KIMI CROSS-REFERENCE PATCH 2026-05-02: Allotment number corrected from 'not stated' to '1200' per Kimi v3/v4/v5 cross-reference. Sonnet missed allotment number on the questionnaire form. Kimi v3, v4, and v5 all confirm 1200. Sibling record part4_agency_narrative_011 also has allotment 1200.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2740,
+    "output_tokens": 308
+  },
+  "elapsed": 4.6,
+  "recovery_notes": [
+    {
+      "date": "2026-05-02",
+      "type": "task5_part4_kimi_cross_reference_correction",
+      "method": "kimi_v3_v4_v5_parallel_extraction_unanimous",
+      "fields_corrected": [
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_allotment": "not stated",
+      "corrected_allotment": "1200",
+      "extraction_failure_mode": "sonnet_missed_handwritten_allotment_on_questionnaire",
+      "rationale": "Sonnet missed allotment number on the questionnaire form. Kimi v3, v4, and v5 all confirm 1200. Sibling record part4_agency_narrative_011 also has allotment 1200.",
+      "user_confirmed": true
+    }
+  ]
+}

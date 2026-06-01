@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "30",
     "Occupation/Income": "not stated",
-    "NOTES": "Document is heavily degraded and largely illegible; most answers to questions 3\u201313 are unreadable. Question 7 asks about protest status; answer appears to be a single illegible word transcribed as 'zuzc'. Question 8 references mortgage and possible foreclosure but text is illegible. Some partial numerical values visible near questions 4/5 (e.g., '00922', '3/00', '2.223 100') but context is too unclear to assign definitively. Notarized in 1929.",
+    "NOTES": "Document is heavily degraded and largely illegible; most answers to questions 3–13 are unreadable. Question 7 asks about protest status; answer appears to be a single illegible word transcribed as 'zuzc'. Question 8 references mortgage and possible foreclosure but text is illegible. Some partial numerical values visible near questions 4/5 (e.g., '00922', '3/00', '2.223 100') but context is too unclear to assign definitively. Notarized in 1929.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,205 @@
     "input_tokens": 2382,
     "output_tokens": 341
   },
-  "elapsed": 7.5
+  "elapsed": 7.5,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part7_questionnaire_023/vision_merged.json",
+    "entities": [
+      {
+        "name": "Lily Rice DuBray",
+        "type": "person",
+        "context": "Rosebud Sioux allottee, age 38, signed the questionnaire on May 25, 1929",
+        "source_page": "1-2"
+      },
+      {
+        "name": "H. D. Haskell",
+        "type": "person",
+        "context": "Mortgagee from Wakefield, Nebraska, held mortgage of $75.00 on allotted land",
+        "source_page": "1-2"
+      },
+      {
+        "name": "C. H. Worcester",
+        "type": "person",
+        "context": "Notary Public, Witten, South Dakota, witnessed and notarized the document",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Wakefield, Nebraska",
+        "type": "location",
+        "context": "Location of mortgagee H. D. Haskell",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Tripp County",
+        "type": "location",
+        "context": "County in South Dakota where document was notarized",
+        "source_page": "1-2"
+      },
+      {
+        "name": "South Dakota",
+        "type": "location",
+        "context": "State where document was notarized",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Rosebud Sioux",
+        "type": "organization",
+        "context": "Tribe to which allottee Lily Rice DuBray belonged",
+        "source_page": "1-2"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Lily Rice DuBray",
+        "allotment_number": "2370",
+        "acreage": "unknown",
+        "patent_date": "unknown",
+        "patent_number": "unknown",
+        "mechanism": "administrative",
+        "buyer": "unknown",
+        "sale_price": "$1100.00",
+        "attorney": "unknown",
+        "mortgage": "$75.00 to H. D. Haskell, Wakefield, Nebraska; not foreclosed",
+        "source_page": "1-2"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$1100.00",
+        "payer": "unknown buyer",
+        "payee": "Lily Rice DuBray",
+        "date": "unknown",
+        "description": "Sale of allotted land; not paid in cash; included automobile, tax obligations, mortgage, and interest/expenses",
+        "source_page": "1-2"
+      },
+      {
+        "type": "payment",
+        "amount": "$275.00",
+        "payer": "unknown buyer",
+        "payee": "tax authority",
+        "date": "unknown",
+        "description": "Amount due for taxes on the land at time of sale",
+        "source_page": "1-2"
+      },
+      {
+        "type": "payment",
+        "amount": "$2.25 (possibly $2,250.00 or $2.25)",
+        "payer": "unknown buyer",
+        "payee": "Lily Rice DuBray",
+        "date": "unknown",
+        "description": "Automobile taken in payment for the land, valued at $2.25 (figure may be partially illegible)",
+        "source_page": "1-2"
+      },
+      {
+        "type": "payment",
+        "amount": "$75.00",
+        "payer": "unknown",
+        "payee": "H. D. Haskell",
+        "date": "unknown",
+        "description": "Mortgage amount owed to H. D. Haskell of Wakefield, Nebraska, settled at time of sale",
+        "source_page": "1-2"
+      },
+      {
+        "type": "payment",
+        "amount": "$25.00",
+        "payer": "unknown",
+        "payee": "unknown",
+        "date": "unknown",
+        "description": "Payment for interest and expenses related to the mortgage at time of sale",
+        "source_page": "1-2"
+      }
+    ],
+    "mortgages": [
+      {
+        "borrower": "Lily Rice DuBray",
+        "lender": "H. D. Haskell",
+        "amount": "$75.00",
+        "land_description": "allotted land, Tripp County, South Dakota (allotment 2370)",
+        "acreage": "unknown",
+        "date": "unknown",
+        "interest_rate": "unknown",
+        "status": "paid",
+        "context": "Mortgaged once; not foreclosed; mortgage settled at time of land sale along with $25.00 in interest and expenses",
+        "source_page": "1-2"
+      }
+    ],
+    "events": [
+      {
+        "type": "fee_patent_issuance",
+        "date": "unknown",
+        "location": "unknown",
+        "description": "Fee patent delivered to Lily Rice DuBray through the mail; she signed a receipt for it; accepted without protest",
+        "source_page": "1-2"
+      },
+      {
+        "type": "land_sale",
+        "date": "unknown",
+        "location": "unknown",
+        "description": "Lily Rice DuBray sold her allotted land for $1100.00; payment was not made in cash; $275.00 was due for taxes; she took an automobile for $2.25(00); mortgage of $75.00 and $25.00 for interest and expenses were also part of the transaction",
+        "source_page": "1-2"
+      },
+      {
+        "type": "notarization",
+        "date": "1929-05-25",
+        "location": "Tripp County, South Dakota",
+        "description": "Lily Rice DuBray appeared before notary public C. H. Worcester and signed the questionnaire, acknowledging the statements as true",
+        "source_page": "1-2"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Lily Rice DuBray",
+        "type": "mortgaged_to",
+        "object": "H. D. Haskell",
+        "context": "Land mortgaged once for $75.00 to H. D. Haskell of Wakefield, Nebraska; not foreclosed",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Lily Rice DuBray",
+        "type": "dependent_support",
+        "object": "her children",
+        "context": "Her children are dependent upon her for support; family supported by farming",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "C. H. Worcester",
+        "type": "notarized",
+        "object": "Lily Rice DuBray",
+        "context": "Notary Public C. H. Worcester notarized Lily Rice DuBray's questionnaire on May 25, 1929",
+        "source_page": "1-2"
+      }
+    ],
+    "testimony": [
+      {
+        "witness": "Lily Rice DuBray",
+        "witness_title": "Rosebud Sioux allottee",
+        "hearing": "Fee Patent Questionnaire Investigation",
+        "committee": "unknown",
+        "location": "Tripp County, South Dakota",
+        "date": "1929-05-25",
+        "subject": "Circumstances of fee patent issuance and subsequent land loss",
+        "key_claims": "She is age 38, is a Rosebud Sioux allottee who received a fee patent through the mail without having applied for it. She signed a receipt and accepted it without protest. She no longer owns the land; it was mortgaged once for $75.00 to H. D. Haskell of Wakefield, Nebraska (not foreclosed), then sold for $1100.00, not paid in cash. $275.00 was due for taxes; she received an automobile; mortgage of $75.00 and $25.00 for interest and expenses were settled. She states that if she had not had a patent she would not have lost the land. She lost it because she could not meet the taxes and had too many other more important expenses concerning one of her children's health. She is in good health, supports her children by farming.",
+        "questioner": "unknown",
+        "source_page": "1-2"
+      }
+    ],
+    "taxes": [
+      {
+        "taxpayer": "Lily Rice DuBray",
+        "land_description": "allotted land, Tripp County, South Dakota",
+        "tax_type": "property",
+        "amount": "$275.00",
+        "year": "unknown",
+        "status": "delinquent",
+        "county": "Tripp",
+        "context": "At time of land sale, $275.00 was due for taxes; inability to pay taxes was cited as reason for losing the land",
+        "source_page": "1-2"
+      }
+    ],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

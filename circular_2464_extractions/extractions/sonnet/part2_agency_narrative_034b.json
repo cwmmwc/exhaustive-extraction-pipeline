@@ -1,0 +1,218 @@
+{
+  "extraction": {
+    "Name": "Narcisse Moran",
+    "Allotment number": "813",
+    "Tribe/Reservation": "Rosebud Sioux",
+    "Post Office Address": "Rosebud, South Dakota",
+    "Date": "1920-03-12",
+    "Document type": "agency_narrative",
+    "NOTES": "Source: split from multi-allottee bundle (part2_agency_narrative_034.json) on 2026-05-03 using Sonnet vision extraction. Allotment 813. Patent date: 1920-03-12. Patent number: 739643. Mechanism: administrative. Buyer: Ed Haisch. Sale price: $1.00 and other valuable consideration. Land: northwest quarter of section 24, township 43, range 27 (adjacent to Harry Moran's allotment 812). Sold to Ed Haisch for nominal consideration. Patent issued same day as sibling allotment 812. Likely family relationship between Harry and Narcisse Moran given adjacent allotments and shared surname. Sibling record (other allottee in original bundle): part2_agency_narrative_034a.json. Vision extraction archived at: validation_samples/part2_agency_narrative_034_vision/vision_merged.json."
+  },
+  "pre_split_sonnet_extraction": "See part2_agency_narrative_034a.json field 'pre_split_sonnet_extraction' for archived original",
+  "recovery_notes": [
+    {
+      "date": "2026-05-03",
+      "type": "task5_record_split_from_multi_allottee_bundle",
+      "method": "sonnet_vision_extraction_with_user_source_page_confirmation",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "Post Office Address",
+        "Date",
+        "Document type",
+        "NOTES",
+        "(record creation)"
+      ],
+      "previous_state": "Original part2_agency_narrative_034.json had list-shaped extraction collapsing two distinct allottees on sequential pages into a single record.",
+      "split_origin": {
+        "source_pdf": "agency_narratives/part2_agency_narrative_034.pdf",
+        "page_number": 2,
+        "sibling_record": "part2_agency_narrative_034a.json",
+        "vision_extraction_path": "validation_samples/part2_agency_narrative_034_vision/vision_merged.json"
+      },
+      "user_confirmed": true,
+      "rationale": "User source-page review confirmed two distinct allottees on sequential pages. Vision extraction captured per-allottee fee patent details (name, allotment, patent date, patent number, buyer, sale price). Split into two records preserving all captured content."
+    }
+  ],
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/part2_agency_narrative_034_vision/vision_merged.json",
+    "_retrofit_filter_note": "Multi-allottee bundle: filtered tables to entries matching Name='Narcisse Moran'. Filtered: financial_transactions: 2->1, relationships: 8->3, fee_patents: 2->1, mortgages: 1->0.",
+    "entities": [
+      {
+        "name": "Harry Moran",
+        "type": "person",
+        "context": "Allottee for Allotment No. 812, southwest quarter of section 24, township 43, range 27",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Narcisse Moran",
+        "type": "person",
+        "context": "Allottee for Allotment No. 813, northwest quarter of section 24, township 43, range 27",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Herman L. Bode",
+        "type": "person",
+        "context": "Recorded the instrument for Allotment No. 812 on June 7, 1920",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Christ Young",
+        "type": "person",
+        "context": "Beneficiary of mortgage executed by Harry Moran for $450.00",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Thomas R. Reynolds",
+        "type": "person",
+        "context": "Purchaser of land from Harry Moran and wife by deed on May 25, 1921",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Richard Jones",
+        "type": "person",
+        "context": "Recorded the patent for Allotment No. 813 on April 17, 1920",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Ed Haisch",
+        "type": "person",
+        "context": "Purchaser of land from Narcisse Moran and wife by deed on April 16, 1920",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Rosebud",
+        "type": "location",
+        "context": "Location referenced at bottom of both documents, Rosebud, S. Dak.",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Section 24, Township 43, Range 27 - SW Quarter",
+        "type": "land_parcel",
+        "context": "Allotment No. 812, assigned to Harry Moran",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Section 24, Township 43, Range 27 - NW Quarter",
+        "type": "land_parcel",
+        "context": "Allotment No. 813, assigned to Narcisse Moran",
+        "source_page": "1-2"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Narcisse Moran",
+        "allotment_number": "813",
+        "acreage": "",
+        "patent_date": "1920-03-12",
+        "patent_number": "739643",
+        "mechanism": "administrative",
+        "buyer": "Ed Haisch",
+        "sale_price": "$1.00 and other valuable consideration",
+        "attorney": "",
+        "mortgage": "",
+        "source_page": "1-2"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$1.00 and other valuable consideration",
+        "payer": "Ed Haisch",
+        "payee": "Narcisse Moran",
+        "date": "1920-04-16",
+        "description": "Conveyance of northwest quarter of section 24, township 43, range 27 by deed",
+        "source_page": "1-2"
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "fee_patent_issued",
+        "date": "1920-03-12",
+        "location": "Rosebud, S. Dak.",
+        "description": "Fee patent No. 739641 issued for Allotment No. 812 (Harry Moran), southwest quarter of section 24, township 43, range 27",
+        "source_page": "1-2"
+      },
+      {
+        "type": "instrument_recorded",
+        "date": "1920-06-07",
+        "location": "Rosebud, S. Dak.",
+        "description": "Instrument for Allotment No. 812 recorded by Herman L. Bode",
+        "source_page": "1-2"
+      },
+      {
+        "type": "mortgage_executed",
+        "date": "1920-06-04",
+        "location": "Rosebud, S. Dak.",
+        "description": "Harry Moran executed a mortgage for $450.00 in favor of Christ Young",
+        "source_page": "1-2"
+      },
+      {
+        "type": "deed_conveyance",
+        "date": "1921-05-25",
+        "location": "Rosebud, S. Dak.",
+        "description": "Mr. Moran and wife conveyed land by deed to Thomas R. Reynolds for $1.00 and other valuable consideration, subject to the foregoing mortgage",
+        "source_page": "1-2"
+      },
+      {
+        "type": "fee_patent_issued",
+        "date": "1920-03-12",
+        "location": "Rosebud, S. Dak.",
+        "description": "Fee patent No. 739643 issued for Allotment No. 813 (Narcisse Moran), northwest quarter of section 24, township 43, range 27",
+        "source_page": "1-2"
+      },
+      {
+        "type": "receipt_signed",
+        "date": "1920-04-08",
+        "location": "Rosebud, S. Dak.",
+        "description": "Receipt for fee patent No. 739643 signed by allottee Narcisse Moran",
+        "source_page": "1-2"
+      },
+      {
+        "type": "patent_recorded",
+        "date": "1920-04-17",
+        "location": "Rosebud, S. Dak.",
+        "description": "Patent for Allotment No. 813 recorded by Richard Jones",
+        "source_page": "1-2"
+      },
+      {
+        "type": "deed_conveyance",
+        "date": "1920-04-16",
+        "location": "Rosebud, S. Dak.",
+        "description": "Deed by Moran and wife conveyed northwest quarter of section 24 to Ed Haisch for $1.00 and other valuable consideration",
+        "source_page": "1-2"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Narcisse Moran",
+        "type": "allottee_of",
+        "object": "Allotment No. 813",
+        "context": "Northwest quarter of section 24, township 43, range 27",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Narcisse Moran",
+        "type": "sold_to",
+        "object": "Ed Haisch",
+        "context": "Deed conveyance April 16, 1920 for $1.00 and other valuable consideration",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Harry Moran",
+        "type": "related_to",
+        "object": "Narcisse Moran",
+        "context": "Both share surname Moran and adjacent allotments in same section/township/range",
+        "source_page": "1-2"
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
+}

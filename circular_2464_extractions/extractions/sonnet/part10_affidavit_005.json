@@ -29,5 +29,63 @@
     "output_tokens": 265
   },
   "elapsed": 4.4,
-  "retry_count": 1
+  "retry_count": 1,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part10_affidavit_005/vision_merged.json",
+    "entities": [
+      {
+        "name": "Albion Ogee",
+        "type": "person",
+        "context": "Allottee who signed the document",
+        "source_page": 1
+      },
+      {
+        "name": "Unknown Notary/Official",
+        "type": "person",
+        "context": "Person who administered the oath, signature present but illegible",
+        "source_page": 1
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Albion Ogee",
+        "allotment_number": "unknown",
+        "acreage": "unknown",
+        "patent_date": "1929-01-10",
+        "patent_number": "unknown",
+        "mechanism": "application",
+        "buyer": "unknown",
+        "sale_price": "unknown",
+        "attorney": "unknown",
+        "mortgage": "unknown",
+        "source_page": 1
+      }
+    ],
+    "financial_transactions": [],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "oath_administered",
+        "date": "1929-01-10",
+        "location": "unknown",
+        "description": "Document subscribed and sworn to before a notary or official on the 10th day of January 1929",
+        "source_page": 1
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Albion Ogee",
+        "type": "is_allottee",
+        "object": "unknown land parcel",
+        "context": "Albion Ogee is identified as 'Allottee' on this document dated January 1929",
+        "source_page": 1
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

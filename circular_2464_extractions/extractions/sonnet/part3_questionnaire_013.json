@@ -28,5 +28,145 @@
     "input_tokens": 2487,
     "output_tokens": 284
   },
-  "elapsed": 5.9
+  "elapsed": 5.9,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part3_questionnaire_013/vision_merged.json",
+    "entities": [
+      {
+        "name": "Della Charbonneau",
+        "type": "person",
+        "context": "Rosebud Sioux allottee, age 40, sold fee patent land, employed as modiste, residing in Los Angeles, California",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Rosebud Sioux",
+        "type": "organization",
+        "context": "Tribal nation of which Della Charbonneau is an allottee",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Detroit, Michigan",
+        "type": "location",
+        "context": "Location where fee patent was delivered by mail in March 1917",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Los Angeles, California",
+        "type": "location",
+        "context": "Location where document was notarized on June 13, 1929",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Kathryn S. Kirkoff",
+        "type": "person",
+        "context": "Notary Public, Los Angeles County, California, commission expires 1/13/31",
+        "source_page": "1-2"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Della Charbonneau",
+        "allotment_number": "1467",
+        "acreage": "unknown",
+        "patent_date": "1917-03",
+        "patent_number": "unknown",
+        "mechanism": "administrative",
+        "buyer": "unknown",
+        "sale_price": "$3,840.00",
+        "attorney": "none mentioned",
+        "mortgage": "none; land was never mortgaged",
+        "source_page": "1-2"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$3,840.00",
+        "payer": "unknown buyer",
+        "payee": "Della Charbonneau",
+        "date": "unknown",
+        "description": "Sale of allotted Rosebud Sioux land for cash; no debts settled with purchaser; land was never mortgaged",
+        "source_page": "1-2"
+      }
+    ],
+    "mortgages": [
+      {
+        "borrower": "Della Charbonneau",
+        "lender": "none",
+        "amount": "none",
+        "land_description": "Rosebud Sioux allotment #1467",
+        "acreage": "unknown",
+        "date": "N/A",
+        "interest_rate": "N/A",
+        "status": "other",
+        "context": "Della Charbonneau stated the land was never mortgaged",
+        "source_page": "1-2"
+      }
+    ],
+    "events": [
+      {
+        "type": "fee_patent_delivery",
+        "date": "1917-03",
+        "location": "Detroit, Michigan",
+        "description": "Fee patent delivered by mail to Della Charbonneau without her application or protest",
+        "source_page": "1-2"
+      },
+      {
+        "type": "land_sale",
+        "date": "unknown",
+        "location": "unknown",
+        "description": "Della Charbonneau sold her allotted land for $3,840.00 cash with no debts settled",
+        "source_page": "1-2"
+      },
+      {
+        "type": "notarization",
+        "date": "1929-06-13",
+        "location": "Los Angeles, Los Angeles County, California",
+        "description": "Della Charbonneau appeared before Notary Public Kathryn S. Kirkoff and signed the questionnaire document",
+        "source_page": "1-2"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Della Charbonneau",
+        "type": "member_of",
+        "object": "Rosebud Sioux",
+        "context": "Della Charbonneau is a Rosebud Sioux allottee",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Della Charbonneau",
+        "type": "notarized_by",
+        "object": "Kathryn S. Kirkoff",
+        "context": "Notary Public witnessed Della Charbonneau's signature on June 13, 1929 in Los Angeles County, California",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Della Charbonneau",
+        "type": "sold_to",
+        "object": "unknown buyer",
+        "context": "Della Charbonneau sold her allotted land for $3,840.00 cash",
+        "source_page": "1-2"
+      }
+    ],
+    "testimony": [
+      {
+        "witness": "Della Charbonneau",
+        "witness_title": "Rosebud Sioux allottee",
+        "hearing": "Fee Patent Questionnaire #1467",
+        "committee": "unknown",
+        "location": "Los Angeles, California",
+        "date": "1929-06-13",
+        "subject": "Circumstances of fee patent issuance and subsequent land sale",
+        "key_claims": "Della Charbonneau, age 40, is a Rosebud Sioux allottee who received a fee patent by mail in March 1917 in Detroit, Michigan without having applied for it. She did not remember signing a receipt and accepted the patent without protest. She no longer owns the land, having sold it for $3,840.00 cash with no debts and no mortgage. She is in good health, has no dependents, and is employed as a modiste.",
+        "questioner": "unknown",
+        "source_page": "1-2"
+      }
+    ],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

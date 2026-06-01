@@ -1,0 +1,32 @@
+{
+  "document_id": "part4_agency_narrative_004",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 4.pdf",
+  "source_pages": "9",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "William Bridgeman",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1070",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "Recorded August 11, 1923 by William Bridgeman",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to T.C. Montgomery for $1500 on August 10, 1923; conveyed by deed to Winnie M. Keller for $1.00 and other valuable consideration on November 21, 1923",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "March 12, 1920",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 739681 issued; north half of section 15, township 102, range 77; receipt for patent signed by allottee April 3, 1920; conveyance subject to encumbrances of record; wife also signed the deed to Winnie M. Keller",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2077,
+    "output_tokens": 366
+  },
+  "elapsed": 4.8
+}

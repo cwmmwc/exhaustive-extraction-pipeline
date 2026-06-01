@@ -1,0 +1,48 @@
+{
+  "document_id": "part4_agency_narrative_003",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 4.pdf",
+  "source_pages": "7",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Oliver Guerue",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1069",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded February 28, 1918",
+    "Sold/Mortgaged": "Mortgaged and sold",
+    "Buyer": "Mortgaged to Bank of Cody for $1520.00 on December 5, 1918; land conveyed to Joseph Valandra for $2000.00 on April 3, 1913, subject to the foregoing mortgage; receipt states delivered to John Guerue by Oliver Guerue and wife January 1, 1918 for $1520.00",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 29, 1917",
+    "Gender": "Male",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612683 issued; northeast quarter of section 14, township 40, range 26; receipt for instrument signed but not dated; note attached to the receipt states patent delivered to John Guerue by Oliver Guerue and wife January 1, 1918; conveyance to Joseph Valandra dated April 3, 1913 for $2000.00 subject to mortgage; document received at Rosebud June 1929 | TASK 5 PART 4 KIMI CROSS-REFERENCE PATCH 2026-05-02: Allotment number corrected from '170. 10G9' to '1069' per Kimi v3/v4/v5 cross-reference. Garbled OCR of handwritten allotment number '1069'. Kimi v3, v4, and v5 all confirm 1069. Sibling record part4_questionnaire_003 also has allotment 1069. Sonnet's '170. 10G9' is a misread — almost certainly the digit grouping plus the cursive '6' read as 'G'.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2109,
+    "output_tokens": 428
+  },
+  "elapsed": 5.2,
+  "recovery_notes": [
+    {
+      "date": "2026-05-02",
+      "type": "task5_part4_kimi_cross_reference_correction",
+      "method": "kimi_v3_v4_v5_parallel_extraction_unanimous",
+      "fields_corrected": [
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_allotment": "170. 10G9",
+      "corrected_allotment": "1069",
+      "extraction_failure_mode": "garbled_ocr_handwritten_allotment",
+      "rationale": "Garbled OCR of handwritten allotment number '1069'. Kimi v3, v4, and v5 all confirm 1069. Sibling record part4_questionnaire_003 also has allotment 1069. Sonnet's '170. 10G9' is a misread — almost certainly the digit grouping plus the cursive '6' read as 'G'.",
+      "user_confirmed": true
+    }
+  ]
+}

@@ -50,5 +50,290 @@
     "input_tokens": 2265,
     "output_tokens": 865
   },
-  "elapsed": 8.3
+  "elapsed": 8.3,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/part7_agency_narrative_025_vision/vision_merged.json",
+    "entities": [
+      {
+        "name": "John DuBray (Boyd)",
+        "type": "person",
+        "context": "Allottee for Allotment No. 2338, land in Section 6, Township 102, north of range 77",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Sadie DuBray",
+        "type": "person",
+        "context": "Co-conveyor with John DuBray of land to Charles Burtz in 1919",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Charles Burtz",
+        "type": "person",
+        "context": "Buyer of land from John and Sadie DuBray for $2000 on April 19, 1919",
+        "source_page": "1-2"
+      },
+      {
+        "name": "R. R. Hazen",
+        "type": "person",
+        "context": "Recorded the patent on April 19, 1919 for Allotment No. 2338",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Lucy DuBray (Sturdevant)",
+        "type": "person",
+        "context": "Allottee for Allotment No. 2341, land in Section 30, Township 100, north of range 76",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Ray C. Wynn",
+        "type": "person",
+        "context": "Mortgagee who received mortgage from Lucy Dubray Sturdevant and husband for $800 on January 17, 1921",
+        "source_page": "1-2"
+      },
+      {
+        "name": "John R. Olson",
+        "type": "person",
+        "context": "Assignee of mortgage originally held by Ray C. Wynn; released August 19, 1925",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Charles W. Marley",
+        "type": "person",
+        "context": "Buyer of land from Lucy Dubray Sturdevant and husband on August 4, 1925",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Rosebud, S. D.",
+        "type": "location",
+        "context": "Location associated with both allotment records",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Allotment No. 2338",
+        "type": "land_parcel",
+        "context": "Lots 3, 4 and 5 and Southeast quarter of Northwest quarter, Section 6, Township 102, north of range 77",
+        "source_page": "1-2"
+      },
+      {
+        "name": "Allotment No. 2341",
+        "type": "land_parcel",
+        "context": "Lots 3 and 4 and East half of Southwest quarter, section 30, township 100, north of range 76",
+        "source_page": "1-2"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "John DuBray (Boyd)",
+        "allotment_number": "2338",
+        "acreage": "",
+        "patent_date": "1917-12-21",
+        "patent_number": "612453",
+        "mechanism": "administrative",
+        "buyer": "Charles Burtz",
+        "sale_price": "$2000",
+        "attorney": "",
+        "mortgage": "",
+        "source_page": "1-2"
+      },
+      {
+        "allottee_name": "Lucy DuBray (Sturdevant)",
+        "allotment_number": "2341",
+        "acreage": "",
+        "patent_date": "1917-12-29",
+        "patent_number": "512761",
+        "mechanism": "administrative",
+        "buyer": "Charles W. Marley",
+        "sale_price": "$1.00 and other valuable consideration",
+        "attorney": "",
+        "mortgage": "$800 to Ray C. Wynn on January 17, 1921; assigned to John R. Olson and released August 19, 1925",
+        "source_page": "1-2"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$2000",
+        "payer": "Charles Burtz",
+        "payee": "John DuBray and Sadie DuBray",
+        "date": "1919-04-19",
+        "description": "Conveyance of Allotment No. 2338 land (Lots 3, 4 and 5 and SE quarter of NW quarter, Section 6, Township 102, north of range 77) to Charles Burtz",
+        "source_page": "1-2"
+      },
+      {
+        "type": "other",
+        "amount": "$800",
+        "payer": "Lucy Dubray Sturdevant and husband",
+        "payee": "Ray C. Wynn",
+        "date": "1921-01-17",
+        "description": "Mortgage on Allotment No. 2341 land to Ray C. Wynn",
+        "source_page": "1-2"
+      },
+      {
+        "type": "sale",
+        "amount": "$1.00 and other valuable consideration",
+        "payer": "Charles W. Marley",
+        "payee": "Lucy Dubray Sturdevant and husband",
+        "date": "1925-08-04",
+        "description": "Conveyance of Allotment No. 2341 land (Lots 3 and 4 and East half of SW quarter, section 30, township 100, north of range 76) to Charles W. Marley",
+        "source_page": "1-2"
+      }
+    ],
+    "mortgages": [
+      {
+        "borrower": "Lucy Dubray Sturdevant and husband",
+        "lender": "Ray C. Wynn",
+        "amount": "$800",
+        "land_description": "Lots 3 and 4 and East half of Southwest quarter, section 30, township 100, north of range 76",
+        "acreage": "",
+        "date": "1921-01-17",
+        "interest_rate": "",
+        "status": "paid",
+        "context": "Mortgage assigned to John R. Olson and released August 19, 1925",
+        "source_page": "1-2"
+      }
+    ],
+    "events": [
+      {
+        "type": "fee_patent_issued",
+        "date": "1917-12-21",
+        "location": "Rosebud, S.D.",
+        "description": "Fee patent No. 612453 issued for Allotment No. 2338 (John DuBray/Boyd)",
+        "source_page": "1-2"
+      },
+      {
+        "type": "receipt_signed",
+        "date": "1918-09-06",
+        "location": "Rosebud, S.D.",
+        "description": "Receipt for patent signed by allottee John DuBray (Boyd) for Allotment No. 2338",
+        "source_page": "1-2"
+      },
+      {
+        "type": "patent_recorded",
+        "date": "1919-04-19",
+        "location": "Rosebud, S.D.",
+        "description": "Patent for Allotment No. 2338 recorded by R. R. Hazen",
+        "source_page": "1-2"
+      },
+      {
+        "type": "land_conveyance",
+        "date": "1919-04-19",
+        "location": "Rosebud, S.D.",
+        "description": "John and Sadie DuBray conveyed Allotment No. 2338 land to Charles Burtz for $2000",
+        "source_page": "1-2"
+      },
+      {
+        "type": "fee_patent_issued",
+        "date": "1917-12-29",
+        "location": "Rosebud, S.D.",
+        "description": "Fee patent No. 512761 issued for Allotment No. 2341 (Lucy DuBray/Sturdevant)",
+        "source_page": "1-2"
+      },
+      {
+        "type": "receipt_signed",
+        "date": "1918-02-06",
+        "location": "Rosebud, S.D.",
+        "description": "Receipt for patent signed by allottee Lucy DuBray (Sturdevant) for Allotment No. 2341",
+        "source_page": "1-2"
+      },
+      {
+        "type": "patent_recorded",
+        "date": "1919-12-30",
+        "location": "Rosebud, S.D.",
+        "description": "Patent for Allotment No. 2341 recorded by Lucy Sturdevant",
+        "source_page": "1-2"
+      },
+      {
+        "type": "mortgage_executed",
+        "date": "1921-01-17",
+        "location": "Rosebud, S.D.",
+        "description": "Lucy Dubray Sturdevant and husband mortgaged land to Ray C. Wynn for $800",
+        "source_page": "1-2"
+      },
+      {
+        "type": "mortgage_assigned_and_released",
+        "date": "1925-08-19",
+        "location": "Rosebud, S.D.",
+        "description": "Mortgage assigned to John R. Olson and released on August 19, 1925",
+        "source_page": "1-2"
+      },
+      {
+        "type": "land_conveyance",
+        "date": "1925-08-04",
+        "location": "Rosebud, S.D.",
+        "description": "Lucy Dubray Sturdevant and husband conveyed Allotment No. 2341 land to Charles W. Marley for $1.00 and other valuable consideration",
+        "source_page": "1-2"
+      },
+      {
+        "type": "document_dated",
+        "date": "1929-06",
+        "location": "Rosebud, S.D.",
+        "description": "Allotment records for No. 2338 and No. 2341 dated June 1929",
+        "source_page": "1-2"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "John DuBray (Boyd)",
+        "type": "sold_to",
+        "object": "Charles Burtz",
+        "context": "Conveyed Allotment No. 2338 land on April 19, 1919 for $2000",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Sadie DuBray",
+        "type": "sold_to",
+        "object": "Charles Burtz",
+        "context": "Co-conveyor with John DuBray of Allotment No. 2338 land on April 19, 1919",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "John DuBray (Boyd)",
+        "type": "related_to",
+        "object": "Sadie DuBray",
+        "context": "Husband and wife, co-conveyors of land",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Lucy DuBray (Sturdevant)",
+        "type": "related_to",
+        "object": "John DuBray (Boyd)",
+        "context": "Shared surname DuBray; likely family members",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Lucy Dubray Sturdevant",
+        "type": "mortgaged_to",
+        "object": "Ray C. Wynn",
+        "context": "Mortgaged Allotment No. 2341 land for $800 on January 17, 1921",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Ray C. Wynn",
+        "type": "assigned_to",
+        "object": "John R. Olson",
+        "context": "Mortgage on Allotment No. 2341 assigned to John R. Olson and released August 19, 1925",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "Lucy Dubray Sturdevant",
+        "type": "sold_to",
+        "object": "Charles W. Marley",
+        "context": "Conveyed Allotment No. 2341 land by deed on August 4, 1925",
+        "source_page": "1-2"
+      },
+      {
+        "subject": "R. R. Hazen",
+        "type": "recorded_patent_for",
+        "object": "John DuBray (Boyd)",
+        "context": "Recorded patent for Allotment No. 2338 on April 19, 1919",
+        "source_page": "1-2"
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

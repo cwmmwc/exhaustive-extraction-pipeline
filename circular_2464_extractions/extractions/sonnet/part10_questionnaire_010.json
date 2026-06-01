@@ -28,5 +28,134 @@
     "input_tokens": 2577,
     "output_tokens": 359
   },
-  "elapsed": 6.8
+  "elapsed": 6.8,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part10_questionnaire_010/vision_merged.json",
+    "entities": [
+      {
+        "name": "Lucius Eldridge",
+        "type": "person",
+        "context": "Allottee named on Circular No. 2464 fee patent questionnaire",
+        "source_page": 1
+      },
+      {
+        "name": "West Half Northwest Quarter Section 28",
+        "type": "land_parcel",
+        "context": "Land description on allotment document, likely Township and Range not fully legible",
+        "source_page": 1
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Lucius Eldridge",
+        "allotment_number": "1-2 (partially legible)",
+        "acreage": "unknown",
+        "patent_date": "December 1919",
+        "patent_number": "unknown",
+        "mechanism": "administrative",
+        "buyer": "N/A",
+        "sale_price": "N/A",
+        "attorney": "unknown",
+        "mortgage": "Yes - at least one mortgage executed on the land",
+        "source_page": 1
+      }
+    ],
+    "financial_transactions": [],
+    "mortgages": [
+      {
+        "borrower": "Lucius Eldridge",
+        "lender": "unknown",
+        "amount": "unknown",
+        "land_description": "West Half Northwest Quarter Section 28",
+        "acreage": "unknown",
+        "date": "unknown",
+        "interest_rate": "unknown",
+        "status": "active",
+        "context": "Q4 answer states he has mortgaged the land; Q5 answer states he has had one mortgage and one more (mortgage has not been released or foreclosed per context, exemption date unclear)",
+        "source_page": 1
+      }
+    ],
+    "events": [
+      {
+        "type": "fee_patent_issued",
+        "date": "1919-12",
+        "location": "Agency",
+        "description": "Fee patent issued sometime in December 1919; allottee came to the Agency for the patent",
+        "source_page": 1
+      },
+      {
+        "type": "patent_acceptance",
+        "date": "1919-12",
+        "location": "Agency",
+        "description": "Lucius Eldridge accepted the patent without protest",
+        "source_page": 1
+      },
+      {
+        "type": "mortgage_executed",
+        "date": "unknown",
+        "location": "unknown",
+        "description": "Lucius Eldridge mortgaged the land; states he has had one mortgage and one more at some time",
+        "source_page": 1
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Lucius Eldridge",
+        "type": "allottee_of",
+        "object": "West Half Northwest Quarter Section 28",
+        "context": "Named allottee on fee patent circular",
+        "source_page": 1
+      },
+      {
+        "subject": "Lucius Eldridge",
+        "type": "mortgaged",
+        "object": "West Half Northwest Quarter Section 28",
+        "context": "Answer to Q4 states he mortgaged the land",
+        "source_page": 1
+      }
+    ],
+    "testimony": [
+      {
+        "witness": "Lucius Eldridge",
+        "witness_title": "Allottee/Farmer",
+        "hearing": "Circular No. 2464 Fee Patent Investigation",
+        "committee": "unknown",
+        "location": "unknown",
+        "date": "unknown",
+        "subject": "Status of fee patent and allotment land",
+        "key_claims": "Patent received December 1919 at the Agency. Accepted without protest. Has mortgaged the land (one mortgage, one more at some time). Has not sold the land. Land has not been sold for debts or taxes. Patent has not been cancelled. No tax assessments cancelled or refunded. Allottee is 45 years old, is crippled (possibly losing a leg) due to tobacco or other cause. Is a farmer and has not received any government, state, or county support. No dependents other than himself. Has not been defrauded by anyone.",
+        "questioner": "unknown",
+        "source_page": 1
+      }
+    ],
+    "taxes": [
+      {
+        "taxpayer": "Lucius Eldridge",
+        "land_description": "West Half Northwest Quarter Section 28",
+        "tax_type": "property",
+        "amount": "unknown",
+        "year": "unknown",
+        "status": "other",
+        "county": "unknown",
+        "context": "Q7 answered 'No' - land has not been sold for debts or taxes",
+        "source_page": 1
+      }
+    ],
+    "correspondence": [
+      {
+        "sender": "Lucius Eldridge",
+        "sender_title": "Allottee",
+        "recipient": "unknown (Agency/BIA)",
+        "recipient_title": "unknown",
+        "date": "unknown",
+        "subject": "Circular No. 2464 - Fee Patent Questionnaire responses",
+        "action_requested": "Completion of questionnaire regarding fee patent and land status",
+        "outcome": "Questionnaire completed; land not sold, patent not cancelled, allottee self-supporting as farmer, has not been defrauded",
+        "source_page": 1
+      }
+    ],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

@@ -28,5 +28,118 @@
     "input_tokens": 2061,
     "output_tokens": 272
   },
-  "elapsed": 4.0
+  "elapsed": 4.0,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part1_questionnaire_021/vision_merged.json",
+    "entities": [
+      {
+        "name": "Louise Drapeau",
+        "type": "person",
+        "context": "Applicant requesting patent in fee, signed the document",
+        "source_page": 1
+      },
+      {
+        "name": "Sara M. Shotwell",
+        "type": "person",
+        "context": "Notary Public and Superintendent who subscribed and sworn the document",
+        "source_page": 1
+      },
+      {
+        "name": "South Dakota",
+        "type": "location",
+        "context": "State where notary public Sara M. Shotwell is commissioned",
+        "source_page": 1
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Louise Drapeau",
+        "allotment_number": "unknown",
+        "acreage": "unknown",
+        "patent_date": "1920-01-02",
+        "patent_number": "unknown",
+        "mechanism": "application",
+        "buyer": "unknown",
+        "sale_price": "unknown",
+        "attorney": "unknown",
+        "mortgage": "unknown",
+        "source_page": 1
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "unknown",
+        "payer": "unknown buyer",
+        "payee": "Louise Drapeau",
+        "date": "1920",
+        "description": "Applicant wishes to sell land proceeds from spring Indian land sale and buy more land from proceeds of this sale",
+        "source_page": 1
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "patent_application_sworn",
+        "date": "1920-01-02",
+        "location": "South Dakota",
+        "description": "Louise Drapeau subscribed and sworn before Notary Public Sara M. Shotwell on the 2nd day of January 1920, requesting a patent in fee for her lands before the spring Indian land sale",
+        "source_page": 1
+      },
+      {
+        "type": "notary_commission_expiration",
+        "date": "1920-05-04",
+        "location": "South Dakota",
+        "description": "Sara M. Shotwell's notary commission expires 5/4/20",
+        "source_page": 1
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Sara M. Shotwell",
+        "type": "notarized",
+        "object": "Louise Drapeau",
+        "context": "Sara M. Shotwell as Notary Public subscribed and sworn Louise Drapeau's patent application on January 2, 1920",
+        "source_page": 1
+      },
+      {
+        "subject": "Sara M. Shotwell",
+        "type": "employed_by",
+        "object": "Indian Agency/Superintendent Office",
+        "context": "Sara M. Shotwell is listed as both Notary Public and Superintendent",
+        "source_page": 1
+      }
+    ],
+    "testimony": [
+      {
+        "witness": "Louise Drapeau",
+        "witness_title": "Applicant",
+        "hearing": "Patent in Fee Application",
+        "committee": "unknown",
+        "location": "South Dakota",
+        "date": "1920-01-02",
+        "subject": "Reasons for requesting a patent in fee",
+        "key_claims": "As stated in question 26, applicant would like the patent to this land before the spring Indian land sale so she can buy some land from proceeds of sale of this land",
+        "questioner": "unknown",
+        "source_page": 1
+      }
+    ],
+    "taxes": [],
+    "correspondence": [
+      {
+        "sender": "Louise Drapeau",
+        "sender_title": "Applicant",
+        "recipient": "unknown",
+        "recipient_title": "unknown",
+        "date": "1920-01-02",
+        "subject": "Request for patent in fee",
+        "action_requested": "Grant patent in fee for lands before spring Indian land sale so applicant can buy more land from proceeds of the sale",
+        "outcome": "unknown",
+        "source_page": 1
+      }
+    ],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

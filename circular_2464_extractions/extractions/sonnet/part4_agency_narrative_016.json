@@ -1,0 +1,32 @@
+{
+  "document_id": "part4_agency_narrative_016",
+  "type": "agency_narrative",
+  "source_pdf": "RG 75 1929 circular 2464 part 4.pdf",
+  "source_pages": "31-32",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Alphonse Charbonneau",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "Rosebud, S. D.",
+    "Allotment number": "1466",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "The patent was recorded by the Tri County Abstract Company April 18, 1924",
+    "Sold/Mortgaged": "Sold (partially)",
+    "Buyer": "Deed from Alphonse Charbonneau dated April 2, 1924 conveys the Northwest quarter of Section 15 to Jesse E. Keeler for $2000",
+    "Tax burden forced sale/Mortgage": "tax certificate No. 1180 was issued for year 1926; the 1927 and 1928 taxes were unpaid at the time",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "December 21, 1917",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Fee patent No. 612444 issued December 21, 1917. No receipt. Land described: Northwest quarter of section 15, Southeast quarter of Northwest quarter, Southwest quarter of Northeast quarter, Northeast quarter of Southwest quarter, Northwest quarter of Southeast quarter, section 17, township 36, north of range 26. Records scrutinized but there were no judgments or other liens of record. The remaining land (other than Northwest quarter of Section 15) appears on the records in the name of the allottee but tax certificate No. 1180 was issued for year 1926 and 1927 and 1928 taxes were unpaid. Document also contains a separate entry for Mary Julia Neiss, Allotment No. 1463, Rosebud S.D., fee patent No. 739617 issued March 12, 1920, Southeast quarter of section 1, township 35, north of range 27, receipt signed by allottee April 2, 1920, land conveyed by deed dated January 13, 1921 to Kenneth Sellers for $1.00 and other valuable consideration, patent recorded January 17, 1921 by Bartine.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "agency_narrative"
+  },
+  "usage": {
+    "input_tokens": 2314,
+    "output_tokens": 591
+  },
+  "elapsed": 7.0
+}

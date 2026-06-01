@@ -28,5 +28,155 @@
     "input_tokens": 2005,
     "output_tokens": 370
   },
-  "elapsed": 5.9
+  "elapsed": 5.9,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part11_agency_narrative_003/vision_merged.json",
+    "entities": [
+      {
+        "name": "M. B. Gregg",
+        "type": "person",
+        "context": "Dealt for the land, has nothing in his name, worth nothing, address Harrold S. Dak., lessor on reservation",
+        "source_page": 1
+      },
+      {
+        "name": "Frank Kotilienk",
+        "type": "person",
+        "context": "Has nothing at all, address DeGrey S. Dak., living on Crow Creek Reservation",
+        "source_page": 1
+      },
+      {
+        "name": "H. E. Wright",
+        "type": "person",
+        "context": "Superintendent and S.D.A., signed the document",
+        "source_page": 1
+      },
+      {
+        "name": "Harrold, S. Dak.",
+        "type": "location",
+        "context": "Present address of M. B. Gregg",
+        "source_page": 1
+      },
+      {
+        "name": "DeGrey, S. Dak.",
+        "type": "location",
+        "context": "Address of Frank Kotilienk",
+        "source_page": 1
+      },
+      {
+        "name": "Crow Creek Reservation",
+        "type": "location",
+        "context": "Frank Kotilienk is living here at time of document",
+        "source_page": 1
+      },
+      {
+        "name": "Kimball Bank",
+        "type": "organization",
+        "context": "Bank that gave the loan which was foreclosed by the State",
+        "source_page": 1
+      },
+      {
+        "name": "State of South Dakota",
+        "type": "organization",
+        "context": "Holds the land after foreclosing the loan given by Kimball Bank",
+        "source_page": 1
+      }
+    ],
+    "fee_patents": [],
+    "financial_transactions": [
+      {
+        "type": "other",
+        "amount": "unknown",
+        "payer": "unknown",
+        "payee": "Kimball Bank",
+        "date": "unknown",
+        "description": "Loan given by Kimball Bank, subsequently foreclosed by the State",
+        "source_page": 1
+      }
+    ],
+    "mortgages": [
+      {
+        "borrower": "unknown",
+        "lender": "Kimball Bank",
+        "amount": "unknown",
+        "land_description": "land on or near reservation in South Dakota",
+        "acreage": "unknown",
+        "date": "unknown",
+        "interest_rate": "unknown",
+        "status": "foreclosed",
+        "context": "The State foreclosed the loan which was given by the Kimball Bank; land is now held by the State",
+        "source_page": 1
+      }
+    ],
+    "events": [
+      {
+        "type": "foreclosure",
+        "date": "unknown",
+        "location": "South Dakota",
+        "description": "The State foreclosed the loan which was given by the Kimball Bank; land is now held by the State",
+        "source_page": 1
+      },
+      {
+        "type": "land_dealing",
+        "date": "unknown",
+        "location": "South Dakota reservation",
+        "description": "M. B. Gregg dealt for the land and is a lessor on the reservation",
+        "source_page": 1
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "M. B. Gregg",
+        "type": "lessor_on",
+        "object": "reservation",
+        "context": "He is a lessor on this reservation",
+        "source_page": 1
+      },
+      {
+        "subject": "Frank Kotilienk",
+        "type": "resident_of",
+        "object": "Crow Creek Reservation",
+        "context": "Living on the Crow Creek Reservation at time of document",
+        "source_page": 1
+      },
+      {
+        "subject": "State of South Dakota",
+        "type": "holds",
+        "object": "land",
+        "context": "State holds the land after foreclosing the Kimball Bank loan",
+        "source_page": 1
+      },
+      {
+        "subject": "State of South Dakota",
+        "type": "foreclosed",
+        "object": "Kimball Bank loan",
+        "context": "State foreclosed the loan which was given by the Kimball Bank",
+        "source_page": 1
+      },
+      {
+        "subject": "H. E. Wright",
+        "type": "authored",
+        "object": "this document",
+        "context": "Signed as Superintendent and S.D.A.",
+        "source_page": 1
+      }
+    ],
+    "testimony": [],
+    "taxes": [],
+    "correspondence": [
+      {
+        "sender": "H. E. Wright",
+        "sender_title": "Superintendent and S.D.A.",
+        "recipient": "unknown",
+        "recipient_title": "unknown",
+        "date": "unknown",
+        "subject": "Financial status of M. B. Gregg and Frank Kotilienk and status of foreclosed land",
+        "action_requested": "unknown",
+        "outcome": "unknown",
+        "source_page": 1
+      }
+    ],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

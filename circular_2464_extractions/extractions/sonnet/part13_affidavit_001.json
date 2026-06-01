@@ -29,5 +29,132 @@
     "output_tokens": 323
   },
   "elapsed": 7.2,
-  "retry_count": 1
+  "retry_count": 1,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part13_affidavit_001/vision_merged.json",
+    "entities": [
+      {
+        "name": "Belle Water",
+        "type": "person",
+        "context": "Signatory on the document, appears to be the Indian allottee referenced",
+        "source_page": 1
+      },
+      {
+        "name": "Brice Water",
+        "type": "person",
+        "context": "Person who personally appeared before notary, likely same as Belle Water or related",
+        "source_page": 1
+      },
+      {
+        "name": "State of Oklahoma",
+        "type": "location",
+        "context": "Jurisdiction of the document",
+        "source_page": 1
+      },
+      {
+        "name": "County of Pawnee",
+        "type": "location",
+        "context": "County in Oklahoma where document was executed",
+        "source_page": 1
+      },
+      {
+        "name": "F.R. Crookhut",
+        "type": "person",
+        "context": "Notary Public who notarized the document, commission expires Jan 31 1929",
+        "source_page": 1
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Belle Water",
+        "allotment_number": "unknown",
+        "acreage": "unknown",
+        "patent_date": "unknown",
+        "patent_number": "unknown",
+        "mechanism": "unknown",
+        "buyer": "unknown",
+        "sale_price": "unknown",
+        "attorney": "unknown",
+        "mortgage": "unknown",
+        "source_page": 1
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "unknown",
+        "payer": "unknown buyer",
+        "payee": "Belle Water",
+        "date": "unknown",
+        "description": "Land sold for a debt contracted before the patent was received; it seems she received all it was worth",
+        "source_page": 1
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "notarization",
+        "date": "1928-11-21",
+        "location": "Pawnee County, Oklahoma",
+        "description": "Brice/Belle Water personally appeared before Notary Public F.R. Crookhut and acknowledged execution of the instrument as her free and voluntary act",
+        "source_page": 1
+      },
+      {
+        "type": "property_sale",
+        "date": "unknown",
+        "location": "Pawnee County, Oklahoma",
+        "description": "Land was sold for a debt that was contracted before the patent was received; the Indian appears to have received all it was worth but the land sold for a pre-patent debt",
+        "source_page": 1
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Belle Water",
+        "type": "dependent_support",
+        "object": "6 children and husband (poor cattler)",
+        "context": "Persons dependent upon the Indian for support",
+        "source_page": 1
+      },
+      {
+        "subject": "F.R. Crookhut",
+        "type": "notarized",
+        "object": "Belle Water",
+        "context": "Notary Public notarized Belle Water's signature on the document",
+        "source_page": 1
+      },
+      {
+        "subject": "Belle Water",
+        "type": "related_to",
+        "object": "6 children",
+        "context": "Dependent children of the Indian allottee",
+        "source_page": 1
+      },
+      {
+        "subject": "Belle Water",
+        "type": "related_to",
+        "object": "husband (poor cattler)",
+        "context": "Husband listed as dependent upon the Indian for support",
+        "source_page": 1
+      }
+    ],
+    "testimony": [
+      {
+        "witness": "Belle Water (Brice Water)",
+        "witness_title": "Indian allottee",
+        "hearing": "unknown",
+        "committee": "unknown",
+        "location": "Pawnee County, Oklahoma",
+        "date": "1928-11-21",
+        "subject": "Alleged defrauding of property",
+        "key_claims": "It seems that she received all it was worth but the land sold for a debt that was contracted before the patent was received. Six children and husband (poor cattler) are dependent upon her for support.",
+        "questioner": "unknown",
+        "source_page": 1
+      }
+    ],
+    "taxes": [],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

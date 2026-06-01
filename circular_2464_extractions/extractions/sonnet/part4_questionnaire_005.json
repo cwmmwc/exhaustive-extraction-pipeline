@@ -1,0 +1,32 @@
+{
+  "document_id": "part4_questionnaire_005",
+  "type": "questionnaire",
+  "source_pdf": "RG 75 1929 circular 2464 part 4.pdf",
+  "source_pages": "14",
+  "model": "sonnet",
+  "extraction": {
+    "Name": "Morris Joseph Douville",
+    "Tribe/Reservation": "Rosebud",
+    "Post Office Address": "not stated",
+    "Allotment number": "1168",
+    "Cancelled": "not stated",
+    "Refused/Protested": "No I just took it.",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "No, I mortgaged and then sold it.",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "about nine or ten years ago (circa 1919-1920)",
+    "Gender": "Male",
+    "Age": "36",
+    "Occupation/Income": "By farming",
+    "NOTES": "Has six children; in good health at time of questionnaire; was sick at time of patent delivery having just returned from Omaha where he had an operation performing removing his appendix; does not remember signing a receipt for the patent; patent was brought home to him by his brother-in-law; did not make application for the patent; received $2400 in money and a team valued at $200 for the land; not satisfied with the sale; debts were settled between him and the purchaser; subscribed and sworn before Jas. W. Gross, Notary Public, commission expires 4-28-32, March 26, 1929",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  },
+  "usage": {
+    "input_tokens": 2284,
+    "output_tokens": 385
+  },
+  "elapsed": 4.7
+}

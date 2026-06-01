@@ -28,5 +28,102 @@
     "input_tokens": 2430,
     "output_tokens": 289
   },
-  "elapsed": 4.5
+  "elapsed": 4.5,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/cat1_sonnet_vision/part10_questionnaire_016/vision_merged.json",
+    "entities": [
+      {
+        "name": "Olive Shepard",
+        "type": "person",
+        "context": "Allottee named at top of Circular No. 2464 form",
+        "source_page": 1
+      },
+      {
+        "name": "Circular No. 2464",
+        "type": "legislation",
+        "context": "Form/circular number under which this allotment inquiry is conducted",
+        "source_page": 1
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Olive Shepard",
+        "allotment_number": "862",
+        "acreage": "unknown",
+        "patent_date": "1919-10-30",
+        "patent_number": "862",
+        "mechanism": "administrative",
+        "buyer": "none",
+        "sale_price": "none",
+        "attorney": "unknown",
+        "mortgage": "none",
+        "source_page": 1
+      }
+    ],
+    "financial_transactions": [],
+    "mortgages": [
+      {
+        "borrower": "Olive Shepard",
+        "lender": "unknown",
+        "amount": "unknown",
+        "land_description": "N1/2 NE4 25-8-1",
+        "acreage": "unknown",
+        "date": "unknown",
+        "interest_rate": "unknown",
+        "status": "other",
+        "context": "Questions 4 and 5 address mortgage; answers are 'No' indicating land has not been sold or mortgaged and no mortgage released or foreclosed",
+        "source_page": 1
+      }
+    ],
+    "events": [
+      {
+        "type": "fee_patent_issued",
+        "date": "1919-10-30",
+        "location": "unknown",
+        "description": "Fee patent number 862 issued to Olive Shepard for allotment described as N1/2 NE4 25-8-1",
+        "source_page": 1
+      },
+      {
+        "type": "patent_delivery",
+        "date": "1919-10-30",
+        "location": "unknown",
+        "description": "Patent delivered in person to Olive Shepard",
+        "source_page": 1
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Olive Shepard",
+        "type": "married_to",
+        "object": "husband (crippled)",
+        "context": "Husband is listed as dependent on Olive Shepard for support; husband is crippled",
+        "source_page": 1
+      },
+      {
+        "subject": "Olive Shepard",
+        "type": "owner_of",
+        "object": "N1/2 NE4 25-8-1",
+        "context": "Land parcel covered by fee patent allotment number 862",
+        "source_page": 1
+      }
+    ],
+    "testimony": [],
+    "taxes": [
+      {
+        "taxpayer": "Olive Shepard",
+        "land_description": "N1/2 NE4 25-8-1",
+        "tax_type": "property",
+        "amount": "unknown",
+        "year": "unknown",
+        "status": "other",
+        "county": "unknown",
+        "context": "Question 7 asks if land has been sold for debts or taxes; answer appears to be a checkmark with no elaboration",
+        "source_page": 1
+      }
+    ],
+    "correspondence": [],
+    "legislative_actions": [],
+    "tables": []
+  }
 }

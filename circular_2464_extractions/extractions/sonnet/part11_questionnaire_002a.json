@@ -1,0 +1,60 @@
+{
+  "extraction": {
+    "Name": "Rosa Vanderbloom",
+    "Allotment number": "313",
+    "Tribe/Reservation": "Citizen Potawatomie",
+    "Post Office Address": "not stated",
+    "Document type": "questionnaire",
+    "Date": "not stated",
+    "NOTES": "Circular 2464 questionnaire response, page 1 of bundled source PDF part11_questionnaire_002.pdf (page 2 contains a separate allottee, Viola Wallace, now in part11_questionnaire_002b.json). Q1 (allotment and patent date): handwritten '313  10/30/1919'. Q2 (patent delivery): March 1920 by rural delivery. Q10 (age, condition): 41 years old, in good health. Q12 (dependents): aged mother. Description (top of form): SE/2 SW/4 - 2-8-1. Cross-reference: Rosa Vanderbloom is also row 34 on the Shawnee Indian Agency master list (part10_page_036.pdf, transmitted by Supt. A. W. Leech, March 20, 1929) where her status is 'Report in detail attached' — this record IS her detail report. RECORD ORIGIN 2026-04-30: Created via split of original part11_questionnaire_002.json which Sonnet text-extracted as 'largely illegible' with 'two overlapping questionnaire pages' and Kimi v3/v4/v5 also failed on. Allotment number captured by user source-page review on 2026-04-29; tribe confirmed via user BLM search."
+  },
+  "recovery_notes": [
+    {
+      "date": "2026-04-30",
+      "type": "task5_record_split_from_multi_allottee_bundle",
+      "method": "user_source_page_review_with_blm_tribe_confirmation",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES",
+        "Document type",
+        "(record creation)"
+      ],
+      "previous_state": "Original part11_questionnaire_002.json had Name='not stated' and Allotment='not stated' because Sonnet text-extraction failed on the bundled multi-allottee PDF (NOTES described it as 'largely illegible' with 'two overlapping questionnaire pages'). Kimi v3/v4/v5 also failed to extract these allottees from this source.",
+      "split_origin": {
+        "source_pdf": "part11_questionnaire_002.pdf",
+        "page_number": 1,
+        "sibling_record": "part11_questionnaire_002b.json"
+      },
+      "user_confirmed": true,
+      "rationale": "Source PDF contains two distinct allottees (Rosa Vanderbloom on page 1, Viola Wallace on page 2). Both have detail records on these pages corresponding to their 'Report in detail attached' notations on the Shawnee Indian Agency master list (rows 34 and 35 respectively). Each allottee's detail report is the rich source of information about her case; preserving them as a single bundled record loses individual identity resolution. Split into two separate records, one per allottee, matching the rest of the corpus's one-record-per-allottee convention.",
+      "extraction_failure_modes": [
+        "Sonnet hallucinated 'Circular No. 3464' alongside the real Circular No. 2464 (only 2464 actually appears on source pages)",
+        "Sonnet did not separate the two allottees on the bundled pages",
+        "Sonnet extracted no Name, no Allotment, no substantive content — claimed 'most answers indecipherable'",
+        "Kimi v3/v4/v5 extractions of part 11 captured no entries for Vanderbloom or Wallace despite capturing other part 11 content"
+      ]
+    }
+  ],
+  "pre_split_sonnet_extraction": {
+    "Name": "not stated",
+    "Tribe/Reservation": "not stated",
+    "Post Office Address": "not stated",
+    "Allotment number": "not stated",
+    "Cancelled": "not stated",
+    "Refused/Protested": "not stated",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "not stated",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "not stated",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "not stated",
+    "Gender": "not stated",
+    "Age": "not stated",
+    "Occupation/Income": "not stated",
+    "NOTES": "Document is largely illegible due to poor scan quality and handwritten text that cannot be reliably transcribed. Two overlapping questionnaire pages (Circular No. 2464 and Circular No. 3464) are present. Most answers are indecipherable. Some fragmentary text suggests land was sold for debts or taxes, a mortgage may have been involved, and the patent may have been cancelled, but specific details cannot be reliably extracted.",
+    "Literate/Illiterate": "not stated",
+    "Document type": "questionnaire"
+  }
+}

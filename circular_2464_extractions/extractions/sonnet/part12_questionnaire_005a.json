@@ -25,5 +25,252 @@
     "Document type": "questionnaire"
   },
   "usage": {},
-  "elapsed": 0
+  "elapsed": 0,
+  "vision_extraction_v5": {
+    "_retrofit_date": "2026-05-04",
+    "_retrofit_source_path": "validation_samples/part12_questionnaire_005_vision/vision_merged.json",
+    "_retrofit_filter_note": "Multi-allottee bundle: filtered tables to entries matching Name='Warren Real Rider'. Filtered: financial_transactions: 4->1, relationships: 10->4, fee_patents: 2->1, testimony: 2->1, mortgages: 1->0.",
+    "entities": [
+      {
+        "name": "Warren Real Rider",
+        "type": "person",
+        "context": "Allottee, Allotment No. 226, Pawnee Nation member",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Jesse Peters",
+        "type": "person",
+        "context": "Allottee, Allotment No. 728, also known as Peter George/Georges, Pawnee Nation member",
+        "source_page": "1-4"
+      },
+      {
+        "name": "C. E. Vandervoort",
+        "type": "person",
+        "context": "Buyer of Warren Real Rider's allotted land for $2000",
+        "source_page": "1-4"
+      },
+      {
+        "name": "R. C. Spinning",
+        "type": "person",
+        "context": "Mortgagee on Jesse Peters' allotted land, mortgage amount $1700",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Myrtle Jockey",
+        "type": "person",
+        "context": "Witness to both documents, of Pawnee, Oklahoma",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Walter Keys",
+        "type": "person",
+        "context": "Witness to both documents, of Pawnee, Oklahoma",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Pawnee County, Oklahoma",
+        "type": "location",
+        "context": "County where patents were filed for record and where documents were notarized",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Office of Indian Affairs",
+        "type": "organization",
+        "context": "Receiving office for Circular No. 2464 responses, stamp dated NOV 24 1930",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Pawnee Agency Office",
+        "type": "organization",
+        "context": "Location where patents were delivered in 1917-1918",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Circular No. 2464",
+        "type": "legislation",
+        "context": "Circular dated June 18, 1928, governing questions and answers about allotment patents",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Allotment No. 226",
+        "type": "land_parcel",
+        "context": "Warren Real Rider's allotted land, patent date Nov. 13, 1917, sold for $2000",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Allotment No. 728",
+        "type": "land_parcel",
+        "context": "Jesse Peters' allotted land, patent date Dec. 24, 1917, mortgaged then sold for $2000",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Pawnee annuity",
+        "type": "organization",
+        "context": "Source of income shares for both Warren Real Rider and Jesse Peters",
+        "source_page": "1-4"
+      },
+      {
+        "name": "Peter George",
+        "type": "person",
+        "context": "Alternate name for Jesse Peters (also written as Peter Georges/George Orge)",
+        "source_page": "1-4"
+      }
+    ],
+    "fee_patents": [
+      {
+        "allottee_name": "Warren Real Rider",
+        "allotment_number": "226",
+        "acreage": "unknown",
+        "patent_date": "1917-11-13",
+        "patent_number": "unknown",
+        "mechanism": "administrative",
+        "buyer": "C. E. Vandervoort",
+        "sale_price": "$2000",
+        "attorney": "unknown",
+        "mortgage": "none",
+        "source_page": "1-4"
+      }
+    ],
+    "financial_transactions": [
+      {
+        "type": "sale",
+        "amount": "$2000",
+        "payer": "C. E. Vandervoort",
+        "payee": "Warren Real Rider",
+        "date": "unknown",
+        "description": "Sale of Warren Real Rider's allotted land (Allotment No. 226) to C. E. Vandervoort; described as a good price at that time; allottee did not owe purchaser any money",
+        "source_page": "1-4"
+      }
+    ],
+    "mortgages": [],
+    "events": [
+      {
+        "type": "patent_issuance",
+        "date": "1917-11-13",
+        "location": "Pawnee Agency Office, Oklahoma",
+        "description": "Fee patent issued to Warren Real Rider, Allotment No. 226",
+        "source_page": "1-4"
+      },
+      {
+        "type": "patent_delivery",
+        "date": "1917",
+        "location": "Pawnee Agency Office, Oklahoma",
+        "description": "Patent delivered to Warren Real Rider at Agency Office; receipted with protest",
+        "source_page": "1-4"
+      },
+      {
+        "type": "patent_filing",
+        "date": "unknown",
+        "location": "Pawnee County, Oklahoma",
+        "description": "Patent filed for record in Pawnee County by allottee Warren Real Rider",
+        "source_page": "1-4"
+      },
+      {
+        "type": "patent_issuance",
+        "date": "1917-12-24",
+        "location": "Pawnee Agency Office, Oklahoma",
+        "description": "Fee patent issued to Jesse Peters (Peter George), Allotment No. 728",
+        "source_page": "1-4"
+      },
+      {
+        "type": "patent_delivery",
+        "date": "1918-01",
+        "location": "Pawnee Agency Office, Oklahoma",
+        "description": "Patent delivered to Jesse Peters at Agency Office in January 1918; receipted with protest",
+        "source_page": "1-4"
+      },
+      {
+        "type": "document_notarization",
+        "date": "1928-11-26",
+        "location": "Pawnee County, Oklahoma",
+        "description": "Warren Real Rider appeared before notary public and executed Circular No. 2464 questionnaire",
+        "source_page": "1-4"
+      },
+      {
+        "type": "document_notarization",
+        "date": "1928-11-26",
+        "location": "Pawnee County, Oklahoma",
+        "description": "Jesse Peters appeared before notary public and executed Circular No. 2464 questionnaire",
+        "source_page": "1-4"
+      },
+      {
+        "type": "document_received",
+        "date": "1930-11-24",
+        "location": "Office of Indian Affairs",
+        "description": "Documents received at Office of Indian Affairs, file number 61391",
+        "source_page": "1-4"
+      }
+    ],
+    "relationships": [
+      {
+        "subject": "Warren Real Rider",
+        "type": "sold_to",
+        "object": "C. E. Vandervoort",
+        "context": "Warren Real Rider sold his allotted land (Allotment No. 226) to C. E. Vandervoort for $2000",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "Myrtle Jockey",
+        "type": "witness_for",
+        "object": "Warren Real Rider",
+        "context": "Witness to Warren Real Rider's Circular No. 2464 questionnaire, Pawnee, Oklahoma",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "Walter Keys",
+        "type": "witness_for",
+        "object": "Warren Real Rider",
+        "context": "Witness to Warren Real Rider's Circular No. 2464 questionnaire, Pawnee, Oklahoma",
+        "source_page": "1-4"
+      },
+      {
+        "subject": "Warren Real Rider",
+        "type": "related_to",
+        "object": "wife and two children",
+        "context": "Warren Real Rider's dependents as stated in Circular No. 2464 questionnaire",
+        "source_page": "1-4"
+      }
+    ],
+    "testimony": [
+      {
+        "witness": "Warren Real Rider",
+        "witness_title": "Allottee No. 226",
+        "hearing": "Circular No. 2464 Investigation",
+        "committee": "Office of Indian Affairs",
+        "location": "Pawnee County, Oklahoma",
+        "date": "1928-11-26",
+        "subject": "Status of fee patent and allotted land, Allotment No. 226",
+        "key_claims": "Patent received at Agency Office in 1917, receipted with protest, filed for record in Pawnee County. Land sold to C. E. Vandervoort for $2000, which was a good price at the time. Allottee did not owe purchaser any money. No mortgage. No fraud evidence. Age 48, good health, no property or money accumulated. No income from any source except shares in Pawnee annuity. Wife and two children dependent on him.",
+        "questioner": "unknown",
+        "source_page": "1-4"
+      }
+    ],
+    "taxes": [],
+    "correspondence": [
+      {
+        "sender": "Warren Real Rider",
+        "sender_title": "Allottee",
+        "recipient": "Office of Indian Affairs",
+        "recipient_title": "Federal Agency",
+        "date": "1928-11-26",
+        "subject": "Response to Circular No. 2464 regarding Allotment No. 226",
+        "action_requested": "Provide information about patent, land sale, financial condition",
+        "outcome": "Received at Office of Indian Affairs NOV 24 1930, file 61391; no fraud evidence found",
+        "source_page": "1-4"
+      },
+      {
+        "sender": "Jesse Peters",
+        "sender_title": "Allottee",
+        "recipient": "Office of Indian Affairs",
+        "recipient_title": "Federal Agency",
+        "date": "1928-11-26",
+        "subject": "Response to Circular No. 2464 regarding Allotment No. 728",
+        "action_requested": "Provide information about patent, land sale, financial condition",
+        "outcome": "Believed allottee did not receive full value; mortgage prevented receiving more money; file 61391",
+        "source_page": "1-4"
+      }
+    ],
+    "legislative_actions": [],
+    "tables": []
+  }
 }
