@@ -12,24 +12,24 @@ Instead of using Retrieval-Augmented Generation (RAG) to search for "relevant" d
 
 ### Survey of Conditions of the Indians in the United States (1927–1943)
 
-The largest single extraction campaign to date: 26 of 48 volumes loaded (26,272 total pages, 15.4 million words) from the Senate subcommittee hearings that documented conditions across Indian country for over a decade. Extracted using Kimi K2.5 via Together AI with v4 schema (10 types). Remaining 23 volumes queued on UVA HPC.
+The largest single extraction campaign in the project, now complete. The corpus is the 41 numbered parts of this Senate subcommittee hearing record, which documented conditions across Indian country for over a decade, and all 41 parts are loaded. Nothing remains queued. The `survey_of_conditions` database holds 45 Survey documents: the 41 canonical parts plus four extras, namely the 1927 predecessor hearings, a "Part 0" digitizer artifact and a "Part 1" Washington DC section that both belong to Part 3, and a second extraction of Part 33 (Sonnet) alongside the Kimi extraction. The 45 documents total 23,565 recorded pages. Extracted with Kimi K2.5 on the v4 schema (10 types), initially via Together AI and then on the UVA RC GenAI H200 service. The AIPRC Taylor Report sits in the same database as a separate collection.
 
-**158,351 structured items extracted** from 26 volumes:
+**175,997 structured items across the 45 documents.** Counts reflect the collection as loaded, so they include the second Part 33 extraction and the two Part 3 sub-section artifacts.
 
 | Type | Count |
 |------|------:|
-| Entities | 81,681 |
-| Financial transactions | 21,926 |
-| Events | 18,400 |
-| Relationships | 17,483 |
-| Testimony | 5,492 |
-| Correspondence | 4,933 |
-| Legislative actions | 3,366 |
-| Fee patents | 2,487 |
-| Taxes | 1,880 |
-| Mortgages | 703 |
+| Entity mentions | 80,838 |
+| Events | 25,735 |
+| Financial transactions | 25,002 |
+| Relationships | 22,836 |
+| Testimony | 6,518 |
+| Correspondence | 6,269 |
+| Legislative actions | 4,176 |
+| Fee patents | 2,180 |
+| Taxes | 1,844 |
+| Mortgages | 599 |
 
-Database: `survey_of_conditions`
+Distinct entities: 64,665. Database: `survey_of_conditions`
 
 ### AIPRC Taylor Report — Vision Extraction
 

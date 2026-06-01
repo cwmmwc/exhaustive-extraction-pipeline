@@ -44,7 +44,7 @@ AI-powered structured extraction from 4,925 historical PDFs (139M words) documen
 - `KIMI_K25_RESULTS.md` — One-page summary of Kimi K2.5 findings for sharing
 
 ## Databases
-- `survey_of_conditions` — Survey of Conditions hearings (26 of 48 volumes loaded, 158K items, 2,487 fee patents). Extracted by Kimi K2.5. Active campaign.
+- `survey_of_conditions` — Survey of Conditions hearings, complete (all 41 canonical parts loaded; 45 docs with extras; 175,997 items; 2,180 fee patents). Extracted by Kimi K2.5 (Together AI then UVA RC GenAI). Also holds the AIPRC Taylor Report as a separate collection.
 - `crow_historical_docs` — Crow Nation corpus (386 docs, 43K entities, 959 fee patents)
 - `historical_docs` — Kiowa/KCA corpus (256 docs, 180 re-extracted through v3)
 - `full_corpus_docs` — Full corpus (planned)
