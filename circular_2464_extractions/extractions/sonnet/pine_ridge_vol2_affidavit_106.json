@@ -6,21 +6,21 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Oliver Hudspeth",
-    "Tribe/Reservation": "Pine Ridge (Oglala)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Oglala, So. Dak.",
     "Allotment number": "3363",
     "Cancelled": "not stated",
     "Refused/Protested": "did not want his patent in fee, but took it because he was told that if he did not take it and keep the taxes up that the land would be sold to satisfy them",
     "Recorded patent": "not stated",
     "Sold/Mortgaged": "mortgaged his land for $3023.17 to A. P. Obanion of Buffalo Gap, So. Dak., that the price of cattle dropped and the mortgagee took the cattle, horses and land to satisfy it",
-    "Buyer": "A. P. Obanion of Buffalo Gap, So. Dak. \u2014 mortgagee foreclosed, taking cattle, horses, and land to satisfy the mortgage of $3023.17",
+    "Buyer": "A. P. Obanion of Buffalo Gap, So. Dak. — mortgagee foreclosed, taking cattle, horses, and land to satisfy the mortgage of $3023.17",
     "Tax burden forced sale/Mortgage": "told that if he did not take it and keep the taxes up that the land would be sold to satisfy them",
     "Trust Patent Date": "not stated",
     "Fee Patent Date": "not stated",
     "Gender": "Male",
     "Age": "48 years old",
     "Occupation/Income": "farms some, milks some cows and raises a little stock for a living",
-    "NOTES": "mentally competent, in poor health; has a wife and seven minor children depending on him for support; has 20 head of cattle, 30 head of horses, 20 hogs, all valued at about $2500.00; has no home and lives on the allotment of his wife; has received no aid from the Government, State or County since he was granted a patent; affidavit sworn November 30, 1928, Shannon County, South Dakota",
+    "NOTES": "mentally competent, in poor health; has a wife and seven minor children depending on him for support; has 20 head of cattle, 30 head of horses, 20 hogs, all valued at about $2500.00; has no home and lives on the allotment of his wife; has received no aid from the Government, State or County since he was granted a patent; affidavit sworn November 30, 1928, Shannon County, South Dakota | ORIGINAL_TRIBE_VALUE: \"Pine Ridge (Oglala)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2260,
     "output_tokens": 497
   },
-  "elapsed": 7.4
+  "elapsed": 7.4,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge (Oglala)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -8,7 +8,7 @@
     "Name": "William Courtis",
     "Tribe/Reservation": "not stated",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "50",
     "Cancelled": "not stated",
     "Refused/Protested": "VO",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Document concerns William Courtis, Jr. (Dec'd), with William Courtis appearing as heir/witness. William Courtis, Jr. died Sep. 26, 1922 (as best readable). He received a fee patent for his allotment. Questionnaire asks whether he made application, mortgaged the land, sold it, whether heir still owns land, and whether he left any children. Responses are partially legible. Sworn before a Notary Public on the 9th day of [month] 1929. File reference: No. 50 William Courtis, Jr. Dec'd.",
+    "NOTES": "Document concerns William Courtis, Jr. (Dec'd), with William Courtis appearing as heir/witness. William Courtis, Jr. died Sep. 26, 1922 (as best readable). He received a fee patent for his allotment. Questionnaire asks whether he made application, mortgaged the land, sold it, whether heir still owns land, and whether he left any children. Responses are partially legible. Sworn before a Notary Public on the 9th day of [month] 1929. File reference: No. 50 William Courtis, Jr. Dec'd. | TASK 5 HOLDOUT ALLOTMENT RECOVERY 2026-04-30: Sonnet's original NOTES labeled 50 as 'File reference: No. 50' but user source-page review confirms 50 is the allotment number. Same misclassification pattern as the bulk allotment recovery batch (Pine Ridge typewritten affidavit headers).",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,20 @@
     "input_tokens": 2228,
     "output_tokens": 353
   },
-  "elapsed": 6.3
+  "elapsed": 6.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-30",
+      "type": "task5_holdout_allotment_recovery",
+      "method": "user_source_page_review",
+      "fields_corrected": [
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_allotment": "not stated",
+      "corrected_allotment": "50",
+      "rationale": "Sonnet's original NOTES labeled 50 as 'File reference: No. 50' but user source-page review confirms 50 is the allotment number. Same misclassification pattern as the bulk allotment recovery batch (Pine Ridge typewritten affidavit headers).",
+      "user_confirmed": true
+    }
+  ]
 }

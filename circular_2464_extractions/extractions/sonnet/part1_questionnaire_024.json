@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Hattie Whiting Whitcher",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "(actual tribe unknown)",
     "Post Office Address": "Spencer, Nebraska",
-    "Allotment number": "not stated",
+    "Allotment number": "(not in patents database)",
     "Cancelled": "not stated",
     "Refused/Protested": "No",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "47",
     "Occupation/Income": "My husband and I farm.",
-    "NOTES": "Patent was mailed to her at Spencer, Nebraska; sold land for $6000.00, not all at once (cash consideration); four of her brothers' children depend upon her for support; states she should be reimbursed ~$400.00 for taxes paid before sale; document notarized May 13, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32.",
+    "NOTES": "Patent was mailed to her at Spencer, Nebraska; sold land for $6000.00, not all at once (cash consideration); four of her brothers' children depend upon her for support; states she should be reimbursed ~$400.00 for taxes paid before sale; document notarized May 13, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32. | TASK 5 CAT_3 PATENTS-DATABASE LOOKUP 2026-05-04: Hattie Whiting Whitcher not found in the federal-register-app patents database despite search. The Whiting/Whitcher surnames appear in the buyer-network records (David B. Whiting, W.H. Whitcher), but Hattie herself could not be located. Allotment and tribe marked explicitly unknown to flag this row as unresolved (option-3 schema).",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -29,5 +29,28 @@
     "output_tokens": 389
   },
   "elapsed": 5.2,
-  "retry_count": 1
+  "retry_count": 1,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_not_in_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Allotment number": "(not in patents database)",
+        "Tribe/Reservation": "(actual tribe unknown)"
+      },
+      "note": "Hattie Whiting Whitcher not found in the federal-register-app patents database despite search. The Whiting/Whitcher surnames appear in the buyer-network records (David B. Whiting, W.H. Whitcher), but Hattie herself could not be located.",
+      "user_confirmed": true
+    }
+  ]
 }

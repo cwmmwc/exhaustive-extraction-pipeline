@@ -1,0 +1,27 @@
+record_id	doc_type	po_corpus	sonnet_name	sonnet_allot	sonnet_pages	sonnet_note	n_pages	source_name	source_allot	source_tribe	source_po	verdict	notes
+part10_affidavit_003	affidavit	not stated	Belle Birdie Bruno	unknown	1		1						
+part10_affidavit_005	affidavit	not stated	Albion Ogee	unknown	1		1						
+part10_questionnaire_002	questionnaire	not stated	Myrtle Last	5406	1-2		2						
+part10_questionnaire_010	questionnaire	not stated	Lucius Eldridge	1-2 (partially legible)	1		1						
+part10_questionnaire_011	questionnaire	not stated	Lizzie Lyons nee Hartman	N1/2 SW1/4 S-8-5	1		1						
+part10_questionnaire_013	questionnaire	not stated	Edward Hutton	4-457N	1		1						
+part10_questionnaire_016	questionnaire	not stated	Olive Shepard	862	1		1						
+part11_affidavit_001	affidavit	not stated	Nicholas Trombla	unknown	1		1						
+part11_agency_narrative_003	agency_narrative	not stated	M. B. Gregg	(none)	1	fallback to entities[person]	1						
+part13_affidavit_001	affidavit	not stated	Belle Water	unknown	1		1						
+part1_questionnaire_003	questionnaire	South Dakota, Sioux Avenue	W. G. Emery	2902	1		1						
+part1_questionnaire_005	questionnaire	not stated	Edith Emery Lague	2996	1-2		2						
+part1_questionnaire_015	Form 5-105 Application for Patent in Fee	not stated	Mrs. Anna Shuck	7394	1-4		4						
+part1_questionnaire_016	Form 5-105 Application for Patent in Fee	not stated	Mrs. Anna Shuck	7394	1-2		2						
+part1_questionnaire_018	Form 5-105 Application for Patent in Fee	not stated	John Sully	6470	1-5		5						
+part1_questionnaire_019	Form 5-105 Application for Patent in Fee	not stated	George Sully	6465	1-4		4						
+part1_questionnaire_020	Form 5-105 Application for Patent in Fee	not stated	Louise Drapeau	NW/4-15-99-74	1-3		3						
+part1_questionnaire_021	questionnaire	not stated	Louise Drapeau	unknown	1		1						
+part1_questionnaire_022	questionnaire	not stated	Margaret DeCory	(none)	1		1						
+part2_questionnaire_016	Form 5-105 Application for Patent in Fee	not stated	George Menard	548	1-4		4						
+part3_questionnaire_012	questionnaire	not stated	Alphonse Charbonneau	1466	1-2		2						
+part3_questionnaire_013	questionnaire	not stated	Della Charbonneau	1467	1-2		2						
+part3_questionnaire_022	questionnaire	not stated	Unknown - list to be compiled	To be reported	1		1						
+part7_questionnaire_020	questionnaire	not stated	Lucy Dubray Sturdevant	2341	1-2		2						
+part7_questionnaire_023	questionnaire	not stated	Lily Rice DuBray	2370	1-2		2						
+part8_questionnaire_022	questionnaire	not stated	John Mullen	3152	1-2		2						

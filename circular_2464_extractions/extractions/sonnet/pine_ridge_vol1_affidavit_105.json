@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Rays Hernandez",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Kyle, South Dakota",
     "Allotment number": "1410",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "40 years old",
     "Occupation/Income": "he farms a little and works out at common labor, this being his only income",
-    "NOTES": "mentally competent, health not good, having had an operation for appendicitis; has a wife and eight children to support, the family being all healthy except three of the children; even if Velandry had paid him the $800.00, it would not have been a fair price for his allotment; has never received any help from the County, State or the United States Government; affidavit sworn November 23, 1928, Shannon County, South Dakota",
+    "NOTES": "mentally competent, health not good, having had an operation for appendicitis; has a wife and eight children to support, the family being all healthy except three of the children; even if Velandry had paid him the $800.00, it would not have been a fair price for his allotment; has never received any help from the County, State or the United States Government; affidavit sworn November 23, 1928, Shannon County, South Dakota | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2328,
     "output_tokens": 499
   },
-  "elapsed": 7.0
+  "elapsed": 7.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Frank Carlow",
-    "Tribe/Reservation": "Crow Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Crow Agency, Montana",
     "Allotment number": "1071",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "34 years old",
     "Occupation/Income": "self supporting, own my own home",
-    "NOTES": "Patent was sent to him at Camp Kearney, California, sent by registered mail; three years taxes paid from proceeds of sale; in good physical condition and in fair financial condition; persons depended upon him: wife, child, and mother in law; document received at Pine Ridge Agency Jan 7, 1929.",
+    "NOTES": "Patent was sent to him at Camp Kearney, California, sent by registered mail; three years taxes paid from proceeds of sale; in good physical condition and in fair financial condition; persons depended upon him: wife, child, and mother in law; document received at Pine Ridge Agency Jan 7, 1929. | CROSS-ROUTING PATTERN 2026-04-28: This record is one of 5 in the pine_ridge_* directory where the original Sonnet text-extraction captured a non-Pine-Ridge value in Tribe/Reservation. Source review and BLM cross-reference confirmed all 5 are Pine Ridge allottees who were living OFF-RESERVATION when they gave their affidavit/questionnaire testimony. The Tribe field had captured residence/sworn-at location rather than the allotment's tribal origin. Pattern documented as a systematic extraction-failure mode to be aware of in the rest of the corpus. Other affected records: Frank Carlow (vol1_aff_077, sworn at Crow Agency MT), Cecilia Armstrong Ross (vol2_aff_128, sworn at Turtle Mountain ND), Clara Peck (vol2_aff_022, sworn at Osage country OK), Millie Richards (vol1_q_001, sworn at Flandreau SD; original name extraction also captured the interpreter's name, not the allottee's), Nora Parkhurst née Martinez (vol1_aff_057, sworn at Red Lake area MN). | TASK 3 CANONICAL CONSOLIDATION 2026-04-29: Tribe value 'Pine Ridge (Oglala Sioux)' collapsed to 'Pine Ridge' to maintain a single canonical string across the corpus. The original Task 1 substantive correction (BLM-confirmed Pine Ridge tribal affiliation) is preserved in this record's recovery_notes audit trail; this collapse is a string normalization only and does not alter the underlying evidentiary basis.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,45 @@
     "input_tokens": 2340,
     "output_tokens": 438
   },
-  "elapsed": 7.2
+  "elapsed": 7.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "cross_routing_correction",
+      "method": "user_source_review_with_blm_cross_reference",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Frank Carlow",
+        "Tribe/Reservation": "Crow Agency"
+      },
+      "corrected_values": {
+        "Name": "Frank Carlow",
+        "Tribe/Reservation": "Pine Ridge (Oglala Sioux)"
+      },
+      "residence_at_swearing": "Crow Agency, Montana",
+      "external_refs": {
+        "BLM_accession": "625232",
+        "BLM_class": "SER",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=625232&docClass=SER"
+      },
+      "source_page_evidence": "Affidavit sworn at Crow Agency, Montana, 3 Jan 1929. Document received at Pine Ridge Agency Jan 7, 1929 (stamp visible). Patent recorded by Superintendent at Martin, S. Dak. (Pine Ridge area). Land sold to Mr. Schulz of Martin, S. Dak. Allottee was at Camp Kearney, California in 1918 (likely WWI service).",
+      "user_confirmed": true,
+      "corpus_pattern": "One of 5 cross-routed pine_ridge_* records identified 2026-04-28 where Tribe field captured residence/sworn-at location rather than allotment origin."
+    },
+    {
+      "date": "2026-04-29",
+      "type": "task3_canonical_string_consolidation",
+      "method": "single_canonical_string_policy",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "Pine Ridge (Oglala Sioux)",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Single canonical string policy. Substantive evidentiary basis preserved in earlier recovery_notes entries."
+    }
+  ]
 }

@@ -20,10 +20,28 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Administrative cover letter dated February 18, 1929, from Pine Ridge Agency to the Commissioner of Indian Affairs regarding Circular 2464 Fee Patent Data. States that patents were issued to 682 Indians without their applications; 306 have responded to a letter requesting them to call at the office and make affidavit. Another letter to be mailed to non-respondents. Document references file numbers 5-114-2 and 312. Notes that a sample page containing data for 11 Indians and supporting papers was enclosed for approval before the complete list is prepared.",
+    "NOTES": "Administrative cover letter dated February 18, 1929, from Pine Ridge Agency to the Commissioner of Indian Affairs regarding Circular 2464 Fee Patent Data. States that patents were issued to 682 Indians without their applications; 306 have responded to a letter requesting them to call at the office and make affidavit. Another letter to be mailed to non-respondents. Document references file numbers 5-114-2 and 312. Notes that a sample page containing data for 11 Indians and supporting papers was enclosed for approval before the complete list is prepared. | TASK 5 RECLASSIFICATION 2026-05-03: This record was originally enumerated as CAT_1 (Sonnet missed allottee Name + Allotment), but it is NOT an allottee record — it is a cover letter from (unspecified Pine Ridge Agency author) (Pine Ridge Agency to Commissioner of Indian Affairs) to the Commissioner of Indian Affairs dated 1929-02-18, reporting on Circular 2464 compliance. There is no allottee Name or Allotment to recover because the document is correspondence, not an allottee case file. Document type updated from 'agency_narrative' to 'agency_correspondence'. This record is analytically valuable as compliance/response correspondence and should remain in the corpus, but should be excluded from CAT_1 vision recovery batches.",
     "Literate/Illiterate": "not stated",
-    "Document type": "agency_narrative"
+    "Document type": "agency_correspondence"
   },
   "usage": {},
-  "elapsed": 0
+  "elapsed": 0,
+  "recovery_notes": [
+    {
+      "date": "2026-05-03",
+      "type": "task5_reclassification_administrative_correspondence",
+      "method": "user_review_of_administrative_cover_letters",
+      "fields_corrected": [
+        "Document type",
+        "NOTES"
+      ],
+      "previous_doc_type": "agency_narrative",
+      "corrected_doc_type": "agency_correspondence",
+      "sender": "(unspecified Pine Ridge Agency author)",
+      "sender_title": "Pine Ridge Agency to Commissioner of Indian Affairs",
+      "letter_date": "1929-02-18",
+      "rationale": "Cover letter from agency superintendent to Commissioner of Indian Affairs. Has no allottee Name or Allotment because it is administrative correspondence, not an allottee case file. Should be excluded from CAT_1 vision recovery.",
+      "user_confirmed": true
+    }
+  ]
 }

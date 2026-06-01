@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Louisa Twiss",
-    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Porcupine, So. Dak.",
     "Allotment number": "3961",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "57 years old",
     "Occupation/Income": "draws a pension as the widow of an Indian Scout of $30.00 per month and that is all she lives on",
-    "NOTES": "mentally competent and in poor health, having heart trouble and short of wind; has one minor child; has received no aid from the Government, State or County since she was granted a patent to her land; she received all the money from the sale; document notarized November 30, 1928, in Shannon County, South Dakota",
+    "NOTES": "mentally competent and in poor health, having heart trouble and short of wind; has one minor child; has received no aid from the Government, State or County since she was granted a patent to her land; she received all the money from the sale; document notarized November 30, 1928, in Shannon County, South Dakota | ORIGINAL_TRIBE_VALUE: \"Pine Ridge (Shannon County, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2243,
     "output_tokens": 468
   },
-  "elapsed": 6.9
+  "elapsed": 6.9,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge (Shannon County, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

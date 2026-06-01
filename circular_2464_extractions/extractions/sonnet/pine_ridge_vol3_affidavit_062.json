@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Susie Green",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Merriman, Nebraska",
-    "Allotment number": "not stated",
+    "Allotment number": "5453",
     "Cancelled": "not stated",
     "Refused/Protested": "while she did not object to taking it, she would rather not have received it, as she did not want to pay taxes",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "68 years old",
     "Occupation/Income": "the only money she can earn is what little she makes by sewing; her niece furnishes her with a furnished house",
-    "NOTES": "Document No. 5453; mentally competent; health is not so good, being bothered with rheumatism, and getting up in years; she is alone in the world; her niece furnishes her with a furnished house; she considers that she was defrauded out of her land by the American State Bank; deficiency judgment secured against another 160 acres to satisfy their claim; she nor her husband never received a cent of it; she regrets ever having received her patent in fee, for had it been held in trust she would still own it; she never sold her land for any debts incurred prior to receiving her patent in fee; has never received any aid from the County, State, nor the United States Government; the Indian Agency Office sent her a letter asking for a dime to register a document to her, and she sent it; when she received it, it was the patent in fee to her 631.09 acre allotment; document also contains a separate affidavit by William Valandry (No. 5396), 74 years old, Post Office: Martin, South Dakota, who did not want his patent in fee to his allotment of 320 acres on account of not wishing to pay taxes but was told it would be necessary for him to accept it; sold to Bates & Foster of Gordon, Nebraska for $4800.00 cash in 1919; income from rent of several town houses and janitor work for the high school; has a wife and child to support; wife has a severe case of heart trouble; has rheumatism very badly; never received any help from County or United States Government",
+    "NOTES": "Document No. 5453; mentally competent; health is not so good, being bothered with rheumatism, and getting up in years; she is alone in the world; her niece furnishes her with a furnished house; she considers that she was defrauded out of her land by the American State Bank; deficiency judgment secured against another 160 acres to satisfy their claim; she nor her husband never received a cent of it; she regrets ever having received her patent in fee, for had it been held in trust she would still own it; she never sold her land for any debts incurred prior to receiving her patent in fee; has never received any aid from the County, State, nor the United States Government; the Indian Agency Office sent her a letter asking for a dime to register a document to her, and she sent it; when she received it, it was the patent in fee to her 631.09 acre allotment; document also contains a separate affidavit by William Valandry (No. 5396), 74 years old, Post Office: Martin, South Dakota, who did not want his patent in fee to his allotment of 320 acres on account of not wishing to pay taxes but was told it would be necessary for him to accept it; sold to Bates & Foster of Gordon, Nebraska for $4800.00 cash in 1919; income from rent of several town houses and janitor work for the high school; has a wife and child to support; wife has a severe case of heart trouble; has rheumatism very badly; never received any help from County or United States Government | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned. | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 5453 sourced from federal-register-app patents database (Christian's research, 2026-05-04). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number; this patch backfills the allotment. Tribe set to Oglala Lakota (Pine Ridge / Oglala). TRIBE NORMALIZATION: previous label 'Pine Ridge' normalized to 'Oglala Lakota'. | ORIGINAL_TRIBE_VALUE: \"Oglala Lakota\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,53 @@
     "input_tokens": 3076,
     "output_tokens": 881
   },
-  "elapsed": 14.1
+  "elapsed": 14.1,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    },
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Susie Green",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Pine Ridge"
+      },
+      "corrected_values": {
+        "Allotment number": "5453",
+        "Tribe/Reservation": "Oglala Lakota"
+      },
+      "name_variant_note": "",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Oglala Lakota",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

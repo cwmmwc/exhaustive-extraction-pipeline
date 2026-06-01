@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Emma Tway",
-    "Tribe/Reservation": "Pine Ridge Agency (Shannon County, South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Chardon, Nebr.",
     "Allotment number": "4838",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "37 years old",
     "Occupation/Income": "has to depend on the wages her husband can earn, working on the railroad",
-    "NOTES": "mentally competent and in fair health; has no home; has four small children depending on her for support; deponent states she thinks the land was worth about $2400.00 but had to take what she could get; document dated November 9, 1928",
+    "NOTES": "mentally competent and in fair health; has no home; has four small children depending on her for support; deponent states she thinks the land was worth about $2400.00 but had to take what she could get; document dated November 9, 1928 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency (Shannon County, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2233,
     "output_tokens": 396
   },
-  "elapsed": 6.2
+  "elapsed": 6.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency (Shannon County, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

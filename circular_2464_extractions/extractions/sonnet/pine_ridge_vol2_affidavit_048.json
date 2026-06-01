@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Walter Bullard",
-    "Tribe/Reservation": "Shannon County, South Dakota (reservation not explicitly named)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rapid City, So. Dak.",
     "Allotment number": "2594",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "48 years old",
     "Occupation/Income": "works for the Duhamel Hardware Co, Rapid City, So. Dak. for $125.00 per month",
-    "NOTES": "mentally competent and in just fair health; has a wife and three children, but two children are self supporting; all he owns is the equity in his land which he thinks is about $3000.00; has received no aid from the County, State or Government since his patent in fee was granted; affidavit sworn February 28, 1929",
+    "NOTES": "mentally competent and in just fair health; has a wife and three children, but two children are self supporting; all he owns is the equity in his land which he thinks is about $3000.00; has received no aid from the County, State or Government since his patent in fee was granted; affidavit sworn February 28, 1929 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (reservation not explicitly named)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2368,
     "output_tokens": 530
   },
-  "elapsed": 6.0
+  "elapsed": 6.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (reservation not explicitly named)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Emma Coryell",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "not stated",
     "Allotment number": "4838",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Receipt dated Jul. 1, 1918. Agreement for Warranty Deed to Frank B. Smith, signed by Earl F. Coryell and Emma Coryell, on Aug. 9, 1918, for $1100.00 cash, agreeing to furnish a good clear title, free of all encumbrance, for NE 1-37-24, recorded Aug. 26, 1918. Lots 1 & 2 & S\u00bd of NE 1-37-34 deeded to Frank B. Smith. Earl Coryell appears to be husband of Emma Coryell.",
+    "NOTES": "Receipt dated Jul. 1, 1918. Agreement for Warranty Deed to Frank B. Smith, signed by Earl F. Coryell and Emma Coryell, on Aug. 9, 1918, for $1100.00 cash, agreeing to furnish a good clear title, free of all encumbrance, for NE 1-37-24, recorded Aug. 26, 1918. Lots 1 & 2 & S½ of NE 1-37-34 deeded to Frank B. Smith. Earl Coryell appears to be husband of Emma Coryell. | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned.",
     "Literate/Illiterate": "not stated",
     "Document type": "agency_narrative"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2119,
     "output_tokens": 434
   },
-  "elapsed": 5.1
+  "elapsed": 5.1,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Jule Ecoffey",
-    "Tribe/Reservation": "Shannon County (South Dakota) \u2014 specific tribe not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rockyford, South Dakota",
     "Allotment number": "1358",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "53 years old",
     "Occupation/Income": "only income is by working on a farm for wages",
-    "NOTES": "Health is not good, has rheumatism and stomach trouble, and once a horse fell on him injuring his head and neck; has a wife and a son to support, the son being deaf, and the wife has poor health, having kidney trouble and headaches; has never received any help from the County, State or United States Government; mortgaged October 1, 1918; kept payments up until 1922; allotment was 640 acres; total land transferred to Anchor Bank was 1760 acres; deponent states that while legal, he does not consider that he received a fair price; document dated November 23, 1928; State of South Dakota, County of Shannon",
+    "NOTES": "Health is not good, has rheumatism and stomach trouble, and once a horse fell on him injuring his head and neck; has a wife and a son to support, the son being deaf, and the wife has poor health, having kidney trouble and headaches; has never received any help from the County, State or United States Government; mortgaged October 1, 1918; kept payments up until 1922; allotment was 640 acres; total land transferred to Anchor Bank was 1760 acres; deponent states that while legal, he does not consider that he received a fair price; document dated November 23, 1928; State of South Dakota, County of Shannon | ORIGINAL_TRIBE_VALUE: \"Shannon County (South Dakota) — specific tribe not stated\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2390,
     "output_tokens": 568
   },
-  "elapsed": 7.0
+  "elapsed": 7.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County (South Dakota) — specific tribe not stated",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

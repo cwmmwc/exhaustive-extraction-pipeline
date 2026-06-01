@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "William Valandry",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Martin, South Dakota",
     "Allotment number": "5396",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "74 years old",
     "Occupation/Income": "income is derived from the rent of several town houses and from janitor work that he does for the high school",
-    "NOTES": "mentally competent, has good health except that he has rheumatism very badly; has a wife and child to support; wife is bothered with a severe case of heart trouble; has never received any help from the County or the United States Government; allotment of 320 acres; document dated November 17, 1928",
+    "NOTES": "mentally competent, has good health except that he has rheumatism very badly; has a wife and child to support; wife is bothered with a severe case of heart trouble; has never received any help from the County or the United States Government; allotment of 320 acres; document dated November 17, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2320,
     "output_tokens": 429
   },
-  "elapsed": 5.7
+  "elapsed": 5.7,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Charles Cuny, Junior",
-    "Tribe/Reservation": "Shannon County, South Dakota (reservation not explicitly named)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rockyford, South Dakota",
     "Allotment number": "2909",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "38 years old",
     "Occupation/Income": "income is made up from what he makes farming on a small scale, and what he can pick up at threshing, farm work, road work, or anything he can find to do",
-    "NOTES": "Mentally competent, has good health; has a wife and four minor children, all of good health; finds it pretty close living on his income; mortgaged the place in 1920; has never received any aid from the County or the United States Government; document subscribed and sworn November 16, 1928",
+    "NOTES": "Mentally competent, has good health; has a wife and four minor children, all of good health; finds it pretty close living on his income; mortgaged the place in 1920; has never received any aid from the County or the United States Government; document subscribed and sworn November 16, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (reservation not explicitly named)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2320,
     "output_tokens": 484
   },
-  "elapsed": 5.8
+  "elapsed": 5.8,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (reservation not explicitly named)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

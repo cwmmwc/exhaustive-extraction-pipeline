@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Raymond Haskell",
-    "Tribe/Reservation": "Shawnee",
+    "Tribe/Reservation": "Citizen Potawatomie",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "1169",
     "Cancelled": "not stated",
     "Refused/Protested": "Fee patent issued prior to 1921 without application",
     "Recorded patent": "not stated",
@@ -20,10 +20,53 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Status per Shawnee Indian Agency cover letter: Report mailed to him not returned. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page035. Document reference: 5-1142. Allotment number not recorded on source list nor in RA spreadsheet.",
+    "NOTES": "Status per Shawnee Indian Agency cover letter: Report mailed to him not returned. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page035. Document reference: 5-1142. Allotment number not recorded on source list nor in RA spreadsheet. | TASK 5 SHAWNEE FINAL BACKFILL 2026-06-01 (recreated after filter-repo loss): Allotment 1168, tribe Citizen Potawatomie, sourced from federal-register-app patents database (Christian's research). Master list source page (part10 page 35) had only response-status annotations, no allotment numbers; allotments supplied from the patents database lookup. | TASK 5 SHAWNEE CORRECTION 2026-06-01: Allotment corrected from 1168 → 1169. Initial 2026-06-01 lookup had Raymond Haskell at 1168 (matching John T. Haskell), which I flagged as possible typo/same-person. Historian confirmed Raymond Haskell is allotment 1169 (a different allotment from John T. Haskell at 1168 — they are distinct people with adjacent allotment numbers, not the same person).",
     "Literate/Illiterate": "not stated",
     "Document type": "agency_narrative"
   },
   "usage": {},
-  "elapsed": 0
+  "elapsed": 0,
+  "recovery_notes": [
+    {
+      "date": "2026-06-01",
+      "type": "task5_shawnee_final_backfill_recreated",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Shawnee"
+      },
+      "corrected_values": {
+        "Allotment number": "1169",
+        "Tribe/Reservation": "Citizen Potawatomie"
+      },
+      "database_name_variant": "FLAG: same allotment (1168) supplied for John T. Haskell (row 22). Possible same-person-under-two-names (common 1928 pattern) OR typo. Historian to confirm and disambiguate.",
+      "user_confirmed": true,
+      "context": "Recreation of lost 2026-05-04 backfill_shawnee_final.py work. Original script was wiped by this morning's git filter-repo. Historian re-supplied the 18 lookups on 2026-06-01; this script is the durable record so the work cannot be lost again.",
+      "original_lookup_value_corrected": "1168",
+      "correction_context": "Initial 2026-06-01 lookup supplied 1168, matching John T. Haskell. Flagged as possible typo/same-person. Historian confirmed actual allotment is 1169: Raymond and John T. Haskell are distinct people with adjacent allotment numbers."
+    },
+    {
+      "date": "2026-06-01",
+      "type": "task5_shawnee_correction",
+      "method": "user_correction",
+      "fields_corrected": [
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Allotment number": "1168"
+      },
+      "corrected_values": {
+        "Allotment number": "1169"
+      },
+      "rationale": "Raymond Haskell allotment 1168 in initial lookup was a transcription error; correct value is 1169 (adjacent to John T. Haskell at 1168). Two distinct people with sequential allotments — not same-person-under-two-names.",
+      "user_confirmed": true
+    }
+  ]
 }

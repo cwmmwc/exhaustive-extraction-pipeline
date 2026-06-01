@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "John Pourier",
-    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Porcupine, So. Dak.",
     "Allotment number": "717",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "55 years old",
     "Occupation/Income": "farms what he can, raises a few hogs, and his boys help him",
-    "NOTES": "Has a wife and six minor children depending on him for support; in poor health with some kind of liver trouble; has not received any aid from the Government, State or County since the patent was issued; north half of land lost to Newcastle Land and Live Stock Co around 1918 or 1919 when cattle sale proceeds were insufficient to cover debt; south half still owned but threatened with tax sale; sworn October 31, 1928",
+    "NOTES": "Has a wife and six minor children depending on him for support; in poor health with some kind of liver trouble; has not received any aid from the Government, State or County since the patent was issued; north half of land lost to Newcastle Land and Live Stock Co around 1918 or 1919 when cattle sale proceeds were insufficient to cover debt; south half still owned but threatened with tax sale; sworn October 31, 1928 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge (Shannon County, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2325,
     "output_tokens": 530
   },
-  "elapsed": 7.5
+  "elapsed": 7.5,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge (Shannon County, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

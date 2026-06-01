@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Pearl Twiss, nee Janis",
-    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Brennan, South Dakota",
     "Allotment number": "714",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "51 years old",
     "Occupation/Income": "does domestic work for her living; and that is her only source of income",
-    "NOTES": "Mentally competent; good health; separated from her husband; has one minor child to support, the father not helping toward the support of the child; child has good health; considers she received a good price for her land; has never received any help from the County, State nor the United States Government; document signed before notary public December 26, 1928",
+    "NOTES": "Mentally competent; good health; separated from her husband; has one minor child to support, the father not helping toward the support of the child; child has good health; considers she received a good price for her land; has never received any help from the County, State nor the United States Government; document signed before notary public December 26, 1928 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge (Shannon County, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2273,
     "output_tokens": 458
   },
-  "elapsed": 4.9
+  "elapsed": 4.9,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge (Shannon County, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

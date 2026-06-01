@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Solon Cries For Rib",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Ponca",
     "Post Office Address": "Ponca City, Okla.",
-    "Allotment number": "not stated",
+    "Allotment number": "393",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Wife and eight minor children dependent upon allottee for support. This allottee, if statements are true, has been defrauded out of his land and case should be investigated. He was thrown in jail at Newkirk, Oklahoma, after signing deed and was not released until he paid his fine. He stated that no money was received by him for the land, but that his wife was paid $100 for signing the deed. Document notarized November 22nd (year not fully legible); commission expires Aug. 3rd, 1931. County of Kay, State of Oklahoma.",
+    "NOTES": "Wife and eight minor children dependent upon allottee for support. This allottee, if statements are true, has been defrauded out of his land and case should be investigated. He was thrown in jail at Newkirk, Oklahoma, after signing deed and was not released until he paid his fine. He stated that no money was received by him for the land, but that his wife was paid $100 for signing the deed. Document notarized November 22nd (year not fully legible); commission expires Aug. 3rd, 1931. County of Kay, State of Oklahoma. | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 393, tribe Ponca, sourced from federal-register-app patents database (Christian's research). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,30 @@
     "input_tokens": 2224,
     "output_tokens": 357
   },
-  "elapsed": 6.4
+  "elapsed": 6.4,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Solon Cries For Rib",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Allotment number": "393",
+        "Tribe/Reservation": "Ponca"
+      },
+      "extra_note": "",
+      "cross_reference": "",
+      "user_confirmed": true
+    }
+  ]
 }

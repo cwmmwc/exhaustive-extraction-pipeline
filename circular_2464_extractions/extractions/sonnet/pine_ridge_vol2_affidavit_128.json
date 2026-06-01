@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Cecilia Armstrong Ross",
-    "Tribe/Reservation": "Turtle Mountain Indian Reservation",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Belcourt, Rolette County, North Dakota",
     "Allotment number": "2107",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "forty-five years of age",
     "Occupation/Income": "the only source of income is her husband's salary as a Government employee",
-    "NOTES": "Mortgage given in August 1927 for $265.00 as security for an old debt of her husband, eleven years old at the time the mortgage was given; mortgage foreclosed and period of redemption expires August 1929; land also lost for nonpayment of taxes; affiant states she received absolutely nothing from her land, no rents or profits; mentally competent and physical condition and health is good; has no land and no home except living with her husband who is a Government employee at the Turtle Mountain Indian Reservation at Belcourt, North Dakota; mother of four children all residing at home, ages twenty-one, eighteen, fifteen, and thirteen years; the child twenty-one years of age is a girl and is at the present time crippled and in bed; affiant states she was not actually defrauded but land was given to her contrary to her will; document signed December 6, 1928; notary commission expires November 6, 1932; attorney John A. Stormon, Rolla, N.D.; State of North Dakota, County of Rolette | Allotment number 2107 from RA spreadsheet; source pages 14-15 have no visible No. marker. Page 13 header (No. 2100) belongs to Peter Condelario, not this allottee.",
+    "NOTES": "Mortgage given in August 1927 for $265.00 as security for an old debt of her husband, eleven years old at the time the mortgage was given; mortgage foreclosed and period of redemption expires August 1929; land also lost for nonpayment of taxes; affiant states she received absolutely nothing from her land, no rents or profits; mentally competent and physical condition and health is good; has no land and no home except living with her husband who is a Government employee at the Turtle Mountain Indian Reservation at Belcourt, North Dakota; mother of four children all residing at home, ages twenty-one, eighteen, fifteen, and thirteen years; the child twenty-one years of age is a girl and is at the present time crippled and in bed; affiant states she was not actually defrauded but land was given to her contrary to her will; document signed December 6, 1928; notary commission expires November 6, 1932; attorney John A. Stormon, Rolla, N.D.; State of North Dakota, County of Rolette | Allotment number 2107 from RA spreadsheet; source pages 14-15 have no visible No. marker. Page 13 header (No. 2100) belongs to Peter Condelario, not this allottee. | CROSS-ROUTING PATTERN 2026-04-28: This record is one of 5 in the pine_ridge_* directory where the original Sonnet text-extraction captured a non-Pine-Ridge value in Tribe/Reservation. Source review and BLM cross-reference confirmed all 5 are Pine Ridge allottees who were living OFF-RESERVATION when they gave their affidavit/questionnaire testimony. The Tribe field had captured residence/sworn-at location rather than the allotment's tribal origin. Pattern documented as a systematic extraction-failure mode to be aware of in the rest of the corpus. Other affected records: Frank Carlow (vol1_aff_077, sworn at Crow Agency MT), Cecilia Armstrong Ross (vol2_aff_128, sworn at Turtle Mountain ND), Clara Peck (vol2_aff_022, sworn at Osage country OK), Millie Richards (vol1_q_001, sworn at Flandreau SD; original name extraction also captured the interpreter's name, not the allottee's), Nora Parkhurst née Martinez (vol1_aff_057, sworn at Red Lake area MN). | TASK 3 CANONICAL CONSOLIDATION 2026-04-29: Tribe value 'Pine Ridge (Oglala Sioux)' collapsed to 'Pine Ridge' to maintain a single canonical string across the corpus. The original Task 1 substantive correction (BLM-confirmed Pine Ridge tribal affiliation) is preserved in this record's recovery_notes audit trail; this collapse is a string normalization only and does not alter the underlying evidentiary basis.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,45 @@
     "input_tokens": 3124,
     "output_tokens": 683
   },
-  "elapsed": 19.3
+  "elapsed": 19.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "cross_routing_correction",
+      "method": "user_source_review_with_blm_cross_reference",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Cecilia Armstrong Ross",
+        "Tribe/Reservation": "Turtle Mountain Indian Reservation"
+      },
+      "corrected_values": {
+        "Name": "Cecilia Armstrong Ross",
+        "Tribe/Reservation": "Pine Ridge (Oglala Sioux)"
+      },
+      "residence_at_swearing": "Belcourt, Rolette County, North Dakota (Turtle Mountain)",
+      "external_refs": {
+        "BLM_accession": "(confirmed via user BLM lookup; accession not captured)",
+        "BLM_class": "SER",
+        "BLM_url": null
+      },
+      "source_page_evidence": "User confirmed Pine Ridge via BLM patent search. Allottee residing at Belcourt (Turtle Mountain) when affidavit given.",
+      "user_confirmed": true,
+      "corpus_pattern": "One of 5 cross-routed pine_ridge_* records identified 2026-04-28 where Tribe field captured residence/sworn-at location rather than allotment origin."
+    },
+    {
+      "date": "2026-04-29",
+      "type": "task3_canonical_string_consolidation",
+      "method": "single_canonical_string_policy",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "Pine Ridge (Oglala Sioux)",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Single canonical string policy. Substantive evidentiary basis preserved in earlier recovery_notes entries."
+    }
+  ]
 }

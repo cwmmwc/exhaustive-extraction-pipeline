@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Albert Palmier",
-    "Tribe/Reservation": "Shannon County, South Dakota",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Scenic, South Dakota",
     "Allotment number": "2707",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "43 years old",
     "Occupation/Income": "his only source of income is the products of his little farm, and a very small revenue from doing road work, which generally goes on taxes",
-    "NOTES": "has a wife and two minor children to support, none of whom are very healthy, the wife suffering from gall stones, the general health of the children not so good; has never received any aid from the County or United States Government; had a 320 acre allotment, sold 263 acres, retains 57 acres with his house, free of debt excepting taxes; health is fair, eyes are very poor and have been in this condition for 20 years; mentally competent; document dated November 13, 1928",
+    "NOTES": "has a wife and two minor children to support, none of whom are very healthy, the wife suffering from gall stones, the general health of the children not so good; has never received any aid from the County or United States Government; had a 320 acre allotment, sold 263 acres, retains 57 acres with his house, free of debt excepting taxes; health is fair, eyes are very poor and have been in this condition for 20 years; mentally competent; document dated November 13, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2309,
     "output_tokens": 512
   },
-  "elapsed": 7.0
+  "elapsed": 7.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Helena Kills Enemy at Night",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Brennan, South Dakota",
     "Allotment number": "8052",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "65 years old",
     "Occupation/Income": "only source of income is a little lease money her husband receives off of his land",
-    "NOTES": "mentally incompetent; poor health and is blind; husband is 52 years old and has very poor health; they have 2 grandchildren to support; they find it hard to get along; has never received any help from the County or State governments; the only help received from the United States Government since the fee was issued is the monthly rations she started to receive about one year ago; allotment was 320 acres; document sworn December 27, 1928",
+    "NOTES": "mentally incompetent; poor health and is blind; husband is 52 years old and has very poor health; they have 2 grandchildren to support; they find it hard to get along; has never received any help from the County or State governments; the only help received from the United States Government since the fee was issued is the monthly rations she started to receive about one year ago; allotment was 320 acres; document sworn December 27, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2362,
     "output_tokens": 522
   },
-  "elapsed": 7.0
+  "elapsed": 7.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

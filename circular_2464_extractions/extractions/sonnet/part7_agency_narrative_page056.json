@@ -8,7 +8,7 @@
     "Name": "Eugene Sturdevant",
     "Tribe/Reservation": "not stated",
     "Post Office Address": "Carter, South Dakota",
-    "Allotment number": "not stated",
+    "Allotment number": "(not applicable — non-allottee record)",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,10 +20,34 @@
     "Gender": "Male",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Letter dated February 27, 1918, addressed to Eugene Sturdevant from a member of the House of Representatives (Sixty-Fifth Congress, Committee on Printing). Letter references a query about whether Sturdevant's wife has to accept a patent in fee if tendered under direction of the Secretary of the Interior; states it is the writer's understanding the Secretary has the power to issue the patent any time without regard to whether an application is made. Also references the death of Sturdevant's little son at the school at Mission, with condolences expressed. Letter written on U.S. House of Representatives letterhead; committee members listed: Henry A. Barnhart (Ind., Chairman), Harry L. Gandy (S. Dak.), Edgar R. Kiess (Pa.).",
+    "NOTES": "Letter dated February 27, 1918, addressed to Eugene Sturdevant from a member of the House of Representatives (Sixty-Fifth Congress, Committee on Printing). Letter references a query about whether Sturdevant's wife has to accept a patent in fee if tendered under direction of the Secretary of the Interior; states it is the writer's understanding the Secretary has the power to issue the patent any time without regard to whether an application is made. Also references the death of Sturdevant's little son at the school at Mission, with condolences expressed. Letter written on U.S. House of Representatives letterhead; committee members listed: Henry A. Barnhart (Ind., Chairman), Harry L. Gandy (S. Dak.), Edgar R. Kiess (Pa.). | TASK 5 NON-ALLOTTEE RECLASSIFICATION 2026-05-04: Eugene Sturdevant is white and holds no allotment. (Sturdevant is the married name of Lucy DuBray Sturdevant, a separate allottee at part7_agency_narrative_025b / part7_questionnaire_020, allotment 2341.)  This record is reclassified as a non-allottee record (Document type = 'non_allottee_record'). The named individuals are not allottees; the document is retained in the corpus for its evidentiary value but does not represent a forced-fee allotment case.",
     "Literate/Illiterate": "not stated",
-    "Document type": "agency_narrative"
+    "Document type": "non_allottee_record"
   },
   "usage": {},
-  "elapsed": 0
+  "elapsed": 0,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_non_allottee_reclassification",
+      "method": "user_confirmed_non_allottee",
+      "fields_corrected": [
+        "Allotment number",
+        "Document type",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Eugene Sturdevant",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated",
+        "Document type": "agency_narrative"
+      },
+      "corrected_values": {
+        "Allotment number": "(not applicable — non-allottee record)",
+        "Document type": "non_allottee_record"
+      },
+      "role_note": "Eugene Sturdevant is white and holds no allotment. (Sturdevant is the married name of Lucy DuBray Sturdevant, a separate allottee at part7_agency_narrative_025b / part7_questionnaire_020, allotment 2341.) ",
+      "user_confirmed": true
+    }
+  ]
 }

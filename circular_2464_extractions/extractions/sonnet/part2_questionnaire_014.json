@@ -5,10 +5,10 @@
   "source_pages": "39-41",
   "model": "sonnet",
   "extraction": {
-    "Name": "not stated",
+    "Name": "Philomena Beauvais Leighton",
     "Tribe/Reservation": "Rosebud Agency",
     "Post Office Address": "not stated",
-    "Allotment number": "455",
+    "Allotment number": "488",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "43",
     "Occupation/Income": "not stated",
-    "NOTES": "Application for a patent in fee under Act of May 8, 1906, 34 Stat., 182; degree of blood: 1/4 (appears to read 'quarter'); application covers 160 acres of allotment No. 455; value of land covered by application stated as $250,000 (likely $2,500.00); document is heavily damaged/obscured with much text illegible; form number references 6-9543 and 6-2513 visible",
+    "NOTES": "Application for a patent in fee under Act of May 8, 1906, 34 Stat., 182; degree of blood: 1/4 (appears to read 'quarter'); application covers 160 acres of allotment No. 455; value of land covered by application stated as $250,000 (likely $2,500.00); document is heavily damaged/obscured with much text illegible; form number references 6-9543 and 6-2513 visible | IDENTITY RECOVERY 2026-04-28: Sonnet text-extraction substantively failed on this record. Vision recovery (Sonnet vision + Qwen2.5-VL-72B AGREE) and user source-page review (all 3 pages) confirmed: Name = Philomena Beauvais Leighton; Allotment = 488 (Sonnet text misread as 455); land value = $2,500 (Sonnet text misread as $250,000 from cents-fraction notation '$25 00.00/100'). Document type mismatch: this is a Form 5-105 'Application for a Patent in Fee' (Act of May 8, 1906, 34 Stat. 182), NOT a Circular 2464 questionnaire response. Splitter routed it into questionnaires/ and manifest treats it as a questionnaire, but structurally it is Philomena's prospective application — different category. NEEDS_REVISIT: form pages 1-3 contain rich answers to 26 questions (age 34, 1/2 blood, married to George Leighton, Day school 8 yrs + Haskell 4 yrs, horses and cattle, gardening + sewing self-support, children William/Alice/Leona/Levi/Emma Louise Leighton with allotment details, husband George Leighton with 160a allotment) all in handwriting. Christian to return for full transcription pass. Other fields left as 'not stated' pending that pass.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,32 @@
     "input_tokens": 2826,
     "output_tokens": 329
   },
-  "elapsed": 6.0
+  "elapsed": 6.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "identity_recovery_with_revisit_flag",
+      "method": "vision_recovery_with_user_confirmation",
+      "fields_recovered": [
+        "Name",
+        "Allotment number"
+      ],
+      "fields_corrected": [
+        "NOTES"
+      ],
+      "source_images": [
+        "vision_recovery_sample/images/part2_questionnaire_014_page-1.png",
+        "vision_recovery_sample/images/part2_questionnaire_014_page-2.png",
+        "vision_recovery_sample/images/part2_questionnaire_014_page-3.png"
+      ],
+      "vision_models_agreed": [
+        "sonnet-vision",
+        "qwen2.5-vl-72b"
+      ],
+      "vision_recovery_report": "vision_recovery_sample/RECOVERY_REPORT.md",
+      "user_confirmed": true,
+      "document_type_mismatch": "Form 5-105 Application for Patent in Fee, NOT a Circular 2464 questionnaire response. Splitter and manifest treat as questionnaire.",
+      "needs_revisit": "Form pages 1-3 contain rich handwritten answers to 26 questions (family, education, property, occupation, family allotments). Other 'not stated' fields await full transcription pass by Christian."
+    }
+  ]
 }

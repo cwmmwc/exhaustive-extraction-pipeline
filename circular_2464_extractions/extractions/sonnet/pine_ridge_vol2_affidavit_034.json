@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Mary Ione Valandry Reynolds",
-    "Tribe/Reservation": "Pine Ridge Reservation",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Wanamaker, S.D.",
     "Allotment number": "24-61",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "33 years old",
     "Occupation/Income": "all of her support comes from the land; she is living on the land and has farmed about 80 acres",
-    "NOTES": "mentally competent; first mortgaged the land for $500.00, had the mortgage renewed and now there is close to $2200.00 against the land with taxes and mortgage; has not received any aid from the Government, State, or County since the patent was granted; document subscribed and sworn before notary public on the 20th day of [month unclear], 1929; patent received at Vetal, S.D.",
+    "NOTES": "mentally competent; first mortgaged the land for $500.00, had the mortgage renewed and now there is close to $2200.00 against the land with taxes and mortgage; has not received any aid from the Government, State, or County since the patent was granted; document subscribed and sworn before notary public on the 20th day of [month unclear], 1929; patent received at Vetal, S.D. | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Reservation\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2295,
     "output_tokens": 451
   },
-  "elapsed": 6.7
+  "elapsed": 6.7,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Reservation",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

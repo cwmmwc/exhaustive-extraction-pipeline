@@ -4,51 +4,70 @@
   "source_pdf": "312 Affidavits by Indians who accepted land patents under protest 1928 [1 of 3].pdf",
   "source_pages": "27-28",
   "model": "sonnet",
-  "extraction": [
-    {
-      "Name": "Sarah Thompson",
-      "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
-      "Post Office Address": "Batesland, South Dakota",
-      "Allotment number": "not stated",
-      "Cancelled": "not stated",
-      "Refused/Protested": "in 1913, she applied for her patent to her 640 acre allotment, but she was refused, and, on April 13, 1918, the forced patent was issued, being sent to her by mail",
-      "Recorded patent": "not stated",
-      "Sold/Mortgaged": "she has never mortgaged nor sold any portion of it",
-      "Buyer": "not stated",
-      "Tax burden forced sale/Mortgage": "she has found it hard to pay the taxes ever since",
-      "Trust Patent Date": "not stated",
-      "Fee Patent Date": "April 13, 1918",
-      "Gender": "Female",
-      "Age": "45 years old",
-      "Occupation/Income": "her husband farms her land for their livlihood; and that this is their only income",
-      "NOTES": "mentally competent; health is only fair; husband has fair health and supports her and her nine children, all of whom have good health; has kept taxes paid up and is making it her home; has never received any aid from the County, State nor the United States Government; document No. 312; sworn December 12, 1928",
-      "Literate/Illiterate": "not stated",
-      "Document type": "affidavit"
-    },
-    {
-      "Name": "Hermos Merrivall",
-      "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
-      "Post Office Address": "Pine Ridge, So. Dak.",
-      "Allotment number": "not stated",
-      "Cancelled": "not stated",
-      "Refused/Protested": "when he received the receipt for his patent that he did not want it, but that he receipted for it and took it because he was told in the Agency Office that he would have to pay taxes on the land or lose it if he didnt take it",
-      "Recorded patent": "he had it recorded at Hot Springs, So. Dak.",
-      "Sold/Mortgaged": "he has not deeded or mortgaged any part of his land... it was sold for taxes and he redeemed it and that later it was sold again and he did not redeem it",
-      "Buyer": "not stated",
-      "Tax burden forced sale/Mortgage": "it was sold for taxes and he redeemed it and that later it was sold again and he did not redeem it",
-      "Trust Patent Date": "not stated",
-      "Fee Patent Date": "not stated",
-      "Gender": "Male",
-      "Age": "32 years old",
-      "Occupation/Income": "works as much as he can, farming on his fathers allotment for a living",
-      "NOTES": "mentally competent and in fair health; broke all the time and has a hard time getting along; mother, wife and two children are dependent on him for support; has not received any aid from the Government, County or State since his patent was issued; document No. 315; sworn November 2, 1928",
-      "Literate/Illiterate": "not stated",
-      "Document type": "affidavit"
-    }
-  ],
+  "extraction": {
+    "Name": "Sarah Thompson",
+    "Tribe/Reservation": "Pine Ridge",
+    "Post Office Address": "Batesland, South Dakota",
+    "Allotment number": "312",
+    "Cancelled": "not stated",
+    "Refused/Protested": "in 1913, she applied for her patent to her 640 acre allotment, but she was refused, and, on April 13, 1918, the forced patent was issued, being sent to her by mail",
+    "Recorded patent": "not stated",
+    "Sold/Mortgaged": "she has never mortgaged nor sold any portion of it",
+    "Buyer": "not stated",
+    "Tax burden forced sale/Mortgage": "she has found it hard to pay the taxes ever since",
+    "Trust Patent Date": "not stated",
+    "Fee Patent Date": "April 13, 1918",
+    "Gender": "Female",
+    "Age": "45 years old",
+    "Occupation/Income": "her husband farms her land for their livlihood; and that this is their only income",
+    "NOTES": "mentally competent; health is only fair; husband has fair health and supports her and her nine children, all of whom have good health; has kept taxes paid up and is making it her home; has never received any aid from the County, State nor the United States Government; document No. 312; sworn December 12, 1928 | TASK 5 STRUCTURAL CORRECTION 2026-04-29: This record's 'extraction' field was originally a 2-item list (Sarah Thompson + Hermos Merrivall). Source PDF render confirmed the page contains ONLY Sarah Thompson's affidavit — the Hermos Merrivall data was leaked/duplicated content from elsewhere during Sonnet text-extraction. Hermos Merrivall's canonical record exists separately at pine_ridge_vol1_affidavit_122.json. This patch: (1) flattens extraction to dict (single allottee), (2) sets Allotment number = 312 (BLM accession 625165 confirms), (3) drops the leaked Item 1 data. | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
+    "Literate/Illiterate": "not stated",
+    "Document type": "affidavit"
+  },
   "usage": {
     "input_tokens": 2589,
     "output_tokens": 831
   },
-  "elapsed": 9.5
+  "elapsed": 9.5,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task5_structural_fix_list_to_dict_with_blm_confirmation",
+      "method": "user_source_pdf_render_with_blm_cross_reference",
+      "fields_corrected": [
+        "extraction (structural)",
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_structure": "list[2] containing Sarah Thompson + Hermos Merrivall",
+      "corrected_structure": "dict (Sarah Thompson only)",
+      "previous_allotment": "not stated",
+      "corrected_allotment": "312",
+      "external_refs": {
+        "BLM_accession": "625165",
+        "BLM_doc_type": "Serial Patent",
+        "BLM_state": "South Dakota",
+        "BLM_tribe": "Pine Ridge Sioux",
+        "BLM_issue_date": "1918-04-13",
+        "BLM_total_acres": "640.00"
+      },
+      "dropped_data": {
+        "name": "Hermos Merrivall",
+        "rationale": "Item 1 of the original list was Hermos Merrivall; not present on source PDF (single-page Sarah Thompson affidavit confirmed by user render). Hermos's canonical record is preserved at pine_ridge_vol1_affidavit_122.json."
+      },
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

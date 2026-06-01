@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Mrs. Virgie Hudspeth, formerly Virgie Goings",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rapid City, South Dakota",
     "Allotment number": "5727",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "37 years of age",
     "Occupation/Income": "works when she can get employment by the day",
-    "NOTES": "She is a widow; mentally competent; in just fair health; had to leave the Government Service on account of ill health; has no land at the present time, no home, and lives with some relatives at the U.S. Indian School at Rapid City, South Dakota; received a payment of $10.00 in the fall of 1928 and no further aid from Government, State or County since her patent in fee was issued; sold land two or three years after getting the patent, does not know exact date; states she was not defrauded of her land but sold it very cheap; received patent by calling at the Agent's Office after hearing patents were ready for delivery",
+    "NOTES": "She is a widow; mentally competent; in just fair health; had to leave the Government Service on account of ill health; has no land at the present time, no home, and lives with some relatives at the U.S. Indian School at Rapid City, South Dakota; received a payment of $10.00 in the fall of 1928 and no further aid from Government, State or County since her patent in fee was issued; sold land two or three years after getting the patent, does not know exact date; states she was not defrauded of her land but sold it very cheap; received patent by calling at the Agent's Office after hearing patents were ready for delivery | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2474,
     "output_tokens": 424
   },
-  "elapsed": 7.3
+  "elapsed": 7.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

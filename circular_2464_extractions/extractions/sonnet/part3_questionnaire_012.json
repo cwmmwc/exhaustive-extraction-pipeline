@@ -5,10 +5,10 @@
   "source_pages": "32-33",
   "model": "sonnet",
   "extraction": {
-    "Name": "not stated",
+    "Name": "Alphonse Charbonneau",
     "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "1466",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Document is heavily damaged/illegible; partial figures visible including what appear to be monetary amounts (7600, 100); notary public commission expires 7/3-9; document signed before notary in State of Oklahoma, County of Oka[?], 1929; allottee signed document in notary's presence",
+    "NOTES": "Document is heavily damaged/illegible; partial figures visible including what appear to be monetary amounts (7600, 100); notary public commission expires 7/3-9; document signed before notary in State of Oklahoma, County of Oka[?], 1929; allottee signed document in notary's presence | TASK 5 CAT_1 PATCH 2026-05-04: Identified via dual-model vision recovery (Sonnet vision + Qwen vision via HPC) with cross-reference confirmation. Sonnet vision: 'Alphonse Charbonneau' / 1466 (correct). Qwen vision page 1: 'Alphonse Chabonneau' / 1466 (mis-spelled name; correct allotment). Qwen vision page 2: 'Alphonse M Charbonneau' / 1466 (correct on page 2). CROSS-REFERENCE: part4_questionnaire_012 (Alphonse Charbonneau, allotment 1466, Rosebud Sioux — full content recovery via Sonnet vision on 2026-05-02 with user source-page verification of substantive details). This part 3 record is a separate appearance of Alphonse Charbonneau in the corpus.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -180,5 +180,31 @@
     "correspondence": [],
     "legislative_actions": [],
     "tables": []
-  }
+  },
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat1_dual_model_with_corpus_cross_reference",
+      "method": "sonnet_vision_plus_qwen_vision_plus_corpus_cross_reference",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "not stated",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "corrected_values": {
+        "Name": "Alphonse Charbonneau",
+        "Allotment number": "1466",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "models_summary": "Sonnet vision: 'Alphonse Charbonneau' / 1466 (correct). Qwen vision page 1: 'Alphonse Chabonneau' / 1466 (mis-spelled name; correct allotment). Qwen vision page 2: 'Alphonse M Charbonneau' / 1466 (correct on page 2).",
+      "cross_reference": "part4_questionnaire_012 (Alphonse Charbonneau, allotment 1466, Rosebud Sioux — full content recovery via Sonnet vision on 2026-05-02 with user source-page verification of substantive details). This part 3 record is a separate appearance of Alphonse Charbonneau in the corpus.",
+      "user_confirmed": true
+    }
+  ]
 }

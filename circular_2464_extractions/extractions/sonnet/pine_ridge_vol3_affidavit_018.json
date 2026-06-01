@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Frank Rooks",
-    "Tribe/Reservation": "Washabaugh County, South Dakota (Sioux)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Belvidere, S.D.",
     "Allotment number": "4097",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "56 years old",
     "Occupation/Income": "he farm a little on this land and milks four cows and sells the cream. He raised potatoes and some other crops and sells what he can spare",
-    "NOTES": "mentally competent, in good health; wife is not of the best health; has two children to care for; has received no aid from the Government, State or County since he was granted a patent in fee for his land; patent came through the mail in a Registered letter; document sworn November 26, 1928",
+    "NOTES": "mentally competent, in good health; wife is not of the best health; has two children to care for; has received no aid from the Government, State or County since he was granted a patent in fee for his land; patent came through the mail in a Registered letter; document sworn November 26, 1928 | ORIGINAL_TRIBE_VALUE: \"Washabaugh County, South Dakota (Sioux)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2297,
     "output_tokens": 426
   },
-  "elapsed": 6.2
+  "elapsed": 6.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Washabaugh County, South Dakota (Sioux)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

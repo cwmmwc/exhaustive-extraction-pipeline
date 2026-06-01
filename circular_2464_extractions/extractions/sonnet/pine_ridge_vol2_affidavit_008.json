@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "William Randall, Sr.",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Hisle, South Dakota",
     "Allotment number": "2037",
     "Cancelled": "not stated",
@@ -19,8 +19,8 @@
     "Fee Patent Date": "not stated",
     "Gender": "Male",
     "Age": "60 years old",
-    "Occupation/Income": "he farms a little, and does church work for the Holy Rosary Mission\u2014and these two small sources of income is all he has",
-    "NOTES": "mentally incompetent, has good health; has a wife who is in good health; has three children to support, one of whom is sick all the time, one side being paralyzed; has never received any help from the County, State or United States Government; document number 2037; sworn November 23, 1928",
+    "Occupation/Income": "he farms a little, and does church work for the Holy Rosary Mission—and these two small sources of income is all he has",
+    "NOTES": "mentally incompetent, has good health; has a wife who is in good health; has three children to support, one of whom is sick all the time, one side being paralyzed; has never received any help from the County, State or United States Government; document number 2037; sworn November 23, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2270,
     "output_tokens": 509
   },
-  "elapsed": 6.2
+  "elapsed": 6.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

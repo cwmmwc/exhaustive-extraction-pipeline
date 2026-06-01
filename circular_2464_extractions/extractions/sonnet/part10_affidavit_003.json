@@ -5,10 +5,10 @@
   "source_pages": "39",
   "model": "sonnet",
   "extraction": {
-    "Name": "not stated",
-    "Tribe/Reservation": "not stated",
+    "Name": "Belle Binia Bruno",
+    "Tribe/Reservation": "Citizen Potawatomie",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "110",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Document is largely illegible; subscribed and sworn before notary on the 2nd day of [month unclear] 1939; signed by allottee; reference to '24 B' may indicate allotment or file number",
+    "NOTES": "Document is largely illegible; subscribed and sworn before notary on the 2nd day of [month unclear] 1939; signed by allottee; reference to '24 B' may indicate allotment or file number | TASK 5 CAT_1 SONNET-ONLY ARBITRATION 2026-05-04: User source-page review with Sonnet vision recovery. NAME: Belle Bruno (first and last names legible; middle name illegible — could be Binia, Bridie, Birdie, or other. Sonnet vision read 'Birdie'; Shawnee master list row 3 has 'Bino'). Middle name left out of corpus Name field rather than commit to an uncertain reading. ALLOTMENT: not visible on source page; remains 'not stated'. TRIBE: Shawnee (per Shawnee master list row 3 cross-reference, part10_shawnee_03 = 'Belle Bino Bruno'). This affidavit is part of her detail submission for the Shawnee master list entry. | TASK 5 CORRECTION 2026-05-04: Prior patch had incorrect tribe (Shawnee) and missing allotment/middle name. User verified the correct values: Name='Belle Binia Bruno', Allotment=110, Tribe='Citizen Potawatomie'. The prior cross-reference to Shawnee master list row 3 (Belle Bino Bruno) was a name-similarity false positive — Belle Binia Bruno is Citizen Potawatomie, not Shawnee.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -86,5 +86,60 @@
     "correspondence": [],
     "legislative_actions": [],
     "tables": []
-  }
+  },
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat1_sonnet_only_arbitration",
+      "method": "user_source_page_review_with_sonnet_vision",
+      "fields_corrected": [
+        "Name",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "not stated",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Name": "Belle Bruno",
+        "Allotment number": "not stated (not visible on source)",
+        "Tribe/Reservation": "Shawnee"
+      },
+      "sonnet_vision_guess": {
+        "name": "Belle Birdie Bruno",
+        "allotment": "unknown"
+      },
+      "user_arbitration": {
+        "name": "Belle Bruno (middle name illegible — could be Binia, Bridie, Birdie)",
+        "allotment": "not visible on source"
+      },
+      "shawnee_master_list_cross_reference": "part10_shawnee_03 (Belle Bino Bruno)",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat1_correction_user_verified",
+      "method": "user_independent_verification",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Belle Bruno",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Shawnee"
+      },
+      "corrected_values": {
+        "Name": "Belle Binia Bruno",
+        "Allotment number": "110",
+        "Tribe/Reservation": "Citizen Potawatomie"
+      },
+      "rationale": "Prior patch made incorrect tribe inference based on Shawnee master list name similarity. User verified the correct tribe is Citizen Potawatomie, allotment is 110, middle name is Binia.",
+      "user_confirmed": true
+    }
+  ]
 }

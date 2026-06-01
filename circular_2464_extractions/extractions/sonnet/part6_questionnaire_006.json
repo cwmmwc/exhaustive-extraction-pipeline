@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "William Bridgeman",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "1070",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "not stated",
     "Occupation/Income": "Farming and working at odd jobs.",
-    "NOTES": "Just my wife and I depend on him for support; not in good health; it was agreed by the purchaser that he was to get the fence on the east and south side of the land but he did not go for it; subscribed and sworn before Jas. W. Cross, Notary Public, commission expires 4-28-32, on June 6, 1929",
+    "NOTES": "Just my wife and I depend on him for support; not in good health; it was agreed by the purchaser that he was to get the fence on the east and south side of the land but he did not go for it; subscribed and sworn before Jas. W. Cross, Notary Public, commission expires 4-28-32, on June 6, 1929 | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 1070, tribe Rosebud Sioux, sourced from federal-register-app patents database (Christian's research). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,30 @@
     "input_tokens": 2042,
     "output_tokens": 307
   },
-  "elapsed": 4.2
+  "elapsed": 4.2,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "William Bridgeman",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Allotment number": "1070",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "extra_note": "",
+      "cross_reference": "",
+      "user_confirmed": true
+    }
+  ]
 }

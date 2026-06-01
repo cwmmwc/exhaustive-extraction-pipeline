@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Louis Richard",
-    "Tribe/Reservation": "Shannon County (South Dakota)",
+    "Tribe/Reservation": "Oglala Lakota",
     "Post Office Address": "Tuthill, So. Dak.",
-    "Allotment number": "not stated",
+    "Allotment number": "4743",
     "Cancelled": "not stated",
     "Refused/Protested": "did not want his patent in fee and refused to take it for some time, but that he was told by the Farmer and the Superintendent that if he did not take the patent and pay the taxes that the land would be sold to pay them",
     "Recorded patent": "had the patent recorded in Martin, So. Dak. in 1921",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "31 years old",
     "Occupation/Income": "rents his land for 1/3 of the crop, which was $42.00 last year, does farm work and milks his cows for a living",
-    "NOTES": "mentally competent and in good health; has a wife and two children, one of the children is in poor health; has equity in his land, ten head of horses and 29 head of cattle and owes $200.00 on them; is keeping up the interest and taxes on the Federal loan; document reference ITO o 474; sworn November 14, 1928",
+    "NOTES": "mentally competent and in good health; has a wife and two children, one of the children is in poor health; has equity in his land, ten head of horses and 29 head of cattle and owes $200.00 on them; is keeping up the interest and taxes on the Federal loan; document reference ITO o 474; sworn November 14, 1928 | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 4743 sourced from federal-register-app patents database. TRIBE CORRECTION: corpus label was 'Shannon County (South Dakota)' — a county, not a tribe. Shannon County contains the Pine Ridge Reservation. Louis Richard is Oglala Lakota.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -29,5 +29,28 @@
     "output_tokens": 454
   },
   "elapsed": 5.5,
-  "retry_count": 1
+  "retry_count": 1,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "tribe_correction_note": "Corpus label 'Shannon County (South Dakota)' is a county, not a tribe. Corrected to Oglala Lakota.",
+      "user_confirmed": true,
+      "previous_values": {
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Shannon County (South Dakota)"
+      },
+      "corrected_values": {
+        "Allotment number": "4743",
+        "Tribe/Reservation": "Oglala Lakota"
+      }
+    }
+  ]
 }

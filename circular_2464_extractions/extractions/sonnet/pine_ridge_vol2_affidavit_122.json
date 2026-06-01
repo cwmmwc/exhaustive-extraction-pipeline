@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Edith Craven Knight",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Camp Wood, Arizona",
     "Allotment number": "3821",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "thirty eight years old",
     "Occupation/Income": "compelled to work for a living",
-    "NOTES": "mentally competent and in just fair health for her age; has four minor children dependent upon her for support; has received no aid from the Government, State or county since her patent was issued; document sworn in State of Arizona, County of Yavapai, 1929",
+    "NOTES": "mentally competent and in just fair health for her age; has four minor children dependent upon her for support; has received no aid from the Government, State or county since her patent was issued; document sworn in State of Arizona, County of Yavapai, 1929 | TASK 3 SUBSTANTIVE CORRECTION 2026-04-29: BLM accession 625367 confirms Pine Ridge tribal affiliation despite off-reservation residence (Camp Wood, Arizona). Pine Ridge allottee residing in Arizona when affidavit given.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,25 @@
     "input_tokens": 2159,
     "output_tokens": 336
   },
-  "elapsed": 4.4
+  "elapsed": 4.4,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_blm_confirmed_tribe_correction",
+      "method": "user_blm_lookup",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "po_address": "Camp Wood, Arizona",
+      "external_refs": {
+        "BLM_accession": "625367",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=625367"
+      },
+      "user_confirmed": true,
+      "context_note": "Pine Ridge allottee residing in Arizona when affidavit given."
+    }
+  ]
 }

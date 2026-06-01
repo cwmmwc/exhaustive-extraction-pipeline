@@ -5,10 +5,10 @@
   "source_pages": "41",
   "model": "sonnet",
   "extraction": {
-    "Name": "not stated",
-    "Tribe/Reservation": "not stated",
+    "Name": "Lucius Eldridge",
+    "Tribe/Reservation": "Citizen Potawatomie",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "86",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Document is a Circular No. 2464 questionnaire but the handwritten answers are largely illegible; no fields can be reliably extracted from the text as rendered. The document references allotment number and fee patent date in Q1, delivery of patent in Q2, acceptance with or without protest in Q3, sale or mortgage in Q4, mortgage release or foreclosure in Q5, consideration received in Q6, land sold for debts or taxes in Q7, patent cancellation in Q8, tax assessments in Q9, age and condition in Q10, source of support in Q11, dependents in Q12, and fraud particulars in Q13.",
+    "NOTES": "Document is a Circular No. 2464 questionnaire but the handwritten answers are largely illegible; no fields can be reliably extracted from the text as rendered. The document references allotment number and fee patent date in Q1, delivery of patent in Q2, acceptance with or without protest in Q3, sale or mortgage in Q4, mortgage release or foreclosure in Q5, consideration received in Q6, land sold for debts or taxes in Q7, patent cancellation in Q8, tax assessments in Q9, age and condition in Q10, source of support in Q11, dependents in Q12, and fraud particulars in Q13. | TASK 5 CAT_1 DUAL-MODEL VISION + USER VERIFICATION 2026-05-04: Name confirmed by both models; allotment corrected per user verification. Both Sonnet and Qwen vision agree on name='Lucius Eldridge'. Sonnet vision read allotment as '1-2 (partially legible)'; Qwen vision read '1/2'. Both wrong. User verified correct allotment is 86.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -157,5 +157,31 @@
     ],
     "legislative_actions": [],
     "tables": []
-  }
+  },
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat1_dual_model_agreement_user_tribe_confirmed",
+      "method": "sonnet_vision_plus_qwen_vision_with_user_tribe_assignment",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "not stated",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Name": "Lucius Eldridge",
+        "Allotment number": "86",
+        "Tribe/Reservation": "Citizen Potawatomie"
+      },
+      "models_summary": "Both Sonnet and Qwen vision agree on name='Lucius Eldridge'. Sonnet vision read allotment as '1-2 (partially legible)'; Qwen vision read '1/2'. Both wrong. User verified correct allotment is 86.",
+      "rationale": "Name confirmed by both models; allotment corrected per user verification.",
+      "user_confirmed": true
+    }
+  ]
 }

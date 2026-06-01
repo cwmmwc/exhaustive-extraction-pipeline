@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Samuel Allman",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Pine Ridge, South Dakota",
     "Allotment number": "not stated",
     "Cancelled": "not stated",
@@ -20,10 +20,24 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Document is a letter dated October 20, 1928, from the Superintendent at Pine Ridge Agency requesting Samuel Allman to come to the office to have his statement taken as an affidavit before a Notary Public, in response to a circular letter from the Indian Office requesting information from each Indian receiving a forced Patent. File reference: 5-1142. Letter initialed ELB:RER.",
+    "NOTES": "Document is a letter dated October 20, 1928, from the Superintendent at Pine Ridge Agency requesting Samuel Allman to come to the office to have his statement taken as an affidavit before a Notary Public, in response to a circular letter from the Indian Office requesting information from each Indian receiving a forced Patent. File reference: 5-1142. Letter initialed ELB:RER. | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "agency_narrative"
   },
   "usage": {},
-  "elapsed": 0
+  "elapsed": 0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "William Brown",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Hisle, So. Dak.",
     "Allotment number": "4220c",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "62 years old",
     "Occupation/Income": "farms what he can, but is in poor health and has little equipment and can't do much, and works out what he is able to do but his income is very small",
-    "NOTES": "Mentally competent and in very poor health; has no land and no home; living on his wife's allotment; has a wife and three minor grand children depending on him for support, the grand children being orphans; the Government, State nor county have furnished him no aid since he was granted this patent; document references No. 01869 and file numbers 22402, 22240/6; sworn December 5, 1928",
+    "NOTES": "Mentally competent and in very poor health; has no land and no home; living on his wife's allotment; has a wife and three minor grand children depending on him for support, the grand children being orphans; the Government, State nor county have furnished him no aid since he was granted this patent; document references No. 01869 and file numbers 22402, 22240/6; sworn December 5, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2290,
     "output_tokens": 496
   },
-  "elapsed": 7.5
+  "elapsed": 7.5,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

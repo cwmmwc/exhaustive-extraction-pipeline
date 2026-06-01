@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "James A. Brown",
-    "Tribe/Reservation": "Shannon County / Pine Ridge area (South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Martin, South Dakota",
     "Allotment number": "4448",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "38 years old",
     "Occupation/Income": "works at the carpenter trade for a livelihood; and that this is his only source of income",
-    "NOTES": "Mentally competent; good health; has a wife and one child to support; family has good health; mortgaged land to T.C. Torson for $500.00 to make improvements on another piece of land he was turning into a home; joined the United States Army a few months after receiving fee patent, served one year; paid off $500.00 mortgage with accrued interest from sale proceeds; considers he received a fair price for his land; did not sell land for any debts incurred prior to receiving patent in fee; never received any help from County, State, nor United States Government; allotment described as SW\u00bc, Sec. 5, T.36N., R.36W., of the 6th P.M., in South Dakota, 160 acres; affidavit sworn April 19, 1929",
+    "NOTES": "Mentally competent; good health; has a wife and one child to support; family has good health; mortgaged land to T.C. Torson for $500.00 to make improvements on another piece of land he was turning into a home; joined the United States Army a few months after receiving fee patent, served one year; paid off $500.00 mortgage with accrued interest from sale proceeds; considers he received a fair price for his land; did not sell land for any debts incurred prior to receiving patent in fee; never received any help from County, State, nor United States Government; allotment described as SW¼, Sec. 5, T.36N., R.36W., of the 6th P.M., in South Dakota, 160 acres; affidavit sworn April 19, 1929 | ORIGINAL_TRIBE_VALUE: \"Shannon County / Pine Ridge area (South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2489,
     "output_tokens": 604
   },
-  "elapsed": 8.1
+  "elapsed": 8.1,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County / Pine Ridge area (South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

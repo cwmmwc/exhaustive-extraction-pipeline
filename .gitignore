@@ -6,6 +6,13 @@ __pycache__/
 .DS_Store
 .vscode/
 .idea/
+*.bak
+
+# Safety backups of the sonnet corpus made during recovery sessions
+circular_2464_extractions/extractions/sonnet.backup_*/
+
+# Rendered source-page review images (regenerable from source PDFs with pdftoppm)
+validation_samples/
 
 # Python venv
 venv/

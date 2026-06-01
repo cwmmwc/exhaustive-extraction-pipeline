@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Henry Clifford",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rockyford, South Dakota",
     "Allotment number": "2757",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "31 years old",
     "Occupation/Income": "farms his father's land and works for outside farmers for his living, these two sources of income being all he has",
-    "NOTES": "160 acre allotment, NE, Sec. 30, T. 41N., R. 43W., 6th P.M., South Dakota; mentally competent and has good health; has a wife to support, who has good health; did not sell land for any debts incurred prior to receipt of patent in fee; on August 29, 1928, injured his hand badly in an automobile accident and was unable to work; United States Government issued rations starting December 1, 1928; as of April 8, 1929, rations were stopped though deponent states his hand not sufficiently recovered for hard work; considers he got a fair price for his land; affidavit sworn April 8, 1929 in Shannon County, South Dakota",
+    "NOTES": "160 acre allotment, NE, Sec. 30, T. 41N., R. 43W., 6th P.M., South Dakota; mentally competent and has good health; has a wife to support, who has good health; did not sell land for any debts incurred prior to receipt of patent in fee; on August 29, 1928, injured his hand badly in an automobile accident and was unable to work; United States Government issued rations starting December 1, 1928; as of April 8, 1929, rations were stopped though deponent states his hand not sufficiently recovered for hard work; considers he got a fair price for his land; affidavit sworn April 8, 1929 in Shannon County, South Dakota | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2458,
     "output_tokens": 565
   },
-  "elapsed": 8.7
+  "elapsed": 8.7,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    }
+  ]
 }

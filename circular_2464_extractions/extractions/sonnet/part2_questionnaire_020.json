@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Josephine Collins",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "2862.5",
     "Cancelled": "not stated",
     "Refused/Protested": "I told the farmer that I did not want it as I can not pay the tax and did not want it. He said it is already issued now and I took it.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "66 years",
     "Occupation/Income": "My husband looks after that.",
-    "NOTES": "Signed by thumb mark (X mark). Allottee states W. H. Tackett came to her house and took her first to Winner and then to Gregory, showed her money and said he would give her $7000.00 for her land; she later found the instrument she and her husband signed was a mortgage, not a deed, and tried to get the land back. Does not know when she signed the deed. Not satisfied with the sale; states she did not want the patent in the first place. No children. Subscribed and sworn before Jas. W. Cross, Notary Public, commission expires 4-28-32, on 26th day of April 1929. Document reference number 28622.",
+    "NOTES": "Signed by thumb mark (X mark). Allottee states W. H. Tackett came to her house and took her first to Winner and then to Gregory, showed her money and said he would give her $7000.00 for her land; she later found the instrument she and her husband signed was a mortgage, not a deed, and tried to get the land back. Does not know when she signed the deed. Not satisfied with the sale; states she did not want the patent in the first place. No children. Subscribed and sworn before Jas. W. Cross, Notary Public, commission expires 4-28-32, on 26th day of April 1929. Document reference number 28622. | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 2862.5, tribe Rosebud Sioux, sourced from federal-register-app patents database (Christian's research). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number. CROSS-REFERENCE: Same Josephine Collins as part2_agency_narrative_page059 and part6_agency_narrative_page046 (all allotment 2862.5). This is her questionnaire; the other two are agency narratives.",
     "Literate/Illiterate": "I can neither read nor write; signed by thumb mark",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,30 @@
     "input_tokens": 2423,
     "output_tokens": 499
   },
-  "elapsed": 7.2
+  "elapsed": 7.2,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Josephine Collins",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Allotment number": "2862.5",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "extra_note": "",
+      "cross_reference": "Same Josephine Collins as part2_agency_narrative_page059 and part6_agency_narrative_page046 (all allotment 2862.5). This is her questionnaire; the other two are agency narratives.",
+      "user_confirmed": true
+    }
+  ]
 }

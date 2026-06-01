@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Nora Tway Sandery",
-    "Tribe/Reservation": "Pine Ridge",
+    "Tribe/Reservation": "Oglala Lakota",
     "Post Office Address": "Chadron, Nebr.",
-    "Allotment number": "not stated",
+    "Allotment number": "4839",
     "Cancelled": "not stated",
     "Refused/Protested": "did not want her patent in fee, but took it on the advise of the Superintendent of the Pine Ridge reservation he having told her that if she did not take the patent and pay the taxes that the land would be sold to satisfy them",
     "Recorded patent": "she did not have her patent recorded and that she does not think it has been",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "34 years old",
     "Occupation/Income": "husband is a clerk in a grocery store and they depend on that for a living",
-    "NOTES": "mentally competent and in fair health; has no home and has to rent a home; has four small children depending on her for support, none of them having been allotted; document reference number 76999; subscribed and sworn November 9, 1928, Shannon County, South Dakota",
+    "NOTES": "mentally competent and in fair health; has no home and has to rent a home; has four small children depending on her for support, none of them having been allotted; document reference number 76999; subscribed and sworn November 9, 1928, Shannon County, South Dakota | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 4839 sourced from federal-register-app patents database (Christian's research, 2026-05-04). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number; this patch backfills the allotment. Tribe set to Oglala Lakota (Pine Ridge / Oglala). TRIBE NORMALIZATION: previous label 'Pine Ridge' normalized to 'Oglala Lakota'. NAME VARIANT: Federal-register-app patents database records her under two names: 'Nora Tway' and 'Nora Sanders'. The corpus extraction 'Nora Tway Sandery' appears to conflate the two surnames (Tway and Sanders/Sandery). Name field left as extracted; variants documented here for cross-reference. | TASK 5 DUPLICATE REMOVAL 2026-05-04: part3_affidavit_010 ('Tay Sander', part 3 page 79) was removed as a duplicate of this record. User source-page review confirmed pages 79 and 80 are the same person's affidavit; page 79 is a garbled extraction (the 'Tay Sander' reading is a degraded mis-transcription of 'Nora Tway / Nora Sanders'). The removed record's extraction is archived in this record's recovery_notes.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -29,5 +29,91 @@
     "output_tokens": 394
   },
   "elapsed": 5.7,
-  "retry_count": 1
+  "retry_count": 1,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Nora Tway Sandery",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Pine Ridge"
+      },
+      "corrected_values": {
+        "Allotment number": "4839",
+        "Tribe/Reservation": "Oglala Lakota"
+      },
+      "name_variant_note": "Federal-register-app patents database records her under two names: 'Nora Tway' and 'Nora Sanders'. The corpus extraction 'Nora Tway Sandery' appears to conflate the two surnames (Tway and Sanders/Sandery). Name field left as extracted; variants documented here for cross-reference.",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-05-04",
+      "type": "task5_duplicate_removal",
+      "method": "user_source_page_review",
+      "removed_duplicate_record": "part3_affidavit_010.json",
+      "removed_duplicate_source_pages": "79",
+      "canonical_record_source_pages": "80",
+      "rationale": "User confirmed via source pages 79-80 that part3_affidavit_010 and part3_affidavit_011 are the same person's affidavit. Page 79 is a garbled extraction of the same document. 'Tay Sander' is a degraded mis-transcription of 'Nora Tway / Nora Sanders'. Removed as duplicate following the Anna Shuck (part1_questionnaire_016) precedent.",
+      "archived_duplicate_extraction": {
+        "Name": "Tay Sander",
+        "Tribe/Reservation": "Pine Ridge",
+        "Post Office Address": "Cron, Nebraska",
+        "Allotment number": "not stated",
+        "Cancelled": "not stated",
+        "Refused/Protested": "she did not want her patent but on the advice of the Superintendent of the Pine Ridge he having told her that if she did not take the Patent the taxes that the land would be sold to satisfy",
+        "Recorded patent": "did not have her patent recorded",
+        "Sold/Mortgaged": "not stated",
+        "Buyer": "not stated",
+        "Tax burden forced sale/Mortgage": "told her that if she did not take the Patent the taxes that the land would be sold to satisfy",
+        "Trust Patent Date": "not stated",
+        "Fee Patent Date": "not stated",
+        "Gender": "Female",
+        "Age": "not stated",
+        "Occupation/Income": "not stated",
+        "NOTES": "Document is heavily damaged and partially illegible; deponent reference number appears to be 7202; document references South Dakota; deponent states she does not know who did record the patent",
+        "Literate/Illiterate": "not stated",
+        "Document type": "affidavit"
+      },
+      "archived_duplicate_full_record": {
+        "document_id": "part3_affidavit_010",
+        "type": "affidavit",
+        "source_pdf": "RG 75 1929 circular 2464 part 3.pdf",
+        "source_pages": "79",
+        "model": "sonnet",
+        "extraction": {
+          "Name": "Tay Sander",
+          "Tribe/Reservation": "Pine Ridge",
+          "Post Office Address": "Cron, Nebraska",
+          "Allotment number": "not stated",
+          "Cancelled": "not stated",
+          "Refused/Protested": "she did not want her patent but on the advice of the Superintendent of the Pine Ridge he having told her that if she did not take the Patent the taxes that the land would be sold to satisfy",
+          "Recorded patent": "did not have her patent recorded",
+          "Sold/Mortgaged": "not stated",
+          "Buyer": "not stated",
+          "Tax burden forced sale/Mortgage": "told her that if she did not take the Patent the taxes that the land would be sold to satisfy",
+          "Trust Patent Date": "not stated",
+          "Fee Patent Date": "not stated",
+          "Gender": "Female",
+          "Age": "not stated",
+          "Occupation/Income": "not stated",
+          "NOTES": "Document is heavily damaged and partially illegible; deponent reference number appears to be 7202; document references South Dakota; deponent states she does not know who did record the patent",
+          "Literate/Illiterate": "not stated",
+          "Document type": "affidavit"
+        },
+        "usage": {
+          "input_tokens": 2222,
+          "output_tokens": 323
+        },
+        "elapsed": 9.2
+      },
+      "user_confirmed": true
+    }
+  ]
 }

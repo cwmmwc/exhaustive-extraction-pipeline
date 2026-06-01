@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "James Mousseau",
-    "Tribe/Reservation": "Pine Ridge Reservation",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Patricia, So. Dakota",
     "Allotment number": "2206",
     "Cancelled": "patent has not been cancelled",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "59 years of age",
     "Occupation/Income": "I support myself by my own effort, with no assistance from the U.S.Government, with poor success",
-    "NOTES": "Resides on Pine Ridge Reservation, in Bennett County; received fee patent by registered letter and receipted for; supports wife and partially supports three boys, all single and living at home but of legal age; states 'I was not defrauded out of this property in any manner'; believes $4500.00 was a fair consideration; paid in full by check; document also contains partial text from a separate affidavit by Charles Provost (No. 2189, Shannon County, South Dakota), age 63, post office Martin, South Dakota, allotment 320 acres, sold in 1920 to a man named Johnson of Vetal, South Dakota for $3300.00 cash, sold on account of not wishing to pay taxes; Provost stated he did not want his patent but accepted it after Indian Agency Office warned land would be assessed for taxes and sold; Provost has very poor health (back trouble and rheumatism, unable to work for 26 years), wife works in a restaurant, he works common labor when able, four children to support (one in poor health); sworn November 26, 1928",
+    "NOTES": "Resides on Pine Ridge Reservation, in Bennett County; received fee patent by registered letter and receipted for; supports wife and partially supports three boys, all single and living at home but of legal age; states 'I was not defrauded out of this property in any manner'; believes $4500.00 was a fair consideration; paid in full by check; document also contains partial text from a separate affidavit by Charles Provost (No. 2189, Shannon County, South Dakota), age 63, post office Martin, South Dakota, allotment 320 acres, sold in 1920 to a man named Johnson of Vetal, South Dakota for $3300.00 cash, sold on account of not wishing to pay taxes; Provost stated he did not want his patent but accepted it after Indian Agency Office warned land would be assessed for taxes and sold; Provost has very poor health (back trouble and rheumatism, unable to work for 26 years), wife works in a restaurant, he works common labor when able, four children to support (one in poor health); sworn November 26, 1928 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Reservation\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2964,
     "output_tokens": 562
   },
-  "elapsed": 12.0
+  "elapsed": 12.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Reservation",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -8,7 +8,7 @@
     "Name": "Alice Cunningham",
     "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "Eagle Butte",
-    "Allotment number": "not stated",
+    "Allotment number": "844",
     "Cancelled": "not stated",
     "Refused/Protested": "received. Did not protest.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "43 years of age",
     "Occupation/Income": "supported by my husband's money. My husband has money in the office at Cheyenne Agency.",
-    "NOTES": "Patent was mailed to her at Eagle Butte; does not remember the time of delivery. Signed receipt for patent. No application made. Sold land for $600 all cash. Dependents: a boy and a girl. Not in good health. Notarized August 27, 1929, in Todd County, South Dakota.",
+    "NOTES": "Patent was mailed to her at Eagle Butte; does not remember the time of delivery. Signed receipt for patent. No application made. Sold land for $600 all cash. Dependents: a boy and a girl. Not in good health. Notarized August 27, 1929, in Todd County, South Dakota. | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 844 sourced from federal-register-app patents database (Christian's research, 2026-05-04). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number; this patch backfills the allotment.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,29 @@
     "input_tokens": 2488,
     "output_tokens": 328
   },
-  "elapsed": 4.2
+  "elapsed": 4.2,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Alice Cunningham",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "corrected_values": {
+        "Allotment number": "844",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "cross_reference": "",
+      "user_confirmed": true
+    }
+  ]
 }

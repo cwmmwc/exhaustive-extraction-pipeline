@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Andrew Russell",
-    "Tribe/Reservation": "Washabaugh County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Wanblee, S.D.",
     "Allotment number": "44628",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "58 years old",
     "Occupation/Income": "works around doing little work which makes it hard to support his family, on account of poor health",
-    "NOTES": "mentally competent and in poor health, which makes it impossible to do much work; has a wife and three small children; has not received any help from the Government, State or County since he was granted a patent in fee; does not think he received a fair price for the land; patent date not remembered; document signed December 13, 1928",
+    "NOTES": "mentally competent and in poor health, which makes it impossible to do much work; has a wife and three small children; has not received any help from the Government, State or County since he was granted a patent in fee; does not think he received a fair price for the land; patent date not remembered; document signed December 13, 1928 | ORIGINAL_TRIBE_VALUE: \"Washabaugh County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2366,
     "output_tokens": 497
   },
-  "elapsed": 6.7
+  "elapsed": 6.7,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Washabaugh County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

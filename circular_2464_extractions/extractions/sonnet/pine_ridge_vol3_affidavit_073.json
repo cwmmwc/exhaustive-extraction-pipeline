@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Mrs. Virgie Hudspeth, formerly Virgie Goings",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rapid City, S.D.",
     "Allotment number": "572",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "37 years of age",
     "Occupation/Income": "works when she can get employment by the day",
-    "NOTES": "Deponent states she was not defrauded of her land but sold the same very cheap, and not near what it was actually worth; she had to leave the Government Service on account of ill health; received a payment of $10.00 in the fall of 1928 and no further aid from Government, State or County since her patent in fee was issued; she has no land at the present time, no home, and lives with some relatives at the U.S. Indian School at Rapid City, South Dakota; she is a widow; Pennington County, South Dakota; document subscribed and sworn before Notary Public Chas. B. Hunt on May 20, 1929; commission expires Sept. 6, 1931",
+    "NOTES": "Deponent states she was not defrauded of her land but sold the same very cheap, and not near what it was actually worth; she had to leave the Government Service on account of ill health; received a payment of $10.00 in the fall of 1928 and no further aid from Government, State or County since her patent in fee was issued; she has no land at the present time, no home, and lives with some relatives at the U.S. Indian School at Rapid City, South Dakota; she is a widow; Pennington County, South Dakota; document subscribed and sworn before Notary Public Chas. B. Hunt on May 20, 1929; commission expires Sept. 6, 1931 | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2436,
     "output_tokens": 529
   },
-  "elapsed": 8.2
+  "elapsed": 8.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    }
+  ]
 }

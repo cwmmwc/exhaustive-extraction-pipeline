@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Benjamin Janis, junior",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Porcupine, South Dakota",
     "Allotment number": "711",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "33 years old",
     "Occupation/Income": "farms his father's land for a living; and that is his only source of income",
-    "NOTES": "has good health, is mentally competent; has a wife who has poor health, having liver trouble; has two children who have good health and which he supports; has never received any aid from the County, State or the United States Government; document sworn November 26, 1928; 160 acre allotment",
+    "NOTES": "has good health, is mentally competent; has a wife who has poor health, having liver trouble; has two children who have good health and which he supports; has never received any aid from the County, State or the United States Government; document sworn November 26, 1928; 160 acre allotment | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2274,
     "output_tokens": 476
   },
-  "elapsed": 6.7
+  "elapsed": 6.7,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

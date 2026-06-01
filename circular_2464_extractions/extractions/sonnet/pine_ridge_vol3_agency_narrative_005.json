@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Louis Richard",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "not stated",
     "Allotment number": "4743",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Receipt dated Jan. 15, 1920. On Oct. 13, 1928, Rancher's State Bank, Cody, Nebr. released mortgage on NW1/4 12-36-36 dated Mar. 1, 1928. Wife named Annie Richard. Mortgage of Aug. 31, 1922 to Federal Land Bank of Omaha recorded 10-12-1922. Information taken from records at the County Seat.",
+    "NOTES": "Receipt dated Jan. 15, 1920. On Oct. 13, 1928, Rancher's State Bank, Cody, Nebr. released mortgage on NW1/4 12-36-36 dated Mar. 1, 1928. Wife named Annie Richard. Mortgage of Aug. 31, 1922 to Federal Land Bank of Omaha recorded 10-12-1922. Information taken from records at the County Seat. | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned.",
     "Literate/Illiterate": "not stated",
     "Document type": "agency_narrative"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2212,
     "output_tokens": 498
   },
-  "elapsed": 5.6
+  "elapsed": 5.6,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    }
+  ]
 }

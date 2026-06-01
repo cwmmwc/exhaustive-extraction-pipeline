@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Jasper Ellston",
-    "Tribe/Reservation": "Rosebud",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
     "Allotment number": "243",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Fee patent No. 612807 issued; Southeast quarter of section 25, township 95, range 76; receipt for patent signed by allottee February 14, 1918; since there has been no interrogation of the allottee it is not understood at present how these people came into possession of the land \u2014 this will likely be revealed in a later report",
+    "NOTES": "Fee patent No. 612807 issued; Southeast quarter of section 25, township 95, range 76; receipt for patent signed by allottee February 14, 1918; since there has been no interrogation of the allottee it is not understood at present how these people came into possession of the land — this will likely be revealed in a later report | TASK 5 TRIBE NORMALIZATION 2026-05-04: tribe label 'Rosebud' normalized to canonical 'Rosebud Sioux'. Name (Jasper Ellston) and allotment (243) already correct. IDENTITY NOTE: Jesse Ellston (part2_questionnaire_001, allotment 241) stated in his affidavit that he is 'also known as Jasper J. Ellston'. Despite that statement, Jesse Ellston and Jasper Ellston are treated as two separate people in this corpus — two names, two allotment numbers (241 and 243). The relationship is unresolved. See part2_questionnaire_001 recovery_notes for the full identity note.",
     "Literate/Illiterate": "not stated",
     "Document type": "agency_narrative"
   },
@@ -28,5 +28,25 @@
     "input_tokens": 2086,
     "output_tokens": 376
   },
-  "elapsed": 5.3
+  "elapsed": 5.3,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_tribe_normalization",
+      "method": "tribe_label_normalization",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "identity_note": "Jesse Ellston (part2_questionnaire_001, allotment 241) stated he is 'also known as Jasper J. Ellston'. Jesse and Jasper are treated as two separate people (two names, two allotments). Relationship unresolved.",
+      "related_record": "part2_questionnaire_001 (Jesse Ellston, allotment 241)",
+      "user_confirmed": true,
+      "previous_values": {
+        "Tribe/Reservation": "Rosebud"
+      },
+      "corrected_values": {
+        "Tribe/Reservation": "Rosebud Sioux"
+      }
+    }
+  ]
 }

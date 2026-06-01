@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Thomas Wright",
-    "Tribe/Reservation": "Rosebud",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "2357",
     "Cancelled": "not stated",
     "Refused/Protested": "Yes, I told Mr. Gruber that I did not want the patent as I did not have any education and could not read but he gave it to me. I then sent it back to the Rosebud agency. It was then sent back to Mr. Gruber and Gruber told me that I would have to take it as it had been issued. It was then that I signed the receipt.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "64",
     "Occupation/Income": "not stated",
-    "NOTES": "Wright received patent from Mr. Gruber, farmer at Okreek; signed receipt under protest; sent patent back to Rosebud agency but it was returned and he was told he had to take it; received a deed to a quarter section in North Dakota which he left at a bank for safekeeping; the bank later closed and he was unable to retrieve the deed; states he could not read and had to rely on others; believed paper signed for Chris Colome and Jack Martin was a sales/trade contract, not a mortgage; considers the transaction 'a raw deal'",
+    "NOTES": "Wright received patent from Mr. Gruber, farmer at Okreek; signed receipt under protest; sent patent back to Rosebud agency but it was returned and he was told he had to take it; received a deed to a quarter section in North Dakota which he left at a bank for safekeeping; the bank later closed and he was unable to retrieve the deed; states he could not read and had to rely on others; believed paper signed for Chris Colome and Jack Martin was a sales/trade contract, not a mortgage; considers the transaction 'a raw deal' | TASK 5 CAT_3 BACKFILL 2026-05-04: Allotment 2357. Allotment 2357 disambiguated by user source-page review of part 7 page 59 (the Circular 2464 questionnaire form). The federal-register-app patents database has multiple Thomas Wrights at Rosebud; the source page provided the specific allotment number for this individual. TRIBE NORMALIZATION: previous label 'Rosebud' normalized to 'Rosebud Sioux'.",
     "Literate/Illiterate": "Illiterate; stated 'I did not have any education and could not read'",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,27 @@
     "input_tokens": 2505,
     "output_tokens": 545
   },
-  "elapsed": 8.1
+  "elapsed": 8.1,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_source_review_disambiguation",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Thomas Wright",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Rosebud"
+      },
+      "corrected_values": {
+        "Allotment number": "2357",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "source_description": "Allotment 2357 disambiguated by user source-page review of part 7 page 59 (the Circular 2464 questionnaire form). The federal-register-app patents database has multiple Thomas Wrights at Rosebud; the source page provided the specific allotment number for this individual.",
+      "user_confirmed": true
+    }
+  ]
 }

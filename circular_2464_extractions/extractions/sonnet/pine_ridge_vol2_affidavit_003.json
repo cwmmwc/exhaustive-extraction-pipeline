@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Lizzie Brown",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Hisle, S.D.",
     "Allotment number": "1870",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "60 years old",
     "Occupation/Income": "not stated",
-    "NOTES": "mentally competent and in poor health, suffering from stomach trouble which makes it impossible for her to do much work; husband is not able to do hard work; takes care of four orphan children; has not received any aid from the Government, State or County since she was granted a patent in fee for her land; she thinks she did not receive a fair price for the land; document subscribed and sworn before notary public, State of South Dakota, County of Washabaugh, 1929",
+    "NOTES": "mentally competent and in poor health, suffering from stomach trouble which makes it impossible for her to do much work; husband is not able to do hard work; takes care of four orphan children; has not received any aid from the Government, State or County since she was granted a patent in fee for her land; she thinks she did not receive a fair price for the land; document subscribed and sworn before notary public, State of South Dakota, County of Washabaugh, 1929 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2370,
     "output_tokens": 515
   },
-  "elapsed": 6.3
+  "elapsed": 6.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

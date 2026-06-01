@@ -8,7 +8,7 @@
     "Name": "not stated",
     "Tribe/Reservation": "Pine Ridge Agency",
     "Post Office Address": "Pine Ridge, S. Dak.",
-    "Allotment number": "not stated",
+    "Allotment number": "(not applicable — agency correspondence)",
     "Cancelled": "not stated",
     "Refused/Protested": "forced Patents were issued",
     "Recorded patent": "not stated",
@@ -20,10 +20,45 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "This is an administrative cover letter from E. W. Jermark at Pine Ridge Agency to the Commissioner of Indian Affairs, dated November 3, 1928, acknowledging receipt of Circular No. 2464 (promulgated June 18, received October 31, marked 'important'). The letter states that a form letter was written to each of the 844 persons to whom forced patents were issued, and that approximately twenty had called at the office in response. The agency notes that data is being formulated as rapidly as possible in connection with regular work. File reference: 5-114-2, Circular 2464, No. 112.",
+    "NOTES": "This is an administrative cover letter from E. W. Jermark at Pine Ridge Agency to the Commissioner of Indian Affairs, dated November 3, 1928, acknowledging receipt of Circular No. 2464 (promulgated June 18, received October 31, marked 'important'). The letter states that a form letter was written to each of the 844 persons to whom forced patents were issued, and that approximately twenty had called at the office in response. The agency notes that data is being formulated as rapidly as possible in connection with regular work. File reference: 5-114-2, Circular 2464, No. 112. | TASK 5 HOLDOUT ALLOTMENT RECOVERY 2026-04-30: Sonnet's original NOTES described 112 as part of a 'File reference: 5-114-2, Circular 2464, No. 112' but user source-page review confirms 112 is the allotment number for the case discussed. | TASK 5 CAT_2 RECLASSIFICATION 2026-05-04: Administrative cover letter from E. W. Jermark, Pine Ridge Agency, to the Commissioner of Indian Affairs, dated November 3, 1928, acknowledging receipt of Circular No. 2464. Not an allottee record. Reclassified as agency_correspondence (matching the 6 earlier agency cover-letter reclassifications 2026-05-03). The 'allotment 112' that originally placed this record in CAT_2 was a misextraction (a stray reference number or count read as an allotment); it has been cleared.",
     "Literate/Illiterate": "not stated",
-    "Document type": "agency_narrative"
+    "Document type": "agency_correspondence"
   },
   "usage": {},
-  "elapsed": 0
+  "elapsed": 0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-30",
+      "type": "task5_holdout_allotment_recovery",
+      "method": "user_source_page_review",
+      "fields_corrected": [
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_allotment": "not stated",
+      "corrected_allotment": "112",
+      "rationale": "Sonnet's original NOTES described 112 as part of a 'File reference: 5-114-2, Circular 2464, No. 112' but user source-page review confirms 112 is the allotment number for the case discussed.",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-05-04",
+      "type": "task5_reclassification_administrative_correspondence",
+      "method": "user_confirmed_agency_cover_letter",
+      "fields_corrected": [
+        "Allotment number",
+        "Document type",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Allotment number": "112",
+        "Document type": "agency_narrative"
+      },
+      "corrected_values": {
+        "Allotment number": "(not applicable — agency correspondence)",
+        "Document type": "agency_correspondence"
+      },
+      "rationale": "E. W. Jermark cover letter acknowledging Circular 2464. Not an allottee record. The 'allotment 112' was a misextraction and has been cleared.",
+      "user_confirmed": true
+    }
+  ]
 }

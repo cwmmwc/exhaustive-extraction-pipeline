@@ -5,8 +5,8 @@
   "source_pages": "47-48",
   "model": "sonnet",
   "extraction": {
-    "Name": "Edna Johnson\u2014nee Ruff",
-    "Tribe/Reservation": "Shannon County, South Dakota (agency not specified)",
+    "Name": "Edna Johnson—nee Ruff",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Martin, South Dakota",
     "Allotment number": "4507",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "38 years old",
     "Occupation/Income": "her husband owns sheep and cows, keeps them on her heirship land that she received from her mother's estate, this being their only means of support",
-    "NOTES": "mentally competent; has good health; husband has good health and supports her and her two children, who have good health; heirship land received from mother's estate; has never received any help from the County, State nor the United States Government; document also contains a separate affidavit for Vina Ruff Dessert (No. 4508), sworn April 17, 1929, age 36, Martin, South Dakota, who sold her allotment in 1919 to Max Robinwitz of Martin, South Dakota for $2000.00 cash; Vina Ruff Dessert's fee patent was issued April 13, 1918 for SW\u00bc, Sec. 17, T. 36N., R. 37W., 6th P.M., South Dakota",
+    "NOTES": "mentally competent; has good health; husband has good health and supports her and her two children, who have good health; heirship land received from mother's estate; has never received any help from the County, State nor the United States Government; document also contains a separate affidavit for Vina Ruff Dessert (No. 4508), sworn April 17, 1929, age 36, Martin, South Dakota, who sold her allotment in 1919 to Max Robinwitz of Martin, South Dakota for $2000.00 cash; Vina Ruff Dessert's fee patent was issued April 13, 1918 for SW¼, Sec. 17, T. 36N., R. 37W., 6th P.M., South Dakota | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (agency not specified)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2813,
     "output_tokens": 687
   },
-  "elapsed": 11.1
+  "elapsed": 11.1,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (agency not specified)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

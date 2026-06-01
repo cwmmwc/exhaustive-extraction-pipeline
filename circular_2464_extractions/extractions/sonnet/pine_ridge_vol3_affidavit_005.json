@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Rachel Cilick Snider",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "578 Jefferson St., Milwaukee, Wis.",
     "Allotment number": "3965",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "48 years old",
     "Occupation/Income": "not stated",
-    "NOTES": "Borrowed $1000.00 from Northern Trust Co. of Pierre, S.D. on Aug. 9, 1915; husband died in 1915; left business to J.H. Dithmer of Kadoka, S.D.; deponent states she was defrauded in the deal; has three children to support; has been troubled with High Blood Pressure; has received no aid from the Government, State or County since she was granted a patent; land described as N.2 of sec. 1, T.43 R.36; paid Dithmer $50.00 for his services; document notarized April 22, 1920 in County of Washabaugh, State of South Dakota",
+    "NOTES": "Borrowed $1000.00 from Northern Trust Co. of Pierre, S.D. on Aug. 9, 1915; husband died in 1915; left business to J.H. Dithmer of Kadoka, S.D.; deponent states she was defrauded in the deal; has three children to support; has been troubled with High Blood Pressure; has received no aid from the Government, State or County since she was granted a patent; land described as N.2 of sec. 1, T.43 R.36; paid Dithmer $50.00 for his services; document notarized April 22, 1920 in County of Washabaugh, State of South Dakota | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2814,
     "output_tokens": 507
   },
-  "elapsed": 7.8
+  "elapsed": 7.8,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

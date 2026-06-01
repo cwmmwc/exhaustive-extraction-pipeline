@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Ida Young",
-    "Tribe/Reservation": "Bennett County, South Dakota",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "not stated",
     "Allotment number": "2613",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "forty-eight years old",
     "Occupation/Income": "receives a small allowance from the Government",
-    "NOTES": "Land described as Lots Three (3) and Four (4) and the East Half of the Southwest Quarter (E\u00bd of SW\u00bc) and the Southeast Quarter (SE\u00bc) of Section Seven (7), Township Thirty-six (36) North, Range Thirty-three (33) West of the Sixth P.M., Bennett County, South Dakota, containing 309.34 acres; husband was at Norfolk, Nebraska for medical treatment and needed money for a surgical operation; she was given only $150.00 despite signing a note for $1,000.00; Mr. Wolcott of Valentine, Nebraska charged her $110.00 for securing the loan; mortgage bore interest at ten percent from date; she sold some other land and paid said mortgage in full; affiant states she was actually defrauded of her land and never received any substantial consideration therefor; in ill health and financially insolvent for a number of years; has four dependent children aged eight, ten, twelve, and fourteen years respectively; affidavit subscribed and sworn December 8, 1928",
+    "NOTES": "Land described as Lots Three (3) and Four (4) and the East Half of the Southwest Quarter (E½ of SW¼) and the Southeast Quarter (SE¼) of Section Seven (7), Township Thirty-six (36) North, Range Thirty-three (33) West of the Sixth P.M., Bennett County, South Dakota, containing 309.34 acres; husband was at Norfolk, Nebraska for medical treatment and needed money for a surgical operation; she was given only $150.00 despite signing a note for $1,000.00; Mr. Wolcott of Valentine, Nebraska charged her $110.00 for securing the loan; mortgage bore interest at ten percent from date; she sold some other land and paid said mortgage in full; affiant states she was actually defrauded of her land and never received any substantial consideration therefor; in ill health and financially insolvent for a number of years; has four dependent children aged eight, ten, twelve, and fourteen years respectively; affidavit subscribed and sworn December 8, 1928 | ORIGINAL_TRIBE_VALUE: \"Bennett County, South Dakota\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2880,
     "output_tokens": 698
   },
-  "elapsed": 8.5
+  "elapsed": 8.5,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Bennett County, South Dakota",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

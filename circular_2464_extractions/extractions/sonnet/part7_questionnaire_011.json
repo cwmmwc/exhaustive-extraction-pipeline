@@ -8,7 +8,7 @@
     "Name": "Lizzie Colomb",
     "Tribe/Reservation": "not stated",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "22991",
     "Cancelled": "not stated",
     "Refused/Protested": "Yes I cried for two days after it came because I did not want it, and I did not want to lose my home. I seldom go to the agency so I did not see any of them to protest to. I told a number of my friends that I did not want it",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "64",
     "Occupation/Income": "My husband is the chief means of support",
-    "NOTES": "Document number 22991; received patent by mail during World War; signed a receipt for the patent; got $1600 in Liberty Bonds and $515.00 in cash for the land; four people depend on her; states 'the Government should not have issued the patent as I did not ask for it'; intended to purchase a home at Okreek; in poor health, states 'some days I feel pretty well and some days I am sick because I am old'; notarized May 8, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32",
+    "NOTES": "Document number 22991; received patent by mail during World War; signed a receipt for the patent; got $1600 in Liberty Bonds and $515.00 in cash for the land; four people depend on her; states 'the Government should not have issued the patent as I did not ask for it'; intended to purchase a home at Okreek; in poor health, states 'some days I feel pretty well and some days I am sick because I am old'; notarized May 8, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32 | TASK 5 BULK ALLOTMENT RECOVERY 2026-04-29: Sonnet text-extraction captured the allotment number from the source page header but classified it in NOTES as a 'document number' / 'Document No.' / 'No. NNNN' instead of placing it in the structured Allotment number field. The hypothesis that these document/file references are actually allotment numbers was confirmed via BLM cross-reference (exemplars: Eugene Means 2249, Lucy Patton 6802). This patch corrects 49 records via bulk regex extraction from NOTES with user-supervised review of every HIGH-confidence proposal.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,20 @@
     "input_tokens": 2348,
     "output_tokens": 457
   },
-  "elapsed": 6.5
+  "elapsed": 6.5,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task5_bulk_allotment_recovery_from_notes",
+      "method": "regex_extraction_with_user_review",
+      "fields_corrected": [
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_allotment": "not stated",
+      "corrected_allotment": "22991",
+      "rationale": "Source page header contained 'No. NNNN' which Sonnet captured in NOTES as 'document number' rather than placing in structured Allotment field. Hypothesis confirmed via BLM cross-reference.",
+      "user_confirmed": true
+    }
+  ]
 }

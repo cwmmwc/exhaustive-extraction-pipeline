@@ -5,10 +5,10 @@
   "source_pages": "60",
   "model": "sonnet",
   "extraction": {
-    "Name": "not stated",
-    "Tribe/Reservation": "Crow Creek Reservation",
+    "Name": "(buyer report — see NOTES for named actors)",
+    "Tribe/Reservation": "Crow Creek",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "(not applicable — non-allottee record)",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,9 +20,9 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Document authored by H. E. Wright, Supt. & S. D. A. M. B. Gregg, who dealt for the land, has nothing in his name and is worth nothing; address is Harrold, S. Dak.; he is a lessor on this reservation. Frank Ktilienk has nothing at all; address is DeGrey, S. Dak.; living on the Crow Creek Reservation at time of writing.",
+    "NOTES": "Document authored by H. E. Wright, Supt. & S. D. A. M. B. Gregg, who dealt for the land, has nothing in his name and is worth nothing; address is Harrold, S. Dak.; he is a lessor on this reservation. Frank Ktilienk has nothing at all; address is DeGrey, S. Dak.; living on the Crow Creek Reservation at time of writing. | TASK 5 CAT_1 PATCH 2026-05-04: Sonnet vision: 'M. B. Gregg' (fallback to entities[person]; no allotment). Qwen vision: nothing on page. The record is NOT an allottee record — it's an agency narrative report by Superintendent H.E. Wright describing two non-allottee individuals operating on Crow Creek Reservation. BUYER/LESSOR NETWORK ACTORS: (1) M.B. Gregg — lessor at Harrold, SD; described as having 'nothing in his name and is worth nothing'. (2) Frank Ktilienk — at DeGrey, SD; living on Crow Creek Reservation at time of writing; described as having 'nothing at all'. Authored by H.E. Wright, Superintendent and Special Disbursing Agent (S.D.A.). Document type set to 'agency_buyer_report' (new type) to distinguish reports about land buyers/lessors from records about allottees and from administrative correspondence (agency_correspondence). This type supports future buyer-network analysis (Valandra-style queries).",
     "Literate/Illiterate": "not stated",
-    "Document type": "agency_narrative"
+    "Document type": "agency_buyer_report"
   },
   "usage": {
     "input_tokens": 2005,
@@ -178,5 +178,34 @@
     ],
     "legislative_actions": [],
     "tables": []
-  }
+  },
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat1_dual_model_with_user_verification",
+      "method": "sonnet_vision_plus_qwen_vision_with_user_verification",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "Document type",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "not stated",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Crow Creek Reservation",
+        "Document type": "agency_narrative"
+      },
+      "corrected_values": {
+        "Name": "(buyer report — see NOTES for named actors)",
+        "Allotment number": "(not applicable — non-allottee record)",
+        "Tribe/Reservation": "Crow Creek",
+        "Document type": "agency_buyer_report"
+      },
+      "models_summary": "Sonnet vision: 'M. B. Gregg' (fallback to entities[person]; no allotment). Qwen vision: nothing on page. The record is NOT an allottee record — it's an agency narrative report by Superintendent H.E. Wright describing two non-allottee individuals operating on Crow Creek Reservation.",
+      "extra_notes": "BUYER/LESSOR NETWORK ACTORS: (1) M.B. Gregg — lessor at Harrold, SD; described as having 'nothing in his name and is worth nothing'. (2) Frank Ktilienk — at DeGrey, SD; living on Crow Creek Reservation at time of writing; described as having 'nothing at all'. Authored by H.E. Wright, Superintendent and Special Disbursing Agent (S.D.A.). Document type set to 'agency_buyer_report' (new type) to distinguish reports about land buyers/lessors from records about allottees and from administrative correspondence (agency_correspondence). This type supports future buyer-network analysis (Valandra-style queries).",
+      "user_confirmed": true
+    }
+  ]
 }

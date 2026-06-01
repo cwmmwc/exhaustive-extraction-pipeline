@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Joseph Brown and Alice Brown",
-    "Tribe/Reservation": "Bennett County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Chadron, Nebraska",
     "Allotment number": "4449",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male (Joseph Brown); Female (Alice Brown)",
     "Age": "Joseph Brown: 59 years old; Alice Brown: 58 years old",
     "Occupation/Income": "Mrs. Alice Brown receives United States Army insurance amounting to $57.50 per month; Joseph Brown and his wife Alice each receive $15.00 per month pension money",
-    "NOTES": "Affidavit sworn March 29, 1929. The allotment belonged to their son William D. Brown, who died February 7, 1919, in Germany of influenza while serving in the United States Army. Son's Army insurance was drawn in favor of his mother Alice Brown. The 160-acre allotment (SE1, Sec. 6, T. 36N., R. 36W., 6th P.M., South Dakota) was never probated; deponents were informed probate would prevent putting it back in trust. They desired to have the allotment put back in trust. Land leased to Dewey Dirks for $64.00 per annum. Deponents furnished four soldier boys for the World War. Document includes a newspaper clipping from the Martin Messenger regarding a Notice to Owner Before Tax Deed Shall Expire. The forced patent was sent to the father Joseph Brown, who refused to sign for it at first.",
+    "NOTES": "Affidavit sworn March 29, 1929. The allotment belonged to their son William D. Brown, who died February 7, 1919, in Germany of influenza while serving in the United States Army. Son's Army insurance was drawn in favor of his mother Alice Brown. The 160-acre allotment (SE1, Sec. 6, T. 36N., R. 36W., 6th P.M., South Dakota) was never probated; deponents were informed probate would prevent putting it back in trust. They desired to have the allotment put back in trust. Land leased to Dewey Dirks for $64.00 per annum. Deponents furnished four soldier boys for the World War. Document includes a newspaper clipping from the Martin Messenger regarding a Notice to Owner Before Tax Deed Shall Expire. The forced patent was sent to the father Joseph Brown, who refused to sign for it at first. | ORIGINAL_TRIBE_VALUE: \"Bennett County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2876,
     "output_tokens": 634
   },
-  "elapsed": 8.0
+  "elapsed": 8.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Bennett County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

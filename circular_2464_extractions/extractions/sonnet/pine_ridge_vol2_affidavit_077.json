@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "John M. Clifford",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Conata, South Dakota",
     "Allotment number": "2749",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "48 years old",
     "Occupation/Income": "he farms for a living on some airship land; and that is all his income",
-    "NOTES": "mentally competent, health not very good, has kidney trouble; has a wife and eight children to support, children have good health but his wife is not strong; he thinks he got a pretty poor price on his land; he never received any help from the County, State or the United States Government; he received $425.00 in trade but never got the 110 acres of his allotment; Mr. Ellis failed himself and the Security Savings Bank foreclosed on him; document sworn November 26, 1928",
+    "NOTES": "mentally competent, health not very good, has kidney trouble; has a wife and eight children to support, children have good health but his wife is not strong; he thinks he got a pretty poor price on his land; he never received any help from the County, State or the United States Government; he received $425.00 in trade but never got the 110 acres of his allotment; Mr. Ellis failed himself and the Security Savings Bank foreclosed on him; document sworn November 26, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2345,
     "output_tokens": 543
   },
-  "elapsed": 6.0
+  "elapsed": 6.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

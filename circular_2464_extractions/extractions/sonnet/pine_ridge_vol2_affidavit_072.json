@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "John Harvey",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rockyford, So. Dak.",
     "Allotment number": "272",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "39 years old",
     "Occupation/Income": "farms what he can, does what common labor he can get and makes about $200.00 a year",
-    "NOTES": "mentally competent, in fair health; has a wife and two children depending on him for support; has nothing, no land, no home and nothing and that he lives on the allotment of his sister; has received no aid from the Government, State or County since his patent was issued; document sworn November 28, 1928, County of Shannon, State of South Dakota",
+    "NOTES": "mentally competent, in fair health; has a wife and two children depending on him for support; has nothing, no land, no home and nothing and that he lives on the allotment of his sister; has received no aid from the Government, State or County since his patent was issued; document sworn November 28, 1928, County of Shannon, State of South Dakota | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2251,
     "output_tokens": 467
   },
-  "elapsed": 6.5
+  "elapsed": 6.5,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

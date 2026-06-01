@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Chris Colombe",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "Colome, South Dakota (implied)",
-    "Allotment number": "not stated",
+    "Allotment number": "2304",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "55",
     "Occupation/Income": "not stated",
-    "NOTES": "This document is a questionnaire/sworn statement by Chris Colombe, a third party, regarding his financial dealings with William McCloskey or Dillon. Around 1909 or 1910, Colombe signed a note with Dillon so Dillon could obtain lumber from the Montgomery Lumber Company of Winner, which Colombe ultimately had to pay. From then until about 1919, Colombe arranged credit for Dillon at stores in Colome and provided horses, harness, buggy, piano money, and other items. Colombe purchased land from Dillon for approximately $3,500 cash. At the time of purchase, Dillon still owed Colombe over $800 after deducting the agreed land price. Dillon died without paying this debt. Subscribed and sworn before J. W. Cross, Notary Public, on June 18, 1929 (commission expires 4-28-32). Document references allottee William McCloskey or Dillon, allotment 2331.",
+    "NOTES": "This document is a questionnaire/sworn statement by Chris Colombe, a third party, regarding his financial dealings with William McCloskey or Dillon. Around 1909 or 1910, Colombe signed a note with Dillon so Dillon could obtain lumber from the Montgomery Lumber Company of Winner, which Colombe ultimately had to pay. From then until about 1919, Colombe arranged credit for Dillon at stores in Colome and provided horses, harness, buggy, piano money, and other items. Colombe purchased land from Dillon for approximately $3,500 cash. At the time of purchase, Dillon still owed Colombe over $800 after deducting the agreed land price. Dillon died without paying this debt. Subscribed and sworn before J. W. Cross, Notary Public, on June 18, 1929 (commission expires 4-28-32). Document references allottee William McCloskey or Dillon, allotment 2331. | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 2304, tribe Rosebud Sioux, sourced from federal-register-app patents database (Christian's research). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -29,5 +29,30 @@
     "output_tokens": 453
   },
   "elapsed": 7.2,
-  "retry_count": 1
+  "retry_count": 1,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Chris Colombe",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Allotment number": "2304",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "extra_note": "",
+      "cross_reference": "",
+      "user_confirmed": true
+    }
+  ]
 }

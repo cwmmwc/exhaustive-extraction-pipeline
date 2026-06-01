@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Benjamin Beauvais",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "Mission, South Dakota",
-    "Allotment number": "not stated",
+    "Allotment number": "484",
     "Cancelled": "not stated",
     "Refused/Protested": "No, but later I had it sent back to Washington when Mr. McGregor was Superintendent here. I think it was about 1924.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "48",
     "Occupation/Income": "By farming and odd jobs",
-    "NOTES": "Received patent by mail at Mission, South Dakota; did not request patent; sent patent back to Washington circa 1924 when Mr. McGregor was Superintendent; told he could not have patent cancelled because he owed taxes on the land; sold land for $3200 with approximately $200 tax against it; purchaser paid cash with no debts settled at time of sale; has seven children; in good health; did not like the patent because it was sent without his asking for it; document number E-484; notarized April 15, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32",
+    "NOTES": "Received patent by mail at Mission, South Dakota; did not request patent; sent patent back to Washington circa 1924 when Mr. McGregor was Superintendent; told he could not have patent cancelled because he owed taxes on the land; sold land for $3200 with approximately $200 tax against it; purchaser paid cash with no debts settled at time of sale; has seven children; in good health; did not like the patent because it was sent without his asking for it; document number E-484; notarized April 15, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32 | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 484, tribe Rosebud Sioux, sourced from federal-register-app patents database (Christian's research). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number. Benjamin Beauvais also holds allotment 483; the forced fee patent at issue refers to allotment 484.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,30 @@
     "input_tokens": 2302,
     "output_tokens": 427
   },
-  "elapsed": 6.7
+  "elapsed": 6.7,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Benjamin Beauvais",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Allotment number": "484",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "extra_note": "Benjamin Beauvais also holds allotment 483; the forced fee patent at issue refers to allotment 484.",
+      "cross_reference": "",
+      "user_confirmed": true
+    }
+  ]
 }

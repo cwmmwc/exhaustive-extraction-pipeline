@@ -8,7 +8,7 @@
     "Name": "Margaret DeCory",
     "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "Rosebud, So. Dak.",
-    "Allotment number": "not stated",
+    "Allotment number": "342",
     "Cancelled": "not stated",
     "Refused/Protested": "I never made any protest, took patent home and kept it.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "56 years old",
     "Occupation/Income": "not stated",
-    "NOTES": "Did not sign a receipt for the patent. Patent received through the mail at Rosebud, So. Dak. Land never mortgaged. No application made for patent. Sold land for all cash in one payment for $12000.00.",
+    "NOTES": "Did not sign a receipt for the patent. Patent received through the mail at Rosebud, So. Dak. Land never mortgaged. No application made for patent. Sold land for all cash in one payment for $12000.00. | TASK 5 CAT_1 PATCH 2026-05-04: Backfill of allotment number from user research (342). Original Sonnet text extraction captured Margaret DeCory's name and substantive content (no receipt signed, $12,000 land sale) but not her allotment number; this patch adds it. Continuation page of this questionnaire is at part1_questionnaire_022 (biographical/health section). Both records refer to the same source document.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,32 @@
     "input_tokens": 2229,
     "output_tokens": 297
   },
-  "elapsed": 3.8
+  "elapsed": 3.8,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat1_dual_model_with_user_verification",
+      "method": "sonnet_vision_plus_qwen_vision_with_user_verification",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Margaret DeCory",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Rosebud Sioux",
+        "Document type": "questionnaire"
+      },
+      "corrected_values": {
+        "Name": "Margaret DeCory",
+        "Allotment number": "342",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "models_summary": "Backfill of allotment number from user research (342). Original Sonnet text extraction captured Margaret DeCory's name and substantive content (no receipt signed, $12,000 land sale) but not her allotment number; this patch adds it.",
+      "extra_notes": "Continuation page of this questionnaire is at part1_questionnaire_022 (biographical/health section). Both records refer to the same source document.",
+      "user_confirmed": true
+    }
+  ]
 }

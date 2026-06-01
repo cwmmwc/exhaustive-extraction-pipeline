@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Anna W. Skenandore",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "73rd and Adler Streets, Wauwatosa, Wisconsin",
-    "Allotment number": "44070",
+    "Allotment number": "4570",
     "Cancelled": "not stated",
     "Refused/Protested": "did not want her patent in fee, but that it was mailed to her; that she accepted it with protest as she was told that if she did not accept it and keep the taxes up that the land would be sold to satisfy them",
     "Recorded patent": "Patent was recorded at Martin, South Dakota, some months later but does not remember date",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "thirty-nine years old",
     "Occupation/Income": "depends only on her husband's wages for their support; he is a first class carpenter and receives good pay",
-    "NOTES": "mentally competent, in good health; owns no land, home, nor livestock; five minor children to support; sends four children to public school; high rent and high cost of living in cities make it hard to get ahead; has never received any help from the government, State or County, since she received her patent; was not defrauded of her land but realizes she was not competent at that time to come into possession of her deed; mortgage was for purchase of one Molene tractor in 1919; document sworn February 1929 before Notary Public, Milwaukee Co., Wis., commission expires May 6, 1929",
+    "NOTES": "mentally competent, in good health; owns no land, home, nor livestock; five minor children to support; sends four children to public school; high rent and high cost of living in cities make it hard to get ahead; has never received any help from the government, State or County, since she received her patent; was not defrauded of her land but realizes she was not competent at that time to come into possession of her deed; mortgage was for purchase of one Molene tractor in 1919; document sworn February 1929 before Notary Public, Milwaukee Co., Wis., commission expires May 6, 1929 | TASK 3 SUBSTANTIVE CORRECTION 2026-04-29: BLM accession 625322 confirms Pine Ridge tribal affiliation despite off-reservation residence (73rd and Adler Streets, W...). Pine Ridge allottee residing in unspecified urban location when affidavit given. ADDITIONAL CORRECTION: allotment 44070 was a Sonnet OCR error (digit doubling / extra zero); BLM confirms actual allotment is 4570. Same OCR failure mode as Florence Twiss Cuny (762->818) and Anna Blackbird (3518->6475).",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,31 @@
     "input_tokens": 2481,
     "output_tokens": 528
   },
-  "elapsed": 11.0
+  "elapsed": 11.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_blm_confirmed_tribe_correction",
+      "method": "user_blm_lookup",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES",
+        "Allotment number"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "po_address": "73rd and Adler Streets, W...",
+      "external_refs": {
+        "BLM_accession": "625322",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=625322"
+      },
+      "user_confirmed": true,
+      "context_note": "Pine Ridge allottee residing in unspecified urban location when affidavit given. ADDITIONAL CORRECTION: allotment 44070 was a Sonnet OCR error (digit doubling / extra zero); BLM confirms actual allotment is 4570. Same OCR failure mode as Florence Twiss Cuny (762->818) and Anna Blackbird (3518->6475).",
+      "allotment_correction": {
+        "previous": "44070",
+        "corrected": "4570",
+        "rationale": "Sonnet OCR error in original extraction; BLM confirms correct value"
+      }
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Laura Palmier, nee Patton",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rockyford, South Dakota",
     "Allotment number": "3791",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "44 years old",
     "Occupation/Income": "works in the homes of other people for a living; also, her oldest son helps to support her and the other six children",
-    "NOTES": "Mentally incompetent; health is good except for poor teeth; has six children to support; husband died two years ago last August; sold in 1921 to Clyde Taylor but got no consideration at all for her allotment; considers she was defaulted out of her land; has never received any help from the County, State or United States Government except rations at the present time, which issuance was started five years ago, for two children, by the United States Government; document subscribed and sworn November 24, 1928",
+    "NOTES": "Mentally incompetent; health is good except for poor teeth; has six children to support; husband died two years ago last August; sold in 1921 to Clyde Taylor but got no consideration at all for her allotment; considers she was defaulted out of her land; has never received any help from the County, State or United States Government except rations at the present time, which issuance was started five years ago, for two children, by the United States Government; document subscribed and sworn November 24, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2358,
     "output_tokens": 546
   },
-  "elapsed": 5.5
+  "elapsed": 5.5,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Elizabeth Dixon",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Batesland, South Dakota",
-    "Allotment number": "not stated",
+    "Allotment number": "406",
     "Cancelled": "not stated",
     "Refused/Protested": "did not want her patent to her 640 acre allotment when she got it, but she got a letter from the Superintendent of the Pine Ridge Agency, stating that her patent had been reported to the Tax Collector, and she would have taxes to pay in any event; so she accepted it",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "56 years old",
     "Occupation/Income": "her only income is the lease money she receives from her allotment",
-    "NOTES": "mentally competent; not in possession of very good health, being bothered with rheumatism especially; has one minor child to support, and that this child is bothered with heart trouble; husband has been dead since 1920; never received any help from the County or the Government; document No. 406; sworn November 19, 1928; 320 acres mortgaged situated in Bennett County",
+    "NOTES": "mentally competent; not in possession of very good health, being bothered with rheumatism especially; has one minor child to support, and that this child is bothered with heart trouble; husband has been dead since 1920; never received any help from the County or the Government; document No. 406; sworn November 19, 1928; 320 acres mortgaged situated in Bennett County | TASK 5 BULK ALLOTMENT RECOVERY 2026-04-29: Sonnet text-extraction captured the allotment number from the source page header but classified it in NOTES as a 'document number' / 'Document No.' / 'No. NNNN' instead of placing it in the structured Allotment number field. The hypothesis that these document/file references are actually allotment numbers was confirmed via BLM cross-reference (exemplars: Eugene Means 2249, Lucy Patton 6802). This patch corrects 48 records via bulk regex extraction from NOTES with user-supervised review of every HIGH-confidence proposal. | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,32 @@
     "input_tokens": 2305,
     "output_tokens": 502
   },
-  "elapsed": 6.6
+  "elapsed": 6.6,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task5_bulk_allotment_recovery_from_notes",
+      "method": "regex_extraction_with_user_review",
+      "fields_corrected": [
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_allotment": "not stated",
+      "corrected_allotment": "406",
+      "rationale": "Source page header contained 'No. NNNN' which Sonnet captured in NOTES as 'document number' rather than placing in structured Allotment field. Hypothesis confirmed via BLM cross-reference.",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

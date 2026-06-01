@@ -6,21 +6,21 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Patrick F. Wells",
-    "Tribe/Reservation": "Shannon County (Pine Ridge area, South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Kadoka, South Dakota",
     "Allotment number": "3914",
     "Cancelled": "not stated",
     "Refused/Protested": "did not want it and protested against taking it, but was told that if he did not take it, it would be taxed anyway and that if he did not pay them, the land would be sold for taxes and he would lose it",
     "Recorded patent": "he recorded it at Kadoka, So. Dak.",
     "Sold/Mortgaged": "I mortgaged the land for $1000.00 to a man named Lubits of Yankton, So. Dak. that I was never able to pay. the mortgage and it was foreclosed.",
-    "Buyer": "Lubits of Yankton, South Dakota \u2014 mortgaged for $1000.00, foreclosed approximately 1920",
+    "Buyer": "Lubits of Yankton, South Dakota — mortgaged for $1000.00, foreclosed approximately 1920",
     "Tax burden forced sale/Mortgage": "was told that if he did not take it, it would be taxed anyway and that if he did not pay them, the land would be sold for taxes and he would lose it; was never able to pay the mortgage and it was foreclosed",
     "Trust Patent Date": "not stated",
     "Fee Patent Date": "not stated",
     "Gender": "Male",
     "Age": "31 years old",
     "Occupation/Income": "owns a one half interest in 50 head of cattle valued at about $1250.00",
-    "NOTES": "Mentally competent and in good health; father and mother are dependent on him for support, ages 78 and 63 respectively; allottee believes land should have been worth $2000.00 but $1000.00 mortgage was the best he could do; affidavit subscribed and sworn before notary public on October 31, 1928",
+    "NOTES": "Mentally competent and in good health; father and mother are dependent on him for support, ages 78 and 63 respectively; allottee believes land should have been worth $2000.00 but $1000.00 mortgage was the best he could do; affidavit subscribed and sworn before notary public on October 31, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County (Pine Ridge area, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2242,
     "output_tokens": 506
   },
-  "elapsed": 6.5
+  "elapsed": 6.5,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County (Pine Ridge area, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

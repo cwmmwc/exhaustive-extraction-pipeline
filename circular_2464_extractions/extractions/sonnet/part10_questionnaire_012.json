@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Hannah Hardin",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Citizen Potawatomie",
     "Post Office Address": "not stated",
-    "Allotment number": "715412",
+    "Allotment number": "42",
     "Cancelled": "No",
     "Refused/Protested": "Accepted under protest, and filed April 3, 1920 in the office of the County Clerk of Pottawatomie County",
     "Recorded patent": "filed April 3, 1920 in the office of the County Clerk of Pottawatomie County",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "71",
     "Occupation/Income": "Makes living off her farm.",
-    "NOTES": "In good mental, physical and financial condition. Have sold 60 acres for cash. Still have 40 acres clear. All mortgages released. No land sold for debts or taxes. None dependent on her for support. Patent delivered by Indian Agent, Green. No fraud reported.",
+    "NOTES": "In good mental, physical and financial condition. Have sold 60 acres for cash. Still have 40 acres clear. All mortgages released. No land sold for debts or taxes. None dependent on her for support. Patent delivered by Indian Agent, Green. No fraud reported. | TASK 5 SHAWNEE CROSS-REFERENCE 2026-04-30: Hannah Hardin is row 18 on the Shawnee Indian Agency master list (part10_page_035, transmitted by Supt. A. W. Leech, March 20, 1929). Her status on the master list is 'Report in detail attached' — this record IS her detail report. Allotment number corrected from '715412' (which is the patent number, not the allotment) to '42' per user research. Tribe set to 'Citizen Potawatomie' per user BLM research. Same patent-vs-allotment Sonnet misclassification we saw with Anna Blackbird's Form 5-105 record (where allotment field captured a patent reference number instead).",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,28 @@
     "input_tokens": 2496,
     "output_tokens": 341
   },
-  "elapsed": 5.0
+  "elapsed": 5.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-30",
+      "type": "task5_shawnee_cross_reference_with_blm_correction",
+      "method": "user_research_with_master_list_cross_reference",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Allotment number": "715412",
+        "Tribe/Reservation": "(not captured)"
+      },
+      "corrected_values": {
+        "Allotment number": "42",
+        "Tribe/Reservation": "Citizen Potawatomie"
+      },
+      "shawnee_master_list_row": 18,
+      "user_confirmed": true,
+      "extraction_failure_mode": "Sonnet captured patent number ('715412') in the Allotment field. Same misclassification as Anna Blackbird's Form 5-105 record."
+    }
+  ]
 }

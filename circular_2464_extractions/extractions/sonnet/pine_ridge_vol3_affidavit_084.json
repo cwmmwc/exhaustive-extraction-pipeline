@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "John Garnier",
-    "Tribe/Reservation": "Oglala (Shannon County, South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Oglala, South Dakota",
     "Allotment number": "612 7",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "52 years old",
     "Occupation/Income": "farms his wife's land, and, sometimes in the fall, he goes out in the potato fields of Nebraska, for three or four weeks to work; and that this is his only income",
-    "NOTES": "Mentally competent, has good health; wife has very poor health, having chronic appendicitis; three boys to support, all of whom have good health; used mortgage proceeds for improvements on wife's place; considers he got an extra poor price for his land; sold on November 6, 1920; mortgaged June 26, 1920; has never received any help from the County, State nor the United States Government; affidavit sworn November 27, 1928",
+    "NOTES": "Mentally competent, has good health; wife has very poor health, having chronic appendicitis; three boys to support, all of whom have good health; used mortgage proceeds for improvements on wife's place; considers he got an extra poor price for his land; sold on November 6, 1920; mortgaged June 26, 1920; has never received any help from the County, State nor the United States Government; affidavit sworn November 27, 1928 | ORIGINAL_TRIBE_VALUE: \"Oglala (Shannon County, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -29,5 +29,19 @@
     "output_tokens": 586
   },
   "elapsed": 8.5,
-  "retry_count": 1
+  "retry_count": 1,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Oglala (Shannon County, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

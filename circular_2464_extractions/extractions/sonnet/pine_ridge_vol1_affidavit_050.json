@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Ellen Steele, nee Pourier",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rockyford, South Dakota",
     "Allotment number": "719",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "33 years old",
     "Occupation/Income": "they make their living by farming rented land, this being their only income",
-    "NOTES": "mentally competent and in good health; husband is sickly, being bothered very badly with erysipelas; they have five minor children, all of whom have good health except one; has never received any help from the County, State nor the United States Government; 160 acre allotment; document number No. 719; sworn December 10, 1928",
+    "NOTES": "mentally competent and in good health; husband is sickly, being bothered very badly with erysipelas; they have five minor children, all of whom have good health except one; has never received any help from the County, State nor the United States Government; 160 acre allotment; document number No. 719; sworn December 10, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2261,
     "output_tokens": 485
   },
-  "elapsed": 7.3
+  "elapsed": 7.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

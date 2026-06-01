@@ -8,7 +8,7 @@
     "Name": "John Conry, Jr.",
     "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Pine Ridge, South Dakota",
-    "Allotment number": "not stated",
+    "Allotment number": "361",
     "Cancelled": "he has never asked for a cancellation of patent",
     "Refused/Protested": "did not want his patent to his allotment, on account of not wishing to pay taxes, but he was advised that his patent was at the Indian Agency, and he accepted same",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "30 years old",
     "Occupation/Income": "carpenter and painter for the United States Government, this, together with One Hundred and Twenty Dollars ($120.00) for a year and a half lease for his land, being the only source of his income",
-    "NOTES": "has a wife and two minor children to support; condition of health of his family is good; mentally competent and condition of health good; both sources of income are not ample to cover actual needs; has never received any aid from the County or Government; document numbered No. 361; sworn November 10, 1928; Shannon County, South Dakota",
+    "NOTES": "has a wife and two minor children to support; condition of health of his family is good; mentally competent and condition of health good; both sources of income are not ample to cover actual needs; has never received any aid from the County or Government; document numbered No. 361; sworn November 10, 1928; Shannon County, South Dakota | TASK 5 PHRASING-HOLDOUT ALLOTMENT RECOVERY 2026-04-30: Source page header 'No. NNNN' is the allotment number, captured by Sonnet in NOTES as a 'document reference' / 'document numbered' / bare 'No. NNNN' (alternate phrasings of the same Pine Ridge typewritten affidavit pattern). User source-page review confirmed. Applied alongside the 48-record bulk allotment recovery batch.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,21 @@
     "input_tokens": 2325,
     "output_tokens": 498
   },
-  "elapsed": 7.0
+  "elapsed": 7.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-30",
+      "type": "task5_phrasing_holdout_allotment_recovery",
+      "method": "user_source_page_review_alternate_phrasing",
+      "fields_corrected": [
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_allotment": "not stated",
+      "corrected_allotment": "361",
+      "phrasing_pattern": "document numbered No. 361",
+      "rationale": "Same Pine Ridge typewritten affidavit pattern as the 48 records in the bulk allotment recovery batch, but with alternate phrasing of the document-number reference. User source review confirmed the 'No. NNNN' header is the allotment number.",
+      "user_confirmed": true
+    }
+  ]
 }

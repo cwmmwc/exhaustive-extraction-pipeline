@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Charles Allen",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Martin, So. Dak.",
     "Allotment number": "1103",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "47 years old",
     "Occupation/Income": "runs a motion picture show in Martin, So. Dak. and that he is just making enough to live on",
-    "NOTES": "mentally competent in fair health; has one child depending on him for support; has received no aid from the Government, State or County since his patent was issued; is keeping up the payments and the taxes but it is a very hard job to make the payments; all he has is his equity in his allotment; affidavit sworn November 26, 1928",
+    "NOTES": "mentally competent in fair health; has one child depending on him for support; has received no aid from the Government, State or County since his patent was issued; is keeping up the payments and the taxes but it is a very hard job to make the payments; all he has is his equity in his allotment; affidavit sworn November 26, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2826,
     "output_tokens": 853
   },
-  "elapsed": 12.3
+  "elapsed": 12.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Rebecca Rooks Livermont",
-    "Tribe/Reservation": "Shannon County, South Dakota (reservation not explicitly named)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Vetal, So. Dak.",
     "Allotment number": "4058",
     "Cancelled": "an application for cancellation is now pending in the Indian Office",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "34 years old",
     "Occupation/Income": "not stated",
-    "NOTES": "Has five children, all in fair health, depending on her; has received no aid from the Government, State or County since the patent was issued; document sworn November 13, 1928; mentally competent, in fair health",
+    "NOTES": "Has five children, all in fair health, depending on her; has received no aid from the Government, State or County since the patent was issued; document sworn November 13, 1928; mentally competent, in fair health | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (reservation not explicitly named)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2193,
     "output_tokens": 371
   },
-  "elapsed": 4.5
+  "elapsed": 4.5,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (reservation not explicitly named)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

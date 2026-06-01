@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Joseph Emery",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "Burke, not stated (town of Burke)",
-    "Allotment number": "not stated",
+    "Allotment number": "979",
     "Cancelled": "not stated",
     "Refused/Protested": "No, I thought there was no use.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "41",
     "Occupation/Income": "I work in a garage here in town",
-    "NOTES": "Supports himself and mother; not married; land is leased for 1/3 of the crop on the farm land and $125 for the remainder per year; patent was delivered at Burke by a Mr. Slaughter where it had been left by some Government officials; no mortgage or other lien on land; did not ask for patent; satisfied to have patent in fee for the present; document notarized by Jas. W. Cross, Notary Public, commission expires 4-28-32, on May 2, 1929; document page/number 979",
+    "NOTES": "Supports himself and mother; not married; land is leased for 1/3 of the crop on the farm land and $125 for the remainder per year; patent was delivered at Burke by a Mr. Slaughter where it had been left by some Government officials; no mortgage or other lien on land; did not ask for patent; satisfied to have patent in fee for the present; document notarized by Jas. W. Cross, Notary Public, commission expires 4-28-32, on May 2, 1929; document page/number 979 | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 979, tribe Rosebud Sioux, sourced from federal-register-app patents database (Christian's research). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,30 @@
     "input_tokens": 2264,
     "output_tokens": 384
   },
-  "elapsed": 5.7
+  "elapsed": 5.7,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Joseph Emery",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Allotment number": "979",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "extra_note": "",
+      "cross_reference": "",
+      "user_confirmed": true
+    }
+  ]
 }

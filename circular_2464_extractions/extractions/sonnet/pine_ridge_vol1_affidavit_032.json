@@ -5,8 +5,8 @@
   "source_pages": "42",
   "model": "sonnet",
   "extraction": {
-    "Name": "Lulu Trublood\u2014nee Sears",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Name": "Lulu Trublood—nee Sears",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Gordon, Nebraska",
     "Allotment number": "377",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "43 years old",
     "Occupation/Income": "her husband is a farmer; and that is his only source of income",
-    "NOTES": "Mentally competent; health fairly good; husband has good health and supports her and her eight minor children, who have good health; she considers she got almost nothing for her first quarter of land; about 1923 let Mr. Krause have one quarter to satisfy mortgage, releasing one quarter in her favor; about 1924 sold remaining quarter for $2400 cash, described as a poor price for good land; has received no help from the County, State nor the United States Government; document sworn December 7, 1928; County of Shannon, State of South Dakota",
+    "NOTES": "Mentally competent; health fairly good; husband has good health and supports her and her eight minor children, who have good health; she considers she got almost nothing for her first quarter of land; about 1923 let Mr. Krause have one quarter to satisfy mortgage, releasing one quarter in her favor; about 1924 sold remaining quarter for $2400 cash, described as a poor price for good land; has received no help from the County, State nor the United States Government; document sworn December 7, 1928; County of Shannon, State of South Dakota | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2343,
     "output_tokens": 512
   },
-  "elapsed": 6.6
+  "elapsed": 6.6,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

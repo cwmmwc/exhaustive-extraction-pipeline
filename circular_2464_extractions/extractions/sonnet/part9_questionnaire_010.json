@@ -5,10 +5,10 @@
   "source_pages": "31-32",
   "model": "sonnet",
   "extraction": {
-    "Name": "Hazel (last name not fully legible)",
+    "Name": "Helena Larvie",
     "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "3432",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Document is largely illegible due to handwriting quality; notarized in State of South Dakota, County of (illegible), 1929; notary commission expires March 1, 1930; allottee signed her own name in presence of notary",
+    "NOTES": "Document is largely illegible due to handwriting quality; notarized in State of South Dakota, County of (illegible), 1929; notary commission expires March 1, 1930; allottee signed her own name in presence of notary | TASK 5 CAT_3 CORRECTION 2026-05-04: Sonnet text extraction misread the degraded handwriting as 'Hazel (last name not fully legible)'. User source-page review of part 9 pages 31-32 confirmed the questionnaire is Helena Larvie's. The page position (between Helena Larvie's agency narrative at page 30 and Peter Larvie's at page 33) and the part 9 pairing pattern (every allottee has both an agency_narrative and a questionnaire) confirm this. Name corrected to Helena Larvie; allotment 3432 backfilled (verified via BLM General Land Office records, accession SD2610__.247). CROSS-REFERENCE: Helena Larvie's agency narrative is part9_agency_narrative_017 (page 30, same allotment 3432).",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,32 @@
     "input_tokens": 2557,
     "output_tokens": 284
   },
-  "elapsed": 4.4
+  "elapsed": 4.4,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_name_correction_and_backfill",
+      "method": "user_source_page_review_with_blm_glo_cross_reference",
+      "source_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=SD2610__.247&docClass=STA",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Hazel (last name not fully legible)",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "corrected_values": {
+        "Name": "Helena Larvie",
+        "Allotment number": "3432",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "rationale": "Sonnet text extraction misread 'Helena' as 'Hazel' on degraded handwriting. User confirmed via source pages 31-32. Page position and part 9 narrative+questionnaire pairing pattern corroborate. Allotment from BLM GLO records.",
+      "cross_reference": "part9_agency_narrative_017 (Helena Larvie agency narrative, page 30)",
+      "user_confirmed": true
+    }
+  ]
 }

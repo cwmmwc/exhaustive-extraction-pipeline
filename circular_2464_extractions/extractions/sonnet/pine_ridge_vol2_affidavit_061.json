@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Nellie Stirk Lessert",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Martin, South Dakota",
     "Allotment number": "2670",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "33 years old",
     "Occupation/Income": "her husband ranches for their living, this being their only income",
-    "NOTES": "mentally competent, health good; mother of two children who have good health; husband has good health; has never received any help from the County, State nor the United States Government; allotment was 156.42 acres; document sworn March 11, 1929",
+    "NOTES": "mentally competent, health good; mother of two children who have good health; husband has good health; has never received any help from the County, State nor the United States Government; allotment was 156.42 acres; document sworn March 11, 1929 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2254,
     "output_tokens": 459
   },
-  "elapsed": 4.7
+  "elapsed": 4.7,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

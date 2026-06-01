@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Louis Hawkins",
-    "Tribe/Reservation": "Pine Ridge Sioux Indian Tribe / Pine Ridge Indian Reservation",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Martin, South Dakota",
     "Allotment number": "1105",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "71 years of age",
     "Occupation/Income": "unable to work; depends upon his son for his livlihood",
-    "NOTES": "Affidavit sworn November 15, 1928, at Greenwood, South Dakota, before notary public Joseph V. King; received patent in fee through the mail addressed to him at Martin, South Dakota; had no knowledge of the patent in fee being issued to him prior to receiving it; did not make application for fee patent; in poor health and unable to work; has no property or funds; makes his home with his son, William Hawkins, near Marty, South Dakota | Allotment number recovered from source page review of original bundled PDF header, 2026-04-21.",
+    "NOTES": "Affidavit sworn November 15, 1928, at Greenwood, South Dakota, before notary public Joseph V. King; received patent in fee through the mail addressed to him at Martin, South Dakota; had no knowledge of the patent in fee being issued to him prior to receiving it; did not make application for fee patent; in poor health and unable to work; has no property or funds; makes his home with his son, William Hawkins, near Marty, South Dakota | Allotment number recovered from source page review of original bundled PDF header, 2026-04-21. | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Sioux Indian Tribe / Pine Ridge Indian Reservation\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2294,
     "output_tokens": 400
   },
-  "elapsed": 4.9
+  "elapsed": 4.9,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Sioux Indian Tribe / Pine Ridge Indian Reservation",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

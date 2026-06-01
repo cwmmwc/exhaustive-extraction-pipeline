@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Alma A. Seuser, formerly Alma A. Wells",
-    "Tribe/Reservation": "Pine Ridge Sioux",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "not stated",
     "Allotment number": "3911",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "39 years of age",
     "Occupation/Income": "has no special training to carry on any employment sufficiently remunerative to support said children and if employment is sought must necessarily perform tasks of labor for which the compensation is slight and insufficient to support said children",
-    "NOTES": "Patent number 625388; land described as Southwest quarter (SW\u00bc) of section twelve (12) Township forty-three (43) North Range thirty-six (36) West of the 5th P.M., South Dakota; mentally competent and health is just fair; has no land and lives with her children; has five minor children dependent upon her; has received no aid from Government, State or County since fee patent was issued; land valued at approximately $5000.00 at time of mortgage; affiant states she was not actually defrauded but received less than 50% of real worth after paying taxes and other debts; damages estimated at $5000.00; document sworn January 23, 1929 in Cedar County, Nebraska; notary commission expires July 3, 1932",
+    "NOTES": "Patent number 625388; land described as Southwest quarter (SW¼) of section twelve (12) Township forty-three (43) North Range thirty-six (36) West of the 5th P.M., South Dakota; mentally competent and health is just fair; has no land and lives with her children; has five minor children dependent upon her; has received no aid from Government, State or County since fee patent was issued; land valued at approximately $5000.00 at time of mortgage; affiant states she was not actually defrauded but received less than 50% of real worth after paying taxes and other debts; damages estimated at $5000.00; document sworn January 23, 1929 in Cedar County, Nebraska; notary commission expires July 3, 1932 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Sioux\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2794,
     "output_tokens": 625
   },
-  "elapsed": 7.6
+  "elapsed": 7.6,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Sioux",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

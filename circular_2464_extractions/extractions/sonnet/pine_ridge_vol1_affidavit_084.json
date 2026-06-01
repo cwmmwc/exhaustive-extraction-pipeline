@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Lizzie Carlow",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Martin, So. Dak.",
     "Allotment number": "1105",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "41 years old",
     "Occupation/Income": "supported by her husband, that he does common labor for a living, and that his income was about $300.00",
-    "NOTES": "mentally competent and in just fair health; has a home in Martin, So. Dak. valued at about $800.00; has two children depending on her for support; has received no aid from the Government, State or County since she received her patent; sworn November 26, 1928. Document also contains a separate affidavit by Louis Hawkins (Pine Ridge Sioux, allotted on Pine Ridge Indian Reservation), who received a fee patent in 1918 without application, received it through the mail at Martin, South Dakota, without prior knowledge, without protest but did not record it, and sold his allotment in 1919 for $2,400.00 cash; age 71, in poor health, unable to work, no property or funds, makes his home with his son William Hawkins near Marty, South Dakota; sworn November 15, 1928 at Greenwood, South Dakota before Joseph V. King, notary public.",
+    "NOTES": "mentally competent and in just fair health; has a home in Martin, So. Dak. valued at about $800.00; has two children depending on her for support; has received no aid from the Government, State or County since she received her patent; sworn November 26, 1928. Document also contains a separate affidavit by Louis Hawkins (Pine Ridge Sioux, allotted on Pine Ridge Indian Reservation), who received a fee patent in 1918 without application, received it through the mail at Martin, South Dakota, without prior knowledge, without protest but did not record it, and sold his allotment in 1919 for $2,400.00 cash; age 71, in poor health, unable to work, no property or funds, makes his home with his son William Hawkins near Marty, South Dakota; sworn November 15, 1928 at Greenwood, South Dakota before Joseph V. King, notary public. | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2745,
     "output_tokens": 650
   },
-  "elapsed": 7.4
+  "elapsed": 7.4,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    }
+  ]
 }

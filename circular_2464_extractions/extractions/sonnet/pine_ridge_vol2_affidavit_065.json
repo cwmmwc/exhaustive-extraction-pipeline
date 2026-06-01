@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Romena Jensen",
-    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Scenic, So. Dak.",
     "Allotment number": "2689",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "50 years old",
     "Occupation/Income": "not stated",
-    "NOTES": "mentally competent but in very poor health; has nothing, no home and is living on the allotment of her son; has received no aid from the Government, County or State since she was given her patent; has seven minor children depending on her for support; husband is an invalid and unable to do much work but works what he can; deponent thinks the land should have been worth $6400.00; document sworn November 13, 1928",
+    "NOTES": "mentally competent but in very poor health; has nothing, no home and is living on the allotment of her son; has received no aid from the Government, County or State since she was given her patent; has seven minor children depending on her for support; husband is an invalid and unable to do much work but works what he can; deponent thinks the land should have been worth $6400.00; document sworn November 13, 1928 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge (Shannon County, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2285,
     "output_tokens": 459
   },
-  "elapsed": 5.5
+  "elapsed": 5.5,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge (Shannon County, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

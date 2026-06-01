@@ -5,8 +5,8 @@
   "source_pages": "92",
   "model": "sonnet",
   "extraction": {
-    "Name": "Susie Bullard\u2014nee Gresh",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Name": "Susie Bullard—nee Gresh",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Hot Springs, South Dakota",
     "Allotment number": "5502",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "38 years old",
     "Occupation/Income": "her husband supports her and the family by his efforts at common labor; her oldest child gets $16.00 every six months as lease money from his allotment; and that these two sources are their only sources of income",
-    "NOTES": "Mentally competent and has very poor health; mother of four minor children, all of whom have good health except the oldest one, who is bothered with his lungs; husband has pretty good health except that he is blind in one eye, causing him great trouble with the sight of the supposedly good eye; did not sell allotment for debts incurred prior to receipt of patent in fee; considers she received a poor price for her land, as it is good land and has timber on it; has never received any help from the County, State nor the United States Government; document notarized February 11, 1929",
+    "NOTES": "Mentally competent and has very poor health; mother of four minor children, all of whom have good health except the oldest one, who is bothered with his lungs; husband has pretty good health except that he is blind in one eye, causing him great trouble with the sight of the supposedly good eye; did not sell allotment for debts incurred prior to receipt of patent in fee; considers she received a poor price for her land, as it is good land and has timber on it; has never received any help from the County, State nor the United States Government; document notarized February 11, 1929 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2470,
     "output_tokens": 676
   },
-  "elapsed": 9.0
+  "elapsed": 9.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

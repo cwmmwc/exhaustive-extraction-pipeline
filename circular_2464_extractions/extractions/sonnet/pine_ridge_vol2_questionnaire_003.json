@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Mary Monroe Smith",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "not stated",
     "Allotment number": "2321",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "32",
     "Occupation/Income": "I have not had any support from State, Government or County",
-    "NOTES": "State of Nebraska, Box Butte County. Had an operation for tumor last July, not fully recovered. Mentally good. Physically fair. Land was leased to Lance Creek Livestock Co., for five years at 25\u00a2 per acre, to be paid twice a year. They paid for only two and one-half years. After lease expired they paid $12.00 lease money; B. G. Pinney of Crawford, Nebraska, and Albert Rochelle of Tuthill, South Dakota, were stockholders and at the head of this company. No persons dependent upon her for support. Subscribed and sworn to before me this 9th day of [March], 1929.",
+    "NOTES": "State of Nebraska, Box Butte County. Had an operation for tumor last July, not fully recovered. Mentally good. Physically fair. Land was leased to Lance Creek Livestock Co., for five years at 25¢ per acre, to be paid twice a year. They paid for only two and one-half years. After lease expired they paid $12.00 lease money; B. G. Pinney of Crawford, Nebraska, and Albert Rochelle of Tuthill, South Dakota, were stockholders and at the head of this company. No persons dependent upon her for support. Subscribed and sworn to before me this 9th day of [March], 1929. | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2535,
     "output_tokens": 417
   },
-  "elapsed": 6.1
+  "elapsed": 6.1,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    }
+  ]
 }

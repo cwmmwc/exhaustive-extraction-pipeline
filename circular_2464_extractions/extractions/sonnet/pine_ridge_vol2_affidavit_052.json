@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Peter Pourier",
-    "Tribe/Reservation": "Pine Ridge Reservation",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Manderson, South Dakota",
     "Allotment number": "2614",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "40 years old",
     "Occupation/Income": "chief source of revenue at present is working for the United States Government, as Assistant Farmer, on the Pine Ridge Reservation",
-    "NOTES": "mentally competent; health generally good but suffered a broken leg in 1925 by a saw log rolling on it and will always be a cripple from it; for about a year after the accident received $55.00 per month from F.L. Nihart of Pringle, South Dakota, for whom he was working at the time of the accident; has a wife and seven minor children to support; family all have good health; close living on his salary for his large family; had a chance to repurchase the place through the Indian Agency but the State Bank of Scenic would not surrender the papers, wishing to retain the land; has never received any help from the County or Government; document sworn in 1928",
+    "NOTES": "mentally competent; health generally good but suffered a broken leg in 1925 by a saw log rolling on it and will always be a cripple from it; for about a year after the accident received $55.00 per month from F.L. Nihart of Pringle, South Dakota, for whom he was working at the time of the accident; has a wife and seven minor children to support; family all have good health; close living on his salary for his large family; had a chance to repurchase the place through the Indian Agency but the State Bank of Scenic would not surrender the papers, wishing to retain the land; has never received any help from the County or Government; document sworn in 1928 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Reservation\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2388,
     "output_tokens": 511
   },
-  "elapsed": 6.6
+  "elapsed": 6.6,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Reservation",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

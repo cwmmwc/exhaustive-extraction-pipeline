@@ -6,21 +6,21 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Julia Harvey",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area implied)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rockford, South Dakota",
     "Allotment number": "2720",
     "Cancelled": "not stated",
     "Refused/Protested": "did not want her patent in fee for she knew she could not pay the taxes but she took it on the advice of the Farmer",
     "Recorded patent": "not stated",
     "Sold/Mortgaged": "mortgaged her land to Peter Deuhamel of Rapid City, So. Dak. for $1400.00, that she could not pay the mortgage so he foreclosed on the land four years ago",
-    "Buyer": "Peter Deuhamel of Rapid City, South Dakota \u2014 foreclosed on the land four years ago; mortgage amount $1400.00",
+    "Buyer": "Peter Deuhamel of Rapid City, South Dakota — foreclosed on the land four years ago; mortgage amount $1400.00",
     "Tax burden forced sale/Mortgage": "could not pay the taxes so she mortgaged her land; could not pay the mortgage so he foreclosed",
     "Trust Patent Date": "not stated",
     "Fee Patent Date": "not stated",
     "Gender": "Female",
     "Age": "45 years old",
     "Occupation/Income": "depends on her husband for support who does common labor for a living, making about $300.00 per year",
-    "NOTES": "Eight children depending on her for support; received no aid from the Government, State, or County since she was granted a patent; mentally competent, in poor health, and nearly blind; has no land or anything; document signed by husband Joseph Martinez because Julia is so near blind she cannot write; subscribed and sworn before notary by Joseph Martinez, husband, on December 4, 1928; surname also appears as 'Martinez' in document",
+    "NOTES": "Eight children depending on her for support; received no aid from the Government, State, or County since she was granted a patent; mentally competent, in poor health, and nearly blind; has no land or anything; document signed by husband Joseph Martinez because Julia is so near blind she cannot write; subscribed and sworn before notary by Joseph Martinez, husband, on December 4, 1928; surname also appears as 'Martinez' in document | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area implied)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "Signed by husband Joseph Martinez because Julia Harvey/Martinez is so near blind that she cannot write",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2239,
     "output_tokens": 481
   },
-  "elapsed": 8.7
+  "elapsed": 8.7,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area implied)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

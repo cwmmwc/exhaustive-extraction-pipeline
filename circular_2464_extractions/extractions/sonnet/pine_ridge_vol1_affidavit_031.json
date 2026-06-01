@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Susan Clark",
-    "Tribe/Reservation": "Shannon County (Pine Ridge area, South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Batesland, So. Dak.",
     "Allotment number": "375",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "73 years old",
     "Occupation/Income": "supported by her husband who farms a little on the allotment of her son",
-    "NOTES": "Mentally competent and in fair health for her age; has no minor children but supports a grandchild; all she has is 4 lots in Batesland, So. Dak. worth about $100.00 for them all; did not get a fair price for her land, believing it to be worth $20.00 per acre at that time; has not received any assistance from the Government, State or County since her patent was issued; sworn November 21, 1928, Shannon County, South Dakota",
+    "NOTES": "Mentally competent and in fair health for her age; has no minor children but supports a grandchild; all she has is 4 lots in Batesland, So. Dak. worth about $100.00 for them all; did not get a fair price for her land, believing it to be worth $20.00 per acre at that time; has not received any assistance from the Government, State or County since her patent was issued; sworn November 21, 1928, Shannon County, South Dakota | ORIGINAL_TRIBE_VALUE: \"Shannon County (Pine Ridge area, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2298,
     "output_tokens": 510
   },
-  "elapsed": 6.4
+  "elapsed": 6.4,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County (Pine Ridge area, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

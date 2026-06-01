@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "R. DeGraff",
-    "Tribe/Reservation": "Shawnee",
+    "Tribe/Reservation": "Shawnee Indian Agency (actual tribe unknown)",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "(not in patents database)",
     "Cancelled": "not stated",
     "Refused/Protested": "Fee patent issued prior to 1921 without application",
     "Recorded patent": "not stated",
@@ -20,10 +20,33 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Status per Shawnee Indian Agency cover letter: Report mailed to her not returned. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page035. Document reference: 5-1142. Allotment number not recorded on source list nor in RA spreadsheet.",
+    "NOTES": "Status per Shawnee Indian Agency cover letter: Report mailed to her not returned. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page035. Document reference: 5-1142. Allotment number not recorded on source list nor in RA spreadsheet. | TASK 5 SHAWNEE FINAL BACKFILL 2026-06-01 (recreated after filter-repo loss): Not found in federal-register-app patents database. May indicate Circular 2464 investigation began but no forced fee patent was consummated, or patent record exists under a different name not currently indexed. Marked as explicitly unresolved per OPERATIONS convention so it is distinguishable from unprocessed rows. Tribe also unknown — every resolvable row on the Shawnee Indian Agency master list turned out to be Citizen Potawatomie, but absent a confirmed database record this row cannot be assigned a definite tribe.",
     "Literate/Illiterate": "not stated",
     "Document type": "agency_narrative"
   },
   "usage": {},
-  "elapsed": 0
+  "elapsed": 0,
+  "recovery_notes": [
+    {
+      "date": "2026-06-01",
+      "type": "task5_shawnee_not_in_database_marker_recreated",
+      "method": "user_research_federal_register_app_patents_database_no_match",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Shawnee"
+      },
+      "corrected_values": {
+        "Allotment number": "(not in patents database)",
+        "Tribe/Reservation": "Shawnee Indian Agency (actual tribe unknown)"
+      },
+      "user_confirmed": true,
+      "context": "Recreation of lost 2026-05-04 backfill_shawnee_final.py work."
+    }
+  ]
 }

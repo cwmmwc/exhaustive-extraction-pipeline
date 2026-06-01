@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Mrs. Hans J. Hansen",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Carmichael, Sacramento County, California",
     "Allotment number": "4060",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "30 years old",
     "Occupation/Income": "Husband receives a small compensation from Government but it is not near enough to support us when you have to pay rent, etc. I work a little during summer picking fruit but is hard work and not much pay.",
-    "NOTES": "Mentally competent and in just fair health. Have no land, no home and husband is unable to work greater part of the time. No one dependent on her. Husband is an ex-soldier, gassed during the war and contracted tuberculosis and was sent to Arizona to a hospital. Date of redemption has expired three or four years ago. They only received about 20% of what the land was really worth. Husband had to pay a year's back taxes at time of recording as patent was made out some time before it was issued. Patent was sent by mail and receipted for. Subscribed and sworn January 21, 1929.",
+    "NOTES": "Mentally competent and in just fair health. Have no land, no home and husband is unable to work greater part of the time. No one dependent on her. Husband is an ex-soldier, gassed during the war and contracted tuberculosis and was sent to Arizona to a hospital. Date of redemption has expired three or four years ago. They only received about 20% of what the land was really worth. Husband had to pay a year's back taxes at time of recording as patent was made out some time before it was issued. Patent was sent by mail and receipted for. Subscribed and sworn January 21, 1929. | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2469,
     "output_tokens": 546
   },
-  "elapsed": 5.9
+  "elapsed": 5.9,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

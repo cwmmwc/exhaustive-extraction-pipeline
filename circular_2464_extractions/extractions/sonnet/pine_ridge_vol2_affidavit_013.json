@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Jennie M. Coates, nee Cummings",
-    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Martin, South Dakota",
     "Allotment number": "2153",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "29 years old",
     "Occupation/Income": "her husband farms for a living; and that is his only income",
-    "NOTES": "mentally competent; has pretty good health; husband has good health and supports her and her six children; did not sell her place for debts incurred prior to receiving her patent in fee; the $1200.00 she borrowed all went into the place in the way of lumber and taxes; the livery barn did not prove to be a money maker; considers she got a poor deal out of her place; has never received any aid from the County, State nor the United States Government; document sworn December 27, 1928; County of Shannon, State of South Dakota",
+    "NOTES": "mentally competent; has pretty good health; husband has good health and supports her and her six children; did not sell her place for debts incurred prior to receiving her patent in fee; the $1200.00 she borrowed all went into the place in the way of lumber and taxes; the livery barn did not prove to be a money maker; considers she got a poor deal out of her place; has never received any aid from the County, State nor the United States Government; document sworn December 27, 1928; County of Shannon, State of South Dakota | ORIGINAL_TRIBE_VALUE: \"Pine Ridge (Shannon County, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2400,
     "output_tokens": 597
   },
-  "elapsed": 6.2
+  "elapsed": 6.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge (Shannon County, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

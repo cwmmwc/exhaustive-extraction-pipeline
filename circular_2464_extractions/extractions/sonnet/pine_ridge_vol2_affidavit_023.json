@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Alex Labuff",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Wanamaker, So. Dak.",
     "Allotment number": "2260",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "66 years old",
     "Occupation/Income": "not stated",
-    "NOTES": "Has 160 acres of land remaining at time of affidavit; got a lawyer to fight his case and recovered 480 acres \u2014 gave lawyer 160 acres for his work, sold 160 acres to Mr. Chub of Cody, Nebr. for $1400.00 (half paid); has one minor child depending on him for support; has received no aid from the Government, State or County since his patent was issued; mentally competent and in very poor health; affidavit subscribed and sworn November 30, 1928, Shannon County, South Dakota",
+    "NOTES": "Has 160 acres of land remaining at time of affidavit; got a lawyer to fight his case and recovered 480 acres — gave lawyer 160 acres for his work, sold 160 acres to Mr. Chub of Cody, Nebr. for $1400.00 (half paid); has one minor child depending on him for support; has received no aid from the Government, State or County since his patent was issued; mentally competent and in very poor health; affidavit subscribed and sworn November 30, 1928, Shannon County, South Dakota | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2286,
     "output_tokens": 550
   },
-  "elapsed": 10.4
+  "elapsed": 10.4,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

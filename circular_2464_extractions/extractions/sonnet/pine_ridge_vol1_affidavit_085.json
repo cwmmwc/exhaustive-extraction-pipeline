@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Laura Desersa",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rapid City, South Dakota",
     "Allotment number": "1116",
     "Cancelled": "said patent has not been cancelled",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "39 years old",
     "Occupation/Income": "she has no property and no means of livelihood other then her husband",
-    "NOTES": "Land is Northwest Quarter of Section 16, Township 36 North of Range 38 West of the 6th Principal Meridian in Bennett County, South Dakota. Sold about two months after receiving patent. Affiant received only about $150.00 or $175.00 in cash; the remainder of consideration was paid in goods, wares and merchandise from Charles Volts's store in Martin, SD; affiant believes she did not receive the full amount of consideration and has never been able to receive an accounting. Husband Louis Desersa works at Warren-Lamb Lumber Company sawmill in Rapid City earning about $2.75 per day, supporting affiant and four children. Children: Clarence Desersa (14), Leo William Desersa (9), Aaron Garfield Desersa (8), Katherine Genevieve Desersa (4). Mental and physical condition about normal. Notary: Martha Bockert. Document dated May 20, 1929.",
+    "NOTES": "Land is Northwest Quarter of Section 16, Township 36 North of Range 38 West of the 6th Principal Meridian in Bennett County, South Dakota. Sold about two months after receiving patent. Affiant received only about $150.00 or $175.00 in cash; the remainder of consideration was paid in goods, wares and merchandise from Charles Volts's store in Martin, SD; affiant believes she did not receive the full amount of consideration and has never been able to receive an accounting. Husband Louis Desersa works at Warren-Lamb Lumber Company sawmill in Rapid City earning about $2.75 per day, supporting affiant and four children. Children: Clarence Desersa (14), Leo William Desersa (9), Aaron Garfield Desersa (8), Katherine Genevieve Desersa (4). Mental and physical condition about normal. Notary: Martha Bockert. Document dated May 20, 1929. | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2605,
     "output_tokens": 570
   },
-  "elapsed": 8.2
+  "elapsed": 8.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    }
+  ]
 }

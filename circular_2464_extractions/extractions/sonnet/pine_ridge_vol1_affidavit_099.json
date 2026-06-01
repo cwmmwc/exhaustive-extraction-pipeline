@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Emma Weber",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Merriman, Nebraska",
     "Allotment number": "1352",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "59 years old",
     "Occupation/Income": "her husband, who has fine health, supports her and the six children, he being a rancher, or stockman",
-    "NOTES": "mentally competent; health is pretty fair; has 6 children to support; husband has fine health and is a rancher/stockman; mortgaged her allotment along with quarter allotments of three children Frank, Joseph, and Julia; husband bought three whole sections of land in his own name; she has kept taxes paid on all land up to date; has never received any help from the County, State nor the United States Government; allotment is 632.16 acres",
+    "NOTES": "mentally competent; health is pretty fair; has 6 children to support; husband has fine health and is a rancher/stockman; mortgaged her allotment along with quarter allotments of three children Frank, Joseph, and Julia; husband bought three whole sections of land in his own name; she has kept taxes paid on all land up to date; has never received any help from the County, State nor the United States Government; allotment is 632.16 acres | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2324,
     "output_tokens": 551
   },
-  "elapsed": 8.2
+  "elapsed": 8.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

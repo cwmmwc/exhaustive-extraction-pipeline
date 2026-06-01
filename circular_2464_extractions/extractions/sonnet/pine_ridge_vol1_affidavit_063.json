@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Joseph Lessert",
-    "Tribe/Reservation": "Pine Ridge (Oglala Sioux)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Leupp, Arizona",
     "Allotment number": "963",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "43 years old",
     "Occupation/Income": "employed by the United States Government, and working every day for a living",
-    "NOTES": "Received $900.00 from the sale of the land, which was considered a fair price at the time; mentally competent, in good health; has no land; has not received any aid from the Government, State or County since his patent in fee was issued; document references four children (text partially illegible); R. C. Lessert is his cousin; document number 22201; State of Arizona, County of Coconino; sworn 1929 | Source review 2026-04-27: Joseph Lessert is a Pine Ridge (Oglala Sioux) allottee who had relocated to Leupp, Arizona by the time of the affidavit. Affidavit sworn before notary in Coconino County, Arizona, on May 4, 1929. Notary commission expires 7/27/30. R.C. Lessert (named in the original recording note) is identified in source as Joseph's cousin, who attended to recording the patent. Joseph stated he 'has no land' (terminal sale; proceeds went to cattle purchase). He considered the $900 sale price a fair price at the time. No Pine Ridge Agency receipt stamp appears on this affidavit (unlike his cousin Minnie's, allot 969). BLM patent accession: 625270. Tribe/Reservation field corrected from 'Leupp, Arizona (agency not explicitly named)' which incorrectly conflated current residence with tribal affiliation.",
+    "NOTES": "Received $900.00 from the sale of the land, which was considered a fair price at the time; mentally competent, in good health; has no land; has not received any aid from the Government, State or County since his patent in fee was issued; document references four children (text partially illegible); R. C. Lessert is his cousin; document number 22201; State of Arizona, County of Coconino; sworn 1929 | Source review 2026-04-27: Joseph Lessert is a Pine Ridge (Oglala Sioux) allottee who had relocated to Leupp, Arizona by the time of the affidavit. Affidavit sworn before notary in Coconino County, Arizona, on May 4, 1929. Notary commission expires 7/27/30. R.C. Lessert (named in the original recording note) is identified in source as Joseph's cousin, who attended to recording the patent. Joseph stated he 'has no land' (terminal sale; proceeds went to cattle purchase). He considered the $900 sale price a fair price at the time. No Pine Ridge Agency receipt stamp appears on this affidavit (unlike his cousin Minnie's, allot 969). BLM patent accession: 625270. Tribe/Reservation field corrected from 'Leupp, Arizona (agency not explicitly named)' which incorrectly conflated current residence with tribal affiliation. | TASK 3 CANONICAL CONSOLIDATION 2026-04-29: Tribe value 'Pine Ridge (Oglala Sioux)' collapsed to 'Pine Ridge' to maintain a single canonical string across the corpus. The original Task 1 substantive correction (BLM-confirmed Pine Ridge tribal affiliation) is preserved in this record's recovery_notes audit trail; this collapse is a string normalization only and does not alter the underlying evidentiary basis.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2316,
     "output_tokens": 416
   },
-  "elapsed": 5.2
+  "elapsed": 5.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_canonical_string_consolidation",
+      "method": "single_canonical_string_policy",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "Pine Ridge (Oglala Sioux)",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Single canonical string policy. Substantive evidentiary basis preserved in earlier recovery_notes entries."
+    }
+  ]
 }

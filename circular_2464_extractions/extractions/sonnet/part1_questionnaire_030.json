@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Clara Bonser Monteau",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "Crookston, Nebraska",
-    "Allotment number": "not stated",
+    "Allotment number": "148",
     "Cancelled": "not stated",
     "Refused/Protested": "No, I took it.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "36 years of age",
     "Occupation/Income": "My husband works for the railroad.",
-    "NOTES": "Did not sign a receipt for the patent. Sold land for $2400.00, received in cash all at one time. Not satisfied with the sale; stated land was worth more. Did not apply for patent; patent was sent by mail. Six children, all living at home and all dependent on her. Subscribed and sworn before E. E. McKean, Superintendent, April 5, 1929.",
+    "NOTES": "Did not sign a receipt for the patent. Sold land for $2400.00, received in cash all at one time. Not satisfied with the sale; stated land was worth more. Did not apply for patent; patent was sent by mail. Six children, all living at home and all dependent on her. Subscribed and sworn before E. E. McKean, Superintendent, April 5, 1929. | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 148, tribe Rosebud Sioux, sourced from federal-register-app patents database (Christian's research). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number. Recorded as Clara Bonser at the time the patent was issued; Monteau is her later married name.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -29,5 +29,30 @@
     "output_tokens": 331
   },
   "elapsed": 5.6,
-  "retry_count": 1
+  "retry_count": 1,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Clara Bonser Monteau",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Allotment number": "148",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "extra_note": "Recorded as Clara Bonser at the time the patent was issued; Monteau is her later married name.",
+      "cross_reference": "",
+      "user_confirmed": true
+    }
+  ]
 }

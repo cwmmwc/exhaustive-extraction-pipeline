@@ -5,10 +5,10 @@
   "source_pages": "53-54",
   "model": "sonnet",
   "extraction": {
-    "Name": "not stated",
-    "Tribe/Reservation": "not stated",
+    "Name": "Lucy DuBray (Sturdevant)",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "2341",
     "Cancelled": "not stated",
     "Refused/Protested": "o Leal",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "46",
     "Occupation/Income": "not stated",
-    "NOTES": "Document is heavily damaged and largely illegible. References to mortgage foreclosure and land questions visible but not fully readable. Notarized in 1929; commission expires noted as 12-La-27/1227. Agency stamp visible: 'RECEIVED MAY 18 1929 ROSEBUD AGENCY.' Allottee signed name in notary's presence.",
+    "NOTES": "Document is heavily damaged and largely illegible. References to mortgage foreclosure and land questions visible but not fully readable. Notarized in 1929; commission expires noted as 12-La-27/1227. Agency stamp visible: 'RECEIVED MAY 18 1929 ROSEBUD AGENCY.' Allottee signed name in notary's presence. | TASK 5 CAT_1 PATCH 2026-05-04: Identified via dual-model vision recovery (Sonnet vision + Qwen vision via HPC) with cross-reference confirmation. Sonnet vision: 'Lucy Dubray Sturdevant' / 2341 (correct). Qwen vision page 1: 'Ducey Aubrey Murdewant' / 2341 (badly garbled name; correct allotment). Qwen vision page 2: 'Ducy Dubray Sturdevant' / null (closer name reading; no allotment captured). CROSS-REFERENCE: part7_agency_narrative_025b (Lucy DuBray (Sturdevant), allotment 2341, Rosebud Sioux — created via multi-allottee bundle split on 2026-05-03 with full Sonnet vision content recovery and user source-page confirmation). Sibling: John DuBray (Boyd) at allotment 2338 (part7_agency_narrative_025a). This questionnaire is a separate appearance of Lucy DuBray Sturdevant in the corpus.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -267,5 +267,31 @@
     ],
     "legislative_actions": [],
     "tables": []
-  }
+  },
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat1_dual_model_with_corpus_cross_reference",
+      "method": "sonnet_vision_plus_qwen_vision_plus_corpus_cross_reference",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "not stated",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Name": "Lucy DuBray (Sturdevant)",
+        "Allotment number": "2341",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "models_summary": "Sonnet vision: 'Lucy Dubray Sturdevant' / 2341 (correct). Qwen vision page 1: 'Ducey Aubrey Murdewant' / 2341 (badly garbled name; correct allotment). Qwen vision page 2: 'Ducy Dubray Sturdevant' / null (closer name reading; no allotment captured).",
+      "cross_reference": "part7_agency_narrative_025b (Lucy DuBray (Sturdevant), allotment 2341, Rosebud Sioux — created via multi-allottee bundle split on 2026-05-03 with full Sonnet vision content recovery and user source-page confirmation). Sibling: John DuBray (Boyd) at allotment 2338 (part7_agency_narrative_025a). This questionnaire is a separate appearance of Lucy DuBray Sturdevant in the corpus.",
+      "user_confirmed": true
+    }
+  ]
 }

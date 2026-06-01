@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Cleveland Fallis",
-    "Tribe/Reservation": "Big Bend District",
+    "Tribe/Reservation": "Lower Brule",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "928",
     "Cancelled": "Patent has not been cancelled.",
     "Refused/Protested": "Didtn't protest as he thought that he had to take the patent.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "45",
     "Occupation/Income": "Has supported himself by farming, lobor, selling stock, breaking horses",
-    "NOTES": "Indian police came to allottee's place and told him there was a Fee Patent at the Agency office. Went to office where Major Glaffin was present; instructed to shoot and arrow, take hold of plow handle, given a pocket book, the patent, and a Citizen button. Land mortgaged for $1,000.00 to Presho State Bank at Presho S.D.; $120.00 commission and 10% interest taken out of the $1,000.00. Land then sold for $1,800.00 total. Received fair price, not sold to pay up debt. Has received no support from Gov't excepting medical treatment for his eyes; no aid from State or County. Wife and 5 children dependent on him. Mental condition: Good; Physical condition: Fair; Financial condition: Poor. It seems that $120.00 was a large commission to charge on a $1,000.00 loan besides the interest \u2014 Presho State Bank made the loan. Prepared by Ged H. Boesi, Gov't Farmer, Big Bend District. Document dated December 11th, 1928.",
+    "NOTES": "Indian police came to allottee's place and told him there was a Fee Patent at the Agency office. Went to office where Major Glaffin was present; instructed to shoot and arrow, take hold of plow handle, given a pocket book, the patent, and a Citizen button. Land mortgaged for $1,000.00 to Presho State Bank at Presho S.D.; $120.00 commission and 10% interest taken out of the $1,000.00. Land then sold for $1,800.00 total. Received fair price, not sold to pay up debt. Has received no support from Gov't excepting medical treatment for his eyes; no aid from State or County. Wife and 5 children dependent on him. Mental condition: Good; Physical condition: Fair; Financial condition: Poor. It seems that $120.00 was a large commission to charge on a $1,000.00 loan besides the interest — Presho State Bank made the loan. Prepared by Ged H. Boesi, Gov't Farmer, Big Bend District. Document dated December 11th, 1928. | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 928 sourced from federal-register-app patents database (Christian's research, 2026-05-04). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number. TRIBE: previous label 'Big Bend District' updated to 'Lower Brule'. TRIBE: Cleveland Fallis is LOWER BRULE, not Crow Creek Sioux. The corpus extraction labeled him 'Big Bend District' (a district associated with the Crow Creek Reservation), but his tribal affiliation is Lower Brule per Christian's research. The district label is administrative; the tribe field carries his actual affiliation.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,30 @@
     "input_tokens": 2827,
     "output_tokens": 551
   },
-  "elapsed": 9.7
+  "elapsed": 9.7,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Cleveland Fallis",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Big Bend District"
+      },
+      "corrected_values": {
+        "Allotment number": "928",
+        "Tribe/Reservation": "Lower Brule"
+      },
+      "cross_reference": "",
+      "extra_note": "TRIBE: Cleveland Fallis is LOWER BRULE, not Crow Creek Sioux. The corpus extraction labeled him 'Big Bend District' (a district associated with the Crow Creek Reservation), but his tribal affiliation is Lower Brule per Christian's research. The district label is administrative; the tribe field carries his actual affiliation.",
+      "user_confirmed": true
+    }
+  ]
 }

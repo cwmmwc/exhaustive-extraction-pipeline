@@ -5,10 +5,10 @@
   "source_pages": "8",
   "model": "sonnet",
   "extraction": {
-    "Name": "not stated",
-    "Tribe/Reservation": "not stated",
+    "Name": "Belle Water",
+    "Tribe/Reservation": "Ponca",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "61",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Document is heavily degraded and largely illegible. Partial text suggests a notarized affidavit from the State of Oklahoma, 1928, before a Superintendent-Notary at what appears to be an Indian agency (reference to 'the Indian for r' 7333'). Fragment mentions land sold for a debt contracted before the patent was received. Most fields cannot be reliably extracted due to document condition.",
+    "NOTES": "Document is heavily degraded and largely illegible. Partial text suggests a notarized affidavit from the State of Oklahoma, 1928, before a Superintendent-Notary at what appears to be an Indian agency (reference to 'the Indian for r' 7333'). Fragment mentions land sold for a debt contracted before the patent was received. Most fields cannot be reliably extracted due to document condition. | TASK 5 CAT_1 PATCH 2026-05-04: Both Sonnet and Qwen vision agree on name 'Belle Water'. Neither captured allotment. User confirmed allotment 61 and tribe Ponca.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -156,5 +156,32 @@
     "correspondence": [],
     "legislative_actions": [],
     "tables": []
-  }
+  },
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat1_dual_model_with_user_verification",
+      "method": "sonnet_vision_plus_qwen_vision_with_user_verification",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "not stated",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated",
+        "Document type": "affidavit"
+      },
+      "corrected_values": {
+        "Name": "Belle Water",
+        "Allotment number": "61",
+        "Tribe/Reservation": "Ponca"
+      },
+      "models_summary": "Both Sonnet and Qwen vision agree on name 'Belle Water'. Neither captured allotment. User confirmed allotment 61 and tribe Ponca.",
+      "extra_notes": "",
+      "user_confirmed": true
+    }
+  ]
 }

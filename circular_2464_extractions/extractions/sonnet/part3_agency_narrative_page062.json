@@ -20,10 +20,28 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "This is an administrative cover letter dated November 21, 1928, from Superintendent E. W. Jermark to the Commissioner of Indian Affairs, referencing Circular No. 2464 Fee Patent Data. The letter reports that 92 Indians have come in to make statements, of which 33 are Indians allotted in Bennett County. The letter requests guidance on whether to send data as completed or hold until the entire list is finished. No individual allottee data is contained in this document.",
+    "NOTES": "This is an administrative cover letter dated November 21, 1928, from Superintendent E. W. Jermark to the Commissioner of Indian Affairs, referencing Circular No. 2464 Fee Patent Data. The letter reports that 92 Indians have come in to make statements, of which 33 are Indians allotted in Bennett County. The letter requests guidance on whether to send data as completed or hold until the entire list is finished. No individual allottee data is contained in this document. | TASK 5 RECLASSIFICATION 2026-05-03: This record was originally enumerated as CAT_1 (Sonnet missed allottee Name + Allotment), but it is NOT an allottee record — it is a cover letter from E.W. Jermark (Superintendent, Pine Ridge Agency) to the Commissioner of Indian Affairs dated 1928-11-21, reporting on Circular 2464 compliance. There is no allottee Name or Allotment to recover because the document is correspondence, not an allottee case file. Document type updated from 'agency_narrative' to 'agency_correspondence'. This record is analytically valuable as compliance/response correspondence and should remain in the corpus, but should be excluded from CAT_1 vision recovery batches.",
     "Literate/Illiterate": "not stated",
-    "Document type": "agency_narrative"
+    "Document type": "agency_correspondence"
   },
   "usage": {},
-  "elapsed": 0
+  "elapsed": 0,
+  "recovery_notes": [
+    {
+      "date": "2026-05-03",
+      "type": "task5_reclassification_administrative_correspondence",
+      "method": "user_review_of_administrative_cover_letters",
+      "fields_corrected": [
+        "Document type",
+        "NOTES"
+      ],
+      "previous_doc_type": "agency_narrative",
+      "corrected_doc_type": "agency_correspondence",
+      "sender": "E.W. Jermark",
+      "sender_title": "Superintendent, Pine Ridge Agency",
+      "letter_date": "1928-11-21",
+      "rationale": "Cover letter from agency superintendent to Commissioner of Indian Affairs. Has no allottee Name or Allotment because it is administrative correspondence, not an allottee case file. Should be excluded from CAT_1 vision recovery.",
+      "user_confirmed": true
+    }
+  ]
 }

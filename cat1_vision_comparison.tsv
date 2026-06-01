@@ -1,0 +1,27 @@
+record_id	verdict	sonnet_name	qwen_name	sonnet_allot	qwen_allot	qwen_confidences
+part10_affidavit_003	disagree_name	Belle Birdie Bruno	Bill Bimia Bruno	unknown	null	p1:n=h,a=n
+part10_affidavit_005	disagree_name	Albion Ogee	Albion Dyer	unknown	null	p1:n=h,a=n
+part10_questionnaire_002	agree	Myrtle Last	Myrtle Last	5406	5406	p1:n=h,a=h; p2:n=h,a=h
+part10_questionnaire_010	agree	Lucius Eldridge	Lucius Eldridge	1-2 (partially legible)	1/2	p1:n=h,a=h
+part10_questionnaire_011	disagree_name	Lizzie Lyons nee Hartman	Lizzie Lyons New Hartman	N1/2 SW1/4 S-8-5	N½ S17 T4 S=8 R5	p1:n=h,a=h
+part10_questionnaire_013	disagree_allot	Edward Hutton	Edward Hutton	4-457N	44570	p1:n=h,a=h
+part10_questionnaire_016	disagree_name	Olive Shepard	Oline Shepard	862	862	p1:n=h,a=h
+part11_affidavit_001	neither_has_data	Nicholas Trombla	Nicholas Trombla	unknown	null	p1:n=h,a=n
+part11_agency_narrative_003	sonnet_has_name_qwen_missing	M. B. Gregg				p1:n=n,a=n
+part13_affidavit_001	neither_has_data	Belle Water	Belle Water	unknown	null	p1:n=h,a=n
+part1_questionnaire_003	agree	W. G. Emery	W.G. Emery	2902	2902	p1:n=h,a=h
+part1_questionnaire_005	disagree_name	Edith Emery Lague	Edith Emery Laque	2996	6931	p1:n=h,a=h; p2:n=h,a=h
+part1_questionnaire_015	agree	Mrs. Anna Shuck	Mrs Anna Shuck	7394	7394	p1:n=h,a=h; p2:n=n,a=h; p3:n=n,a=h; p4:n=h,a=n
+part1_questionnaire_016	agree	Mrs. Anna Shuck	Mrs Anna Shuck	7394	7394	p1:n=h,a=h; p2:n=n,a=n
+part1_questionnaire_018	disagree_allot	John Sully	John Sully	6470	359816	p1:n=h,a=h; p2:n=h,a=h; p3:n=n,a=n; p4:n=n,a=n; p5:n=h,a=n
+part1_questionnaire_019	agree	George Sully	George Sully	6465	6465	p1:n=h,a=h; p2:n=n,a=n; p3:n=n,a=n; p4:n=h,a=h
+part1_questionnaire_020	disagree_name	Louise Drapeau	Louise Drapaceaux	NW/4-15-99-74	NW/4 - 15 = 99-74	p1:n=h,a=h; p2:n=n,a=n; p3:n=n,a=n
+part1_questionnaire_021	disagree_name	Louise Drapeau	Louise Arapahoe	unknown	null	p1:n=h,a=n
+part1_questionnaire_022	qwen_has_allot_sonnet_missing	Margaret DeCory	Margaret DeCory		3 1/2	p1:n=h,a=h
+part2_questionnaire_016	disagree_name	George Menard	George Wuard	548	5-48	p1:n=h,a=h; p2:n=n,a=n; p3:n=h,a=n; p4:n=h,a=n
+part3_questionnaire_012	disagree_name	Alphonse Charbonneau	Alphonse Chabonneau	1466	1466	p1:n=h,a=h; p2:n=h,a=h
+part3_questionnaire_013	disagree_name	Della Charbonneau	Bessie Charbonneau	1467	1467	p1:n=h,a=h; p2:n=h,a=h
+part3_questionnaire_022	sonnet_has_name_qwen_missing	Unknown - list to be compiled		To be reported		p1:n=n,a=n
+part7_questionnaire_020	disagree_name	Lucy Dubray Sturdevant	Ducey Aubrey Murdewant	2341	2341	p1:n=h,a=h; p2:n=h,a=n
+part7_questionnaire_023	agree	Lily Rice DuBray	Lily Rice Du Bray	2370	2370	p1:n=n,a=h; p2:n=h,a=h
+part8_questionnaire_022	agree	John Mullen	John Mullen	3152	3152	p1:n=h,a=h; p2:n=h,a=h

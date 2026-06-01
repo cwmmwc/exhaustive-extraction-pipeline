@@ -5,10 +5,10 @@
   "source_pages": "35-36",
   "model": "sonnet",
   "extraction": {
-    "Name": "not stated",
+    "Name": "Della Charbonneau",
     "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "1467",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Document is heavily damaged and largely illegible; answers to most questions are unreadable. Notarization date appears to be 1929. The document references a Rosebud Sioux allottee who received a fee patent. Some partial text visible but insufficient to extract reliable field values.",
+    "NOTES": "Document is heavily damaged and largely illegible; answers to most questions are unreadable. Notarization date appears to be 1929. The document references a Rosebud Sioux allottee who received a fee patent. Some partial text visible but insufficient to extract reliable field values. | TASK 5 CAT_1 USER-VERIFIED PATCH 2026-05-04: Identified via dual-model vision recovery (Sonnet vision + Qwen vision via HPC) with user verification. Sonnet vision read first name as 'Della'. Qwen vision read 'Bessie' (wrong). User confirmed Della. Allotment 1467 confirmed by both models and matches the part 4 Charbonneau family cluster (Alphonse Charbonneau at adjacent allotment 1466, recorded at part4_questionnaire_012). Sonnet vision: name='Della Charbonneau' (correct), allotment='1467' (correct). Qwen vision: name='Bessie Charbonneau' (first name wrong), allotment='1467' (correct).",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -168,5 +168,31 @@
     "correspondence": [],
     "legislative_actions": [],
     "tables": []
-  }
+  },
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat1_dual_model_vision_recovery_user_verified",
+      "method": "sonnet_vision_plus_qwen_vision_with_user_verification",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "not stated",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "corrected_values": {
+        "Name": "Della Charbonneau",
+        "Allotment number": "1467",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "rationale": "Sonnet vision read first name as 'Della'. Qwen vision read 'Bessie' (wrong). User confirmed Della. Allotment 1467 confirmed by both models and matches the part 4 Charbonneau family cluster (Alphonse Charbonneau at adjacent allotment 1466, recorded at part4_questionnaire_012).",
+      "models_summary": "Sonnet vision: name='Della Charbonneau' (correct), allotment='1467' (correct). Qwen vision: name='Bessie Charbonneau' (first name wrong), allotment='1467' (correct).",
+      "user_confirmed": true
+    }
+  ]
 }

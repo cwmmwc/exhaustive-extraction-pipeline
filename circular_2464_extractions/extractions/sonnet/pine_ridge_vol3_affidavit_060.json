@@ -5,8 +5,8 @@
   "source_pages": "85",
   "model": "sonnet",
   "extraction": {
-    "Name": "Louise Melda Rose\u2014nee Young",
-    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Name": "Louise Melda Rose—nee Young",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Tuthill, South Dakota",
     "Allotment number": "5043",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "34 years old",
     "Occupation/Income": "her husband, who has poor health, supports the family by farming on heirship land, this being their only source of income",
-    "NOTES": "Allotment described as NE\u00bc, Sec. 17, Tp. 37N., R. 36W., of the 6th P.M.; 160 acre allotment; mentally competent; health is not very good; mother of two small children; husband has poor health; she considers she received only about half of what her place was worth but traded to help her brother who was suffering financial reverses; has never received any aid from the County, State nor the United States Government; affidavit sworn April 22, 1929",
+    "NOTES": "Allotment described as NE¼, Sec. 17, Tp. 37N., R. 36W., of the 6th P.M.; 160 acre allotment; mentally competent; health is not very good; mother of two small children; husband has poor health; she considers she received only about half of what her place was worth but traded to help her brother who was suffering financial reverses; has never received any aid from the County, State nor the United States Government; affidavit sworn April 22, 1929 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge (Shannon County, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -29,5 +29,19 @@
     "output_tokens": 539
   },
   "elapsed": 6.2,
-  "retry_count": 1
+  "retry_count": 1,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge (Shannon County, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

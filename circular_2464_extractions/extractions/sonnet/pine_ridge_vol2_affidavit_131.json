@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Alma A. Sauser, formerly Alma A. Wells",
-    "Tribe/Reservation": "Pine Ridge Sioux Reservation",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "not stated",
     "Allotment number": "3911",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "39 years of age",
     "Occupation/Income": "has no special training to carry on any employment sufficiently remunerative to support said children and if employment is sought must necessarily perform tasks of labor for which the compensation is slight and insufficient to support said children",
-    "NOTES": "Patent # 825388; land described as Southwest quarter (SW4) of section twelve (12) Township forty-three (43) Range thirty-six (36) West of the 6th P.M., South Dakota; land valued at approximately $5000.00 at time of mortgage; affiant states she was not actually defrauded but money received was less than 50% of real worth after paying taxes and other debts; affiant states she has been damaged to the extent of $5000.00; mentally competent, health is just fair; has no land and lives with her children; has five minor children dependent upon her for support; has received no aid from the Government, State or County since fee patent was issued; most of mortgage proceeds used to pay debts not contracted before patent was issued; affidavit sworn January 23, 1929, State of Nebraska, County of Cedar",
+    "NOTES": "Patent # 825388; land described as Southwest quarter (SW4) of section twelve (12) Township forty-three (43) Range thirty-six (36) West of the 6th P.M., South Dakota; land valued at approximately $5000.00 at time of mortgage; affiant states she was not actually defrauded but money received was less than 50% of real worth after paying taxes and other debts; affiant states she has been damaged to the extent of $5000.00; mentally competent, health is just fair; has no land and lives with her children; has five minor children dependent upon her for support; has received no aid from the Government, State or County since fee patent was issued; most of mortgage proceeds used to pay debts not contracted before patent was issued; affidavit sworn January 23, 1929, State of Nebraska, County of Cedar | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Sioux Reservation\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2824,
     "output_tokens": 649
   },
-  "elapsed": 8.9
+  "elapsed": 8.9,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Sioux Reservation",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Annie Hornbeck, nee Gibbons",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rockyford, South Dakota",
     "Allotment number": "2677",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "46 years old",
     "Occupation/Income": "her husband's only income is derived by his working on farms",
-    "NOTES": "her health is very poor, as is, also, her two childrens' health; her husband supports her, her two children and one grandchild; she did not sell her place for debts incurred prior to receiving her patent in fee; she considers that she received a very poor price for her allotment; with the $500.00 cash she purchased another quarter of land; has never received any aid from the County, State nor the United States Government; patent issued for 320 acres; County of Shannon, State of South Dakota; affidavit sworn December 22, 1928",
+    "NOTES": "her health is very poor, as is, also, her two childrens' health; her husband supports her, her two children and one grandchild; she did not sell her place for debts incurred prior to receiving her patent in fee; she considers that she received a very poor price for her allotment; with the $500.00 cash she purchased another quarter of land; has never received any aid from the County, State nor the United States Government; patent issued for 320 acres; County of Shannon, State of South Dakota; affidavit sworn December 22, 1928 | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2363,
     "output_tokens": 521
   },
-  "elapsed": 6.7
+  "elapsed": 6.7,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    }
+  ]
 }

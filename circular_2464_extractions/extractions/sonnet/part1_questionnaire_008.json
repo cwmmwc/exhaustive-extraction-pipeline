@@ -8,7 +8,7 @@
     "Name": "Rudolph D. Anderson",
     "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "4220",
     "Cancelled": "not stated",
     "Refused/Protested": "Without protest.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "29",
     "Occupation/Income": "On what I can earn.",
-    "NOTES": "Patent delivered in 1921 at Bristow, Nebraska. Allottee applied for patent. Same year as trade, allottee traded his allotment to Gene Smith; in 1922, Fred C. Jenkins and E. R. Rusho by fraudulent means took his land and he lost everything in less than a year. Allottee is suffering from disabilities acquired in France during the World War. Wife and two children dependent: boy age five and girl age seven. Document notarized July 1, 1929, Lancaster County, Nebraska; notary commission expires 1935.",
+    "NOTES": "Patent delivered in 1921 at Bristow, Nebraska. Allottee applied for patent. Same year as trade, allottee traded his allotment to Gene Smith; in 1922, Fred C. Jenkins and E. R. Rusho by fraudulent means took his land and he lost everything in less than a year. Allottee is suffering from disabilities acquired in France during the World War. Wife and two children dependent: boy age five and girl age seven. Document notarized July 1, 1929, Lancaster County, Nebraska; notary commission expires 1935. | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 4220 sourced from federal-register-app patents database (Christian's research, 2026-05-04). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number; this patch backfills the allotment.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,29 @@
     "input_tokens": 2672,
     "output_tokens": 419
   },
-  "elapsed": 6.3
+  "elapsed": 6.3,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Rudolph D. Anderson",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "corrected_values": {
+        "Allotment number": "4220",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "cross_reference": "",
+      "user_confirmed": true
+    }
+  ]
 }

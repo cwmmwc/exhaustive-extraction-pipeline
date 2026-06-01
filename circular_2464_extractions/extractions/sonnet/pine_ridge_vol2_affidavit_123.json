@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Grace F. Herley",
-    "Tribe/Reservation": "Pine Ridge Agency, South Dakota",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Pendleton, Umatilla County, Oregon",
     "Allotment number": "3824",
     "Cancelled": "The patent has not been cancelled that I have any knowledge of.",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "approximately 44 years",
     "Occupation/Income": "not dependent upon anyone except my husband and my own efforts for support",
-    "NOTES": "Land covered by the patent was mortgaged for $1500.00 and subsequently sold along with other lands owned by her husband and other parties; she and other parties took a second mortgage to secure the balance of payments; she did not make application to have the patent issued; patent came through the mail in regular course of mail, not receipted for; she considers the price received was a fair price; neither government, state nor county has contributed anything toward her support; physical condition is reasonably good; financial condition is not luxurious; affidavit sworn at Pendleton, Umatilla County, Oregon, November 24, 1928.",
+    "NOTES": "Land covered by the patent was mortgaged for $1500.00 and subsequently sold along with other lands owned by her husband and other parties; she and other parties took a second mortgage to secure the balance of payments; she did not make application to have the patent issued; patent came through the mail in regular course of mail, not receipted for; she considers the price received was a fair price; neither government, state nor county has contributed anything toward her support; physical condition is reasonably good; financial condition is not luxurious; affidavit sworn at Pendleton, Umatilla County, Oregon, November 24, 1928. | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency, South Dakota\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2556,
     "output_tokens": 477
   },
-  "elapsed": 7.6
+  "elapsed": 7.6,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency, South Dakota",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

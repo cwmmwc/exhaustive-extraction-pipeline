@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Nellie Whalen",
-    "Tribe/Reservation": "Shannon County, South Dakota (reservation not explicitly named)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Chadron, Nebraska",
     "Allotment number": "319",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "50 years old",
     "Occupation/Income": "supports herself by doing domestic work; half-time work",
-    "NOTES": "Mentally competent; health is good except for severe rheumatism; was left a widow after receiving patent in fee; has no person else to support; has no other income than her small wages; never received any aid from County or Government; her only abode is a tent in Chadron, Nebraska; document sworn November 12, 1928",
+    "NOTES": "Mentally competent; health is good except for severe rheumatism; was left a widow after receiving patent in fee; has no person else to support; has no other income than her small wages; never received any aid from County or Government; her only abode is a tent in Chadron, Nebraska; document sworn November 12, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (reservation not explicitly named)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2281,
     "output_tokens": 432
   },
-  "elapsed": 5.3
+  "elapsed": 5.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (reservation not explicitly named)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

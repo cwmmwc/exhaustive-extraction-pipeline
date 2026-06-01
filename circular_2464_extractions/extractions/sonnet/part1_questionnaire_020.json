@@ -5,10 +5,10 @@
   "source_pages": "67-69",
   "model": "sonnet",
   "extraction": {
-    "Name": "not stated",
-    "Tribe/Reservation": "not stated",
+    "Name": "Louise Drapeau",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "6493",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,9 +20,9 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Document is a severely damaged/illegible printed application form for a patent in fee (Act of May 8, 1906, 34 Stat., 182), form number 0-2513. Most answers are illegible or missing due to document condition. Allotment number field appears partially visible but is not clearly legible. No notarization visible.",
+    "NOTES": "Document is a severely damaged/illegible printed application form for a patent in fee (Act of May 8, 1906, 34 Stat., 182), form number 0-2513. Most answers are illegible or missing due to document condition. Allotment number field appears partially visible but is not clearly legible. No notarization visible. | DOCUMENT TYPE CORRECTION 2026-04-29: This record is a Form 5-105 Application for Patent in Fee (Act of May 8, 1906, 34 Stat., 182), NOT a Circular 2464 questionnaire response. Identified as one of 9 Form 5-105 records misrouted into the questionnaires/ directory during Task 6 corpus diagnostic. Document type field updated; other fields preserved from original Sonnet extraction. NEEDS_REVISIT for full transcription via Task 5 vision recovery campaign if Name and Allotment are 'not stated'. | TASK 5 CAT_1 USER-VERIFIED PATCH 2026-05-04: Identified via dual-model vision recovery (Sonnet vision + Qwen vision via HPC) with user verification. Sonnet vision read allotment as 'NW/4-15-99-74' (land description, not an allotment number) and surname 'Drapeau' (correct). Qwen vision read surname 'Drapaceaux' (wrong garbling). User verified correct allotment is 6493 and Drapeau is the correct surname (Drapeau is a known Sioux/French family name on Rosebud). Sonnet vision: name='Louise Drapeau' (correct), allotment='NW/4-15-99-74' (wrong — land description). Qwen vision: name='Louise Drapaceaux' (wrong garbling), allotment='NW/4 - 15 = 99-74' (wrong — same land description).",
     "Literate/Illiterate": "not stated",
-    "Document type": "questionnaire"
+    "Document type": "Form 5-105 Application for Patent in Fee"
   },
   "usage": {
     "input_tokens": 2759,
@@ -300,5 +300,45 @@
         "source_page": "1-3"
       }
     ]
-  }
+  },
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "document_type_correction_form_5105",
+      "method": "task6_diagnostic_with_notes_content_review",
+      "fields_corrected": [
+        "Document type",
+        "NOTES"
+      ],
+      "previous_value": "questionnaire",
+      "corrected_value": "Form 5-105 Application for Patent in Fee",
+      "name_status": "not stated (vision recovery candidate)",
+      "user_confirmed": true,
+      "corpus_pattern": "One of 9 Form 5-105 records misrouted into questionnaires/. 3 already corrected in pilot (Philomena Leighton 1917, Philomena Leighton later, George Menard); 6 tagged in this batch."
+    },
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat1_dual_model_vision_recovery_user_verified",
+      "method": "sonnet_vision_plus_qwen_vision_with_user_verification",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "not stated",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Name": "Louise Drapeau",
+        "Allotment number": "6493",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "rationale": "Sonnet vision read allotment as 'NW/4-15-99-74' (land description, not an allotment number) and surname 'Drapeau' (correct). Qwen vision read surname 'Drapaceaux' (wrong garbling). User verified correct allotment is 6493 and Drapeau is the correct surname (Drapeau is a known Sioux/French family name on Rosebud).",
+      "models_summary": "Sonnet vision: name='Louise Drapeau' (correct), allotment='NW/4-15-99-74' (wrong — land description). Qwen vision: name='Louise Drapaceaux' (wrong garbling), allotment='NW/4 - 15 = 99-74' (wrong — same land description).",
+      "user_confirmed": true
+    }
+  ]
 }

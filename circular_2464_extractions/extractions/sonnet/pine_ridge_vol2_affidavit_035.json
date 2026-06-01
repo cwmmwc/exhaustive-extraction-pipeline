@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Martha Bettelyoun Hill",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rushville, Nebraska",
     "Allotment number": "2483",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "37 years old",
     "Occupation/Income": "she and her family are supported by her husband who does general work, mostly working at the carpenter trade",
-    "NOTES": "mentally competent and in good health; family is also in good health; has five children depending on herself and husband for support; states she was not defrauded of her land and while she did not get what it was worth, she made a fair and square deal; did not consider $2600.00 a good price but it was the best she could get at that time; document signed with an X mark",
+    "NOTES": "mentally competent and in good health; family is also in good health; has five children depending on herself and husband for support; states she was not defrauded of her land and while she did not get what it was worth, she made a fair and square deal; did not consider $2600.00 a good price but it was the best she could get at that time; document signed with an X mark | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "Signed with an X mark",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2328,
     "output_tokens": 445
   },
-  "elapsed": 6.8
+  "elapsed": 6.8,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

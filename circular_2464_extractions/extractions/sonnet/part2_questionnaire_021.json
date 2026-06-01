@@ -8,7 +8,7 @@
     "Name": "Ida Houston Roubideaux",
     "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "5480",
     "Cancelled": "not stated",
     "Refused/Protested": "I don't remember now.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "About 54 years old",
     "Occupation/Income": "not stated",
-    "NOTES": "Received patent by mail while living at Wood; has been sick a long time and does not remember signing a receipt; husband was living at the time and took care of these matters; sold land in 1918 for $3600.00, paid in full in cash at one time; no debts settled at time of sale; document notarized by E. E. McKean, Superintendent, April 4, 1929",
+    "NOTES": "Received patent by mail while living at Wood; has been sick a long time and does not remember signing a receipt; husband was living at the time and took care of these matters; sold land in 1918 for $3600.00, paid in full in cash at one time; no debts settled at time of sale; document notarized by E. E. McKean, Superintendent, April 4, 1929 | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 5480 sourced from federal-register-app patents database (Christian's research, 2026-05-04). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number; this patch backfills the allotment.",
     "Literate/Illiterate": "I have had no education and can neither read nor write.",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,29 @@
     "input_tokens": 2228,
     "output_tokens": 343
   },
-  "elapsed": 11.0
+  "elapsed": 11.0,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Ida Houston Roubideaux",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "corrected_values": {
+        "Allotment number": "5480",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "cross_reference": "",
+      "user_confirmed": true
+    }
+  ]
 }

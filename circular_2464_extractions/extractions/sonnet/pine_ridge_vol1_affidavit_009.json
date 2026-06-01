@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Lillian A. Lawyer",
-    "Tribe/Reservation": "Pine Ridge Reservation, South Dakota",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Nez Perce, Idaho",
     "Allotment number": "208",
     "Cancelled": "this patent was never canceled",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "48 years old",
     "Occupation/Income": "working for the Government as Seamstress; husband also employed in Government service",
-    "NOTES": "Resident of Nez Perce County, Idaho for the past 22 years; allotment contained 320 acres; patent mailed to her and she signed receipts and returned them to the Agency office; affiant believes consideration was fair value for the land; sold not on account of settlement of old debt or taxes or any other encumbrances; amount paid for taxes have never been refunded; mental and physical condition are normal; financial status is good; Government, County and State have never contributed anything towards her support; has three children dependent upon her; husband assists in support of minor children; owing to husband's employment in Idaho she was forced to leave Pine Ridge; had constructed three room frame house, barn for five head of horses and one cow, well drilled and fenced entire allotment at a total cost of $905.00; would be glad to repurchase land at same rate provided improvements were in same condition; had Government retained allotment in trust she would still be the owner; affidavit sworn December 4, 1928 before notary Starr J. Maxwell",
+    "NOTES": "Resident of Nez Perce County, Idaho for the past 22 years; allotment contained 320 acres; patent mailed to her and she signed receipts and returned them to the Agency office; affiant believes consideration was fair value for the land; sold not on account of settlement of old debt or taxes or any other encumbrances; amount paid for taxes have never been refunded; mental and physical condition are normal; financial status is good; Government, County and State have never contributed anything towards her support; has three children dependent upon her; husband assists in support of minor children; owing to husband's employment in Idaho she was forced to leave Pine Ridge; had constructed three room frame house, barn for five head of horses and one cow, well drilled and fenced entire allotment at a total cost of $905.00; would be glad to repurchase land at same rate provided improvements were in same condition; had Government retained allotment in trust she would still be the owner; affidavit sworn December 4, 1928 before notary Starr J. Maxwell | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Reservation, South Dakota\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2781,
     "output_tokens": 650
   },
-  "elapsed": 10.9
+  "elapsed": 10.9,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Reservation, South Dakota",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

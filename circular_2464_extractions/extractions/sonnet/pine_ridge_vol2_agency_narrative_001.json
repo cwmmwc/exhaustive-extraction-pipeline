@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Henry Young",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "not stated",
     "Allotment number": "2528",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Receipt dated Jun. 20, 1918. Land described as SE 25-37-34. H. B. Skeen of Cody, Nebr. on Jan. 25, 1923, signs Satisfaction of Mortgage to Bennett County Bank, Martin, So. Dak. dated May 2, 1921, recorded Jan. 29, 1923. H. B. Skeen of Cody, Nebr. on Jan. 25, 1923, signs Satisfaction of Mortgage to himself on SE 25-37-34, dated May 4, 1921, recorded Jan. 29, 1923. Wife named Viola Young.",
+    "NOTES": "Receipt dated Jun. 20, 1918. Land described as SE 25-37-34. H. B. Skeen of Cody, Nebr. on Jan. 25, 1923, signs Satisfaction of Mortgage to Bennett County Bank, Martin, So. Dak. dated May 2, 1921, recorded Jan. 29, 1923. H. B. Skeen of Cody, Nebr. on Jan. 25, 1923, signs Satisfaction of Mortgage to himself on SE 25-37-34, dated May 4, 1921, recorded Jan. 29, 1923. Wife named Viola Young. | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned.",
     "Literate/Illiterate": "not stated",
     "Document type": "agency_narrative"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2365,
     "output_tokens": 554
   },
-  "elapsed": 6.1
+  "elapsed": 6.1,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    }
+  ]
 }

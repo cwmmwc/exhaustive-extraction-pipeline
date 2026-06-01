@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Lorrain Midkiff Wellborn",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Pocahontas, Arkansas",
     "Allotment number": "3921",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "30 years old",
     "Occupation/Income": "cutting wood to support herself and three minor children",
-    "NOTES": "Deponent states she was not actually defrauded of her land but sold only because she was forced to do something with it or lose it for taxes, as they were so heavy she could not pay them. She sold the land for $1000, paid taxes of more than $300, and that was all she ever received from the land in any way. She is mentally competent, in poor health, and living alone with her three small children. Document also contains a separate affidavit for Mrs. Delilah J. Midkiff relating to Allotment No. 3920, sworn December 8, 1928, in Howell County, Missouri; Delilah J. Midkiff is 57 years old, of sound mind and good health, owns property in Missouri, Arkansas, and South Dakota, has dependents including son Harley Robert Midkiff (age 14), daughter Goldie Midkiff (age 28), and grandchildren Marvelle L. Hodge (age 11), Flossie Fay Hodge (age 3), and Gwindolyn Hodge (age 20 months); sold land for $16,000 ($10,000 cash, $6,000 mortgage), instituted foreclosure suit and bought land back at foreclosure sale, patent not canceled, no part of land sold for debt or taxes.",
+    "NOTES": "Deponent states she was not actually defrauded of her land but sold only because she was forced to do something with it or lose it for taxes, as they were so heavy she could not pay them. She sold the land for $1000, paid taxes of more than $300, and that was all she ever received from the land in any way. She is mentally competent, in poor health, and living alone with her three small children. Document also contains a separate affidavit for Mrs. Delilah J. Midkiff relating to Allotment No. 3920, sworn December 8, 1928, in Howell County, Missouri; Delilah J. Midkiff is 57 years old, of sound mind and good health, owns property in Missouri, Arkansas, and South Dakota, has dependents including son Harley Robert Midkiff (age 14), daughter Goldie Midkiff (age 28), and grandchildren Marvelle L. Hodge (age 11), Flossie Fay Hodge (age 3), and Gwindolyn Hodge (age 20 months); sold land for $16,000 ($10,000 cash, $6,000 mortgage), instituted foreclosure suit and bought land back at foreclosure sale, patent not canceled, no part of land sold for debt or taxes. | TASK 3 SUBSTANTIVE CORRECTION 2026-04-29: BLM accession 709603 confirms Pine Ridge tribal affiliation despite off-reservation residence (Pocahontas, Arkansas). Pine Ridge allottee residing in Arkansas when affidavit given. BLM patent name is 'Lorain Midkiff' (no Wellborn); the 'Wellborn' surname is her married name added later. Affidavit self-identification preserved as primary.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,25 @@
     "input_tokens": 2934,
     "output_tokens": 666
   },
-  "elapsed": 10.6
+  "elapsed": 10.6,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_blm_confirmed_tribe_correction",
+      "method": "user_blm_lookup",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "po_address": "Pocahontas, Arkansas",
+      "external_refs": {
+        "BLM_accession": "709603",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=709603"
+      },
+      "user_confirmed": true,
+      "context_note": "Pine Ridge allottee residing in Arkansas when affidavit given. BLM patent name is 'Lorain Midkiff' (no Wellborn); the 'Wellborn' surname is her married name added later. Affidavit self-identification preserved as primary."
+    }
+  ]
 }

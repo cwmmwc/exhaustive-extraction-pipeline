@@ -1,0 +1,1040 @@
+filename	verdict	fields_disagree	sonnet_name	kimi_name	sonnet_allot	kimi_allot	sonnet_tribe	kimi_tribe_context
+part10_affidavit_001.json	no_kimi_match		Hubert McClosky (deceased); affidavit given by Clara McClosky Lapointe (widow)		4092		Rosebud	
+part10_affidavit_002.json	no_kimi_match		Louise Waugh		SE/4 30-99-74		not stated	
+part10_affidavit_003.json	no_kimi_match		not stated		not stated		not stated	
+part10_affidavit_004.json	no_kimi_match		not stated		not stated		not stated	
+part10_affidavit_005.json	no_kimi_match		not stated		not stated		not stated	
+part10_agency_narrative_001.json	no_kimi_match		Sanford Lunderman		3927		Rosebud	
+part10_agency_narrative_002.json	no_kimi_match		Christopher Anderson		3928		Rosebud	
+part10_agency_narrative_003.json	no_kimi_match		Rudolph D. Anderson		4220		Rosebud	
+part10_agency_narrative_004.json	no_kimi_match		James M. Biggins, Jr.		4429		Rosebud	
+part10_agency_narrative_005.json	no_kimi_match		Katherine Biggins		4430a		Rosebud	
+part10_agency_narrative_006.json	no_kimi_match		Birdie Biggins (Penne)		4431		Rosebud	
+part10_agency_narrative_007.json	no_kimi_match		Louis Ferrin		4600		Rosebud	
+part10_agency_narrative_008.json	no_kimi_match		Evaline Mary Anderson		5003		Rosebud	
+part10_agency_narrative_009.json	no_kimi_match		John Didier		5394		Rosebud	
+part10_agency_narrative_010.json	no_kimi_match		Myrtle Last		5406		Rosebud	
+part10_agency_narrative_011.json	no_kimi_match		Julia Grandsinger		5431		Rosebud	
+part10_agency_narrative_012.json	no_kimi_match		Frank DuCharme		5630		Rosebud	
+part10_agency_narrative_013.json	no_kimi_match		Frank Sully		6464		Rosebud	
+part10_agency_narrative_014.json	no_kimi_match		Claude Sully		6467		Rosebud	
+part10_agency_narrative_015.json	no_kimi_match		Millie Sully		6469		Rosebud	
+part10_agency_narrative_016.json	no_kimi_match		Louise Waugh		647		not stated	
+part10_agency_narrative_017.json	no_kimi_match		Mollie Gaughen		6484		Rosebud	
+part10_agency_narrative_018.json	no_kimi_match		Benjamin Drappeau		6490		Rosebud	
+part10_agency_narrative_019.json	no_kimi_match		Louis McGhee		7790		Rosebud	
+part10_agency_narrative_020.json	no_kimi_match		William McGhee		7792		Rosebud	
+part10_questionnaire_001.json	no_kimi_match		Birdie Biggins Penne		4431		not stated	
+part10_questionnaire_002.json	no_kimi_match		not stated		not stated		Rosebud Sioux	
+part10_questionnaire_003.json	no_kimi_match		Frank Ducharme		5630		not stated	
+part10_questionnaire_004.json	no_kimi_match		Frank Sully		3011		not stated	
+part10_questionnaire_005.json	no_kimi_match		Claude Sully		6467		not stated	
+part10_questionnaire_006.json	no_kimi_match		Millie Sully		6469		not stated	
+part10_questionnaire_007.json	no_kimi_match		Mollie Gaughen Smith		6484		not stated	
+part10_questionnaire_008.json	no_kimi_match		Benjamin Drapeau		6490		not stated	
+part10_questionnaire_009.json	disagree	name	Barnett Shaw	O.J. Green	7157		Shawnee Indian Agency	shawnee
+part10_questionnaire_010.json	no_kimi_match		not stated		not stated		not stated	
+part10_questionnaire_011.json	no_kimi_match		not stated		not stated		not stated	
+part10_questionnaire_012.json	agree		Hannah Hardin	Hannah Hardin	42		Citizen Potawatomie	(none)
+part10_questionnaire_013.json	no_kimi_match		not stated		not stated		not stated	
+part10_questionnaire_014.json	no_kimi_match		Albion Ogee		1080		Citizen Pottawatomie	
+part10_questionnaire_015.json	no_kimi_match		not stated		not stated		not stated	
+part10_questionnaire_016.json	no_kimi_match		not stated		not stated		not stated	
+part10_questionnaire_017.json	agree		Laura Dean (deceased allottee); filed by James J. Sweeney (husband) for the deceased wife and their minor child	Laura Dean	845	845	Citizen Potawatomie	(none)
+part10_shawnee_01.json	no_kimi_match		Lizzie Anderson		not stated		Shawnee	
+part10_shawnee_02.json	no_kimi_match		Mary C. Corder Barnett		not stated		Shawnee	
+part10_shawnee_03.json	no_kimi_match		Belle Bino Bruno		not stated		Shawnee	
+part10_shawnee_04.json	no_kimi_match		Julia Bourasa Riley		not stated		Shawnee	
+part10_shawnee_05.json	no_kimi_match		Mary Bertrand		not stated		Shawnee	
+part10_shawnee_06.json	no_kimi_match		Ozetta Bourbonais		not stated		Shawnee	
+part10_shawnee_07.json	no_kimi_match		Nellie Bourasa		not stated		Shawnee	
+part10_shawnee_08.json	agree		Joseph C. Cummings	Joseph O. Cummings	not stated		Shawnee	(none)
+part10_shawnee_09.json	agree		Andrew J. Cummings	Joseph O. Cummings	not stated		Shawnee	(none)
+part10_shawnee_10.json	no_kimi_match		R. DeGraff		not stated		Shawnee	
+part10_shawnee_11.json	no_kimi_match		Josephine DeGraff		not stated		Shawnee	
+part10_shawnee_12.json	no_kimi_match		Lucius Eldridge		not stated		Shawnee	
+part10_shawnee_13.json	no_kimi_match		Nettie Hartman		not stated		Shawnee	
+part10_shawnee_14.json	no_kimi_match		Lizzie Hartman		not stated		Shawnee	
+part10_shawnee_15.json	no_kimi_match		Raymond Haskell		not stated		Shawnee	
+part10_shawnee_16.json	no_kimi_match		Charles Henry		not stated		Shawnee	
+part10_shawnee_17.json	no_kimi_match		Clarence Henry		not stated		Shawnee	
+part10_shawnee_18.json	agree		Hannah Hardin	Hannah Hardin	not stated		Shawnee	(none)
+part10_shawnee_19.json	no_kimi_match		Edward Hutton		not stated		Shawnee	
+part10_shawnee_20.json	no_kimi_match		Sophie Johnson		not stated		Shawnee	
+part10_shawnee_21.json	no_kimi_match		Jacob Haskell		not stated		Shawnee	
+part10_shawnee_22.json	no_kimi_match		John T. Haskell		not stated		Shawnee	
+part10_shawnee_23.json	no_kimi_match		Allen Kennedy		not stated		Shawnee	
+part10_shawnee_24.json	no_kimi_match		James LeClair		not stated		Shawnee	
+part10_shawnee_25.json	no_kimi_match		Benis A. Mars		not stated		Shawnee	
+part10_shawnee_26.json	no_kimi_match		Mrs. Jos. Nedeau		not stated		Shawnee	
+part10_shawnee_27.json	no_kimi_match		Albion Ogee		1080		Shawnee	
+part10_shawnee_28.json	no_kimi_match		Theo. Abraham Pearce		not stated		Shawnee	
+part10_shawnee_29.json	no_kimi_match		Julia C. Pierson		not stated		Shawnee	
+part10_shawnee_30.json	no_kimi_match		Addie E. Payne		168		Shawnee	
+part10_shawnee_31.json	no_kimi_match		Olive Shepard		862		Shawnee	
+part10_shawnee_32.json	no_kimi_match		James J. Sweeney for his deceased wife Laura Dean and their minor child		845		Shawnee	
+part10_shawnee_33.json	no_kimi_match		Nicholas Trombla		not stated		Shawnee	
+part10_shawnee_34.json	no_kimi_match		Rosa Vanderbloom		not stated		Shawnee	
+part10_shawnee_35.json	no_kimi_match		Viola Wallace		not stated		Shawnee	
+part10_shawnee_36.json	no_kimi_match		Mary A. Wallace		not stated		Shawnee	
+part11_affidavit_001.json	no_kimi_match		not stated		not stated		not stated	
+part11_affidavit_002.json	disagree	allotment	J. Amelie Carpenter	Mary Wickem Carpenter	63	143	Crow Creek	(none)
+part11_affidavit_003.json	agree		Mary Wickem Carpenter	Mary Wickem Carpenter	143	143	Crow Creek	(none)
+part11_affidavit_004.json	disagree	allotment	William Carpenter	Mary Wickem Carpenter	37; 660	143	Crow Creek Reservation	(none)
+part11_affidavit_005.json	agree		Victoria Carpenter	Victoria Carpenter	881	881	Crow Creek Reservation	crow
+part11_affidavit_006.json	no_kimi_match		Mrs. Louisa Dougherty (Mother & Heir of Dolly Dougherty, deceased)		not stated		Crow Creek Reservation	
+part11_affidavit_007.json	agree		Benjamin Oliver St. John	Benjamin Oliver St. John	550	550	Crow Creek Reservation	crow
+part11_affidavit_008.json	agree		Joseph St. John	Joseph St. John	547	547	Crow Creek Reservation	crow
+part11_agency_narrative_001.json	agree		Byron D. Wilde	Byron D. Wilde	712	712	not stated	(none)
+part11_agency_narrative_002.json	disagree	allotment_sonnet_missing;tribe_sonnet_missing	Henry Jacobs	Henry Jacobs	not stated	800	not stated	crow
+part11_agency_narrative_003.json	no_kimi_match		not stated		not stated		Crow Creek Reservation	
+part11_agency_narrative_004.json	disagree	tribe_sonnet_missing	Joseph St John	Joseph St. John	547	547	not stated	crow
+part11_agency_narrative_005.json	disagree	name	Joe St John	John S.R. Hammitt	not stated		Big Bond District	(none)
+part11_agency_narrative_006.json	disagree	name	Peter St John	John S.R. Hammitt	not stated		Big Bend District	(none)
+part11_agency_narrative_page015.json	no_kimi_match		not stated		not stated		Fort Berthold	
+part11_agency_narrative_page034.json	no_kimi_match		not stated		not stated		Kiowa Indian Agency	
+part11_agency_narrative_page037.json	disagree	name	St.John Benjamin Oliver	Benjamin Oliver St. John	550	550	Crow Creek Agency	crow
+part11_ledger_page_01.json	agree		Walter Plenty Chief	Walter Plenty Chief	906a	906	not stated	(none)
+part11_ledger_page_02.json	agree		Nora Y. Paint	Hora Y. Paint	144a	144	not stated	(none)
+part11_ledger_page_03.json	no_kimi_match		Black Weasel		872		not stated	
+part11_ledger_page_04.json	no_kimi_match		Ernest Wilkinson		817		not stated	
+part11_ledger_page_05.json	disagree	allotment	Miles Horn	Miles Horn	1695	895	not stated	(none)
+part11_ledger_page_06.json	no_kimi_match		Eli Perkins		1505		not stated	
+part11_ledger_page_07.json	disagree	allotment;tribe_sonnet_missing	Ella Eagle	Edward Little Eagle	1283	404	not stated	crow
+part11_ledger_page_08.json	no_kimi_match		Mattie Hall		1032		not stated	
+part11_ledger_page_09.json	no_kimi_match		Sarah Fredericks		746a		not stated	
+part11_ledger_page_10.json	no_kimi_match		James Youngbird		311a		not stated	
+part11_ledger_page_11.json	no_kimi_match		Charles Fredericks		277a		not stated	
+part11_ledger_page_12.json	no_kimi_match		Joseph Packineau		74b		not stated	
+part11_ledger_page_13.json	no_kimi_match		Carl Corn Silk		144		not stated	
+part11_ledger_page_14.json	no_kimi_match		James Dawson		598a		not stated	
+part11_questionnaire_001.json	no_kimi_match		Nicholas Trombla		464		Citizen Pottawatomie	
+part11_questionnaire_002a.json	no_kimi_match		Rosa Vanderbloom		313		Citizen Potawatomie	
+part11_questionnaire_002b.json	no_kimi_match		Viola Wallace		15609		Citizen Potawatomie	
+part11_questionnaire_003.json	agree		Rush Roberts	Rush Roberts	29	29	Pawnee County, Oklahoma	(none)
+part11_questionnaire_004.json	agree		Ellen Grinnell (Baker)	Ellen Grinnell	270a	270	Elbowoods, N. D. (Ft. Berthold)	(none)
+part11_questionnaire_005.json	agree		Mekeh Carpenter, Mother of Alma Carpenter, deceased	Mary Wickem Carpenter	143	143	Crow Creek Reservation	(none)
+part11_questionnaire_006.json	disagree	tribe	Dolly Daugherty, Deceased; Mrs. Louisa Daugherty, Mother & Heir	Dolly Daugherty	1350	1350	Big Bend District	crow
+part11_questionnaire_007.json	disagree	allotment_sonnet_missing	Cleveland Fallis	Cleveland Fallis	not stated	55	Big Bend District	(none)
+part11_questionnaire_008.json	agree		Henry Jacobs	Henry Jacobs	800	800	Crow Creek Agency, Big Bend District	crow
+part11_questionnaire_009.json	disagree	allotment;tribe	Edward Little Eagle	Edward Little Eagle	A0L-	404	Big Bend District	crow
+part11_questionnaire_010.json	agree		George Lewis Shields	George Lewis Shields	574	574	Crow Creek	crow
+part11_questionnaire_011.json	disagree	tribe_sonnet_missing	Joseph St. John	Joseph St. John	547	547	not stated	crow
+part11_questionnaire_012.json	disagree	name	Joseph St John	John S.R. Hammitt	not stated		not stated	(none)
+part11_questionnaire_013.json	disagree	name	Peter St John	John S.R. Hammitt	5-1142		Big Bend District	(none)
+part12_agency_narrative_001.json	agree		William Walker	William Walker	not stated		Big Bend District	(none)
+part12_questionnaire_001.json	agree		William Walker	William Walker	not stated		Big Bend District	(none)
+part12_questionnaire_002.json	agree		William Walker	William Walker	not stated		Big Bend District	(none)
+part12_questionnaire_003.json	agree		Thomas Morgan	Thomas Morgan	278	278	Pawnee	(none)
+part12_questionnaire_004.json	agree		Thomas Hand	Thomas Hand	314	314	Pawnee Indian Agency	(none)
+part12_questionnaire_005.json	agree		Warren Real Rider	Warren Real Rider	226	226	Pawnee County, Oklahoma (Pawnee Agency)	(none)
+part12_questionnaire_005a.json	agree		Warren Real Rider	Warren Real Rider	226	226	Pawnee County, Oklahoma (Pawnee Agency)	(none)
+part12_questionnaire_005b.json	agree		Jesse Peters	Jesse Peters	728	728	Pawnee County, Oklahoma (Pawnee Agency)	(none)
+part12_questionnaire_006.json	agree		Hiram Good Chief	Hiram Good Chief	816	816	Pawnee	(none)
+part12_questionnaire_007.json	agree		William Brown	William Brown	585	585	Pawnee	(none)
+part12_questionnaire_008.json	disagree	allotment	Darwin & Pena Peters, Deed (James Peters)	Jesse Peters	362-363	728	Pawnee	(none)
+part12_questionnaire_009.json	agree		Paul Little Eagle	Paul Little Eagle	491	491	Pawnee County, Okla.	(none)
+part12_questionnaire_010.json	no_kimi_match		Peter LeQlair		842		not stated	
+part12_questionnaire_011.json	agree		Frank Shadlow	Frank Shadlow	336	336	Otoe Agency	(none)
+part12_questionnaire_012.json	disagree	allotment	Lee Ely; George King	Lee Ely	206 (Lee Ely); 166 (George King)	206	Otoe Agency	(none)
+part12_questionnaire_012a.json	agree		Lee Ely	Lee Ely	206	206	Otoe Agency	(none)
+part12_questionnaire_012b.json	agree		George King	George King	166	166	Otoe Agency	(none)
+part12_questionnaire_013.json	agree		James Poor Horse	James Poor Horse	308	308	not stated	(none)
+part12_questionnaire_014.json	agree		Baptiste Jones	Baptiste Jones	302	302	Otoe Agency	(none)
+part12_questionnaire_015.json	agree		Louis Primeaux	Louis Primeaux	235	235	Ponca City, Okla.	(none)
+part12_questionnaire_016.json	agree		McKay Kemble	McKay Kemble	334	334	Ponca City, Okla. (agency not explicitly stated)	(none)
+part12_questionnaire_017.json	disagree	allotment	Henry Black	Henry Black	6435	64	Otoe Agency	(none)
+part12_questionnaire_018.json	agree		James Deroin	James Deroin	105	105	Otoe Agency	(none)
+part12_questionnaire_019.json	agree		Charles Deroin	Charles Deroin	107	107	Otoe Agency	(none)
+part12_questionnaire_020.json	agree		Grant Cleghorn	Grant Cleghorn	322	322	Pawnee County, Okla. / Otoe Agency	(none)
+part12_questionnaire_021.json	agree		Nannie Childs Alley	Nannie Childs Alley	176	176	Otoe Agency	(none)
+part12_questionnaire_022.json	agree		Louis McDonald	Louis S. McDonald	487	487	not stated	(none)
+part12_questionnaire_023.json	disagree	name	So lon Cries For Rib	Solomon Cries For Ribs	393	393	not stated	(none)
+part12_questionnaire_024.json	disagree	name	Moses Haragarra	Moses Haragarna	5	5	Otoe Agency / Pawnee County, Oklahoma	(none)
+part12_questionnaire_025.json	agree		Charles Deroin	Charles Deroin	107	107	Otoe Agency	(none)
+part13_affidavit_001.json	no_kimi_match		not stated		not stated		not stated	
+part13_questionnaire_001.json	no_kimi_match		Solon Cries For Rib		not stated		not stated	
+part13_questionnaire_002.json	agree		Dick Gayton	Dick Gayton	677	677	not stated	(none)
+part13_questionnaire_003.json	agree		Ernest Blue Back	Ernest Blue Back	533	533	Ponca City, Okla. (Agency not explicitly named)	(none)
+part13_questionnaire_004.json	agree		Belle Water	Belle Water	61	61	not stated	(none)
+part13_questionnaire_005.json	agree		James Williams	James Williams	407	407	not stated	(none)
+part13_questionnaire_006.json	agree		Mary Lockley	Mary Lockley	414	414	Pawnee	(none)
+part13_questionnaire_007.json	agree		Viola H. Gover	Viola H. Gover	541	541	Pawnee	(none)
+part13_questionnaire_008.json	agree		Jesse Howell	Jesse Howell	113	113	Pawnee	(none)
+part13_questionnaire_009.json	agree		James Bowman	James Bowman	80	80	Pawnee	(none)
+part13_questionnaire_010.json	agree		William Allen	William Allen	90	90	Pawnee County, Okla.	(none)
+part13_questionnaire_011.json	agree		George S. Gover	George S. Gover	102	102	Pawnee County, Okla.	(none)
+part13_questionnaire_012.json	agree		Samuel Horse Chief	Samuel Horse Chief	609	609	Pawnee	(none)
+part13_questionnaire_013.json	agree		John Moses	John Moses	515	515	Pawnee	(none)
+part13_questionnaire_014.json	agree		John Little Sun, (Robert Peters)	John Little Sun	742	742	Pawnee	(none)
+part13_questionnaire_015.json	agree		Mary Rice (Long)	Mary Rice	769	769	Pawnee	(none)
+part13_questionnaire_016.json	agree		St. Elmo Jim	St. Elmo Jim	620	620	Pawnee	(none)
+part13_questionnaire_017.json	agree		Blanche Bill (Matlock)	Blanche Bill	505	505	Pawnee Reservation	(none)
+part13_questionnaire_018.json	agree		Will Justice	Will Justice	207	207	Pawnee	(none)
+part13_questionnaire_019.json	agree		Will Justice	Will Justice	207	207	Pawnee County, Okla.	(none)
+part13_questionnaire_020.json	agree		Mary B. Lane	Mary B. Lane	772	772	Pawnee, Oklahoma	(none)
+part13_questionnaire_021.json	agree		George Haymond	George Haymond	612	612	Pawnee	(none)
+part13_questionnaire_022.json	agree		Will Barker	Will Barker	267	267	Pawnee	(none)
+part13_questionnaire_023.json	agree		Cecelia Guittar Rappuie	Cecelia Guittar Rappuie	665	665	Pawnee	(none)
+part13_questionnaire_024.json	agree		Henry Chapman	Henry Chapman	not stated		Pawnee	(none)
+part1_affidavit_001.json	disagree	allotment_sonnet_missing	Charging Iron Shooter	Charging Iron Shooter	not stated	156	not stated	(none)
+part1_agency_narrative_001.json	agree		John Decory	John B. DeCory	3	3	Rosebud	rosebud
+part1_agency_narrative_002.json	agree		Margaret Decory	Margaret DeCory	33	33	Rosebud	rosebud
+part1_agency_narrative_003.json	agree		Benjamin Decory	Benjamin Decory	8	8	Rosebud	(none)
+part1_agency_narrative_004.json	agree		Hattie E. Whiting (now Whitcher)	Hattie E. Whiting	10	10	Rosebud	(none)
+part1_agency_narrative_005.json	agree		William Curtis, Jr.	William Curtis Jr.	50	50	Rosebud	(none)
+part1_agency_narrative_006.json	agree		Millie Prue	Millie Prue	1213	1213	not stated	(none)
+part1_agency_narrative_007.json	agree		Elizabeth Prue (Jannis)	Elizabeth Prue	125	125	Rosebud	(none)
+part1_agency_narrative_008.json	disagree	name	Victoria Prue or Yellow Bird	Victoria Prue	127	127	Rosebud	(none)
+part1_agency_narrative_009.json	agree		Bell Bonser Harris	Bell Bonser Harris	143	143	Rosebud	(none)
+part1_agency_narrative_010.json	agree		Grace Bonser Soedt	Grace Bonser Soedt	145	145	Rosebud	(none)
+part1_agency_narrative_011.json	agree		Clara Bonser Monteau	Clara Bonser Monteau	148	148	Rosebud	(none)
+part1_agency_narrative_012.json	agree		Charging Iron Shooter	Charging Iron Shooter	156	156	Rosebud	(none)
+part1_agency_narrative_013.json	disagree	name	Sie An Bordeaux formerly Susan Butler	Susan Bordeaux	105	105	Rosebud	(none)
+part1_agency_narrative_page003.json	disagree	name	Philomena Beauvais (Leighton)	Philomena Beauvais Leighton	488	488	Rosebud	rosebud
+part1_agency_narrative_page046.json	agree		Anna Blackbird	Anna Blackbird	6475	6475	Rosebud	rosebud
+part1_agency_narrative_page049.json	agree		Anna Blackbird	Anna Blackbird	6475	6475	Rosebud	rosebud
+part1_agency_narrative_page055.json	agree		John Sully	John Sully	6470	6470	Rosebud	rosebud
+part1_agency_narrative_page061.json	agree		George Sully	George Sully	6465	6465	Rosebud	rosebud
+part1_agency_narrative_page066.json	agree		Louise Drapeau	Louise Drapeau	6493	6493	Rosebud	rosebud
+part1_questionnaire_001.json	disagree	allotment_sonnet_missing;tribe_sonnet_missing	Philomena Beauvais Leighton	Philomena Beauvais Leighton	not stated	488	not stated	rosebud
+part1_questionnaire_002.json	disagree	name	Philomena Leighton née Beauvais	Philomena Beauvais Leighton	488	488	Rosebud Agency	rosebud
+part1_questionnaire_003.json	no_kimi_match		not stated		not stated		not stated	
+part1_questionnaire_004.json	disagree	allotment_sonnet_missing	William Z. Emery	William Z. Emery	not stated	2902	Rosebud Sioux	rosebud
+part1_questionnaire_005.json	no_kimi_match		not stated		not stated		Rosebud Sioux	
+part1_questionnaire_006.json	disagree	allotment	Sam Charbonneau	Sam Charbonneau	22171	3546	Rosebud Sioux	rosebud
+part1_questionnaire_007.json	disagree	allotment_sonnet_missing	Alice Cunningham	Alice Cunningham	not stated	844	Rosebud Sioux	rosebud
+part1_questionnaire_008.json	disagree	allotment_sonnet_missing	Rudolph D. Anderson	Rudolph D. Anderson	not stated	4220	Rosebud Sioux	rosebud
+part1_questionnaire_009.json	disagree	allotment_sonnet_missing	Louise Anderson Ernst	Louise Anderson Ernst	not stated	3929	Rosebud Sioux	rosebud
+part1_questionnaire_010.json	disagree	tribe_sonnet_missing	Mary Julia Neiss Whirlwind Soldier	Mary Julia Neiss Whirlwind Soldier	1463	1463	not stated	rosebud
+part1_questionnaire_011.json	agree		Lizzie Guerue Two Horse	Lizzie Guerue Two Horse	10662	10662	Rosebud	rosebud
+part1_questionnaire_012.json	disagree	allotment_sonnet_missing	John B. DeCory	John B. DeCory	not stated	3	Rosebud Sioux	rosebud
+part1_questionnaire_013.json	disagree	allotment_sonnet_missing	Margaret DeCory	John B. DeCory	not stated	3	Rosebud Sioux	rosebud
+part1_questionnaire_014.json	disagree	allotment_sonnet_missing	Lucy Kincaid	Lucy Kincaid	not stated	474	Rosebud Agency	rosebud
+part1_questionnaire_015.json	no_kimi_match		not stated		not stated		not stated	
+part1_questionnaire_016.json	no_kimi_match		not stated		not stated		not stated	
+part1_questionnaire_017.json	agree		Anna Blackbird	Anna Blackbird	6475	6475	Rosebud Sioux	rosebud
+part1_questionnaire_018.json	no_kimi_match		not stated		not stated		not stated	
+part1_questionnaire_019.json	no_kimi_match		not stated		not stated		not stated	
+part1_questionnaire_020.json	no_kimi_match		not stated		not stated		not stated	
+part1_questionnaire_021.json	no_kimi_match		not stated		not stated		not stated	
+part1_questionnaire_022.json	no_kimi_match		not stated		not stated		not stated	
+part1_questionnaire_023.json	disagree	allotment_sonnet_missing	David Whiting	David Whiting	not stated	9	not stated	(none)
+part1_questionnaire_024.json	agree		Hattie Whiting Whitcher	W.H. Whitcher	not stated		not stated	(none)
+part1_questionnaire_025.json	no_kimi_match		William Courtis		50		not stated	
+part1_questionnaire_026.json	disagree	allotment	Millie Prue	Millie Prue	1212	1213	not stated	(none)
+part1_questionnaire_027.json	no_kimi_match		Elizabeth Prue Janis		1422		Rosebud Sioux	
+part1_questionnaire_028.json	agree		Mattie J. Bonser	Mattie J. Bonser	1422	1422	Rosebud	(none)
+part1_questionnaire_029.json	disagree	allotment_sonnet_missing	Belle Bonser Harris	Bell Bonser Harris	not stated	143	Rosebud Sioux	(none)
+part1_questionnaire_030.json	disagree	allotment_sonnet_missing	Clara Bonser Monteau	Clara Bonser Monteau	not stated	148	not stated	(none)
+part1_questionnaire_031.json	disagree	allotment	Susan Bordeaux	Susan Bordeaux	185	105	not stated	(none)
+part2_affidavit_001.json	no_kimi_match		Richard D. Ellston		not stated		not stated	
+part2_affidavit_002.json	no_kimi_match		Sarah Colombe formerly Sarah Prue		424		not stated	
+part2_affidavit_003.json	no_kimi_match		Alvina Turgeon Ducharme		972		not stated	
+part2_agency_narrative_001.json	no_kimi_match		Richard D. Ellston		240		Rosebud	
+part2_agency_narrative_002.json	no_kimi_match		Richard D. Ellston		240		Rosebud	
+part2_agency_narrative_003.json	no_kimi_match		Jesse Ellston		241		Rosebud	
+part2_agency_narrative_004.json	no_kimi_match		Jasper Ellston		243		Rosebud	
+part2_agency_narrative_005.json	no_kimi_match		Kate Miller (Duran)		262		Rosebud	
+part2_agency_narrative_006.json	no_kimi_match		Samuel Miller		263		Rosebud	
+part2_agency_narrative_007.json	no_kimi_match		Virginia Miller		265		Rosebud	
+part2_agency_narrative_008.json	no_kimi_match		Jeffrey Miller		266		Rosebud	
+part2_agency_narrative_009.json	no_kimi_match		Sarah Douville, formerly Sarah Cournoyer		271		Rosebud	
+part2_agency_narrative_010.json	agree		Richard Leighton	Leighton	298		Rosebud	(none)
+part2_agency_narrative_011.json	disagree	name;allotment	Elias Swallow	Swallow Dinah Gary	320	568	Rosebud	(none)
+part2_agency_narrative_012.json	no_kimi_match		James McClosky		412		Rosebud	
+part2_agency_narrative_013.json	no_kimi_match		Ada McCloskey		414		Rosebud	
+part2_agency_narrative_014.json	no_kimi_match		Frank McClosky		415		Rosebud	
+part2_agency_narrative_015.json	no_kimi_match		Oliver Prue		420		Rosebud	
+part2_agency_narrative_016.json	no_kimi_match		Ellen Prue Packard		421		Rosebud	
+part2_agency_narrative_017.json	no_kimi_match		Sarah Colombe, formerly Sarah Prue		424		Rosebud	
+part2_agency_narrative_018.json	no_kimi_match		Mary Cordier Red Owl		477		Rosebud	
+part2_agency_narrative_019.json	disagree	allotment	Benjamin Beauvais	Philomena Beauvais	484	408	Rosebud	(none)
+part2_agency_narrative_020.json	disagree	allotment	Edward Beauvais	Philomena Beauvais	486	408	Rosebud	(none)
+part2_agency_narrative_021.json	agree		Philomena Beauvais (Leighton)	Philomena Beauvais	408	408	Rosebud	(none)
+part2_agency_narrative_022.json	agree		Sophia Dyer	Sophia Dyer	499	499	Rosebud	(none)
+part2_agency_narrative_023.json	agree		Eliza Dyer	Eliza Dyer	502	502	Rosebud	(none)
+part2_agency_narrative_024.json	agree		Ruth Josephine Smith (Point At Him)	Ruth Josephine Smith	521	521	Rosebud	(none)
+part2_agency_narrative_025.json	agree		George Menard	George Menard	546	546	Rosebud	(none)
+part2_agency_narrative_026.json	agree		Swallow Dinah Gary	Swallow Dinah Gary	568	568	Rosebud	(none)
+part2_agency_narrative_027.json	agree		John Beauvais	John Beauvais	570	570	Rosebud	(none)
+part2_agency_narrative_028.json	no_kimi_match		Amelia Eva Huston		593		Rosebud	
+part2_agency_narrative_029.json	no_kimi_match		Ida Huston		594		Rosebud	
+part2_agency_narrative_030.json	no_kimi_match		Charles Lunderman		620		Rosebud	
+part2_agency_narrative_031.json	no_kimi_match		John Clairmont		699		Rosebud	
+part2_agency_narrative_032.json	no_kimi_match		Emma Clairmont (Didier)		701		Rosebud	
+part2_agency_narrative_033.json	no_kimi_match		James Roberts		724		Rosebud	
+part2_agency_narrative_034.json	no_kimi_match		Harry Moran		812		Rosebud	
+part2_agency_narrative_035.json	no_kimi_match		Alice Cunningham (now Deer With Horns)		844		Rosebud	
+part2_agency_narrative_036.json	no_kimi_match		Armine Turgeon		966		Rosebud	
+part2_agency_narrative_037.json	no_kimi_match		Alvina Turgeon (Ducharme)		972		Rosebud	
+part2_agency_narrative_038.json	disagree	allotment	Joseph Emery	Matilda Emery	979	2901	Rosebud	(none)
+part2_agency_narrative_039.json	disagree	allotment	Henry Emery	Matilda Emery	980	2901	Rosebud	(none)
+part2_agency_narrative_040.json	no_kimi_match		Alfred Bordeaux		1045		Rosebud	
+part2_agency_narrative_041.json	no_kimi_match		David Guerue		1064		Rosebud	
+part2_agency_narrative_042.json	no_kimi_match		Lizzie Guerue		1066		Rosebud	
+part2_agency_narrative_page059.json	disagree	allotment_sonnet_missing	Josephine Collins	Josephine Collins	not stated	2862	Rosebud	(none)
+part2_questionnaire_001.json	no_kimi_match		Jesse Ellston (also known as Jasper Ellston, Jasper J. Ellston, Jay Ellston)		not stated		Ponca	
+part2_questionnaire_002.json	no_kimi_match		Samuel Miller (deceased); Mary Haukaas Miller (deponent, wife/widow)		not stated		not stated	
+part2_questionnaire_003.json	no_kimi_match		Virginia Miller Peniska		not stated		not stated	
+part2_questionnaire_004.json	no_kimi_match		Jeffrey Miller		not stated		not stated	
+part2_questionnaire_005.json	no_kimi_match		Sarah Douville		2711		not stated	
+part2_questionnaire_006.json	agree		Richard Leighton	Leighton	298		not stated	(none)
+part2_questionnaire_007.json	disagree	name;allotment	Alexander Ellis Swallow	Swallow Dinah Gary	320	568	Rosebud Sioux	(none)
+part2_questionnaire_008.json	no_kimi_match		Ada McCloskey Whipple		not stated		Rosebud Sioux	
+part2_questionnaire_009.json	no_kimi_match		Nancy Lambert (formerly Nancy Prue), testifying about Oliver Prue, Dec'd		420		not stated	
+part2_questionnaire_010.json	no_kimi_match		Ellen Prue Packard		421		not stated	
+part2_questionnaire_011.json	no_kimi_match		Mary Cordier Red Owl		477		not stated	
+part2_questionnaire_012.json	disagree	allotment_sonnet_missing	Benjamin Beauvais	Philomena Beauvais	not stated	408	not stated	(none)
+part2_questionnaire_013.json	disagree	allotment_sonnet_missing	Edward Beauvais	Philomena Beauvais	not stated	408	not stated	(none)
+part2_questionnaire_014.json	agree		Philomena Beauvais Leighton	Leighton	488		Rosebud Agency	(none)
+part2_questionnaire_015.json	disagree	allotment	George Menard	George Menard	548	546	not stated	(none)
+part2_questionnaire_016.json	no_kimi_match		not stated		not stated		not stated	
+part2_questionnaire_017.json	disagree	allotment_sonnet_missing	George Menard	George Menard	not stated	546	Rosebud	(none)
+part2_questionnaire_018.json	disagree	name	Louise Larvine Wright	Louise Larvine	2427	2427	not stated	(none)
+part2_questionnaire_019.json	agree		Matilda Emery	Matilda Emery	2901	2901	Rosebud Sioux	(none)
+part2_questionnaire_020.json	disagree	allotment_sonnet_missing	Josephine Collins	Josephine Collins	not stated	2862	not stated	(none)
+part2_questionnaire_021.json	no_kimi_match		Ida Houston Roubideaux		not stated		Rosebud Sioux	
+part2_questionnaire_022.json	no_kimi_match		Charles Lunderman		620		not stated	
+part2_questionnaire_023.json	no_kimi_match		John Clairmont		699		not stated	
+part2_questionnaire_024.json	no_kimi_match		James Didier (appearing re: Emma Clairmont Didier, Dec'd)		701		not stated	
+part2_questionnaire_025.json	no_kimi_match		James Roberts		not stated		not stated	
+part2_questionnaire_026.json	no_kimi_match		Aaron Moran (deponent); Susan Moran (allottee, deceased)		8092		not stated	
+part2_questionnaire_027.json	no_kimi_match		Armine Turgeon		966		not stated	
+part2_questionnaire_028.json	disagree	allotment_sonnet_missing	Joseph Emery	Matilda Emery	not stated	2901	not stated	(none)
+part2_questionnaire_029.json	no_kimi_match		David Guerue		1064		Rosebud	
+part3_affidavit_001.json	no_kimi_match		Frances Dubray		1470		Rosebud Agency	
+part3_affidavit_002.json	agree		John Wright	John Wright	1516	1516	not stated	(none)
+part3_affidavit_003.json	agree		Ernest Bordeaux	Ernest Bordeaux	1521	1521	not stated	(none)
+part3_affidavit_004.json	agree		Alice Brown	Alice Brown	4447		Shannon County, South Dakota (tribe not stated)	(none)
+part3_affidavit_005.json	agree		George Colhoff	George Colhoff	337		Pine Ridge (Shannon County, South Dakota)	(none)
+part3_affidavit_006.json	agree		Louis Deon	Louis Deon	5001	5001	Pine Ridge	(none)
+part3_affidavit_007.json	agree		Jennie Moeller	Jennie Moeller	4529	4529	not stated	(none)
+part3_affidavit_008.json	agree		James Richard No.2	James Richard No.2	4693	4693	not stated	(none)
+part3_affidavit_009.json	disagree	name	Louis Richard	Samuel Richards	not stated		Shannon County (South Dakota)	(none)
+part3_affidavit_010.json	no_kimi_match		Tay Sander		not stated		Pine Ridge	
+part3_affidavit_011.json	no_kimi_match		Nora Tway Sandery		not stated		Pine Ridge	
+part3_affidavit_012.json	no_kimi_match		Elizabeth Stirk, nee Cottier		982		Shannon County, South Dakota (Pine Ridge area)	
+part3_affidavit_013.json	no_kimi_match		Josephine Swallow, nee Brown		4452		not stated	
+part3_affidavit_014.json	no_kimi_match		Emma Tway		4838		Shannon County, South Dakota (Pine Ridge area implied)	
+part3_affidavit_015.json	disagree	allotment	Henry Young	Louise Beauvais Young	2528	1071	Pine Ridge	(none)
+part3_agency_narrative_001.json	disagree	allotment_sonnet_missing	John Guerue	John Guerue	not stated	1067	Rosebud	rosebud
+part3_agency_narrative_002.json	agree		Martha Guerue (Richards)	Martha Guerue	1068	1068	Rosebud	(none)
+part3_agency_narrative_003.json	agree		Oliver Guerue	Oliver Guerue	1069	1069	Rosebud	(none)
+part3_agency_narrative_004.json	agree		William Bridgeman	William Bridgeman	1070	1070	Rosebud	(none)
+part3_agency_narrative_005.json	agree		Louise Beauvais Young	Louise Beauvais Young	1071	1071	Rosebud	(none)
+part3_agency_narrative_006.json	agree		Cecelia Ferron (Longcor)	Cecelia Ferron	1130	1130	Rosebud	(none)
+part3_agency_narrative_007.json	agree		Luther Arcoran	Luther Arcoran	1196	1196	Rosebud	(none)
+part3_agency_narrative_008.json	agree		Charles Arcoran	Charles Arcoran	1198	1198	Rosebud	(none)
+part3_agency_narrative_009.json	agree		Rose Cordier (Setter)	Rose Cordier	1200	1200	Rosebud	(none)
+part3_agency_narrative_010.json	agree		John Cordier	John Cordier	1201	1201	Rosebud	(none)
+part3_agency_narrative_011.json	agree		Alexander Whipple	Alexander Whipple	1258	1258	Rosebud	(none)
+part3_agency_narrative_012.json	agree		Charlys Whipple	Charles Whipple	1259	1259	Rosebud	(none)
+part3_agency_narrative_013.json	no_kimi_match		Albert Whippie		1260		Rosebud	
+part3_agency_narrative_014.json	agree		Mary Julia Neiss	Mary Julia Neiss	1463	1463	Rosebud	(none)
+part3_agency_narrative_015.json	disagree	allotment	Della Charbonneau	Alphonse Charbonneau	1467	1466	Rosebud	(none)
+part3_agency_narrative_016.json	no_kimi_match		Frances Dubray (deceased)		1470		Rosebud	
+part3_agency_narrative_017.json	no_kimi_match		Robert McLean		1483		Rosebud	
+part3_agency_narrative_018.json	agree		Charles Moore	Charles Moore	1491		Rosebud	rosebud
+part3_agency_narrative_019.json	agree		James Wright	James Wright	1504	1504	Rosebud	(none)
+part3_agency_narrative_020.json	disagree	allotment	Jennie Wright	James Wright	15042	1504	Rosebud	(none)
+part3_agency_narrative_021.json	agree		Jesse Wright	Jesse Wright	1505	1505	Rosebud	(none)
+part3_agency_narrative_022.json	agree		Luther Wright	Luther Wright	1506	1506	Rosebud	(none)
+part3_agency_narrative_023.json	disagree	name	Susan Jane Carter formerly Wright	Susan Jane Carter	1510	1510	Rosebud	(none)
+part3_agency_narrative_024.json	agree		John Wright	John Wright	1516	1516	Rosebud	(none)
+part3_agency_narrative_025.json	agree		Ernest Bordeaux	Ernest Bordeaux	1521	1521	Rosebud	(none)
+part3_agency_narrative_026.json	agree		Louis Giroux	Louis Giroux	1534	1534	Rosebud	(none)
+part3_agency_narrative_027.json	agree		Alice Brown	Alice Brown	4447		not stated	(none)
+part3_agency_narrative_028.json	agree		George Colhoff	George Colhoff	337		not stated	(none)
+part3_agency_narrative_029.json	agree		Louis Deon	Louis Deon	5001	5001	not stated	(none)
+part3_agency_narrative_030.json	agree		Jennie Moeller	Jennie Moeller	4529	4529	not stated	(none)
+part3_agency_narrative_031.json	agree		James Richard No.2	James Richard No.2	4693	4693	not stated	(none)
+part3_agency_narrative_032.json	disagree	name	Louis Richard	Samuel Richards	4743		not stated	(none)
+part3_agency_narrative_033.json	no_kimi_match		Nora Sway Sanders		4839		not stated	
+part3_agency_narrative_034.json	no_kimi_match		Elizabeth Stirk-nes-Cottier		982		not stated	
+part3_agency_narrative_035.json	agree		Josephine Swallow nee Brown	Alice Brown	4452		not stated	(none)
+part3_agency_narrative_036.json	disagree	allotment	Henry Young	Louise Beauvais Young	85280	1071	not stated	(none)
+part3_agency_narrative_page059.json	no_kimi_match		not stated		112		Pine Ridge Agency	
+part3_agency_narrative_page060.json	no_kimi_match		not stated		112		Pine Ridge	
+part3_agency_narrative_page062.json	no_kimi_match		not stated		not stated		Pine Ridge Agency	
+part3_agency_narrative_page064.json	no_kimi_match		not stated		not stated		Pine Ridge Agency	
+part3_agency_narrative_page066.json	no_kimi_match		not stated		not stated		Pine Ridge Agency	
+part3_agency_narrative_page087.json	no_kimi_match		Emma Coryell		4838		not stated	
+part3_questionnaire_001.json	agree		John Guerue	John Guerue	1067	1067	Rosebud Sioux	rosebud
+part3_questionnaire_002.json	disagree	name	Martha Guerue Richards	Martha Guerue	1068	1068	not stated	(none)
+part3_questionnaire_003.json	agree		Oliver Guerue	Oliver Guerue	1069	1069	Rosebud	(none)
+part3_questionnaire_004.json	agree		Louise Beauvais Young	Louise Beauvais Young	1071	1071	not stated	(none)
+part3_questionnaire_005.json	agree		Morris Joseph Douville	Morris Joseph Douville	1168	1168	Rosebud	(none)
+part3_questionnaire_006.json	no_kimi_match		Frank Arcoren (Dec'd)		1197		not stated	
+part3_questionnaire_007.json	agree		Rose Cordier Setter	Frank O. Setter	not stated		Rosebud Sioux	(none)
+part3_questionnaire_008.json	agree		John Cordier	John Cordier	1201	1201	not stated	(none)
+part3_questionnaire_009.json	agree		Alexander Whipple	Alexander Whipple	1258	1258	not stated	(none)
+part3_questionnaire_010.json	agree		Charles Whipple	Charles Whipple	1259	1259	Rosebud Sioux	(none)
+part3_questionnaire_011.json	agree		Jacob Schweigman	Jacob Schweigman	1447	1447	Rosebud	(none)
+part3_questionnaire_012.json	no_kimi_match		not stated		not stated		Rosebud Sioux	
+part3_questionnaire_013.json	no_kimi_match		not stated		not stated		Rosebud Sioux	
+part3_questionnaire_014.json	no_kimi_match		Robert McLean		1483		not stated	
+part3_questionnaire_015.json	agree		Charles Moore	Charles Moore	1491		Rosebud Agency	rosebud
+part3_questionnaire_016.json	agree		James Wright	James Wright	1504	1504	not stated	(none)
+part3_questionnaire_017.json	disagree	allotment_sonnet_missing	Jennie Wright	James Wright	not stated	1504	not stated	(none)
+part3_questionnaire_018.json	agree		Jesse Wright	Jesse Wright	1505	1505	not stated	(none)
+part3_questionnaire_019.json	agree		Luther Wright	Luther Wright	1506	1506	not stated	(none)
+part3_questionnaire_020.json	agree		Susan Jane Wright Carter	Susan Jane Carter	1510	1510	Rosebud	(none)
+part3_questionnaire_021.json	disagree	allotment_sonnet_missing	Louis Giroux	Louis Giroux	not stated	1534	not stated	(none)
+part3_questionnaire_022.json	no_kimi_match		not stated		not stated		not stated	
+part4_agency_narrative_001.json	agree		John Guerue	John Guerue	1067	1067	Rosebud	rosebud
+part4_agency_narrative_002.json	disagree	name	Martha Guerue (Richards)	Martha Guerue Richards	1068	1068	Rosebud	(none)
+part4_agency_narrative_003.json	agree		Oliver Guerue	Oliver Guerue	1069	1069	Rosebud	(none)
+part4_agency_narrative_004.json	agree		William Bridgeman	William Bridgeman	1070	1070	Rosebud	(none)
+part4_agency_narrative_005.json	agree		Louise Beauvais Young	Louise Beauvais Young	1071	1071	Rosebud	(none)
+part4_agency_narrative_006.json	disagree	name	Cecelia Ferron (Longcor)	Cecelia Ferron Longcor	1130	1130	Rosebud	(none)
+part4_agency_narrative_007.json	agree		Morris Joseph Donville (Douville)	Morris Joseph Donville	1168	1168	Rosebud	(none)
+part4_agency_narrative_008.json	agree		Luther Arcoran	Luther Arcoran	1196	1196	Rosebud	(none)
+part4_agency_narrative_009.json	agree		Frank Arcoran	Frank Arcoran	1197	1197	Rosebud	(none)
+part4_agency_narrative_010.json	agree		Charles Arcoran	Charles Arcoran	1198	1198	Rosebud	(none)
+part4_agency_narrative_011.json	disagree	name	Rose Cordier (Setter)	Rose Cordier Setter	1200	1200	Rosebud	(none)
+part4_agency_narrative_012.json	agree		John Cordier	John Cordier	1201	1201	Rosebud	(none)
+part4_agency_narrative_013.json	agree		Alexander Whipple	Alexander Whipple	1258	1258	Rosebud	(none)
+part4_agency_narrative_014.json	agree		Charles Whipple	Charles Whipple	1259	1259	Rosebud	(none)
+part4_agency_narrative_015.json	agree		Albert Whipple	Albert Whipple	1260	1260	Rosebud	(none)
+part4_agency_narrative_016.json	agree		Alphonse Charbonneau	Alphonse Charbonneau	1466	1466	Rosebud	(none)
+part4_questionnaire_001.json	agree		John Guerue	John Guerue	1067	1067	Rosebud Sioux	rosebud
+part4_questionnaire_002.json	agree		Martha Guerue Richards	Martha Guerue Richards	1068	1068	Rosebud Sioux	(none)
+part4_questionnaire_003.json	agree		Oliver Guerue	Oliver Guerue	1069	1069	Rosebud	(none)
+part4_questionnaire_004.json	agree		Louise Beauvais Young	Louise Beauvais Young	1071	1071	Rosebud Sioux	(none)
+part4_questionnaire_005.json	disagree	name	Morris Joseph Douville	Morris Joseph Donville	1168	1168	Rosebud	(none)
+part4_questionnaire_006.json	no_kimi_match		Frank Arcoren (Deceased); testimony by Josephine Arcoren		1197		Rosebud Sioux	
+part4_questionnaire_007.json	disagree	name	Rose Cordier	Rose Cordier Setter	1200	1200	Rosebud Sioux	(none)
+part4_questionnaire_008.json	agree		John Cordier	John Cordier	1201	1201	Rosebud Sioux	(none)
+part4_questionnaire_009.json	agree		Alexander Whipple	Alexander Whipple	1258	1258	Rosebud Sioux	(none)
+part4_questionnaire_010.json	agree		Charles Whipple	Charles Whipple	1259	1259	Rosebud Sioux	(none)
+part4_questionnaire_011.json	agree		Jacob Schweigman	Jacob Schweigman	1447	1447	Rosebud	(none)
+part4_questionnaire_012.json	agree		Alphonse M. Charbonneau	Alphonse Charbonneau	1466	1466	Rosebud Sioux	(none)
+part6_affidavit_001.json	disagree	allotment	William Bridgeman	Thomas Bridgeman	1070	1728	Rosebud	rosebud
+part6_affidavit_002.json	no_kimi_match		T. C. Montgomery (primary affiant); J. D. Keller (secondary affiant)		not stated		not stated	
+part6_affidavit_003.json	disagree	name	Wm. Grant	Joseph Larvie	2181		not stated	(none)
+part6_affidavit_004.json	no_kimi_match		Ruth Josephine Smith		not stated		not stated	
+part6_affidavit_005.json	agree		William Raymond (Dec'd) — affidavit by Enoch W. Raymond, Jr., son and heir; also separate affidavit by Chris Colombe	William Raymond	2282		not stated	(none)
+part6_agency_narrative_001.json	no_kimi_match		Theresa Reed		438 U&W		Uintah & Whiteriver	
+part6_agency_narrative_002.json	no_kimi_match		Angelique Scissons (Swagger)		1937		Rosebud	
+part6_agency_narrative_003.json	no_kimi_match		Grover Cleveland Scissons		1938		Rosebud	
+part6_agency_narrative_004.json	no_kimi_match		Charlotte Giroux		1535		Rosebud	
+part6_agency_narrative_005.json	no_kimi_match		Charlotte Giroux		1535		Rosebud	
+part6_agency_narrative_006.json	no_kimi_match		John Burnett		1538		not stated	
+part6_agency_narrative_007.json	agree		Thomas Bridgeman	Thomas Bridgeman	1728	1728	Rosebud	rosebud
+part6_agency_narrative_008.json	agree		Josephine Larvie, formerly Josephine Terry	Josephine Larvie	1882	1882	Rosebud	rosebud
+part6_agency_narrative_009.json	disagree	name	James Two Horse or Quigley	James Two Horse	1936	1936	Rosebud	rosebud
+part6_agency_narrative_page017.json	disagree	name	William Grant	Joseph Larvie	2181		Rosebud	(none)
+part6_agency_narrative_page021.json	disagree	name;allotment;tribe	Eunice Terry	Josephine Larvie	752 U & W	1882	Uintah & Ouray Agency	rosebud
+part6_agency_narrative_page027.json	no_kimi_match		Rosa DuBray (Iron Shell)		3463		Rosebud	
+part6_agency_narrative_page029.json	no_kimi_match		Ruth Josephine Smith Point At Him		521		Rosebud	
+part6_agency_narrative_page032.json	no_kimi_match		Charles Arcoren		1198		Rosebud	
+part6_agency_narrative_page034.json	no_kimi_match		Albert Whipple		1260		Rosebud	
+part6_agency_narrative_page046.json	no_kimi_match		Josephine Collins		not stated		Rosebud	
+part6_agency_narrative_page056.json	no_kimi_match		Leo Hudson		275		Rosebud	
+part6_agency_narrative_page057.json	agree		William Raymond	William Raymond	2282		Rosebud	(none)
+part6_questionnaire_001.json	no_kimi_match		Henry Benedict Emery		not stated		Rosebud Sioux	
+part6_questionnaire_002.json	no_kimi_match		Cecelia Ferrin (Longcor)		1130		not stated	
+part6_questionnaire_003.json	no_kimi_match		Luther Arcorn		1196		not stated	
+part6_questionnaire_004.json	no_kimi_match		Luther Arcoren		1196		not stated	
+part6_questionnaire_005.json	no_kimi_match		Louis Ferrin		4600		not stated	
+part6_questionnaire_006.json	disagree	allotment_sonnet_missing;tribe_sonnet_missing	William Bridgeman	Thomas Bridgeman	not stated	1728	not stated	rosebud
+part6_questionnaire_007.json	disagree	name	William Grant	Joseph Larvie	2181		Rosebud Sioux	(none)
+part6_questionnaire_008.json	disagree	name	William Grant	Joseph Larvie	2181		not stated	(none)
+part6_questionnaire_009.json	no_kimi_match		Elise Cohoe		302		Uncompahgre	
+part6_questionnaire_010.json	no_kimi_match		Tecumseh H. Murray		538		Uintah	
+part6_questionnaire_011.json	no_kimi_match		Elvira Pike		601		Uintah & Whiteriver	
+part6_questionnaire_012.json	no_kimi_match		Rosa DuBray Iron Shell		3463		Rosebud	
+part6_questionnaire_013.json	no_kimi_match		Ruth Josephine Smith Point At Him		not stated		Rosebud	
+part6_questionnaire_014.json	no_kimi_match		Charles Arcoren		1198		Rosebud	
+part6_questionnaire_015.json	no_kimi_match		Albert Whipple		1260		Rosebud	
+part6_questionnaire_016.json	no_kimi_match		Ellen Miller (Duran) [questionnaire answered by Catarino Duran]		3182		not stated	
+part6_questionnaire_017.json	no_kimi_match		Grover Cleveland Scissons		not stated		not stated	
+part6_questionnaire_018.json	no_kimi_match		Charlotte Giroux Burnett		1535		not stated	
+part6_questionnaire_019.json	no_kimi_match		Charlotte Giroux Burnett (widow of John Burnett)		1538		not stated	
+part6_questionnaire_020.json	no_kimi_match		Peter Bordeaux		2266		Rosebud	
+part6_questionnaire_021.json	no_kimi_match		William J. Bordeaux		not stated		not stated	
+part6_questionnaire_022.json	no_kimi_match		John Beauvais		570		Rosebud Sioux	
+part6_questionnaire_023.json	agree		Thomas Bridgeman	Thomas Bridgeman	1728	1728	Rosebud Agency	rosebud
+part6_questionnaire_024.json	agree		Josephine Larvie, formerly Terry Now Six Shooter	Josephine Larvie	1882	1882	Rosebud	rosebud
+part6_questionnaire_025.json	disagree	name	James Two Horse or Quigley	James Two Horse	1936	1936	Rosebud	rosebud
+part7_affidavit_001.json	no_kimi_match		Angeline Larvie Roberts		2177		not stated	
+part7_affidavit_002.json	no_kimi_match		Carrie Clara Huggins Longcor		2500		not stated	
+part7_affidavit_003.json	no_kimi_match		Julia Mengel formerly Julia Ramis Junior		2309		not stated	
+part7_affidavit_004.json	disagree	name	Charles Cournoyer	Charles Conoyer	2318	2318	not stated	(none)
+part7_affidavit_005.json	agree		Mary Dillon	Mary Dillon	not stated		not stated	(none)
+part7_affidavit_006.json	agree		Thomas Wright	Thomas Wright	2357	2357	not stated	(none)
+part7_agency_narrative_001.json	no_kimi_match		Stephen Murray		2098		Rosebud	
+part7_agency_narrative_002.json	no_kimi_match		Angeline Larvie Roberta		2177		Rosebud	
+part7_agency_narrative_003.json	no_kimi_match		Nellie Anniotte Brown		2178		Rosebud	
+part7_agency_narrative_004.json	no_kimi_match		Joseph Larvie		2180		Rosebud	
+part7_agency_narrative_005.json	no_kimi_match		William Grant		2101		Rosebud	
+part7_agency_narrative_006.json	no_kimi_match		Lena Lima Bordeaux		2268		Rosebud	
+part7_agency_narrative_007.json	no_kimi_match		Phoebe Bordeaux (Mrs. Dave Whiting, deceased)		2268		Rosebud	
+part7_agency_narrative_008.json	no_kimi_match		Louise Bordeaux (Jarboe)		2270		Rosebud	
+part7_agency_narrative_009.json	no_kimi_match		Earnest Charbonneau		2272		Rosebud	
+part7_agency_narrative_010.json	disagree	allotment	Carrie Clara Huggins (Longcor)	George D. Huggins	2276	2317	Rosebud	(none)
+part7_agency_narrative_011.json	disagree	allotment	Mary Laura Huggins	George D. Huggins	2278	2317	Rosebud	(none)
+part7_agency_narrative_012.json	disagree	allotment	Vollis Viola Huggins (Hayes)	George D. Huggins	2279	2317	Rosebud	(none)
+part7_agency_narrative_013.json	disagree	allotment	James Huggins	George D. Huggins	2280	2317	Rosebud	(none)
+part7_agency_narrative_014.json	no_kimi_match		Enoch H. Raymond, Jr.		2285		Rosebud	
+part7_agency_narrative_015.json	no_kimi_match		Lizzie Golomb (Colomb)		22992		Rosebud	
+part7_agency_narrative_016.json	no_kimi_match		Louise Golomb (Koch) (deceased)		2300		Rosebud	
+part7_agency_narrative_017.json	disagree	name	John Colomb, Jr.	Chris Colome	2301		Rosebud	(none)
+part7_agency_narrative_018.json	disagree	name	Christopher Colombe	Chris Colome	2304		Rosebud	(none)
+part7_agency_narrative_019.json	no_kimi_match		Julia Mengal, formerly Julia Ramis, Jr.		2309		not stated	
+part7_agency_narrative_020.json	agree		John Conoyer	John Conoyer	2316	2316	Rosebud	(none)
+part7_agency_narrative_021.json	agree		Philip Conoyer (deceased)	Philip Conoyer	2317	2317	Rosebud	(none)
+part7_agency_narrative_022.json	agree		Charles Conoyer	Charles Conoyer	2318	2318	Rosebud	(none)
+part7_agency_narrative_023.json	agree		William McCloskey	William McCloskey	2331	2331	Rosebud	(none)
+part7_agency_narrative_024.json	agree		Rena Whiting, formerly Rena Giroux	Rena Whiting	2335	2335	Rosebud	(none)
+part7_agency_narrative_025.json	agree		John DuBray (Boyd)	John DuBray	2338	2338	Rosebud	(none)
+part7_agency_narrative_026.json	agree		Thomas Wright	Thomas Wright	2357	2357	Rosebud	(none)
+part7_agency_narrative_027.json	agree		Lily Rice DuBray	Lily Rice DuBray	2370	2370	Rosebud	(none)
+part7_agency_narrative_028.json	agree		Reason Didier	Reason Didier	2376	2376	Rosebud	(none)
+part7_agency_narrative_page056.json	disagree	allotment_sonnet_missing	Eugene Sturdevant	Lucy DuPray Sturdevant	not stated	2341	not stated	(none)
+part7_questionnaire_001.json	no_kimi_match		Stephen Murray		not stated		not stated	
+part7_questionnaire_002.json	no_kimi_match		Nellie Larvie Brown		not stated		not stated	
+part7_questionnaire_003.json	no_kimi_match		Joseph Larvie		2180		not stated	
+part7_questionnaire_004.json	no_kimi_match		Lena Lema Bordeaux LaPointe		2968		Rosebud	
+part7_questionnaire_005.json	no_kimi_match		Phoebe Bordeaux (Dec'd); deponent David Whiting		2269		not stated	
+part7_questionnaire_006.json	no_kimi_match		Louise Bordeaux Jarboe		2270		Rosebud	
+part7_questionnaire_007.json	no_kimi_match		Earnest Charbonneau (Dec'd)		3373		not stated	
+part7_questionnaire_008.json	no_kimi_match		Carrie Clara Huggins Longcor		2276		not stated	
+part7_questionnaire_009.json	no_kimi_match		Viola Huggins Hayes		2279		not stated	
+part7_questionnaire_010.json	no_kimi_match		Enoch W. Raymond, Jr.		2500		not stated	
+part7_questionnaire_011.json	disagree	name	Lizzie Colomb	Chris Colome	22991		not stated	(none)
+part7_questionnaire_012.json	disagree	name	Louise Colombe (Koch)	Chris Colome	2300		not stated	(none)
+part7_questionnaire_013.json	disagree	name	John Colombe, Jr.	Chris Colome	2301		not stated	(none)
+part7_questionnaire_014.json	agree		John Conoyer	John Conoyer	2316	2316	not stated	(none)
+part7_questionnaire_015.json	agree		Philip Conoyer (deceased); Sarah Douville (heir/deponent)	Philip Conoyer	2317	2317	not stated	(none)
+part7_questionnaire_016.json	agree		Mary Dillon (widow of William McClosky or Dillon, Dec'd)	Mary Dillon	not stated		not stated	(none)
+part7_questionnaire_017.json	agree		Chris Colome (also spelled Chris Colombo)	Chris Colome	2331		not stated	(none)
+part7_questionnaire_018.json	disagree	name	Chris Colombe	Chris Colome	not stated		not stated	(none)
+part7_questionnaire_019.json	disagree	allotment	Rena Whiting, formerly Rena Giroux	Rena Whiting	2385	2335	not stated	(none)
+part7_questionnaire_020.json	no_kimi_match		not stated		not stated		not stated	
+part7_questionnaire_021.json	agree		Thomas Wright	Thomas Wright	2357	2357	not stated	(none)
+part7_questionnaire_022.json	disagree	allotment_sonnet_missing	Thomas Wright	Thomas Wright	not stated	2357	Rosebud	(none)
+part7_questionnaire_023.json	no_kimi_match		not stated		not stated		Rosebud Sioux	
+part7_questionnaire_024.json	disagree	allotment_sonnet_missing	Reason Didier	Reason Didier	not stated	2376	not stated	(none)
+part8_affidavit_001.json	no_kimi_match		Annie Larvie		24232		not stated	
+part8_affidavit_002.json	no_kimi_match		William A. Pierce		2572		not stated	
+part8_affidavit_003.json	agree		Levie Prue	Levi Prue	3011	3011	not stated	(none)
+part8_agency_narrative_001.json	no_kimi_match		Grace Burnette Giroux		2406		Rosebud	
+part8_agency_narrative_002.json	no_kimi_match		Annie Larvie		24233		Rosebud	
+part8_agency_narrative_003.json	no_kimi_match		Louise Larvine (also Louise Larvine Wright)		2427		Rosebud	
+part8_agency_narrative_004.json	no_kimi_match		Bose Elizabeth Larvine		2428		Rosebud	
+part8_agency_narrative_005.json	no_kimi_match		Zoe Utterback		2431		Rosebud	
+part8_agency_narrative_006.json	no_kimi_match		Susan Utterback		2432		Rosebud	
+part8_agency_narrative_007.json	no_kimi_match		Annie Utterback (deceased)		2433		Rosebud	
+part8_agency_narrative_008.json	no_kimi_match		Benjamin Utterback		2435		Rosebud	
+part8_agency_narrative_009.json	no_kimi_match		John Douville		2461		Rosebud	
+part8_agency_narrative_010.json	disagree	name	Rose Ross (Carpenter)	Jas. W. Cross	2559		Rosebud	(none)
+part8_agency_narrative_011.json	disagree	name	Edward Ross	Jas. W. Cross	2560		Rosebud	(none)
+part8_agency_narrative_012.json	disagree	name	William Ross	Jas. W. Cross	2561		Rosebud	(none)
+part8_agency_narrative_013.json	disagree	allotment	Albert Emery	Edith Emery	2570	2996	not stated	(none)
+part8_agency_narrative_014.json	no_kimi_match		William A. Pierce		2572		Rosebud	
+part8_agency_narrative_015.json	no_kimi_match		Josephine Collins		28622		Rosebud	
+part8_agency_narrative_016.json	no_kimi_match		Victoria LaPointe		2878		Rosebud	
+part8_agency_narrative_017.json	no_kimi_match		Rose LaPoint		2879		Rosebud	
+part8_agency_narrative_018.json	disagree	allotment	Josephine Emery	Edith Emery	2900	2996	Rosebud	(none)
+part8_agency_narrative_019.json	no_kimi_match		Matilda Emery Fairchild		2901		Rosebud	
+part8_agency_narrative_020.json	disagree	allotment	William Emery	Edith Emery	2902	2996	Rosebud	(none)
+part8_agency_narrative_021.json	disagree	allotment	Henry Emery	Edith Emery	2903	2996	Rosebud	(none)
+part8_agency_narrative_022.json	no_kimi_match		Mabel Jones (Dewitt)		2907		Rosebud	
+part8_agency_narrative_023.json	disagree	name	Ola Didier (Gilbert)	Ola Didier Gilbert	2914		Rosebud	(none)
+part8_agency_narrative_024.json	agree		John Flood	John Flood	2959	2959	Rosebud	(none)
+part8_agency_narrative_025.json	agree		Todd Harding Smith	Todd Harding Smith	2974	2974	Rosebud	(none)
+part8_agency_narrative_026.json	agree		Emily Swallow	Emily Swallow	2992	2992	Rosebud	(none)
+part8_agency_narrative_027.json	agree		Edith Emery	Edith Emery	2996	2996	Rosebud	(none)
+part8_agency_narrative_028.json	agree		Robert Emery	Robert Emery	2997	2997	Rosebud	(none)
+part8_agency_narrative_029.json	agree		Lillian Prue	Lillian Prue	3010	3010	Rosebud	(none)
+part8_agency_narrative_030.json	agree		Levi Prue	Levi Prue	3011	3011	Rosebud	(none)
+part8_agency_narrative_031.json	agree		Annie Desersa	Annie Desersa	3014	3014	Rosebud	(none)
+part8_agency_narrative_032.json	agree		Leon Roubideaux	Leon Roubideaux	3028	3028	Rosebud	(none)
+part8_agency_narrative_033.json	agree		Julia Decory Ferrin	Julia Decory Ferrin	3066	3066	Rosebud	(none)
+part8_agency_narrative_034.json	agree		Charles Dion	Charles Dion	3146	3146	Rosebud	(none)
+part8_agency_narrative_035.json	agree		Nettie Turgeon Pete	Nettie Turgeon Pete	3150	3150	Rosebud	(none)
+part8_agency_narrative_036.json	agree		Mary Louise Turgeon	Mary Louise Turgeon	3153	3153	Rosebud	(none)
+part8_questionnaire_001.json	no_kimi_match		Grace Burnett Giroux		2406		not stated	
+part8_questionnaire_002.json	no_kimi_match		Rose Elizabeth Larvie Breast		2428		not stated	
+part8_questionnaire_003.json	no_kimi_match		Zoe Utterback		2431		not stated	
+part8_questionnaire_004.json	no_kimi_match		Susan Estes, formerly Susan Utterback		2432		not stated	
+part8_questionnaire_005.json	no_kimi_match		Maude Utterback Estes		not stated		Rosebud Sioux	
+part8_questionnaire_006.json	no_kimi_match		John Douville		2461		not stated	
+part8_questionnaire_007.json	disagree	allotment_sonnet_missing	Albert Emery	Edith Emery	not stated	2996	not stated	(none)
+part8_questionnaire_008.json	no_kimi_match		Victoria Lapointe Meng		2878		not stated	
+part8_questionnaire_009.json	no_kimi_match		Rose LaPointe Good Eagle		2879		not stated	
+part8_questionnaire_010.json	disagree	allotment	Josephine Emery	Edith Emery	2900	2996	Rosebud Sioux	(none)
+part8_questionnaire_011.json	disagree	allotment_sonnet_missing	Henry H. Emery	Edith Emery	not stated	2996	not stated	(none)
+part8_questionnaire_012.json	agree		Ola Didier Gilbert	Ola Didier Gilbert	2914		not stated	(none)
+part8_questionnaire_013.json	disagree	name	Louise Flood Bravebird	Louise Flood	2960	2960	Rosebud	(none)
+part8_questionnaire_014.json	disagree	allotment_sonnet_missing	Todd Harding Smith	Todd Harding Smith	not stated	2974	not stated	(none)
+part8_questionnaire_015.json	disagree	allotment_sonnet_missing	Emily Swallow	Emily Swallow	not stated	2992	not stated	(none)
+part8_questionnaire_016.json	agree		Robert Emery	Robert Emery	2997	2997	not stated	(none)
+part8_questionnaire_017.json	agree		Annie Desersa Bonser	Annie Desersa Bonser	not stated		Sioux	(none)
+part8_questionnaire_018.json	agree		Annie Desersa Bonser	Annie Desersa Bonser	30/4		Rosebud Sioux	(none)
+part8_questionnaire_019.json	agree		Leon Roubideaux	Leon Roubideaux	3028	3028	not stated	(none)
+part8_questionnaire_020.json	disagree	name	Josephine Delia De Cory Rogers	Julia Decory Ferrin	3066	3066	Rosebud Sioux	(none)
+part8_questionnaire_021.json	agree		Joseph Dion	Joseph Dion	3147	3147	not stated	(none)
+part8_questionnaire_022.json	no_kimi_match		not stated		not stated		not stated	
+part9_affidavit_001.json	no_kimi_match		Charles Miller		3183		not stated	
+part9_affidavit_002.json	no_kimi_match		Lucy Larvie Quick Bear		3820		not stated	
+part9_agency_narrative_001.json	no_kimi_match		Julia Turgeon		5154		Rosebud	
+part9_agency_narrative_002.json	no_kimi_match		Vestal Emery		3155		Rosebud	
+part9_agency_narrative_003.json	no_kimi_match		John Scissons		3158		Rosebud	
+part9_agency_narrative_004.json	no_kimi_match		Howard Scissons		3159		Rosebud	
+part9_agency_narrative_005.json	no_kimi_match		William Scissons, Jr.		3160		Rosebud	
+part9_agency_narrative_006.json	no_kimi_match		Ellen Miller		3182		Rosebud	
+part9_agency_narrative_007.json	no_kimi_match		Ellen Miller		3182		Rosebud	
+part9_agency_narrative_008.json	no_kimi_match		Charles Miller		3183		Rosebud	
+part9_agency_narrative_009.json	no_kimi_match		Myrtle Anderson (Kirwin)		3191		Rosebud	
+part9_agency_narrative_010.json	no_kimi_match		Jacob Anderson		3192		Rosebud	
+part9_agency_narrative_011.json	no_kimi_match		Susie McCloskey (also Susan McCloskey Whipple)		3212		Rosebud	
+part9_agency_narrative_012.json	no_kimi_match		Mary Blacksmith, formerly Mary Prue		3214		Rosebud	
+part9_agency_narrative_013.json	no_kimi_match		Arthur Parker		3280		Rosebud	
+part9_agency_narrative_014.json	no_kimi_match		William Bordeaux, Jr.		3303		Rosebud	
+part9_agency_narrative_015.json	no_kimi_match		Laura Murray (also known as Laura Heminger)		3427		Rosebud	
+part9_agency_narrative_016.json	no_kimi_match		Aaron Wallace Murray		3428		Rosebud	
+part9_agency_narrative_017.json	no_kimi_match		Helena Larvie		not stated		Rosebud	
+part9_agency_narrative_018.json	no_kimi_match		Peter Larvie		3433		Rosebud	
+part9_agency_narrative_019.json	no_kimi_match		Albert Larvie		3434		Rosebud	
+part9_agency_narrative_020.json	agree		Rosa Dubray	Annie Moran Dubray	3463		Rosebud	(none)
+part9_agency_narrative_021.json	no_kimi_match		Douglas Walker		3483		Rosebud	
+part9_agency_narrative_022.json	agree		Josephine Dubray (Whitford)	Annie Moran Dubray	3496		Rosebud	(none)
+part9_agency_narrative_023.json	no_kimi_match		Emily Colomb		3500		Rosebud	
+part9_agency_narrative_024.json	agree		Annie Dubray	Annie Moran Dubray	3512		Rosebud	(none)
+part9_agency_narrative_025.json	no_kimi_match		Palmer Howard Lamoureaux		3514		Rosebud	
+part9_agency_narrative_026.json	no_kimi_match		Paul Lamoureaux		3518		Rosebud	
+part9_agency_narrative_027.json	no_kimi_match		Donalda Barker		3521		Rosebud	
+part9_agency_narrative_028.json	no_kimi_match		Mary Whiting		3528		Rosebud	
+part9_agency_narrative_029.json	no_kimi_match		Richard Pierce		3536		Rosebud	
+part9_agency_narrative_030.json	disagree	name	Louisa Ross	Renwick Cross	3542		Rosebud	(none)
+part9_agency_narrative_031.json	no_kimi_match		Irene Huggins (Ross)		3544		Rosebud	
+part9_agency_narrative_032.json	no_kimi_match		Samual Charbonneau		3546		Rosebud	
+part9_agency_narrative_033.json	no_kimi_match		Susan Charbonneau		3547		Rosebud	
+part9_agency_narrative_034.json	no_kimi_match		Mary Rosa Guerue		3565		Rosebud	
+part9_agency_narrative_035.json	no_kimi_match		Edward Arcoren		3569		Rosebud	
+part9_agency_narrative_036.json	no_kimi_match		Louis Valandra		3571		Rosebud	
+part9_agency_narrative_037.json	no_kimi_match		Peter Decorye		3583		Rosebud	
+part9_agency_narrative_038.json	no_kimi_match		James Edward Schmidt		3612		Rosebud	
+part9_agency_narrative_039.json	no_kimi_match		Lucy Larvie		3820		Rosebud	
+part9_agency_narrative_040.json	no_kimi_match		Jack Laverne Bonser		3824		Rosebud	
+part9_agency_narrative_041.json	no_kimi_match		Winnie Bull Tail, formerly Winnie Larvie		3872		Rosebud	
+part9_agency_narrative_042.json	no_kimi_match		Cornelius Ellston		3925		Rosebud	
+part9_questionnaire_001.json	no_kimi_match		Julia Turgeon Grauel		not stated		Rosebud Sioux	
+part9_questionnaire_002.json	no_kimi_match		John Scissons (Dec'd); questionnaire answered by Jeffrey H. Scissons (father)		3158		Ponca	
+part9_questionnaire_003.json	no_kimi_match		Howard Scissons		3159		not stated	
+part9_questionnaire_004.json	no_kimi_match		William Scissons, Jr.		not stated		not stated	
+part9_questionnaire_005.json	no_kimi_match		Susie McCloskey Whipple		not stated		Rosebud	
+part9_questionnaire_006.json	no_kimi_match		Mary Prue Blacksmith		3214		not stated	
+part9_questionnaire_007.json	no_kimi_match		Arthur Parker		3280		Rosebud	
+part9_questionnaire_008.json	no_kimi_match		William Bordeaux, Jr.		3303		not stated	
+part9_questionnaire_009.json	no_kimi_match		Wallace Murray		3428		Rosebud Sioux	
+part9_questionnaire_010.json	no_kimi_match		Hazel (last name not fully legible)		not stated		Rosebud Sioux	
+part9_questionnaire_011.json	no_kimi_match		Peter Larvie		3433		not stated	
+part9_questionnaire_012.json	no_kimi_match		Josephine DuBrey Whitford		3496		Rosebud Sioux	
+part9_questionnaire_013.json	no_kimi_match		Emily Colomb (Miller)		3500		not stated	
+part9_questionnaire_014.json	agree		Annie Moran Dubray	Annie Moran Dubray	3512		not stated	(none)
+part9_questionnaire_015.json	agree		Annie Moran Dubray (formerly Annie Moran)	Annie Moran Dubray	3512		not stated	(none)
+part9_questionnaire_016.json	no_kimi_match		Mary Whiting (Dec'd)		3528		not stated	
+part9_questionnaire_017.json	no_kimi_match		Varney Clyde Giroux		3538		not stated	
+part9_questionnaire_018.json	disagree	name	Louisa Cutschall formerly Louisa Ross	Renwick Cross	3542		not stated	(none)
+part9_questionnaire_019.json	no_kimi_match		Mary Rosa Guerue Bettelyoun		5565		not stated	
+part9_questionnaire_020.json	no_kimi_match		Edward Arcoren		5569		not stated	
+part9_questionnaire_021.json	no_kimi_match		Louis Valandra		3571		not stated	
+part9_questionnaire_022.json	no_kimi_match		Jack Lavern Bonser		3824		Rosebud	
+part9_questionnaire_023.json	no_kimi_match		Winnie Larvie Bull Tail		3872		not stated	
+part9_questionnaire_024.json	no_kimi_match		Cornelius Ellston		3925		not stated	
+pine_ridge_vol1_affidavit_001.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_002.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_003.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_004.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_005.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_006.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_007.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_008.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_009.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_010.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_011.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_012.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_013.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_014.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_015.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_016.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_017.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_018.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_019.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_020.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_021.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_022.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_023.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_024.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_025.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_026.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_027.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_028.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_029.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_030.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_031.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_032.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_033.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_034.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_035.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_036.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_037.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_038.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_039.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_040.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_041.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_042.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_043.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_044.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_045.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_046.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_047.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_048.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_049.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_050.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_051.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_052.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_053.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_054.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_055.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_056.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_057.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_058.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_059.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_060.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_061.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_062.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_063.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_064.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_065.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_066.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_067.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_068.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_069.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_070.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_071.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_072.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_073.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_074.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_075.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_076.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_077.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_078.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_079.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_080.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_081.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_082.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_083.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_084.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_085.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_086.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_087.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_088.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_089.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_090.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_091.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_092.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_093.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_094.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_095.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_096.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_097.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_098.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_099.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_100.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_101.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_102.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_103.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_104.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_105.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_106.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_107.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_108.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_109.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_110.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_111.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_112.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_113.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_114.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_115.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_116.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_117.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_118.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_119.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_120.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_121.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_122.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_123.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_124.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_affidavit_125.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_agency_narrative_001.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_agency_narrative_002.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_agency_narrative_page005.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_agency_narrative_page018.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_agency_narrative_page044.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_agency_narrative_page060.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_questionnaire_001.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_questionnaire_002.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_questionnaire_003.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_questionnaire_004.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol1_questionnaire_005.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_001.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_002.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_003.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_004.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_005.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_006.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_007.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_008.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_009.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_010.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_011.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_012.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_013.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_014.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_015.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_016.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_017.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_018.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_019.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_020.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_021.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_022.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_023.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_024.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_025.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_026.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_027.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_028.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_029.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_030.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_031.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_032.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_033.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_034.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_035.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_036.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_037.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_038.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_039.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_040.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_041.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_042.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_043.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_044.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_045.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_046.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_047.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_048.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_049.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_050.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_051.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_052.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_053.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_054.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_055.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_056.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_057.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_058.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_059.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_060.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_061.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_062.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_063.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_064.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_065.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_066.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_067.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_068.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_069.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_070.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_071.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_072.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_073.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_074.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_075.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_076.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_077.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_078.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_079.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_080.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_081.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_082.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_083.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_084.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_085.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_086.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_087.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_088.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_089.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_090.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_091.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_092.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_093.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_094.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_095.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_096.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_097.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_098.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_099.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_100.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_101.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_102.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_103.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_104.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_105.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_106.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_107.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_108.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_109.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_110.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_111.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_112.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_113.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_114.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_115.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_116.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_117.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_118.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_119.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_120.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_121.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_122.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_123.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_124.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_125.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_126.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_127.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_128.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_129.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_130.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_131.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_132.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_affidavit_133.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_agency_narrative_001.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_agency_narrative_002.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_agency_narrative_page066.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_agency_narrative_page137.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_questionnaire_001.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_questionnaire_002.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol2_questionnaire_003.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_001.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_002.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_003.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_004.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_005.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_006.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_007.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_008.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_009.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_010.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_011.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_012.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_013.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_014.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_015.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_016.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_017.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_018.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_019.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_020.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_021.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_022.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_023.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_024.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_025.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_026.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_027.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_028.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_029.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_030.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_031.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_032.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_033.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_034.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_035.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_036.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_037.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_038.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_039.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_040.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_041.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_042.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_043.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_044.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_045.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_046.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_047.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_048.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_049.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_050.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_051.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_052.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_053.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_054.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_055.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_056.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_057.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_058.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_059.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_060.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_061.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_062.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_063.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_064.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_065.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_066.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_067.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_068.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_069.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_070.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_071.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_072.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_073.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_074.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_075.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_076.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_077.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_078.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_079.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_080.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_081.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_082.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_083.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_084.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_085.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_086.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_087.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_088.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_089.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_090.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_091.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_092.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_093.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_094.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_095.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_096.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_097.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_098.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_099.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_100.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_101.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_102.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_103.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_104.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_106.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_107.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_affidavit_108.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_agency_narrative_001.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_agency_narrative_002.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_agency_narrative_003.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_agency_narrative_004.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_agency_narrative_005.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_agency_narrative_006.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_agency_narrative_007.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_agency_narrative_008.json	skipped_pine_ridge		(pine ridge - skipped)					
+pine_ridge_vol3_questionnaire_001.json	skipped_pine_ridge		(pine ridge - skipped)					

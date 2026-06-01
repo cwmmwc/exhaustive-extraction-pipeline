@@ -20,10 +20,28 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Cover/transmittal letter from L. W. Page, Superintendent, Fort Berthold Indian Agency, Elbowoods, North Dakota, dated December 27, 1928, responding to Circular No. 2464. States that a careful search of old files found only a few applications; two patents were found to have been issued without the application of the allottees and full reports were submitted for those cases. Where no records pertaining to patents were found, notation 'no application on file' was made, though superintendent notes this does not positively mean no applications were made and that original applications may be found in Office files. A list of all patents issued to allottees on this reservation prior to 1921 was prepared with notation as to whether an application is on file.",
+    "NOTES": "Cover/transmittal letter from L. W. Page, Superintendent, Fort Berthold Indian Agency, Elbowoods, North Dakota, dated December 27, 1928, responding to Circular No. 2464. States that a careful search of old files found only a few applications; two patents were found to have been issued without the application of the allottees and full reports were submitted for those cases. Where no records pertaining to patents were found, notation 'no application on file' was made, though superintendent notes this does not positively mean no applications were made and that original applications may be found in Office files. A list of all patents issued to allottees on this reservation prior to 1921 was prepared with notation as to whether an application is on file. | TASK 5 RECLASSIFICATION 2026-05-03: This record was originally enumerated as CAT_1 (Sonnet missed allottee Name + Allotment), but it is NOT an allottee record — it is a cover letter from L.W. Page (Superintendent, Fort Berthold Indian Agency) to the Commissioner of Indian Affairs dated 1928-12-27, reporting on Circular 2464 compliance. There is no allottee Name or Allotment to recover because the document is correspondence, not an allottee case file. Document type updated from 'agency_narrative' to 'agency_correspondence'. This record is analytically valuable as compliance/response correspondence and should remain in the corpus, but should be excluded from CAT_1 vision recovery batches.",
     "Literate/Illiterate": "not stated",
-    "Document type": "agency_narrative"
+    "Document type": "agency_correspondence"
   },
   "usage": {},
-  "elapsed": 0
+  "elapsed": 0,
+  "recovery_notes": [
+    {
+      "date": "2026-05-03",
+      "type": "task5_reclassification_administrative_correspondence",
+      "method": "user_review_of_administrative_cover_letters",
+      "fields_corrected": [
+        "Document type",
+        "NOTES"
+      ],
+      "previous_doc_type": "agency_narrative",
+      "corrected_doc_type": "agency_correspondence",
+      "sender": "L.W. Page",
+      "sender_title": "Superintendent, Fort Berthold Indian Agency",
+      "letter_date": "1928-12-27",
+      "rationale": "Cover letter from agency superintendent to Commissioner of Indian Affairs. Has no allottee Name or Allotment because it is administrative correspondence, not an allottee case file. Should be excluded from CAT_1 vision recovery.",
+      "user_confirmed": true
+    }
+  ]
 }

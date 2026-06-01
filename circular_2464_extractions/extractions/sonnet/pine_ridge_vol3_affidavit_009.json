@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Susan Valandry",
-    "Tribe/Reservation": "Shannon County (South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Parmelee, South Dakota",
     "Allotment number": "4017",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "58 years old",
     "Occupation/Income": "she and her four children are supported by her husband, Vetal Valandry; and her husband is a farmer",
-    "NOTES": "Mentally competent; health is not good, having suffered a paralytic stroke and was in the hospital over a year; has four minor children whose health is good; supported by husband Vetal Valandry, a farmer; son George Brown owed the bank at Kadoka and she went his security; son-in-law Frank Baumann urged her to put land in his name to protect herself; banker of Kadoka told her and her son George Brown that he intended to either have her land or her stock; she never received any help from the County or Government; document dated November 17, 1928",
+    "NOTES": "Mentally competent; health is not good, having suffered a paralytic stroke and was in the hospital over a year; has four minor children whose health is good; supported by husband Vetal Valandry, a farmer; son George Brown owed the bank at Kadoka and she went his security; son-in-law Frank Baumann urged her to put land in his name to protect herself; banker of Kadoka told her and her son George Brown that he intended to either have her land or her stock; she never received any help from the County or Government; document dated November 17, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County (South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2415,
     "output_tokens": 554
   },
-  "elapsed": 8.4
+  "elapsed": 8.4,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County (South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Tails Tapio",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Brennan, South Dakota",
     "Allotment number": "3971",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "49 years old",
     "Occupation/Income": "works on farms at common labor for his living; and that this is his only income",
-    "NOTES": "mentally competent; health is not very good; has a wife and 6 children to support, and some of the children are sickly; did not sell his place for any debts incurred prior to the receipt of his patent in fee; taxes were paid out of the sale money; has never received any help from the County, State nor the United States Government; affidavit sworn December 27, 1928",
+    "NOTES": "mentally competent; health is not very good; has a wife and 6 children to support, and some of the children are sickly; did not sell his place for any debts incurred prior to the receipt of his patent in fee; taxes were paid out of the sale money; has never received any help from the County, State nor the United States Government; affidavit sworn December 27, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2325,
     "output_tokens": 471
   },
-  "elapsed": 6.9
+  "elapsed": 6.9,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

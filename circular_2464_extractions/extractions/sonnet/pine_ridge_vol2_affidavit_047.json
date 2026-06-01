@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Emery Amiotte",
-    "Tribe/Reservation": "Shannon County (Pine Ridge area, South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Long Valley, South Dakota",
     "Allotment number": "2584",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "32 years old",
     "Occupation/Income": "he farms that quarter of land he received in the trade for a living; and that this is the only income he has",
-    "NOTES": "Deponent traded his 160-acre allotment (good meadow land) to Oscar Amiotte for another 160-acre piece (higher, rolling prairie land); $1000.00 was to be paid to deponent as part of the bargain but was never paid because Oscar died within a week of the trade; deponent considers he received a poor deal even if the $1000.00 had been paid, on account of the difference in the value of the land; mentally competent, good health; has a wife and four children to support, wife and three children having good health, but the fourth child is in a tubercular sanitorium; has never received any help from the County, State nor the United States Government; document dated December 12, 1928",
+    "NOTES": "Deponent traded his 160-acre allotment (good meadow land) to Oscar Amiotte for another 160-acre piece (higher, rolling prairie land); $1000.00 was to be paid to deponent as part of the bargain but was never paid because Oscar died within a week of the trade; deponent considers he received a poor deal even if the $1000.00 had been paid, on account of the difference in the value of the land; mentally competent, good health; has a wife and four children to support, wife and three children having good health, but the fourth child is in a tubercular sanitorium; has never received any help from the County, State nor the United States Government; document dated December 12, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County (Pine Ridge area, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2374,
     "output_tokens": 633
   },
-  "elapsed": 7.3
+  "elapsed": 7.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County (Pine Ridge area, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

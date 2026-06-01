@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "George Brown Jr",
-    "Tribe/Reservation": "Shannon County (South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rapid City, So. Dak.",
     "Allotment number": "4018",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "33 years old",
     "Occupation/Income": "working for the Government at Rapid City Indian School, as painter",
-    "NOTES": "mentally competent and in good health; has a wife and three children dependent on him for support; Government, State or County has not contributed to his support; foreclosure occurred in 1919 and 1920; document sworn November 1, 1928, in County of Shannon, State of South Dakota",
+    "NOTES": "mentally competent and in good health; has a wife and three children dependent on him for support; Government, State or County has not contributed to his support; foreclosure occurred in 1919 and 1920; document sworn November 1, 1928, in County of Shannon, State of South Dakota | ORIGINAL_TRIBE_VALUE: \"Shannon County (South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -29,5 +29,19 @@
     "output_tokens": 454
   },
   "elapsed": 5.9,
-  "retry_count": 1
+  "retry_count": 1,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County (South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

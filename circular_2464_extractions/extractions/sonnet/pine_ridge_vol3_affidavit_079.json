@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Mrs. Emma Fog",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Fort Thompson, So. Dak",
     "Allotment number": "5877",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "51 years old",
     "Occupation/Income": "supported by her husband, Frank Fog",
-    "NOTES": "Physical condition is poor; does not own any land or property at this time; has two minor children; allotment was 640 acres total; patent receipt signed and mailed back to Pine Ridge Agency office",
+    "NOTES": "Physical condition is poor; does not own any land or property at this time; has two minor children; allotment was 640 acres total; patent receipt signed and mailed back to Pine Ridge Agency office | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2406,
     "output_tokens": 505
   },
-  "elapsed": 5.2
+  "elapsed": 5.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

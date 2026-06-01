@@ -5,10 +5,10 @@
   "source_pages": "53",
   "model": "sonnet",
   "extraction": {
-    "Name": "not stated",
-    "Tribe/Reservation": "not stated",
+    "Name": "Olive Shepard",
+    "Tribe/Reservation": "Citizen Potawatomie",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "862",
     "Cancelled": "No",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Document is heavily degraded and largely illegible; most answers are unreadable or appear as dashes/illegible marks. Form references Circular No. 2464. A partial value of '270' appears in response to Q6 (consideration received for land). A partial value '6% 2-5/' appears at bottom of document.",
+    "NOTES": "Document is heavily degraded and largely illegible; most answers are unreadable or appear as dashes/illegible marks. Form references Circular No. 2464. A partial value of '270' appears in response to Q6 (consideration received for land). A partial value '6% 2-5/' appears at bottom of document. | TASK 5 CAT_1 PATCH 2026-05-04: Sonnet vision: 'Olive Shepard' / 862. Qwen vision: 'Oline Shepard' / 862. Single-letter name disagreement; both correct on allotment. User confirmed Sonnet's 'Olive' spelling and tribe Citizen Potawatomie. ANALYTICAL: Source page contains allottee statement 'did not care for fee patent' — relevant to forced-fee patent context.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -125,5 +125,32 @@
     "correspondence": [],
     "legislative_actions": [],
     "tables": []
-  }
+  },
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat1_dual_model_with_user_verification",
+      "method": "sonnet_vision_plus_qwen_vision_with_user_verification",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "not stated",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated",
+        "Document type": "questionnaire"
+      },
+      "corrected_values": {
+        "Name": "Olive Shepard",
+        "Allotment number": "862",
+        "Tribe/Reservation": "Citizen Potawatomie"
+      },
+      "models_summary": "Sonnet vision: 'Olive Shepard' / 862. Qwen vision: 'Oline Shepard' / 862. Single-letter name disagreement; both correct on allotment. User confirmed Sonnet's 'Olive' spelling and tribe Citizen Potawatomie.",
+      "extra_notes": "ANALYTICAL: Source page contains allottee statement 'did not care for fee patent' — relevant to forced-fee patent context.",
+      "user_confirmed": true
+    }
+  ]
 }

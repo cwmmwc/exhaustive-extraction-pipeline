@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Document is severely damaged/illegible; most answer fields are unreadable. Notary commission expiration dates partially visible: '4-26-' and '?/3/3' and 'a-00-2'. Document notarized in 1929 in County of Oka[homa?]. The named allottee appears to be referenced as 'ObKowq' or similar but text is too degraded to confirm. State of [illegible]. | TASK 5 PART 4 SUBSTANTIVE EXTRACTION 2026-05-02 (SONNET VISION): Sonnet vision extraction of source PDF replaces thin Sonnet text extraction which had Name='not stated' and Allotment='not stated'. Vision extraction file: validation_samples/part4_q012_vision/vision_merged.json. ALLOTMENT 1466 confirmed (also confirmed by Kimi v3/v4/v5). PATENT MECHANISM: Charbonneau APPLIED for the fee patent himself (not government-initiated forced fee). PATENT RECEIPT: Patent was mailed to him at Valentine, Nebraska in 1918. He signed a receipt for it. Accepted WITHOUT PROTEST. NOTARIZATION: Document notarized June 11, 1929 in Cherry County, Nebraska, where Charbonneau personally appeared before the notary. SALE (per source-page verification): Part of allotment sold for $2,000 cash. Buyer name and date NOT in questionnaire source. (Sonnet vision had reported '$7,000' and 'NW 1/4' — both unsupported by the source page; vision extraction errors.) Q7 RESPONSE: States he still owns the land — apparent inconsistency with the NW 1/4 sale; possibly a different parcel from the same allotment, or framing-dependent. PERSONAL: In good health, no dependents, self-supported by farming. ANALYTICAL NOTE: This case (voluntary application, no protest, signed receipt) is meaningfully different from the predominantly involuntary fee patent narrative of Circular 2464. Worth preserving the distinction in any aggregate analysis. CROSS-REFERENCE: Companion record at part4_agency_narrative_016 (agency's own version of his case). Cross-referenced from part3_agency_narrative_014 (Mary Julia Neiss) which originally noted Alphonse as adjacent allottee 1466. AGENCY-SIDE DETAILS (from sibling record part4_agency_narrative_016, not from this questionnaire): Per Kimi v5 extraction of part 4, the agency narrative reports the buyer as Jesse E. Keeler, sale on April 2, 1924, patent recorded by Tri County Abstract Company on April 18, 1924. The questionnaire source confirms only the $2,000 cash amount and partial-allotment scope; buyer identity and date come from the agency narrative. The $2,000 figure is consistent between the two sources.",
+    "NOTES": "Document is severely damaged/illegible; most answer fields are unreadable. Notary commission expiration dates partially visible: '4-26-' and '?/3/3' and 'a-00-2'. Document notarized in 1929 in County of Oka[homa?]. The named allottee appears to be referenced as 'ObKowq' or similar but text is too degraded to confirm. State of [illegible]. | TASK 5 PART 4 SUBSTANTIVE EXTRACTION 2026-05-02 (SONNET VISION): Sonnet vision extraction of source PDF replaces thin Sonnet text extraction which had Name='not stated' and Allotment='not stated'. Vision extraction file: validation_samples/part4_q012_vision/vision_merged.json. ALLOTMENT 1466 confirmed (also confirmed by Kimi v3/v4/v5). PATENT MECHANISM: Charbonneau APPLIED for the fee patent himself (not government-initiated forced fee). PATENT RECEIPT: Patent was mailed to him at Valentine, Nebraska in 1918. He signed a receipt for it. Accepted WITHOUT PROTEST. NOTARIZATION: Document notarized June 11, 1929 in Cherry County, Nebraska, where Charbonneau personally appeared before the notary. SALE (per source-page verification): Part of allotment sold for $2,000 cash. Buyer name and date NOT in questionnaire source. (Sonnet vision had reported '$7,000' and 'NW 1/4' — both unsupported by the source page; vision extraction errors.) Q7 RESPONSE: States he still owns the land — apparent inconsistency with the NW 1/4 sale; possibly a different parcel from the same allotment, or framing-dependent. PERSONAL: In good health, no dependents, self-supported by farming. ANALYTICAL NOTE: This case (voluntary application, no protest, signed receipt) is meaningfully different from the predominantly involuntary fee patent narrative of Circular 2464. Worth preserving the distinction in any aggregate analysis. CROSS-REFERENCE: Companion record at part4_agency_narrative_016 (agency's own version of his case). Cross-referenced from part3_agency_narrative_014 (Mary Julia Neiss) which originally noted Alphonse as adjacent allottee 1466. AGENCY-SIDE DETAILS (from sibling record part4_agency_narrative_016, not from this questionnaire): Per Kimi v5 extraction of part 4, the agency narrative reports the buyer as Jesse E. Keeler, sale on April 2, 1924, patent recorded by Tri County Abstract Company on April 18, 1924. The questionnaire source confirms only the $2,000 cash amount and partial-allotment scope; buyer identity and date come from the agency narrative. The $2,000 figure is consistent between the two sources. | TASK 5 PART 4 SUBSTANTIVE EXTRACTION 2026-05-02 (SONNET VISION): Sonnet vision extraction of source PDF replaces thin Sonnet text extraction which had Name='not stated' and Allotment='not stated'. Vision extraction file: validation_samples/part4_q012_vision/vision_merged.json. ALLOTMENT 1466 confirmed (also confirmed by Kimi v3/v4/v5). PATENT MECHANISM: Charbonneau APPLIED for the fee patent himself (not government-initiated forced fee). PATENT RECEIPT: Patent was mailed to him at Valentine, Nebraska in 1918. He signed a receipt for it. Accepted WITHOUT PROTEST. NOTARIZATION: Document notarized June 11, 1929 in Cherry County, Nebraska, where Charbonneau personally appeared before the notary. SALE (per source-page verification): Part of allotment sold for $2,000 cash. Buyer name and date NOT in questionnaire source. (Sonnet vision had reported '$7,000' and 'NW 1/4' — both unsupported by the source page; vision extraction errors.) Q7 RESPONSE: States he still owns the land — apparent inconsistency with the NW 1/4 sale; possibly a different parcel from the same allotment, or framing-dependent. PERSONAL: In good health, no dependents, self-supported by farming. ANALYTICAL NOTE: This case (voluntary application, no protest, signed receipt) is meaningfully different from the predominantly involuntary fee patent narrative of Circular 2464. Worth preserving the distinction in any aggregate analysis. CROSS-REFERENCE: Companion record at part4_agency_narrative_016 (agency's own version of his case). Cross-referenced from part3_agency_narrative_014 (Mary Julia Neiss) which originally noted Alphonse as adjacent allottee 1466. AGENCY-SIDE DETAILS (from sibling record part4_agency_narrative_016, not from this questionnaire): Per Kimi v5 extraction of part 4, the agency narrative reports the buyer as Jesse E. Keeler, sale on April 2, 1924, patent recorded by Tri County Abstract Company on April 18, 1924. The questionnaire source confirms only the $2,000 cash amount and partial-allotment scope; buyer identity and date come from the agency narrative. The $2,000 figure is consistent between the two sources.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire",
     "Date": "1929-06-11"
@@ -31,6 +31,63 @@
   },
   "elapsed": 5.2,
   "recovery_notes": [
+    {
+      "date": "2026-05-02",
+      "type": "task5_part4_sonnet_vision_substantive_extraction",
+      "method": "claude_sonnet_4_6_vision_on_handwritten_pdf",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "Post Office Address",
+        "Date",
+        "Document type",
+        "NOTES"
+      ],
+      "vision_extraction_path": "validation_samples/part4_q012_vision/vision_merged.json",
+      "substantive_findings": {
+        "patent_mechanism": "application (voluntary)",
+        "patent_received": "mailed to Valentine NE 1918",
+        "patent_acceptance": "signed receipt, no protest",
+        "notarization": "1929-06-11 Cherry County NE",
+        "land_sale_per_questionnaire": "NW 1/4 for $7000 cash",
+        "land_sale_per_kimi_v5": "$2000 to Jesse E. Keeler 1924-04-02",
+        "personal": "good health, no dependents, supported by farming",
+        "q7_apparent_inconsistency": "states still owns land but also reports NW 1/4 sale"
+      },
+      "rationale": "Sonnet text-extraction failed completely on this handwritten questionnaire. Sonnet vision (rendered PDF as PNG, sent to Claude vision API) succeeded in extracting full substantive content. This is the corpus's first per-record use of Sonnet vision recovery (vs. Qwen vision which has been used for ledger/tabular content). The success suggests Sonnet vision is a viable recovery path for handwritten questionnaire responses where text extraction fails.",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-05-02",
+      "type": "task5_correction_resolution_path_language",
+      "method": "user_correction_blm_does_not_have_transaction_data",
+      "fields_corrected": [
+        "NOTES"
+      ],
+      "rationale": "Previous patch incorrectly said BLM cross-reference would resolve the Kimi vs Sonnet vision sale-detail discrepancy. BLM has patent issuance data only, not transaction data. Correct resolution path is user source-page review.",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-05-02",
+      "type": "task5_sale_detail_correction_per_source_verification",
+      "method": "user_source_page_verification",
+      "fields_corrected": [
+        "NOTES"
+      ],
+      "changes": [
+        "sale phrase corrected",
+        "discrepancy framing replaced with agency-source attribution"
+      ],
+      "rationale": "User rendered the source PDF and verified the questionnaire says part of allotment sold for $2000 cash, no buyer or date. Sonnet vision had reported $7000 and NW 1/4 — both errors. Kimi v5's Keeler/1924 detail is from the agency narrative (part4_agency_narrative_016), not from this questionnaire.",
+      "source_says": {
+        "sale_amount": "$2,000 cash",
+        "scope": "part of allotment",
+        "buyer": "not stated in questionnaire source",
+        "date": "not stated in questionnaire source"
+      },
+      "user_confirmed": true
+    },
     {
       "date": "2026-05-02",
       "type": "task5_part4_sonnet_vision_substantive_extraction",

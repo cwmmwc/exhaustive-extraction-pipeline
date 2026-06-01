@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Elizabeth Janis",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Martin, South Dakota",
     "Allotment number": "3614",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "35 years old",
     "Occupation/Income": "supports herself by her seamstress work, also, does work at household duties whenever she can get it",
-    "NOTES": "Sold in 1920; mentally competent, has very good health, except being troubled with her heart; single, with no one to support, except that until quite recently she had helped to support her mother, who is just married; has never received any help from the County or United States Government; document sworn November 19, 1928; County of Shannon, State of South Dakota",
+    "NOTES": "Sold in 1920; mentally competent, has very good health, except being troubled with her heart; single, with no one to support, except that until quite recently she had helped to support her mother, who is just married; has never received any help from the County or United States Government; document sworn November 19, 1928; County of Shannon, State of South Dakota | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2230,
     "output_tokens": 391
   },
-  "elapsed": 6.3
+  "elapsed": 6.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    }
+  ]
 }

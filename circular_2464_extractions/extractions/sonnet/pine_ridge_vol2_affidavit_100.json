@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Benjamin Swallow",
-    "Tribe/Reservation": "Shannon County / Pine Ridge area (State of South Dakota, County of Shannon)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Chadron, Nebraska",
     "Allotment number": "3216",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "34 years old",
     "Occupation/Income": "working as a laborer for the Chicago & Northwestern Railroad Company",
-    "NOTES": "Deponent states he is 24 years old in one passage and 34 years old in the opening sworn statement \u2014 likely a typographical inconsistency in the document; mortgaged allotment in 1920 to pay for wife's operation at an Omaha hospital; sold land in 1925; mentally competent; health is good except for stomach trouble; has a wife and four minor children to support; children all have good health; has never received any help from the County or Government",
+    "NOTES": "Deponent states he is 24 years old in one passage and 34 years old in the opening sworn statement — likely a typographical inconsistency in the document; mortgaged allotment in 1920 to pay for wife's operation at an Omaha hospital; sold land in 1925; mentally competent; health is good except for stomach trouble; has a wife and four minor children to support; children all have good health; has never received any help from the County or Government | ORIGINAL_TRIBE_VALUE: \"Shannon County / Pine Ridge area (State of South Dakota, County of Shannon)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2287,
     "output_tokens": 473
   },
-  "elapsed": 7.3
+  "elapsed": 7.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County / Pine Ridge area (State of South Dakota, County of Shannon)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

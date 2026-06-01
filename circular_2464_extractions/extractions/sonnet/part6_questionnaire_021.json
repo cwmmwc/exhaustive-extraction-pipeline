@@ -8,7 +8,7 @@
     "Name": "William J. Bordeaux",
     "Tribe/Reservation": "not stated",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "(non-allottee record — witness)",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "44",
     "Occupation/Income": "not stated",
-    "NOTES": "This document is a sworn statement by William J. Bordeaux, cousin of allottee Peter Bordeaux (page 66), taken before Notary Public Jas. W. Cross on June 17, 1929 (commission expires 4-28-32). William J. Bordeaux states he worked for W. H. Tackett and received a long distance telephone call from Tackett to have Billy Schmidt at Valentine bring a new Ford touring car for Peter Bordeaux; the car was delivered at Kilgore, Nebraska. He states he does not know the details of the transaction except that he saw the car was delivered. This testimony relates to Peter Bordeaux's affidavit dated March 25, 1929, in which Peter Bordeaux stated that William J. Bordeaux acted as Tackett's agent in the purchase of his allotment.",
+    "NOTES": "This document is a sworn statement by William J. Bordeaux, cousin of allottee Peter Bordeaux (page 66), taken before Notary Public Jas. W. Cross on June 17, 1929 (commission expires 4-28-32). William J. Bordeaux states he worked for W. H. Tackett and received a long distance telephone call from Tackett to have Billy Schmidt at Valentine bring a new Ford touring car for Peter Bordeaux; the car was delivered at Kilgore, Nebraska. He states he does not know the details of the transaction except that he saw the car was delivered. This testimony relates to Peter Bordeaux's affidavit dated March 25, 1929, in which Peter Bordeaux stated that William J. Bordeaux acted as Tackett's agent in the purchase of his allotment. | TASK 5 NON-ALLOTTEE NOTE 2026-05-04: William J. Bordeaux appears in this record as a WITNESS on others' affidavits, not as an allottee. No allotment is associated with him in this capacity. Allotment field marked '(non-allottee record — witness)'. The record is retained for its evidentiary value (Bordeaux as a recurring witness in the Rosebud forced-fee cases).",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,24 @@
     "input_tokens": 2209,
     "output_tokens": 409
   },
-  "elapsed": 6.2
+  "elapsed": 6.2,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_non_allottee_witness_note",
+      "method": "user_confirmed_witness_not_allottee",
+      "fields_corrected": [
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Allotment number": "(non-allottee record — witness)"
+      },
+      "user_confirmed": true
+    }
+  ]
 }

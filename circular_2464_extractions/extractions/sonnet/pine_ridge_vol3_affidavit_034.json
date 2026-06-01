@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Louis Pourier",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rockyford, South Dakota",
     "Allotment number": "4471",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "48 years old",
     "Occupation/Income": "farms the children's allotments for a living",
-    "NOTES": "mentally competent, has good health; married again, wife's health is not very good, she having liver trouble; has six children to support, but they have good health; it keeps him pretty busy to make ends meet; has never received any help from the County, State or United States Government; considers he was defrauded out of the land pure and simple; lawyer James Ryan's address is Martin, South Dakota; lawyer Charles Milner of Martin, South Dakota was also involved; deed was written on a piece of paper torn from a common tablet and was not notarized; deponent cashed the $400.00 check on advice of lawyer Milner who said 'Cash it; we will get this land back from him' but land was never recovered; sworn before Notary Public, Shannon County, South Dakota, November 26, 1928",
+    "NOTES": "mentally competent, has good health; married again, wife's health is not very good, she having liver trouble; has six children to support, but they have good health; it keeps him pretty busy to make ends meet; has never received any help from the County, State or United States Government; considers he was defrauded out of the land pure and simple; lawyer James Ryan's address is Martin, South Dakota; lawyer Charles Milner of Martin, South Dakota was also involved; deed was written on a piece of paper torn from a common tablet and was not notarized; deponent cashed the $400.00 check on advice of lawyer Milner who said 'Cash it; we will get this land back from him' but land was never recovered; sworn before Notary Public, Shannon County, South Dakota, November 26, 1928 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2553,
     "output_tokens": 646
   },
-  "elapsed": 7.4
+  "elapsed": 7.4,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Helena Larvie",
-    "Tribe/Reservation": "Rosebud",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "Rosebud, S.D.",
-    "Allotment number": "not stated",
+    "Allotment number": "3432",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "The patent was recorded July 2, 1918, by B. A. Olson",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Fee patent No. 612464 issued; Northeast quarter of section 27, township 44, north of range 32; receipt for the patent was signed by the allottee; deed dated July 1, 1918; Helena Larvie also known as Helena Gary (formerly Larvie); conveyance by husband Edward Gary, deed not dated",
+    "NOTES": "Fee patent No. 612464 issued; Northeast quarter of section 27, township 44, north of range 32; receipt for the patent was signed by the allottee; deed dated July 1, 1918; Helena Larvie also known as Helena Gary (formerly Larvie); conveyance by husband Edward Gary, deed not dated | TASK 5 CAT_3 BACKFILL 2026-05-04: Allotment 3432. Allotment 3432 verified via BLM General Land Office records, accession SD2610__.247. Helena Larvie is NOT present in the federal-register-app patents database; the BLM GLO records are the source for this allotment. This is a distinct provenance from the patents-database backfills. TRIBE NORMALIZATION: previous label 'Rosebud' normalized to 'Rosebud Sioux'.",
     "Literate/Illiterate": "not stated",
     "Document type": "agency_narrative"
   },
@@ -28,5 +28,28 @@
     "input_tokens": 2009,
     "output_tokens": 353
   },
-  "elapsed": 5.9
+  "elapsed": 5.9,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_blm_glo_records",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Helena Larvie",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Rosebud"
+      },
+      "corrected_values": {
+        "Allotment number": "3432",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "source_description": "Allotment 3432 verified via BLM General Land Office records, accession SD2610__.247. Helena Larvie is NOT present in the federal-register-app patents database; the BLM GLO records are the source for this allotment. This is a distinct provenance from the patents-database backfills.",
+      "user_confirmed": true,
+      "source_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=SD2610__.247&docClass=STA"
+    }
+  ]
 }

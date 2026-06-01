@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Julia Red Bear",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Denby, South Dakota",
-    "Allotment number": "not stated",
+    "Allotment number": "6753",
     "Cancelled": "not stated",
     "Refused/Protested": "she did not desire this patent in fee, for she did not want to pay taxes on her land; that the Indian Agency told her that, if she did not take the patent, and pay the taxes on it, she would lose it finally through taxes being assessed, so she took the patent in fee",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "49 years old",
     "Occupation/Income": "their only income is what they make off of her husband's land that they rent to white people",
-    "NOTES": "Allotment described as Lots 1, 2, 3, 4, and the SE1, of Sec. 1, T. 36N., R. 44W., of the 6th P.M., in South Dakota; deponent has poor health with rheumatism especially bad; husband is living but has very poor health and is unable to make any money; two children to support, both in good health; she considers she was defrauded out of her land \u2014 three of the 12 horses were good, the other nine were poor old ponies, four of which died when she brought them home; she never sold her place to pay any debts incurred prior to receiving her patent in fee; she never received any help from the County, State, nor the United States Government; affidavit sworn April 17, 1929; document number 6753; Douglas Point (buyer) still living at White Clay, Nebraska",
+    "NOTES": "Allotment described as Lots 1, 2, 3, 4, and the SE1, of Sec. 1, T. 36N., R. 44W., of the 6th P.M., in South Dakota; deponent has poor health with rheumatism especially bad; husband is living but has very poor health and is unable to make any money; two children to support, both in good health; she considers she was defrauded out of her land — three of the 12 horses were good, the other nine were poor old ponies, four of which died when she brought them home; she never sold her place to pay any debts incurred prior to receiving her patent in fee; she never received any help from the County, State, nor the United States Government; affidavit sworn April 17, 1929; document number 6753; Douglas Point (buyer) still living at White Clay, Nebraska | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned. | TASK 5 BULK ALLOTMENT RECOVERY 2026-04-29: Sonnet text-extraction captured the allotment number from the source page header but classified it in NOTES as a 'document number' / 'Document No.' / 'No. NNNN' instead of placing it in the structured Allotment number field. The hypothesis that these document/file references are actually allotment numbers was confirmed via BLM cross-reference (exemplars: Eugene Means 2249, Lucy Patton 6802). This patch corrects 48 records via bulk regex extraction from NOTES with user-supervised review of every HIGH-confidence proposal.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,32 @@
     "input_tokens": 2454,
     "output_tokens": 620
   },
-  "elapsed": 7.1
+  "elapsed": 7.1,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    },
+    {
+      "date": "2026-04-29",
+      "type": "task5_bulk_allotment_recovery_from_notes",
+      "method": "regex_extraction_with_user_review",
+      "fields_corrected": [
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_allotment": "not stated",
+      "corrected_allotment": "6753",
+      "rationale": "Source page header contained 'No. NNNN' which Sonnet captured in NOTES as 'document number' rather than placing in structured Allotment field. Hypothesis confirmed via BLM cross-reference.",
+      "user_confirmed": true
+    }
+  ]
 }

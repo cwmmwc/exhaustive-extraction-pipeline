@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Mary White Russell",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rockyford, South Dakota",
     "Allotment number": "2738",
     "Cancelled": "not stated",
@@ -20,13 +20,27 @@
     "Gender": "Female",
     "Age": "64 years old",
     "Occupation/Income": "receiving a ration recommended by the Government Doctor",
-    "NOTES": "mentally incompetent, has poor health, having rheumatism especially; husband is dead; has no one to help her; lately the Government Doctor recommended a ration for her which she is now receiving; outside of this ration she has never gotten any help from the County, State nor the United States Government; allotment described as three quarters (480 acres); document signed with a mark (X)",
-    "Literate/Illiterate": "Illiterate \u2014 signed with a mark",
+    "NOTES": "mentally incompetent, has poor health, having rheumatism especially; husband is dead; has no one to help her; lately the Government Doctor recommended a ration for her which she is now receiving; outside of this ration she has never gotten any help from the County, State nor the United States Government; allotment described as three quarters (480 acres); document signed with a mark (X) | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
+    "Literate/Illiterate": "Illiterate — signed with a mark",
     "Document type": "affidavit"
   },
   "usage": {
     "input_tokens": 2324,
     "output_tokens": 504
   },
-  "elapsed": 6.5
+  "elapsed": 6.5,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

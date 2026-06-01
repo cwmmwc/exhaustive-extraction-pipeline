@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Alice Brown",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Chadron, Nebraska",
     "Allotment number": "4447",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "57 years old",
     "Occupation/Income": "her husband's only source of income is the money he get from leasing the childrens' land",
-    "NOTES": "Allotment covers the W\u00bd of Sec. 53, T. 37N. R. 36W., 6th P.M., in South Dakota; health is poor, suffering from rheumatism and gall stone troubles; husband's sight is failing; they have three minor children to support; in 1918, her four boys joined the United States Army, two serving overseas, one of these got killed in France, and the other two served in the United States; has never received any help from the County or the United States Government; affidavit subscribed and sworn November 16, 1928",
+    "NOTES": "Allotment covers the W½ of Sec. 53, T. 37N. R. 36W., 6th P.M., in South Dakota; health is poor, suffering from rheumatism and gall stone troubles; husband's sight is failing; they have three minor children to support; in 1918, her four boys joined the United States Army, two serving overseas, one of these got killed in France, and the other two served in the United States; has never received any help from the County or the United States Government; affidavit subscribed and sworn November 16, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2329,
     "output_tokens": 531
   },
-  "elapsed": 8.3
+  "elapsed": 8.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

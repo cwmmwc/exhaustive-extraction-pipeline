@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Thomas Twiss",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rockyford, South Dakota",
     "Allotment number": "827",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "38 years old",
     "Occupation/Income": "he works as a laborer on other peoples farms, which constitutes his only source of income",
-    "NOTES": "Mentally competent and in good health; wife died in 1926; has five children to support, all having good health; has a 20 acre piece of heirship land which he farms; finds it hard to get along on his income; considers he got a pretty poor price for his land; has never received any aid from the County, State nor the United States Government; document notarized December 7, 1928 in Shannon County, South Dakota",
+    "NOTES": "Mentally competent and in good health; wife died in 1926; has five children to support, all having good health; has a 20 acre piece of heirship land which he farms; finds it hard to get along on his income; considers he got a pretty poor price for his land; has never received any aid from the County, State nor the United States Government; document notarized December 7, 1928 in Shannon County, South Dakota | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2372,
     "output_tokens": 547
   },
-  "elapsed": 9.6
+  "elapsed": 9.6,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

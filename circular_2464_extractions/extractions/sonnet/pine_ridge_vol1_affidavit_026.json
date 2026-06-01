@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Alex Pablo",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Manderson, South Dakota",
     "Allotment number": "353",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "45 years old",
     "Occupation/Income": "he farms some rented land; and that this is his only source of income",
-    "NOTES": "mentally competent; health is generally poor; has a wife and three children to support; one child, a girl, is sickly; rest of the family are healthy; has never received any aid from the County, State nor the United States Government; considers he received a fair price for his allotment; allotment was 320 acres; document sworn March 8, 1929",
+    "NOTES": "mentally competent; health is generally poor; has a wife and three children to support; one child, a girl, is sickly; rest of the family are healthy; has never received any aid from the County, State nor the United States Government; considers he received a fair price for his allotment; allotment was 320 acres; document sworn March 8, 1929 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2257,
     "output_tokens": 461
   },
-  "elapsed": 6.4
+  "elapsed": 6.4,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

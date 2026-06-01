@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Jennie Wright",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "1504.5",
     "Cancelled": "not stated",
     "Refused/Protested": "Yes it was my general talk about it that I was not capable of having a patent as I can not read. However, I did not tell the Harmer or Government employees this. I did not know enough to accept a patent and do not know what a patent is.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "66",
     "Occupation/Income": "not stated",
-    "NOTES": "Allottee states she never saw the patent and does not remember signing a receipt; records show she signed a receipt by thumb mark before Mr. Gruber and Frank McCloskey; husband James Wright also gave a statement and handled financial details of sale; allottee states she and husband intended to live there all their lives but patent was forced upon them; notarized May 7, 1929 by Jas. W. Gross, Notary Public, commission expires 4-28-52; file number 15042",
+    "NOTES": "Allottee states she never saw the patent and does not remember signing a receipt; records show she signed a receipt by thumb mark before Mr. Gruber and Frank McCloskey; husband James Wright also gave a statement and handled financial details of sale; allottee states she and husband intended to live there all their lives but patent was forced upon them; notarized May 7, 1929 by Jas. W. Gross, Notary Public, commission expires 4-28-52; file number 15042 | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 1504.5, tribe Rosebud Sioux, sourced from federal-register-app patents database (Christian's research). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number.",
     "Literate/Illiterate": "Illiterate; signed receipt by thumb mark; states 'I can not read'",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,30 @@
     "input_tokens": 2421,
     "output_tokens": 413
   },
-  "elapsed": 5.1
+  "elapsed": 5.1,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Jennie Wright",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Allotment number": "1504.5",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "extra_note": "",
+      "cross_reference": "",
+      "user_confirmed": true
+    }
+  ]
 }

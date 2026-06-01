@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Wm. Valandry, Jr.",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "No. 100 Market Street, Sioux City, Iowa",
     "Allotment number": "1083",
     "Cancelled": "No",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "40 years old",
     "Occupation/Income": "None. I rent a house at 100 Market St.",
-    "NOTES": "Patent was sent to allottee and he returned it, after which it was sent back to him again. He states: 'I was not actually defrauded of my land, but patent in fee was forced on me so that I sold said land for approximately 6% of its value to pay taxes. My land has never been mortgaged and I would still have it if it had not been for the taxes.' Mental and physical condition good. Wife and three children dependent upon him. Document received at Pine Ridge Agency January 10, 1929. Notarized in Woodbury County, Iowa.",
+    "NOTES": "Patent was sent to allottee and he returned it, after which it was sent back to him again. He states: 'I was not actually defrauded of my land, but patent in fee was forced on me so that I sold said land for approximately 6% of its value to pay taxes. My land has never been mortgaged and I would still have it if it had not been for the taxes.' Mental and physical condition good. Wife and three children dependent upon him. Document received at Pine Ridge Agency January 10, 1929. Notarized in Woodbury County, Iowa. | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2870,
     "output_tokens": 528
   },
-  "elapsed": 5.8
+  "elapsed": 5.8,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "William Twiss",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Manderson, South Dakota",
     "Allotment number": "2922",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "67 years old",
     "Occupation/Income": "only source of income is what he realizes by the boys farming the mother's allotment, and what he receives in the way of lease money from his own allotment",
-    "NOTES": "mentally competent; has poor health, being bothered with stomach trouble; wife's health is poor, she having rheumatism; has four boys at home ranging from 18 to 25 years of age, these boys working the mother's allotment and work for other people; in 1920 mortgaged 40 head of cattle and 200 head of horses for $4140.00 with a clause including his 640 acres, which he signed without knowing; in summer of 1928 bank claimed foreclosure, papers presented to wife of William Twiss to sign but she refused, and the foreclosure is not an accomplished fact; called at bank to get deed of trust back but received no satisfaction; has never received any help from the County or Government; file reference 04942, document page F.6",
+    "NOTES": "mentally competent; has poor health, being bothered with stomach trouble; wife's health is poor, she having rheumatism; has four boys at home ranging from 18 to 25 years of age, these boys working the mother's allotment and work for other people; in 1920 mortgaged 40 head of cattle and 200 head of horses for $4140.00 with a clause including his 640 acres, which he signed without knowing; in summer of 1928 bank claimed foreclosure, papers presented to wife of William Twiss to sign but she refused, and the foreclosure is not an accomplished fact; called at bank to get deed of trust back but received no satisfaction; has never received any help from the County or Government; file reference 04942, document page F.6 | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2441,
     "output_tokens": 547
   },
-  "elapsed": 6.9
+  "elapsed": 6.9,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    }
+  ]
 }

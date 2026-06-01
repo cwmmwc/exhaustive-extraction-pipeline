@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Margaret Provost, nee Cottier",
-    "Tribe/Reservation": "Shannon County / Pine Ridge area (not explicitly stated)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Batesland, South Dakota",
     "Allotment number": "4661",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "30 years old",
     "Occupation/Income": "husband farms his allotment for a living, which, being his only income, makes a slim one",
-    "NOTES": "mentally competent, has poor health, being troubled with her heart; has a husband who has good health and who supports her and her one child, who is in possession of good health; she considers $700.00 was a poor price for her land; has never received any help from the County, State or United States Government; document sworn November 23, 1928; allotment was 160 acres",
+    "NOTES": "mentally competent, has poor health, being troubled with her heart; has a husband who has good health and who supports her and her one child, who is in possession of good health; she considers $700.00 was a poor price for her land; has never received any help from the County, State or United States Government; document sworn November 23, 1928; allotment was 160 acres | ORIGINAL_TRIBE_VALUE: \"Shannon County / Pine Ridge area (not explicitly stated)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2277,
     "output_tokens": 455
   },
-  "elapsed": 6.2
+  "elapsed": 6.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County / Pine Ridge area (not explicitly stated)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -5,10 +5,10 @@
   "source_pages": "5",
   "model": "sonnet",
   "extraction": {
-    "Name": "Jesse Ellston (also known as Jasper Ellston, Jasper J. Ellston, Jay Ellston)",
-    "Tribe/Reservation": "Ponca",
+    "Name": "Jesse Ellston",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "241",
     "Cancelled": "not stated",
     "Refused/Protested": "Did you ask for that patent? No. Did you make any protest about the patent? No.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "38",
     "Occupation/Income": "Yes by farming.",
-    "NOTES": "Patent delivered by policeman from the Ponca station at the Bank of Herrick. Allottee states: 'I think they used poor judgment in giving me this patent as I did not care for it like I should.' Also known as Jasper Ellston, Jasper J. Ellston, and Jay Ellston. Has two children. Got a $1500 loan on the place. States no one took advantage of him to have him mortgage the place. Document number references: 245x 241. Notarized May 1, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32.",
+    "NOTES": "Patent delivered by policeman from the Ponca station at the Bank of Herrick. Allottee states: 'I think they used poor judgment in giving me this patent as I did not care for it like I should.' Also known as Jasper Ellston, Jasper J. Ellston, and Jay Ellston. Has two children. Got a $1500 loan on the place. States no one took advantage of him to have him mortgage the place. Document number references: 245x 241. Notarized May 1, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32. | TASK 5 CAT_3 CORRECTION 2026-05-04: ALLOTMENT 241 sourced from federal-register-app patents database. TRIBE corrected from 'Ponca' to 'Rosebud Sioux' — the extraction derived 'Ponca' from a mention of a 'policeman from the Ponca station', but Jesse Ellston is Rosebud Sioux. ALIASES: Jesse Ellston's affidavit contains his own statement: 'My name is known also as Jasper J. Ellston, and I am sometimes called Jay Ellston.' These aliases are Jesse Ellston's own words and are retained as data — they are NOT an extraction error. SEPARATE-PERSON NOTE: the patents database also records a 'Jasper Ellston' at a DIFFERENT allotment (243), with his own corpus record at part2_agency_narrative_004 (part 2 page 6). Because there are two distinct names AND two distinct allotment numbers, Jesse Ellston (241) and Jasper Ellston (243) are treated as two separate people. Why Jesse Ellston stated he is 'also known as Jasper J. Ellston' is unresolved and is deliberately left unresolved rather than collapsing the two records into one identity. This questionnaire (part 2 page 5) is Jesse Ellston's; its substantive content (the $1500 loan, the 'poor judgment' quote, the policeman delivery at the Bank of Herrick) is retained.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,38 @@
     "input_tokens": 2252,
     "output_tokens": 424
   },
-  "elapsed": 6.4
+  "elapsed": 6.4,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_with_identity_note",
+      "method": "user_research_with_corpus_cross_reference",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "aliases_from_affidavit": [
+        "Jasper J. Ellston",
+        "Jay Ellston"
+      ],
+      "aliases_source": "Jesse Ellston's own affidavit statement: 'My name is known also as Jasper J. Ellston, and I am sometimes called Jay Ellston.' Not an extraction error.",
+      "identity_decision": "Jesse Ellston (allotment 241) and Jasper Ellston (allotment 243, record part2_agency_narrative_004) are treated as TWO SEPARATE PEOPLE — two names, two allotment numbers. The relationship between them, and the reason for Jesse's stated alias, is unresolved and deliberately not collapsed.",
+      "separate_person_record": "part2_agency_narrative_004 (Jasper Ellston, allotment 243)",
+      "tribe_correction": "Extraction labeled tribe 'Ponca' from a 'Ponca station' mention; corrected to Rosebud Sioux.",
+      "user_confirmed": true,
+      "previous_values": {
+        "Name": "Jesse Ellston (also known as Jasper Ellston, Jasper J. Ellston, Jay Ellston)",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Ponca"
+      },
+      "corrected_values": {
+        "Name": "Jesse Ellston",
+        "Allotment number": "241",
+        "Tribe/Reservation": "Rosebud Sioux"
+      }
+    }
+  ]
 }

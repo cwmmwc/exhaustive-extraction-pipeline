@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "George Young",
-    "Tribe/Reservation": "Bennett County, South Dakota",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "not stated",
     "Allotment number": "not stated",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "fifty-six years of age",
     "Occupation/Income": "Small allowance from the United States Government from time to time",
-    "NOTES": "Affiant suffered an injury to his right arm about a year ago, and again about two months ago, which has left him somewhat crippled, and is financially insolvent. Has four dependent children, being of the ages of eight years, ten years, twelve years and fourteen years respectively. Wife is Ida Young. Land describes east half (E 1/2) of section twenty-nine (29), in township thirty-seven (37) north, range thirty-three (33) west of the Sixth P.M., Bennett County, South Dakota. Mortgage was for $500 at 10% interest from date. Affiant went to firm of Hayes & Heffron at Deadwood who recovered approximately $400 cash and secured release of spurious taxes; efforts to collect from Walcott & Walcott were discontinued by affiant. Affiant states he was actually defrauded of his land and never received more than half the consideration therefor. Sworn December 5th, 1928.",
+    "NOTES": "Affiant suffered an injury to his right arm about a year ago, and again about two months ago, which has left him somewhat crippled, and is financially insolvent. Has four dependent children, being of the ages of eight years, ten years, twelve years and fourteen years respectively. Wife is Ida Young. Land describes east half (E 1/2) of section twenty-nine (29), in township thirty-seven (37) north, range thirty-three (33) west of the Sixth P.M., Bennett County, South Dakota. Mortgage was for $500 at 10% interest from date. Affiant went to firm of Hayes & Heffron at Deadwood who recovered approximately $400 cash and secured release of spurious taxes; efforts to collect from Walcott & Walcott were discontinued by affiant. Affiant states he was actually defrauded of his land and never received more than half the consideration therefor. Sworn December 5th, 1928. | ORIGINAL_TRIBE_VALUE: \"Bennett County, South Dakota\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 3560,
     "output_tokens": 661
   },
-  "elapsed": 8.6
+  "elapsed": 8.6,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Bennett County, South Dakota",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

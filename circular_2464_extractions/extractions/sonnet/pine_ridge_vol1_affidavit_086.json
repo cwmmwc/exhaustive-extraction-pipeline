@@ -5,8 +5,8 @@
   "source_pages": "111",
   "model": "sonnet",
   "extraction": {
-    "Name": "not stated",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Name": "Samuel Allen",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "not stated",
     "Allotment number": "1119",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "46",
     "Occupation/Income": "his daily labor",
-    "NOTES": "State of Washington; patent stamped as received at the Pine Ridge Agency May 10, 1918 and mailed to allottee by the Agency; I never got a cent of this money but used it all for improving the land; all the money involved in these mortgages, except our bare living, was put on the land in necessary improvements; Fair health, sound mind, has no financial resources outside of his remaining interest in the Reservation and his daily labor; does not own his home; Wife and four daughters; 'I was not defrauded. The transactions were all apparently legal, though had the Government not forced me to take the deeds, I should still have my land.'",
+    "NOTES": "State of Washington; patent stamped as received at the Pine Ridge Agency May 10, 1918 and mailed to allottee by the Agency; I never got a cent of this money but used it all for improving the land; all the money involved in these mortgages, except our bare living, was put on the land in necessary improvements; Fair health, sound mind, has no financial resources outside of his remaining interest in the Reservation and his daily labor; does not own his home; Wife and four daughters; 'I was not defrauded. The transactions were all apparently legal, though had the Government not forced me to take the deeds, I should still have my land.' | IDENTITY RECOVERY 2026-04-28: Sonnet text-extraction captured the body of this affidavit (allotment 1119, mortgage history, foreclosure, fee patent date) but failed to recover the allottee's name. Name was handwritten on the source page and not picked up by text-mode OCR. Vision recovery campaign (vision_recovery_sample/) produced AGREE between Sonnet vision and Qwen2.5-VL-72B: both read 'Samuel Allen' on the source page. User confirmed the reading via source-page review. Name field patched in place; all other fields preserved from original Sonnet text extraction. | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,37 @@
     "input_tokens": 2587,
     "output_tokens": 554
   },
-  "elapsed": 6.2
+  "elapsed": 6.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "identity_recovery",
+      "method": "vision_recovery_with_user_confirmation",
+      "fields_recovered": [
+        "Name"
+      ],
+      "fields_corrected": [
+        "NOTES"
+      ],
+      "source_image": "vision_recovery_sample/images/pine_ridge_vol1_affidavit_086_*.png",
+      "vision_models_agreed": [
+        "sonnet-vision",
+        "qwen2.5-vl-72b"
+      ],
+      "vision_recovery_report": "vision_recovery_sample/RECOVERY_REPORT.md",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

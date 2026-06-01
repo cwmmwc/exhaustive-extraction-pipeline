@@ -5,28 +5,65 @@
   "source_pages": "2",
   "model": "sonnet",
   "extraction": {
-    "Name": "not stated",
-    "Tribe/Reservation": "not stated",
+    "Name": "Nicholas Trombla",
+    "Tribe/Reservation": "Citizen Pottawatomie",
     "Post Office Address": "not stated",
-    "Allotment number": "6",
-    "Cancelled": "not stated",
-    "Refused/Protested": "U/Know",
-    "Recorded patent": "not stated",
-    "Sold/Mortgaged": "not stated",
-    "Buyer": "not stated",
-    "Tax burden forced sale/Mortgage": "not stated",
+    "Allotment number": "464",
+    "Cancelled": "No (Q8 answered: patent not cancelled)",
+    "Refused/Protested": "Without protest (Q3); not filed for record with County",
+    "Recorded patent": "Not filed for record with County (Q3)",
+    "Sold/Mortgaged": "Sold by patentee (Q4); mortgage has been released (Q5)",
+    "Buyer": "Sale: $8,000.00, fair consideration, no settlement of debt (Q6). Buyer name not legible on this page; sale by patentee.",
+    "Tax burden forced sale/Mortgage": "No (Q7: land not sold for debts or taxes)",
     "Trust Patent Date": "not stated",
-    "Fee Patent Date": "9-22",
-    "Gender": "not stated",
-    "Age": "not stated",
-    "Occupation/Income": "not stated",
-    "NOTES": "Document is heavily degraded and largely illegible; Circular No. 2464 questionnaire; allottee reference appears on form; most answers are illegible or partially obscured",
+    "Fee Patent Date": "October 13, 1919 (Q1; patent received 12/19/1919 by mail per Q2)",
+    "Gender": "not stated (likely Male given allottee context)",
+    "Age": "74 years (Q10)",
+    "Occupation/Income": "No support from government, State, or County (Q11). No persons dependent for support (Q12).",
+    "NOTES": "Land description: NW NE quarter of Section 7, Township 9 North, Range 3 East of [Indian/Principal] Meridian. Q4 sale answer indicates sold by patentee for fair consideration. Q10: age 74, mental condition good, physical condition fair. Q13: no, was not defrauded. | IDENTITY RECOVERY 2026-04-28: Sonnet text-extraction failed on Name (handwritten) and misread Allotment number as '6' (source is '464'). Vision recovery DISAGREE between models: Sonnet vision read 'Nicholas Tremble / 2464' (incorrectly grabbed circular reference number from form header as allotment); Qwen-VL read 'Nicholas Trombley / 464' (allotment correct, surname close but not canonical). User source-page review and BLM patent accession 715720 confirm correct name is 'Nicholas Trombla' and tribe is 'Citizen Pottawatomie'. Most Q&A fields previously 'not stated' or 'U/Know' have been transcribed from source page 1 in this patch. | EXTERNAL CROSS-REFERENCE: BLM patent accession 715720 confirms Nicholas Trombla, allotment 464, Citizen Pottawatomie. URL: https://glorecords.blm.gov/details/patent/default.aspx?accession=715720&docClass=SER",
     "Literate/Illiterate": "not stated",
-    "Document type": "questionnaire"
+    "Document type": "questionnaire (Circular 2464)"
   },
   "usage": {
     "input_tokens": 2519,
     "output_tokens": 257
   },
-  "elapsed": 5.4
+  "elapsed": 5.4,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "substantive_record_recovery",
+      "method": "vision_recovery_disagree_user_arbitrated_with_blm_cross_reference",
+      "fields_recovered_or_corrected": [
+        "Name",
+        "Tribe/Reservation",
+        "Allotment number",
+        "Cancelled",
+        "Refused/Protested",
+        "Recorded patent",
+        "Sold/Mortgaged",
+        "Buyer",
+        "Tax burden forced sale/Mortgage",
+        "Fee Patent Date",
+        "Age",
+        "Occupation/Income",
+        "NOTES",
+        "Document type"
+      ],
+      "source_image": "vision_recovery_sample/images/part11_questionnaire_001_page-1.png",
+      "vision_model_readings": {
+        "sonnet-vision": "Nicholas Tremble / 2464 (allotment WRONG - read circular ref)",
+        "qwen2.5-vl-72b": "Nicholas Trombley / 464 (allotment correct, surname close)",
+        "user_source_review": "Nicholas Trombla / 464",
+        "blm_canonical": "Nicholas Trombla / 464"
+      },
+      "external_refs": {
+        "BLM_accession": "715720",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=715720&docClass=SER"
+      },
+      "user_confirmed": true,
+      "document_type": "Circular 2464 questionnaire (real, not Form 5-105)",
+      "tribe_reservation": "Citizen Pottawatomie"
+    }
+  ]
 }

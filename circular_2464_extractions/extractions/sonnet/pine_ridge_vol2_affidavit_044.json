@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Frank Bullard",
-    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Eli, Nebraska",
     "Allotment number": "not stated",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "51 years old",
     "Occupation/Income": "farms 240 acres for a living, but says that there is nothing left, after he pays the taxes, for his living expenses; and that he has to work for other people whenever he can get it",
-    "NOTES": "Document No. 2566; file reference ax/024244; mentally competent, has pretty fair health; has a wife and three children to support, wife having good health, but none of the children are strong; mortgaged about 1921, having sickness in the family and also made improvements with the money; in 1927 paid up all taxes and interest on mortgage; has never received any help from the County, State nor the United States Government; affidavit subscribed and sworn to December 12, 1928",
+    "NOTES": "Document No. 2566; file reference ax/024244; mentally competent, has pretty fair health; has a wife and three children to support, wife having good health, but none of the children are strong; mortgaged about 1921, having sickness in the family and also made improvements with the money; in 1927 paid up all taxes and interest on mortgage; has never received any help from the County, State nor the United States Government; affidavit subscribed and sworn to December 12, 1928 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge (Shannon County, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2385,
     "output_tokens": 574
   },
-  "elapsed": 10.2
+  "elapsed": 10.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge (Shannon County, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

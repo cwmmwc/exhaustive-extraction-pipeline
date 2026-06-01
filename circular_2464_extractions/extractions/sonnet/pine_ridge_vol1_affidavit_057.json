@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Nora Parkhurst",
-    "Tribe/Reservation": "Beltrami County, Minnesota (likely Red Lake or Leech Lake area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Ponemah, Minnesota",
     "Allotment number": "834",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "34 years old",
     "Occupation/Income": "not stated",
-    "NOTES": "She has seven children, five of whom are now attending the boarding school; her health has improved to some extent and she has or always has had comfortable means; she has received no aid from the Government, State, or County at any time; she was not defrauded of her property and the money she received for the land was well spent and satisfactory consideration; the Indian Office denied her [some request, text unclear]; affidavit sworn before notary in May 1929",
+    "NOTES": "She has seven children, five of whom are now attending the boarding school; her health has improved to some extent and she has or always has had comfortable means; she has received no aid from the Government, State, or County at any time; she was not defrauded of her property and the money she received for the land was well spent and satisfactory consideration; the Indian Office denied her [some request, text unclear]; affidavit sworn before notary in May 1929 | CROSS-ROUTING PATTERN 2026-04-28: This record is one of 5 in the pine_ridge_* directory where the original Sonnet text-extraction captured a non-Pine-Ridge value in Tribe/Reservation. Source review and BLM cross-reference confirmed all 5 are Pine Ridge allottees who were living OFF-RESERVATION when they gave their affidavit/questionnaire testimony. The Tribe field had captured residence/sworn-at location rather than the allotment's tribal origin. Pattern documented as a systematic extraction-failure mode to be aware of in the rest of the corpus. Other affected records: Frank Carlow (vol1_aff_077, sworn at Crow Agency MT), Cecilia Armstrong Ross (vol2_aff_128, sworn at Turtle Mountain ND), Clara Peck (vol2_aff_022, sworn at Osage country OK), Millie Richards (vol1_q_001, sworn at Flandreau SD; original name extraction also captured the interpreter's name, not the allottee's), Nora Parkhurst née Martinez (vol1_aff_057, sworn at Red Lake area MN). | TASK 3 CANONICAL CONSOLIDATION 2026-04-29: Tribe value 'Pine Ridge (Oglala Sioux)' collapsed to 'Pine Ridge' to maintain a single canonical string across the corpus. The original Task 1 substantive correction (BLM-confirmed Pine Ridge tribal affiliation) is preserved in this record's recovery_notes audit trail; this collapse is a string normalization only and does not alter the underlying evidentiary basis.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,46 @@
     "input_tokens": 2216,
     "output_tokens": 397
   },
-  "elapsed": 4.8
+  "elapsed": 4.8,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "cross_routing_correction",
+      "method": "user_source_review_with_blm_cross_reference",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Nora Parkhurst",
+        "Tribe/Reservation": "Beltrami County, Minnesota (likely Red Lake or Leech Lake area)"
+      },
+      "corrected_values": {
+        "Name": "Nora Parkhurst",
+        "Tribe/Reservation": "Pine Ridge (Oglala Sioux)"
+      },
+      "residence_at_swearing": "Ponemah, Beltrami County, Minnesota (Red Lake area)",
+      "external_refs": {
+        "BLM_accession": "709441",
+        "BLM_class": "SER",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=709441&docClass=SER"
+      },
+      "source_page_evidence": "Patent issued under name 'Nora Martinez' (BLM accession 709441); current name at time of affidavit is 'Nora Parkhurst' (likely married name). Patent recorded in Pennington County, SD (1920). Note: Red Lake (where Ponemah is located) never participated in allotment — confirms her allotment is from Pine Ridge, not Red Lake. Sworn at Beltrami County 9 May 1929.",
+      "user_confirmed": true,
+      "corpus_pattern": "One of 5 cross-routed pine_ridge_* records identified 2026-04-28 where Tribe field captured residence/sworn-at location rather than allotment origin.",
+      "additional_note": "Patent name 'Nora Martinez' may be a useful additional search key for cross-reference work; current/married name 'Nora Parkhurst' preserved as primary."
+    },
+    {
+      "date": "2026-04-29",
+      "type": "task3_canonical_string_consolidation",
+      "method": "single_canonical_string_policy",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "Pine Ridge (Oglala Sioux)",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Single canonical string policy. Substantive evidentiary basis preserved in earlier recovery_notes entries."
+    }
+  ]
 }

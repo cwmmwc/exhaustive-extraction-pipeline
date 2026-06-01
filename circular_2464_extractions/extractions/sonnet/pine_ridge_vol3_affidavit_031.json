@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Carl Joseph Brown",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Tuthill, South Dakota",
     "Allotment number": "4450",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "35 years old",
     "Occupation/Income": "he farms this allotment for his living, that being his only income",
-    "NOTES": "mentally competent, has fine health; has a wife and two children to support, the family having good health; allotment described as SE, Sec. 33, T.37N., R.36W., of the 6th P.M., in South Dakota, 160 acres; deponent joined the United States Army on May 24, 1918, and served in France; no one has ever disputed his possession of this piece of land; has never received any aid from the County, State nor the United States Government; never sold his allotment for any debts incurred prior to receiving the patent in fee; affidavit subscribed and sworn April 22, 1929, Shannon County, South Dakota",
+    "NOTES": "mentally competent, has fine health; has a wife and two children to support, the family having good health; allotment described as SE, Sec. 33, T.37N., R.36W., of the 6th P.M., in South Dakota, 160 acres; deponent joined the United States Army on May 24, 1918, and served in France; no one has ever disputed his possession of this piece of land; has never received any aid from the County, State nor the United States Government; never sold his allotment for any debts incurred prior to receiving the patent in fee; affidavit subscribed and sworn April 22, 1929, Shannon County, South Dakota | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2293,
     "output_tokens": 474
   },
-  "elapsed": 5.7
+  "elapsed": 5.7,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

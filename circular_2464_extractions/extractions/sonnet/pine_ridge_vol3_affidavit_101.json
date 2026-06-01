@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Thomas Garcia",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Denby, South Dakota",
-    "Allotment number": "not stated",
+    "Allotment number": "7917",
     "Cancelled": "not stated",
     "Refused/Protested": "did not want his patent to his 160 acre allotment; but he was going into the Army, and the Indian Agency told him it would be necessary for him to take it, and he did so",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "40 years old",
     "Occupation/Income": "his only income is by doing farm labor",
-    "NOTES": "Sold in the fall of 1918. Mentally competent, has good health; is married, and wife's health is frail; has four minor children to support, but their health is good; has never received any help from the County or Government. Document number 7917. Sworn November 17, 1928.",
+    "NOTES": "Sold in the fall of 1918. Mentally competent, has good health; is married, and wife's health is frail; has four minor children to support, but their health is good; has never received any help from the County or Government. Document number 7917. Sworn November 17, 1928. | TASK 5 BULK ALLOTMENT RECOVERY 2026-04-29: Sonnet text-extraction captured the allotment number from the source page header but classified it in NOTES as a 'document number' / 'Document No.' / 'No. NNNN' instead of placing it in the structured Allotment number field. The hypothesis that these document/file references are actually allotment numbers was confirmed via BLM cross-reference (exemplars: Eugene Means 2249, Lucy Patton 6802). This patch corrects 48 records via bulk regex extraction from NOTES with user-supervised review of every HIGH-confidence proposal. | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,32 @@
     "input_tokens": 2192,
     "output_tokens": 421
   },
-  "elapsed": 5.0
+  "elapsed": 5.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task5_bulk_allotment_recovery_from_notes",
+      "method": "regex_extraction_with_user_review",
+      "fields_corrected": [
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_allotment": "not stated",
+      "corrected_allotment": "7917",
+      "rationale": "Source page header contained 'No. NNNN' which Sonnet captured in NOTES as 'document number' rather than placing in structured Allotment field. Hypothesis confirmed via BLM cross-reference.",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

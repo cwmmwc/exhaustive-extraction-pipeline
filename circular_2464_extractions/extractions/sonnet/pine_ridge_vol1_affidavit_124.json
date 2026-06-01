@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Jessie Allen Vierling",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Owensmouth, California",
     "Allotment number": "1104",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "44 years old",
     "Occupation/Income": "has to raise chickens and sell eggs for a living",
-    "NOTES": "mentally competent and in just fair health for her age; has four minor children dependent upon her for support; now has one acre of land and a home; was not actually defrauded of her land, but the money she actually got for it was of very little help as she received it in such small payments it was used up in living and derived no benefit from it; has had no training and has a hard time making a living; has received no aid from the Government, State or County since her patent in fee was issued; No part of the land was sold for debts or taxes; document sworn December 31, 1928; State of California, County of Los Angeles",
+    "NOTES": "mentally competent and in just fair health for her age; has four minor children dependent upon her for support; now has one acre of land and a home; was not actually defrauded of her land, but the money she actually got for it was of very little help as she received it in such small payments it was used up in living and derived no benefit from it; has had no training and has a hard time making a living; has received no aid from the Government, State or County since her patent in fee was issued; No part of the land was sold for debts or taxes; document sworn December 31, 1928; State of California, County of Los Angeles | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2447,
     "output_tokens": 476
   },
-  "elapsed": 5.3
+  "elapsed": 5.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

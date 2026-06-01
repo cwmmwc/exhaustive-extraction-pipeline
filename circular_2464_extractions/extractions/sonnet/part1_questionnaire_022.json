@@ -5,10 +5,10 @@
   "source_pages": "72",
   "model": "sonnet",
   "extraction": {
-    "Name": "not stated",
-    "Tribe/Reservation": "not stated",
+    "Name": "Margaret DeCory",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "342",
     "Cancelled": "not stated",
     "Refused/Protested": "I did not want the patent at all, but received it as stated through the mail, and could not do any thing but keep it.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "not stated",
     "Occupation/Income": "By husband",
-    "NOTES": "Supported by husband; no dependents as she is supported by her husband; states she is in good health; document is partially illegible",
+    "NOTES": "Supported by husband; no dependents as she is supported by her husband; states she is in good health; document is partially illegible | TASK 5 CAT_1 PATCH 2026-05-04: User confirmed this is the continuation page of Margaret DeCory's 2464 questionnaire. Lead record is part1_questionnaire_013 (Margaret DeCory, allotment 342, Rosebud Sioux — patched in this session). CONTINUATION PAGE: This record captures the trailing biographical/health section of Margaret DeCory's 2464 questionnaire (supported by husband, in good health, partially illegible). Main content is at part1_questionnaire_013. Both records refer to the same source document but capture different pages. Retained as separate corpus records rather than merged.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -112,5 +112,32 @@
     "correspondence": [],
     "legislative_actions": [],
     "tables": []
-  }
+  },
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat1_dual_model_with_user_verification",
+      "method": "sonnet_vision_plus_qwen_vision_with_user_verification",
+      "fields_corrected": [
+        "Name",
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "not stated",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated",
+        "Document type": "questionnaire"
+      },
+      "corrected_values": {
+        "Name": "Margaret DeCory",
+        "Allotment number": "342",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "models_summary": "User confirmed this is the continuation page of Margaret DeCory's 2464 questionnaire. Lead record is part1_questionnaire_013 (Margaret DeCory, allotment 342, Rosebud Sioux — patched in this session).",
+      "extra_notes": "CONTINUATION PAGE: This record captures the trailing biographical/health section of Margaret DeCory's 2464 questionnaire (supported by husband, in good health, partially illegible). Main content is at part1_questionnaire_013. Both records refer to the same source document but capture different pages. Retained as separate corpus records rather than merged.",
+      "user_confirmed": true
+    }
+  ]
 }

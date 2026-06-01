@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Elbridge Gerry",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "St. Francis, South Dakota",
     "Allotment number": "4495",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "thirty five years of age",
     "Occupation/Income": "I am resort to manual labor to support myself and family and I do not receive any support from the state or county.",
-    "NOTES": "Deponent was serving in the army in France when the patent was mailed to his mother at Martin, S.D. and then to his wife at St. Francis; wife engaged a lawyer in Valentine, Nebraska to execute a power of attorney to sell the land; deponent signed the power of attorney in a spirit of desperation, not expecting to return alive; received only about three hundred dollars from the proceeds; good physical condition but financially destitute; wife and three minor children dependent upon him for support; Was not mortgaged; county Todd, state South Dakota; document numbered No. 10-13 and No. 1-8 in margin references; sworn and subscribed in 1929",
+    "NOTES": "Deponent was serving in the army in France when the patent was mailed to his mother at Martin, S.D. and then to his wife at St. Francis; wife engaged a lawyer in Valentine, Nebraska to execute a power of attorney to sell the land; deponent signed the power of attorney in a spirit of desperation, not expecting to return alive; received only about three hundred dollars from the proceeds; good physical condition but financially destitute; wife and three minor children dependent upon him for support; Was not mortgaged; county Todd, state South Dakota; document numbered No. 10-13 and No. 1-8 in margin references; sworn and subscribed in 1929 | TASK 3 SUBSTANTIVE CORRECTION 2026-04-29: BLM accession 625252 confirms Pine Ridge tribal affiliation despite off-reservation residence (St. Francis, South Dakota). Pine Ridge allottee residing at St. Francis SD (which is on Rosebud Reservation, not Pine Ridge). Same off-reservation residence pattern as Frank Carlow (Crow Agency MT), Cecilia Ross (Turtle Mountain ND), Clara Peck (Osage country OK), Millie Richards (Flandreau SD), and Nora Parkhurst (Red Lake MN). The Pine Ridge directory contains correctly archived records of Pine Ridge allottees regardless of where the affidavit was sworn.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,25 @@
     "input_tokens": 2579,
     "output_tokens": 561
   },
-  "elapsed": 8.9
+  "elapsed": 8.9,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_blm_confirmed_tribe_correction",
+      "method": "user_blm_lookup",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "po_address": "St. Francis, South Dakota",
+      "external_refs": {
+        "BLM_accession": "625252",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=625252"
+      },
+      "user_confirmed": true,
+      "context_note": "Pine Ridge allottee residing at St. Francis SD (which is on Rosebud Reservation, not Pine Ridge). Same off-reservation residence pattern as Frank Carlow (Crow Agency MT), Cecilia Ross (Turtle Mountain ND), Clara Peck (Osage country OK), Millie Richards (Flandreau SD), and Nora Parkhurst (Red Lake MN). The Pine Ridge directory contains correctly archived records of Pine Ridge allottees regardless of where the affidavit was sworn."
+    }
+  ]
 }

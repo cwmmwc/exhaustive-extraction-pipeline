@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Millie Conroy Harvey",
-    "Tribe/Reservation": "Shannon County (South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Rockyford, So. Dak.",
     "Allotment number": "4204",
     "Cancelled": "applied for cancellation and that it is pending in the Indian Office",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "36 years old",
     "Occupation/Income": "supported by her husband who farms what of his sisters land he can and does common labor for a living",
-    "NOTES": "mentally competent and in fair health; has two children depending on her for support; has received no aid from the Government, State or County since she was granted a patent; states she will have her land back if the Department cancels the patent; document number 358; affidavit sworn November 28, 1928",
+    "NOTES": "mentally competent and in fair health; has two children depending on her for support; has received no aid from the Government, State or County since she was granted a patent; states she will have her land back if the Department cancels the patent; document number 358; affidavit sworn November 28, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County (South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2221,
     "output_tokens": 407
   },
-  "elapsed": 5.5
+  "elapsed": 5.5,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County (South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

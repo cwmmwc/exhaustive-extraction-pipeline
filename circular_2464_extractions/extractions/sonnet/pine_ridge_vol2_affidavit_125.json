@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Katherine Andrews",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Ft. Collins, Colorado",
     "Allotment number": "3855",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "52 years old",
     "Occupation/Income": "supported by my husband",
-    "NOTES": "mentally competent and in fair health; has a sister depending on her for support; has received no aid from the Government, County or State since patent in fee was issued; document sworn June 28, 1929; county is Shannon (South Dakota); signed with mark (llucoe Lllnetuo appears to be a signature mark)",
+    "NOTES": "mentally competent and in fair health; has a sister depending on her for support; has received no aid from the Government, County or State since patent in fee was issued; document sworn June 28, 1929; county is Shannon (South Dakota); signed with mark (llucoe Lllnetuo appears to be a signature mark) | TASK 3 SUBSTANTIVE CORRECTION 2026-04-29: BLM accession 625357 confirms Pine Ridge tribal affiliation despite off-reservation residence (Ft. Collins, Colorado). Pine Ridge allottee residing in Colorado when affidavit given.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,25 @@
     "input_tokens": 2148,
     "output_tokens": 346
   },
-  "elapsed": 5.1
+  "elapsed": 5.1,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_blm_confirmed_tribe_correction",
+      "method": "user_blm_lookup",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "po_address": "Ft. Collins, Colorado",
+      "external_refs": {
+        "BLM_accession": "625357",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=625357"
+      },
+      "user_confirmed": true,
+      "context_note": "Pine Ridge allottee residing in Colorado when affidavit given."
+    }
+  ]
 }

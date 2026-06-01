@@ -5,8 +5,8 @@
   "source_pages": "55-57",
   "model": "sonnet",
   "extraction": {
-    "Name": "Laura Dean (deceased allottee); heirs are William J. Sweeney, Sr. (husband) and William J. Sweeney, Jr. (son)",
-    "Tribe/Reservation": "Citizen Pottawatomie (Shawnee Indian Agency)",
+    "Name": "Laura Dean (deceased allottee); filed by James J. Sweeney (husband) for the deceased wife and their minor child",
+    "Tribe/Reservation": "Citizen Potawatomie",
     "Post Office Address": "1400 Steger Bldg, Chicago, Illinois",
     "Allotment number": "845",
     "Cancelled": "Patent was never issued to allottee or heirs as far as they are concerned and we have no information concerning the voiding of patent, if any.",
@@ -20,7 +20,7 @@
     "Gender": "Female (Laura Dean, deceased allottee)",
     "Age": "not stated",
     "Occupation/Income": "Mr. William J. Sweeney is employed as an Examiner, Senior accountant and auditor with the Interstate Commerce Commission, at a salary of $3,700.00 per annum",
-    "NOTES": "Original allottee Laura Dean married William J. Sweeney and had one son William J. Sweeney, Jr.; husband and son are still living but Laura Dean the allottee is deceased. Physical and mental condition of heirs is normal and financial condition is good. Land description: East 2 of Southwest Quarter of section 20 township 7 North of Range 1 east of Indian meridian. Questionnaire completed and sworn by William J. Sweeney, Sr. at Galveston, Texas, January 1929. No contribution of any kind has ever been made to Indian Citizen of the Pottawatomie \u2014 Laura Dean \u2014 by the Government, State or County. Son William J. Sweeney, Jr. is supported by his father. Allotment certificate No. 845 issued but no fee patent ever delivered.",
+    "NOTES": "Original allottee Laura Dean married William J. Sweeney and had one son William J. Sweeney, Jr.; husband and son are still living but Laura Dean the allottee is deceased. Physical and mental condition of heirs is normal and financial condition is good. Land description: East 2 of Southwest Quarter of section 20 township 7 North of Range 1 east of Indian meridian. Questionnaire completed and sworn by William J. Sweeney, Sr. at Galveston, Texas, January 1929. No contribution of any kind has ever been made to Indian Citizen of the Pottawatomie — Laura Dean — by the Government, State or County. Son William J. Sweeney, Jr. is supported by his father. Allotment certificate No. 845 issued but no fee patent ever delivered. | TASK 5 SHAWNEE CROSS-REFERENCE 2026-04-30: Laura Dean is the deceased allottee whose Circular 2464 response was filed by her husband James J. Sweeney on her behalf. She is row 32 on the Shawnee Indian Agency master list (part10_page_036) where the entry reads 'James J. Sweeney for his deceased wife, Laura Dean and their minor child' — this record IS her detail report. Allotment 845 confirmed; tribe set to 'Citizen Potawatomie' per user BLM research. | TASK 5 SOURCE CROSS-REFERENCE 2026-04-30: Two source documents name the husband differently. The Shawnee master list (part10_page_036, row 32) reads: 'James J. Sweeney for his deceased wife, Laura Dean and their minor child' — followed in the canonical Name field of this record. The detail report itself (this PDF) reads: 'Laura Dean — deceased wife of William J. Sweeney, Sr., and mother of William J. Sweeney, Jr., only heirs: Allottee'. The William J. text is preserved here as supplementary documentation. The disagreement may reflect a typist's Wm./Jas. abbreviation confusion at one of the two source documents; without external evidence (BLM patent record, census, etc.) the question of the husband's true first name is unresolved.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,46 @@
     "input_tokens": 4329,
     "output_tokens": 782
   },
-  "elapsed": 13.1
+  "elapsed": 13.1,
+  "recovery_notes": [
+    {
+      "date": "2026-04-30",
+      "type": "task5_shawnee_cross_reference_tribe_assignment",
+      "method": "user_research_with_master_list_cross_reference",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "corrected_values": {
+        "Tribe/Reservation": "Citizen Potawatomie"
+      },
+      "shawnee_master_list_row": 32,
+      "filed_by": "James J. Sweeney (husband, on behalf of deceased wife)",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-04-30",
+      "type": "task5_source_cross_reference_annotation",
+      "method": "user_master_list_and_detail_report_comparison",
+      "fields_corrected": [
+        "NOTES"
+      ],
+      "preserved_in_name_field": "James J. Sweeney (per master list)",
+      "preserved_in_notes": "William J. Sweeney, Sr. (husband) and William J. Sweeney, Jr. (son), per detail report family self-attestation",
+      "rationale": "Two source documents name the husband differently. Per user decision, the master list's 'James J.' is canonical for the Name field; the detail report's 'William J.' attestation is preserved in NOTES.",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-04-30",
+      "type": "task5_name_field_update_per_master_list",
+      "method": "user_decision_to_use_master_list_attestation",
+      "fields_corrected": [
+        "Name"
+      ],
+      "previous_name": "Laura Dean (deceased allottee); heirs are William J. Sweeney, Sr. (husband) and William J. Sweeney, Jr. (son)",
+      "corrected_name": "Laura Dean (deceased allottee); filed by James J. Sweeney (husband) for the deceased wife and their minor child",
+      "rationale": "Per user decision, the Shawnee master list's 'James J. Sweeney' is the canonical husband name in the Name field. The detail report's William J. Sweeney text is preserved in NOTES via the earlier source cross-reference annotation.",
+      "user_confirmed": true
+    }
+  ]
 }

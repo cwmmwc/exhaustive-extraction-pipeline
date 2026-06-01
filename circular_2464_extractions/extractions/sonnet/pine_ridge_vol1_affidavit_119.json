@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Louis Mousseau",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Kyle, South Dakota",
     "Allotment number": "1856",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "63 years old",
     "Occupation/Income": "farms a little, but his step son mostly supports him and his family",
-    "NOTES": "Allotment is the SW\u00bc of Sec. 20, T. 40N., R. 38W., of the 6th P.M., in South Dakota; received a forced patent; the status of this quarter of land, together with the rest of his allotment is in such a muddle that he cannot make an intelligent statement regarding it; did not sell his allotment for any debts incurred prior to receiving his patent in fee; mentally incompetent, has poor health; has a wife and one child to support, the wife having poor health too; has never received any help from the County, State nor the United States Government; document sworn April 6, 1929",
+    "NOTES": "Allotment is the SW¼ of Sec. 20, T. 40N., R. 38W., of the 6th P.M., in South Dakota; received a forced patent; the status of this quarter of land, together with the rest of his allotment is in such a muddle that he cannot make an intelligent statement regarding it; did not sell his allotment for any debts incurred prior to receiving his patent in fee; mentally incompetent, has poor health; has a wife and one child to support, the wife having poor health too; has never received any help from the County, State nor the United States Government; document sworn April 6, 1929 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2255,
     "output_tokens": 478
   },
-  "elapsed": 7.9
+  "elapsed": 7.9,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

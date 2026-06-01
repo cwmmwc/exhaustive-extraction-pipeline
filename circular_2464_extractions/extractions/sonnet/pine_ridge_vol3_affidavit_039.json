@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Philip Marshall",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Lead, So. Dak.",
     "Allotment number": "4527",
     "Cancelled": "does not know if patent has been canceled",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "45 years of age",
     "Occupation/Income": "working for wages only",
-    "NOTES": "Patent was mailed like an ordinary letter in December 1919 and not receipted for; received two loans from the land covered by his patent; two loans were redeemed; has the second mortgage on Mr. McAllister, who was foreclosed by a sheriff's sale; states he has been defrauded of his land in the sale; Mr. Oliver Walcott of Valentine, Nebraska is looking after his interest but seems unable to do anything on account of the mortgages; Oliver Walcott of Valentine, Nebraska made the loans; four children depending on him for support; mentally and physically sound but very financially poor; state nor government does not help him; document sworn December 1928; notary commission expires April 20th 1930; County of Lawrence, State of South Dakota",
+    "NOTES": "Patent was mailed like an ordinary letter in December 1919 and not receipted for; received two loans from the land covered by his patent; two loans were redeemed; has the second mortgage on Mr. McAllister, who was foreclosed by a sheriff's sale; states he has been defrauded of his land in the sale; Mr. Oliver Walcott of Valentine, Nebraska is looking after his interest but seems unable to do anything on account of the mortgages; Oliver Walcott of Valentine, Nebraska made the loans; four children depending on him for support; mentally and physically sound but very financially poor; state nor government does not help him; document sworn December 1928; notary commission expires April 20th 1930; County of Lawrence, State of South Dakota | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2638,
     "output_tokens": 630
   },
-  "elapsed": 7.4
+  "elapsed": 7.4,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    }
+  ]
 }

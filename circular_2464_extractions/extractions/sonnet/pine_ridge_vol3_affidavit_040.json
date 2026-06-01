@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Jennie Moeller",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Martin, South Dakota",
     "Allotment number": "4529",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "37 years old",
     "Occupation/Income": "self-supporting, by working for other people in homes",
-    "NOTES": "Allotment covers the SEL, Sec. 29, T. 37 N. R. 36 W. 6th P.M., in South Dakota; mentally competent; health is good; has five minor children to support on her own efforts, being separated from her husband, who is supposed to contribute $10.00 per month for the support of his children, but has failed to do so; does not help to support any relatives; has never received any help from the County or the Government; document reference number 24491; subscribed and sworn November 16, 1928, Shannon County, State of South Dakota",
+    "NOTES": "Allotment covers the SEL, Sec. 29, T. 37 N. R. 36 W. 6th P.M., in South Dakota; mentally competent; health is good; has five minor children to support on her own efforts, being separated from her husband, who is supposed to contribute $10.00 per month for the support of his children, but has failed to do so; does not help to support any relatives; has never received any help from the County or the Government; document reference number 24491; subscribed and sworn November 16, 1928, Shannon County, State of South Dakota | TASK 3 BULK TRIBE INFERENCE 2026-04-29: Tribe field set to 'Pine Ridge' based on directory provenance (record is filed in pine_ridge_*/extractions/, which corresponds to the NARA RG 75 Pine Ridge Vol 1, Vol 2, and Vol 3 bound volumes of Circular 2464 responses). 67 such records were originally 'not stated'; 6 received BLM-confirmed substantive patches in the same transaction; the remaining 61 (this record's batch) are inferred from directory and geographic/naming evidence. Inference is rebuttable — any record can be re-evaluated via BLM cross-reference if its Pine Ridge affiliation is questioned.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2396,
     "output_tokens": 592
   },
-  "elapsed": 8.3
+  "elapsed": 8.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_bulk_directory_inference",
+      "method": "directory_provenance_pine_ridge_vols",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "rationale": "Directory provenance: record is in pine_ridge_*/, corresponding to NARA RG 75 Pine Ridge bound volumes. Geographic and naming evidence supports inference. Rebuttable via BLM cross-reference if questioned."
+    }
+  ]
 }

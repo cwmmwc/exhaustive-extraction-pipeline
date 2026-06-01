@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "William H. Dixon",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Batesland, South Dakota",
     "Allotment number": "407",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "39 years old",
     "Occupation/Income": "income is derived by working on ranches, driving tractors or anything he can get to do; and that this is his only source of income",
-    "NOTES": "health poor, as he has piles and stomach trouble; has a wife whose health is good; has 9 children to support, all with good health; mother has kept up interest on mortgage and taxes on the land; matter still unsettled but deponent considers the place lost; deponent states he considers that he was truly defrauded out of his allotment; has never received any help from the County, State or the United States Government; affidavit sworn November 26, 1928",
+    "NOTES": "health poor, as he has piles and stomach trouble; has a wife whose health is good; has 9 children to support, all with good health; mother has kept up interest on mortgage and taxes on the land; matter still unsettled but deponent considers the place lost; deponent states he considers that he was truly defrauded out of his allotment; has never received any help from the County, State or the United States Government; affidavit sworn November 26, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2394,
     "output_tokens": 575
   },
-  "elapsed": 10.4
+  "elapsed": 10.4,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

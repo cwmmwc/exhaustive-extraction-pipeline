@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Helena Swallow",
-    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Anderson, So. Dak.",
     "Allotment number": "3238",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "42 years old",
     "Occupation/Income": "supported by her husband",
-    "NOTES": "mentally competent and in poor health, suffering with rhumatism; has no land, no home and nothing; has seven children; has received no aid from the Government, State or County since her patent was granted to her; affidavit sworn November 28, 1928",
+    "NOTES": "mentally competent and in poor health, suffering with rhumatism; has no land, no home and nothing; has seven children; has received no aid from the Government, State or County since her patent was granted to her; affidavit sworn November 28, 1928 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge (Shannon County, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2188,
     "output_tokens": 432
   },
-  "elapsed": 5.6
+  "elapsed": 5.6,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge (Shannon County, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

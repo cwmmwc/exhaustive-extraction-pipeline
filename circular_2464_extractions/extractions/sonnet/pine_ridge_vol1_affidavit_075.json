@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Esther Conroy",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Batesland, So. Dak.",
     "Allotment number": "989",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "34 years old",
     "Occupation/Income": "dependent on her husband for support who does common labor for a living",
-    "NOTES": "mentally competent and not in good health, suffering with kidney trouble; has two minor children; has received no aid from the Government, State or County since she was granted a patent; has no land or nothing; did not know much about land matters so she did just about as she was told and lost her land",
+    "NOTES": "mentally competent and not in good health, suffering with kidney trouble; has two minor children; has received no aid from the Government, State or County since she was granted a patent; has no land or nothing; did not know much about land matters so she did just about as she was told and lost her land | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2302,
     "output_tokens": 439
   },
-  "elapsed": 4.8
+  "elapsed": 4.8,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

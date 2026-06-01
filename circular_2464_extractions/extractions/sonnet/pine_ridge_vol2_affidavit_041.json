@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Emma Shangreau",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Cody, Nebr.",
     "Allotment number": "2553",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "53 years old",
     "Occupation/Income": "not stated",
-    "NOTES": "Understands most of the English language but does not speak it and can not read nor write it; has a blind husband to support; has not received any aid from the Government, State or County since her patent was issued; all she has is her equity in her land and does not think she will be able to clear it up without aid from the Government; affidavit sworn December 4, 1928; County of Shannon, State of South Dakota",
+    "NOTES": "Understands most of the English language but does not speak it and can not read nor write it; has a blind husband to support; has not received any aid from the Government, State or County since her patent was issued; all she has is her equity in her land and does not think she will be able to clear it up without aid from the Government; affidavit sworn December 4, 1928; County of Shannon, State of South Dakota | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "does not speak English and can not read nor write it",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2323,
     "output_tokens": 500
   },
-  "elapsed": 6.3
+  "elapsed": 6.3,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

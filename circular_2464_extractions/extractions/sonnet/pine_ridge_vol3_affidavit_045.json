@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "James Hawkins",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Hisle, South Dakota",
     "Allotment number": "not stated",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "68 years old",
     "Occupation/Income": "farms a little, and works for farmers as a day laborer, and that is all the income he has",
-    "NOTES": "mentally incompetent, has very poor health, having a very stiff neck for seven or eight years; has a wife and three children to support, wife having very poor health, thinks she has tuberculosis, but the children have good health; satisfied with price on last half section but received a real poor price on the first half section; has never received any help from the County, State or the United States Government; document also contains a second affidavit for Andrew Russell, Allotment No. 4628, Wanblee, S.D., age 58, who stated he did not want his patent, wrote to Superintendent who replied it made no difference and he would have to pay taxes, so he sent 10 cents to have patent sent to him; sold one-half section to Raymond Cozad of Martin, S.D. for $2800.00 with buyer to pay back taxes; does not think he received a fair price; sworn December 13, 1928, County of Washabaugh",
+    "NOTES": "mentally incompetent, has very poor health, having a very stiff neck for seven or eight years; has a wife and three children to support, wife having very poor health, thinks she has tuberculosis, but the children have good health; satisfied with price on last half section but received a real poor price on the first half section; has never received any help from the County, State or the United States Government; document also contains a second affidavit for Andrew Russell, Allotment No. 4628, Wanblee, S.D., age 58, who stated he did not want his patent, wrote to Superintendent who replied it made no difference and he would have to pay taxes, so he sent 10 cents to have patent sent to him; sold one-half section to Raymond Cozad of Martin, S.D. for $2800.00 with buyer to pay back taxes; does not think he received a fair price; sworn December 13, 1928, County of Washabaugh | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2854,
     "output_tokens": 655
   },
-  "elapsed": 7.9
+  "elapsed": 7.9,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

@@ -6,21 +6,21 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Mrs Nora Butcher",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Gillette, Wyoming",
     "Allotment number": "2308",
     "Cancelled": "not stated",
     "Refused/Protested": "did not want her patent in fee, and accepted it under protest because she was told that if she did not accept it and keep the taxes paid up that the land would be sold to satisfy them",
     "Recorded patent": "the patent was recorded at Martin So. Dak but she does not know the exact date",
     "Sold/Mortgaged": "mortgaged her land to Morris Degen of Sioux City Iowa about 1915, for $1700.00 the note to run two years at the rate of ten percent per annum; mortgagee foreclosed on it and took the land",
-    "Buyer": "Morris Degen of Sioux City, Iowa \u2014 foreclosed on the mortgage",
+    "Buyer": "Morris Degen of Sioux City, Iowa — foreclosed on the mortgage",
     "Tax burden forced sale/Mortgage": "she could not pay the mortgage and the mortgagee foreclosed on it and took the land",
     "Trust Patent Date": "not stated",
     "Fee Patent Date": "not stated",
     "Gender": "Female",
     "Age": "forty-one years old",
     "Occupation/Income": "compelled to do sewing for a living for herself and daughters; has no land nor any income except what she earns herself",
-    "NOTES": "mentally competent and just fair health for her age; is a widow; has two daughters to support besides herself; has never had any training in any line; has received no aid from the Government, County or State since her patent in fee was issued; proceeds of mortgage were invested in cattle which subsequently died; she was not actually defrauded of her land but the money she actually got from it was not ten percent of what it was worth; document sworn before Notary Public, State of Wyoming, County of Campbell, on December 1, 1928; commission expires September 25th 1931",
+    "NOTES": "mentally competent and just fair health for her age; is a widow; has two daughters to support besides herself; has never had any training in any line; has received no aid from the Government, County or State since her patent in fee was issued; proceeds of mortgage were invested in cattle which subsequently died; she was not actually defrauded of her land but the money she actually got from it was not ten percent of what it was worth; document sworn before Notary Public, State of Wyoming, County of Campbell, on December 1, 1928; commission expires September 25th 1931 | TASK 3 SUBSTANTIVE CORRECTION 2026-04-29: BLM accession 625231 confirms Pine Ridge tribal affiliation despite off-reservation residence (Gillette, Wyoming). Pine Ridge allottee residing in Wyoming when affidavit given.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,25 @@
     "input_tokens": 2456,
     "output_tokens": 520
   },
-  "elapsed": 6.6
+  "elapsed": 6.6,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task3_blm_confirmed_tribe_correction",
+      "method": "user_blm_lookup",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_tribe": "not stated",
+      "corrected_tribe": "Pine Ridge",
+      "po_address": "Gillette, Wyoming",
+      "external_refs": {
+        "BLM_accession": "625231",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=625231"
+      },
+      "user_confirmed": true,
+      "context_note": "Pine Ridge allottee residing in Wyoming when affidavit given."
+    }
+  ]
 }

@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Rosa Vanderbloom",
-    "Tribe/Reservation": "Shawnee",
+    "Tribe/Reservation": "Citizen Potawatomie",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "313",
     "Cancelled": "not stated",
     "Refused/Protested": "Fee patent issued prior to 1921 without application",
     "Recorded patent": "not stated",
@@ -20,10 +20,39 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Status per Shawnee Indian Agency cover letter: Report in detail attached. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page036. Document reference: 5-1142. Allotment number not recorded on source list nor in RA spreadsheet.",
+    "NOTES": "Status per Shawnee Indian Agency cover letter: Report in detail attached. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page036. Document reference: 5-1142. Allotment number not recorded on source list nor in RA spreadsheet. | TASK 5 SHAWNEE MASTER LIST BACKFILL 2026-05-04: Allotment number (313) and actual tribe (Citizen Potawatomie) backfilled from matched corpus record(s): part11_questionnaire_002a. AGENCY CONTEXT: This record is from the Shawnee Indian Agency master list (part10_shawnee_*). The agency administered multiple tribes (Citizen Potawatomie, Iowa, Sac & Fox, Eastern Shawnee, etc.); 'Shawnee' is the agency name, not the tribal affiliation of individual allottees. The Tribe/Reservation field on this record now carries the actual tribe per option-A schema decision.",
     "Literate/Illiterate": "not stated",
     "Document type": "agency_narrative"
   },
   "usage": {},
-  "elapsed": 0
+  "elapsed": 0,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_shawnee_master_list_backfill",
+      "method": "corpus_cross_reference_with_user_verified_data",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Rosa Vanderbloom",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Shawnee"
+      },
+      "corrected_values": {
+        "Name": "Rosa Vanderbloom",
+        "Allotment number": "313",
+        "Tribe/Reservation": "Citizen Potawatomie"
+      },
+      "matched_corpus_records": [
+        "part11_questionnaire_002a"
+      ],
+      "primary_match": "part11_questionnaire_002a",
+      "name_variant_note": "",
+      "agency_context_note": "Shawnee Indian Agency administered Citizen Potawatomie, Iowa, Sac & Fox, Eastern Shawnee, and other tribes. Tribe/Reservation field now carries the actual tribe per option-A schema decision; agency context is recoverable from the filename pattern part10_shawnee_*.",
+      "user_confirmed": true
+    }
+  ]
 }

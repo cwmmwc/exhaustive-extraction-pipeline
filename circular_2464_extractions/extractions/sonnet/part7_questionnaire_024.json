@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Reason Didier",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "2376",
     "Cancelled": "not stated",
     "Refused/Protested": "No",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "38",
     "Occupation/Income": "not stated",
-    "NOTES": "Patent was issued while allottee was in the War; he had no chance to make any answer to it as he did not know anything about it until it had been issued. He states the United States should make some kind of settlement for issuing the patent in fee before the end of the trust period. Mortgage and taxes due in August; expects to redeem mortgage and taxes. No one depends on him except himself. He does not live on the allotment but it joins the place he lives on and he uses it. Patent sent in spring of 1928. Document subscribed and sworn before notary May 9, 1929.",
+    "NOTES": "Patent was issued while allottee was in the War; he had no chance to make any answer to it as he did not know anything about it until it had been issued. He states the United States should make some kind of settlement for issuing the patent in fee before the end of the trust period. Mortgage and taxes due in August; expects to redeem mortgage and taxes. No one depends on him except himself. He does not live on the allotment but it joins the place he lives on and he uses it. Patent sent in spring of 1928. Document subscribed and sworn before notary May 9, 1929. | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 2376, tribe Rosebud Sioux, sourced from federal-register-app patents database (Christian's research). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number.",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,30 @@
     "input_tokens": 2293,
     "output_tokens": 360
   },
-  "elapsed": 6.0
+  "elapsed": 6.0,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Reason Didier",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Allotment number": "2376",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "extra_note": "",
+      "cross_reference": "",
+      "user_confirmed": true
+    }
+  ]
 }

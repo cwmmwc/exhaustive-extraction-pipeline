@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "David Whiting",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Old Ponca",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "9",
     "Cancelled": "not stated",
     "Refused/Protested": "Yes I told the Farmer that I did not want the patent but he said it was issued and it had to be taken.",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "42",
     "Occupation/Income": "I farm",
-    "NOTES": "Patent delivered at the Farmer's office in Okreek in 1917; sold land at $100 per acre; allottee satisfied with the sale; four children depend on him for support; document reference: 2a=/602.24; signed as David B. Whiting; notarized May 7, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32",
+    "NOTES": "Patent delivered at the Farmer's office in Okreek in 1917; sold land at $100 per acre; allottee satisfied with the sale; four children depend on him for support; document reference: 2a=/602.24; signed as David B. Whiting; notarized May 7, 1929 by Jas. W. Cross, Notary Public, commission expires 4-28-32 | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 9, tribe Old Ponca, sourced from federal-register-app patents database (Christian's research). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number. David Whiting's allotment 9 is on the Old Ponca Indian Reservation. Tribe/Reservation set to 'Old Ponca'. The Whiting family also appears in the buyer-network records (David B. Whiting, and Hattie Whiting Whitcher at part1_questionnaire_024).",
     "Literate/Illiterate": "not stated",
     "Document type": "questionnaire"
   },
@@ -28,5 +28,30 @@
     "input_tokens": 2188,
     "output_tokens": 336
   },
-  "elapsed": 5.4
+  "elapsed": 5.4,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "David Whiting",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Allotment number": "9",
+        "Tribe/Reservation": "Old Ponca"
+      },
+      "extra_note": "David Whiting's allotment 9 is on the Old Ponca Indian Reservation. Tribe/Reservation set to 'Old Ponca'. The Whiting family also appears in the buyer-network records (David B. Whiting, and Hattie Whiting Whitcher at part1_questionnaire_024).",
+      "cross_reference": "",
+      "user_confirmed": true
+    }
+  ]
 }

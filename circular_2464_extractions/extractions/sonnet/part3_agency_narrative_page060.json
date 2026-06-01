@@ -8,7 +8,7 @@
     "Name": "not stated",
     "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "not stated",
-    "Allotment number": "not stated",
+    "Allotment number": "(not applicable — agency correspondence)",
     "Cancelled": "not stated",
     "Refused/Protested": "not stated",
     "Recorded patent": "not stated",
@@ -20,10 +20,45 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "This document is a cover letter from E. W. Jermark, Superintendent, Pine Ridge, South Dakota, dated September 22, 1928, acknowledging receipt of Circular No. 2464 Fee Patent Data received September 14, 1928. States 333 patents were issued April 13, 1918 and 344 issued September 29, 1919. Notes the reservation extends over an area about 55 miles long and 90 miles wide located in four counties, and that data will be assembled at the earliest possible date as it will necessitate considerable field work. Document reference: 5-1142, No. 112.",
+    "NOTES": "This document is a cover letter from E. W. Jermark, Superintendent, Pine Ridge, South Dakota, dated September 22, 1928, acknowledging receipt of Circular No. 2464 Fee Patent Data received September 14, 1928. States 333 patents were issued April 13, 1918 and 344 issued September 29, 1919. Notes the reservation extends over an area about 55 miles long and 90 miles wide located in four counties, and that data will be assembled at the earliest possible date as it will necessitate considerable field work. Document reference: 5-1142, No. 112. | TASK 5 HOLDOUT ALLOTMENT RECOVERY 2026-04-30: Sonnet's original NOTES described 112 as 'Document reference: 5-1142, No. 112' but user source-page review confirms 112 is the allotment number. Likely two-page sequential narrative (page059 and page060) about the same case 112. | TASK 5 CAT_2 RECLASSIFICATION 2026-05-04: Cover letter from E. W. Jermark, Superintendent, Pine Ridge, dated September 22, 1928, acknowledging receipt of Circular No. 2464 Fee Patent Data. ANALYTICAL: the letter records aggregate patent counts — 333 patents issued April 13, 1918 and 344 issued September 29, 1919. These agency-level totals are preserved here for their relevance to the 'floor not ceiling' framing of the forced-fee research. Not an allottee record. Reclassified as agency_correspondence (matching the 6 earlier agency cover-letter reclassifications 2026-05-03). The 'allotment 112' that originally placed this record in CAT_2 was a misextraction (a stray reference number or count read as an allotment); it has been cleared.",
     "Literate/Illiterate": "not stated",
-    "Document type": "agency_narrative"
+    "Document type": "agency_correspondence"
   },
   "usage": {},
-  "elapsed": 0
+  "elapsed": 0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-30",
+      "type": "task5_holdout_allotment_recovery",
+      "method": "user_source_page_review",
+      "fields_corrected": [
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_allotment": "not stated",
+      "corrected_allotment": "112",
+      "rationale": "Sonnet's original NOTES described 112 as 'Document reference: 5-1142, No. 112' but user source-page review confirms 112 is the allotment number. Likely two-page sequential narrative (page059 and page060) about the same case 112.",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-05-04",
+      "type": "task5_reclassification_administrative_correspondence",
+      "method": "user_confirmed_agency_cover_letter",
+      "fields_corrected": [
+        "Allotment number",
+        "Document type",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Allotment number": "112",
+        "Document type": "agency_narrative"
+      },
+      "corrected_values": {
+        "Allotment number": "(not applicable — agency correspondence)",
+        "Document type": "agency_correspondence"
+      },
+      "rationale": "E. W. Jermark cover letter acknowledging Circular 2464. Not an allottee record. The 'allotment 112' was a misextraction and has been cleared.",
+      "user_confirmed": true
+    }
+  ]
 }

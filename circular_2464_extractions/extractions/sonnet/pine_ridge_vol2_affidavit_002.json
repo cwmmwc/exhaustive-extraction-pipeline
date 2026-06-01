@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Paddy Star",
-    "Tribe/Reservation": "Pine Ridge Agency",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "White River, South Dakota",
     "Allotment number": "not stated",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "71 years of age",
     "Occupation/Income": "cannot work at all and is dependent on his wife for his living; has no means whatsoever upon which to live and has no horses or cattle or other personal property or land",
-    "NOTES": "Allotment on Pine Ridge reservation for Section 29, Twp. 41 N.R. 38 W., 6th P.M., Washabaugh County, South Dakota; patent was for North half of said section; patent was sent by registered mail and affiant signed a registry receipt; borrowed $600.00 from a bank in Wagner, S.D. and gave a mortgage on the land; land sold in Fall of 1920 to J.B. Campbell; all affiant received was a second mortgage on Mellette County property which was subject to a first mortgage, first mortgage being foreclosed; only consideration received was the sum of $600.00 originally borrowed; in fair condition mentally, in very poor condition of health; lives with his wife and is wholly dependent on her; neither the Government, the State nor County has contributed to his support since the patent was issued; no one dependent on him for support; land at time of sale was worth $20.00 per acre; affiant was not really defrauded out of his land but if he had known he did not have to take the patent and that the land was not really assessable he would still have it; the $600 borrowed was not used to pay a prior debt; affiant does not remember having the terms of the second mortgage explained to him; document received JAN 11 1929, No. 1070",
+    "NOTES": "Allotment on Pine Ridge reservation for Section 29, Twp. 41 N.R. 38 W., 6th P.M., Washabaugh County, South Dakota; patent was for North half of said section; patent was sent by registered mail and affiant signed a registry receipt; borrowed $600.00 from a bank in Wagner, S.D. and gave a mortgage on the land; land sold in Fall of 1920 to J.B. Campbell; all affiant received was a second mortgage on Mellette County property which was subject to a first mortgage, first mortgage being foreclosed; only consideration received was the sum of $600.00 originally borrowed; in fair condition mentally, in very poor condition of health; lives with his wife and is wholly dependent on her; neither the Government, the State nor County has contributed to his support since the patent was issued; no one dependent on him for support; land at time of sale was worth $20.00 per acre; affiant was not really defrauded out of his land but if he had known he did not have to take the patent and that the land was not really assessable he would still have it; the $600 borrowed was not used to pay a prior debt; affiant does not remember having the terms of the second mortgage explained to him; document received JAN 11 1929, No. 1070 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Agency\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2785,
     "output_tokens": 688
   },
-  "elapsed": 12.6
+  "elapsed": 12.6,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Agency",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

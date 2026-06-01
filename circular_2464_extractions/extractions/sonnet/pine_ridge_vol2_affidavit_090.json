@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Elizabeth O'Rourke",
-    "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Scenic, South Dakota",
     "Allotment number": "2917",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "45 years old",
     "Occupation/Income": "she and her family are supported by her husband, who has poor health; that her husband's chief income is derived by his working for a cattle man",
-    "NOTES": "mentally competent; health is good; mother of five minor children, all of whom have good health except one boy who is a cripple for life caused by a horse falling on him; husband has poor health; they find it hard to get along on this income; has never received any aid from the County, State or United States Government; document sworn November 21, 1928",
+    "NOTES": "mentally competent; health is good; mother of five minor children, all of whom have good health except one boy who is a cripple for life caused by a horse falling on him; husband has poor health; they find it hard to get along on this income; has never received any aid from the County, State or United States Government; document sworn November 21, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2312,
     "output_tokens": 462
   },
-  "elapsed": 6.0
+  "elapsed": 6.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

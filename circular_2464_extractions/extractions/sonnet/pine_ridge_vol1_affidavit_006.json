@@ -8,7 +8,7 @@
     "Name": "Charles Janis",
     "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Pine Ridge, South Dakota",
-    "Allotment number": "not stated",
+    "Allotment number": "70",
     "Cancelled": "not stated",
     "Refused/Protested": "did not want his patent to his 160 acre allotment at the time it was issued; but that he was informed by the Indian Agency, if he did not take it over, it would be assessed for taxes, and finally sold for them; so he accepted the patent",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "30 years old",
     "Occupation/Income": "trucks for the United States Government, between Pine Ridge, South Dakota, and Rushville, Nebraska; and that this work is his only source of income",
-    "NOTES": "mentally competent; has good health; single, and no one but himself to support; has never received any help from the County, State nor the United States Government; allotment was 160 acres",
+    "NOTES": "mentally competent; has good health; single, and no one but himself to support; has never received any help from the County, State nor the United States Government; allotment was 160 acres | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 70 sourced from federal-register-app patents database (Christian's research, 2026-05-04). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number; this patch backfills the allotment. Tribe set to Oglala Lakota (Pine Ridge / Oglala). TRIBE NORMALIZATION: previous label 'Pine Ridge' normalized to 'Oglala Lakota'. | ORIGINAL_TRIBE_VALUE: \"Oglala Lakota\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,41 @@
     "input_tokens": 2266,
     "output_tokens": 442
   },
-  "elapsed": 5.8
+  "elapsed": 5.8,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Charles Janis",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "Pine Ridge"
+      },
+      "corrected_values": {
+        "Allotment number": "70",
+        "Tribe/Reservation": "Oglala Lakota"
+      },
+      "name_variant_note": "",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Oglala Lakota",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

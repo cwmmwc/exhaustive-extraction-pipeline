@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Lizzie Jones",
-    "Tribe/Reservation": "Shannon County (South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Scenic, South Dakota",
     "Allotment number": "2697",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "54 years old",
     "Occupation/Income": "supported by my husband, Charles Jones",
-    "NOTES": "Suffering with gall stones and in very poor health; has no land, no home and nothing to live on; husband Charles Jones has nothing and is in poor health; has three minor children dependent on her and her husband for support; Add. 2442 noted on document",
+    "NOTES": "Suffering with gall stones and in very poor health; has no land, no home and nothing to live on; husband Charles Jones has nothing and is in poor health; has three minor children dependent on her and her husband for support; Add. 2442 noted on document | ORIGINAL_TRIBE_VALUE: \"Shannon County (South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2245,
     "output_tokens": 401
   },
-  "elapsed": 7.2
+  "elapsed": 7.2,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County (South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

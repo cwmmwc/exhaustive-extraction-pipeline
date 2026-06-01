@@ -7,7 +7,7 @@
   "extraction": [
     {
       "Name": "John Monroe",
-      "Tribe/Reservation": "Shannon County, South Dakota (Pine Ridge area)",
+      "Tribe/Reservation": "Pine Ridge",
       "Post Office Address": "Patricia, So. Dak.",
       "Allotment number": "2318",
       "Cancelled": "not stated",
@@ -21,7 +21,7 @@
       "Gender": "Male",
       "Age": "58 years old",
       "Occupation/Income": "farms a little, does common labor what he can, making about $150.00 per year",
-      "NOTES": "mentally competent, not in good health; has no minor children but has a wife depending on him for support; has nothing, no land, no home and lives on the allotment of his wife, 40 acres which she still retains in trust; has received no aid from the Government, State or County since he was granted a patent; subscribed and sworn December 5, 1928",
+      "NOTES": "mentally competent, not in good health; has no minor children but has a wife depending on him for support; has nothing, no land, no home and lives on the allotment of his wife, 40 acres which she still retains in trust; has received no aid from the Government, State or County since he was granted a patent; subscribed and sworn December 5, 1928 | ORIGINAL_TRIBE_VALUE: \"Shannon County, South Dakota (Pine Ridge area)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
       "Literate/Illiterate": "not stated",
       "Document type": "affidavit"
     },
@@ -50,5 +50,19 @@
     "input_tokens": 2728,
     "output_tokens": 1023
   },
-  "elapsed": 9.9
+  "elapsed": 9.9,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Shannon County, South Dakota (Pine Ridge area)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

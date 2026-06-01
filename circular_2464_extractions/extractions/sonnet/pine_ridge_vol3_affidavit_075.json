@@ -5,10 +5,10 @@
   "source_pages": "101",
   "model": "sonnet",
   "extraction": {
-    "Name": "Louisa Amiotte\u2014nee Janis",
+    "Name": "Louisa Amiotte—nee Janis",
     "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Vetal, South Dakota",
-    "Allotment number": "not stated",
+    "Allotment number": "5755",
     "Cancelled": "not stated",
     "Refused/Protested": "in June, 1918, she made an application for her patent to her 160 acre allotment, but was denied it, being advised that the Indian Office, at Washington, recently had sent a representative to the Indian Office, of Pine Ridge, and asking for a list of all Indians of one-half or less Indian blood, intending to issue patents in fee to them all, and it was the opinion of this Office that she would get it sooner by being on this list; then, on September 29, 1919 her patent was issued, this being among the forced patents",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Female",
     "Age": "37 years old",
     "Occupation/Income": "her husband supports her and her 8 children; they make their living on a rented place; and that this is their only income",
-    "NOTES": "Document No. 5755; allotment was 160 acres; deponent has poor health, especially liver trouble; husband has good health; 8 children all of good health; has never received any help from the County, State nor the United States Government; mentally competent",
+    "NOTES": "Document No. 5755; allotment was 160 acres; deponent has poor health, especially liver trouble; husband has good health; 8 children all of good health; has never received any help from the County, State nor the United States Government; mentally competent | TASK 5 BULK ALLOTMENT RECOVERY 2026-04-29: Sonnet text-extraction captured the allotment number from the source page header but classified it in NOTES as a 'document number' / 'Document No.' / 'No. NNNN' instead of placing it in the structured Allotment number field. The hypothesis that these document/file references are actually allotment numbers was confirmed via BLM cross-reference (exemplars: Eugene Means 2249, Lucy Patton 6802). This patch corrects 48 records via bulk regex extraction from NOTES with user-supervised review of every HIGH-confidence proposal.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,20 @@
     "input_tokens": 2301,
     "output_tokens": 492
   },
-  "elapsed": 6.7
+  "elapsed": 6.7,
+  "recovery_notes": [
+    {
+      "date": "2026-04-29",
+      "type": "task5_bulk_allotment_recovery_from_notes",
+      "method": "regex_extraction_with_user_review",
+      "fields_corrected": [
+        "Allotment number",
+        "NOTES"
+      ],
+      "previous_allotment": "not stated",
+      "corrected_allotment": "5755",
+      "rationale": "Source page header contained 'No. NNNN' which Sonnet captured in NOTES as 'document number' rather than placing in structured Allotment field. Hypothesis confirmed via BLM cross-reference.",
+      "user_confirmed": true
+    }
+  ]
 }

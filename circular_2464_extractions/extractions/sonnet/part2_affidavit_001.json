@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Richard D. Ellston",
-    "Tribe/Reservation": "not stated",
+    "Tribe/Reservation": "Rosebud Sioux",
     "Post Office Address": "Herrick, S. D.",
-    "Allotment number": "not stated",
+    "Allotment number": "240",
     "Cancelled": "not stated",
     "Refused/Protested": "No",
     "Recorded patent": "mailed to me at Herrick, S. D.",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "61",
     "Occupation/Income": "By farming",
-    "NOTES": "Did not ask for the patent. Did not receive anything from his boy for the Gregory county land because it could not be redeemed. His boy's intentions were all right. Has six children, two of which are married. In good health. Allotment number possibly referenced as '20 240.' Notarized before Jas. W. Cross, Notary Public, commission expires 4-28-32, on April 30, 1929.",
+    "NOTES": "Did not ask for the patent. Did not receive anything from his boy for the Gregory county land because it could not be redeemed. His boy's intentions were all right. Has six children, two of which are married. In good health. Allotment number possibly referenced as '20 240.' Notarized before Jas. W. Cross, Notary Public, commission expires 4-28-32, on April 30, 1929. | TASK 5 CAT_3 BACKFILL 2026-05-04 (patents database): Allotment 240, tribe Rosebud Sioux, sourced from federal-register-app patents database (Christian's research). CAT_3 record — Sonnet text extraction captured the allottee Name but not the Allotment number.",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -29,5 +29,30 @@
     "output_tokens": 403
   },
   "elapsed": 5.9,
-  "retry_count": 1
+  "retry_count": 1,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_cat3_backfill_patents_database",
+      "method": "user_research_federal_register_app_patents_database",
+      "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Name": "Richard D. Ellston",
+        "Allotment number": "not stated",
+        "Tribe/Reservation": "not stated"
+      },
+      "corrected_values": {
+        "Allotment number": "240",
+        "Tribe/Reservation": "Rosebud Sioux"
+      },
+      "extra_note": "",
+      "cross_reference": "",
+      "user_confirmed": true
+    }
+  ]
 }

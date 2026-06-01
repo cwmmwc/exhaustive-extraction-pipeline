@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "James J. Sweeney for his deceased wife Laura Dean and their minor child",
-    "Tribe/Reservation": "Shawnee",
+    "Tribe/Reservation": "Citizen Potawatomie",
     "Post Office Address": "not stated",
     "Allotment number": "845",
     "Cancelled": "not stated",
@@ -20,10 +20,30 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Status per Shawnee Indian Agency cover letter: Report in detail attached. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page036. Document reference: 5-1142. Allotment number 845 sourced from Replies_to_Circular_2464.xlsx (RA spreadsheet).",
+    "NOTES": "Status per Shawnee Indian Agency cover letter: Report in detail attached. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page036. Document reference: 5-1142. Allotment number 845 sourced from Replies_to_Circular_2464.xlsx (RA spreadsheet). | TASK 5 SHAWNEE MASTER LIST BACKFILL 2026-05-04 (manual triage): James J. Sweeney is filing on behalf of his deceased wife Laura Dean (the original allottee, allotment 845, Citizen Potawatomie) and their minor son William J. Sweeney Jr. Master list captures the petitioner (Sweeney); the corpus questionnaire at part10_questionnaire_017 captures the deceased allottee (Laura Dean) as the primary subject. Allotment 845 was already present on this record from the RA spreadsheet (Replies_to_Circular_2464.xlsx); this patch normalizes the tribe from 'Shawnee' (agency) to 'Citizen Potawatomie' (actual tribe) per option-A schema decision and adds the cross-reference. CROSS-REFERENCE: part10_questionnaire_017. AGENCY CONTEXT: This record is from the Shawnee Indian Agency master list; agency administered Citizen Potawatomie, Iowa, Sac & Fox, etc. Tribe/Reservation field carries the actual tribe per option-A schema decision.",
     "Literate/Illiterate": "not stated",
     "Document type": "agency_narrative"
   },
   "usage": {},
-  "elapsed": 0
+  "elapsed": 0,
+  "recovery_notes": [
+    {
+      "date": "2026-05-04",
+      "type": "task5_shawnee_master_list_backfill_manual_triage",
+      "method": "manual_corpus_search_for_name_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Tribe/Reservation": "Shawnee"
+      },
+      "corrected_values": {
+        "Tribe/Reservation": "Citizen Potawatomie"
+      },
+      "matched_corpus_record": "part10_questionnaire_017",
+      "name_variant_note": "James J. Sweeney is filing on behalf of his deceased wife Laura Dean (the original allottee, allotment 845, Citizen Potawatomie) and their minor son William J. Sweeney Jr. Master list captures the petitioner (Sweeney); the corpus questionnaire at part10_questionnaire_017 captures the deceased allottee (Laura Dean) as the primary subject. Allotment 845 was already present on this record from the RA spreadsheet (Replies_to_Circular_2464.xlsx); this patch normalizes the tribe from 'Shawnee' (agency) to 'Citizen Potawatomie' (actual tribe) per option-A schema decision and adds the cross-reference.",
+      "user_confirmed": true
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Paul Gallagher",
-    "Tribe/Reservation": "Pine Ridge (Shannon County, South Dakota)",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Interior, South Dakota",
     "Allotment number": "4042",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male",
     "Age": "34 years old",
     "Occupation/Income": "farms rented land for his living",
-    "NOTES": "Allotment described as SW\u00bc, Sec. 23, T. 44N., R. 34W., of the 6th P.M., in South Dakota; 160 acre allotment; described as a 'forced patent in fee'; health is not very good; single, has no one to support but himself; considers he received a poor price for his land; never sold his land for any debts incurred prior to receiving his patent in fee; never received any help from the United States Government, the State Government, nor the County; affidavit sworn April 17, 1929",
+    "NOTES": "Allotment described as SW¼, Sec. 23, T. 44N., R. 34W., of the 6th P.M., in South Dakota; 160 acre allotment; described as a 'forced patent in fee'; health is not very good; single, has no one to support but himself; considers he received a poor price for his land; never sold his land for any debts incurred prior to receiving his patent in fee; never received any help from the United States Government, the State Government, nor the County; affidavit sworn April 17, 1929 | ORIGINAL_TRIBE_VALUE: \"Pine Ridge (Shannon County, South Dakota)\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2258,
     "output_tokens": 437
   },
-  "elapsed": 6.0
+  "elapsed": 6.0,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge (Shannon County, South Dakota)",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }

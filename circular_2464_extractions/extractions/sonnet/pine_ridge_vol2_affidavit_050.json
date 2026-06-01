@@ -6,7 +6,7 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Baptiste Pourier (allottee); Mrs. Alice Brown (deponent/heir)",
-    "Tribe/Reservation": "Pine Ridge Sioux",
+    "Tribe/Reservation": "Pine Ridge",
     "Post Office Address": "Chadron, Nebraska",
     "Allotment number": "2608",
     "Cancelled": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "Male (allottee); Female (deponent)",
     "Age": "84 years of age at the time of his death, October 7, 1928 (allottee); 57 years old (deponent)",
     "Occupation/Income": "not stated",
-    "NOTES": "Deponent Mrs. Alice Brown is the daughter of Baptiste Pourier. Baptiste Pourier was mentally incompetent and had been sick for six years previous to his death, having suffered from asthma and catarrh of the stomach. For the last six years of his life he was supported between his children \u2014 Charlie Pourier, of Pine Ridge, South Dakota, and Mrs. Alice Brown, of Chadron, Nebraska. In the spring of 1928, William Swallow (son-in-law) and Ellen Swallow (daughter) influenced him to deed all his land to them; he was almost blind, sick and easy to influence. Allotment described as 280 acres acquired under a forced patent in fee. Baptiste Pourier never received any help from the County or the Government. Document sworn before notary on the 19th day, 1928.",
+    "NOTES": "Deponent Mrs. Alice Brown is the daughter of Baptiste Pourier. Baptiste Pourier was mentally incompetent and had been sick for six years previous to his death, having suffered from asthma and catarrh of the stomach. For the last six years of his life he was supported between his children — Charlie Pourier, of Pine Ridge, South Dakota, and Mrs. Alice Brown, of Chadron, Nebraska. In the spring of 1928, William Swallow (son-in-law) and Ellen Swallow (daughter) influenced him to deed all his land to them; he was almost blind, sick and easy to influence. Allotment described as 280 acres acquired under a forced patent in fee. Baptiste Pourier never received any help from the County or the Government. Document sworn before notary on the 19th day, 1928. | ORIGINAL_TRIBE_VALUE: \"Pine Ridge Sioux\" (normalized 2026-04-28 to canonical 'Pine Ridge')",
     "Literate/Illiterate": "not stated",
     "Document type": "affidavit"
   },
@@ -28,5 +28,19 @@
     "input_tokens": 2404,
     "output_tokens": 596
   },
-  "elapsed": 8.8
+  "elapsed": 8.8,
+  "recovery_notes": [
+    {
+      "date": "2026-04-28",
+      "type": "tribe_field_normalization",
+      "method": "regex_consolidation_pine_ridge_variants",
+      "fields_corrected": [
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_value": "Pine Ridge Sioux",
+      "canonical_value": "Pine Ridge",
+      "rationale": "Pine Ridge tribe field had 40+ string variants across the corpus. Consolidating to canonical 'Pine Ridge' for clean tabulation while preserving original variant in NOTES for audit."
+    }
+  ]
 }
