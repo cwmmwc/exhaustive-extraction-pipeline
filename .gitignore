@@ -1,3 +1,4 @@
+# Editor / OS noise
 *.log
 .Rhistory
 __pycache__/
@@ -5,7 +6,67 @@ __pycache__/
 .DS_Store
 .vscode/
 .idea/
+
+# Python venv
+venv/
+.venv/
+
+# Source PDF corpora — large binaries, kept on disk, not in git
+corpora/
+survey_pdfs/
 1921 CCF 56074-21-312 GS.pdf
+murray-1958-ilt.pdf
+*.pdf
+
+# Graph exports
+*.gexf
+
+# Extraction outputs — research data lives on disk + DB, not in git
+# (Exception: circular_2464_extractions/extractions/sonnet/ is the primary
+# 1,043-record per-allottee corpus and IS tracked.)
+survey_of_conditions_extractions/
+kca_reextraction/
+vision_taylor_full/
+vision_taylor_section5/
+vision_taylor_section5_appendix/
+vision_taylor_tables/
+vision_test_ilt/
+vision_index_cards_full/
+vision_index_cards_test/
+vision_index_cards_custom/
+vision_index_cards_1935_test/
+qwen_vl_index_cards_full/
+results_v3/
+results_v3_reextract/
+
+# Circular 2464 — keep only the primary sonnet extractions corpus
+circular_2464_extractions/split_documents/
+circular_2464_extractions/validation_samples/
+circular_2464_extractions/standalone/
+circular_2464_extractions/non_extracted_review/
+circular_2464_extractions/vision_recovery_cat1/
+circular_2464_extractions/vision_recovery_sample/
+circular_2464_extractions/pages_8_14_review/
+circular_2464_extractions/schema_design_samples/
+circular_2464_extractions/vision_test/
+circular_2464_extractions/v3/
+circular_2464_extractions/v4/
+circular_2464_extractions/v5/
+circular_2464_extractions/kimi_targeted_10k/
+circular_2464_extractions/kimi_targeted_v2_10k/
+circular_2464_extractions/affidavit/
+circular_2464_extractions/circular_2464_affidavit_5k/
+circular_2464_extractions/circular_2464_affidavit_page/
+circular_2464_extractions/opus_affidavit/
+circular_2464_extractions/opus_affidavit_5k/
+circular_2464_extractions/sonnet_affidavit/
+circular_2464_extractions/sonnet_affidavit_5k/
+circular_2464_extractions/sonnet_affidavit_v2/
+circular_2464_extractions/sonnet_corpus/
+circular_2464_extractions/classifications/
+circular_2464_extractions/classifications_kimi_corpus/
+
+# Pine Ridge intermediate split iterations
 pine_ridge_vol1_split/
 pine_ridge_vol1_split_v2/
 pine_ridge_vol1_split_v3/
@@ -13,11 +74,13 @@ pine_ridge_vol1_split_v4/
 pine_ridge_vol1_split_v5/
 pine_ridge_vol1_split_v6/
 pine_ridge_vol1_split_v7/
-dedup_phase2_applied_*.json
-dedup_phase2_review_*.json
+
+# Dedup intermediate JSONs
+dedup_phase*_*.json
+
+# Old per-doc comparison runs
 comparisons/extraction_2026*/
 comparisons/single_2026*/
-results_v3/
-results_v3_reextract/
+
+# RG 60 source images (separately backed up)
 RG 60 index cards/
-circular_2464_extractions/standalone/
