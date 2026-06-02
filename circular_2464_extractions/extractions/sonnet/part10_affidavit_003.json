@@ -89,7 +89,7 @@
   },
   "recovery_notes": [
     {
-      "date": "2026-05-04",
+      "date": "2026-06-01",
       "type": "task5_cat1_sonnet_only_arbitration",
       "method": "user_source_page_review_with_sonnet_vision",
       "fields_corrected": [
@@ -119,7 +119,7 @@
       "user_confirmed": true
     },
     {
-      "date": "2026-05-04",
+      "date": "2026-06-01",
       "type": "task5_cat1_correction_user_verified",
       "method": "user_independent_verification",
       "fields_corrected": [

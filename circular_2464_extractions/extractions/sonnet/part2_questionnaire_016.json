@@ -552,7 +552,7 @@
       "corpus_pattern": "One of 9 Form 5-105 records misrouted into questionnaires/. 3 already corrected in pilot (Philomena Leighton 1917, Philomena Leighton later, George Menard); 6 tagged in this batch."
     },
     {
-      "date": "2026-05-04",
+      "date": "2026-06-01",
       "type": "task5_cat1_dual_model_with_user_verification",
       "method": "sonnet_vision_plus_qwen_vision_with_user_verification",
       "fields_corrected": [

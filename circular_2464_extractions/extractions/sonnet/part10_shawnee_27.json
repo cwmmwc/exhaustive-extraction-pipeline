@@ -28,7 +28,7 @@
   "elapsed": 0,
   "recovery_notes": [
     {
-      "date": "2026-05-04",
+      "date": "2026-06-01",
       "type": "task5_shawnee_master_list_backfill",
       "method": "corpus_cross_reference_with_user_verified_data",
       "fields_corrected": [

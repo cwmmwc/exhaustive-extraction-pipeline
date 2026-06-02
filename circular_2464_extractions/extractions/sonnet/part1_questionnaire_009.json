@@ -31,7 +31,7 @@
   "elapsed": 8.4,
   "recovery_notes": [
     {
-      "date": "2026-05-04",
+      "date": "2026-06-01",
       "type": "task5_cat3_backfill_patents_database",
       "method": "user_research_federal_register_app_patents_database",
       "source_url": "https://federal-register-app-996830241007.us-east1.run.app/patents",

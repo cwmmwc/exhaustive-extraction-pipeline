@@ -443,7 +443,7 @@
       "corpus_pattern": "One of 9 Form 5-105 records misrouted into questionnaires/. 3 already corrected in pilot (Philomena Leighton 1917, Philomena Leighton later, George Menard); 6 tagged in this batch."
     },
     {
-      "date": "2026-05-04",
+      "date": "2026-06-01",
       "type": "task5_cat1_dual_model_with_duplicate_removal",
       "method": "sonnet_vision_plus_qwen_vision_with_user_source_review",
       "fields_corrected": [
@@ -489,7 +489,7 @@
       "rationale": "User source-page review on 2026-05-04 confirmed q015 (4 pages) and q016 (2 pages) are the same Form 5-105 source document — splitter produced two records with overlapping/repeated pages. q016 removed as duplicate; q015 retained as canonical record."
     },
     {
-      "date": "2026-05-04",
+      "date": "2026-06-01",
       "type": "task5_cat1_dual_model_agreement_user_tribe_confirmed",
       "method": "sonnet_vision_plus_qwen_vision_with_user_tribe_assignment",
       "fields_corrected": [

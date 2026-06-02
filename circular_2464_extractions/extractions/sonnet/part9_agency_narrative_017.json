@@ -31,7 +31,7 @@
   "elapsed": 5.9,
   "recovery_notes": [
     {
-      "date": "2026-05-04",
+      "date": "2026-06-01",
       "type": "task5_cat3_backfill_blm_glo_records",
       "fields_corrected": [
         "Allotment number",

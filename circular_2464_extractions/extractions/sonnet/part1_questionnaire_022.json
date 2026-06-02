@@ -115,7 +115,7 @@
   },
   "recovery_notes": [
     {
-      "date": "2026-05-04",
+      "date": "2026-06-01",
       "type": "task5_cat1_dual_model_with_user_verification",
       "method": "sonnet_vision_plus_qwen_vision_with_user_verification",
       "fields_corrected": [
