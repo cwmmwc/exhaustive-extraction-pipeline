@@ -6,9 +6,9 @@
   "model": "sonnet",
   "extraction": {
     "Name": "Julia Bourasa Riley",
-    "Tribe/Reservation": "Shawnee Indian Agency (actual tribe unknown)",
+    "Tribe/Reservation": "Citizen Potawatomie",
     "Post Office Address": "not stated",
-    "Allotment number": "(not in patents database)",
+    "Allotment number": "1121",
     "Cancelled": "not stated",
     "Refused/Protested": "Fee patent issued prior to 1921 without application",
     "Recorded patent": "not stated",
@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Status per Shawnee Indian Agency cover letter: Report mailed to her not returned. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page035. Document reference: 5-1142. Allotment number not recorded on source list nor in RA spreadsheet. | TASK 5 SHAWNEE FINAL BACKFILL 2026-06-01 (recreated after filter-repo loss): Not found in federal-register-app patents database. May indicate Circular 2464 investigation began but no forced fee patent was consummated, or patent record exists under a different name not currently indexed. Marked as explicitly unresolved per OPERATIONS convention so it is distinguishable from unprocessed rows. Tribe also unknown — every resolvable row on the Shawnee Indian Agency master list turned out to be Citizen Potawatomie, but absent a confirmed database record this row cannot be assigned a definite tribe.",
+    "NOTES": "Status per Shawnee Indian Agency cover letter: Report mailed to her not returned. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page035. Document reference: 5-1142. Allotment number not recorded on source list nor in RA spreadsheet. | TASK 5 SHAWNEE FINAL BACKFILL 2026-06-01 (recreated after filter-repo loss): Not found in federal-register-app patents database. May indicate Circular 2464 investigation began but no forced fee patent was consummated, or patent record exists under a different name not currently indexed. Marked as explicitly unresolved per OPERATIONS convention so it is distinguishable from unprocessed rows. Tribe also unknown — every resolvable row on the Shawnee Indian Agency master list turned out to be Citizen Potawatomie, but absent a confirmed database record this row cannot be assigned a definite tribe. | TASK 5 SHAWNEE CORRECTION 2026-06-02: Reverting earlier 'not in patents database' marker — Julia Bourasa Riley IS in the patents database. The 2026-05-04 lookup that documented her as 'not in db' searched the master-list spelling 'Bourasa' (single-s); the database spells the surname 'BOURASSA' (double-s) — same single-s/double-s OCR pattern as Bourbonais/Bourbonnais documented in OPERATIONS. BLM: full record — 1983 Federal Register forced-fee claim case 028 under FedReg name 'JULIA RILEY (BOURASSA)' (GLO patentee 'JULIA BOURASSA'). Forced-fee patent BLM accession 715718, allotment 1121, 80 acres, OK/Pottawatomie county, signed 1919-10-30, Indian Fee Patent. She also held an earlier (non-forced) fee patent: accession 150299, allotment 1117, 320 acres, signed 1910-09-01. Both fee patents converted from her two original 1892 Indian Allotment trust patents: accession 0509-173 (320 acres, → fee 150299) and accession 0509-177 (80 acres, → fee 715718). Allotment field carries 1121 (the Circular 2464-relevant forced-fee allotment); allotment 1117 captured in NOTES.",
     "Literate/Illiterate": "not stated",
     "Document type": "agency_narrative"
   },
@@ -47,6 +47,37 @@
       },
       "user_confirmed": true,
       "context": "Recreation of lost 2026-05-04 backfill_shawnee_final.py work."
+    },
+    {
+      "date": "2026-06-02",
+      "type": "task5_shawnee_correction_revert_not_in_db",
+      "method": "local_postgres_allotment_research_database_with_spelling_variant",
+      "fields_corrected": [
+        "Allotment number",
+        "Tribe/Reservation",
+        "NOTES"
+      ],
+      "previous_values": {
+        "Allotment number": "(not in patents database)",
+        "Tribe/Reservation": "Shawnee Indian Agency (actual tribe unknown)"
+      },
+      "corrected_values": {
+        "Allotment number": "1121",
+        "Tribe/Reservation": "Citizen Potawatomie"
+      },
+      "additional_allotments": [
+        "1117"
+      ],
+      "spelling_variant": "Master list 'Bourasa' (single-s) vs database 'BOURASSA' (double-s) — same pattern as Bourbonais/Bourbonnais documented in OPERATIONS but missed in the original 2026-05-04 lookup",
+      "blm_accessions": {
+        "forced_fee_1919_allot1121": "715718",
+        "earlier_fee_1910_allot1117": "150299",
+        "original_trust_1892_a": "0509-173",
+        "original_trust_1892_b": "0509-177"
+      },
+      "fedreg_1983_case_number": "028",
+      "fedreg_1983_allottee_name": "JULIA RILEY (BOURASSA)",
+      "user_confirmed": true
     }
   ]
 }

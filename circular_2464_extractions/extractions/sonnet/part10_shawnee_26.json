@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Status per Shawnee Indian Agency cover letter: Unclaimed envelope attached. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page035. Document reference: 5-1142. Allotment number not recorded on source list nor in RA spreadsheet. | TASK 5 SHAWNEE FINAL BACKFILL 2026-06-01 (recreated after filter-repo loss): Not found in federal-register-app patents database. May indicate Circular 2464 investigation began but no forced fee patent was consummated, or patent record exists under a different name not currently indexed. Marked as explicitly unresolved per OPERATIONS convention so it is distinguishable from unprocessed rows. Tribe also unknown — every resolvable row on the Shawnee Indian Agency master list turned out to be Citizen Potawatomie, but absent a confirmed database record this row cannot be assigned a definite tribe.",
+    "NOTES": "Status per Shawnee Indian Agency cover letter: Unclaimed envelope attached. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page035. Document reference: 5-1142. Allotment number not recorded on source list nor in RA spreadsheet. | TASK 5 SHAWNEE FINAL BACKFILL 2026-06-01 (recreated after filter-repo loss): Not found in federal-register-app patents database. May indicate Circular 2464 investigation began but no forced fee patent was consummated, or patent record exists under a different name not currently indexed. Marked as explicitly unresolved per OPERATIONS convention so it is distinguishable from unprocessed rows. Tribe also unknown — every resolvable row on the Shawnee Indian Agency master list turned out to be Citizen Potawatomie, but absent a confirmed database record this row cannot be assigned a definite tribe. | TASK 5 SHAWNEE VERIFICATION 2026-06-02: 2026-06-02 thorough re-lookup against local allotment_research database. Searched Nedeau, Nadeau, Nadean spellings. Found multiple Nedeau/Nadeau records in OK including LAURA I NEDEAU + ALMIRA C BAYLISS (allot 575, 1925 joint patent), DANIEL NEDEAU + ALMIRA C BAYLISS (allot 575, 1957 heir patent), AMANDA NEDEAU in heirs-partition (allot 502, 1929) — but no 'Joseph Nedeau' or 'Mrs. Joseph Nedeau' anywhere. Historian (Christian) reviewed 2026-06-02 and confirmed no clear match — Nedeaus are in the database but Joseph (or his wife Mrs. Jos.) is not findable. May indicate her husband Joseph's patent was never issued, or it's under a different name/spelling not yet identified.",
     "Literate/Illiterate": "not stated",
     "Document type": "agency_narrative"
   },
@@ -47,6 +47,18 @@
       },
       "user_confirmed": true,
       "context": "Recreation of lost 2026-05-04 backfill_shawnee_final.py work."
+    },
+    {
+      "date": "2026-06-02",
+      "type": "task5_shawnee_not_in_db_re_verified",
+      "method": "local_postgres_allotment_research_db_with_variant_spellings",
+      "context": "2026-06-02 thorough re-lookup against local allotment_research database. Searched Nedeau, Nadeau, Nadean spellings. Found multiple Nedeau/Nadeau records in OK including LAURA I NEDEAU + ALMIRA C BAYLISS (allot 575, 1925 joint patent), DANIEL NEDEAU + ALMIRA C BAYLISS (allot 575, 1957 heir patent), AMANDA NEDEAU in heirs-partition (allot 502, 1929) — but no 'Joseph Nedeau' or 'Mrs. Joseph Nedeau' anywhere. Historian (Christian) reviewed 2026-06-02 and confirmed no clear match — Nedeaus are in the database but Joseph (or his wife Mrs. Jos.) is not findable. May indicate her husband Joseph's patent was never issued, or it's under a different name/spelling not yet identified.",
+      "candidates_considered": [
+        "LAURA I NEDEAU (allot 575, joint with Almira C Bayliss, 1925) — if her husband was Joseph she could be 'Mrs. Jos.' but unverified",
+        "Multiple unrelated Nadeau/Nedeau allottees in OK Pottawatomie"
+      ],
+      "user_confirmed": true,
+      "prior_not_in_db_marker_unchanged": true
     }
   ]
 }

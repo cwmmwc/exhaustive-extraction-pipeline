@@ -20,7 +20,7 @@
     "Gender": "not stated",
     "Age": "not stated",
     "Occupation/Income": "not stated",
-    "NOTES": "Status per Shawnee Indian Agency cover letter: Report mailed to her not returned. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page035. Document reference: 5-1142. Allotment number not recorded on source list nor in RA spreadsheet. | TASK 5 SHAWNEE FINAL BACKFILL 2026-06-01 (recreated after filter-repo loss): Not found in federal-register-app patents database. May indicate Circular 2464 investigation began but no forced fee patent was consummated, or patent record exists under a different name not currently indexed. Marked as explicitly unresolved per OPERATIONS convention so it is distinguishable from unprocessed rows. Tribe also unknown — every resolvable row on the Shawnee Indian Agency master list turned out to be Citizen Potawatomie, but absent a confirmed database record this row cannot be assigned a definite tribe.",
+    "NOTES": "Status per Shawnee Indian Agency cover letter: Report mailed to her not returned. Unbundled from Shawnee Indian Agency master list transmitted by Supt. A.W. Leech, March 20, 1929, in response to Circular 2464. Source bundled record: part10_agency_narrative_page035. Document reference: 5-1142. Allotment number not recorded on source list nor in RA spreadsheet. | TASK 5 SHAWNEE FINAL BACKFILL 2026-06-01 (recreated after filter-repo loss): Not found in federal-register-app patents database. May indicate Circular 2464 investigation began but no forced fee patent was consummated, or patent record exists under a different name not currently indexed. Marked as explicitly unresolved per OPERATIONS convention so it is distinguishable from unprocessed rows. Tribe also unknown — every resolvable row on the Shawnee Indian Agency master list turned out to be Citizen Potawatomie, but absent a confirmed database record this row cannot be assigned a definite tribe. | TASK 5 SHAWNEE VERIFICATION 2026-06-02: 2026-06-02 thorough re-lookup against local allotment_research database (allotment_research.all_patents, forced_fee_patents_rails). Searched all DeGraff variants. Found 12 DeGraffs total in OK Pottawatomie + Cleveland counties (Frances, Fanny, Alice, John, William, George ×2 (incl. allot 1213 1917 fee), I J., Joseph ×2 (incl. allot 1050 1927 fee), Clarence ×2 (incl. allot 1051 1919 forced fee, 1983 FedReg case 016), Frances) — none with first initial 'R.' Historian (Christian) reviewed candidates 2026-06-02 and confirmed no clear 'R. DeGraff' match. Most likely OCR-misread candidates (Clarence with C→R, Frances/Fanny with F→R) cannot be confirmed without source-page review of the Shawnee Indian Agency 1929 master list typescript.",
     "Literate/Illiterate": "not stated",
     "Document type": "agency_narrative"
   },
@@ -47,6 +47,22 @@
       },
       "user_confirmed": true,
       "context": "Recreation of lost 2026-05-04 backfill_shawnee_final.py work."
+    },
+    {
+      "date": "2026-06-02",
+      "type": "task5_shawnee_not_in_db_re_verified",
+      "method": "local_postgres_allotment_research_db_with_variant_spellings",
+      "context": "2026-06-02 thorough re-lookup against local allotment_research database (allotment_research.all_patents, forced_fee_patents_rails). Searched all DeGraff variants. Found 12 DeGraffs total in OK Pottawatomie + Cleveland counties (Frances, Fanny, Alice, John, William, George ×2 (incl. allot 1213 1917 fee), I J., Joseph ×2 (incl. allot 1050 1927 fee), Clarence ×2 (incl. allot 1051 1919 forced fee, 1983 FedReg case 016), Frances) — none with first initial 'R.' Historian (Christian) reviewed candidates 2026-06-02 and confirmed no clear 'R. DeGraff' match. Most likely OCR-misread candidates (Clarence with C→R, Frances/Fanny with F→R) cannot be confirmed without source-page review of the Shawnee Indian Agency 1929 master list typescript.",
+      "candidates_considered": [
+        "CLARENCE DEGRAFF (Cleveland, allot 1051, forced fee 1919, FedReg case 016)",
+        "FRANCES DEGRAFF (Cleveland, 1892 trust only)",
+        "FANNY DEGRAFF (Pottawatomie, 1892 trust only)",
+        "I J. DEGRAFF (Pottawatomie, 1892 trust only)",
+        "JOSEPH DEGRAFF (Cleveland, allot 1050, 1927 fee non-forced)",
+        "GEORGE DEGRAFF (Pottawatomie, allot 1213, 1917 fee non-forced)"
+      ],
+      "user_confirmed": true,
+      "prior_not_in_db_marker_unchanged": true
     }
   ]
 }

@@ -37,13 +37,30 @@ PROJECT_ROOT = Path("/Users/cwm6W/projects/exhaustive-extraction-pipeline")
 EXTRACTIONS = PROJECT_ROOT / "circular_2464_extractions" / "extractions" / "sonnet"
 PATENTS_URL = "https://federal-register-app-996830241007.us-east1.run.app/patents"
 
-# 18 patents-database confirmations (Citizen Potawatomie tribe)
+# 20 patents-database confirmations (Citizen Potawatomie tribe)
+# 2026-06-02 update: Julia Bourasa Riley (row 04) and Nellie Bourasa (row 07)
+# were originally in NOT_IN_DB per the May-4 conclusion; thorough 2026-06-02
+# re-lookup against local allotment_research database found both under the
+# 'BOURASSA' (double-s) database spelling — same single-s/double-s OCR
+# pattern as Bourbonais/Bourbonnais documented in OPERATIONS but missed in
+# the original lookup. Both moved into PATCHES.
 PATCHES = [
     {"row": "01", "name": "Lizzie Anderson",         "allot": "22",   "variant": None},
     {"row": "02", "name": "Mary C. Corder Barnett",  "allot": "1206", "variant": None},
+    {"row": "04", "name": "Julia Bourasa Riley",     "allot": "1121",
+     "variant": "Database spelling 'BOURASSA' (double-s) vs master list 'Bourasa' (single-s) — "
+                "same pattern as Bourbonais/Bourbonnais. FedReg 1983 name: 'JULIA RILEY (BOURASSA)', "
+                "case 028. Forced fee accession 715718, allot 1121 (1919-10-30). Also held earlier "
+                "non-forced fee accession 150299, allot 1117 (1910), 320 acres. Both fee patents "
+                "converted from her 1892 trust patents (acc 0509-173, 0509-177)."},
     {"row": "05", "name": "Mary Bertrand",           "allot": "194",  "variant": None},
     {"row": "06", "name": "Ozetta Bourbonais",       "allot": "36",
      "variant": "Database spelling 'Bourbonnais' (double-n) vs master list 'Bourbonais'."},
+    {"row": "07", "name": "Nellie Bourasa",          "allot": "804",
+     "variant": "Database spelling 'BOURASSA' (double-s) vs master list 'Bourasa' (single-s). "
+                "Fee accession 715734, allot 804 (1919-10-30). NOT a 1983 FedReg forced-fee claim — "
+                "her 1919 patent was either voluntarily applied for or otherwise excluded from the "
+                "forced-fee population, even though her name appeared on the 1928 master list."},
     {"row": "08", "name": "Joseph C. Cummings",      "allot": "812",
      "variant": "Database middle initial 'Joseph H. Cummings' vs master list 'Joseph C. Cummings'."},
     {"row": "09", "name": "Andrew J. Cummings",      "allot": "811", "variant": None},
@@ -63,10 +80,11 @@ PATCHES = [
     {"row": "36", "name": "Mary A. Wallace",         "allot": "1158", "variant": None},
 ]
 
-# 6 known-unresolved rows (per OPERATIONS lines 753-759)
+# 4 truly-unresolved rows (after 2026-06-02 thorough re-lookup with variant
+# spellings; historian Christian confirmed no clear match). Convention:
+# allotment="(not in patents database)",
+# tribe="Shawnee Indian Agency (actual tribe unknown)".
 NOT_IN_DB = [
-    {"row": "04", "name": "Julia Bourasa Riley"},
-    {"row": "07", "name": "Nellie Bourasa"},
     {"row": "10", "name": "R. DeGraff"},
     {"row": "11", "name": "Josephine DeGraff"},
     {"row": "26", "name": "Mrs. Jos. Nedeau"},
