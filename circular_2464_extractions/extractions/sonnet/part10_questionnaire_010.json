@@ -182,6 +182,22 @@
       "models_summary": "Both Sonnet and Qwen vision agree on name='Lucius Eldridge'. Sonnet vision read allotment as '1-2 (partially legible)'; Qwen vision read '1/2'. Both wrong. User verified correct allotment is 86.",
       "rationale": "Name confirmed by both models; allotment corrected per user verification.",
       "user_confirmed": true
+    },
+    {
+      "date": "2026-06-03",
+      "type": "blm_tribe_merge_override",
+      "method": "historian_arbitration_with_blm_cross_reference",
+      "fields_added": [
+        "manual_authoritative_tribe"
+      ],
+      "manual_authoritative_tribe": "Potawatami",
+      "rationale": "Testimony records Lucius Eldridge (allotment 86) as Citizen Potawatomie. The matching BLM patent (accession 715714) carries preferred_name = 'Potawatami' (a distinct IATH-canonical tribe from 'Citizen Potawatomi'). Historian arbitration confirms the same individual; this field overrides the crosswalk-resolved authoritative_tribe at load time so the testimony joins to the correct BLM record. The source-document tribe_reservation 'Citizen Potawatomie' is preserved as-recorded.",
+      "external_refs": {
+        "BLM_accession": "715714",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=715714&docClass=SER"
+      },
+      "user_confirmed": true
     }
-  ]
+  ],
+  "manual_authoritative_tribe": "Potawatami"
 }

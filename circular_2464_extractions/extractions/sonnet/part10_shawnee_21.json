@@ -48,6 +48,22 @@
       "database_name_variant": null,
       "user_confirmed": true,
       "context": "Recreation of lost 2026-05-04 backfill_shawnee_final.py work. Original script was wiped by this morning's git filter-repo. Historian re-supplied the 18 lookups on 2026-06-01; this script is the durable record so the work cannot be lost again."
+    },
+    {
+      "date": "2026-06-03",
+      "type": "blm_tribe_merge_override",
+      "method": "historian_arbitration_with_blm_cross_reference",
+      "fields_added": [
+        "manual_authoritative_tribe"
+      ],
+      "manual_authoritative_tribe": "Potawatami",
+      "rationale": "Testimony records Jacob Haskell (allotment 1170) as Citizen Potawatomie. The matching BLM patent (accession 715705) carries preferred_name = 'Potawatami' (a distinct IATH-canonical tribe from 'Citizen Potawatomi'). Historian arbitration confirms the same individual; this field overrides the crosswalk-resolved authoritative_tribe at load time so the testimony joins to the correct BLM record. The source-document tribe_reservation 'Citizen Potawatomie' is preserved as-recorded.",
+      "external_refs": {
+        "BLM_accession": "715705",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=715705&docClass=SER"
+      },
+      "user_confirmed": true
     }
-  ]
+  ],
+  "manual_authoritative_tribe": "Potawatami"
 }

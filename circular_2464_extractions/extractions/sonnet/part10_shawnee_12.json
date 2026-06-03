@@ -53,6 +53,22 @@
       "name_variant_note": "",
       "agency_context_note": "Shawnee Indian Agency administered Citizen Potawatomie, Iowa, Sac & Fox, Eastern Shawnee, and other tribes. Tribe/Reservation field now carries the actual tribe per option-A schema decision; agency context is recoverable from the filename pattern part10_shawnee_*.",
       "user_confirmed": true
+    },
+    {
+      "date": "2026-06-03",
+      "type": "blm_tribe_merge_override",
+      "method": "historian_arbitration_with_blm_cross_reference",
+      "fields_added": [
+        "manual_authoritative_tribe"
+      ],
+      "manual_authoritative_tribe": "Potawatami",
+      "rationale": "Testimony records Lucius Eldridge (allotment 86) as Citizen Potawatomie. The matching BLM patent (accession 715714) carries preferred_name = 'Potawatami' (a distinct IATH-canonical tribe from 'Citizen Potawatomi'). Historian arbitration confirms the same individual; this field overrides the crosswalk-resolved authoritative_tribe at load time so the testimony joins to the correct BLM record. The source-document tribe_reservation 'Citizen Potawatomie' is preserved as-recorded.",
+      "external_refs": {
+        "BLM_accession": "715714",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=715714&docClass=SER"
+      },
+      "user_confirmed": true
     }
-  ]
+  ],
+  "manual_authoritative_tribe": "Potawatami"
 }
