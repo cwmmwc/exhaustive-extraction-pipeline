@@ -1,7 +1,7 @@
 {
   "extraction": {
     "Name": "Viola Wallace",
-    "Allotment number": "15609",
+    "Allotment number": "1159",
     "Tribe/Reservation": "Citizen Potawatomie",
     "Post Office Address": "not stated",
     "Document type": "questionnaire",
@@ -35,6 +35,23 @@
         "Sonnet extracted no Name, no Allotment, no substantive content — claimed 'most answers indecipherable'",
         "Kimi v3/v4/v5 extractions of part 11 captured no entries for Vanderbloom or Wallace despite capturing other part 11 content"
       ]
+    },
+    {
+      "date": "2026-06-03",
+      "type": "allotment_number_correction",
+      "method": "historian_arbitration_with_blm_cross_reference",
+      "previous_values": {
+        "Allotment number": "15609"
+      },
+      "corrected_values": {
+        "Allotment number": "1159"
+      },
+      "rationale": "Sonnet text extraction misread the allotment number as '15609'. Source-verified correct allotment is '1159'; cross-referenced with BLM accession 715737 (Indian Fee Patent, 1919-10-30, Citizen Potawatomi).",
+      "external_refs": {
+        "BLM_accession": "715737",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=715737&docClass=SER"
+      },
+      "user_confirmed": true
     }
   ],
   "pre_split_sonnet_extraction": "See part11_questionnaire_002a.json field 'pre_split_sonnet_extraction' for archived original"

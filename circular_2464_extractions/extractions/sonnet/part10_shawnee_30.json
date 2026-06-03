@@ -8,7 +8,7 @@
     "Name": "Mrs. Addie Easton Payne",
     "Tribe/Reservation": "Citizen Potawatomie",
     "Post Office Address": "not stated",
-    "Allotment number": "168",
+    "Allotment number": "162",
     "Cancelled": "not stated",
     "Refused/Protested": "Fee patent issued prior to 1921 without application",
     "Recorded patent": "not stated",
@@ -53,6 +53,23 @@
       "primary_match": "part10_questionnaire_015",
       "name_variant_note": "Master list reads 'Addie E. Payne'; corpus questionnaire captures her as 'Mrs. Addie Easton Payne'. Same person — the master list abbreviates her middle name 'Easton' to 'E.'.",
       "agency_context_note": "Shawnee Indian Agency administered Citizen Potawatomie, Iowa, Sac & Fox, Eastern Shawnee, and other tribes. Tribe/Reservation field now carries the actual tribe per option-A schema decision; agency context is recoverable from the filename pattern part10_shawnee_*.",
+      "user_confirmed": true
+    },
+    {
+      "date": "2026-06-03",
+      "type": "allotment_number_correction",
+      "method": "historian_arbitration_with_blm_cross_reference",
+      "previous_values": {
+        "Allotment number": "168"
+      },
+      "corrected_values": {
+        "Allotment number": "162"
+      },
+      "rationale": "Sonnet text extraction misread the allotment number as '168'. Source-verified correct allotment is '162'; cross-referenced with BLM accession 715702 (Indian Fee Patent, 1919-10-30, Citizen Potawatomi).",
+      "external_refs": {
+        "BLM_accession": "715702",
+        "BLM_url": "https://glorecords.blm.gov/details/patent/default.aspx?accession=715702&docClass=SER"
+      },
       "user_confirmed": true
     }
   ]
